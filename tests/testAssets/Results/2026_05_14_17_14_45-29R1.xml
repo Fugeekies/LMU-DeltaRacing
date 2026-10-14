@@ -1,0 +1,1875 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1778769630</DateTime>
+<TimeString>2026/05/14 16:40:30</TimeString>
+<TrackVenue>Circuit de Spa-Francorchamps</TrackVenue>
+<TrackCourse>Circuit de Spa-Francorchamps</TrackCourse>
+<TrackEvent>6 Hours of Spa-Francorchamps</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Spa_2023\1.27\layoutSpa.mas</TrackData>
+<TrackLength>6981.6</TrackLength>
+<GameVersion>1.3000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Logitech2026,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1778770243</DateTime>
+<TimeString>2026/05/14 16:50:43</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Incident et="75.3">Pedro Jose Videgain(15) reported contact (1223.99) with another vehicle Adn Neves(13)</Incident>
+<Incident et="75.3">Adn Neves(13) reported contact (1205.74) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="76.2">Fabio Marrali(19) reported contact (1955.15) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="76.2">Pedro Jose Videgain(15) reported contact (1947.72) with another vehicle Fabio Marrali(19)</Incident>
+<Incident et="78.3">P-A Fugeekies(17) reported contact (501.34) with another vehicle Fabio Marrali(19)</Incident>
+<Incident et="78.4">Fabio Marrali(19) reported contact (599.84) with another vehicle P-A Fugeekies(17)</Incident>
+<Incident et="78.8">P-A Fugeekies(17) reported contact (1327.86) with another vehicle Nicolas Scory(16)</Incident>
+<Incident et="78.9">Nicolas Scory(16) reported contact (1335.17) with another vehicle P-A Fugeekies(17)</Incident>
+<Incident et="104.8">Giant Bentley(1) reported contact (378.21) with another vehicle Fabio Marrali(19)</Incident>
+<Incident et="104.8">Fabio Marrali(19) reported contact (393.29) with another vehicle Giant Bentley(1)</Incident>
+<Incident et="108.0">Adam Twor(7) reported contact (67.24) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="108.0">Pedro Jose Videgain(15) reported contact (62.25) with another vehicle Adam Twor(7)</Incident>
+<Incident et="108.1">Adam Twor(7) reported contact (160.72) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="115.3">Martin Starzengruber(6) reported contact (1417.01) with Immovable</Incident>
+<Penalty Driver="Carlie Thomas" ID="5" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="121.2">Carlie Thomas received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Penalty Driver="Fabio Marrali" ID="19" Penalty="Time" Time="10" Laps="0" Reason="Erratic driving" et="121.2">Fabio Marrali received Time penalty, 10s, 0laps for Erratic driving. Result: penalties=1, 1st=Time,10s</Penalty>
+<Penalty Driver="Verstappen Fox" ID="20" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="121.4">Verstappen Fox received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="131.7">Pedro Jose Videgain(15) reported contact (578.49) with another vehicle Adn Neves(13)</Incident>
+<Incident et="131.7">Adn Neves(13) reported contact (920.10) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="132.1">Giant Bentley(1) reported contact (417.61) with another vehicle Fabio Marrali(19)</Incident>
+<Incident et="132.1">Fabio Marrali(19) reported contact (439.23) with another vehicle Giant Bentley(1)</Incident>
+<Incident et="134.1">P-A Fugeekies(17) reported contact (654.41) with another vehicle Nicolas Scory(16)</Incident>
+<Incident et="134.2">Nicolas Scory(16) reported contact (634.38) with another vehicle P-A Fugeekies(17)</Incident>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="135.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="135.2">No Further Action</TrackLimits>
+<Incident et="149.9">Adn Neves(13) reported contact (279.44) with another vehicle Maxime Dessaix(11)</Incident>
+<Incident et="149.9">Maxime Dessaix(11) reported contact (251.20) with another vehicle Adn Neves(13)</Incident>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="152.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="152.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.2">No Further Action</TrackLimits>
+<Sector Driver="Lucas Otero" ID="2" Sector="1" Class="GT3" et="163.1">Lucas Otero(2) set new best for sector 1</Sector>
+<Score et="163.1">Lucas Otero(2) lap=0 point=1 t=41.821 et=163.040</Score>
+<Score et="163.6">Julien Deaytrix(21) lap=0 point=1 t=42.324 et=163.540</Score>
+<Score et="164.4">Alvin Sundberg(8) lap=0 point=1 t=43.066 et=164.280</Score>
+<Score et="165.0">Pedro Jose Videgain(15) lap=0 point=1 t=43.762 et=164.980</Score>
+<Score et="165.0">Adn Neves(13) lap=0 point=1 t=43.769 et=164.980</Score>
+<Score et="165.3">Maxime Dessaix(11) lap=0 point=1 t=43.996 et=165.200</Score>
+<Score et="165.7">Adam Twor(7) lap=0 point=1 t=44.383 et=165.600</Score>
+<Score et="166.0">Fabio Marrali(19) lap=0 point=1 t=-1.000 et=165.960</Score>
+<Score et="166.5">Giant Bentley(1) lap=0 point=1 t=45.187 et=166.400</Score>
+<Score et="167.3">P-A Fugeekies(17) lap=0 point=1 t=46.096 et=167.298</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.4">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.4">No Further Action</TrackLimits>
+<Score et="167.8">Martin Starzengruber(6) lap=0 point=1 t=-1.000 et=167.780</Score>
+<Score et="168.2">Nicolas Scory(16) lap=0 point=1 t=46.937 et=168.140</Score>
+<Score et="168.5">Paraskevas Vartzokas(14) lap=0 point=1 t=47.289 et=168.500</Score>
+<Score et="169.3">Carlie Thomas(5) lap=0 point=1 t=-1.000 et=169.200</Score>
+<Score et="169.8">Remek KORraN(4) lap=0 point=1 t=48.439 et=169.660</Score>
+<Score et="170.8">Verstappen Fox(20) lap=0 point=1 t=49.370 et=170.580</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="171.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="171.3">No Further Action</TrackLimits>
+<Score et="171.6">Donio Kurd(18) lap=0 point=1 t=50.231 et=171.440</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.8">No Further Action</TrackLimits>
+<Score et="181.1">AD Laurent(0) lap=0 point=1 t=59.786 et=181.000</Score>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.3">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="186.0">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="186.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.3">No Further Action</TrackLimits>
+<Score et="189.1">Meredith Zenith(9) lap=0 point=1 t=67.812 et=189.020</Score>
+<Score et="189.8">baptout B(12) lap=0 point=1 t=68.518 et=189.740</Score>
+<Incident et="192.0">Maxime Dessaix(11) reported contact (812.18) with another vehicle Adn Neves(13)</Incident>
+<Incident et="192.0">Adn Neves(13) reported contact (1114.60) with another vehicle Maxime Dessaix(11)</Incident>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="196.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="196.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="204.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="204.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Donio Kurd" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="214.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Donio Kurd" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="214.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.0">No Further Action</TrackLimits>
+<Incident et="217.3">Giant Bentley(1) reported contact (390.16) with another vehicle Adam Twor(7)</Incident>
+<Incident et="217.3">Adam Twor(7) reported contact (69.53) with another vehicle Giant Bentley(1)</Incident>
+<Incident et="217.3">Adam Twor(7) reported contact (81.15) with another vehicle Giant Bentley(1)</Incident>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.7">No Further Action</TrackLimits>
+<Sector Driver="Lucas Otero" ID="2" Sector="2" Class="GT3" et="226.7">Lucas Otero(2) set new best for sector 2</Sector>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="226.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="226.7">No Further Action</TrackLimits>
+<Score et="226.7">Lucas Otero(2) lap=0 point=2 t=105.465 et=226.680</Score>
+<Score et="227.6">Julien Deaytrix(21) lap=0 point=2 t=106.392 et=227.600</Score>
+<Score et="228.2">Alvin Sundberg(8) lap=0 point=2 t=106.919 et=228.140</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.0">No Further Action</TrackLimits>
+<Score et="230.6">Maxime Dessaix(11) lap=0 point=2 t=109.293 et=230.500</Score>
+<Score et="231.1">Pedro Jose Videgain(15) lap=0 point=2 t=109.829 et=231.040</Score>
+<Score et="232.2">Giant Bentley(1) lap=0 point=2 t=110.941 et=232.160</Score>
+<Score et="232.6">Adam Twor(7) lap=0 point=2 t=111.374 et=232.580</Score>
+<Score et="233.0">Fabio Marrali(19) lap=0 point=2 t=-1.000 et=233.000</Score>
+<Score et="233.7">P-A Fugeekies(17) lap=0 point=2 t=112.502 et=233.705</Score>
+<Score et="236.1">Nicolas Scory(16) lap=0 point=2 t=114.812 et=236.020</Score>
+<Score et="236.4">Paraskevas Vartzokas(14) lap=0 point=2 t=115.152 et=236.360</Score>
+<Score et="236.8">Remek KORraN(4) lap=0 point=2 t=115.576 et=236.780</Score>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="237.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="237.5">No Further Action</TrackLimits>
+<Score et="238.7">Adn Neves(13) lap=0 point=2 t=117.433 et=238.640</Score>
+<Score et="239.6">Carlie Thomas(5) lap=0 point=2 t=-1.000 et=239.420</Score>
+<Score et="240.0">Verstappen Fox(20) lap=0 point=2 t=118.576 et=239.780</Score>
+<Score et="240.2">Donio Kurd(18) lap=0 point=2 t=118.997 et=240.200</Score>
+<Score et="243.5">Martin Starzengruber(6) lap=0 point=2 t=122.290 et=243.500</Score>
+<Score et="246.5">AD Laurent(0) lap=0 point=2 t=125.216 et=246.420</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="251.6">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="251.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="252.6">Warning</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="252.6">Warning</TrackLimits>
+<Score et="253.3">Meredith Zenith(9) lap=0 point=2 t=132.040 et=253.260</Score>
+<Score et="255.0">baptout B(12) lap=0 point=2 t=133.725 et=254.940</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="256.8">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="256.8">Warning</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="261.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="261.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Donio Kurd" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="263.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Donio Kurd" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="263.5">No Further Action</TrackLimits>
+<Sector Driver="Lucas Otero" ID="2" Sector="3" Class="GT3" et="266.4">Lucas Otero(2) set new best for sector 3</Sector>
+<Score et="266.4">Lucas Otero(2) lap=1 point=0 t=145.136 et=266.340</Score>
+<Incident et="267.0">Martin Starzengruber(6) reported contact (4885.42) with Immovable</Incident>
+<Score et="267.8">Julien Deaytrix(21) lap=1 point=0 t=-1.000 et=267.700</Score>
+<Score et="268.6">Alvin Sundberg(8) lap=1 point=0 t=147.321 et=268.540</Score>
+<Sector et="268.8">AD Laurent(0) reports new suspension damage</Sector>
+<Incident et="268.9">AD Laurent(0) reported contact (4761.89) with Immovable</Incident>
+<Incident et="268.9">Nicolas Scory(16) reported contact (989.11) with another vehicle Adn Neves(13)</Incident>
+<Incident et="268.9">Adn Neves(13) reported contact (981.68) with another vehicle Nicolas Scory(16)</Incident>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="270.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="270.1">No Further Action</TrackLimits>
+<Incident et="270.2">AD Laurent(0) reported contact (1266.76) with Immovable</Incident>
+<Score et="270.8">Maxime Dessaix(11) lap=1 point=0 t=149.553 et=270.760</Score>
+<Incident et="271.1">AD Laurent(0) reported contact (786.85) with Immovable</Incident>
+<Score et="271.4">Pedro Jose Videgain(15) lap=1 point=0 t=150.059 et=271.280</Score>
+<Incident et="272.2">AD Laurent(0) reported contact (864.04) with Immovable</Incident>
+<Score et="272.8">Giant Bentley(1) lap=1 point=0 t=-1.000 et=272.760</Score>
+<Incident et="273.1">AD Laurent(0) reported contact (557.74) with Immovable</Incident>
+<Score et="273.6">Adam Twor(7) lap=1 point=0 t=152.285 et=273.500</Score>
+<Score et="274.3">Fabio Marrali(19) lap=1 point=0 t=-1.000 et=274.240</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.5">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.5">No Further Action</TrackLimits>
+<Score et="274.8">P-A Fugeekies(17) lap=1 point=0 t=153.573 et=274.776</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
+<Score et="279.0">Remek KORraN(4) lap=1 point=0 t=157.616 et=278.820</Score>
+<Score et="279.8">Nicolas Scory(16) lap=1 point=0 t=158.583 et=279.800</Score>
+<Score et="280.6">Adn Neves(13) lap=1 point=0 t=159.350 et=280.560</Score>
+<Score et="280.8">Paraskevas Vartzokas(14) lap=1 point=0 t=159.511 et=280.720</Score>
+<Score et="281.4">Carlie Thomas(5) lap=1 point=0 t=-1.000 et=281.280</Score>
+<Incident et="285.6">Lucas Otero(2) reported contact (67.44) with Immovable</Incident>
+<Incident et="286.6">Nicolas Scory(16) reported contact (1109.06) with another vehicle Adn Neves(13)</Incident>
+<Incident et="286.6">Adn Neves(13) reported contact (1136.96) with another vehicle Nicolas Scory(16)</Incident>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="287.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="287.5">No Further Action</TrackLimits>
+<Score et="290.0">Donio Kurd(18) lap=1 point=0 t=168.672 et=289.880</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.0">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.0">No Further Action</TrackLimits>
+<Incident et="290.5">AD Laurent(0) reported contact (553.00) with Immovable</Incident>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="292.4">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="292.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="1.75" CurrentPoints="1.75" Resolution="4" et="292.5">Warning</TrackLimits>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="0" WarningPoints="1.75" CurrentPoints="1.75" Resolution="4" et="292.5">Warning</TrackLimits>
+<Score et="293.6">Meredith Zenith(9) lap=1 point=0 t=172.345 et=293.560</Score>
+<Score et="295.2">Verstappen Fox(20) lap=1 point=0 t=173.811 et=295.020</Score>
+<Score et="296.2">baptout B(12) lap=1 point=0 t=174.894 et=296.100</Score>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="300.6">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="300.6">Warning</TrackLimits>
+<Sector Driver="Lucas Otero" ID="2" Sector="1" Class="GT3" et="304.8">Lucas Otero(2) set new best for sector 1</Sector>
+<Score et="304.8">Lucas Otero(2) lap=1 point=1 t=38.421 et=304.760</Score>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.0">No Further Action</TrackLimits>
+<Score et="306.4">Julien Deaytrix(21) lap=1 point=1 t=38.568 et=306.260</Score>
+<Score et="307.1">Alvin Sundberg(8) lap=1 point=1 t=38.501 et=307.040</Score>
+<Score et="309.4">Maxime Dessaix(11) lap=1 point=1 t=38.584 et=309.340</Score>
+<Score et="310.1">Pedro Jose Videgain(15) lap=1 point=1 t=38.774 et=310.040</Score>
+<Score et="311.4">Giant Bentley(1) lap=1 point=1 t=-1.000 et=311.240</Score>
+<Score et="312.4">Adam Twor(7) lap=1 point=1 t=38.903 et=312.400</Score>
+<Score et="312.8">Fabio Marrali(19) lap=1 point=1 t=38.509 et=312.740</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="313.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="313.2">No Further Action</TrackLimits>
+<Score et="313.9">P-A Fugeekies(17) lap=1 point=1 t=39.109 et=313.885</Score>
+<Sector et="316.2">Donio Kurd(18) reports new suspension damage</Sector>
+<Incident et="316.3">Donio Kurd(18) reported contact (2921.87) with Immovable</Incident>
+<Sector et="316.4">Donio Kurd(18) reports new suspension damage</Sector>
+<Sector et="316.4">Donio Kurd(18) reports new engine damage</Sector>
+<Score et="318.0">Remek KORraN(4) lap=1 point=1 t=39.089 et=317.920</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="318.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="318.3">No Further Action</TrackLimits>
+<Score et="319.4">Nicolas Scory(16) lap=1 point=1 t=39.582 et=319.380</Score>
+<Score et="319.4">Adn Neves(13) lap=1 point=1 t=38.818 et=319.380</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="319.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="319.6">No Further Action</TrackLimits>
+<Incident et="320.1">Donio Kurd(18) reported contact (1157.46) with Immovable</Incident>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="320.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="320.1">No Further Action</TrackLimits>
+<Score et="320.6">Paraskevas Vartzokas(14) lap=1 point=1 t=39.852 et=320.580</Score>
+<Score et="321.3">Carlie Thomas(5) lap=1 point=1 t=39.862 et=321.140</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="323.6">Warning</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="323.6">Warning</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="326.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="326.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="327.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="327.2">No Further Action</TrackLimits>
+<Score et="333.0">Meredith Zenith(9) lap=1 point=1 t=39.326 et=332.880</Score>
+<Score et="334.6">baptout B(12) lap=1 point=1 t=-1.000 et=334.540</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="338.2">Warning</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="338.2">Warning</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="342.1">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="342.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="352.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="352.5">No Further Action</TrackLimits>
+<Score et="352.6">Aurora L(3) lap=0 point=1 t=-1.000 et=352.740</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="353.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="353.8">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="355.7">No Further Action</TrackLimits>
+<Score et="356.2">AD Laurent(0) lap=1 point=0 t=234.953 et=356.160</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.8">No Further Action</TrackLimits>
+<Score et="366.3">Verstappen Fox(20) lap=1 point=1 t=-1.000 et=366.120</Score>
+<Sector Driver="Lucas Otero" ID="2" Sector="2" Class="GT3" et="368.3">Lucas Otero(2) set new best for sector 2</Sector>
+<Score et="368.3">Lucas Otero(2) lap=1 point=2 t=101.889 et=368.240</Score>
+<Score et="369.9">Julien Deaytrix(21) lap=1 point=2 t=102.143 et=369.840</Score>
+<Score et="371.9">Alvin Sundberg(8) lap=1 point=2 t=103.318 et=371.860</Score>
+<Score et="373.2">Maxime Dessaix(11) lap=1 point=2 t=102.361 et=373.120</Score>
+<Score et="374.2">Pedro Jose Videgain(15) lap=1 point=2 t=102.928 et=374.200</Score>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="375.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="375.2">No Further Action</TrackLimits>
+<Score et="376.3">Giant Bentley(1) lap=1 point=2 t=-1.000 et=376.260</Score>
+<Score et="377.4">Martin Starzengruber(6) lap=1 point=0 t=-1.000 et=377.320</Score>
+<Score et="377.4">Adam Twor(7) lap=1 point=2 t=103.831 et=377.320</Score>
+<Score et="378.2">Fabio Marrali(19) lap=1 point=2 t=103.972 et=378.200</Score>
+<Score et="380.0">P-A Fugeekies(17) lap=1 point=2 t=105.202 et=379.978</Score>
+<Score et="382.5">Remek KORraN(4) lap=1 point=2 t=103.570 et=382.400</Score>
+<Score et="383.8">Adn Neves(13) lap=1 point=2 t=103.246 et=383.800</Score>
+<Score et="387.5">Nicolas Scory(16) lap=1 point=2 t=107.660 et=387.460</Score>
+<Score et="388.1">Paraskevas Vartzokas(14) lap=1 point=2 t=107.325 et=388.040</Score>
+<Score et="389.7">Carlie Thomas(5) lap=1 point=2 t=108.323 et=389.600</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="395.2">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="395.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="396.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="396.1">No Further Action</TrackLimits>
+<Score et="397.0">Meredith Zenith(9) lap=1 point=2 t=103.344 et=396.900</Score>
+<Score et="401.1">baptout B(12) lap=1 point=2 t=-1.000 et=401.060</Score>
+<Score et="402.2">AD Laurent(0) lap=1 point=1 t=46.015 et=402.180</Score>
+<Score et="408.9">Lucas Otero(2) lap=2 point=0 t=142.462 et=408.820</Score>
+<Score et="409.8">Julien Deaytrix(21) lap=2 point=0 t=141.986 et=409.680</Score>
+<Score et="411.9">Alvin Sundberg(8) lap=2 point=0 t=143.257 et=411.800</Score>
+<Score et="413.8">Maxime Dessaix(11) lap=2 point=0 t=142.955 et=413.720</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="414.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="414.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="414.9">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="1" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="414.9">Warning</TrackLimits>
+<Score et="415.1">Pedro Jose Videgain(15) lap=2 point=0 t=143.795 et=415.060</Score>
+<Score et="416.7">Giant Bentley(1) lap=2 point=0 t=-1.000 et=416.680</Score>
+<Score et="417.2">Aurora L(3) lap=0 point=2 t=-1.000 et=417.220</Score>
+<Score et="418.2">Adam Twor(7) lap=2 point=0 t=144.690 et=418.180</Score>
+<Score et="418.6">Fabio Marrali(19) lap=2 point=0 t=144.339 et=418.580</Score>
+<Score et="420.7">P-A Fugeekies(17) lap=2 point=0 t=145.897 et=420.673</Score>
+<Score et="422.7">Martin Starzengruber(6) lap=1 point=1 t=45.354 et=422.680</Score>
+<Incident et="422.8">Adam Twor(7) reported contact (667.45) with another vehicle Fabio Marrali(19)</Incident>
+<Incident et="422.8">Fabio Marrali(19) reported contact (756.50) with another vehicle Adam Twor(7)</Incident>
+<Score et="422.9">Remek KORraN(4) lap=2 point=0 t=144.029 et=422.860</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="423.9">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="423.9">No Further Action</TrackLimits>
+<Score et="424.0">Adn Neves(13) lap=2 point=0 t=143.427 et=423.980</Score>
+<Score et="429.4">Nicolas Scory(16) lap=2 point=0 t=149.548 et=429.340</Score>
+<Score et="429.8">Paraskevas Vartzokas(14) lap=2 point=0 t=149.056 et=429.780</Score>
+<Score et="433.4">Carlie Thomas(5) lap=2 point=0 t=151.957 et=433.240</Score>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="434.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="434.2">No Further Action</TrackLimits>
+<Score et="437.0">Meredith Zenith(9) lap=2 point=0 t=143.379 et=436.940</Score>
+<Score et="437.5">Verstappen Fox(20) lap=1 point=2 t=-1.000 et=437.220</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="437.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="437.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="439.4">Warning</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="439.4">Warning</TrackLimits>
+<Score et="441.6">baptout B(12) lap=2 point=0 t=-1.000 et=441.480</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.5">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.4">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="446.7">No Further Action</TrackLimits>
+<Sector Driver="Lucas Otero" ID="2" Sector="1" Class="GT3" et="447.1">Lucas Otero(2) set new best for sector 1</Sector>
+<Score et="447.1">Lucas Otero(2) lap=2 point=1 t=38.221 et=447.040</Score>
+<Score et="448.4">Julien Deaytrix(21) lap=2 point=1 t=-1.000 et=448.300</Score>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.6">No Further Action</TrackLimits>
+<Score et="450.2">Alvin Sundberg(8) lap=2 point=1 t=38.344 et=450.140</Score>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="451.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="451.6">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.2">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.2">No Further Action</TrackLimits>
+<Score et="452.4">Maxime Dessaix(11) lap=2 point=1 t=38.688 et=452.400</Score>
+<Score et="454.1">Pedro Jose Videgain(15) lap=2 point=1 t=38.993 et=454.060</Score>
+<Score et="455.4">Giant Bentley(1) lap=2 point=1 t=38.694 et=455.380</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="455.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="455.8">No Further Action</TrackLimits>
+<Score et="457.6">Adam Twor(7) lap=2 point=1 t=39.353 et=457.540</Score>
+<Score et="457.8">Aurora L(3) lap=1 point=0 t=-1.000 et=457.720</Score>
+<Score et="458.1">Fabio Marrali(19) lap=2 point=1 t=39.529 et=458.100</Score>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="459.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="459.4">No Further Action</TrackLimits>
+<Score et="459.9">P-A Fugeekies(17) lap=2 point=1 t=39.185 et=459.858</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0" CurrentPoints="1" Resolution="7" et="461.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0" CurrentPoints="1" Resolution="7" et="461.0">No Further Action</TrackLimits>
+<Score et="461.5">Remek KORraN(4) lap=2 point=1 t=38.550 et=461.400</Score>
+<Score et="463.3">Adn Neves(13) lap=2 point=1 t=39.179 et=463.160</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="463.4">Warning</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="463.4">Warning</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="464.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="464.0">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="467.0">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="467.0">No Further Action</TrackLimits>
+<Score et="469.4">Nicolas Scory(16) lap=2 point=1 t=40.018 et=469.360</Score>
+<Score et="470.6">Paraskevas Vartzokas(14) lap=2 point=1 t=40.739 et=470.520</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="474.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="474.4">No Further Action</TrackLimits>
+<Score et="475.3">Carlie Thomas(5) lap=2 point=1 t=41.909 et=475.140</Score>
+<Score et="475.8">Meredith Zenith(9) lap=2 point=1 t=38.861 et=475.800</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.3">No Further Action</TrackLimits>
+<Score et="481.0">baptout B(12) lap=2 point=1 t=39.486 et=480.960</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="481.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="481.2">No Further Action</TrackLimits>
+<Score et="482.1">AD Laurent(0) lap=1 point=2 t=125.922 et=482.080</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="482.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="482.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="485.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="485.1">No Further Action</TrackLimits>
+<Score et="486.9">Martin Starzengruber(6) lap=1 point=2 t=109.548 et=486.880</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="487.5">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="487.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="495.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="495.0">No Further Action</TrackLimits>
+<Score et="496.5">Aurora L(3) lap=1 point=1 t=38.672 et=496.380</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="499.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="499.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="505.9">Warning</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="505.9">Warning</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="506.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="506.2">No Further Action</TrackLimits>
+<Score et="508.2">Verstappen Fox(20) lap=2 point=0 t=-1.000 et=508.020</Score>
+<Score et="511.1">Lucas Otero(2) lap=2 point=2 t=102.266 et=511.080</Score>
+<Score et="512.0">Julien Deaytrix(21) lap=2 point=2 t=-1.000 et=511.980</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="512.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="512.3">No Further Action</TrackLimits>
+<Score et="514.5">Alvin Sundberg(8) lap=2 point=2 t=102.639 et=514.440</Score>
+<Score et="516.0">Maxime Dessaix(11) lap=2 point=2 t=102.283 et=516.000</Score>
+<Score et="518.2">Pedro Jose Videgain(15) lap=2 point=2 t=103.080 et=518.140</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="519.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="519.4">No Further Action</TrackLimits>
+<Score et="520.8">Giant Bentley(1) lap=2 point=2 t=104.058 et=520.740</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="522.1">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="522.1">No Further Action</TrackLimits>
+<Score et="522.8">Adam Twor(7) lap=2 point=2 t=104.513 et=522.700</Score>
+<Score et="523.1">Fabio Marrali(19) lap=2 point=2 t=-1.000 et=523.060</Score>
+<Score et="524.8">P-A Fugeekies(17) lap=2 point=2 t=104.141 et=524.814</Score>
+<Score et="526.2">Remek KORraN(4) lap=2 point=2 t=103.248 et=526.100</Score>
+<Score et="527.2">Martin Starzengruber(6) lap=2 point=0 t=149.860 et=527.180</Score>
+<Score et="527.3">Adn Neves(13) lap=2 point=2 t=103.273 et=527.260</Score>
+<Score et="533.2">AD Laurent(0) lap=2 point=0 t=176.879 et=533.040</Score>
+<Score et="537.6">Nicolas Scory(16) lap=2 point=2 t=108.105 et=537.440</Score>
+<Score et="537.8">Paraskevas Vartzokas(14) lap=2 point=2 t=108.013 et=537.800</Score>
+<Score et="540.8">Meredith Zenith(9) lap=2 point=2 t=103.821 et=540.760</Score>
+<Score et="543.5">Carlie Thomas(5) lap=2 point=2 t=110.078 et=543.320</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="545.6">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="545.6">Warning</TrackLimits>
+<Score et="546.1">baptout B(12) lap=2 point=2 t=104.547 et=546.020</Score>
+<Score et="551.0">Lucas Otero(2) lap=3 point=0 t=142.178 et=550.980</Score>
+<Score et="552.0">Julien Deaytrix(21) lap=3 point=0 t=-1.000 et=552.000</Score>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="2" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="553.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Starzengruber" ID="6" Lap="2" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="553.3">No Further Action</TrackLimits>
+<Score et="554.7">Alvin Sundberg(8) lap=3 point=0 t=142.882 et=554.680</Score>
+<Score et="556.2">Maxime Dessaix(11) lap=3 point=0 t=142.455 et=556.180</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="1" CurrentPoints="1" Resolution="4" et="558.4">Warning</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="2" WarningPoints="1" CurrentPoints="1" Resolution="4" et="558.4">Warning</TrackLimits>
+<Score et="558.6">Pedro Jose Videgain(15) lap=3 point=0 t=143.430 et=558.500</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0.5" CurrentPoints="2" Resolution="4" et="560.3">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="2" WarningPoints="0.5" CurrentPoints="2" Resolution="4" et="560.3">Warning</TrackLimits>
+<Score et="560.9">Aurora L(3) lap=1 point=2 t=103.062 et=560.780</Score>
+<Score et="561.2">Giant Bentley(1) lap=3 point=0 t=-1.000 et=561.200</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.4">No Further Action</TrackLimits>
+<Score et="563.3">Adam Twor(7) lap=3 point=0 t=-1.000 et=563.220</Score>
+<Score et="563.7">Fabio Marrali(19) lap=3 point=0 t=-1.000 et=563.640</Score>
+<Score et="565.6">P-A Fugeekies(17) lap=3 point=0 t=144.916 et=565.589</Score>
+<Score et="566.0">Martin Starzengruber(6) lap=2 point=1 t=38.735 et=565.920</Score>
+<Score et="566.7">Remek KORraN(4) lap=3 point=0 t=143.749 et=566.600</Score>
+<Score et="567.5">Adn Neves(13) lap=3 point=0 t=143.445 et=567.440</Score>
+<Score et="573.1">AD Laurent(0) lap=2 point=1 t=40.003 et=573.040</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="577.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="577.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="578.1">Warning</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="578.1">Warning</TrackLimits>
+<Score et="579.0">Paraskevas Vartzokas(14) lap=3 point=0 t=149.091 et=578.880</Score>
+<Score et="580.7">Nicolas Scory(16) lap=3 point=0 t=151.252 et=580.600</Score>
+<Score et="581.0">Meredith Zenith(9) lap=3 point=0 t=143.987 et=580.920</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="585.6">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="585.6">No Further Action</TrackLimits>
+<Score et="586.2">baptout B(12) lap=3 point=0 t=144.676 et=586.160</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="3" WarningPoints="0" CurrentPoints="2" Resolution="7" et="587.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="3" WarningPoints="0" CurrentPoints="2" Resolution="7" et="587.3">No Further Action</TrackLimits>
+<Score et="589.2">Lucas Otero(2) lap=3 point=1 t=-1.000 et=589.120</Score>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="590.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="590.1">No Further Action</TrackLimits>
+<Score et="590.8">Julien Deaytrix(21) lap=3 point=1 t=38.794 et=590.780</Score>
+<Score et="593.3">Alvin Sundberg(8) lap=3 point=1 t=38.553 et=593.220</Score>
+<Score et="594.7">Maxime Dessaix(11) lap=3 point=1 t=38.497 et=594.680</Score>
+<Score et="597.6">Pedro Jose Videgain(15) lap=3 point=1 t=39.056 et=597.560</Score>
+<Score et="600.5">Giant Bentley(1) lap=3 point=1 t=39.207 et=600.420</Score>
+<Score et="601.2">Aurora L(3) lap=2 point=0 t=143.336 et=601.040</Score>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="602.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="602.7">No Further Action</TrackLimits>
+<Score et="602.7">Adam Twor(7) lap=3 point=1 t=39.472 et=602.680</Score>
+<Score et="603.0">Fabio Marrali(19) lap=3 point=1 t=39.360 et=603.000</Score>
+<Score et="604.3">P-A Fugeekies(17) lap=3 point=1 t=38.751 et=604.340</Score>
+<Sector et="605.3">Martin Starzengruber(6) reports new suspension damage</Sector>
+<Incident et="605.4">Martin Starzengruber(6) reported contact (3993.17) with Immovable</Incident>
+<Score et="605.8">Remek KORraN(4) lap=3 point=1 t=39.114 et=605.720</Score>
+<Incident et="606.1">Martin Starzengruber(6) reported contact (34.60) with Wing</Incident>
+<Incident et="606.1">Martin Starzengruber(6) reported contact (3.20) with Wing</Incident>
+<Incident et="606.4">Martin Starzengruber(6) reported contact (7.65) with Wing</Incident>
+<Score et="606.4">Adn Neves(13) lap=3 point=1 t=38.861 et=606.300</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="606.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="606.5">No Further Action</TrackLimits>
+<Incident et="607.2">Martin Starzengruber(6) reported contact (15.75) with Wing</Incident>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="608.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="608.5">No Further Action</TrackLimits>
+<Incident et="610.0">Martin Starzengruber(6) reported contact (3.38) with Wing</Incident>
+<Incident et="611.8">Martin Starzengruber(6) reported contact (2.46) with Wing</Incident>
+<Incident et="612.8">Martin Starzengruber(6) reported contact (2.69) with Wing</Incident>
+<Incident et="613.1">Martin Starzengruber(6) reported contact (2.93) with Wing</Incident>
+<TrackLimits Driver="baptout B" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="613.2">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="613.2">No Further Action</TrackLimits>
+<Incident et="614.1">Martin Starzengruber(6) reported contact (2.85) with Wing</Incident>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="615.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="615.5">No Further Action</TrackLimits>
+<Incident et="615.7">Martin Starzengruber(6) reported contact (2.82) with Wing</Incident>
+<Incident et="617.2">Martin Starzengruber(6) reported contact (2.47) with Wing</Incident>
+<Incident et="617.7">Martin Starzengruber(6) reported contact (2.54) with Wing</Incident>
+<Score et="618.8">Paraskevas Vartzokas(14) lap=3 point=1 t=39.938 et=618.800</Score>
+<Incident et="619.2">Martin Starzengruber(6) reported contact (3.54) with Wing</Incident>
+<Score et="619.9">Nicolas Scory(16) lap=3 point=1 t=39.235 et=619.840</Score>
+<Score et="620.0">Meredith Zenith(9) lap=3 point=1 t=39.010 et=619.940</Score>
+<Incident et="620.0">Martin Starzengruber(6) reported contact (2.58) with Wing</Incident>
+<Incident et="620.8">Martin Starzengruber(6) reported contact (4.40) with Wing</Incident>
+<Incident et="621.6">Martin Starzengruber(6) reported contact (5.92) with Wing</Incident>
+<Score et="622.2">Verstappen Fox(20) lap=2 point=1 t=114.010 et=622.040</Score>
+<Incident et="623.3">Martin Starzengruber(6) reported contact (3.99) with Wing</Incident>
+<Incident et="624.1">Martin Starzengruber(6) reported contact (3.82) with Wing</Incident>
+<Score et="625.0">baptout B(12) lap=3 point=1 t=38.853 et=625.000</Score>
+<Incident et="625.2">Martin Starzengruber(6) reported contact (3.21) with Wing</Incident>
+<Incident et="626.2">Martin Starzengruber(6) reported contact (4.37) with Wing</Incident>
+<Incident et="627.3">Martin Starzengruber(6) reported contact (5.04) with Wing</Incident>
+<Incident et="628.6">Martin Starzengruber(6) reported contact (4.66) with Wing</Incident>
+<Incident et="629.9">Martin Starzengruber(6) reported contact (3.81) with Wing</Incident>
+<Incident et="630.8">Martin Starzengruber(6) reported contact (4.27) with Wing</Incident>
+<Incident et="631.9">Martin Starzengruber(6) reported contact (4.27) with Wing</Incident>
+<Incident et="632.9">Martin Starzengruber(6) reported contact (4.54) with Wing</Incident>
+<Incident et="634.0">Martin Starzengruber(6) reported contact (4.22) with Wing</Incident>
+<Incident et="634.9">Martin Starzengruber(6) reported contact (4.49) with Wing</Incident>
+<Incident et="636.1">Martin Starzengruber(6) reported contact (3.68) with Wing</Incident>
+<Incident et="637.4">Martin Starzengruber(6) reported contact (4.57) with Wing</Incident>
+<Incident et="638.7">Martin Starzengruber(6) reported contact (4.24) with Wing</Incident>
+<Incident et="639.7">Martin Starzengruber(6) reported contact (3.72) with Wing</Incident>
+<Score et="639.9">Aurora L(3) lap=2 point=1 t=38.684 et=639.740</Score>
+<Incident et="640.7">Martin Starzengruber(6) reported contact (2.17) with Wing</Incident>
+<Incident et="641.6">Martin Starzengruber(6) reported contact (2.88) with Wing</Incident>
+<Incident et="642.7">Martin Starzengruber(6) reported contact (3.75) with Wing</Incident>
+<Incident et="643.8">Adam Twor(7) reported contact (3360.52) with Immovable</Incident>
+<Incident et="643.9">Martin Starzengruber(6) reported contact (3.13) with Wing</Incident>
+<Sector et="644.2">Adam Twor(7) reports new suspension damage</Sector>
+<Incident et="645.0">Martin Starzengruber(6) reported contact (4.49) with Wing</Incident>
+<Incident et="646.2">Martin Starzengruber(6) reported contact (3.66) with Wing</Incident>
+<TrackLimits Driver="Aurora L" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="646.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="646.8">No Further Action</TrackLimits>
+<Incident et="647.8">Martin Starzengruber(6) reported contact (2.44) with Wing</Incident>
+<Incident et="648.9">Martin Starzengruber(6) reported contact (2.74) with Wing</Incident>
+<Incident et="650.0">Martin Starzengruber(6) reported contact (2.91) with Wing</Incident>
+<Score et="650.7">AD Laurent(0) lap=2 point=2 t=117.566 et=650.620</Score>
+<Incident et="650.8">Martin Starzengruber(6) reported contact (3.22) with Wing</Incident>
+<Incident et="652.5">Martin Starzengruber(6) reported contact (2.39) with Wing</Incident>
+<Score et="653.0">Lucas Otero(2) lap=3 point=2 t=-1.000 et=652.980</Score>
+<Incident et="653.3">Martin Starzengruber(6) reported contact (2.67) with Wing</Incident>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="653.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="653.7">No Further Action</TrackLimits>
+<Incident et="654.2">Martin Starzengruber(6) reported contact (2.93) with Wing</Incident>
+<Score et="654.7">Julien Deaytrix(21) lap=3 point=2 t=102.626 et=654.620</Score>
+<Incident et="655.6">Martin Starzengruber(6) reported contact (3.27) with Wing</Incident>
+<Incident et="656.5">Martin Starzengruber(6) reported contact (2.16) with Wing</Incident>
+<Score et="657.4">Alvin Sundberg(8) lap=3 point=2 t=102.711 et=657.380</Score>
+<Incident et="658.3">Martin Starzengruber(6) reported contact (3.15) with Wing</Incident>
+<Score et="658.6">Maxime Dessaix(11) lap=3 point=2 t=102.389 et=658.560</Score>
+<Incident et="659.9">Martin Starzengruber(6) reported contact (3.10) with Wing</Incident>
+<Score et="661.8">Pedro Jose Videgain(15) lap=3 point=2 t=103.207 et=661.700</Score>
+<Score et="666.0">Giant Bentley(1) lap=3 point=2 t=104.725 et=665.920</Score>
+<Score et="668.5">Fabio Marrali(19) lap=3 point=2 t=104.778 et=668.420</Score>
+<Score et="668.9">P-A Fugeekies(17) lap=3 point=2 t=-1.000 et=668.911</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="670.1">No Further Action</TrackLimits>
+<Score et="670.6">Remek KORraN(4) lap=3 point=2 t=103.917 et=670.520</Score>
+<Score et="672.1">Adn Neves(13) lap=3 point=2 t=104.622 et=672.060</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="674.9">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="674.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="678.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="678.6">No Further Action</TrackLimits>
+<Score et="684.6">Adam Twor(7) lap=3 point=2 t=121.300 et=684.520</Score>
+<Score et="685.0">Paraskevas Vartzokas(14) lap=3 point=2 t=106.030 et=684.900</Score>
+<Score et="686.2">Nicolas Scory(16) lap=3 point=2 t=105.546 et=686.140</Score>
+<Score et="686.5">Meredith Zenith(9) lap=3 point=2 t=105.546 et=686.460</Score>
+<Score et="688.9">Verstappen Fox(20) lap=2 point=2 t=180.651 et=688.680</Score>
+<Score et="690.5">baptout B(12) lap=3 point=2 t=104.342 et=690.500</Score>
+<Penalty et="690.9">Carlie Thomas served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="691.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="691.0">No Further Action</TrackLimits>
+<Score et="692.8">AD Laurent(0) lap=3 point=0 t=159.672 et=692.720</Score>
+<Score et="693.2">Lucas Otero(2) lap=4 point=0 t=-1.000 et=693.060</Score>
+<Incident et="694.6">Carlie Thomas(5) reported contact (410.74) with Immovable</Incident>
+<Score et="694.8">Julien Deaytrix(21) lap=4 point=0 t=142.723 et=694.720</Score>
+<Incident et="697.3">Martin Starzengruber(6) reported contact (284.83) with Immovable</Incident>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="697.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="697.5">No Further Action</TrackLimits>
+<Score et="697.5">Alvin Sundberg(8) lap=4 point=0 t=142.822 et=697.500</Score>
+<TrackLimits Driver="Aurora L" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="698.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="698.2">No Further Action</TrackLimits>
+<Score et="698.6">Maxime Dessaix(11) lap=4 point=0 t=142.425 et=698.600</Score>
+<Incident et="699.4">Lucas Otero(2) reported contact (541.62) with another vehicle AD Laurent(0)</Incident>
+<Incident et="699.5">AD Laurent(0) reported contact (576.73) with another vehicle Lucas Otero(2)</Incident>
+<Incident et="701.0">Martin Starzengruber(6) reported contact (58.85) with Immovable</Incident>
+<Score et="701.8">Pedro Jose Videgain(15) lap=4 point=0 t=143.249 et=701.740</Score>
+<Score et="704.5">Aurora L(3) lap=2 point=2 t=103.289 et=704.340</Score>
+<Score et="706.5">Giant Bentley(1) lap=4 point=0 t=145.208 et=706.420</Score>
+<Sector et="708.1">Adam Twor(7) reports new suspension damage</Sector>
+<Incident et="708.2">Adam Twor(7) reported contact (2710.38) with Immovable</Incident>
+<Incident et="708.3">Adam Twor(7) reported contact (6322.21) with Immovable</Incident>
+<Score et="708.8">Fabio Marrali(19) lap=4 point=0 t=145.109 et=708.760</Score>
+<Score et="710.3">P-A Fugeekies(17) lap=4 point=0 t=144.694 et=710.283</Score>
+<Score et="711.0">Remek KORraN(4) lap=4 point=0 t=144.319 et=710.920</Score>
+<Score et="712.1">Adn Neves(13) lap=4 point=0 t=144.616 et=712.060</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="712.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="712.4">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="713.2">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="713.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="719.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="719.5">No Further Action</TrackLimits>
+<Incident et="719.8">Lucas Otero(2) reported contact (1023.49) with another vehicle AD Laurent(0)</Incident>
+<Sector et="719.9">AD Laurent(0) reports new suspension damage</Sector>
+<Incident et="720.0">AD Laurent(0) reported contact (90.16) with another vehicle Lucas Otero(2)</Incident>
+<Incident et="720.0">AD Laurent(0) reported contact (100.78) with another vehicle Lucas Otero(2)</Incident>
+<Incident et="720.3">AD Laurent(0) reported contact (152.87) with another vehicle Lucas Otero(2)</Incident>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="720.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="720.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="724.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="724.1">No Further Action</TrackLimits>
+<ChatMessage et="726.6">L Otero: #blue</ChatMessage>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="728.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="728.1">No Further Action</TrackLimits>
+<Score et="728.3">Paraskevas Vartzokas(14) lap=4 point=0 t=149.399 et=728.260</Score>
+<Score et="728.7">Carlie Thomas(5) lap=2 point=1 t=-1.000 et=728.800</Score>
+<Score et="729.2">Meredith Zenith(9) lap=4 point=0 t=148.256 et=729.180</Score>
+<Score et="731.5">baptout B(12) lap=4 point=0 t=145.262 et=731.420</Score>
+<Score et="732.4">AD Laurent(0) lap=3 point=1 t=39.489 et=732.200</Score>
+<ChatMessage et="732.6">L Otero: reported</ChatMessage>
+<Score et="732.6">Lucas Otero(2) lap=4 point=1 t=39.487 et=732.540</Score>
+<Score et="733.4">Julien Deaytrix(21) lap=4 point=1 t=38.676 et=733.400</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="2.25" Resolution="4" et="734.2">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="2.25" Resolution="4" et="734.2">Warning</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="734.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabio Marrali" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="734.6">No Further Action</TrackLimits>
+<Score et="736.0">Alvin Sundberg(8) lap=4 point=1 t=38.442 et=735.940</Score>
+<Score et="737.0">Maxime Dessaix(11) lap=4 point=1 t=38.381 et=736.980</Score>
+<Score et="738.2">Nicolas Scory(16) lap=4 point=0 t=157.520 et=738.120</Score>
+<Score et="741.6">Pedro Jose Videgain(15) lap=4 point=1 t=39.830 et=741.580</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="4" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="743.2">Warning</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="4" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="743.2">Warning</TrackLimits>
+<Score et="744.3">Verstappen Fox(20) lap=3 point=0 t=236.021 et=744.040</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="744.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="744.3">No Further Action</TrackLimits>
+<Score et="745.0">Aurora L(3) lap=3 point=0 t=143.783 et=744.840</Score>
+<Incident et="745.2">Adam Twor(7) reported contact (635.04) with Immovable</Incident>
+<Score et="745.4">Giant Bentley(1) lap=4 point=1 t=-1.000 et=745.320</Score>
+<Score et="747.6">Fabio Marrali(19) lap=4 point=1 t=38.777 et=747.520</Score>
+<Score et="749.1">P-A Fugeekies(17) lap=4 point=1 t=38.799 et=749.082</Score>
+<Score et="749.6">Remek KORraN(4) lap=4 point=1 t=38.587 et=749.520</Score>
+<Score et="751.0">Adn Neves(13) lap=4 point=1 t=38.804 et=750.860</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="753.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="753.3">No Further Action</TrackLimits>
+<Penalty et="755.0">Verstappen Fox served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<TrackLimits Driver="baptout B" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="757.2">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="757.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="764.6">Warning</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="764.6">Warning</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.7">No Further Action</TrackLimits>
+<Score et="768.2">Paraskevas Vartzokas(14) lap=4 point=1 t=39.911 et=768.180</Score>
+<Score et="768.6">Meredith Zenith(9) lap=4 point=1 t=39.359 et=768.540</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.5">No Further Action</TrackLimits>
+<Score et="770.6">baptout B(12) lap=4 point=1 t=39.060 et=770.480</Score>
+<TrackLimits Driver="Aurora L" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="774.4">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="774.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="774.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="774.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="775.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="775.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="776.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="776.6">No Further Action</TrackLimits>
+<Score et="777.8">Nicolas Scory(16) lap=4 point=1 t=39.566 et=777.680</Score>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="782.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="782.7">No Further Action</TrackLimits>
+<Score et="783.6">Aurora L(3) lap=3 point=1 t=38.511 et=783.340</Score>
+<Score et="789.7">Verstappen Fox(20) lap=3 point=1 t=-1.000 et=789.460</Score>
+<Incident et="796.0">Julien Deaytrix(21) reported contact (945.30) with another vehicle AD Laurent(0)</Incident>
+<Incident et="796.0">AD Laurent(0) reported contact (695.46) with another vehicle Julien Deaytrix(21)</Incident>
+<Incident et="798.5">Lucas Otero(2) reported contact (357.45) with another vehicle Julien Deaytrix(21)</Incident>
+<Incident et="798.5">Julien Deaytrix(21) reported contact (371.30) with another vehicle Lucas Otero(2)</Incident>
+<Score et="799.8">Lucas Otero(2) lap=4 point=2 t=106.656 et=799.700</Score>
+<Score et="800.0">Julien Deaytrix(21) lap=4 point=2 t=105.195 et=799.920</Score>
+<Score et="800.4">Alvin Sundberg(8) lap=4 point=2 t=-1.000 et=800.280</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="800.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="800.8">No Further Action</TrackLimits>
+<Score et="801.2">Maxime Dessaix(11) lap=4 point=2 t=102.547 et=801.140</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="801.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="801.7">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="806.2">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="806.2">No Further Action</TrackLimits>
+<Score et="806.2">Pedro Jose Videgain(15) lap=4 point=2 t=104.459 et=806.200</Score>
+<Score et="808.2">Carlie Thomas(5) lap=2 point=2 t=-1.000 et=808.200</Score>
+<Score et="809.6">AD Laurent(0) lap=3 point=2 t=116.870 et=809.580</Score>
+<Score et="810.6">Giant Bentley(1) lap=4 point=2 t=-1.000 et=810.600</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="810.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="810.7">No Further Action</TrackLimits>
+<Score et="812.5">Fabio Marrali(19) lap=4 point=2 t=103.642 et=812.400</Score>
+<Score et="813.9">P-A Fugeekies(17) lap=4 point=2 t=103.567 et=813.850</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="814.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="814.8">No Further Action</TrackLimits>
+<Score et="814.9">Remek KORraN(4) lap=4 point=2 t=103.943 et=814.860</Score>
+<Score et="815.5">Adn Neves(13) lap=4 point=2 t=103.355 et=815.400</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="815.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="815.5">No Further Action</TrackLimits>
+<Incident et="825.3">Fabio Marrali(19) reported contact (328.55) with another vehicle AD Laurent(0)</Incident>
+<Incident et="825.3">Fabio Marrali(19) reported contact (706.46) with another vehicle AD Laurent(0)</Incident>
+<Incident et="826.3">Fabio Marrali(19) reported contact (237.29) with another vehicle AD Laurent(0)</Incident>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="828.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="828.6">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="831.9">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="831.9">No Further Action</TrackLimits>
+<Score et="834.4">Paraskevas Vartzokas(14) lap=4 point=2 t=106.124 et=834.400</Score>
+<Score et="834.7">Meredith Zenith(9) lap=4 point=2 t=105.461 et=834.640</Score>
+<Score et="835.5">baptout B(12) lap=4 point=2 t=104.033 et=835.440</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="4" WarningPoints="0.5" CurrentPoints="2.75" Resolution="4" et="836.4">Warning</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="4" WarningPoints="0.5" CurrentPoints="2.75" Resolution="4" et="836.4">Warning</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="838.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="838.0">No Further Action</TrackLimits>
+<Score et="840.4">Lucas Otero(2) lap=5 point=0 t=147.286 et=840.340</Score>
+<Score et="840.9">Julien Deaytrix(21) lap=5 point=0 t=146.096 et=840.820</Score>
+<Score et="841.6">Alvin Sundberg(8) lap=5 point=0 t=-1.000 et=841.460</Score>
+<Score et="842.2">Maxime Dessaix(11) lap=5 point=0 t=143.533 et=842.140</Score>
+<Score et="845.0">Nicolas Scory(16) lap=4 point=2 t=106.848 et=844.960</Score>
+<Score et="846.2">Pedro Jose Videgain(15) lap=5 point=0 t=144.381 et=846.120</Score>
+<Score et="848.4">Aurora L(3) lap=3 point=2 t=103.379 et=848.200</Score>
+<Incident et="848.8">Remek KORraN(4) reported contact (424.26) with another vehicle AD Laurent(0)</Incident>
+<Incident et="848.9">AD Laurent(0) reported contact (394.54) with another vehicle Remek KORraN(4)</Incident>
+<Score et="849.6">Carlie Thomas(5) lap=3 point=0 t=-1.000 et=849.560</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="850.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="850.6">No Further Action</TrackLimits>
+<Score et="851.5">Giant Bentley(1) lap=5 point=0 t=-1.000 et=851.500</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="852.7">No Further Action</TrackLimits>
+<Score et="856.6">Verstappen Fox(20) lap=3 point=2 t=-1.000 et=856.380</Score>
+<Score et="857.5">P-A Fugeekies(17) lap=5 point=0 t=147.181 et=857.464</Score>
+<Score et="857.8">Adn Neves(13) lap=5 point=0 t=145.740 et=857.780</Score>
+<Score et="865.4">AD Laurent(0) lap=4 point=0 t=172.599 et=865.320</Score>
+<Score et="865.5">Remek KORraN(4) lap=5 point=0 t=154.543 et=865.460</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="866.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="866.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="867.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="867.1">No Further Action</TrackLimits>
+<Incident et="869.2">Remek KORraN(4) reported contact (571.41) with another vehicle AD Laurent(0)</Incident>
+<Incident et="869.2">AD Laurent(0) reported contact (1170.59) with another vehicle Remek KORraN(4)</Incident>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="872.2">Warning</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="872.2">Warning</TrackLimits>
+<Score et="876.2">baptout B(12) lap=5 point=0 t=144.707 et=876.120</Score>
+<Score et="877.0">Meredith Zenith(9) lap=5 point=0 t=147.691 et=876.880</Score>
+<Score et="877.4">Paraskevas Vartzokas(14) lap=5 point=0 t=149.089 et=877.360</Score>
+<Sector Driver="Lucas Otero" ID="2" Sector="1" Class="GT3" et="878.6">Lucas Otero(2) set new best for sector 1</Sector>
+<Score et="878.6">Lucas Otero(2) lap=5 point=1 t=38.211 et=878.560</Score>
+<Score et="879.4">Julien Deaytrix(21) lap=5 point=1 t=38.575 et=879.380</Score>
+<Score et="880.0">Alvin Sundberg(8) lap=5 point=1 t=38.538 et=880.000</Score>
+<Score et="880.8">Maxime Dessaix(11) lap=5 point=1 t=-1.000 et=880.740</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="881.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="3" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="881.8">No Further Action</TrackLimits>
+<Incident et="883.0">Fabio Marrali(19) reported contact (159.17) with Immovable</Incident>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="883.5">No Further Action</TrackLimits>
+<Score et="884.8">Pedro Jose Videgain(15) lap=5 point=1 t=38.652 et=884.780</Score>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="885.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="885.6">No Further Action</TrackLimits>
+<Score et="887.0">Nicolas Scory(16) lap=5 point=0 t=148.836 et=886.960</Score>
+<Score et="888.6">Aurora L(3) lap=4 point=0 t=143.654 et=888.480</Score>
+<Score et="889.4">Carlie Thomas(5) lap=3 point=1 t=39.668 et=889.240</Score>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="889.9">Warning</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="889.9">Warning</TrackLimits>
+<Score et="891.2">Giant Bentley(1) lap=5 point=1 t=39.636 et=891.140</Score>
+<Sector et="891.4">Remek KORraN(4) reports new suspension damage</Sector>
+<Incident et="891.5">Remek KORraN(4) reported contact (2350.15) with another vehicle AD Laurent(0)</Incident>
+<Incident et="891.5">AD Laurent(0) reported contact (3051.56) with another vehicle Remek KORraN(4)</Incident>
+<Incident et="892.2">Remek KORraN(4) reported contact (100.89) with another vehicle AD Laurent(0)</Incident>
+<Incident et="892.2">AD Laurent(0) reported contact (8.53) with another vehicle Remek KORraN(4)</Incident>
+<Incident et="892.3">AD Laurent(0) reported contact (47.37) with another vehicle Remek KORraN(4)</Incident>
+<Incident et="892.7">AD Laurent(0) reported contact (9440.97) with Immovable</Incident>
+<Incident et="892.8">Remek KORraN(4) reported contact (1217.62) with Wheel</Incident>
+<Incident et="892.8">AD Laurent(0) reported contact (7069.43) with another vehicle Remek KORraN(4)</Incident>
+<Incident et="892.8">Remek KORraN(4) reported contact (123.79) with Wheel</Incident>
+<Incident et="892.8">Remek KORraN(4) reported contact (1963.26) with Immovable</Incident>
+<Incident et="892.9">Remek KORraN(4) reported contact (454.52) with another vehicle AD Laurent(0)</Incident>
+<Sector et="892.9">Remek KORraN(4) reports new suspension damage</Sector>
+<Incident et="893.0">AD Laurent(0) reported contact (463.25) with Wheel</Incident>
+<Sector et="893.9">AD Laurent(0) reports new suspension damage</Sector>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="895.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="895.2">No Further Action</TrackLimits>
+<Incident et="895.4">Remek KORraN(4) reported contact (936.11) with Immovable</Incident>
+<Incident et="895.5">Remek KORraN(4) reported contact (1245.78) with Immovable</Incident>
+<Incident et="895.8">AD Laurent(0) reported contact (1264.91) with Immovable</Incident>
+<Incident et="896.3">Remek KORraN(4) reported contact (1295.76) with Immovable</Incident>
+<Score et="897.0">Adn Neves(13) lap=5 point=1 t=39.197 et=896.980</Score>
+<Score et="897.2">P-A Fugeekies(17) lap=5 point=1 t=39.749 et=897.213</Score>
+<Score et="898.2">Verstappen Fox(20) lap=4 point=0 t=-1.000 et=898.020</Score>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="898.4">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="898.4">No Further Action</TrackLimits>
+<Incident et="899.4">AD Laurent(0) reported contact (1499.30) with Immovable</Incident>
+<Incident et="899.9">AD Laurent(0) reported contact (17.84) with Wing</Incident>
+<Incident et="900.1">AD Laurent(0) reported contact (18.31) with Wing</Incident>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="900.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="900.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="900.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="900.8">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="901.7">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="901.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="903.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="903.3">No Further Action</TrackLimits>
+<Incident et="904.5">baptout B(12) reported contact (44.78) with Wheel</Incident>
+<Incident et="904.6">baptout B(12) reported contact (105.99) with Wheel</Incident>
+<Incident et="906.6">baptout B(12) reported contact (61.91) with Wheel</Incident>
+<Incident et="906.8">baptout B(12) reported contact (87.43) with Wheel</Incident>
+<TrackLimits Driver="Aurora L" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="914.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="914.7">No Further Action</TrackLimits>
+<Score et="915.2">baptout B(12) lap=5 point=1 t=38.950 et=915.080</Score>
+<Score et="915.8">Meredith Zenith(9) lap=5 point=1 t=38.817 et=915.680</Score>
+<Score et="917.4">Paraskevas Vartzokas(14) lap=5 point=1 t=39.902 et=917.260</Score>
+<Score et="919.5">Remek KORraN(4) lap=5 point=1 t=53.977 et=919.440</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="921.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="921.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="923.5">No Further Action</TrackLimits>
+<TrackLimits Driver="AD Laurent" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="923.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="924.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="924.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="926.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="926.0">No Further Action</TrackLimits>
+<Score et="927.4">Nicolas Scory(16) lap=5 point=1 t=40.307 et=927.260</Score>
+<Score et="927.6">Aurora L(3) lap=4 point=1 t=38.911 et=927.400</Score>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="933.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="933.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="934.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="934.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="937.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="937.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="937.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="937.9">No Further Action</TrackLimits>
+<Score et="937.9">Verstappen Fox(20) lap=4 point=1 t=39.659 et=937.680</Score>
+<Score et="942.7">Lucas Otero(2) lap=5 point=2 t=102.330 et=942.660</Score>
+<Score et="943.7">Julien Deaytrix(21) lap=5 point=2 t=102.830 et=943.640</Score>
+<Score et="944.1">Alvin Sundberg(8) lap=5 point=2 t=102.587 et=944.040</Score>
+<Score et="945.0">Maxime Dessaix(11) lap=5 point=2 t=-1.000 et=944.920</Score>
+<Score et="949.4">Pedro Jose Videgain(15) lap=5 point=2 t=103.217 et=949.340</Score>
+<Score et="957.3">Giant Bentley(1) lap=5 point=2 t=105.721 et=957.220</Score>
+<Score et="958.8">Adam Twor(7) lap=4 point=0 t=395.527 et=958.740</Score>
+<Score et="959.5">Carlie Thomas(5) lap=3 point=2 t=109.817 et=959.380</Score>
+<Score et="961.5">Adn Neves(13) lap=5 point=2 t=103.633 et=961.420</Score>
+<Score et="962.2">P-A Fugeekies(17) lap=5 point=2 t=104.727 et=962.192</Score>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="966.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="966.4">No Further Action</TrackLimits>
+<Penalty Driver="Adam Twor" ID="7" Penalty="Drive Thru" Time="10" Laps="0" Reason="Speeding In Pitlane" et="969.5">Adam Twor received Drive Thru penalty, 10s, 0laps for Speeding In Pitlane. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="970.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="970.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="972.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="972.0">No Further Action</TrackLimits>
+<Incident et="974.9">Julien Deaytrix(21) reported contact (64.34) with another vehicle Alvin Sundberg(8)</Incident>
+<Incident et="974.9">Alvin Sundberg(8) reported contact (172.83) with another vehicle Julien Deaytrix(21)</Incident>
+<Score et="980.2">baptout B(12) lap=5 point=2 t=104.008 et=980.120</Score>
+<Score et="980.5">Meredith Zenith(9) lap=5 point=2 t=103.549 et=980.420</Score>
+<Score et="982.8">Paraskevas Vartzokas(14) lap=5 point=2 t=105.410 et=982.760</Score>
+<Score et="982.8">Lucas Otero(2) lap=6 point=0 t=142.428 et=982.760</Score>
+<Score et="984.2">Alvin Sundberg(8) lap=6 point=0 t=142.718 et=984.180</Score>
+<Score et="984.6">Julien Deaytrix(21) lap=6 point=0 t=143.701 et=984.520</Score>
+<Score et="985.2">Maxime Dessaix(11) lap=6 point=0 t=-1.000 et=985.120</Score>
+<Score et="989.5">Pedro Jose Videgain(15) lap=6 point=0 t=143.275 et=989.400</Score>
+<Score et="993.2">Aurora L(3) lap=4 point=2 t=104.461 et=992.940</Score>
+<Score et="994.5">Nicolas Scory(16) lap=5 point=2 t=107.520 et=994.480</Score>
+<Score et="997.6">Giant Bentley(1) lap=6 point=0 t=146.041 et=997.540</Score>
+<Score et="1000.6">Remek KORraN(4) lap=5 point=2 t=135.047 et=1000.520</Score>
+<Score et="1001.2">Carlie Thomas(5) lap=4 point=0 t=151.437 et=1001.000</Score>
+<Score et="1002.5">Adn Neves(13) lap=6 point=0 t=144.622 et=1002.420</Score>
+<Score et="1002.7">P-A Fugeekies(17) lap=6 point=0 t=145.246 et=1002.711</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1002.7">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1002.7">No Further Action</TrackLimits>
+<Score et="1004.6">Verstappen Fox(20) lap=4 point=2 t=106.463 et=1004.480</Score>
+<Score et="1005.1">Adam Twor(7) lap=4 point=1 t=46.300 et=1005.040</Score>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1010.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1010.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1010.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1010.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1010.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1010.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1010.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1010.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1014.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1014.7">No Further Action</TrackLimits>
+<Score et="1021.0">Meredith Zenith(9) lap=6 point=0 t=144.114 et=1020.980</Score>
+<Score et="1021.3">baptout B(12) lap=6 point=0 t=145.130 et=1021.260</Score>
+<Score et="1021.4">Lucas Otero(2) lap=6 point=1 t=38.554 et=1021.320</Score>
+<Score et="1022.8">Alvin Sundberg(8) lap=6 point=1 t=38.622 et=1022.800</Score>
+<Score et="1023.6">Paraskevas Vartzokas(14) lap=6 point=0 t=146.179 et=1023.540</Score>
+<Score et="1023.6">Julien Deaytrix(21) lap=6 point=1 t=39.021 et=1023.540</Score>
+<Score et="1024.0">Maxime Dessaix(11) lap=6 point=1 t=38.841 et=1023.960</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1027.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1027.7">No Further Action</TrackLimits>
+<Score et="1028.0">Pedro Jose Videgain(15) lap=6 point=1 t=38.591 et=1028.000</Score>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1028.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1028.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1028.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1028.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="6" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1033.1">Warning</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="6" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1033.1">Warning</TrackLimits>
+<Score et="1033.5">Aurora L(3) lap=5 point=0 t=144.766 et=1033.260</Score>
+<Score et="1036.2">Nicolas Scory(16) lap=6 point=0 t=149.248 et=1036.200</Score>
+<Score et="1036.8">Giant Bentley(1) lap=6 point=1 t=39.267 et=1036.800</Score>
+<Incident et="1040.8">baptout B(12) reported contact (31.00) with Immovable</Incident>
+<Score et="1041.4">Adn Neves(13) lap=6 point=1 t=38.875 et=1041.280</Score>
+<Score et="1041.6">P-A Fugeekies(17) lap=6 point=1 t=38.880 et=1041.590</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1042.7">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1042.7">No Further Action</TrackLimits>
+<Score et="1044.6">Carlie Thomas(5) lap=4 point=1 t=43.487 et=1044.480</Score>
+<Score et="1046.2">Verstappen Fox(20) lap=5 point=0 t=148.048 et=1046.060</Score>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1047.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1047.3">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1048.9">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1048.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1050.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1050.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1053.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1053.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1059.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Aurora L" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1059.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1059.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1059.6">No Further Action</TrackLimits>
+<Score et="1060.4">Meredith Zenith(9) lap=6 point=1 t=39.291 et=1060.280</Score>
+<Score et="1061.4">baptout B(12) lap=6 point=1 t=40.056 et=1061.300</Score>
+<Score et="1063.3">Paraskevas Vartzokas(14) lap=6 point=1 t=39.692 et=1063.220</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1066.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1066.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1069.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1069.6">No Further Action</TrackLimits>
+<Score et="1071.7">Adam Twor(7) lap=4 point=2 t=112.919 et=1071.660</Score>
+<Score et="1072.0">Aurora L(3) lap=5 point=1 t=38.592 et=1071.840</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1077.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1077.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0.5" CurrentPoints="1.75" Resolution="4" et="1083.2">Warning</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0.5" CurrentPoints="1.75" Resolution="4" et="1083.2">Warning</TrackLimits>
+<Score et="1085.8">Lucas Otero(2) lap=6 point=2 t=102.929 et=1085.700</Score>
+<Score et="1087.1">Nicolas Scory(16) lap=6 point=1 t=50.842 et=1087.040</Score>
+<Score et="1087.6">Alvin Sundberg(8) lap=6 point=2 t=103.279 et=1087.460</Score>
+<Score et="1087.8">Julien Deaytrix(21) lap=6 point=2 t=103.238 et=1087.760</Score>
+<Score et="1088.3">Maxime Dessaix(11) lap=6 point=2 t=-1.000 et=1088.260</Score>
+<Score et="1092.4">Pedro Jose Videgain(15) lap=6 point=2 t=102.898 et=1092.300</Score>
+<Score et="1093.9">Verstappen Fox(20) lap=5 point=1 t=-1.000 et=1093.800</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1100.5">No Further Action</TrackLimits>
+<Score et="1103.0">Giant Bentley(1) lap=6 point=2 t=105.427 et=1102.960</Score>
+<Score et="1106.6">Adn Neves(13) lap=6 point=2 t=104.049 et=1106.460</Score>
+<Score et="1106.9">P-A Fugeekies(17) lap=6 point=2 t=-1.000 et=1106.855</Score>
+<Incident et="1107.3">Adam Twor(7) reported contact (268.89) with Immovable</Incident>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="4" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1108.8">Warning</TrackLimits>
+<TrackLimits Driver="Adam Twor" ID="7" Lap="4" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1108.8">Warning</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1110.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1110.3">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1110.6">No Further Action</TrackLimits>
+<Score et="1113.6">Carlie Thomas(5) lap=4 point=2 t=112.458 et=1113.460</Score>
+<Incident et="1116.8">Julien Deaytrix(21) reported contact (114.28) with another vehicle Alvin Sundberg(8)</Incident>
+<Incident et="1117.0">Alvin Sundberg(8) reported contact (50.52) with another vehicle Julien Deaytrix(21)</Incident>
+<Score et="1124.6">Meredith Zenith(9) lap=6 point=2 t=103.576 et=1124.560</Score>
+<Score et="1125.0">Adam Twor(7) lap=5 point=0 t=-1.000 et=1124.960</Score>
+<Score et="1126.0">Lucas Otero(2) lap=7 point=0 t=143.171 et=1125.940</Score>
+<Score et="1126.5">baptout B(12) lap=6 point=2 t=105.216 et=1126.460</Score>
+<Score et="1128.4">Alvin Sundberg(8) lap=7 point=0 t=144.154 et=1128.320</Score>
+<Score et="1128.6">Julien Deaytrix(21) lap=7 point=0 t=144.037 et=1128.560</Score>
+<Score et="1128.8">Maxime Dessaix(11) lap=7 point=0 t=-1.000 et=1128.740</Score>
+<Score et="1129.6">Paraskevas Vartzokas(14) lap=6 point=2 t=106.012 et=1129.540</Score>
+<Score et="1133.0">Pedro Jose Videgain(15) lap=7 point=0 t=143.560 et=1132.960</Score>
+<Penalty et="1135.7">Adam Twor served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,10s</Penalty>
+<Score et="1136.5">Aurora L(3) lap=5 point=2 t=103.009 et=1136.260</Score>
+<Score et="1143.4">Giant Bentley(1) lap=7 point=0 t=145.850 et=1143.400</Score>
+<Score et="1147.2">Adn Neves(13) lap=7 point=0 t=144.661 et=1147.080</Score>
+<Score et="1147.4">P-A Fugeekies(17) lap=7 point=0 t=144.692 et=1147.403</Score>
+<Score et="1154.7">Carlie Thomas(5) lap=5 point=0 t=153.541 et=1154.540</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="1156.1">Warning</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="1156.1">Warning</TrackLimits>
+<Score et="1156.8">Nicolas Scory(16) lap=6 point=2 t=120.553 et=1156.760</Score>
+<Score et="1162.0">Verstappen Fox(20) lap=5 point=2 t=-1.000 et=1161.760</Score>
+<Score et="1164.2">Lucas Otero(2) lap=7 point=1 t=38.258 et=1164.200</Score>
+<Score et="1164.9">Meredith Zenith(9) lap=7 point=0 t=143.880 et=1164.860</Score>
+<Score et="1166.7">Alvin Sundberg(8) lap=7 point=1 t=38.305 et=1166.640</Score>
+<Score et="1167.0">baptout B(12) lap=7 point=0 t=145.666 et=1166.920</Score>
+<Score et="1167.0">Julien Deaytrix(21) lap=7 point=1 t=-1.000 et=1167.000</Score>
+<Score et="1167.7">Maxime Dessaix(11) lap=7 point=1 t=38.885 et=1167.640</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1169.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1169.1">No Further Action</TrackLimits>
+<Score et="1169.2">Remek KORraN(4) lap=6 point=0 t=303.663 et=1169.140</Score>
+<Score et="1170.5">Paraskevas Vartzokas(14) lap=7 point=0 t=146.990 et=1170.520</Score>
+<Score et="1171.2">Adam Twor(7) lap=5 point=1 t=46.073 et=1171.040</Score>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1171.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1171.2">No Further Action</TrackLimits>
+<Score et="1172.0">Pedro Jose Videgain(15) lap=7 point=1 t=38.970 et=1171.940</Score>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1173.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1173.0">No Further Action</TrackLimits>
+<Score et="1176.7">Aurora L(3) lap=6 point=0 t=143.202 et=1176.460</Score>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="7" WarningPoints="1.25" CurrentPoints="1.75" Resolution="4" et="1177.8">Warning</TrackLimits>
+<TrackLimits Driver="Alvin Sundberg" ID="8" Lap="7" WarningPoints="1.25" CurrentPoints="1.75" Resolution="4" et="1177.8">Warning</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1179.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1179.2">No Further Action</TrackLimits>
+<Score et="1182.3">Giant Bentley(1) lap=7 point=1 t=38.913 et=1182.300</Score>
+<Score et="1185.9">Adn Neves(13) lap=7 point=1 t=38.797 et=1185.860</Score>
+<Score et="1186.6">P-A Fugeekies(17) lap=7 point=1 t=39.191 et=1186.593</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1188.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="5" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1188.0">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1194.6">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1194.6">No Further Action</TrackLimits>
+<Score et="1194.6">Carlie Thomas(5) lap=5 point=1 t=40.019 et=1194.560</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="6" WarningPoints="2" CurrentPoints="2" Resolution="4" et="1198.4">Warning</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="6" WarningPoints="2" CurrentPoints="2" Resolution="4" et="1198.4">Warning</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1203.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1203.2">No Further Action</TrackLimits>
+<Score et="1204.1">Meredith Zenith(9) lap=7 point=1 t=39.199 et=1204.060</Score>
+<Score et="1204.6">Verstappen Fox(20) lap=6 point=0 t=-1.000 et=1204.380</Score>
+<Score et="1205.7">baptout B(12) lap=7 point=1 t=38.720 et=1205.640</Score>
+<Score et="1210.6">Paraskevas Vartzokas(14) lap=7 point=1 t=39.957 et=1210.480</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1213.0">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1213.0">No Further Action</TrackLimits>
+<Incident et="1215.1">Verstappen Fox(20) reported contact (522.16) with Immovable</Incident>
+<Incident et="1215.2">Verstappen Fox(20) reported contact (1412.06) with Immovable</Incident>
+<Sector et="1215.2">Verstappen Fox(20) reports new suspension damage</Sector>
+<Score et="1215.6">Remek KORraN(4) lap=6 point=1 t=46.303 et=1215.440</Score>
+<Score et="1215.6">Aurora L(3) lap=6 point=1 t=38.897 et=1215.360</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1218.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1218.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1223.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1223.2">No Further Action</TrackLimits>
+<Score et="1225.2">Nicolas Scory(16) lap=7 point=0 t=-1.000 et=1225.120</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1228.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1228.0">No Further Action</TrackLimits>
+<Score et="1228.1">Lucas Otero(2) lap=7 point=2 t=102.137 et=1228.080</Score>
+<Score et="1230.8">Alvin Sundberg(8) lap=7 point=2 t=-1.000 et=1230.760</Score>
+<Score et="1231.0">Julien Deaytrix(21) lap=7 point=2 t=-1.000 et=1230.980</Score>
+<Score et="1232.0">Maxime Dessaix(11) lap=7 point=2 t=103.162 et=1231.900</Score>
+<Penalty Driver="Nicolas Scory" ID="16" Penalty="Stop/Go" Time="10" Laps="0" Reason="Speeding In Pitlane" et="1236.1">Nicolas Scory received Stop/Go penalty, 10s, 0laps for Speeding In Pitlane. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<Score et="1236.6">Adam Twor(7) lap=5 point=2 t=111.513 et=1236.480</Score>
+<Score et="1236.8">Pedro Jose Videgain(15) lap=7 point=2 t=103.817 et=1236.780</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1237.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1237.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="1240.4">Warning</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="1240.4">Warning</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1243.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1243.8">No Further Action</TrackLimits>
+<Score et="1247.7">Giant Bentley(1) lap=7 point=2 t=104.280 et=1247.680</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="3.25" CurrentPoints="0" Resolution="2" et="1248.6">Drive Through Penalty</TrackLimits>
+<Penalty Driver="Nicolas Scory" ID="16" Penalty="Drive Thru" Time="0" Laps="0" Reason="Track Limits" et="1248.6">Nicolas Scory received Drive Thru penalty, 0s, 0laps for Track Limits. Result: penalties=2, 1st=Stop/Go,10s</Penalty>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="3.25" CurrentPoints="0" Resolution="2" et="1248.6">Drive Through Penalty</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1249.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1249.2">No Further Action</TrackLimits>
+<Score et="1250.5">Adn Neves(13) lap=7 point=2 t=103.347 et=1250.420</Score>
+<Score et="1251.3">P-A Fugeekies(17) lap=7 point=2 t=103.930 et=1251.332</Score>
+<Score et="1251.7">Verstappen Fox(20) lap=6 point=1 t=-1.000 et=1251.480</Score>
+<Incident et="1257.6">Julien Deaytrix(21) reported contact (588.09) with another vehicle Alvin Sundberg(8)</Incident>
+<Incident et="1257.7">Alvin Sundberg(8) reported contact (500.71) with another vehicle Julien Deaytrix(21)</Incident>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1259.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1259.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1261.8">Warning</TrackLimits>
+<TrackLimits Driver="Pedro Jose Videgain" ID="15" Lap="7" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1261.8">Warning</TrackLimits>
+<Score et="1264.3">Carlie Thomas(5) lap=5 point=2 t=109.600 et=1264.140</Score>
+<Score et="1267.9">Lucas Otero(2) lap=8 point=0 t=141.964 et=1267.900</Score>
+<Score et="1268.6">Meredith Zenith(9) lap=7 point=2 t=103.646 et=1268.520</Score>
+<Score et="1270.5">baptout B(12) lap=7 point=2 t=103.478 et=1270.400</Score>
+<Score et="1271.3">Alvin Sundberg(8) lap=8 point=0 t=-1.000 et=1271.260</Score>
+<Score et="1271.8">Julien Deaytrix(21) lap=8 point=0 t=-1.000 et=1271.700</Score>
+<Score et="1272.5">Maxime Dessaix(11) lap=8 point=0 t=143.657 et=1272.400</Score>
+<Score et="1272.5">Nicolas Scory(16) lap=7 point=1 t=-1.000 et=1272.500</Score>
+<Score et="1276.9">Paraskevas Vartzokas(14) lap=7 point=2 t=106.316 et=1276.840</Score>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1276.9">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1276.9">No Further Action</TrackLimits>
+<Score et="1277.3">Adam Twor(7) lap=6 point=0 t=152.276 et=1277.240</Score>
+<Score et="1277.6">Pedro Jose Videgain(15) lap=8 point=0 t=-1.000 et=1277.540</Score>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicolas Scory" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.9">No Further Action</TrackLimits>
+<Score et="1280.4">Aurora L(3) lap=6 point=2 t=103.715 et=1280.160</Score>
+<Score et="1281.2">Remek KORraN(4) lap=6 point=2 t=111.969 et=1281.100</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1287.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1287.0">No Further Action</TrackLimits>
+<Score et="1289.0">Giant Bentley(1) lap=8 point=0 t=145.507 et=1288.900</Score>
+<Score et="1290.8">Adn Neves(13) lap=8 point=0 t=143.649 et=1290.720</Score>
+<Score et="1291.7">P-A Fugeekies(17) lap=8 point=0 t=144.310 et=1291.713</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1292.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1292.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1293.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1293.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1303.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1303.6">No Further Action</TrackLimits>
+<Score et="1306.4">Lucas Otero(2) lap=8 point=1 t=38.330 et=1306.240</Score>
+<Score et="1310.0">Alvin Sundberg(8) lap=8 point=1 t=38.614 et=1309.860</Score>
+<Score et="1310.4">Julien Deaytrix(21) lap=8 point=1 t=38.655 et=1310.360</Score>
+<Score et="1310.8">Maxime Dessaix(11) lap=8 point=1 t=38.373 et=1310.780</Score>
+<Score et="1311.4">baptout B(12) lap=8 point=0 t=144.395 et=1311.320</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1312.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1312.4">No Further Action</TrackLimits>
+<Score et="1314.3">Carlie Thomas(5) lap=6 point=0 t=159.611 et=1314.160</Score>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="8" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1314.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Giant Bentley" ID="1" Lap="8" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="1314.9">No Further Action</TrackLimits>
+<Score et="1315.1">Meredith Zenith(9) lap=8 point=0 t=150.146 et=1315.020</Score>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adn Neves" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.9">No Further Action</TrackLimits>
+<Score et="1317.4">Adam Twor(7) lap=6 point=1 t=40.070 et=1317.300</Score>
+<Score et="1317.4">Pedro Jose Videgain(15) lap=8 point=1 t=39.781 et=1317.320</Score>
+<Score et="1317.7">Paraskevas Vartzokas(14) lap=8 point=0 t=147.171 et=1317.700</Score>
+<Score et="1319.4">Verstappen Fox(20) lap=6 point=2 t=-1.000 et=1319.080</Score>
+<Incident et="1320.0">Pedro Jose Videgain(15) reported contact (309.52) with another vehicle Adam Twor(7)</Incident>
+<Incident et="1320.0">Adam Twor(7) reported contact (128.32) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Score et="1320.7">Aurora L(3) lap=7 point=0 t=144.060 et=1320.520</Score>
+<Score et="1321.9">Remek KORraN(4) lap=7 point=0 t=152.738 et=1321.860</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1328.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1328.1">No Further Action</TrackLimits>
+<Score et="1328.3">Giant Bentley(1) lap=8 point=1 t=39.335 et=1328.240</Score>
+<Score et="1329.7">Adn Neves(13) lap=8 point=1 t=38.921 et=1329.640</Score>
+<Score et="1330.4">P-A Fugeekies(17) lap=8 point=1 t=38.719 et=1330.431</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1336.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1336.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Lucas Otero" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1336.6">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1336.6">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1336.6">No Further Action</TrackLimits>
+<Score et="1341.6">Nicolas Scory(16) lap=7 point=2 t=-1.000 et=1341.480</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1342.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1342.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1344.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1344.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1344.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1344.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1347.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1347.7">No Further Action</TrackLimits>
+<Score et="1349.7">baptout B(12) lap=8 point=1 t=38.351 et=1349.660</Score>
+<Score et="1354.2">Meredith Zenith(9) lap=8 point=1 t=39.106 et=1354.120</Score>
+<Score et="1357.7">Carlie Thomas(5) lap=6 point=1 t=43.375 et=1357.520</Score>
+<Score et="1358.3">Paraskevas Vartzokas(14) lap=8 point=1 t=40.542 et=1358.240</Score>
+<Score et="1359.3">Aurora L(3) lap=7 point=1 t=38.654 et=1359.160</Score>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1360.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Meredith Zenith" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1360.4">No Further Action</TrackLimits>
+<Score et="1360.7">Remek KORraN(4) lap=7 point=1 t=38.827 et=1360.700</Score>
+<Score et="1361.7">Verstappen Fox(20) lap=7 point=0 t=-1.000 et=1361.500</Score>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Carlie Thomas" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.5">No Further Action</TrackLimits>
+<Score et="1370.9">Lucas Otero(2) lap=8 point=2 t=102.963 et=1370.860</Score>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1371.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien Deaytrix" ID="21" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1371.8">No Further Action</TrackLimits>
+<Score et="1374.9">Alvin Sundberg(8) lap=8 point=2 t=103.556 et=1374.820</Score>
+<Score et="1375.2">Julien Deaytrix(21) lap=8 point=2 t=103.404 et=1375.100</Score>
+<Score et="1375.5">Maxime Dessaix(11) lap=8 point=2 t=103.036 et=1375.440</Score>
+<Incident et="1377.0">Paraskevas Vartzokas(14) reported contact (860.22) with another vehicle Aurora L(3)</Incident>
+<Incident et="1377.1">Aurora L(3) reported contact (831.16) with another vehicle Paraskevas Vartzokas(14)</Incident>
+<Score et="1382.6">Pedro Jose Videgain(15) lap=8 point=2 t=104.975 et=1382.500</Score>
+<Score et="1383.6">Adam Twor(7) lap=6 point=2 t=106.346 et=1383.580</Score>
+<Score et="1384.6">Nicolas Scory(16) lap=8 point=0 t=-1.000 et=1384.480</Score>
+<Sector et="1389.1">Verstappen Fox(20) reports new suspension damage</Sector>
+<Incident et="1389.2">Verstappen Fox(20) reported contact (379.04) with Immovable</Incident>
+<Incident et="1389.2">Verstappen Fox(20) reported contact (629.43) with Immovable</Incident>
+<Incident et="1391.4">Verstappen Fox(20) reported contact (2355.95) with Immovable</Incident>
+<Incident et="1391.6">Verstappen Fox(20) reported contact (32.55) with Wing</Incident>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1392.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1392.6">No Further Action</TrackLimits>
+<Score et="1394.2">Giant Bentley(1) lap=8 point=2 t=105.205 et=1394.100</Score>
+<Score et="1394.6">Adn Neves(13) lap=8 point=2 t=103.762 et=1394.480</Score>
+<Score et="1395.3">P-A Fugeekies(17) lap=8 point=2 t=103.528 et=1395.240</Score>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="8" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1400.0">Warning</TrackLimits>
+<TrackLimits Driver="Maxime Dessaix" ID="11" Lap="8" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1400.0">Warning</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Paraskevas Vartzokas" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Remek KORraN" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.5">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1408.6">No Further Action</TrackLimits>
+<TrackLimits Driver="baptout B" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1408.6">No Further Action</TrackLimits>
+<Score et="1411.2">Checkered for Lucas Otero, laps=9/2147483647, endET=1411.139893/1321.202515, crossedAfterTime=0</Score>
+<Score et="1411.2">Lucas Otero(2) lap=9 point=0 t=143.245 et=1411.140</Score>
+<Score et="1415.0">baptout B(12) lap=8 point=2 t=103.687 et=1415.000</Score>
+<Score et="1415.2">Alvin Sundberg(8) lap=9 point=0 t=143.844 et=1415.100</Score>
+<Score et="1415.4">Julien Deaytrix(21) lap=9 point=0 t=143.605 et=1415.300</Score>
+<Score et="1415.6">Maxime Dessaix(11) lap=9 point=0 t=-1.000 et=1415.540</Score>
+<Score et="1418.5">Meredith Zenith(9) lap=8 point=2 t=103.408 et=1418.420</Score>
+<Score et="1422.8">Pedro Jose Videgain(15) lap=9 point=0 t=145.215 et=1422.740</Score>
+<Score et="1424.4">Adam Twor(7) lap=7 point=0 t=147.152 et=1424.380</Score>
+<Score et="1425.2">Aurora L(3) lap=7 point=2 t=104.440 et=1424.960</Score>
+<Score et="1425.8">Carlie Thomas(5) lap=6 point=2 t=111.474 et=1425.620</Score>
+<Score et="1426.2">Remek KORraN(4) lap=7 point=2 t=104.225 et=1426.100</Score>
+<Score et="1426.7">Paraskevas Vartzokas(14) lap=8 point=2 t=108.950 et=1426.640</Score>
+<Sector et="1428.8">Adam Twor(7) reports new suspension damage</Sector>
+<Sector et="1428.8">Pedro Jose Videgain(15) reports new suspension damage</Sector>
+<Incident et="1428.8">Adam Twor(7) reported contact (2284.69) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="1428.8">Pedro Jose Videgain(15) reported contact (2260.94) with another vehicle Adam Twor(7)</Incident>
+<Incident et="1431.1">Adam Twor(7) reported contact (924.13) with another vehicle Pedro Jose Videgain(15)</Incident>
+<Incident et="1431.1">Pedro Jose Videgain(15) reported contact (914.29) with another vehicle Adam Twor(7)</Incident>
+<Score et="1431.8">Nicolas Scory(16) lap=8 point=1 t=47.301 et=1431.780</Score>
+<Score et="1434.9">Giant Bentley(1) lap=9 point=0 t=145.921 et=1434.820</Score>
+<Score et="1435.3">Adn Neves(13) lap=9 point=0 t=144.477 et=1435.200</Score>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1436.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Verstappen Fox" ID="20" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1436.0">No Further Action</TrackLimits>
+<Score et="1436.2">P-A Fugeekies(17) lap=9 point=0 t=144.511 et=1436.224</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>9</MostLapsCompleted>
+<Driver>
+<Name>Lucas Otero</Name>
+<Connected>1</Connected>
+<VehFile>5_26_GCHAL67256536.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #5:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Logitech G Challenge #5</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>1</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="121.2025" s1="41.8208" s2="63.6443" s3="39.6714" topspeed="260.35" fuel="0.310" fuelUsed="0.190" ve="0.439" veUsed="0.051" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.1365</Lap>
+<Lap num="2" p="1" et="266.3401" s1="38.4206" s2="63.4688" s3="40.5723" topspeed="260.35" fuel="0.282" fuelUsed="0.027" ve="0.388" veUsed="0.051" twfl="0.973" twfr="0.976" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.4616</Lap>
+<Lap num="3" p="1" et="408.8201" s1="38.2208" s2="64.0452" s3="39.9123" topspeed="260.80" fuel="0.251" fuelUsed="0.031" ve="0.341" veUsed="0.047" twfl="0.957" twfr="0.965" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.1782</Lap>
+<Lap num="4" p="1" et="550.9800" topspeed="261.71" fuel="0.224" fuelUsed="0.027" ve="0.290" veUsed="0.051" twfl="0.941" twfr="0.953" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="1" et="693.0601" s1="39.4870" s2="67.1690" s3="40.6304" topspeed="257.65" fuel="0.192" fuelUsed="0.031" ve="0.243" veUsed="0.047" twfl="0.933" twfr="0.945" twrl="0.969" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.2864</Lap>
+<Lap num="6" p="1" et="840.3401" s1="38.2114" s2="64.1188" s3="40.0975" topspeed="260.80" fuel="0.161" fuelUsed="0.031" ve="0.192" veUsed="0.051" twfl="0.918" twfr="0.933" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.4277</Lap>
+<Lap num="7" p="1" et="982.7600" s1="38.5542" s2="64.3751" s3="40.2417" topspeed="259.45" fuel="0.133" fuelUsed="0.027" ve="0.145" veUsed="0.047" twfl="0.902" twfr="0.922" twrl="0.957" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.1710</Lap>
+<Lap num="8" p="1" et="1125.9399" s1="38.2576" s2="63.8796" s3="39.8269" topspeed="260.80" fuel="0.102" fuelUsed="0.031" ve="0.094" veUsed="0.051" twfl="0.886" twfr="0.910" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">141.9641</Lap>
+<Lap num="9" p="1" et="1267.8999" s1="38.3298" s2="64.6334" s3="40.2822" topspeed="259.90" fuel="0.075" fuelUsed="0.027" ve="0.047" veUsed="0.047" twfl="0.871" twfr="0.894" twrl="0.945" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.2455</Lap>
+<BestLapTime>141.9641</BestLapTime>
+<FinishTime>1289.9374</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Julien Deaytrix</Name>
+<Connected>1</Connected>
+<VehFile>12_26_GCHA18747807.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #12:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>22</CarNumber>
+<TeamName>Logitech G Challenge #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>3</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="121.2025" s1="42.3235" s2="64.0688" topspeed="258.55" fuel="0.667" fuelUsed="-0.167" ve="0.945" veUsed="0.055" twfl="0.973" twfr="0.973" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="2" et="267.7000" s1="38.5679" s2="63.5749" s3="39.8432" topspeed="259.00" fuel="0.635" fuelUsed="0.031" ve="0.898" veUsed="0.047" twfl="0.965" twfr="0.965" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">141.9860</Lap>
+<Lap num="3" p="2" et="409.6799" topspeed="259.45" fuel="0.608" fuelUsed="0.027" ve="0.847" veUsed="0.051" twfl="0.953" twfr="0.953" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="2" et="552.0000" s1="38.7939" s2="63.8319" s3="40.0967" topspeed="258.10" fuel="0.576" fuelUsed="0.031" ve="0.800" veUsed="0.047" twfl="0.941" twfr="0.945" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.7225</Lap>
+<Lap num="5" p="2" et="694.7200" s1="38.6764" s2="66.5188" s3="40.9008" topspeed="258.55" fuel="0.549" fuelUsed="0.027" ve="0.753" veUsed="0.047" twfl="0.933" twfr="0.937" twrl="0.933" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">146.0960</Lap>
+<Lap num="6" p="3" et="840.8201" s1="38.5751" s2="64.2546" s3="40.8712" topspeed="258.10" fuel="0.518" fuelUsed="0.031" ve="0.702" veUsed="0.051" twfl="0.925" twfr="0.929" twrl="0.929" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.7009</Lap>
+<Lap num="7" p="3" et="984.5200" s1="39.0209" s2="64.2175" s3="40.7988" topspeed="257.65" fuel="0.486" fuelUsed="0.031" ve="0.655" veUsed="0.047" twfl="0.914" twfr="0.918" twrl="0.922" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.0373</Lap>
+<Lap num="8" p="3" et="1128.5601" topspeed="260.80" fuel="0.459" fuelUsed="0.027" ve="0.608" veUsed="0.047" twfl="0.902" twfr="0.906" twrl="0.914" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="3" et="1271.7000" s1="38.6553" s2="64.7490" s3="40.2012" topspeed="259.90" fuel="0.427" fuelUsed="0.031" ve="0.557" veUsed="0.051" twfl="0.894" twfr="0.898" twrl="0.906" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.6055</Lap>
+<BestLapTime>141.9860</BestLapTime>
+<FinishTime>1294.0975</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Maxime Dessaix</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>4</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="121.2025" s1="43.9958" s2="65.2970" s3="40.2598" topspeed="258.10" fuel="0.341" fuelUsed="0.159" ve="0.478" veUsed="0.051" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.5527</Lap>
+<Lap num="2" p="4" et="270.7600" s1="38.5839" s2="63.7775" s3="40.5937" topspeed="259.90" fuel="0.310" fuelUsed="0.031" ve="0.431" veUsed="0.047" twfl="0.973" twfr="0.973" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.9550</Lap>
+<Lap num="3" p="4" et="413.7200" s1="38.6877" s2="63.5956" s3="40.1719" topspeed="259.45" fuel="0.282" fuelUsed="0.027" ve="0.384" veUsed="0.047" twfl="0.957" twfr="0.961" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.4552</Lap>
+<Lap num="4" p="4" et="556.1799" s1="38.4974" s2="63.8916" s3="40.0358" topspeed="260.80" fuel="0.251" fuelUsed="0.031" ve="0.337" veUsed="0.047" twfl="0.941" twfr="0.949" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.4248</Lap>
+<Lap num="5" p="4" et="698.6001" s1="38.3806" s2="64.1661" s3="40.9867" topspeed="260.35" fuel="0.224" fuelUsed="0.027" ve="0.286" veUsed="0.051" twfl="0.929" twfr="0.933" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.5334</Lap>
+<Lap num="6" p="4" et="842.1399" topspeed="257.65" fuel="0.192" fuelUsed="0.031" ve="0.239" veUsed="0.047" twfl="0.914" twfr="0.918" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="4" et="985.1201" s1="38.8414" topspeed="260.35" fuel="0.165" fuelUsed="0.027" ve="0.192" veUsed="0.047" twfl="0.898" twfr="0.906" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="4" et="1128.7400" s1="38.8850" s2="64.2775" s3="40.4943" topspeed="259.45" fuel="0.137" fuelUsed="0.027" ve="0.145" veUsed="0.047" twfl="0.882" twfr="0.894" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.6567</Lap>
+<Lap num="9" p="4" et="1272.3999" s1="38.3733" s2="64.6630" topspeed="263.06" fuel="0.106" fuelUsed="0.031" ve="0.098" veUsed="0.047" twfl="0.871" twfr="0.882" twrl="0.945" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>142.4248</BestLapTime>
+<FinishTime>1294.3375</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Alvin Sundberg</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>2</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="121.2025" s1="43.0656" s2="63.8531" s3="40.4026" topspeed="259.00" fuel="0.318" fuelUsed="0.182" ve="0.447" veUsed="0.055" twfl="0.988" twfr="0.988" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.3212</Lap>
+<Lap num="2" p="3" et="268.5400" s1="38.5007" s2="64.8173" s3="39.9393" topspeed="259.90" fuel="0.286" fuelUsed="0.031" ve="0.400" veUsed="0.047" twfl="0.976" twfr="0.980" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.2573</Lap>
+<Lap num="3" p="3" et="411.8000" s1="38.3443" s2="64.2952" s3="40.2427" topspeed="261.71" fuel="0.259" fuelUsed="0.027" ve="0.353" veUsed="0.047" twfl="0.965" twfr="0.969" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.8821</Lap>
+<Lap num="4" p="3" et="554.6799" s1="38.5534" s2="64.1572" s3="40.1114" topspeed="260.80" fuel="0.231" fuelUsed="0.027" ve="0.302" veUsed="0.051" twfl="0.949" twfr="0.957" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.8220</Lap>
+<Lap num="5" p="3" et="697.5000" s1="38.4417" topspeed="259.90" fuel="0.200" fuelUsed="0.031" ve="0.255" veUsed="0.047" twfl="0.937" twfr="0.949" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="2" et="841.4600" s1="38.5377" s2="64.0490" s3="40.1309" topspeed="259.90" fuel="0.173" fuelUsed="0.027" ve="0.208" veUsed="0.047" twfl="0.922" twfr="0.933" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.7175</Lap>
+<Lap num="7" p="2" et="984.1799" s1="38.6223" s2="64.6566" s3="40.8746" topspeed="260.35" fuel="0.145" fuelUsed="0.027" ve="0.161" veUsed="0.047" twfl="0.910" twfr="0.925" twrl="0.945" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.1535</Lap>
+<Lap num="8" p="2" et="1128.3201" s1="38.3048" topspeed="261.26" fuel="0.114" fuelUsed="0.031" ve="0.114" veUsed="0.047" twfl="0.898" twfr="0.914" twrl="0.937" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="2" et="1271.2600" s1="38.6139" s2="64.9419" s3="40.2878" topspeed="258.55" fuel="0.086" fuelUsed="0.027" ve="0.067" veUsed="0.047" twfl="0.890" twfr="0.906" twrl="0.933" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.8436</Lap>
+<BestLapTime>142.7175</BestLapTime>
+<FinishTime>1293.8976</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Aurora L</Name>
+<Connected>1</Connected>
+<VehFile>3_26_GCHAL41540517.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #3:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>Logitech G Challenge #3</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>13</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="121.2025" topspeed="259.00" fuel="0.318" fuelUsed="0.182" ve="0.451" veUsed="0.051" twfl="0.988" twfr="0.988" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="19" et="457.7200" s1="38.6719" s2="64.3901" s3="40.2745" topspeed="259.45" fuel="0.290" fuelUsed="0.027" ve="0.404" veUsed="0.047" twfl="0.973" twfr="0.973" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.3365</Lap>
+<Lap num="3" p="18" et="601.0400" s1="38.6839" s2="64.6046" s3="40.4946" topspeed="259.90" fuel="0.259" fuelUsed="0.031" ve="0.353" veUsed="0.051" twfl="0.957" twfr="0.961" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.7831</Lap>
+<Lap num="4" p="16" et="744.8401" s1="38.5106" s2="64.8682" s3="40.2756" topspeed="259.90" fuel="0.231" fuelUsed="0.027" ve="0.306" veUsed="0.047" twfl="0.941" twfr="0.949" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.6544</Lap>
+<Lap num="5" p="14" et="888.4800" s1="38.9114" s2="65.5500" s3="40.3049" topspeed="261.26" fuel="0.200" fuelUsed="0.031" ve="0.255" veUsed="0.051" twfl="0.929" twfr="0.937" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.7664</Lap>
+<Lap num="6" p="14" et="1033.2600" s1="38.5918" s2="64.4172" s3="40.1927" topspeed="261.26" fuel="0.169" fuelUsed="0.031" ve="0.208" veUsed="0.047" twfl="0.914" twfr="0.922" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.2018</Lap>
+<Lap num="7" p="13" et="1176.4600" s1="38.8967" s2="64.8184" s3="40.3448" topspeed="259.00" fuel="0.141" fuelUsed="0.027" ve="0.157" veUsed="0.051" twfl="0.902" twfr="0.910" twrl="0.957" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.0599</Lap>
+<BestLapTime>143.2018</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Pedro Jose Videgain</Name>
+<Connected>1</Connected>
+<VehFile>11_26_GCHA47509705.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #11:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Logitech G Challenge #11</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>5</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="121.2025" s1="43.7623" s2="66.0672" s3="40.2296" topspeed="257.65" fuel="0.341" fuelUsed="0.159" ve="0.447" veUsed="0.055" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">150.0591</Lap>
+<Lap num="2" p="5" et="271.2800" s1="38.7738" s2="64.1543" s3="40.8666" topspeed="259.00" fuel="0.314" fuelUsed="0.027" ve="0.400" veUsed="0.047" twfl="0.980" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.7947</Lap>
+<Lap num="3" p="5" et="415.0601" s1="38.9933" s2="64.0863" s3="40.3506" topspeed="258.10" fuel="0.286" fuelUsed="0.027" ve="0.353" veUsed="0.047" twfl="0.973" twfr="0.973" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.4303</Lap>
+<Lap num="4" p="5" et="558.5000" s1="39.0558" s2="64.1513" s3="40.0422" topspeed="258.10" fuel="0.255" fuelUsed="0.031" ve="0.306" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.2493</Lap>
+<Lap num="5" p="5" et="701.7400" s1="39.8299" s2="64.6289" s3="39.9218" topspeed="259.00" fuel="0.227" fuelUsed="0.027" ve="0.259" veUsed="0.047" twfl="0.953" twfr="0.953" twrl="0.965" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.3806</Lap>
+<Lap num="6" p="5" et="846.1201" s1="38.6516" s2="64.5650" s3="40.0582" topspeed="259.00" fuel="0.200" fuelUsed="0.027" ve="0.212" veUsed="0.047" twfl="0.941" twfr="0.941" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.2748</Lap>
+<Lap num="7" p="5" et="989.3999" s1="38.5915" s2="64.3065" s3="40.6625" topspeed="259.45" fuel="0.173" fuelUsed="0.027" ve="0.169" veUsed="0.043" twfl="0.929" twfr="0.933" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.5605</Lap>
+<Lap num="8" p="5" et="1132.9600" s1="38.9700" s2="64.8467" topspeed="258.55" fuel="0.141" fuelUsed="0.031" ve="0.122" veUsed="0.047" twfl="0.922" twfr="0.925" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="5" et="1277.5400" s1="39.7805" s2="65.1941" s3="40.2400" topspeed="254.95" fuel="0.114" fuelUsed="0.027" ve="0.075" veUsed="0.047" twfl="0.914" twfr="0.914" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.2146</Lap>
+<BestLapTime>143.2493</BestLapTime>
+<FinishTime>1301.5375</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Meredith Zenith</Name>
+<Connected>1</Connected>
+<VehFile>11_26_GCHA47509705.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #11:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Logitech G Challenge #11</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>10</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="121.2025" s1="67.8118" s2="64.2282" s3="40.3053" topspeed="257.65" fuel="0.369" fuelUsed="0.131" ve="0.525" veUsed="0.043" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">172.3453</Lap>
+<Lap num="2" p="15" et="293.5601" s1="39.3258" s2="64.0182" s3="40.0352" topspeed="258.10" fuel="0.341" fuelUsed="0.027" ve="0.478" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.3792</Lap>
+<Lap num="3" p="14" et="436.9399" s1="38.8610" s2="64.9604" s3="40.1655" topspeed="259.00" fuel="0.310" fuelUsed="0.031" ve="0.427" veUsed="0.051" twfl="0.976" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.9869</Lap>
+<Lap num="4" p="12" et="580.9199" s1="39.0098" s2="66.5361" s3="42.7103" topspeed="258.55" fuel="0.282" fuelUsed="0.027" ve="0.384" veUsed="0.043" twfl="0.969" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">148.2562</Lap>
+<Lap num="5" p="11" et="729.1799" s1="39.3586" s2="66.1021" s3="42.2308" topspeed="258.10" fuel="0.255" fuelUsed="0.027" ve="0.337" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.6914</Lap>
+<Lap num="6" p="9" et="876.8799" s1="38.8167" s2="64.7323" s3="40.5648" topspeed="258.10" fuel="0.227" fuelUsed="0.027" ve="0.290" veUsed="0.047" twfl="0.953" twfr="0.953" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.1137</Lap>
+<Lap num="7" p="9" et="1020.9800" s1="39.2910" s2="64.2849" s3="40.3038" topspeed="257.65" fuel="0.200" fuelUsed="0.027" ve="0.243" veUsed="0.047" twfl="0.941" twfr="0.945" twrl="0.957" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.8797</Lap>
+<Lap num="8" p="10" et="1164.8601" s1="39.1986" s2="64.4469" s3="46.5007" topspeed="257.20" fuel="0.169" fuelUsed="0.031" ve="0.196" veUsed="0.047" twfl="0.902" twfr="0.855" twrl="0.910" twrr="0.855" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">150.1462</Lap>
+<BestLapTime>143.3792</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Adn Neves</Name>
+<Connected>1</Connected>
+<VehFile>11_26_GCHA47509705.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #11:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Logitech G Challenge #11</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>7</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="121.2025" s1="43.7690" s2="73.6635" s3="41.9178" topspeed="259.90" fuel="0.384" fuelUsed="0.116" ve="0.541" veUsed="0.059" twfl="0.969" twfr="0.949" twrl="0.973" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">159.3503</Lap>
+<Lap num="2" p="11" et="280.5601" s1="38.8176" s2="64.4285" s3="40.1805" topspeed="260.35" fuel="0.353" fuelUsed="0.031" ve="0.494" veUsed="0.047" twfl="0.961" twfr="0.941" twrl="0.965" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.4266</Lap>
+<Lap num="3" p="11" et="423.9800" s1="39.1790" s2="64.0939" s3="40.1716" topspeed="255.85" fuel="0.325" fuelUsed="0.027" ve="0.443" veUsed="0.051" twfl="0.953" twfr="0.933" twrl="0.961" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.4446</Lap>
+<Lap num="4" p="10" et="567.4399" s1="38.8605" s2="65.7615" s3="39.9941" topspeed="258.55" fuel="0.294" fuelUsed="0.031" ve="0.396" veUsed="0.047" twfl="0.945" twfr="0.925" twrl="0.953" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6161</Lap>
+<Lap num="5" p="8" et="712.0601" s1="38.8044" s2="64.5509" s3="42.3843" topspeed="257.65" fuel="0.267" fuelUsed="0.027" ve="0.349" veUsed="0.047" twfl="0.937" twfr="0.914" twrl="0.949" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.7396</Lap>
+<Lap num="6" p="7" et="857.7800" s1="39.1973" s2="64.4354" s3="40.9891" topspeed="257.20" fuel="0.235" fuelUsed="0.031" ve="0.298" veUsed="0.051" twfl="0.929" twfr="0.906" twrl="0.945" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6217</Lap>
+<Lap num="7" p="7" et="1002.4199" s1="38.8752" s2="65.1741" s3="40.6118" topspeed="258.55" fuel="0.208" fuelUsed="0.027" ve="0.251" veUsed="0.047" twfl="0.918" twfr="0.898" twrl="0.937" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6611</Lap>
+<Lap num="8" p="7" et="1147.0801" s1="38.7966" s2="64.5505" s3="40.3019" topspeed="259.00" fuel="0.176" fuelUsed="0.031" ve="0.204" veUsed="0.047" twfl="0.910" twfr="0.886" twrl="0.933" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.6490</Lap>
+<Lap num="9" p="7" et="1290.7200" s1="38.9213" s2="64.8403" s3="40.7151" topspeed="259.00" fuel="0.149" fuelUsed="0.027" ve="0.153" veUsed="0.051" twfl="0.898" twfr="0.878" twrl="0.925" twrr="0.902" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.4767</Lap>
+<BestLapTime>143.4266</BestLapTime>
+<FinishTime>1313.9975</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Remek KORraN</Name>
+<Connected>1</Connected>
+<VehFile>10_26_GCHA17031780.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #10:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Logitech G Challenge #10</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>14</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="121.2025" s1="48.4393" s2="67.1369" s3="42.0401" topspeed="255.40" fuel="0.318" fuelUsed="0.182" ve="0.451" veUsed="0.051" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">157.6163</Lap>
+<Lap num="2" p="10" et="278.8201" s1="39.0893" s2="64.4809" s3="40.4585" topspeed="258.10" fuel="0.290" fuelUsed="0.027" ve="0.404" veUsed="0.047" twfl="0.980" twfr="0.980" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.0286</Lap>
+<Lap num="3" p="10" et="422.8601" s1="38.5501" s2="64.6977" s3="40.5013" topspeed="259.00" fuel="0.259" fuelUsed="0.031" ve="0.357" veUsed="0.047" twfl="0.969" twfr="0.969" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.7492</Lap>
+<Lap num="4" p="9" et="566.6001" s1="39.1141" s2="64.8026" s3="40.4020" topspeed="259.00" fuel="0.231" fuelUsed="0.027" ve="0.306" veUsed="0.051" twfl="0.957" twfr="0.957" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.3188</Lap>
+<Lap num="5" p="9" et="710.9199" s1="38.5867" s2="65.3566" s3="50.6002" topspeed="259.90" fuel="0.200" fuelUsed="0.031" ve="0.259" veUsed="0.047" twfl="0.945" twfr="0.941" twrl="0.957" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">154.5435</Lap>
+<Lap num="6" p="13" et="865.4600" s1="53.9769" s2="81.0701" s3="168.6164" topspeed="234.23" fuel="0.180" fuelUsed="0.020" ve="0.231" veUsed="0.027" twfl="0.922" twfr="0.929" twrl="0.996" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">303.6635</Lap>
+<Lap num="7" p="14" et="1169.1399" s1="46.3029" s2="65.6666" s3="40.7681" topspeed="255.85" fuel="0.153" fuelUsed="0.027" ve="0.184" veUsed="0.047" twfl="0.910" twfr="0.918" twrl="0.988" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">152.7375</Lap>
+<BestLapTime>143.7492</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>P-A Fugeekies</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>8</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="121.2025" s1="46.0957" s2="66.4063" s3="41.0714" topspeed="255.05" fuel="0.306" fuelUsed="0.030" ve="0.427" veUsed="0.053" twfl="0.992" twfr="0.992" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">153.5734</Lap>
+<Lap num="2" p="9" et="274.7800" s1="39.1092" s2="66.0925" s3="40.6955" topspeed="257.20" fuel="0.275" fuelUsed="0.031" ve="0.380" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.8972</Lap>
+<Lap num="3" p="9" et="420.6799" s1="39.1848" s2="64.9565" s3="40.7747" topspeed="256.75" fuel="0.247" fuelUsed="0.027" ve="0.337" veUsed="0.043" twfl="0.976" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.9160</Lap>
+<Lap num="4" p="8" et="565.6001" s1="38.7507" topspeed="259.02" fuel="0.220" fuelUsed="0.027" ve="0.290" veUsed="0.047" twfl="0.973" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6938</Lap>
+<Lap num="5" p="7" et="710.3000" s1="38.7993" s2="64.7679" s3="43.6141" topspeed="258.22" fuel="0.192" fuelUsed="0.027" ve="0.243" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.1813</Lap>
+<Lap num="6" p="8" et="857.4800" s1="39.7490" s2="64.9784" s3="40.5190" topspeed="254.50" fuel="0.165" fuelUsed="0.027" ve="0.196" veUsed="0.047" twfl="0.953" twfr="0.949" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.2465</Lap>
+<Lap num="7" p="8" et="1002.7200" s1="38.8798" topspeed="260.11" fuel="0.133" fuelUsed="0.031" ve="0.153" veUsed="0.043" twfl="0.945" twfr="0.941" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6921</Lap>
+<Lap num="8" p="8" et="1147.4199" s1="39.1906" s2="64.7390" s3="40.3802" topspeed="258.55" fuel="0.106" fuelUsed="0.027" ve="0.106" veUsed="0.047" twfl="0.937" twfr="0.929" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.3098</Lap>
+<Lap num="9" p="8" et="1291.7200" s1="38.7186" s2="64.8091" s3="40.9836" topspeed="259.01" fuel="0.078" fuelUsed="0.027" ve="0.059" veUsed="0.047" twfl="0.925" twfr="0.918" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.5114</Lap>
+<BestLapTime>144.3098</BestLapTime>
+<FinishTime>1315.0215</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Fabio Marrali</Name>
+<Connected>1</Connected>
+<VehFile>3_26_GCHAL41540517.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #3:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>Logitech G Challenge #3</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>18</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="121.2025" topspeed="257.65" fuel="0.373" fuelUsed="0.127" ve="0.525" veUsed="0.055" twfl="0.992" twfr="0.992" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="8" et="274.2400" s1="38.5087" s2="65.4630" s3="40.3671" topspeed="261.26" fuel="0.341" fuelUsed="0.031" ve="0.478" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.3388</Lap>
+<Lap num="3" p="8" et="418.5801" s1="39.5293" topspeed="260.35" fuel="0.314" fuelUsed="0.027" ve="0.431" veUsed="0.047" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="7" et="563.6399" s1="39.3597" s2="65.4187" s3="40.3307" topspeed="261.71" fuel="0.286" fuelUsed="0.027" ve="0.384" veUsed="0.047" twfl="0.965" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.1092</Lap>
+<BestLapTime>144.3388</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>baptout B</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>9</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="121.2025" s1="68.5185" s2="65.2062" s3="41.1690" topspeed="257.20" fuel="0.412" fuelUsed="0.088" ve="0.584" veUsed="0.416" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">174.8937</Lap>
+<Lap num="2" p="16" et="296.1001" topspeed="259.90" fuel="0.380" fuelUsed="0.031" ve="0.533" veUsed="0.051" twfl="0.980" twfr="0.980" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="15" et="441.4800" s1="39.4864" s2="65.0611" s3="40.1286" topspeed="257.65" fuel="0.353" fuelUsed="0.027" ve="0.486" veUsed="0.047" twfl="0.965" twfr="0.969" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6761</Lap>
+<Lap num="4" p="13" et="586.1599" s1="38.8531" s2="65.4894" s3="40.9192" topspeed="256.75" fuel="0.325" fuelUsed="0.027" ve="0.439" veUsed="0.047" twfl="0.953" twfr="0.957" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.2617</Lap>
+<Lap num="5" p="10" et="731.4199" s1="39.0604" s2="64.9722" s3="40.6743" topspeed="257.20" fuel="0.294" fuelUsed="0.031" ve="0.392" veUsed="0.047" twfl="0.941" twfr="0.945" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.7068</Lap>
+<Lap num="6" p="10" et="876.1201" s1="38.9501" s2="65.0576" s3="41.1221" topspeed="257.20" fuel="0.267" fuelUsed="0.027" ve="0.341" veUsed="0.051" twfl="0.929" twfr="0.933" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.1298</Lap>
+<Lap num="7" p="10" et="1021.2600" s1="40.0565" s2="65.1593" s3="40.4507" topspeed="257.20" fuel="0.235" fuelUsed="0.031" ve="0.294" veUsed="0.047" twfl="0.918" twfr="0.922" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.6664</Lap>
+<Lap num="8" p="9" et="1166.9199" s1="38.7202" s2="64.7581" s3="40.9169" topspeed="260.35" fuel="0.204" fuelUsed="0.031" ve="0.243" veUsed="0.051" twfl="0.902" twfr="0.906" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.3951</Lap>
+<BestLapTime>144.3951</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Adam Twor</Name>
+<Connected>1</Connected>
+<VehFile>10_26_GCHA17031780.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #10:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Logitech G Challenge #10</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>16</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="121.2025" s1="44.3831" s2="66.9908" s3="40.9109" topspeed="256.75" fuel="0.318" fuelUsed="0.182" ve="0.447" veUsed="0.055" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">152.2848</Lap>
+<Lap num="2" p="7" et="273.5000" s1="38.9030" s2="64.9282" s3="40.8585" topspeed="259.00" fuel="0.290" fuelUsed="0.027" ve="0.400" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.6898</Lap>
+<Lap num="3" p="7" et="418.1799" s1="39.3528" s2="65.1606" topspeed="257.20" fuel="0.259" fuelUsed="0.031" ve="0.353" veUsed="0.047" twfl="0.976" twfr="0.973" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="17" et="563.2200" s1="39.4720" s2="81.8284" s3="274.2268" topspeed="257.65" fuel="0.349" fuelUsed="-0.090" ve="0.502" veUsed="-0.149" twfl="0.976" twfr="0.976" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">395.5273</Lap>
+<Lap num="5" p="16" et="958.7400" s1="46.3000" s2="66.6190" topspeed="256.30" fuel="0.322" fuelUsed="0.027" ve="0.459" veUsed="0.043" twfl="0.973" twfr="0.969" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="6" p="16" et="1124.9600" s1="46.0728" s2="65.4403" s3="40.7633" topspeed="257.20" fuel="0.294" fuelUsed="0.027" ve="0.412" veUsed="0.047" twfl="0.965" twfr="0.961" twrl="0.969" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">152.2764</Lap>
+<Lap num="7" p="16" et="1277.2400" s1="40.0704" s2="66.2755" s3="40.8063" topspeed="257.65" fuel="0.267" fuelUsed="0.027" ve="0.365" veUsed="0.047" twfl="0.957" twfr="0.953" twrl="0.965" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.1522</Lap>
+<BestLapTime>144.6898</BestLapTime>
+<FinishTime>1303.1774</FinishTime>
+<Laps>7</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Giant Bentley</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>6</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="121.2025" s1="45.1874" s2="65.7532" topspeed="256.30" fuel="0.667" fuelUsed="-0.167" ve="0.945" veUsed="0.055" twfl="0.961" twfr="0.965" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="6" et="272.7600" topspeed="260.35" fuel="0.635" fuelUsed="0.031" ve="0.898" veUsed="0.047" twfl="0.945" twfr="0.949" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="6" et="416.6799" s1="38.6944" s2="65.3633" topspeed="259.90" fuel="0.608" fuelUsed="0.027" ve="0.847" veUsed="0.051" twfl="0.929" twfr="0.933" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="6" et="561.2000" s1="39.2073" s2="65.5179" s3="40.4832" topspeed="258.55" fuel="0.576" fuelUsed="0.031" ve="0.800" veUsed="0.047" twfl="0.914" twfr="0.918" twrl="0.965" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.2084</Lap>
+<Lap num="5" p="6" et="706.4199" topspeed="258.55" fuel="0.549" fuelUsed="0.027" ve="0.753" veUsed="0.047" twfl="0.898" twfr="0.906" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="6" et="851.5000" s1="39.6360" s2="66.0847" s3="40.3205" topspeed="257.20" fuel="0.518" fuelUsed="0.031" ve="0.702" veUsed="0.051" twfl="0.886" twfr="0.894" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">146.0411</Lap>
+<Lap num="7" p="6" et="997.5400" s1="39.2671" s2="66.1595" s3="40.4231" topspeed="258.10" fuel="0.490" fuelUsed="0.027" ve="0.655" veUsed="0.047" twfl="0.871" twfr="0.882" twrl="0.949" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.8497</Lap>
+<Lap num="8" p="6" et="1143.3999" s1="38.9126" s2="65.3671" s3="41.2274" topspeed="259.00" fuel="0.459" fuelUsed="0.031" ve="0.604" veUsed="0.051" twfl="0.855" twfr="0.867" twrl="0.945" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.5071</Lap>
+<Lap num="9" p="6" et="1288.8999" s1="39.3354" s2="65.8698" s3="40.7158" topspeed="258.10" fuel="0.427" fuelUsed="0.031" ve="0.557" veUsed="0.047" twfl="0.843" twfr="0.855" twrl="0.941" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.9210</Lap>
+<BestLapTime>145.2084</BestLapTime>
+<FinishTime>1313.6176</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Paraskevas Vartzokas</Name>
+<Connected>1</Connected>
+<VehFile>6_26_GCHAL89066091.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #6:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Logitech G Challenge #6</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>11</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="121.2025" s1="47.2891" s2="67.8627" s3="44.3588" topspeed="253.60" fuel="0.318" fuelUsed="0.182" ve="0.451" veUsed="0.051" twfl="0.996" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">159.5106</Lap>
+<Lap num="2" p="13" et="280.7200" s1="39.8516" s2="67.4733" s3="41.7308" topspeed="255.40" fuel="0.290" fuelUsed="0.027" ve="0.404" veUsed="0.047" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.0556</Lap>
+<Lap num="3" p="12" et="429.7800" s1="40.7392" s2="67.2739" s3="41.0784" topspeed="254.50" fuel="0.259" fuelUsed="0.031" ve="0.357" veUsed="0.047" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.0915</Lap>
+<Lap num="4" p="11" et="578.8799" s1="39.9376" s2="66.0921" s3="43.3694" topspeed="253.60" fuel="0.231" fuelUsed="0.027" ve="0.310" veUsed="0.047" twfl="0.980" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.3992</Lap>
+<Lap num="5" p="12" et="728.2600" s1="39.9106" s2="66.2137" s3="42.9651" topspeed="254.05" fuel="0.204" fuelUsed="0.027" ve="0.263" veUsed="0.047" twfl="0.976" twfr="0.980" twrl="0.976" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.0894</Lap>
+<Lap num="6" p="11" et="877.3601" s1="39.9016" s2="65.5084" s3="40.7687" topspeed="254.50" fuel="0.173" fuelUsed="0.031" ve="0.212" veUsed="0.051" twfl="0.973" twfr="0.973" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">146.1786</Lap>
+<Lap num="7" p="11" et="1023.5400" s1="39.6916" s2="66.3203" s3="40.9785" topspeed="257.65" fuel="0.145" fuelUsed="0.027" ve="0.165" veUsed="0.047" twfl="0.965" twfr="0.969" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">146.9904</Lap>
+<Lap num="8" p="11" et="1170.5200" s1="39.9574" s2="66.3584" s3="40.8556" topspeed="253.60" fuel="0.114" fuelUsed="0.031" ve="0.118" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.1714</Lap>
+<BestLapTime>146.1786</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Verstappen Fox</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>21</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>22</GridPos>
+<Position>15</Position>
+<ClassGridPos>22</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="121.2025" s1="49.3700" s2="69.2055" s3="55.2351" topspeed="253.15" fuel="0.671" fuelUsed="-0.171" ve="0.953" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">173.8106</Lap>
+<Lap num="2" p="17" et="295.0200" topspeed="249.54" fuel="0.675" fuelUsed="-0.004" ve="0.961" veUsed="-0.008" twfl="0.980" twfr="0.976" twrl="0.980" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="3" p="17" et="508.0200" s1="114.0103" s2="66.6412" s3="55.3691" topspeed="254.95" fuel="0.667" fuelUsed="0.008" ve="0.949" veUsed="0.012" twfl="0.973" twfr="0.984" twrl="0.976" twrr="0.996" fcompound="1,Wet" rcompound="0,Medium" FL="0,Medium" FR="1,Wet" RL="0,Medium" RR="0,Medium" pit="1">236.0206</Lap>
+<Lap num="4" p="17" et="744.0400" topspeed="258.55" fuel="0.639" fuelUsed="0.027" ve="0.902" veUsed="0.047" twfl="0.961" twfr="0.973" twrl="0.973" twrr="0.992" fcompound="1,Wet" rcompound="0,Medium" FL="0,Medium" FR="1,Wet" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="15" et="898.0200" s1="39.6588" s2="66.8047" s3="41.5848" topspeed="256.30" fuel="0.608" fuelUsed="0.031" ve="0.855" veUsed="0.047" twfl="0.953" twfr="0.953" twrl="0.969" twrr="0.988" fcompound="1,Wet" rcompound="0,Medium" FL="0,Medium" FR="1,Wet" RL="0,Medium" RR="0,Medium">148.0482</Lap>
+<Lap num="6" p="15" et="1046.0601" topspeed="258.10" fuel="0.580" fuelUsed="0.027" ve="0.808" veUsed="0.047" twfl="0.937" twfr="0.910" twrl="0.937" twrr="0.976" fcompound="1,Wet" rcompound="0,Medium" FL="0,Medium" FR="1,Wet" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="15" et="1204.3799" topspeed="257.20" fuel="0.549" fuelUsed="0.031" ve="0.761" veUsed="0.047" twfl="0.918" twfr="0.867" twrl="0.910" twrr="0.961" fcompound="1,Wet" rcompound="0,Medium" FL="0,Medium" FR="1,Wet" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>148.0482</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,ABS=1,Braking=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Nicolas Scory</Name>
+<Connected>1</Connected>
+<VehFile>7_26_GCHAL34731486.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #7:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Logitech G Challenge #7</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>12</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="121.2025" s1="46.9365" s2="67.8754" s3="43.7713" topspeed="249.54" fuel="0.671" fuelUsed="-0.171" ve="0.953" veUsed="0.047" twfl="0.988" twfr="0.988" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">158.5833</Lap>
+<Lap num="2" p="12" et="279.8000" s1="39.5823" s2="68.0779" s3="41.8881" topspeed="254.50" fuel="0.643" fuelUsed="0.027" ve="0.910" veUsed="0.043" twfl="0.980" twfr="0.984" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.5483</Lap>
+<Lap num="3" p="13" et="429.3401" s1="40.0177" s2="68.0876" s3="43.1468" topspeed="254.50" fuel="0.616" fuelUsed="0.027" ve="0.863" veUsed="0.047" twfl="0.976" twfr="0.976" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">151.2521</Lap>
+<Lap num="4" p="14" et="580.6001" s1="39.2347" s2="66.3117" s3="51.9734" topspeed="254.05" fuel="0.588" fuelUsed="0.027" ve="0.820" veUsed="0.043" twfl="0.969" twfr="0.969" twrl="0.961" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">157.5198</Lap>
+<Lap num="5" p="13" et="738.1201" s1="39.5659" s2="67.2823" s3="41.9878" topspeed="256.75" fuel="0.561" fuelUsed="0.027" ve="0.773" veUsed="0.047" twfl="0.965" twfr="0.965" twrl="0.957" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">148.8360</Lap>
+<Lap num="6" p="12" et="886.9600" s1="40.3073" s2="67.2126" s3="41.7281" topspeed="251.80" fuel="0.533" fuelUsed="0.027" ve="0.725" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.953" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.2480</Lap>
+<Lap num="7" p="12" et="1036.2000" s1="50.8419" s2="69.7111" topspeed="246.84" fuel="0.698" fuelUsed="-0.165" ve="1.000" veUsed="-0.275" twfl="0.933" twfr="0.890" twrl="0.906" twrr="0.835" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="8" p="12" et="1225.1201" topspeed="255.40" fuel="0.675" fuelUsed="0.024" ve="0.957" veUsed="0.043" twfl="0.929" twfr="0.882" twrl="0.902" twrr="0.831" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>148.8360</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,ABS=1,AutoShift=3,Braking=1,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Martin Starzengruber</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>20</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="121.2025" topspeed="258.55" fuel="0.337" fuelUsed="0.163" ve="0.478" veUsed="0.000" twfl="0.878" twfr="0.922" twrl="0.447" twrr="0.490" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="2" p="18" et="377.3201" s1="45.3539" s2="64.1944" s3="40.3116" topspeed="258.55" fuel="0.306" fuelUsed="0.031" ve="0.431" veUsed="0.047" twfl="0.867" twfr="0.914" twrl="0.439" twrr="0.482" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">149.8599</Lap>
+<BestLapTime>149.8599</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Carlie Thomas</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>17</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="121.2025" topspeed="256.75" fuel="0.290" fuelUsed="0.210" ve="0.408" veUsed="0.051" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="14" et="281.2800" s1="39.8615" s2="68.4615" s3="43.6343" topspeed="256.75" fuel="0.263" fuelUsed="0.027" ve="0.361" veUsed="0.047" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">151.9574</Lap>
+<Lap num="3" p="19" et="433.2400" s1="41.9095" s2="68.1688" topspeed="257.65" fuel="0.204" fuelUsed="0.059" ve="0.275" veUsed="0.086" twfl="0.969" twfr="0.969" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="18" et="849.5601" s1="39.6680" s2="70.1492" s3="41.6202" topspeed="257.65" fuel="0.176" fuelUsed="0.027" ve="0.227" veUsed="0.047" twfl="0.961" twfr="0.961" twrl="0.976" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">151.4373</Lap>
+<Lap num="5" p="17" et="1001.0000" s1="43.4870" s2="68.9712" s3="41.0828" topspeed="258.10" fuel="0.149" fuelUsed="0.027" ve="0.180" veUsed="0.047" twfl="0.953" twfr="0.957" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">153.5410</Lap>
+<Lap num="6" p="17" et="1154.5400" s1="40.0186" s2="69.5815" s3="50.0111" topspeed="258.10" fuel="0.118" fuelUsed="0.031" ve="0.133" veUsed="0.047" twfl="0.945" twfr="0.941" twrl="0.957" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">159.6112</Lap>
+<BestLapTime>151.4373</BestLapTime>
+<Laps>6</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="6">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>AD Laurent</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>19</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="121.2025" s1="59.7863" s2="65.4298" s3="109.7369" topspeed="254.05" fuel="0.698" fuelUsed="-0.198" ve="1.000" veUsed="0.000" twfl="0.961" twfr="0.953" twrl="0.925" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">234.9530</Lap>
+<Lap num="2" p="19" et="356.1599" s1="46.0154" s2="79.9065" s3="50.9571" topspeed="256.30" fuel="0.667" fuelUsed="0.031" ve="0.949" veUsed="0.051" twfl="0.945" twfr="0.906" twrl="0.882" twrr="0.824" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">176.8790</Lap>
+<Lap num="3" p="17" et="533.0400" s1="40.0027" s2="77.5629" s3="42.1066" topspeed="255.40" fuel="0.639" fuelUsed="0.027" ve="0.902" veUsed="0.047" twfl="0.937" twfr="0.898" twrl="0.867" twrr="0.796" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">159.6722</Lap>
+<Lap num="4" p="15" et="692.7200" s1="39.4894" s2="77.3804" s3="55.7294" topspeed="258.10" fuel="0.608" fuelUsed="0.031" ve="0.851" veUsed="0.051" twfl="0.914" twfr="0.878" twrl="0.831" twrr="0.769" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">172.5992</Lap>
+<BestLapTime>159.6722</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,AutoShift=3,Braking=2,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Donio Kurd</Name>
+<Connected>1</Connected>
+<VehFile>10_26_GCHA17031780.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #10:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>Logitech G Challenge #10</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>21</GridPos>
+<Position>21</Position>
+<ClassGridPos>21</ClassGridPos>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="121.2025" s1="50.2308" s2="68.7666" s3="49.6746" topspeed="250.90" fuel="0.667" fuelUsed="-0.167" ve="0.949" veUsed="0.051" twfl="0.855" twfr="0.941" twrl="0.890" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">168.6719</Lap>
+<BestLapTime>168.6719</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Juergen Bielicke</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>22</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>22</ClassPosition>
+<LapRankIncludingDiscos>23</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

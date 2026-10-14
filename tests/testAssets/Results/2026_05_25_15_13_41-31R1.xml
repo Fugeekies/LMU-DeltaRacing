@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1779712837</DateTime>
+<TimeString>2026/05/25 14:40:37</TimeString>
+<TrackVenue>Bahrain International Circuit</TrackVenue>
+<TrackCourse>Bahrain International Circuit</TrackCourse>
+<TrackEvent>8 Hours of Bahrain</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\BahrainWEC_2023\1.25\layoutBahrain.mas</TrackData>
+<TrackLength>5386.8</TrackLength>
+<GameVersion>1.3000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Logitech2026,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1779713417</DateTime>
+<TimeString>2026/05/25 14:50:17</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Penalty Driver="Adrien ACCURSI" ID="2" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="116.7">Adrien ACCURSI received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Penalty Driver="Ludovic Staumont" ID="6" Penalty="Drive Thru" Time="0" Laps="0" Reason="Out of position" et="116.7">Ludovic Staumont received Drive Thru penalty, 0s, 0laps for Out of position. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="131.1">Tom Critom(12) reported contact (242.45) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="131.1">Nicholas Malizia(16) reported contact (159.65) with another vehicle Tom Critom(12)</Incident>
+<Incident et="132.9">xii xi(9) reported contact (246.80) with Sign</Incident>
+<Incident et="133.0">xii xi(9) reported contact (296.65) with Sign</Incident>
+<Incident et="133.6">Tom Critom(12) reported contact (754.09) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="133.6">Nicholas Malizia(16) reported contact (634.70) with another vehicle Tom Critom(12)</Incident>
+<Incident et="134.7">Tom Critom(12) reported contact (444.92) with another vehicle Kim Jihye(0)</Incident>
+<Incident et="134.9">Kim Jihye(0) reported contact (324.56) with another vehicle Tom Critom(12)</Incident>
+<Incident et="135.1">Hendrik Zimmermann(8) reported contact (38.07) with Post</Incident>
+<Incident et="135.1">Hendrik Zimmermann(8) reported contact (38.70) with Post</Incident>
+<Incident et="135.3">Egon Kowalski(5) reported contact (219.58) with Sign</Incident>
+<Incident et="135.3">Tom Critom(12) reported contact (163.34) with another vehicle Kim Jihye(0)</Incident>
+<Incident et="135.8">ELCUTI 17(3) reported contact (461.46) with another vehicle i kun#4881(15)</Incident>
+<Incident et="135.9">Kim Jihye(0) reported contact (30.80) with Post</Incident>
+<Incident et="135.9">JOHN JOHN#3924(4) reported contact (857.93) with another vehicle Ivan Tsvikin(13)</Incident>
+<Incident et="135.9">Ivan Tsvikin(13) reported contact (825.08) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="136.0">Kim Jihye(0) reported contact (12.65) with Post</Incident>
+<Incident et="136.3">Obermacht koing(1) reported contact (111.82) with Sign</Incident>
+<Incident et="136.4">Obermacht koing(1) reported contact (1011.37) with another vehicle M BK(17)</Incident>
+<Incident et="136.5">Kim Jihye(0) reported contact (46.43) with Post</Incident>
+<TrackLimits Driver="xii xi" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="137.0">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="137.0">No Further Action</TrackLimits>
+<Incident et="137.1">Obermacht koing(1) reported contact (163.78) with another vehicle M BK(17)</Incident>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="137.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="137.2">No Further Action</TrackLimits>
+<Incident et="137.2">Obermacht koing(1) reported contact (136.23) with Sign</Incident>
+<Incident et="137.6">ELCUTI 17(3) reported contact (565.52) with another vehicle i kun#4881(15)</Incident>
+<Incident et="139.0">Ivan Tsvikin(13) reported contact (325.39) with another vehicle JEON WM(11)</Incident>
+<Incident et="139.0">Obermacht koing(1) reported contact (77.24) with Sign</Incident>
+<Incident et="139.1">JEON WM(11) reported contact (425.78) with another vehicle Ivan Tsvikin(13)</Incident>
+<Incident et="139.4">Obermacht koing(1) reported contact (124.38) with another vehicle Egon Kowalski(5)</Incident>
+<Incident et="139.8">JEON WM(11) reported contact (132.62) with another vehicle Ivan Tsvikin(13)</Incident>
+<Incident et="140.1">Tom Critom(12) reported contact (145.21) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="140.1">Nicholas Malizia(16) reported contact (385.67) with another vehicle Tom Critom(12)</Incident>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="141.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="141.2">No Further Action</TrackLimits>
+<Incident et="141.6">Adrien ACCURSI(2) reported contact (12.00) with Post</Incident>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="143.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="143.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.0">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.9">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.9">No Further Action</TrackLimits>
+<Incident et="145.1">JOHN JOHN#3924(4) reported contact (25.47) with another vehicle JEON WM(11)</Incident>
+<Incident et="145.1">JEON WM(11) reported contact (511.96) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="147.0">JOHN JOHN#3924(4) reported contact (1058.83) with another vehicle JEON WM(11)</Incident>
+<Incident et="147.1">JEON WM(11) reported contact (1071.78) with another vehicle JOHN JOHN#3924(4)</Incident>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="147.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="147.3">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="147.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="147.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="148.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="148.8">No Further Action</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="149.0">No Further Action</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="149.0">No Further Action</TrackLimits>
+<Incident et="149.3">Obermacht koing(1) reported contact (967.63) with Immovable</Incident>
+<Incident et="150.1">Obermacht koing(1) reported contact (456.91) with Immovable</Incident>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.6">No Further Action</TrackLimits>
+<Incident et="153.8">JOHN JOHN#3924(4) reported contact (270.77) with another vehicle JEON WM(11)</Incident>
+<Sector et="153.8">JEON WM(11) reports new suspension damage</Sector>
+<Incident et="153.9">JEON WM(11) reported contact (583.47) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="154.8">JEON WM(11) reported contact (2396.66) with Immovable</Incident>
+<Incident et="154.9">JEON WM(11) reported contact (239.83) with Sign</Incident>
+<Incident et="155.1">JEON WM(11) reported contact (522.08) with Sign</Incident>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
+<Incident et="155.8">JEON WM(11) reported contact (16.43) with Sign</Incident>
+<Incident et="155.9">JEON WM(11) reported contact (37.33) with Sign</Incident>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.2">No Further Action</TrackLimits>
+<Incident et="156.4">JEON WM(11) reported contact (193.67) with Sign</Incident>
+<Incident et="156.4">JEON WM(11) reported contact (356.89) with Sign</Incident>
+<Incident et="156.6">JEON WM(11) reported contact (287.44) with Sign</Incident>
+<Incident et="158.3">JEON WM(11) reported contact (604.84) with Immovable</Incident>
+<Incident et="159.2">JEON WM(11) reported contact (1015.96) with Immovable</Incident>
+<Incident et="159.3">JEON WM(11) reported contact (70.06) with Sign</Incident>
+<Incident et="160.0">JEON WM(11) reported contact (175.27) with Sign</Incident>
+<Sector Driver="Hendrik Zimmermann" ID="8" Sector="1" Class="GT3" et="160.2">Hendrik Zimmermann(8) set new best for sector 1</Sector>
+<Score et="160.2">Hendrik Zimmermann(8) lap=0 point=1 t=43.455 et=160.140</Score>
+<Sector Driver="Kim Jihye" ID="0" Sector="1" Class="GT3" et="160.2">Kim Jihye(0) set new best for sector 1</Sector>
+<Score et="160.2">Kim Jihye(0) lap=0 point=1 t=43.413 et=160.100</Score>
+<Score et="160.3">Tom Critom(12) lap=0 point=1 t=43.583 et=160.280</Score>
+<Score et="160.6">Nicholas Malizia(16) lap=0 point=1 t=43.765 et=160.460</Score>
+<Incident et="161.1">Ludovic Staumont(6) reported contact (1030.29) with another vehicle ELCUTI 17(3)</Incident>
+<Score et="161.2">xii xi(9) lap=0 point=1 t=44.243 et=160.940</Score>
+<Incident et="161.2">ELCUTI 17(3) reported contact (942.16) with another vehicle Ludovic Staumont(6)</Incident>
+<Score et="161.8">i kun#4881(15) lap=0 point=1 t=44.875 et=161.560</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="162.0">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="162.0">No Further Action</TrackLimits>
+<Incident et="162.1">JEON WM(11) reported contact (191.89) with Sign</Incident>
+<Score et="162.6">Egon Kowalski(5) lap=0 point=1 t=45.746 et=162.440</Score>
+<Score et="163.2">M BK(17) lap=0 point=1 t=46.434 et=163.120</Score>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.8">No Further Action</TrackLimits>
+<Sector et="164.2">ELCUTI 17(3) reports new suspension damage</Sector>
+<Incident et="164.3">ELCUTI 17(3) reported contact (4178.94) with another vehicle JEON WM(11)</Incident>
+<Incident et="164.3">JEON WM(11) reported contact (2764.87) with another vehicle ELCUTI 17(3)</Incident>
+<Score et="164.5">Adrien ACCURSI(2) lap=0 point=1 t=-1.000 et=164.460</Score>
+<Score et="165.1">Ivan Tsvikin(13) lap=0 point=1 t=48.327 et=165.020</Score>
+<Score et="165.2">JOHN JOHN#3924(4) lap=0 point=1 t=48.430 et=165.120</Score>
+<Score et="165.6">Raphael Silva#3503(19) lap=0 point=1 t=48.881 et=165.580</Score>
+<Score et="166.1">YUFAN ZHANG(10) lap=0 point=1 t=49.270 et=165.960</Score>
+<Score et="167.0">Ludovic Staumont(6) lap=0 point=1 t=-1.000 et=166.900</Score>
+<Score et="168.1">P-A Fugeekies(18) lap=0 point=1 t=51.395 et=168.077</Score>
+<Score et="169.0">jonathan schmidt#3910(7) lap=0 point=1 t=52.272 et=168.960</Score>
+<Score et="170.5">JEON WM(11) lap=0 point=1 t=53.581 et=170.280</Score>
+<Score et="172.2">ELCUTI 17(3) lap=0 point=1 t=55.258 et=171.960</Score>
+<Score et="172.9">Thibau Janssens(20) lap=0 point=1 t=56.122 et=172.820</Score>
+<Incident et="173.5">Nicholas Malizia(16) reported contact (68.02) with another vehicle Tom Critom(12)</Incident>
+<Incident et="173.5">Tom Critom(12) reported contact (45.51) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="173.7">Nicholas Malizia(16) reported contact (614.47) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Incident et="173.7">Hendrik Zimmermann(8) reported contact (452.71) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="173.7">Nicholas Malizia(16) reported contact (63.38) with another vehicle Tom Critom(12)</Incident>
+<Incident et="173.9">Hendrik Zimmermann(8) reported contact (5.66) with Post</Incident>
+<Incident et="175.1">Nicholas Malizia(16) reported contact (48.01) with Post</Incident>
+<Incident et="175.1">Nicholas Malizia(16) reported contact (17.87) with Post</Incident>
+<Incident et="175.7">Nicholas Malizia(16) reported contact (4.26) with Post</Incident>
+<Incident et="176.0">Nicholas Malizia(16) reported contact (12.12) with Post</Incident>
+<Incident et="176.0">Hendrik Zimmermann(8) reported contact (825.48) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="176.0">Nicholas Malizia(16) reported contact (800.85) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Incident et="176.4">Nicholas Malizia(16) reported contact (26.58) with Post</Incident>
+<Incident et="177.1">Tom Critom(12) reported contact (655.03) with another vehicle xii xi(9)</Incident>
+<Incident et="177.2">xii xi(9) reported contact (289.23) with another vehicle Tom Critom(12)</Incident>
+<Incident et="177.3">xii xi(9) reported contact (589.02) with another vehicle Tom Critom(12)</Incident>
+<Incident et="177.3">Hendrik Zimmermann(8) reported contact (11.96) with Post</Incident>
+<Score et="182.8">Obermacht koing(1) lap=0 point=1 t=65.929 et=182.620</Score>
+<Sector et="185.3">Ludovic Staumont(6) reports new suspension damage</Sector>
+<Incident et="185.3">Ludovic Staumont(6) reported contact (892.89) with another vehicle jonathan schmidt#3910(7)</Incident>
+<Incident et="185.4">jonathan schmidt#3910(7) reported contact (900.21) with another vehicle Ludovic Staumont(6)</Incident>
+<Incident et="187.2">jonathan schmidt#3910(7) reported contact (645.38) with another vehicle xii xi(9)</Incident>
+<Incident et="187.3">xii xi(9) reported contact (524.20) with another vehicle jonathan schmidt#3910(7)</Incident>
+<TrackLimits Driver="xii xi" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.3">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.3">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.6">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="190.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="190.4">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="190.5">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="190.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="192.4">Warning</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="192.4">Warning</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="193.6">No Further Action</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="193.6">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="194.6">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="194.6">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.0">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.0">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="203.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="203.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="207.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="207.4">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="209.1">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="209.1">No Further Action</TrackLimits>
+<Sector Driver="Kim Jihye" ID="0" Sector="2" Class="GT3" et="216.0">Kim Jihye(0) set new best for sector 2</Sector>
+<Score et="216.0">Kim Jihye(0) lap=0 point=2 t=99.113 et=215.800</Score>
+<Score et="216.4">Nicholas Malizia(16) lap=0 point=2 t=99.553 et=216.240</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.1">No Further Action</TrackLimits>
+<Score et="217.4">Tom Critom(12) lap=0 point=2 t=-1.000 et=217.280</Score>
+<Score et="218.0">i kun#4881(15) lap=0 point=2 t=101.148 et=217.840</Score>
+<Score et="218.4">Egon Kowalski(5) lap=0 point=2 t=101.578 et=218.280</Score>
+<Sector Driver="M BK" ID="17" Sector="2" Class="GT3" et="218.8">M BK(17) set new best for sector 2</Sector>
+<Score et="218.8">M BK(17) lap=0 point=2 t=101.972 et=218.660</Score>
+<Score et="220.0">Adrien ACCURSI(2) lap=0 point=2 t=-1.000 et=219.960</Score>
+<Sector Driver="JOHN JOHN#3924" ID="4" Sector="2" Class="GT3" et="220.6">JOHN JOHN#3924(4) set new best for sector 2</Sector>
+<Score et="220.6">JOHN JOHN#3924(4) lap=0 point=2 t=103.862 et=220.560</Score>
+<Score et="221.8">Ivan Tsvikin(13) lap=0 point=2 t=104.963 et=221.660</Score>
+<Score et="222.6">YUFAN ZHANG(10) lap=0 point=2 t=105.727 et=222.420</Score>
+<Score et="222.9">Raphael Silva#3503(19) lap=0 point=2 t=106.127 et=222.820</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="223.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="223.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="225.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="225.0">No Further Action</TrackLimits>
+<Score et="226.0">P-A Fugeekies(18) lap=0 point=2 t=109.321 et=226.004</Score>
+<Score et="227.2">Hendrik Zimmermann(8) lap=0 point=2 t=110.494 et=227.180</Score>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="227.6">No Further Action</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="227.6">No Further Action</TrackLimits>
+<Score et="230.0">ELCUTI 17(3) lap=0 point=2 t=113.001 et=229.700</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="230.1">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="230.1">No Further Action</TrackLimits>
+<Score et="230.8">xii xi(9) lap=0 point=2 t=113.954 et=230.640</Score>
+<Score et="231.2">jonathan schmidt#3910(7) lap=0 point=2 t=114.319 et=231.020</Score>
+<Score et="232.2">Ludovic Staumont(6) lap=0 point=2 t=-1.000 et=232.100</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="232.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="232.5">No Further Action</TrackLimits>
+<Score et="232.9">Thibau Janssens(20) lap=0 point=2 t=116.159 et=232.860</Score>
+<Score et="238.6">Obermacht koing(1) lap=0 point=2 t=121.618 et=238.320</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="240.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="240.3">No Further Action</TrackLimits>
+<Score et="240.8">JEON WM(11) lap=0 point=2 t=123.967 et=240.660</Score>
+<Sector Driver="Kim Jihye" ID="0" Sector="3" Class="GT3" et="247.2">Kim Jihye(0) set new best for sector 3</Sector>
+<Score et="247.2">Kim Jihye(0) lap=1 point=0 t=130.328 et=247.020</Score>
+<Score et="247.9">Tom Critom(12) lap=1 point=0 t=-1.000 et=247.900</Score>
+<Score et="248.0">Nicholas Malizia(16) lap=1 point=0 t=131.278 et=247.980</Score>
+<Sector Driver="i kun#4881" ID="15" Sector="3" Class="GT3" et="249.0">i kun#4881(15) set new best for sector 3</Sector>
+<Score et="249.0">i kun#4881(15) lap=1 point=0 t=132.167 et=248.860</Score>
+<Score et="249.6">Egon Kowalski(5) lap=1 point=0 t=132.840 et=249.540</Score>
+<Sector Driver="M BK" ID="17" Sector="3" Class="GT3" et="249.7">M BK(17) set new best for sector 3</Sector>
+<Score et="249.7">M BK(17) lap=1 point=0 t=132.862 et=249.560</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="250.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="250.0">No Further Action</TrackLimits>
+<Score et="250.8">Adrien ACCURSI(2) lap=1 point=0 t=-1.000 et=250.740</Score>
+<Sector Driver="JOHN JOHN#3924" ID="4" Sector="3" Class="GT3" et="251.4">JOHN JOHN#3924(4) set new best for sector 3</Sector>
+<Score et="251.4">JOHN JOHN#3924(4) lap=1 point=0 t=134.697 et=251.380</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.2">No Further Action</TrackLimits>
+<Sector Driver="YUFAN ZHANG" ID="10" Sector="3" Class="GT3" et="253.3">YUFAN ZHANG(10) set new best for sector 3</Sector>
+<Score et="253.4">YUFAN ZHANG(10) lap=1 point=0 t=136.454 et=253.140</Score>
+<Score et="253.9">Raphael Silva#3503(19) lap=1 point=0 t=137.168 et=253.860</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="256.8">Warning</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="256.8">Warning</TrackLimits>
+<Score et="257.6">Ivan Tsvikin(13) lap=1 point=0 t=140.833 et=257.520</Score>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.8">No Further Action</TrackLimits>
+<TrackLimits Driver="ELCUTI 17" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.8">No Further Action</TrackLimits>
+<Score et="258.4">Hendrik Zimmermann(8) lap=1 point=0 t=-1.000 et=258.360</Score>
+<Score et="258.9">P-A Fugeekies(18) lap=1 point=0 t=142.190 et=258.872</Score>
+<Incident et="261.4">M BK(17) reported contact (1091.44) with another vehicle i kun#4881(15)</Incident>
+<Sector et="261.5">i kun#4881(15) reports new suspension damage</Sector>
+<Incident et="261.5">i kun#4881(15) reported contact (1075.82) with another vehicle M BK(17)</Incident>
+<Score et="261.6">xii xi(9) lap=1 point=0 t=144.796 et=261.480</Score>
+<Score et="262.0">jonathan schmidt#3910(7) lap=1 point=0 t=145.117 et=261.800</Score>
+<Incident et="263.2">Egon Kowalski(5) reported contact (1029.84) with another vehicle M BK(17)</Incident>
+<Incident et="263.3">M BK(17) reported contact (918.89) with another vehicle Egon Kowalski(5)</Incident>
+<Incident et="263.6">Egon Kowalski(5) reported contact (828.54) with another vehicle i kun#4881(15)</Incident>
+<Incident et="263.7">i kun#4881(15) reported contact (1017.19) with another vehicle Egon Kowalski(5)</Incident>
+<Score et="264.4">Thibau Janssens(20) lap=1 point=0 t=147.586 et=264.280</Score>
+<Incident et="264.6">Adrien ACCURSI(2) reported contact (2209.36) with another vehicle M BK(17)</Incident>
+<Incident et="264.6">M BK(17) reported contact (1988.70) with another vehicle Adrien ACCURSI(2)</Incident>
+<Incident et="264.8">Egon Kowalski(5) reported contact (595.10) with another vehicle i kun#4881(15)</Incident>
+<Score et="264.8">ELCUTI 17(3) lap=1 point=0 t=147.893 et=264.580</Score>
+<Incident et="265.0">M BK(17) reported contact (1352.86) with another vehicle i kun#4881(15)</Incident>
+<Incident et="265.0">i kun#4881(15) reported contact (447.41) with another vehicle Egon Kowalski(5)</Incident>
+<Incident et="265.1">i kun#4881(15) reported contact (2148.80) with another vehicle M BK(17)</Incident>
+<Incident et="265.1">i kun#4881(15) reported contact (2148.80) with another vehicle M BK(17)</Incident>
+<Incident et="265.2">Tom Critom(12) reported contact (37.87) with Post</Incident>
+<Incident et="265.2">Tom Critom(12) reported contact (39.00) with Post</Incident>
+<Incident et="265.8">Egon Kowalski(5) reported contact (89.31) with another vehicle i kun#4881(15)</Incident>
+<Incident et="266.0">Egon Kowalski(5) reported contact (243.28) with another vehicle i kun#4881(15)</Incident>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="267.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="267.0">No Further Action</TrackLimits>
+<ChatMessage et="268.6">M BK: sdry</ChatMessage>
+<Incident et="268.8">YUFAN ZHANG(10) reported contact (74.17) with Post</Incident>
+<Score et="269.0">Ludovic Staumont(6) lap=1 point=0 t=-1.000 et=268.980</Score>
+<Score et="269.5">Obermacht koing(1) lap=1 point=0 t=152.573 et=269.260</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="271.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="271.6">No Further Action</TrackLimits>
+<Incident et="272.2">Tom Critom(12) reported contact (20.33) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="272.2">Nicholas Malizia(16) reported contact (55.05) with another vehicle Tom Critom(12)</Incident>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.5">No Further Action</TrackLimits>
+<TrackLimits Driver="YUFAN ZHANG" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="273.0">No Further Action</TrackLimits>
+<TrackLimits Driver="YUFAN ZHANG" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="273.0">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.8">No Further Action</TrackLimits>
+<Score et="275.8">JEON WM(11) lap=1 point=0 t=158.820 et=275.520</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="277.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="277.6">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
+<Incident et="282.1">Tom Critom(12) reported contact (587.54) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="282.1">Nicholas Malizia(16) reported contact (594.29) with another vehicle Tom Critom(12)</Incident>
+<Sector Driver="Kim Jihye" ID="0" Sector="1" Class="GT3" et="283.7">Kim Jihye(0) set new best for sector 1</Sector>
+<Score et="283.7">Kim Jihye(0) lap=1 point=1 t=36.533 et=283.560</Score>
+<Score et="285.9">Nicholas Malizia(16) lap=1 point=1 t=37.839 et=285.800</Score>
+<Score et="286.0">Tom Critom(12) lap=1 point=1 t=38.077 et=285.980</Score>
+<Score et="290.5">Adrien ACCURSI(2) lap=1 point=1 t=39.698 et=290.420</Score>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.0">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.0">No Further Action</TrackLimits>
+<Score et="291.4">M BK(17) lap=1 point=1 t=41.729 et=291.280</Score>
+<Score et="291.4">Egon Kowalski(5) lap=1 point=1 t=41.873 et=291.400</Score>
+<Score et="291.7">JOHN JOHN#3924(4) lap=1 point=1 t=40.296 et=291.680</Score>
+<Score et="292.5">Raphael Silva#3503(19) lap=1 point=1 t=38.551 et=292.420</Score>
+<Score et="293.1">YUFAN ZHANG(10) lap=1 point=1 t=39.781 et=292.920</Score>
+<Score et="295.4">Hendrik Zimmermann(8) lap=1 point=1 t=36.980 et=295.340</Score>
+<Score et="295.7">Ivan Tsvikin(13) lap=1 point=1 t=38.177 et=295.700</Score>
+<Score et="296.9">P-A Fugeekies(18) lap=1 point=1 t=38.052 et=296.924</Score>
+<TrackLimits Driver="M BK" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.0">No Further Action</TrackLimits>
+<TrackLimits Driver="M BK" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.4">No Further Action</TrackLimits>
+<Incident et="297.9">Tom Critom(12) reported contact (937.17) with another vehicle Nicholas Malizia(16)</Incident>
+<Incident et="297.9">Nicholas Malizia(16) reported contact (772.00) with another vehicle Tom Critom(12)</Incident>
+<Score et="298.7">xii xi(9) lap=1 point=1 t=37.072 et=298.560</Score>
+<Score et="299.8">jonathan schmidt#3910(7) lap=1 point=1 t=37.888 et=299.700</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="301.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="301.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.8">No Further Action</TrackLimits>
+<Score et="302.9">Thibau Janssens(20) lap=1 point=1 t=38.555 et=302.840</Score>
+<Score et="305.1">i kun#4881(15) lap=1 point=1 t=55.814 et=304.680</Score>
+<Score et="306.9">Obermacht koing(1) lap=1 point=1 t=37.359 et=306.620</Score>
+<Incident et="307.8">i kun#4881(15) reported contact (108.48) with Post</Incident>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.2">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="316.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="316.0">No Further Action</TrackLimits>
+<Incident et="317.6">Egon Kowalski(5) reported contact (559.27) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="317.6">JOHN JOHN#3924(4) reported contact (563.77) with another vehicle Egon Kowalski(5)</Incident>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="318.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="318.1">No Further Action</TrackLimits>
+<Incident et="319.3">Egon Kowalski(5) reported contact (419.69) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="319.3">JOHN JOHN#3924(4) reported contact (422.30) with another vehicle Egon Kowalski(5)</Incident>
+<Incident et="321.3">JOHN JOHN#3924(4) reported contact (65.57) with another vehicle Egon Kowalski(5)</Incident>
+<Incident et="321.3">Egon Kowalski(5) reported contact (94.28) with another vehicle JOHN JOHN#3924(4)</Incident>
+<Incident et="321.4">Egon Kowalski(5) reported contact (86.10) with another vehicle JOHN JOHN#3924(4)</Incident>
+<TrackLimits Driver="xii xi" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="330.0">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="330.0">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="332.2">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="332.2">No Further Action</TrackLimits>
+<Sector Driver="Kim Jihye" ID="0" Sector="2" Class="GT3" et="338.8">Kim Jihye(0) set new best for sector 2</Sector>
+<Score et="338.8">Kim Jihye(0) lap=1 point=2 t=91.500 et=338.520</Score>
+<Score et="341.2">Tom Critom(12) lap=1 point=2 t=-1.000 et=341.140</Score>
+<Score et="341.6">Nicholas Malizia(16) lap=1 point=2 t=93.536 et=341.500</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="344.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="344.5">No Further Action</TrackLimits>
+<Score et="345.8">Adrien ACCURSI(2) lap=1 point=2 t=95.029 et=345.760</Score>
+<Score et="346.8">M BK(17) lap=1 point=2 t=97.060 et=346.620</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="347.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="347.5">No Further Action</TrackLimits>
+<Score et="348.1">JOHN JOHN#3924(4) lap=1 point=2 t=96.640 et=348.040</Score>
+<Score et="349.4">Raphael Silva#3503(19) lap=1 point=2 t=95.438 et=349.300</Score>
+<Score et="349.4">YUFAN ZHANG(10) lap=1 point=2 t=95.954 et=349.100</Score>
+<Sector Driver="Hendrik Zimmermann" ID="8" Sector="2" Class="GT3" et="349.9">Hendrik Zimmermann(8) set new best for sector 2</Sector>
+<Score et="349.9">Hendrik Zimmermann(8) lap=1 point=2 t=91.486 et=349.860</Score>
+<Score et="351.4">Ivan Tsvikin(13) lap=1 point=2 t=-1.000 et=351.380</Score>
+<Score et="352.2">Egon Kowalski(5) lap=1 point=2 t=102.628 et=352.160</Score>
+<Score et="353.0">P-A Fugeekies(18) lap=1 point=2 t=94.134 et=353.006</Score>
+<Score et="353.2">JEON WM(11) lap=1 point=1 t=77.490 et=353.000</Score>
+<Incident et="353.6">Hendrik Zimmermann(8) reported contact (618.53) with another vehicle Raphael Silva#3503(19)</Incident>
+<Incident et="353.6">Raphael Silva#3503(19) reported contact (622.04) with another vehicle Hendrik Zimmermann(8)</Incident>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="353.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="353.7">No Further Action</TrackLimits>
+<Incident et="354.4">Hendrik Zimmermann(8) reported contact (664.41) with another vehicle Raphael Silva#3503(19)</Incident>
+<Incident et="354.4">Raphael Silva#3503(19) reported contact (833.91) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Score et="356.0">jonathan schmidt#3910(7) lap=1 point=2 t=94.164 et=355.980</Score>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="357.8">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="357.8">No Further Action</TrackLimits>
+<Score et="359.4">Thibau Janssens(20) lap=1 point=2 t=94.990 et=359.260</Score>
+<Score et="361.1">xii xi(9) lap=1 point=2 t=99.276 et=360.760</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="361.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="361.1">No Further Action</TrackLimits>
+<Score et="363.4">Obermacht koing(1) lap=1 point=2 t=93.888 et=363.160</Score>
+<Score et="369.7">Kim Jihye(0) lap=2 point=0 t=122.512 et=369.540</Score>
+<Score et="369.8">Ludovic Staumont(6) lap=1 point=1 t=100.776 et=369.760</Score>
+<Incident et="370.5">Hendrik Zimmermann(8) reported contact (578.53) with another vehicle Raphael Silva#3503(19)</Incident>
+<Incident et="370.5">Raphael Silva#3503(19) reported contact (897.95) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Score et="371.8">Tom Critom(12) lap=2 point=0 t=123.904 et=371.800</Score>
+<Score et="372.4">Nicholas Malizia(16) lap=2 point=0 t=124.265 et=372.240</Score>
+<Sector Driver="Adrien ACCURSI" ID="2" Sector="3" Class="GT3" et="376.3">Adrien ACCURSI(2) set new best for sector 3</Sector>
+<Score et="376.4">Adrien ACCURSI(2) lap=2 point=0 t=125.570 et=376.300</Score>
+<Incident et="376.7">Hendrik Zimmermann(8) reported contact (58.61) with another vehicle Raphael Silva#3503(19)</Incident>
+<Incident et="376.8">Raphael Silva#3503(19) reported contact (58.87) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Incident et="377.5">Hendrik Zimmermann(8) reported contact (12.65) with another vehicle Raphael Silva#3503(19)</Incident>
+<Incident et="377.5">Raphael Silva#3503(19) reported contact (28.10) with another vehicle Hendrik Zimmermann(8)</Incident>
+<Score et="377.7">M BK(17) lap=2 point=0 t=128.035 et=377.580</Score>
+<Score et="378.9">JOHN JOHN#3924(4) lap=2 point=0 t=127.483 et=378.880</Score>
+<Score et="380.2">YUFAN ZHANG(10) lap=2 point=0 t=126.710 et=379.860</Score>
+<Score et="380.9">Hendrik Zimmermann(8) lap=2 point=0 t=122.465 et=380.820</Score>
+<Score et="381.0">Raphael Silva#3503(19) lap=2 point=0 t=127.092 et=380.960</Score>
+<Score et="381.5">i kun#4881(15) lap=1 point=2 t=132.456 et=381.320</Score>
+<Score et="383.0">Egon Kowalski(5) lap=2 point=0 t=133.465 et=383.000</Score>
+<Score et="384.6">P-A Fugeekies(18) lap=2 point=0 t=125.732 et=384.604</Score>
+<Sector Driver="Ivan Tsvikin" ID="13" Sector="3" Class="GT3" et="385.2">Ivan Tsvikin(13) set new best for sector 3</Sector>
+<Score et="385.2">Ivan Tsvikin(13) lap=2 point=0 t=127.627 et=385.160</Score>
+<Score et="387.0">jonathan schmidt#3910(7) lap=2 point=0 t=125.153 et=386.960</Score>
+<Score et="390.5">Thibau Janssens(20) lap=2 point=0 t=126.107 et=390.380</Score>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="391.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="391.0">No Further Action</TrackLimits>
+<Score et="391.6">xii xi(9) lap=2 point=0 t=129.991 et=391.480</Score>
+<Score et="394.4">Obermacht koing(1) lap=2 point=0 t=124.894 et=394.160</Score>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.0">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.4">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="406.2">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="406.2">No Further Action</TrackLimits>
+<Score et="406.5">Kim Jihye(0) lap=2 point=1 t=36.720 et=406.260</Score>
+<Score et="408.7">Tom Critom(12) lap=2 point=1 t=36.853 et=408.660</Score>
+<Score et="409.3">Nicholas Malizia(16) lap=2 point=1 t=36.999 et=409.240</Score>
+<Score et="410.1">JEON WM(11) lap=1 point=2 t=134.252 et=409.760</Score>
+<Score et="413.2">Adrien ACCURSI(2) lap=2 point=1 t=36.845 et=413.140</Score>
+<Score et="415.8">M BK(17) lap=2 point=1 t=37.964 et=415.560</Score>
+<Score et="416.1">JOHN JOHN#3924(4) lap=2 point=1 t=37.131 et=416.000</Score>
+<Score et="417.0">YUFAN ZHANG(10) lap=2 point=1 t=36.917 et=416.780</Score>
+<Score et="417.7">Hendrik Zimmermann(8) lap=2 point=1 t=36.798 et=417.620</Score>
+<Score et="418.6">Raphael Silva#3503(19) lap=2 point=1 t=37.594 et=418.540</Score>
+<Score et="419.9">Egon Kowalski(5) lap=2 point=1 t=36.814 et=419.820</Score>
+<Score et="422.6">P-A Fugeekies(18) lap=2 point=1 t=37.969 et=422.573</Score>
+<Score et="423.1">Ivan Tsvikin(13) lap=2 point=1 t=37.844 et=423.000</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="423.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="423.5">No Further Action</TrackLimits>
+<Score et="424.1">jonathan schmidt#3910(7) lap=2 point=1 t=37.035 et=424.000</Score>
+<Score et="426.3">Ludovic Staumont(6) lap=1 point=2 t=157.314 et=426.300</Score>
+<Score et="427.8">Thibau Janssens(20) lap=2 point=1 t=37.356 et=427.740</Score>
+<Score et="428.6">xii xi(9) lap=2 point=1 t=36.974 et=428.460</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="429.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="429.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="430.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="430.3">No Further Action</TrackLimits>
+<Score et="430.4">i kun#4881(15) lap=2 point=0 t=181.349 et=430.200</Score>
+<Score et="431.7">Obermacht koing(1) lap=2 point=1 t=37.340 et=431.500</Score>
+<TrackLimits Driver="xii xi" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.4">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.4">No Further Action</TrackLimits>
+<Sector et="441.3">M BK(17) reports new suspension damage</Sector>
+<Incident et="441.4">M BK(17) reported contact (5664.78) with Immovable</Incident>
+<Sector et="441.4">M BK(17) reports new suspension damage</Sector>
+<Score et="441.6">JEON WM(11) lap=2 point=0 t=165.880 et=441.400</Score>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="446.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="446.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="453.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="453.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="454.4">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.0">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.0">No Further Action</TrackLimits>
+<Score et="461.5">Kim Jihye(0) lap=2 point=2 t=91.789 et=461.320</Score>
+<Score et="463.0">Ludovic Staumont(6) lap=2 point=0 t=193.955 et=462.940</Score>
+<Score et="463.3">Tom Critom(12) lap=2 point=2 t=91.440 et=463.240</Score>
+<Score et="464.1">Nicholas Malizia(16) lap=2 point=2 t=91.759 et=464.000</Score>
+<Score et="468.1">Adrien ACCURSI(2) lap=2 point=2 t=91.796 et=468.100</Score>
+<Score et="471.1">JOHN JOHN#3924(4) lap=2 point=2 t=92.164 et=471.040</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="471.9">No Further Action</TrackLimits>
+<Score et="472.3">Hendrik Zimmermann(8) lap=2 point=2 t=91.431 et=472.260</Score>
+<Score et="472.4">YUFAN ZHANG(10) lap=2 point=2 t=92.269 et=472.120</Score>
+<Score et="474.4">Raphael Silva#3503(19) lap=2 point=2 t=93.357 et=474.320</Score>
+<Score et="475.6">Egon Kowalski(5) lap=2 point=2 t=92.530 et=475.520</Score>
+<Score et="479.2">Ivan Tsvikin(13) lap=2 point=2 t=93.998 et=479.160</Score>
+<Score et="479.8">JEON WM(11) lap=2 point=1 t=38.169 et=479.560</Score>
+<Score et="480.6">P-A Fugeekies(18) lap=2 point=2 t=95.953 et=480.556</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="480.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="480.7">No Further Action</TrackLimits>
+<Score et="480.8">jonathan schmidt#3910(7) lap=2 point=2 t=93.803 et=480.760</Score>
+<Score et="483.0">Thibau Janssens(20) lap=2 point=2 t=92.533 et=482.920</Score>
+<Incident et="483.6">P-A Fugeekies(18) reported contact (916.53) with another vehicle jonathan schmidt#3910(7)</Incident>
+<Incident et="483.6">jonathan schmidt#3910(7) reported contact (705.92) with another vehicle P-A Fugeekies(18)</Incident>
+<Score et="483.7">xii xi(9) lap=2 point=2 t=92.018 et=483.500</Score>
+<Penalty et="485.8">Ludovic Staumont served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Score et="487.2">Obermacht koing(1) lap=2 point=2 t=92.674 et=486.840</Score>
+<Score et="492.0">Kim Jihye(0) lap=3 point=0 t=122.333 et=491.860</Score>
+<Score et="494.3">Tom Critom(12) lap=3 point=0 t=122.418 et=494.220</Score>
+<Score et="494.7">Nicholas Malizia(16) lap=3 point=0 t=122.401 et=494.640</Score>
+<Score et="501.8">JOHN JOHN#3924(4) lap=3 point=0 t=122.864 et=501.740</Score>
+<Score et="502.5">Adrien ACCURSI(2) lap=3 point=0 t=126.180 et=502.480</Score>
+<Score et="503.2">YUFAN ZHANG(10) lap=3 point=0 t=122.974 et=502.840</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="503.5">Warning</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="503.5">Warning</TrackLimits>
+<Score et="505.6">Raphael Silva#3503(19) lap=3 point=0 t=124.577 et=505.540</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="506.3">No Further Action</TrackLimits>
+<Score et="506.5">Egon Kowalski(5) lap=3 point=0 t=123.507 et=506.500</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.6">No Further Action</TrackLimits>
+<Score et="510.4">Hendrik Zimmermann(8) lap=3 point=0 t=-1.000 et=510.360</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.8">No Further Action</TrackLimits>
+<Score et="510.8">Ivan Tsvikin(13) lap=3 point=0 t=125.617 et=510.760</Score>
+<Score et="512.6">jonathan schmidt#3910(7) lap=3 point=0 t=125.562 et=512.520</Score>
+<Score et="512.9">P-A Fugeekies(18) lap=3 point=0 t=128.276 et=512.879</Score>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="513.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="513.1">No Further Action</TrackLimits>
+<Score et="514.0">Thibau Janssens(20) lap=3 point=0 t=123.576 et=513.960</Score>
+<Score et="514.4">xii xi(9) lap=3 point=0 t=122.756 et=514.240</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.0">Warning</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.0">Warning</TrackLimits>
+<Score et="518.2">Obermacht koing(1) lap=3 point=0 t=123.713 et=517.880</Score>
+<Score et="521.2">Ludovic Staumont(6) lap=2 point=1 t=58.226 et=521.160</Score>
+<Penalty et="525.4">Adrien ACCURSI served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Score et="528.6">Kim Jihye(0) lap=3 point=1 t=36.552 et=528.420</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="529.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="529.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.7">No Further Action</TrackLimits>
+<Score et="531.0">Tom Critom(12) lap=3 point=1 t=36.729 et=530.940</Score>
+<Score et="532.8">Nicholas Malizia(16) lap=3 point=1 t=-1.000 et=532.640</Score>
+<Score et="536.7">JEON WM(11) lap=2 point=2 t=95.056 et=536.440</Score>
+<Score et="539.1">JOHN JOHN#3924(4) lap=3 point=1 t=37.292 et=539.020</Score>
+<Score et="539.9">YUFAN ZHANG(10) lap=3 point=1 t=36.891 et=539.720</Score>
+<Score et="543.7">Egon Kowalski(5) lap=3 point=1 t=37.170 et=543.680</Score>
+<Score et="544.0">Raphael Silva#3503(19) lap=3 point=1 t=38.385 et=543.920</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="549.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="549.1">No Further Action</TrackLimits>
+<Score et="549.5">Ivan Tsvikin(13) lap=3 point=1 t=38.692 et=549.460</Score>
+<Score et="550.0">jonathan schmidt#3910(7) lap=3 point=1 t=37.389 et=549.920</Score>
+<Score et="550.8">P-A Fugeekies(18) lap=3 point=1 t=37.919 et=550.799</Score>
+<Score et="551.7">xii xi(9) lap=3 point=1 t=37.259 et=551.500</Score>
+<Score et="552.7">Thibau Janssens(20) lap=3 point=1 t=38.634 et=552.600</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="555.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="555.4">No Further Action</TrackLimits>
+<Score et="555.4">Obermacht koing(1) lap=3 point=1 t=37.359 et=555.240</Score>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="555.9">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="555.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="557.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Tom Critom" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="557.9">No Further Action</TrackLimits>
+<Score et="560.2">Adrien ACCURSI(2) lap=3 point=1 t=57.683 et=560.160</Score>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="562.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Hendrik Zimmermann" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="562.9">No Further Action</TrackLimits>
+<Sector et="564.4">i kun#4881(15) reports new suspension damage</Sector>
+<Incident et="564.5">i kun#4881(15) reported contact (4611.59) with Immovable</Incident>
+<Score et="568.3">JEON WM(11) lap=3 point=0 t=126.693 et=568.080</Score>
+<TrackLimits Driver="YUFAN ZHANG" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="570.4">Warning</TrackLimits>
+<TrackLimits Driver="YUFAN ZHANG" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="570.4">Warning</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="570.4">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="570.4">No Further Action</TrackLimits>
+<Score et="571.9">Hendrik Zimmermann(8) lap=3 point=1 t=61.475 et=571.820</Score>
+<Incident et="573.8">Ivan Tsvikin(13) reported contact (1559.73) with another vehicle jonathan schmidt#3910(7)</Incident>
+<Incident et="573.9">jonathan schmidt#3910(7) reported contact (1532.54) with another vehicle Ivan Tsvikin(13)</Incident>
+<Score et="577.6">i kun#4881(15) lap=2 point=1 t=147.188 et=577.400</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="578.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="578.5">No Further Action</TrackLimits>
+<Incident et="580.4">Hendrik Zimmermann(8) reported contact (357.01) with Sign</Incident>
+<Incident et="580.4">Hendrik Zimmermann(8) reported contact (345.11) with Sign</Incident>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="583.3">No Further Action</TrackLimits>
+<Sector et="583.6">Hendrik Zimmermann(8) reports new suspension damage</Sector>
+<Incident et="583.7">Hendrik Zimmermann(8) reported contact (4577.09) with Immovable</Incident>
+<Incident et="583.7">Hendrik Zimmermann(8) reported contact (119.90) with Wheel</Incident>
+<Incident et="583.8">Hendrik Zimmermann(8) reported contact (38.60) with Wheel</Incident>
+<Score et="583.9">Kim Jihye(0) lap=3 point=2 t=91.820 et=583.680</Score>
+<Score et="584.5">Ludovic Staumont(6) lap=2 point=2 t=121.520 et=584.460</Score>
+<TrackLimits Driver="xii xi" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="585.5">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="585.5">No Further Action</TrackLimits>
+<Incident et="586.0">Hendrik Zimmermann(8) reported contact (3.85) with Wing</Incident>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="587.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="587.3">No Further Action</TrackLimits>
+<Score et="587.9">Nicholas Malizia(16) lap=3 point=2 t=-1.000 et=587.840</Score>
+<Incident et="589.7">i kun#4881(15) reported contact (5.20) with Post</Incident>
+<Incident et="589.9">i kun#4881(15) reported contact (2.67) with Post</Incident>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="590.3">No Further Action</TrackLimits>
+<TrackLimits Driver="i kun#4881" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="590.3">No Further Action</TrackLimits>
+<Incident et="591.6">Hendrik Zimmermann(8) reported contact (33.76) with Immovable</Incident>
+<Incident et="592.0">Hendrik Zimmermann(8) reported contact (26.45) with Immovable</Incident>
+<Score et="594.5">JOHN JOHN#3924(4) lap=3 point=2 t=92.769 et=594.500</Score>
+<Sector et="595.5">Tom Critom(12) reports new suspension damage</Sector>
+<Incident et="595.5">Tom Critom(12) reported contact (3105.51) with another vehicle YUFAN ZHANG(10)</Incident>
+<Incident et="595.6">YUFAN ZHANG(10) reported contact (6127.16) with another vehicle Tom Critom(12)</Incident>
+<Sector et="595.7">YUFAN ZHANG(10) reports new suspension damage</Sector>
+<Sector et="595.7">Tom Critom(12) reports new suspension damage</Sector>
+<Incident et="596.4">Tom Critom(12) reported contact (232.01) with Immovable</Incident>
+<Incident et="598.2">Tom Critom(12) reported contact (2262.90) with Immovable</Incident>
+<Score et="599.9">Egon Kowalski(5) lap=3 point=2 t=93.387 et=599.900</Score>
+<Score et="600.4">Raphael Silva#3503(19) lap=3 point=2 t=94.796 et=600.320</Score>
+<Incident et="605.7">Tom Critom(12) reported contact (30.81) with Immovable</Incident>
+<Score et="606.5">JEON WM(11) lap=3 point=1 t=38.084 et=606.160</Score>
+<Score et="606.9">jonathan schmidt#3910(7) lap=3 point=2 t=94.324 et=606.840</Score>
+<Score et="607.0">xii xi(9) lap=3 point=2 t=92.571 et=606.800</Score>
+<Score et="608.4">P-A Fugeekies(18) lap=3 point=2 t=95.472 et=608.352</Score>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="609.2">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="609.2">No Further Action</TrackLimits>
+<Score et="609.5">Ivan Tsvikin(13) lap=3 point=2 t=-1.000 et=609.400</Score>
+<Incident et="609.5">Tom Critom(12) reported contact (4.47) with Immovable</Incident>
+<Score et="609.7">Thibau Janssens(20) lap=3 point=2 t=95.652 et=609.620</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="610.3">No Further Action</TrackLimits>
+<Incident et="610.5">Tom Critom(12) reported contact (4.45) with Immovable</Incident>
+<Score et="611.1">Obermacht koing(1) lap=3 point=2 t=93.027 et=610.900</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="613.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="613.4">No Further Action</TrackLimits>
+<Score et="614.6">Kim Jihye(0) lap=4 point=0 t=122.523 et=614.380</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.6">No Further Action</TrackLimits>
+<Score et="615.2">Adrien ACCURSI(2) lap=3 point=2 t=112.597 et=615.080</Score>
+<Score et="618.2">Ludovic Staumont(6) lap=3 point=0 t=155.242 et=618.180</Score>
+<Score et="618.4">Nicholas Malizia(16) lap=4 point=0 t=-1.000 et=618.340</Score>
+<Score et="625.5">JOHN JOHN#3924(4) lap=4 point=0 t=123.702 et=625.440</Score>
+<Score et="631.2">Egon Kowalski(5) lap=4 point=0 t=124.671 et=631.180</Score>
+<Score et="631.6">Raphael Silva#3503(19) lap=4 point=0 t=126.039 et=631.560</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="632.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="632.0">No Further Action</TrackLimits>
+<Score et="637.8">xii xi(9) lap=4 point=0 t=123.426 et=637.660</Score>
+<Score et="638.5">jonathan schmidt#3910(7) lap=4 point=0 t=125.845 et=638.360</Score>
+<Score et="639.6">P-A Fugeekies(18) lap=4 point=0 t=126.711 et=639.591</Score>
+<Score et="640.4">Ivan Tsvikin(13) lap=4 point=0 t=129.579 et=640.340</Score>
+<Score et="641.3">Thibau Janssens(20) lap=4 point=0 t=127.341 et=641.300</Score>
+<Score et="642.2">Obermacht koing(1) lap=4 point=0 t=124.199 et=642.080</Score>
+<Incident et="644.5">i kun#4881(15) reported contact (3204.92) with Immovable</Incident>
+<Incident et="645.1">i kun#4881(15) reported contact (7041.16) with Immovable</Incident>
+<Incident et="645.2">i kun#4881(15) reported contact (39.25) with Wheel</Incident>
+<Score et="645.7">Adrien ACCURSI(2) lap=4 point=0 t=143.161 et=645.640</Score>
+<ChatMessage et="650.7">i kun#4881: Go Right</ChatMessage>
+<Score et="651.4">Kim Jihye(0) lap=4 point=1 t=36.817 et=651.200</Score>
+<Score et="655.4">Nicholas Malizia(16) lap=4 point=1 t=36.922 et=655.260</Score>
+<Score et="656.0">Ludovic Staumont(6) lap=3 point=1 t=37.793 et=655.980</Score>
+<Score et="662.6">JEON WM(11) lap=3 point=2 t=94.220 et=662.300</Score>
+<Score et="662.8">JOHN JOHN#3924(4) lap=4 point=1 t=37.315 et=662.760</Score>
+<Score et="668.3">Egon Kowalski(5) lap=4 point=1 t=37.036 et=668.220</Score>
+<Score et="669.5">Raphael Silva#3503(19) lap=4 point=1 t=37.870 et=669.440</Score>
+<Score et="674.7">xii xi(9) lap=4 point=1 t=36.842 et=674.500</Score>
+<Score et="675.6">jonathan schmidt#3910(7) lap=4 point=1 t=37.130 et=675.500</Score>
+<Score et="676.9">P-A Fugeekies(18) lap=4 point=1 t=37.270 et=676.861</Score>
+<Score et="677.9">Ivan Tsvikin(13) lap=4 point=1 t=37.472 et=677.820</Score>
+<Score et="678.5">Thibau Janssens(20) lap=4 point=1 t=37.147 et=678.440</Score>
+<Score et="679.7">Obermacht koing(1) lap=4 point=1 t=37.427 et=679.500</Score>
+<Score et="682.6">Adrien ACCURSI(2) lap=4 point=1 t=36.928 et=682.560</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="684.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="684.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="685.0">No Further Action</TrackLimits>
+<Score et="693.7">JEON WM(11) lap=4 point=0 t=125.336 et=693.420</Score>
+<Score et="706.4">Kim Jihye(0) lap=4 point=2 t=91.746 et=706.140</Score>
+<Score et="710.2">Nicholas Malizia(16) lap=4 point=2 t=91.736 et=710.080</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="710.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="711.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="711.2">No Further Action</TrackLimits>
+<Score et="711.8">Ludovic Staumont(6) lap=3 point=2 t=93.569 et=711.740</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="714.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="714.6">No Further Action</TrackLimits>
+<Score et="718.4">JOHN JOHN#3924(4) lap=4 point=2 t=92.938 et=718.380</Score>
+<Score et="723.6">Egon Kowalski(5) lap=4 point=2 t=92.392 et=723.560</Score>
+<Score et="725.4">Raphael Silva#3503(19) lap=4 point=2 t=93.806 et=725.380</Score>
+<Score et="730.0">xii xi(9) lap=4 point=2 t=92.103 et=729.760</Score>
+<Score et="731.2">jonathan schmidt#3910(7) lap=4 point=2 t=-1.000 et=731.120</Score>
+<Score et="732.0">JEON WM(11) lap=4 point=1 t=38.387 et=731.800</Score>
+<Score et="733.5">Ivan Tsvikin(13) lap=4 point=2 t=93.083 et=733.440</Score>
+<Score et="734.2">Thibau Janssens(20) lap=4 point=2 t=92.906 et=734.200</Score>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="735.2">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="735.2">No Further Action</TrackLimits>
+<Score et="735.4">Obermacht koing(1) lap=4 point=2 t=93.050 et=735.120</Score>
+<Score et="737.2">Kim Jihye(0) lap=5 point=0 t=122.594 et=736.980</Score>
+<Score et="738.4">Adrien ACCURSI(2) lap=4 point=2 t=92.711 et=738.360</Score>
+<Score et="739.8">P-A Fugeekies(18) lap=4 point=2 t=100.159 et=739.750</Score>
+<Score et="740.6">Nicholas Malizia(16) lap=5 point=0 t=122.206 et=740.560</Score>
+<Score et="742.8">Ludovic Staumont(6) lap=4 point=0 t=124.544 et=742.720</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="743.3">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="743.3">No Further Action</TrackLimits>
+<Score et="749.3">JOHN JOHN#3924(4) lap=5 point=0 t=123.786 et=749.220</Score>
+<Score et="755.0">Egon Kowalski(5) lap=5 point=0 t=123.602 et=754.780</Score>
+<Score et="757.1">Raphael Silva#3503(19) lap=5 point=0 t=125.460 et=757.020</Score>
+<Score et="760.7">xii xi(9) lap=5 point=0 t=122.814 et=760.480</Score>
+<Score et="762.5">jonathan schmidt#3910(7) lap=5 point=0 t=123.962 et=762.340</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.2">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.5">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.5">No Further Action</TrackLimits>
+<Score et="765.5">Thibau Janssens(20) lap=5 point=0 t=124.058 et=765.360</Score>
+<Score et="765.6">Ivan Tsvikin(13) lap=5 point=0 t=125.107 et=765.460</Score>
+<Score et="766.4">Obermacht koing(1) lap=5 point=0 t=124.182 et=766.260</Score>
+<Score et="768.9">Adrien ACCURSI(2) lap=5 point=0 t=123.205 et=768.840</Score>
+<Score et="771.3">P-A Fugeekies(18) lap=5 point=0 t=131.688 et=771.279</Score>
+<Score et="773.8">Kim Jihye(0) lap=5 point=1 t=36.606 et=773.580</Score>
+<Score et="777.6">Nicholas Malizia(16) lap=5 point=1 t=36.998 et=777.560</Score>
+<Incident et="778.0">Ivan Tsvikin(13) reported contact (1520.93) with another vehicle Thibau Janssens(20)</Incident>
+<Incident et="778.0">Thibau Janssens(20) reported contact (1578.50) with another vehicle Ivan Tsvikin(13)</Incident>
+<Score et="780.2">Ludovic Staumont(6) lap=4 point=1 t=37.442 et=780.160</Score>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="785.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="785.4">No Further Action</TrackLimits>
+<Score et="786.2">JOHN JOHN#3924(4) lap=5 point=1 t=36.932 et=786.160</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="789.6">Warning</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="789.6">Warning</TrackLimits>
+<Score et="790.9">JEON WM(11) lap=4 point=2 t=97.195 et=790.620</Score>
+<Score et="791.9">Egon Kowalski(5) lap=5 point=1 t=37.043 et=791.820</Score>
+<Score et="794.2">Raphael Silva#3503(19) lap=5 point=1 t=37.107 et=794.140</Score>
+<Score et="797.7">xii xi(9) lap=5 point=1 t=37.022 et=797.500</Score>
+<Score et="799.3">jonathan schmidt#3910(7) lap=5 point=1 t=36.859 et=799.180</Score>
+<Score et="803.2">Thibau Janssens(20) lap=5 point=1 t=37.769 et=803.120</Score>
+<Score et="803.5">Ivan Tsvikin(13) lap=5 point=1 t=-1.000 et=803.460</Score>
+<Score et="804.0">Obermacht koing(1) lap=5 point=1 t=37.594 et=803.840</Score>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="804.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="804.9">No Further Action</TrackLimits>
+<Score et="806.1">Adrien ACCURSI(2) lap=5 point=1 t=37.201 et=806.040</Score>
+<Score et="809.2">P-A Fugeekies(18) lap=5 point=1 t=37.881 et=809.160</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="809.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="809.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="811.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="811.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="820.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="820.6">No Further Action</TrackLimits>
+<Score et="822.1">JEON WM(11) lap=5 point=0 t=128.449 et=821.880</Score>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="823.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="823.0">No Further Action</TrackLimits>
+<ChatMessage et="824.5">T Janssens: why hit  me</ChatMessage>
+<Score et="828.5">Kim Jihye(0) lap=5 point=2 t=91.301 et=828.280</Score>
+<Score et="832.6">Nicholas Malizia(16) lap=5 point=2 t=91.904 et=832.460</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="834.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="834.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="836.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="836.3">No Further Action</TrackLimits>
+<Score et="836.8">Ludovic Staumont(6) lap=4 point=2 t=93.945 et=836.660</Score>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="839.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="839.0">No Further Action</TrackLimits>
+<Score et="841.5">JOHN JOHN#3924(4) lap=5 point=2 t=92.203 et=841.420</Score>
+<Score et="848.4">Egon Kowalski(5) lap=5 point=2 t=93.590 et=848.360</Score>
+<Score et="850.9">Raphael Silva#3503(19) lap=5 point=2 t=93.788 et=850.820</Score>
+<Score et="852.6">xii xi(9) lap=5 point=2 t=91.966 et=852.440</Score>
+<Score et="855.6">jonathan schmidt#3910(7) lap=5 point=2 t=93.084 et=855.420</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="856.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="856.1">No Further Action</TrackLimits>
+<Score et="859.0">Kim Jihye(0) lap=6 point=0 t=121.808 et=858.780</Score>
+<Score et="859.3">Ivan Tsvikin(13) lap=5 point=2 t=-1.000 et=859.260</Score>
+<Score et="860.1">Obermacht koing(1) lap=5 point=2 t=93.589 et=859.840</Score>
+<Score et="860.3">JEON WM(11) lap=5 point=1 t=38.216 et=860.080</Score>
+<Score et="860.5">Thibau Janssens(20) lap=5 point=2 t=95.064 et=860.420</Score>
+<Score et="861.2">Adrien ACCURSI(2) lap=5 point=2 t=92.310 et=861.160</Score>
+<Score et="863.6">Nicholas Malizia(16) lap=6 point=0 t=122.957 et=863.520</Score>
+<Score et="865.8">P-A Fugeekies(18) lap=5 point=2 t=94.491 et=865.770</Score>
+<Score et="868.3">Ludovic Staumont(6) lap=5 point=0 t=125.501 et=868.220</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="870.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="870.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="871.7">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="871.7">No Further Action</TrackLimits>
+<Score et="872.4">JOHN JOHN#3924(4) lap=6 point=0 t=123.142 et=872.360</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="874.1">No Further Action</TrackLimits>
+<Score et="879.7">Egon Kowalski(5) lap=6 point=0 t=124.903 et=879.680</Score>
+<Score et="881.7">Raphael Silva#3503(19) lap=6 point=0 t=124.654 et=881.680</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="882.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="882.6">No Further Action</TrackLimits>
+<Score et="883.5">xii xi(9) lap=6 point=0 t=122.830 et=883.300</Score>
+<Score et="886.4">jonathan schmidt#3910(7) lap=6 point=0 t=123.923 et=886.260</Score>
+<Score et="890.6">Ivan Tsvikin(13) lap=6 point=0 t=-1.000 et=890.540</Score>
+<Score et="891.2">Obermacht koing(1) lap=6 point=0 t=124.687 et=890.940</Score>
+<Score et="891.4">Thibau Janssens(20) lap=6 point=0 t=125.962 et=891.320</Score>
+<Score et="891.7">Adrien ACCURSI(2) lap=6 point=0 t=122.813 et=891.660</Score>
+<Score et="895.6">Kim Jihye(0) lap=6 point=1 t=36.539 et=895.320</Score>
+<Score et="897.6">P-A Fugeekies(18) lap=6 point=0 t=126.261 et=897.540</Score>
+<Score et="900.9">Nicholas Malizia(16) lap=6 point=1 t=37.351 et=900.860</Score>
+<Score et="906.1">Ludovic Staumont(6) lap=5 point=1 t=37.805 et=906.020</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="906.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="906.7">No Further Action</TrackLimits>
+<Incident et="908.5">Ivan Tsvikin(13) reported contact (638.52) with another vehicle Obermacht koing(1)</Incident>
+<Incident et="908.6">Obermacht koing(1) reported contact (715.65) with another vehicle Ivan Tsvikin(13)</Incident>
+<Score et="909.7">JOHN JOHN#3924(4) lap=6 point=1 t=37.228 et=909.600</Score>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="909.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="909.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="912.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="912.4">No Further Action</TrackLimits>
+<Score et="916.9">Egon Kowalski(5) lap=6 point=1 t=37.131 et=916.820</Score>
+<Score et="917.2">JEON WM(11) lap=5 point=2 t=95.163 et=917.040</Score>
+<Score et="920.2">Raphael Silva#3503(19) lap=6 point=1 t=38.438 et=920.120</Score>
+<Score et="920.4">xii xi(9) lap=6 point=1 t=36.963 et=920.260</Score>
+<Incident et="922.8">Ivan Tsvikin(13) reported contact (37.17) with Post</Incident>
+<Incident et="922.9">Ivan Tsvikin(13) reported contact (35.72) with Post</Incident>
+<Score et="923.3">jonathan schmidt#3910(7) lap=6 point=1 t=36.930 et=923.180</Score>
+<Incident et="924.7">Adrien ACCURSI(2) reported contact (25.25) with Post</Incident>
+<Incident et="924.7">Adrien ACCURSI(2) reported contact (11.47) with Post</Incident>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="924.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="924.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="927.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="927.7">No Further Action</TrackLimits>
+<Score et="928.1">Obermacht koing(1) lap=6 point=1 t=36.995 et=927.940</Score>
+<Score et="928.6">Ivan Tsvikin(13) lap=6 point=1 t=37.968 et=928.500</Score>
+<Score et="929.2">Adrien ACCURSI(2) lap=6 point=1 t=37.494 et=929.160</Score>
+<Score et="929.4">Thibau Janssens(20) lap=6 point=1 t=38.009 et=929.320</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="931.2">Warning</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="6" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="931.2">Warning</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="934.6">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="934.6">No Further Action</TrackLimits>
+<Score et="934.9">P-A Fugeekies(18) lap=6 point=1 t=37.393 et=934.933</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="946.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="946.4">No Further Action</TrackLimits>
+<Score et="948.6">JEON WM(11) lap=6 point=0 t=126.522 et=948.400</Score>
+<Score et="950.1">Kim Jihye(0) lap=6 point=2 t=91.194 et=949.980</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="954.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="954.2">No Further Action</TrackLimits>
+<Score et="956.2">Nicholas Malizia(16) lap=6 point=2 t=-1.000 et=956.200</Score>
+<Score et="962.2">Ludovic Staumont(6) lap=5 point=2 t=93.968 et=962.200</Score>
+<Score et="964.6">JOHN JOHN#3924(4) lap=6 point=2 t=92.220 et=964.580</Score>
+<Score et="973.1">Egon Kowalski(5) lap=6 point=2 t=93.406 et=973.080</Score>
+<Score et="975.9">xii xi(9) lap=6 point=2 t=92.437 et=975.740</Score>
+<Score et="977.0">Raphael Silva#3503(19) lap=6 point=2 t=95.323 et=977.000</Score>
+<Score et="978.7">jonathan schmidt#3910(7) lap=6 point=2 t=92.435 et=978.680</Score>
+<Score et="981.1">Kim Jihye(0) lap=7 point=0 t=122.047 et=980.840</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.0">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.0">No Further Action</TrackLimits>
+<Score et="983.4">Obermacht koing(1) lap=6 point=2 t=92.269 et=983.200</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.7">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.7">No Further Action</TrackLimits>
+<Score et="983.8">Ivan Tsvikin(13) lap=6 point=2 t=93.210 et=983.760</Score>
+<Score et="984.4">Adrien ACCURSI(2) lap=6 point=2 t=92.598 et=984.260</Score>
+<Score et="987.0">Nicholas Malizia(16) lap=7 point=0 t=-1.000 et=986.840</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="988.2">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="988.2">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="6" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="988.6">Warning</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="6" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="988.6">Warning</TrackLimits>
+<Score et="989.8">JEON WM(11) lap=6 point=1 t=41.120 et=989.520</Score>
+<Score et="991.2">P-A Fugeekies(18) lap=6 point=2 t=93.638 et=991.178</Score>
+<Score et="993.5">Ludovic Staumont(6) lap=6 point=0 t=125.220 et=993.440</Score>
+<Score et="994.7">Thibau Janssens(20) lap=6 point=2 t=103.285 et=994.600</Score>
+<Score et="995.6">JOHN JOHN#3924(4) lap=7 point=0 t=-1.000 et=995.560</Score>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1001.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1001.9">No Further Action</TrackLimits>
+<Score et="1004.1">Egon Kowalski(5) lap=7 point=0 t=124.309 et=1004.000</Score>
+<Score et="1006.8">xii xi(9) lap=7 point=0 t=123.285 et=1006.600</Score>
+<Score et="1009.7">jonathan schmidt#3910(7) lap=7 point=0 t=123.401 et=1009.660</Score>
+<Score et="1010.5">Raphael Silva#3503(19) lap=7 point=0 t=128.754 et=1010.440</Score>
+<Score et="1014.2">Obermacht koing(1) lap=7 point=0 t=123.119 et=1014.060</Score>
+<Score et="1014.9">Adrien ACCURSI(2) lap=7 point=0 t=123.208 et=1014.860</Score>
+<Score et="1015.0">Ivan Tsvikin(13) lap=7 point=0 t=124.312 et=1014.860</Score>
+<Score et="1017.8">Kim Jihye(0) lap=7 point=1 t=36.733 et=1017.580</Score>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1020.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1020.7">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.2">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.2">No Further Action</TrackLimits>
+<Score et="1022.5">P-A Fugeekies(18) lap=7 point=0 t=124.908 et=1022.448</Score>
+<Score et="1023.7">Nicholas Malizia(16) lap=7 point=1 t=36.786 et=1023.620</Score>
+<Score et="1025.5">Thibau Janssens(20) lap=7 point=0 t=134.108 et=1025.420</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1032.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1032.0">No Further Action</TrackLimits>
+<Score et="1032.5">JOHN JOHN#3924(4) lap=7 point=1 t=36.880 et=1032.440</Score>
+<Score et="1041.1">Egon Kowalski(5) lap=7 point=1 t=37.031 et=1041.020</Score>
+<Score et="1042.2">Ludovic Staumont(6) lap=6 point=1 t=48.638 et=1042.080</Score>
+<Score et="1044.3">xii xi(9) lap=7 point=1 t=37.487 et=1044.080</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.1">No Further Action</TrackLimits>
+<Score et="1046.6">jonathan schmidt#3910(7) lap=7 point=1 t=36.883 et=1046.540</Score>
+<Score et="1048.6">Raphael Silva#3503(19) lap=7 point=1 t=38.081 et=1048.520</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1048.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1048.6">No Further Action</TrackLimits>
+<Score et="1051.6">Obermacht koing(1) lap=7 point=1 t=37.344 et=1051.400</Score>
+<Score et="1051.7">JEON WM(11) lap=6 point=2 t=103.000 et=1051.400</Score>
+<Score et="1051.9">Adrien ACCURSI(2) lap=7 point=1 t=36.996 et=1051.860</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="1054.2">Warning</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="1054.2">Warning</TrackLimits>
+<Score et="1059.1">Ivan Tsvikin(13) lap=7 point=1 t=44.161 et=1059.020</Score>
+<Score et="1060.7">P-A Fugeekies(18) lap=7 point=1 t=38.268 et=1060.716</Score>
+<Score et="1062.9">Thibau Janssens(20) lap=7 point=1 t=37.436 et=1062.860</Score>
+<Incident et="1064.4">Adrien ACCURSI(2) reported contact (347.79) with another vehicle Obermacht koing(1)</Incident>
+<Incident et="1064.7">Obermacht koing(1) reported contact (90.88) with another vehicle Adrien ACCURSI(2)</Incident>
+<Incident et="1064.7">Obermacht koing(1) reported contact (186.40) with another vehicle Adrien ACCURSI(2)</Incident>
+<Incident et="1065.0">Obermacht koing(1) reported contact (196.18) with another vehicle Adrien ACCURSI(2)</Incident>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1065.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1065.1">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1066.2">No Further Action</TrackLimits>
+<TrackLimits Driver="JOHN JOHN#3924" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1066.2">No Further Action</TrackLimits>
+<Score et="1073.0">Kim Jihye(0) lap=7 point=2 t=91.951 et=1072.780</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1074.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1074.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1077.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1077.4">No Further Action</TrackLimits>
+<Score et="1078.6">Nicholas Malizia(16) lap=7 point=2 t=-1.000 et=1078.440</Score>
+<Score et="1083.1">JEON WM(11) lap=7 point=0 t=134.413 et=1082.800</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1086.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1086.8">No Further Action</TrackLimits>
+<Score et="1088.5">JOHN JOHN#3924(4) lap=7 point=2 t=92.876 et=1088.440</Score>
+<Score et="1097.3">Egon Kowalski(5) lap=7 point=2 t=93.265 et=1097.260</Score>
+<Score et="1098.1">Ludovic Staumont(6) lap=6 point=2 t=104.615 et=1098.060</Score>
+<Score et="1099.5">xii xi(9) lap=7 point=2 t=92.714 et=1099.300</Score>
+<Score et="1102.4">jonathan schmidt#3910(7) lap=7 point=2 t=92.657 et=1102.320</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1102.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1102.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1103.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1103.4">No Further Action</TrackLimits>
+<Score et="1103.8">Kim Jihye(0) lap=8 point=0 t=122.723 et=1103.560</Score>
+<Score et="1104.7">Raphael Silva#3503(19) lap=7 point=2 t=94.249 et=1104.680</Score>
+<Score et="1106.9">Adrien ACCURSI(2) lap=7 point=2 t=92.051 et=1106.920</Score>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1107.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1107.7">No Further Action</TrackLimits>
+<Score et="1107.8">Obermacht koing(1) lap=7 point=2 t=93.521 et=1107.580</Score>
+<Score et="1109.7">Nicholas Malizia(16) lap=8 point=0 t=-1.000 et=1109.640</Score>
+<Score et="1115.5">Ivan Tsvikin(13) lap=7 point=2 t=-1.000 et=1115.400</Score>
+<Score et="1116.6">P-A Fugeekies(18) lap=7 point=2 t=94.185 et=1116.633</Score>
+<Score et="1118.4">Thibau Janssens(20) lap=7 point=2 t=92.831 et=1118.260</Score>
+<Score et="1119.4">JOHN JOHN#3924(4) lap=8 point=0 t=123.752 et=1119.320</Score>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1120.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1120.3">No Further Action</TrackLimits>
+<Score et="1121.7">JEON WM(11) lap=7 point=1 t=38.674 et=1121.480</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1122.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1122.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1123.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1123.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1125.0">No Further Action</TrackLimits>
+<Score et="1128.2">Egon Kowalski(5) lap=8 point=0 t=124.136 et=1128.120</Score>
+<Score et="1129.2">Ludovic Staumont(6) lap=7 point=0 t=135.677 et=1129.120</Score>
+<Score et="1130.2">xii xi(9) lap=8 point=0 t=123.488 et=1130.080</Score>
+<Score et="1133.1">jonathan schmidt#3910(7) lap=8 point=0 t=123.347 et=1133.000</Score>
+<Score et="1135.8">Raphael Silva#3503(19) lap=8 point=0 t=125.355 et=1135.800</Score>
+<Score et="1137.6">Adrien ACCURSI(2) lap=8 point=0 t=122.628 et=1137.500</Score>
+<Score et="1138.6">Obermacht koing(1) lap=8 point=0 t=124.361 et=1138.420</Score>
+<Score et="1140.4">Kim Jihye(0) lap=8 point=1 t=36.627 et=1140.180</Score>
+<Score et="1146.4">Ivan Tsvikin(13) lap=8 point=0 t=131.474 et=1146.320</Score>
+<Score et="1146.6">Nicholas Malizia(16) lap=8 point=1 t=36.785 et=1146.420</Score>
+<Score et="1147.9">P-A Fugeekies(18) lap=8 point=0 t=125.468 et=1147.915</Score>
+<Score et="1149.6">Thibau Janssens(20) lap=8 point=0 t=124.078 et=1149.500</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1153.8">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1153.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1156.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1156.2">No Further Action</TrackLimits>
+<Score et="1156.5">JOHN JOHN#3924(4) lap=8 point=1 t=37.126 et=1156.440</Score>
+<Score et="1165.0">Egon Kowalski(5) lap=8 point=1 t=36.863 et=1164.980</Score>
+<Score et="1167.2">xii xi(9) lap=8 point=1 t=36.979 et=1167.060</Score>
+<Score et="1167.2">Ludovic Staumont(6) lap=7 point=1 t=38.075 et=1167.200</Score>
+<Score et="1170.0">jonathan schmidt#3910(7) lap=8 point=1 t=36.931 et=1169.940</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1171.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1171.6">No Further Action</TrackLimits>
+<Score et="1172.8">Raphael Silva#3503(19) lap=8 point=1 t=37.014 et=1172.800</Score>
+<Score et="1174.7">Adrien ACCURSI(2) lap=8 point=1 t=37.149 et=1174.640</Score>
+<Score et="1175.6">Obermacht koing(1) lap=8 point=1 t=36.991 et=1175.420</Score>
+<Score et="1178.6">JEON WM(11) lap=7 point=2 t=-1.000 et=1178.280</Score>
+<TrackLimits Driver="xii xi" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.6">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.6">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1180.5">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1180.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1180.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Adrien ACCURSI" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1180.7">No Further Action</TrackLimits>
+<Score et="1183.3">Ivan Tsvikin(13) lap=8 point=1 t=36.954 et=1183.280</Score>
+<Score et="1186.1">P-A Fugeekies(18) lap=8 point=1 t=38.178 et=1186.093</Score>
+<Score et="1187.1">Thibau Janssens(20) lap=8 point=1 t=37.508 et=1187.020</Score>
+<Score et="1196.6">Kim Jihye(0) lap=8 point=2 t=92.717 et=1196.280</Score>
+<Score et="1201.2">Nicholas Malizia(16) lap=8 point=2 t=91.433 et=1201.080</Score>
+<Incident et="1201.6">Adrien ACCURSI(2) reported contact (394.91) with another vehicle Obermacht koing(1)</Incident>
+<Incident et="1201.8">Obermacht koing(1) reported contact (409.93) with another vehicle Adrien ACCURSI(2)</Incident>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1207.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1207.0">No Further Action</TrackLimits>
+<Score et="1210.0">JEON WM(11) lap=8 point=0 t=126.988 et=1209.800</Score>
+<Score et="1211.9">JOHN JOHN#3924(4) lap=8 point=2 t=92.562 et=1211.880</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1218.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1218.4">No Further Action</TrackLimits>
+<Score et="1221.6">Egon Kowalski(5) lap=8 point=2 t=93.408 et=1221.540</Score>
+<Score et="1222.6">xii xi(9) lap=8 point=2 t=92.268 et=1222.340</Score>
+<Score et="1223.5">Ludovic Staumont(6) lap=7 point=2 t=94.341 et=1223.460</Score>
+<Score et="1225.6">jonathan schmidt#3910(7) lap=8 point=2 t=92.438 et=1225.440</Score>
+<Score et="1227.1">Kim Jihye(0) lap=9 point=0 t=123.288 et=1226.840</Score>
+<Score et="1228.9">Raphael Silva#3503(19) lap=8 point=2 t=93.021 et=1228.820</Score>
+<Score et="1229.8">Adrien ACCURSI(2) lap=8 point=2 t=92.235 et=1229.740</Score>
+<Score et="1231.1">Obermacht koing(1) lap=8 point=2 t=92.520 et=1230.940</Score>
+<Score et="1231.8">Nicholas Malizia(16) lap=9 point=0 t=122.161 et=1231.800</Score>
+<Score et="1240.4">Ivan Tsvikin(13) lap=8 point=2 t=93.897 et=1240.220</Score>
+<Score et="1242.0">P-A Fugeekies(18) lap=8 point=2 t=94.110 et=1242.025</Score>
+<Score et="1242.9">JOHN JOHN#3924(4) lap=9 point=0 t=123.520 et=1242.840</Score>
+<Score et="1243.3">Thibau Janssens(20) lap=8 point=2 t=93.716 et=1243.220</Score>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="9" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="1247.2">Warning</TrackLimits>
+<TrackLimits Driver="Kim Jihye" ID="0" Lap="9" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="1247.2">Warning</TrackLimits>
+<Incident et="1249.0">JEON WM(11) reported contact (3070.69) with Immovable</Incident>
+<Score et="1252.4">Egon Kowalski(5) lap=9 point=0 t=124.188 et=1252.320</Score>
+<TrackLimits Driver="JEON WM" ID="11" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1253.1">No Further Action</TrackLimits>
+<TrackLimits Driver="JEON WM" ID="11" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1253.1">No Further Action</TrackLimits>
+<Score et="1253.4">xii xi(9) lap=9 point=0 t=123.150 et=1253.220</Score>
+<Score et="1254.9">Ludovic Staumont(6) lap=8 point=0 t=125.703 et=1254.820</Score>
+<Score et="1256.6">jonathan schmidt#3910(7) lap=9 point=0 t=123.314 et=1256.320</Score>
+<Score et="1260.0">Raphael Silva#3503(19) lap=9 point=0 t=124.147 et=1259.940</Score>
+<Score et="1260.3">Adrien ACCURSI(2) lap=9 point=0 t=122.729 et=1260.220</Score>
+<Score et="1260.5">JEON WM(11) lap=8 point=1 t=50.470 et=1260.260</Score>
+<Score et="1262.2">Obermacht koing(1) lap=9 point=0 t=123.480 et=1261.900</Score>
+<Score et="1263.6">Kim Jihye(0) lap=9 point=1 t=-1.000 et=1263.380</Score>
+<Score et="1268.8">Nicholas Malizia(16) lap=9 point=1 t=36.962 et=1268.760</Score>
+<Score et="1271.2">Ivan Tsvikin(13) lap=9 point=0 t=124.796 et=1271.120</Score>
+<Score et="1273.5">P-A Fugeekies(18) lap=9 point=0 t=125.576 et=1273.491</Score>
+<Score et="1274.4">Thibau Janssens(20) lap=9 point=0 t=124.839 et=1274.340</Score>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1278.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1278.0">No Further Action</TrackLimits>
+<Score et="1280.2">JOHN JOHN#3924(4) lap=9 point=1 t=37.302 et=1280.140</Score>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1281.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1281.8">No Further Action</TrackLimits>
+<Score et="1289.7">Egon Kowalski(5) lap=9 point=1 t=37.372 et=1289.680</Score>
+<Score et="1290.5">xii xi(9) lap=9 point=1 t=37.051 et=1290.280</Score>
+<Score et="1293.8">Ludovic Staumont(6) lap=8 point=1 t=38.939 et=1293.760</Score>
+<Score et="1294.0">jonathan schmidt#3910(7) lap=9 point=1 t=37.625 et=1293.940</Score>
+<TrackLimits Driver="xii xi" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1296.6">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1296.6">No Further Action</TrackLimits>
+<Score et="1298.0">Adrien ACCURSI(2) lap=9 point=1 t=37.675 et=1297.900</Score>
+<Score et="1298.0">Raphael Silva#3503(19) lap=9 point=1 t=38.010 et=1297.940</Score>
+<Score et="1299.6">Obermacht koing(1) lap=9 point=1 t=37.443 et=1299.340</Score>
+<Score et="1308.2">Ivan Tsvikin(13) lap=9 point=1 t=37.056 et=1308.180</Score>
+<Score et="1310.9">P-A Fugeekies(18) lap=9 point=1 t=37.385 et=1310.876</Score>
+<Score et="1311.6">Thibau Janssens(20) lap=9 point=1 t=-1.000 et=1311.580</Score>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1313.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Thibau Janssens" ID="20" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1313.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1314.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Raphael Silva#3503" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1314.4">No Further Action</TrackLimits>
+<Score et="1318.7">Kim Jihye(0) lap=9 point=2 t=-1.000 et=1318.440</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1320.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1320.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1320.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1320.6">No Further Action</TrackLimits>
+<Score et="1321.1">JEON WM(11) lap=8 point=2 t=111.125 et=1320.920</Score>
+<Score et="1324.3">Nicholas Malizia(16) lap=9 point=2 t=92.442 et=1324.240</Score>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1326.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ludovic Staumont" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1326.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="9" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="1328.6">Warning</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="9" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="1328.6">Warning</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1330.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1330.0">No Further Action</TrackLimits>
+<Score et="1336.6">JOHN JOHN#3924(4) lap=9 point=2 t=93.684 et=1336.520</Score>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0.75" CurrentPoints="2" Resolution="4" et="1339.8">Warning</TrackLimits>
+<TrackLimits Driver="Nicholas Malizia" ID="16" Lap="9" WarningPoints="0.75" CurrentPoints="2" Resolution="4" et="1339.8">Warning</TrackLimits>
+<Score et="1346.3">Egon Kowalski(5) lap=9 point=2 t=93.939 et=1346.260</Score>
+<Score et="1346.6">xii xi(9) lap=9 point=2 t=93.220 et=1346.440</Score>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1347.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Obermacht koing" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1347.0">No Further Action</TrackLimits>
+<Score et="1349.1">Checkered for Kim Jihye, laps=10/2147483647, endET=1348.939941/1316.682495, crossedAfterTime=0</Score>
+<Score et="1349.1">Kim Jihye(0) lap=10 point=0 t=-1.000 et=1348.940</Score>
+<Score et="1349.8">jonathan schmidt#3910(7) lap=9 point=2 t=-1.000 et=1349.760</Score>
+<Score et="1351.7">Ludovic Staumont(6) lap=8 point=2 t=96.761 et=1351.580</Score>
+<Score et="1352.7">Adrien ACCURSI(2) lap=9 point=2 t=92.407 et=1352.640</Score>
+<TrackLimits Driver="xii xi" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1352.7">No Further Action</TrackLimits>
+<TrackLimits Driver="xii xi" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1352.7">No Further Action</TrackLimits>
+<Score et="1352.7">JEON WM(11) lap=9 point=0 t=142.687 et=1352.480</Score>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1353.8">No Further Action</TrackLimits>
+<TrackLimits Driver="jonathan schmidt#3910" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1353.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1354.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1354.2">No Further Action</TrackLimits>
+<Score et="1355.6">Raphael Silva#3503(19) lap=9 point=2 t=95.505 et=1355.440</Score>
+<Score et="1356.1">Obermacht koing(1) lap=9 point=2 t=-1.000 et=1355.960</Score>
+<Score et="1359.1">Nicholas Malizia(16) lap=10 point=0 t=-1.000 et=1359.080</Score>
+<Score et="1365.2">Ivan Tsvikin(13) lap=9 point=2 t=93.969 et=1365.100</Score>
+<Score et="1367.5">P-A Fugeekies(18) lap=9 point=2 t=93.999 et=1367.490</Score>
+<Score et="1367.7">Thibau Janssens(20) lap=9 point=2 t=93.325 et=1367.680</Score>
+<Score et="1367.7">JOHN JOHN#3924(4) lap=10 point=0 t=124.812 et=1367.640</Score>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1372.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Egon Kowalski" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1372.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1376.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Tsvikin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1376.3">No Further Action</TrackLimits>
+<Score et="1378.2">xii xi(9) lap=10 point=0 t=124.782 et=1378.020</Score>
+<Sector et="1378.5">Nicholas Malizia(16) reports new suspension damage</Sector>
+<Incident et="1378.6">Nicholas Malizia(16) reported contact (4280.12) with Immovable</Incident>
+<Score et="1381.4">jonathan schmidt#3910(7) lap=10 point=0 t=124.911 et=1381.220</Score>
+<Score et="1382.4">Egon Kowalski(5) lap=10 point=0 t=130.053 et=1382.360</Score>
+<Score et="1382.8">Ludovic Staumont(6) lap=9 point=0 t=127.887 et=1382.720</Score>
+<Score et="1383.3">Adrien ACCURSI(2) lap=10 point=0 t=123.002 et=1383.220</Score>
+<Score et="1386.5">Raphael Silva#3503(19) lap=10 point=0 t=126.509 et=1386.440</Score>
+<Sector et="1387.5">JOHN JOHN#3924(4) reports new suspension damage</Sector>
+<Incident et="1387.6">JOHN JOHN#3924(4) reported contact (6419.13) with Immovable</Incident>
+<Score et="1389.6">Obermacht koing(1) lap=10 point=0 t=-1.000 et=1389.460</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1392.5">No Further Action</TrackLimits>
+<Score et="1399.3">Thibau Janssens(20) lap=10 point=0 t=124.900 et=1399.240</Score>
+<Score et="1400.2">P-A Fugeekies(18) lap=10 point=0 t=126.692 et=1400.183</Score>
+<Score et="1405.4">Ivan Tsvikin(13) lap=10 point=0 t=134.193 et=1405.320</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>10</MostLapsCompleted>
+<Driver>
+<Name>Kim Jihye</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>1</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="116.6825" s1="43.4128" s2="55.7005" s3="31.2144" topspeed="236.48" fuel="0.329" fuelUsed="0.171" ve="0.459" veUsed="0.043" twfl="0.961" twfr="0.933" twrl="0.957" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">130.3278</Lap>
+<Lap num="2" p="1" et="247.0200" s1="36.5333" s2="54.9666" s3="31.0117" topspeed="254.95" fuel="0.306" fuelUsed="0.024" ve="0.420" veUsed="0.039" twfl="0.953" twfr="0.925" twrl="0.949" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.5116</Lap>
+<Lap num="3" p="1" et="369.5400" s1="36.7197" s2="55.0698" s3="30.5434" topspeed="255.40" fuel="0.282" fuelUsed="0.024" ve="0.380" veUsed="0.039" twfl="0.941" twfr="0.918" twrl="0.941" twrr="0.898" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.3329</Lap>
+<Lap num="4" p="1" et="491.8601" s1="36.5525" s2="55.2675" s3="30.7031" topspeed="255.85" fuel="0.259" fuelUsed="0.024" ve="0.337" veUsed="0.043" twfl="0.933" twfr="0.910" twrl="0.933" twrr="0.890" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.5230</Lap>
+<Lap num="5" p="1" et="614.3799" s1="36.8174" s2="54.9291" s3="30.8474" topspeed="255.40" fuel="0.231" fuelUsed="0.027" ve="0.298" veUsed="0.039" twfl="0.922" twfr="0.898" twrl="0.925" twrr="0.882" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.5939</Lap>
+<Lap num="6" p="1" et="736.9800" s1="36.6057" s2="54.6955" s3="30.5067" topspeed="255.85" fuel="0.208" fuelUsed="0.024" ve="0.259" veUsed="0.039" twfl="0.910" twfr="0.890" twrl="0.918" twrr="0.875" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.8079</Lap>
+<Lap num="7" p="1" et="858.7800" s1="36.5388" s2="54.6556" s3="30.8530" topspeed="255.85" fuel="0.184" fuelUsed="0.024" ve="0.220" veUsed="0.039" twfl="0.902" twfr="0.882" twrl="0.910" twrr="0.871" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.0474</Lap>
+<Lap num="8" p="1" et="980.8401" s1="36.7335" s2="55.2170" s3="30.7723" topspeed="255.40" fuel="0.161" fuelUsed="0.024" ve="0.180" veUsed="0.039" twfl="0.890" twfr="0.875" twrl="0.902" twrr="0.863" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.7228</Lap>
+<Lap num="9" p="1" et="1103.5601" s1="36.6268" s2="56.0901" s3="30.5708" topspeed="255.40" fuel="0.133" fuelUsed="0.027" ve="0.141" veUsed="0.039" twfl="0.878" twfr="0.867" twrl="0.898" twrr="0.855" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.2877</Lap>
+<Lap num="10" p="1" et="1226.8401" topspeed="255.85" fuel="0.110" fuelUsed="0.024" ve="0.102" veUsed="0.039" twfl="0.871" twfr="0.855" twrl="0.890" twrr="0.847" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>121.8079</BestLapTime>
+<FinishTime>1232.2574</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Nicholas Malizia</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>2</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="116.6825" s1="43.7651" s2="55.7883" s3="31.7248" topspeed="241.44" fuel="0.278" fuelUsed="0.222" ve="0.388" veUsed="0.043" twfl="0.965" twfr="0.973" twrl="0.965" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">131.2783</Lap>
+<Lap num="2" p="3" et="247.9800" s1="37.8387" s2="55.6974" s3="30.7291" topspeed="255.85" fuel="0.255" fuelUsed="0.024" ve="0.349" veUsed="0.039" twfl="0.957" twfr="0.965" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.2652</Lap>
+<Lap num="3" p="3" et="372.2400" s1="36.9987" s2="54.7600" s3="30.6424" topspeed="256.75" fuel="0.231" fuelUsed="0.024" ve="0.310" veUsed="0.039" twfl="0.949" twfr="0.961" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.4012</Lap>
+<Lap num="4" p="2" et="494.6399" topspeed="258.10" fuel="0.208" fuelUsed="0.024" ve="0.271" veUsed="0.039" twfl="0.937" twfr="0.953" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="2" et="618.3401" s1="36.9222" s2="54.8134" s3="30.4701" topspeed="256.30" fuel="0.184" fuelUsed="0.024" ve="0.231" veUsed="0.039" twfl="0.929" twfr="0.945" twrl="0.937" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.2056</Lap>
+<Lap num="6" p="2" et="740.5601" s1="36.9983" s2="54.9053" s3="31.0538" topspeed="255.85" fuel="0.161" fuelUsed="0.024" ve="0.192" veUsed="0.039" twfl="0.918" twfr="0.937" twrl="0.929" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.9573</Lap>
+<Lap num="7" p="2" et="863.5200" s1="37.3508" topspeed="255.40" fuel="0.137" fuelUsed="0.024" ve="0.153" veUsed="0.039" twfl="0.910" twfr="0.929" twrl="0.922" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="2" et="986.8401" s1="36.7864" topspeed="255.85" fuel="0.110" fuelUsed="0.027" ve="0.114" veUsed="0.039" twfl="0.898" twfr="0.922" twrl="0.914" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="2" et="1109.6399" s1="36.7850" s2="54.6483" s3="30.7274" topspeed="255.40" fuel="0.086" fuelUsed="0.024" ve="0.075" veUsed="0.039" twfl="0.886" twfr="0.914" twrl="0.906" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.1608</Lap>
+<Lap num="10" p="2" et="1231.8000" s1="36.9622" s2="55.4800" topspeed="255.85" fuel="0.067" fuelUsed="0.020" ve="0.039" veUsed="0.035" twfl="0.878" twfr="0.906" twrl="0.898" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>122.1608</BestLapTime>
+<FinishTime>1242.3976</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Tom Critom</Name>
+<Connected>1</Connected>
+<VehFile>11_26_GCHA47509705.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #11:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Logitech G Challenge #11</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>16</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="116.6825" s1="43.5830" topspeed="238.28" fuel="0.310" fuelUsed="0.190" ve="0.427" veUsed="0.043" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="2" et="247.8999" s1="38.0770" topspeed="255.40" fuel="0.282" fuelUsed="0.027" ve="0.384" veUsed="0.043" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.9039</Lap>
+<Lap num="3" p="2" et="371.8000" s1="36.8528" s2="54.5877" s3="30.9777" topspeed="254.95" fuel="0.259" fuelUsed="0.024" ve="0.345" veUsed="0.039" twfl="0.976" twfr="0.980" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.4182</Lap>
+<BestLapTime>122.4182</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Hendrik Zimmermann</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>17</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="116.6825" s1="43.4551" s2="67.0393" topspeed="237.83" fuel="0.286" fuelUsed="0.214" ve="0.392" veUsed="0.047" twfl="0.988" twfr="0.992" twrl="0.945" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="8" et="258.3601" s1="36.9803" s2="54.5062" s3="30.9787" topspeed="254.05" fuel="0.259" fuelUsed="0.027" ve="0.353" veUsed="0.039" twfl="0.976" twfr="0.980" twrl="0.941" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.4651</Lap>
+<Lap num="3" p="9" et="380.8201" s1="36.7977" s2="54.6333" topspeed="254.95" fuel="0.235" fuelUsed="0.024" ve="0.314" veUsed="0.039" twfl="0.957" twfr="0.965" twrl="0.906" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>122.4651</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Adrien ACCURSI</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>7</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="116.6825" topspeed="238.73" fuel="0.278" fuelUsed="0.222" ve="0.380" veUsed="0.051" twfl="0.992" twfr="0.992" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="4" et="250.7400" s1="39.6984" s2="55.3307" s3="30.5408" topspeed="255.40" fuel="0.251" fuelUsed="0.027" ve="0.341" veUsed="0.039" twfl="0.984" twfr="0.988" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.5699</Lap>
+<Lap num="3" p="5" et="376.3000" s1="36.8447" s2="54.9514" s3="34.3841" topspeed="254.50" fuel="0.227" fuelUsed="0.024" ve="0.302" veUsed="0.039" twfl="0.976" twfr="0.980" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">126.1801</Lap>
+<Lap num="4" p="12" et="502.4800" s1="57.6831" s2="54.9140" s3="30.5635" topspeed="237.83" fuel="0.204" fuelUsed="0.024" ve="0.267" veUsed="0.035" twfl="0.969" twfr="0.973" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">143.1606</Lap>
+<Lap num="5" p="11" et="645.6399" s1="36.9285" s2="55.7827" s3="30.4941" topspeed="254.95" fuel="0.180" fuelUsed="0.024" ve="0.224" veUsed="0.043" twfl="0.961" twfr="0.965" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.2053</Lap>
+<Lap num="6" p="11" et="768.8401" s1="37.2014" s2="55.1084" s3="30.5029" topspeed="254.50" fuel="0.153" fuelUsed="0.027" ve="0.184" veUsed="0.039" twfl="0.953" twfr="0.957" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.8127</Lap>
+<Lap num="7" p="10" et="891.6599" s1="37.4941" s2="55.1034" s3="30.6109" topspeed="256.75" fuel="0.129" fuelUsed="0.024" ve="0.145" veUsed="0.039" twfl="0.945" twfr="0.949" twrl="0.941" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.2084</Lap>
+<Lap num="8" p="8" et="1014.8601" s1="36.9959" s2="55.0551" s3="30.5775" topspeed="254.05" fuel="0.106" fuelUsed="0.024" ve="0.102" veUsed="0.043" twfl="0.937" twfr="0.941" twrl="0.937" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.6285</Lap>
+<Lap num="9" p="8" et="1137.5000" s1="37.1487" s2="55.0868" s3="30.4934" topspeed="254.95" fuel="0.078" fuelUsed="0.027" ve="0.063" veUsed="0.039" twfl="0.929" twfr="0.933" twrl="0.929" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.7289</Lap>
+<Lap num="10" p="7" et="1260.2200" s1="37.6748" s2="54.7325" s3="30.5942" topspeed="257.20" fuel="0.055" fuelUsed="0.024" ve="0.024" veUsed="0.039" twfl="0.918" twfr="0.925" twrl="0.922" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.0016</Lap>
+<BestLapTime>122.6285</BestLapTime>
+<FinishTime>1266.5375</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>xii xi</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>4</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="116.6825" s1="44.2427" s2="69.7110" s3="30.8424" topspeed="237.83" fuel="0.302" fuelUsed="0.198" ve="0.416" veUsed="0.043" twfl="0.980" twfr="0.988" twrl="0.976" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">144.7961</Lap>
+<Lap num="2" p="15" et="261.4800" s1="37.0718" s2="62.2043" s3="30.7149" topspeed="255.85" fuel="0.275" fuelUsed="0.027" ve="0.373" veUsed="0.043" twfl="0.969" twfr="0.976" twrl="0.969" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">129.9911</Lap>
+<Lap num="3" p="14" et="391.4800" s1="36.9740" s2="55.0437" s3="30.7383" topspeed="255.85" fuel="0.251" fuelUsed="0.024" ve="0.333" veUsed="0.039" twfl="0.961" twfr="0.969" twrl="0.961" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.7560</Lap>
+<Lap num="4" p="6" et="514.2400" s1="37.2594" s2="55.3116" s3="30.8554" topspeed="258.10" fuel="0.227" fuelUsed="0.024" ve="0.294" veUsed="0.039" twfl="0.949" twfr="0.961" twrl="0.953" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.4264</Lap>
+<Lap num="5" p="6" et="637.6599" s1="36.8421" s2="55.2608" s3="30.7113" topspeed="256.30" fuel="0.204" fuelUsed="0.024" ve="0.255" veUsed="0.039" twfl="0.941" twfr="0.953" twrl="0.949" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.8142</Lap>
+<Lap num="6" p="6" et="760.4800" s1="37.0225" s2="54.9438" s3="30.8640" topspeed="256.30" fuel="0.176" fuelUsed="0.027" ve="0.216" veUsed="0.039" twfl="0.929" twfr="0.945" twrl="0.941" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.8303</Lap>
+<Lap num="7" p="5" et="883.3000" s1="36.9633" s2="55.4736" s3="30.8480" topspeed="256.30" fuel="0.153" fuelUsed="0.024" ve="0.176" veUsed="0.039" twfl="0.918" twfr="0.937" twrl="0.933" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.2849</Lap>
+<Lap num="8" p="5" et="1006.6001" s1="37.4865" s2="55.2272" s3="30.7748" topspeed="256.30" fuel="0.129" fuelUsed="0.024" ve="0.137" veUsed="0.039" twfl="0.906" twfr="0.925" twrl="0.929" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.4885</Lap>
+<Lap num="9" p="5" et="1130.0801" s1="36.9785" s2="55.2893" s3="30.8817" topspeed="256.30" fuel="0.106" fuelUsed="0.024" ve="0.098" veUsed="0.039" twfl="0.894" twfr="0.918" twrl="0.922" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.1495</Lap>
+<Lap num="10" p="4" et="1253.2200" s1="37.0505" s2="56.1693" s3="31.5619" topspeed="255.85" fuel="0.082" fuelUsed="0.024" ve="0.059" veUsed="0.039" twfl="0.882" twfr="0.910" twrl="0.918" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.7817</Lap>
+<BestLapTime>122.7560</BestLapTime>
+<FinishTime>1261.3375</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>JOHN JOHN#3924</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>3</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="116.6825" s1="48.4298" s2="55.4326" s3="30.8349" topspeed="236.48" fuel="0.341" fuelUsed="0.159" ve="0.471" veUsed="0.039" twfl="0.965" twfr="0.976" twrl="0.969" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">134.6973</Lap>
+<Lap num="2" p="6" et="251.3799" s1="40.2961" s2="56.3444" s3="30.8421" topspeed="253.60" fuel="0.314" fuelUsed="0.027" ve="0.431" veUsed="0.039" twfl="0.957" twfr="0.969" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.4826</Lap>
+<Lap num="3" p="4" et="378.8799" s1="37.1315" s2="55.0329" s3="30.6995" topspeed="254.05" fuel="0.290" fuelUsed="0.024" ve="0.392" veUsed="0.039" twfl="0.949" twfr="0.961" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.8639</Lap>
+<Lap num="4" p="3" et="501.7400" s1="37.2920" s2="55.4771" s3="30.9329" topspeed="253.60" fuel="0.267" fuelUsed="0.024" ve="0.353" veUsed="0.039" twfl="0.937" twfr="0.957" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.7019</Lap>
+<Lap num="5" p="3" et="625.4399" s1="37.3149" s2="55.6227" s3="30.8483" topspeed="252.25" fuel="0.243" fuelUsed="0.024" ve="0.314" veUsed="0.039" twfl="0.929" twfr="0.949" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.7859</Lap>
+<Lap num="6" p="3" et="749.2200" s1="36.9318" s2="55.2708" s3="30.9396" topspeed="254.05" fuel="0.220" fuelUsed="0.024" ve="0.278" veUsed="0.035" twfl="0.922" twfr="0.941" twrl="0.933" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.1423</Lap>
+<Lap num="7" p="3" et="872.3601" s1="37.2280" s2="54.9916" topspeed="253.60" fuel="0.196" fuelUsed="0.024" ve="0.239" veUsed="0.039" twfl="0.910" twfr="0.933" twrl="0.929" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="3" et="995.5601" s1="36.8798" s2="55.9957" s3="30.8763" topspeed="254.05" fuel="0.173" fuelUsed="0.024" ve="0.200" veUsed="0.039" twfl="0.898" twfr="0.925" twrl="0.922" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.7519</Lap>
+<Lap num="9" p="3" et="1119.3201" s1="37.1260" s2="55.4360" s3="30.9583" topspeed="254.50" fuel="0.149" fuelUsed="0.024" ve="0.161" veUsed="0.039" twfl="0.890" twfr="0.918" twrl="0.914" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.5203</Lap>
+<Lap num="10" p="3" et="1242.8401" s1="37.3015" s2="56.3827" s3="31.1273" topspeed="253.60" fuel="0.125" fuelUsed="0.024" ve="0.125" veUsed="0.035" twfl="0.882" twfr="0.914" twrl="0.910" twrr="0.910" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.8115</Lap>
+<BestLapTime>122.8639</BestLapTime>
+<FinishTime>1250.9574</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>YUFAN ZHANG</Name>
+<Connected>1</Connected>
+<VehFile>5_26_GCHAL67256536.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #5:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>Logitech G Challenge #5</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>15</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="116.6825" s1="49.2701" s2="56.4573" s3="30.7267" topspeed="236.93" fuel="0.329" fuelUsed="0.171" ve="0.451" veUsed="0.051" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">136.4540</Lap>
+<Lap num="2" p="7" et="253.1399" s1="39.7811" s2="56.1733" s3="30.7556" topspeed="254.95" fuel="0.302" fuelUsed="0.027" ve="0.412" veUsed="0.039" twfl="0.980" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.7100</Lap>
+<Lap num="3" p="6" et="379.8601" s1="36.9171" s2="55.3518" s3="30.7053" topspeed="255.40" fuel="0.278" fuelUsed="0.024" ve="0.369" veUsed="0.043" twfl="0.973" twfr="0.976" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.9742</Lap>
+<BestLapTime>122.9742</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Obermacht koing</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>9</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="116.6825" s1="65.9292" s2="55.6884" s3="30.9555" topspeed="236.48" fuel="0.278" fuelUsed="0.222" ve="0.384" veUsed="0.047" twfl="0.988" twfr="0.980" twrl="0.984" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">152.5730</Lap>
+<Lap num="2" p="16" et="269.2600" s1="37.3592" s2="56.5287" s3="31.0063" topspeed="254.50" fuel="0.255" fuelUsed="0.024" ve="0.345" veUsed="0.039" twfl="0.980" twfr="0.976" twrl="0.976" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.8943</Lap>
+<Lap num="3" p="15" et="394.1599" s1="37.3399" s2="55.3346" s3="31.0383" topspeed="255.40" fuel="0.231" fuelUsed="0.024" ve="0.306" veUsed="0.039" twfl="0.973" twfr="0.969" twrl="0.973" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.7128</Lap>
+<Lap num="4" p="11" et="517.8799" s1="37.3593" s2="55.6676" s3="31.1725" topspeed="254.50" fuel="0.204" fuelUsed="0.027" ve="0.267" veUsed="0.039" twfl="0.965" twfr="0.961" twrl="0.965" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.1994</Lap>
+<Lap num="5" p="10" et="642.0801" s1="37.4265" s2="55.6236" s3="31.1324" topspeed="254.95" fuel="0.180" fuelUsed="0.024" ve="0.227" veUsed="0.039" twfl="0.953" twfr="0.953" twrl="0.957" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.1825</Lap>
+<Lap num="6" p="9" et="766.2600" s1="37.5942" s2="55.9946" s3="31.0980" topspeed="253.15" fuel="0.157" fuelUsed="0.024" ve="0.188" veUsed="0.039" twfl="0.945" twfr="0.945" twrl="0.953" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.6868</Lap>
+<Lap num="7" p="8" et="890.9399" s1="36.9948" s2="55.2738" s3="30.8505" topspeed="256.30" fuel="0.133" fuelUsed="0.024" ve="0.149" veUsed="0.039" twfl="0.937" twfr="0.941" twrl="0.945" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.1191</Lap>
+<Lap num="8" p="9" et="1014.0601" s1="37.3439" s2="56.1766" s3="30.8407" topspeed="254.50" fuel="0.106" fuelUsed="0.027" ve="0.106" veUsed="0.043" twfl="0.929" twfr="0.933" twrl="0.941" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.3612</Lap>
+<Lap num="9" p="9" et="1138.4199" s1="36.9907" s2="55.5289" s3="30.9607" topspeed="254.50" fuel="0.082" fuelUsed="0.024" ve="0.067" veUsed="0.039" twfl="0.922" twfr="0.929" twrl="0.933" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.4803</Lap>
+<Lap num="10" p="9" et="1261.8999" s1="37.4427" topspeed="254.50" fuel="0.059" fuelUsed="0.024" ve="0.027" veUsed="0.039" twfl="0.914" twfr="0.922" twrl="0.925" twrr="0.910" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>123.1191</BestLapTime>
+<FinishTime>1272.7775</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>jonathan schmidt#3910</Name>
+<Connected>1</Connected>
+<VehFile>5_26_GCHAL67256536.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #5:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Logitech G Challenge #5</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>5</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="116.6825" s1="52.2722" s2="62.0464" s3="30.7981" topspeed="238.28" fuel="0.690" fuelUsed="-0.190" ve="0.961" veUsed="0.039" twfl="0.957" twfr="0.965" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">145.1168</Lap>
+<Lap num="2" p="13" et="261.8000" s1="37.8882" s2="56.2759" s3="30.9888" topspeed="255.40" fuel="0.667" fuelUsed="0.024" ve="0.922" veUsed="0.039" twfl="0.949" twfr="0.961" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.1530</Lap>
+<Lap num="3" p="11" et="386.9600" s1="37.0348" s2="56.7682" s3="31.7590" topspeed="253.60" fuel="0.643" fuelUsed="0.024" ve="0.882" veUsed="0.039" twfl="0.941" twfr="0.953" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.5620</Lap>
+<Lap num="4" p="7" et="512.5200" s1="37.3885" s2="56.9359" s3="31.5203" topspeed="252.70" fuel="0.616" fuelUsed="0.027" ve="0.843" veUsed="0.039" twfl="0.933" twfr="0.945" twrl="0.933" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.8447</Lap>
+<Lap num="5" p="7" et="638.3601" s1="37.1301" topspeed="252.70" fuel="0.592" fuelUsed="0.024" ve="0.804" veUsed="0.039" twfl="0.925" twfr="0.937" twrl="0.929" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.9619</Lap>
+<Lap num="6" p="7" et="762.3401" s1="36.8589" s2="56.2253" s3="30.8389" topspeed="252.70" fuel="0.569" fuelUsed="0.024" ve="0.761" veUsed="0.043" twfl="0.914" twfr="0.929" twrl="0.922" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.9232</Lap>
+<Lap num="7" p="6" et="886.2600" s1="36.9297" s2="55.5055" s3="30.9653" topspeed="252.70" fuel="0.541" fuelUsed="0.027" ve="0.722" veUsed="0.039" twfl="0.906" twfr="0.922" twrl="0.914" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.4005</Lap>
+<Lap num="8" p="6" et="1009.6599" s1="36.8831" s2="55.7738" s3="30.6903" topspeed="252.70" fuel="0.518" fuelUsed="0.024" ve="0.682" veUsed="0.039" twfl="0.898" twfr="0.914" twrl="0.910" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.3472</Lap>
+<Lap num="9" p="6" et="1133.0000" s1="36.9313" s2="55.5072" s3="30.8759" topspeed="252.70" fuel="0.490" fuelUsed="0.027" ve="0.639" veUsed="0.043" twfl="0.886" twfr="0.906" twrl="0.902" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.3143</Lap>
+<Lap num="10" p="5" et="1256.3201" s1="37.6249" topspeed="253.15" fuel="0.467" fuelUsed="0.024" ve="0.600" veUsed="0.039" twfl="0.878" twfr="0.898" twrl="0.894" twrr="0.902" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.9114</Lap>
+<BestLapTime>123.3143</BestLapTime>
+<FinishTime>1264.5375</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Egon Kowalski</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>6</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="116.6825" s1="45.7459" s2="55.8324" s3="31.2620" topspeed="238.28" fuel="0.294" fuelUsed="0.206" ve="0.427" veUsed="0.043" twfl="0.965" twfr="0.973" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">132.8403</Lap>
+<Lap num="2" p="10" et="249.5400" s1="41.8729" s2="60.7555" s3="30.8362" topspeed="254.50" fuel="0.267" fuelUsed="0.027" ve="0.384" veUsed="0.043" twfl="0.953" twfr="0.961" twrl="0.957" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">133.4646</Lap>
+<Lap num="3" p="8" et="383.0000" s1="36.8144" s2="55.7154" s3="30.9774" topspeed="254.50" fuel="0.243" fuelUsed="0.024" ve="0.345" veUsed="0.039" twfl="0.941" twfr="0.949" twrl="0.949" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.5072</Lap>
+<Lap num="4" p="4" et="506.5000" s1="37.1702" s2="56.2163" s3="31.2849" topspeed="254.50" fuel="0.220" fuelUsed="0.024" ve="0.306" veUsed="0.039" twfl="0.929" twfr="0.941" twrl="0.945" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.6714</Lap>
+<Lap num="5" p="4" et="631.1799" s1="37.0362" s2="55.3561" s3="31.2101" topspeed="254.50" fuel="0.192" fuelUsed="0.027" ve="0.267" veUsed="0.039" twfl="0.914" twfr="0.929" twrl="0.937" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.6024</Lap>
+<Lap num="6" p="4" et="754.7800" s1="37.0433" s2="56.5471" s3="31.3129" topspeed="254.05" fuel="0.169" fuelUsed="0.024" ve="0.227" veUsed="0.039" twfl="0.898" twfr="0.918" twrl="0.929" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.9033</Lap>
+<Lap num="7" p="4" et="879.6799" s1="37.1309" s2="56.2747" s3="30.9030" topspeed="254.05" fuel="0.145" fuelUsed="0.024" ve="0.184" veUsed="0.043" twfl="0.886" twfr="0.906" twrl="0.922" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.3087</Lap>
+<Lap num="8" p="4" et="1004.0000" s1="37.0305" s2="56.2340" s3="30.8719" topspeed="254.50" fuel="0.118" fuelUsed="0.027" ve="0.145" veUsed="0.039" twfl="0.875" twfr="0.898" twrl="0.914" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.1365</Lap>
+<Lap num="9" p="4" et="1128.1201" s1="36.8628" s2="56.5450" s3="30.7803" topspeed="254.50" fuel="0.094" fuelUsed="0.024" ve="0.106" veUsed="0.039" twfl="0.859" twfr="0.886" twrl="0.910" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.1881</Lap>
+<Lap num="10" p="6" et="1252.3201" s1="37.3716" s2="56.5670" s3="36.1147" topspeed="254.05" fuel="0.071" fuelUsed="0.024" ve="0.067" veUsed="0.039" twfl="0.847" twfr="0.875" twrl="0.898" twrr="0.898" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">130.0533</Lap>
+<BestLapTime>123.5072</BestLapTime>
+<FinishTime>1265.6776</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Thibau Janssens</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>21</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>21</GridPos>
+<Position>10</Position>
+<ClassGridPos>21</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="116.6825" s1="56.1220" s2="60.0374" s3="31.4261" topspeed="237.38" fuel="0.275" fuelUsed="0.225" ve="0.431" veUsed="0.569" twfl="0.988" twfr="0.992" twrl="0.953" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">147.5855</Lap>
+<Lap num="2" p="14" et="264.2800" s1="38.5554" s2="56.4342" s3="31.1176" topspeed="255.85" fuel="0.251" fuelUsed="0.024" ve="0.392" veUsed="0.039" twfl="0.980" twfr="0.980" twrl="0.945" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.1072</Lap>
+<Lap num="3" p="13" et="390.3799" s1="37.3562" s2="55.1764" s3="31.0431" topspeed="255.85" fuel="0.227" fuelUsed="0.024" ve="0.353" veUsed="0.039" twfl="0.969" twfr="0.973" twrl="0.937" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.5757</Lap>
+<Lap num="4" p="10" et="513.9600" s1="38.6340" s2="57.0181" s3="31.6885" topspeed="254.95" fuel="0.200" fuelUsed="0.027" ve="0.310" veUsed="0.043" twfl="0.957" twfr="0.965" twrl="0.929" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.3406</Lap>
+<Lap num="5" p="8" et="641.3000" s1="37.1473" s2="55.7585" s3="31.1519" topspeed="255.85" fuel="0.176" fuelUsed="0.024" ve="0.271" veUsed="0.039" twfl="0.949" twfr="0.957" twrl="0.922" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.0577</Lap>
+<Lap num="6" p="10" et="765.3601" s1="37.7689" s2="57.2952" s3="30.8976" topspeed="255.85" fuel="0.153" fuelUsed="0.024" ve="0.231" veUsed="0.039" twfl="0.937" twfr="0.945" twrl="0.918" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.9617</Lap>
+<Lap num="7" p="12" et="891.3201" s1="38.0087" s2="65.2766" s3="30.8225" topspeed="256.75" fuel="0.125" fuelUsed="0.027" ve="0.192" veUsed="0.039" twfl="0.918" twfr="0.894" twrl="0.894" twrr="0.863" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">134.1077</Lap>
+<Lap num="8" p="12" et="1025.4199" s1="37.4363" s2="55.3947" s3="31.2472" topspeed="255.85" fuel="0.102" fuelUsed="0.024" ve="0.153" veUsed="0.039" twfl="0.906" twfr="0.886" twrl="0.886" twrr="0.855" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.0781</Lap>
+<Lap num="9" p="12" et="1149.5000" s1="37.5077" s2="56.2081" s3="31.1234" topspeed="255.85" fuel="0.078" fuelUsed="0.024" ve="0.110" veUsed="0.043" twfl="0.894" twfr="0.875" twrl="0.878" twrr="0.847" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.8392</Lap>
+<Lap num="10" p="10" et="1274.3401" topspeed="256.30" fuel="0.051" fuelUsed="0.027" ve="0.071" veUsed="0.039" twfl="0.886" twfr="0.867" twrl="0.871" twrr="0.839" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.8995</Lap>
+<BestLapTime>123.5757</BestLapTime>
+<FinishTime>1282.5575</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,AutoShift=3,Clutch,Opposite,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Raphael Silva#3503</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>8</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="116.6825" s1="48.8806" s2="57.2461" s3="31.0415" topspeed="238.28" fuel="0.349" fuelUsed="0.151" ve="0.482" veUsed="0.047" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">137.1682</Lap>
+<Lap num="2" p="9" et="253.8601" s1="38.5514" s2="56.8866" s3="31.6544" topspeed="255.40" fuel="0.325" fuelUsed="0.024" ve="0.447" veUsed="0.035" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.0924</Lap>
+<Lap num="3" p="7" et="380.9600" s1="37.5941" s2="55.7632" s3="31.2196" topspeed="250.44" fuel="0.302" fuelUsed="0.024" ve="0.404" veUsed="0.043" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.5770</Lap>
+<Lap num="4" p="5" et="505.5400" s1="38.3851" s2="56.4113" s3="31.2432" topspeed="255.40" fuel="0.275" fuelUsed="0.027" ve="0.365" veUsed="0.039" twfl="0.961" twfr="0.965" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.0395</Lap>
+<Lap num="5" p="5" et="631.5601" s1="37.8700" s2="55.9361" s3="31.6534" topspeed="256.30" fuel="0.251" fuelUsed="0.024" ve="0.325" veUsed="0.039" twfl="0.949" twfr="0.957" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.4595</Lap>
+<Lap num="6" p="5" et="757.0200" s1="37.1067" s2="56.6811" s3="30.8661" topspeed="254.95" fuel="0.227" fuelUsed="0.024" ve="0.286" veUsed="0.039" twfl="0.937" twfr="0.945" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.6539</Lap>
+<Lap num="7" p="7" et="881.6799" s1="38.4381" s2="56.8849" s3="33.4305" topspeed="252.70" fuel="0.200" fuelUsed="0.027" ve="0.247" veUsed="0.039" twfl="0.922" twfr="0.933" twrl="0.941" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.7536</Lap>
+<Lap num="8" p="7" et="1010.4399" s1="38.0809" s2="56.1685" s3="31.1056" topspeed="252.70" fuel="0.176" fuelUsed="0.024" ve="0.204" veUsed="0.043" twfl="0.910" twfr="0.922" twrl="0.933" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.3549</Lap>
+<Lap num="9" p="7" et="1135.8000" s1="37.0138" s2="56.0077" s3="31.1257" topspeed="254.95" fuel="0.149" fuelUsed="0.027" ve="0.165" veUsed="0.039" twfl="0.898" twfr="0.910" twrl="0.925" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.1472</Lap>
+<Lap num="10" p="8" et="1259.9399" s1="38.0096" s2="57.4957" s3="31.0035" topspeed="255.40" fuel="0.125" fuelUsed="0.024" ve="0.125" veUsed="0.039" twfl="0.886" twfr="0.902" twrl="0.918" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.5089</Lap>
+<BestLapTime>124.1472</BestLapTime>
+<FinishTime>1269.7574</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Ivan Tsvikin</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>12</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="116.6825" s1="48.3266" s2="56.6362" s3="35.8702" topspeed="227.47" fuel="0.290" fuelUsed="0.210" ve="0.957" veUsed="0.043" twfl="0.957" twfr="0.965" twrl="0.953" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">140.8330</Lap>
+<Lap num="2" p="12" et="257.5200" s1="38.1767" topspeed="254.50" fuel="0.263" fuelUsed="0.027" ve="0.918" veUsed="0.039" twfl="0.949" twfr="0.957" twrl="0.945" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.6266</Lap>
+<Lap num="3" p="10" et="385.1599" s1="37.8436" s2="56.1547" s3="31.6183" topspeed="256.30" fuel="0.239" fuelUsed="0.024" ve="0.878" veUsed="0.039" twfl="0.937" twfr="0.949" twrl="0.937" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.6166</Lap>
+<Lap num="4" p="9" et="510.7600" s1="38.6919" topspeed="256.30" fuel="0.216" fuelUsed="0.024" ve="0.839" veUsed="0.039" twfl="0.922" twfr="0.922" twrl="0.922" twrr="0.910" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">129.5789</Lap>
+<Lap num="5" p="9" et="640.3401" s1="37.4725" s2="55.6109" s3="32.0238" topspeed="255.85" fuel="0.192" fuelUsed="0.024" ve="0.800" veUsed="0.039" twfl="0.910" twfr="0.914" twrl="0.914" twrr="0.902" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.1072</Lap>
+<Lap num="6" p="8" et="765.4600" topspeed="256.75" fuel="0.165" fuelUsed="0.027" ve="0.761" veUsed="0.039" twfl="0.898" twfr="0.906" twrl="0.906" twrr="0.894" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="9" et="890.5400" s1="37.9677" s2="55.2426" s3="31.1016" topspeed="254.95" fuel="0.141" fuelUsed="0.024" ve="0.722" veUsed="0.039" twfl="0.890" twfr="0.898" twrl="0.898" twrr="0.886" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.3119</Lap>
+<Lap num="8" p="10" et="1014.8601" s1="44.1615" topspeed="254.05" fuel="0.118" fuelUsed="0.024" ve="0.682" veUsed="0.039" twfl="0.875" twfr="0.871" twrl="0.878" twrr="0.843" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">131.4741</Lap>
+<Lap num="9" p="10" et="1146.3201" s1="36.9539" s2="56.9436" s3="30.8981" topspeed="254.95" fuel="0.094" fuelUsed="0.024" ve="0.643" veUsed="0.039" twfl="0.863" twfr="0.859" twrl="0.871" twrr="0.835" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.7955</Lap>
+<Lap num="10" p="12" et="1271.1201" s1="37.0562" s2="56.9130" s3="40.2240" topspeed="255.40" fuel="0.067" fuelUsed="0.027" ve="0.604" veUsed="0.039" twfl="0.796" twfr="0.835" twrl="0.749" twrr="0.769" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">134.1931</Lap>
+<BestLapTime>124.3119</BestLapTime>
+<FinishTime>1288.6376</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Ludovic Staumont</Name>
+<Connected>1</Connected>
+<VehFile>6_26_GCHAL89066091.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #6:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>Logitech G Challenge #6</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>14</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="116.6825" topspeed="233.78" fuel="0.290" fuelUsed="0.210" ve="0.400" veUsed="0.039" twfl="0.992" twfr="0.996" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="2" p="19" et="268.9800" s1="100.7764" s2="56.5375" s3="36.6408" topspeed="236.03" fuel="0.290" fuelUsed="0.000" ve="0.404" veUsed="-0.004" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">193.9548</Lap>
+<Lap num="3" p="14" et="462.9399" s1="58.2260" s2="63.2940" s3="33.7219" topspeed="232.88" fuel="0.267" fuelUsed="0.024" ve="0.365" veUsed="0.039" twfl="0.925" twfr="0.961" twrl="0.902" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">155.2419</Lap>
+<Lap num="4" p="14" et="618.1799" s1="37.7933" s2="55.7761" s3="30.9747" topspeed="252.70" fuel="0.243" fuelUsed="0.024" ve="0.325" veUsed="0.039" twfl="0.914" twfr="0.953" twrl="0.898" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.5442</Lap>
+<Lap num="5" p="14" et="742.7200" s1="37.4417" s2="56.5035" s3="31.5557" topspeed="255.40" fuel="0.220" fuelUsed="0.024" ve="0.286" veUsed="0.039" twfl="0.906" twfr="0.941" twrl="0.890" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.5008</Lap>
+<Lap num="6" p="14" et="868.2200" s1="37.8047" s2="56.1637" s3="31.2518" topspeed="254.95" fuel="0.196" fuelUsed="0.024" ve="0.247" veUsed="0.039" twfl="0.890" twfr="0.933" twrl="0.882" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.2202</Lap>
+<Lap num="7" p="14" et="993.4399" s1="48.6385" s2="55.9767" s3="31.0614" topspeed="254.50" fuel="0.169" fuelUsed="0.027" ve="0.208" veUsed="0.039" twfl="0.871" twfr="0.902" twrl="0.855" twrr="0.871" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">135.6766</Lap>
+<Lap num="8" p="14" et="1129.1201" s1="38.0750" s2="56.2661" s3="31.3616" topspeed="256.30" fuel="0.145" fuelUsed="0.024" ve="0.169" veUsed="0.039" twfl="0.859" twfr="0.894" twrl="0.851" twrr="0.867" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.7026</Lap>
+<Lap num="9" p="14" et="1254.8201" s1="38.9386" s2="57.8226" s3="31.1255" topspeed="255.85" fuel="0.122" fuelUsed="0.024" ve="0.133" veUsed="0.035" twfl="0.847" twfr="0.882" twrl="0.843" twrr="0.859" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.8867</Lap>
+<BestLapTime>124.5442</BestLapTime>
+<FinishTime>1266.0375</FinishTime>
+<Laps>9</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>P-A Fugeekies</Name>
+<Connected>1</Connected>
+<VehFile>8_26_GCHAL79481284.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #8:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>Logitech G Challenge #8</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>11</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="116.6825" s1="51.3946" s2="57.9268" s3="32.8684" topspeed="227.92" fuel="0.325" fuelUsed="0.026" ve="0.451" veUsed="0.039" twfl="0.949" twfr="0.969" twrl="0.906" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.1897</Lap>
+<Lap num="2" p="11" et="258.8799" s1="38.0517" s2="56.0824" s3="31.5974" topspeed="249.54" fuel="0.302" fuelUsed="0.024" ve="0.416" veUsed="0.035" twfl="0.941" twfr="0.965" twrl="0.898" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.7315</Lap>
+<Lap num="3" p="12" et="384.6201" s1="37.9692" s2="57.9835" s3="32.3229" topspeed="253.23" fuel="0.278" fuelUsed="0.024" ve="0.376" veUsed="0.039" twfl="0.933" twfr="0.957" twrl="0.894" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.2756</Lap>
+<Lap num="4" p="8" et="512.8799" s1="37.9192" s2="57.5532" s3="31.2389" topspeed="252.25" fuel="0.259" fuelUsed="0.020" ve="0.341" veUsed="0.035" twfl="0.925" twfr="0.949" twrl="0.886" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.7113</Lap>
+<Lap num="5" p="12" et="639.6001" s1="37.2702" s2="62.8890" s3="31.5289" topspeed="254.50" fuel="0.235" fuelUsed="0.024" ve="0.306" veUsed="0.035" twfl="0.906" twfr="0.910" twrl="0.871" twrr="0.859" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">131.6881</Lap>
+<Lap num="6" p="12" et="771.2800" s1="37.8815" s2="56.6097" s3="31.7701" topspeed="252.72" fuel="0.212" fuelUsed="0.024" ve="0.267" veUsed="0.039" twfl="0.894" twfr="0.902" twrl="0.863" twrr="0.851" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.2613</Lap>
+<Lap num="7" p="11" et="897.5601" s1="37.3932" s2="56.2443" s3="31.2700" topspeed="254.13" fuel="0.188" fuelUsed="0.024" ve="0.227" veUsed="0.039" twfl="0.886" twfr="0.894" twrl="0.855" twrr="0.847" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.9076</Lap>
+<Lap num="8" p="11" et="1022.4600" s1="38.2682" s2="55.9170" s3="31.2825" topspeed="252.84" fuel="0.165" fuelUsed="0.024" ve="0.192" veUsed="0.035" twfl="0.875" twfr="0.886" twrl="0.847" twrr="0.839" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.4677</Lap>
+<Lap num="9" p="11" et="1147.9199" s1="38.1776" s2="55.9320" s3="31.4659" topspeed="254.95" fuel="0.141" fuelUsed="0.024" ve="0.157" veUsed="0.035" twfl="0.867" twfr="0.878" twrl="0.843" twrr="0.835" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.5756</Lap>
+<Lap num="10" p="11" et="1273.5000" s1="37.3849" s2="56.6141" s3="32.6934" topspeed="255.08" fuel="0.118" fuelUsed="0.024" ve="0.118" veUsed="0.039" twfl="0.859" twfr="0.871" twrl="0.835" twrr="0.827" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.6924</Lap>
+<BestLapTime>124.9076</BestLapTime>
+<FinishTime>1283.5007</FinishTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>JEON WM</Name>
+<Connected>1</Connected>
+<VehFile>12_26_GCHA18747807.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #12:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Logitech G Challenge #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>13</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="116.6825" s1="53.5810" s2="70.3861" s3="34.8530" topspeed="235.58" fuel="0.302" fuelUsed="0.198" ve="0.416" veUsed="0.043" twfl="0.965" twfr="0.000" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">158.8201</Lap>
+<Lap num="2" p="18" et="275.5200" s1="77.4899" s2="56.7625" s3="31.6278" topspeed="232.88" fuel="0.306" fuelUsed="-0.004" ve="0.420" veUsed="-0.004" twfl="0.973" twfr="0.976" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">165.8802</Lap>
+<Lap num="3" p="16" et="441.3999" s1="38.1687" s2="56.8870" s3="31.6368" topspeed="249.54" fuel="0.278" fuelUsed="0.027" ve="0.380" veUsed="0.039" twfl="0.965" twfr="0.969" twrl="0.969" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.6926</Lap>
+<Lap num="4" p="13" et="568.0801" s1="38.0842" s2="56.1359" s3="31.1161" topspeed="248.64" fuel="0.255" fuelUsed="0.024" ve="0.341" veUsed="0.039" twfl="0.957" twfr="0.965" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.3361</Lap>
+<Lap num="5" p="13" et="693.4199" s1="38.3866" s2="58.8081" s3="31.2540" topspeed="249.54" fuel="0.231" fuelUsed="0.024" ve="0.302" veUsed="0.039" twfl="0.945" twfr="0.925" twrl="0.945" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.4487</Lap>
+<Lap num="6" p="13" et="821.8799" s1="38.2164" s2="56.9462" s3="31.3594" topspeed="248.64" fuel="0.208" fuelUsed="0.024" ve="0.263" veUsed="0.039" twfl="0.937" twfr="0.918" twrl="0.937" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.5220</Lap>
+<Lap num="7" p="13" et="948.3999" s1="41.1205" s2="61.8792" s3="31.4132" topspeed="249.09" fuel="0.180" fuelUsed="0.027" ve="0.224" veUsed="0.039" twfl="0.918" twfr="0.875" twrl="0.910" twrr="0.824" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">134.4128</Lap>
+<Lap num="8" p="13" et="1082.8000" s1="38.6740" topspeed="249.09" fuel="0.157" fuelUsed="0.024" ve="0.184" veUsed="0.039" twfl="0.910" twfr="0.867" twrl="0.902" twrr="0.820" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.9882</Lap>
+<Lap num="9" p="13" et="1209.8000" s1="50.4703" s2="60.6545" s3="31.5616" topspeed="247.74" fuel="0.133" fuelUsed="0.024" ve="0.145" veUsed="0.039" twfl="0.894" twfr="0.863" twrl="0.867" twrr="0.800" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">142.6865</Lap>
+<BestLapTime>125.3361</BestLapTime>
+<FinishTime>1235.7975</FinishTime>
+<Laps>9</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>M BK</Name>
+<Connected>1</Connected>
+<VehFile>1_26_GCHAL73279592.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #1:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>Logitech G Challenge #1</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>18</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="116.6825" s1="46.4344" s2="55.5379" s3="30.8896" topspeed="239.18" fuel="0.271" fuelUsed="0.229" ve="0.373" veUsed="0.047" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">132.8619</Lap>
+<Lap num="2" p="5" et="249.5601" s1="41.7287" s2="55.3311" s3="30.9752" topspeed="255.85" fuel="0.247" fuelUsed="0.024" ve="0.333" veUsed="0.039" twfl="0.984" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.0349</Lap>
+<BestLapTime>128.0349</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>i kun#4881</Name>
+<Connected>1</Connected>
+<VehFile>9_26_GCHAL61794112.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #9:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Logitech G Challenge #9</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>19</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="116.6825" s1="44.8751" s2="56.2727" s3="31.0197" topspeed="237.83" fuel="0.302" fuelUsed="0.198" ve="0.416" veUsed="0.043" twfl="0.992" twfr="0.996" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">132.1674</Lap>
+<Lap num="2" p="17" et="248.8601" s1="55.8144" s2="76.6421" s3="48.8929" topspeed="255.40" fuel="0.290" fuelUsed="0.012" ve="0.400" veUsed="0.016" twfl="0.988" twfr="0.988" twrl="0.965" twrr="0.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">181.3493</Lap>
+<BestLapTime>132.1674</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>ELCUTI 17</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>20</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="116.6825" s1="55.2580" s2="57.7428" s3="34.8927" topspeed="232.43" fuel="0.294" fuelUsed="0.206" ve="0.408" veUsed="0.043" twfl="0.976" twfr="0.984" twrl="0.957" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">147.8935</Lap>
+<BestLapTime>147.8935</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Bartlomiej Stefaniak</Name>
+<Connected>1</Connected>
+<VehFile>2_26_GCHAL98500904.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Logitech G Challenge #2:LGC</VehName>
+<Category>Logitech 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Logitech G Challenge #2</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>21</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

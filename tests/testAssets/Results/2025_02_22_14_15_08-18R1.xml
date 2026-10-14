@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>1</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1740228375</DateTime>
+<TimeString>2025/02/22 13:46:15</TimeString>
+<TrackVenue>Circuit de la Sarthe</TrackVenue>
+<TrackCourse>Circuit de la Sarthe</TrackCourse>
+<TrackEvent>24 Heures du Mans</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\LeMans_2023\1.07\layoutLeMans.mas</TrackData>
+<TrackLength>13624.0</TrackLength>
+<GameVersion>0.4000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>McLaren_720S_LMGT3_Evo,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<LimitedTires>1</LimitedTires>
+<Race>
+<DateTime>1740229134</DateTime>
+<TimeString>2025/02/22 13:58:54</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Penalty et="172.1">Cameron K received Drive Thru penalty, 0s, 0laps for &quot;Driving Too Slow&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Penalty et="172.2">keivn collison received Drive Thru penalty, 0s, 0laps for &quot;Jumped the start&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="187.9">samuel pett(15) reported contact (143.48) with another vehicle Gabriel Matias(7)</Incident>
+<Incident et="188.0">Gabriel Matias(7) reported contact (136.15) with another vehicle samuel pett(15)</Incident>
+<Sector et="191.3">Vladislaw Fetisenko(13) reports new suspension damage</Sector>
+<Incident et="191.4">Vladislaw Fetisenko(13) reported contact (247.43) with another vehicle Arthur Torres(0)</Incident>
+<Incident et="193.2">Kevin Tesson(9) reported contact (577.15) with another vehicle Cameron K(4)</Incident>
+<Incident et="193.3">Cameron K(4) reported contact (388.66) with another vehicle Kevin Tesson(9)</Incident>
+<Incident et="193.6">Vladislaw Fetisenko(13) reported contact (800.52) with another vehicle Arthur Torres(0)</Incident>
+<Incident et="193.6">Arthur Torres(0) reported contact (790.22) with another vehicle Vladislaw Fetisenko(13)</Incident>
+<Incident et="210.3">Mario Bartsch(2) reported contact (39.39) with Post</Incident>
+<Incident et="210.4">Mario Bartsch(2) reported contact (40.12) with Post</Incident>
+<Sector et="214.5">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="214.5">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="214.5">Kevin Tesson(9) set new best for sector 2</Sector>
+<Score et="214.5">Dylan Neiva(17) lap=0 point=1 t=42.373 et=214.480</Score>
+<Sector et="214.5">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="214.6">Laurent Fana(14) set new best for sector 2</Sector>
+<Sector et="214.6">Dustin Bauke(5) set new best for sector 2</Sector>
+<Sector et="214.6">samuel pett(15) set new best for sector 2</Sector>
+<Sector et="214.6">Lars Sichwardt(12) set new best for sector 2</Sector>
+<Sector et="214.6">Paco ElTrece(1) set new best for sector 2</Sector>
+<Sector et="214.6">Cyrille Shakaponk(10) set new best for sector 2</Sector>
+<Sector et="214.6">PAJ LEPAJISTE(16) set new best for sector 2</Sector>
+<Sector et="214.6">Mario Bartsch(2) set new best for sector 2</Sector>
+<Sector et="214.6">Vladislaw Fetisenko(13) set new best for sector 2</Sector>
+<Sector et="214.6">Arthur Torres(0) set new best for sector 2</Sector>
+<Sector et="214.7">keivn collison(3) set new best for sector 2</Sector>
+<Sector et="214.7">Andrey Krutko(6) set new best for sector 2</Sector>
+<Sector et="214.7">Cameron K(4) set new best for sector 2</Sector>
+<Sector et="214.7">Gabriel Matias(7) set new best for sector 2</Sector>
+<Sector et="214.8">Michael Kaye(8) set new best for sector 2</Sector>
+<Score et="215.1">PAJ LEPAJISTE(16) lap=0 point=1 t=42.912 et=215.020</Score>
+<Score et="216.0">Dustin Bauke(5) lap=0 point=1 t=43.814 et=215.920</Score>
+<Score et="216.7">Mario Bartsch(2) lap=0 point=1 t=44.518 et=216.640</Score>
+<Score et="217.5">Gabriel Matias(7) lap=0 point=1 t=45.195 et=217.300</Score>
+<Score et="217.7">Paco ElTrece(1) lap=0 point=1 t=45.466 et=217.580</Score>
+<Score et="218.0">samuel pett(15) lap=0 point=1 t=45.867 et=217.980</Score>
+<Score et="218.5">Cameron K(4) lap=0 point=1 t=-1.000 et=218.380</Score>
+<Score et="218.7">Kevin Tesson(9) lap=0 point=1 t=46.562 et=218.680</Score>
+<Score et="219.2">Lars Sichwardt(12) lap=0 point=1 t=47.087 et=219.200</Score>
+<Score et="220.6">keivn collison(3) lap=0 point=1 t=48.356 et=220.460</Score>
+<Score et="221.4">Laurent Fana(14) lap=0 point=1 t=49.227 et=221.340</Score>
+<Score et="221.8">Arthur Torres(0) lap=0 point=1 t=49.593 et=221.700</Score>
+<Incident et="222.5">keivn collison(3) reported contact (220.78) with Post</Incident>
+<Incident et="222.6">keivn collison(3) reported contact (218.53) with Post</Incident>
+<Score et="223.4">Andrey Krutko(6) lap=0 point=1 t=51.097 et=223.200</Score>
+<Score et="223.7">Pierre-Andre Bulle(11) lap=0 point=1 t=51.624 et=223.727</Score>
+<Score et="224.0">Vladislaw Fetisenko(13) lap=0 point=1 t=51.802 et=223.920</Score>
+<Incident et="224.2">Pierre-Andre Bulle(11) reported contact (1469.37) with another vehicle Vladislaw Fetisenko(13)</Incident>
+<Incident et="224.2">Vladislaw Fetisenko(13) reported contact (1463.78) with another vehicle Pierre-Andre Bulle(11)</Incident>
+<Score et="227.7">Cyrille Shakaponk(10) lap=0 point=1 t=55.564 et=227.680</Score>
+<Score et="227.7">Michael Kaye(8) lap=0 point=1 t=55.355 et=227.460</Score>
+<Incident et="252.1">samuel pett(15) reported contact (556.18) with another vehicle Cameron K(4)</Incident>
+<Incident et="252.2">Cameron K(4) reported contact (718.40) with another vehicle samuel pett(15)</Incident>
+<Sector et="254.5">samuel pett(15) reports new suspension damage</Sector>
+<Incident et="254.5">samuel pett(15) reported contact (1958.98) with another vehicle Kevin Tesson(9)</Incident>
+<Incident et="254.5">Kevin Tesson(9) reported contact (1964.55) with another vehicle samuel pett(15)</Incident>
+<Sector et="256.5">samuel pett(15) reports new suspension damage</Sector>
+<Incident et="256.6">samuel pett(15) reported contact (6567.69) with another vehicle keivn collison(3)</Incident>
+<Sector et="256.6">keivn collison(3) reports new suspension damage</Sector>
+<Incident et="256.7">keivn collison(3) reported contact (3770.85) with another vehicle samuel pett(15)</Incident>
+<Incident et="256.8">samuel pett(15) reported contact (70.62) with Immovable</Incident>
+<Sector et="266.2">samuel pett(15) reports new suspension damage</Sector>
+<Incident et="266.3">samuel pett(15) reported contact (1183.10) with another vehicle Michael Kaye(8)</Incident>
+<Incident et="266.4">Michael Kaye(8) reported contact (860.45) with another vehicle samuel pett(15)</Incident>
+<Incident et="295.8">Vladislaw Fetisenko(13) reported contact (76.19) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="295.8">Andrey Krutko(6) reported contact (248.65) with another vehicle Vladislaw Fetisenko(13)</Incident>
+<Sector et="297.5">Andrey Krutko(6) reports new suspension damage</Sector>
+<Incident et="297.6">Vladislaw Fetisenko(13) reported contact (175.05) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="297.6">Andrey Krutko(6) reported contact (972.27) with another vehicle Vladislaw Fetisenko(13)</Incident>
+<Incident et="297.8">Vladislaw Fetisenko(13) reported contact (350.21) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="297.8">Vladislaw Fetisenko(13) reported contact (350.21) with another vehicle Andrey Krutko(6)</Incident>
+<Sector et="298.0">Vladislaw Fetisenko(13) reports new suspension damage</Sector>
+<Incident et="298.8">Vladislaw Fetisenko(13) reported contact (24.30) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="298.8">Vladislaw Fetisenko(13) reported contact (85.57) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="298.8">Andrey Krutko(6) reported contact (249.86) with another vehicle Vladislaw Fetisenko(13)</Incident>
+<Sector et="311.0">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="311.0">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="311.0">Lars Sichwardt(12) set new best for sector 3</Sector>
+<Sector et="311.0">Laurent Fana(14) set new best for sector 3</Sector>
+<Score et="311.0">PAJ LEPAJISTE(16) lap=0 point=2 t=138.846 et=310.960</Score>
+<Sector et="311.0">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="311.0">Paco ElTrece(1) set new best for sector 3</Sector>
+<Sector et="311.0">Cyrille Shakaponk(10) set new best for sector 3</Sector>
+<Sector et="311.1">Vladislaw Fetisenko(13) set new best for sector 3</Sector>
+<Sector et="311.1">samuel pett(15) set new best for sector 3</Sector>
+<Sector et="311.1">Dylan Neiva(17) set new best for sector 3</Sector>
+<Sector et="311.1">Kevin Tesson(9) set new best for sector 3</Sector>
+<Sector et="311.1">Mario Bartsch(2) set new best for sector 3</Sector>
+<Sector et="311.1">Dustin Bauke(5) set new best for sector 3</Sector>
+<Sector et="311.1">Arthur Torres(0) set new best for sector 3</Sector>
+<Sector et="311.1">Cameron K(4) set new best for sector 3</Sector>
+<Sector et="311.2">Andrey Krutko(6) set new best for sector 3</Sector>
+<Sector et="311.2">keivn collison(3) set new best for sector 3</Sector>
+<Sector et="311.3">Gabriel Matias(7) set new best for sector 3</Sector>
+<Sector et="311.3">Michael Kaye(8) set new best for sector 3</Sector>
+<Score et="311.5">Dylan Neiva(17) lap=0 point=2 t=139.325 et=311.440</Score>
+<Score et="312.9">Dustin Bauke(5) lap=0 point=2 t=140.745 et=312.860</Score>
+<Score et="313.8">Mario Bartsch(2) lap=0 point=2 t=141.580 et=313.700</Score>
+<Score et="314.5">Gabriel Matias(7) lap=0 point=2 t=142.140 et=314.260</Score>
+<Score et="315.3">Paco ElTrece(1) lap=0 point=2 t=143.118 et=315.240</Score>
+<Score et="316.1">Cameron K(4) lap=0 point=2 t=-1.000 et=315.940</Score>
+<Score et="317.1">Lars Sichwardt(12) lap=0 point=2 t=144.902 et=317.020</Score>
+<Score et="318.0">Laurent Fana(14) lap=0 point=2 t=145.827 et=317.940</Score>
+<Score et="319.3">Kevin Tesson(9) lap=0 point=2 t=147.116 et=319.220</Score>
+<Incident et="319.5">Kevin Tesson(9) reported contact (125.19) with Post</Incident>
+<Incident et="319.5">Kevin Tesson(9) reported contact (146.83) with Post</Incident>
+<Incident et="319.5">Kevin Tesson(9) reported contact (156.43) with Post</Incident>
+<Score et="319.7">Arthur Torres(0) lap=0 point=2 t=-1.000 et=319.660</Score>
+<Incident et="320.7">Kevin Tesson(9) reported contact (57.19) with Post</Incident>
+<Incident et="320.8">Kevin Tesson(9) reported contact (83.60) with Post</Incident>
+<Incident et="322.4">Arthur Torres(0) reported contact (182.63) with Post</Incident>
+<Score et="326.2">Vladislaw Fetisenko(13) lap=0 point=2 t=154.016 et=326.120</Score>
+<Score et="326.9">Andrey Krutko(6) lap=0 point=2 t=154.571 et=326.680</Score>
+<Score et="327.7">Pierre-Andre Bulle(11) lap=0 point=2 t=155.628 et=327.731</Score>
+<Score et="328.3">Cyrille Shakaponk(10) lap=0 point=2 t=156.144 et=328.260</Score>
+<Score et="330.4">keivn collison(3) lap=0 point=2 t=158.122 et=330.240</Score>
+<Incident et="331.5">Cyrille Shakaponk(10) reported contact (190.97) with Post</Incident>
+<Score et="335.0">Michael Kaye(8) lap=0 point=2 t=162.604 et=334.720</Score>
+<Score et="338.7">samuel pett(15) lap=0 point=2 t=166.515 et=338.620</Score>
+<Incident et="349.0">Mario Bartsch(2) reported contact (1525.19) with another vehicle Gabriel Matias(7)</Incident>
+<Incident et="349.1">Gabriel Matias(7) reported contact (1511.55) with another vehicle Mario Bartsch(2)</Incident>
+<Incident et="351.9">Mario Bartsch(2) reported contact (814.30) with Immovable</Incident>
+<Incident et="352.0">Mario Bartsch(2) reported contact (19.73) with Wing</Incident>
+<Incident et="352.0">Mario Bartsch(2) reported contact (22.56) with Wing</Incident>
+<Incident et="387.3">Mario Bartsch(2) reported contact (1320.10) with Immovable</Incident>
+<Incident et="388.4">Mario Bartsch(2) reported contact (708.20) with Immovable</Incident>
+<Incident et="394.7">Arthur Torres(0) reported contact (97.19) with Post</Incident>
+<Incident et="394.8">Arthur Torres(0) reported contact (256.82) with Post</Incident>
+<Incident et="395.6">Arthur Torres(0) reported contact (53.06) with Post</Incident>
+<Incident et="399.5">Dylan Neiva(17) reported contact (106.12) with Post</Incident>
+<Incident et="399.5">Dylan Neiva(17) reported contact (43.28) with Post</Incident>
+<Incident et="406.6">Andrey Krutko(6) reported contact (1056.60) with another vehicle keivn collison(3)</Incident>
+<Incident et="406.6">keivn collison(3) reported contact (1215.22) with another vehicle Andrey Krutko(6)</Incident>
+<Incident et="414.1">PAJ LEPAJISTE(16) reported contact (90.71) with Post</Incident>
+<Incident et="414.1">PAJ LEPAJISTE(16) reported contact (88.53) with Post</Incident>
+<Incident et="416.7">Mario Bartsch(2) reported contact (4085.71) with Immovable</Incident>
+<Sector et="417.2">samuel pett(15) reports new suspension damage</Sector>
+<Incident et="417.3">samuel pett(15) reported contact (265.99) with Immovable</Incident>
+<Incident et="418.7">Laurent Fana(14) reported contact (41.90) with Post</Incident>
+<Incident et="418.7">Laurent Fana(14) reported contact (83.18) with Post</Incident>
+<Score et="422.9">Dylan Neiva(17) lap=1 point=0 t=-1.000 et=422.840</Score>
+<Sector et="423.5">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="423.5">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Score et="423.5">PAJ LEPAJISTE(16) lap=1 point=0 t=251.315 et=423.420</Score>
+<Sector et="423.5">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="423.5">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Sector et="423.5">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="423.5">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="423.5">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="423.5">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="423.5">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="423.5">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="423.5">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="423.5">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="423.5">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="423.6">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="423.6">Cameron K(4) set new best for sector 1</Sector>
+<Sector et="423.7">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="423.7">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="423.8">keivn collison(3) set new best for sector 1</Sector>
+<Sector et="423.8">Michael Kaye(8) set new best for sector 1</Sector>
+<Score et="424.4">Dustin Bauke(5) lap=1 point=0 t=252.179 et=424.300</Score>
+<Score et="427.6">Paco ElTrece(1) lap=1 point=0 t=255.412 et=427.520</Score>
+<Score et="429.5">Gabriel Matias(7) lap=1 point=0 t=257.209 et=429.320</Score>
+<Score et="429.6">Laurent Fana(14) lap=1 point=0 t=257.449 et=429.560</Score>
+<Score et="431.5">Lars Sichwardt(12) lap=1 point=0 t=259.301 et=431.420</Score>
+<Score et="432.4">Kevin Tesson(9) lap=1 point=0 t=260.212 et=432.320</Score>
+<Score et="432.8">Arthur Torres(0) lap=1 point=0 t=-1.000 et=432.700</Score>
+<Score et="436.3">Cameron K(4) lap=1 point=0 t=-1.000 et=436.220</Score>
+<Score et="440.8">Vladislaw Fetisenko(13) lap=1 point=0 t=268.604 et=440.720</Score>
+<Score et="441.0">Cyrille Shakaponk(10) lap=1 point=0 t=268.799 et=440.920</Score>
+<Score et="447.1">Pierre-Andre Bulle(11) lap=1 point=0 t=275.019 et=447.121</Score>
+<Score et="452.2">Michael Kaye(8) lap=1 point=0 t=279.846 et=451.960</Score>
+<Score et="454.6">Andrey Krutko(6) lap=1 point=0 t=282.370 et=454.480</Score>
+<Score et="456.6">keivn collison(3) lap=1 point=0 t=284.377 et=456.480</Score>
+<Incident et="458.8">Kevin Tesson(9) reported contact (164.51) with Post</Incident>
+<Incident et="458.8">Kevin Tesson(9) reported contact (152.52) with Post</Incident>
+<Incident et="459.6">Arthur Torres(0) reported contact (55.87) with Post</Incident>
+<Sector et="461.1">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="461.2">Dylan Neiva(17) set new best for sector 2</Sector>
+<Score et="461.2">Dylan Neiva(17) lap=1 point=1 t=38.246 et=461.100</Score>
+<Sector et="461.2">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="461.2">Lars Sichwardt(12) set new best for sector 2</Sector>
+<Sector et="461.2">Cyrille Shakaponk(10) set new best for sector 2</Sector>
+<Sector et="461.2">Mario Bartsch(2) set new best for sector 2</Sector>
+<Sector et="461.2">Laurent Fana(14) set new best for sector 2</Sector>
+<Sector et="461.2">samuel pett(15) set new best for sector 2</Sector>
+<Sector et="461.2">PAJ LEPAJISTE(16) set new best for sector 2</Sector>
+<Sector et="461.2">Arthur Torres(0) set new best for sector 2</Sector>
+<Sector et="461.2">Dustin Bauke(5) set new best for sector 2</Sector>
+<Sector et="461.2">Paco ElTrece(1) set new best for sector 2</Sector>
+<Sector et="461.2">Kevin Tesson(9) set new best for sector 2</Sector>
+<Sector et="461.3">Vladislaw Fetisenko(13) set new best for sector 2</Sector>
+<Sector et="461.3">Andrey Krutko(6) set new best for sector 2</Sector>
+<Sector et="461.4">keivn collison(3) set new best for sector 2</Sector>
+<Sector et="461.4">Cameron K(4) set new best for sector 2</Sector>
+<Sector et="461.4">Gabriel Matias(7) set new best for sector 2</Sector>
+<Sector et="461.5">Michael Kaye(8) set new best for sector 2</Sector>
+<Score et="461.8">PAJ LEPAJISTE(16) lap=1 point=1 t=38.282 et=461.720</Score>
+<Score et="463.4">samuel pett(15) lap=1 point=0 t=291.180 et=463.300</Score>
+<Incident et="463.6">Cameron K(4) reported contact (199.01) with another vehicle keivn collison(3)</Incident>
+<Incident et="464.6">Mario Bartsch(2) reported contact (194.82) with Immovable</Incident>
+<Score et="466.4">Paco ElTrece(1) lap=1 point=1 t=38.798 et=466.320</Score>
+<Incident et="467.8">Dustin Bauke(5) reported contact (257.86) with another vehicle Laurent Fana(14)</Incident>
+<Incident et="467.8">Laurent Fana(14) reported contact (270.47) with another vehicle Dustin Bauke(5)</Incident>
+<Score et="468.2">Gabriel Matias(7) lap=1 point=1 t=38.634 et=467.960</Score>
+<Score et="468.6">Dustin Bauke(5) lap=1 point=1 t=44.254 et=468.540</Score>
+<Score et="468.8">Laurent Fana(14) lap=1 point=1 t=39.158 et=468.720</Score>
+<Incident et="470.0">Cyrille Shakaponk(10) reported contact (297.46) with Post</Incident>
+<Score et="470.2">Lars Sichwardt(12) lap=1 point=1 t=38.716 et=470.120</Score>
+<Score et="471.1">Kevin Tesson(9) lap=1 point=1 t=38.748 et=471.080</Score>
+<Score et="471.6">Arthur Torres(0) lap=1 point=1 t=38.787 et=471.480</Score>
+<Score et="478.2">Mario Bartsch(2) lap=1 point=0 t=306.085 et=478.200</Score>
+<Score et="480.0">Cyrille Shakaponk(10) lap=1 point=1 t=38.989 et=479.900</Score>
+<Score et="482.2">Vladislaw Fetisenko(13) lap=1 point=1 t=41.440 et=482.160</Score>
+<Incident et="482.4">Cameron K(4) reported contact (104.03) with another vehicle keivn collison(3)</Incident>
+<Incident et="482.5">keivn collison(3) reported contact (82.85) with another vehicle Cameron K(4)</Incident>
+<Incident et="483.5">Mario Bartsch(2) reported contact (724.22) with another vehicle keivn collison(3)</Incident>
+<Incident et="483.5">keivn collison(3) reported contact (556.36) with another vehicle Mario Bartsch(2)</Incident>
+<Incident et="483.6">keivn collison(3) reported contact (239.51) with another vehicle Cameron K(4)</Incident>
+<Incident et="483.7">Cameron K(4) reported contact (707.33) with another vehicle keivn collison(3)</Incident>
+<Incident et="484.2">keivn collison(3) reported contact (18.00) with another vehicle Mario Bartsch(2)</Incident>
+<Incident et="484.3">keivn collison(3) reported contact (21.04) with another vehicle Mario Bartsch(2)</Incident>
+<Incident et="486.5">Andrey Krutko(6) reported contact (156.72) with Post</Incident>
+<Score et="487.2">Pierre-Andre Bulle(11) lap=1 point=1 t=40.053 et=487.174</Score>
+<Score et="491.4">Michael Kaye(8) lap=1 point=1 t=39.121 et=491.080</Score>
+<Score et="499.8">Andrey Krutko(6) lap=1 point=1 t=45.211 et=499.700</Score>
+<Penalty et="527.5">keivn collison received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=2, 1st=Drive Thru,0s</Penalty>
+<Incident et="533.4">Dustin Bauke(5) reported contact (76.90) with another vehicle Gabriel Matias(7)</Incident>
+<Incident et="533.4">Gabriel Matias(7) reported contact (248.91) with another vehicle Dustin Bauke(5)</Incident>
+<Sector et="557.4">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="557.4">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Score et="557.4">PAJ LEPAJISTE(16) lap=1 point=2 t=133.905 et=557.340</Score>
+<Sector et="557.4">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="557.4">Laurent Fana(14) set new best for sector 3</Sector>
+<Sector et="557.4">Cyrille Shakaponk(10) set new best for sector 3</Sector>
+<Sector et="557.4">Lars Sichwardt(12) set new best for sector 3</Sector>
+<Sector et="557.4">Paco ElTrece(1) set new best for sector 3</Sector>
+<Sector et="557.4">Vladislaw Fetisenko(13) set new best for sector 3</Sector>
+<Sector et="557.4">Dustin Bauke(5) set new best for sector 3</Sector>
+<Sector et="557.4">samuel pett(15) set new best for sector 3</Sector>
+<Sector et="557.5">Kevin Tesson(9) set new best for sector 3</Sector>
+<Sector et="557.5">Dylan Neiva(17) set new best for sector 3</Sector>
+<Sector et="557.5">Mario Bartsch(2) set new best for sector 3</Sector>
+<Sector et="557.5">Arthur Torres(0) set new best for sector 3</Sector>
+<Sector et="557.6">Andrey Krutko(6) set new best for sector 3</Sector>
+<Sector et="557.6">Cameron K(4) set new best for sector 3</Sector>
+<Sector et="557.6">keivn collison(3) set new best for sector 3</Sector>
+<Sector et="557.6">Gabriel Matias(7) set new best for sector 3</Sector>
+<Sector et="557.8">Michael Kaye(8) set new best for sector 3</Sector>
+<Score et="558.0">Dylan Neiva(17) lap=1 point=2 t=-1.000 et=557.880</Score>
+<Incident et="558.6">Dylan Neiva(17) reported contact (51.34) with Post</Incident>
+<Incident et="558.7">Dylan Neiva(17) reported contact (56.00) with Post</Incident>
+<Score et="563.0">Paco ElTrece(1) lap=1 point=2 t=135.363 et=562.880</Score>
+<Score et="563.6">keivn collison(3) lap=1 point=1 t=107.006 et=563.500</Score>
+<Score et="565.4">Dustin Bauke(5) lap=1 point=2 t=-1.000 et=565.340</Score>
+<Score et="566.2">Gabriel Matias(7) lap=1 point=2 t=-1.000 et=565.900</Score>
+<Score et="566.6">Laurent Fana(14) lap=1 point=2 t=136.918 et=566.480</Score>
+<Score et="567.1">Lars Sichwardt(12) lap=1 point=2 t=135.626 et=567.040</Score>
+<Score et="567.4">Cameron K(4) lap=1 point=1 t=131.094 et=567.320</Score>
+<Score et="568.2">Kevin Tesson(9) lap=1 point=2 t=135.821 et=568.140</Score>
+<Score et="568.7">Arthur Torres(0) lap=1 point=2 t=-1.000 et=568.600</Score>
+<Incident et="570.8">Lars Sichwardt(12) reported contact (1868.55) with Immovable</Incident>
+<Penalty et="572.9">Mario Bartsch received Stop/Go penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<Score et="577.2">Cyrille Shakaponk(10) lap=1 point=2 t=136.296 et=577.200</Score>
+<Score et="579.7">Vladislaw Fetisenko(13) lap=1 point=2 t=138.889 et=579.600</Score>
+<Score et="584.6">samuel pett(15) lap=1 point=1 t=121.262 et=584.560</Score>
+<Score et="587.6">Pierre-Andre Bulle(11) lap=1 point=2 t=140.469 et=587.591</Score>
+<Score et="589.2">Michael Kaye(8) lap=1 point=2 t=136.957 et=588.920</Score>
+<Score et="604.2">Andrey Krutko(6) lap=1 point=2 t=149.529 et=604.020</Score>
+<Score et="609.0">Mario Bartsch(2) lap=1 point=1 t=130.810 et=609.000</Score>
+<Incident et="627.4">Dustin Bauke(5) reported contact (69.55) with another vehicle Laurent Fana(14)</Incident>
+<Incident et="627.4">Laurent Fana(14) reported contact (60.69) with another vehicle Dustin Bauke(5)</Incident>
+<Incident et="633.7">Laurent Fana(14) reported contact (41.24) with another vehicle Dustin Bauke(5)</Incident>
+<Incident et="633.7">Laurent Fana(14) reported contact (139.24) with another vehicle Dustin Bauke(5)</Incident>
+<Incident et="633.7">Dustin Bauke(5) reported contact (17.34) with another vehicle Laurent Fana(14)</Incident>
+<Incident et="633.7">Dustin Bauke(5) reported contact (85.51) with another vehicle Laurent Fana(14)</Incident>
+<Incident et="640.4">Dustin Bauke(5) reported contact (1885.70) with Immovable</Incident>
+<Incident et="659.0">Vladislaw Fetisenko(13) reported contact (113.74) with Immovable</Incident>
+<Score et="662.5">keivn collison(3) lap=1 point=2 t=205.897 et=662.380</Score>
+<Score et="667.6">PAJ LEPAJISTE(16) lap=2 point=0 t=-1.000 et=667.620</Score>
+<Score et="668.3">Dylan Neiva(17) lap=2 point=0 t=-1.000 et=668.220</Score>
+<Sector et="676.3">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="676.3">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="676.3">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="676.3">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="676.3">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="676.3">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="676.3">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Sector et="676.3">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="676.3">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="676.3">Laurent Fana(14) set new best for sector 1</Sector>
+<Score et="676.3">Paco ElTrece(1) lap=2 point=0 t=248.743 et=676.260</Score>
+<Sector et="676.3">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="676.3">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="676.4">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="676.4">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="676.5">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="676.6">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="676.6">keivn collison(3) set new best for sector 1</Sector>
+<Sector et="676.7">Michael Kaye(8) set new best for sector 1</Sector>
+<Sector et="677.3">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="677.3">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="677.3">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="677.3">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Score et="677.3">Laurent Fana(14) lap=2 point=0 t=247.669 et=677.240</Score>
+<Sector et="677.3">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="677.3">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="677.3">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="677.3">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="677.3">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="677.3">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="677.4">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="677.4">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="677.4">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="677.4">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="677.4">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="677.5">keivn collison(3) set new best for sector 1</Sector>
+<Sector et="677.5">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="677.6">Michael Kaye(8) set new best for sector 1</Sector>
+<Score et="679.1">Gabriel Matias(7) lap=2 point=0 t=-1.000 et=678.940</Score>
+<Sector et="680.0">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="680.0">Kevin Tesson(9) set new best for sector 1</Sector>
+<Score et="680.0">Kevin Tesson(9) lap=2 point=0 t=247.603 et=679.920</Score>
+<Sector et="680.0">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="680.0">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="680.0">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="680.0">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="680.0">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="680.0">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Sector et="680.0">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="680.0">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="680.0">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="680.0">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="680.0">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="680.1">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="680.1">keivn collison(3) set new best for sector 1</Sector>
+<Sector et="680.2">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="680.2">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="680.4">Michael Kaye(8) set new best for sector 1</Sector>
+<Score et="681.4">Arthur Torres(0) lap=2 point=0 t=-1.000 et=681.300</Score>
+<Score et="681.8">samuel pett(15) lap=1 point=2 t=218.438 et=681.740</Score>
+<Incident et="685.5">Dustin Bauke(5) reported contact (16.28) with Post</Incident>
+<Incident et="685.5">Dustin Bauke(5) reported contact (16.09) with Post</Incident>
+<Score et="689.4">Dustin Bauke(5) lap=2 point=0 t=-1.000 et=689.340</Score>
+<Score et="689.4">Lars Sichwardt(12) lap=2 point=0 t=-1.000 et=689.380</Score>
+<Score et="691.0">Cyrille Shakaponk(10) lap=2 point=0 t=250.077 et=690.980</Score>
+<Score et="695.1">Vladislaw Fetisenko(13) lap=2 point=0 t=254.368 et=695.080</Score>
+<Incident et="700.2">Dylan Neiva(17) reported contact (47.04) with Post</Incident>
+<Incident et="704.0">Dylan Neiva(17) reported contact (857.06) with Immovable</Incident>
+<Incident et="704.0">Dylan Neiva(17) reported contact (23.47) with Wing</Incident>
+<Score et="704.2">Michael Kaye(8) lap=2 point=0 t=252.065 et=704.020</Score>
+<Incident et="704.3">Dylan Neiva(17) reported contact (25.32) with Wing</Incident>
+<Sector et="704.3">Dylan Neiva(17) reports new suspension damage</Sector>
+<Incident et="705.1">Dylan Neiva(17) reported contact (57.86) with Immovable</Incident>
+<Score et="705.3">Pierre-Andre Bulle(11) lap=2 point=0 t=258.208 et=705.329</Score>
+<Score et="706.1">PAJ LEPAJISTE(16) lap=2 point=1 t=38.464 et=706.080</Score>
+<Incident et="706.6">Lars Sichwardt(12) reported contact (8.03) with Post</Incident>
+<Incident et="706.7">Lars Sichwardt(12) reported contact (8.22) with Post</Incident>
+<Score et="708.6">Mario Bartsch(2) lap=1 point=2 t=230.372 et=708.560</Score>
+<Sector et="710.3">keivn collison(3) reports new suspension damage</Sector>
+<Incident et="710.3">keivn collison(3) reported contact (3070.36) with Immovable</Incident>
+<Incident et="711.7">Dylan Neiva(17) reported contact (10.05) with Wing</Incident>
+<Score et="715.0">Paco ElTrece(1) lap=2 point=1 t=38.742 et=715.020</Score>
+<Score et="715.7">Laurent Fana(14) lap=2 point=1 t=38.392 et=715.620</Score>
+<Score et="718.2">Gabriel Matias(7) lap=2 point=1 t=39.182 et=718.120</Score>
+<Score et="718.5">Kevin Tesson(9) lap=2 point=1 t=38.524 et=718.460</Score>
+<Score et="720.0">Arthur Torres(0) lap=2 point=1 t=38.680 et=719.980</Score>
+<Score et="729.4">Dustin Bauke(5) lap=2 point=1 t=39.995 et=729.320</Score>
+<Score et="729.7">Cyrille Shakaponk(10) lap=2 point=1 t=38.652 et=729.640</Score>
+<Score et="729.8">Andrey Krutko(6) lap=2 point=0 t=275.170 et=729.660</Score>
+<Score et="735.0">Vladislaw Fetisenko(13) lap=2 point=1 t=39.847 et=734.940</Score>
+<Score et="737.8">Lars Sichwardt(12) lap=2 point=1 t=48.422 et=737.800</Score>
+<Score et="743.8">Michael Kaye(8) lap=2 point=1 t=39.404 et=743.420</Score>
+<Score et="745.2">Pierre-Andre Bulle(11) lap=2 point=1 t=39.840 et=745.169</Score>
+<Incident et="752.0">Gabriel Matias(7) reported contact (56.06) with Post</Incident>
+<Incident et="752.1">Gabriel Matias(7) reported contact (95.94) with Post</Incident>
+<Score et="773.9">Andrey Krutko(6) lap=2 point=1 t=44.097 et=773.740</Score>
+<Score et="791.2">keivn collison(3) lap=2 point=0 t=334.546 et=791.040</Score>
+<Score et="796.3">samuel pett(15) lap=2 point=0 t=332.879 et=796.180</Score>
+<Sector et="802.5">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="802.5">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="802.6">samuel pett(15) set new best for sector 3</Sector>
+<Sector et="802.6">Cyrille Shakaponk(10) set new best for sector 3</Sector>
+<Sector et="802.6">Laurent Fana(14) set new best for sector 3</Sector>
+<Sector et="802.6">Mario Bartsch(2) set new best for sector 3</Sector>
+<Sector et="802.6">Lars Sichwardt(12) set new best for sector 3</Sector>
+<Sector et="802.6">Dylan Neiva(17) set new best for sector 3</Sector>
+<Sector et="802.6">Paco ElTrece(1) set new best for sector 3</Sector>
+<Score et="802.6">PAJ LEPAJISTE(16) lap=2 point=2 t=134.904 et=802.520</Score>
+<Sector et="802.6">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="802.6">Kevin Tesson(9) set new best for sector 3</Sector>
+<Sector et="802.6">Dustin Bauke(5) set new best for sector 3</Sector>
+<Sector et="802.6">Vladislaw Fetisenko(13) set new best for sector 3</Sector>
+<Sector et="802.7">Arthur Torres(0) set new best for sector 3</Sector>
+<Sector et="802.8">keivn collison(3) set new best for sector 3</Sector>
+<Sector et="802.8">Andrey Krutko(6) set new best for sector 3</Sector>
+<Sector et="803.0">Michael Kaye(8) set new best for sector 3</Sector>
+<Sector et="803.1">Gabriel Matias(7) set new best for sector 3</Sector>
+<Sector et="810.6">Laurent Fana(14) set new best for sector 3</Sector>
+<Sector et="810.6">Laurent Fana(14) set new best for sector 3</Sector>
+<Score et="810.6">Laurent Fana(14) lap=2 point=2 t=133.315 et=810.540</Score>
+<Sector et="810.6">Laurent Fana(14) set new best for sector 3</Sector>
+<Sector et="810.6">samuel pett(15) set new best for sector 3</Sector>
+<Sector et="810.6">Mario Bartsch(2) set new best for sector 3</Sector>
+<Sector et="810.6">Cyrille Shakaponk(10) set new best for sector 3</Sector>
+<Sector et="810.6">Arthur Torres(0) set new best for sector 3</Sector>
+<Sector et="810.6">Kevin Tesson(9) set new best for sector 3</Sector>
+<Sector et="810.6">PAJ LEPAJISTE(16) set new best for sector 3</Sector>
+<Sector et="810.6">Vladislaw Fetisenko(13) set new best for sector 3</Sector>
+<Sector et="810.6">Dustin Bauke(5) set new best for sector 3</Sector>
+<Sector et="810.7">Dylan Neiva(17) set new best for sector 3</Sector>
+<Sector et="810.7">Lars Sichwardt(12) set new best for sector 3</Sector>
+<Sector et="810.7">Paco ElTrece(1) set new best for sector 3</Sector>
+<Sector et="810.7">keivn collison(3) set new best for sector 3</Sector>
+<Sector et="810.8">Gabriel Matias(7) set new best for sector 3</Sector>
+<Sector et="810.8">Andrey Krutko(6) set new best for sector 3</Sector>
+<Sector et="810.9">Michael Kaye(8) set new best for sector 3</Sector>
+<Score et="812.8">Paco ElTrece(1) lap=2 point=2 t=136.439 et=812.700</Score>
+<Penalty et="814.8">keivn collison served 1st Drive Thru penalty, result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<Score et="815.1">Gabriel Matias(7) lap=2 point=2 t=135.931 et=814.880</Score>
+<Score et="815.4">Kevin Tesson(9) lap=2 point=2 t=135.391 et=815.320</Score>
+<Score et="816.1">Arthur Torres(0) lap=2 point=2 t=134.726 et=816.020</Score>
+<Score et="826.1">Cyrille Shakaponk(10) lap=2 point=2 t=135.008 et=826.000</Score>
+<Score et="826.9">Dustin Bauke(5) lap=2 point=2 t=-1.000 et=826.840</Score>
+<Score et="828.1">Mario Bartsch(2) lap=2 point=0 t=349.819 et=828.020</Score>
+<Penalty et="832.3">Mario Bartsch served 1st Stop/Go penalty, result: penalties=0, 1st=Stop/Go,10s</Penalty>
+<Score et="832.8">Vladislaw Fetisenko(13) lap=2 point=2 t=137.648 et=832.740</Score>
+<Score et="835.2">samuel pett(15) lap=2 point=1 t=38.945 et=835.120</Score>
+<Score et="836.2">Lars Sichwardt(12) lap=2 point=2 t=146.711 et=836.100</Score>
+<Score et="841.1">Michael Kaye(8) lap=2 point=2 t=136.811 et=840.840</Score>
+<Score et="843.5">Pierre-Andre Bulle(11) lap=2 point=2 t=138.143 et=843.472</Score>
+<Score et="857.5">keivn collison(3) lap=2 point=1 t=66.258 et=857.300</Score>
+<Score et="876.8">Andrey Krutko(6) lap=2 point=2 t=146.984 et=876.640</Score>
+<Score et="901.3">Mario Bartsch(2) lap=2 point=1 t=73.172 et=901.180</Score>
+<Sector et="913.2">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="913.2">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="913.2">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="913.2">Paco ElTrece(1) set new best for sector 1</Sector>
+<Score et="913.2">PAJ LEPAJISTE(16) lap=3 point=0 t=245.494 et=913.120</Score>
+<Sector et="913.2">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="913.2">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="913.2">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="913.2">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="913.2">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Sector et="913.2">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="913.2">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="913.2">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="913.2">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="913.3">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="913.3">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="913.4">keivn collison(3) set new best for sector 1</Sector>
+<Incident et="913.4">Lars Sichwardt(12) reported contact (99.11) with Immovable</Incident>
+<Sector et="913.5">Michael Kaye(8) set new best for sector 1</Sector>
+<Sector et="913.7">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="921.1">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="921.1">Laurent Fana(14) set new best for sector 1</Sector>
+<Score et="921.1">Laurent Fana(14) lap=3 point=0 t=243.846 et=921.080</Score>
+<Sector et="921.1">Laurent Fana(14) set new best for sector 1</Sector>
+<Sector et="921.1">samuel pett(15) set new best for sector 1</Sector>
+<Sector et="921.1">Paco ElTrece(1) set new best for sector 1</Sector>
+<Sector et="921.2">Cyrille Shakaponk(10) set new best for sector 1</Sector>
+<Sector et="921.2">PAJ LEPAJISTE(16) set new best for sector 1</Sector>
+<Sector et="921.2">Dylan Neiva(17) set new best for sector 1</Sector>
+<Sector et="921.2">Mario Bartsch(2) set new best for sector 1</Sector>
+<Sector et="921.2">Lars Sichwardt(12) set new best for sector 1</Sector>
+<Sector et="921.2">Kevin Tesson(9) set new best for sector 1</Sector>
+<Sector et="921.2">Dustin Bauke(5) set new best for sector 1</Sector>
+<Sector et="921.2">Vladislaw Fetisenko(13) set new best for sector 1</Sector>
+<Sector et="921.2">Arthur Torres(0) set new best for sector 1</Sector>
+<Sector et="921.3">Andrey Krutko(6) set new best for sector 1</Sector>
+<Sector et="921.3">keivn collison(3) set new best for sector 1</Sector>
+<Sector et="921.4">Gabriel Matias(7) set new best for sector 1</Sector>
+<Sector et="921.4">Michael Kaye(8) set new best for sector 1</Sector>
+<Score et="925.4">Paco ElTrece(1) lap=3 point=0 t=249.017 et=925.280</Score>
+<Score et="926.4">Kevin Tesson(9) lap=3 point=0 t=246.430 et=926.360</Score>
+<Incident et="926.6">Pierre-Andre Bulle(11) reported contact (4978.10) with Immovable</Incident>
+<Incident et="926.9">Pierre-Andre Bulle(11) reported contact (19.77) with Wing</Incident>
+<Score et="927.0">Arthur Torres(0) lap=3 point=0 t=-1.000 et=926.940</Score>
+<Score et="929.2">Gabriel Matias(7) lap=3 point=0 t=250.069 et=929.020</Score>
+<Score et="932.4">samuel pett(15) lap=2 point=2 t=136.115 et=932.280</Score>
+<Score et="936.8">Cyrille Shakaponk(10) lap=3 point=0 t=245.762 et=936.760</Score>
+<Score et="938.4">Dustin Bauke(5) lap=3 point=0 t=-1.000 et=938.400</Score>
+<Incident et="941.6">Kevin Tesson(9) reported contact (5.56) with Post</Incident>
+<Incident et="941.6">Kevin Tesson(9) reported contact (13.43) with Post</Incident>
+<Incident et="941.6">Kevin Tesson(9) reported contact (24.17) with Post</Incident>
+<Incident et="942.1">Pierre-Andre Bulle(11) reported contact (47.31) with Post</Incident>
+<Score et="946.6">Vladislaw Fetisenko(13) lap=3 point=0 t=251.496 et=946.580</Score>
+<Score et="949.6">Lars Sichwardt(12) lap=3 point=0 t=260.173 et=949.560</Score>
+<Score et="952.2">PAJ LEPAJISTE(16) lap=3 point=1 t=39.027 et=952.140</Score>
+<Score et="954.4">Michael Kaye(8) lap=3 point=0 t=250.215 et=954.240</Score>
+<Score et="956.2">keivn collison(3) lap=2 point=2 t=165.049 et=956.080</Score>
+<Sector et="956.9">Pierre-Andre Bulle(11) reports new engine damage</Sector>
+<Incident et="957.0">Pierre-Andre Bulle(11) reported contact (7343.67) with Immovable</Incident>
+<Incident et="957.0">Pierre-Andre Bulle(11) reported contact (104.72) with Wheel</Incident>
+<Sector et="959.3">Laurent Fana(14) set new best for sector 2</Sector>
+<Sector et="959.3">Laurent Fana(14) set new best for sector 2</Sector>
+<Sector et="959.3">Lars Sichwardt(12) set new best for sector 2</Sector>
+<Sector et="959.3">Dylan Neiva(17) set new best for sector 2</Sector>
+<Sector et="959.3">Mario Bartsch(2) set new best for sector 2</Sector>
+<Sector et="959.3">Cyrille Shakaponk(10) set new best for sector 2</Sector>
+<Sector et="959.3">Kevin Tesson(9) set new best for sector 2</Sector>
+<Sector et="959.3">Paco ElTrece(1) set new best for sector 2</Sector>
+<Score et="959.3">Laurent Fana(14) lap=3 point=1 t=38.148 et=959.220</Score>
+<Sector et="959.3">Laurent Fana(14) set new best for sector 2</Sector>
+<Sector et="959.3">Arthur Torres(0) set new best for sector 2</Sector>
+<Sector et="959.3">Dustin Bauke(5) set new best for sector 2</Sector>
+<Sector et="959.3">samuel pett(15) set new best for sector 2</Sector>
+<Sector et="959.3">PAJ LEPAJISTE(16) set new best for sector 2</Sector>
+<Sector et="959.3">Vladislaw Fetisenko(13) set new best for sector 2</Sector>
+<Sector et="959.4">keivn collison(3) set new best for sector 2</Sector>
+<Sector et="959.5">Gabriel Matias(7) set new best for sector 2</Sector>
+<Sector et="959.5">Andrey Krutko(6) set new best for sector 2</Sector>
+<Sector et="959.6">Michael Kaye(8) set new best for sector 2</Sector>
+<Score et="964.1">Paco ElTrece(1) lap=3 point=1 t=38.705 et=964.000</Score>
+<Score et="964.7">Kevin Tesson(9) lap=3 point=1 t=38.237 et=964.600</Score>
+<Score et="968.0">Gabriel Matias(7) lap=3 point=1 t=38.844 et=967.860</Score>
+<Score et="975.1">Cyrille Shakaponk(10) lap=3 point=1 t=38.315 et=975.060</Score>
+<Score et="975.6">Arthur Torres(0) lap=3 point=1 t=48.544 et=975.480</Score>
+<Score et="977.0">Dustin Bauke(5) lap=3 point=1 t=38.495 et=976.900</Score>
+<Sector et="977.6">Pierre-Andre Bulle(11) reports new engine damage</Sector>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>3</MostLapsCompleted>
+<Driver>
+<Name>Laurent Fana</Name>
+<Connected>1</Connected>
+<VehFile>86_24_GRR_82B297D8.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing 2024 #86:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>86</CarNumber>
+<TeamName>GR Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>2</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="172.1025" s1="49.2267" s2="96.6005" s3="111.6217" topspeed="279.72" fuel="0.310" fuelUsed="0.190" ve="0.459" veUsed="0.541" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">257.4489</Lap>
+<Lap num="2" p="4" et="429.5600" s1="39.1584" s2="97.7598" s3="110.7513" topspeed="279.72" fuel="0.247" fuelUsed="0.063" ve="0.365" veUsed="0.094" twfl="0.976" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">247.6695</Lap>
+<Lap num="3" p="2" et="677.2400" s1="38.3915" s2="94.9236" s3="110.5304" topspeed="281.98" fuel="0.184" fuelUsed="0.063" ve="0.271" veUsed="0.094" twfl="0.961" twfr="0.969" twrl="0.969" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">243.8455</Lap>
+<BestLapTime>243.8455</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>PAJ LEPAJISTE</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_C8F1B81C.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>1</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="172.1025" s1="42.9124" s2="95.9338" s3="112.4691" topspeed="282.43" fuel="0.278" fuelUsed="0.222" ve="0.490" veUsed="0.510" twfl="0.976" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">251.3154</Lap>
+<Lap num="2" p="1" et="423.4200" s1="38.2824" s2="95.6227" topspeed="283.78" fuel="0.227" fuelUsed="0.051" ve="0.396" veUsed="0.094" twfl="0.953" twfr="0.957" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="1" et="667.6200" s1="38.4641" s2="96.4398" s3="110.5902" topspeed="281.07" fuel="0.173" fuelUsed="0.055" ve="0.302" veUsed="0.094" twfl="0.929" twfr="0.937" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium">245.4941</Lap>
+<BestLapTime>245.4941</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Cyrille Shakaponk</Name>
+<Connected>1</Connected>
+<VehFile>86_24_GRR_82B297D8.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing 2024 #86:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>86</CarNumber>
+<TeamName>GR Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>6</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="172.1025" s1="55.5642" s2="100.5803" s3="112.6548" topspeed="278.82" fuel="0.404" fuelUsed="0.096" ve="0.596" veUsed="0.404" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">268.7992</Lap>
+<Lap num="2" p="10" et="440.9200" s1="38.9892" s2="97.3063" s3="113.7814" topspeed="279.72" fuel="0.341" fuelUsed="0.063" ve="0.498" veUsed="0.098" twfl="0.976" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">250.0769</Lap>
+<Lap num="3" p="7" et="690.9800" s1="38.6520" s2="96.3564" s3="110.7538" topspeed="281.52" fuel="0.275" fuelUsed="0.067" ve="0.400" veUsed="0.098" twfl="0.961" twfr="0.969" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">245.7623</Lap>
+<BestLapTime>245.7623</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Kevin Tesson</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_8AEC83FD.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WEC</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>4</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="172.1025" s1="46.5624" s2="100.5535" s3="113.0965" topspeed="280.17" fuel="0.282" fuelUsed="0.218" ve="0.502" veUsed="0.498" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">260.2125</Lap>
+<Lap num="2" p="6" et="432.3200" s1="38.7479" s2="97.0734" s3="111.7819" topspeed="278.37" fuel="0.227" fuelUsed="0.055" ve="0.404" veUsed="0.098" twfl="0.976" twfr="0.980" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium">247.6032</Lap>
+<Lap num="3" p="4" et="679.9200" s1="38.5238" s2="96.8673" s3="111.0389" topspeed="279.72" fuel="0.173" fuelUsed="0.055" ve="0.310" veUsed="0.094" twfl="0.965" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">246.4300</Lap>
+<BestLapTime>246.4300</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Paco ElTrece</Name>
+<Connected>1</Connected>
+<VehFile>95_24_UNITE72F634D.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #95:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>95</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>3</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="172.1025" s1="45.4661" s2="97.6524" s3="112.2937" topspeed="281.98" fuel="0.588" fuelUsed="-0.088" ve="0.902" veUsed="0.098" twfl="0.984" twfr="0.988" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">255.4122</Lap>
+<Lap num="2" p="3" et="427.5200" s1="38.7984" s2="96.5645" s3="113.3804" topspeed="280.62" fuel="0.529" fuelUsed="0.059" ve="0.808" veUsed="0.094" twfl="0.969" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">248.7433</Lap>
+<Lap num="3" p="3" et="676.2600" s1="38.7424" s2="97.6964" s3="112.5779" topspeed="275.67" fuel="0.471" fuelUsed="0.059" ve="0.714" veUsed="0.094" twfl="0.953" twfr="0.961" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">249.0167</Lap>
+<BestLapTime>248.7433</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Gabriel Matias</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>5</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="172.1025" s1="45.1951" s2="96.9453" s3="115.0684" topspeed="280.62" fuel="0.278" fuelUsed="0.222" ve="0.427" veUsed="0.573" twfl="0.984" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">257.2088</Lap>
+<Lap num="2" p="5" et="429.3200" s1="38.6342" topspeed="279.27" fuel="0.220" fuelUsed="0.059" ve="0.329" veUsed="0.098" twfl="0.969" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="6" et="678.9400" s1="39.1819" s2="96.7487" s3="114.1384" topspeed="279.27" fuel="0.161" fuelUsed="0.059" ve="0.235" veUsed="0.094" twfl="0.953" twfr="0.965" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">250.0690</Lap>
+<BestLapTime>250.0690</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Michael Kaye</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>11</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="172.1025" s1="55.3553" s2="107.2484" s3="117.2418" topspeed="273.42" fuel="0.373" fuelUsed="0.127" ve="0.573" veUsed="0.427" twfl="0.992" twfr="0.996" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">279.8455</Lap>
+<Lap num="2" p="12" et="451.9600" s1="39.1207" s2="97.8362" s3="115.1083" topspeed="278.37" fuel="0.314" fuelUsed="0.059" ve="0.475" veUsed="0.098" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">252.0652</Lap>
+<Lap num="3" p="11" et="704.0200" s1="39.4039" s2="97.4073" s3="113.4039" topspeed="278.82" fuel="0.251" fuelUsed="0.063" ve="0.380" veUsed="0.094" twfl="0.976" twfr="0.984" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium">250.2150</Lap>
+<BestLapTime>250.2150</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Vladislaw Fetisenko</Name>
+<Connected>1</Connected>
+<VehFile>86_24_GRR_82B297D8.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing 2024 #86:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>86</CarNumber>
+<TeamName>GR Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>9</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="172.1025" s1="51.8018" s2="102.2142" s3="114.5876" topspeed="280.17" fuel="0.498" fuelUsed="0.002" ve="0.573" veUsed="0.427" twfl="0.973" twfr="0.976" twrl="0.969" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium">268.6036</Lap>
+<Lap num="2" p="11" et="440.7200" s1="41.4398" s2="97.4492" s3="115.4791" topspeed="278.37" fuel="0.435" fuelUsed="0.063" ve="0.482" veUsed="0.090" twfl="0.957" twfr="0.969" twrl="0.957" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">254.3680</Lap>
+<Lap num="3" p="9" et="695.0800" s1="39.8466" s2="97.8010" s3="113.8488" topspeed="278.37" fuel="0.376" fuelUsed="0.059" ve="0.392" veUsed="0.090" twfl="0.945" twfr="0.957" twrl="0.949" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium">251.4963</Lap>
+<BestLapTime>251.4963</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Dustin Bauke</Name>
+<Connected>1</Connected>
+<VehFile>55_24_AFCOB65363E7.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Vista AF Corse 2024 #55:EC</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>55</CarNumber>
+<TeamName>Vista AF Corse</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>8</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="172.1025" s1="43.8142" s2="96.9304" s3="111.4347" topspeed="279.72" fuel="0.325" fuelUsed="0.175" ve="0.482" veUsed="0.518" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">252.1794</Lap>
+<Lap num="2" p="8" et="424.3000" s1="44.2542" topspeed="280.17" fuel="0.263" fuelUsed="0.063" ve="0.384" veUsed="0.098" twfl="0.961" twfr="0.969" twrl="0.953" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="8" et="689.3400" s1="39.9948" topspeed="279.72" fuel="0.200" fuelUsed="0.063" ve="0.290" veUsed="0.094" twfl="0.949" twfr="0.957" twrl="0.941" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<BestLapTime>252.1794</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,SpinRecovery,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Pierre-Andre Bulle</Name>
+<Connected>1</Connected>
+<VehFile>95_24_UNITE72F634D.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #95:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>95</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>12</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="172.1025" s1="51.6244" s2="104.0039" s3="119.3906" topspeed="279.02" fuel="0.588" fuelUsed="0.062" ve="0.902" veUsed="0.098" twfl="0.992" twfr="0.992" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium">275.0190</Lap>
+<Lap num="2" p="13" et="447.1215" s1="40.0530" s2="100.4163" s3="117.7383" topspeed="277.92" fuel="0.529" fuelUsed="0.059" ve="0.808" veUsed="0.094" twfl="0.984" twfr="0.980" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">258.2076</Lap>
+<BestLapTime>258.2076</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Accident</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Lars Sichwardt</Name>
+<Connected>1</Connected>
+<VehFile>155_24_SORABB7F1C1.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Spirit Of Race 2024 #155:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>155</CarNumber>
+<TeamName>Spirit Of Race</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>10</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="172.1025" s1="47.0872" s2="97.8146" s3="114.3988" topspeed="278.82" fuel="0.329" fuelUsed="0.171" ve="0.490" veUsed="0.510" twfl="0.988" twfr="0.992" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">259.3005</Lap>
+<Lap num="2" p="9" et="431.4200" s1="38.7155" s2="96.9105" topspeed="279.27" fuel="0.263" fuelUsed="0.067" ve="0.392" veUsed="0.098" twfl="0.965" twfr="0.976" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="10" et="689.3800" s1="48.4222" s2="98.2886" s3="113.4624" topspeed="277.92" fuel="0.196" fuelUsed="0.067" ve="0.298" veUsed="0.094" twfl="0.945" twfr="0.957" twrl="0.953" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium">260.1732</Lap>
+<BestLapTime>259.3005</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Andrey Krutko</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_F1E39333.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WE2</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>13</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="172.1025" s1="51.0968" s2="103.4746" s3="127.7983" topspeed="277.92" fuel="0.514" fuelUsed="-0.014" ve="0.898" veUsed="0.102" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">282.3698</Lap>
+<Lap num="2" p="14" et="454.4800" s1="45.2115" s2="104.3174" s3="125.6414" topspeed="277.47" fuel="0.467" fuelUsed="0.047" ve="0.804" veUsed="0.094" twfl="0.961" twfr="0.969" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">275.1703</Lap>
+<BestLapTime>275.1703</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>keivn collison</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>15</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="172.1025" s1="48.3563" s2="109.7659" s3="126.2544" topspeed="280.17" fuel="0.588" fuelUsed="-0.088" ve="0.898" veUsed="0.102" twfl="0.980" twfr="0.988" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" pit="1">284.3766</Lap>
+<Lap num="2" p="15" et="456.4800" s1="107.0063" s2="98.8907" s3="128.6494" topspeed="278.82" fuel="0.592" fuelUsed="-0.004" ve="0.910" veUsed="-0.012" twfl="0.969" twfr="0.976" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" pit="1">334.5464</Lap>
+<BestLapTime>284.3766</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Steering=1,Clutch,Opposite,SpinRecovery,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>samuel pett</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_6CBE4475.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:WEC</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>14</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="172.1025" s1="45.8674" s2="120.6478" s3="124.6645" topspeed="279.72" fuel="0.510" fuelUsed="-0.010" ve="0.902" veUsed="0.098" twfl="0.984" twfr="0.984" twrl="0.980" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" pit="1">291.1798</Lap>
+<Lap num="2" p="16" et="463.3000" s1="121.2623" s2="97.1755" s3="114.4413" topspeed="280.17" fuel="0.514" fuelUsed="-0.004" ve="0.902" veUsed="0.000" twfl="0.973" twfr="0.976" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium">332.8790</Lap>
+<BestLapTime>291.1798</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Mario Bartsch</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>16</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="172.1025" s1="44.5180" s2="97.0621" s3="164.5048" topspeed="280.62" fuel="0.306" fuelUsed="0.194" ve="0.537" veUsed="0.463" twfl="0.976" twfr="0.949" twrl="0.957" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" pit="1">306.0850</Lap>
+<Lap num="2" p="17" et="478.2000" s1="130.8105" s2="99.5620" s3="119.4462" topspeed="279.72" fuel="0.298" fuelUsed="0.008" ve="0.522" veUsed="0.016" twfl="0.969" twfr="0.941" twrl="0.953" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" pit="1">349.8186</Lap>
+<BestLapTime>306.0850</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Arthur Torres</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>7</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="172.1025" s1="49.5930" topspeed="283.33" fuel="0.282" fuelUsed="0.218" ve="0.522" veUsed="0.478" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="7" et="432.7000" s1="38.7871" topspeed="279.27" fuel="0.231" fuelUsed="0.051" ve="0.431" veUsed="0.090" twfl="0.976" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="5" et="681.3000" s1="38.6804" s2="96.0452" topspeed="280.17" fuel="0.180" fuelUsed="0.051" ve="0.337" veUsed="0.094" twfl="0.961" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Dylan Neiva</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_F1E39333.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WE2</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>17</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="172.1025" s1="42.3730" s2="96.9518" topspeed="279.72" fuel="0.286" fuelUsed="0.214" ve="0.506" veUsed="0.494" twfl="0.984" twfr="0.988" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="2" et="422.8400" s1="38.2463" topspeed="279.27" fuel="0.235" fuelUsed="0.051" ve="0.412" veUsed="0.094" twfl="0.973" twfr="0.973" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Cameron K</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>18</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>19</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="172.1025" topspeed="281.98" fuel="0.129" fuelUsed="0.371" ve="0.200" veUsed="0.800" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" pit="1">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl</ControlAndAids>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

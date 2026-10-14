@@ -1,0 +1,1051 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>1</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1740419587</DateTime>
+<TimeString>2025/02/24 18:53:07</TimeString>
+<TrackVenue>Algarve International Circuit</TrackVenue>
+<TrackCourse>Algarve International Circuit</TrackCourse>
+<TrackEvent>6 Hours of Portimao</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\PortimaoWEC_2023\1.09\layoutPortimao.mas</TrackData>
+<TrackLength>4635.3</TrackLength>
+<GameVersion>0.4000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>60</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Ferrari_488_GTE_EVO,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<LimitedTires>1</LimitedTires>
+<Practice1>
+<DateTime>1740419589</DateTime>
+<TimeString>2025/02/24 18:53:09</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>165</Minutes>
+<Stream>
+<Score et="2.8">FREDERIC AUVRAY(42) lap=2 point=2 t=61.042 et=1867.000</Score>
+<Sector et="2.0">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Score et="2.0">Harald Sadransky(31) lap=8 point=2 t=63.989 et=1869.900</Score>
+<Sector et="2.0">Harald Sadransky(31) set new best for sector 3</Sector>
+<Score et="2.0">Adam Hegyi(39) lap=2 point=1 t=22.952 et=1870.080</Score>
+<Sector et="2.0">Adam Hegyi(39) set new best for sector 2</Sector>
+<Score et="2.0">Gaetano Pellitteri(14) lap=12 point=0 t=107.677 et=1873.000</Score>
+<Score et="2.0">Rookie B(38) lap=4 point=0 t=-1.000 et=1873.380</Score>
+<Sector et="2.0">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="2.0">Rookie B(38) set new best for sector 3</Sector>
+<Sector et="2.0">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Sector et="2.0">Stefan Kohlen(53) set new best for sector 3</Sector>
+<Score et="2.0">Henri Beuttner(44) lap=2 point=2 t=59.638 et=1875.680</Score>
+<Sector et="2.0">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="2.0">Dirk Landwehr(51) set new best for sector 3</Sector>
+<Sector et="2.0">Fanava Fanava(40) set new best for sector 3</Sector>
+<Sector et="2.0">Adam Hegyi(39) set new best for sector 3</Sector>
+<Sector et="2.0">Alexey Mironov(43) set new best for sector 3</Sector>
+<Sector et="2.0">Florian Winterhalder(46) set new best for sector 3</Sector>
+<Sector et="2.0">Matthias Goldgruber(52) set new best for sector 3</Sector>
+<Sector et="2.0">Denis Seben(47) set new best for sector 3</Sector>
+<Sector et="2.0">Safety Saf(48) set new best for sector 3</Sector>
+<Sector et="2.0">Nemes Mate(55) set new best for sector 3</Sector>
+<Sector et="2.0">E Klassen(50) set new best for sector 3</Sector>
+<Sector et="2.0">Matt Schmitzer(54) set new best for sector 3</Sector>
+<Score et="2.0">Leo Allain(12) lap=13 point=0 t=106.301 et=1876.020</Score>
+<Score et="1876.4">Petar Dyakov(17) lap=11 point=0 t=-1.000 et=1876.303</Score>
+<Score et="1876.4">Petar Dyakov(17) lap=11 point=1 t=-1.000 et=1876.303</Score>
+<Score et="1876.4">Petar Dyakov(17) lap=11 point=2 t=-1.000 et=1876.303</Score>
+<Score et="1876.4">Petar Dyakov(17) lap=12 point=0 t=-1.000 et=1876.303</Score>
+<Score et="1877.2">Denis Seben(47) lap=1 point=0 t=-1.000 et=1877.180</Score>
+<Score et="1878.8">Fred Grandru(36) lap=5 point=1 t=23.231 et=1878.740</Score>
+<Sector et="1878.8">Fred Grandru(36) set new best for sector 2</Sector>
+<Score et="1879.6">Florian Winterhalder(46) lap=2 point=0 t=122.087 et=1879.520</Score>
+<Sector et="1879.6">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1879.6">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1879.6">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1879.6">Dirk Landwehr(51) set new best for sector 1</Sector>
+<Sector et="1879.7">Nemes Mate(55) set new best for sector 1</Sector>
+<Sector et="1879.7">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Score et="1881.2">Stefan Kohlen(53) lap=0 point=1 t=-1.000 et=1881.140</Score>
+<Score et="1882.0">Alexander Dejaco(18) lap=9 point=1 t=-1.000 et=1881.940</Score>
+<Score et="1883.2">Safety Saf(48) lap=1 point=0 t=-1.000 et=1883.200</Score>
+<Score et="1884.4">jordan j(3) lap=13 point=2 t=62.603 et=1884.340</Score>
+<Sector et="1884.4">jordan j(3) set new best for sector 3</Sector>
+<Sector et="1884.4">Rookie B(38) set new best for sector 3</Sector>
+<Sector et="1884.4">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Sector et="1884.4">Safety Saf(48) set new best for sector 3</Sector>
+<Sector et="1884.4">Stefan Kohlen(53) set new best for sector 3</Sector>
+<Sector et="1884.4">Denis Seben(47) set new best for sector 3</Sector>
+<Sector et="1884.4">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="1884.5">Adam Hegyi(39) set new best for sector 3</Sector>
+<Sector et="1884.5">Matthias Goldgruber(52) set new best for sector 3</Sector>
+<Sector et="1884.5">Dirk Landwehr(51) set new best for sector 3</Sector>
+<Sector et="1884.5">Florian Winterhalder(46) set new best for sector 3</Sector>
+<Sector et="1884.5">Fanava Fanava(40) set new best for sector 3</Sector>
+<Sector et="1884.5">Nemes Mate(55) set new best for sector 3</Sector>
+<Sector et="1884.5">Alexey Mironov(43) set new best for sector 3</Sector>
+<Sector et="1884.5">E Klassen(50) set new best for sector 3</Sector>
+<Sector et="1884.5">Matt Schmitzer(54) set new best for sector 3</Sector>
+<Score et="1886.1">Matt Schmitzer(54) lap=0 point=2 t=-1.000 et=1885.960</Score>
+<Score et="1887.3">Nemes Mate(55) lap=1 point=1 t=-1.000 et=1887.200</Score>
+<Incident et="1889.9">Fanava Fanava(40) reported contact (57.03) with Immovable</Incident>
+<Score et="1890.4">Tamas Kiss(6) lap=12 point=0 t=107.665 et=1890.280</Score>
+<Score et="1894.2">Nemes Mate(55) lap=1 point=2 t=-1.000 et=1894.140</Score>
+<Score et="1894.2">Nemes Mate(55) lap=2 point=0 t=-1.000 et=1894.140</Score>
+<Score et="1896.0">Gaetano Pellitteri(14) lap=12 point=1 t=22.464 et=1895.460</Score>
+<Sector et="1896.0">Gaetano Pellitteri(14) set new best for sector 2</Sector>
+<Sector et="1896.2">Martin Huau(58) set new best for sector 2</Sector>
+<Score et="1896.3">Rookie B(38) lap=4 point=1 t=-1.000 et=1896.200</Score>
+<Score et="1898.7">Leo Allain(12) lap=13 point=1 t=22.586 et=1898.600</Score>
+<Score et="1898.7">E Klassen(50) lap=1 point=0 t=-1.000 et=1898.580</Score>
+<Sector et="1898.8">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="1898.8">Rookie B(38) set new best for sector 3</Sector>
+<Sector et="1898.8">Stefan Kohlen(53) set new best for sector 3</Sector>
+<Sector et="1898.9">Denis Seben(47) set new best for sector 3</Sector>
+<Sector et="1898.9">Matthias Goldgruber(52) set new best for sector 3</Sector>
+<Score et="1898.9">Krystian Krygier(35) lap=6 point=2 t=61.969 et=1898.780</Score>
+<Sector et="1898.9">Krystian Krygier(35) set new best for sector 3</Sector>
+<Sector et="1898.9">Adam Hegyi(39) set new best for sector 3</Sector>
+<Sector et="1898.9">Martin Huau(58) set new best for sector 3</Sector>
+<Sector et="1898.9">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Sector et="1898.9">Safety Saf(48) set new best for sector 3</Sector>
+<Sector et="1898.9">Florian Winterhalder(46) set new best for sector 3</Sector>
+<Sector et="1898.9">Fanava Fanava(40) set new best for sector 3</Sector>
+<Sector et="1898.9">Alexey Mironov(43) set new best for sector 3</Sector>
+<Sector et="1899.0">E Klassen(50) set new best for sector 3</Sector>
+<Sector et="1899.0">Matt Schmitzer(54) set new best for sector 3</Sector>
+<Sector et="1899.2">Fanava Fanava(40) set new best for sector 3</Sector>
+<Sector et="1899.2">Matthias Goldgruber(52) set new best for sector 3</Sector>
+<Score et="1899.2">Antonio Dolcimascolo(19) lap=11 point=2 t=59.929 et=1899.120</Score>
+<Sector et="1899.2">Antonio Dolcimascolo(19) set new best for sector 3</Sector>
+<Sector et="1899.2">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="1899.2">Denis Seben(47) set new best for sector 3</Sector>
+<Sector et="1899.2">Rookie B(38) set new best for sector 3</Sector>
+<Sector et="1899.2">Safety Saf(48) set new best for sector 3</Sector>
+<Sector et="1899.2">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Sector et="1899.2">Stefan Kohlen(53) set new best for sector 3</Sector>
+<Sector et="1899.2">Martin Huau(58) set new best for sector 3</Sector>
+<Sector et="1899.2">Florian Winterhalder(46) set new best for sector 3</Sector>
+<Sector et="1899.2">Alexey Mironov(43) set new best for sector 3</Sector>
+<Sector et="1899.2">Adam Hegyi(39) set new best for sector 3</Sector>
+<Sector et="1899.3">Matt Schmitzer(54) set new best for sector 3</Sector>
+<Sector et="1899.4">E Klassen(50) set new best for sector 3</Sector>
+<Score et="1900.1">Denis Seben(47) lap=1 point=1 t=22.792 et=1899.980</Score>
+<Score et="1901.1">Alexey Mironov(43) lap=3 point=1 t=-1.000 et=1900.960</Score>
+<Score et="1904.5">Florian Winterhalder(46) lap=2 point=1 t=24.827 et=1904.360</Score>
+<Incident et="1905.5">Fabian Zoehrer(22) reported contact (1660.03) with Immovable</Incident>
+<Score et="1905.9">Safety Saf(48) lap=1 point=1 t=-1.000 et=1905.840</Score>
+<Score et="1909.5">Adam Hegyi(39) lap=2 point=2 t=62.302 et=1909.440</Score>
+<Score et="1911.1">Zakaria CHERIFI(4) lap=12 point=0 t=-1.000 et=1911.040</Score>
+<Score et="1911.4">Fanava Fanava(40) lap=2 point=2 t=-1.000 et=1911.360</Score>
+<Score et="1912.9">Matthias Goldgruber(52) lap=1 point=0 t=-1.000 et=1912.840</Score>
+<Score et="1913.0">FREDERIC AUVRAY(42) lap=3 point=0 t=107.014 et=1912.980</Score>
+<Score et="1913.4">Tamas Kiss(6) lap=12 point=1 t=23.132 et=1913.400</Score>
+<Score et="1917.3">Harald Sadransky(31) lap=9 point=0 t=111.296 et=1917.220</Score>
+<Score et="1917.7">Gaetano Pellitteri(14) lap=12 point=2 t=-1.000 et=1917.565</Score>
+<Score et="1917.7">Gaetano Pellitteri(14) lap=13 point=0 t=-1.000 et=1917.565</Score>
+<Score et="1917.8">Fred Grandru(36) lap=5 point=2 t=62.273 et=1917.780</Score>
+<Score et="1919.4">Alexander Dejaco(18) lap=9 point=2 t=-1.000 et=1919.280</Score>
+<Sector et="1921.0">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1921.0">Henri Beuttner(44) set new best for sector 1</Sector>
+<Score et="1921.0">Henri Beuttner(44) lap=3 point=0 t=104.927 et=1920.980</Score>
+<Sector et="1921.0">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1921.0">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1921.0">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Sector et="1921.0">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1921.0">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1921.0">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Sector et="1921.0">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1921.0">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1921.1">Alexander Dejaco(18) set new best for sector 1</Sector>
+<Sector et="1921.1">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1921.1">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1921.1">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1921.1">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1921.1">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1921.1">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1921.1">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1921.1">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1921.1">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1921.1">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1921.1">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1921.1">Safety Saf(48) set new best for sector 1</Sector>
+<Sector et="1921.1">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1921.1">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Sector et="1921.2">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Sector et="1921.2">E Klassen(50) set new best for sector 1</Sector>
+<Score et="1922.0">Stefan Kohlen(53) lap=0 point=2 t=-1.000 et=1921.900</Score>
+<Score et="1922.1">E Klassen(50) lap=1 point=1 t=23.448 et=1922.020</Score>
+<Sector et="1931.3">Zakaria CHERIFI(4) reports new suspension damage</Sector>
+<Sector et="1931.3">Henri Beuttner(44) reports new suspension damage</Sector>
+<Incident et="1931.3">Zakaria CHERIFI(4) reported contact (2219.16) with another vehicle Henri Beuttner(44)</Incident>
+<Incident et="1931.3">Henri Beuttner(44) reported contact (4733.64) with another vehicle Zakaria CHERIFI(4)</Incident>
+<Score et="1931.4">jordan j(3) lap=14 point=0 t=109.543 et=1931.280</Score>
+<Score et="1932.3">Matt Schmitzer(54) lap=1 point=0 t=-1.000 et=1932.180</Score>
+<Score et="1934.4">Rookie B(38) lap=4 point=2 t=-1.000 et=1934.380</Score>
+<Score et="1935.8">FREDERIC AUVRAY(42) lap=3 point=1 t=-1.000 et=1935.660</Score>
+<Score et="1936.2">Leo Allain(12) lap=13 point=2 t=60.101 et=1936.120</Score>
+<Sector et="1936.2">FREDERIC AUVRAY(42) set new best for sector 3</Sector>
+<Sector et="1936.2">Stefan Kohlen(53) set new best for sector 3</Sector>
+<Sector et="1936.2">Henri Beuttner(44) set new best for sector 3</Sector>
+<Sector et="1936.2">Adam Hegyi(39) set new best for sector 3</Sector>
+<Sector et="1936.2">Denis Seben(47) set new best for sector 3</Sector>
+<Sector et="1936.2">Rookie B(38) set new best for sector 3</Sector>
+<Sector et="1936.2">Fanava Fanava(40) set new best for sector 3</Sector>
+<Sector et="1936.2">Alexey Mironov(43) set new best for sector 3</Sector>
+<Sector et="1936.2">Florian Winterhalder(46) set new best for sector 3</Sector>
+<Sector et="1936.2">Matthias Goldgruber(52) set new best for sector 3</Sector>
+<Score et="1936.3">Matthias Goldgruber(52) lap=1 point=1 t=-1.000 et=1936.220</Score>
+<Sector et="1936.3">E Klassen(50) set new best for sector 3</Sector>
+<Sector et="1936.3">Safety Saf(48) set new best for sector 3</Sector>
+<Sector et="1936.3">Matt Schmitzer(54) set new best for sector 3</Sector>
+<Penalty et="1937.7">Fabian Zoehrer served 1st Stop/Go penalty, result: penalties=0, 1st=None,0s</Penalty>
+<Score et="1937.9">Denis Seben(47) lap=1 point=2 t=60.602 et=1937.800</Score>
+<Score et="1940.8">Martin Huau(58) lap=0 point=1 t=-1.000 et=1940.720</Score>
+<Score et="1941.0">Harald Sadransky(31) lap=9 point=1 t=-1.000 et=1940.940</Score>
+<Score et="1941.6">Alexey Mironov(43) lap=3 point=2 t=-1.000 et=1941.520</Score>
+<Score et="1943.0">Henri Beuttner(44) lap=3 point=1 t=-1.000 et=1942.911</Score>
+<Score et="1943.0">Henri Beuttner(44) lap=3 point=2 t=-1.000 et=1942.911</Score>
+<Score et="1943.0">Henri Beuttner(44) lap=4 point=0 t=-1.000 et=1942.911</Score>
+<Score et="1943.6">Safety Saf(48) lap=1 point=2 t=60.346 et=1943.540</Score>
+<Score et="1945.4">Florian Winterhalder(46) lap=2 point=2 t=65.816 et=1945.340</Score>
+<Sector et="1945.7">Krystian Krygier(35) set new best for sector 1</Sector>
+<Sector et="1945.8">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Score et="1945.8">Krystian Krygier(35) lap=7 point=0 t=108.897 et=1945.700</Score>
+<Sector et="1945.8">Krystian Krygier(35) set new best for sector 1</Sector>
+<Sector et="1945.8">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1945.8">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1945.8">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1945.8">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1945.8">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1945.8">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1945.8">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Sector et="1945.8">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1945.8">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1945.8">Safety Saf(48) set new best for sector 1</Sector>
+<Sector et="1945.8">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1945.8">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1945.8">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1945.8">Alexander Dejaco(18) set new best for sector 1</Sector>
+<Sector et="1945.8">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1945.8">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1945.8">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1945.8">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1945.8">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1945.8">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1945.9">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Sector et="1945.9">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Sector et="1945.9">E Klassen(50) set new best for sector 1</Sector>
+<Score et="1946.0">Antonio Dolcimascolo(19) lap=12 point=0 t=106.784 et=1945.960</Score>
+<Sector et="1950.1">Henri Beuttner(44) set new best for sector 1</Sector>
+<Score et="1951.3">Tamas Kiss(6) lap=12 point=2 t=60.961 et=1951.240</Score>
+<Score et="1954.0">jordan j(3) lap=14 point=1 t=-1.000 et=1953.920</Score>
+<Score et="1955.4">Matt Schmitzer(54) lap=1 point=1 t=23.081 et=1955.260</Score>
+<Score et="1956.8">Adam Hegyi(39) lap=3 point=0 t=-1.000 et=1956.780</Score>
+<Score et="1957.9">Fanava Fanava(40) lap=3 point=0 t=-1.000 et=1957.820</Score>
+<Incident et="1958.7">Antonio Dolcimascolo(19) reported contact (773.74) with another vehicle Krystian Krygier(35)</Incident>
+<Incident et="1958.7">Krystian Krygier(35) reported contact (779.96) with another vehicle Antonio Dolcimascolo(19)</Incident>
+<Score et="1961.5">E Klassen(50) lap=1 point=2 t=62.779 et=1961.360</Score>
+<Score et="1965.1">Alexander Dejaco(18) lap=10 point=0 t=-1.000 et=1965.040</Score>
+<Sector et="1965.4">Fred Grandru(36) set new best for sector 1</Sector>
+<Sector et="1965.4">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1965.4">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1965.4">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Sector et="1965.4">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Sector et="1965.4">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1965.4">Safety Saf(48) set new best for sector 1</Sector>
+<Score et="1965.4">Fred Grandru(36) lap=6 point=0 t=109.875 et=1965.380</Score>
+<Sector et="1965.4">Fred Grandru(36) set new best for sector 1</Sector>
+<Sector et="1965.4">Alexander Dejaco(18) set new best for sector 1</Sector>
+<Sector et="1965.4">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1965.4">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1965.4">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1965.4">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1965.5">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1965.5">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1965.5">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1965.5">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1965.5">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1965.5">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1965.5">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1965.5">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1965.5">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1965.5">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1965.5">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Sector et="1965.5">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1965.5">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Sector et="1965.5">E Klassen(50) set new best for sector 1</Sector>
+<Score et="1969.1">Stefan Kohlen(53) lap=1 point=0 t=-1.000 et=1969.040</Score>
+<Sector et="1969.9">Antonio Dolcimascolo(19) set new best for sector 2</Sector>
+<Sector et="1969.9">Antonio Dolcimascolo(19) set new best for sector 2</Sector>
+<Sector et="1969.9">Rookie B(38) set new best for sector 2</Sector>
+<Score et="1969.9">Antonio Dolcimascolo(19) lap=12 point=1 t=23.895 et=1969.860</Score>
+<Sector et="1969.9">Dieter Bieli(23) set new best for sector 2</Sector>
+<Sector et="1969.9">Stefan Kohlen(53) set new best for sector 2</Sector>
+<Sector et="1969.9">Matthias Goldgruber(52) set new best for sector 2</Sector>
+<Sector et="1969.9">Leo Allain(12) set new best for sector 2</Sector>
+<Sector et="1969.9">jordan j(3) set new best for sector 2</Sector>
+<Sector et="1969.9">Alexander Dejaco(18) set new best for sector 2</Sector>
+<Sector et="1970.0">Zakaria CHERIFI(4) set new best for sector 2</Sector>
+<Sector et="1970.0">Tamas Kiss(6) set new best for sector 2</Sector>
+<Sector et="1970.0">Denis Seben(47) set new best for sector 2</Sector>
+<Sector et="1970.0">Milhail Polyakov(9) set new best for sector 2</Sector>
+<Sector et="1970.0">Fred Grandru(36) set new best for sector 2</Sector>
+<Sector et="1970.0">Arpad Nagy(28) set new best for sector 2</Sector>
+<Sector et="1970.0">Harald Sadransky(31) set new best for sector 2</Sector>
+<Sector et="1970.0">Safety Saf(48) set new best for sector 2</Sector>
+<Sector et="1970.0">Petar Dyakov(17) set new best for sector 2</Sector>
+<Sector et="1970.0">Fabian Zoehrer(22) set new best for sector 2</Sector>
+<Sector et="1970.0">Matt Schmitzer(54) set new best for sector 2</Sector>
+<Sector et="1970.1">Krystian Krygier(35) set new best for sector 2</Sector>
+<Sector et="1970.1">E Klassen(50) set new best for sector 2</Sector>
+<Score et="1970.3">Krystian Krygier(35) lap=7 point=1 t=24.531 et=1970.240</Score>
+<Score et="1973.7">FREDERIC AUVRAY(42) lap=3 point=2 t=60.732 et=1973.700</Score>
+<Score et="1973.9">Zakaria CHERIFI(4) lap=12 point=1 t=62.803 et=1973.840</Score>
+<Score et="1974.7">Matthias Goldgruber(52) lap=1 point=2 t=61.767 et=1974.600</Score>
+<Score et="1977.6">Alexander Dejaco(18) lap=10 point=1 t=-1.000 et=1977.524</Score>
+<Score et="1977.6">Alexander Dejaco(18) lap=10 point=2 t=-1.000 et=1977.524</Score>
+<Score et="1977.6">Alexander Dejaco(18) lap=11 point=0 t=-1.000 et=1977.524</Score>
+<Score et="1980.0">Adam Hegyi(39) lap=3 point=1 t=-1.000 et=1979.860</Score>
+<Score et="1980.2">Harald Sadransky(31) lap=9 point=2 t=62.970 et=1980.180</Score>
+<Score et="1980.4">Fanava Fanava(40) lap=3 point=1 t=-1.000 et=1980.340</Score>
+<Score et="1980.8">Rookie B(38) lap=5 point=0 t=-1.000 et=1980.720</Score>
+<Score et="1981.9">Leo Allain(12) lap=14 point=0 t=105.844 et=1981.860</Score>
+<Sector et="1983.4">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1983.4">Denis Seben(47) set new best for sector 1</Sector>
+<Score et="1983.4">Denis Seben(47) lap=2 point=0 t=106.154 et=1983.340</Score>
+<Sector et="1983.4">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1983.4">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Sector et="1983.4">Alexander Dejaco(18) set new best for sector 1</Sector>
+<Sector et="1983.4">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1983.4">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1983.4">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1983.4">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1983.4">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1983.4">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1983.4">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1983.4">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1983.4">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Sector et="1983.4">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1983.4">Safety Saf(48) set new best for sector 1</Sector>
+<Sector et="1983.4">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1983.4">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1983.5">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1983.5">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1983.5">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1983.5">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1983.5">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Sector et="1983.5">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1983.5">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1983.5">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Sector et="1983.6">E Klassen(50) set new best for sector 1</Sector>
+<Score et="1986.6">Fred Grandru(36) lap=6 point=1 t=-1.000 et=1986.556</Score>
+<Score et="1986.6">Fred Grandru(36) lap=6 point=2 t=-1.000 et=1986.556</Score>
+<Score et="1986.6">Fred Grandru(36) lap=7 point=0 t=-1.000 et=1986.556</Score>
+<Score et="1987.8">Martin Huau(58) lap=0 point=2 t=-1.000 et=1987.720</Score>
+<Score et="1989.4">Alexey Mironov(43) lap=4 point=0 t=-1.000 et=1989.300</Score>
+<Score et="1989.8">Henri Beuttner(44) lap=4 point=1 t=-1.000 et=1989.780</Score>
+<Score et="1990.6">Safety Saf(48) lap=2 point=0 t=-1.000 et=1990.519</Score>
+<Score et="1990.6">Safety Saf(48) lap=2 point=1 t=-1.000 et=1990.519</Score>
+<Score et="1990.6">Safety Saf(48) lap=2 point=2 t=-1.000 et=1990.519</Score>
+<Score et="1990.6">Safety Saf(48) lap=3 point=0 t=-1.000 et=1990.519</Score>
+<Score et="1992.8">Stefan Kohlen(53) lap=1 point=1 t=-1.000 et=1992.740</Score>
+<Score et="1993.9">jordan j(3) lap=14 point=2 t=62.537 et=1993.820</Score>
+<Sector et="1994.0">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1994.0">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1994.0">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Score et="1994.0">Florian Winterhalder(46) lap=3 point=0 t=114.417 et=1993.940</Score>
+<Sector et="1994.0">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1994.0">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Sector et="1994.0">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1994.0">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1994.0">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Sector et="1994.0">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1994.0">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1994.0">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1994.0">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1994.0">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1994.0">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1994.0">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1994.0">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1994.0">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1994.0">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1994.0">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1994.1">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1994.1">Safety Saf(48) set new best for sector 1</Sector>
+<Sector et="1994.1">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1994.1">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1994.2">E Klassen(50) set new best for sector 1</Sector>
+<Sector et="1994.2">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Score et="1995.0">Matt Schmitzer(54) lap=1 point=2 t=62.660 et=1994.840</Score>
+<Sector et="1997.7">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1997.7">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Sector et="1997.7">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1997.7">Henri Beuttner(44) set new best for sector 1</Sector>
+<Sector et="1997.8">Zakaria CHERIFI(4) set new best for sector 1</Sector>
+<Sector et="1997.8">Leo Allain(12) set new best for sector 1</Sector>
+<Sector et="1997.8">Arpad Nagy(28) set new best for sector 1</Sector>
+<Sector et="1997.8">Martin Huau(58) set new best for sector 1</Sector>
+<Sector et="1997.8">Fanava Fanava(40) set new best for sector 1</Sector>
+<Sector et="1997.8">Florian Winterhalder(46) set new best for sector 1</Sector>
+<Sector et="1997.8">Matthias Goldgruber(52) set new best for sector 1</Sector>
+<Score et="1997.8">Tamas Kiss(6) lap=13 point=0 t=107.418 et=1997.700</Score>
+<Sector et="1997.8">Tamas Kiss(6) set new best for sector 1</Sector>
+<Sector et="1997.8">Antonio Dolcimascolo(19) set new best for sector 1</Sector>
+<Sector et="1997.8">Dieter Bieli(23) set new best for sector 1</Sector>
+<Sector et="1997.8">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Sector et="1997.8">Stefan Kohlen(53) set new best for sector 1</Sector>
+<Sector et="1997.8">Harald Sadransky(31) set new best for sector 1</Sector>
+<Sector et="1997.8">jordan j(3) set new best for sector 1</Sector>
+<Sector et="1997.8">Denis Seben(47) set new best for sector 1</Sector>
+<Sector et="1997.8">Petar Dyakov(17) set new best for sector 1</Sector>
+<Sector et="1997.8">Adam Hegyi(39) set new best for sector 1</Sector>
+<Sector et="1997.8">Alexey Mironov(43) set new best for sector 1</Sector>
+<Sector et="1997.8">E Klassen(50) set new best for sector 1</Sector>
+<Sector et="1997.9">Fabian Zoehrer(22) set new best for sector 1</Sector>
+<Sector et="1997.9">Matt Schmitzer(54) set new best for sector 1</Sector>
+<Sector et="1997.9">Milhail Polyakov(9) set new best for sector 1</Sector>
+<Score et="1998.9">Fabian Zoehrer(22) lap=7 point=0 t=-1.000 et=1998.860</Score>
+<Score et="2001.7">Matt Schmitzer(54) lap=2 point=0 t=-1.000 et=2001.612</Score>
+<Score et="2001.7">Matt Schmitzer(54) lap=2 point=1 t=-1.000 et=2001.612</Score>
+<Score et="2001.7">Matt Schmitzer(54) lap=2 point=2 t=-1.000 et=2001.612</Score>
+<Score et="2001.7">Matt Schmitzer(54) lap=3 point=0 t=-1.000 et=2001.612</Score>
+<Score et="2002.5">Antonio Dolcimascolo(19) lap=12 point=2 t=-1.000 et=2002.410</Score>
+<Score et="2002.5">Antonio Dolcimascolo(19) lap=13 point=0 t=-1.000 et=2002.410</Score>
+<Score et="2003.7">Rookie B(38) lap=5 point=1 t=22.936 et=2003.640</Score>
+<Score et="2004.2">Leo Allain(12) lap=14 point=1 t=-1.000 et=2004.100</Score>
+<Score et="2006.3">Denis Seben(47) lap=2 point=1 t=22.938 et=2006.280</Score>
+<Penalty et="2007.0">Fabian Zoehrer received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<Score et="2009.2">Krystian Krygier(35) lap=7 point=2 t=63.458 et=2009.160</Score>
+<Score et="2012.8">E Klassen(50) lap=2 point=0 t=-1.000 et=2012.737</Score>
+<Score et="2012.8">E Klassen(50) lap=2 point=1 t=-1.000 et=2012.737</Score>
+<Score et="2012.8">E Klassen(50) lap=2 point=2 t=-1.000 et=2012.737</Score>
+<Score et="2012.8">E Klassen(50) lap=3 point=0 t=-1.000 et=2012.737</Score>
+<Score et="2014.2">Alexey Mironov(43) lap=4 point=1 t=24.785 et=2014.080</Score>
+<Score et="2014.3">Zakaria CHERIFI(4) lap=12 point=2 t=103.223 et=2014.260</Score>
+<Score et="2018.4">Florian Winterhalder(46) lap=3 point=1 t=24.434 et=2018.380</Score>
+<Score et="2019.0">Adam Hegyi(39) lap=3 point=2 t=-1.000 et=2018.920</Score>
+<Sector et="2019.0">FREDERIC AUVRAY(42) set new best for sector 1</Sector>
+<Score et="2019.1">FREDERIC AUVRAY(42) lap=4 point=0 t=106.040 et=2019.020</Score>
+<Score et="2019.4">Fanava Fanava(40) lap=3 point=2 t=-1.000 et=2019.320</Score>
+<Score et="2020.4">Leo Allain(12) lap=14 point=2 t=-1.000 et=2020.381</Score>
+<Score et="2020.4">Leo Allain(12) lap=15 point=0 t=-1.000 et=2020.381</Score>
+<Score et="2020.4">Matthias Goldgruber(52) lap=2 point=0 t=-1.000 et=2020.380</Score>
+<Score et="2020.6">Tamas Kiss(6) lap=13 point=1 t=22.811 et=2020.500</Score>
+<Score et="2025.8">Fabian Zoehrer(22) lap=7 point=1 t=-1.000 et=2025.738</Score>
+<Score et="2025.8">Fabian Zoehrer(22) lap=7 point=2 t=-1.000 et=2025.738</Score>
+<Score et="2025.8">Fabian Zoehrer(22) lap=8 point=0 t=-1.000 et=2025.738</Score>
+<Score et="2027.1">Harald Sadransky(31) lap=10 point=0 t=-1.000 et=2027.080</Score>
+<Score et="2028.9">Henri Beuttner(44) lap=4 point=2 t=-1.000 et=2028.840</Score>
+<Score et="2031.7">Stefan Kohlen(53) lap=1 point=2 t=-1.000 et=2031.620</Score>
+<Score et="2035.3">Martin Huau(58) lap=1 point=0 t=-1.000 et=2035.260</Score>
+<Score et="2036.5">Tamas Kiss(6) lap=13 point=2 t=-1.000 et=2036.458</Score>
+<Score et="2036.5">Tamas Kiss(6) lap=14 point=0 t=-1.000 et=2036.458</Score>
+<Score et="2040.8">jordan j(3) lap=15 point=0 t=109.505 et=2040.780</Score>
+<Score et="2041.6">FREDERIC AUVRAY(42) lap=4 point=1 t=22.536 et=2041.540</Score>
+<Score et="2042.8">Rookie B(38) lap=5 point=2 t=62.046 et=2042.760</Score>
+<Score et="2043.5">Matthias Goldgruber(52) lap=2 point=1 t=-1.000 et=2043.460</Score>
+<Score et="2044.0">Denis Seben(47) lap=2 point=2 t=60.589 et=2043.940</Score>
+</Stream>
+<MostLapsCompleted>15</MostLapsCompleted>
+<Driver>
+<Name>Dieter Bieli</Name>
+<Connected>1</Connected>
+<VehFile>100_WALKEN1B80023E.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Walkenhorst Motorsport #100:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>100</CarNumber>
+<TeamName>Walkenhorst Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<BestLapTime>104.0350</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">UnknownControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Henri Beuttner</Name>
+<Connected>1</Connected>
+<VehFile>100_WALKEN1B80023E.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Walkenhorst Motorsport #100:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>100</CarNumber>
+<TeamName>Walkenhorst Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="4" et="--.---" topspeed="262.61" fuel="0.055" fuelUsed="0.945" twfl="0.910" twfr="0.933" twrl="0.941" twrr="0.949" fcompound="0,Soft" rcompound="0,Soft">104.9268</Lap>
+<Lap num="4" p="4" et="1920.9800" topspeed="261.71" fuel="0.141" fuelUsed="-0.086" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>104.9268</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="3" endLap="4">PlayerControl,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Milhail Polyakov</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>33</CarNumber>
+<TeamName>Corvette Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="9" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="10" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="11" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<BestLapTime>104.9890</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">UnknownControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>FREDERIC AUVRAY</Name>
+<Connected>1</Connected>
+<VehFile>911_PROTON8153440A.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #911:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>911</CarNumber>
+<TeamName>Proton Competition</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="8" et="--.---" topspeed="258.55" fuel="0.184" fuelUsed="0.816" twfl="0.922" twfr="0.949" twrl="0.957" twrr="0.961" fcompound="0,Soft" rcompound="0,Soft">107.0140</Lap>
+<Lap num="4" p="5" et="1912.9800" topspeed="260.80" fuel="0.157" fuelUsed="0.027" twfl="0.898" twfr="0.914" twrl="0.941" twrr="0.945" fcompound="0,Soft" rcompound="0,Soft">106.0404</Lap>
+<BestLapTime>106.0180</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="3" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Denis Seben</Name>
+<Connected>1</Connected>
+<VehFile>100_WALKEN1B80023E.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Walkenhorst Motorsport #100:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>100</CarNumber>
+<TeamName>Walkenhorst Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="250.90" fuel="0.125" fuelUsed="0.875" twfl="0.973" twfr="0.973" twrl="0.976" twrr="0.976" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="8" et="1877.1801" s1="22.7919" s2="37.8105" s3="45.5515" topspeed="260.80" fuel="0.098" fuelUsed="0.027" twfl="0.949" twfr="0.949" twrl="0.957" twrr="0.961" fcompound="0,Soft" rcompound="0,Soft">106.1539</Lap>
+<BestLapTime>106.1539</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>jordan j</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>33</CarNumber>
+<TeamName>Corvette Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="9" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="10" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="11" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="12" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="13" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="14" p="10" et="--.---" topspeed="257.65" fuel="0.918" fuelUsed="0.082" twfl="0.529" twfr="0.565" twrl="0.784" twrr="0.808" fcompound="0,Soft" rcompound="0,Soft">109.5430</Lap>
+<Lap num="15" p="6" et="1931.2800" topspeed="259.00" fuel="0.894" fuelUsed="0.024" twfl="0.494" twfr="0.549" twrl="0.769" twrr="0.796" fcompound="0,Soft" rcompound="0,Soft">109.5050</Lap>
+<BestLapTime>108.0430</BestLapTime>
+<Laps>15</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="13">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="14" endLap="15">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Rookie B</Name>
+<Connected>1</Connected>
+<VehFile>66_JMW36916B99.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>JMW Motorsport #66:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>66</CarNumber>
+<TeamName>JMW Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="12" et="--.---" topspeed="260.35" fuel="0.310" fuelUsed="0.690" twfl="0.914" twfr="0.878" twrl="0.949" twrr="0.953" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="11" et="1873.3800" topspeed="261.26" fuel="0.282" fuelUsed="0.027" twfl="0.882" twfr="0.820" twrl="0.929" twrr="0.937" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>108.1640</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="4" endLap="5">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Adam Hegyi</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>21</CarNumber>
+<TeamName>AF Corse</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="12" et="--.---" s1="22.9518" s2="39.3500" topspeed="259.45" fuel="0.267" fuelUsed="0.733" twfl="0.941" twfr="0.933" twrl="0.953" twrr="0.961" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>108.4570</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="3" endLap="3">PlayerControl,ABS=1,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Petar Dyakov</Name>
+<Connected>1</Connected>
+<VehFile>86_GRRACIN56C59091.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing #86:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>86</CarNumber>
+<TeamName>GR Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="9" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="10" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="11" p="14" et="--.---" topspeed="257.65" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="12" p="14" et="1876.3027" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>108.8680</BestLapTime>
+<Laps>12</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="10">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="11" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+<ControlAndAids startLap="12" endLap="12">UnknownControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Zakaria CHERIFI</Name>
+<Connected>1</Connected>
+<VehFile>56_REXY8A686597.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>56</CarNumber>
+<TeamName>Project 1 - AO</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="9" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="10" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="11" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="12" p="15" et="--.---" topspeed="248.64" fuel="0.973" fuelUsed="0.027" twfl="0.969" twfr="0.976" twrl="0.976" twrr="0.980" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<BestLapTime>108.8940</BestLapTime>
+<Laps>12</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="12" endLap="12">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Krystian Krygier</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>33</CarNumber>
+<TeamName>Corvette Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="15" et="--.---" topspeed="258.10" fuel="0.204" fuelUsed="0.796" twfl="0.812" twfr="0.749" twrl="0.851" twrr="0.875" fcompound="0,Soft" rcompound="0,Soft">108.8966</Lap>
+<BestLapTime>108.8966</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="6">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="7" endLap="7">PlayerControl,ABS=1,Clutch,Opposite,SpinRecovery,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Fred Grandru</Name>
+<Connected>1</Connected>
+<VehFile>911_PROTON8153440A.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #911:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>911</CarNumber>
+<TeamName>Proton Competition</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="16" et="--.---" s1="23.2311" s2="39.0421" s3="47.6023" topspeed="258.55" fuel="0.188" fuelUsed="0.812" twfl="0.851" twfr="0.867" twrl="0.835" twrr="0.886" fcompound="0,Soft" rcompound="0,Soft">109.8755</Lap>
+<Lap num="7" p="15" et="1965.3800" topspeed="255.85" fuel="0.345" fuelUsed="-0.157" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>109.8755</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="5">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="6" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Harald Sadransky</Name>
+<Connected>1</Connected>
+<VehFile>74_KESSELED952BC5.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Kessel Racing #74:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>74</CarNumber>
+<TeamName>Kessel Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="5" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="6" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="7" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="8" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="9" p="16" et="--.---" topspeed="255.40" fuel="0.784" fuelUsed="0.216" twfl="0.871" twfr="0.702" twrl="0.882" twrr="0.882" fcompound="0,Soft" rcompound="0,Soft">111.2963</Lap>
+<Lap num="10" p="14" et="1917.2200" topspeed="257.20" fuel="0.757" fuelUsed="0.027" twfl="0.855" twfr="0.678" twrl="0.867" twrr="0.867" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>110.2280</BestLapTime>
+<Laps>10</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="9" endLap="10">PlayerControl,ABS=1,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Alexey Mironov</Name>
+<Connected>1</Connected>
+<VehFile>72_TFSPORTECC3A2D4.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>TF Sport #72:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>72</CarNumber>
+<TeamName>TF Sport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="4" p="17" et="--.---" topspeed="249.09" fuel="0.973" fuelUsed="0.027" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<BestLapTime>113.0450</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="4" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Florian Winterhalder</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>33</CarNumber>
+<TeamName>Corvette Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="21" et="--.---" topspeed="257.20" fuel="0.945" fuelUsed="0.055" twfl="0.910" twfr="0.945" twrl="0.976" twrr="0.980" fcompound="15,N/A" rcompound="15,N/A">122.0865</Lap>
+<Lap num="3" p="19" et="1879.5200" s1="24.8265" s2="40.9891" s3="48.6013" topspeed="257.20" fuel="0.922" fuelUsed="0.024" twfl="0.902" twfr="0.933" twrl="0.969" twrr="0.969" fcompound="0,Soft" rcompound="0,Soft">114.4170</Lap>
+<BestLapTime>114.4170</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Fanava Fanava</Name>
+<Connected>1</Connected>
+<VehFile>60_IRONLYNB5413BF4.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx #60:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>60</CarNumber>
+<TeamName>Iron Lynx</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="105" et="--.---" topspeed="0.00" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="3" p="22" et="--.---" topspeed="258.10" fuel="0.914" fuelUsed="0.086" twfl="0.902" twfr="0.945" twrl="0.902" twrr="0.925" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="3" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Matthias Goldgruber</Name>
+<Connected>1</Connected>
+<VehFile>85_IRONDAM1164A8C6.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Dames #85:EC</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>85</CarNumber>
+<TeamName>Iron Dames</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="26" et="--.---" topspeed="247.29" fuel="0.976" fuelUsed="0.024" twfl="0.976" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="21" et="1912.8400" topspeed="248.64" fuel="0.949" fuelUsed="0.027" twfl="0.949" twfr="0.969" twrl="0.965" twrr="0.969" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Matt Schmitzer</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>25</CarNumber>
+<TeamName>ORT by TF</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="26" et="--.---" topspeed="251.35" fuel="0.047" fuelUsed="0.953" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Lap num="2" p="24" et="1932.1801" s1="23.0812" s2="39.5792" topspeed="260.80" fuel="0.075" fuelUsed="-0.027" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Lap num="3" p="24" et="2001.6121" topspeed="0.00" fuel="0.075" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+<ControlAndAids startLap="3" endLap="3">UnknownControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Stefan Kohlen</Name>
+<Connected>1</Connected>
+<VehFile>911_PROTON8153440A.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #911:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>911</CarNumber>
+<TeamName>Proton Competition</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="27" et="--.---" topspeed="248.64" fuel="0.388" fuelUsed="0.612" twfl="0.961" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Pierre-Andre Bulle</Name>
+<Connected>1</Connected>
+<VehFile>100_WALKEN1B80023E.VEH</VehFile>
+<UpgradeCode>44040000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Walkenhorst Motorsport #100:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>100</CarNumber>
+<TeamName>Walkenhorst Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>20</Position>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Martin Huau</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>22020000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>33</CarNumber>
+<TeamName>Corvette Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>21</Position>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="23" et="--.---" topspeed="240.99" fuel="0.114" fuelUsed="0.886" twfl="0.961" twfr="0.969" twrl="0.961" twrr="0.976" fcompound="0,Soft" rcompound="0,Soft">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+</Practice1>
+</RaceResults>
+</rFactorXML>

@@ -1,0 +1,1470 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1765726855</DateTime>
+<TimeString>2025/12/14 16:40:55</TimeString>
+<TrackVenue>Algarve International Circuit</TrackVenue>
+<TrackCourse>Algarve International Circuit</TrackCourse>
+<TrackEvent>6 Hours of Portimao</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\PortimaoWEC_2023\1.21\layoutPortimao.mas</TrackData>
+<TrackLength>4635.3</TrackLength>
+<GameVersion>1.2000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>0</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>McLaren_720S_LMGT3_Evo,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1765727408</DateTime>
+<TimeString>2025/12/14 16:50:08</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Penalty Driver="Pat Cow Boy" ID="15" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="117.5">Pat Cow Boy received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="131.8">P-A Fugeekies(5) reported contact (198.96) with another vehicle Noah lav(11)</Incident>
+<Incident et="131.9">Noah lav(11) reported contact (29.59) with another vehicle P-A Fugeekies(5)</Incident>
+<Incident et="131.9">Noah lav(11) reported contact (185.91) with another vehicle P-A Fugeekies(5)</Incident>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="135.5">No Further Action</TrackLimits>
+<Incident et="136.4">Matthieu GERBE(10) reported contact (94.12) with another vehicle Matej Kristofik(18)</Incident>
+<Incident et="136.4">Matej Kristofik(18) reported contact (131.43) with another vehicle Matthieu GERBE(10)</Incident>
+<Incident et="137.4">Matej Kristofik(18) reported contact (16.74) with another vehicle Matthieu GERBE(10)</Incident>
+<Incident et="137.4">Matej Kristofik(18) reported contact (27.25) with another vehicle Matthieu GERBE(10)</Incident>
+<Incident et="137.5">Matthieu GERBE(10) reported contact (59.27) with another vehicle Matej Kristofik(18)</Incident>
+<Incident et="137.6">Matej Kristofik(18) reported contact (88.96) with another vehicle Matthieu GERBE(10)</Incident>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="139.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="145.1">No Further Action</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="1" Class="GT3" et="146.3">Daniel Rimoczi(17) set new best for sector 1</Sector>
+<Score et="146.4">Daniel Rimoczi(17) lap=0 point=1 t=28.767 et=146.300</Score>
+<Score et="146.6">David Porta(0) lap=0 point=1 t=28.979 et=146.520</Score>
+<Score et="147.6">patrice rizzi(16) lap=0 point=1 t=29.944 et=147.480</Score>
+<Score et="148.1">Paolo Savini(14) lap=0 point=1 t=30.481 et=148.020</Score>
+<Score et="148.4">francesco cimnelli(2) lap=0 point=1 t=30.786 et=148.320</Score>
+<Score et="149.1">Jordon Sendall(1) lap=0 point=1 t=31.363 et=148.900</Score>
+<Score et="149.5">Matej Kristofik(18) lap=0 point=1 t=31.912 et=149.440</Score>
+<Score et="149.9">Matthieu GERBE(10) lap=0 point=1 t=32.273 et=149.800</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.0">No Further Action</TrackLimits>
+<Score et="150.0">Noah lav(11) lap=0 point=1 t=32.445 et=149.980</Score>
+<Score et="150.8">Oliwier Tomaszewski(7) lap=0 point=1 t=33.179 et=150.720</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.2">No Further Action</TrackLimits>
+<Score et="151.3">Pat Cow Boy(15) lap=0 point=1 t=-1.000 et=151.120</Score>
+<Score et="151.5">P-A Fugeekies(5) lap=0 point=1 t=34.005 et=151.527</Score>
+<Score et="151.8">Attilio Fasano#2663(9) lap=0 point=1 t=34.237 et=151.760</Score>
+<Score et="152.1">Diego Ruiz29(13) lap=0 point=1 t=34.543 et=152.080</Score>
+<Score et="152.8">William de Ghooien(4) lap=0 point=1 t=35.209 et=152.740</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.1">No Further Action</TrackLimits>
+<Score et="155.7">hugo radreau(6) lap=0 point=1 t=38.094 et=155.620</Score>
+<Score et="159.3">Angelo Montebovi(19) lap=0 point=1 t=41.680 et=159.220</Score>
+<Incident et="160.5">Oliwier Tomaszewski(7) reported contact (1480.20) with another vehicle Pat Cow Boy(15)</Incident>
+<Incident et="160.5">Pat Cow Boy(15) reported contact (1472.25) with another vehicle Oliwier Tomaszewski(7)</Incident>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.9">No Further Action</TrackLimits>
+<Sector et="162.5">Noah lav(11) reports new suspension damage</Sector>
+<Incident et="162.6">Noah lav(11) reported contact (1138.02) with another vehicle Matthieu GERBE(10)</Incident>
+<Incident et="162.6">Matthieu GERBE(10) reported contact (1202.80) with another vehicle Noah lav(11)</Incident>
+<Incident et="164.4">Oliwier Tomaszewski(7) reported contact (197.12) with another vehicle Pat Cow Boy(15)</Incident>
+<Incident et="164.4">Pat Cow Boy(15) reported contact (958.89) with another vehicle Oliwier Tomaszewski(7)</Incident>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Noah lav" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="168.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="168.8">No Further Action</TrackLimits>
+<Incident et="178.3">Noah lav(11) reported contact (1615.74) with another vehicle Pat Cow Boy(15)</Incident>
+<Incident et="178.3">Pat Cow Boy(15) reported contact (1183.22) with another vehicle Noah lav(11)</Incident>
+<Incident et="179.0">Pat Cow Boy(15) reported contact (162.62) with another vehicle Noah lav(11)</Incident>
+<Incident et="179.1">Noah lav(11) reported contact (161.65) with another vehicle Pat Cow Boy(15)</Incident>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="2" Class="GT3" et="185.4">Daniel Rimoczi(17) set new best for sector 2</Sector>
+<Score et="185.5">Daniel Rimoczi(17) lap=0 point=2 t=67.873 et=185.400</Score>
+<Score et="186.1">David Porta(0) lap=0 point=2 t=68.517 et=186.040</Score>
+<Score et="186.7">patrice rizzi(16) lap=0 point=2 t=69.103 et=186.640</Score>
+<Score et="187.2">Paolo Savini(14) lap=0 point=2 t=69.667 et=187.200</Score>
+<Score et="187.7">francesco cimnelli(2) lap=0 point=2 t=70.139 et=187.680</Score>
+<Score et="188.7">Jordon Sendall(1) lap=0 point=2 t=71.061 et=188.600</Score>
+<Score et="189.0">Matej Kristofik(18) lap=0 point=2 t=71.345 et=188.880</Score>
+<Score et="191.2">Matthieu GERBE(10) lap=0 point=2 t=73.603 et=191.140</Score>
+<Score et="191.5">Noah lav(11) lap=0 point=2 t=73.865 et=191.400</Score>
+<Score et="192.0">Pat Cow Boy(15) lap=0 point=2 t=-1.000 et=191.960</Score>
+<Score et="192.4">P-A Fugeekies(5) lap=0 point=2 t=74.906 et=192.428</Score>
+<Score et="192.6">Attilio Fasano#2663(9) lap=0 point=2 t=75.001 et=192.540</Score>
+<Score et="193.1">Diego Ruiz29(13) lap=0 point=2 t=75.548 et=193.080</Score>
+<Score et="194.1">William de Ghooien(4) lap=0 point=2 t=76.510 et=194.040</Score>
+<Score et="195.4">Oliwier Tomaszewski(7) lap=0 point=2 t=77.761 et=195.300</Score>
+<Score et="195.8">hugo radreau(6) lap=0 point=2 t=78.217 et=195.740</Score>
+<Score et="198.8">Angelo Montebovi(19) lap=0 point=2 t=81.256 et=198.780</Score>
+<Sector et="200.4">Pat Cow Boy(15) reports new suspension damage</Sector>
+<Incident et="200.5">Pat Cow Boy(15) reported contact (4964.45) with Immovable</Incident>
+<TrackLimits Driver="Pat Cow Boy" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="203.3">No Further Action</TrackLimits>
+<Sector et="204.3">hugo radreau(6) reports new suspension damage</Sector>
+<Incident et="204.4">Pat Cow Boy(15) reported contact (5374.08) with another vehicle hugo radreau(6)</Incident>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="207.7">No Further Action</TrackLimits>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="211.8">No Further Action</TrackLimits>
+<Incident et="227.6">P-A Fugeekies(5) reported contact (85.11) with another vehicle Diego Ruiz29(13)</Incident>
+<Incident et="227.6">Diego Ruiz29(13) reported contact (71.16) with another vehicle P-A Fugeekies(5)</Incident>
+<Incident et="231.5">P-A Fugeekies(5) reported contact (126.24) with another vehicle Diego Ruiz29(13)</Incident>
+<Incident et="231.6">Diego Ruiz29(13) reported contact (108.50) with another vehicle P-A Fugeekies(5)</Incident>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="3" Class="GT3" et="231.8">Daniel Rimoczi(17) set new best for sector 3</Sector>
+<Score et="231.8">Daniel Rimoczi(17) lap=1 point=0 t=114.226 et=231.760</Score>
+<Score et="232.5">David Porta(0) lap=1 point=0 t=114.887 et=232.420</Score>
+<Score et="233.5">patrice rizzi(16) lap=1 point=0 t=115.932 et=233.460</Score>
+<Score et="234.0">Paolo Savini(14) lap=1 point=0 t=116.433 et=233.960</Score>
+<Score et="234.8">francesco cimnelli(2) lap=1 point=0 t=117.261 et=234.800</Score>
+<Score et="235.8">Jordon Sendall(1) lap=1 point=0 t=118.060 et=235.600</Score>
+<Score et="236.1">Matej Kristofik(18) lap=1 point=0 t=118.522 et=236.060</Score>
+<Score et="238.0">Noah lav(11) lap=1 point=0 t=120.470 et=238.000</Score>
+<Score et="238.8">Matthieu GERBE(10) lap=1 point=0 t=121.235 et=238.760</Score>
+<Score et="239.4">Attilio Fasano#2663(9) lap=1 point=0 t=121.809 et=239.340</Score>
+<Score et="241.2">P-A Fugeekies(5) lap=1 point=0 t=123.624 et=241.146</Score>
+<Score et="241.2">Diego Ruiz29(13) lap=1 point=0 t=123.607 et=241.140</Score>
+<Score et="242.1">William de Ghooien(4) lap=1 point=0 t=124.524 et=242.060</Score>
+<TrackLimits Driver="Pat Cow Boy" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="244.3">No Further Action</TrackLimits>
+<Score et="244.4">Oliwier Tomaszewski(7) lap=1 point=0 t=126.783 et=244.320</Score>
+<Score et="245.8">Angelo Montebovi(19) lap=1 point=0 t=128.167 et=245.700</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="247.2">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.4">No Further Action</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="1" Class="GT3" et="255.0">Daniel Rimoczi(17) set new best for sector 1</Sector>
+<Score et="255.0">Daniel Rimoczi(17) lap=1 point=1 t=23.191 et=254.940</Score>
+<Sector Driver="David Porta" ID="0" Sector="1" Class="GT3" et="255.4">David Porta(0) set new best for sector 1</Sector>
+<Score et="255.5">David Porta(0) lap=1 point=1 t=22.978 et=255.400</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="256.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Noah lav" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="256.6">No Further Action</TrackLimits>
+<Score et="257.1">patrice rizzi(16) lap=1 point=1 t=23.553 et=257.020</Score>
+<Score et="257.4">Paolo Savini(14) lap=1 point=1 t=23.366 et=257.340</Score>
+<Score et="258.2">francesco cimnelli(2) lap=1 point=1 t=23.320 et=258.120</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="259.1">No Further Action</TrackLimits>
+<Score et="259.1">Jordon Sendall(1) lap=1 point=1 t=23.291 et=258.880</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="259.1">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="260.0">No Further Action</TrackLimits>
+<Score et="260.3">Matej Kristofik(18) lap=1 point=1 t=24.202 et=260.260</Score>
+<TrackLimits Driver="Pat Cow Boy" ID="15" Lap="0" WarningPoints="25" CurrentPoints="25" Resolution="0" et="260.5">Disqualify</TrackLimits>
+<Penalty Driver="Pat Cow Boy" ID="15" Penalty="Disqualify" et="260.6">Disqualify</Penalty>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="262.7">No Further Action</TrackLimits>
+<Score et="263.0">Attilio Fasano#2663(9) lap=1 point=1 t=23.601 et=262.940</Score>
+<Score et="265.2">Diego Ruiz29(13) lap=1 point=1 t=23.942 et=265.080</Score>
+<Score et="265.4">P-A Fugeekies(5) lap=1 point=1 t=24.275 et=265.421</Score>
+<Score et="266.3">William de Ghooien(4) lap=1 point=1 t=24.188 et=266.240</Score>
+<Incident et="266.5">Matthieu GERBE(10) reported contact (454.32) with another vehicle Angelo Montebovi(19)</Incident>
+<Incident et="266.5">Angelo Montebovi(19) reported contact (562.16) with another vehicle Matthieu GERBE(10)</Incident>
+<Incident et="266.5">Angelo Montebovi(19) reported contact (548.43) with another vehicle Matthieu GERBE(10)</Incident>
+<Score et="270.2">Matthieu GERBE(10) lap=1 point=1 t=31.377 et=270.140</Score>
+<Score et="274.4">Noah lav(11) lap=1 point=1 t=36.236 et=274.240</Score>
+<TrackLimits Driver="Noah lav" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="275.7">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="275.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="276.9">No Further Action</TrackLimits>
+<Score et="277.8">Oliwier Tomaszewski(7) lap=1 point=1 t=33.404 et=277.720</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="281.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="286.5">No Further Action</TrackLimits>
+<Score et="286.7">Angelo Montebovi(19) lap=1 point=1 t=40.920 et=286.620</Score>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="2" Class="GT3" et="293.8">Daniel Rimoczi(17) set new best for sector 2</Sector>
+<Score et="293.8">Daniel Rimoczi(17) lap=1 point=2 t=61.990 et=293.740</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="294.0">No Further Action</TrackLimits>
+<Sector Driver="David Porta" ID="0" Sector="2" Class="GT3" et="294.2">David Porta(0) set new best for sector 2</Sector>
+<Score et="294.2">David Porta(0) lap=1 point=2 t=61.696 et=294.120</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="294.8">No Further Action</TrackLimits>
+<Score et="296.2">Paolo Savini(14) lap=1 point=2 t=62.146 et=296.120</Score>
+<Score et="296.8">patrice rizzi(16) lap=1 point=2 t=63.262 et=296.720</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.9">No Further Action</TrackLimits>
+<Score et="297.1">francesco cimnelli(2) lap=1 point=2 t=62.232 et=297.020</Score>
+<Score et="298.6">Jordon Sendall(1) lap=1 point=2 t=62.646 et=298.240</Score>
+<Score et="299.5">Matej Kristofik(18) lap=1 point=2 t=63.378 et=299.440</Score>
+<Score et="302.6">Attilio Fasano#2663(9) lap=1 point=2 t=63.235 et=302.580</Score>
+<Score et="305.1">Diego Ruiz29(13) lap=1 point=2 t=63.872 et=305.020</Score>
+<Score et="305.3">P-A Fugeekies(5) lap=1 point=2 t=64.189 et=305.335</Score>
+<Score et="306.2">William de Ghooien(4) lap=1 point=2 t=64.125 et=306.180</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="310.1">No Further Action</TrackLimits>
+<Score et="313.1">Noah lav(11) lap=1 point=2 t=75.013 et=313.020</Score>
+<Score et="318.0">Oliwier Tomaszewski(7) lap=1 point=2 t=73.598 et=317.920</Score>
+<TrackLimits Driver="Noah lav" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="321.0">No Further Action</TrackLimits>
+<Score et="326.5">Angelo Montebovi(19) lap=1 point=2 t=80.697 et=326.400</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="335.4">Warning</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="3" Class="GT3" et="340.0">Daniel Rimoczi(17) set new best for sector 3</Sector>
+<Score et="340.0">Daniel Rimoczi(17) lap=2 point=0 t=108.215 et=339.980</Score>
+<Score et="340.6">David Porta(0) lap=2 point=0 t=108.114 et=340.540</Score>
+<Score et="342.7">Paolo Savini(14) lap=2 point=0 t=108.699 et=342.660</Score>
+<Score et="343.6">patrice rizzi(16) lap=2 point=0 t=110.125 et=343.580</Score>
+<Score et="344.1">francesco cimnelli(2) lap=2 point=0 t=109.230 et=344.020</Score>
+<Score et="345.0">Jordon Sendall(1) lap=2 point=0 t=-1.000 et=344.780</Score>
+<Score et="346.2">Matej Kristofik(18) lap=2 point=0 t=110.118 et=346.180</Score>
+<Score et="349.0">Attilio Fasano#2663(9) lap=2 point=0 t=109.589 et=348.940</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="349.5">Warning</TrackLimits>
+<Incident et="350.4">francesco cimnelli(2) reported contact (508.61) with another vehicle patrice rizzi(16)</Incident>
+<Incident et="350.4">patrice rizzi(16) reported contact (589.84) with another vehicle francesco cimnelli(2)</Incident>
+<Score et="352.1">P-A Fugeekies(5) lap=2 point=0 t=110.955 et=352.101</Score>
+<Score et="352.1">Diego Ruiz29(13) lap=2 point=0 t=110.894 et=352.040</Score>
+<Score et="354.0">William de Ghooien(4) lap=2 point=0 t=-1.000 et=353.920</Score>
+<TrackLimits Driver="patrice rizzi" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="355.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Noah lav" ID="11" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="355.7">Warning</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="357.6">No Further Action</TrackLimits>
+<Score et="360.2">Noah lav(11) lap=2 point=0 t=-1.000 et=360.120</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="360.2">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="362.3">No Further Action</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="1" Class="GT3" et="362.7">Daniel Rimoczi(17) set new best for sector 1</Sector>
+<Score et="362.7">Daniel Rimoczi(17) lap=2 point=1 t=22.641 et=362.620</Score>
+<Score et="363.5">David Porta(0) lap=2 point=1 t=22.827 et=363.360</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="363.7">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.6">No Further Action</TrackLimits>
+<TrackLimits Driver="David Porta" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.9">No Further Action</TrackLimits>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="364.9">No Further Action</TrackLimits>
+<Score et="366.0">Paolo Savini(14) lap=2 point=1 t=23.214 et=365.880</Score>
+<Score et="366.4">Oliwier Tomaszewski(7) lap=2 point=0 t=121.960 et=366.280</Score>
+<Score et="368.6">patrice rizzi(16) lap=2 point=1 t=24.949 et=368.540</Score>
+<Score et="369.1">Jordon Sendall(1) lap=2 point=1 t=24.141 et=368.920</Score>
+<Score et="370.0">Matej Kristofik(18) lap=2 point=1 t=23.788 et=369.960</Score>
+<TrackLimits Driver="Noah lav" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="370.6">No Further Action</TrackLimits>
+<Score et="372.0">hugo radreau(6) lap=1 point=0 t=254.380 et=371.920</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="372.2">No Further Action</TrackLimits>
+<Score et="372.6">Attilio Fasano#2663(9) lap=2 point=1 t=23.593 et=372.520</Score>
+<Score et="373.1">Angelo Montebovi(19) lap=2 point=0 t=127.385 et=373.080</Score>
+<Score et="376.6">Diego Ruiz29(13) lap=2 point=1 t=24.489 et=376.520</Score>
+<Score et="376.8">P-A Fugeekies(5) lap=2 point=1 t=24.735 et=376.836</Score>
+<Score et="377.8">William de Ghooien(4) lap=2 point=1 t=23.881 et=377.800</Score>
+<Score et="378.6">francesco cimnelli(2) lap=2 point=1 t=34.523 et=378.540</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="378.7">No Further Action</TrackLimits>
+<TrackLimits Driver="David Porta" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.2">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="380.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.4">No Further Action</TrackLimits>
+<Score et="383.6">Noah lav(11) lap=2 point=1 t=23.447 et=383.560</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="386.1">No Further Action</TrackLimits>
+<Score et="390.2">Oliwier Tomaszewski(7) lap=2 point=1 t=23.831 et=390.100</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="390.9">No Further Action</TrackLimits>
+<Score et="396.4">Angelo Montebovi(19) lap=2 point=1 t=23.276 et=396.360</Score>
+<TrackLimits Driver="Noah lav" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="398.7">No Further Action</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="2" Class="GT3" et="401.2">Daniel Rimoczi(17) set new best for sector 2</Sector>
+<Score et="401.2">Daniel Rimoczi(17) lap=2 point=2 t=61.160 et=401.140</Score>
+<Score et="402.1">David Porta(0) lap=2 point=2 t=61.527 et=402.060</Score>
+<Score et="404.6">Paolo Savini(14) lap=2 point=2 t=61.906 et=404.580</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="405.3">No Further Action</TrackLimits>
+<Score et="405.9">hugo radreau(6) lap=1 point=1 t=33.947 et=405.860</Score>
+<Score et="407.8">patrice rizzi(16) lap=2 point=2 t=64.202 et=407.800</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="408.1">No Further Action</TrackLimits>
+<Score et="408.5">Jordon Sendall(1) lap=2 point=2 t=63.560 et=408.340</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="409.6">No Further Action</TrackLimits>
+<Score et="409.6">Matej Kristofik(18) lap=2 point=2 t=63.429 et=409.600</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="411.3">No Further Action</TrackLimits>
+<Score et="415.8">Attilio Fasano#2663(9) lap=2 point=2 t=66.878 et=415.800</Score>
+<Score et="416.2">Diego Ruiz29(13) lap=2 point=2 t=64.142 et=416.180</Score>
+<Score et="416.8">P-A Fugeekies(5) lap=2 point=2 t=64.645 et=416.747</Score>
+<Score et="417.6">William de Ghooien(4) lap=2 point=2 t=63.617 et=417.540</Score>
+<Score et="418.0">francesco cimnelli(2) lap=2 point=2 t=73.882 et=417.900</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="418.2">No Further Action</TrackLimits>
+<Score et="422.9">Noah lav(11) lap=2 point=2 t=62.712 et=422.840</Score>
+<Sector et="428.2">Noah lav(11) reports new suspension damage</Sector>
+<Incident et="428.3">Noah lav(11) reported contact (5231.91) with Immovable</Incident>
+<Score et="430.6">Oliwier Tomaszewski(7) lap=2 point=2 t=64.255 et=430.540</Score>
+<Incident et="435.7">Noah lav(11) reported contact (999.38) with Immovable</Incident>
+<Score et="435.8">Angelo Montebovi(19) lap=2 point=2 t=62.654 et=435.740</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="436.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="439.6">Warning</TrackLimits>
+<Incident et="442.6">Noah lav(11) reported contact (16.63) with Immovable</Incident>
+<Incident et="443.6">Noah lav(11) reported contact (16.60) with Immovable</Incident>
+<Score et="446.0">hugo radreau(6) lap=1 point=2 t=74.016 et=445.920</Score>
+<Score et="448.1">Daniel Rimoczi(17) lap=3 point=0 t=108.042 et=448.020</Score>
+<Score et="448.9">David Porta(0) lap=3 point=0 t=108.280 et=448.820</Score>
+<TrackLimits Driver="patrice rizzi" ID="16" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="450.0">Warning</TrackLimits>
+<Score et="451.4">Paolo Savini(14) lap=3 point=0 t=108.649 et=451.320</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="452.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="452.6">Warning</TrackLimits>
+<Score et="454.7">patrice rizzi(16) lap=3 point=0 t=-1.000 et=454.640</Score>
+<Score et="455.1">Jordon Sendall(1) lap=3 point=0 t=110.065 et=454.840</Score>
+<Score et="457.0">Matej Kristofik(18) lap=3 point=0 t=-1.000 et=456.940</Score>
+<TrackLimits Driver="David Porta" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="459.0">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="460.0">Warning</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="461.8">Warning</TrackLimits>
+<Score et="462.1">Attilio Fasano#2663(9) lap=3 point=0 t=113.137 et=462.060</Score>
+<Score et="464.3">P-A Fugeekies(5) lap=3 point=0 t=-1.000 et=464.283</Score>
+<Score et="464.5">Diego Ruiz29(13) lap=3 point=0 t=-1.000 et=464.400</Score>
+<Score et="465.8">francesco cimnelli(2) lap=3 point=0 t=-1.000 et=465.700</Score>
+<Score et="466.6">William de Ghooien(4) lap=3 point=0 t=112.587 et=466.520</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="467.8">No Further Action</TrackLimits>
+<Score et="471.1">Daniel Rimoczi(17) lap=3 point=1 t=23.033 et=471.040</Score>
+<Score et="471.8">David Porta(0) lap=3 point=1 t=22.936 et=471.740</Score>
+<Score et="474.7">Paolo Savini(14) lap=3 point=1 t=23.343 et=474.660</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="475.1">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="475.2">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="475.9">No Further Action</TrackLimits>
+<Score et="477.7">patrice rizzi(16) lap=3 point=1 t=23.020 et=477.660</Score>
+<Score et="478.6">Jordon Sendall(1) lap=3 point=1 t=23.612 et=478.460</Score>
+<Score et="479.1">Oliwier Tomaszewski(7) lap=3 point=0 t=112.794 et=479.060</Score>
+<Score et="480.7">Matej Kristofik(18) lap=3 point=1 t=23.656 et=480.600</Score>
+<Score et="482.6">Angelo Montebovi(19) lap=3 point=0 t=109.458 et=482.540</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="482.7">No Further Action</TrackLimits>
+<Score et="485.2">Attilio Fasano#2663(9) lap=3 point=1 t=23.115 et=485.180</Score>
+<Incident et="486.1">P-A Fugeekies(5) reported contact (598.12) with another vehicle Diego Ruiz29(13)</Incident>
+<Incident et="486.1">Diego Ruiz29(13) reported contact (635.30) with another vehicle P-A Fugeekies(5)</Incident>
+<Score et="488.3">P-A Fugeekies(5) lap=3 point=1 t=24.055 et=488.338</Score>
+<Score et="488.4">Diego Ruiz29(13) lap=3 point=1 t=23.907 et=488.300</Score>
+<Score et="489.0">francesco cimnelli(2) lap=3 point=1 t=23.216 et=488.920</Score>
+<Score et="489.5">William de Ghooien(4) lap=3 point=1 t=22.910 et=489.420</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="490.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="490.4">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="491.1">No Further Action</TrackLimits>
+<Score et="493.4">hugo radreau(6) lap=2 point=0 t=121.386 et=493.300</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="500.5">No Further Action</TrackLimits>
+<Score et="502.9">Oliwier Tomaszewski(7) lap=3 point=1 t=23.746 et=502.820</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="503.1">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="505.1">No Further Action</TrackLimits>
+<Score et="505.8">Angelo Montebovi(19) lap=3 point=1 t=23.231 et=505.780</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="509.3">No Further Action</TrackLimits>
+<Sector Driver="Daniel Rimoczi" ID="17" Sector="2" Class="GT3" et="509.5">Daniel Rimoczi(17) set new best for sector 2</Sector>
+<Score et="509.5">Daniel Rimoczi(17) lap=3 point=2 t=61.477 et=509.500</Score>
+<Score et="510.8">David Porta(0) lap=3 point=2 t=61.953 et=510.760</Score>
+<Score et="513.8">Paolo Savini(14) lap=3 point=2 t=62.413 et=513.720</Score>
+<Score et="517.0">hugo radreau(6) lap=2 point=1 t=23.659 et=516.960</Score>
+<Score et="517.2">patrice rizzi(16) lap=3 point=2 t=62.528 et=517.160</Score>
+<Score et="518.0">Jordon Sendall(1) lap=3 point=2 t=62.983 et=517.820</Score>
+<Score et="520.4">Matej Kristofik(18) lap=3 point=2 t=63.383 et=520.320</Score>
+<Score et="524.4">Attilio Fasano#2663(9) lap=3 point=2 t=62.162 et=524.240</Score>
+<Score et="527.8">Diego Ruiz29(13) lap=3 point=2 t=63.359 et=527.760</Score>
+<Score et="528.1">P-A Fugeekies(5) lap=3 point=2 t=63.789 et=528.072</Score>
+<Score et="529.0">William de Ghooien(4) lap=3 point=2 t=62.410 et=528.920</Score>
+<Score et="537.0">francesco cimnelli(2) lap=3 point=2 t=71.189 et=536.900</Score>
+<Score et="542.6">Oliwier Tomaszewski(7) lap=3 point=2 t=63.437 et=542.500</Score>
+<Score et="545.2">Angelo Montebovi(19) lap=3 point=2 t=62.623 et=545.160</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="551.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="551.6">Warning</TrackLimits>
+<Score et="556.0">Daniel Rimoczi(17) lap=4 point=0 t=-1.000 et=555.980</Score>
+<Score et="556.6">hugo radreau(6) lap=2 point=2 t=63.282 et=556.580</Score>
+<Score et="557.6">David Porta(0) lap=4 point=0 t=108.722 et=557.540</Score>
+<Score et="560.4">Paolo Savini(14) lap=4 point=0 t=109.031 et=560.340</Score>
+<Score et="563.8">patrice rizzi(16) lap=4 point=0 t=109.105 et=563.740</Score>
+<Score et="564.8">Jordon Sendall(1) lap=4 point=0 t=109.614 et=564.460</Score>
+<Score et="567.2">Matej Kristofik(18) lap=4 point=0 t=110.180 et=567.120</Score>
+<Sector Driver="Attilio Fasano#2663" ID="9" Sector="3" Class="GT3" et="570.1">Attilio Fasano#2663(9) set new best for sector 3</Sector>
+<Score et="570.1">Attilio Fasano#2663(9) lap=4 point=0 t=107.969 et=570.040</Score>
+<Score et="575.4">Diego Ruiz29(13) lap=4 point=0 t=110.877 et=575.280</Score>
+<Score et="575.6">P-A Fugeekies(5) lap=4 point=0 t=111.308 et=575.591</Score>
+<Score et="576.1">William de Ghooien(4) lap=4 point=0 t=109.511 et=576.020</Score>
+<Score et="579.8">Daniel Rimoczi(17) lap=4 point=1 t=23.786 et=579.780</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="580.3">No Further Action</TrackLimits>
+<Score et="580.5">David Porta(0) lap=4 point=1 t=22.948 et=580.480</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="580.9">No Further Action</TrackLimits>
+<TrackLimits Driver="David Porta" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="582.1">No Further Action</TrackLimits>
+<Score et="583.8">Paolo Savini(14) lap=4 point=1 t=23.352 et=583.700</Score>
+<Score et="584.1">francesco cimnelli(2) lap=4 point=0 t=118.381 et=584.100</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="586.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="587.2">No Further Action</TrackLimits>
+<TrackLimits Driver="patrice rizzi" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="588.3">No Further Action</TrackLimits>
+<Score et="588.4">Jordon Sendall(1) lap=4 point=1 t=23.846 et=588.300</Score>
+<Score et="590.6">Oliwier Tomaszewski(7) lap=4 point=0 t=111.462 et=590.540</Score>
+<Score et="591.0">Matej Kristofik(18) lap=4 point=1 t=23.811 et=590.940</Score>
+<Score et="592.0">Angelo Montebovi(19) lap=4 point=0 t=109.356 et=591.900</Score>
+<Score et="593.2">Attilio Fasano#2663(9) lap=4 point=1 t=23.095 et=593.140</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="593.9">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="594.4">No Further Action</TrackLimits>
+<Score et="596.4">patrice rizzi(16) lap=4 point=1 t=32.559 et=596.300</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="599.3">No Further Action</TrackLimits>
+<Score et="599.3">P-A Fugeekies(5) lap=4 point=1 t=23.700 et=599.291</Score>
+<Score et="599.3">Diego Ruiz29(13) lap=4 point=1 t=23.967 et=599.240</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="599.7">No Further Action</TrackLimits>
+<Score et="599.8">William de Ghooien(4) lap=4 point=1 t=23.699 et=599.720</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="602.3">No Further Action</TrackLimits>
+<Score et="604.4">hugo radreau(6) lap=3 point=0 t=111.070 et=604.360</Score>
+<Score et="607.5">francesco cimnelli(2) lap=4 point=1 t=-1.000 et=607.440</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="608.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="611.6">No Further Action</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="612.0">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="614.0">No Further Action</TrackLimits>
+<Score et="614.4">Oliwier Tomaszewski(7) lap=4 point=1 t=23.756 et=614.280</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.9">No Further Action</TrackLimits>
+<Score et="615.0">Angelo Montebovi(19) lap=4 point=1 t=23.075 et=614.980</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="617.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="618.1">No Further Action</TrackLimits>
+<Score et="619.0">Daniel Rimoczi(17) lap=4 point=2 t=62.901 et=618.880</Score>
+<Score et="619.3">David Porta(0) lap=4 point=2 t=61.708 et=619.240</Score>
+<Score et="622.3">Paolo Savini(14) lap=4 point=2 t=61.899 et=622.240</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="4" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="626.0">Warning</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="626.2">No Further Action</TrackLimits>
+<Score et="627.5">Jordon Sendall(1) lap=4 point=2 t=62.857 et=627.320</Score>
+<Score et="628.3">hugo radreau(6) lap=3 point=1 t=23.888 et=628.260</Score>
+<Score et="630.8">Matej Kristofik(18) lap=4 point=2 t=63.633 et=630.760</Score>
+<Score et="632.2">Attilio Fasano#2663(9) lap=4 point=2 t=62.072 et=632.100</Score>
+<Score et="636.2">patrice rizzi(16) lap=4 point=2 t=72.359 et=636.100</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="636.7">No Further Action</TrackLimits>
+<Score et="639.0">P-A Fugeekies(5) lap=4 point=2 t=63.400 et=638.991</Score>
+<Score et="639.4">Diego Ruiz29(13) lap=4 point=2 t=64.091 et=639.360</Score>
+<Score et="640.2">William de Ghooien(4) lap=4 point=2 t=64.046 et=640.080</Score>
+<Incident et="642.5">Oliwier Tomaszewski(7) reported contact (994.20) with another vehicle Angelo Montebovi(19)</Incident>
+<Incident et="642.5">Angelo Montebovi(19) reported contact (920.80) with another vehicle Oliwier Tomaszewski(7)</Incident>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="645.2">No Further Action</TrackLimits>
+<Score et="647.0">francesco cimnelli(2) lap=4 point=2 t=-1.000 et=646.820</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="651.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="652.1">No Further Action</TrackLimits>
+<Score et="654.0">Oliwier Tomaszewski(7) lap=4 point=2 t=63.407 et=653.940</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="655.6">No Further Action</TrackLimits>
+<Sector et="656.1">hugo radreau(6) reports new suspension damage</Sector>
+<Incident et="656.2">hugo radreau(6) reported contact (4601.78) with Immovable</Incident>
+<Incident et="657.0">hugo radreau(6) reported contact (19.79) with Wing</Incident>
+<Incident et="657.0">hugo radreau(6) reported contact (26.98) with Wing</Incident>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="660.8">No Further Action</TrackLimits>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="662.0">No Further Action</TrackLimits>
+<Score et="665.6">Daniel Rimoczi(17) lap=5 point=0 t=109.611 et=665.600</Score>
+<Score et="666.5">David Porta(0) lap=5 point=0 t=108.839 et=666.380</Score>
+<Score et="667.0">Angelo Montebovi(19) lap=4 point=2 t=75.047 et=666.940</Score>
+<Score et="669.0">Paolo Savini(14) lap=5 point=0 t=108.549 et=668.900</Score>
+<Score et="676.0">hugo radreau(6) lap=3 point=2 t=71.512 et=675.880</Score>
+<Score et="676.8">Jordon Sendall(1) lap=5 point=0 t=112.113 et=676.560</Score>
+<TrackLimits Driver="patrice rizzi" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="676.8">No Further Action</TrackLimits>
+<Score et="678.4">Matej Kristofik(18) lap=5 point=0 t=111.207 et=678.340</Score>
+<Score et="678.5">Attilio Fasano#2663(9) lap=5 point=0 t=108.357 et=678.400</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="4" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="682.8">Warning</TrackLimits>
+<Score et="683.2">patrice rizzi(16) lap=5 point=0 t=119.446 et=683.180</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="684.6">No Further Action</TrackLimits>
+<Score et="686.4">P-A Fugeekies(5) lap=5 point=0 t=110.775 et=686.367</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="686.8">No Further Action</TrackLimits>
+<Score et="687.2">Diego Ruiz29(13) lap=5 point=0 t=-1.000 et=687.200</Score>
+<Score et="687.6">William de Ghooien(4) lap=5 point=0 t=111.538 et=687.560</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="689.2">No Further Action</TrackLimits>
+<Score et="689.6">Daniel Rimoczi(17) lap=5 point=1 t=23.926 et=689.520</Score>
+<Score et="689.7">David Porta(0) lap=5 point=1 t=23.292 et=689.660</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="4" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="690.0">Warning</TrackLimits>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="691.4">No Further Action</TrackLimits>
+<Score et="692.4">Paolo Savini(14) lap=5 point=1 t=23.443 et=692.340</Score>
+<Incident et="692.8">Matej Kristofik(18) reported contact (125.79) with another vehicle Attilio Fasano#2663(9)</Incident>
+<Incident et="692.8">Attilio Fasano#2663(9) reported contact (65.81) with another vehicle Matej Kristofik(18)</Incident>
+<Incident et="693.1">Matej Kristofik(18) reported contact (137.45) with another vehicle Attilio Fasano#2663(9)</Incident>
+<Score et="693.9">francesco cimnelli(2) lap=5 point=0 t=-1.000 et=693.840</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="698.5">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="5" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="699.0">Warning</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="5" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="700.0">Warning</TrackLimits>
+<Score et="702.4">Oliwier Tomaszewski(7) lap=5 point=0 t=111.714 et=702.240</Score>
+<Score et="702.4">Matej Kristofik(18) lap=5 point=1 t=23.981 et=702.320</Score>
+<Score et="702.7">Attilio Fasano#2663(9) lap=5 point=1 t=24.245 et=702.640</Score>
+<Score et="704.9">Jordon Sendall(1) lap=5 point=1 t=28.132 et=704.700</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="707.2">No Further Action</TrackLimits>
+<Score et="707.3">patrice rizzi(16) lap=5 point=1 t=24.062 et=707.260</Score>
+<Score et="709.3">P-A Fugeekies(5) lap=5 point=1 t=-1.000 et=709.298</Score>
+<Score et="711.2">Diego Ruiz29(13) lap=5 point=1 t=-1.000 et=711.200</Score>
+<Score et="711.8">William de Ghooien(4) lap=5 point=1 t=24.063 et=711.620</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="712.7">No Further Action</TrackLimits>
+<Score et="713.4">Angelo Montebovi(19) lap=5 point=0 t=121.490 et=713.380</Score>
+<Score et="717.5">francesco cimnelli(2) lap=5 point=1 t=-1.000 et=717.360</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="719.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="725.9">No Further Action</TrackLimits>
+<Score et="726.2">Oliwier Tomaszewski(7) lap=5 point=1 t=23.920 et=726.160</Score>
+<Score et="729.5">David Porta(0) lap=5 point=2 t=63.024 et=729.400</Score>
+<Incident et="729.5">Daniel Rimoczi(17) reported contact (1238.80) with another vehicle Paolo Savini(14)</Incident>
+<Incident et="729.5">Paolo Savini(14) reported contact (1025.36) with another vehicle Daniel Rimoczi(17)</Incident>
+<Score et="731.5">Daniel Rimoczi(17) lap=5 point=2 t=-1.000 et=731.400</Score>
+<Score et="731.7">Paolo Savini(14) lap=5 point=2 t=-1.000 et=731.620</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="732.2">No Further Action</TrackLimits>
+<Score et="736.5">Angelo Montebovi(19) lap=5 point=1 t=23.047 et=736.440</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="739.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="740.4">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="741.9">No Further Action</TrackLimits>
+<Score et="742.0">Matej Kristofik(18) lap=5 point=2 t=63.568 et=741.900</Score>
+<Score et="742.3">Attilio Fasano#2663(9) lap=5 point=2 t=63.905 et=742.300</Score>
+<Score et="744.2">Jordon Sendall(1) lap=5 point=2 t=67.514 et=744.080</Score>
+<Score et="746.6">patrice rizzi(16) lap=5 point=2 t=63.361 et=746.540</Score>
+<Score et="748.8">P-A Fugeekies(5) lap=5 point=2 t=-1.000 et=748.810</Score>
+<Score et="751.1">Diego Ruiz29(13) lap=5 point=2 t=-1.000 et=751.040</Score>
+<Score et="751.4">William de Ghooien(4) lap=5 point=2 t=63.791 et=751.360</Score>
+<Score et="756.6">francesco cimnelli(2) lap=5 point=2 t=62.615 et=756.460</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="756.8">No Further Action</TrackLimits>
+<Score et="767.3">Oliwier Tomaszewski(7) lap=5 point=2 t=65.040 et=767.280</Score>
+<Score et="775.6">Angelo Montebovi(19) lap=5 point=2 t=62.068 et=775.460</Score>
+<Score et="776.4">David Porta(0) lap=6 point=0 t=109.905 et=776.280</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="5" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="776.5">Warning</TrackLimits>
+<Score et="779.7">Paolo Savini(14) lap=6 point=0 t=110.776 et=779.680</Score>
+<Score et="780.7">Daniel Rimoczi(17) lap=6 point=0 t=-1.000 et=780.660</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="782.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="787.4">No Further Action</TrackLimits>
+<Score et="788.8">Attilio Fasano#2663(9) lap=6 point=0 t=110.313 et=788.700</Score>
+<Score et="789.3">Matej Kristofik(18) lap=6 point=0 t=110.907 et=789.240</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="790.0">No Further Action</TrackLimits>
+<Score et="790.7">Jordon Sendall(1) lap=6 point=0 t=113.939 et=790.500</Score>
+<Score et="793.4">patrice rizzi(16) lap=6 point=0 t=110.159 et=793.340</Score>
+<Score et="796.1">P-A Fugeekies(5) lap=6 point=0 t=-1.000 et=796.063</Score>
+<Score et="798.7">William de Ghooien(4) lap=6 point=0 t=111.066 et=798.620</Score>
+<Score et="799.1">Diego Ruiz29(13) lap=6 point=0 t=-1.000 et=799.020</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="799.2">No Further Action</TrackLimits>
+<Score et="799.6">David Porta(0) lap=6 point=1 t=23.204 et=799.480</Score>
+<Score et="802.9">Paolo Savini(14) lap=6 point=1 t=23.236 et=802.900</Score>
+<Score et="803.5">francesco cimnelli(2) lap=6 point=0 t=109.575 et=803.420</Score>
+<Score et="803.6">Daniel Rimoczi(17) lap=6 point=1 t=-1.000 et=803.580</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="804.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="6" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="807.8">Warning</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="808.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="809.0">No Further Action</TrackLimits>
+<Score et="811.6">Attilio Fasano#2663(9) lap=6 point=1 t=22.880 et=811.580</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="812.0">No Further Action</TrackLimits>
+<Score et="812.8">Matej Kristofik(18) lap=6 point=1 t=23.532 et=812.780</Score>
+<Score et="813.7">Jordon Sendall(1) lap=6 point=1 t=-1.000 et=813.540</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="814.4">No Further Action</TrackLimits>
+<Score et="814.8">hugo radreau(6) lap=4 point=0 t=210.366 et=814.740</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="815.1">No Further Action</TrackLimits>
+<Score et="815.4">Oliwier Tomaszewski(7) lap=6 point=0 t=113.136 et=815.380</Score>
+<Score et="816.8">patrice rizzi(16) lap=6 point=1 t=23.306 et=816.660</Score>
+<Score et="819.6">P-A Fugeekies(5) lap=6 point=1 t=23.479 et=819.542</Score>
+<Score et="822.8">Diego Ruiz29(13) lap=6 point=1 t=23.779 et=822.800</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="823.0">No Further Action</TrackLimits>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="823.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="827.2">No Further Action</TrackLimits>
+<Score et="827.6">francesco cimnelli(2) lap=6 point=1 t=24.015 et=827.440</Score>
+<Score et="829.9">Angelo Montebovi(19) lap=6 point=0 t=116.452 et=829.840</Score>
+<Score et="830.8">William de Ghooien(4) lap=6 point=1 t=32.164 et=830.800</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="834.9">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="835.6">No Further Action</TrackLimits>
+<Score et="838.4">David Porta(0) lap=6 point=2 t=62.101 et=838.380</Score>
+<Score et="839.2">Oliwier Tomaszewski(7) lap=6 point=1 t=23.740 et=839.120</Score>
+<Score et="841.7">Paolo Savini(14) lap=6 point=2 t=61.958 et=841.620</Score>
+<Score et="842.2">Daniel Rimoczi(17) lap=6 point=2 t=-1.000 et=842.140</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="844.3">No Further Action</TrackLimits>
+<Score et="849.3">hugo radreau(6) lap=4 point=1 t=34.495 et=849.240</Score>
+<Score et="850.7">Attilio Fasano#2663(9) lap=6 point=2 t=61.965 et=850.680</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="851.2">No Further Action</TrackLimits>
+<Score et="851.8">Matej Kristofik(18) lap=6 point=2 t=62.471 et=851.720</Score>
+<Score et="852.5">Jordon Sendall(1) lap=6 point=2 t=61.788 et=852.300</Score>
+<Score et="853.3">Angelo Montebovi(19) lap=6 point=1 t=23.423 et=853.260</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="855.2">No Further Action</TrackLimits>
+<Score et="855.7">patrice rizzi(16) lap=6 point=2 t=62.250 et=855.600</Score>
+<Score et="859.4">P-A Fugeekies(5) lap=6 point=2 t=63.307 et=859.370</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="859.5">No Further Action</TrackLimits>
+<Score et="862.5">Diego Ruiz29(13) lap=6 point=2 t=63.453 et=862.460</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="866.4">No Further Action</TrackLimits>
+<Score et="867.0">francesco cimnelli(2) lap=6 point=2 t=63.515 et=866.940</Score>
+<Score et="869.9">William de Ghooien(4) lap=6 point=2 t=71.222 et=869.840</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="874.9">No Further Action</TrackLimits>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="881.2">No Further Action</TrackLimits>
+<Score et="885.3">David Porta(0) lap=7 point=0 t=108.955 et=885.240</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="888.2">No Further Action</TrackLimits>
+<Score et="888.9">Paolo Savini(14) lap=7 point=0 t=109.170 et=888.840</Score>
+<Score et="889.1">Oliwier Tomaszewski(7) lap=6 point=2 t=73.686 et=889.060</Score>
+<Score et="889.3">hugo radreau(6) lap=4 point=2 t=74.505 et=889.240</Score>
+<Score et="889.5">Daniel Rimoczi(17) lap=7 point=0 t=-1.000 et=889.500</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="6" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="894.7">Warning</TrackLimits>
+<Score et="896.9">Attilio Fasano#2663(9) lap=7 point=0 t=108.153 et=896.860</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="897.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="899.3">No Further Action</TrackLimits>
+<Score et="899.3">Matej Kristofik(18) lap=7 point=0 t=110.007 et=899.240</Score>
+<Score et="899.6">Jordon Sendall(1) lap=7 point=0 t=-1.000 et=899.320</Score>
+<Score et="902.4">Angelo Montebovi(19) lap=6 point=2 t=72.440 et=902.280</Score>
+<Score et="902.8">patrice rizzi(16) lap=7 point=0 t=109.427 et=902.780</Score>
+<Score et="907.0">P-A Fugeekies(5) lap=7 point=0 t=110.917 et=906.980</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="907.3">No Further Action</TrackLimits>
+<Score et="908.5">David Porta(0) lap=7 point=1 t=23.249 et=908.480</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="909.8">No Further Action</TrackLimits>
+<Score et="912.1">Diego Ruiz29(13) lap=7 point=0 t=112.998 et=912.020</Score>
+<Score et="912.3">Paolo Savini(14) lap=7 point=1 t=23.413 et=912.260</Score>
+<Score et="912.8">Daniel Rimoczi(17) lap=7 point=1 t=23.205 et=912.700</Score>
+<Score et="914.0">francesco cimnelli(2) lap=7 point=0 t=110.556 et=913.980</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="917.3">No Further Action</TrackLimits>
+<Score et="917.7">William de Ghooien(4) lap=7 point=0 t=118.928 et=917.560</Score>
+<Score et="920.1">Attilio Fasano#2663(9) lap=7 point=1 t=23.136 et=920.000</Score>
+<Score et="922.8">Matej Kristofik(18) lap=7 point=1 t=-1.000 et=922.760</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="923.1">No Further Action</TrackLimits>
+<Score et="923.3">Jordon Sendall(1) lap=7 point=1 t=-1.000 et=923.080</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="924.4">No Further Action</TrackLimits>
+<Score et="926.4">patrice rizzi(16) lap=7 point=1 t=23.553 et=926.320</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="927.2">No Further Action</TrackLimits>
+<Score et="930.5">P-A Fugeekies(5) lap=7 point=1 t=23.478 et=930.458</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="930.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="935.4">No Further Action</TrackLimits>
+<Score et="936.0">Diego Ruiz29(13) lap=7 point=1 t=23.878 et=935.900</Score>
+<Score et="936.8">hugo radreau(6) lap=5 point=0 t=122.040 et=936.780</Score>
+<Score et="937.2">francesco cimnelli(2) lap=7 point=1 t=23.152 et=937.120</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="937.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="938.6">No Further Action</TrackLimits>
+<Score et="939.5">Oliwier Tomaszewski(7) lap=7 point=0 t=124.046 et=939.420</Score>
+<Score et="941.1">William de Ghooien(4) lap=7 point=1 t=23.484 et=941.040</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="941.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="944.2">No Further Action</TrackLimits>
+<Incident et="944.5">Matej Kristofik(18) reported contact (973.77) with another vehicle Jordon Sendall(1)</Incident>
+<Incident et="944.6">Jordon Sendall(1) reported contact (69.12) with another vehicle Matej Kristofik(18)</Incident>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="944.7">No Further Action</TrackLimits>
+<Incident et="945.1">Jordon Sendall(1) reported contact (257.42) with another vehicle Matej Kristofik(18)</Incident>
+<Incident et="946.1">David Porta(0) reported contact (24.22) with Sign</Incident>
+<Incident et="946.2">David Porta(0) reported contact (23.64) with Sign</Incident>
+<TrackLimits Driver="David Porta" ID="0" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="947.5">No Further Action</TrackLimits>
+<Score et="949.7">Angelo Montebovi(19) lap=7 point=0 t=119.790 et=949.640</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="951.5">No Further Action</TrackLimits>
+<Score et="951.8">Paolo Savini(14) lap=7 point=2 t=62.932 et=951.780</Score>
+<Score et="952.0">Daniel Rimoczi(17) lap=7 point=2 t=62.446 et=951.940</Score>
+<Score et="953.8">David Porta(0) lap=7 point=2 t=68.531 et=953.760</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="957.6">No Further Action</TrackLimits>
+<Score et="958.9">Attilio Fasano#2663(9) lap=7 point=2 t=61.951 et=958.820</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="960.3">No Further Action</TrackLimits>
+<Score et="960.6">hugo radreau(6) lap=5 point=1 t=23.763 et=960.540</Score>
+<Score et="963.7">Jordon Sendall(1) lap=7 point=2 t=64.157 et=963.480</Score>
+<Score et="964.5">Oliwier Tomaszewski(7) lap=7 point=1 t=25.000 et=964.420</Score>
+<Score et="965.8">patrice rizzi(16) lap=7 point=2 t=62.974 et=965.740</Score>
+<TrackLimits Driver="Daniel Rimoczi" ID="17" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="969.2">No Further Action</TrackLimits>
+<Score et="970.2">P-A Fugeekies(5) lap=7 point=2 t=63.177 et=970.157</Score>
+<Score et="971.3">Matej Kristofik(18) lap=7 point=2 t=71.991 et=971.240</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="971.7">No Further Action</TrackLimits>
+<Score et="973.4">Angelo Montebovi(19) lap=7 point=1 t=23.650 et=973.280</Score>
+<Score et="975.7">Diego Ruiz29(13) lap=7 point=2 t=63.674 et=975.680</Score>
+<Score et="976.0">francesco cimnelli(2) lap=7 point=2 t=61.961 et=975.940</Score>
+<Score et="980.6">William de Ghooien(4) lap=7 point=2 t=62.931 et=980.480</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="7" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="991.9">Warning</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="998.2">No Further Action</TrackLimits>
+<Score et="999.6">Daniel Rimoczi(17) lap=8 point=0 t=110.091 et=999.600</Score>
+<Score et="999.7">hugo radreau(6) lap=5 point=2 t=62.875 et=999.660</Score>
+<Score et="1000.2">Paolo Savini(14) lap=8 point=0 t=111.283 et=1000.120</Score>
+<Score et="1000.6">David Porta(0) lap=8 point=0 t=115.242 et=1000.480</Score>
+<Score et="1005.2">Attilio Fasano#2663(9) lap=8 point=0 t=-1.000 et=1005.200</Score>
+<Score et="1005.3">Oliwier Tomaszewski(7) lap=7 point=2 t=65.800 et=1005.220</Score>
+<Score et="1011.2">Jordon Sendall(1) lap=8 point=0 t=111.505 et=1010.820</Score>
+<Score et="1012.7">patrice rizzi(16) lap=8 point=0 t=109.834 et=1012.600</Score>
+<Score et="1012.7">Angelo Montebovi(19) lap=7 point=2 t=63.000 et=1012.640</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1015.7">No Further Action</TrackLimits>
+<Score et="1018.6">Matej Kristofik(18) lap=8 point=0 t=119.222 et=1018.460</Score>
+<Score et="1018.8">P-A Fugeekies(5) lap=8 point=0 t=111.786 et=1018.766</Score>
+<Score et="1022.8">Daniel Rimoczi(17) lap=8 point=1 t=23.196 et=1022.780</Score>
+<Score et="1023.8">Paolo Savini(14) lap=8 point=1 t=23.666 et=1023.780</Score>
+<Score et="1024.0">David Porta(0) lap=8 point=1 t=23.367 et=1023.840</Score>
+<Score et="1024.0">Diego Ruiz29(13) lap=8 point=0 t=111.917 et=1023.940</Score>
+<Score et="1024.2">francesco cimnelli(2) lap=8 point=0 t=110.143 et=1024.120</Score>
+<Score et="1028.0">William de Ghooien(4) lap=8 point=0 t=110.427 et=1027.980</Score>
+<Score et="1028.1">Attilio Fasano#2663(9) lap=8 point=1 t=22.852 et=1028.040</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1029.5">No Further Action</TrackLimits>
+<Score et="1034.1">Jordon Sendall(1) lap=8 point=1 t=22.999 et=1033.820</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1034.9">No Further Action</TrackLimits>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1035.3">No Further Action</TrackLimits>
+<Score et="1036.2">patrice rizzi(16) lap=8 point=1 t=23.594 et=1036.200</Score>
+<Score et="1042.5">Matej Kristofik(18) lap=8 point=1 t=23.916 et=1042.380</Score>
+<Score et="1042.8">P-A Fugeekies(5) lap=8 point=1 t=-1.000 et=1042.757</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1043.8">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="8" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1044.6">No Further Action</TrackLimits>
+<Score et="1047.1">hugo radreau(6) lap=6 point=0 t=110.258 et=1047.040</Score>
+<Score et="1048.9">Diego Ruiz29(13) lap=8 point=1 t=24.903 et=1048.840</Score>
+<Score et="1049.0">francesco cimnelli(2) lap=8 point=1 t=24.833 et=1048.960</Score>
+<Score et="1052.2">William de Ghooien(4) lap=8 point=1 t=24.167 et=1052.140</Score>
+<Score et="1054.1">Oliwier Tomaszewski(7) lap=8 point=0 t=114.674 et=1054.100</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1058.0">No Further Action</TrackLimits>
+<Score et="1060.0">Angelo Montebovi(19) lap=8 point=0 t=110.249 et=1059.880</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="8" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1061.1">No Further Action</TrackLimits>
+<Score et="1061.6">Daniel Rimoczi(17) lap=8 point=2 t=61.970 et=1061.560</Score>
+<Score et="1063.0">David Porta(0) lap=8 point=2 t=62.444 et=1062.920</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1063.0">No Further Action</TrackLimits>
+<Score et="1063.6">Paolo Savini(14) lap=8 point=2 t=63.400 et=1063.520</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1064.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1065.1">No Further Action</TrackLimits>
+<Score et="1066.8">Attilio Fasano#2663(9) lap=8 point=2 t=61.519 et=1066.720</Score>
+<Score et="1070.7">hugo radreau(6) lap=6 point=1 t=23.613 et=1070.640</Score>
+<Score et="1074.6">Jordon Sendall(1) lap=8 point=2 t=63.489 et=1074.300</Score>
+<Score et="1074.9">patrice rizzi(16) lap=8 point=2 t=62.264 et=1074.880</Score>
+<Score et="1078.4">Oliwier Tomaszewski(7) lap=8 point=1 t=24.209 et=1078.320</Score>
+<Score et="1081.7">Matej Kristofik(18) lap=8 point=2 t=63.145 et=1081.620</Score>
+<Score et="1082.6">P-A Fugeekies(5) lap=8 point=2 t=63.822 et=1082.588</Score>
+<Score et="1083.8">Angelo Montebovi(19) lap=8 point=1 t=23.818 et=1083.700</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1087.1">No Further Action</TrackLimits>
+<Score et="1088.4">francesco cimnelli(2) lap=8 point=2 t=64.231 et=1088.340</Score>
+<Score et="1089.4">Diego Ruiz29(13) lap=8 point=2 t=65.312 et=1089.240</Score>
+<Score et="1091.3">William de Ghooien(4) lap=8 point=2 t=63.262 et=1091.240</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1106.1">No Further Action</TrackLimits>
+<Score et="1108.4">Daniel Rimoczi(17) lap=9 point=0 t=108.767 et=1108.360</Score>
+<Score et="1109.9">hugo radreau(6) lap=6 point=2 t=62.836 et=1109.860</Score>
+<Score et="1110.0">David Porta(0) lap=9 point=0 t=109.469 et=1109.940</Score>
+<Score et="1111.0">Paolo Savini(14) lap=9 point=0 t=110.887 et=1111.000</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1112.3">No Further Action</TrackLimits>
+<Score et="1113.0">Attilio Fasano#2663(9) lap=9 point=0 t=107.761 et=1112.960</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1114.7">No Further Action</TrackLimits>
+<Score et="1120.7">Oliwier Tomaszewski(7) lap=8 point=2 t=66.512 et=1120.620</Score>
+<Score et="1121.9">Jordon Sendall(1) lap=9 point=0 t=110.914 et=1121.740</Score>
+<Score et="1122.8">patrice rizzi(16) lap=9 point=0 t=110.102 et=1122.720</Score>
+<Score et="1123.2">Angelo Montebovi(19) lap=8 point=2 t=63.269 et=1123.140</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1125.5">No Further Action</TrackLimits>
+<Score et="1128.6">Matej Kristofik(18) lap=9 point=0 t=110.095 et=1128.560</Score>
+<Score et="1129.9">P-A Fugeekies(5) lap=9 point=0 t=111.105 et=1129.871</Score>
+<Score et="1131.6">Daniel Rimoczi(17) lap=9 point=1 t=23.116 et=1131.480</Score>
+<Score et="1133.1">David Porta(0) lap=9 point=1 t=23.136 et=1133.080</Score>
+<Score et="1134.8">Paolo Savini(14) lap=9 point=1 t=23.696 et=1134.700</Score>
+<Score et="1136.0">francesco cimnelli(2) lap=9 point=0 t=111.828 et=1135.940</Score>
+<Score et="1136.0">Attilio Fasano#2663(9) lap=9 point=1 t=23.002 et=1135.960</Score>
+<Score et="1138.0">Diego Ruiz29(13) lap=9 point=0 t=114.037 et=1137.960</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1140.8">No Further Action</TrackLimits>
+<Score et="1145.8">Jordon Sendall(1) lap=9 point=1 t=23.621 et=1145.360</Score>
+<Score et="1146.4">patrice rizzi(16) lap=9 point=1 t=23.678 et=1146.380</Score>
+<Score et="1152.2">Matej Kristofik(18) lap=9 point=1 t=23.636 et=1152.200</Score>
+<Score et="1153.2">P-A Fugeekies(5) lap=9 point=1 t=-1.000 et=1153.231</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1155.2">No Further Action</TrackLimits>
+<Score et="1157.1">hugo radreau(6) lap=7 point=0 t=110.016 et=1157.040</Score>
+<Score et="1159.1">francesco cimnelli(2) lap=9 point=1 t=-1.000 et=1159.040</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1160.8">No Further Action</TrackLimits>
+<Score et="1162.4">Diego Ruiz29(13) lap=9 point=1 t=24.382 et=1162.360</Score>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1166.4">No Further Action</TrackLimits>
+<Score et="1167.2">William de Ghooien(4) lap=9 point=0 t=139.214 et=1167.200</Score>
+<Score et="1169.0">Oliwier Tomaszewski(7) lap=9 point=0 t=114.817 et=1168.920</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1169.1">No Further Action</TrackLimits>
+<Score et="1170.2">Angelo Montebovi(19) lap=9 point=0 t=110.254 et=1170.140</Score>
+<Score et="1170.5">Daniel Rimoczi(17) lap=9 point=2 t=62.060 et=1170.420</Score>
+<Score et="1172.1">David Porta(0) lap=9 point=2 t=62.074 et=1172.020</Score>
+<Score et="1174.1">Paolo Savini(14) lap=9 point=2 t=63.026 et=1174.040</Score>
+<Score et="1174.6">Attilio Fasano#2663(9) lap=9 point=2 t=61.591 et=1174.540</Score>
+<TrackLimits Driver="Oliwier Tomaszewski" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1179.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1180.6">No Further Action</TrackLimits>
+<Score et="1180.7">hugo radreau(6) lap=7 point=1 t=23.581 et=1180.620</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1181.7">No Further Action</TrackLimits>
+<Score et="1184.7">Jordon Sendall(1) lap=9 point=2 t=62.786 et=1184.520</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1187.2">No Further Action</TrackLimits>
+<Score et="1187.5">patrice rizzi(16) lap=9 point=2 t=64.696 et=1187.400</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1190.8">No Further Action</TrackLimits>
+<Score et="1191.4">Matej Kristofik(18) lap=9 point=2 t=62.722 et=1191.280</Score>
+<Score et="1193.0">P-A Fugeekies(5) lap=9 point=2 t=63.085 et=1192.956</Score>
+<Score et="1193.0">Oliwier Tomaszewski(7) lap=9 point=1 t=24.086 et=1193.000</Score>
+<Score et="1193.6">Angelo Montebovi(19) lap=9 point=1 t=23.414 et=1193.540</Score>
+<Incident et="1193.7">Paolo Savini(14) reported contact (42.30) with another vehicle Attilio Fasano#2663(9)</Incident>
+<Incident et="1193.7">Attilio Fasano#2663(9) reported contact (32.90) with another vehicle Paolo Savini(14)</Incident>
+<Score et="1198.3">francesco cimnelli(2) lap=9 point=2 t=62.308 et=1198.260</Score>
+<Incident et="1198.9">Attilio Fasano#2663(9) reported contact (25.23) with another vehicle Paolo Savini(14)</Incident>
+<Incident et="1199.0">Attilio Fasano#2663(9) reported contact (46.01) with another vehicle Paolo Savini(14)</Incident>
+<Incident et="1199.1">Paolo Savini(14) reported contact (6.51) with another vehicle Attilio Fasano#2663(9)</Incident>
+<Incident et="1199.1">Paolo Savini(14) reported contact (21.57) with another vehicle Attilio Fasano#2663(9)</Incident>
+<Score et="1201.1">William de Ghooien(4) lap=9 point=1 t=33.854 et=1201.040</Score>
+<Score et="1203.0">Diego Ruiz29(13) lap=9 point=2 t=64.957 et=1202.920</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1213.2">No Further Action</TrackLimits>
+<Score et="1217.2">Daniel Rimoczi(17) lap=10 point=0 t=108.832 et=1217.200</Score>
+<Score et="1218.8">David Porta(0) lap=10 point=0 t=108.779 et=1218.720</Score>
+<Score et="1221.0">hugo radreau(6) lap=7 point=2 t=63.876 et=1220.920</Score>
+<Score et="1222.2">Attilio Fasano#2663(9) lap=10 point=0 t=109.149 et=1222.100</Score>
+<Score et="1222.9">Paolo Savini(14) lap=10 point=0 t=111.824 et=1222.840</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1225.1">No Further Action</TrackLimits>
+<Score et="1232.2">Jordon Sendall(1) lap=10 point=0 t=110.317 et=1232.040</Score>
+<TrackLimits Driver="Attilio Fasano#2663" ID="9" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1232.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1232.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Paolo Savini" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1233.6">No Further Action</TrackLimits>
+<Score et="1233.9">Oliwier Tomaszewski(7) lap=9 point=2 t=64.981 et=1233.900</Score>
+<Score et="1234.0">Angelo Montebovi(19) lap=9 point=2 t=63.748 et=1233.880</Score>
+<Incident et="1234.0">Oliwier Tomaszewski(7) reported contact (212.67) with another vehicle Angelo Montebovi(19)</Incident>
+<Score et="1234.6">patrice rizzi(16) lap=10 point=0 t=111.839 et=1234.560</Score>
+<Score et="1238.4">Matej Kristofik(18) lap=10 point=0 t=109.755 et=1238.320</Score>
+<Score et="1240.0">William de Ghooien(4) lap=9 point=2 t=72.753 et=1239.940</Score>
+<Score et="1240.3">Daniel Rimoczi(17) lap=10 point=1 t=23.042 et=1240.240</Score>
+<Score et="1240.4">P-A Fugeekies(5) lap=10 point=0 t=110.556 et=1240.427</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="9" WarningPoints="0.5" CurrentPoints="1.75" Resolution="4" et="1242.0">Warning</TrackLimits>
+<Score et="1242.1">David Porta(0) lap=10 point=1 t=23.215 et=1241.940</Score>
+<TrackLimits Driver="Jordon Sendall" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1242.7">No Further Action</TrackLimits>
+<TrackLimits Driver="David Porta" ID="0" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1243.7">No Further Action</TrackLimits>
+<Score et="1245.3">Attilio Fasano#2663(9) lap=10 point=1 t=22.889 et=1245.000</Score>
+<Score et="1246.0">francesco cimnelli(2) lap=10 point=0 t=-1.000 et=1245.840</Score>
+<Score et="1246.9">Paolo Savini(14) lap=10 point=1 t=23.810 et=1246.640</Score>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1248.8">No Further Action</TrackLimits>
+<Incident et="1249.2">Oliwier Tomaszewski(7) reported contact (232.60) with another vehicle Angelo Montebovi(19)</Incident>
+<Incident et="1249.3">Angelo Montebovi(19) reported contact (163.79) with another vehicle Oliwier Tomaszewski(7)</Incident>
+<Score et="1252.2">Diego Ruiz29(13) lap=10 point=0 t=114.174 et=1252.140</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1253.2">No Further Action</TrackLimits>
+<Score et="1255.6">Jordon Sendall(1) lap=10 point=1 t=23.262 et=1255.320</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1256.2">No Further Action</TrackLimits>
+<Score et="1258.3">patrice rizzi(16) lap=10 point=1 t=23.715 et=1258.260</Score>
+<Score et="1261.5">Matej Kristofik(18) lap=10 point=1 t=-1.000 et=1261.400</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1262.5">No Further Action</TrackLimits>
+<Score et="1263.6">P-A Fugeekies(5) lap=10 point=1 t=23.177 et=1263.603</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="7" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1264.0">Warning</TrackLimits>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1265.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1265.4">No Further Action</TrackLimits>
+<Score et="1268.6">hugo radreau(6) lap=8 point=0 t=-1.000 et=1268.520</Score>
+<Score et="1269.5">francesco cimnelli(2) lap=10 point=1 t=-1.000 et=1269.460</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1271.4">No Further Action</TrackLimits>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1273.0">No Further Action</TrackLimits>
+<Score et="1276.3">Diego Ruiz29(13) lap=10 point=1 t=24.090 et=1276.240</Score>
+<TrackLimits Driver="Diego Ruiz29" ID="13" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1277.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Matej Kristofik" ID="18" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1278.0">No Further Action</TrackLimits>
+<Score et="1279.0">Daniel Rimoczi(17) lap=10 point=2 t=61.780 et=1278.980</Score>
+<TrackLimits Driver="hugo radreau" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1279.3">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="5" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1279.8">No Further Action</TrackLimits>
+<Score et="1281.4">David Porta(0) lap=10 point=2 t=62.634 et=1281.360</Score>
+<Score et="1281.6">Angelo Montebovi(19) lap=10 point=0 t=111.389 et=1281.520</Score>
+<Score et="1282.9">Oliwier Tomaszewski(7) lap=10 point=0 t=113.950 et=1282.880</Score>
+<Score et="1283.9">Attilio Fasano#2663(9) lap=10 point=2 t=61.807 et=1283.920</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1285.0">No Further Action</TrackLimits>
+<Score et="1285.9">Paolo Savini(14) lap=10 point=2 t=63.023 et=1285.860</Score>
+<Score et="1287.2">William de Ghooien(4) lap=10 point=0 t=119.926 et=1287.120</Score>
+<Score et="1292.4">hugo radreau(6) lap=8 point=1 t=23.824 et=1292.340</Score>
+<Score et="1294.7">Jordon Sendall(1) lap=10 point=2 t=62.428 et=1294.480</Score>
+<Score et="1297.3">patrice rizzi(16) lap=10 point=2 t=62.677 et=1297.220</Score>
+<Score et="1303.4">P-A Fugeekies(5) lap=10 point=2 t=63.005 et=1303.431</Score>
+<Score et="1304.9">Angelo Montebovi(19) lap=10 point=1 t=23.317 et=1304.840</Score>
+<Score et="1306.9">Matej Kristofik(18) lap=10 point=2 t=68.500 et=1306.820</Score>
+<Score et="1306.9">Oliwier Tomaszewski(7) lap=10 point=1 t=23.997 et=1306.860</Score>
+<TrackLimits Driver="William de Ghooien" ID="4" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1308.0">No Further Action</TrackLimits>
+<Score et="1308.2">francesco cimnelli(2) lap=10 point=2 t=62.377 et=1308.200</Score>
+<Score et="1311.3">William de Ghooien(4) lap=10 point=1 t=24.075 et=1311.200</Score>
+<TrackLimits Driver="francesco cimnelli" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1313.5">No Further Action</TrackLimits>
+<Score et="1317.8">Diego Ruiz29(13) lap=10 point=2 t=65.579 et=1317.720</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1320.1">No Further Action</TrackLimits>
+<Score et="1326.4">Checkered for Daniel Rimoczi, laps=11/2147483647, endET=1326.340088/1317.522461, crossedAfterTime=0</Score>
+<Score et="1326.4">Daniel Rimoczi(17) lap=11 point=0 t=109.153 et=1326.340</Score>
+<Score et="1328.4">David Porta(0) lap=11 point=0 t=109.611 et=1328.340</Score>
+<Score et="1330.9">Attilio Fasano#2663(9) lap=11 point=0 t=108.725 et=1330.840</Score>
+<Score et="1332.0">hugo radreau(6) lap=8 point=2 t=63.388 et=1331.900</Score>
+<Score et="1333.5">Paolo Savini(14) lap=11 point=0 t=110.572 et=1333.400</Score>
+<Score et="1341.7">Jordon Sendall(1) lap=11 point=0 t=109.409 et=1341.460</Score>
+<Score et="1344.4">Angelo Montebovi(19) lap=10 point=2 t=62.804 et=1344.320</Score>
+<Score et="1344.7">patrice rizzi(16) lap=11 point=0 t=110.098 et=1344.640</Score>
+<ChatMessage et="1347.4">D Rimoczi: gg</ChatMessage>
+<Score et="1347.8">Oliwier Tomaszewski(7) lap=10 point=2 t=64.889 et=1347.760</Score>
+<Score et="1350.5">William de Ghooien(4) lap=10 point=2 t=63.282 et=1350.400</Score>
+<Score et="1351.9">P-A Fugeekies(5) lap=11 point=0 t=111.419 et=1351.845</Score>
+<Score et="1354.0">Matej Kristofik(18) lap=11 point=0 t=115.561 et=1353.880</Score>
+<Score et="1355.5">francesco cimnelli(2) lap=11 point=0 t=109.594 et=1355.420</Score>
+<TrackLimits Driver="Angelo Montebovi" ID="19" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1356.6">No Further Action</TrackLimits>
+<Score et="1368.7">Diego Ruiz29(13) lap=11 point=0 t=116.530 et=1368.680</Score>
+<ChatMessage et="1375.3">J Sendall: Apologies to that mclaren driver i bumped who was in p5 at one point</ChatMessage>
+<Score et="1379.0">hugo radreau(6) lap=9 point=0 t=110.337 et=1378.860</Score>
+<Score et="1396.0">Oliwier Tomaszewski(7) lap=11 point=0 t=113.129 et=1396.000</Score>
+<Score et="1397.7">William de Ghooien(4) lap=11 point=0 t=110.562 et=1397.680</Score>
+<Score et="1399.7">Angelo Montebovi(19) lap=11 point=0 t=118.108 et=1399.640</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>11</MostLapsCompleted>
+<Driver>
+<Name>Attilio Fasano#2663</Name>
+<Connected>1</Connected>
+<VehFile>50_25_AFCO4C7FFF1A.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>Richard Mille AF Corse 2025 #50:ELMS</VehName>
+<Category>ELMS 2025, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Richard Mille AF Corse 2025 #50</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>3</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="117.5225" s1="34.2367" s2="40.7647" s3="46.8071" topspeed="250.44" fuel="0.369" fuelUsed="0.131" ve="0.506" veUsed="0.043" twfl="0.992" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.8086</Lap>
+<Lap num="2" p="8" et="239.3401" s1="23.6007" s2="39.6343" s3="46.3544" topspeed="262.16" fuel="0.341" fuelUsed="0.027" ve="0.471" veUsed="0.035" twfl="0.984" twfr="0.988" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.5893</Lap>
+<Lap num="3" p="7" et="348.9399" s1="23.5934" s2="43.2849" s3="46.2592" topspeed="263.06" fuel="0.318" fuelUsed="0.024" ve="0.435" veUsed="0.035" twfl="0.976" twfr="0.976" twrl="0.980" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.1375</Lap>
+<Lap num="4" p="7" et="462.0601" s1="23.1153" s2="39.0470" s3="45.8068" topspeed="262.61" fuel="0.294" fuelUsed="0.024" ve="0.400" veUsed="0.035" twfl="0.969" twfr="0.973" twrl="0.976" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.9691</Lap>
+<Lap num="5" p="6" et="570.0400" s1="23.0948" s2="38.9770" s3="46.2852" topspeed="263.51" fuel="0.267" fuelUsed="0.027" ve="0.365" veUsed="0.035" twfl="0.961" twfr="0.965" twrl="0.969" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.3570</Lap>
+<Lap num="6" p="4" et="678.3999" s1="24.2452" s2="39.6593" s3="46.4088" topspeed="263.51" fuel="0.243" fuelUsed="0.024" ve="0.329" veUsed="0.035" twfl="0.949" twfr="0.961" twrl="0.965" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.3134</Lap>
+<Lap num="7" p="4" et="788.7000" s1="22.8804" s2="39.0848" s3="46.1877" topspeed="263.06" fuel="0.220" fuelUsed="0.024" ve="0.294" veUsed="0.035" twfl="0.941" twfr="0.953" twrl="0.961" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.1530</Lap>
+<Lap num="8" p="4" et="896.8601" s1="23.1356" s2="38.8158" topspeed="263.96" fuel="0.192" fuelUsed="0.027" ve="0.259" veUsed="0.035" twfl="0.929" twfr="0.945" twrl="0.953" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="4" et="1005.2000" s1="22.8522" s2="38.6664" s3="46.2423" topspeed="263.51" fuel="0.169" fuelUsed="0.024" ve="0.224" veUsed="0.035" twfl="0.918" twfr="0.937" twrl="0.949" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.7609</Lap>
+<Lap num="10" p="3" et="1112.9600" s1="23.0022" s2="38.5884" s3="47.5583" topspeed="263.96" fuel="0.145" fuelUsed="0.024" ve="0.188" veUsed="0.035" twfl="0.910" twfr="0.929" twrl="0.941" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.1489</Lap>
+<Lap num="11" p="3" et="1222.1001" s1="22.8888" s2="38.9180" s3="46.9182" topspeed="263.96" fuel="0.118" fuelUsed="0.027" ve="0.153" veUsed="0.035" twfl="0.898" twfr="0.925" twrl="0.937" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7250</Lap>
+<BestLapTime>107.7609</BestLapTime>
+<FinishTime>1213.3176</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Daniel Rimoczi</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>1</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="117.5225" s1="28.7669" s2="39.1062" s3="46.3524" topspeed="252.25" fuel="0.290" fuelUsed="0.210" ve="0.443" veUsed="0.035" twfl="0.949" twfr="0.957" twrl="0.933" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.2255</Lap>
+<Lap num="2" p="1" et="231.7600" s1="23.1907" s2="38.7996" s3="46.2247" topspeed="263.96" fuel="0.267" fuelUsed="0.024" ve="0.408" veUsed="0.035" twfl="0.937" twfr="0.949" twrl="0.929" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2150</Lap>
+<Lap num="3" p="1" et="339.9800" s1="22.6406" s2="38.5192" s3="46.8818" topspeed="263.51" fuel="0.243" fuelUsed="0.024" ve="0.373" veUsed="0.035" twfl="0.929" twfr="0.941" twrl="0.922" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.0416</Lap>
+<Lap num="4" p="1" et="448.0200" s1="23.0329" s2="38.4441" topspeed="263.96" fuel="0.220" fuelUsed="0.024" ve="0.337" veUsed="0.035" twfl="0.914" twfr="0.933" twrl="0.914" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="1" et="555.9800" s1="23.7860" s2="39.1145" s3="46.7103" topspeed="263.96" fuel="0.196" fuelUsed="0.024" ve="0.302" veUsed="0.035" twfl="0.902" twfr="0.925" twrl="0.910" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.6108</Lap>
+<Lap num="6" p="3" et="665.6001" s1="23.9257" topspeed="263.96" fuel="0.173" fuelUsed="0.024" ve="0.271" veUsed="0.031" twfl="0.886" twfr="0.914" twrl="0.902" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="3" et="780.6599" topspeed="262.61" fuel="0.149" fuelUsed="0.024" ve="0.235" veUsed="0.035" twfl="0.871" twfr="0.902" twrl="0.894" twrr="0.910" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="1" et="889.5000" s1="23.2053" s2="39.2408" s3="47.6448" topspeed="262.16" fuel="0.125" fuelUsed="0.024" ve="0.200" veUsed="0.035" twfl="0.863" twfr="0.894" twrl="0.890" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0908</Lap>
+<Lap num="9" p="1" et="999.6001" s1="23.1957" s2="38.7741" s3="46.7975" topspeed="262.61" fuel="0.102" fuelUsed="0.024" ve="0.165" veUsed="0.035" twfl="0.851" twfr="0.886" twrl="0.882" twrr="0.898" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7673</Lap>
+<Lap num="10" p="1" et="1108.3601" s1="23.1158" s2="38.9440" s3="46.7719" topspeed="263.06" fuel="0.078" fuelUsed="0.024" ve="0.133" veUsed="0.031" twfl="0.839" twfr="0.878" twrl="0.878" twrr="0.894" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.8317</Lap>
+<Lap num="11" p="1" et="1217.2000" s1="23.0417" s2="38.7384" s3="47.3724" topspeed="262.61" fuel="0.059" fuelUsed="0.020" ve="0.098" veUsed="0.035" twfl="0.831" twfr="0.871" twrl="0.871" twrr="0.886" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.1526</Lap>
+<BestLapTime>108.0416</BestLapTime>
+<FinishTime>1208.8176</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>David Porta</Name>
+<Connected>1</Connected>
+<VehFile>95_24_UNITE72F634D.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #95:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>United Autosports 2024 #95</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>2</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="117.5225" s1="28.9794" s2="39.5374" s3="46.3707" topspeed="252.70" fuel="0.506" fuelUsed="-0.006" ve="0.714" veUsed="0.035" twfl="0.965" twfr="0.973" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.8874</Lap>
+<Lap num="2" p="2" et="232.4199" s1="22.9777" s2="38.7186" s3="46.4182" topspeed="263.06" fuel="0.482" fuelUsed="0.024" ve="0.678" veUsed="0.035" twfl="0.957" twfr="0.965" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.1145</Lap>
+<Lap num="3" p="2" et="340.5400" s1="22.8268" s2="38.7006" s3="46.7527" topspeed="263.51" fuel="0.459" fuelUsed="0.024" ve="0.643" veUsed="0.035" twfl="0.945" twfr="0.957" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2801</Lap>
+<Lap num="4" p="2" et="448.8201" s1="22.9355" s2="39.0172" s3="46.7688" topspeed="262.61" fuel="0.435" fuelUsed="0.024" ve="0.608" veUsed="0.035" twfl="0.937" twfr="0.949" twrl="0.957" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7216</Lap>
+<Lap num="5" p="2" et="557.5400" s1="22.9485" s2="38.7595" s3="47.1307" topspeed="261.71" fuel="0.412" fuelUsed="0.024" ve="0.576" veUsed="0.031" twfl="0.925" twfr="0.941" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.8387</Lap>
+<Lap num="6" p="1" et="666.3799" s1="23.2916" s2="39.7328" s3="46.8807" topspeed="262.61" fuel="0.388" fuelUsed="0.024" ve="0.541" veUsed="0.035" twfl="0.910" twfr="0.929" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.9051</Lap>
+<Lap num="7" p="1" et="776.2800" s1="23.2043" s2="38.8968" s3="46.8537" topspeed="260.80" fuel="0.365" fuelUsed="0.024" ve="0.506" veUsed="0.035" twfl="0.894" twfr="0.922" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.9548</Lap>
+<Lap num="8" p="3" et="885.2400" s1="23.2489" s2="45.2823" s3="46.7112" topspeed="260.80" fuel="0.341" fuelUsed="0.024" ve="0.475" veUsed="0.031" twfl="0.886" twfr="0.914" twrl="0.933" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.2424</Lap>
+<Lap num="9" p="2" et="1000.4800" s1="23.3672" s2="39.0771" s3="47.0250" topspeed="262.61" fuel="0.318" fuelUsed="0.024" ve="0.439" veUsed="0.035" twfl="0.875" twfr="0.906" twrl="0.929" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.4694</Lap>
+<Lap num="10" p="2" et="1109.9399" s1="23.1364" s2="38.9373" s3="46.7057" topspeed="262.16" fuel="0.294" fuelUsed="0.024" ve="0.404" veUsed="0.035" twfl="0.859" twfr="0.894" twrl="0.925" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7793</Lap>
+<Lap num="11" p="2" et="1218.7200" s1="23.2146" s2="39.4194" s3="46.9766" topspeed="262.61" fuel="0.271" fuelUsed="0.024" ve="0.373" veUsed="0.031" twfl="0.847" twfr="0.886" twrl="0.918" twrr="0.922" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.6106</Lap>
+<BestLapTime>108.1145</BestLapTime>
+<FinishTime>1210.8176</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Paolo Savini</Name>
+<Connected>1</Connected>
+<VehFile>397_25_MCLAREN.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>McLaren Custom Team 2025 #397</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>TEAM SAV</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>4</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="117.5225" s1="30.4814" s2="39.1856" s3="46.7664" topspeed="252.70" fuel="0.325" fuelUsed="0.175" ve="0.463" veUsed="0.039" twfl="0.992" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">116.4334</Lap>
+<Lap num="2" p="3" et="233.9600" s1="23.3658" s2="38.7805" s3="46.5525" topspeed="263.96" fuel="0.306" fuelUsed="0.020" ve="0.427" veUsed="0.035" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.6989</Lap>
+<Lap num="3" p="3" et="342.6599" s1="23.2136" s2="38.6927" s3="46.7431" topspeed="263.51" fuel="0.282" fuelUsed="0.024" ve="0.396" veUsed="0.031" twfl="0.976" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.6494</Lap>
+<Lap num="4" p="3" et="451.3201" s1="23.3427" s2="39.0704" s3="46.6181" topspeed="263.96" fuel="0.259" fuelUsed="0.024" ve="0.361" veUsed="0.035" twfl="0.969" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.0312</Lap>
+<Lap num="5" p="3" et="560.3401" s1="23.3524" s2="38.5468" s3="46.6498" topspeed="263.96" fuel="0.239" fuelUsed="0.020" ve="0.329" veUsed="0.031" twfl="0.961" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.5491</Lap>
+<Lap num="6" p="2" et="668.8999" s1="23.4434" topspeed="263.51" fuel="0.216" fuelUsed="0.024" ve="0.298" veUsed="0.031" twfl="0.953" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.7762</Lap>
+<Lap num="7" p="2" et="779.6799" s1="23.2360" s2="38.7217" s3="47.2121" topspeed="263.51" fuel="0.196" fuelUsed="0.020" ve="0.267" veUsed="0.031" twfl="0.945" twfr="0.957" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.1698</Lap>
+<Lap num="8" p="2" et="888.8401" s1="23.4130" s2="39.5193" s3="48.3503" topspeed="263.06" fuel="0.173" fuelUsed="0.024" ve="0.231" veUsed="0.035" twfl="0.941" twfr="0.953" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.2827</Lap>
+<Lap num="9" p="3" et="1000.1201" s1="23.6658" s2="39.7342" s3="47.4866" topspeed="263.06" fuel="0.149" fuelUsed="0.024" ve="0.200" veUsed="0.031" twfl="0.933" twfr="0.949" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.8866</Lap>
+<Lap num="10" p="4" et="1111.0000" s1="23.6963" s2="39.3296" s3="48.7985" topspeed="263.06" fuel="0.129" fuelUsed="0.020" ve="0.169" veUsed="0.031" twfl="0.929" twfr="0.945" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.8243</Lap>
+<Lap num="11" p="4" et="1222.8401" s1="23.8097" s2="39.2137" s3="47.5487" topspeed="261.71" fuel="0.106" fuelUsed="0.024" ve="0.137" veUsed="0.031" twfl="0.922" twfr="0.937" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.5721</Lap>
+<BestLapTime>108.5491</BestLapTime>
+<FinishTime>1215.8774</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>patrice rizzi</Name>
+<Connected>1</Connected>
+<VehFile>60_25_PROTA8B000C7.VEH</VehFile>
+<UpgradeCode>42080200 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2025 #60:ELMS</VehName>
+<Category>ELMS 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Proton Competition 2025 #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>6</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="117.5225" s1="29.9443" s2="39.1589" s3="46.8286" topspeed="249.54" fuel="0.388" fuelUsed="0.112" ve="0.498" veUsed="0.043" twfl="0.973" twfr="0.980" twrl="0.984" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.9317</Lap>
+<Lap num="2" p="4" et="233.4600" s1="23.5528" s2="39.7095" s3="46.8629" topspeed="260.80" fuel="0.365" fuelUsed="0.024" ve="0.463" veUsed="0.035" twfl="0.969" twfr="0.973" twrl="0.980" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1252</Lap>
+<Lap num="3" p="4" et="343.5801" s1="24.9492" s2="39.2525" topspeed="259.90" fuel="0.341" fuelUsed="0.024" ve="0.431" veUsed="0.031" twfl="0.961" twfr="0.969" twrl="0.976" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="4" et="454.6399" s1="23.0203" s2="39.5078" s3="46.5765" topspeed="261.26" fuel="0.318" fuelUsed="0.024" ve="0.396" veUsed="0.035" twfl="0.953" twfr="0.961" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.1047</Lap>
+<Lap num="5" p="7" et="563.7400" s1="32.5590" s2="39.8002" s3="47.0867" topspeed="260.35" fuel="0.290" fuelUsed="0.027" ve="0.365" veUsed="0.031" twfl="0.945" twfr="0.957" twrl="0.957" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.4459</Lap>
+<Lap num="6" p="7" et="683.1799" s1="24.0622" s2="39.2993" s3="46.7977" topspeed="260.35" fuel="0.267" fuelUsed="0.024" ve="0.329" veUsed="0.035" twfl="0.937" twfr="0.953" twrl="0.953" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1591</Lap>
+<Lap num="7" p="7" et="793.3401" s1="23.3057" s2="38.9440" s3="47.1777" topspeed="260.80" fuel="0.243" fuelUsed="0.024" ve="0.294" veUsed="0.035" twfl="0.929" twfr="0.945" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.4274</Lap>
+<Lap num="8" p="6" et="902.7800" s1="23.5533" s2="39.4209" s3="46.8602" topspeed="259.90" fuel="0.216" fuelUsed="0.027" ve="0.263" veUsed="0.031" twfl="0.922" twfr="0.937" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.8344</Lap>
+<Lap num="9" p="6" et="1012.6001" s1="23.5937" s2="38.6707" s3="47.8379" topspeed="260.35" fuel="0.192" fuelUsed="0.024" ve="0.231" veUsed="0.031" twfl="0.918" twfr="0.933" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1022</Lap>
+<Lap num="10" p="6" et="1122.7200" s1="23.6785" s2="41.0176" s3="47.1425" topspeed="260.80" fuel="0.169" fuelUsed="0.024" ve="0.196" veUsed="0.035" twfl="0.910" twfr="0.929" twrl="0.937" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.8385</Lap>
+<Lap num="11" p="6" et="1234.5601" s1="23.7151" s2="38.9622" s3="47.4209" topspeed="260.35" fuel="0.145" fuelUsed="0.024" ve="0.165" veUsed="0.031" twfl="0.906" twfr="0.925" twrl="0.933" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0981</Lap>
+<BestLapTime>109.1047</BestLapTime>
+<FinishTime>1227.1174</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>francesco cimnelli</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>9</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="117.5225" s1="30.7860" s2="39.3532" s3="47.1219" topspeed="251.80" fuel="0.369" fuelUsed="0.131" ve="0.518" veUsed="0.043" twfl="0.957" twfr="0.965" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.2611</Lap>
+<Lap num="2" p="5" et="234.8000" s1="23.3205" s2="38.9117" s3="46.9982" topspeed="263.06" fuel="0.345" fuelUsed="0.024" ve="0.486" veUsed="0.031" twfl="0.945" twfr="0.953" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.2303</Lap>
+<Lap num="3" p="10" et="344.0200" s1="34.5233" s2="39.3585" topspeed="265.31" fuel="0.322" fuelUsed="0.024" ve="0.451" veUsed="0.035" twfl="0.914" twfr="0.941" twrl="0.898" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="11" et="465.7000" s1="23.2159" s2="47.9733" s3="47.1915" topspeed="263.51" fuel="0.298" fuelUsed="0.024" ve="0.416" veUsed="0.035" twfl="0.894" twfr="0.929" twrl="0.863" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.3807</Lap>
+<Lap num="5" p="11" et="584.1001" topspeed="263.51" fuel="0.275" fuelUsed="0.024" ve="0.380" veUsed="0.035" twfl="0.882" twfr="0.918" twrl="0.859" twrr="0.898" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="11" et="693.8401" topspeed="263.06" fuel="0.251" fuelUsed="0.024" ve="0.345" veUsed="0.035" twfl="0.871" twfr="0.910" twrl="0.851" twrr="0.894" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.5751</Lap>
+<Lap num="7" p="10" et="803.4199" s1="24.0154" s2="39.4995" s3="47.0415" topspeed="263.96" fuel="0.227" fuelUsed="0.024" ve="0.310" veUsed="0.035" twfl="0.859" twfr="0.898" twrl="0.847" twrr="0.886" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.5565</Lap>
+<Lap num="8" p="10" et="913.9800" s1="23.1521" s2="38.8084" s3="48.1825" topspeed="263.06" fuel="0.204" fuelUsed="0.024" ve="0.278" veUsed="0.031" twfl="0.847" twfr="0.886" twrl="0.843" twrr="0.882" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1430</Lap>
+<Lap num="9" p="9" et="1024.1201" s1="24.8329" s2="39.3983" s3="47.5969" topspeed="262.61" fuel="0.180" fuelUsed="0.024" ve="0.243" veUsed="0.035" twfl="0.839" twfr="0.878" twrl="0.835" twrr="0.878" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.8281</Lap>
+<Lap num="10" p="9" et="1135.9399" topspeed="263.51" fuel="0.157" fuelUsed="0.024" ve="0.208" veUsed="0.035" twfl="0.820" twfr="0.867" twrl="0.831" twrr="0.871" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="9" et="1245.8401" topspeed="262.16" fuel="0.133" fuelUsed="0.024" ve="0.173" veUsed="0.035" twfl="0.804" twfr="0.855" twrl="0.824" twrr="0.863" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.5938</Lap>
+<BestLapTime>109.2303</BestLapTime>
+<FinishTime>1237.8974</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Angelo Montebovi</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>13</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="117.5225" s1="41.6804" s2="39.5758" s3="46.9112" topspeed="252.70" fuel="0.682" fuelUsed="-0.182" ve="0.961" veUsed="0.039" twfl="0.976" twfr="0.988" twrl="0.957" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.1674</Lap>
+<Lap num="2" p="14" et="245.7000" s1="40.9198" s2="39.7776" s3="46.6880" topspeed="261.71" fuel="0.659" fuelUsed="0.024" ve="0.929" veUsed="0.031" twfl="0.969" twfr="0.973" twrl="0.945" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.3854</Lap>
+<Lap num="3" p="13" et="373.0801" s1="23.2763" s2="39.3778" s3="46.8036" topspeed="260.35" fuel="0.635" fuelUsed="0.024" ve="0.894" veUsed="0.035" twfl="0.961" twfr="0.965" twrl="0.941" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.4578</Lap>
+<Lap num="4" p="13" et="482.5400" s1="23.2311" s2="39.3919" s3="46.7333" topspeed="261.26" fuel="0.612" fuelUsed="0.024" ve="0.859" veUsed="0.035" twfl="0.953" twfr="0.957" twrl="0.937" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.3563</Lap>
+<Lap num="5" p="13" et="591.8999" s1="23.0746" s2="51.9727" s3="46.4424" topspeed="260.80" fuel="0.588" fuelUsed="0.024" ve="0.827" veUsed="0.031" twfl="0.941" twfr="0.953" twrl="0.898" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.4897</Lap>
+<Lap num="6" p="13" et="713.3799" s1="23.0471" s2="39.0205" s3="54.3845" topspeed="260.80" fuel="0.565" fuelUsed="0.024" ve="0.792" veUsed="0.035" twfl="0.918" twfr="0.941" twrl="0.855" twrr="0.910" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">116.4521</Lap>
+<Lap num="7" p="13" et="829.8401" s1="23.4227" s2="49.0174" s3="47.3501" topspeed="259.00" fuel="0.541" fuelUsed="0.024" ve="0.757" veUsed="0.035" twfl="0.875" twfr="0.925" twrl="0.788" twrr="0.882" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.7902</Lap>
+<Lap num="8" p="13" et="949.6399" s1="23.6503" s2="39.3496" s3="47.2493" topspeed="260.35" fuel="0.518" fuelUsed="0.024" ve="0.725" veUsed="0.031" twfl="0.867" twfr="0.922" twrl="0.784" twrr="0.878" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.2492</Lap>
+<Lap num="9" p="13" et="1059.8799" s1="23.8177" s2="39.4512" s3="46.9849" topspeed="260.80" fuel="0.498" fuelUsed="0.020" ve="0.690" veUsed="0.035" twfl="0.863" twfr="0.914" twrl="0.780" twrr="0.875" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.2538</Lap>
+<Lap num="10" p="11" et="1170.1399" s1="23.4136" s2="40.3340" s3="47.6416" topspeed="260.35" fuel="0.475" fuelUsed="0.024" ve="0.659" veUsed="0.031" twfl="0.855" twfr="0.910" twrl="0.776" twrr="0.871" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.3892</Lap>
+<Lap num="11" p="13" et="1281.5200" s1="23.3165" s2="39.4879" s3="55.3036" topspeed="260.80" fuel="0.451" fuelUsed="0.024" ve="0.624" veUsed="0.035" twfl="0.804" twfr="0.894" twrl="0.718" twrr="0.839" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.1080</Lap>
+<BestLapTime>109.3563</BestLapTime>
+<FinishTime>1282.1174</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Jordon Sendall</Name>
+<Connected>1</Connected>
+<VehFile>54_25_AFCO859850D7.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>Vista AF Corse 2025 #54:LM</VehName>
+<Category>WEC 2025, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Vista AF Corse 2025 #54</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>5</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="117.5225" s1="31.3626" s2="39.6980" s3="46.9998" topspeed="251.35" fuel="0.310" fuelUsed="0.190" ve="0.427" veUsed="0.043" twfl="0.996" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.0604</Lap>
+<Lap num="2" p="6" et="235.6001" s1="23.2914" s2="39.3546" topspeed="260.80" fuel="0.286" fuelUsed="0.024" ve="0.396" veUsed="0.031" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="5" et="344.7800" s1="24.1414" s2="39.4182" s3="46.5050" topspeed="260.80" fuel="0.263" fuelUsed="0.024" ve="0.361" veUsed="0.035" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0645</Lap>
+<Lap num="4" p="5" et="454.8401" s1="23.6122" s2="39.3704" s3="46.6310" topspeed="263.06" fuel="0.239" fuelUsed="0.024" ve="0.325" veUsed="0.035" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.6137</Lap>
+<Lap num="5" p="4" et="564.4600" s1="23.8465" s2="39.0100" s3="49.2560" topspeed="262.61" fuel="0.216" fuelUsed="0.024" ve="0.290" veUsed="0.035" twfl="0.965" twfr="0.973" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.1125</Lap>
+<Lap num="6" p="6" et="676.5601" s1="28.1323" s2="39.3818" s3="46.4250" topspeed="261.71" fuel="0.192" fuelUsed="0.024" ve="0.259" veUsed="0.031" twfl="0.949" twfr="0.965" twrl="0.961" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.9391</Lap>
+<Lap num="7" p="6" et="790.5000" topspeed="262.61" fuel="0.169" fuelUsed="0.024" ve="0.224" veUsed="0.035" twfl="0.937" twfr="0.957" twrl="0.957" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="5" et="899.3201" topspeed="261.71" fuel="0.145" fuelUsed="0.024" ve="0.188" veUsed="0.035" twfl="0.925" twfr="0.949" twrl="0.953" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.5048</Lap>
+<Lap num="9" p="5" et="1010.8201" s1="22.9990" s2="40.4899" s3="47.4248" topspeed="261.71" fuel="0.122" fuelUsed="0.024" ve="0.157" veUsed="0.031" twfl="0.910" twfr="0.941" twrl="0.945" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.9137</Lap>
+<Lap num="10" p="5" et="1121.7400" s1="23.6208" s2="39.1649" s3="47.5316" topspeed="258.10" fuel="0.094" fuelUsed="0.027" ve="0.122" veUsed="0.035" twfl="0.886" twfr="0.929" twrl="0.941" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.3174</Lap>
+<Lap num="11" p="5" et="1232.0400" s1="23.2623" s2="39.1653" s3="46.9813" topspeed="259.00" fuel="0.071" fuelUsed="0.024" ve="0.086" veUsed="0.035" twfl="0.871" twfr="0.922" twrl="0.933" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.4089</Lap>
+<BestLapTime>109.4089</BestLapTime>
+<FinishTime>1223.9375</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>William de Ghooien</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>12</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="117.5225" s1="35.2090" s2="41.3010" s3="48.0144" topspeed="251.35" fuel="0.216" fuelUsed="0.284" ve="0.302" veUsed="0.039" twfl="0.976" twfr="0.980" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.5244</Lap>
+<Lap num="2" p="11" et="242.0601" s1="24.1884" s2="39.9366" topspeed="261.71" fuel="0.192" fuelUsed="0.024" ve="0.271" veUsed="0.031" twfl="0.973" twfr="0.973" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="11" et="353.9199" s1="23.8812" s2="39.7359" s3="48.9697" topspeed="261.26" fuel="0.169" fuelUsed="0.024" ve="0.239" veUsed="0.031" twfl="0.965" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.5869</Lap>
+<Lap num="4" p="10" et="466.5200" s1="22.9095" s2="39.5008" s3="47.1011" topspeed="262.61" fuel="0.149" fuelUsed="0.020" ve="0.204" veUsed="0.035" twfl="0.961" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.5114</Lap>
+<Lap num="5" p="10" et="576.0200" s1="23.6986" s2="40.3473" s3="47.4917" topspeed="263.96" fuel="0.125" fuelUsed="0.024" ve="0.173" veUsed="0.031" twfl="0.953" twfr="0.957" twrl="0.965" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.5376</Lap>
+<Lap num="6" p="9" et="687.5601" s1="24.0630" s2="39.7281" s3="47.2747" topspeed="254.95" fuel="0.102" fuelUsed="0.024" ve="0.141" veUsed="0.031" twfl="0.949" twfr="0.949" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.0658</Lap>
+<Lap num="7" p="11" et="798.6201" s1="32.1641" s2="39.0583" s3="47.7057" topspeed="263.51" fuel="0.078" fuelUsed="0.024" ve="0.106" veUsed="0.035" twfl="0.941" twfr="0.941" twrl="0.945" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.9282</Lap>
+<Lap num="8" p="11" et="917.5601" s1="23.4845" s2="39.4464" s3="47.4957" topspeed="262.61" fuel="0.059" fuelUsed="0.020" ve="0.075" veUsed="0.031" twfl="0.933" twfr="0.937" twrl="0.941" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.4265</Lap>
+<Lap num="9" p="11" et="1027.9800" s1="24.1669" s2="39.0953" s3="75.9517" topspeed="263.06" fuel="0.141" fuelUsed="-0.082" ve="0.200" veUsed="-0.125" twfl="0.929" twfr="0.929" twrl="0.929" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">139.2139</Lap>
+<Lap num="10" p="13" et="1167.2000" s1="33.8538" s2="38.8994" s3="47.1726" topspeed="251.35" fuel="0.118" fuelUsed="0.024" ve="0.165" veUsed="0.035" twfl="0.922" twfr="0.922" twrl="0.922" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.9258</Lap>
+<Lap num="11" p="12" et="1287.1201" s1="24.0754" s2="39.2069" s3="47.2795" topspeed="262.61" fuel="0.094" fuelUsed="0.024" ve="0.129" veUsed="0.035" twfl="0.914" twfr="0.918" twrl="0.918" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.5619</Lap>
+<BestLapTime>109.5114</BestLapTime>
+<FinishTime>1280.1574</FinishTime>
+<Laps>11</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Matej Kristofik</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>United Autosports 2024 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>8</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="117.5225" s1="31.9121" s2="39.4333" s3="47.1768" topspeed="251.80" fuel="0.682" fuelUsed="-0.182" ve="0.965" veUsed="0.035" twfl="0.961" twfr="0.965" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.5222</Lap>
+<Lap num="2" p="7" et="236.0601" s1="24.2017" s2="39.1767" s3="46.7401" topspeed="263.96" fuel="0.659" fuelUsed="0.024" ve="0.929" veUsed="0.035" twfl="0.953" twfr="0.957" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1185</Lap>
+<Lap num="3" p="6" et="346.1799" s1="23.7880" s2="39.6415" topspeed="261.71" fuel="0.635" fuelUsed="0.024" ve="0.894" veUsed="0.035" twfl="0.941" twfr="0.949" twrl="0.965" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="6" et="456.9399" s1="23.6563" s2="39.7270" s3="46.7963" topspeed="261.26" fuel="0.616" fuelUsed="0.020" ve="0.863" veUsed="0.031" twfl="0.933" twfr="0.941" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1796</Lap>
+<Lap num="5" p="5" et="567.1201" s1="23.8110" s2="39.8218" s3="47.5742" topspeed="262.16" fuel="0.592" fuelUsed="0.024" ve="0.831" veUsed="0.031" twfl="0.922" twfr="0.933" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.2070</Lap>
+<Lap num="6" p="5" et="678.3401" s1="23.9807" s2="39.5868" s3="47.3396" topspeed="261.71" fuel="0.569" fuelUsed="0.024" ve="0.796" veUsed="0.035" twfl="0.910" twfr="0.925" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.9071</Lap>
+<Lap num="7" p="5" et="789.2400" s1="23.5322" s2="38.9391" s3="47.5353" topspeed="262.16" fuel="0.545" fuelUsed="0.024" ve="0.761" veUsed="0.035" twfl="0.902" twfr="0.918" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0067</Lap>
+<Lap num="8" p="7" et="899.2400" topspeed="261.26" fuel="0.522" fuelUsed="0.024" ve="0.725" veUsed="0.035" twfl="0.859" twfr="0.898" twrl="0.875" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.2225</Lap>
+<Lap num="9" p="7" et="1018.4600" s1="23.9163" s2="39.2283" s3="46.9507" topspeed="261.71" fuel="0.502" fuelUsed="0.020" ve="0.694" veUsed="0.031" twfl="0.851" twfr="0.894" twrl="0.871" twrr="0.914" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0952</Lap>
+<Lap num="10" p="7" et="1128.5601" s1="23.6364" s2="39.0856" s3="47.0332" topspeed="261.71" fuel="0.478" fuelUsed="0.024" ve="0.659" veUsed="0.035" twfl="0.839" twfr="0.886" twrl="0.863" twrr="0.906" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">109.7551</Lap>
+<Lap num="11" p="8" et="1238.3201" topspeed="262.16" fuel="0.455" fuelUsed="0.024" ve="0.627" veUsed="0.031" twfl="0.827" twfr="0.875" twrl="0.824" twrr="0.855" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.5608</Lap>
+<BestLapTime>109.7551</BestLapTime>
+<FinishTime>1236.3574</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>hugo radreau</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>Inception Racing 2024 #70</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>14</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="117.5225" s1="38.0944" s2="40.1229" s3="176.1632" topspeed="212.16" fuel="0.349" fuelUsed="0.151" ve="0.494" veUsed="0.027" twfl="0.996" twfr="0.996" twrl="0.992" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">254.3805</Lap>
+<Lap num="2" p="14" et="371.9199" s1="33.9471" s2="40.0693" s3="47.3692" topspeed="249.54" fuel="0.325" fuelUsed="0.024" ve="0.463" veUsed="0.031" twfl="0.988" twfr="0.992" twrl="0.988" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.3856</Lap>
+<Lap num="3" p="14" et="493.3000" s1="23.6588" s2="39.6235" s3="47.7880" topspeed="260.35" fuel="0.302" fuelUsed="0.024" ve="0.431" veUsed="0.031" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.0703</Lap>
+<Lap num="4" p="14" et="604.3601" s1="23.8884" s2="47.6235" s3="138.8538" topspeed="255.85" fuel="0.286" fuelUsed="0.016" ve="0.408" veUsed="0.024" twfl="0.937" twfr="0.973" twrl="0.945" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">210.3658</Lap>
+<Lap num="5" p="14" et="814.7400" s1="34.4954" s2="40.0096" s3="47.5352" topspeed="248.64" fuel="0.263" fuelUsed="0.024" ve="0.373" veUsed="0.035" twfl="0.933" twfr="0.969" twrl="0.941" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">122.0402</Lap>
+<Lap num="6" p="14" et="936.7800" s1="23.7629" s2="39.1126" s3="47.3827" topspeed="258.55" fuel="0.239" fuelUsed="0.024" ve="0.341" veUsed="0.031" twfl="0.929" twfr="0.965" twrl="0.937" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.2582</Lap>
+<Lap num="7" p="14" et="1047.0400" s1="23.6130" s2="39.2229" s3="47.1797" topspeed="259.45" fuel="0.220" fuelUsed="0.020" ve="0.310" veUsed="0.031" twfl="0.922" twfr="0.961" twrl="0.933" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.0156</Lap>
+<Lap num="8" p="14" et="1157.0400" s1="23.5806" s2="40.2950" topspeed="261.71" fuel="0.196" fuelUsed="0.024" ve="0.278" veUsed="0.031" twfl="0.914" twfr="0.953" twrl="0.929" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="14" et="1268.5200" s1="23.8239" s2="39.5643" s3="46.9487" topspeed="249.54" fuel="0.176" fuelUsed="0.020" ve="0.247" veUsed="0.031" twfl="0.906" twfr="0.949" twrl="0.925" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.3369</Lap>
+<BestLapTime>110.0156</BestLapTime>
+<FinishTime>1261.3376</FinishTime>
+<Laps>9</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>P-A Fugeekies</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>7</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="117.5225" s1="34.0049" s2="40.9006" s3="48.7180" topspeed="248.70" fuel="0.337" fuelUsed="0.024" ve="0.475" veUsed="0.035" twfl="0.976" twfr="0.976" twrl="0.984" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.6236</Lap>
+<Lap num="2" p="10" et="241.1461" s1="24.2748" s2="39.9143" s3="46.7661" topspeed="252.70" fuel="0.314" fuelUsed="0.024" ve="0.443" veUsed="0.031" twfl="0.969" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.9552</Lap>
+<Lap num="3" p="8" et="352.1013" s1="24.7351" s2="39.9102" topspeed="262.61" fuel="0.294" fuelUsed="0.020" ve="0.412" veUsed="0.031" twfl="0.957" twfr="0.961" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="9" et="464.2830" s1="24.0547" s2="39.7345" s3="47.5192" topspeed="262.61" fuel="0.271" fuelUsed="0.024" ve="0.380" veUsed="0.031" twfl="0.949" twfr="0.953" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.3085</Lap>
+<Lap num="5" p="8" et="575.5914" s1="23.6996" s2="39.7001" s3="47.3756" topspeed="261.87" fuel="0.251" fuelUsed="0.020" ve="0.349" veUsed="0.031" twfl="0.933" twfr="0.941" twrl="0.961" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.7753</Lap>
+<Lap num="6" p="8" et="686.3668" topspeed="260.35" fuel="0.227" fuelUsed="0.024" ve="0.318" veUsed="0.031" twfl="0.922" twfr="0.929" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="8" et="796.0630" s1="23.4786" s2="39.8287" s3="47.6094" topspeed="261.71" fuel="0.208" fuelUsed="0.020" ve="0.282" veUsed="0.035" twfl="0.910" twfr="0.922" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.9167</Lap>
+<Lap num="8" p="8" et="906.9798" s1="23.4782" s2="39.6990" s3="48.6090" topspeed="261.44" fuel="0.184" fuelUsed="0.024" ve="0.251" veUsed="0.031" twfl="0.898" twfr="0.910" twrl="0.945" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.7862</Lap>
+<Lap num="9" p="8" et="1018.7660" topspeed="263.09" fuel="0.161" fuelUsed="0.024" ve="0.220" veUsed="0.031" twfl="0.886" twfr="0.902" twrl="0.941" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.1047</Lap>
+<Lap num="10" p="8" et="1129.8707" topspeed="262.83" fuel="0.141" fuelUsed="0.020" ve="0.184" veUsed="0.035" twfl="0.875" twfr="0.886" twrl="0.937" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.5558</Lap>
+<Lap num="11" p="7" et="1240.4265" s1="23.1765" s2="39.8280" s3="48.4144" topspeed="262.67" fuel="0.118" fuelUsed="0.024" ve="0.153" veUsed="0.031" twfl="0.859" twfr="0.875" twrl="0.933" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.4189</Lap>
+<BestLapTime>110.5558</BestLapTime>
+<FinishTime>1234.3230</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Diego Ruiz29</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>10</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="117.5225" s1="34.5435" s2="41.0044" s3="48.0589" topspeed="250.44" fuel="0.325" fuelUsed="0.175" ve="0.459" veUsed="0.043" twfl="0.949" twfr="0.961" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.6067</Lap>
+<Lap num="2" p="9" et="241.1399" s1="23.9415" s2="39.9308" s3="47.0214" topspeed="261.71" fuel="0.302" fuelUsed="0.024" ve="0.427" veUsed="0.031" twfl="0.929" twfr="0.953" twrl="0.969" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.8938</Lap>
+<Lap num="3" p="9" et="352.0400" s1="24.4891" s2="39.6529" topspeed="263.06" fuel="0.278" fuelUsed="0.024" ve="0.392" veUsed="0.035" twfl="0.914" twfr="0.941" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="8" et="464.3999" s1="23.9073" s2="39.4514" s3="47.5179" topspeed="258.10" fuel="0.259" fuelUsed="0.020" ve="0.361" veUsed="0.031" twfl="0.898" twfr="0.929" twrl="0.957" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.8766</Lap>
+<Lap num="5" p="9" et="575.2800" s1="23.9673" s2="40.1232" topspeed="262.16" fuel="0.235" fuelUsed="0.024" ve="0.325" veUsed="0.035" twfl="0.878" twfr="0.914" twrl="0.953" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="10" et="687.2000" topspeed="261.26" fuel="0.212" fuelUsed="0.024" ve="0.290" veUsed="0.035" twfl="0.859" twfr="0.902" twrl="0.949" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="9" et="799.0200" s1="23.7789" s2="39.6743" s3="49.5452" topspeed="263.96" fuel="0.188" fuelUsed="0.024" ve="0.259" veUsed="0.031" twfl="0.839" twfr="0.894" twrl="0.941" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.9984</Lap>
+<Lap num="8" p="9" et="912.0200" s1="23.8779" s2="39.7962" s3="48.2433" topspeed="250.44" fuel="0.165" fuelUsed="0.024" ve="0.227" veUsed="0.031" twfl="0.824" twfr="0.882" twrl="0.937" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.9174</Lap>
+<Lap num="9" p="10" et="1023.9399" s1="24.9034" s2="40.4091" s3="48.7241" topspeed="261.71" fuel="0.145" fuelUsed="0.020" ve="0.192" veUsed="0.035" twfl="0.808" twfr="0.871" twrl="0.933" twrr="0.933" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.0366</Lap>
+<Lap num="10" p="10" et="1137.9600" s1="24.3822" s2="40.5750" s3="49.2167" topspeed="262.16" fuel="0.122" fuelUsed="0.024" ve="0.161" veUsed="0.031" twfl="0.796" twfr="0.863" twrl="0.929" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.1738</Lap>
+<Lap num="11" p="10" et="1252.1399" s1="24.0900" s2="41.4886" s3="50.9514" topspeed="262.61" fuel="0.098" fuelUsed="0.024" ve="0.125" veUsed="0.035" twfl="0.788" twfr="0.855" twrl="0.925" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">116.5300</Lap>
+<BestLapTime>110.8766</BestLapTime>
+<FinishTime>1251.1574</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Oliwier Tomaszewski</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>11</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="117.5225" s1="33.1791" s2="44.5823" s3="49.0215" topspeed="245.04" fuel="0.678" fuelUsed="-0.178" ve="0.961" veUsed="0.039" twfl="0.961" twfr="0.965" twrl="0.965" twrr="0.949" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.7829</Lap>
+<Lap num="2" p="13" et="244.3201" s1="33.4037" s2="40.1947" s3="48.3617" topspeed="256.75" fuel="0.655" fuelUsed="0.024" ve="0.925" veUsed="0.035" twfl="0.945" twfr="0.933" twrl="0.914" twrr="0.882" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.9601</Lap>
+<Lap num="3" p="12" et="366.2800" s1="23.8314" s2="40.4234" s3="48.5396" topspeed="251.80" fuel="0.631" fuelUsed="0.024" ve="0.890" veUsed="0.035" twfl="0.937" twfr="0.925" twrl="0.910" twrr="0.878" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.7943</Lap>
+<Lap num="4" p="12" et="479.0601" s1="23.7462" s2="39.6906" s3="48.0251" topspeed="252.25" fuel="0.604" fuelUsed="0.027" ve="0.851" veUsed="0.039" twfl="0.925" twfr="0.918" twrl="0.902" twrr="0.871" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.4620</Lap>
+<Lap num="5" p="12" et="590.5400" s1="23.7560" s2="39.6505" s3="48.3079" topspeed="258.55" fuel="0.580" fuelUsed="0.024" ve="0.816" veUsed="0.035" twfl="0.914" twfr="0.910" twrl="0.898" twrr="0.867" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">111.7145</Lap>
+<Lap num="6" p="12" et="702.2400" s1="23.9199" s2="41.1197" s3="48.0966" topspeed="252.70" fuel="0.557" fuelUsed="0.024" ve="0.784" veUsed="0.031" twfl="0.906" twfr="0.902" twrl="0.894" twrr="0.863" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.1362</Lap>
+<Lap num="7" p="12" et="815.3799" s1="23.7404" s2="49.9454" s3="50.3607" topspeed="251.35" fuel="0.533" fuelUsed="0.024" ve="0.749" veUsed="0.035" twfl="0.890" twfr="0.890" twrl="0.863" twrr="0.824" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">124.0464</Lap>
+<Lap num="8" p="12" et="939.4199" s1="25.0001" s2="40.7997" s3="48.8745" topspeed="242.79" fuel="0.510" fuelUsed="0.024" ve="0.718" veUsed="0.031" twfl="0.882" twfr="0.882" twrl="0.859" twrr="0.820" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.6743</Lap>
+<Lap num="9" p="12" et="1054.1001" s1="24.2091" s2="42.3027" s3="48.3053" topspeed="239.63" fuel="0.490" fuelUsed="0.020" ve="0.682" veUsed="0.035" twfl="0.871" twfr="0.878" twrl="0.851" twrr="0.816" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.8171</Lap>
+<Lap num="10" p="12" et="1168.9199" s1="24.0861" s2="40.8950" s3="48.9691" topspeed="249.54" fuel="0.467" fuelUsed="0.024" ve="0.651" veUsed="0.031" twfl="0.859" twfr="0.871" twrl="0.847" twrr="0.808" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.9502</Lap>
+<Lap num="11" p="11" et="1282.8799" s1="23.9971" s2="40.8918" s3="48.2400" topspeed="250.44" fuel="0.443" fuelUsed="0.024" ve="0.616" veUsed="0.035" twfl="0.851" twfr="0.863" twrl="0.843" twrr="0.804" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.1289</Lap>
+<BestLapTime>111.4620</BestLapTime>
+<FinishTime>1278.4775</FinishTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,AutoShift=3,Steering=1,Braking=2,Clutch,Opposite,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Noah lav</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>15</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="117.5225" s1="32.4447" s2="41.4207" s3="46.6047" topspeed="251.80" fuel="0.333" fuelUsed="0.167" ve="0.471" veUsed="0.039" twfl="0.969" twfr="0.961" twrl="0.941" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">120.4701</Lap>
+<Lap num="2" p="12" et="238.0000" s1="36.2361" s2="38.7769" topspeed="262.61" fuel="0.310" fuelUsed="0.024" ve="0.439" veUsed="0.031" twfl="0.937" twfr="0.949" twrl="0.902" twrr="0.918" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>120.4701</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Matthieu GERBE</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>Inception Racing 2024 #70</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>16</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="117.5225" s1="32.2727" s2="41.3301" s3="47.6318" topspeed="250.90" fuel="0.580" fuelUsed="-0.080" ve="0.820" veUsed="0.039" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.2346</Lap>
+<BestLapTime>121.2346</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Joseph Goldstein</Name>
+<Connected>1</Connected>
+<VehFile>95_25_UNIT382AB771.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #95:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>United Autosports 2025 #95</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>18</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Alexander Froeschke</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>19</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Izan Gonzalez</Name>
+<Connected>1</Connected>
+<VehFile>50_25_AFCO4C7FFF1A.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>Richard Mille AF Corse 2025 #50:ELMS</VehName>
+<Category>ELMS 2025, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Richard Mille AF Corse 2025 #50</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>20</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Pat Cow Boy</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>84100400 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>United Autosports 2024 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>17</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DQ</FinishStatus>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

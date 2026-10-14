@@ -1,0 +1,890 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1754506845</DateTime>
+<TimeString>2025/08/06 21:00:45</TimeString>
+<TrackVenue>Autodromo Nazionale Monza</TrackVenue>
+<TrackCourse>Autodromo Nazionale Monza</TrackCourse>
+<TrackEvent>6 Hours of Monza</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Monza_2023\1.19\layoutMonza.mas</TrackData>
+<TrackLength>5780.6</TrackLength>
+<GameVersion>1.0110</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Aston_Martin_Vantage_AMR,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<LimitedTires>1</LimitedTires>
+<TireWarmers>0</TireWarmers>
+<Qualify>
+<DateTime>1754507027</DateTime>
+<TimeString>2025/08/06 21:03:47</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>5</Minutes>
+<Stream>
+<Sent et="0.0">&quot;Darren Dixon&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Erich Honecker#1150&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Ture Petersson&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;luca stocco&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;jacob Mumm&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Philou Philgood&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;greg pixie&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Kacper Tomalewski&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Marius Brinzan&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Martin Kuchar&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Christian Eng&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Elias Brusius&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;JuanMa Cisneros&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Jackson Neto&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Lefterakis An&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Hunter Crawford&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Anton Sterhov&quot; has taken the wheel.</Sent>
+<Sector et="10.1">Kacper Tomalewski(9) reports new suspension damage</Sector>
+<Incident et="10.2">Kacper Tomalewski(9) reported contact (2974.57) with Immovable</Incident>
+<Penalty et="39.3">Marius Brinzan received Stop/Go penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<TrackLimits Driver="greg pixie" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="39.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Lefterakis An" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="40.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="49.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ture Petersson" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="49.9">No Further Action</TrackLimits>
+<Score et="51.2">Marius Brinzan(0) lap=0 point=1 t=-1.000 et=51.118</Score>
+<Score et="51.2">Marius Brinzan(0) lap=0 point=2 t=-1.000 et=51.118</Score>
+<Score et="51.2">Marius Brinzan(0) lap=1 point=0 t=-1.000 et=51.118</Score>
+<TrackLimits Driver="Christian Eng" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="51.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ture Petersson" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="58.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Erich Honecker#1150" ID="8" Lap="0" WarningPoints="1" CurrentPoints="1" Resolution="3" et="59.9">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="jacob Mumm" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="65.9">No Further Action</TrackLimits>
+<Score et="69.7">Philou Philgood(15) lap=0 point=1 t=-1.000 et=69.620</Score>
+<Score et="71.1">Elias Brusius(2) lap=0 point=1 t=-1.000 et=71.060</Score>
+<Score et="71.1">Christian Eng(7) lap=0 point=1 t=-1.000 et=71.060</Score>
+<Score et="71.8">JuanMa Cisneros(19) lap=0 point=1 t=-1.000 et=71.760</Score>
+<Score et="71.9">greg pixie(18) lap=0 point=1 t=-1.000 et=71.860</Score>
+<Score et="72.0">Jackson Neto(13) lap=0 point=1 t=-1.000 et=71.760</Score>
+<Score et="72.3">Martin Kuchar(1) lap=0 point=1 t=-1.000 et=72.180</Score>
+<Score et="73.1">P-A Fugeekies(3) lap=0 point=1 t=-1.000 et=73.118</Score>
+<Score et="74.3">Ture Petersson(17) lap=0 point=1 t=-1.000 et=74.220</Score>
+<Score et="74.4">Lefterakis An(16) lap=0 point=1 t=-1.000 et=74.360</Score>
+<Score et="75.7">luca stocco(10) lap=0 point=1 t=-1.000 et=75.600</Score>
+<Score et="78.6">Kacper Tomalewski(9) lap=0 point=1 t=-1.000 et=78.480</Score>
+<Score et="79.0">Erich Honecker#1150(8) lap=0 point=1 t=-1.000 et=78.920</Score>
+<Score et="79.6">Darren Dixon(11) lap=0 point=1 t=-1.000 et=79.560</Score>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="80.5">No Further Action</TrackLimits>
+<Score et="82.9">jacob Mumm(4) lap=0 point=1 t=-1.000 et=82.880</Score>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="85.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Darren Dixon" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="86.6">No Further Action</TrackLimits>
+<Score et="87.5">Hunter Crawford(12) lap=0 point=1 t=-1.000 et=87.320</Score>
+<TrackLimits Driver="Christian Eng" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="90.1">No Further Action</TrackLimits>
+<Score et="97.7">PARCE suizo(20) lap=0 point=1 t=-1.000 et=97.620</Score>
+<TrackLimits Driver="Marius Brinzan" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="99.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Eng" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="100.7">No Further Action</TrackLimits>
+<Score et="107.5">Philou Philgood(15) lap=0 point=2 t=-1.000 et=107.460</Score>
+<Score et="110.1">Martin Kuchar(1) lap=0 point=2 t=-1.000 et=110.060</Score>
+<Score et="110.2">Elias Brusius(2) lap=0 point=2 t=-1.000 et=110.120</Score>
+<Score et="110.8">JuanMa Cisneros(19) lap=0 point=2 t=-1.000 et=110.800</Score>
+<Score et="111.0">Jackson Neto(13) lap=0 point=2 t=-1.000 et=110.880</Score>
+<Score et="112.0">P-A Fugeekies(3) lap=0 point=2 t=-1.000 et=112.014</Score>
+<Score et="112.0">greg pixie(18) lap=0 point=2 t=-1.000 et=111.980</Score>
+<Incident et="112.2">Hunter Crawford(12) reported contact (4829.76) with Immovable</Incident>
+<Sector et="112.4">Hunter Crawford(12) reports new suspension damage</Sector>
+<Score et="112.4">Ture Petersson(17) lap=0 point=2 t=-1.000 et=112.400</Score>
+<TrackLimits Driver="Philou Philgood" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="112.6">No Further Action</TrackLimits>
+<Score et="113.0">Lefterakis An(16) lap=0 point=2 t=-1.000 et=112.940</Score>
+<Score et="114.8">luca stocco(10) lap=0 point=2 t=-1.000 et=114.760</Score>
+<Incident et="115.0">Hunter Crawford(12) reported contact (118.38) with Immovable</Incident>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="115.1">No Further Action</TrackLimits>
+<TrackLimits Driver="JuanMa Cisneros" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="116.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Kuchar" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="116.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="116.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Hunter Crawford" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="119.1">No Further Action</TrackLimits>
+<Score et="119.1">Erich Honecker#1150(8) lap=0 point=2 t=-1.000 et=119.060</Score>
+<Score et="119.4">Kacper Tomalewski(9) lap=0 point=2 t=-1.000 et=119.280</Score>
+<Score et="120.8">Marius Brinzan(0) lap=1 point=1 t=-1.000 et=120.760</Score>
+<Score et="121.7">jacob Mumm(4) lap=0 point=2 t=-1.000 et=121.680</Score>
+<Score et="122.1">Christian Eng(7) lap=0 point=2 t=-1.000 et=122.000</Score>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="122.6">No Further Action</TrackLimits>
+<Score et="122.9">Darren Dixon(11) lap=0 point=2 t=-1.000 et=122.860</Score>
+<Score et="123.8">Hunter Crawford(12) lap=0 point=2 t=-1.000 et=123.700</Score>
+<Score et="123.8">Hunter Crawford(12) lap=1 point=0 t=-1.000 et=123.700</Score>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="124.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Erich Honecker#1150" ID="8" Lap="0" WarningPoints="0" CurrentPoints="1" Resolution="5" et="129.3">No Further Action</TrackLimits>
+<Score et="136.4">Anton Sterhov(6) lap=0 point=1 t=-1.000 et=136.260</Score>
+<Score et="136.7">PARCE suizo(20) lap=0 point=2 t=-1.000 et=136.700</Score>
+<Score et="144.7">Philou Philgood(15) lap=1 point=0 t=-1.000 et=144.620</Score>
+<Score et="148.1">Elias Brusius(2) lap=1 point=0 t=-1.000 et=148.080</Score>
+<Score et="149.2">JuanMa Cisneros(19) lap=1 point=0 t=-1.000 et=149.060</Score>
+<Score et="149.7">Ture Petersson(17) lap=1 point=0 t=-1.000 et=149.640</Score>
+<Score et="149.8">P-A Fugeekies(3) lap=1 point=0 t=-1.000 et=149.755</Score>
+<Score et="151.2">greg pixie(18) lap=1 point=0 t=-1.000 et=151.200</Score>
+<Score et="151.3">Lefterakis An(16) lap=1 point=0 t=-1.000 et=151.260</Score>
+<Score et="152.4">Jackson Neto(13) lap=1 point=0 t=-1.000 et=152.240</Score>
+<Score et="152.7">luca stocco(10) lap=1 point=0 t=-1.000 et=152.640</Score>
+<Score et="156.6">Kacper Tomalewski(9) lap=1 point=0 t=-1.000 et=156.580</Score>
+<Score et="157.9">Erich Honecker#1150(8) lap=1 point=0 t=-1.000 et=157.900</Score>
+<Score et="159.1">jacob Mumm(4) lap=1 point=0 t=-1.000 et=159.060</Score>
+<Score et="160.4">Christian Eng(7) lap=1 point=0 t=-1.000 et=160.280</Score>
+<Score et="160.5">Marius Brinzan(0) lap=1 point=2 t=-1.000 et=160.400</Score>
+<Score et="162.9">Darren Dixon(11) lap=1 point=0 t=-1.000 et=162.860</Score>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.1">No Further Action</TrackLimits>
+<TrackLimits Driver="luca stocco" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.7">No Further Action</TrackLimits>
+<Score et="174.8">PARCE suizo(20) lap=1 point=0 t=-1.000 et=174.700</Score>
+<Score et="175.1">Anton Sterhov(6) lap=0 point=2 t=-1.000 et=175.400</Score>
+<TrackLimits Driver="Erich Honecker#1150" ID="8" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="5" et="179.6">No Further Action</TrackLimits>
+<Score et="181.4">Philou Philgood(15) lap=1 point=1 t=36.743 et=181.360</Score>
+<Score et="185.1">Elias Brusius(2) lap=1 point=1 t=36.990 et=185.080</Score>
+<Score et="186.4">JuanMa Cisneros(19) lap=1 point=1 t=37.230 et=186.280</Score>
+<Score et="186.7">P-A Fugeekies(3) lap=1 point=1 t=36.928 et=186.683</Score>
+<Score et="187.0">Ture Petersson(17) lap=1 point=1 t=37.297 et=186.940</Score>
+<Score et="188.9">Hunter Crawford(12) lap=1 point=1 t=-1.000 et=188.840</Score>
+<Score et="189.2">greg pixie(18) lap=1 point=1 t=37.922 et=189.120</Score>
+<Score et="189.2">Lefterakis An(16) lap=1 point=1 t=37.884 et=189.140</Score>
+<Score et="190.9">Jackson Neto(13) lap=1 point=1 t=38.513 et=190.740</Score>
+<Score et="191.0">luca stocco(10) lap=1 point=1 t=38.295 et=190.940</Score>
+<Score et="194.0">Kacper Tomalewski(9) lap=1 point=1 t=37.310 et=193.900</Score>
+<Score et="194.0">Martin Kuchar(1) lap=1 point=0 t=-1.000 et=193.880</Score>
+<Score et="197.0">jacob Mumm(4) lap=1 point=1 t=37.915 et=196.960</Score>
+<Score et="198.1">Christian Eng(7) lap=1 point=1 t=37.809 et=198.080</Score>
+<Score et="200.6">Darren Dixon(11) lap=1 point=1 t=37.655 et=200.500</Score>
+<Score et="202.6">Marius Brinzan(0) lap=2 point=0 t=-1.000 et=202.480</Score>
+<Score et="203.7">Erich Honecker#1150(8) lap=1 point=1 t=45.756 et=203.660</Score>
+<Score et="212.5">PARCE suizo(20) lap=1 point=1 t=37.779 et=212.480</Score>
+<Score et="212.8">Anton Sterhov(6) lap=1 point=0 t=-1.000 et=212.740</Score>
+<Penalty et="217.0">Marius Brinzan served 1st Stop/Go penalty, result: penalties=0, 1st=Stop/Go,10s</Penalty>
+<Sector Driver="Philou Philgood" ID="15" Sector="2" Class="GTE" et="219.3">Philou Philgood(15) set new best for sector 2</Sector>
+<Score et="219.3">Philou Philgood(15) lap=1 point=2 t=74.658 et=219.280</Score>
+<TrackLimits Driver="jacob Mumm" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.3">No Further Action</TrackLimits>
+<Sector Driver="Elias Brusius" ID="2" Sector="2" Class="GTE" et="222.7">Elias Brusius(2) set new best for sector 2</Sector>
+<Score et="222.7">Elias Brusius(2) lap=1 point=2 t=74.605 et=222.700</Score>
+<Score et="224.8">JuanMa Cisneros(19) lap=1 point=2 t=75.684 et=224.740</Score>
+<Score et="225.0">P-A Fugeekies(3) lap=1 point=2 t=75.257 et=225.012</Score>
+<Score et="225.0">Ture Petersson(17) lap=1 point=2 t=75.289 et=224.940</Score>
+<TrackLimits Driver="Philou Philgood" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="225.4">No Further Action</TrackLimits>
+<Score et="227.7">Hunter Crawford(12) lap=1 point=2 t=-1.000 et=227.620</Score>
+<TrackLimits Driver="Darren Dixon" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="228.2">No Further Action</TrackLimits>
+<Score et="228.2">Lefterakis An(16) lap=1 point=2 t=76.830 et=228.100</Score>
+<Score et="228.9">luca stocco(10) lap=1 point=2 t=76.169 et=228.820</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="229.2">No Further Action</TrackLimits>
+<Score et="229.2">greg pixie(18) lap=1 point=2 t=78.008 et=229.200</Score>
+<Score et="229.5">Jackson Neto(13) lap=1 point=2 t=77.173 et=229.400</Score>
+<Score et="231.2">Martin Kuchar(1) lap=1 point=1 t=37.256 et=231.120</Score>
+<Score et="231.7">Kacper Tomalewski(9) lap=1 point=2 t=75.041 et=231.620</Score>
+<TrackLimits Driver="Hunter Crawford" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="233.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="234.2">No Further Action</TrackLimits>
+<Score et="235.8">jacob Mumm(4) lap=1 point=2 t=76.699 et=235.760</Score>
+<Score et="237.5">Christian Eng(7) lap=1 point=2 t=77.137 et=237.420</Score>
+<TrackLimits Driver="luca stocco" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="238.2">No Further Action</TrackLimits>
+<Score et="241.5">Darren Dixon(11) lap=1 point=2 t=78.622 et=241.480</Score>
+<TrackLimits Driver="Martin Kuchar" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="244.2">No Further Action</TrackLimits>
+<Score et="244.2">Erich Honecker#1150(8) lap=1 point=2 t=86.264 et=244.160</Score>
+<Penalty et="249.1">Marius Brinzan received Stop/Go penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<Score et="249.5">Anton Sterhov(6) lap=1 point=1 t=36.756 et=249.500</Score>
+<Score et="251.1">PARCE suizo(20) lap=1 point=2 t=76.375 et=251.060</Score>
+<TrackLimits Driver="Erich Honecker#1150" ID="8" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="5" et="253.9">No Further Action</TrackLimits>
+<Sector Driver="Philou Philgood" ID="15" Sector="3" Class="GTE" et="256.9">Philou Philgood(15) set new best for sector 3</Sector>
+<Score et="257.0">Philou Philgood(15) lap=2 point=0 t=112.284 et=256.900</Score>
+<Sector Driver="Elias Brusius" ID="2" Sector="3" Class="GTE" et="260.3">Elias Brusius(2) set new best for sector 3</Sector>
+<Score et="260.4">Elias Brusius(2) lap=2 point=0 t=112.212 et=260.300</Score>
+<Sector Driver="Ture Petersson" ID="17" Sector="3" Class="GTE" et="262.2">Ture Petersson(17) set new best for sector 3</Sector>
+<Score et="262.2">Ture Petersson(17) lap=2 point=0 t=112.545 et=262.200</Score>
+<Score et="262.4">JuanMa Cisneros(19) lap=2 point=0 t=113.312 et=262.360</Score>
+<Score et="262.8">P-A Fugeekies(3) lap=2 point=0 t=113.066 et=262.821</Score>
+<Sector Driver="luca stocco" ID="10" Sector="3" Class="GTE" et="265.8">luca stocco(10) set new best for sector 3</Sector>
+<Score et="265.8">luca stocco(10) lap=2 point=0 t=113.141 et=265.780</Score>
+<Score et="266.0">Hunter Crawford(12) lap=2 point=0 t=-1.000 et=265.840</Score>
+<Score et="266.2">Lefterakis An(16) lap=2 point=0 t=114.727 et=266.000</Score>
+<Score et="268.4">Jackson Neto(13) lap=2 point=0 t=115.978 et=268.200</Score>
+<Score et="268.6">greg pixie(18) lap=2 point=0 t=117.283 et=268.480</Score>
+<Score et="269.3">Kacper Tomalewski(9) lap=2 point=0 t=112.676 et=269.260</Score>
+<Score et="273.0">jacob Mumm(4) lap=2 point=0 t=113.933 et=272.980</Score>
+<Score et="275.6">Christian Eng(7) lap=2 point=0 t=115.249 et=275.520</Score>
+<Score et="276.2">Martin Kuchar(1) lap=1 point=2 t=82.228 et=276.100</Score>
+<TrackLimits Driver="JuanMa Cisneros" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="280.3">No Further Action</TrackLimits>
+<Score et="280.5">Darren Dixon(11) lap=2 point=0 t=117.612 et=280.460</Score>
+<Score et="282.4">Erich Honecker#1150(8) lap=2 point=0 t=124.484 et=282.380</Score>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="284.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ture Petersson" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="284.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Kuchar" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="285.2">No Further Action</TrackLimits>
+<Sector Driver="Anton Sterhov" ID="6" Sector="2" Class="GTE" et="287.3">Anton Sterhov(6) set new best for sector 2</Sector>
+<Score et="287.3">Anton Sterhov(6) lap=1 point=2 t=74.066 et=286.820</Score>
+<Incident et="287.9">Jackson Neto(13) reported contact (14.45) with Sign</Incident>
+<Score et="288.2">Marius Brinzan(0) lap=2 point=1 t=-1.000 et=288.100</Score>
+<Score et="288.8">PARCE suizo(20) lap=2 point=0 t=114.069 et=288.760</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.2">No Further Action</TrackLimits>
+<Incident et="289.4">Jackson Neto(13) reported contact (135.64) with Sign</Incident>
+<Incident et="290.6">Kacper Tomalewski(9) reported contact (55.28) with Immovable</Incident>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="290.9">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="292.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="292.8">No Further Action</TrackLimits>
+<Sector Driver="Philou Philgood" ID="15" Sector="1" Class="GTE" et="293.6">Philou Philgood(15) set new best for sector 1</Sector>
+<Score et="293.6">Philou Philgood(15) lap=2 point=1 t=36.651 et=293.560</Score>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="295.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Anton Sterhov" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="296.3">No Further Action</TrackLimits>
+<Score et="297.2">Elias Brusius(2) lap=2 point=1 t=36.855 et=297.160</Score>
+<TrackLimits Driver="Marius Brinzan" ID="0" Lap="2" WarningPoints="1.5" CurrentPoints="1.5" Resolution="3" et="297.5">Invalid Lap Cut Track</TrackLimits>
+<Score et="299.8">Ture Petersson(17) lap=2 point=1 t=37.533 et=299.720</Score>
+<Score et="300.5">JuanMa Cisneros(19) lap=2 point=1 t=38.025 et=300.380</Score>
+<Score et="303.1">luca stocco(10) lap=2 point=1 t=37.271 et=303.060</Score>
+<Sector et="303.3">P-A Fugeekies(3) reports new suspension damage</Sector>
+<Incident et="303.4">P-A Fugeekies(3) reported contact (1037.45) with Immovable</Incident>
+<Score et="303.7">Hunter Crawford(12) lap=2 point=1 t=37.649 et=303.480</Score>
+<Score et="304.1">Lefterakis An(16) lap=2 point=1 t=37.949 et=303.940</Score>
+<Score et="306.0">greg pixie(18) lap=2 point=1 t=37.481 et=305.960</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="308.3">No Further Action</TrackLimits>
+<Score et="308.9">Jackson Neto(13) lap=2 point=1 t=40.460 et=308.660</Score>
+<TrackLimits Driver="Hunter Crawford" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="309.3">No Further Action</TrackLimits>
+<Score et="310.7">jacob Mumm(4) lap=2 point=1 t=37.657 et=310.640</Score>
+<Score et="313.4">Christian Eng(7) lap=2 point=1 t=37.764 et=313.300</Score>
+<Score et="313.8">Martin Kuchar(1) lap=2 point=0 t=119.834 et=313.700</Score>
+<Score et="315.3">P-A Fugeekies(3) lap=2 point=1 t=52.489 et=315.309</Score>
+<Score et="315.4">Kacper Tomalewski(9) lap=2 point=1 t=46.019 et=315.280</Score>
+<Score et="318.4">Darren Dixon(11) lap=2 point=1 t=37.895 et=318.360</Score>
+<Score et="320.3">Erich Honecker#1150(8) lap=2 point=1 t=37.860 et=320.240</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="322.8">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="324.1">No Further Action</TrackLimits>
+<Score et="324.8">Anton Sterhov(6) lap=2 point=0 t=111.996 et=324.740</Score>
+<TrackLimits Driver="Ture Petersson" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="324.8">No Further Action</TrackLimits>
+<Score et="326.0">Marius Brinzan(0) lap=2 point=2 t=-1.000 et=326.000</Score>
+<Score et="326.4">PARCE suizo(20) lap=2 point=1 t=37.544 et=326.300</Score>
+<Sector et="328.8">luca stocco(10) reports new suspension damage</Sector>
+<Incident et="328.8">luca stocco(10) reported contact (124.83) with Immovable</Incident>
+<Incident et="329.1">luca stocco(10) reported contact (362.58) with Immovable</Incident>
+<Incident et="329.1">luca stocco(10) reported contact (509.97) with Immovable</Incident>
+<Incident et="329.3">luca stocco(10) reported contact (863.46) with Immovable</Incident>
+<TrackLimits Driver="luca stocco" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.5">No Further Action</TrackLimits>
+<Score et="331.6">Philou Philgood(15) lap=2 point=2 t=74.667 et=331.560</Score>
+<TrackLimits Driver="PARCE suizo" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="332.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.7">No Further Action</TrackLimits>
+<Score et="336.4">Elias Brusius(2) lap=2 point=2 t=76.006 et=336.300</Score>
+<TrackLimits Driver="Philou Philgood" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="337.7">No Further Action</TrackLimits>
+<Score et="338.0">Ture Petersson(17) lap=2 point=2 t=75.762 et=337.960</Score>
+<Score et="339.0">JuanMa Cisneros(19) lap=2 point=2 t=76.557 et=338.920</Score>
+<Score et="341.9">Hunter Crawford(12) lap=2 point=2 t=75.992 et=341.820</Score>
+<Score et="343.3">Lefterakis An(16) lap=2 point=2 t=77.243 et=343.240</Score>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="3" et="343.7">Invalid Lap Cut Track</TrackLimits>
+<Score et="344.8">luca stocco(10) lap=2 point=2 t=-1.000 et=344.502</Score>
+<Score et="344.8">luca stocco(10) lap=3 point=0 t=-1.000 et=344.502</Score>
+<TrackLimits Driver="Darren Dixon" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="345.2">No Further Action</TrackLimits>
+<Score et="345.6">greg pixie(18) lap=2 point=2 t=77.076 et=345.560</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="345.7">No Further Action</TrackLimits>
+<Score et="348.2">Jackson Neto(13) lap=2 point=2 t=79.794 et=348.000</Score>
+<Score et="349.1">jacob Mumm(4) lap=2 point=2 t=76.096 et=349.080</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="350.9">No Further Action</TrackLimits>
+<Score et="351.2">Martin Kuchar(1) lap=2 point=1 t=37.415 et=351.120</Score>
+<Score et="351.9">Christian Eng(7) lap=2 point=2 t=76.287 et=351.820</Score>
+<TrackLimits Driver="Jackson Neto" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="353.5">No Further Action</TrackLimits>
+<Score et="354.3">Kacper Tomalewski(9) lap=2 point=2 t=-1.000 et=354.300</Score>
+<Score et="357.6">P-A Fugeekies(3) lap=2 point=2 t=94.811 et=357.631</Score>
+<Score et="359.2">Darren Dixon(11) lap=2 point=2 t=78.727 et=359.200</Score>
+<Score et="359.4">Erich Honecker#1150(8) lap=2 point=2 t=76.870 et=359.260</Score>
+<Score et="361.8">Anton Sterhov(6) lap=2 point=1 t=37.093 et=361.840</Score>
+<Sector et="364.4">JuanMa Cisneros(19) reports new suspension damage</Sector>
+<Sector et="364.4">JuanMa Cisneros(19) reports new engine damage</Sector>
+<Incident et="364.5">JuanMa Cisneros(19) reported contact (11464.05) with Immovable</Incident>
+<Score et="364.5">PARCE suizo(20) lap=2 point=2 t=75.763 et=364.520</Score>
+<Score et="369.0">Philou Philgood(15) lap=3 point=0 t=111.982 et=368.880</Score>
+<TrackLimits Driver="Marius Brinzan" ID="0" Lap="3" WarningPoints="0.25" CurrentPoints="1.75" Resolution="3" et="370.4">Invalid Lap Cut Track</TrackLimits>
+<Score et="370.4">Marius Brinzan(0) lap=3 point=0 t=-1.000 et=370.380</Score>
+<Penalty et="370.4">Marius Brinzan received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=2, 1st=Stop/Go,10s</Penalty>
+<Penalty et="370.4">Marius Brinzan finished before serving penalty, added 35 seconds to totalET</Penalty>
+<Penalty et="370.5">Marius Brinzan served 1st Stop/Go penalty, result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<TrackLimits Driver="PARCE suizo" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="370.7">No Further Action</TrackLimits>
+<Sector Driver="Ture Petersson" ID="17" Sector="3" Class="GTE" et="374.8">Ture Petersson(17) set new best for sector 3</Sector>
+<Score et="374.8">Ture Petersson(17) lap=3 point=0 t=112.592 et=374.780</Score>
+<Score et="376.9">Elias Brusius(2) lap=3 point=0 t=116.529 et=376.840</Score>
+<Score et="379.2">Hunter Crawford(12) lap=3 point=0 t=113.211 et=379.040</Score>
+<Incident et="379.8">Elias Brusius(2) reported contact (646.91) with Immovable</Incident>
+<Incident et="380.6">Elias Brusius(2) reported contact (455.38) with Immovable</Incident>
+<Score et="381.4">Lefterakis An(16) lap=3 point=0 t=115.289 et=381.280</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="383.2">No Further Action</TrackLimits>
+<Score et="384.1">greg pixie(18) lap=3 point=0 t=115.598 et=384.080</Score>
+<Score et="385.0">Philou Philgood(15) lap=3 point=1 t=-1.000 et=384.766</Score>
+<Score et="385.0">Philou Philgood(15) lap=3 point=2 t=-1.000 et=384.766</Score>
+<Score et="385.0">Philou Philgood(15) lap=4 point=0 t=-1.000 et=384.766</Score>
+<Score et="385.9">Jackson Neto(13) lap=3 point=0 t=117.566 et=385.780</Score>
+<Score et="386.2">jacob Mumm(4) lap=3 point=0 t=113.142 et=386.120</Score>
+<Score et="389.0">Martin Kuchar(1) lap=2 point=2 t=75.249 et=388.960</Score>
+<Score et="389.4">Hunter Crawford(12) lap=3 point=1 t=-1.000 et=389.294</Score>
+<Score et="389.4">Hunter Crawford(12) lap=3 point=2 t=-1.000 et=389.294</Score>
+<Score et="389.4">Hunter Crawford(12) lap=4 point=0 t=-1.000 et=389.294</Score>
+<Score et="389.6">Christian Eng(7) lap=3 point=0 t=114.029 et=389.560</Score>
+<Score et="391.0">Lefterakis An(16) lap=3 point=1 t=-1.000 et=390.642</Score>
+<Score et="391.0">Lefterakis An(16) lap=3 point=2 t=-1.000 et=390.642</Score>
+<Score et="391.0">Lefterakis An(16) lap=4 point=0 t=-1.000 et=390.642</Score>
+<Score et="391.7">Ture Petersson(17) lap=3 point=1 t=-1.000 et=391.311</Score>
+<Score et="391.7">Ture Petersson(17) lap=3 point=2 t=-1.000 et=391.311</Score>
+<Score et="391.7">Ture Petersson(17) lap=4 point=0 t=-1.000 et=391.311</Score>
+<Score et="392.6">Kacper Tomalewski(9) lap=3 point=0 t=-1.000 et=392.500</Score>
+<Score et="396.7">Jackson Neto(13) lap=3 point=1 t=-1.000 et=396.272</Score>
+<Score et="396.7">Jackson Neto(13) lap=3 point=2 t=-1.000 et=396.272</Score>
+<Score et="396.7">Jackson Neto(13) lap=4 point=0 t=-1.000 et=396.272</Score>
+<Score et="397.6">Erich Honecker#1150(8) lap=3 point=0 t=115.197 et=397.580</Score>
+<Score et="398.8">P-A Fugeekies(3) lap=3 point=0 t=135.921 et=398.742</Score>
+<Score et="398.8">Darren Dixon(11) lap=3 point=0 t=118.295 et=398.760</Score>
+<TrackLimits Driver="JuanMa Cisneros" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="398.8">No Further Action</TrackLimits>
+<Score et="398.9">JuanMa Cisneros(19) lap=3 point=0 t=-1.000 et=398.752</Score>
+<Sector Driver="Anton Sterhov" ID="6" Sector="2" Class="GTE" et="399.0">Anton Sterhov(6) set new best for sector 2</Sector>
+<Score et="399.0">Anton Sterhov(6) lap=2 point=2 t=74.100 et=398.840</Score>
+<Score et="402.0">PARCE suizo(20) lap=3 point=0 t=113.204 et=401.960</Score>
+<Score et="402.3">greg pixie(18) lap=3 point=1 t=-1.000 et=402.220</Score>
+<Score et="402.3">greg pixie(18) lap=3 point=2 t=-1.000 et=402.220</Score>
+<Score et="402.3">greg pixie(18) lap=4 point=0 t=-1.000 et=402.220</Score>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="408.5">No Further Action</TrackLimits>
+<Score et="412.5">Darren Dixon(11) lap=3 point=1 t=-1.000 et=412.283</Score>
+<Score et="412.5">Darren Dixon(11) lap=3 point=2 t=-1.000 et=412.283</Score>
+<Score et="412.5">Darren Dixon(11) lap=4 point=0 t=-1.000 et=412.283</Score>
+<TrackLimits Driver="Kacper Tomalewski" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="413.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="418.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Erich Honecker#1150" ID="8" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="5" et="418.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Elias Brusius" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="421.2">No Further Action</TrackLimits>
+<Score et="421.4">PARCE suizo(20) lap=3 point=1 t=-1.000 et=421.359</Score>
+<Score et="421.4">PARCE suizo(20) lap=3 point=2 t=-1.000 et=421.359</Score>
+<Score et="421.4">PARCE suizo(20) lap=4 point=0 t=-1.000 et=421.359</Score>
+<Penalty et="423.7">Marius Brinzan served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,10s</Penalty>
+<Score et="426.2">Martin Kuchar(1) lap=3 point=0 t=112.395 et=426.100</Score>
+<Score et="426.8">Elias Brusius(2) lap=3 point=1 t=-1.000 et=426.744</Score>
+<Score et="426.8">Elias Brusius(2) lap=3 point=2 t=-1.000 et=426.744</Score>
+<Score et="426.8">Elias Brusius(2) lap=4 point=0 t=-1.000 et=426.744</Score>
+<Score et="430.6">Kacper Tomalewski(9) lap=3 point=1 t=38.017 et=430.520</Score>
+<Sector Driver="Anton Sterhov" ID="6" Sector="3" Class="GTE" et="435.8">Anton Sterhov(6) set new best for sector 3</Sector>
+<Score et="435.8">Anton Sterhov(6) lap=3 point=0 t=110.914 et=435.660</Score>
+</Stream>
+<MostLapsCompleted>4</MostLapsCompleted>
+<Driver>
+<Name>Anton Sterhov</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="--.---" topspeed="254.95" fuel="0.129" fuelUsed="0.871" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="1" et="212.7400" s1="36.7560" s2="37.3105" s3="37.9296" topspeed="263.51" fuel="0.098" fuelUsed="0.031" twfl="0.976" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">111.9960</Lap>
+<Lap num="3" p="1" et="324.7400" s1="37.0927" s2="37.0070" s3="36.8145" topspeed="263.51" fuel="0.067" fuelUsed="0.031" twfl="0.961" twfr="0.973" twrl="0.973" twrr="0.976" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">110.9141</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Philou Philgood</Name>
+<Connected>1</Connected>
+<VehFile>66_JMW36916B99.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>JMW Motorsport #66:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>JMW Motorsport #66</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="--.---" topspeed="255.85" fuel="0.129" fuelUsed="0.871" twfl="0.988" twfr="0.984" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="1" et="144.6201" s1="36.7434" s2="37.9146" s3="37.6257" topspeed="263.51" fuel="0.098" fuelUsed="0.031" twfl="0.969" twfr="0.969" twrl="0.980" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.2837</Lap>
+<Lap num="3" p="1" et="256.8999" s1="36.6509" s2="38.0157" s3="37.3156" topspeed="263.51" fuel="0.067" fuelUsed="0.031" twfl="0.949" twfr="0.937" twrl="0.973" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">111.9822</Lap>
+<Lap num="4" p="1" et="368.8799" topspeed="235.58" fuel="0.165" fuelUsed="-0.098" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Elias Brusius</Name>
+<Connected>1</Connected>
+<VehFile>86_GRRACIN56C59091.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing #86:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>GR Racing #86</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="--.---" topspeed="247.74" fuel="0.161" fuelUsed="0.839" twfl="0.980" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="1" et="148.0801" s1="36.9896" s2="37.6154" s3="37.6066" topspeed="263.51" fuel="0.129" fuelUsed="0.031" twfl="0.965" twfr="0.973" twrl="0.973" twrr="0.976" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.2115</Lap>
+<Lap num="3" p="3" et="260.3000" s1="36.8552" s2="39.1507" s3="40.5232" topspeed="263.96" fuel="0.098" fuelUsed="0.031" twfl="0.945" twfr="0.796" twrl="0.961" twrr="0.965" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">116.5291</Lap>
+<Lap num="4" p="3" et="376.8401" topspeed="226.57" fuel="0.188" fuelUsed="-0.090" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Martin Kuchar</Name>
+<Connected>1</Connected>
+<VehFile>77_PROTONLAECAE80B.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Dempsey-Proton Racing #77:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Dempsey-Proton Racing #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="--.---" topspeed="254.05" fuel="0.075" fuelUsed="0.925" twfl="0.937" twfr="0.957" twrl="0.965" twrr="0.961" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="15" et="193.8799" s1="37.2555" s2="44.9727" s3="37.6054" topspeed="264.41" fuel="0.043" fuelUsed="0.031" twfl="0.914" twfr="0.914" twrl="0.906" twrr="0.918" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">119.8336</Lap>
+<Lap num="3" p="4" et="313.7000" s1="37.4146" s2="37.8345" s3="37.1454" topspeed="264.41" fuel="0.012" fuelUsed="0.031" twfl="0.898" twfr="0.894" twrl="0.898" twrr="0.910" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.3945</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Ture Petersson</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="--.---" topspeed="253.60" fuel="0.098" fuelUsed="0.902" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="3" et="149.6399" s1="37.2975" s2="37.9912" s3="37.2568" topspeed="263.06" fuel="0.063" fuelUsed="0.035" twfl="0.969" twfr="0.973" twrl="0.969" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.5455</Lap>
+<Lap num="3" p="4" et="262.2000" s1="37.5330" s2="38.2289" s3="36.8305" topspeed="262.61" fuel="0.031" fuelUsed="0.031" twfl="0.953" twfr="0.961" twrl="0.953" twrr="0.957" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.5924</Lap>
+<Lap num="4" p="4" et="374.7800" topspeed="249.99" fuel="0.129" fuelUsed="-0.098" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=2,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Kacper Tomalewski</Name>
+<Connected>1</Connected>
+<VehFile>85_IRONDAM1563682E.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Dames #85:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Iron Dames #85</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="--.---" topspeed="249.99" fuel="0.969" fuelUsed="0.031" twfl="0.976" twfr="0.980" twrl="0.980" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="4" et="156.5801" s1="37.3096" s2="37.7314" s3="37.6350" topspeed="262.16" fuel="0.937" fuelUsed="0.031" twfl="0.969" twfr="0.969" twrl="0.973" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">112.6760</Lap>
+<Lap num="3" p="5" et="269.2600" s1="46.0190" topspeed="262.16" fuel="0.906" fuelUsed="0.031" twfl="0.941" twfr="0.949" twrl="0.941" twrr="0.949" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2</ControlAndAids>
+</Driver>
+<Driver>
+<Name>P-A Fugeekies</Name>
+<Connected>1</Connected>
+<VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>D&apos;station Racing #777:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>D&apos;station Racing #777</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="--.---" topspeed="254.07" fuel="0.969" fuelUsed="0.031" twfl="0.988" twfr="0.988" twrl="0.988" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="4" et="149.7551" s1="36.9279" s2="38.3291" s3="37.8085" topspeed="263.52" fuel="0.937" fuelUsed="0.031" twfl="0.976" twfr="0.980" twrl="0.980" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.0656</Lap>
+<Lap num="3" p="6" et="262.8206" s1="52.4886" s2="42.3222" s3="41.1105" topspeed="263.26" fuel="0.914" fuelUsed="0.024" twfl="0.969" twfr="0.973" twrl="0.973" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">135.9213</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>luca stocco</Name>
+<Connected>1</Connected>
+<VehFile>66_JMW36916B99.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>JMW Motorsport #66:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>JMW Motorsport #66</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="--.---" topspeed="251.35" fuel="0.475" fuelUsed="0.525" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="5" et="152.6399" s1="38.2945" s2="37.8741" s3="36.9729" topspeed="263.06" fuel="0.443" fuelUsed="0.031" twfl="0.973" twfr="0.973" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.1415</Lap>
+<Lap num="3" p="7" et="265.7800" s1="37.2706" topspeed="263.51" fuel="0.502" fuelUsed="-0.059" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>jacob Mumm</Name>
+<Connected>1</Connected>
+<VehFile>88_PROTONL745C67A8.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #88:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Proton Competition #88</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="--.---" topspeed="252.70" fuel="0.969" fuelUsed="0.031" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="8" et="159.0601" s1="37.9149" s2="38.7836" s3="37.2344" topspeed="262.16" fuel="0.937" fuelUsed="0.031" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.9329</Lap>
+<Lap num="3" p="8" et="272.9800" s1="37.6569" s2="38.4391" s3="37.0459" topspeed="261.71" fuel="0.906" fuelUsed="0.031" twfl="0.973" twfr="0.976" twrl="0.976" twrr="0.976" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.1418</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>PARCE suizo</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>21</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="--.---" topspeed="254.95" fuel="0.439" fuelUsed="0.561" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="9" et="174.7000" s1="37.7795" s2="38.5951" s3="37.6949" topspeed="263.96" fuel="0.408" fuelUsed="0.031" twfl="0.976" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">114.0694</Lap>
+<Lap num="3" p="9" et="288.7600" s1="37.5444" s2="38.2190" s3="37.4403" topspeed="263.96" fuel="0.380" fuelUsed="0.027" twfl="0.965" twfr="0.973" twrl="0.980" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.2037</Lap>
+<Lap num="4" p="9" et="401.9600" topspeed="251.35" fuel="0.471" fuelUsed="-0.090" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Hunter Crawford</Name>
+<Connected>1</Connected>
+<VehFile>911_PROTON8153440A.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #911:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Proton Competition #911</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="--.---" topspeed="247.74" fuel="0.110" fuelUsed="0.890" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="8" et="123.7000" topspeed="252.70" fuel="0.039" fuelUsed="0.071" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="8" et="265.8401" s1="37.6485" s2="38.3437" s3="37.2186" topspeed="263.51" fuel="0.008" fuelUsed="0.031" twfl="0.976" twfr="0.980" twrl="0.976" twrr="0.976" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.2108</Lap>
+<Lap num="4" p="9" et="379.0400" topspeed="240.53" fuel="0.071" fuelUsed="-0.063" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=2,AutoShift=3,Clutch,Opposite,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>JuanMa Cisneros</Name>
+<Connected>1</Connected>
+<VehFile>74_KESSELED952BC5.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Kessel Racing #74:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>Kessel Racing #74</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="--.---" topspeed="253.60" fuel="0.153" fuelUsed="0.847" twfl="0.973" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="4" et="149.0601" s1="37.2299" s2="38.4542" s3="37.6276" topspeed="263.51" fuel="0.122" fuelUsed="0.031" twfl="0.965" twfr="0.976" twrl="0.988" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">113.3117</Lap>
+<Lap num="3" p="10" et="262.3601" s1="38.0247" s2="38.5324" topspeed="263.96" fuel="0.184" fuelUsed="-0.063" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Christian Eng</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="--.---" topspeed="253.15" fuel="0.071" fuelUsed="0.929" twfl="0.980" twfr="0.984" twrl="0.976" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="10" et="160.2800" s1="37.8087" s2="39.3282" s3="38.1121" topspeed="263.96" fuel="0.043" fuelUsed="0.027" twfl="0.969" twfr="0.976" twrl="0.969" twrr="0.965" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">115.2490</Lap>
+<Lap num="3" p="11" et="275.5200" s1="37.7637" s2="38.5234" s3="37.7421" topspeed="263.96" fuel="0.016" fuelUsed="0.027" twfl="0.961" twfr="0.969" twrl="0.961" twrr="0.957" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">114.0292</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Steering=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Lefterakis An</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="--.---" topspeed="252.70" fuel="0.969" fuelUsed="0.031" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="7" et="151.2600" s1="37.8843" s2="38.9453" s3="37.8979" topspeed="260.35" fuel="0.937" fuelUsed="0.031" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">114.7274</Lap>
+<Lap num="3" p="12" et="266.0000" s1="37.9493" s2="39.2941" s3="38.0455" topspeed="260.80" fuel="0.906" fuelUsed="0.031" twfl="0.961" twfr="0.965" twrl="0.969" twrr="0.965" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">115.2889</Lap>
+<Lap num="4" p="13" et="381.2800" topspeed="227.02" fuel="1.000" fuelUsed="-0.094" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=2,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Erich Honecker#1150</Name>
+<Connected>1</Connected>
+<VehFile>86_GRRACIN56C59091.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing #86:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>GR Racing #86</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="--.---" topspeed="253.15" fuel="0.467" fuelUsed="0.533" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="14" et="157.8999" s1="45.7558" s2="40.5086" s3="38.2198" topspeed="262.61" fuel="0.435" fuelUsed="0.031" twfl="0.922" twfr="0.980" twrl="0.984" twrr="0.980" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">124.4842</Lap>
+<Lap num="3" p="14" et="282.3799" s1="37.8596" s2="39.0101" s3="38.3273" topspeed="260.80" fuel="0.404" fuelUsed="0.031" twfl="0.910" twfr="0.965" twrl="0.976" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">115.1970</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>greg pixie</Name>
+<Connected>1</Connected>
+<VehFile>83_AFCORSE7FBCECA5.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #83:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>AF Corse #83</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="--.---" topspeed="249.99" fuel="0.118" fuelUsed="0.882" twfl="0.992" twfr="0.996" twrl="0.996" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="9" et="151.2000" s1="37.9219" s2="40.0863" s3="39.2747" topspeed="262.61" fuel="0.082" fuelUsed="0.035" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">117.2830</Lap>
+<Lap num="3" p="14" et="268.4800" s1="37.4815" s2="39.5950" s3="38.5218" topspeed="262.61" fuel="0.047" fuelUsed="0.035" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">115.5982</Lap>
+<Lap num="4" p="15" et="384.0801" topspeed="254.05" fuel="0.153" fuelUsed="-0.106" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=2,Braking=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Jackson Neto</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="--.---" topspeed="249.09" fuel="0.286" fuelUsed="0.714" twfl="0.984" twfr="0.988" twrl="0.988" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="8" et="152.2400" s1="38.5126" s2="38.6607" s3="38.8046" topspeed="259.90" fuel="0.255" fuelUsed="0.031" twfl="0.969" twfr="0.980" twrl="0.980" twrr="0.984" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">115.9780</Lap>
+<Lap num="3" p="15" et="268.2000" s1="40.4600" s2="39.3341" s3="37.7722" topspeed="263.06" fuel="0.224" fuelUsed="0.031" twfl="0.957" twfr="0.969" twrl="0.973" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">117.5662</Lap>
+<Lap num="4" p="15" et="385.7800" topspeed="236.93" fuel="0.314" fuelUsed="-0.090" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Darren Dixon</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="247.74" fuel="0.376" fuelUsed="0.624" twfl="0.992" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="13" et="162.8601" s1="37.6553" s2="40.9663" s3="38.9906" topspeed="262.61" fuel="0.341" fuelUsed="0.035" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">117.6122</Lap>
+<Lap num="3" p="17" et="280.4600" s1="37.8951" s2="40.8317" s3="39.5683" topspeed="262.16" fuel="0.310" fuelUsed="0.031" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">118.2950</Lap>
+<Lap num="4" p="17" et="398.7600" topspeed="230.63" fuel="0.408" fuelUsed="-0.098" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>0.0000</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=2,AutoShift=3,Clutch,Opposite,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Marius Brinzan</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="21" et="--.---" topspeed="126.57" fuel="1.000" fuelUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="1" et="51.1177" topspeed="254.05" fuel="0.969" fuelUsed="0.031" twfl="0.984" twfr="0.980" twrl="0.988" twrr="0.988" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">--.----</Lap>
+<Lap num="3" p="18" et="202.4800" topspeed="256.30" fuel="0.937" fuelUsed="0.031" twfl="0.867" twfr="0.914" twrl="0.973" twrr="0.973" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">--.----</Lap>
+<Laps>3</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Patti B</Name>
+<Connected>1</Connected>
+<VehFile>56_AORACIN7559E319.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:SP</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>20</Position>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>DAVID TIDWELL</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>21</Position>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+</Qualify>
+</RaceResults>
+</rFactorXML>
