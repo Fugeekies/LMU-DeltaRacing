@@ -11,11 +11,14 @@ Le premier flux est en place : un fichier de résultats LMU peut être transform
 - [x] Implémenter le parser XML et le dépôt en mémoire.
 - [x] Ajouter des tests ciblés à partir d'un fichier XML réel.
 
-## Jalon — Monitoring des perfs et console spectre
-- [ ] Mettre en place OpenTelemetry pour instrumenter l'application.
-- [ ] Ajouter une console de debug pour suivre l'activité de l'application.
-- [ ] Afficher dans la console les logs et événements OpenTelemetry.
-- [ ] Créer une mini-interface sous forme de tableau pour visualiser les sessions et l'état des imports.
+## Jalon — Monitoring des perfs et console Spectre
+
+Le jalon est réalisé : l'application console importe les fichiers XML fournis en argument, présente les résultats dans un tableau Spectre.Console et exporte logs, traces et métriques OpenTelemetry dans la console.
+
+- [x] Mettre en place OpenTelemetry pour instrumenter l'application.
+- [x] Ajouter une console de debug pour suivre l'activité de l'application.
+- [x] Afficher dans la console les logs et événements OpenTelemetry.
+- [x] Créer une mini-interface sous forme de tableau pour visualiser les sessions et l'état des imports.
 
  
 ## Jalon — Import des résultats
