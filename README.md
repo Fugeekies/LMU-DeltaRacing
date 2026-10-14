@@ -23,3 +23,5 @@ Le socle du premier jalon est en place : le parser XML transforme un fichier de 
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
 
 Sans argument, la console demande le chemin du dossier de résultats en configuration Release. En configuration Debug, elle utilise automatiquement `tests/testAssets/Results`. Les chemins de fichiers XML passés en arguments sont importés directement.
+
+Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable. Ce fichier unique est recréé à chaque lancement ; les logs de lancements précédents ne sont pas conservés. Les traces et métriques ne polluent pas le terminal.

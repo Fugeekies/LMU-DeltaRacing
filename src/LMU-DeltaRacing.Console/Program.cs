@@ -8,13 +8,48 @@ using LMU_DeltaRacing.Infrastructure.Persistence;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using OpenTelemetry;
+using OpenTelemetry.Exporter;
 using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Spectre.Console;
 
+var builder = Host.CreateApplicationBuilder();
+var logFilePath = Path.Combine(AppContext.BaseDirectory, "lmu-deltaracing.log");
+builder.Logging.ClearProviders();
+builder.Logging.AddOpenTelemetry(options =>
+{
+    options.IncludeFormattedMessage = true;
+    options.IncludeScopes = true;
+    options.ParseStateValues = true;
+    options.AddProcessor(new SimpleLogRecordExportProcessor(new FileLogExporter(logFilePath)));
+});
+
+builder.Services.AddOpenTelemetry()
+    .ConfigureResource(resource => resource.AddService("LMU-DeltaRacing.Console"))
+    .WithTracing(tracing => tracing
+        .AddSource(ApplicationTelemetry.ActivitySourceName)
+        .AddConsoleExporter(options => options.Targets = ConsoleExporterOutputTargets.Debug))
+    .WithMetrics(metrics => metrics
+        .AddMeter(ApplicationTelemetry.MeterName)
+        .AddRuntimeInstrumentation()
+        .AddConsoleExporter(options => options.Targets = ConsoleExporterOutputTargets.Debug));
+
+builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
+builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
+builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
+
+using var host = builder.Build();
+await host.StartAsync();
+
+var logger = host.Services.GetRequiredService<ILoggerFactory>()
+    .CreateLogger("LMU-DeltaRacing.Import");
+var importer = host.Services.GetRequiredService<ISessionImportService>();
+var imports = new List<SessionImportResult>();
 IReadOnlyList<string> filesToImport = args;
+
 if (filesToImport.Count == 0)
 {
     string resultsDirectory;
@@ -25,7 +60,8 @@ if (filesToImport.Count == 0)
     }
     catch (DirectoryNotFoundException exception)
     {
-        AnsiConsole.MarkupLine($"[red]{Markup.Escape(exception.Message)}[/]");
+        logger.LogError(exception, "Could not locate the Debug XML test assets directory");
+        await host.StopAsync();
         return 1;
     }
 
@@ -42,42 +78,12 @@ if (filesToImport.Count == 0)
     }
     catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
     {
+        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resultsDirectory);
         AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
+        await host.StopAsync();
         return 1;
     }
 }
-
-var builder = Host.CreateApplicationBuilder();
-builder.Logging.ClearProviders();
-builder.Logging.AddOpenTelemetry(options =>
-{
-    options.IncludeFormattedMessage = true;
-    options.IncludeScopes = true;
-    options.ParseStateValues = true;
-    options.AddConsoleExporter();
-});
-
-builder.Services.AddOpenTelemetry()
-    .ConfigureResource(resource => resource.AddService("LMU-DeltaRacing.Console"))
-    .WithTracing(tracing => tracing
-        .AddSource(ApplicationTelemetry.ActivitySourceName)
-        .AddConsoleExporter())
-    .WithMetrics(metrics => metrics
-        .AddMeter(ApplicationTelemetry.MeterName)
-        .AddRuntimeInstrumentation()
-        .AddConsoleExporter());
-
-builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
-builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
-builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
-
-using var host = builder.Build();
-await host.StartAsync();
-
-var logger = host.Services.GetRequiredService<ILoggerFactory>()
-    .CreateLogger("LMU-DeltaRacing.Import");
-var importer = host.Services.GetRequiredService<ISessionImportService>();
-var imports = new List<SessionImportResult>();
 
 foreach (var filePath in filesToImport)
 {
