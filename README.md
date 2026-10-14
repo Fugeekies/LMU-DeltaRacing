@@ -13,9 +13,11 @@ Le socle du premier jalon est en place : le parser XML transforme un fichier de 
 - `src/LMU-DeltaRacing.Domain` : entités métier sans dépendance externe.
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML et dépôt en mémoire.
+- `src/LMU-DeltaRacing.Console` : import XML ponctuel, tableau Spectre.Console et diagnostic OpenTelemetry.
 - `tests/LMU-DeltaRacing.Tests` : tests unitaires du parsing et du stockage.
 
 ## Commandes
 
 - `dotnet build`
 - `dotnet test`
+- `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`

@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/src/">
     <Project Path="src/LMU-DeltaRacing.Application/LMU-DeltaRacing.Application.csproj" />
+    <Project Path="src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj" />
     <Project Path="src/LMU-DeltaRacing.Domain/LMU-DeltaRacing.Domain.csproj" />
     <Project Path="src/LMU-DeltaRacing.Infrastructure/LMU-DeltaRacing.Infrastructure.csproj" />
   </Folder>

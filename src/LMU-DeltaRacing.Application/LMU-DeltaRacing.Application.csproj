@@ -4,10 +4,6 @@
     <ProjectReference Include="..\LMU-DeltaRacing.Domain\LMU-DeltaRacing.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LMU-DeltaRacing.Domain\LMU-DeltaRacing.Domain.csproj" />
-  </ItemGroup>
-
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>LMU_DeltaRacing.Application</RootNamespace>
