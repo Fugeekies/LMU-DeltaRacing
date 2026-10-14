@@ -12,6 +12,40 @@ using OpenTelemetry.Logs;
 using OpenTelemetry.Metrics;
 using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
+using Spectre.Console;
+
+IReadOnlyList<string> filesToImport = args;
+if (filesToImport.Count == 0)
+{
+    string resultsDirectory;
+#if DEBUG
+    try
+    {
+        resultsDirectory = XmlFileDiscovery.FindTestAssetsResultsDirectory(AppContext.BaseDirectory);
+    }
+    catch (DirectoryNotFoundException exception)
+    {
+        AnsiConsole.MarkupLine($"[red]{Markup.Escape(exception.Message)}[/]");
+        return 1;
+    }
+
+    AnsiConsole.MarkupLine(
+        $"[dim]Mode Debug : utilisation des XML de test dans {Markup.Escape(resultsDirectory)}[/]");
+#else
+    resultsDirectory = AnsiConsole.Ask<string>(
+        "Chemin du dossier contenant les résultats XML ?");
+#endif
+
+    try
+    {
+        filesToImport = XmlFileDiscovery.GetXmlFiles(resultsDirectory);
+    }
+    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
+    {
+        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
+        return 1;
+    }
+}
 
 var builder = Host.CreateApplicationBuilder();
 builder.Logging.ClearProviders();
@@ -45,7 +79,7 @@ var logger = host.Services.GetRequiredService<ILoggerFactory>()
 var importer = host.Services.GetRequiredService<ISessionImportService>();
 var imports = new List<SessionImportResult>();
 
-foreach (var filePath in args)
+foreach (var filePath in filesToImport)
 {
     var result = importer.ImportFile(filePath);
     imports.Add(result);

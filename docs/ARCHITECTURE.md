@@ -17,7 +17,7 @@ Le parser consomme un `Stream` via le contrat de la couche `Application`, ce qui
 
 ## Monitoring et console
 
-Le projet `LMU-DeltaRacing.Console` accepte des chemins XML en arguments, importe chaque fichier via le service d'application et affiche un tableau avec l'état, le circuit, le type de session et le nombre de pilotes. Les erreurs de lecture ou de parsing restent visibles dans le tableau et dans les logs.
+Le projet `LMU-DeltaRacing.Console` accepte des chemins XML en arguments ou, sans argument, demande le dossier des résultats en configuration Release. En configuration Debug, il sélectionne automatiquement `tests/testAssets/Results`. Il importe les fichiers XML du dossier sans surveillance continue, puis affiche un tableau avec l'état, le circuit, le type de session et le nombre de pilotes. Les erreurs de lecture ou de parsing restent visibles dans le tableau et dans les logs.
 
 OpenTelemetry exporte vers la console les logs structurés, les traces d'import et les métriques de durée et de résultat des imports. L'instrumentation runtime publie également des métriques du processus. Seul le nom du fichier, et non son chemin local complet, est ajouté aux traces.
 

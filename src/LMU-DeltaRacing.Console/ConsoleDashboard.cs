@@ -30,12 +30,12 @@ public static class ConsoleDashboard
         if (imports.Count == 0)
         {
             table.AddRow(
-                "[dim]En attente[/]",
+                "[dim]Aucun XML[/]",
                 "[dim]—[/]",
                 "[dim]—[/]",
                 "[dim]—[/]",
                 "[dim]—[/]",
-                "[dim]Passez un ou plusieurs chemins XML en argument.[/]");
+                "[dim]Aucun fichier XML trouvé dans le dossier sélectionné.[/]");
         }
         else
         {
