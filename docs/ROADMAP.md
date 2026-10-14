@@ -2,7 +2,7 @@
 
 Les jalons ci-dessous décrivent une progression possible du projet. Les idées restent à préciser et à prioriser selon les besoins.
 
-## Jalon 1 — Socle métier et lecture XML
+## Jalon — Socle métier et lecture XML
 
 Le premier flux est en place : un fichier de résultats LMU peut être transformé en entités métier, puis stocké en mémoire.
 
@@ -11,9 +11,16 @@ Le premier flux est en place : un fichier de résultats LMU peut être transform
 - [x] Implémenter le parser XML et le dépôt en mémoire.
 - [x] Ajouter des tests ciblés à partir d'un fichier XML réel.
 
-## Jalon 2 — Import des résultats
+## Jalon — Monitoring des perfs et console spectre
+- [ ] Mettre en place OpenTelemetry pour instrumenter l'application.
+- [ ] Ajouter une console de debug pour suivre l'activité de l'application.
+- [ ] Afficher dans la console les logs et événements OpenTelemetry.
+- [ ] Créer une mini-interface sous forme de tableau pour visualiser les sessions et l'état des imports.
 
-Automatiser la découverte et l'import des fichiers de résultats présents sur la machine.
+ 
+## Jalon — Import des résultats
+
+Automatiser la découverte et l'import des fichiers de résultats présents sur la machine, avec une première interface et des outils de diagnostic.
 
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).
 - [ ] Surveiller l'arrivée de nouveaux fichiers XML et attendre la fin de leur écriture avant l'import.
@@ -21,7 +28,7 @@ Automatiser la découverte et l'import des fichiers de résultats présents sur 
 - [ ] Signaler les fichiers invalides sans interrompre le traitement des autres résultats.
 - [ ] Ajouter des tests d'intégration du flux d'import.
 
-## Jalon 3 — Première interface
+## Jalon — Première interface
 
 Présenter l'historique des sessions et leurs résultats dans une interface locale.
 
@@ -30,7 +37,7 @@ Présenter l'historique des sessions et leurs résultats dans une interface loca
 - [ ] Afficher le détail d'une session et le classement des pilotes.
 - [ ] Ajouter les états de chargement, les listes vides et les erreurs d'import.
 
-## Jalon 4 — Statistiques et analyse
+## Jalon — Statistiques et analyse
 
 Construire des vues d'analyse à partir des sessions importées.
 
@@ -39,7 +46,7 @@ Construire des vues d'analyse à partir des sessions importées.
 - [ ] Filtrer l'historique par circuit, tracé, voiture, classe et pilote.
 - [ ] Ajouter des vues de progression par pilote et par session.
 
-## Jalon 5 — Historique durable et finition
+## Jalon — Historique durable et finition
 
 Fiabiliser l'usage au quotidien et préparer une première version distribuable.
 
