@@ -1,0 +1,51 @@
+using System.Xml;
+using FluentAssertions;
+using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Infrastructure.Parsing;
+
+namespace LMU_DeltaRacing.Tests.Infrastructure;
+
+public sealed class XmlResultParserTests
+{
+    private const string FixturePath = "TestAssets/Results/2025_09_20_19_03_47-43P1.xml";
+
+    [Fact]
+    public void Parse_reads_session_metadata_drivers_and_laps_from_a_real_result_file()
+    {
+        var parser = new XmlResultParser();
+        using var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, FixturePath));
+
+        var session = parser.Parse(stream);
+
+        session.SessionType.Should().Be("Practice1");
+        session.TrackVenue.Should().Be("Sebring International Raceway");
+        session.TrackCourse.Should().Be("Sebring School Circuit");
+        session.Drivers.Should().HaveCount(21);
+
+        var driver = session.Drivers.Should()
+            .ContainSingle(item => item.Name == "Josh Harper-Jones")
+            .Which;
+        driver.CarNumber.Should().Be("16");
+        driver.Position.Should().Be(1);
+        driver.Laps.Should().HaveCount(2);
+        driver.Laps[0].Time.Should().BeNull();
+        driver.Laps[1].Time.Should().Be(TimeSpan.FromSeconds(65.1692));
+        driver.Laps[1].Sectors.Should().BeEquivalentTo(
+        [
+            new Sector(1, TimeSpan.FromSeconds(22.8031)),
+            new Sector(2, TimeSpan.FromSeconds(12.8257)),
+            new Sector(3, TimeSpan.FromSeconds(29.5404))
+        ]);
+    }
+
+    [Fact]
+    public void Parse_rejects_malformed_xml()
+    {
+        var parser = new XmlResultParser();
+        using var stream = new MemoryStream("<rFactorXML>"u8.ToArray());
+
+        var act = () => parser.Parse(stream);
+
+        act.Should().Throw<XmlException>();
+    }
+}

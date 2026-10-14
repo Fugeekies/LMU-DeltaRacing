@@ -1,12 +1,15 @@
 # Architecture Technique - LMU-DeltaRacing
 
 ## Couches du projet
-- `Domain` : Contient les entités métier (Session, Driver, Lap, Sector).
-- `Application` : Contient les contrats (Interfaces) et les Use Cases.
-- `Infrastructure` : Contient l'implémentation du parser XML LMU et du FileWatcher.
-- `UI` : Interface Blazor pour l'affichage des dashboards.
-- `Tests` : Tests unitaires et d'intégration (xUnit).
+- `Domain` : entités métier (`Session`, `Driver`, `Lap`, `Sector`) sans dépendance externe.
+- `Application` : contrats du parser XML et du dépôt de sessions.
+- `Infrastructure` : parser XML LMU et dépôt en mémoire.
+- `UI` : interface Blazor prévue pour l'affichage des dashboards.
+- `Tests` : tests unitaires xUnit du parser et du dépôt, avec FluentAssertions.
 
-## Flux de données (Milestone 1)
-1. Fichier XML LMU -> `Infrastructure.XmlParser` -> Entités `Domain`.
-2. Entités `Domain` -> `Infrastructure.InMemoryRepository`.
+## Flux de données (jalon 1)
+1. Le parser lit les métadonnées de session, les résultats des pilotes, leurs tours et secteurs depuis le XML LMU.
+2. Le parser retourne une entité `Domain.Session` indépendante du format XML.
+3. Le dépôt en mémoire enregistre et restitue les sessions pendant l'exécution du processus.
+
+Le parser consomme un `Stream` via le contrat de la couche `Application`, ce qui le rend indépendant du système de fichiers. Le suivi de répertoire et l'interface utilisateur restent à implémenter dans les jalons suivants.
