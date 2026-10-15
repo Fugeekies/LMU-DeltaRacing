@@ -18,12 +18,13 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Créer un tableau de visualisation des imports dans la console.
 
 ## Jalon — Gestion de la configuration
-- [ ] Configurer la gestion dynamique des paramètres applicatifs (`IOptions<T>` / `appsettings.json`)
-- [ ] Permettre la configuration du chemin local du dossier de résultats LMU (`UserData/Log/Results/`)
-- [ ] Configurer le niveau de log minimal par cible (Console / Fichier JSON) via la configuration
-- [ ] Ajouter la validation des chemins de configuration au démarrage de l'application
-- [ ] Injecter les configurations dans les services de l'Application et de l'Infrastructure
-- [ ] Modifier/Sauvegarder les valeurs depuis la console spectre
+- [x] Configurer la gestion dynamique des paramètres applicatifs (`IOptionsMonitor<T>` / `appsettings.json`)
+- [x] Permettre la configuration du chemin local du dossier de résultats LMU -> chemin des `testAssets` par défaut
+- [x] Configurer le chemin local du log -> fichier à côté de l'exécutable par défaut
+- [x] Configurer le niveau minimal du fichier de log JSON via la configuration -> `Debug` par défaut (aucun log affiché dans la console)
+- [x] Valider les chemins et le niveau de log au démarrage de l'application
+- [x] Injecter les options dans les services concernés via le conteneur de dépendances
+- [x] Modifier et sauvegarder les valeurs depuis le menu Spectre dans `appsettings.json`, à côté de l'exécutable
 
 ## Jalon — Quality Gates & Benchmarks
 - [ ] Configurer un projet de tests de charge / benchmarks pour valider le parsing en masse de fichiers XML.

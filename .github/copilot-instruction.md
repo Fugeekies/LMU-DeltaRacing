@@ -20,8 +20,10 @@
 
 3. **Logging & Observabilité (OpenTelemetry & JSON) :**
    - Tous les logs applicatifs doivent être émis via les abstractions `Microsoft.Extensions.Logging` / OpenTelemetry.
-   - Les logs sur fichier doivent être sérialisés en **JSON Lines** : un objet JSON structuré par ligne, sans tableau JSON englobant.
+   - Les logs sur fichier doivent être sérialisés en **JSON Lines** : un objet JSON structuré par ligne, sans tableau JSON englobant. Le seuil minimal du fichier est configurable.
+   - Ne pas afficher de logs dans la console interactive ; réserver le terminal au menu et aux tableaux Spectre.Console.
    - Les statistiques agrégées d'OpenTelemetry doivent être écrites séparément dans `lmu-deltaracing-stats.json`, en JSON indenté lisible. Les fichiers sont conservés après l'arrêt et remplacés au lancement suivant.
+   - Les paramètres applicatifs sont configurés via `IOptionsMonitor<T>` et `appsettings.json` à côté de l'exécutable ; les changements faits dans le menu doivent être validés, sauvegardés et rechargés.
 
 4. **Tests de Charge & Performance :**
    - Pour chaque composant critique (parser XML, file watcher, repository in-memory), prévoir des tests de charge (stress tests de parsing / volume).

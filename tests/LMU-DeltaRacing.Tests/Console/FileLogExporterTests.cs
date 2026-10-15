@@ -1,5 +1,6 @@
 using FluentAssertions;
 using LMU_DeltaRacing.ConsoleApp;
+using LMU_DeltaRacing.ConsoleApp.Configuration;
 using Microsoft.Extensions.Logging;
 using OpenTelemetry;
 using OpenTelemetry.Logs;
@@ -52,6 +53,55 @@ public sealed class FileLogExporterTests
                 .Should()
                 .Contain("RunNumber");
             logLines.Should().NotContain(line => line.Contains("previous run", StringComparison.Ordinal));
+        }
+        finally
+        {
+            Directory.Delete(directory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that log severity and destination changes are applied without restarting the logger.
+    /// </summary>
+    [TestMethod]
+    public void Export_applies_reloaded_file_level_and_path()
+    {
+        var directory = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"));
+        Directory.CreateDirectory(directory);
+        var firstLogPath = Path.Combine(directory, "first.jsonl");
+        var secondLogPath = Path.Combine(directory, "second.jsonl");
+        var settings = new LmuApplicationOptions
+        {
+            LogFilePath = firstLogPath,
+            FileMinimumLogLevel = "Warning"
+        };
+
+        try
+        {
+            using (var loggerFactory = LoggerFactory.Create(logging =>
+            {
+                logging.SetMinimumLevel(LogLevel.Trace);
+                logging.AddOpenTelemetry(options =>
+                {
+                    options.IncludeFormattedMessage = true;
+                    options.AddProcessor(new SimpleLogRecordExportProcessor(
+                        new FileLogExporter(() => settings, directory)));
+                });
+            }))
+            {
+                var logger = loggerFactory.CreateLogger("DynamicSettings");
+                logger.LogInformation("Filtered from the first file");
+
+                settings.FileMinimumLogLevel = "Information";
+                logger.LogInformation("Written to the first file");
+
+                settings.LogFilePath = secondLogPath;
+                logger.LogWarning("Written to the second file");
+            }
+
+            File.ReadAllText(firstLogPath).Should().NotContain("Filtered from the first file");
+            File.ReadAllText(firstLogPath).Should().Contain("Written to the first file");
+            File.ReadAllText(secondLogPath).Should().Contain("Written to the second file");
         }
         finally
         {
