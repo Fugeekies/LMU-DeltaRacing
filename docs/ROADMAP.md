@@ -16,7 +16,15 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Ajouter une console de debug (Spectre.Console) pour suivre l'activité de l'application.
 - [x] Créer un tableau de visualisation des imports dans la console.
 
-## Jalon — Workflow Git, Quality Gates & Benchmarks
+## Jalon — Gestion de la configuration
+- [ ] Configurer la gestion dynamique des paramètres applicatifs (`IOptions<T>` / `appsettings.json`)
+- [ ] Permettre la configuration du chemin local du dossier de résultats LMU (`UserData/Log/Results/`)
+- [ ] Configurer le niveau de log minimal par cible (Console / Fichier JSON) via la configuration
+- [ ] Ajouter la validation des chemins de configuration au démarrage de l'application
+- [ ] Injecter les configurations dans les services de l'Application et de l'Infrastructure
+- [ ] Modifier/Sauvegarder les valeurs depuis la console spectre
+
+## Jalon — Quality Gates & Benchmarks
 - [ ] Configurer un projet de tests de charge / benchmarks pour valider le parsing en masse de fichiers XML.
 - [ ] Automatiser la création d'un rapport de performance au format Markdown à joindre aux PR.
 
