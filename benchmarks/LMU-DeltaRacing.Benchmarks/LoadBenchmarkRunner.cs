@@ -9,10 +9,10 @@ internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
 {
     private static readonly int[] DiskBatchSizes = [10, 100, 500];
 
-    public string Run(BenchmarkOptions options)
+    public string Run(int years)
     {
         var phases = SyntheticResultXml.CreatePhaseStreams();
-        var inMemoryResult = RunInMemory(phases, options.Years);
+        var inMemoryResult = RunInMemory(phases, years);
         var diskResults = DiskBatchSizes
             .Select(count => RunDiskBatch(phases, count))
             .ToArray();
@@ -28,7 +28,7 @@ internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
         output.AppendLine("## Charge en mémoire");
         output.AppendLine();
         output.AppendLine(
-            $"Simulation : 10 courses/jour × 3 phases × 365 jours × {options.Years} ans = " +
+            $"Simulation : 10 courses/jour × 3 phases × 365 jours × {years} ans = " +
             $"{inMemoryResult.SessionCount.ToString("N0", CultureInfo.InvariantCulture)} sessions.");
         output.AppendLine(
             "Les XML sont conservés dans des streams en mémoire ; chaque résultat analysé est libéré avant le suivant.");

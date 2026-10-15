@@ -1,12 +1,24 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>LMU_DeltaRacing.Benchmarks</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <BenchmarkYears Condition="'$(BenchmarkYears)' == ''">10</BenchmarkYears>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.1" />
+    <PackageReference Include="MSTest.TestAdapter" Version="4.5.1" />
+    <PackageReference Include="MSTest.TestFramework" Version="4.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AssemblyMetadata Include="BenchmarkYears" Value="$(BenchmarkYears)" />
+    <AssemblyMetadata Include="PerformanceReportDirectory" Value="$(MSBuildProjectDirectory)\artifacts" />
+  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\LMU-DeltaRacing.Infrastructure\LMU-DeltaRacing.Infrastructure.csproj" />
