@@ -1,24 +1,28 @@
 # Architecture Technique - LMU-DeltaRacing
 
 ## Couches du projet
-- `Domain` : entités métier (`Session`, `Driver`, `Lap`, `Sector`) sans dépendance externe.
-- `Application` : contrats du parser XML, du dépôt de sessions et du service d'import, avec traces et métriques OpenTelemetry.
-- `Infrastructure` : parser XML LMU et dépôt en mémoire.
-- `Console` : application console Spectre.Console, composition des dépendances, export OpenTelemetry et tableau des imports.
-- `UI` : interface Blazor prévue pour l'affichage des dashboards.
-- `Tests` : tests unitaires MSTest du parser et du dépôt, avec FluentAssertions.
+- `Domain` : Entités métier (`Session`, `Driver`, `Lap`, `Sector`) sans dépendance externe.
+- `Application` : Contrats du parser XML, du dépôt de sessions, des services d'import, contrats de métriques et traces.
+- `Infrastructure` : Parser XML LMU, service de surveillance de fichiers (Watcher) et dépôt en mémoire.
+- `Console` : Application console Spectre.Console, composition des dépendances, export OpenTelemetry et suivi des imports.
+- `UI` : Interface Blazor prévue pour l'affichage des dashboards.
+- `Tests` : Tests unitaires/d'intégration MSTest + FluentAssertions, et benchmarks de charge.
 
-## Flux de données (jalon 1)
-1. Le parser lit les métadonnées de session, les résultats des pilotes, leurs tours et secteurs depuis le XML LMU.
-2. Le parser retourne une entité `Domain.Session` indépendante du format XML.
-3. Le dépôt en mémoire enregistre et restitue les sessions pendant l'exécution du processus.
+## Flux de données
+1. Le parser consomme un `Stream` XML LMU via la couche `Application` pour garantir l'indépendance du système de fichiers.
+2. Le parser transforme le XML en entité `Domain.Session`.
+3. Le dépôt en mémoire enregistre et restitue les sessions de manière thread-safe.
 
-Le parser consomme un `Stream` via le contrat de la couche `Application`, ce qui le rend indépendant du système de fichiers. Le suivi de répertoire et l'interface utilisateur restent à implémenter dans les jalons suivants.
+## Monitoring, Logging & OpenTelemetry
 
-## Monitoring et console
+L'application utilise **OpenTelemetry** couplé au système de logging standard de .NET :
+- **Format des logs :** Les journaux écrits sur disque sont sérialisés en **JSON structuré avec indentation (Human-Readable JSON)**.
+- **Traces & Métriques :** Exportées via OpenTelemetry vers la sortie Debug et instrumentées au niveau du runtime .NET.
+- **Masquage des données sensibles :** Seul le nom du fichier XML (et non son chemin local absolu) est consigné dans les traces.
+- Les logs structurés dans `lmu-deltaracing.log`, à côté de l'exécutable. Le fichier est recréé à chaque lancement pour ne garder que l'exécution courante. Les traces et métriques sont envoyées à la sortie Debug plutôt qu'au terminal. L'instrumentation runtime publie également des métriques du processus. Seul le nom du fichier, et non son chemin local complet, est ajouté aux traces.
 
-Le projet `LMU-DeltaRacing.Console` accepte des chemins XML en arguments ou, sans argument, demande le dossier des résultats en configuration Release. En configuration Debug, il sélectionne automatiquement `tests/testAssets/Results`. Il importe les fichiers XML du dossier sans surveillance continue, puis affiche un tableau avec l'état, le circuit, le type de session et le nombre de pilotes. Les erreurs de lecture ou de parsing restent visibles dans le tableau et dans les logs.
+## Stratégie de Performance & Tests de Charge
 
-OpenTelemetry écrit les logs structurés dans `lmu-deltaracing.log`, à côté de l'exécutable. Le fichier est recréé à chaque lancement pour ne garder que l'exécution courante. Les traces et métriques sont envoyées à la sortie Debug plutôt qu'au terminal. L'instrumentation runtime publie également des métriques du processus. Seul le nom du fichier, et non son chemin local complet, est ajouté aux traces.
-
-Exemple : `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`.
+Afin de garantir la fluidité sur de gros volumes d'historiques (ex: des centaines de fichiers XML de course) :
+- Des tests de charge automatisés (via BenchmarkDotNet ou suite MSTest dédiée) valident le comportement de l'application sous pression.
+- Un rapport de performance (`PERFORMANCE_REPORT.md`) est systématiquement généré et joint à chaque Pull Request modifiant le moteur d'import ou le parser.
