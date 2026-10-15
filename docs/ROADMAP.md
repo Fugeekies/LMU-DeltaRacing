@@ -2,62 +2,47 @@
 
 Les jalons ci-dessous décrivent une progression possible du projet. Les idées restent à préciser et à prioriser selon les besoins.
 
-## Jalon — Socle métier et lecture XML
+# Feuille de Route
 
-Le premier flux est en place : un fichier de résultats LMU peut être transformé en entités métier, puis stocké en mémoire.
-
+## Jalon — Socle métier et lecture XML [Terminé]
 - [x] Définir les entités `Session`, `Driver`, `Lap` et `Sector`.
 - [x] Ajouter les contrats du parser XML et du dépôt de sessions.
 - [x] Implémenter le parser XML et le dépôt en mémoire.
-- [x] Ajouter des tests ciblés à partir d'un fichier XML réel.
+- [x] Ajouter des tests ciblés à partir d'un fichier XML réel (MSTest).
 
-## Jalon — Monitoring des perfs et console Spectre
-
-Le jalon est réalisé : l'application console importe les fichiers XML fournis en argument, présente les résultats dans un tableau Spectre.Console et exporte logs, traces et métriques OpenTelemetry dans la console.
-
+## Jalon — Monitoring des perfs et console Spectre [Terminé]
 - [x] Mettre en place OpenTelemetry pour instrumenter l'application.
-- [x] Ajouter une console de debug pour suivre l'activité de l'application.
-- [x] Afficher dans la console les logs et événements OpenTelemetry.
-- [x] Créer une mini-interface sous forme de tableau pour visualiser les sessions et l'état des imports.
+- [x] Configurer l'export des logs au format JSON structuré et indenté (Human-Readable).
+- [x] Ajouter une console de debug (Spectre.Console) pour suivre l'activité de l'application.
+- [x] Créer un tableau de visualisation des imports dans la console.
 
- 
-## Jalon — Import des résultats
+## Jalon — Gestion de la configuration
+- [ ] Configurer la gestion dynamique des paramètres applicatifs (`IOptions<T>` / `appsettings.json`)
+- [ ] Permettre la configuration du chemin local du dossier de résultats LMU (`UserData/Log/Results/`)
+- [ ] Configurer le niveau de log minimal par cible (Console / Fichier JSON) via la configuration
+- [ ] Ajouter la validation des chemins de configuration au démarrage de l'application
+- [ ] Injecter les configurations dans les services de l'Application et de l'Infrastructure
+- [ ] Modifier/Sauvegarder les valeurs depuis la console spectre
 
-Automatiser la découverte et l'import des fichiers de résultats présents sur la machine, avec une première interface et des outils de diagnostic.
+## Jalon — Quality Gates & Benchmarks
+- [ ] Configurer un projet de tests de charge / benchmarks pour valider le parsing en masse de fichiers XML.
+- [ ] Automatiser la création d'un rapport de performance au format Markdown à joindre aux PR.
 
+## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).
-- [ ] Surveiller l'arrivée de nouveaux fichiers XML et attendre la fin de leur écriture avant l'import.
-- [ ] Éviter les imports en double et permettre de relancer l'import d'un fichier.
-- [ ] Signaler les fichiers invalides sans interrompre le traitement des autres résultats.
-- [ ] Ajouter des tests d'intégration du flux d'import.
+- [ ] Surveiller l'arrivée de nouveaux fichiers XML (`FileSystemWatcher`) avec gestion du verrouillage de fichier.
+- [ ] Éviter les imports en double et gérer le registre des fichiers traités.
+- [ ] Signaler les fichiers invalides sans interrompre le flux d'importation.
+- [ ] Exécuter un test de charge sur la surveillance de dossier (ex: injection simultanée de 50 fichiers XML).
 
-## Jalon — Première interface
+## Jalon — Première interface Blazor
+- [ ] Mettre en place l'hébergement Blazor local.
+- [ ] Afficher la liste des sessions et le classement des pilotes.
+- [ ] Gérer les états de chargement, d'erreur et les listes vides.
 
-Présenter l'historique des sessions et leurs résultats dans une interface locale.
-
-- [ ] Choisir et mettre en place l'hébergement Blazor local (Hybrid ou Server).
-- [ ] Afficher la liste des sessions importées.
-- [ ] Afficher le détail d'une session et le classement des pilotes.
-- [ ] Ajouter les états de chargement, les listes vides et les erreurs d'import.
-
-## Jalon — Statistiques et analyse
-
-Construire des vues d'analyse à partir des sessions importées.
-
-- [ ] Comparer les temps au tour et les secteurs entre pilotes.
-- [ ] Mettre en évidence les meilleurs tours et les évolutions de rythme.
-- [ ] Filtrer l'historique par circuit, tracé, voiture, classe et pilote.
-- [ ] Ajouter des vues de progression par pilote et par session.
-
-## Jalon — Historique durable et finition
-
-Fiabiliser l'usage au quotidien et préparer une première version distribuable.
-
-- [ ] Évaluer un stockage persistant pour conserver l'historique entre les lancements.
-- [ ] Prévoir une stratégie de migration et de sauvegarde des données si une base est retenue.
-- [ ] Ajouter des journaux utiles pour diagnostiquer les erreurs de lecture et d'import.
-- [ ] Vérifier la gestion de gros historiques et le démarrage après interruption.
-- [ ] Documenter l'installation, la configuration et les limites connues.
+## Jalon — Statistiques, Graphiques et Historique durable
+- [ ] Vues comparatives des secteurs, meileurs tours et rythmes de course.
+- [ ] Persistance durable des données (évaluation BDD SQLite).
 
 ## Liste d'idées à prioriser
 
