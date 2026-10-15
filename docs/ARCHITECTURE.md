@@ -33,3 +33,9 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 La console charge `appsettings.json` depuis le dossier de l'exécutable et lie la section `LMU` à `LmuApplicationOptions` via `IOptionsMonitor<T>`. Les valeurs modifiées dans le menu Spectre sont validées puis sauvegardées atomiquement dans ce fichier ; le changement est rechargé sans redémarrer l'application.
 
 Par défaut, `ResultsDirectory` est vide et résout le dossier de fixtures `tests/testAssets/Results`, `LogFilePath` est `lmu-deltaracing.log` relatif au dossier de l'exécutable et `FileMinimumLogLevel` est `Debug`. Un chemin de résultats ou de log relatif est résolu à partir du dossier de l'exécutable. Les chemins configurés et le niveau de log sont validés avant le démarrage. Aucun log n'est affiché dans le terminal ; le seuil s'applique au fichier JSON Lines.
+
+## Benchmarks
+
+Le projet `benchmarks/LMU-DeltaRacing.Benchmarks` mesure le parser sur 109 500 sessions XML en mémoire par défaut (10 courses/jour × 3 phases × 365 jours × 10 ans). Chaque session analysée est libérée avant la suivante pour mesurer le coût du parsing sans faire croître artificiellement le dépôt en mémoire. Les entrées de charge disque (10, 100 et 500 fichiers) sont créées dans le répertoire temporaire du système et supprimées à la fin.
+
+Le rapport Markdown indique les durées, débits, allocations cumulées et mémoire observée. Le workflow Quality Gates l'ajoute à la PR sous forme de commentaire et le publie comme artifact. Si l'environnement est limité en mémoire, le benchmark accepte `--years 5` ou `--years 2`.

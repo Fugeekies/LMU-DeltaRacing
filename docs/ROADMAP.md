@@ -27,8 +27,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Modifier et sauvegarder les valeurs depuis le menu Spectre dans `appsettings.json`, à côté de l'exécutable
 
 ## Jalon — Quality Gates & Benchmarks
-- [ ] Configurer un projet de tests de charge / benchmarks pour valider le parsing en masse de fichiers XML.
-- [ ] Automatiser la création d'un rapport de performance au format Markdown à joindre aux PR.
+- [x] Configurer un projet de benchmarks pour valider le parsing en masse de fichiers XML.
+- [x] Mesurer des lots réalistes de 10/100/500 fichiers générés localement (fichiers temporaires non commités).
+- [x] Mesurer le parsing en mémoire des sessions Practice, Qualifying et Race : 10 courses par jour pendant 10 ans, soit 10 × 3 × 365 × 10 = 109 500 sessions.
+- [x] Automatiser la création d'un rapport de performance Markdown joint aux PR sous forme de commentaire et d'artifact.
+- [x] Permettre de réduire la charge à 5 ans ou 2 ans si les ressources mémoire sont limitées (`--years 5` ou `--years 2`).
 
 ## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).
