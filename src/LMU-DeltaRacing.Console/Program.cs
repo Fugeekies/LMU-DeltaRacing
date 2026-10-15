@@ -19,6 +19,7 @@ using Spectre.Console;
 var builder = Host.CreateApplicationBuilder();
 var logFilePath = Path.Combine(AppContext.BaseDirectory, "lmu-deltaracing.log");
 builder.Logging.ClearProviders();
+builder.Logging.SetMinimumLevel(LogLevel.Debug);
 builder.Logging.AddOpenTelemetry(options =>
 {
     options.IncludeFormattedMessage = true;
@@ -89,23 +90,6 @@ foreach (var filePath in filesToImport)
 {
     var result = importer.ImportFile(filePath);
     imports.Add(result);
-
-    if (result.Status == SessionImportStatus.Imported)
-    {
-        logger.LogInformation(
-            "Imported {SourceFile}: {TrackVenue}, session {SessionType}, {DriverCount} drivers",
-            result.SourceFile,
-            result.Session!.TrackVenue,
-            result.Session.SessionType,
-            result.Session.Drivers.Count);
-    }
-    else
-    {
-        logger.LogWarning(
-            "Could not import {SourceFile}: {ErrorMessage}",
-            result.SourceFile,
-            result.ErrorMessage);
-    }
 }
 
 ConsoleDashboard.Render(imports);

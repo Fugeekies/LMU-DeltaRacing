@@ -4,9 +4,16 @@ using LMU_DeltaRacing.Infrastructure.Persistence;
 
 namespace LMU_DeltaRacing.Tests.Infrastructure;
 
+/// <summary>
+/// Verifies storage and retrieval behavior of the in-memory session repository.
+/// </summary>
+[TestClass]
 public sealed class InMemorySessionRepositoryTests
 {
-    [Fact]
+    /// <summary>
+    /// Verifies that a saved session is available by identifier and in the full list.
+    /// </summary>
+    [TestMethod]
     public void Save_makes_a_session_available_by_id_and_in_the_session_list()
     {
         var repository = new InMemorySessionRepository();
