@@ -28,6 +28,26 @@
 
 ---
 
+## ⚠️ Directives de Comportement & Code
+
+1. **Zéro Invention & Clarifications Obligatoires :**
+   - **Règle absolue :** Ne JAMAIS inventer ou extrapoler des structures de données, des balises XML, des hypothèses métier ou des choix d'architecture non documentés.
+   - Si un détail technique ou fonctionnel est ambigu, flou ou manquant (ex: cas limite dans le XML, comportement UI, gestion d'une erreur), tu DOIS t'arrêter et poser des questions explicites (aussi bien techniques que fonctionnelles) avant de coder.
+
+2. **Commentaires Abondants :**
+   - Commente abondamment le code pour expliquer le **POURQUOI** (la raison métier ou technique) et pas seulement le "comment".
+   - Fournis des commentaires XML (`///`) exhaustifs sur chaque classe, interface, propriété et méthode publique.
+
+3. **Logging Élevé & Niveaux de Log Granulaires :**
+   - Abonde en logs à chaque étape clé du traitement (début/fin de parsing, accès fichier, événements watcher, ajouts en mémoire).
+   - Utilise strictement et intelligemment les niveaux de log appropriés :
+     - `Trace` / `Debug` : Détails internes, étapes de boucles, structures brutes lues dans le XML.
+     - `Information` : Événements métier normaux (ex: *"Session 'Spa 24h' importée avec succès - 28 pilotes"*).
+     - `Warning` : Situations anomales mais non bloquantes (ex: *"Pilote sans temps au tour valide dans le fichier"*, *"Fichier temporairement verrouillé, nouvelle tentative..."*).
+     - `Error` / `Critical` : Échecs d'import, fichiers XML corrompus ou illisibles, exceptions non capturées.
+    
+---
+
 ## 📂 Organisation de la Solution
 
 - `src/LMU-DeltaRacing.Domain/`
