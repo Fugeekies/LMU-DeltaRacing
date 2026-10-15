@@ -33,3 +33,9 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 La console charge `appsettings.json` depuis le dossier de l'exécutable et lie la section `LMU` à `LmuApplicationOptions` via `IOptionsMonitor<T>`. Les valeurs modifiées dans le menu Spectre sont validées puis sauvegardées atomiquement dans ce fichier ; le changement est rechargé sans redémarrer l'application.
 
 Par défaut, `ResultsDirectory` est vide et résout le dossier de fixtures `tests/testAssets/Results`, `LogFilePath` est `lmu-deltaracing.log` relatif au dossier de l'exécutable et `FileMinimumLogLevel` est `Debug`. Un chemin de résultats ou de log relatif est résolu à partir du dossier de l'exécutable. Les chemins configurés et le niveau de log sont validés avant le démarrage. Aucun log n'est affiché dans le terminal ; le seuil s'applique au fichier JSON Lines.
+
+## Benchmarks
+
+Le projet MSTest dédié `benchmarks/LMU-DeltaRacing.Benchmarks` mesure le parser sur 109 500 sessions XML en mémoire par défaut (10 courses/jour × 3 phases × 365 jours × 10 ans). Chaque session analysée est libérée avant la suivante pour mesurer le coût du parsing sans faire croître artificiellement le dépôt en mémoire. Les entrées de charge disque (10, 100 et 500 fichiers) sont créées dans le répertoire temporaire du système et supprimées à la fin.
+
+Lancer `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"` pour générer le rapport Markdown, qui indique les durées, débits, allocations cumulées et mémoire observée. Le fichier est écrit dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test. Si l'environnement est limité en mémoire, utiliser `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`.

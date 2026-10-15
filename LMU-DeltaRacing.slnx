@@ -8,4 +8,7 @@
   <Folder Name="/tests/">
     <Project Path="tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj" />
   </Folder>
+  <Folder Name="/benchmarks/">
+    <Project Path="benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj" />
+  </Folder>
 </Solution>
