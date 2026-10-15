@@ -6,7 +6,7 @@
 - `Infrastructure` : parser XML LMU et dépôt en mémoire.
 - `Console` : application console Spectre.Console, composition des dépendances, export OpenTelemetry et tableau des imports.
 - `UI` : interface Blazor prévue pour l'affichage des dashboards.
-- `Tests` : tests unitaires xUnit du parser et du dépôt, avec FluentAssertions.
+- `Tests` : tests unitaires MSTest du parser et du dépôt, avec FluentAssertions.
 
 ## Flux de données (jalon 1)
 1. Le parser lit les métadonnées de session, les résultats des pilotes, leurs tours et secteurs depuis le XML LMU.
