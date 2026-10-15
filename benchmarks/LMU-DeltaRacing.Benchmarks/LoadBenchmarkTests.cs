@@ -23,7 +23,11 @@ public sealed class LoadBenchmarkTests
         var reportDirectory = BuildMetadata["PerformanceReportDirectory"];
         var reportPath = Path.Combine(reportDirectory, "performance-report.md");
         var report = new LoadBenchmarkRunner(new XmlResultParser()).Run(years);
+        var expectedSessionCount = (10L * 3 * 365 * years).ToString("N0", CultureInfo.InvariantCulture);
 
+        Assert.IsTrue(
+            report.Contains($"{expectedSessionCount} sessions.", StringComparison.Ordinal),
+            $"The report must include the expected {expectedSessionCount} sessions.");
         Directory.CreateDirectory(reportDirectory);
         File.WriteAllText(reportPath, report);
 
