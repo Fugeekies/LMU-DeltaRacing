@@ -7,7 +7,7 @@ namespace LMU_DeltaRacing.Benchmarks;
 
 internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
 {
-    private static readonly int[] DiskBatchSizes = [10, 100, 500];
+    private static readonly int[] DiskBatchSizes = [10, 100, 500, 1000, 2000, 5000];
 
     public string Run(int years)
     {
