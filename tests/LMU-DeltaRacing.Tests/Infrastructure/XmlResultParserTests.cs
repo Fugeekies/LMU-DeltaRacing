@@ -5,11 +5,18 @@ using LMU_DeltaRacing.Infrastructure.Parsing;
 
 namespace LMU_DeltaRacing.Tests.Infrastructure;
 
+/// <summary>
+/// Verifies parsing of LMU result XML documents.
+/// </summary>
+[TestClass]
 public sealed class XmlResultParserTests
 {
     private const string FixturePath = "TestAssets/Results/2025_09_20_19_03_47-43P1.xml";
 
-    [Fact]
+    /// <summary>
+    /// Verifies that a real result file populates session, driver, lap, and sector data.
+    /// </summary>
+    [TestMethod]
     public void Parse_reads_session_metadata_drivers_and_laps_from_a_real_result_file()
     {
         var parser = new XmlResultParser();
@@ -38,7 +45,10 @@ public sealed class XmlResultParserTests
         ]);
     }
 
-    [Fact]
+    /// <summary>
+    /// Verifies that malformed XML is reported to the caller.
+    /// </summary>
+    [TestMethod]
     public void Parse_rejects_malformed_xml()
     {
         var parser = new XmlResultParser();

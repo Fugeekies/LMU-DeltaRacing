@@ -12,7 +12,8 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 
 ## Jalon — Monitoring des perfs et console Spectre [Terminé]
 - [x] Mettre en place OpenTelemetry pour instrumenter l'application.
-- [x] Configurer l'export des logs au format JSON structuré et indenté (Human-Readable).
+- [x] Configurer l'export des logs structurés en JSON Lines (un objet JSON par ligne).
+- [x] Écrire les statistiques agrégées de mémoire et de durée/débit d'import dans un fichier dédié par exécution.
 - [x] Ajouter une console de debug (Spectre.Console) pour suivre l'activité de l'application.
 - [x] Créer un tableau de visualisation des imports dans la console.
 

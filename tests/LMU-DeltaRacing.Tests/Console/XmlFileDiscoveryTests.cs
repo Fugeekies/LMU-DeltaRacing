@@ -3,9 +3,16 @@ using LMU_DeltaRacing.ConsoleApp;
 
 namespace LMU_DeltaRacing.Tests.Console;
 
+/// <summary>
+/// Verifies discovery of XML result files for the console application.
+/// </summary>
+[TestClass]
 public sealed class XmlFileDiscoveryTests
 {
-    [Fact]
+    /// <summary>
+    /// Verifies that only top-level XML files are returned in deterministic order.
+    /// </summary>
+    [TestMethod]
     public void GetXmlFiles_returns_top_level_xml_files_in_name_order()
     {
         var directory = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"));
@@ -31,7 +38,10 @@ public sealed class XmlFileDiscoveryTests
         }
     }
 
-    [Fact]
+    /// <summary>
+    /// Verifies that the repository test-assets directory can be located from test output.
+    /// </summary>
+    [TestMethod]
     public void FindTestAssetsResultsDirectory_finds_the_repository_fixture_directory()
     {
         var directory = XmlFileDiscovery.FindTestAssetsResultsDirectory(AppContext.BaseDirectory);
@@ -41,7 +51,10 @@ public sealed class XmlFileDiscoveryTests
         Path.GetFileName(Path.GetDirectoryName(directory)!).Should().Be("testAssets");
     }
 
-    [Fact]
+    /// <summary>
+    /// Verifies that a missing results directory is reported explicitly.
+    /// </summary>
+    [TestMethod]
     public void GetXmlFiles_rejects_a_missing_directory()
     {
         var path = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"));

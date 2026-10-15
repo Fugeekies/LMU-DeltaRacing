@@ -1,28 +1,31 @@
-using System.Globalization;
-using System.Text;
+using System.Text.Json;
 using OpenTelemetry;
 using OpenTelemetry.Logs;
 
 namespace LMU_DeltaRacing.ConsoleApp;
 
 /// <summary>
-/// Writes OpenTelemetry log records to one UTF-8 file for the current run.
+/// Writes OpenTelemetry log records to one UTF-8 file for the current run, keeping it available after shutdown.
 /// </summary>
 public sealed class FileLogExporter : BaseExporter<LogRecord>
 {
+    private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
+
     private readonly object writeLock = new();
     private readonly StreamWriter writer;
+    private bool isClosed;
 
     /// <summary>
-    /// Creates or truncates the log file at the specified path.
+    /// Creates or truncates the log file at the specified path when the application starts.
     /// </summary>
     /// <param name="filePath">The path of the current-run log file.</param>
     public FileLogExporter(string filePath)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(filePath);
 
-        var stream = new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read);
-        writer = new StreamWriter(stream, new UTF8Encoding(encoderShouldEmitUTF8Identifier: false))
+        writer = new StreamWriter(
+            new FileStream(filePath, FileMode.Create, FileAccess.Write, FileShare.Read),
+            new System.Text.UTF8Encoding(encoderShouldEmitUTF8Identifier: false))
         {
             AutoFlush = true
         };
@@ -33,6 +36,11 @@ public sealed class FileLogExporter : BaseExporter<LogRecord>
     {
         lock (writeLock)
         {
+            if (isClosed)
+            {
+                return ExportResult.Failure;
+            }
+
             foreach (var record in batch)
             {
                 WriteRecord(record);
@@ -60,7 +68,7 @@ public sealed class FileLogExporter : BaseExporter<LogRecord>
     {
         lock (writeLock)
         {
-            writer.Dispose();
+            Close();
         }
 
         return true;
@@ -73,7 +81,7 @@ public sealed class FileLogExporter : BaseExporter<LogRecord>
         {
             lock (writeLock)
             {
-                writer.Dispose();
+                Close();
             }
         }
 
@@ -83,31 +91,34 @@ public sealed class FileLogExporter : BaseExporter<LogRecord>
     private void WriteRecord(LogRecord record)
     {
         var timestamp = record.Timestamp == default ? record.ObservedTimestamp : record.Timestamp;
-        var severity = record.LogLevel.ToString();
-        var message = record.FormattedMessage ?? record.Body?.ToString() ?? string.Empty;
-
-        writer.Write(timestamp.ToString("O", CultureInfo.InvariantCulture));
-        writer.Write(" [");
-        writer.Write(severity);
-        writer.Write("] ");
-        writer.Write(record.CategoryName);
-        writer.Write(": ");
-        writer.WriteLine(message);
-
-        if (record.Attributes is not null)
+        var logEntry = new
         {
-            foreach (var attribute in record.Attributes)
+            Timestamp = timestamp.ToUniversalTime(),
+            Severity = record.LogLevel.ToString(),
+            Category = record.CategoryName,
+            Message = record.FormattedMessage ?? record.Body?.ToString() ?? string.Empty,
+            Attributes = record.Attributes?.Select(attribute => new
             {
-                writer.Write("  ");
-                writer.Write(attribute.Key);
-                writer.Write('=');
-                writer.WriteLine(Convert.ToString(attribute.Value, CultureInfo.InvariantCulture));
-            }
+                attribute.Key,
+                attribute.Value
+            }),
+            TraceId = record.TraceId.ToHexString(),
+            SpanId = record.SpanId.ToHexString(),
+            Exception = record.Exception?.ToString()
+        };
+
+        writer.WriteLine(JsonSerializer.Serialize(logEntry, JsonOptions));
+    }
+
+    private void Close()
+    {
+        if (isClosed)
+        {
+            return;
         }
 
-        if (record.Exception is not null)
-        {
-            writer.WriteLine(record.Exception);
-        }
+        writer.Flush();
+        writer.Dispose();
+        isClosed = true;
     }
 }
