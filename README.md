@@ -24,4 +24,6 @@ Le socle métier et le jalon de monitoring sont en place : le parser transforme 
 
 Sans argument, la console demande le chemin du dossier de résultats en configuration Release. En configuration Debug, elle utilise automatiquement `tests/testAssets/Results`. Les chemins de fichiers XML passés en arguments sont importés directement.
 
-Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme d'un tableau JSON indenté contenant des enregistrements structurés. Ce fichier unique est recréé à chaque lancement ; les logs de lancements précédents ne sont pas conservés. Les traces et métriques ne polluent pas le terminal.
+Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
+
+Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-deltaracing-stats.json`, au même endroit. Le fichier indique les imports réussis/échoués, la durée moyenne par fichier, le débit moyen d'import, ainsi que les moyennes du working set et du heap .NET. Il est lui aussi conservé après l'arrêt et réinitialisé au prochain lancement. Les traces et métriques OpenTelemetry ne polluent pas le terminal.

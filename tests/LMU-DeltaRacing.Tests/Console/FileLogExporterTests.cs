@@ -14,10 +14,10 @@ namespace LMU_DeltaRacing.Tests.Console;
 public sealed class FileLogExporterTests
 {
     /// <summary>
-    /// Verifies that export replaces previous contents with readable structured JSON.
+    /// Verifies that export replaces previous contents with one JSON object per log line.
     /// </summary>
     [TestMethod]
-    public void Export_overwrites_the_previous_run_and_writes_indented_structured_json()
+    public void Export_overwrites_previous_contents_and_writes_json_lines()
     {
         var directory = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(directory);
@@ -36,11 +36,13 @@ public sealed class FileLogExporterTests
                 loggerFactory.CreateLogger("ImportTest").LogInformation("Current run {RunNumber}", 7);
             }
 
-            var log = File.ReadAllText(logPath);
-            using var document = JsonDocument.Parse(log);
-            var record = document.RootElement[0];
+            File.Exists(logPath).Should().BeTrue("the latest log must remain available after shutdown");
+            var logLines = File.ReadAllLines(logPath);
+            logLines.Should().NotBeEmpty();
+            logLines.Should().OnlyContain(line => !string.IsNullOrWhiteSpace(line));
+            using var document = JsonDocument.Parse(logLines[0]);
+            var record = document.RootElement;
 
-            document.RootElement.ValueKind.Should().Be(JsonValueKind.Array);
             record.GetProperty("severity").GetString().Should().Be("Information");
             record.GetProperty("category").GetString().Should().Be("ImportTest");
             record.GetProperty("message").GetString().Should().Be("Current run 7");
@@ -49,8 +51,7 @@ public sealed class FileLogExporterTests
                 .Select(attribute => attribute.GetProperty("key").GetString())
                 .Should()
                 .Contain("RunNumber");
-            log.Should().Contain($"{Environment.NewLine}    \"timestamp\"");
-            log.Should().NotContain("previous run");
+            logLines.Should().NotContain(line => line.Contains("previous run", StringComparison.Ordinal));
         }
         finally
         {

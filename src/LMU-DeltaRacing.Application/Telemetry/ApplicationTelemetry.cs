@@ -39,4 +39,26 @@ public static class ApplicationTelemetry
     /// </summary>
     public static Histogram<double> ImportDuration { get; } =
         Meter.CreateHistogram<double>("lmu.result.import.duration", unit: "ms");
+
+    /// <summary>
+    /// Gets an observable gauge for the current process working set in bytes.
+    /// </summary>
+    public static ObservableGauge<long> WorkingSetBytes { get; } =
+        Meter.CreateObservableGauge(
+            "lmu.process.memory.working_set",
+            () =>
+            {
+                using var process = Process.GetCurrentProcess();
+                return process.WorkingSet64;
+            },
+            unit: "By");
+
+    /// <summary>
+    /// Gets an observable gauge for the current managed heap size in bytes.
+    /// </summary>
+    public static ObservableGauge<long> ManagedHeapBytes { get; } =
+        Meter.CreateObservableGauge(
+            "lmu.process.memory.managed_heap",
+            () => GC.GetTotalMemory(forceFullCollection: false),
+            unit: "By");
 }

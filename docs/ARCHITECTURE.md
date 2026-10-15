@@ -16,8 +16,9 @@
 ## Monitoring, Logging & OpenTelemetry
 
 L'application utilise **OpenTelemetry** couplé au système de logging standard de .NET :
-- **Format des logs :** Les journaux écrits sur disque sont sérialisés sous forme d'un tableau JSON structuré et indenté (lisible par un humain et analysable automatiquement).
-- **Fichier courant :** Les logs sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable. Le fichier est recréé à chaque lancement afin de ne conserver que l'exécution courante.
+- **Format des logs :** Les journaux écrits dans `lmu-deltaracing.log` utilisent JSON Lines : un objet JSON structuré par ligne, sans tableau JSON englobant.
+- **Fichier courant :** Les logs sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable. À l'arrêt, le fichier est fermé mais conservé pour consultation. Il est écrasé au démarrage suivant afin de ne conserver que l'exécution courante.
+- **Statistiques :** `lmu-deltaracing-stats.json` contient le résumé OpenTelemetry de la dernière exécution : durée moyenne d'import, débit en fichiers par seconde, mémoire moyenne du processus (working set et heap .NET), nombre de fichiers et résultats d'import. Le fichier est fermé et conservé à l'arrêt, puis remplacé au prochain démarrage.
 - **Traces et métriques :** Elles sont exportées vers la sortie Debug, et non vers le terminal. L'instrumentation runtime publie également des métriques du processus.
 - **Masquage des données sensibles :** Seul le nom du fichier XML, et non son chemin local absolu, est consigné dans les traces.
 
