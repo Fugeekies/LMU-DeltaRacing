@@ -13,19 +13,36 @@
 1. **INTERDICTION DE PUSH SUR `main` :**
    - Tout changement doit impérativement passer par une **Pull Request (PR)** depuis une branche dédiée (ex: `feature/nom-feature`, `fix/nom-bug`).
    - Ne jamais commiter directement sur la branche principale `main`.
+  
+2. **Mise à jour obligatoire de `CHANGELOG.md` :**
+   - Toute Pull Request (PR) modifiant le code source (`src/`), les tests (`tests/`), la configuration ou les fonctionnalités doit **impérativement** inclure une mise à jour du fichier `CHANGELOG.md` situé à la racine du dépôt.
+   - Si le fichier `CHANGELOG.md` n'existe pas encore, crée-le lors de ta première intervention en suivant la spécification [Keep a Changelog](https://keepachangelog.com/fr/1.0.0/).
 
-2. **Test-Driven Development (TDD) Obligatoire :**
+3. **Structure des entrées dans `CHANGELOG.md` :**
+   - Ajoute toujours tes modifications sous la section `## [Unreleased]` (Non publié).
+   - Organise les changements en utilisant les catégories standards suivantes :
+     - `### Added` : Pour les nouvelles fonctionnalités ou nouveaux composants.
+     - `### Changed` : Pour les modifications de fonctionnalités existantes ou refactorisations.
+     - `### Fixed` : Pour la correction de bugs.
+     - `### Performance` : Pour les améliorations de performances, optimisations mémoire et benchmarks.
+     - `### Security` : Pour les corrections liées à la sécurité ou la gestion des verrous/fichiers.
+
+5. **Description des changements :**
+   - Rédige des messages concis, clairs et orientés vers le développeur/utilisateur (ex: `- Ajout du parser XML pour extraire les deltas par secteur (S1, S2, S3)`).
+   - N'oublie pas de lier le titre de la section ou la ligne de commit/PR si applicable.
+
+5. **Test-Driven Development (TDD) Obligatoire :**
    - Écris TOUJOURS les tests unitaires / d'intégration (`MSTest` + `FluentAssertions`) avant le code métier.
    - Utilise les fichiers XML réels dans `tests/testAssets/Results/` pour valider le parsing.
 
-3. **Logging & Observabilité (OpenTelemetry & JSON) :**
+6. **Logging & Observabilité (OpenTelemetry & JSON) :**
    - Tous les logs applicatifs doivent être émis via les abstractions `Microsoft.Extensions.Logging` / OpenTelemetry.
    - Les logs sur fichier doivent être sérialisés en **JSON Lines** : un objet JSON structuré par ligne, sans tableau JSON englobant. Le seuil minimal du fichier est configurable.
    - Ne pas afficher de logs dans la console interactive ; réserver le terminal au menu et aux tableaux Spectre.Console.
    - Les statistiques agrégées d'OpenTelemetry doivent être écrites séparément dans `lmu-deltaracing-stats.json`, en JSON indenté lisible. Les fichiers sont conservés après l'arrêt et remplacés au lancement suivant.
    - Les paramètres applicatifs sont configurés via `IOptionsMonitor<T>` et `appsettings.json` à côté de l'exécutable ; les changements faits dans le menu doivent être validés, sauvegardés et rechargés.
 
-4. **Tests de Charge & Performance :**
+7. **Tests de Charge & Performance :**
    - Pour chaque composant critique (parser XML, file watcher, repository in-memory), prévoir des tests de charge (stress tests de parsing / volume).
    - Les comptes rendus et résultats de benchmarks doivent être générés au format Markdown et **commités dans la PR** associée.
 
