@@ -6,6 +6,7 @@ using LMU_DeltaRacing.ConsoleApp;
 using LMU_DeltaRacing.ConsoleApp.Configuration;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using LMU_DeltaRacing.Infrastructure.Persistence;
+using LMU_DeltaRacing.Infrastructure.Watching;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -138,13 +139,44 @@ if (filesToImport.Count > 0)
 
 ConsoleDashboard.RenderImportSummary(imports, filesToImport.Count);
 var statisticsTableSelection = StatisticsTableSelection.Both;
+await using var resultsDirectoryWatcher = interactiveLaunch
+    ? new ResultsDirectoryWatcher(
+        optionsValidator.ResolveResultsDirectory(optionsMonitor.CurrentValue),
+        importer,
+        host.Services.GetRequiredService<ILogger<ResultsDirectoryWatcher>>())
+    : null;
+
+if (resultsDirectoryWatcher is not null)
+{
+    resultsDirectoryWatcher.ImportCompleted += ConsoleDashboard.RenderDynamicImportResult;
+    try
+    {
+        await resultsDirectoryWatcher.StartAsync(filesToImport);
+    }
+    catch (Exception exception) when (
+        exception is IOException
+            or UnauthorizedAccessException
+            or ArgumentException
+            or PlatformNotSupportedException)
+    {
+        logger.LogCritical(exception, "Could not start watching results directory");
+        AnsiConsole.MarkupLine($"[red]Impossible de surveiller le dossier des résultats : {Markup.Escape(exception.Message)}[/]");
+        await resultsDirectoryWatcher.DisposeAsync();
+        await host.StopAsync();
+        statisticsCollector.Complete();
+        return 1;
+    }
+
+    AnsiConsole.MarkupLine("[green]Surveillance active[/] — les nouveaux fichiers XML seront importés automatiquement.");
+}
+
 if (interactiveLaunch)
 {
     while (true)
     {
         var action = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
-                .Title("Quelles statistiques souhaitez-vous afficher ?")
+                .Title("Surveillance active — quelles statistiques souhaitez-vous afficher ?")
                 .AddChoices(
                     "Par circuit",
                     "Par circuit et voiture",
@@ -154,6 +186,11 @@ if (interactiveLaunch)
 
         if (action == "Quitter")
         {
+            if (resultsDirectoryWatcher is not null)
+            {
+                await resultsDirectoryWatcher.DisposeAsync();
+            }
+
             await host.StopAsync();
             statisticsCollector.Complete();
             return imports.Any(result => result.Status == SessionImportStatus.Failed) ? 1 : 0;
@@ -218,11 +255,18 @@ if (interactiveLaunch)
             "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
             _ => StatisticsTableSelection.Both
         };
-        break;
+        ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
     }
 }
+else
+{
+    ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
+}
+if (resultsDirectoryWatcher is not null)
+{
+    await resultsDirectoryWatcher.DisposeAsync();
+}
 
-ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
 await host.StopAsync();
 statisticsCollector.Complete();
 

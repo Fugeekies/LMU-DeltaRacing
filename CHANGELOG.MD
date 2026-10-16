@@ -12,10 +12,14 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ### Added
 - Ajout dans la console Spectre de vues statistiques par circuit et par classe/équipe, avec deltas chronologiques des meilleurs tours valides et graphiques des mesures récentes.
 - Ajout au menu de lancement du choix des tableaux statistiques à afficher et exclusion des sessions Practice des statistiques.
+- Surveillance dynamique du dossier des résultats, déduplication des chemins pendant l'exécution, notification des imports et échecs, et retries sur les fichiers verrouillés.
 
 ### Changed
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
 - Affichage d'un titre dès le démarrage et remplacement du tableau des imports par une barre de progression et un résumé des résultats.
+
+### Performance
+- Test de charge de l'import dynamique sur 50 fichiers XML injectés simultanément; résultats consignés dans `docs/benchmarks/dynamic-import-load-report.md`.
 
 ### 🏗️ Architecture & Core (Clean Architecture)
 - **Domain Layer (`src/LMU-DeltaRacing.Domain/`) :**

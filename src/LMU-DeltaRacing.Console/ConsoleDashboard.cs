@@ -52,6 +52,28 @@ public static class ConsoleDashboard
     }
 
     /// <summary>
+    /// Reports the outcome of a result file imported while directory monitoring is active.
+    /// </summary>
+    /// <param name="result">The outcome of the newly observed file.</param>
+    public static void RenderDynamicImportResult(SessionImportResult result)
+    {
+        ArgumentNullException.ThrowIfNull(result);
+
+        if (result.Status == SessionImportStatus.Imported)
+        {
+            var session = result.Session!;
+            AnsiConsole.MarkupLine(
+                $"[green]Nouveau résultat importé[/] : {Escape(result.SourceFile)} — " +
+                $"{Escape(session.TrackVenue)} / {Escape(session.SessionType)}.");
+            return;
+        }
+
+        AnsiConsole.MarkupLine(
+            $"[red]Échec d'import[/] : {Escape(result.SourceFile)} — " +
+            Escape(result.ErrorMessage ?? "Erreur inconnue"));
+    }
+
+    /// <summary>
     /// Displays chronological lap-time statistics grouped by circuit and vehicle, with charts
     /// of the most recent measured best laps.
     /// </summary>
