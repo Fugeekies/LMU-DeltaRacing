@@ -15,6 +15,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ### Changed
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
+- Affichage d'un titre dès le démarrage et remplacement du tableau des imports par une barre de progression et un résumé des résultats.
 
 ### 🏗️ Architecture & Core (Clean Architecture)
 - **Domain Layer (`src/LMU-DeltaRacing.Domain/`) :**

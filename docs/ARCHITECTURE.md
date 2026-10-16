@@ -4,7 +4,7 @@
 - `Domain` : Entités métier (`Session`, `Driver`, `Lap`, `Sector`) sans dépendance externe.
 - `Application` : Contrats du parser XML, du dépôt de sessions, des services d'import, contrats de métriques et traces.
 - `Infrastructure` : parser XML LMU et dépôt en mémoire. Le watcher de fichiers est prévu au jalon d'import dynamique, mais n'est pas encore implémenté.
-- `Console` : application console Spectre.Console, composition des dépendances, configuration rechargée à chaud, export OpenTelemetry, suivi des imports et statistiques de meilleurs tours groupées par circuit puis par classe/équipe.
+- `Console` : application console Spectre.Console, composition des dépendances, configuration rechargée à chaud, export OpenTelemetry, progression des imports et statistiques de meilleurs tours groupées par circuit puis par classe/équipe.
 - `UI` : Interface Blazor prévue pour l'affichage des dashboards.
 - `Tests` : tests unitaires et d'intégration MSTest + FluentAssertions ; les benchmarks de charge sont prévus au jalon Quality Gates.
 
@@ -32,7 +32,7 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 
 La console charge `appsettings.json` depuis le dossier de l'exécutable et lie la section `LMU` à `LmuApplicationOptions` via `IOptionsMonitor<T>`. Les valeurs modifiées dans le menu Spectre sont validées puis sauvegardées atomiquement dans ce fichier ; le changement est rechargé sans redémarrer l'application.
 
-Sans argument CLI, l'application importe automatiquement les XML configurés au démarrage, affiche le récapitulatif, puis propose directement les vues statistiques Spectre.Console : par lieu/tracé, par lieu/tracé/classe/équipe, ou les deux. Le choix affiche la vue puis termine l'exécution; la configuration du dossier modifiée dans ce menu s'applique au prochain démarrage. Les sessions Practice sont exclues des statistiques, sans être retirées des imports ni du récapitulatif d'import. Le meilleur tour valide de chaque autre session est comparé chronologiquement à la dernière mesure valide du même groupe; le delta est le temps courant moins le temps précédent. Les graphiques représentent le meilleur tour valide le plus récent pour chaque groupe affiché.
+Sans argument CLI, l'application affiche son titre au démarrage puis importe automatiquement les XML configurés avec une barre de progression. À la fin, elle affiche un résumé du nombre de réussites et d'échecs (avec le détail des erreurs), puis propose les vues statistiques Spectre.Console : par lieu/tracé, par lieu/tracé/classe/équipe, ou les deux. Le choix affiche la vue puis termine l'exécution; la configuration du dossier modifiée dans ce menu s'applique au prochain démarrage. Les sessions Practice sont exclues des statistiques, sans être retirées des imports. Le meilleur tour valide de chaque autre session est comparé chronologiquement à la dernière mesure valide du même groupe; le delta est le temps courant moins le temps précédent. Les graphiques représentent le meilleur tour valide le plus récent pour chaque groupe affiché.
 
 Par défaut, `ResultsDirectory` est vide et résout le dossier de fixtures `tests/testAssets/Results`, `LogFilePath` est `lmu-deltaracing.log` relatif au dossier de l'exécutable et `FileMinimumLogLevel` est `Debug`. Un chemin de résultats ou de log relatif est résolu à partir du dossier de l'exécutable. Les chemins configurés et le niveau de log sont validés avant le démarrage. Aucun log n'est affiché dans le terminal ; le seuil s'applique au fichier JSON Lines.
 

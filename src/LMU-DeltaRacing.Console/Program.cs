@@ -19,6 +19,8 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Spectre.Console;
 
+ConsoleDashboard.RenderStartupTitle();
+
 var executableDirectory = AppContext.BaseDirectory;
 var configurationFilePath = Path.Combine(executableDirectory, "appsettings.json");
 var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings
@@ -113,14 +115,28 @@ if (interactiveLaunch)
     }
 }
 
-foreach (var filePath in filesToImport)
+if (filesToImport.Count > 0)
 {
-    statisticsCollector.SampleMemory();
-    imports.Add(importer.ImportFile(filePath));
-    statisticsCollector.SampleMemory();
+    AnsiConsole.Progress()
+        .AutoClear(false)
+        .Start(context =>
+        {
+            var task = context.AddTask(
+                "[deepskyblue1]Chargement des résultats[/]",
+                maxValue: filesToImport.Count);
+
+            foreach (var filePath in filesToImport)
+            {
+                task.Description = $"Chargement [grey]{Markup.Escape(Path.GetFileName(filePath))}[/]";
+                statisticsCollector.SampleMemory();
+                imports.Add(importer.ImportFile(filePath));
+                statisticsCollector.SampleMemory();
+                task.Increment(1);
+            }
+        });
 }
 
-ConsoleDashboard.Render(imports);
+ConsoleDashboard.RenderImportSummary(imports, filesToImport.Count);
 var statisticsTableSelection = StatisticsTableSelection.Both;
 if (interactiveLaunch)
 {

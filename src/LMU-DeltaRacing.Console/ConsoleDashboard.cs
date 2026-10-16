@@ -10,63 +10,45 @@ namespace LMU_DeltaRacing.ConsoleApp;
 public static class ConsoleDashboard
 {
     /// <summary>
-    /// Displays session details and the outcome of each requested import.
+    /// Displays the application title before loading configuration and result files.
     /// </summary>
-    /// <param name="imports">The results of the requested imports.</param>
-    public static void Render(IReadOnlyCollection<SessionImportResult> imports)
+    public static void RenderStartupTitle()
     {
         AnsiConsole.Write(new Rule("[bold deepskyblue1]LMU DeltaRacing[/]").LeftJustified());
-        AnsiConsole.MarkupLine("[dim]Import des résultats et diagnostic OpenTelemetry[/]");
+        AnsiConsole.MarkupLine("[dim]Import des résultats LMU — Statistiques et graphiques[/]");
+    }
 
-        var table = new Table()
-            .Border(TableBorder.Rounded)
-            .Expand();
-        table.AddColumn("État");
-        table.AddColumn("Fichier");
-        table.AddColumn("Circuit");
-        table.AddColumn("Session");
-        table.AddColumn("Pilotes");
-        table.AddColumn("Détail");
+    /// <summary>
+    /// Displays a compact import outcome after the loading progress completes.
+    /// </summary>
+    /// <param name="imports">The outcome of each requested file import.</param>
+    /// <param name="totalFiles">The number of files presented to the importer.</param>
+    public static void RenderImportSummary(
+        IReadOnlyCollection<SessionImportResult> imports,
+        int totalFiles)
+    {
+        ArgumentNullException.ThrowIfNull(imports);
+        ArgumentOutOfRangeException.ThrowIfNegative(totalFiles);
 
-        if (imports.Count == 0)
+        var successfulImports = imports.Count(result => result.Status == SessionImportStatus.Imported);
+        var failedImports = imports
+            .Where(result => result.Status == SessionImportStatus.Failed)
+            .ToArray();
+
+        if (totalFiles == 0)
         {
-            table.AddRow(
-                "[dim]Aucun XML[/]",
-                "[dim]—[/]",
-                "[dim]—[/]",
-                "[dim]—[/]",
-                "[dim]—[/]",
-                "[dim]Aucun fichier XML trouvé dans le dossier sélectionné.[/]");
-        }
-        else
-        {
-            foreach (var result in imports)
-            {
-                if (result.Status == SessionImportStatus.Imported)
-                {
-                    var session = result.Session!;
-                    table.AddRow(
-                        "[green]Importé[/]",
-                        Escape(result.SourceFile),
-                        Escape(session.TrackVenue),
-                        Escape(session.SessionType),
-                        session.Drivers.Count.ToString(System.Globalization.CultureInfo.InvariantCulture),
-                        Escape(session.TrackCourse));
-                }
-                else
-                {
-                    table.AddRow(
-                        "[red]Échec[/]",
-                        Escape(result.SourceFile),
-                        "[dim]—[/]",
-                        "[dim]—[/]",
-                        "[dim]—[/]",
-                        Escape(result.ErrorMessage ?? "Erreur inconnue"));
-                }
-            }
+            AnsiConsole.MarkupLine("[dim]Aucun résultat à charger.[/]");
+            return;
         }
 
-        AnsiConsole.Write(table);
+        AnsiConsole.MarkupLine(
+            $"Chargement terminé : [green]{successfulImports} réussi(s)[/], [red]{failedImports.Length} échec(s)[/].");
+        foreach (var failure in failedImports)
+        {
+            AnsiConsole.MarkupLine(
+                $"[red]Échec[/] [bold]{Escape(failure.SourceFile)}[/] : " +
+                Escape(failure.ErrorMessage ?? "Erreur inconnue"));
+        }
     }
 
     /// <summary>

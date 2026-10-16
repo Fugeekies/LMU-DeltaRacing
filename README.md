@@ -6,7 +6,7 @@ La [feuille de route](docs/ROADMAP.md) présente les jalons envisagés et une li
 
 ## État actuel
 
-Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche les résultats d'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest s'appuient sur des fichiers XML réels de `tests/testAssets/Results`.
+Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche une progression pendant l'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest s'appuient sur des fichiers XML réels de `tests/testAssets/Results`.
 
 ## Projets
 
@@ -28,7 +28,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 
 Sans argument, la console propose d'importer les résultats, de modifier la configuration ou de quitter. Les chemins de fichiers XML passés en arguments sont importés directement.
 
-Sans argument, la console importe automatiquement les XML du dossier configuré au démarrage, puis affiche le récapitulatif des imports et propose directement les vues statistiques : par circuit, par circuit et voiture (classe + équipe), ou les deux. La sélection affiche la vue immédiatement au lieu de reboucler dans le menu. La modification du dossier de résultats depuis le menu s'applique au prochain démarrage. Les sessions Practice restent importées et visibles dans le récapitulatif des imports, mais sont exclues des statistiques. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
+Au démarrage, la console affiche son titre puis importe automatiquement les XML du dossier configuré avec une barre de progression et un résumé du chargement (les échecs sont détaillés). Elle propose ensuite les vues statistiques : par circuit, par circuit et voiture (classe + équipe), ou les deux. La sélection affiche la vue immédiatement. La modification du dossier de résultats depuis le menu s'applique au prochain démarrage. Les sessions Practice restent importées mais sont exclues des statistiques. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
 
 Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
 
