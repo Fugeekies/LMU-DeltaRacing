@@ -12,6 +12,7 @@ namespace LMU_DeltaRacing.Application.Services;
 /// </summary>
 public sealed class SessionImportService : ISessionImportService
 {
+    private const int MaximumFileOpenAttempts = 6;
     private readonly IResultXmlParser parser;
     private readonly ISessionRepository repository;
     private readonly ILogger<SessionImportService> logger;
@@ -50,7 +51,7 @@ public sealed class SessionImportService : ISessionImportService
         try
         {
             logger.LogDebug("Opening result file {SourceFile}", sourceFile);
-            using var stream = File.OpenRead(filePath);
+            using var stream = OpenResultFile(filePath, sourceFile);
             logger.LogDebug("Parsing result file {SourceFile}", sourceFile);
             var session = parser.Parse(stream);
             logger.LogDebug("Parsed result file {SourceFile}; saving session {SessionId}", sourceFile, session.Id);
@@ -88,6 +89,39 @@ public sealed class SessionImportService : ISessionImportService
             ApplicationTelemetry.ImportDuration.Record(
                 stopwatch.Elapsed.TotalMilliseconds,
                 new KeyValuePair<string, object?>("file.extension", Path.GetExtension(sourceFile)));
+        }
+    }
+
+    private FileStream OpenResultFile(string filePath, string sourceFile)
+    {
+        for (var attempt = 1; ; attempt++)
+        {
+            try
+            {
+                return new FileStream(
+                    filePath,
+                    FileMode.Open,
+                    FileAccess.Read,
+                    FileShare.None);
+            }
+            catch (Exception exception) when (
+                exception is IOException or UnauthorizedAccessException)
+            {
+                if (attempt >= MaximumFileOpenAttempts)
+                {
+                    throw;
+                }
+
+                var delay = TimeSpan.FromMilliseconds(Math.Min(attempt * 200, 1000));
+                logger.LogWarning(
+                    exception,
+                    "Result file {SourceFile} is locked or not yet available; retry {Attempt}/{MaxAttempts} in {DelayMilliseconds} ms",
+                    sourceFile,
+                    attempt,
+                    MaximumFileOpenAttempts,
+                    delay.TotalMilliseconds);
+                Thread.Sleep(delay);
+            }
         }
     }
 }

@@ -41,11 +41,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Permettre de choisir dans le menu de lancement les vues statistiques à afficher et exclure les sessions Practice des statistiques.
 
 ## Jalon — Import dynamique des résultats
-- [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).
-- [ ] Surveiller l'arrivée de nouveaux fichiers XML (`FileSystemWatcher`) avec gestion du verrouillage de fichier.
-- [ ] Éviter les imports en double et gérer le registre des fichiers traités.
-- [ ] Signaler les fichiers invalides sans interrompre le flux d'importation.
-- [ ] Exécuter un test de charge sur la surveillance de dossier (ex: injection simultanée de 50 fichiers XML).
+- [x] Surveiller l'arrivée de nouveaux fichiers XML (`FileSystemWatcher`) avec gestion du verrouillage de fichier.
+- [x] Éviter les imports en double et gérer le registre des fichiers traités en mémoire pendant l'exécution.
+- [x] Signaler les fichiers invalides sans interrompre le flux d'importation.
+- [x] Exécuter un test de charge sur la surveillance de dossier avec injection simultanée de 50 fichiers XML.
+- [x] Générer le compte rendu du test de charge dans `docs/benchmarks/dynamic-import-load-report.md`.
 
 ## Jalon — Première interface Blazor
 - [ ] Mettre en place l'hébergement Blazor local.
