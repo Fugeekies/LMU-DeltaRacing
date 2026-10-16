@@ -6,14 +6,14 @@ La [feuille de route](docs/ROADMAP.md) présente les jalons envisagés et une li
 
 ## État actuel
 
-Le socle métier et le jalon de monitoring sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche les résultats d'import avec OpenTelemetry. Les tests MSTest s'appuient sur des fichiers XML réels de `tests/testAssets/Results`.
+Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche les résultats d'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest s'appuient sur des fichiers XML réels de `tests/testAssets/Results`.
 
 ## Projets
 
 - `src/LMU-DeltaRacing.Domain` : entités métier sans dépendance externe.
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML et dépôt en mémoire.
-- `src/LMU-DeltaRacing.Console` : import XML ponctuel, tableau Spectre.Console et diagnostic OpenTelemetry.
+- `src/LMU-DeltaRacing.Console` : import XML ponctuel, tableaux et graphiques Spectre.Console des statistiques par circuit/voiture, et diagnostic OpenTelemetry.
 - `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
 - `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.
 - `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks du parsing en mémoire et de lots XML temporaires.
@@ -27,6 +27,8 @@ Le socle métier et le jalon de monitoring sont en place : le parser transforme 
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 
 Sans argument, la console propose d'importer les résultats, de modifier la configuration ou de quitter. Les chemins de fichiers XML passés en arguments sont importés directement.
+
+Après chaque import, la console affiche le tableau des imports, les statistiques groupées par circuit puis par classe et équipe, et un graphique des meilleurs tours les plus récents. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
 
 Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
 

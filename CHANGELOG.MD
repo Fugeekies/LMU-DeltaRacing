@@ -9,6 +9,9 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ## [Unreleased]
 
+### Added
+- Ajout dans la console Spectre de vues statistiques par circuit et par classe/équipe, avec deltas chronologiques des meilleurs tours valides et graphiques des mesures récentes.
+
 ### 🏗️ Architecture & Core (Clean Architecture)
 - **Domain Layer (`src/LMU-DeltaRacing.Domain/`) :**
   - Création des entités métiers pures : `Session`, `Driver`, `Lap`, et `Sector`.

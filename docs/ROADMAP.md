@@ -34,9 +34,10 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Permettre de réduire la charge à 5 ans ou 2 ans si les ressources mémoire sont limitées (`-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`).
 
 ## Jalon — Statistiques, Graphiques
-- [ ] Ajout d'une nouvelle Vues avec groupement par circuit.
-- [ ] Ajout d'une nouvelle Vues avec groupement par circuit et par voiture.
-- [ ] Ajout de colonne qui mesure les delta entre les données par date de la course
+- [x] Ajouter une vue statistique groupée par circuit.
+- [x] Ajouter une vue statistique groupée par circuit et par voiture (classe + équipe).
+- [x] Ajouter le delta du meilleur tour valide par rapport à la session précédente du même circuit, ordonnée par date.
+- [x] Afficher des graphiques Spectre.Console des meilleurs tours valides les plus récents.
 
 ## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).

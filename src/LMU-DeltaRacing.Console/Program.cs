@@ -90,6 +90,7 @@ var logger = host.Services.GetRequiredService<ILoggerFactory>()
 var optionsMonitor = host.Services.GetRequiredService<IOptionsMonitor<LmuApplicationOptions>>();
 var settingsStore = host.Services.GetRequiredService<LmuApplicationSettingsStore>();
 var importer = host.Services.GetRequiredService<ISessionImportService>();
+var sessionRepository = host.Services.GetRequiredService<ISessionRepository>();
 var imports = new List<SessionImportResult>();
 IReadOnlyList<string> filesToImport = args;
 
@@ -190,6 +191,7 @@ foreach (var filePath in filesToImport)
 }
 
 ConsoleDashboard.Render(imports);
+ConsoleDashboard.RenderStatistics(sessionRepository.GetAll());
 await host.StopAsync();
 statisticsCollector.Complete();
 
