@@ -5,7 +5,7 @@
 - `Application` : Contrats du parser XML, du dépôt de sessions, des services d'import, contrats de métriques et traces.
 - `Infrastructure` : parser XML LMU, dépôt en mémoire et watcher du dossier de résultats avec traitement séquentiel, retries sur les fichiers verrouillés et déduplication par chemin.
 - `Console` : application console Spectre.Console, composition des dépendances, configuration rechargée à chaud, export OpenTelemetry, progression des imports et statistiques de meilleurs tours groupées par circuit puis par classe/équipe.
-- `UI` : Interface Blazor prévue pour l'affichage des dashboards.
+- `UI` : Dashboard Blazor interactif local, lecture du dépôt en mémoire, chargement initial des résultats et actualisation via le watcher partagé avec la console.
 - `Tests` : tests unitaires et d'intégration MSTest + FluentAssertions ; les benchmarks de charge sont prévus au jalon Quality Gates.
 
 ## Flux de données
@@ -39,6 +39,8 @@ Après le chargement initial, le processus interactif surveille le même dossier
 Par défaut, `ResultsDirectory` est vide et résout le dossier de fixtures `tests/testAssets/Results`, `LogFilePath` est `lmu-deltaracing.log` relatif au dossier de l'exécutable et `FileMinimumLogLevel` est `Debug`. Un chemin de résultats ou de log relatif est résolu à partir du dossier de l'exécutable. Les chemins configurés et le niveau de log sont validés avant le démarrage. Aucun log n'est affiché dans le terminal ; le seuil s'applique au fichier JSON Lines.
 
 ## Benchmarks
+
+L'application Blazor compose les mêmes services de parsing, dépôt et import que la console. Elle importe le dossier configuré en arrière-plan au démarrage et démarre le watcher avec les fichiers initiaux déjà marqués comme traités; les nouveaux imports et échecs actualisent l'interface sans rechargement. Le dashboard présente les sessions les plus récentes et le classement par position XML, avec les positions absentes en fin de liste. Il écoute sur une adresse loopback avec un port dynamique et ouvre le navigateur par défaut. Les logs restent en JSON Lines dans `lmu-deltaracing.log`; le profil de publication `win-x64` est autonome et ne nécessite pas d'installation du runtime .NET.
 
 Le projet MSTest dédié `benchmarks/LMU-DeltaRacing.Benchmarks` mesure le parser sur 109 500 sessions XML en mémoire par défaut (10 courses/jour × 3 phases × 365 jours × 10 ans). Chaque session analysée est libérée avant la suivante pour mesurer le coût du parsing sans faire croître artificiellement le dépôt en mémoire. Les entrées de charge disque (10, 100 et 500 fichiers) sont créées dans le répertoire temporaire du système et supprimées à la fin.
 

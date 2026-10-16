@@ -1,0 +1,29 @@
+﻿@page "/Error"
+@using System.Diagnostics
+
+<PageTitle>Erreur</PageTitle>
+
+<section class="notice notice-error" role="alert">
+    <div>
+        <h1>Une erreur est survenue</h1>
+        <p>Le tableau de bord n'a pas pu traiter cette demande.</p>
+    </div>
+</section>
+
+@if (ShowRequestId)
+{
+    <p>
+        <strong>Identifiant de requête :</strong> <code>@RequestId</code>
+    </p>
+}
+
+@code{
+    [CascadingParameter]
+    private HttpContext? HttpContext { get; set; }
+
+    private string? RequestId { get; set; }
+    private bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
+
+    protected override void OnInitialized() =>
+        RequestId = Activity.Current?.Id ?? HttpContext?.TraceIdentifier;
+}

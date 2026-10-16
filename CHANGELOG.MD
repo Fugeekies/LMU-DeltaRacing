@@ -13,6 +13,8 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Ajout dans la console Spectre de vues statistiques par circuit et par classe/équipe, avec deltas chronologiques des meilleurs tours valides et graphiques des mesures récentes.
 - Ajout au menu de lancement du choix des tableaux statistiques à afficher et exclusion des sessions Practice des statistiques.
 - Surveillance dynamique du dossier des résultats, déduplication des chemins pendant l'exécution, notification des imports et échecs, et retries sur les fichiers verrouillés.
+- Ajout d'un dashboard Blazor local avec historique des sessions, classement des pilotes, progression du chargement et actualisation en direct des imports.
+- Ajout d'un profil de publication Windows x64 autonome pour lancer le dashboard sans installer le runtime .NET.
 
 ### Changed
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.

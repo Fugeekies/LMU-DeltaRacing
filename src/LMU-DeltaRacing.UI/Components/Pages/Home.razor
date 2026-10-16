@@ -1,0 +1,267 @@
+@page "/"
+@implements IDisposable
+@inject DashboardDataService DashboardData
+
+<PageTitle>Tableau de bord | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">ESPACE INGÉNIEUR DE PISTE</p>
+        <h1>Tableau de bord</h1>
+        <p class="page-subtitle">Historique des sessions et classements importés depuis Le Mans Ultimate.</p>
+    </div>
+    <div class="live-indicator">
+        <span class="status-dot @(state.IsWatching ? "is-live" : "is-idle")" aria-hidden="true"></span>
+        <span>@(state.IsWatching ? "SURVEILLANCE ACTIVE" : "SURVEILLANCE INACTIVE")</span>
+    </div>
+</section>
+
+@if (state.IsLoading)
+{
+    var progress = state.FilesToLoad == 0
+        ? 100
+        : (int)Math.Round(state.FilesLoaded * 100d / state.FilesToLoad);
+    <section class="load-panel" aria-live="polite">
+        <div class="load-copy">
+            <span class="eyebrow">IMPORT INITIAL</span>
+            <span>@state.FilesLoaded / @state.FilesToLoad fichiers traités</span>
+        </div>
+        <progress class="load-progress" max="100" value="@progress" aria-label="Progression de l'import initial">
+            @progress%
+        </progress>
+    </section>
+}
+
+@if (!string.IsNullOrWhiteSpace(state.ErrorMessage))
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n'ont pas pu être chargés</h2>
+            <p>@state.ErrorMessage</p>
+            <p>Vérifiez <code>LMU:ResultsDirectory</code> dans <code>appsettings.json</code>.</p>
+        </div>
+    </section>
+}
+
+<section class="summary-grid" aria-label="Résumé des résultats">
+    <article class="summary-card">
+        <span class="summary-label">SESSIONS IMPORTÉES</span>
+        <strong class="summary-value">@state.Sessions.Count</strong>
+        <span class="summary-detail">Historique disponible</span>
+    </article>
+    <article class="summary-card summary-card-accent">
+        <span class="summary-label">DERNIÈRE SESSION</span>
+        <strong class="summary-value summary-value-text">
+            @(DashboardPresentation.OrderSessions(state.Sessions).FirstOrDefault()?.TrackVenue ?? "—")
+        </strong>
+        <span class="summary-detail">
+            @(DashboardPresentation.OrderSessions(state.Sessions).FirstOrDefault()?.StartedAt.ToString("dd/MM/yyyy HH:mm") ?? "Aucune session")
+        </span>
+    </article>
+    <article class="summary-card">
+        <span class="summary-label">FICHIERS EN ÉCHEC</span>
+        <strong class="summary-value @(state.ImportFailures.Count > 0 ? "text-warning" : string.Empty)">
+            @state.ImportFailures.Count
+        </strong>
+        <span class="summary-detail">Les autres imports continuent</span>
+    </article>
+</section>
+
+@if (state.ImportFailures.Count > 0)
+{
+    <section class="notice notice-warning" aria-live="polite">
+        <div>
+            <h2>Certains fichiers n'ont pas pu être importés</h2>
+            <ul class="failure-list">
+                @foreach (var failure in state.ImportFailures)
+                {
+                    <li><strong>@failure.SourceFile</strong><span>@failure.ErrorMessage</span></li>
+                }
+            </ul>
+        </div>
+    </section>
+}
+
+<section class="content-grid">
+    <article class="panel sessions-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">ARCHIVES DE COURSE</p>
+                <h2>Sessions récentes</h2>
+            </div>
+            <span class="count-badge">@state.Sessions.Count</span>
+        </div>
+
+        @if (state.IsLoading && state.Sessions.Count == 0)
+        {
+            <div class="empty-state">
+                <span class="loading-spinner" aria-hidden="true"></span>
+                <p>Lecture des fichiers de résultats…</p>
+            </div>
+        }
+        else if (state.Sessions.Count == 0)
+        {
+            <div class="empty-state">
+                <span class="empty-icon" aria-hidden="true">○</span>
+                <h3>Aucune session importée</h3>
+                <p>Ajoutez des fichiers XML LMU au dossier de résultats configuré. Les nouveaux fichiers seront détectés automatiquement.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-scroll">
+                <table class="data-table sessions-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">DATE / HEURE</th>
+                            <th scope="col">CIRCUIT</th>
+                            <th scope="col">ÉVÉNEMENT</th>
+                            <th scope="col">SESSION</th>
+                            <th scope="col" class="numeric-cell">PILOTES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var session in DashboardPresentation.OrderSessions(state.Sessions))
+                        {
+                            <tr class="session-row @(SelectedSession?.Id == session.Id ? "selected" : string.Empty)"
+                                role="button"
+                                tabindex="0"
+                                aria-pressed="@(SelectedSession?.Id == session.Id)"
+                                @onclick="() => SelectSession(session.Id)"
+                                @onkeydown="args => SelectOnKeyDown(args, session.Id)">
+                                <td class="date-cell">@session.StartedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td class="track-cell">
+                                    <strong>@session.TrackVenue</strong>
+                                    <span>@session.TrackCourse</span>
+                                </td>
+                                <td>@session.TrackEvent</td>
+                                <td><span class="session-type">@session.SessionType</span></td>
+                                <td class="numeric-cell">@session.Drivers.Count</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </article>
+
+    <article class="panel classification-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">RÉSULTATS DE SESSION</p>
+                <h2>Classement des pilotes</h2>
+            </div>
+        </div>
+
+        @if (SelectedSession is null)
+        {
+            <div class="empty-state compact-empty">
+                <p>Le classement apparaîtra ici après le chargement d'une session.</p>
+            </div>
+        }
+        else if (SelectedSession.Drivers.Count == 0)
+        {
+            <div class="empty-state compact-empty">
+                <p>Aucun pilote n'est renseigné pour cette session.</p>
+            </div>
+        }
+        else
+        {
+            <div class="selected-session">
+                <span>@SelectedSession.TrackVenue</span>
+                <strong>@SelectedSession.TrackEvent</strong>
+            </div>
+            <div class="table-scroll classification-scroll">
+                <table class="data-table classification-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="position-cell">POS</th>
+                            <th scope="col">PILOTE / ÉQUIPE</th>
+                            <th scope="col">VOITURE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var driver in DashboardPresentation.GetClassification(SelectedSession))
+                        {
+                            <tr>
+                                <td class="position-cell">
+                                    @if (driver.Position is int position)
+                                    {
+                                        <span class="position-number @(position <= 3 ? $"position-{position}" : string.Empty)">@position.ToString("00")</span>
+                                    }
+                                    else
+                                    {
+                                        <span class="position-missing">—</span>
+                                    }
+                                </td>
+                                <td class="driver-cell">
+                                    <strong>@driver.Name</strong>
+                                    <span>@(string.IsNullOrWhiteSpace(driver.TeamName) ? "Équipe non renseignée" : driver.TeamName)</span>
+                                </td>
+                                <td class="car-cell">
+                                    <strong>@(string.IsNullOrWhiteSpace(driver.CarNumber) ? "—" : $"#{driver.CarNumber}")</strong>
+                                    <span class="category-badge @GetCategoryClass(driver.CarClass)">
+                                        @(string.IsNullOrWhiteSpace(driver.CarClass) ? "N/C" : driver.CarClass)
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </article>
+</section>
+
+@code {
+    private DashboardState state = new(true, 0, 0, false, null, [], []);
+
+    private Session? SelectedSession =>
+        state.Sessions.FirstOrDefault(session => session.Id == selectedSessionId)
+        ?? DashboardPresentation.OrderSessions(state.Sessions).FirstOrDefault();
+
+    private Guid? selectedSessionId;
+
+    protected override void OnInitialized()
+    {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        state = DashboardData.Snapshot;
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            state = DashboardData.Snapshot;
+            StateHasChanged();
+        });
+
+    private void SelectSession(Guid sessionId) => selectedSessionId = sessionId;
+
+    private void SelectOnKeyDown(KeyboardEventArgs args, Guid sessionId)
+    {
+        if (args.Key is "Enter" or " ")
+        {
+            selectedSessionId = sessionId;
+        }
+    }
+
+    private static string GetCategoryClass(string carClass)
+    {
+        if (carClass.Contains("Hyper", StringComparison.OrdinalIgnoreCase))
+        {
+            return "category-hypercar";
+        }
+
+        if (carClass.Contains("LMP2", StringComparison.OrdinalIgnoreCase))
+        {
+            return "category-lmp2";
+        }
+
+        return carClass.Contains("LMGT3", StringComparison.OrdinalIgnoreCase)
+            ? "category-lmgt3"
+            : "category-other";
+    }
+}
