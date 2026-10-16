@@ -15,7 +15,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Configurer l'export des logs structurés en JSON Lines (un objet JSON par ligne).
 - [x] Écrire les statistiques agrégées de mémoire et de durée/débit d'import dans un fichier dédié par exécution.
 - [x] Ajouter une console de debug (Spectre.Console) pour suivre l'activité de l'application.
-- [x] Créer un tableau de visualisation des imports dans la console.
+- [x] Afficher la progression du chargement des imports dans la console.
 
 ## Jalon — Gestion de la configuration
 - [x] Configurer la gestion dynamique des paramètres applicatifs (`IOptionsMonitor<T>` / `appsettings.json`)
@@ -34,9 +34,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Permettre de réduire la charge à 5 ans ou 2 ans si les ressources mémoire sont limitées (`-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`).
 
 ## Jalon — Statistiques, Graphiques
-- [ ] Ajout d'une nouvelle Vues avec groupement par circuit.
-- [ ] Ajout d'une nouvelle Vues avec groupement par circuit et par voiture.
-- [ ] Ajout de colonne qui mesure les delta entre les données par date de la course
+- [x] Ajouter une vue statistique groupée par circuit.
+- [x] Ajouter une vue statistique groupée par circuit et par voiture (classe + équipe).
+- [x] Ajouter le delta du meilleur tour valide par rapport à la session précédente du même circuit, ordonnée par date.
+- [x] Afficher des graphiques Spectre.Console des meilleurs tours valides les plus récents.
+- [x] Permettre de choisir dans le menu de lancement les vues statistiques à afficher et exclure les sessions Practice des statistiques.
 
 ## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).

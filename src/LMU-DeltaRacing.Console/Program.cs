@@ -19,6 +19,8 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Spectre.Console;
 
+ConsoleDashboard.RenderStartupTitle();
+
 var executableDirectory = AppContext.BaseDirectory;
 var configurationFilePath = Path.Combine(executableDirectory, "appsettings.json");
 var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings
@@ -90,24 +92,71 @@ var logger = host.Services.GetRequiredService<ILoggerFactory>()
 var optionsMonitor = host.Services.GetRequiredService<IOptionsMonitor<LmuApplicationOptions>>();
 var settingsStore = host.Services.GetRequiredService<LmuApplicationSettingsStore>();
 var importer = host.Services.GetRequiredService<ISessionImportService>();
+var sessionRepository = host.Services.GetRequiredService<ISessionRepository>();
 var imports = new List<SessionImportResult>();
 IReadOnlyList<string> filesToImport = args;
+var interactiveLaunch = args.Length == 0;
 
-if (filesToImport.Count == 0)
+if (interactiveLaunch)
 {
-    var shouldImport = false;
-    while (!shouldImport)
+    var activeOptions = optionsMonitor.CurrentValue;
+    var resolvedImportDirectory = optionsValidator.ResolveResultsDirectory(activeOptions);
+    try
+    {
+        filesToImport = XmlFileDiscovery.GetXmlFiles(resolvedImportDirectory);
+    }
+    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
+    {
+        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resolvedImportDirectory);
+        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
+        await host.StopAsync();
+        statisticsCollector.Complete();
+        return 1;
+    }
+}
+
+if (filesToImport.Count > 0)
+{
+    AnsiConsole.Progress()
+        .AutoClear(false)
+        .Start(context =>
+        {
+            var task = context.AddTask(
+                "[deepskyblue1]Chargement des résultats[/]",
+                maxValue: filesToImport.Count);
+
+            foreach (var filePath in filesToImport)
+            {
+                task.Description = $"Chargement [grey]{Markup.Escape(Path.GetFileName(filePath))}[/]";
+                statisticsCollector.SampleMemory();
+                imports.Add(importer.ImportFile(filePath));
+                statisticsCollector.SampleMemory();
+                task.Increment(1);
+            }
+        });
+}
+
+ConsoleDashboard.RenderImportSummary(imports, filesToImport.Count);
+var statisticsTableSelection = StatisticsTableSelection.Both;
+if (interactiveLaunch)
+{
+    while (true)
     {
         var action = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
-                .Title("Que souhaitez-vous faire ?")
-                .AddChoices("Importer les résultats", "Modifier la configuration", "Quitter"));
+                .Title("Quelles statistiques souhaitez-vous afficher ?")
+                .AddChoices(
+                    "Par circuit",
+                    "Par circuit et voiture",
+                    "Les deux tableaux",
+                    "Modifier la configuration",
+                    "Quitter"));
 
         if (action == "Quitter")
         {
             await host.StopAsync();
             statisticsCollector.Complete();
-            return 0;
+            return imports.Any(result => result.Status == SessionImportStatus.Failed) ? 1 : 0;
         }
 
         if (action == "Modifier la configuration")
@@ -115,10 +164,10 @@ if (filesToImport.Count == 0)
             var current = optionsMonitor.CurrentValue;
             var resolvedResultsDirectory = optionsValidator.ResolveResultsDirectory(current);
             AnsiConsole.MarkupLine(
-                $"[dim]Laisser le chemin des résultats vide pour utiliser : {Markup.Escape(resolvedResultsDirectory)}[/]");
+                $"[dim]Le chemin des résultats utilisé à ce démarrage est : {Markup.Escape(resolvedResultsDirectory)}[/]");
 
             var resultsDirectory = AnsiConsole.Prompt(
-                new TextPrompt<string>("Dossier des résultats XML :")
+                new TextPrompt<string>("Dossier des résultats XML (utilisé au prochain démarrage) :")
                     .DefaultValue(current.ResultsDirectory)
                     .AllowEmpty());
             var logFilePath = AnsiConsole.Prompt(
@@ -163,33 +212,17 @@ if (filesToImport.Count == 0)
             continue;
         }
 
-        shouldImport = true;
-    }
-
-    var activeOptions = optionsMonitor.CurrentValue;
-    var resolvedImportDirectory = optionsValidator.ResolveResultsDirectory(activeOptions);
-    try
-    {
-        filesToImport = XmlFileDiscovery.GetXmlFiles(resolvedImportDirectory);
-    }
-    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
-    {
-        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resolvedImportDirectory);
-        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
-        await host.StopAsync();
-        statisticsCollector.Complete();
-        return 1;
+        statisticsTableSelection = action switch
+        {
+            "Par circuit" => StatisticsTableSelection.Circuit,
+            "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
+            _ => StatisticsTableSelection.Both
+        };
+        break;
     }
 }
 
-foreach (var filePath in filesToImport)
-{
-    statisticsCollector.SampleMemory();
-    imports.Add(importer.ImportFile(filePath));
-    statisticsCollector.SampleMemory();
-}
-
-ConsoleDashboard.Render(imports);
+ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
 await host.StopAsync();
 statisticsCollector.Complete();
 
