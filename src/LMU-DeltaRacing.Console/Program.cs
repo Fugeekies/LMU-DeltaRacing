@@ -93,19 +93,46 @@ var importer = host.Services.GetRequiredService<ISessionImportService>();
 var sessionRepository = host.Services.GetRequiredService<ISessionRepository>();
 var imports = new List<SessionImportResult>();
 IReadOnlyList<string> filesToImport = args;
-var statisticsTableSelection = StatisticsTableSelection.Both;
+var interactiveLaunch = args.Length == 0;
 
-if (filesToImport.Count == 0)
+if (interactiveLaunch)
 {
-    var shouldImport = false;
-    while (!shouldImport)
+    var activeOptions = optionsMonitor.CurrentValue;
+    var resolvedImportDirectory = optionsValidator.ResolveResultsDirectory(activeOptions);
+    try
+    {
+        filesToImport = XmlFileDiscovery.GetXmlFiles(resolvedImportDirectory);
+    }
+    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
+    {
+        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resolvedImportDirectory);
+        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
+        await host.StopAsync();
+        statisticsCollector.Complete();
+        return 1;
+    }
+}
+
+foreach (var filePath in filesToImport)
+{
+    statisticsCollector.SampleMemory();
+    imports.Add(importer.ImportFile(filePath));
+    statisticsCollector.SampleMemory();
+}
+
+ConsoleDashboard.Render(imports);
+var statisticsTableSelection = StatisticsTableSelection.Both;
+if (interactiveLaunch)
+{
+    while (true)
     {
         var action = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
-                .Title("Que souhaitez-vous faire ?")
+                .Title("Quelles statistiques souhaitez-vous afficher ?")
                 .AddChoices(
-                    "Importer les résultats",
-                    "Choisir les tableaux statistiques",
+                    "Par circuit",
+                    "Par circuit et voiture",
+                    "Les deux tableaux",
                     "Modifier la configuration",
                     "Quitter"));
 
@@ -113,7 +140,7 @@ if (filesToImport.Count == 0)
         {
             await host.StopAsync();
             statisticsCollector.Complete();
-            return 0;
+            return imports.Any(result => result.Status == SessionImportStatus.Failed) ? 1 : 0;
         }
 
         if (action == "Modifier la configuration")
@@ -121,10 +148,10 @@ if (filesToImport.Count == 0)
             var current = optionsMonitor.CurrentValue;
             var resolvedResultsDirectory = optionsValidator.ResolveResultsDirectory(current);
             AnsiConsole.MarkupLine(
-                $"[dim]Laisser le chemin des résultats vide pour utiliser : {Markup.Escape(resolvedResultsDirectory)}[/]");
+                $"[dim]Le chemin des résultats utilisé à ce démarrage est : {Markup.Escape(resolvedResultsDirectory)}[/]");
 
             var resultsDirectory = AnsiConsole.Prompt(
-                new TextPrompt<string>("Dossier des résultats XML :")
+                new TextPrompt<string>("Dossier des résultats XML (utilisé au prochain démarrage) :")
                     .DefaultValue(current.ResultsDirectory)
                     .AllowEmpty());
             var logFilePath = AnsiConsole.Prompt(
@@ -169,51 +196,16 @@ if (filesToImport.Count == 0)
             continue;
         }
 
-        if (action == "Choisir les tableaux statistiques")
+        statisticsTableSelection = action switch
         {
-            var selectedTable = AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                    .Title("Quels tableaux statistiques afficher après l'import ?")
-                    .AddChoices("Les deux tableaux", "Par circuit", "Par circuit et voiture"));
-
-            statisticsTableSelection = selectedTable switch
-            {
-                "Par circuit" => StatisticsTableSelection.Circuit,
-                "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
-                _ => StatisticsTableSelection.Both
-            };
-            AnsiConsole.MarkupLine(
-                $"[green]Sélection enregistrée : {Markup.Escape(selectedTable)}.[/]");
-            continue;
-        }
-
-        shouldImport = true;
-    }
-
-    var activeOptions = optionsMonitor.CurrentValue;
-    var resolvedImportDirectory = optionsValidator.ResolveResultsDirectory(activeOptions);
-    try
-    {
-        filesToImport = XmlFileDiscovery.GetXmlFiles(resolvedImportDirectory);
-    }
-    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
-    {
-        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resolvedImportDirectory);
-        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
-        await host.StopAsync();
-        statisticsCollector.Complete();
-        return 1;
+            "Par circuit" => StatisticsTableSelection.Circuit,
+            "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
+            _ => StatisticsTableSelection.Both
+        };
+        break;
     }
 }
 
-foreach (var filePath in filesToImport)
-{
-    statisticsCollector.SampleMemory();
-    imports.Add(importer.ImportFile(filePath));
-    statisticsCollector.SampleMemory();
-}
-
-ConsoleDashboard.Render(imports);
 ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
 await host.StopAsync();
 statisticsCollector.Complete();

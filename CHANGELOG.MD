@@ -13,6 +13,9 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Ajout dans la console Spectre de vues statistiques par circuit et par classe/équipe, avec deltas chronologiques des meilleurs tours valides et graphiques des mesures récentes.
 - Ajout au menu de lancement du choix des tableaux statistiques à afficher et exclusion des sessions Practice des statistiques.
 
+### Changed
+- Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
+
 ### 🏗️ Architecture & Core (Clean Architecture)
 - **Domain Layer (`src/LMU-DeltaRacing.Domain/`) :**
   - Création des entités métiers pures : `Session`, `Driver`, `Lap`, et `Sector`.
