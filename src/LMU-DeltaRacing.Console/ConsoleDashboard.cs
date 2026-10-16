@@ -74,24 +74,36 @@ public static class ConsoleDashboard
     /// of the most recent measured best laps.
     /// </summary>
     /// <param name="sessions">The sessions currently stored in the repository.</param>
-    public static void RenderStatistics(IReadOnlyCollection<Session> sessions)
+    public static void RenderStatistics(
+        IReadOnlyCollection<Session> sessions,
+        StatisticsTableSelection selection)
     {
         ArgumentNullException.ThrowIfNull(sessions);
 
         AnsiConsole.Write(new Rule("[bold deepskyblue1]Statistiques et graphiques[/]").LeftJustified());
-        if (sessions.Count == 0)
+        var sessionsWithoutPractice = sessions
+            .Where(session => !session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
+            .ToArray();
+        AnsiConsole.MarkupLine("[dim]Les sessions Practice sont exclues des statistiques.[/]");
+        if (sessionsWithoutPractice.Length == 0)
         {
-            AnsiConsole.MarkupLine("[dim]Aucune session importée à analyser.[/]");
+            AnsiConsole.MarkupLine("[dim]Aucune session hors Practice à analyser.[/]");
             return;
         }
 
-        var circuitRows = SessionStatistics.ByCircuit(sessions);
-        RenderCircuitStatistics(circuitRows);
-        RenderCircuitChart(circuitRows);
+        if (selection is StatisticsTableSelection.Circuit or StatisticsTableSelection.Both)
+        {
+            var circuitRows = SessionStatistics.ByCircuit(sessionsWithoutPractice);
+            RenderCircuitStatistics(circuitRows);
+            RenderCircuitChart(circuitRows);
+        }
 
-        var vehicleRows = SessionStatistics.ByCircuitAndCar(sessions);
-        RenderVehicleStatistics(vehicleRows);
-        RenderVehicleChart(vehicleRows);
+        if (selection is StatisticsTableSelection.CircuitAndCar or StatisticsTableSelection.Both)
+        {
+            var vehicleRows = SessionStatistics.ByCircuitAndCar(sessionsWithoutPractice);
+            RenderVehicleStatistics(vehicleRows);
+            RenderVehicleChart(vehicleRows);
+        }
     }
 
     private static void RenderCircuitStatistics(IReadOnlyList<CircuitStatisticsRow> rows)
@@ -232,4 +244,25 @@ public static class ConsoleDashboard
     }
 
     private static string Escape(string? value) => Markup.Escape(value ?? string.Empty);
+}
+
+/// <summary>
+/// Identifies which statistics tables and charts are displayed after import.
+/// </summary>
+public enum StatisticsTableSelection
+{
+    /// <summary>
+    /// Displays statistics grouped by circuit.
+    /// </summary>
+    Circuit,
+
+    /// <summary>
+    /// Displays statistics grouped by circuit and vehicle class/team.
+    /// </summary>
+    CircuitAndCar,
+
+    /// <summary>
+    /// Displays both statistics views.
+    /// </summary>
+    Both
 }

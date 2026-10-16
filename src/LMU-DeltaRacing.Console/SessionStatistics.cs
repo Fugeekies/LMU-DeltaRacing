@@ -17,7 +17,7 @@ public static class SessionStatistics
         ArgumentNullException.ThrowIfNull(sessions);
 
         var rows = new List<CircuitStatisticsRow>();
-        foreach (var circuit in sessions
+        foreach (var circuit in ExcludePracticeSessions(sessions)
                      .GroupBy(session => new CircuitKey(session.TrackVenue, session.TrackCourse))
                      .OrderBy(group => group.Key.TrackVenue, StringComparer.Ordinal)
                      .ThenBy(group => group.Key.TrackCourse, StringComparer.Ordinal))
@@ -53,7 +53,7 @@ public static class SessionStatistics
     {
         ArgumentNullException.ThrowIfNull(sessions);
 
-        var measurements = sessions
+        var measurements = ExcludePracticeSessions(sessions)
             .SelectMany(session => session.Drivers
                 .GroupBy(driver => new VehicleKey(
                     session.TrackVenue,
@@ -95,6 +95,10 @@ public static class SessionStatistics
 
         return rows.AsReadOnly();
     }
+
+    private static IEnumerable<Session> ExcludePracticeSessions(IEnumerable<Session> sessions) =>
+        sessions.Where(session =>
+            !session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase));
 
     private static IEnumerable<Session> OrderChronologically(IEnumerable<Session> sessions) =>
         sessions.OrderBy(session => session.StartedAt)

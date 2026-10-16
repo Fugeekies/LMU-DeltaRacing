@@ -93,6 +93,7 @@ var importer = host.Services.GetRequiredService<ISessionImportService>();
 var sessionRepository = host.Services.GetRequiredService<ISessionRepository>();
 var imports = new List<SessionImportResult>();
 IReadOnlyList<string> filesToImport = args;
+var statisticsTableSelection = StatisticsTableSelection.Both;
 
 if (filesToImport.Count == 0)
 {
@@ -102,7 +103,11 @@ if (filesToImport.Count == 0)
         var action = AnsiConsole.Prompt(
             new SelectionPrompt<string>()
                 .Title("Que souhaitez-vous faire ?")
-                .AddChoices("Importer les résultats", "Modifier la configuration", "Quitter"));
+                .AddChoices(
+                    "Importer les résultats",
+                    "Choisir les tableaux statistiques",
+                    "Modifier la configuration",
+                    "Quitter"));
 
         if (action == "Quitter")
         {
@@ -164,6 +169,24 @@ if (filesToImport.Count == 0)
             continue;
         }
 
+        if (action == "Choisir les tableaux statistiques")
+        {
+            var selectedTable = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                    .Title("Quels tableaux statistiques afficher après l'import ?")
+                    .AddChoices("Les deux tableaux", "Par circuit", "Par circuit et voiture"));
+
+            statisticsTableSelection = selectedTable switch
+            {
+                "Par circuit" => StatisticsTableSelection.Circuit,
+                "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
+                _ => StatisticsTableSelection.Both
+            };
+            AnsiConsole.MarkupLine(
+                $"[green]Sélection enregistrée : {Markup.Escape(selectedTable)}.[/]");
+            continue;
+        }
+
         shouldImport = true;
     }
 
@@ -191,7 +214,7 @@ foreach (var filePath in filesToImport)
 }
 
 ConsoleDashboard.Render(imports);
-ConsoleDashboard.RenderStatistics(sessionRepository.GetAll());
+ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
 await host.StopAsync();
 statisticsCollector.Complete();
 

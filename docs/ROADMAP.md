@@ -38,6 +38,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Ajouter une vue statistique groupée par circuit et par voiture (classe + équipe).
 - [x] Ajouter le delta du meilleur tour valide par rapport à la session précédente du même circuit, ordonnée par date.
 - [x] Afficher des graphiques Spectre.Console des meilleurs tours valides les plus récents.
+- [x] Permettre de choisir dans le menu de lancement les vues statistiques à afficher et exclure les sessions Practice des statistiques.
 
 ## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).

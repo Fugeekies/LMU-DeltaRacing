@@ -77,7 +77,7 @@ public sealed class SessionStatisticsTests
                 new DateTimeOffset(2025, 1, 1, 12, 0, 0, TimeSpan.Zero),
                 "Le Mans",
                 "Circuit",
-                "Practice",
+                "Qualifying",
                 DriverWithLaps("Driver A", "Hypercar", "Team A", 205),
                 DriverWithLaps("Driver B", "LMP2", "Team B", 222))
         };
@@ -101,6 +101,43 @@ public sealed class SessionStatisticsTests
             .Should().SatisfyRespectively(
                 first => first.Delta.Should().BeNull(),
                 second => second.Delta.Should().Be(TimeSpan.FromSeconds(-2)));
+    }
+
+    /// <summary>
+    /// Verifies that all practice phases are excluded from both statistics views.
+    /// </summary>
+    [TestMethod]
+    public void Statistics_exclude_practice_sessions_case_insensitively()
+    {
+        var sessions = new[]
+        {
+            CreateSession(
+                new DateTimeOffset(2025, 1, 1, 12, 0, 0, TimeSpan.Zero),
+                "Spa",
+                "GP",
+                "Practice1",
+                DriverWithLaps("Driver A", "Hypercar", "Team A", 90)),
+            CreateSession(
+                new DateTimeOffset(2025, 1, 2, 12, 0, 0, TimeSpan.Zero),
+                "Spa",
+                "GP",
+                "practice2",
+                DriverWithLaps("Driver A", "Hypercar", "Team A", 89)),
+            CreateSession(
+                new DateTimeOffset(2025, 1, 3, 12, 0, 0, TimeSpan.Zero),
+                "Spa",
+                "GP",
+                "Qualifying",
+                DriverWithLaps("Driver A", "Hypercar", "Team A", 100))
+        };
+
+        var circuitRows = SessionStatistics.ByCircuit(sessions);
+        var vehicleRows = SessionStatistics.ByCircuitAndCar(sessions);
+
+        circuitRows.Should().ContainSingle()
+            .Which.SessionType.Should().Be("Qualifying");
+        vehicleRows.Should().ContainSingle()
+            .Which.SessionType.Should().Be("Qualifying");
     }
 
     /// <summary>

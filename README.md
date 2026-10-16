@@ -28,7 +28,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 
 Sans argument, la console propose d'importer les résultats, de modifier la configuration ou de quitter. Les chemins de fichiers XML passés en arguments sont importés directement.
 
-Après chaque import, la console affiche le tableau des imports, les statistiques groupées par circuit puis par classe et équipe, et un graphique des meilleurs tours les plus récents. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
+Sans argument, le menu de lancement permet de choisir les tableaux statistiques à afficher après l'import : par circuit, par circuit et voiture (classe + équipe), ou les deux. Par défaut, les deux tableaux sont affichés. Les sessions Practice restent importées et visibles dans le récapitulatif des imports, mais sont exclues des statistiques. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
 
 Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
 
