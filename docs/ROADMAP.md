@@ -48,9 +48,9 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Générer le compte rendu du test de charge dans `docs/benchmarks/dynamic-import-load-report.md`.
 
 ## Jalon — Première interface Blazor
-- [ ] Mettre en place l'hébergement Blazor local.
-- [ ] Afficher la liste des sessions et le classement des pilotes.
-- [ ] Gérer les états de chargement, d'erreur et les listes vides.
+- [x] Mettre en place l'hébergement Blazor local, ouvert dans le navigateur par défaut et limité à `127.0.0.1`.
+- [x] Afficher la liste des sessions et le classement des pilotes.
+- [x] Gérer les états de chargement, d'erreur et les listes vides.
 
 
 ## Liste d'idées à prioriser

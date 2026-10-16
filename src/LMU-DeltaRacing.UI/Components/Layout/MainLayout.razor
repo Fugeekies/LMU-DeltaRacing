@@ -1,0 +1,29 @@
+﻿@inherits LayoutComponentBase
+
+<div class="app-shell">
+    <header class="topbar">
+        <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
+            <span class="brand-mark" aria-hidden="true">LMU</span>
+            <span>DELTA<span class="brand-accent">RACING</span></span>
+        </a>
+        <div class="system-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>TABLEAU DE BORD LOCAL</span>
+        </div>
+    </header>
+
+    <main class="main-content">
+        @Body
+    </main>
+
+    <footer class="app-footer">
+        <span>LE MANS ULTIMATE</span>
+        <span>RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES</span>
+    </footer>
+</div>
+
+<div id="blazor-error-ui" data-nosnippet>
+    Une erreur est survenue.
+    <a href="." class="reload">Recharger</a>
+    <span class="dismiss">Fermer</span>
+</div>

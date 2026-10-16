@@ -4,6 +4,7 @@
     <Project Path="src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj" />
     <Project Path="src/LMU-DeltaRacing.Domain/LMU-DeltaRacing.Domain.csproj" />
     <Project Path="src/LMU-DeltaRacing.Infrastructure/LMU-DeltaRacing.Infrastructure.csproj" />
+    <Project Path="src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj" />

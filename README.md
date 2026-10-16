@@ -14,6 +14,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML, dépôt en mémoire et surveillance dynamique du dossier de résultats.
 - `src/LMU-DeltaRacing.Console` : import initial et surveillance dynamique des XML, tableaux et graphiques Spectre.Console des statistiques par circuit/voiture, et diagnostic OpenTelemetry.
+- `src/LMU-DeltaRacing.UI` : dashboard Blazor local avec historique des sessions, classements et surveillance dynamique des nouveaux résultats.
 - `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
 - `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.
 - `docs/benchmarks/dynamic-import-load-report.md` : résultats du test de charge de la surveillance sur 50 fichiers XML simultanés.
@@ -24,6 +25,8 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet build`
 - `dotnet test`
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
+- `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
+- `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 
@@ -36,6 +39,8 @@ Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'e
 Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-deltaracing-stats.json`, au même endroit. Le fichier indique les imports réussis/échoués, la durée moyenne par fichier, le débit moyen d'import, ainsi que les moyennes du working set et du heap .NET. Il est lui aussi conservé après l'arrêt et réinitialisé au prochain lancement. Les traces et métriques OpenTelemetry ne polluent pas le terminal.
 
 Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `tests/testAssets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
+
+Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable. La publication `win-x64` inclut le runtime .NET; lancez `LMU-DeltaRacing.UI.exe` depuis le dossier `publish`.
 
 Le projet de test génère les entrées XML et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10, 100 et 500 fichiers sur disque puis les supprime. Le rapport Markdown contient la durée, le débit, les allocations et la mémoire observée ; il est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test.
 

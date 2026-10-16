@@ -31,6 +31,7 @@
     <ProjectReference Include="..\..\src\LMU-DeltaRacing.Infrastructure\LMU-DeltaRacing.Infrastructure.csproj" />
     <ProjectReference Include="..\..\src\LMU-DeltaRacing.Application\LMU-DeltaRacing.Application.csproj" />
     <ProjectReference Include="..\..\src\LMU-DeltaRacing.Console\LMU-DeltaRacing.Console.csproj" />
+    <ProjectReference Include="..\..\src\LMU-DeltaRacing.UI\LMU-DeltaRacing.UI.csproj" />
   </ItemGroup>
 
 </Project>
