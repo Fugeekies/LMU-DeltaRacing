@@ -33,6 +33,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Générer facilement un rapport de performance Markdown, consultable dans la sortie détaillée du test et dans le dépôt.
 - [x] Permettre de réduire la charge à 5 ans ou 2 ans si les ressources mémoire sont limitées (`-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`).
 
+## Jalon — Statistiques, Graphiques
+- [ ] Ajout d'une nouvelle Vues avec groupement par circuit.
+- [ ] Ajout d'une nouvelle Vues avec groupement par circuit et par voiture.
+- [ ] Ajout de colonne qui mesure les delta entre les données par date de la course
+
 ## Jalon — Import dynamique des résultats
 - [ ] Configurer le chemin du dossier de résultats LMU (`UserData/Log/Results/`).
 - [ ] Surveiller l'arrivée de nouveaux fichiers XML (`FileSystemWatcher`) avec gestion du verrouillage de fichier.
@@ -45,9 +50,6 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [ ] Afficher la liste des sessions et le classement des pilotes.
 - [ ] Gérer les états de chargement, d'erreur et les listes vides.
 
-## Jalon — Statistiques, Graphiques et Historique durable
-- [ ] Vues comparatives des secteurs, meileurs tours et rythmes de course.
-- [ ] Persistance durable des données (évaluation BDD SQLite).
 
 ## Liste d'idées à prioriser
 
