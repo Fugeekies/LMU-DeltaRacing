@@ -6,7 +6,7 @@ Vue axée sur la progression personnelle de l'utilisateur, groupée par circuit 
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU DELTARACING]   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS       🟢 ONLINE   │
+│ [LMU DELTARACING]   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS                  │
 ├───────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │                                                                                                           │
 │  📊 HISTORIQUE & PROGRESSION PERSONNELLE                                                                  │
