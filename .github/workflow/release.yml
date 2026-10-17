@@ -1,0 +1,64 @@
+name: Build & Release Installer (Manual)
+
+on:
+  workflow_dispatch:
+    inputs:
+      version_tag:
+        description: 'Numéro de version (ex: 1.0.0)'
+        required: true
+        default: '0.0.1'
+        type: string
+
+jobs:
+  build-and-release:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '10.0.x'
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Publish Self-Contained Single-File & Trimmed
+        run: |
+          dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj `
+            -c Release `
+            -r win-x64 `
+            --self-contained true `
+            /p:PublishSingleFile=true `
+            /p:PublishTrimmed=true `
+            /p:IncludeNativeLibrariesForSelfExtract=true `
+            -o publish_output
+
+      - name: Install Inno Setup
+        run: choco install innosetup -y
+
+      - name: Build Installer with Inno Setup
+        run: |
+          # Compile ton script d'installation .iss
+          iscc "scripts/installer.iss"
+
+      - name: Create Git Tag Automatically
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag ${{ inputs.version_tag }}
+          git push origin ${{ inputs.version_tag }}
+        shell: pwsh
+
+      - name: Create GitHub Release and Upload Exe
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ inputs.version_tag }}
+          name: LMU-DeltaRacing ${{ inputs.version_tag }}
+          files: output/*.exe # Vérifie que ton script .iss génère le .exe dans ce dossier
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
