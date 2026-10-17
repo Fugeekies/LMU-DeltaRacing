@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>2</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1789483934</DateTime>
+<TimeString>2026/09/15 16:52:14</TimeString>
+<TrackVenue>Circuit de Spa-Francorchamps</TrackVenue>
+<TrackCourse>Circuit de Spa-Francorchamps</TrackCourse>
+<TrackEvent>6 Hours of Spa-Francorchamps</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Spa_2023\1.29\layoutSpa.mas</TrackData>
+<TrackLength>6981.6</TrackLength>
+<GameVersion>1.4150</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Aston_Martin_Vantage_AMR,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>0</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Qualify>
+<DateTime>1789483937</DateTime>
+<TimeString>2026/09/15 16:52:17</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>7</Minutes>
+<Stream>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.1">No Further Action</TrackLimits>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.2">No Further Action</TrackLimits>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Alonso#7831" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="221.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Alonso#7831" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="221.3">No Further Action</TrackLimits>
+<Score et="221.4">AIZAM HAMZAH(16) lap=1 point=0 t=-1.000 et=211.340</Score>
+<Score et="221.5">Bryce Herman(7) lap=0 point=2 t=-1.000 et=212.300</Score>
+<Score et="221.6">Dennis Kimetto(15) lap=1 point=1 t=-1.000 et=214.220</Score>
+<TrackLimits Driver="Beard Golden" ID="5" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="221.6">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Beard Golden" ID="5" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="221.6">Invalid Lap Cut Track</TrackLimits>
+<Sector Driver="Aiden Speedovic" ID="13" Sector="1" Class="GTE" et="221.7">Aiden Speedovic(13) set new best for sector 1</Sector>
+<Score et="221.7">Aiden Speedovic(13) lap=1 point=1 t=39.960 et=215.960</Score>
+<Sector Driver="Ivan Alonso#7831" ID="0" Sector="1" Class="GTE" et="225.1">Ivan Alonso#7831(0) set new best for sector 1</Sector>
+<Score et="225.1">Ivan Alonso#7831(0) lap=1 point=1 t=38.949 et=222.660</Score>
+<TrackLimits Driver="Dennis Kimetto" ID="15" Lap="1" WarningPoints="0.25" CurrentPoints="1.5" Resolution="5" et="225.3">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Dennis Kimetto" ID="15" Lap="1" WarningPoints="0.25" CurrentPoints="1.5" Resolution="5" et="225.3">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="227.4">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="227.4">Invalid Lap Cut Track</TrackLimits>
+<Score et="227.6">Tobias Spath(9) lap=2 point=0 t=-1.000 et=225.660</Score>
+<Score et="228.0">Beard Golden(5) lap=1 point=1 t=-1.000 et=226.100</Score>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="228.2">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="228.2">No Further Action</TrackLimits>
+<Score et="228.4">Leandro Heredia(10) lap=1 point=1 t=38.956 et=226.520</Score>
+<Sector Driver="Andrei Costache" ID="2" Sector="1" Class="GTE" et="229.4">Andrei Costache(2) set new best for sector 1</Sector>
+<Score et="229.4">Andrei Costache(2) lap=1 point=1 t=38.378 et=227.800</Score>
+<Score et="230.6">Lupo Tolo(8) lap=1 point=1 t=39.812 et=229.040</Score>
+<Score et="233.0">danyup Jo(11) lap=1 point=1 t=38.768 et=231.620</Score>
+<Score et="237.8">nicholas manesi(18) lap=1 point=1 t=-1.000 et=236.740</Score>
+<Score et="240.0">mario calabrese(12) lap=1 point=2 t=-1.000 et=239.040</Score>
+<Score et="240.2">Krissada Smanattanon(17) lap=1 point=0 t=-1.000 et=239.160</Score>
+<Score et="251.8">AIZAM HAMZAH(16) lap=1 point=1 t=39.665 et=251.020</Score>
+<Score et="254.8">Bryce Herman(7) lap=1 point=0 t=-1.000 et=254.240</Score>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="257.2">No Further Action</TrackLimits>
+<Sector Driver="Tobias Spath" ID="9" Sector="1" Class="GTE" et="264.4">Tobias Spath(9) set new best for sector 1</Sector>
+<Score et="264.4">Tobias Spath(9) lap=2 point=1 t=38.229 et=263.900</Score>
+<Score et="265.8">QIANG XU(3) lap=0 point=2 t=-1.000 et=265.360</Score>
+<Score et="277.6">Dennis Kimetto(15) lap=1 point=2 t=-1.000 et=277.220</Score>
+<Score et="278.6">Krissada Smanattanon(17) lap=1 point=1 t=38.974 et=278.140</Score>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.3">No Further Action</TrackLimits>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.3">No Further Action</TrackLimits>
+<Sector Driver="Aiden Speedovic" ID="13" Sector="2" Class="GTE" et="279.6">Aiden Speedovic(13) set new best for sector 2</Sector>
+<Score et="279.6">Aiden Speedovic(13) lap=1 point=2 t=103.289 et=279.280</Score>
+<Score et="280.0">mario calabrese(12) lap=2 point=0 t=-1.000 et=279.700</Score>
+<TrackLimits Driver="Leandro Heredia" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="284.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Leandro Heredia" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="284.8">No Further Action</TrackLimits>
+<Score et="285.5">P-A Fugeekies(4) lap=0 point=1 t=-1.000 et=285.505</Score>
+<Score et="288.3">Ivan Alonso#7831(0) lap=1 point=2 t=104.170 et=287.880</Score>
+<Score et="289.6">Beard Golden(5) lap=1 point=2 t=-1.000 et=289.220</Score>
+<Score et="290.8">Leandro Heredia(10) lap=1 point=2 t=102.889 et=290.440</Score>
+<Score et="294.0">Bryce Herman(7) lap=1 point=1 t=-1.000 et=293.720</Score>
+<Score et="294.3">Lupo Tolo(8) lap=1 point=2 t=104.832 et=294.060</Score>
+<Sector Driver="Andrei Costache" ID="2" Sector="2" Class="GTE" et="295.2">Andrei Costache(2) set new best for sector 2</Sector>
+<Score et="295.3">Andrei Costache(2) lap=1 point=2 t=101.167 et=290.580</Score>
+<Score et="296.3">danyup Jo(11) lap=1 point=2 t=103.045 et=295.880</Score>
+<TrackLimits Driver="danyup Jo" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.9">No Further Action</TrackLimits>
+<TrackLimits Driver="danyup Jo" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.9">No Further Action</TrackLimits>
+<Score et="302.0">nicholas manesi(18) lap=1 point=2 t=-1.000 et=301.740</Score>
+<Score et="314.5">QIANG XU(3) lap=1 point=0 t=-1.000 et=314.260</Score>
+<TrackLimits Driver="Lupo Tolo" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="317.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Lupo Tolo" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="317.5">No Further Action</TrackLimits>
+<Score et="317.7">AIZAM HAMZAH(16) lap=1 point=2 t=106.018 et=317.360</Score>
+<Score et="318.4">Dennis Kimetto(15) lap=2 point=0 t=-1.000 et=318.200</Score>
+<Sector Driver="Aiden Speedovic" ID="13" Sector="3" Class="GTE" et="319.1">Aiden Speedovic(13) set new best for sector 3</Sector>
+<TrackLimits Driver="Bryce Herman" ID="7" Lap="1" WarningPoints="0" CurrentPoints="3.75" Resolution="7" et="319.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Bryce Herman" ID="7" Lap="1" WarningPoints="0" CurrentPoints="3.75" Resolution="7" et="319.1">No Further Action</TrackLimits>
+<Score et="319.1">Aiden Speedovic(13) lap=2 point=0 t=142.970 et=318.960</Score>
+<Score et="319.4">mario calabrese(12) lap=2 point=1 t=39.475 et=319.180</Score>
+<TrackLimits Driver="Krissada Smanattanon" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="320.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Krissada Smanattanon" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="320.6">No Further Action</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="325.6">No Further Action</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="325.6">No Further Action</TrackLimits>
+<Sector Driver="Tobias Spath" ID="9" Sector="2" Class="GTE" et="326.5">Tobias Spath(9) set new best for sector 2</Sector>
+<Score et="326.5">Tobias Spath(9) lap=2 point=2 t=100.674 et=326.340</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="327.2">No Further Action</TrackLimits>
+<Score et="328.9">Ivan Alonso#7831(0) lap=2 point=0 t=145.042 et=328.740</Score>
+<Score et="329.1">Beard Golden(5) lap=2 point=0 t=-1.000 et=328.880</Score>
+<Score et="331.2">Leandro Heredia(10) lap=2 point=0 t=143.287 et=330.840</Score>
+<Incident et="334.4">Aiden Speedovic(13) reported contact (699.46) with Immovable</Incident>
+<Score et="335.8">Lupo Tolo(8) lap=2 point=0 t=146.375 et=335.620</Score>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="336.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="336.5">No Further Action</TrackLimits>
+<Score et="337.0">danyup Jo(11) lap=2 point=0 t=143.926 et=336.780</Score>
+<Score et="344.0">Krissada Smanattanon(17) lap=1 point=2 t=104.593 et=343.760</Score>
+<Score et="344.6">nicholas manesi(18) lap=2 point=0 t=-1.000 et=344.460</Score>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="345.6">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="345.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.4">No Further Action</TrackLimits>
+<Score et="350.8">P-A Fugeekies(4) lap=0 point=2 t=-1.000 et=350.836</Score>
+<TrackLimits Driver="Ivan Alonso#7831" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="354.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ivan Alonso#7831" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="354.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Leandro Heredia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="356.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Leandro Heredia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="356.3">No Further Action</TrackLimits>
+<Score et="356.9">Dennis Kimetto(15) lap=2 point=1 t=38.455 et=356.660</Score>
+<Score et="358.9">AIZAM HAMZAH(16) lap=2 point=0 t=147.326 et=358.680</Score>
+<Score et="358.9">Aiden Speedovic(13) lap=2 point=1 t=39.901 et=358.860</Score>
+<Score et="359.4">QIANG XU(3) lap=1 point=1 t=44.871 et=359.140</Score>
+<Score et="361.7">Bryce Herman(7) lap=1 point=2 t=-1.000 et=361.460</Score>
+<Sector Driver="Tobias Spath" ID="9" Sector="3" Class="GTE" et="366.1">Tobias Spath(9) set new best for sector 3</Sector>
+<Score et="366.1">Tobias Spath(9) lap=3 point=0 t=140.331 et=366.000</Score>
+<Score et="367.8">Beard Golden(5) lap=2 point=1 t=38.586 et=367.480</Score>
+<Score et="367.8">Ivan Alonso#7831(0) lap=2 point=1 t=38.943 et=367.680</Score>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="367.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="367.8">No Further Action</TrackLimits>
+<Score et="369.7">Leandro Heredia(10) lap=2 point=1 t=38.650 et=369.500</Score>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="370.3">No Further Action</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="370.3">No Further Action</TrackLimits>
+<Score et="374.8">Lupo Tolo(8) lap=2 point=1 t=39.063 et=374.680</Score>
+<Score et="375.7">danyup Jo(11) lap=2 point=1 t=38.726 et=375.500</Score>
+<Incident et="376.7">Krissada Smanattanon(17) reported contact (12.13) with Post</Incident>
+<Incident et="377.5">Krissada Smanattanon(17) reported contact (9.90) with Post</Incident>
+<Incident et="377.7">Krissada Smanattanon(17) reported contact (51.87) with Post</Incident>
+<Incident et="377.8">Krissada Smanattanon(17) reported contact (80.83) with Post</Incident>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.3">No Further Action</TrackLimits>
+<Score et="381.3">Ivan Alonso#7831(0) lap=2 point=2 t=-1.000 et=381.278</Score>
+<Score et="381.3">Ivan Alonso#7831(0) lap=3 point=0 t=-1.000 et=381.278</Score>
+<Score et="383.7">nicholas manesi(18) lap=2 point=1 t=39.160 et=383.620</Score>
+<Incident et="384.7">Bryce Herman(7) reported contact (3001.94) with Immovable</Incident>
+<Sector et="384.8">Bryce Herman(7) reports new suspension damage</Sector>
+<Score et="386.8">Krissada Smanattanon(17) lap=2 point=0 t=147.490 et=386.660</Score>
+<TrackLimits Driver="Bryce Herman" ID="7" Lap="1" WarningPoints="0" CurrentPoints="3.75" Resolution="7" et="388.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Bryce Herman" ID="7" Lap="1" WarningPoints="0" CurrentPoints="3.75" Resolution="7" et="388.1">No Further Action</TrackLimits>
+<Score et="390.0">mario calabrese(12) lap=2 point=2 t=110.170 et=389.880</Score>
+<Score et="391.5">P-A Fugeekies(4) lap=1 point=0 t=-1.000 et=391.533</Score>
+<Score et="392.9">Bryce Herman(7) lap=2 point=0 t=-1.000 et=392.628</Score>
+<TrackLimits Driver="Tobias Spath" ID="9" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="393.2">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Tobias Spath" ID="9" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="393.2">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="396.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="396.6">No Further Action</TrackLimits>
+<Score et="397.7">AIZAM HAMZAH(16) lap=2 point=1 t=38.682 et=397.360</Score>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="401.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="401.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="406.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="406.9">No Further Action</TrackLimits>
+<Score et="410.2">Louis S#6669(6) lap=0 point=1 t=-1.000 et=410.060</Score>
+<Score et="412.0">Tobias Spath(9) lap=3 point=1 t=-1.000 et=411.980</Score>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="417.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Louis S#6669" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="417.3">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="4" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="419.0">Invalid Lap Cut Track</TrackLimits>
+<Score et="420.1">Dennis Kimetto(15) lap=2 point=2 t=101.823 et=420.020</Score>
+<Score et="425.4">Krissada Smanattanon(17) lap=2 point=1 t=-1.000 et=425.114</Score>
+<Score et="425.4">Krissada Smanattanon(17) lap=2 point=2 t=-1.000 et=425.114</Score>
+<Score et="425.4">Krissada Smanattanon(17) lap=3 point=0 t=-1.000 et=425.114</Score>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="427.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="427.2">No Further Action</TrackLimits>
+<Score et="428.3">QIANG XU(3) lap=1 point=2 t=113.728 et=428.000</Score>
+<Score et="429.8">P-A Fugeekies(4) lap=1 point=1 t=-1.000 et=429.799</Score>
+<Score et="430.5">mario calabrese(12) lap=3 point=0 t=150.733 et=430.440</Score>
+<Score et="431.6">Beard Golden(5) lap=2 point=2 t=102.413 et=431.300</Score>
+<Score et="431.6">Tobias Spath(9) lap=3 point=2 t=-1.000 et=431.372</Score>
+<Score et="431.6">Tobias Spath(9) lap=4 point=0 t=-1.000 et=431.372</Score>
+<Score et="433.0">Leandro Heredia(10) lap=2 point=2 t=101.896 et=432.740</Score>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="3.5" CurrentPoints="3.5" Resolution="5" et="434.2">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="3.5" CurrentPoints="3.5" Resolution="5" et="434.2">Invalid Lap Cut Track</TrackLimits>
+<Score et="438.8">Lupo Tolo(8) lap=2 point=2 t=103.034 et=438.640</Score>
+<Score et="440.2">Aiden Speedovic(13) lap=2 point=2 t=121.087 et=440.060</Score>
+<Score et="440.3">danyup Jo(11) lap=2 point=2 t=103.317 et=440.080</Score>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="445.8">No Further Action</TrackLimits>
+<Score et="448.4">nicholas manesi(18) lap=2 point=2 t=103.890 et=448.360</Score>
+<Incident et="450.3">Aiden Speedovic(13) reported contact (88.30) with Sign</Incident>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="451.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Aiden Speedovic" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="451.4">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="456.5">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="456.5">No Further Action</TrackLimits>
+<Score et="460.3">Dennis Kimetto(15) lap=3 point=0 t=141.873 et=460.080</Score>
+<Score et="461.4">Connor Hiebert(1) lap=0 point=1 t=-1.000 et=461.200</Score>
+<Score et="470.2">mario calabrese(12) lap=3 point=1 t=39.684 et=470.120</Score>
+<Score et="471.8">Beard Golden(5) lap=3 point=0 t=142.694 et=471.580</Score>
+<Score et="471.9">QIANG XU(3) lap=2 point=0 t=157.531 et=471.800</Score>
+<Score et="473.1">Leandro Heredia(10) lap=3 point=0 t=142.061 et=472.900</Score>
+<Score et="477.4">Louis S#6669(6) lap=0 point=2 t=-1.000 et=477.300</Score>
+<Score et="480.0">Lupo Tolo(8) lap=3 point=0 t=144.320 et=479.940</Score>
+<Score et="480.8">danyup Jo(11) lap=3 point=0 t=143.743 et=480.520</Score>
+<Score et="481.0">Aiden Speedovic(13) lap=3 point=0 t=161.858 et=480.820</Score>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="0" CurrentPoints="3.5" Resolution="7" et="483.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="0" CurrentPoints="3.5" Resolution="7" et="483.9">No Further Action</TrackLimits>
+<Score et="485.8">Leandro Heredia(10) lap=3 point=1 t=-1.000 et=485.540</Score>
+<Score et="485.8">Leandro Heredia(10) lap=3 point=2 t=-1.000 et=485.540</Score>
+<Score et="485.8">Leandro Heredia(10) lap=4 point=0 t=-1.000 et=485.540</Score>
+<Score et="487.4">Aiden Speedovic(13) lap=3 point=1 t=-1.000 et=487.333</Score>
+<Score et="487.4">Aiden Speedovic(13) lap=3 point=2 t=-1.000 et=487.333</Score>
+<Score et="487.4">Aiden Speedovic(13) lap=4 point=0 t=-1.000 et=487.333</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="487.8">No Further Action</TrackLimits>
+<Score et="488.8">nicholas manesi(18) lap=3 point=0 t=144.160 et=488.620</Score>
+<Score et="492.3">AIZAM HAMZAH(16) lap=2 point=2 t=133.388 et=492.060</Score>
+<Score et="493.9">P-A Fugeekies(4) lap=1 point=2 t=-1.000 et=493.900</Score>
+<ChatMessage et="496.3">T Spath: finally a good lap</ChatMessage>
+<Score et="497.3">Dennis Kimetto(15) lap=3 point=1 t=-1.000 et=497.077</Score>
+<Score et="497.3">Dennis Kimetto(15) lap=3 point=2 t=-1.000 et=497.077</Score>
+<Score et="497.3">Dennis Kimetto(15) lap=4 point=0 t=-1.000 et=497.077</Score>
+<Score et="500.9">Lupo Tolo(8) lap=3 point=1 t=-1.000 et=500.778</Score>
+<Score et="500.9">Lupo Tolo(8) lap=3 point=2 t=-1.000 et=500.778</Score>
+<Score et="500.9">Lupo Tolo(8) lap=4 point=0 t=-1.000 et=500.778</Score>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="0" CurrentPoints="3.5" Resolution="7" et="508.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Connor Hiebert" ID="1" Lap="0" WarningPoints="0" CurrentPoints="3.5" Resolution="7" et="508.6">No Further Action</TrackLimits>
+<Score et="510.2">Beard Golden(5) lap=3 point=1 t=38.484 et=510.060</Score>
+<ChatMessage et="510.2">B Herman: nice</ChatMessage>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="515.8">No Further Action</TrackLimits>
+<TrackLimits Driver="AIZAM HAMZAH" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="515.8">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="516.6">No Further Action</TrackLimits>
+<TrackLimits Driver="mario calabrese" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="516.6">No Further Action</TrackLimits>
+<Score et="518.0">Beard Golden(5) lap=3 point=2 t=-1.000 et=517.802</Score>
+<Score et="518.0">Beard Golden(5) lap=4 point=0 t=-1.000 et=517.802</Score>
+<Score et="518.5">QIANG XU(3) lap=2 point=1 t=46.553 et=518.360</Score>
+<Score et="519.8">Louis S#6669(6) lap=1 point=0 t=-1.000 et=519.760</Score>
+<Score et="520.3">danyup Jo(11) lap=3 point=1 t=39.525 et=520.040</Score>
+<Score et="530.0">nicholas manesi(18) lap=3 point=1 t=41.305 et=529.920</Score>
+<Score et="533.4">AIZAM HAMZAH(16) lap=3 point=0 t=174.570 et=533.240</Score>
+<Score et="534.6">P-A Fugeekies(4) lap=2 point=0 t=-1.000 et=534.633</Score>
+<Score et="545.2">mario calabrese(12) lap=3 point=2 t=114.648 et=545.080</Score>
+<Score et="545.2">AIZAM HAMZAH(16) lap=3 point=1 t=-1.000 et=544.983</Score>
+<Score et="545.2">AIZAM HAMZAH(16) lap=3 point=2 t=-1.000 et=544.983</Score>
+<Score et="545.2">AIZAM HAMZAH(16) lap=4 point=0 t=-1.000 et=544.983</Score>
+<Score et="546.7">P-A Fugeekies(4) lap=2 point=1 t=-1.000 et=546.771</Score>
+<Score et="546.7">P-A Fugeekies(4) lap=2 point=2 t=-1.000 et=546.771</Score>
+<Score et="546.7">P-A Fugeekies(4) lap=3 point=0 t=-1.000 et=546.771</Score>
+<ChatMessage et="552.0">A Speedovic: how am i only ferrari</ChatMessage>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="555.0">No Further Action</TrackLimits>
+<TrackLimits Driver="nicholas manesi" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="555.0">No Further Action</TrackLimits>
+<Score et="560.1">Louis S#6669(6) lap=1 point=1 t=40.183 et=559.940</Score>
+<Score et="562.3">Connor Hiebert(1) lap=0 point=2 t=-1.000 et=562.080</Score>
+<Score et="575.0">nicholas manesi(18) lap=3 point=2 t=-1.000 et=574.911</Score>
+<Score et="575.0">nicholas manesi(18) lap=4 point=0 t=-1.000 et=574.911</Score>
+<ChatMessage et="580.2">B Herman: im usually ferrari</ChatMessage>
+<Score et="586.2">mario calabrese(12) lap=4 point=0 t=155.705 et=586.140</Score>
+</Stream>
+<MostLapsCompleted>4</MostLapsCompleted>
+<Driver>
+<Name>Driver 2596</Name>
+<Connected>1</Connected>
+<VehFile>56_AORACIN7559E319.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:SP</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="5" et="54.5486" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="1" et="225.6599" s1="38.2287" s2="62.4458" s3="39.6568" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">140.3313</Lap>
+<Lap num="4" p="1" et="366.0000" topspeed="242.34" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>140.3313</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0615</Name>
+<Connected>1</Connected>
+<VehFile>77_PROTONLAECAE80B.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Dempsey-Proton Racing #77:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Dempsey-Proton Racing #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="3" et="175.6799" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="2" et="318.2000" s1="38.4545" s2="63.3686" s3="40.0494" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.8726</Lap>
+<Lap num="4" p="2" et="460.0801" topspeed="191.89" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>141.8726</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1486</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="2" et="187.5601" s1="38.9556" s2="63.9331" s3="40.3980" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.2867</Lap>
+<Lap num="3" p="3" et="330.8401" s1="38.6503" s2="63.2458" s3="40.1652" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.0613</Lap>
+<Lap num="4" p="3" et="472.8999" topspeed="201.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>142.0613</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0279</Name>
+<Connected>1</Connected>
+<VehFile>56_REXY8A686597.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="6" et="187.3999" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="3" et="328.8799" s1="38.5858" s2="63.8275" s3="40.2806" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.6939</Lap>
+<Lap num="4" p="4" et="471.5801" s1="38.4841" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>142.6939</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0048</Name>
+<Connected>1</Connected>
+<VehFile>83_AFCORSE7FBCECA5.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #83:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>AF Corse #83</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="1" et="176.0000" s1="39.9600" s2="63.3292" s3="39.6808" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.9700</Lap>
+<Lap num="3" p="5" et="318.9600" s1="39.9008" s2="81.1859" s3="40.7712" topspeed="251.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">161.8579</Lap>
+<Lap num="4" p="5" et="480.8201" topspeed="190.54" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>142.9700</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0574</Name>
+<Connected>1</Connected>
+<VehFile>60_IRONLYNB5413BF4.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx #60:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Iron Lynx #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="3" et="192.8401" s1="38.7675" s2="64.2774" s3="40.8814" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.9264</Lap>
+<Lap num="3" p="6" et="336.7800" s1="38.7261" s2="64.5907" s3="40.4265" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.7433</Lap>
+<BestLapTime>143.7433</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1942</Name>
+<Connected>1</Connected>
+<VehFile>72_TFSPORTECC3A2D4.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>TF Sport #72:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>TF Sport #72</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="10" et="198.4399" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="7" et="344.4600" s1="39.1600" s2="64.7302" s3="40.2697" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.1599</Lap>
+<Lap num="4" p="7" et="488.6201" s1="41.3054" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>144.1599</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1610</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="4" et="189.2400" s1="39.8124" s2="65.0199" s3="41.5429" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.3752</Lap>
+<Lap num="3" p="7" et="335.6201" s1="39.0628" s2="63.9707" s3="41.2862" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.3197</Lap>
+<Lap num="4" p="8" et="479.9399" topspeed="192.79" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>144.3197</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1082</Name>
+<Connected>1</Connected>
+<VehFile>56_REXY8A686597.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="2" et="183.7000" s1="38.9486" s2="65.2216" s3="40.8715" topspeed="256.30" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">145.0416</Lap>
+<Lap num="3" p="5" et="328.7400" s1="38.9432" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>145.0416</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0054</Name>
+<Connected>1</Connected>
+<VehFile>85_IRONDAM1563682E.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Dames #85:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Iron Dames #85</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="--.---" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="6" et="211.3401" s1="39.6651" s2="66.3528" s3="41.3077" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">147.3256</Lap>
+<Lap num="3" p="10" et="358.6799" s1="38.6825" s2="94.7055" s3="41.1819" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">174.5698</Lap>
+<Lap num="4" p="10" et="533.2400" topspeed="191.44" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>147.3256</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1442</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="--.---" topspeed="254.95" fcompound="2,Hard" rcompound="2,Hard" FL="2,Hard" FR="2,Hard" RL="2,Hard" RR="2,Hard">--.----</Lap>
+<Lap num="2" p="8" et="239.1599" s1="38.9737" s2="65.6194" s3="42.8969" topspeed="259.90" fcompound="2,Hard" rcompound="2,Hard" FL="2,Hard" FR="2,Hard" RL="2,Hard" RR="2,Hard">147.4900</Lap>
+<Lap num="3" p="8" et="386.6599" topspeed="242.34" fcompound="2,Hard" rcompound="2,Hard" FL="2,Hard" FR="2,Hard" RL="2,Hard" RR="2,Hard">--.----</Lap>
+<BestLapTime>147.4900</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1688</Name>
+<Connected>1</Connected>
+<VehFile>16_PROTON9F4BBEF5.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #16:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Proton Competition #16</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">--.----</Lap>
+<Lap num="2" p="2" et="105.8196" topspeed="253.15" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">--.----</Lap>
+<Lap num="3" p="9" et="279.7000" s1="39.4753" s2="70.6944" s3="40.5637" topspeed="255.85" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">150.7334</Lap>
+<Lap num="4" p="12" et="430.4399" s1="39.6839" s2="74.9639" s3="41.0574" topspeed="256.30" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">155.7052</Lap>
+<BestLapTime>150.7334</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="4">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2184</Name>
+<Connected>1</Connected>
+<VehFile>911_PROTON8153440A.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #911:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>Proton Competition #911</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="--.---" topspeed="242.34" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="12" et="314.2600" s1="44.8713" s2="68.8568" s3="43.8028" topspeed="245.49" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">157.5310</Lap>
+<BestLapTime>157.5310</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=2,AutoShift=3,Braking=1,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2038</Name>
+<Connected>1</Connected>
+<VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>D&apos;station Racing #777:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>D&apos;station Racing #777</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="256.30" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="15" et="391.5400" topspeed="260.47" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="14" et="534.6399" topspeed="195.52" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0365</Name>
+<Connected>1</Connected>
+<VehFile>56_REXY8A686597.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="--.---" topspeed="253.15" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="13" et="254.2400" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0168</Name>
+<Connected>1</Connected>
+<VehFile>77_PROTONLAECAE80B.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Dempsey-Proton Racing #77:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Dempsey-Proton Racing #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1546</Name>
+<Connected>1</Connected>
+<VehFile>16_PROTON9F4BBEF5.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #16:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>Proton Competition #16</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="--.---" topspeed="252.70" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0489</Name>
+<Connected>1</Connected>
+<VehFile>56_REXY8A686597.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 1968</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>20</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+</Driver>
+</Qualify>
+</RaceResults>
+</rFactorXML>

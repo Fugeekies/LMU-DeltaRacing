@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1766761229</DateTime>
+<TimeString>2025/12/26 16:00:29</TimeString>
+<TrackVenue>Bahrain International Circuit</TrackVenue>
+<TrackCourse>Bahrain International Circuit</TrackCourse>
+<TrackEvent>8 Hours of Bahrain</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\BahrainWEC_2023\1.21\layoutBahrain.mas</TrackData>
+<TrackLength>5386.8</TrackLength>
+<GameVersion>1.2000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>0</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>McLaren_720S_LMGT3_Evo,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Qualify>
+<DateTime>1766761361</DateTime>
+<TimeString>2025/12/26 16:02:41</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>5</Minutes>
+<Stream>
+<Penalty Driver="Sami Karpowicz" ID="5" Penalty="Stop/Go" Time="10" Laps="0" Reason="Exiting Pits Under Red" et="28.1">Sami Karpowicz received Stop/Go penalty, 10s, 0laps for Exiting Pits Under Red. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<Score et="45.2">Blake Tromans(20) lap=0 point=1 t=-1.000 et=45.180</Score>
+<Score et="45.2">Blake Tromans(20) lap=0 point=2 t=-1.000 et=45.180</Score>
+<Score et="45.2">Blake Tromans(20) lap=1 point=0 t=-1.000 et=45.180</Score>
+<Score et="67.1">Sami Karpowicz(5) lap=0 point=1 t=-1.000 et=67.060</Score>
+<Score et="71.2">Filip Jankowski(15) lap=0 point=1 t=-1.000 et=71.140</Score>
+<Score et="72.1">Daniel Palomo(2) lap=0 point=1 t=-1.000 et=71.980</Score>
+<Score et="72.6">Gabriele Fossi(13) lap=0 point=1 t=-1.000 et=72.580</Score>
+<Score et="72.9">P-A Fugeekies(19) lap=0 point=1 t=-1.000 et=72.932</Score>
+<Score et="76.1">Roast Beef(10) lap=0 point=1 t=-1.000 et=76.000</Score>
+<Score et="77.4">Ma Xrong(14) lap=0 point=1 t=-1.000 et=77.160</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="77.4">No Further Action</TrackLimits>
+<Score et="77.8">Attila Merai(1) lap=0 point=1 t=-1.000 et=77.740</Score>
+<Score et="78.0">Afnan Mahamud(17) lap=0 point=1 t=-1.000 et=77.820</Score>
+<Score et="81.6">Kris Sehlmeyer(3) lap=0 point=1 t=-1.000 et=81.540</Score>
+<TrackLimits Driver="Blake Tromans" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="82.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Juneho Lee" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="84.7">No Further Action</TrackLimits>
+<Score et="85.8">Juneho Lee(6) lap=0 point=1 t=-1.000 et=85.640</Score>
+<Incident et="86.4">Filip Jankowski(15) reported contact (16.57) with Post</Incident>
+<TrackLimits Driver="Attila Merai" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="86.6">No Further Action</TrackLimits>
+<Score et="86.6">Dylan Vanstavel(11) lap=0 point=1 t=-1.000 et=86.520</Score>
+<Incident et="87.3">Filip Jankowski(15) reported contact (8.54) with Post</Incident>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="90.1">No Further Action</TrackLimits>
+<Score et="93.0">MS Kim#1992(4) lap=0 point=1 t=-1.000 et=92.800</Score>
+<Score et="94.7">Raphael Ortega(12) lap=0 point=1 t=-1.000 et=94.600</Score>
+<TrackLimits Driver="Philippe Ullmann" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="96.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Sami Karpowicz" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="102.4">No Further Action</TrackLimits>
+<Score et="107.7">Felix Mechler(8) lap=0 point=1 t=-1.000 et=107.560</Score>
+<Score et="107.8">Blake Tromans(20) lap=1 point=1 t=-1.000 et=107.780</Score>
+<Score et="124.0">Enzo Buhrman(16) lap=0 point=1 t=-1.000 et=123.780</Score>
+<TrackLimits Driver="MS Kim#1992" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="127.2">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="127.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Philippe Ullmann" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="128.7">No Further Action</TrackLimits>
+<Score et="129.6">Sami Karpowicz(5) lap=0 point=2 t=-1.000 et=129.520</Score>
+<Score et="130.5">Philippe Ullmann(18) lap=0 point=1 t=-1.000 et=130.460</Score>
+<Score et="132.5">Filip Jankowski(15) lap=0 point=2 t=-1.000 et=132.420</Score>
+<Score et="135.1">Gabriele Fossi(13) lap=0 point=2 t=-1.000 et=135.060</Score>
+<Score et="135.4">Daniel Palomo(2) lap=0 point=2 t=-1.000 et=135.300</Score>
+<TrackLimits Driver="Sami Karpowicz" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="135.8">No Further Action</TrackLimits>
+<Score et="137.2">Roast Beef(10) lap=0 point=2 t=-1.000 et=137.200</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="138.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan Vanstavel" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="138.8">No Further Action</TrackLimits>
+<Score et="139.1">P-A Fugeekies(19) lap=0 point=2 t=-1.000 et=139.133</Score>
+<Score et="139.5">Attila Merai(1) lap=0 point=2 t=-1.000 et=139.400</Score>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="140.2">No Further Action</TrackLimits>
+<Score et="140.8">Afnan Mahamud(17) lap=0 point=2 t=-1.000 et=140.580</Score>
+<Score et="140.8">Ma Xrong(14) lap=0 point=2 t=-1.000 et=140.660</Score>
+<Score et="143.5">Kris Sehlmeyer(3) lap=0 point=2 t=-1.000 et=143.440</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Gabriele Fossi" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.8">No Further Action</TrackLimits>
+<Score et="149.1">Dylan Vanstavel(11) lap=0 point=2 t=-1.000 et=149.040</Score>
+<Score et="149.9">Juneho Lee(6) lap=0 point=2 t=-1.000 et=149.620</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.4">No Further Action</TrackLimits>
+<Score et="156.2">MS Kim#1992(4) lap=0 point=2 t=-1.000 et=156.000</Score>
+<TrackLimits Driver="Charel Theis" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.9">No Further Action</TrackLimits>
+<Score et="157.0">Raphael Ortega(12) lap=0 point=2 t=-1.000 et=156.980</Score>
+<TrackLimits Driver="Felix Mechler" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="159.7">No Further Action</TrackLimits>
+<Score et="161.3">Joseph Sally(7) lap=0 point=1 t=-1.000 et=161.180</Score>
+<Score et="163.7">Sami Karpowicz(5) lap=1 point=0 t=-1.000 et=163.620</Score>
+<Score et="165.7">Filip Jankowski(15) lap=1 point=0 t=-1.000 et=165.660</Score>
+<Score et="168.4">Gabriele Fossi(13) lap=1 point=0 t=-1.000 et=168.380</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="168.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kris Sehlmeyer" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.4">No Further Action</TrackLimits>
+<Score et="169.4">Daniel Palomo(2) lap=1 point=0 t=-1.000 et=169.340</Score>
+<Score et="169.8">Blake Tromans(20) lap=1 point=2 t=-1.000 et=169.700</Score>
+<TrackLimits Driver="Joseph Sally" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.9">No Further Action</TrackLimits>
+<Score et="170.6">Roast Beef(10) lap=1 point=0 t=-1.000 et=170.560</Score>
+<Score et="172.5">Attila Merai(1) lap=1 point=0 t=-1.000 et=172.480</Score>
+<Score et="173.9">Afnan Mahamud(17) lap=1 point=0 t=-1.000 et=173.760</Score>
+<Score et="174.2">P-A Fugeekies(19) lap=1 point=0 t=-1.000 et=174.207</Score>
+<Score et="174.8">Ma Xrong(14) lap=1 point=0 t=-1.000 et=174.540</Score>
+<TrackLimits Driver="Dylan Vanstavel" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="174.9">No Further Action</TrackLimits>
+<Score et="176.5">Felix Mechler(8) lap=0 point=2 t=-1.000 et=176.460</Score>
+<Score et="177.0">Kris Sehlmeyer(3) lap=1 point=0 t=-1.000 et=176.940</Score>
+<TrackLimits Driver="Felix Mechler" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="178.2">No Further Action</TrackLimits>
+<Score et="183.1">Dylan Vanstavel(11) lap=1 point=0 t=-1.000 et=183.080</Score>
+<TrackLimits Driver="Felix Mechler" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="183.5">No Further Action</TrackLimits>
+<Score et="184.0">Juneho Lee(6) lap=1 point=0 t=-1.000 et=183.640</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.5">No Further Action</TrackLimits>
+<Score et="190.0">MS Kim#1992(4) lap=1 point=0 t=-1.000 et=189.860</Score>
+<Score et="190.6">Raphael Ortega(12) lap=1 point=0 t=-1.000 et=190.520</Score>
+<Score et="191.2">Charel Theis(0) lap=0 point=1 t=-1.000 et=191.100</Score>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="193.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Gabriele Fossi" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="194.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Attila Merai" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Afnan Mahamud" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="198.0">No Further Action</TrackLimits>
+<Score et="200.4">Enzo Buhrman(16) lap=0 point=2 t=-1.000 et=200.200</Score>
+<TrackLimits Driver="Kris Sehlmeyer" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="201.3">No Further Action</TrackLimits>
+<Score et="203.6">Blake Tromans(20) lap=2 point=0 t=-1.000 et=203.600</Score>
+<Sector Driver="Sami Karpowicz" ID="5" Sector="1" Class="GT3" et="204.6">Sami Karpowicz(5) set new best for sector 1</Sector>
+<Score et="204.6">Sami Karpowicz(5) lap=1 point=1 t=40.952 et=204.580</Score>
+<Sector Driver="Filip Jankowski" ID="15" Sector="1" Class="GT3" et="205.8">Filip Jankowski(15) set new best for sector 1</Sector>
+<Score et="205.8">Filip Jankowski(15) lap=1 point=1 t=40.083 et=205.740</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="207.9">No Further Action</TrackLimits>
+<Score et="208.7">Gabriele Fossi(13) lap=1 point=1 t=40.227 et=208.600</Score>
+<Score et="210.5">Daniel Palomo(2) lap=1 point=1 t=41.106 et=210.460</Score>
+<Score et="210.7">Roast Beef(10) lap=1 point=1 t=40.096 et=210.660</Score>
+<Score et="211.7">Felix Mechler(8) lap=1 point=0 t=-1.000 et=211.580</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="211.8">No Further Action</TrackLimits>
+<Score et="213.0">Philippe Ullmann(18) lap=0 point=2 t=-1.000 et=212.960</Score>
+<Score et="213.1">Attila Merai(1) lap=1 point=1 t=40.538 et=213.020</Score>
+<TrackLimits Driver="Joseph Sally" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.4">No Further Action</TrackLimits>
+<TrackLimits Driver="MS Kim#1992" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.6">No Further Action</TrackLimits>
+<Score et="215.7">P-A Fugeekies(19) lap=1 point=1 t=41.438 et=215.645</Score>
+<Score et="215.7">Afnan Mahamud(17) lap=1 point=1 t=41.791 et=215.560</Score>
+<Score et="215.8">Ma Xrong(14) lap=1 point=1 t=41.150 et=215.680</Score>
+<TrackLimits Driver="Sami Karpowicz" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="216.4">No Further Action</TrackLimits>
+<Score et="218.8">Kris Sehlmeyer(3) lap=1 point=1 t=41.864 et=218.800</Score>
+<TrackLimits Driver="Daniel Palomo" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="219.6">No Further Action</TrackLimits>
+<Score et="223.6">Dylan Vanstavel(11) lap=1 point=1 t=40.469 et=223.540</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.3">No Further Action</TrackLimits>
+<Score et="225.5">Juneho Lee(6) lap=1 point=1 t=41.642 et=225.280</Score>
+<Score et="226.0">Joseph Sally(7) lap=0 point=2 t=-1.000 et=225.840</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="226.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan Vanstavel" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="228.6">No Further Action</TrackLimits>
+<Score et="231.9">Raphael Ortega(12) lap=1 point=1 t=41.309 et=231.820</Score>
+<Score et="236.0">MS Kim#1992(4) lap=1 point=1 t=45.956 et=235.820</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="237.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Gabriele Fossi" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="240.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="241.5">No Further Action</TrackLimits>
+<Score et="244.7">Blake Tromans(20) lap=2 point=1 t=41.050 et=244.660</Score>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="245.8">No Further Action</TrackLimits>
+<Score et="248.0">Enzo Buhrman(16) lap=1 point=0 t=-1.000 et=247.880</Score>
+<Score et="252.4">Felix Mechler(8) lap=1 point=1 t=40.646 et=252.220</Score>
+<Score et="253.6">Charel Theis(0) lap=0 point=2 t=-1.000 et=253.560</Score>
+<TrackLimits Driver="Dylan Vanstavel" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="258.2">No Further Action</TrackLimits>
+<Score et="258.4">Philippe Ullmann(18) lap=1 point=0 t=-1.000 et=258.300</Score>
+<Score et="259.9">Joseph Sally(7) lap=1 point=0 t=-1.000 et=259.720</Score>
+<Sector Driver="Sami Karpowicz" ID="5" Sector="2" Class="GT3" et="267.2">Sami Karpowicz(5) set new best for sector 2</Sector>
+<Score et="267.2">Sami Karpowicz(5) lap=1 point=2 t=103.532 et=267.160</Score>
+<Sector Driver="Filip Jankowski" ID="15" Sector="2" Class="GT3" et="267.3">Filip Jankowski(15) set new best for sector 2</Sector>
+<Score et="267.3">Filip Jankowski(15) lap=1 point=2 t=101.588 et=267.240</Score>
+<Score et="271.6">Gabriele Fossi(13) lap=1 point=2 t=103.155 et=271.540</Score>
+<Score et="272.4">Roast Beef(10) lap=1 point=2 t=101.763 et=272.320</Score>
+<TrackLimits Driver="Attila Merai" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.6">No Further Action</TrackLimits>
+<Score et="273.9">Daniel Palomo(2) lap=1 point=2 t=104.512 et=273.860</Score>
+<Sector Driver="Attila Merai" ID="1" Sector="2" Class="GT3" et="274.4">Attila Merai(1) set new best for sector 2</Sector>
+<Score et="274.4">Attila Merai(1) lap=1 point=2 t=101.920 et=274.400</Score>
+<Score et="278.7">Afnan Mahamud(17) lap=1 point=2 t=104.702 et=278.460</Score>
+<Score et="279.2">Ma Xrong(14) lap=1 point=2 t=104.529 et=279.060</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="280.7">No Further Action</TrackLimits>
+<Score et="281.4">Kris Sehlmeyer(3) lap=1 point=2 t=104.443 et=281.380</Score>
+<Score et="282.4">P-A Fugeekies(19) lap=1 point=2 t=108.166 et=282.373</Score>
+<Score et="285.7">Dylan Vanstavel(11) lap=1 point=2 t=102.551 et=285.620</Score>
+<Score et="287.9">Charel Theis(0) lap=1 point=0 t=-1.000 et=287.840</Score>
+<Score et="289.0">Juneho Lee(6) lap=1 point=2 t=105.123 et=288.760</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.2">No Further Action</TrackLimits>
+<Score et="294.1">Raphael Ortega(12) lap=1 point=2 t=103.539 et=294.060</Score>
+<TrackLimits Driver="Filip Jankowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="296.7">No Further Action</TrackLimits>
+<Score et="298.9">MS Kim#1992(4) lap=1 point=2 t=108.801 et=298.660</Score>
+<Sector Driver="Filip Jankowski" ID="15" Sector="3" Class="GT3" et="300.4">Filip Jankowski(15) set new best for sector 3</Sector>
+<Score et="300.4">Filip Jankowski(15) lap=2 point=0 t=134.706 et=300.360</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.0">No Further Action</TrackLimits>
+<Score et="301.2">Joseph Sally(7) lap=1 point=1 t=41.307 et=301.020</Score>
+<Score et="301.3">Sami Karpowicz(5) lap=2 point=0 t=137.642 et=301.260</Score>
+<TrackLimits Driver="Afnan Mahamud" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="304.6">No Further Action</TrackLimits>
+<Score et="305.6">Roast Beef(10) lap=2 point=0 t=135.009 et=305.560</Score>
+<Score et="307.1">Blake Tromans(20) lap=2 point=2 t=103.417 et=307.020</Score>
+<Sector Driver="Attila Merai" ID="1" Sector="3" Class="GT3" et="307.5">Attila Merai(1) set new best for sector 3</Sector>
+<Score et="307.5">Attila Merai(1) lap=2 point=0 t=134.958 et=307.440</Score>
+<Score et="308.2">Gabriele Fossi(13) lap=2 point=0 t=139.802 et=308.180</Score>
+<Score et="308.2">Daniel Palomo(2) lap=2 point=0 t=138.769 et=308.120</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="308.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.0">No Further Action</TrackLimits>
+<Score et="312.5">Sami Karpowicz(5) lap=2 point=1 t=-1.000 et=312.400</Score>
+<Score et="312.5">Sami Karpowicz(5) lap=2 point=2 t=-1.000 et=312.400</Score>
+<Score et="312.5">Sami Karpowicz(5) lap=3 point=0 t=-1.000 et=312.400</Score>
+<Score et="312.6">Afnan Mahamud(17) lap=2 point=0 t=138.664 et=312.420</Score>
+<Score et="313.1">Ma Xrong(14) lap=2 point=0 t=138.404 et=312.940</Score>
+<Score et="314.8">Felix Mechler(8) lap=1 point=2 t=103.212 et=314.780</Score>
+<Score et="315.0">Kris Sehlmeyer(3) lap=2 point=0 t=138.050 et=314.980</Score>
+<Score et="317.3">P-A Fugeekies(19) lap=2 point=0 t=143.067 et=317.274</Score>
+<Score et="319.2">Dylan Vanstavel(11) lap=2 point=0 t=136.062 et=319.140</Score>
+<Score et="319.9">Filip Jankowski(15) lap=2 point=1 t=-1.000 et=319.822</Score>
+<Score et="319.9">Filip Jankowski(15) lap=2 point=2 t=-1.000 et=319.822</Score>
+<Score et="319.9">Filip Jankowski(15) lap=3 point=0 t=-1.000 et=319.822</Score>
+<Score et="323.2">Juneho Lee(6) lap=2 point=0 t=139.345 et=323.000</Score>
+<Score et="323.8">Attila Merai(1) lap=2 point=1 t=-1.000 et=323.759</Score>
+<Score et="323.8">Attila Merai(1) lap=2 point=2 t=-1.000 et=323.759</Score>
+<Score et="323.8">Attila Merai(1) lap=3 point=0 t=-1.000 et=323.759</Score>
+<TrackLimits Driver="Philippe Ullmann" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="323.9">No Further Action</TrackLimits>
+<Incident et="324.3">Roast Beef(10) reported contact (44.08) with Post</Incident>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="326.1">No Further Action</TrackLimits>
+<Score et="327.8">Raphael Ortega(12) lap=2 point=0 t=137.194 et=327.700</Score>
+<Score et="329.1">Enzo Buhrman(16) lap=1 point=1 t=-1.000 et=328.920</Score>
+<Score et="329.5">Charel Theis(0) lap=1 point=1 t=41.627 et=329.460</Score>
+<Score et="332.7">MS Kim#1992(4) lap=2 point=0 t=142.596 et=332.460</Score>
+<Score et="336.2">Juneho Lee(6) lap=2 point=1 t=-1.000 et=335.670</Score>
+<Score et="336.2">Juneho Lee(6) lap=2 point=2 t=-1.000 et=335.670</Score>
+<Score et="336.2">Juneho Lee(6) lap=3 point=0 t=-1.000 et=335.670</Score>
+<TrackLimits Driver="Kris Sehlmeyer" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="338.2">No Further Action</TrackLimits>
+<Score et="340.9">Blake Tromans(20) lap=3 point=0 t=137.144 et=340.760</Score>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="346.1">No Further Action</TrackLimits>
+<Score et="346.8">Roast Beef(10) lap=2 point=1 t=41.217 et=346.780</Score>
+<Score et="348.5">Felix Mechler(8) lap=2 point=0 t=136.867 et=348.440</Score>
+<Score et="349.2">Daniel Palomo(2) lap=2 point=1 t=40.997 et=349.120</Score>
+<Score et="350.8">Gabriele Fossi(13) lap=2 point=1 t=42.583 et=350.760</Score>
+<Score et="352.4">Philippe Ullmann(18) lap=1 point=1 t=-1.000 et=352.280</Score>
+<Score et="352.7">Blake Tromans(20) lap=3 point=1 t=-1.000 et=352.604</Score>
+<Score et="352.7">Blake Tromans(20) lap=3 point=2 t=-1.000 et=352.604</Score>
+<Score et="352.7">Blake Tromans(20) lap=4 point=0 t=-1.000 et=352.604</Score>
+<Score et="353.3">Afnan Mahamud(17) lap=2 point=1 t=40.710 et=353.140</Score>
+<Score et="354.3">Ma Xrong(14) lap=2 point=1 t=41.148 et=354.080</Score>
+<TrackLimits Driver="Kris Sehlmeyer" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="355.1">No Further Action</TrackLimits>
+<Score et="356.1">Kris Sehlmeyer(3) lap=2 point=1 t=41.050 et=356.040</Score>
+<Score et="359.0">Dylan Vanstavel(11) lap=2 point=1 t=-1.000 et=358.934</Score>
+<Score et="359.0">Dylan Vanstavel(11) lap=2 point=2 t=-1.000 et=358.934</Score>
+<Score et="359.0">Dylan Vanstavel(11) lap=3 point=0 t=-1.000 et=358.934</Score>
+<Score et="359.0">P-A Fugeekies(19) lap=2 point=1 t=41.739 et=359.013</Score>
+<Score et="360.9">MS Kim#1992(4) lap=2 point=1 t=-1.000 et=360.326</Score>
+<Score et="360.9">MS Kim#1992(4) lap=2 point=2 t=-1.000 et=360.326</Score>
+<Score et="360.9">MS Kim#1992(4) lap=3 point=0 t=-1.000 et=360.326</Score>
+<Score et="364.6">Joseph Sally(7) lap=1 point=2 t=104.819 et=364.540</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="365.8">No Further Action</TrackLimits>
+<Score et="369.1">Raphael Ortega(12) lap=2 point=1 t=41.369 et=369.080</Score>
+<TrackLimits Driver="Gabriele Fossi" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="382.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Felix Mechler" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ma Xrong" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="390.6">No Further Action</TrackLimits>
+<Score et="393.3">Charel Theis(0) lap=1 point=2 t=105.370 et=393.220</Score>
+<Score et="393.5">Enzo Buhrman(16) lap=1 point=2 t=-1.000 et=393.380</Score>
+<TrackLimits Driver="Philippe Ullmann" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="396.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="399.1">No Further Action</TrackLimits>
+<Score et="399.1">Joseph Sally(7) lap=2 point=0 t=139.197 et=398.920</Score>
+<TrackLimits Driver="Daniel Palomo" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="403.4">No Further Action</TrackLimits>
+<Incident et="406.2">Daniel Palomo(2) reported contact (2205.21) with Immovable</Incident>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="409.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kris Sehlmeyer" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="409.4">No Further Action</TrackLimits>
+<Score et="409.6">Roast Beef(10) lap=2 point=2 t=104.016 et=409.580</Score>
+<TrackLimits Driver="Daniel Palomo" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.3">No Further Action</TrackLimits>
+<Score et="410.3">Daniel Palomo(2) lap=2 point=2 t=-1.000 et=410.229</Score>
+<Score et="410.3">Daniel Palomo(2) lap=3 point=0 t=-1.000 et=410.229</Score>
+<TrackLimits Driver="Raphael Ortega" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.5">No Further Action</TrackLimits>
+<Score et="410.5">Raphael Ortega(12) lap=2 point=2 t=-1.000 et=409.934</Score>
+<Score et="410.5">Raphael Ortega(12) lap=3 point=0 t=-1.000 et=409.934</Score>
+<Score et="413.0">Joseph Sally(7) lap=2 point=1 t=-1.000 et=412.504</Score>
+<Score et="413.0">Joseph Sally(7) lap=2 point=2 t=-1.000 et=412.504</Score>
+<Score et="413.0">Joseph Sally(7) lap=3 point=0 t=-1.000 et=412.504</Score>
+<Score et="413.6">Gabriele Fossi(13) lap=2 point=2 t=105.353 et=413.540</Score>
+<Score et="415.8">Afnan Mahamud(17) lap=2 point=2 t=103.201 et=415.640</Score>
+<Score et="418.0">Ma Xrong(14) lap=2 point=2 t=104.861 et=417.800</Score>
+<Score et="418.5">Kris Sehlmeyer(3) lap=2 point=2 t=103.447 et=418.440</Score>
+<TrackLimits Driver="Roast Beef" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="419.0">No Further Action</TrackLimits>
+<Score et="424.6">P-A Fugeekies(19) lap=2 point=2 t=107.330 et=424.604</Score>
+<Score et="426.2">Philippe Ullmann(18) lap=1 point=2 t=-1.000 et=426.100</Score>
+<Score et="427.4">Charel Theis(0) lap=2 point=0 t=139.479 et=427.320</Score>
+<TrackLimits Driver="Enzo Buhrman" ID="16" Lap="1" WarningPoints="1.75" CurrentPoints="1.75" Resolution="5" et="434.5">Invalid Lap Cut Track</TrackLimits>
+<Score et="438.3">Enzo Buhrman(16) lap=2 point=0 t=-1.000 et=438.180</Score>
+<Score et="443.8">Roast Beef(10) lap=3 point=0 t=138.121 et=443.700</Score>
+<TrackLimits Driver="Ma Xrong" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.4">No Further Action</TrackLimits>
+<Score et="447.7">Gabriele Fossi(13) lap=3 point=0 t=139.523 et=447.700</Score>
+<Score et="449.6">Afnan Mahamud(17) lap=3 point=0 t=137.020 et=449.460</Score>
+<Score et="452.2">Kris Sehlmeyer(3) lap=3 point=0 t=137.150 et=452.140</Score>
+<Score et="452.6">Ma Xrong(14) lap=3 point=0 t=139.295 et=452.240</Score>
+<Score et="456.9">Roast Beef(10) lap=3 point=1 t=-1.000 et=456.370</Score>
+<Score et="456.9">Roast Beef(10) lap=3 point=2 t=-1.000 et=456.370</Score>
+<Score et="456.9">Roast Beef(10) lap=4 point=0 t=-1.000 et=456.370</Score>
+<Score et="458.0">Gabriele Fossi(13) lap=3 point=1 t=-1.000 et=457.448</Score>
+<Score et="458.0">Gabriele Fossi(13) lap=3 point=2 t=-1.000 et=457.448</Score>
+<Score et="458.0">Gabriele Fossi(13) lap=4 point=0 t=-1.000 et=457.448</Score>
+<Score et="459.0">P-A Fugeekies(19) lap=3 point=0 t=141.684 et=458.958</Score>
+</Stream>
+<MostLapsCompleted>4</MostLapsCompleted>
+<Driver>
+<Name>Driver 0796</Name>
+<Connected>1</Connected>
+<VehFile>85_25_IRON71169233.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Dames 2025 #85:LM</VehName>
+<Category>WEC 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Iron Dames 2025 #85</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="--.---" topspeed="232.43" fuel="0.082" fuelUsed="0.653" ve="0.114" veUsed="0.886" twfl="0.984" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="1" et="165.6599" s1="40.0834" s2="61.5051" s3="33.1180" topspeed="251.35" fuel="0.055" fuelUsed="0.027" ve="0.075" veUsed="0.039" twfl="0.961" twfr="0.965" twrl="0.973" twrr="0.973" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">134.7065</Lap>
+<Lap num="3" p="1" et="300.3601" topspeed="251.35" fuel="0.733" fuelUsed="-0.678" ve="0.149" veUsed="-0.075" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>134.7065</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0239</Name>
+<Connected>1</Connected>
+<VehFile>397_25_AMG.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Mercedes AMG Custom Team 2025 #397</VehName>
+<Category>WEC 2025, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Meet J.Black MotorSport GT3</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="--.---" topspeed="233.33" fuel="0.043" fuelUsed="0.740" ve="0.055" veUsed="0.945" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="2" et="172.4800" s1="40.5384" s2="61.3811" s3="33.0381" topspeed="252.70" fuel="0.016" fuelUsed="0.027" ve="0.020" veUsed="0.035" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">134.9576</Lap>
+<Lap num="3" p="2" et="307.4399" topspeed="220.27" fuel="0.784" fuelUsed="-0.769" ve="0.090" veUsed="-0.071" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>134.9576</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2254</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="--.---" topspeed="232.88" fuel="0.102" fuelUsed="0.615" ve="0.141" veUsed="0.859" twfl="0.980" twfr="0.984" twrl="0.976" twrr="0.980" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="2" et="170.5601" s1="40.0961" s2="61.6666" s3="33.2460" topspeed="252.70" fuel="0.075" fuelUsed="0.027" ve="0.106" veUsed="0.035" twfl="0.957" twfr="0.965" twrl="0.969" twrr="0.969" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">135.0087</Lap>
+<Lap num="3" p="3" et="305.5601" s1="41.2168" s2="62.7988" s3="34.1052" topspeed="252.25" fuel="0.051" fuelUsed="0.024" ve="0.067" veUsed="0.039" twfl="0.929" twfr="0.945" twrl="0.961" twrr="0.961" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">138.1207</Lap>
+<Lap num="4" p="3" et="443.7000" topspeed="240.08" fuel="0.718" fuelUsed="-0.667" ve="0.180" veUsed="-0.114" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>135.0087</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0679</Name>
+<Connected>1</Connected>
+<VehFile>31_25_WRT_FB7E8382.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>The Bend Team WRT 2025 #31:BRZ</VehName>
+<Category>WEC 2025, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>The Bend Team WRT 2025 #31</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="--.---" topspeed="234.68" fuel="0.180" fuelUsed="0.553" ve="0.243" veUsed="0.757" twfl="0.980" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="4" et="183.0801" s1="40.4692" s2="62.0822" s3="33.5105" topspeed="249.54" fuel="0.153" fuelUsed="0.027" ve="0.208" veUsed="0.035" twfl="0.969" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">136.0618</Lap>
+<Lap num="3" p="4" et="319.1399" topspeed="251.80" fuel="0.733" fuelUsed="-0.580" ve="0.278" veUsed="-0.071" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>136.0618</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0789</Name>
+<Connected>1</Connected>
+<VehFile>57_25_KESS76A94C8D.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Kessel Racing 2025 #57:ELMS</VehName>
+<Category>ELMS 2025, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>Kessel Racing 2025 #57</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="229.27" fuel="0.306" fuelUsed="0.436" ve="0.412" veUsed="0.588" twfl="0.918" twfr="0.945" twrl="0.890" twrr="0.906" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="211.5801" s1="40.6464" s2="62.5651" s3="33.6556" topspeed="251.35" fuel="0.278" fuelUsed="0.027" ve="0.373" veUsed="0.039" twfl="0.898" twfr="0.929" twrl="0.878" twrr="0.894" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">136.8672</Lap>
+<BestLapTime>136.8672</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0040</Name>
+<Connected>1</Connected>
+<VehFile>95_25_UNIT382AB771.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #95:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>United Autosports 2025 #95</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="--.---" topspeed="232.88" fuel="0.690" fuelUsed="0.026" ve="0.965" veUsed="0.035" twfl="0.976" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="173.7600" s1="41.7908" s2="62.9113" s3="33.9617" topspeed="251.80" fuel="0.663" fuelUsed="0.027" ve="0.925" veUsed="0.039" twfl="0.953" twfr="0.961" twrl="0.969" twrr="0.969" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">138.6638</Lap>
+<Lap num="3" p="6" et="312.4199" s1="40.7098" s2="62.4913" s3="33.8192" topspeed="250.90" fuel="0.639" fuelUsed="0.024" ve="0.886" veUsed="0.039" twfl="0.933" twfr="0.941" twrl="0.957" twrr="0.957" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">137.0203</Lap>
+<BestLapTime>137.0203</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0322</Name>
+<Connected>1</Connected>
+<VehFile>60_25_PROTA8B000C7.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2025 #60:ELMS</VehName>
+<Category>ELMS 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>21</CarNumber>
+<TeamName>Proton Competition 2025 #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="--.---" topspeed="151.80" fuel="0.733" fuelUsed="0.002" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="1" et="45.1802" topspeed="227.02" fuel="0.710" fuelUsed="0.024" ve="0.965" veUsed="0.035" twfl="0.945" twfr="0.976" twrl="0.914" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="5" et="203.6001" s1="41.0499" s2="62.3673" s3="33.7265" topspeed="249.09" fuel="0.682" fuelUsed="0.027" ve="0.925" veUsed="0.039" twfl="0.929" twfr="0.961" twrl="0.902" twrr="0.945" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">137.1436</Lap>
+<Lap num="4" p="6" et="340.7600" topspeed="228.37" fuel="0.733" fuelUsed="-0.051" ve="1.000" veUsed="-0.075" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>137.1436</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1440</Name>
+<Connected>1</Connected>
+<VehFile>91_24_MANT4FC2B6C0.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Manthey Ema 2024 #91:LM</VehName>
+<Category>WEC 2024, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>Manthey Ema 2024 #91</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="--.---" topspeed="230.17" fuel="0.157" fuelUsed="0.578" ve="0.216" veUsed="0.784" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="176.9399" s1="41.8636" s2="62.5797" s3="33.6065" topspeed="249.09" fuel="0.129" fuelUsed="0.027" ve="0.180" veUsed="0.035" twfl="0.973" twfr="0.976" twrl="0.973" twrr="0.976" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">138.0499</Lap>
+<Lap num="3" p="8" et="314.9800" s1="41.0498" s2="62.3976" s3="33.7023" topspeed="248.19" fuel="0.106" fuelUsed="0.024" ve="0.145" veUsed="0.035" twfl="0.961" twfr="0.965" twrl="0.965" twrr="0.969" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">137.1497</Lap>
+<BestLapTime>137.1497</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2208</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="--.---" topspeed="231.08" fuel="0.690" fuelUsed="0.026" ve="0.965" veUsed="0.035" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="190.5200" s1="41.3089" s2="62.2298" s3="33.6555" topspeed="250.44" fuel="0.667" fuelUsed="0.024" ve="0.929" veUsed="0.035" twfl="0.969" twfr="0.976" twrl="0.980" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">137.1942</Lap>
+<Lap num="3" p="7" et="327.7000" s1="41.3690" topspeed="249.54" fuel="0.718" fuelUsed="-0.051" ve="1.000" veUsed="-0.071" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>137.1942</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2356</Name>
+<Connected>1</Connected>
+<VehFile>60_25_IRON3680959B.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx 2025 #60:LM</VehName>
+<Category>WEC 2025, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Iron Lynx 2025 #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="--.---" topspeed="230.17" fuel="0.753" fuelUsed="0.030" ve="0.965" veUsed="0.035" twfl="0.976" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="2" et="163.6201" s1="40.9523" s2="62.5802" s3="34.1091" topspeed="250.44" fuel="0.725" fuelUsed="0.027" ve="0.925" veUsed="0.039" twfl="0.957" twfr="0.969" twrl="0.980" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">137.6415</Lap>
+<Lap num="3" p="4" et="301.2600" topspeed="229.72" fuel="0.784" fuelUsed="-0.059" ve="1.000" veUsed="-0.075" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>137.6415</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1620</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_8AEC83FD.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WEC</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Team WRT 2024 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="--.---" topspeed="230.17" fuel="0.114" fuelUsed="0.620" ve="0.157" veUsed="0.843" twfl="0.984" twfr="0.988" twrl="0.996" twrr="0.996" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="174.5400" s1="41.1499" s2="63.3788" s3="33.8751" topspeed="247.74" fuel="0.086" fuelUsed="0.027" ve="0.118" veUsed="0.039" twfl="0.969" twfr="0.976" twrl="0.988" twrr="0.988" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">138.4038</Lap>
+<Lap num="3" p="11" et="312.9399" s1="41.1480" s2="63.7134" s3="34.4338" topspeed="250.44" fuel="0.059" fuelUsed="0.027" ve="0.082" veUsed="0.035" twfl="0.949" twfr="0.961" twrl="0.980" twrr="0.980" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.2952</Lap>
+<BestLapTime>138.4038</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0553</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="--.---" topspeed="231.98" fuel="0.137" fuelUsed="0.579" ve="0.192" veUsed="0.808" twfl="0.969" twfr="0.973" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="169.3401" s1="41.1064" s2="63.4060" s3="34.2564" topspeed="252.25" fuel="0.114" fuelUsed="0.024" ve="0.153" veUsed="0.039" twfl="0.945" twfr="0.945" twrl="0.973" twrr="0.973" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">138.7688</Lap>
+<Lap num="3" p="12" et="308.1201" s1="40.9970" topspeed="252.70" fuel="0.718" fuelUsed="-0.604" ve="0.231" veUsed="-0.078" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>138.7688</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1312</Name>
+<Connected>1</Connected>
+<VehFile>87_25_AKKOA15D50DC.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Akkodis ASP Team 2025 #87:LM</VehName>
+<Category>WEC 2025, GT3, Lexus RCF LMGT3</Category>
+<CarType>Lexus RCF LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Akkodis ASP Team 2025 #87</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="--.---" topspeed="231.08" fuel="0.125" fuelUsed="0.692" ve="0.157" veUsed="0.843" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="13" et="259.7200" s1="41.3068" s2="63.5126" s3="34.3773" topspeed="249.54" fuel="0.098" fuelUsed="0.027" ve="0.122" veUsed="0.035" twfl="0.969" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.1967</Lap>
+<Lap num="3" p="13" et="398.9199" topspeed="225.67" fuel="0.816" fuelUsed="-0.718" ve="0.188" veUsed="-0.067" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>139.1967</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1359</Name>
+<Connected>1</Connected>
+<VehFile>31_25_WRT_B619D040.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>The Bend Team WRT 2025 #31:LM</VehName>
+<Category>WEC 2025, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>The Bend Team WRT 2025 #31</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="--.---" topspeed="229.72" fuel="0.706" fuelUsed="0.027" ve="0.965" veUsed="0.035" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="10" et="183.6399" s1="41.6420" s2="63.4807" s3="34.2220" topspeed="249.54" fuel="0.682" fuelUsed="0.024" ve="0.929" veUsed="0.035" twfl="0.961" twfr="0.973" twrl="0.980" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.3448</Lap>
+<Lap num="3" p="11" et="323.0000" topspeed="238.73" fuel="0.733" fuelUsed="-0.051" ve="1.000" veUsed="-0.071" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>139.3448</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Stability=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0415</Name>
+<Connected>1</Connected>
+<VehFile>31_25_WRT_FB7E8382.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>The Bend Team WRT 2025 #31:BRZ</VehName>
+<Category>WEC 2025, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>The Bend Team WRT 2025 #31</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="--.---" topspeed="230.63" fuel="0.090" fuelUsed="0.643" ve="0.122" veUsed="0.878" twfl="0.984" twfr="0.988" twrl="0.957" twrr="0.957" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="15" et="287.8401" s1="41.6273" s2="63.7428" s3="34.1088" topspeed="252.70" fuel="0.063" fuelUsed="0.027" ve="0.082" veUsed="0.039" twfl="0.965" twfr="0.973" twrl="0.949" twrr="0.945" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.4789</Lap>
+<BestLapTime>139.4789</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0881</Name>
+<Connected>1</Connected>
+<VehFile>60_25_IRON3680959B.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx 2025 #60:LM</VehName>
+<Category>WEC 2025, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Iron Lynx 2025 #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="--.---" topspeed="231.98" fuel="0.373" fuelUsed="0.411" ve="0.475" veUsed="0.525" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="5" et="168.3799" s1="40.2267" s2="62.9283" s3="36.6465" topspeed="251.80" fuel="0.345" fuelUsed="0.027" ve="0.439" veUsed="0.035" twfl="0.973" twfr="0.976" twrl="0.984" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.8015</Lap>
+<Lap num="3" p="16" et="308.1799" s1="42.5829" s2="62.7700" s3="34.1698" topspeed="236.03" fuel="0.318" fuelUsed="0.027" ve="0.400" veUsed="0.039" twfl="0.957" twfr="0.965" twrl="0.976" twrr="0.976" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">139.5228</Lap>
+<Lap num="4" p="16" et="447.7000" topspeed="212.16" fuel="0.784" fuelUsed="-0.467" ve="0.510" veUsed="-0.110" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>139.5228</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2038</Name>
+<Connected>1</Connected>
+<VehFile>59_25_UNITEB30E8CF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #59:LM</VehName>
+<Category>WEC 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>United Autosports 2025 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="--.---" topspeed="227.93" fuel="0.404" fuelUsed="0.313" ve="0.565" veUsed="0.035" twfl="0.984" twfr="0.984" twrl="0.973" twrr="0.976" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="10" et="174.2074" s1="41.4376" s2="66.7284" s3="34.9006" topspeed="246.84" fuel="0.380" fuelUsed="0.024" ve="0.529" veUsed="0.035" twfl="0.965" twfr="0.969" twrl="0.969" twrr="0.969" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">143.0666</Lap>
+<Lap num="3" p="17" et="317.2740" s1="41.7387" s2="65.5912" s3="34.3543" topspeed="247.77" fuel="0.357" fuelUsed="0.024" ve="0.494" veUsed="0.035" twfl="0.945" twfr="0.953" twrl="0.957" twrr="0.961" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">141.6842</Lap>
+<BestLapTime>141.6842</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=2,Stability=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1916</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="--.---" topspeed="232.43" fuel="0.137" fuelUsed="0.579" ve="0.192" veUsed="0.808" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.984" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="13" et="189.8601" s1="45.9561" s2="62.8451" s3="33.7946" topspeed="251.80" fuel="0.114" fuelUsed="0.024" ve="0.153" veUsed="0.039" twfl="0.961" twfr="0.961" twrl="0.973" twrr="0.965" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">142.5958</Lap>
+<Lap num="3" p="15" et="332.4600" topspeed="251.80" fuel="0.718" fuelUsed="-0.604" ve="0.231" veUsed="-0.078" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>142.5958</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0730</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Team WRT 2024 #31</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="--.---" topspeed="219.81" fuel="0.710" fuelUsed="0.024" ve="0.973" veUsed="0.027" twfl="0.976" twfr="0.984" twrl="0.933" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Lap num="2" p="19" et="247.8799" topspeed="217.56" fuel="0.706" fuelUsed="0.004" ve="0.965" veUsed="0.008" twfl="0.973" twfr="0.980" twrl="0.894" twrr="0.929" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2151</Name>
+<Connected>1</Connected>
+<VehFile>92_25_MANT9651C55B.VEH</VehFile>
+<UpgradeCode>4a290700 00000000 00000000 00000000</UpgradeCode>
+<VehName>Manthey 1st Phorm 2025 #92:LM</VehName>
+<Category>WEC 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>Manthey 1st Phorm 2025 #92</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>20</Position>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="--.---" topspeed="218.46" fuel="0.706" fuelUsed="0.029" ve="0.961" veUsed="0.039" twfl="0.980" twfr="0.980" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1804</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>94520e00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Inception Racing 2024 #70</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>21</Position>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>22</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+</Driver>
+</Qualify>
+</RaceResults>
+</rFactorXML>

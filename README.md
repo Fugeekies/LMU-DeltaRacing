@@ -27,7 +27,9 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
-- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory tests/testAssets/Results -OutputDirectory publish_output/TestAssets/Results`
+- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory tests/testAssets/Results -OutputDirectory packaging/TestAssets/Results`
+- `pwsh -File scripts/Test-PackageAssets.ps1`
+- `Copy-Item packaging/TestAssets/Results -Destination publish_output/TestAssets -Recurse`
 - `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
 - `iscc /DAppVersion=1.0.0 scripts/installer.iss`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
@@ -45,7 +47,7 @@ Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutab
 
 Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable.
 
-Le profil `win-x64` produit une publication autonome, élaguée et à fichier unique. Pour construire et vérifier manuellement l'installeur, publiez d'abord l'UI avec ce profil dans `publish_output`, préparez les fixtures avec `Prepare-PackageAssets.ps1`, exécutez `Test-PublishedApp.ps1`, puis compilez `scripts/installer.iss` avec Inno Setup. Les fixtures embarquées utilisent des alias de pilotes stables entre fichiers; les noms des résultats LMU de l'utilisateur ne sont pas modifiés. L'installeur choisit un dossier de résultats LMU détecté ou, en l'absence de résultats, les fixtures anonymisées installées avec l'application. La configuration existante est conservée lors des mises à niveau.
+Le profil `win-x64` produit une publication autonome, élaguée et à fichier unique. Les fixtures de démonstration anonymisées sont versionnées dans `packaging/TestAssets/Results`; le workflow les valide puis les copie dans la publication sans les régénérer. Pour renouveler ce jeu de données, exécutez `Prepare-PackageAssets.ps1` vers ce dossier, vérifiez-le avec `Test-PackageAssets.ps1` et incluez les fichiers XML mis à jour dans la modification. Pour construire et vérifier manuellement l'installeur, publiez d'abord l'UI avec ce profil dans `publish_output`, copiez les fixtures versionnées vers `publish_output/TestAssets`, exécutez `Test-PublishedApp.ps1`, puis compilez `scripts/installer.iss` avec Inno Setup. Les fixtures utilisent des alias de pilotes stables entre fichiers; les noms des résultats LMU de l'utilisateur ne sont pas modifiés. L'installeur choisit un dossier de résultats LMU détecté ou, en l'absence de résultats, les fixtures anonymisées installées avec l'application. La configuration existante est conservée lors des mises à niveau.
 
 Le workflow `.github/workflows/release.yml` construit et vérifie l'application puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub pour chaque tag `v*`.
 

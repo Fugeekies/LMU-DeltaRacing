@@ -1,0 +1,1389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>2</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1790967648</DateTime>
+<TimeString>2026/10/02 21:00:48</TimeString>
+<TrackVenue>Circuit de Spa-Francorchamps</TrackVenue>
+<TrackCourse>Circuit de Spa-Francorchamps</TrackCourse>
+<TrackEvent>6 Hours of Spa-Francorchamps</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Spa_2023\1.31\layoutSpa.mas</TrackData>
+<TrackLength>6981.6</TrackLength>
+<GameVersion>1.4200</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>Porsche_911_GT3_R_LMGT3,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1790968440</DateTime>
+<TimeString>2026/10/02 21:14:00</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Incident et="115.8">Erik Nylander(16) reported contact (74.32) with another vehicle Amon Ra(4)</Incident>
+<Incident et="118.4">Beke Tamas(0) reported contact (577.47) with another vehicle Andre Morais(8)</Incident>
+<Incident et="118.4">Andre Morais(8) reported contact (664.74) with another vehicle Beke Tamas(0)</Incident>
+<Incident et="118.9">Erik Nylander(16) reported contact (384.70) with another vehicle Amon Ra(4)</Incident>
+<Incident et="118.9">Amon Ra(4) reported contact (398.10) with another vehicle Erik Nylander(16)</Incident>
+<Incident et="121.8">Erik Nylander(16) reported contact (475.23) with another vehicle Amon Ra(4)</Incident>
+<Incident et="121.8">Amon Ra(4) reported contact (467.88) with another vehicle Erik Nylander(16)</Incident>
+<Incident et="125.5">Erik Nylander(16) reported contact (68.31) with another vehicle Amon Ra(4)</Incident>
+<Incident et="125.5">Amon Ra(4) reported contact (52.30) with another vehicle Erik Nylander(16)</Incident>
+<Incident et="126.1">Amon Ra(4) reported contact (36.22) with another vehicle Erik Nylander(16)</Incident>
+<Incident et="126.3">Erik Nylander(16) reported contact (14.47) with another vehicle Amon Ra(4)</Incident>
+<Penalty Driver="Beke Tamas" ID="0" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="128.9">Beke Tamas received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Penalty Driver="Andre Morais" ID="8" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="128.9">Andre Morais received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Penalty Driver="Apex Overtake" ID="18" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="128.9">Apex Overtake received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="140.7">Ellie Wattson(1) reported contact (1847.65) with another vehicle Krzysztof Pietruszka(17)</Incident>
+<Incident et="140.7">Krzysztof Pietruszka(17) reported contact (1625.90) with another vehicle Ellie Wattson(1)</Incident>
+<Incident et="143.1">Berat Toktas(2) reported contact (672.38) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="143.1">Reed Solberg(12) reported contact (68.96) with another vehicle Berat Toktas(2)</Incident>
+<Incident et="143.9">Ellie Wattson(1) reported contact (730.32) with another vehicle Beke Tamas(0)</Incident>
+<Incident et="143.9">Beke Tamas(0) reported contact (672.18) with another vehicle Ellie Wattson(1)</Incident>
+<Incident et="145.6">Max Ganchik(6) reported contact (394.54) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="145.6">Reed Solberg(12) reported contact (733.69) with another vehicle Max Ganchik(6)</Incident>
+<Incident et="146.2">Max Ganchik(6) reported contact (199.15) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="146.3">Ellie Wattson(1) reported contact (2221.20) with Immovable</Incident>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="148.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="148.5">No Further Action</TrackLimits>
+<Sector et="149.3">Ellie Wattson(1) reports new suspension damage</Sector>
+<Incident et="149.4">Ellie Wattson(1) reported contact (1383.82) with another vehicle Isaac Hay(14)</Incident>
+<Incident et="149.4">Isaac Hay(14) reported contact (1392.40) with another vehicle Ellie Wattson(1)</Incident>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="149.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="149.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.4">No Further Action</TrackLimits>
+<Incident et="160.1">Isaac Hay(14) reported contact (305.75) with another vehicle Amon Ra(4)</Incident>
+<Incident et="160.1">Amon Ra(4) reported contact (207.32) with another vehicle Isaac Hay(14)</Incident>
+<Sector et="161.5">Amon Ra(4) reports new suspension damage</Sector>
+<Incident et="161.5">Amon Ra(4) reported contact (2758.96) with Immovable</Incident>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
+<Incident et="164.0">Amon Ra(4) reported contact (592.82) with Immovable</Incident>
+<TrackLimits Driver="Andre Morais" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Andre Morais" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="166.3">Warning</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="166.3">Warning</TrackLimits>
+<Sector et="166.6">Jessica Brown(9) reports new suspension damage</Sector>
+<Sector et="166.6">Jessica Brown(9) reports new suspension damage</Sector>
+<Incident et="166.7">Amon Ra(4) reported contact (7595.43) with another vehicle Jessica Brown(9)</Incident>
+<Incident et="166.7">Jessica Brown(9) reported contact (7701.57) with another vehicle Amon Ra(4)</Incident>
+<Incident et="166.8">Jessica Brown(9) reported contact (360.25) with Immovable</Incident>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.8">No Further Action</TrackLimits>
+<Incident et="168.2">Amon Ra(4) reported contact (2866.26) with Immovable</Incident>
+<Incident et="169.1">Amon Ra(4) reported contact (469.01) with Immovable</Incident>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.6">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.7">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="169.7">No Further Action</TrackLimits>
+<ChatMessage et="170.1">A Ra: u fucking idiot in that ford</ChatMessage>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="171.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="171.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="173.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="173.6">No Further Action</TrackLimits>
+<Sector Driver="Ben Hamilton" ID="15" Sector="1" Class="GT3" et="175.5">Ben Hamilton(15) set new best for sector 1</Sector>
+<Score et="175.5">Ben Hamilton(15) lap=0 point=1 t=46.605 et=175.460</Score>
+<Score et="176.7">Pol Serrano(13) lap=0 point=1 t=-1.000 et=176.680</Score>
+<Incident et="176.9">Ellie Wattson(1) reported contact (219.95) with another vehicle Kumar Neel(3)</Incident>
+<Incident et="177.0">Kumar Neel(3) reported contact (38.47) with another vehicle Ellie Wattson(1)</Incident>
+<Score et="177.0">P-A Fugeekies(7) lap=0 point=1 t=48.193 et=177.036</Score>
+<Incident et="177.0">Kumar Neel(3) reported contact (94.82) with another vehicle Ellie Wattson(1)</Incident>
+<Score et="177.9">kaleb visram(10) lap=0 point=1 t=49.045 et=177.900</Score>
+<Incident et="178.6">Ellie Wattson(1) reported contact (283.75) with another vehicle Kumar Neel(3)</Incident>
+<Incident et="178.7">Kumar Neel(3) reported contact (360.69) with another vehicle Ellie Wattson(1)</Incident>
+<Score et="178.9">Krzysztof Pietruszka(17) lap=0 point=1 t=49.964 et=178.820</Score>
+<Score et="180.5">Beke Tamas(0) lap=0 point=1 t=51.633 et=180.480</Score>
+<ChatMessage et="180.7">A Ra: brainless basterd</ChatMessage>
+<Score et="180.8">Apex Overtake(18) lap=0 point=1 t=51.834 et=180.680</Score>
+<Incident et="181.2">Amon Ra(4) reported contact (375.75) with Immovable</Incident>
+<Incident et="181.3">Ellie Wattson(1) reported contact (5065.94) with Immovable</Incident>
+<Score et="182.0">Andre Morais(8) lap=0 point=1 t=53.136 et=181.980</Score>
+<Score et="183.2">Max Ganchik(6) lap=0 point=1 t=54.296 et=183.140</Score>
+<Score et="183.3">Berat Toktas(2) lap=0 point=1 t=54.348 et=183.200</Score>
+<Score et="183.4">John Venieris(11) lap=0 point=1 t=54.500 et=183.360</Score>
+<Score et="183.5">Reed Solberg(12) lap=0 point=1 t=54.513 et=183.360</Score>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="185.1">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="186.0">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="186.0">No Further Action</TrackLimits>
+<Incident et="186.5">Max Ganchik(6) reported contact (1012.75) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="186.5">Reed Solberg(12) reported contact (1216.78) with another vehicle Max Ganchik(6)</Incident>
+<Score et="186.6">Erik Nylander(16) lap=0 point=1 t=57.724 et=186.580</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="188.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="188.6">No Further Action</TrackLimits>
+<Score et="188.8">Isaac Hay(14) lap=0 point=1 t=59.887 et=188.740</Score>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="189.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="189.9">No Further Action</TrackLimits>
+<Score et="190.8">Christian Rootman(5) lap=0 point=1 t=61.868 et=190.720</Score>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="191.1">Warning</TrackLimits>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="191.1">Warning</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.7">No Further Action</TrackLimits>
+<Incident et="193.0">John Venieris(11) reported contact (646.59) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="193.1">Reed Solberg(12) reported contact (434.98) with another vehicle John Venieris(11)</Incident>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.7">No Further Action</TrackLimits>
+<Score et="195.9">Kumar Neel(3) lap=0 point=1 t=-1.000 et=195.780</Score>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="199.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="199.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="199.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="199.7">No Further Action</TrackLimits>
+<Sector et="200.0">Reed Solberg(12) reports new suspension damage</Sector>
+<Incident et="200.0">Isaac Hay(14) reported contact (1650.78) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="200.1">Reed Solberg(12) reported contact (679.92) with another vehicle Isaac Hay(14)</Incident>
+<Sector et="200.1">Reed Solberg(12) reports new suspension damage</Sector>
+<Incident et="200.2">Reed Solberg(12) reported contact (618.65) with another vehicle Isaac Hay(14)</Incident>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="201.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="201.6">No Further Action</TrackLimits>
+<Score et="202.9">Ellie Wattson(1) lap=0 point=1 t=74.013 et=202.860</Score>
+<Score et="203.9">Jessica Brown(9) lap=0 point=1 t=75.007 et=203.860</Score>
+<Sector et="208.7">Kumar Neel(3) reports new suspension damage</Sector>
+<Incident et="208.7">Reed Solberg(12) reported contact (1046.70) with another vehicle Kumar Neel(3)</Incident>
+<Incident et="208.8">Kumar Neel(3) reported contact (615.77) with another vehicle Reed Solberg(12)</Incident>
+<Score et="210.5">Amon Ra(4) lap=0 point=1 t=81.614 et=210.460</Score>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="210.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="210.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="223.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="223.9">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="225.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Krzysztof Pietruszka" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="226.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Krzysztof Pietruszka" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="226.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.2">No Further Action</TrackLimits>
+<Sector et="244.0">Isaac Hay(14) reports new suspension damage</Sector>
+<Incident et="244.0">Isaac Hay(14) reported contact (1343.22) with Immovable</Incident>
+<Incident et="244.1">Isaac Hay(14) reported contact (39.95) with Sign</Incident>
+<Incident et="244.2">Isaac Hay(14) reported contact (7.47) with Sign</Incident>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="247.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Isaac Hay" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="247.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="248.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="248.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.4">No Further Action</TrackLimits>
+<Sector Driver="Ben Hamilton" ID="15" Sector="2" Class="GT3" et="250.4">Ben Hamilton(15) set new best for sector 2</Sector>
+<Score et="250.4">Ben Hamilton(15) lap=0 point=2 t=121.494 et=250.340</Score>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.7">No Further Action</TrackLimits>
+<Score et="253.8">P-A Fugeekies(7) lap=0 point=2 t=124.967 et=253.810</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="253.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="253.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="254.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="254.2">No Further Action</TrackLimits>
+<Score et="254.4">kaleb visram(10) lap=0 point=2 t=125.510 et=254.360</Score>
+<Score et="255.1">Krzysztof Pietruszka(17) lap=0 point=2 t=126.191 et=255.040</Score>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="256.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="256.2">No Further Action</TrackLimits>
+<Score et="257.0">Beke Tamas(0) lap=0 point=2 t=-1.000 et=256.940</Score>
+<Incident et="258.5">Isaac Hay(14) reported contact (864.58) with another vehicle Christian Rootman(5)</Incident>
+<Incident et="258.6">Christian Rootman(5) reported contact (1007.71) with another vehicle Isaac Hay(14)</Incident>
+<Score et="259.1">Apex Overtake(18) lap=0 point=2 t=130.123 et=258.980</Score>
+<Score et="259.4">Andre Morais(8) lap=0 point=2 t=130.515 et=259.360</Score>
+<Incident et="260.1">Amon Ra(4) reported contact (2653.43) with Immovable</Incident>
+<Score et="260.8">Pol Serrano(13) lap=0 point=2 t=-1.000 et=260.760</Score>
+<Score et="261.3">Berat Toktas(2) lap=0 point=2 t=132.412 et=261.260</Score>
+<Score et="261.9">Max Ganchik(6) lap=0 point=2 t=133.010 et=261.860</Score>
+<Score et="262.8">John Venieris(11) lap=0 point=2 t=133.902 et=262.760</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="262.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="262.9">No Further Action</TrackLimits>
+<Score et="263.0">Erik Nylander(16) lap=0 point=2 t=134.131 et=262.980</Score>
+<Incident et="265.2">Berat Toktas(2) reported contact (39.10) with another vehicle Pol Serrano(13)</Incident>
+<Incident et="266.4">Pol Serrano(13) reported contact (507.98) with another vehicle Berat Toktas(2)</Incident>
+<Incident et="266.4">Berat Toktas(2) reported contact (367.93) with another vehicle Pol Serrano(13)</Incident>
+<Incident et="267.6">Berat Toktas(2) reported contact (322.48) with another vehicle Pol Serrano(13)</Incident>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="267.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="267.7">No Further Action</TrackLimits>
+<Incident et="267.9">Pol Serrano(13) reported contact (287.96) with another vehicle Berat Toktas(2)</Incident>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="270.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="270.8">No Further Action</TrackLimits>
+<Score et="271.3">Christian Rootman(5) lap=0 point=2 t=142.310 et=271.160</Score>
+<Score et="272.8">Isaac Hay(14) lap=0 point=2 t=143.917 et=272.760</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="274.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="275.7">Warning</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="275.7">Warning</TrackLimits>
+<Score et="276.2">Reed Solberg(12) lap=0 point=2 t=147.235 et=276.080</Score>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="277.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="277.6">No Further Action</TrackLimits>
+<Score et="277.9">Kumar Neel(3) lap=0 point=2 t=-1.000 et=277.760</Score>
+<Score et="280.2">Ellie Wattson(1) lap=0 point=2 t=151.319 et=280.180</Score>
+<Incident et="283.4">Erik Nylander(16) reported contact (407.51) with another vehicle Pol Serrano(13)</Incident>
+<Incident et="283.4">Pol Serrano(13) reported contact (448.43) with another vehicle Erik Nylander(16)</Incident>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.3">No Further Action</TrackLimits>
+<Incident et="290.3">Erik Nylander(16) reported contact (1411.76) with Immovable</Incident>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.6">No Further Action</TrackLimits>
+<Score et="290.6">Jessica Brown(9) lap=0 point=2 t=161.730 et=290.580</Score>
+<Incident et="290.7">Max Ganchik(6) reported contact (1730.35) with Immovable</Incident>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="290.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="290.8">No Further Action</TrackLimits>
+<Sector et="290.9">Max Ganchik(6) reports new suspension damage</Sector>
+<Incident et="290.9">Erik Nylander(16) reported contact (265.82) with Immovable</Incident>
+<Sector et="291.5">Pol Serrano(13) reports new suspension damage</Sector>
+<Incident et="291.6">Pol Serrano(13) reported contact (4536.95) with Immovable</Incident>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="293.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="293.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.8">No Further Action</TrackLimits>
+<Sector Driver="Ben Hamilton" ID="15" Sector="3" Class="GT3" et="295.4">Ben Hamilton(15) set new best for sector 3</Sector>
+<Score et="295.4">Ben Hamilton(15) lap=1 point=0 t=166.441 et=295.300</Score>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="296.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="296.2">No Further Action</TrackLimits>
+<Score et="300.2">Amon Ra(4) lap=0 point=2 t=171.280 et=300.140</Score>
+<Score et="300.4">P-A Fugeekies(7) lap=1 point=0 t=171.572 et=300.414</Score>
+<Score et="301.0">kaleb visram(10) lap=1 point=0 t=172.129 et=300.980</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.2">No Further Action</TrackLimits>
+<Score et="301.3">Krzysztof Pietruszka(17) lap=1 point=0 t=172.430 et=301.280</Score>
+<Score et="311.0">Berat Toktas(2) lap=1 point=0 t=182.138 et=311.000</Score>
+<Score et="312.3">John Venieris(11) lap=1 point=0 t=183.411 et=312.260</Score>
+<Score et="314.1">Beke Tamas(0) lap=1 point=0 t=-1.000 et=314.080</Score>
+<Incident et="314.4">Ellie Wattson(1) reported contact (4720.01) with Immovable</Incident>
+<Sector et="314.7">Ellie Wattson(1) reports new suspension damage</Sector>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="315.7">Warning</TrackLimits>
+<TrackLimits Driver="Erik Nylander" ID="16" Lap="0" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="315.7">Warning</TrackLimits>
+<Score et="317.4">Max Ganchik(6) lap=1 point=0 t=188.557 et=317.400</Score>
+<Score et="317.5">Apex Overtake(18) lap=1 point=0 t=188.559 et=317.420</Score>
+<Score et="317.9">Pol Serrano(13) lap=1 point=0 t=-1.000 et=317.880</Score>
+<Score et="318.7">Andre Morais(8) lap=1 point=0 t=189.808 et=318.660</Score>
+<Score et="320.1">Christian Rootman(5) lap=1 point=0 t=191.137 et=319.980</Score>
+<Score et="321.2">Reed Solberg(12) lap=1 point=0 t=192.247 et=321.100</Score>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="322.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="322.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="322.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="322.8">No Further Action</TrackLimits>
+<Score et="324.8">Kumar Neel(3) lap=1 point=0 t=-1.000 et=324.680</Score>
+<Penalty et="324.8">Beke Tamas served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Penalty et="328.2">Apex Overtake served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Incident et="329.0">Jessica Brown(9) reported contact (17.37) with Post</Incident>
+<Incident et="329.1">Jessica Brown(9) reported contact (17.17) with Post</Incident>
+<Penalty et="329.4">Andre Morais served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Sector et="330.0">Krzysztof Pietruszka(17) reports new suspension damage</Sector>
+<Incident et="330.1">Krzysztof Pietruszka(17) reported contact (2023.05) with Immovable</Incident>
+<Sector et="330.2">Krzysztof Pietruszka(17) reports new suspension damage</Sector>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="330.2">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="330.2">No Further Action</TrackLimits>
+<Incident et="330.2">Krzysztof Pietruszka(17) reported contact (14.45) with Wing</Incident>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="331.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Amon Ra" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="331.2">No Further Action</TrackLimits>
+<Incident et="336.4">Amon Ra(4) reported contact (140.24) with Immovable</Incident>
+<Sector Driver="Ben Hamilton" ID="15" Sector="1" Class="GT3" et="337.3">Ben Hamilton(15) set new best for sector 1</Sector>
+<Score et="337.3">Ben Hamilton(15) lap=1 point=1 t=41.891 et=337.180</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="338.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="338.5">No Further Action</TrackLimits>
+<Incident et="340.7">Jessica Brown(9) reported contact (490.67) with Immovable</Incident>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="341.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="341.2">No Further Action</TrackLimits>
+<Incident et="342.4">Krzysztof Pietruszka(17) reported contact (7.74) with Wing</Incident>
+<Score et="343.0">P-A Fugeekies(7) lap=1 point=1 t=42.581 et=342.996</Score>
+<Score et="345.4">kaleb visram(10) lap=1 point=1 t=44.346 et=345.320</Score>
+<Score et="347.1">Ellie Wattson(1) lap=1 point=0 t=218.253 et=347.100</Score>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="347.5">Warning</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="347.5">Warning</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="348.8">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="353.9">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="353.9">No Further Action</TrackLimits>
+<Score et="354.9">Berat Toktas(2) lap=1 point=1 t=43.808 et=354.800</Score>
+<Score et="355.8">John Venieris(11) lap=1 point=1 t=43.509 et=355.780</Score>
+<Score et="359.6">Max Ganchik(6) lap=1 point=1 t=-1.000 et=359.580</Score>
+<ChatMessage et="361.3">A Ra: Go Right</ChatMessage>
+<Score et="361.3">Pol Serrano(13) lap=1 point=1 t=43.421 et=361.300</Score>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="361.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="361.6">No Further Action</TrackLimits>
+<Score et="362.6">Christian Rootman(5) lap=1 point=1 t=42.522 et=362.520</Score>
+<Score et="363.4">Beke Tamas(0) lap=1 point=1 t=49.250 et=363.340</Score>
+<Score et="363.8">Reed Solberg(12) lap=1 point=1 t=42.646 et=363.740</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="365.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="365.7">No Further Action</TrackLimits>
+<Score et="367.3">Kumar Neel(3) lap=1 point=1 t=42.547 et=367.220</Score>
+<Score et="367.9">Apex Overtake(18) lap=1 point=1 t=50.380 et=367.800</Score>
+<Incident et="368.0">Ellie Wattson(1) reported contact (1985.00) with Immovable</Incident>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="368.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="368.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="369.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="369.1">No Further Action</TrackLimits>
+<Score et="369.2">Andre Morais(8) lap=1 point=1 t=50.529 et=369.180</Score>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="369.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="369.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="370.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="370.4">No Further Action</TrackLimits>
+<Sector et="372.7">Ellie Wattson(1) reports new suspension damage</Sector>
+<Incident et="372.8">Ellie Wattson(1) reported contact (3894.71) with Immovable</Incident>
+<Incident et="375.2">Ellie Wattson(1) reported contact (1760.41) with Immovable</Incident>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="377.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="377.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="378.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ellie Wattson" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="378.5">No Further Action</TrackLimits>
+<Score et="412.2">Ben Hamilton(15) lap=1 point=2 t=116.803 et=412.100</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="413.4">Warning</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="413.4">Warning</TrackLimits>
+<Score et="415.0">Jessica Brown(9) lap=1 point=0 t=286.041 et=414.900</Score>
+<Score et="417.6">P-A Fugeekies(7) lap=1 point=2 t=117.183 et=417.598</Score>
+<Sector Driver="P-A Fugeekies" ID="7" Sector="2" Class="GT3" et="417.6">P-A Fugeekies(7) set new best for sector 2</Sector>
+<Score et="421.3">kaleb visram(10) lap=1 point=2 t=120.289 et=421.280</Score>
+<Sector et="424.9">P-A Fugeekies(7) reports new suspension damage</Sector>
+<Incident et="425.0">P-A Fugeekies(7) reported contact (5578.01) with Immovable</Incident>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="428.0">No Further Action</TrackLimits>
+<Score et="430.2">Berat Toktas(2) lap=1 point=2 t=119.166 et=430.160</Score>
+<Score et="431.2">John Venieris(11) lap=1 point=2 t=118.934 et=431.200</Score>
+<Score et="436.6">Max Ganchik(6) lap=1 point=2 t=-1.000 et=436.580</Score>
+<Score et="436.8">Pol Serrano(13) lap=1 point=2 t=118.907 et=436.800</Score>
+<Score et="437.9">Christian Rootman(5) lap=1 point=2 t=117.858 et=437.840</Score>
+<Score et="438.8">Reed Solberg(12) lap=1 point=2 t=-1.000 et=438.720</Score>
+<Score et="440.2">Beke Tamas(0) lap=1 point=2 t=126.124 et=440.200</Score>
+<Score et="442.5">Kumar Neel(3) lap=1 point=2 t=117.764 et=442.440</Score>
+<Score et="444.8">Apex Overtake(18) lap=1 point=2 t=127.271 et=444.680</Score>
+<Score et="445.3">Andre Morais(8) lap=1 point=2 t=126.556 et=445.220</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="450.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="450.0">No Further Action</TrackLimits>
+<Score et="457.2">Ben Hamilton(15) lap=2 point=0 t=161.796 et=457.080</Score>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="464.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="464.8">No Further Action</TrackLimits>
+<Score et="465.7">Jessica Brown(9) lap=1 point=1 t=50.707 et=465.600</Score>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="466.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="466.0">No Further Action</TrackLimits>
+<Score et="467.9">kaleb visram(10) lap=2 point=0 t=166.895 et=467.880</Score>
+<Score et="471.8">P-A Fugeekies(7) lap=2 point=0 t=171.368 et=471.782</Score>
+<Score et="476.2">Berat Toktas(2) lap=2 point=0 t=165.169 et=476.160</Score>
+<Score et="477.6">John Venieris(11) lap=2 point=0 t=165.361 et=477.620</Score>
+<Score et="482.9">Pol Serrano(13) lap=2 point=0 t=164.998 et=482.880</Score>
+<Score et="483.8">Max Ganchik(6) lap=2 point=0 t=-1.000 et=483.740</Score>
+<Score et="484.3">Reed Solberg(12) lap=2 point=0 t=-1.000 et=484.160</Score>
+<Score et="484.7">Christian Rootman(5) lap=2 point=0 t=164.612 et=484.600</Score>
+<Score et="486.4">Beke Tamas(0) lap=2 point=0 t=172.230 et=486.320</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="488.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="488.8">No Further Action</TrackLimits>
+<Score et="488.8">Kumar Neel(3) lap=2 point=0 t=164.041 et=488.720</Score>
+<Incident et="489.9">Max Ganchik(6) reported contact (392.66) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="489.9">Reed Solberg(12) reported contact (645.17) with another vehicle Max Ganchik(6)</Incident>
+<Score et="491.2">Apex Overtake(18) lap=2 point=0 t=173.691 et=491.100</Score>
+<Score et="492.5">Andre Morais(8) lap=2 point=0 t=173.783 et=492.440</Score>
+<Score et="499.1">Ben Hamilton(15) lap=2 point=1 t=41.938 et=499.020</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.0">No Further Action</TrackLimits>
+<Score et="510.5">kaleb visram(10) lap=2 point=1 t=42.567 et=510.440</Score>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="510.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="510.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="513.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="513.2">No Further Action</TrackLimits>
+<Score et="514.7">P-A Fugeekies(7) lap=2 point=1 t=42.938 et=514.721</Score>
+<Score et="518.9">Berat Toktas(2) lap=2 point=1 t=42.710 et=518.880</Score>
+<Score et="521.3">John Venieris(11) lap=2 point=1 t=43.659 et=521.280</Score>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="522.2">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="522.2">No Further Action</TrackLimits>
+<Score et="526.2">Pol Serrano(13) lap=2 point=1 t=43.235 et=526.120</Score>
+<Score et="527.2">Reed Solberg(12) lap=2 point=1 t=42.975 et=527.140</Score>
+<Score et="528.0">Christian Rootman(5) lap=2 point=1 t=43.335 et=527.940</Score>
+<Score et="528.2">Max Ganchik(6) lap=2 point=1 t=44.416 et=528.160</Score>
+<Score et="529.4">Beke Tamas(0) lap=2 point=1 t=43.085 et=529.400</Score>
+<Score et="531.3">Kumar Neel(3) lap=2 point=1 t=42.473 et=531.180</Score>
+<Score et="534.8">Apex Overtake(18) lap=2 point=1 t=43.632 et=534.740</Score>
+<Score et="536.5">Andre Morais(8) lap=2 point=1 t=43.982 et=536.420</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="546.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="546.1">No Further Action</TrackLimits>
+<Score et="554.8">Jessica Brown(9) lap=1 point=2 t=139.867 et=554.760</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="559.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="559.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="563.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="563.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="563.7">Warning</TrackLimits>
+<Sector Driver="Ben Hamilton" ID="15" Sector="2" Class="GT3" et="573.5">Ben Hamilton(15) set new best for sector 2</Sector>
+<Score et="573.5">Ben Hamilton(15) lap=2 point=2 t=116.289 et=573.380</Score>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="575.5">Warning</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="575.5">Warning</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="581.3">Warning</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="581.3">Warning</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="581.5">Warning</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="2" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="581.5">Warning</TrackLimits>
+<Incident et="586.5">Berat Toktas(2) reported contact (1791.02) with Immovable</Incident>
+<Sector et="586.6">Berat Toktas(2) reports new suspension damage</Sector>
+<Score et="587.2">kaleb visram(10) lap=2 point=2 t=119.352 et=587.220</Score>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="588.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Berat Toktas" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="588.7">No Further Action</TrackLimits>
+<Score et="589.7">P-A Fugeekies(7) lap=2 point=2 t=-1.000 et=589.681</Score>
+<Score et="597.1">John Venieris(11) lap=2 point=2 t=119.498 et=597.120</Score>
+<Score et="597.5">Berat Toktas(2) lap=2 point=2 t=121.301 et=597.460</Score>
+<Incident et="597.9">Max Ganchik(6) reported contact (4039.61) with Immovable</Incident>
+<Incident et="598.8">Max Ganchik(6) reported contact (906.61) with Immovable</Incident>
+<Incident et="599.8">Max Ganchik(6) reported contact (2590.28) with Immovable</Incident>
+<Score et="601.1">Jessica Brown(9) lap=2 point=0 t=186.179 et=601.080</Score>
+<Score et="601.4">Pol Serrano(13) lap=2 point=2 t=-1.000 et=601.400</Score>
+<Score et="601.7">Reed Solberg(12) lap=2 point=2 t=-1.000 et=601.560</Score>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="602.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Max Ganchik" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="602.1">No Further Action</TrackLimits>
+<Score et="603.5">Christian Rootman(5) lap=2 point=2 t=118.843 et=603.440</Score>
+<Score et="606.9">Kumar Neel(3) lap=2 point=2 t=118.112 et=606.820</Score>
+<Score et="608.2">Beke Tamas(0) lap=2 point=2 t=121.812 et=608.120</Score>
+<Score et="611.9">Apex Overtake(18) lap=2 point=2 t=120.726 et=611.820</Score>
+<Score et="612.7">Andre Morais(8) lap=2 point=2 t=120.179 et=612.620</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="614.4">No Further Action</TrackLimits>
+<Incident et="618.9">Pol Serrano(13) reported contact (35.64) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="618.9">Pol Serrano(13) reported contact (64.78) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="618.9">Pol Serrano(13) reported contact (171.50) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="619.0">Reed Solberg(12) reported contact (116.33) with another vehicle Pol Serrano(13)</Incident>
+<Score et="619.1">Ben Hamilton(15) lap=3 point=0 t=161.963 et=619.060</Score>
+<Incident et="622.7">Pol Serrano(13) reported contact (581.41) with another vehicle Reed Solberg(12)</Incident>
+<Incident et="622.7">Reed Solberg(12) reported contact (152.89) with another vehicle Pol Serrano(13)</Incident>
+<Sector et="622.7">Pol Serrano(13) reports new suspension damage</Sector>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="631.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="631.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0" CurrentPoints="1" Resolution="7" et="632.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="2" WarningPoints="0" CurrentPoints="1" Resolution="7" et="632.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="633.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="633.1">No Further Action</TrackLimits>
+<Score et="633.6">kaleb visram(10) lap=3 point=0 t=165.680 et=633.560</Score>
+<Score et="635.2">P-A Fugeekies(7) lap=3 point=0 t=-1.000 et=635.177</Score>
+<TrackLimits Driver="John Venieris" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="640.7">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="640.7">No Further Action</TrackLimits>
+<Score et="644.1">Berat Toktas(2) lap=3 point=0 t=167.882 et=644.040</Score>
+<Score et="644.8">Jessica Brown(9) lap=2 point=1 t=43.672 et=644.740</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="646.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="646.4">No Further Action</TrackLimits>
+<Score et="648.2">Pol Serrano(13) lap=3 point=0 t=-1.000 et=648.200</Score>
+<Score et="649.6">Christian Rootman(5) lap=3 point=0 t=164.865 et=649.460</Score>
+<Score et="650.5">Reed Solberg(12) lap=3 point=0 t=-1.000 et=650.420</Score>
+<Score et="653.0">John Venieris(11) lap=3 point=0 t=175.364 et=652.980</Score>
+<Score et="653.7">Kumar Neel(3) lap=3 point=0 t=164.866 et=653.580</Score>
+<Score et="654.8">Beke Tamas(0) lap=3 point=0 t=168.484 et=654.800</Score>
+<Score et="659.0">Apex Overtake(18) lap=3 point=0 t=167.851 et=658.960</Score>
+<Score et="660.1">Andre Morais(8) lap=3 point=0 t=167.640 et=660.080</Score>
+<Score et="661.1">Ben Hamilton(15) lap=3 point=1 t=41.962 et=661.020</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="663.2">No Further Action</TrackLimits>
+<Score et="676.3">kaleb visram(10) lap=3 point=1 t=42.691 et=676.240</Score>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="677.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Pol Serrano" ID="13" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="7" et="677.6">No Further Action</TrackLimits>
+<Score et="678.5">P-A Fugeekies(7) lap=3 point=1 t=43.324 et=678.501</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="685.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="685.8">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="686.6">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="686.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="687.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="694.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="694.1">No Further Action</TrackLimits>
+<Score et="694.3">Reed Solberg(12) lap=3 point=1 t=43.799 et=694.220</Score>
+<Score et="694.7">Berat Toktas(2) lap=3 point=1 t=50.608 et=694.640</Score>
+<Score et="696.5">Kumar Neel(3) lap=3 point=1 t=42.847 et=696.420</Score>
+<Score et="696.8">John Venieris(11) lap=3 point=1 t=43.787 et=696.780</Score>
+<Score et="698.0">Beke Tamas(0) lap=3 point=1 t=43.135 et=697.940</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.6">No Further Action</TrackLimits>
+<Score et="703.2">Apex Overtake(18) lap=3 point=1 t=44.142 et=703.100</Score>
+<Score et="703.6">Christian Rootman(5) lap=3 point=1 t=54.034 et=703.500</Score>
+<Score et="704.7">Andre Morais(8) lap=3 point=1 t=44.551 et=704.640</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="707.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="707.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="708.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="708.9">No Further Action</TrackLimits>
+<Score et="723.9">Jessica Brown(9) lap=2 point=2 t=122.798 et=723.860</Score>
+<Score et="736.7">Ben Hamilton(15) lap=3 point=2 t=117.529 et=736.580</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="743.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="743.5">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="744.7">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="744.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="750.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="750.7">No Further Action</TrackLimits>
+<Score et="752.5">kaleb visram(10) lap=3 point=2 t=118.881 et=752.440</Score>
+<Score et="754.5">P-A Fugeekies(7) lap=3 point=2 t=119.326 et=754.503</Score>
+<Incident et="766.3">Berat Toktas(2) reported contact (634.42) with another vehicle Kumar Neel(3)</Incident>
+<Incident et="766.4">Kumar Neel(3) reported contact (547.43) with another vehicle Berat Toktas(2)</Incident>
+<Sector Driver="Reed Solberg" ID="12" Sector="2" Class="GT3" et="768.3">Reed Solberg(12) set new best for sector 2</Sector>
+<Score et="768.3">Reed Solberg(12) lap=3 point=2 t=117.779 et=768.200</Score>
+<Score et="770.5">Jessica Brown(9) lap=3 point=0 t=169.377 et=770.440</Score>
+<Score et="771.2">Berat Toktas(2) lap=3 point=2 t=127.130 et=771.180</Score>
+<Score et="771.4">Kumar Neel(3) lap=3 point=2 t=117.756 et=771.340</Score>
+<Score et="772.8">John Venieris(11) lap=3 point=2 t=119.821 et=772.800</Score>
+<Score et="775.2">Beke Tamas(0) lap=3 point=2 t=120.388 et=775.180</Score>
+<Score et="779.3">Apex Overtake(18) lap=3 point=2 t=120.264 et=779.220</Score>
+<Score et="780.0">Christian Rootman(5) lap=3 point=2 t=130.454 et=779.920</Score>
+<Score et="781.0">Andre Morais(8) lap=3 point=2 t=120.917 et=781.000</Score>
+<Score et="781.6">Ben Hamilton(15) lap=4 point=0 t=162.479 et=781.540</Score>
+<Score et="798.7">kaleb visram(10) lap=4 point=0 t=165.075 et=798.640</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="799.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="799.6">No Further Action</TrackLimits>
+<Score et="800.4">P-A Fugeekies(7) lap=4 point=0 t=165.195 et=800.372</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="803.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="803.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="808.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="808.1">No Further Action</TrackLimits>
+<Score et="813.4">Reed Solberg(12) lap=4 point=0 t=162.867 et=813.280</Score>
+<Score et="813.6">Jessica Brown(9) lap=3 point=1 t=43.062 et=813.520</Score>
+<Score et="817.2">Berat Toktas(2) lap=4 point=0 t=173.125 et=817.160</Score>
+<Score et="819.0">John Venieris(11) lap=4 point=0 t=165.952 et=818.940</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="820.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="820.9">No Further Action</TrackLimits>
+<Score et="822.3">Beke Tamas(0) lap=4 point=0 t=167.468 et=822.260</Score>
+<Score et="824.3">Ben Hamilton(15) lap=4 point=1 t=42.644 et=824.180</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="825.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="825.5">No Further Action</TrackLimits>
+<Score et="826.0">Apex Overtake(18) lap=4 point=0 t=166.964 et=825.920</Score>
+<Score et="826.9">Christian Rootman(5) lap=4 point=0 t=177.338 et=826.800</Score>
+<Score et="827.9">Andre Morais(8) lap=4 point=0 t=167.812 et=827.900</Score>
+<Score et="837.6">Kumar Neel(3) lap=4 point=0 t=183.876 et=837.460</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="841.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="841.4">No Further Action</TrackLimits>
+<Score et="842.0">kaleb visram(10) lap=4 point=1 t=43.282 et=841.920</Score>
+<Score et="843.4">P-A Fugeekies(7) lap=4 point=1 t=42.985 et=843.357</Score>
+<Incident et="852.7">Beke Tamas(0) reported contact (1343.50) with Immovable</Incident>
+<Score et="856.1">Reed Solberg(12) lap=4 point=1 t=42.756 et=856.040</Score>
+<Score et="859.9">Berat Toktas(2) lap=4 point=1 t=42.642 et=859.800</Score>
+<Score et="861.5">John Venieris(11) lap=4 point=1 t=42.549 et=861.480</Score>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="869.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="869.5">No Further Action</TrackLimits>
+<Score et="870.0">Christian Rootman(5) lap=4 point=1 t=43.050 et=869.860</Score>
+<Score et="870.3">Apex Overtake(18) lap=4 point=1 t=44.313 et=870.240</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="871.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="871.7">No Further Action</TrackLimits>
+<Score et="871.7">Andre Morais(8) lap=4 point=1 t=43.779 et=871.680</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="878.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="878.1">No Further Action</TrackLimits>
+<Score et="881.3">Kumar Neel(3) lap=4 point=1 t=43.718 et=881.180</Score>
+<Score et="882.9">Beke Tamas(0) lap=4 point=1 t=60.643 et=882.900</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="890.7">No Further Action</TrackLimits>
+<Score et="891.2">Jessica Brown(9) lap=3 point=2 t=120.730 et=891.180</Score>
+<Score et="899.7">Ben Hamilton(15) lap=4 point=2 t=118.044 et=899.580</Score>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="909.6">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="909.6">No Further Action</TrackLimits>
+<Score et="917.2">kaleb visram(10) lap=4 point=2 t=118.576 et=917.200</Score>
+<Score et="919.5">P-A Fugeekies(7) lap=4 point=2 t=119.072 et=919.444</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="924.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="924.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="928.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="928.6">No Further Action</TrackLimits>
+<Score et="930.2">Reed Solberg(12) lap=4 point=2 t=116.832 et=930.120</Score>
+<Score et="935.3">Berat Toktas(2) lap=4 point=2 t=118.129 et=935.300</Score>
+<Score et="937.0">John Venieris(11) lap=4 point=2 t=118.073 et=937.020</Score>
+<Score et="937.4">Jessica Brown(9) lap=4 point=0 t=166.874 et=937.320</Score>
+<Sector Driver="Ben Hamilton" ID="15" Sector="3" Class="GT3" et="944.1">Ben Hamilton(15) set new best for sector 3</Sector>
+<Score et="944.1">Ben Hamilton(15) lap=5 point=0 t=162.439 et=943.980</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="944.2">No Further Action</TrackLimits>
+<Score et="945.3">Christian Rootman(5) lap=4 point=2 t=118.377 et=945.180</Score>
+<Score et="946.6">Apex Overtake(18) lap=4 point=2 t=120.628 et=946.540</Score>
+<Score et="946.9">Andre Morais(8) lap=4 point=2 t=118.998 et=946.900</Score>
+<Score et="956.5">Kumar Neel(3) lap=4 point=2 t=118.909 et=956.360</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="956.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="956.9">No Further Action</TrackLimits>
+<Score et="959.9">Beke Tamas(0) lap=4 point=2 t=137.622 et=959.880</Score>
+<Score et="963.2">kaleb visram(10) lap=5 point=0 t=164.532 et=963.160</Score>
+<Score et="965.3">P-A Fugeekies(7) lap=5 point=0 t=164.906 et=965.279</Score>
+<Incident et="968.3">Andre Morais(8) reported contact (49.58) with another vehicle Apex Overtake(18)</Incident>
+<Incident et="968.3">Apex Overtake(18) reported contact (9.33) with another vehicle Andre Morais(8)</Incident>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="973.5">Warning</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="973.5">Warning</TrackLimits>
+<Score et="975.4">Reed Solberg(12) lap=5 point=0 t=162.012 et=975.300</Score>
+<Score et="980.4">Berat Toktas(2) lap=5 point=0 t=163.196 et=980.360</Score>
+<Score et="980.6">Jessica Brown(9) lap=4 point=1 t=43.258 et=980.580</Score>
+<Score et="982.7">John Venieris(11) lap=5 point=0 t=163.714 et=982.660</Score>
+<Score et="986.2">Ben Hamilton(15) lap=5 point=1 t=-1.000 et=986.100</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="990.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="990.4">No Further Action</TrackLimits>
+<Score et="991.1">Christian Rootman(5) lap=5 point=0 t=164.188 et=991.000</Score>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="992.0">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="992.0">No Further Action</TrackLimits>
+<Score et="993.8">Andre Morais(8) lap=5 point=0 t=165.846 et=993.740</Score>
+<Score et="994.5">Apex Overtake(18) lap=5 point=0 t=168.473 et=994.400</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1001.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1001.7">No Further Action</TrackLimits>
+<Score et="1002.3">Kumar Neel(3) lap=5 point=0 t=164.736 et=1002.180</Score>
+<Score et="1006.2">kaleb visram(10) lap=5 point=1 t=42.973 et=1006.140</Score>
+<Score et="1006.5">Beke Tamas(0) lap=5 point=0 t=184.228 et=1006.500</Score>
+<Score et="1007.8">P-A Fugeekies(7) lap=5 point=1 t=42.478 et=1007.757</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1018.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1018.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1020.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1020.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Andre Morais" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Andre Morais" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.6">No Further Action</TrackLimits>
+<Score et="1022.8">Berat Toktas(2) lap=5 point=1 t=42.411 et=1022.780</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1022.9">No Further Action</TrackLimits>
+<Score et="1024.9">Reed Solberg(12) lap=5 point=1 t=49.555 et=1024.860</Score>
+<Score et="1026.9">John Venieris(11) lap=5 point=1 t=44.247 et=1026.900</Score>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1032.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1032.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1034.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1034.2">No Further Action</TrackLimits>
+<Score et="1037.9">Andre Morais(8) lap=5 point=1 t=44.087 et=1037.820</Score>
+<Score et="1038.6">Apex Overtake(18) lap=5 point=1 t=44.093 et=1038.480</Score>
+<Score et="1040.9">Christian Rootman(5) lap=5 point=1 t=49.840 et=1040.840</Score>
+<Score et="1047.6">Kumar Neel(3) lap=5 point=1 t=45.330 et=1047.520</Score>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1048.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Apex Overtake" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1048.3">No Further Action</TrackLimits>
+<Score et="1050.5">Beke Tamas(0) lap=5 point=1 t=43.978 et=1050.480</Score>
+<Sector et="1058.9">Reed Solberg(12) reports new suspension damage</Sector>
+<Incident et="1059.0">Reed Solberg(12) reported contact (3188.64) with Immovable</Incident>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1061.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Reed Solberg" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1061.9">No Further Action</TrackLimits>
+<Score et="1062.7">Ben Hamilton(15) lap=5 point=2 t=-1.000 et=1062.600</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1065.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1065.9">No Further Action</TrackLimits>
+<Score et="1070.8">Jessica Brown(9) lap=4 point=2 t=133.421 et=1070.740</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1076.4">No Further Action</TrackLimits>
+<Score et="1082.0">kaleb visram(10) lap=5 point=2 t=118.828 et=1082.000</Score>
+<Score et="1084.3">P-A Fugeekies(7) lap=5 point=2 t=118.994 et=1084.273</Score>
+<Score et="1098.5">Berat Toktas(2) lap=5 point=2 t=118.086 et=1098.440</Score>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1099.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1099.2">No Further Action</TrackLimits>
+<Score et="1103.3">John Venieris(11) lap=5 point=2 t=120.615 et=1103.260</Score>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="5" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="1106.8">Warning</TrackLimits>
+<TrackLimits Driver="Beke Tamas" ID="0" Lap="5" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="1106.8">Warning</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1109.0">No Further Action</TrackLimits>
+<Score et="1110.2">Ben Hamilton(15) lap=6 point=0 t=-1.000 et=1110.080</Score>
+<Score et="1112.4">Andre Morais(8) lap=5 point=2 t=118.571 et=1112.320</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1114.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1114.1">No Further Action</TrackLimits>
+<Score et="1114.5">Apex Overtake(18) lap=5 point=2 t=120.003 et=1114.400</Score>
+<Score et="1117.2">Christian Rootman(5) lap=5 point=2 t=126.109 et=1117.100</Score>
+<Score et="1123.0">Kumar Neel(3) lap=5 point=2 t=120.673 et=1122.860</Score>
+<Score et="1125.2">Jessica Brown(9) lap=5 point=0 t=187.858 et=1125.180</Score>
+<Score et="1126.8">Beke Tamas(0) lap=5 point=2 t=-1.000 et=1126.760</Score>
+<Score et="1128.2">kaleb visram(10) lap=6 point=0 t=165.030 et=1128.200</Score>
+<Score et="1130.1">P-A Fugeekies(7) lap=6 point=0 t=164.850 et=1130.128</Score>
+<Score et="1143.9">Berat Toktas(2) lap=6 point=0 t=163.461 et=1143.820</Score>
+<Incident et="1145.2">John Venieris(11) reported contact (901.88) with Immovable</Incident>
+<TrackLimits Driver="John Venieris" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.2">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.2">No Further Action</TrackLimits>
+<Sector Driver="Ben Hamilton" ID="15" Sector="1" Class="GT3" et="1152.0">Ben Hamilton(15) set new best for sector 1</Sector>
+<Score et="1152.0">Ben Hamilton(15) lap=6 point=1 t=41.859 et=1151.940</Score>
+<TrackLimits Driver="John Venieris" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1153.0">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1153.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1157.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1157.2">No Further Action</TrackLimits>
+<Score et="1158.0">John Venieris(11) lap=6 point=0 t=175.344 et=1158.000</Score>
+<Score et="1158.1">Andre Morais(8) lap=6 point=0 t=164.278 et=1158.020</Score>
+<Score et="1160.0">Apex Overtake(18) lap=6 point=0 t=165.566 et=1159.960</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1164.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1164.1">No Further Action</TrackLimits>
+<Score et="1166.6">Christian Rootman(5) lap=6 point=0 t=175.492 et=1166.480</Score>
+<Score et="1168.8">Jessica Brown(9) lap=5 point=1 t=43.585 et=1168.760</Score>
+<Score et="1171.0">kaleb visram(10) lap=6 point=1 t=42.748 et=1170.940</Score>
+<Sector et="1171.8">Berat Toktas(2) reports new suspension damage</Sector>
+<Incident et="1171.9">Berat Toktas(2) reported contact (6924.35) with Immovable</Incident>
+<Score et="1172.9">P-A Fugeekies(7) lap=6 point=1 t=42.727 et=1172.855</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1173.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1173.4">No Further Action</TrackLimits>
+<Score et="1173.4">Beke Tamas(0) lap=6 point=0 t=-1.000 et=1173.380</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1176.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1176.7">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1180.8">No Further Action</TrackLimits>
+<Score et="1181.7">Kumar Neel(3) lap=6 point=0 t=179.439 et=1181.620</Score>
+<Incident et="1183.4">Jessica Brown(9) reported contact (2162.64) with Immovable</Incident>
+<Incident et="1186.2">Jessica Brown(9) reported contact (47.12) with Immovable</Incident>
+<Incident et="1187.0">Jessica Brown(9) reported contact (29.42) with Immovable</Incident>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1192.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1192.3">No Further Action</TrackLimits>
+<Score et="1201.7">Andre Morais(8) lap=6 point=1 t=43.635 et=1201.660</Score>
+<Score et="1203.2">Apex Overtake(18) lap=6 point=1 t=43.203 et=1203.160</Score>
+<Score et="1209.4">Christian Rootman(5) lap=6 point=1 t=42.811 et=1209.300</Score>
+<Score et="1214.5">John Venieris(11) lap=6 point=1 t=56.502 et=1214.500</Score>
+<Score et="1217.1">Beke Tamas(0) lap=6 point=1 t=43.648 et=1217.040</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1226.2">No Further Action</TrackLimits>
+<Score et="1227.0">Kumar Neel(3) lap=6 point=1 t=45.229 et=1226.860</Score>
+<Score et="1227.3">Ben Hamilton(15) lap=6 point=2 t=117.096 et=1227.180</Score>
+<TrackLimits Driver="John Venieris" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1244.0">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1244.0">No Further Action</TrackLimits>
+<Score et="1246.4">kaleb visram(10) lap=6 point=2 t=118.216 et=1246.420</Score>
+<TrackLimits Driver="John Venieris" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1250.8">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1250.8">No Further Action</TrackLimits>
+<Score et="1253.4">P-A Fugeekies(7) lap=6 point=2 t=123.257 et=1253.385</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1257.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1257.3">No Further Action</TrackLimits>
+<Score et="1260.0">Jessica Brown(9) lap=5 point=2 t=134.784 et=1259.960</Score>
+<Score et="1272.6">Ben Hamilton(15) lap=7 point=0 t=162.400 et=1272.480</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.5">No Further Action</TrackLimits>
+<Score et="1276.4">Andre Morais(8) lap=6 point=2 t=118.354 et=1276.380</Score>
+<Score et="1278.6">Apex Overtake(18) lap=6 point=2 t=118.547 et=1278.500</Score>
+<Score et="1285.4">Christian Rootman(5) lap=6 point=2 t=118.802 et=1285.280</Score>
+<Score et="1292.5">kaleb visram(10) lap=7 point=0 t=164.244 et=1292.440</Score>
+<Score et="1293.9">Beke Tamas(0) lap=6 point=2 t=120.523 et=1293.900</Score>
+<Score et="1299.3">P-A Fugeekies(7) lap=7 point=0 t=169.208 et=1299.336</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1301.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1301.3">No Further Action</TrackLimits>
+<Score et="1301.6">John Venieris(11) lap=6 point=2 t=143.576 et=1301.580</Score>
+<Score et="1302.1">Kumar Neel(3) lap=6 point=2 t=120.407 et=1302.040</Score>
+<Score et="1306.9">Jessica Brown(9) lap=6 point=0 t=181.668 et=1306.840</Score>
+<Score et="1316.4">Ben Hamilton(15) lap=7 point=1 t=43.813 et=1316.280</Score>
+<Score et="1321.8">Andre Morais(8) lap=7 point=0 t=163.729 et=1321.740</Score>
+<Score et="1325.0">Apex Overtake(18) lap=7 point=0 t=164.973 et=1324.920</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1329.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1329.2">No Further Action</TrackLimits>
+<Score et="1331.0">Christian Rootman(5) lap=7 point=0 t=164.463 et=1330.940</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1333.4">No Further Action</TrackLimits>
+<Score et="1335.8">kaleb visram(10) lap=7 point=1 t=43.374 et=1335.820</Score>
+<Score et="1339.9">Beke Tamas(0) lap=7 point=0 t=166.476 et=1339.860</Score>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1343.6">No Further Action</TrackLimits>
+<TrackLimits Driver="kaleb visram" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1343.6">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1346.2">No Further Action</TrackLimits>
+<Score et="1347.7">John Venieris(11) lap=7 point=0 t=189.640 et=1347.640</Score>
+<Score et="1350.1">Kumar Neel(3) lap=7 point=0 t=168.377 et=1350.000</Score>
+<Score et="1353.7">Jessica Brown(9) lap=6 point=1 t=46.793 et=1353.640</Score>
+<Score et="1361.4">P-A Fugeekies(7) lap=7 point=1 t=62.043 et=1361.380</Score>
+<Score et="1365.1">Andre Morais(8) lap=7 point=1 t=43.335 et=1365.080</Score>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="7" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1365.7">Warning</TrackLimits>
+<TrackLimits Driver="Ben Hamilton" ID="15" Lap="7" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1365.7">Warning</TrackLimits>
+<Score et="1368.4">Apex Overtake(18) lap=7 point=1 t=43.376 et=1368.300</Score>
+<Score et="1374.5">Christian Rootman(5) lap=7 point=1 t=43.468 et=1374.420</Score>
+<Score et="1383.2">Beke Tamas(0) lap=7 point=1 t=43.350 et=1383.200</Score>
+<Score et="1391.4">Ben Hamilton(15) lap=7 point=2 t=-1.000 et=1391.320</Score>
+<Score et="1391.4">John Venieris(11) lap=7 point=1 t=43.771 et=1391.400</Score>
+<Score et="1393.4">Kumar Neel(3) lap=7 point=1 t=43.309 et=1393.320</Score>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Jessica Brown" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1402.2">No Further Action</TrackLimits>
+<Score et="1412.5">kaleb visram(10) lap=7 point=2 t=119.980 et=1412.420</Score>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1422.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Christian Rootman" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1422.7">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1429.2">No Further Action</TrackLimits>
+<TrackLimits Driver="John Venieris" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1429.2">No Further Action</TrackLimits>
+<Score et="1430.5">Jessica Brown(9) lap=6 point=2 t=123.557 et=1430.400</Score>
+<Score et="1436.7">Checkered for Ben Hamilton, laps=8/2147483647, endET=1436.580078/1328.842529, crossedAfterTime=0</Score>
+<Score et="1436.7">Ben Hamilton(15) lap=8 point=0 t=-1.000 et=1436.580</Score>
+<Score et="1438.5">P-A Fugeekies(7) lap=7 point=2 t=139.145 et=1438.481</Score>
+<Score et="1440.0">Andre Morais(8) lap=7 point=2 t=118.240 et=1439.980</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1440.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1440.5">No Further Action</TrackLimits>
+<Score et="1445.2">Apex Overtake(18) lap=7 point=2 t=120.231 et=1445.160</Score>
+<Score et="1451.0">Christian Rootman(5) lap=7 point=2 t=119.999 et=1450.940</Score>
+<Score et="1460.1">kaleb visram(10) lap=8 point=0 t=167.621 et=1460.060</Score>
+<Score et="1460.3">Beke Tamas(0) lap=7 point=2 t=120.376 et=1460.240</Score>
+<Score et="1470.0">Kumar Neel(3) lap=7 point=2 t=119.869 et=1469.880</Score>
+<Score et="1477.0">Jessica Brown(9) lap=7 point=0 t=170.129 et=1476.980</Score>
+<Score et="1477.4">John Venieris(11) lap=7 point=2 t=129.715 et=1477.360</Score>
+<Score et="1485.6">Andre Morais(8) lap=8 point=0 t=163.812 et=1485.560</Score>
+<Score et="1486.5">P-A Fugeekies(7) lap=8 point=0 t=187.151 et=1486.488</Score>
+<Score et="1492.5">Apex Overtake(18) lap=8 point=0 t=167.512 et=1492.440</Score>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1495.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kumar Neel" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1495.5">No Further Action</TrackLimits>
+<Score et="1496.8">Christian Rootman(5) lap=8 point=0 t=165.796 et=1496.740</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>8</MostLapsCompleted>
+<Driver>
+<Name>Driver 0285</Name>
+<Connected>1</Connected>
+<VehFile>32_26_WRT_65186446.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2026 #32:LM</VehName>
+<Category>WEC 2026, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Team WRT 2026 #32</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>1</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="128.8425" s1="46.6052" s2="74.8891" s3="44.9472" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">166.4415</Lap>
+<Lap num="2" p="1" et="295.3000" s1="41.8907" s2="74.9125" s3="44.9928" topspeed="250.90" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">161.7960</Lap>
+<Lap num="3" p="1" et="457.0801" s1="41.9383" s2="74.3506" s3="45.6741" topspeed="251.35" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">161.9630</Lap>
+<Lap num="4" p="1" et="619.0601" s1="41.9623" s2="75.5662" s3="44.9501" topspeed="250.90" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">162.4786</Lap>
+<Lap num="5" p="1" et="781.5400" s1="42.6445" s2="75.3994" s3="44.3954" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">162.4393</Lap>
+<Lap num="6" p="1" et="943.9800" topspeed="252.25" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="7" p="1" et="1110.0801" s1="41.8594" s2="75.2367" s3="45.3036" topspeed="251.80" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">162.3997</Lap>
+<Lap num="8" p="1" et="1272.4800" s1="43.8127" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>161.7960</BestLapTime>
+<FinishTime>1307.7376</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2218</Name>
+<Connected>1</Connected>
+<VehFile>77_26_PROT43675534.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2026 #77:ELMS</VehName>
+<Category>ELMS 2026, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Proton Competition 2026 #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>12</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="128.8425" s1="54.5130" s2="92.7216" s3="45.0127" topspeed="246.84" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">192.2473</Lap>
+<Lap num="2" p="8" et="321.1001" s1="42.6463" topspeed="246.39" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="3" p="7" et="484.1599" s1="42.9754" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="4" p="4" et="650.4199" s1="43.7990" s2="73.9805" s3="45.0872" topspeed="242.79" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">162.8667</Lap>
+<Lap num="5" p="4" et="813.2800" s1="42.7559" s2="74.0764" s3="45.1801" topspeed="244.14" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">162.0125</Lap>
+<BestLapTime>162.0125</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="5">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0307</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Inception Racing 2024 #70</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>11</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="128.8425" s1="54.3481" s2="78.0634" s3="49.7268" topspeed="248.64" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">182.1384</Lap>
+<Lap num="2" p="4" et="311.0000" s1="43.8082" s2="75.3581" s3="46.0027" topspeed="246.39" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.1690</Lap>
+<Lap num="3" p="4" et="476.1599" s1="42.7102" s2="78.5908" s3="46.5809" topspeed="249.09" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.8820</Lap>
+<Lap num="4" p="5" et="644.0400" s1="50.6077" s2="76.5220" s3="45.9951" topspeed="245.04" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">173.1248</Lap>
+<Lap num="5" p="5" et="817.1599" s1="42.6418" s2="75.4869" s3="45.0677" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">163.1965</Lap>
+<Lap num="6" p="4" et="980.3601" s1="42.4108" s2="75.6757" s3="45.3749" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">163.4614</Lap>
+<BestLapTime>163.1965</BestLapTime>
+<Laps>6</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="6">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1263</Name>
+<Connected>1</Connected>
+<VehFile>88_25_PROTEFF5EDCF.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2025 #88:LM</VehName>
+<Category>WEC 2025, GT3, Ford Mustang LMGT3</Category>
+<CarType>Ford Mustang LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Proton Competition 2025 #88</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>9</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="128.8425" s1="54.5004" s2="79.4021" s3="49.5090" topspeed="242.79" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">183.4115</Lap>
+<Lap num="2" p="5" et="312.2600" s1="43.5085" s2="75.4254" s3="46.4268" topspeed="246.39" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.3607</Lap>
+<Lap num="3" p="8" et="477.6201" s1="43.6590" s2="75.8387" s3="55.8660" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">175.3637</Lap>
+<Lap num="4" p="6" et="652.9800" s1="43.7867" s2="76.0342" s3="46.1307" topspeed="244.59" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.9517</Lap>
+<Lap num="5" p="6" et="818.9399" s1="42.5492" s2="75.5242" s3="45.6408" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">163.7142</Lap>
+<Lap num="6" p="5" et="982.6599" s1="44.2473" s2="76.3677" s3="54.7288" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">175.3437</Lap>
+<Lap num="7" p="8" et="1158.0000" s1="56.5023" s2="87.0741" s3="46.0638" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">189.6403</Lap>
+<BestLapTime>163.7142</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0151</Name>
+<Connected>1</Connected>
+<VehFile>21_26_AFCO95641716.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Vista AF Corse 2026 #21:WEC</VehName>
+<Category>WEC 2026, GT3, Ferrari 296 LMGT3 Evo</Category>
+<CarType>Ferrari 296 LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>Vista AF Corse 2026 #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>3</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="128.8425" s1="53.1356" s2="77.3790" s3="59.2933" topspeed="244.59" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet" pit="1">189.8079</Lap>
+<Lap num="2" p="13" et="318.6599" s1="50.5291" s2="76.0268" s3="47.2271" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">173.7830</Lap>
+<Lap num="3" p="12" et="492.4399" s1="43.9817" s2="76.1972" s3="47.4612" topspeed="246.84" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.6401</Lap>
+<Lap num="4" p="10" et="660.0801" s1="44.5510" s2="76.3657" s3="46.8950" topspeed="245.04" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.8116</Lap>
+<Lap num="5" p="8" et="827.8999" s1="43.7793" s2="75.2191" s3="46.8474" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.8458</Lap>
+<Lap num="6" p="6" et="993.7400" s1="44.0873" s2="74.4839" s3="45.7072" topspeed="246.39" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.2783</Lap>
+<Lap num="7" p="4" et="1158.0200" s1="43.6348" s2="74.7197" s3="45.3741" topspeed="247.74" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">163.7286</Lap>
+<Lap num="8" p="3" et="1321.7400" s1="43.3353" s2="74.9047" s3="45.5717" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">163.8116</Lap>
+<BestLapTime>163.7286</BestLapTime>
+<FinishTime>1356.7176</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1454</Name>
+<Connected>1</Connected>
+<VehFile>54_26_HIGH62031041.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>High Class Racing 2026 #54:ELMS</VehName>
+<Category>ELMS 2026, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>High Class Racing 2026 #54</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>8</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="128.8425" topspeed="235.58" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="11" et="324.6799" s1="42.5471" s2="75.2170" s3="46.2769" topspeed="246.84" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.0410</Lap>
+<Lap num="3" p="9" et="488.7200" s1="42.4726" s2="75.6390" s3="46.7546" topspeed="247.29" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.8662</Lap>
+<Lap num="4" p="11" et="653.5801" s1="42.8475" s2="74.9088" s3="66.1198" topspeed="245.94" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">183.8761</Lap>
+<Lap num="5" p="10" et="837.4600" s1="43.7177" s2="75.1908" s3="45.8272" topspeed="245.94" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.7357</Lap>
+<Lap num="6" p="10" et="1002.1799" s1="45.3300" s2="75.3428" s3="58.7665" topspeed="241.44" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">179.4392</Lap>
+<Lap num="7" p="9" et="1181.6201" s1="45.2289" s2="75.1786" s3="47.9695" topspeed="243.24" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">168.3770</Lap>
+<BestLapTime>164.0410</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,Opposite,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0455</Name>
+<Connected>1</Connected>
+<VehFile>61_26_IRON57024276.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx 2026 #61:WEC</VehName>
+<Category>WEC 2026, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Iron Lynx 2026 #61</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>6</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="128.8425" s1="61.8675" s2="80.4427" s3="48.8264" topspeed="250.44" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">191.1367</Lap>
+<Lap num="2" p="9" et="319.9800" s1="42.5215" s2="75.3368" s3="46.7541" topspeed="251.80" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.6124</Lap>
+<Lap num="3" p="6" et="484.6001" s1="43.3353" s2="75.5076" s3="46.0222" topspeed="250.44" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.8650</Lap>
+<Lap num="4" p="9" et="649.4600" s1="54.0338" s2="76.4203" s3="46.8835" topspeed="241.44" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">177.3376</Lap>
+<Lap num="5" p="7" et="826.8000" s1="43.0504" s2="75.3265" s3="45.8109" topspeed="250.90" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.1877</Lap>
+<Lap num="6" p="8" et="991.0000" s1="49.8402" s2="76.2689" s3="49.3831" topspeed="243.24" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">175.4922</Lap>
+<Lap num="7" p="6" et="1166.4800" s1="42.8113" s2="75.9904" s3="45.6615" topspeed="252.25" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.4631</Lap>
+<Lap num="8" p="6" et="1330.9399" s1="43.4678" s2="76.5312" s3="45.7969" topspeed="251.80" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.7959</Lap>
+<BestLapTime>164.1877</BestLapTime>
+<FinishTime>1367.8975</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1379</Name>
+<Connected>1</Connected>
+<VehFile>90_25_MANT767D59F8.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Manthey 2025 #90:LM</VehName>
+<Category>WEC 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>Manthey 2025 #90</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>2</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="128.8425" s1="49.0449" s2="76.4654" s3="46.6188" topspeed="246.84" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">172.1291</Lap>
+<Lap num="2" p="2" et="300.9800" s1="44.3463" s2="75.9424" s3="46.6068" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">166.8955</Lap>
+<Lap num="3" p="2" et="467.8799" s1="42.5670" s2="76.7847" s3="46.3289" topspeed="249.09" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.6805</Lap>
+<Lap num="4" p="2" et="633.5601" s1="42.6913" s2="76.1894" s3="46.1943" topspeed="249.09" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.0751</Lap>
+<Lap num="5" p="2" et="798.6399" s1="43.2821" s2="75.2936" s3="45.9565" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.5323</Lap>
+<Lap num="6" p="2" et="963.1599" s1="42.9730" s2="75.8553" s3="46.2020" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.0303</Lap>
+<Lap num="7" p="2" et="1128.2000" s1="42.7480" s2="75.4683" s3="46.0276" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.2439</Lap>
+<Lap num="8" p="2" et="1292.4399" s1="43.3735" s2="76.6063" s3="47.6407" topspeed="248.64" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.6206</Lap>
+<BestLapTime>164.2439</BestLapTime>
+<FinishTime>1331.2176</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2038</Name>
+<Connected>1</Connected>
+<VehFile>60_25_PROTA8B000C7.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2025 #60:ELMS</VehName>
+<Category>ELMS 2025, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Proton Competition 2025 #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>4</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="128.8425" s1="48.1932" s2="76.7741" s3="46.6047" topspeed="243.43" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">171.5719</Lap>
+<Lap num="2" p="3" et="300.4199" s1="42.5814" s2="74.6017" s3="54.1849" topspeed="247.91" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">171.3680</Lap>
+<Lap num="3" p="3" et="471.8000" s1="42.9383" topspeed="243.80" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="4" p="3" et="635.1799" s1="43.3238" s2="76.0022" s3="45.8690" topspeed="241.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.1949</Lap>
+<Lap num="5" p="3" et="800.3799" s1="42.9853" s2="76.0867" s3="45.8345" topspeed="242.92" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.9064</Lap>
+<Lap num="6" p="3" et="965.2800" s1="42.4782" s2="76.5159" s3="45.8557" topspeed="245.04" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.8499</Lap>
+<Lap num="7" p="3" et="1130.1399" s1="42.7267" s2="80.5303" s3="45.9509" topspeed="244.14" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">169.2079</Lap>
+<Lap num="8" p="4" et="1299.3401" s1="62.0435" s2="77.1016" s3="48.0062" topspeed="235.28" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">187.1512</Lap>
+<BestLapTime>164.8499</BestLapTime>
+<FinishTime>1357.6451</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0221</Name>
+<Connected>1</Connected>
+<VehFile>397_26_MCLAREN.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>McLaren Custom Team 2026 #397</VehName>
+<Category>WEC 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>ApexOvertake</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>5</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="128.8425" s1="51.8340" s2="78.2891" s3="58.4357" topspeed="243.24" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet" pit="1">188.5588</Lap>
+<Lap num="2" p="12" et="317.4199" s1="50.3796" s2="76.8910" s3="46.4203" topspeed="243.24" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">173.6909</Lap>
+<Lap num="3" p="11" et="491.1001" s1="43.6323" s2="77.0941" s3="47.1249" topspeed="244.59" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.8512</Lap>
+<Lap num="4" p="8" et="658.9600" s1="44.1417" s2="76.1219" s3="46.7003" topspeed="245.04" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">166.9639</Lap>
+<Lap num="5" p="9" et="825.9199" s1="44.3129" s2="76.3148" s3="47.8454" topspeed="245.94" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">168.4731</Lap>
+<Lap num="6" p="7" et="994.3999" s1="44.0930" s2="75.9098" s3="45.5630" topspeed="245.94" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">165.5657</Lap>
+<Lap num="7" p="5" et="1159.9600" s1="43.2035" s2="75.3433" s3="46.4266" topspeed="247.74" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.9734</Lap>
+<Lap num="8" p="5" et="1324.9199" s1="43.3756" s2="76.8558" s3="47.2805" topspeed="245.49" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.5120</Lap>
+<BestLapTime>164.9734</BestLapTime>
+<FinishTime>1363.5974</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2173</Name>
+<Connected>1</Connected>
+<VehFile>61_26_IRON17109319.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx 2026 #61:LM</VehName>
+<Category>WEC 2026, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Iron Lynx 2026 #61</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>13</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="128.8425" topspeed="247.74" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="2" p="6" et="317.8799" s1="43.4205" s2="75.4863" s3="46.0916" topspeed="243.69" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">164.9984</Lap>
+<Lap num="3" p="5" et="482.8799" s1="43.2346" topspeed="244.59" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>164.9984</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0282</Name>
+<Connected>1</Connected>
+<VehFile>63_26_IRON64614378.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx 2026 #63:ELMS</VehName>
+<Category>ELMS 2026, GT3, Mercedes-AMG LMGT3</Category>
+<CarType>Mercedes-AMG LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Iron Lynx 2026 #63</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>7</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="128.8425" s1="51.6329" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet" pit="1">--.----</Lap>
+<Lap num="2" p="10" et="314.0801" s1="49.2502" s2="76.8734" s3="46.1060" topspeed="247.29" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">172.2296</Lap>
+<Lap num="3" p="10" et="486.3201" s1="43.0845" s2="78.7278" s3="46.6720" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">168.4843</Lap>
+<Lap num="4" p="7" et="654.8000" s1="43.1355" s2="77.2527" s3="47.0795" topspeed="248.64" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">167.4677</Lap>
+<Lap num="5" p="11" et="822.2600" s1="60.6426" s2="76.9797" s3="46.6058" topspeed="238.28" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">184.2280</Lap>
+<Lap num="6" p="9" et="1006.5000" s1="43.9778" topspeed="247.29" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<Lap num="7" p="7" et="1173.3799" s1="43.6484" s2="76.8750" s3="45.9529" topspeed="247.74" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">166.4763</Lap>
+<BestLapTime>166.4763</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1212</Name>
+<Connected>1</Connected>
+<VehFile>78_26_AKKO55813576.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Akkodis ASP Team 2026 #78:LM</VehName>
+<Category>WEC 2026, GT3, Lexus RCF LMGT3</Category>
+<CarType>Lexus RCF LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Akkodis ASP Team 2026 #78</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>10</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="128.8425" s1="75.0065" s2="86.7236" s3="124.3107" topspeed="225.67" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet" pit="1">286.0409</Lap>
+<Lap num="2" p="14" et="414.8999" s1="50.7071" s2="89.1604" s3="46.3113" topspeed="246.39" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">186.1788</Lap>
+<Lap num="3" p="12" et="601.0801" s1="43.6724" s2="79.1254" s3="46.5793" topspeed="247.74" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">169.3770</Lap>
+<Lap num="4" p="12" et="770.4399" s1="43.0622" s2="77.6674" s3="46.1448" topspeed="249.99" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">166.8745</Lap>
+<Lap num="5" p="11" et="937.3201" s1="43.2577" s2="90.1629" s3="54.4370" topspeed="249.54" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">187.8576</Lap>
+<Lap num="6" p="10" et="1125.1799" s1="43.5850" s2="91.1989" s3="46.8844" topspeed="248.19" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">181.6682</Lap>
+<Lap num="7" p="10" et="1306.8401" s1="46.7931" s2="76.7634" s3="46.5720" topspeed="245.04" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">170.1285</Lap>
+<BestLapTime>166.8745</BestLapTime>
+<FinishTime>1348.1375</FinishTime>
+<Laps>7</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,ABS=2,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1452</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNITEC305F5B.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:EC2</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>United Autosports 2024 #59</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>16</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="128.8425" s1="49.9638" s2="76.2276" s3="46.2380" topspeed="247.29" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">172.4295</Lap>
+<BestLapTime>172.4295</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1800</Name>
+<Connected>1</Connected>
+<VehFile>23_25_UNIT907820FF.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2025 #23:ELMS</VehName>
+<Category>ELMS 2025, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>United Autosports 2025 #23</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>14</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="128.8425" s1="54.2962" s2="78.7133" s3="55.5475" topspeed="243.69" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">188.5570</Lap>
+<Lap num="2" p="7" et="317.3999" topspeed="248.64" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">--.----</Lap>
+<BestLapTime>188.5570</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0708</Name>
+<Connected>1</Connected>
+<VehFile>57_25_KESS76A94C8D.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Kessel Racing 2025 #57:ELMS</VehName>
+<Category>ELMS 2025, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>Kessel Racing 2025 #57</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>15</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="128.8425" s1="74.0132" s2="77.3059" s3="66.9343" topspeed="227.47" fcompound="1,Wet" rcompound="1,Wet" FL="1,Wet" FR="1,Wet" RL="1,Wet" RR="1,Wet">218.2534</Lap>
+<BestLapTime>218.2534</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0742</Name>
+<Connected>1</Connected>
+<VehFile>54_26_HIGH62031041.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>High Class Racing 2026 #54:ELMS</VehName>
+<Category>ELMS 2026, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>High Class Racing 2026 #54</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>17</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Driver 0146</Name>
+<Connected>1</Connected>
+<VehFile>58_26_GARA79992578.VEH</VehFile>
+<UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
+<VehName>Garage 59 2026 #58:LM</VehName>
+<Category>WEC 2026, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Garage 59 2026 #58</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>18</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Driver 1075</Name>
+<Connected>1</Connected>
+<VehFile>77_26_PROT34038378.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2026 #77:LM</VehName>
+<Category>WEC 2026, GT3, Ford Mustang LMGT3</Category>
+<CarType>Ford Mustang LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Proton Competition 2026 #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>19</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Suspension</DNFReason>
+</Driver>
+<Driver>
+<Name>Driver 1097</Name>
+<Connected>1</Connected>
+<VehFile>92_26_MANT71544075.VEH</VehFile>
+<UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
+<VehName>The Bend Manthey 2026 #92:LM</VehName>
+<Category>WEC 2026, GT3, Porsche 911 GT3 R LMGT3</Category>
+<CarType>Porsche 911 GT3 R LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>The Bend Manthey 2026 #92</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>20</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

@@ -65,6 +65,23 @@ public sealed class ResultsDirectoryResolverTests
     }
 
     /// <summary>
+    /// Verifies that the anonymized fixtures checked into the repository are available as samples.
+    /// </summary>
+    [TestMethod]
+    public void Resolve_uses_the_repository_packaged_anonymized_samples()
+    {
+        var packagedResults = Path.Combine(AppContext.BaseDirectory, "TestAssets", "Results");
+
+        ResultsDirectoryResolver.Resolve(string.Empty, AppContext.BaseDirectory, string.Empty)
+            .Should()
+            .Be(packagedResults);
+
+        Directory.GetFiles(packagedResults, "*.xml", SearchOption.TopDirectoryOnly)
+            .Should()
+            .NotBeEmpty();
+    }
+
+    /// <summary>
     /// Verifies that an explicitly configured results folder is preserved.
     /// </summary>
     [TestMethod]
