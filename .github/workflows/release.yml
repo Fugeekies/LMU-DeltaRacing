@@ -7,10 +7,6 @@ on:
         description: 'Tag et version de l’installeur (ex: v1.0.0)'
         required: true
         type: string
-      release_name:
-        description: 'Nom affiché de la release GitHub'
-        required: true
-        type: string
 
 permissions:
   contents: write # Requis pour créer le tag Git et publier la release automatiquement
@@ -27,13 +23,9 @@ jobs:
         shell: pwsh
         env:
           RELEASE_TAG: ${{ inputs.version_tag }}
-          RELEASE_NAME: ${{ inputs.release_name }}
         run: |
           if ($env:RELEASE_TAG -notmatch '^v?[0-9]+\.[0-9]+\.[0-9]+$') {
             throw "The release tag must be a semantic version such as v1.0.0."
-          }
-          if ([string]::IsNullOrWhiteSpace($env:RELEASE_NAME)) {
-            throw "A release name must be provided."
           }
 
       - name: Setup .NET 10
@@ -108,7 +100,7 @@ jobs:
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.version_tag }}
-          name: ${{ inputs.release_name }}
+          name: LMU-DeltaRacing ${{ inputs.version_tag }}
           files: output/LMU-DeltaRacing-Setup.exe
           draft: false
           prerelease: false
