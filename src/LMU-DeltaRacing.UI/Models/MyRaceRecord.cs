@@ -12,5 +12,6 @@ public sealed record MyRaceRecord(
     string Car,
     TimeSpan? QualifyingTime,
     TimeSpan? QualifyingDelta,
+    int? GridPosition,
     TimeSpan? RaceTime,
     TimeSpan? RaceDelta);

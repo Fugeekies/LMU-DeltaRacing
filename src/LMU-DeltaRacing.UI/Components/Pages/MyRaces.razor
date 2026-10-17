@@ -103,9 +103,10 @@ else
                                 <tr>
                                     <th scope="col">DATE / HEURE</th>
                                     <th scope="col">CATÉGORIE</th>
-                                    <th scope="col">VOITURE / ÉQUIPE</th>
+                                    <th scope="col">VOITURE</th>
                                     <th scope="col" class="numeric-cell">TEMPS QUALIF</th>
                                     <th scope="col" class="numeric-cell">DELTA (n-1)</th>
+                                    <th scope="col" class="numeric-cell">GRILLE</th>
                                     <th scope="col" class="numeric-cell">TEMPS COURSE</th>
                                     <th scope="col" class="numeric-cell">DELTA (n-1)</th>
                                 </tr>
@@ -116,12 +117,10 @@ else
                                     <tr>
                                         <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
                                         <td><span class="category-badge">@record.Category</span></td>
-                                        <td class="car-cell">
-                                            <strong>@record.Car</strong>
-                                            <span>@record.TrackEvent</span>
-                                        </td>
+                                        <td class="car-cell"><strong>@record.Car</strong></td>
                                         <td class="numeric-cell">@FormatLap(record.QualifyingTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
+                                        <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
                                     </tr>

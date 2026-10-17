@@ -48,6 +48,33 @@ public sealed class XmlResultParserTests
         ]);
     }
 
+    [TestMethod]
+    public void Parse_reads_grid_position_from_driver_result()
+    {
+        const string xml = """
+            <rFactorXML>
+              <RaceResults>
+                <DateTime>1790967271</DateTime>
+                <TrackVenue>Track</TrackVenue>
+                <TrackCourse>Course</TrackCourse>
+                <Race>
+                  <Driver>
+                    <Name>Player</Name>
+                    <Position>1</Position>
+                    <GridPos>2</GridPos>
+                  </Driver>
+                </Race>
+              </RaceResults>
+            </rFactorXML>
+            """;
+        var parser = new XmlResultParser();
+        using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(xml));
+
+        var session = parser.Parse(stream);
+
+        session.Drivers.Should().ContainSingle().Which.GridPosition.Should().Be(2);
+    }
+
     /// <summary>
     /// Verifies that malformed XML is reported to the caller.
     /// </summary>

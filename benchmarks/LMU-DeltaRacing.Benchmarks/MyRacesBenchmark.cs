@@ -57,6 +57,7 @@ internal static class MyRacesBenchmark
                 $"#{index % 200:D3} · Team",
                 TimeSpan.FromSeconds(100 + index % 20),
                 null,
+                null,
                 TimeSpan.FromSeconds(110 + index % 25),
                 null);
         }

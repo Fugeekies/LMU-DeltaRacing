@@ -51,7 +51,8 @@ public static class MyRacesPresentation
                 category,
                 car,
                 isQualifying,
-                driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min()));
+                driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min(),
+                driver.GridPosition));
         }
 
         var records = results
@@ -75,6 +76,10 @@ public static class MyRacesPresentation
                     .Select(result => result.BestLap)
                     .Where(time => time.HasValue)
                     .Min();
+                var gridPosition = group
+                    .Where(result => !result.IsQualifying)
+                    .Select(result => result.GridPosition)
+                    .FirstOrDefault(position => position.HasValue);
 
                 return new RecordBuilder(
                     group.Key.TrackVenue,
@@ -84,6 +89,7 @@ public static class MyRacesPresentation
                     player.Category,
                     player.Car,
                     qualifyingTime,
+                    gridPosition,
                     raceTime);
             })
             .ToArray();
@@ -130,6 +136,7 @@ public static class MyRacesPresentation
                 record.Car,
                 record.QualifyingTime,
                 record.QualifyingDelta,
+                record.GridPosition,
                 record.RaceTime,
                 record.RaceDelta))
             .ToArray();
@@ -171,7 +178,8 @@ public static class MyRacesPresentation
         string Category,
         string Car,
         bool IsQualifying,
-        TimeSpan? BestLap);
+        TimeSpan? BestLap,
+        int? GridPosition);
 
     private sealed class RecordBuilder(
         string trackVenue,
@@ -181,6 +189,7 @@ public static class MyRacesPresentation
         string category,
         string car,
         TimeSpan? qualifyingTime,
+        int? gridPosition,
         TimeSpan? raceTime)
     {
         public string TrackVenue { get; } = trackVenue;
@@ -191,6 +200,7 @@ public static class MyRacesPresentation
         public string Car { get; } = car;
         public TimeSpan? QualifyingTime { get; } = qualifyingTime;
         public TimeSpan? QualifyingDelta { get; set; }
+        public int? GridPosition { get; } = gridPosition;
         public TimeSpan? RaceTime { get; } = raceTime;
         public TimeSpan? RaceDelta { get; set; }
     }

@@ -16,6 +16,7 @@ public sealed class Driver
     /// <param name="laps">The laps recorded for the driver.</param>
     /// <param name="isPlayer">Whether this result belongs to the player.</param>
     /// <param name="carType">The vehicle model, when available.</param>
+    /// <param name="gridPosition">The starting grid position, when available.</param>
     public Driver(
         string name,
         string carNumber,
@@ -24,7 +25,8 @@ public sealed class Driver
         int? position,
         IEnumerable<Lap> laps,
         bool isPlayer = false,
-        string carType = "")
+        string carType = "",
+        int? gridPosition = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
@@ -41,6 +43,7 @@ public sealed class Driver
         Laps = Array.AsReadOnly(laps.ToArray());
         IsPlayer = isPlayer;
         CarType = carType;
+        GridPosition = gridPosition;
     }
 
     /// <summary>
@@ -67,6 +70,11 @@ public sealed class Driver
     /// Gets the vehicle model, when available.
     /// </summary>
     public string CarType { get; }
+
+    /// <summary>
+    /// Gets the starting grid position, when available.
+    /// </summary>
+    public int? GridPosition { get; }
 
     /// <summary>
     /// Gets the finishing position, when available.

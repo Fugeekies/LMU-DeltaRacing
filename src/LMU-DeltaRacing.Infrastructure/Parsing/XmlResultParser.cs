@@ -67,7 +67,8 @@ public sealed class XmlResultParser : IResultXmlParser
             ParseOptionalInt(Value(element, "Position")),
             laps,
             Value(element, "isPlayer") == "1",
-            Value(element, "CarType") ?? string.Empty);
+            Value(element, "CarType") ?? string.Empty,
+            ParseOptionalInt(Value(element, "GridPos")));
     }
 
     private static Lap ParseLap(XElement element)
