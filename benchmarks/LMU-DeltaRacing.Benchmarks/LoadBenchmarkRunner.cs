@@ -61,6 +61,8 @@ internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
                 $"{result.FilesPerSecond.ToString("N0", CultureInfo.InvariantCulture)} fichiers/s |");
         }
 
+        output.AppendLine();
+        output.Append(MyRacesBenchmark.Run());
         return output.ToString();
     }
 

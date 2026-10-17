@@ -15,6 +15,7 @@ public sealed class Session
     /// <param name="trackEvent">The event name.</param>
     /// <param name="sessionType">The session type from the result file.</param>
     /// <param name="drivers">The drivers and their results.</param>
+    /// <param name="mostLapsCompleted">The highest number of laps completed in the session.</param>
     public Session(
         Guid id,
         DateTimeOffset startedAt,
@@ -22,7 +23,8 @@ public sealed class Session
         string trackCourse,
         string trackEvent,
         string sessionType,
-        IEnumerable<Driver> drivers)
+        IEnumerable<Driver> drivers,
+        int? mostLapsCompleted = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(trackVenue);
         ArgumentException.ThrowIfNullOrWhiteSpace(trackCourse);
@@ -37,6 +39,7 @@ public sealed class Session
         TrackEvent = trackEvent;
         SessionType = sessionType;
         Drivers = Array.AsReadOnly(drivers.ToArray());
+        MostLapsCompleted = mostLapsCompleted;
     }
 
     /// <summary>
@@ -73,4 +76,9 @@ public sealed class Session
     /// Gets the drivers and their results.
     /// </summary>
     public IReadOnlyList<Driver> Drivers { get; }
+
+    /// <summary>
+    /// Gets the highest number of laps completed in this session, when available.
+    /// </summary>
+    public int? MostLapsCompleted { get; }
 }

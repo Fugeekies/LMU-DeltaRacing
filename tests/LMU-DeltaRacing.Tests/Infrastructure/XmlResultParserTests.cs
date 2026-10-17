@@ -34,7 +34,9 @@ public sealed class XmlResultParserTests
             .Which;
         driver.Name.Should().MatchRegex("^Driver \\d{4,}$");
         driver.CarNumber.Should().Be("16");
+        driver.CarType.Should().Be("Corvette C8.R GTE");
         driver.Position.Should().Be(1);
+        driver.IsPlayer.Should().BeTrue();
         driver.Laps.Should().HaveCount(2);
         driver.Laps[0].Time.Should().BeNull();
         driver.Laps[1].Time.Should().Be(TimeSpan.FromSeconds(65.1692));
@@ -44,6 +46,38 @@ public sealed class XmlResultParserTests
             new Sector(2, TimeSpan.FromSeconds(12.8257)),
             new Sector(3, TimeSpan.FromSeconds(29.5404))
         ]);
+    }
+
+    [TestMethod]
+    public void Parse_reads_grid_position_from_driver_result()
+    {
+        const string xml = """
+            <rFactorXML>
+              <RaceResults>
+                <DateTime>1790967271</DateTime>
+                <TrackVenue>Track</TrackVenue>
+                <TrackCourse>Course</TrackCourse>
+                <Race>
+                  <MostLapsCompleted>8</MostLapsCompleted>
+                  <Driver>
+                    <Name>Player</Name>
+                    <Position>1</Position>
+                    <GridPos>2</GridPos>
+                    <FinishTime>1326.8575</FinishTime>
+                  </Driver>
+                </Race>
+              </RaceResults>
+            </rFactorXML>
+            """;
+        var parser = new XmlResultParser();
+        using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(xml));
+
+        var session = parser.Parse(stream);
+
+        var driver = session.Drivers.Should().ContainSingle().Which;
+        driver.GridPosition.Should().Be(2);
+        driver.FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
+        session.MostLapsCompleted.Should().Be(8);
     }
 
     /// <summary>

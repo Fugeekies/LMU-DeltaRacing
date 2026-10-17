@@ -28,6 +28,11 @@ public sealed class LoadBenchmarkTests
         Assert.IsTrue(
             report.Contains($"{expectedSessionCount} sessions.", StringComparison.Ordinal),
             $"The report must include the expected {expectedSessionCount} sessions.");
+        Assert.IsTrue(
+            report.Contains("## Opérations de la vue Mes courses", StringComparison.Ordinal)
+            && report.Contains("Groupement circuit / catégorie", StringComparison.Ordinal)
+            && report.Contains("Filtres circuit + catégorie", StringComparison.Ordinal),
+            "The report must include My Races sorting, grouping, and filtering benchmarks.");
         Directory.CreateDirectory(reportDirectory);
         File.WriteAllText(reportPath, report);
 

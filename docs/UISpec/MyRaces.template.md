@@ -1,7 +1,7 @@
 ## 1. 🏎️ Menu : Mes Courses (`MyRaces.razor`)
 
 ### Description
-Vue axée sur la progression personnelle de l'utilisateur, groupée par circuit et filtrable par catégorie. Elle calcule dynamiquement les écarts de temps par rapport à la session immédiatement précédente ($n-1$) sur le même circuit, la même catégorie et le même véhicule.
+Vue axée sur la progression personnelle de l'utilisateur, groupée par circuit et filtrable par catégorie. Elle calcule dynamiquement les écarts de temps par rapport à la session immédiatement précédente ($n-1$) sur le même circuit et dans la même catégorie, sans tenir compte du véhicule.
 
 ### Spécifications fonctionnelles :
 * Filtres : Circuit (Tous / Filtre spécifique) et Catégorie (Toutes / Hypercar / LMP2 / LMGT3).

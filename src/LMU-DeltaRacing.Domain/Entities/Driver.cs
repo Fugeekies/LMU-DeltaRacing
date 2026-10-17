@@ -14,19 +14,28 @@ public sealed class Driver
     /// <param name="teamName">The team name, when available.</param>
     /// <param name="position">The finishing position, when available.</param>
     /// <param name="laps">The laps recorded for the driver.</param>
+    /// <param name="isPlayer">Whether this result belongs to the player.</param>
+    /// <param name="carType">The vehicle model, when available.</param>
+    /// <param name="gridPosition">The starting grid position, when available.</param>
+    /// <param name="finishTime">The total race time, when available.</param>
     public Driver(
         string name,
         string carNumber,
         string carClass,
         string teamName,
         int? position,
-        IEnumerable<Lap> laps)
+        IEnumerable<Lap> laps,
+        bool isPlayer = false,
+        string carType = "",
+        int? gridPosition = null,
+        TimeSpan? finishTime = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
         ArgumentNullException.ThrowIfNull(carClass);
         ArgumentNullException.ThrowIfNull(teamName);
         ArgumentNullException.ThrowIfNull(laps);
+        ArgumentNullException.ThrowIfNull(carType);
 
         Name = name;
         CarNumber = carNumber;
@@ -34,6 +43,10 @@ public sealed class Driver
         TeamName = teamName;
         Position = position;
         Laps = Array.AsReadOnly(laps.ToArray());
+        IsPlayer = isPlayer;
+        CarType = carType;
+        GridPosition = gridPosition;
+        FinishTime = finishTime;
     }
 
     /// <summary>
@@ -57,6 +70,21 @@ public sealed class Driver
     public string TeamName { get; }
 
     /// <summary>
+    /// Gets the vehicle model, when available.
+    /// </summary>
+    public string CarType { get; }
+
+    /// <summary>
+    /// Gets the starting grid position, when available.
+    /// </summary>
+    public int? GridPosition { get; }
+
+    /// <summary>
+    /// Gets the total race time, when available.
+    /// </summary>
+    public TimeSpan? FinishTime { get; }
+
+    /// <summary>
     /// Gets the finishing position, when available.
     /// </summary>
     public int? Position { get; }
@@ -65,4 +93,9 @@ public sealed class Driver
     /// Gets the laps recorded for the driver.
     /// </summary>
     public IReadOnlyList<Lap> Laps { get; }
+
+    /// <summary>
+    /// Gets whether this result belongs to the player.
+    /// </summary>
+    public bool IsPlayer { get; }
 }
