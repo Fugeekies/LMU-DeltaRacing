@@ -67,6 +67,12 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
 - [x] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
 
+ # Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
+- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
+- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
+- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
+- [ ] Déplacer le dashboard avec les imports réussi/échec ainsi que les session récente en dessous des options  
+
 ## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
 - [ ] Structurer la vue avec groupement par circuit.
 - [ ] Ajouter la colonne `Catégorie` (Hypercar, LMP2, LMGT3) et les filtres associés (Circuit et Catégorie).
@@ -82,11 +88,6 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [ ] Intégrer le sélecteur de session (dropdown) en haut de page.
 - [ ] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
 - [ ] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
-
-## Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
-- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
-- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
-- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
 
 ## Liste d'idées à prioriser
 - [ ] Multi langue.
