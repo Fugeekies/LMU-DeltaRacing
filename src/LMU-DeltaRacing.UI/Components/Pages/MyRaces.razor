@@ -165,7 +165,7 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        records = MyRacesPresentation.CreateRecords(state.Sessions);
+        records = MyRacesPresentation.CreateRecords(state.Sessions, state.UserName);
         tracks = records
             .Select(record => record.TrackVenue)
             .Distinct(StringComparer.OrdinalIgnoreCase)

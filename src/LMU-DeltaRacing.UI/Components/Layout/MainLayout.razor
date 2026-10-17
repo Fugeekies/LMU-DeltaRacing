@@ -16,6 +16,9 @@
                 <NavLink href="/settings">Options</NavLink>
             </nav>
             <div class="system-status" role="status" aria-live="polite">
+                <span class="active-driver" title="@state.UserName">
+                    @(string.IsNullOrWhiteSpace(state.UserName) ? "Pilote non défini" : state.UserName)
+                </span>
                 <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
                 <span>@GetStatusLabel()</span>
             </div>

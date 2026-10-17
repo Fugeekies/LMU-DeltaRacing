@@ -43,12 +43,7 @@ public sealed class DashboardDataServiceTests
                 ["LMU:ResultsDirectory"] = resultsDirectory
             })
             .Build();
-        var service = new DashboardDataService(
-            configuration,
-            importer,
-            repository,
-            NullLogger<DashboardDataService>.Instance,
-            NullLogger<ResultsDirectoryWatcher>.Instance);
+        var service = CreateService(configuration, importer, repository);
 
         try
         {
@@ -61,6 +56,19 @@ public sealed class DashboardDataServiceTests
             initialState.FilesToLoad.Should().Be(1);
             initialState.FilesLoaded.Should().Be(1);
             initialState.Sessions.Should().ContainSingle();
+            initialState.UserName.Should().Be(initialState.DriverFrequencies[0].Name);
+            initialState.DriverFrequencies[0].Percentage.Should().Be(1);
+
+            var settingsPath = Path.Combine(resultsDirectory, "appsettings.json");
+            var savedSettings = System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(settingsPath));
+            savedSettings?["LMU"]?["UserName"]?.GetValue<string>()
+                .Should().Be(initialState.UserName);
+
+            var selectedDriver = initialState.DriverFrequencies[1].Name;
+            service.SelectUserName(selectedDriver);
+            service.Snapshot.UserName.Should().Be(selectedDriver);
+            System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(settingsPath))?["LMU"]?["UserName"]
+                ?.GetValue<string>().Should().Be(selectedDriver);
 
             File.Copy(sourceFile, Path.Combine(resultsDirectory, "new-results.xml"));
             var updatedState = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
@@ -192,7 +200,10 @@ public sealed class DashboardDataServiceTests
             importer,
             repository,
             NullLogger<DashboardDataService>.Instance,
-            NullLogger<ResultsDirectoryWatcher>.Instance);
+            NullLogger<ResultsDirectoryWatcher>.Instance,
+            new DashboardSettingsStore(
+                (IConfigurationRoot)configuration,
+                Path.Combine(configuration["LMU:ResultsDirectory"]!, "appsettings.json")));
 
     private static string CreateResultsDirectory(string sourceFile, string fileName)
     {
