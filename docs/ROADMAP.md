@@ -79,6 +79,13 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Implémenter le calcul dynamique du delta $n-1$ (session précédente du même circuit et de la même catégorie).
 - [x] Appliquer la coloration conditionnelle des deltas (🟢 gain de temps, 🔴 perte de temps).
 
+## Jalon — Déterminer l'utilisateur princial
+- [ ] Parmi tout les drivers détecter le nom qui reviens le plus souvent dans les fichiers et le sauvegarder dans le appsetting
+- [ ] Afficher le nom du joueur sur la bar du menu au dessus
+- [ ] Toute les données afficher dans les menus devront etre basé sur se driver
+- [ ] Si le nom du driver n'est pas dans un fichier, ne pas prendre en compte le fichier
+- [ ] Permettre le changement du driver détecter dans le menu option en triant les noms par pourcentage d'apparition global
+
 ## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)
 - [ ] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).
 - [ ] Afficher le tableau avec les colonnes : `Nom`, `Courses affrontées`, `Victoires`, `Défaites`, `% Victoire`.
