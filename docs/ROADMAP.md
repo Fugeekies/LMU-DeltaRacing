@@ -52,6 +52,13 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Afficher la liste des sessions et le classement des pilotes.
 - [x] Gérer les états de chargement, d'erreur et les listes vides.
 
+## 📦 Packaging, Déploiement & Installeur Autonome
+- [ ] Configurer le profil de publication .NET en `Self-Contained` et `Single-File` dans le projet UI
+- [ ] Activer le `Trimming` (nettoyage des DLLs inutilisées) pour réduire la taille de l'exécutable au minimum
+- [ ] Configurer un script **Inno Setup** pour générer l'installeur `LMU-DeltaRacing-Setup.exe`
+- [ ] Détecter automatiquement le chemin par défaut de LMU (`UserData/Log/Results/`) lors de l'installation, si non trouver mettre les assets des tests
+- [ ] Ajouter un test automatisé vérifiant qu'aucune DLL externe n'est requise au lancement de l'exécutable publié
+- [ ] adapter si besoin le workflow GitHub Actions (`.github/workflows/release.yml`) pour automatiser le build et la publication de l'installeur `.exe`
 
 ## Liste d'idées à prioriser
 
