@@ -65,12 +65,12 @@ public sealed class ResultsDirectoryResolverTests
     }
 
     /// <summary>
-    /// Verifies that the anonymized fixtures checked into the repository are available as samples.
+    /// Verifies that the anonymized repository assets are available as samples.
     /// </summary>
     [TestMethod]
-    public void Resolve_uses_the_repository_packaged_anonymized_samples()
+    public void Resolve_uses_the_repository_anonymized_assets()
     {
-        var packagedResults = Path.Combine(AppContext.BaseDirectory, "TestAssets", "Results");
+        var packagedResults = Path.Combine(AppContext.BaseDirectory, "assets", "Results");
 
         ResultsDirectoryResolver.Resolve(string.Empty, AppContext.BaseDirectory, string.Empty)
             .Should()

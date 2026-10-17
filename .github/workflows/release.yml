@@ -31,13 +31,13 @@ jobs:
         run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 -o publish_output
 
       - name: Validate anonymized fallback result assets
-        run: pwsh -NoProfile -File scripts/Test-PackageAssets.ps1 -ResultsDirectory packaging/TestAssets/Results
+        run: pwsh -NoProfile -File scripts/Test-PackageAssets.ps1 -ResultsDirectory assets/Results
 
       - name: Copy committed fallback result assets
         shell: pwsh
         run: |
           New-Item -ItemType Directory -Path publish_output/TestAssets -Force | Out-Null
-          Copy-Item -LiteralPath packaging/TestAssets/Results -Destination publish_output/TestAssets -Recurse
+          Copy-Item -LiteralPath assets/Results -Destination publish_output/TestAssets -Recurse
 
       - name: Verify the published executable
         run: pwsh -NoProfile -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output

@@ -11,10 +11,10 @@ namespace LMU_DeltaRacing.Tests.Console;
 public sealed class LmuApplicationOptionsValidatorTests
 {
     /// <summary>
-    /// Verifies that default settings resolve to the repository XML test fixtures and executable directory.
+    /// Verifies that default settings resolve to the repository XML fixtures and executable directory.
     /// </summary>
     [TestMethod]
-    public void Validate_accepts_defaults_and_resolves_the_test_assets_directory()
+    public void Validate_accepts_defaults_and_resolves_the_repository_assets_directory()
     {
         var validator = new LmuApplicationOptionsValidator(AppContext.BaseDirectory);
 
@@ -25,7 +25,7 @@ public sealed class LmuApplicationOptionsValidatorTests
         result.Succeeded.Should().BeTrue();
         validator.ResolveResultsDirectory(new LmuApplicationOptions())
             .Should()
-            .Be(XmlFileDiscovery.FindTestAssetsResultsDirectory(AppContext.BaseDirectory));
+            .Be(XmlFileDiscovery.FindAssetsResultsDirectory(AppContext.BaseDirectory));
         validator.ResolveLogFilePath(new LmuApplicationOptions())
             .Should()
             .Be(Path.Combine(AppContext.BaseDirectory, "lmu-deltaracing.log"));

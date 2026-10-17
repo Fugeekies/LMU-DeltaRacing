@@ -19,7 +19,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 
 ## Jalon — Gestion de la configuration
 - [x] Configurer la gestion dynamique des paramètres applicatifs (`IOptionsMonitor<T>` / `appsettings.json`)
-- [x] Permettre la configuration du chemin local du dossier de résultats LMU -> chemin des `testAssets` par défaut
+- [x] Permettre la configuration du chemin local du dossier de résultats LMU -> assets anonymisés par défaut
 - [x] Configurer le chemin local du log -> fichier à côté de l'exécutable par défaut
 - [x] Configurer le niveau minimal du fichier de log JSON via la configuration -> `Debug` par défaut (aucun log affiché dans la console)
 - [x] Valider les chemins et le niveau de log au démarrage de l'application

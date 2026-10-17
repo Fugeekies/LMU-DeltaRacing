@@ -1,5 +1,5 @@
 param(
-    [string]$ResultsDirectory = 'packaging/TestAssets/Results'
+    [string]$ResultsDirectory = 'assets/Results'
 )
 
 $ErrorActionPreference = 'Stop'

@@ -16,7 +16,7 @@ namespace LMU_DeltaRacing.Tests.Infrastructure;
 [TestClass]
 public sealed class ResultsDirectoryWatcherTests
 {
-    private const string FixturePath = "TestAssets/Results/2025_09_20_19_03_47-43P1.xml";
+    private const string FixturePath = "assets/Results/2025_09_20_19_03_47-43P1.xml";
 
     /// <summary>
     /// Gets the MSTest context used to report load-test measurements.

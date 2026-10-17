@@ -24,7 +24,7 @@ public sealed class DashboardDataServiceTests
     {
         var sourceFile = Path.Combine(
             AppContext.BaseDirectory,
-            "TestAssets",
+            "assets",
             "Results",
             "2025_09_20_19_03_47-43P1.xml");
         var resultsDirectory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");

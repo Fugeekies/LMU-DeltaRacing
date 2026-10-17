@@ -60,13 +60,13 @@ public static class ResultsDirectoryResolver
         }
 
         var packagedSamples = Path.Combine(applicationPath, "TestAssets", "Results");
-        if (Directory.Exists(packagedSamples))
+        if (ContainsXmlResults(packagedSamples))
         {
             return packagedSamples;
         }
 
-        var developmentSamples = Path.Combine(applicationPath, "tests", "testAssets", "Results");
-        if (Directory.Exists(developmentSamples))
+        var developmentSamples = Path.Combine(applicationPath, "assets", "Results");
+        if (ContainsXmlResults(developmentSamples))
         {
             return developmentSamples;
         }
@@ -74,8 +74,8 @@ public static class ResultsDirectoryResolver
         DirectoryInfo? directoryInfo = new(applicationPath);
         while (directoryInfo is not null)
         {
-            developmentSamples = Path.Combine(directoryInfo.FullName, "tests", "testAssets", "Results");
-            if (Directory.Exists(developmentSamples))
+            developmentSamples = Path.Combine(directoryInfo.FullName, "assets", "Results");
+            if (ContainsXmlResults(developmentSamples))
             {
                 return developmentSamples;
             }
