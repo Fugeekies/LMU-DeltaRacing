@@ -10,10 +10,6 @@
         <h1>Tableau de bord</h1>
         <p class="page-subtitle">Historique des sessions et classements importés depuis Le Mans Ultimate.</p>
     </div>
-    <div class="live-indicator">
-        <span class="status-dot @(state.IsWatching ? "is-live" : "is-idle")" aria-hidden="true"></span>
-        <span>@(state.IsWatching ? "SURVEILLANCE ACTIVE" : "SURVEILLANCE INACTIVE")</span>
-    </div>
 </section>
 
 @if (state.IsLoading)

@@ -62,10 +62,16 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Déclencher le build et la publication de l'installeur `.exe` depuis le workflow GitHub Actions lors de la création d'un tag de version.
 
 ## Jalon — UI : Shell & Layout LMU
-- [ ] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
-- [ ] Créer la barre de navigation supérieure horizontale (`sticky top-0`) avec typographie condensée (`Oswald`).
-- [ ] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
-- [ ] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
+- [x] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
+- [x] Créer la barre de navigation supérieure horizontale (`sticky top-0`) avec typographie condensée (`Oswald`).
+- [x] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
+- [x] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
+
+ # Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
+- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
+- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
+- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
+- [ ] Déplacer le dashboard avec les imports réussi/échec ainsi que les session récente en dessous des options  
 
 ## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
 - [ ] Structurer la vue avec groupement par circuit.
@@ -82,11 +88,6 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [ ] Intégrer le sélecteur de session (dropdown) en haut de page.
 - [ ] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
 - [ ] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
-
-## Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
-- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
-- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
-- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
 
 ## Liste d'idées à prioriser
 - [ ] Multi langue.
