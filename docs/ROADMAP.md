@@ -61,7 +61,36 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Ajouter un test automatisé vérifiant qu'aucune DLL externe n'est requise au lancement de l'exécutable publié.
 - [x] Déclencher le build et la publication de l'installeur `.exe` depuis le workflow GitHub Actions lors de la création d'un tag de version.
 
+## Jalon — UI : Shell & Layout LMU
+- [ ] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
+- [ ] Créer la barre de navigation supérieure horizontale (`sticky top-0`) avec typographie condensée (`Oswald`).
+- [ ] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
+- [ ] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
+
+## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
+- [ ] Structurer la vue avec groupement par circuit.
+- [ ] Ajouter la colonne `Catégorie` (Hypercar, LMP2, LMGT3) et les filtres associés (Circuit et Catégorie).
+- [ ] Implémenter le calcul dynamique du delta $n-1$ (session précédente du même circuit, même catégorie et même voiture).
+- [ ] Appliquer la coloration conditionnelle des deltas (🟢 gain de temps, 🔴 perte de temps).
+
+## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)
+- [ ] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).
+- [ ] Afficher le tableau avec les colonnes : `Nom`, `Courses affrontées`, `Victoires`, `Défaites`, `% Victoire`.
+- [ ] Ajouter la barre de recherche par nom et le tri dynamique (par défaut : volume d'affrontements décroissant).
+
+## Jalon — UI : Menu "Détail des Courses" (`RaceDetails.razor`)
+- [ ] Intégrer le sélecteur de session (dropdown) en haut de page.
+- [ ] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
+- [ ] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
+
+## Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
+- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
+- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
+- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
+
 ## Liste d'idées à prioriser
+- [ ] Multi langue.
+- [ ] Reprise du readme pour la doc d'utilisation 
 - [ ] Exporter les résultats et statistiques en CSV.
 - [ ] Ajouter une fiche pilote avec ses statistiques cumulées.
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
