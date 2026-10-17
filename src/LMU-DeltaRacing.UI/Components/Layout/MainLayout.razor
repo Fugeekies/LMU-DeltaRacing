@@ -1,14 +1,24 @@
 ﻿@inherits LayoutComponentBase
+@implements IDisposable
+@inject DashboardDataService DashboardData
 
 <div class="app-shell">
     <header class="topbar">
-        <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
-            <span class="brand-mark" aria-hidden="true">LMU</span>
-            <span>DELTA<span class="brand-accent">RACING</span></span>
-        </a>
-        <div class="system-status">
-            <span class="status-dot" aria-hidden="true"></span>
-            <span>TABLEAU DE BORD LOCAL</span>
+        <div class="topbar-inner">
+            <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
+                <span class="brand-mark" aria-hidden="true">LMU</span>
+                <span>DELTA<span class="brand-accent">RACING</span></span>
+            </a>
+            <nav class="primary-nav" aria-label="Navigation principale">
+                <NavLink href="/my-races">Mes courses</NavLink>
+                <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
+                <NavLink href="/race-details">Détail des courses</NavLink>
+                <NavLink href="/settings">Options</NavLink>
+            </nav>
+            <div class="system-status" role="status" aria-live="polite">
+                <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
+                <span>@GetStatusLabel()</span>
+            </div>
         </div>
     </header>
 
@@ -27,3 +37,38 @@
     <a href="." class="reload">Recharger</a>
     <span class="dismiss">Fermer</span>
 </div>
+
+@code {
+    private DashboardState state = new(true, 0, 0, false, null, [], []);
+
+    protected override void OnInitialized()
+    {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        state = DashboardData.Snapshot;
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            state = DashboardData.Snapshot;
+            StateHasChanged();
+        });
+
+    private string GetStatusClass() =>
+        !string.IsNullOrWhiteSpace(state.ErrorMessage)
+            ? "is-error"
+            : state.IsWatching
+                ? "is-live"
+                : "is-idle";
+
+    private string GetStatusLabel() =>
+        !string.IsNullOrWhiteSpace(state.ErrorMessage)
+            ? "RÉSULTATS INDISPONIBLES"
+            : state.IsLoading
+                ? "IMPORT INITIAL"
+                : state.IsWatching
+                    ? "SURVEILLANCE ACTIVE"
+                    : "SURVEILLANCE INACTIVE";
+}

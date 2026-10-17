@@ -62,10 +62,10 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Déclencher le build et la publication de l'installeur `.exe` depuis le workflow GitHub Actions lors de la création d'un tag de version.
 
 ## Jalon — UI : Shell & Layout LMU
-- [ ] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
-- [ ] Créer la barre de navigation supérieure horizontale (`sticky top-0`) avec typographie condensée (`Oswald`).
-- [ ] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
-- [ ] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
+- [x] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
+- [x] Créer la barre de navigation supérieure horizontale (`sticky top-0`) avec typographie condensée (`Oswald`).
+- [x] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
+- [x] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
 
 ## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
 - [ ] Structurer la vue avec groupement par circuit.
