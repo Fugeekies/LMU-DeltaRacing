@@ -27,6 +27,9 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
+- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory tests/testAssets/Results -OutputDirectory publish_output/TestAssets/Results`
+- `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
+- `iscc /DAppVersion=1.0.0 scripts/installer.iss`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 
@@ -40,7 +43,11 @@ Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-d
 
 Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `tests/testAssets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
 
-Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable. La publication `win-x64` inclut le runtime .NET; lancez `LMU-DeltaRacing.UI.exe` depuis le dossier `publish`.
+Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable.
+
+Le profil `win-x64` produit une publication autonome, élaguée et à fichier unique. Pour construire et vérifier manuellement l'installeur, publiez d'abord l'UI avec ce profil dans `publish_output`, préparez les fixtures avec `Prepare-PackageAssets.ps1`, exécutez `Test-PublishedApp.ps1`, puis compilez `scripts/installer.iss` avec Inno Setup. Les fixtures embarquées utilisent des alias de pilotes stables entre fichiers; les noms des résultats LMU de l'utilisateur ne sont pas modifiés. L'installeur choisit un dossier de résultats LMU détecté ou, en l'absence de résultats, les fixtures anonymisées installées avec l'application. La configuration existante est conservée lors des mises à niveau.
+
+Le workflow `.github/workflows/release.yml` construit et vérifie l'application puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub pour chaque tag `v*`.
 
 Le projet de test génère les entrées XML et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10, 100 et 500 fichiers sur disque puis les supprime. Le rapport Markdown contient la durée, le débit, les allocations et la mémoire observée ; il est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test.
 
