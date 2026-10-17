@@ -3,6 +3,10 @@
 ### Description
 Vue récapitulative de la rivalité Head-to-Head (H2H) avec l'ensemble des pilotes croisés dans l'historique des sessions importées.
 
+### Spécifications fonctionnelles :
+* Recherche & Tri : Champ de recherche par nom et filtre de tri (par défaut : nombre de courses affrontées décroissant).
+* Structure du Tableau : Nom du pilote, Courses affrontées, Victoires (arrivé devant lui), Défaites (arrivé derrière lui), % de Victoire.
+
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐
