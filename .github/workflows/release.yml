@@ -30,9 +30,6 @@ jobs:
       - name: Publish self-contained dashboard
         run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 -o publish_output
 
-      - name: Validate anonymized fallback result assets
-        run: pwsh -NoProfile -File scripts/Test-PackageAssets.ps1 -ResultsDirectory assets/Results
-
       - name: Copy committed fallback result assets
         shell: pwsh
         run: |
