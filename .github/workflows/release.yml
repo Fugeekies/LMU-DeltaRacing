@@ -1,15 +1,15 @@
-name: Build and release Windows installer
+name: Build and release Windows installer (Manual)
 
 on:
-  push:
-    tags:
-      - "v*"
-  pull_request:
-    branches:
-      - main
+  workflow_dispatch:
+    inputs:
+      version_tag:
+        description: 'Numéro de version (ex: v1.0.0)'
+        required: true
+        type: string
 
 permissions:
-  contents: read
+  contents: write # Requis pour créer le tag Git et publier la release automatiquement
 
 jobs:
   build-installer:
@@ -48,12 +48,10 @@ jobs:
       - name: Build installer
         shell: pwsh
         run: |
-          if ($env:GITHUB_REF_TYPE -eq 'tag') {
-            $version = $env:GITHUB_REF_NAME -replace '^v', ''
-          }
-          else {
-            $version = "0.0.$env:GITHUB_RUN_NUMBER"
-          }
+          # Récupère la version saisie manuellement (ex: v1.0.0 -> 1.0.0)
+          $rawVersion = "${{ inputs.version_tag }}"
+          $version = $rawVersion -replace '^v', ''
+          
           if ([string]::IsNullOrWhiteSpace($version)) {
             throw "An installer version could not be determined."
           }
@@ -67,24 +65,34 @@ jobs:
           if-no-files-found: error
 
   release:
-    if: startsWith(github.ref, 'refs/tags/')
     needs: build-installer
     runs-on: ubuntu-latest
     permissions:
       contents: write
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
       - name: Download installer artifact
         uses: actions/download-artifact@v4
         with:
           name: LMU-DeltaRacing-Setup
           path: output
 
+      - name: Create Git Tag Automatically
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag ${{ inputs.version_tag }}
+          git push origin ${{ inputs.version_tag }}
+        shell: bash
+
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ github.ref_name }}
-          name: LMU-DeltaRacing ${{ github.ref_name }}
+          tag_name: ${{ inputs.version_tag }}
+          name: LMU-DeltaRacing ${{ inputs.version_tag }}
           files: output/LMU-DeltaRacing-Setup.exe
           draft: false
           prerelease: false
