@@ -9,7 +9,6 @@ public sealed record MyRaceRecord(
     string TrackEvent,
     DateTimeOffset StartedAt,
     string Category,
-    string VehicleKey,
     string Car,
     TimeSpan? QualifyingTime,
     TimeSpan? QualifyingDelta,

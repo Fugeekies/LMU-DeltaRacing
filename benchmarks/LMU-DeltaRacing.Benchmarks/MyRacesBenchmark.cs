@@ -54,7 +54,6 @@ internal static class MyRacesBenchmark
                 $"Event {index / 60:D5}",
                 startedAt,
                 Categories[category],
-                $"{category}|{index % 200:D3}|Team",
                 $"#{index % 200:D3} · Team",
                 TimeSpan.FromSeconds(100 + index % 20),
                 null,

@@ -76,7 +76,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 ## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
 - [x] Structurer la vue avec groupement par circuit.
 - [x] Ajouter la colonne `Catégorie` (Hypercar, LMP2, LMGT3) et les filtres associés (Circuit et Catégorie).
-- [x] Implémenter le calcul dynamique du delta $n-1$ (session précédente du même circuit, même catégorie et même voiture).
+- [x] Implémenter le calcul dynamique du delta $n-1$ (session précédente du même circuit et de la même catégorie).
 - [x] Appliquer la coloration conditionnelle des deltas (🟢 gain de temps, 🔴 perte de temps).
 
 ## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)

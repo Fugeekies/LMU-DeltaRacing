@@ -36,11 +36,6 @@ public static class MyRacesPresentation
                 continue;
             }
 
-            var vehicleKey = string.Join(
-                "|",
-                category,
-                string.IsNullOrWhiteSpace(driver.CarNumber) ? driver.Name : driver.CarNumber,
-                driver.TeamName);
             var car = string.IsNullOrWhiteSpace(driver.CarNumber)
                 ? driver.TeamName
                 : $"#{driver.CarNumber}{(string.IsNullOrWhiteSpace(driver.TeamName) ? string.Empty : $" · {driver.TeamName}")}";
@@ -52,7 +47,6 @@ public static class MyRacesPresentation
                 DateOnly.FromDateTime(session.StartedAt.Date),
                 session.StartedAt,
                 category,
-                vehicleKey,
                 car,
                 isQualifying,
                 driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min()));
@@ -86,7 +80,6 @@ public static class MyRacesPresentation
                     group.Key.TrackEvent,
                     group.Min(result => result.StartedAt),
                     player.Category,
-                    player.VehicleKey,
                     player.Car,
                     qualifyingTime,
                     raceTime);
@@ -98,8 +91,7 @@ public static class MyRacesPresentation
             {
                 record.TrackVenue,
                 record.TrackCourse,
-                record.Category,
-                record.VehicleKey
+                record.Category
             }))
         {
             TimeSpan? previousQualifyingTime = null;
@@ -133,7 +125,6 @@ public static class MyRacesPresentation
                 record.TrackEvent,
                 record.StartedAt,
                 record.Category,
-                record.VehicleKey,
                 record.Car,
                 record.QualifyingTime,
                 record.QualifyingDelta,
@@ -176,7 +167,6 @@ public static class MyRacesPresentation
         DateOnly Date,
         DateTimeOffset StartedAt,
         string Category,
-        string VehicleKey,
         string Car,
         bool IsQualifying,
         TimeSpan? BestLap);
@@ -187,7 +177,6 @@ public static class MyRacesPresentation
         string trackEvent,
         DateTimeOffset startedAt,
         string category,
-        string vehicleKey,
         string car,
         TimeSpan? qualifyingTime,
         TimeSpan? raceTime)
@@ -197,7 +186,6 @@ public static class MyRacesPresentation
         public string TrackEvent { get; } = trackEvent;
         public DateTimeOffset StartedAt { get; } = startedAt;
         public string Category { get; } = category;
-        public string VehicleKey { get; } = vehicleKey;
         public string Car { get; } = car;
         public TimeSpan? QualifyingTime { get; } = qualifyingTime;
         public TimeSpan? QualifyingDelta { get; set; }

@@ -82,7 +82,7 @@ public sealed class MyRacesPresentationTests
     }
 
     [TestMethod]
-    public void CreateRecords_keeps_deltas_scoped_to_circuit_category_and_vehicle()
+    public void CreateRecords_compares_previous_results_on_same_track_and_category_even_when_vehicle_changes()
     {
         var sessions = new[]
         {
@@ -97,8 +97,15 @@ public sealed class MyRacesPresentationTests
         var records = MyRacesPresentation.CreateRecords(sessions);
 
         records.Should().HaveCount(4);
-        records.Should().OnlyContain(record => record.QualifyingDelta == null);
-        records.Should().Contain(record => record.Category == "LMGT3");
+        var spaHypercar = records.Should()
+            .ContainSingle(record => record.TrackVenue == "Spa" && record.Car == "#8 · Toyota")
+            .Which;
+        spaHypercar.QualifyingDelta.Should().Be(TimeSpan.FromSeconds(1));
+
+        records.Should().Contain(record =>
+            record.TrackVenue == "Le Mans" && record.Category == "Hypercar" && record.QualifyingDelta == null);
+        records.Should().Contain(record =>
+            record.TrackVenue == "Spa" && record.Category == "LMGT3" && record.QualifyingDelta == null);
     }
 
     private static Session CreateSession(
