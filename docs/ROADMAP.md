@@ -67,7 +67,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
 - [x] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
 
- # Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
+## Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
 - [x] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
 - [x] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
 - [x] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
