@@ -1,4 +1,4 @@
-## 1. 🏎️ Menu : Mes Courses (`MyRaces.razor`)
+## 2. 🏆 Menu : Classement des Coureurs (DriversRanking.razor)
 
 ### Description
 Vue récapitulative de la rivalité Head-to-Head (H2H) avec l'ensemble des pilotes croisés dans l'historique des sessions importées.
