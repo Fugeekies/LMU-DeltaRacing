@@ -3,6 +3,14 @@
 ### Description
 Vue axée sur la progression personnelle de l'utilisateur, groupée par circuit et filtrable par catégorie. Elle calcule dynamiquement les écarts de temps par rapport à la session immédiatement précédente ($n-1$) sur le même circuit, la même catégorie et le même véhicule.
 
+### Spécifications fonctionnelles :
+* Filtres : Circuit (Tous / Filtre spécifique) et Catégorie (Toutes / Hypercar / LMP2 / LMGT3).
+* Structure du Tableau : Date / Heure, Catégorie, Voiture, Temps Qualif, Delta Qualif (n-1), Temps Course, Delta Course (n-1).
+* Règle Métier Delta ($n-1$) :
+  * Comparaison effectuée entre la session courante et la session précédente du même Circuit + même Catégorie.
+  * Si le temps est meilleur (gain de temps) : Texte vert 🟢 -X.XXXs.
+  * Si le temps est moins bon (perte de temps) : Texte rouge 🔴 +X.XXXs.
+
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐
