@@ -58,6 +58,7 @@ public sealed class XmlResultParserTests
                 <TrackVenue>Track</TrackVenue>
                 <TrackCourse>Course</TrackCourse>
                 <Race>
+                  <MostLapsCompleted>8</MostLapsCompleted>
                   <Driver>
                     <Name>Player</Name>
                     <Position>1</Position>
@@ -76,6 +77,7 @@ public sealed class XmlResultParserTests
         var driver = session.Drivers.Should().ContainSingle().Which;
         driver.GridPosition.Should().Be(2);
         driver.FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
+        session.MostLapsCompleted.Should().Be(8);
     }
 
     /// <summary>

@@ -15,4 +15,5 @@ public sealed record MyRaceRecord(
     int? GridPosition,
     TimeSpan? RaceTime,
     TimeSpan? RaceDelta,
+    int? MostLapsCompleted,
     TimeSpan? FinishTime);

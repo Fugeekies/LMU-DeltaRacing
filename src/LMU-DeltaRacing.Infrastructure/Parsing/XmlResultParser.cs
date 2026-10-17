@@ -48,7 +48,8 @@ public sealed class XmlResultParser : IResultXmlParser
             RequiredValue(results, "TrackCourse"),
             Value(results, "TrackEvent") ?? RequiredValue(results, "TrackCourse"),
             phase.Name.LocalName,
-            drivers);
+            drivers,
+            ParseOptionalInt(Value(phase, "MostLapsCompleted")));
     }
 
     private static bool IsDriverResult(XElement element) =>

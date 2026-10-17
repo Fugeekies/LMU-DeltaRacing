@@ -27,7 +27,8 @@ public sealed class MyRacesPresentationTests
                 "2025-02-23T12:00:00Z",
                 [125.5],
                 gridPosition: 2,
-                finishTime: TimeSpan.FromSeconds(1326.8575))
+                finishTime: TimeSpan.FromSeconds(1326.8575),
+                mostLapsCompleted: 8)
         };
 
         var records = MyRacesPresentation.CreateRecords(sessions);
@@ -40,6 +41,7 @@ public sealed class MyRacesPresentationTests
         records[0].GridPosition.Should().Be(2);
         records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125.5));
         records[0].RaceDelta.Should().Be(TimeSpan.FromSeconds(1));
+        records[0].MostLapsCompleted.Should().Be(8);
         records[0].FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
         records[1].QualifyingDelta.Should().BeNull();
         records[1].RaceDelta.Should().BeNull();
@@ -132,7 +134,8 @@ public sealed class MyRacesPresentationTests
         double[] lapTimes,
         bool isPlayer = true,
         int? gridPosition = null,
-        TimeSpan? finishTime = null)
+        TimeSpan? finishTime = null,
+        int? mostLapsCompleted = null)
     {
         return new Session(
             Guid.NewGuid(),
@@ -141,7 +144,8 @@ public sealed class MyRacesPresentationTests
             track,
             $"Event {startedAt[..10]}",
             type,
-            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer, gridPosition, finishTime)]);
+            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer, gridPosition, finishTime)],
+            mostLapsCompleted);
     }
 
     private static Driver CreateDriver(

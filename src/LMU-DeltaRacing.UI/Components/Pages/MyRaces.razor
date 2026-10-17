@@ -109,6 +109,7 @@ else
                                     <th scope="col" class="numeric-cell">GRILLE</th>
                                     <th scope="col" class="numeric-cell">TEMPS COURSE</th>
                                     <th scope="col" class="numeric-cell">DELTA (n-1)</th>
+                                    <th scope="col" class="numeric-cell">TOURS</th>
                                     <th scope="col" class="numeric-cell">TEMPS TOTAL COURSE</th>
                                 </tr>
                             </thead>
@@ -124,6 +125,7 @@ else
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
+                                        <td class="numeric-cell">@(record.MostLapsCompleted?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
                                     </tr>
                                 }
