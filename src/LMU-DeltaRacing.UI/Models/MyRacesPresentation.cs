@@ -24,35 +24,38 @@ public static class MyRacesPresentation
                 continue;
             }
 
-            foreach (var driver in session.Drivers)
+            var driver = session.Drivers.FirstOrDefault(driver => driver.IsPlayer);
+            if (driver is null)
             {
-                var category = GetCategory(driver.CarClass);
-                if (category is null)
-                {
-                    continue;
-                }
-
-                var vehicleKey = string.Join(
-                    "|",
-                    category,
-                    string.IsNullOrWhiteSpace(driver.CarNumber) ? driver.Name : driver.CarNumber,
-                    driver.TeamName);
-                var car = string.IsNullOrWhiteSpace(driver.CarNumber)
-                    ? driver.TeamName
-                    : $"#{driver.CarNumber}{(string.IsNullOrWhiteSpace(driver.TeamName) ? string.Empty : $" · {driver.TeamName}")}";
-
-                results.Add(new SessionResult(
-                    session.TrackVenue,
-                    session.TrackCourse,
-                    session.TrackEvent,
-                    DateOnly.FromDateTime(session.StartedAt.Date),
-                    session.StartedAt,
-                    category,
-                    vehicleKey,
-                    car,
-                    isQualifying,
-                    driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min()));
+                continue;
             }
+
+            var category = GetCategory(driver.CarClass);
+            if (category is null)
+            {
+                continue;
+            }
+
+            var vehicleKey = string.Join(
+                "|",
+                category,
+                string.IsNullOrWhiteSpace(driver.CarNumber) ? driver.Name : driver.CarNumber,
+                driver.TeamName);
+            var car = string.IsNullOrWhiteSpace(driver.CarNumber)
+                ? driver.TeamName
+                : $"#{driver.CarNumber}{(string.IsNullOrWhiteSpace(driver.TeamName) ? string.Empty : $" · {driver.TeamName}")}";
+
+            results.Add(new SessionResult(
+                session.TrackVenue,
+                session.TrackCourse,
+                session.TrackEvent,
+                DateOnly.FromDateTime(session.StartedAt.Date),
+                session.StartedAt,
+                category,
+                vehicleKey,
+                car,
+                isQualifying,
+                driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min()));
         }
 
         var records = results
@@ -61,13 +64,11 @@ public static class MyRacesPresentation
                 result.TrackVenue,
                 result.TrackCourse,
                 result.TrackEvent,
-                result.Date,
-                result.Category,
-                result.VehicleKey
+                result.Date
             })
             .Select(group =>
             {
-                var car = group.First().Car;
+                var player = group.First();
                 var qualifyingTime = group
                     .Where(result => result.IsQualifying)
                     .Select(result => result.BestLap)
@@ -84,9 +85,9 @@ public static class MyRacesPresentation
                     group.Key.TrackCourse,
                     group.Key.TrackEvent,
                     group.Min(result => result.StartedAt),
-                    group.Key.Category,
-                    group.Key.VehicleKey,
-                    car,
+                    player.Category,
+                    player.VehicleKey,
+                    player.Car,
                     qualifyingTime,
                     raceTime);
             })

@@ -15,10 +15,10 @@ public sealed class MyRacesPresentationTests
     {
         var sessions = new[]
         {
-            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-22T11:00:00Z", 122.5, 122.25),
-            CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-22T12:00:00Z", 125, 124.5),
-            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-23T11:00:00Z", 121.75),
-            CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-23T12:00:00Z", 125.5)
+            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-22T11:00:00Z", [122.5, 122.25]),
+            CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-22T12:00:00Z", [125, 124.5]),
+            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-23T11:00:00Z", [121.75]),
+            CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-23T12:00:00Z", [125.5])
         };
 
         var records = MyRacesPresentation.CreateRecords(sessions);
@@ -35,16 +35,63 @@ public sealed class MyRacesPresentationTests
     }
 
     [TestMethod]
+    public void CreateRecords_uses_only_player_results_and_returns_one_record_per_race()
+    {
+        var firstQualifying = CreateSession(
+            "Qualify",
+            "Spa",
+            "Hyper",
+            "7",
+            "Toyota",
+            "2025-02-22T11:00:00Z",
+            [122]);
+        var secondQualifying = CreateSession(
+            "Qualify",
+            "Spa",
+            "Hyper",
+            "8",
+            "Other team",
+            "2025-02-22T11:00:00Z",
+            [110],
+            isPlayer: false);
+        var firstRace = CreateSession(
+            "Race",
+            "Spa",
+            "Hyper",
+            "7",
+            "Toyota",
+            "2025-02-22T12:00:00Z",
+            [125]);
+        var secondRace = CreateSession(
+            "Race",
+            "Spa",
+            "Hyper",
+            "8",
+            "Other team",
+            "2025-02-22T12:00:00Z",
+            [110],
+            isPlayer: false);
+
+        var records = MyRacesPresentation.CreateRecords(
+            [firstQualifying, secondQualifying, firstRace, secondRace]);
+
+        records.Should().ContainSingle();
+        records[0].Car.Should().Be("#7 · Toyota");
+        records[0].QualifyingTime.Should().Be(TimeSpan.FromSeconds(122));
+        records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125));
+    }
+
+    [TestMethod]
     public void CreateRecords_keeps_deltas_scoped_to_circuit_category_and_vehicle()
     {
         var sessions = new[]
         {
-            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-22T11:00:00Z", 122),
-            CreateSession("Qualify", "Le Mans", "Hyper", "7", "Toyota", "2025-02-23T11:00:00Z", 121),
-            CreateSession("Qualify", "Spa", "GT3", "7", "Toyota", "2025-02-23T12:00:00Z", 130),
-            CreateSession("Qualify", "Spa", "Hyper", "8", "Toyota", "2025-02-23T13:00:00Z", 123),
-            CreateSession("Practice", "Spa", "Hyper", "7", "Toyota", "2025-02-24T11:00:00Z", 120),
-            CreateSession("Qualify", "Spa", "Unknown", "7", "Toyota", "2025-02-24T12:00:00Z", 120)
+            CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-22T11:00:00Z", [122]),
+            CreateSession("Qualify", "Le Mans", "Hyper", "7", "Toyota", "2025-02-23T11:00:00Z", [121]),
+            CreateSession("Qualify", "Spa", "GT3", "7", "Toyota", "2025-02-24T12:00:00Z", [130]),
+            CreateSession("Qualify", "Spa", "Hyper", "8", "Toyota", "2025-02-25T13:00:00Z", [123]),
+            CreateSession("Practice", "Spa", "Hyper", "7", "Toyota", "2025-02-24T11:00:00Z", [120]),
+            CreateSession("Qualify", "Spa", "Unknown", "7", "Toyota", "2025-02-24T12:00:00Z", [120])
         };
 
         var records = MyRacesPresentation.CreateRecords(sessions);
@@ -61,22 +108,32 @@ public sealed class MyRacesPresentationTests
         string carNumber,
         string team,
         string startedAt,
-        params double[] lapTimes) =>
-        new(
+        double[] lapTimes,
+        bool isPlayer = true)
+    {
+        return new Session(
             Guid.NewGuid(),
             DateTimeOffset.Parse(startedAt, System.Globalization.CultureInfo.InvariantCulture),
             track,
             track,
             $"Event {startedAt[..10]}",
             type,
-            [
-                new Driver(
-                    "Driver",
-                    carNumber,
-                    carClass,
-                    team,
-                    1,
-                    lapTimes.Select((time, index) =>
-                        new Lap(index + 1, TimeSpan.FromSeconds(time), [])))
-            ]);
+            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer)]);
+    }
+
+    private static Driver CreateDriver(
+        string name,
+        string carNumber,
+        string carClass,
+        string team,
+        double[] lapTimes,
+        bool isPlayer) =>
+        new(
+            name,
+            carNumber,
+            carClass,
+            team,
+            1,
+            lapTimes.Select((time, index) => new Lap(index + 1, TimeSpan.FromSeconds(time), [])),
+            isPlayer);
 }

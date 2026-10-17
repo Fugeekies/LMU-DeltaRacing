@@ -14,13 +14,15 @@ public sealed class Driver
     /// <param name="teamName">The team name, when available.</param>
     /// <param name="position">The finishing position, when available.</param>
     /// <param name="laps">The laps recorded for the driver.</param>
+    /// <param name="isPlayer">Whether this result belongs to the player.</param>
     public Driver(
         string name,
         string carNumber,
         string carClass,
         string teamName,
         int? position,
-        IEnumerable<Lap> laps)
+        IEnumerable<Lap> laps,
+        bool isPlayer = false)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
@@ -34,6 +36,7 @@ public sealed class Driver
         TeamName = teamName;
         Position = position;
         Laps = Array.AsReadOnly(laps.ToArray());
+        IsPlayer = isPlayer;
     }
 
     /// <summary>
@@ -65,4 +68,9 @@ public sealed class Driver
     /// Gets the laps recorded for the driver.
     /// </summary>
     public IReadOnlyList<Lap> Laps { get; }
+
+    /// <summary>
+    /// Gets whether this result belongs to the player.
+    /// </summary>
+    public bool IsPlayer { get; }
 }
