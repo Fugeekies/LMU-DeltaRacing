@@ -68,7 +68,8 @@ public sealed class XmlResultParser : IResultXmlParser
             laps,
             Value(element, "isPlayer") == "1",
             Value(element, "CarType") ?? string.Empty,
-            ParseOptionalInt(Value(element, "GridPos")));
+            ParseOptionalInt(Value(element, "GridPos")),
+            ParseOptionalSeconds(Value(element, "FinishTime")));
     }
 
     private static Lap ParseLap(XElement element)
@@ -108,6 +109,9 @@ public sealed class XmlResultParser : IResultXmlParser
 
     private static int? ParseOptionalInt(string? value) =>
         int.TryParse(value, NumberStyles.Integer, CultureInfo.InvariantCulture, out var result) ? result : null;
+
+    private static TimeSpan? ParseOptionalSeconds(string? value) =>
+        TryParseSeconds(value, out var time) ? time : null;
 
     private static int ParseRequiredInt(string? value, string fieldName)
     {

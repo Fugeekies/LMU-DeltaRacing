@@ -52,7 +52,8 @@ public static class MyRacesPresentation
                 car,
                 isQualifying,
                 driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min(),
-                driver.GridPosition));
+                driver.GridPosition,
+                driver.FinishTime));
         }
 
         var records = results
@@ -80,6 +81,10 @@ public static class MyRacesPresentation
                     .Where(result => !result.IsQualifying)
                     .Select(result => result.GridPosition)
                     .FirstOrDefault(position => position.HasValue);
+                var finishTime = group
+                    .Where(result => !result.IsQualifying)
+                    .Select(result => result.FinishTime)
+                    .FirstOrDefault(time => time.HasValue);
 
                 return new RecordBuilder(
                     group.Key.TrackVenue,
@@ -90,7 +95,8 @@ public static class MyRacesPresentation
                     player.Car,
                     qualifyingTime,
                     gridPosition,
-                    raceTime);
+                    raceTime,
+                    finishTime);
             })
             .ToArray();
 
@@ -138,7 +144,8 @@ public static class MyRacesPresentation
                 record.QualifyingDelta,
                 record.GridPosition,
                 record.RaceTime,
-                record.RaceDelta))
+                record.RaceDelta,
+                record.FinishTime))
             .ToArray();
     }
 
@@ -179,7 +186,8 @@ public static class MyRacesPresentation
         string Car,
         bool IsQualifying,
         TimeSpan? BestLap,
-        int? GridPosition);
+        int? GridPosition,
+        TimeSpan? FinishTime);
 
     private sealed class RecordBuilder(
         string trackVenue,
@@ -190,7 +198,8 @@ public static class MyRacesPresentation
         string car,
         TimeSpan? qualifyingTime,
         int? gridPosition,
-        TimeSpan? raceTime)
+        TimeSpan? raceTime,
+        TimeSpan? finishTime)
     {
         public string TrackVenue { get; } = trackVenue;
         public string TrackCourse { get; } = trackCourse;
@@ -203,5 +212,6 @@ public static class MyRacesPresentation
         public int? GridPosition { get; } = gridPosition;
         public TimeSpan? RaceTime { get; } = raceTime;
         public TimeSpan? RaceDelta { get; set; }
+        public TimeSpan? FinishTime { get; } = finishTime;
     }
 }

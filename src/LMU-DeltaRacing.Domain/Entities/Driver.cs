@@ -17,6 +17,7 @@ public sealed class Driver
     /// <param name="isPlayer">Whether this result belongs to the player.</param>
     /// <param name="carType">The vehicle model, when available.</param>
     /// <param name="gridPosition">The starting grid position, when available.</param>
+    /// <param name="finishTime">The total race time, when available.</param>
     public Driver(
         string name,
         string carNumber,
@@ -26,7 +27,8 @@ public sealed class Driver
         IEnumerable<Lap> laps,
         bool isPlayer = false,
         string carType = "",
-        int? gridPosition = null)
+        int? gridPosition = null,
+        TimeSpan? finishTime = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
@@ -44,6 +46,7 @@ public sealed class Driver
         IsPlayer = isPlayer;
         CarType = carType;
         GridPosition = gridPosition;
+        FinishTime = finishTime;
     }
 
     /// <summary>
@@ -75,6 +78,11 @@ public sealed class Driver
     /// Gets the starting grid position, when available.
     /// </summary>
     public int? GridPosition { get; }
+
+    /// <summary>
+    /// Gets the total race time, when available.
+    /// </summary>
+    public TimeSpan? FinishTime { get; }
 
     /// <summary>
     /// Gets the finishing position, when available.

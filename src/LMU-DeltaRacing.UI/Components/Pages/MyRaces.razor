@@ -109,6 +109,7 @@ else
                                     <th scope="col" class="numeric-cell">GRILLE</th>
                                     <th scope="col" class="numeric-cell">TEMPS COURSE</th>
                                     <th scope="col" class="numeric-cell">DELTA (n-1)</th>
+                                    <th scope="col" class="numeric-cell">TEMPS TOTAL COURSE</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -123,6 +124,7 @@ else
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
+                                        <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
                                     </tr>
                                 }
                             </tbody>
@@ -178,6 +180,18 @@ else
 
     private static string FormatLap(TimeSpan? time) =>
         time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
+
+    private static string FormatTotalTime(TimeSpan? time)
+    {
+        if (time is not { } finishTime)
+        {
+            return "—";
+        }
+
+        return finishTime.TotalHours >= 1
+            ? finishTime.ToString(@"h\:mm\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture)
+            : finishTime.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture);
+    }
 
     private static RenderFragment FormatDelta(TimeSpan? delta) => builder =>
     {

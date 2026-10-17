@@ -18,7 +18,16 @@ public sealed class MyRacesPresentationTests
             CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-22T11:00:00Z", [122.5, 122.25]),
             CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-22T12:00:00Z", [125, 124.5], gridPosition: 4),
             CreateSession("Qualify", "Spa", "Hyper", "7", "Toyota", "2025-02-23T11:00:00Z", [121.75]),
-            CreateSession("Race", "Spa", "Hyper", "7", "Toyota", "2025-02-23T12:00:00Z", [125.5], gridPosition: 2)
+            CreateSession(
+                "Race",
+                "Spa",
+                "Hyper",
+                "7",
+                "Toyota",
+                "2025-02-23T12:00:00Z",
+                [125.5],
+                gridPosition: 2,
+                finishTime: TimeSpan.FromSeconds(1326.8575))
         };
 
         var records = MyRacesPresentation.CreateRecords(sessions);
@@ -31,6 +40,7 @@ public sealed class MyRacesPresentationTests
         records[0].GridPosition.Should().Be(2);
         records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125.5));
         records[0].RaceDelta.Should().Be(TimeSpan.FromSeconds(1));
+        records[0].FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
         records[1].QualifyingDelta.Should().BeNull();
         records[1].RaceDelta.Should().BeNull();
     }
@@ -121,7 +131,8 @@ public sealed class MyRacesPresentationTests
         string startedAt,
         double[] lapTimes,
         bool isPlayer = true,
-        int? gridPosition = null)
+        int? gridPosition = null,
+        TimeSpan? finishTime = null)
     {
         return new Session(
             Guid.NewGuid(),
@@ -130,7 +141,7 @@ public sealed class MyRacesPresentationTests
             track,
             $"Event {startedAt[..10]}",
             type,
-            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer, gridPosition)]);
+            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer, gridPosition, finishTime)]);
     }
 
     private static Driver CreateDriver(
@@ -140,7 +151,8 @@ public sealed class MyRacesPresentationTests
         string team,
         double[] lapTimes,
         bool isPlayer,
-        int? gridPosition = null) =>
+        int? gridPosition = null,
+        TimeSpan? finishTime = null) =>
         new(
             name,
             carNumber,
@@ -150,5 +162,6 @@ public sealed class MyRacesPresentationTests
             lapTimes.Select((time, index) => new Lap(index + 1, TimeSpan.FromSeconds(time), [])),
             isPlayer,
             "Test Car",
-            gridPosition);
+            gridPosition,
+            finishTime);
 }

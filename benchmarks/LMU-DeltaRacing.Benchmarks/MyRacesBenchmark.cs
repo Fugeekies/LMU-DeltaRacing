@@ -59,7 +59,8 @@ internal static class MyRacesBenchmark
                 null,
                 null,
                 TimeSpan.FromSeconds(110 + index % 25),
-                null);
+                null,
+                TimeSpan.FromSeconds(1320 + index % 90));
         }
 
         return records;

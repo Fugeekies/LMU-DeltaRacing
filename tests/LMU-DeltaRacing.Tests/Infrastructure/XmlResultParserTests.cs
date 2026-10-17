@@ -62,6 +62,7 @@ public sealed class XmlResultParserTests
                     <Name>Player</Name>
                     <Position>1</Position>
                     <GridPos>2</GridPos>
+                    <FinishTime>1326.8575</FinishTime>
                   </Driver>
                 </Race>
               </RaceResults>
@@ -72,7 +73,9 @@ public sealed class XmlResultParserTests
 
         var session = parser.Parse(stream);
 
-        session.Drivers.Should().ContainSingle().Which.GridPosition.Should().Be(2);
+        var driver = session.Drivers.Should().ContainSingle().Which;
+        driver.GridPosition.Should().Be(2);
+        driver.FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
     }
 
     /// <summary>
