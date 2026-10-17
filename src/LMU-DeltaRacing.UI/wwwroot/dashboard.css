@@ -807,10 +807,140 @@ h3 {
     cursor: pointer;
 }
 
+.race-history {
+    overflow: hidden;
+}
+
+.race-history-heading {
+    padding: 1.25rem 1.25rem 0;
+}
+
+.race-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.race-filter {
+    display: grid;
+    gap: 0.4rem;
+    min-width: 220px;
+    color: var(--muted);
+    font-size: 0.63rem;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+}
+
+.race-filter select {
+    min-height: 40px;
+    padding: 0.5rem 2rem 0.5rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-raised);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.78rem;
+    letter-spacing: normal;
+}
+
+.race-filter select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.circuit-history {
+    border-top: 1px solid var(--border);
+}
+
+.circuit-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1.15rem 1.25rem 0.8rem;
+}
+
+.circuit-heading .eyebrow {
+    margin-bottom: 0.15rem;
+}
+
+.circuit-heading h3 {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.circuit-course {
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.races-table {
+    min-width: 940px;
+}
+
+.car-cell {
+    min-width: 150px;
+}
+
+.car-cell strong,
+.car-cell span {
+    display: block;
+}
+
+.car-cell strong {
+    font-size: 0.76rem;
+}
+
+.car-cell span {
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 0.2rem 0.42rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    color: #c9d1d9;
+    font-size: 0.68rem;
+    white-space: nowrap;
+}
+
+.delta-value {
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+}
+
+.delta-gain {
+    color: var(--green);
+}
+
+.delta-loss {
+    color: var(--red);
+}
+
+.race-empty-state {
+    min-height: 140px;
+}
+
 @media (max-width: 1120px) {
 }
 
 @media (max-width: 700px) {
+    .race-filters {
+        flex-direction: column;
+    }
+
+    .race-filter {
+        min-width: 0;
+    }
+
+    .circuit-heading {
+        align-items: flex-start;
+    }
+
     .topbar-inner {
         min-height: 58px;
         grid-template-columns: minmax(0, 1fr) auto;

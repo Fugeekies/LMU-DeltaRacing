@@ -1,0 +1,205 @@
+@page "/my-races"
+@implements IDisposable
+@inject DashboardDataService DashboardData
+
+<PageTitle>Mes courses | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">HISTORIQUE &amp; PROGRESSION</p>
+        <h1>Mes courses</h1>
+        <p class="page-subtitle">Meilleurs temps par voiture, regroupés par circuit et comparés à la session précédente.</p>
+    </div>
+</section>
+
+@if (state.IsLoading && state.Sessions.Count == 0)
+{
+    <section class="panel empty-state" aria-live="polite">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Chargement de l’historique des courses…</p>
+    </section>
+}
+else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <p>@state.ErrorMessage</p>
+            <p>Vérifiez le dossier configuré dans Options.</p>
+        </div>
+    </section>
+}
+else if (records.Count == 0)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucune course disponible</h3>
+        <p>Les sessions de qualification et de course importées apparaîtront ici lorsqu’elles contiendront des tours valides en Hypercar, LMP2 ou LMGT3.</p>
+    </section>
+}
+else
+{
+    var filteredRecords = GetFilteredRecords();
+    <section class="panel race-history">
+        <div class="panel-heading race-history-heading">
+            <div>
+                <p class="eyebrow">PERFORMANCES ENREGISTRÉES</p>
+                <h2>Progression par circuit</h2>
+            </div>
+            <span class="count-badge">@filteredRecords.Count</span>
+        </div>
+
+        <div class="race-filters" aria-label="Filtres des courses">
+            <label class="race-filter">
+                <span>CIRCUIT</span>
+                <select @bind="selectedTrack" aria-label="Filtrer par circuit">
+                    <option value="">Tous les circuits</option>
+                    @foreach (var track in tracks)
+                    {
+                        <option value="@track">@track</option>
+                    }
+                </select>
+            </label>
+            <label class="race-filter">
+                <span>CATÉGORIE</span>
+                <select @bind="selectedCategory" aria-label="Filtrer par catégorie">
+                    <option value="">Toutes les catégories</option>
+                    @foreach (var category in Categories)
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+            </label>
+        </div>
+
+        @if (filteredRecords.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Aucune course ne correspond à ces filtres.</p>
+            </div>
+        }
+        else
+        {
+            @foreach (var circuit in filteredRecords
+                .GroupBy(record => new { record.TrackVenue, record.TrackCourse })
+                .OrderBy(group => group.Key.TrackVenue))
+            {
+                <section class="circuit-history" aria-label="@($"Historique de {circuit.Key.TrackVenue}")">
+                    <div class="circuit-heading">
+                        <div>
+                            <span class="eyebrow">CIRCUIT</span>
+                            <h3>@circuit.Key.TrackVenue</h3>
+                            @if (!string.Equals(circuit.Key.TrackVenue, circuit.Key.TrackCourse, StringComparison.OrdinalIgnoreCase))
+                            {
+                                <span class="circuit-course">@circuit.Key.TrackCourse</span>
+                            }
+                        </div>
+                        <span class="count-badge">@circuit.Count() résultats</span>
+                    </div>
+                    <div class="table-scroll">
+                        <table class="data-table races-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">DATE / HEURE</th>
+                                    <th scope="col">CATÉGORIE</th>
+                                    <th scope="col">VOITURE / ÉQUIPE</th>
+                                    <th scope="col" class="numeric-cell">TEMPS QUALIF</th>
+                                    <th scope="col" class="numeric-cell">DELTA (n-1)</th>
+                                    <th scope="col" class="numeric-cell">TEMPS COURSE</th>
+                                    <th scope="col" class="numeric-cell">DELTA (n-1)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var record in circuit.OrderByDescending(record => record.StartedAt))
+                                {
+                                    <tr>
+                                        <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td><span class="category-badge">@record.Category</span></td>
+                                        <td class="car-cell">
+                                            <strong>@record.Car</strong>
+                                            <span>@record.TrackEvent</span>
+                                        </td>
+                                        <td class="numeric-cell">@FormatLap(record.QualifyingTime)</td>
+                                        <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
+                                        <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
+                                        <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            }
+        }
+    </section>
+}
+
+@code {
+    private static readonly string[] Categories = ["Hypercar", "LMP2", "LMGT3"];
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyList<MyRaceRecord> records = [];
+    private string[] tracks = [];
+    private string selectedTrack = string.Empty;
+    private string selectedCategory = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        UpdateState();
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            UpdateState();
+            StateHasChanged();
+        });
+
+    private void UpdateState()
+    {
+        state = DashboardData.Snapshot;
+        records = MyRacesPresentation.CreateRecords(state.Sessions);
+        tracks = records
+            .Select(record => record.TrackVenue)
+            .Distinct(StringComparer.OrdinalIgnoreCase)
+            .Order(StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+    }
+
+    private IReadOnlyList<MyRaceRecord> GetFilteredRecords() =>
+        records
+            .Where(record => string.IsNullOrEmpty(selectedTrack)
+                || string.Equals(record.TrackVenue, selectedTrack, StringComparison.OrdinalIgnoreCase))
+            .Where(record => string.IsNullOrEmpty(selectedCategory)
+                || string.Equals(record.Category, selectedCategory, StringComparison.Ordinal))
+            .ToArray();
+
+    private static string FormatLap(TimeSpan? time) =>
+        time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
+
+    private static RenderFragment FormatDelta(TimeSpan? delta) => builder =>
+    {
+        if (delta is not { } value)
+        {
+            builder.AddContent(0, "—");
+            return;
+        }
+
+        var cssClass = value < TimeSpan.Zero
+            ? "delta-value delta-gain"
+            : value > TimeSpan.Zero
+                ? "delta-value delta-loss"
+                : "delta-value";
+        var indicator = value < TimeSpan.Zero ? "🟢 " : value > TimeSpan.Zero ? "🔴 " : string.Empty;
+        var text = string.Create(
+            System.Globalization.CultureInfo.InvariantCulture,
+            $"{indicator}{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds:0.000}s");
+        builder.OpenElement(1, "span");
+        builder.AddAttribute(2, "class", cssClass);
+        builder.AddContent(3, text);
+        builder.CloseElement();
+    };
+}
