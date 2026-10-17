@@ -80,11 +80,12 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Appliquer la coloration conditionnelle des deltas (🟢 gain de temps, 🔴 perte de temps).
 
 ## Jalon — Déterminer l'utilisateur princial
-- [ ] Parmi tout les drivers détecter le nom qui reviens le plus souvent dans les fichiers et le sauvegarder dans le appsetting
+- [ ] Parmi tout les drivers dans les fichiers, détecter le nom qui reviens le plus souvent et le sauvegarder dans un appsetting `UserName`
+- [ ] Au premier démarrage si l'appsettings n'a pas encore le nom, attendre le chargement de toutes les données puis faire la detection
 - [ ] Afficher le nom du joueur sur la bar du menu au dessus
 - [ ] Toute les données afficher dans les menus devront etre basé sur se driver
 - [ ] Si le nom du driver n'est pas dans un fichier, ne pas prendre en compte le fichier
-- [ ] Permettre le changement du driver détecter dans le menu option en triant les noms par pourcentage d'apparition global
+- [ ] Permettre le changement du driver détecter dans le menu option en triant les noms par pourcentage d'apparition global et le sauvegarder dans le appsetting
 
 ## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)
 - [ ] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).
