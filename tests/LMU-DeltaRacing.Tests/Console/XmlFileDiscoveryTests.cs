@@ -39,16 +39,16 @@ public sealed class XmlFileDiscoveryTests
     }
 
     /// <summary>
-    /// Verifies that the repository test-assets directory can be located from test output.
+    /// Verifies that the repository assets directory can be located from test output.
     /// </summary>
     [TestMethod]
-    public void FindTestAssetsResultsDirectory_finds_the_repository_fixture_directory()
+    public void FindAssetsResultsDirectory_finds_the_repository_fixture_directory()
     {
-        var directory = XmlFileDiscovery.FindTestAssetsResultsDirectory(AppContext.BaseDirectory);
+        var directory = XmlFileDiscovery.FindAssetsResultsDirectory(AppContext.BaseDirectory);
 
         Directory.Exists(directory).Should().BeTrue();
         Path.GetFileName(directory).Should().Be("Results");
-        Path.GetFileName(Path.GetDirectoryName(directory)!).Should().Be("testAssets");
+        Path.GetFileName(Path.GetDirectoryName(directory)!).Should().Be("assets");
     }
 
     /// <summary>

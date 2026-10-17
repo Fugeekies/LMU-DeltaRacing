@@ -15,10 +15,13 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Surveillance dynamique du dossier des résultats, déduplication des chemins pendant l'exécution, notification des imports et échecs, et retries sur les fichiers verrouillés.
 - Ajout d'un dashboard Blazor local avec historique des sessions, classement des pilotes, progression du chargement et actualisation en direct des imports.
 - Ajout d'un profil de publication Windows x64 autonome pour lancer le dashboard sans installer le runtime .NET.
+- Ajout d'un installeur Windows Inno Setup, de fixtures de démonstration anonymisées et d'un test de démarrage de l'application publiée sans DLL externes.
 
 ### Changed
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
 - Affichage d'un titre dès le démarrage et remplacement du tableau des imports par une barre de progression et un résumé des résultats.
+- Publication du dashboard en exécutable autonome, fichier unique et élagué; l'installeur sélectionne les résultats LMU présents ou les fixtures anonymisées et le workflow de release est déclenché par tag.
+- Centralisation du jeu XML anonymisé dans `assets/Results`, partagé par les tests, l'application et la publication, avec suppression des copies brutes sous `tests/testAssets`.
 
 ### Performance
 - Test de charge de l'import dynamique sur 50 fichiers XML injectés simultanément; résultats consignés dans `docs/benchmarks/dynamic-import-load-report.md`.

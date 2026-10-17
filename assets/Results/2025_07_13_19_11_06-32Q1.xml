@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>3</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1752426152</DateTime>
+<TimeString>2025/07/13 19:02:32</TimeString>
+<TrackVenue>Bahrain International Circuit</TrackVenue>
+<TrackCourse>Bahrain International Circuit</TrackCourse>
+<TrackEvent>8 Hours of Bahrain</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\BahrainWEC_2023\1.17\layoutBahrain.mas</TrackData>
+<TrackLength>5386.8</TrackLength>
+<GameVersion>0.9200</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>LMP2,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<LimitedTires>1</LimitedTires>
+<TireWarmers>0</TireWarmers>
+<Qualify>
+<DateTime>1752426230</DateTime>
+<TimeString>2025/07/13 19:03:50</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>5</Minutes>
+<Stream>
+<Sent et="0.0">&quot;Alessandro Mannucci&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Tomo B&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;Ghost NW&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;ivano buglione&quot; has taken the wheel.</Sent>
+<Sent et="0.2">&quot;E Jarow&quot; has taken the wheel.</Sent>
+<Sent et="0.8">&quot;Blake Moe&quot; has taken the wheel.</Sent>
+<Sent et="0.8">&quot;Hapio Fleflus&quot; has taken the wheel.</Sent>
+<Sent et="0.9">&quot;Jerome Lichten&quot; has taken the wheel.</Sent>
+<Sent et="1.1">&quot;Ralf Hesse&quot; has taken the wheel.</Sent>
+<Sent et="1.1">&quot;Ben Simon&quot; has taken the wheel.</Sent>
+<Sent et="3.8">&quot;Josean Fernandez&quot; has taken the wheel.</Sent>
+<Sent et="4.3">&quot;Projek Paul&quot; has taken the wheel.</Sent>
+<Sent et="6.5">&quot;L Vargas&quot; has taken the wheel.</Sent>
+<Sent et="6.9">&quot;Eliezer Pereira&quot; has taken the wheel.</Sent>
+<Sent et="6.9">&quot;Enrique Ojeda&quot; has taken the wheel.</Sent>
+<Sent et="7.1">&quot;Rafael Campos&quot; has taken the wheel.</Sent>
+<Sent et="10.1">&quot;Marco Iammancini&quot; has taken the wheel.</Sent>
+<Sent et="18.5">&quot;Craig Reimertz&quot; has taken the wheel.</Sent>
+<TrackLimits Driver="Rafael Campos" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="47.8">No Further Action</TrackLimits>
+<TrackLimits Driver="E Jarow" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="48.7">No Further Action</TrackLimits>
+<Incident et="51.3">Maxime Crevan(15) reported contact (90.47) with Post</Incident>
+<TrackLimits Driver="Maxime Crevan" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="53.2">No Further Action</TrackLimits>
+<Score et="65.5">Eliezer Pereira(11) lap=0 point=1 t=-1.000 et=65.360</Score>
+<Score et="66.2">Ralf Hesse(19) lap=0 point=1 t=-1.000 et=66.060</Score>
+<Score et="66.3">L Vargas(8) lap=0 point=1 t=-1.000 et=66.040</Score>
+<TrackLimits Driver="Rafael Campos" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="67.1">No Further Action</TrackLimits>
+<Score et="67.8">Pierre-Andre Bulle(13) lap=0 point=1 t=-1.000 et=67.821</Score>
+<Score et="67.9">E Jarow(0) lap=0 point=1 t=-1.000 et=67.880</Score>
+<Score et="68.1">Ben Simon(5) lap=0 point=1 t=-1.000 et=68.060</Score>
+<TrackLimits Driver="Josean Fernandez" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="68.2">No Further Action</TrackLimits>
+<TrackLimits Driver="ivano buglione" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="68.6">No Further Action</TrackLimits>
+<Score et="68.7">Projek Paul(3) lap=0 point=1 t=-1.000 et=68.640</Score>
+<Score et="69.6">Marco Iammancini(7) lap=0 point=1 t=-1.000 et=69.460</Score>
+<Score et="71.0">Maxime Crevan(15) lap=0 point=1 t=-1.000 et=71.000</Score>
+<Score et="71.1">Rafael Campos(17) lap=0 point=1 t=-1.000 et=70.880</Score>
+<TrackLimits Driver="E Jarow" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="73.7">No Further Action</TrackLimits>
+<Score et="74.2">Hapio Fleflus(6) lap=0 point=1 t=-1.000 et=74.140</Score>
+<Score et="76.9">Alessandro Mannucci(2) lap=0 point=1 t=-1.000 et=76.900</Score>
+<TrackLimits Driver="E Jarow" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="77.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Crevan" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="78.9">No Further Action</TrackLimits>
+<Score et="79.2">Craig Reimertz(9) lap=0 point=1 t=-1.000 et=79.160</Score>
+<TrackLimits Driver="Tomo B" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="81.6">No Further Action</TrackLimits>
+<Score et="89.5">Josean Fernandez(4) lap=0 point=1 t=-1.000 et=89.500</Score>
+<Score et="92.8">ivano buglione(16) lap=0 point=1 t=-1.000 et=92.760</Score>
+<TrackLimits Driver="Eliezer Pereira" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="94.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Simon" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="96.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Marco Iammancini" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="99.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Rafael Campos" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="100.7">No Further Action</TrackLimits>
+<Score et="106.7">Tomo B(12) lap=0 point=1 t=-1.000 et=106.700</Score>
+<Score et="117.7">Ralf Hesse(19) lap=0 point=2 t=-1.000 et=117.600</Score>
+<Score et="117.8">Eliezer Pereira(11) lap=0 point=2 t=-1.000 et=117.620</Score>
+<Score et="118.3">L Vargas(8) lap=0 point=2 t=-1.000 et=118.100</Score>
+<Score et="118.5">Ghost NW(14) lap=0 point=1 t=-1.000 et=118.440</Score>
+<Score et="120.2">Ben Simon(5) lap=0 point=2 t=-1.000 et=120.140</Score>
+<TrackLimits Driver="Ben Simon" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="121.8">No Further Action</TrackLimits>
+<Score et="121.9">Projek Paul(3) lap=0 point=2 t=-1.000 et=121.720</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="122.3">No Further Action</TrackLimits>
+<Score et="122.7">Maxime Crevan(15) lap=0 point=2 t=-1.000 et=122.640</Score>
+<Score et="123.3">Pierre-Andre Bulle(13) lap=0 point=2 t=-1.000 et=123.250</Score>
+<Score et="123.6">Marco Iammancini(7) lap=0 point=2 t=-1.000 et=123.560</Score>
+<Score et="124.1">Rafael Campos(17) lap=0 point=2 t=-1.000 et=123.960</Score>
+<TrackLimits Driver="Blake Moe" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="127.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Maxime Crevan" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="128.3">No Further Action</TrackLimits>
+<Score et="129.0">Hapio Fleflus(6) lap=0 point=2 t=-1.000 et=128.920</Score>
+<Score et="129.6">Alessandro Mannucci(2) lap=0 point=2 t=-1.000 et=129.500</Score>
+<Score et="130.1">E Jarow(0) lap=0 point=2 t=-1.000 et=130.100</Score>
+<Score et="131.9">Blake Moe(18) lap=0 point=1 t=-1.000 et=131.820</Score>
+<Score et="134.7">Craig Reimertz(9) lap=0 point=2 t=-1.000 et=134.560</Score>
+<TrackLimits Driver="Josean Fernandez" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="135.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Hapio Fleflus" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="135.9">No Further Action</TrackLimits>
+<Score et="143.3">Josean Fernandez(4) lap=0 point=2 t=-1.000 et=143.240</Score>
+<TrackLimits Driver="ivano buglione" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="143.7">No Further Action</TrackLimits>
+<Score et="146.6">Ralf Hesse(19) lap=1 point=0 t=-1.000 et=146.560</Score>
+<Score et="146.6">Eliezer Pereira(11) lap=1 point=0 t=-1.000 et=146.480</Score>
+<Score et="147.4">L Vargas(8) lap=1 point=0 t=-1.000 et=147.200</Score>
+<Score et="148.5">Ben Simon(5) lap=1 point=0 t=-1.000 et=148.500</Score>
+<Score et="151.2">Projek Paul(3) lap=1 point=0 t=-1.000 et=151.020</Score>
+<Score et="151.5">Maxime Crevan(15) lap=1 point=0 t=-1.000 et=151.460</Score>
+<Score et="152.3">Marco Iammancini(7) lap=1 point=0 t=-1.000 et=152.220</Score>
+<Score et="153.2">Rafael Campos(17) lap=1 point=0 t=-1.000 et=153.040</Score>
+<Score et="153.4">Pierre-Andre Bulle(13) lap=1 point=0 t=-1.000 et=153.396</Score>
+<Score et="153.8">ivano buglione(16) lap=0 point=2 t=-1.000 et=153.740</Score>
+<TrackLimits Driver="Hapio Fleflus" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="157.6">No Further Action</TrackLimits>
+<Score et="158.0">Alessandro Mannucci(2) lap=1 point=0 t=-1.000 et=157.880</Score>
+<Score et="159.5">E Jarow(0) lap=1 point=0 t=-1.000 et=159.400</Score>
+<Score et="160.2">Tomo B(12) lap=0 point=2 t=-1.000 et=160.200</Score>
+<TrackLimits Driver="Craig Reimertz" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="161.0">No Further Action</TrackLimits>
+<Score et="165.0">Hapio Fleflus(6) lap=1 point=0 t=-1.000 et=164.900</Score>
+<Incident et="166.6">Pierre-Andre Bulle(13) reported contact (16.00) with Post</Incident>
+<Incident et="167.1">L Vargas(8) reported contact (38.85) with Sign</Incident>
+<TrackLimits Driver="Tomo B" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ralf Hesse" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="168.3">No Further Action</TrackLimits>
+<Score et="169.4">Craig Reimertz(9) lap=1 point=0 t=-1.000 et=169.280</Score>
+<TrackLimits Driver="Maxime Crevan" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="169.4">No Further Action</TrackLimits>
+<Incident et="169.7">L Vargas(8) reported contact (153.59) with Sign</Incident>
+<TrackLimits Driver="Pierre-Andre Bulle" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.9">No Further Action</TrackLimits>
+<Score et="172.0">Ghost NW(14) lap=0 point=2 t=-1.000 et=171.880</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="172.0">No Further Action</TrackLimits>
+<Score et="173.7">Josean Fernandez(4) lap=1 point=0 t=-1.000 et=173.660</Score>
+<TrackLimits Driver="Enrique Ojeda" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Hapio Fleflus" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.9">No Further Action</TrackLimits>
+<Sector Driver="Eliezer Pereira" ID="11" Sector="1" Class="LMP2" et="180.9">Eliezer Pereira(11) set new best for sector 1</Sector>
+<Score et="180.9">Eliezer Pereira(11) lap=1 point=1 t=34.258 et=180.740</Score>
+<Score et="181.4">Jerome Lichten(1) lap=0 point=1 t=-1.000 et=181.260</Score>
+<TrackLimits Driver="E Jarow" ID="0" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="3" et="181.6">Invalid Lap Cut Track</TrackLimits>
+<Score et="182.0">Ralf Hesse(19) lap=1 point=1 t=35.355 et=181.920</Score>
+<Score et="183.3">Ben Simon(5) lap=1 point=1 t=34.743 et=183.240</Score>
+<TrackLimits Driver="Craig Reimertz" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="184.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Hapio Fleflus" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="185.1">No Further Action</TrackLimits>
+<Score et="186.1">Maxime Crevan(15) lap=1 point=1 t=34.592 et=186.040</Score>
+<Score et="186.2">ivano buglione(16) lap=1 point=0 t=-1.000 et=186.200</Score>
+<Score et="187.1">Marco Iammancini(7) lap=1 point=1 t=34.767 et=187.000</Score>
+<Score et="187.3">Projek Paul(3) lap=1 point=1 t=36.135 et=187.160</Score>
+<Score et="188.8">Rafael Campos(17) lap=1 point=1 t=35.488 et=188.520</Score>
+<Score et="191.7">Tomo B(12) lap=1 point=0 t=-1.000 et=191.660</Score>
+<Score et="192.2">Blake Moe(18) lap=0 point=2 t=-1.000 et=192.060</Score>
+<Score et="192.8">L Vargas(8) lap=1 point=1 t=45.429 et=192.620</Score>
+<Score et="192.9">Alessandro Mannucci(2) lap=1 point=1 t=35.021 et=192.900</Score>
+<Score et="193.0">Pierre-Andre Bulle(13) lap=1 point=1 t=39.644 et=193.040</Score>
+<TrackLimits Driver="Josean Fernandez" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="194.6">No Further Action</TrackLimits>
+<Score et="194.8">E Jarow(0) lap=1 point=1 t=-1.000 et=194.720</Score>
+<TrackLimits Driver="Ben Simon" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="196.5">No Further Action</TrackLimits>
+<TrackLimits Driver="E Jarow" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="200.9">No Further Action</TrackLimits>
+<Score et="201.7">Ghost NW(14) lap=1 point=0 t=-1.000 et=201.580</Score>
+<Score et="201.8">Enrique Ojeda(10) lap=0 point=1 t=-1.000 et=201.680</Score>
+<Score et="202.5">Hapio Fleflus(6) lap=1 point=1 t=37.486 et=202.400</Score>
+<Score et="208.4">Craig Reimertz(9) lap=1 point=1 t=39.018 et=208.300</Score>
+<Score et="208.9">Josean Fernandez(4) lap=1 point=1 t=35.178 et=208.840</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="209.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ben Simon" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="214.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Craig Reimertz" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="216.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Mannucci" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="221.8">No Further Action</TrackLimits>
+<Score et="222.0">Blake Moe(18) lap=1 point=0 t=-1.000 et=221.880</Score>
+<Score et="224.0">ivano buglione(16) lap=1 point=1 t=37.733 et=223.940</Score>
+<Score et="227.1">Tomo B(12) lap=1 point=1 t=35.404 et=227.060</Score>
+<TrackLimits Driver="Hapio Fleflus" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="231.9">No Further Action</TrackLimits>
+<Sector Driver="Ralf Hesse" ID="19" Sector="2" Class="LMP2" et="232.6">Ralf Hesse(19) set new best for sector 2</Sector>
+<Score et="232.6">Ralf Hesse(19) lap=1 point=2 t=85.987 et=232.560</Score>
+<Score et="232.7">Eliezer Pereira(11) lap=1 point=2 t=86.046 et=232.520</Score>
+<Score et="235.2">Ben Simon(5) lap=1 point=2 t=-1.000 et=235.180</Score>
+<Score et="235.9">Jerome Lichten(1) lap=0 point=2 t=-1.000 et=235.820</Score>
+<Score et="237.2">Maxime Crevan(15) lap=1 point=2 t=85.750 et=237.200</Score>
+<Score et="237.5">Ghost NW(14) lap=1 point=1 t=35.863 et=237.440</Score>
+<TrackLimits Driver="Ralf Hesse" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="237.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Blake Moe" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="238.8">No Further Action</TrackLimits>
+<Score et="238.9">Marco Iammancini(7) lap=1 point=2 t=86.603 et=238.840</Score>
+<TrackLimits Driver="Josean Fernandez" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="239.0">No Further Action</TrackLimits>
+<Score et="240.3">Projek Paul(3) lap=1 point=2 t=89.204 et=240.240</Score>
+<TrackLimits Driver="Pierre-Andre Bulle" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="240.7">No Further Action</TrackLimits>
+<Score et="241.6">Rafael Campos(17) lap=1 point=2 t=88.342 et=241.380</Score>
+<TrackLimits Driver="Maxime Crevan" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="242.9">No Further Action</TrackLimits>
+<Score et="245.2">Alessandro Mannucci(2) lap=1 point=2 t=-1.000 et=245.120</Score>
+<TrackLimits Driver="Ben Simon" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="246.5">No Further Action</TrackLimits>
+<Score et="246.7">E Jarow(0) lap=1 point=2 t=-1.000 et=246.660</Score>
+<TrackLimits Driver="Alessandro Mannucci" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="246.7">No Further Action</TrackLimits>
+<Score et="247.4">L Vargas(8) lap=1 point=2 t=-1.000 et=247.140</Score>
+<Score et="251.4">Pierre-Andre Bulle(13) lap=1 point=2 t=98.025 et=251.421</Score>
+<Score et="253.7">Enrique Ojeda(10) lap=0 point=2 t=-1.000 et=253.520</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="254.9">No Further Action</TrackLimits>
+<Score et="256.7">Hapio Fleflus(6) lap=1 point=2 t=91.744 et=256.660</Score>
+<Score et="259.9">Blake Moe(18) lap=1 point=1 t=37.892 et=259.780</Score>
+<Sector Driver="Eliezer Pereira" ID="11" Sector="3" Class="LMP2" et="261.4">Eliezer Pereira(11) set new best for sector 3</Sector>
+<Score et="261.4">Eliezer Pereira(11) lap=2 point=0 t=114.781 et=261.260</Score>
+<Score et="261.5">Ralf Hesse(19) lap=2 point=0 t=114.849 et=261.420</Score>
+<Score et="262.2">Josean Fernandez(4) lap=1 point=2 t=88.447 et=262.100</Score>
+<Score et="263.0">Craig Reimertz(9) lap=1 point=2 t=93.498 et=262.780</Score>
+<TrackLimits Driver="Projek Paul" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="263.1">No Further Action</TrackLimits>
+<Score et="265.7">Jerome Lichten(1) lap=1 point=0 t=-1.000 et=265.540</Score>
+<Sector Driver="Maxime Crevan" ID="15" Sector="3" Class="LMP2" et="265.7">Maxime Crevan(15) set new best for sector 3</Sector>
+<Score et="265.7">Maxime Crevan(15) lap=2 point=0 t=114.176 et=265.640</Score>
+<Score et="266.3">Ben Simon(5) lap=2 point=0 t=117.816 et=266.320</Score>
+<Score et="267.6">Marco Iammancini(7) lap=2 point=0 t=115.273 et=267.500</Score>
+<Score et="270.0">Projek Paul(3) lap=2 point=0 t=118.885 et=269.920</Score>
+<Score et="270.5">Rafael Campos(17) lap=2 point=0 t=117.219 et=270.260</Score>
+<Score et="273.7">Alessandro Mannucci(2) lap=2 point=0 t=115.792 et=273.680</Score>
+<TrackLimits Driver="ivano buglione" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="274.3">No Further Action</TrackLimits>
+<Score et="275.7">E Jarow(0) lap=2 point=0 t=-1.000 et=275.700</Score>
+<TrackLimits Driver="Enrique Ojeda" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="276.1">No Further Action</TrackLimits>
+<Score et="277.2">L Vargas(8) lap=2 point=0 t=129.772 et=276.960</Score>
+<Score et="280.1">Tomo B(12) lap=1 point=2 t=88.383 et=280.040</Score>
+<Score et="282.0">Maxime Crevan(15) lap=2 point=1 t=-1.000 et=281.902</Score>
+<Score et="282.0">Maxime Crevan(15) lap=2 point=2 t=-1.000 et=281.902</Score>
+<Score et="282.0">Maxime Crevan(15) lap=3 point=0 t=-1.000 et=281.902</Score>
+<Score et="282.1">Pierre-Andre Bulle(13) lap=2 point=0 t=128.741 et=282.137</Score>
+<Score et="282.6">Enrique Ojeda(10) lap=1 point=0 t=-1.000 et=282.400</Score>
+<Score et="282.9">ivano buglione(16) lap=1 point=2 t=96.643 et=282.840</Score>
+<Score et="286.4">Hapio Fleflus(6) lap=2 point=0 t=121.459 et=286.360</Score>
+<TrackLimits Driver="Blake Moe" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="288.6">No Further Action</TrackLimits>
+<Incident et="288.8">Hapio Fleflus(6) reported contact (769.92) with Sign</Incident>
+<Sector et="289.0">Hapio Fleflus(6) reports new suspension damage</Sector>
+<Sector et="289.0">Hapio Fleflus(6) reports new suspension damage</Sector>
+<Incident et="289.0">Hapio Fleflus(6) reported contact (372.89) with Immovable</Incident>
+<Score et="290.9">Ghost NW(14) lap=1 point=2 t=89.261 et=290.840</Score>
+<Score et="291.5">Josean Fernandez(4) lap=2 point=0 t=117.786 et=291.440</Score>
+<Incident et="291.8">Hapio Fleflus(6) reported contact (1036.49) with Immovable</Incident>
+<Score et="293.0">Craig Reimertz(9) lap=2 point=0 t=123.532 et=292.800</Score>
+<Score et="295.8">Eliezer Pereira(11) lap=2 point=1 t=34.398 et=295.660</Score>
+<Score et="296.9">Ralf Hesse(19) lap=2 point=1 t=35.441 et=296.860</Score>
+<Score et="298.9">Hapio Fleflus(6) lap=2 point=1 t=-1.000 et=298.749</Score>
+<Score et="298.9">Hapio Fleflus(6) lap=2 point=2 t=-1.000 et=298.749</Score>
+<Score et="298.9">Hapio Fleflus(6) lap=3 point=0 t=-1.000 et=298.749</Score>
+<Incident et="300.0">Rafael Campos(17) reported contact (2333.88) with Immovable</Incident>
+<Score et="300.8">Ben Simon(5) lap=2 point=1 t=34.443 et=300.760</Score>
+<Score et="301.5">Jerome Lichten(1) lap=1 point=1 t=35.831 et=301.380</Score>
+<TrackLimits Driver="Rafael Campos" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="302.1">No Further Action</TrackLimits>
+<Score et="303.7">Marco Iammancini(7) lap=2 point=1 t=36.094 et=303.600</Score>
+<Score et="305.5">Projek Paul(3) lap=2 point=1 t=35.405 et=305.320</Score>
+<Score et="308.5">Rafael Campos(17) lap=2 point=1 t=38.080 et=308.340</Score>
+<Score et="308.8">Alessandro Mannucci(2) lap=2 point=1 t=35.034 et=308.700</Score>
+<Score et="309.2">Tomo B(12) lap=2 point=0 t=117.550 et=309.200</Score>
+<TrackLimits Driver="Craig Reimertz" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="309.9">No Further Action</TrackLimits>
+<Score et="311.1">E Jarow(0) lap=2 point=1 t=35.349 et=311.040</Score>
+<TrackLimits Driver="Jerome Lichten" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="311.2">No Further Action</TrackLimits>
+<Score et="312.7">L Vargas(8) lap=2 point=1 t=35.470 et=312.440</Score>
+<Score et="313.3">Blake Moe(18) lap=1 point=2 t=91.340 et=313.220</Score>
+<Score et="314.2">ivano buglione(16) lap=2 point=0 t=127.983 et=314.180</Score>
+<Score et="317.1">Enrique Ojeda(10) lap=1 point=1 t=34.557 et=316.960</Score>
+<Score et="318.6">Pierre-Andre Bulle(13) lap=2 point=1 t=36.501 et=318.638</Score>
+<Score et="321.0">Ghost NW(14) lap=2 point=0 t=119.322 et=320.900</Score>
+<TrackLimits Driver="Rafael Campos" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="324.5">No Further Action</TrackLimits>
+<Score et="326.7">Josean Fernandez(4) lap=2 point=1 t=35.130 et=326.580</Score>
+<Score et="328.2">Tomo B(12) lap=2 point=1 t=-1.000 et=328.138</Score>
+<Score et="328.2">Tomo B(12) lap=2 point=2 t=-1.000 et=328.138</Score>
+<Score et="328.2">Tomo B(12) lap=3 point=0 t=-1.000 et=328.138</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="329.5">No Further Action</TrackLimits>
+<Score et="331.4">Craig Reimertz(9) lap=2 point=1 t=38.348 et=331.160</Score>
+<TrackLimits Driver="Projek Paul" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="336.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Mannucci" ID="2" Lap="2" WarningPoints="1" CurrentPoints="1" Resolution="3" et="337.5">Invalid Lap Cut Track</TrackLimits>
+<Score et="343.2">Blake Moe(18) lap=2 point=0 t=121.290 et=343.160</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="343.3">No Further Action</TrackLimits>
+<Score et="346.7">Eliezer Pereira(11) lap=2 point=2 t=85.202 et=346.460</Score>
+<Score et="347.9">Ralf Hesse(19) lap=2 point=2 t=86.424 et=347.840</Score>
+<Score et="351.0">Alessandro Mannucci(2) lap=2 point=2 t=-1.000 et=350.831</Score>
+<Score et="351.0">Alessandro Mannucci(2) lap=3 point=0 t=-1.000 et=350.831</Score>
+<Score et="352.0">Ben Simon(5) lap=2 point=2 t=85.590 et=351.900</Score>
+<Score et="352.4">ivano buglione(16) lap=2 point=1 t=38.088 et=352.280</Score>
+<Score et="354.5">Jerome Lichten(1) lap=1 point=2 t=88.896 et=354.440</Score>
+<Score et="355.5">Marco Iammancini(7) lap=2 point=2 t=87.943 et=355.440</Score>
+<TrackLimits Driver="Josean Fernandez" ID="4" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="3" et="356.2">Invalid Lap Cut Track</TrackLimits>
+<Score et="357.2">Ghost NW(14) lap=2 point=1 t=36.219 et=357.120</Score>
+<TrackLimits Driver="Blake Moe" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="358.8">No Further Action</TrackLimits>
+<Score et="359.4">Projek Paul(3) lap=2 point=2 t=89.351 et=359.260</Score>
+<Score et="361.3">Rafael Campos(17) lap=2 point=2 t=90.863 et=361.120</Score>
+<Score et="363.3">E Jarow(0) lap=2 point=2 t=87.588 et=363.280</Score>
+<Score et="367.0">L Vargas(8) lap=2 point=2 t=-1.000 et=366.860</Score>
+<Score et="368.0">Enrique Ojeda(10) lap=1 point=2 t=85.464 et=367.860</Score>
+<Score et="374.5">Pierre-Andre Bulle(13) lap=2 point=2 t=92.393 et=374.530</Score>
+<Sector Driver="Eliezer Pereira" ID="11" Sector="3" Class="LMP2" et="374.8">Eliezer Pereira(11) set new best for sector 3</Sector>
+<Score et="374.8">Eliezer Pereira(11) lap=3 point=0 t=113.334 et=374.600</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="374.9">No Further Action</TrackLimits>
+<Score et="376.0">Ralf Hesse(19) lap=3 point=0 t=114.615 et=376.020</Score>
+<Score et="379.4">Josean Fernandez(4) lap=2 point=2 t=-1.000 et=379.380</Score>
+<Score et="380.3">Ben Simon(5) lap=3 point=0 t=113.955 et=380.260</Score>
+<Score et="381.9">Blake Moe(18) lap=2 point=1 t=38.628 et=381.800</Score>
+<Score et="384.2">Eliezer Pereira(11) lap=3 point=1 t=-1.000 et=383.985</Score>
+<Score et="384.2">Eliezer Pereira(11) lap=3 point=2 t=-1.000 et=383.985</Score>
+<Score et="384.2">Eliezer Pereira(11) lap=4 point=0 t=-1.000 et=383.985</Score>
+<Score et="384.4">Jerome Lichten(1) lap=2 point=0 t=118.652 et=384.200</Score>
+<Score et="384.4">Marco Iammancini(7) lap=3 point=0 t=116.768 et=384.260</Score>
+<Score et="384.9">Craig Reimertz(9) lap=2 point=2 t=91.910 et=384.720</Score>
+<TrackLimits Driver="ivano buglione" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="387.5">No Further Action</TrackLimits>
+<Score et="391.4">Rafael Campos(17) lap=3 point=0 t=120.912 et=391.180</Score>
+<Score et="391.5">Ralf Hesse(19) lap=3 point=1 t=-1.000 et=391.452</Score>
+<Score et="391.5">Ralf Hesse(19) lap=3 point=2 t=-1.000 et=391.452</Score>
+<Score et="391.5">Ralf Hesse(19) lap=4 point=0 t=-1.000 et=391.452</Score>
+<Score et="392.7">E Jarow(0) lap=3 point=0 t=116.952 et=392.660</Score>
+<Score et="393.6">Projek Paul(3) lap=3 point=0 t=123.577 et=393.480</Score>
+<Score et="396.6">Enrique Ojeda(10) lap=2 point=0 t=114.000 et=396.400</Score>
+<Score et="397.4">L Vargas(8) lap=3 point=0 t=120.227 et=397.200</Score>
+<Score et="397.5">Jerome Lichten(1) lap=2 point=1 t=-1.000 et=397.328</Score>
+<Score et="397.5">Jerome Lichten(1) lap=2 point=2 t=-1.000 et=397.328</Score>
+<Score et="397.5">Jerome Lichten(1) lap=3 point=0 t=-1.000 et=397.328</Score>
+<Score et="405.7">Rafael Campos(17) lap=3 point=1 t=-1.000 et=405.447</Score>
+<Score et="405.7">Rafael Campos(17) lap=3 point=2 t=-1.000 et=405.447</Score>
+<Score et="405.7">Rafael Campos(17) lap=4 point=0 t=-1.000 et=405.447</Score>
+<Score et="408.5">Josean Fernandez(4) lap=3 point=0 t=-1.000 et=408.440</Score>
+<TrackLimits Driver="Blake Moe" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="408.9">No Further Action</TrackLimits>
+<Score et="409.0">Ghost NW(14) lap=2 point=2 t=88.101 et=409.000</Score>
+<TrackLimits Driver="E Jarow" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="409.8">No Further Action</TrackLimits>
+<Score et="410.0">Enrique Ojeda(10) lap=2 point=1 t=-1.000 et=409.759</Score>
+<Score et="410.0">Enrique Ojeda(10) lap=2 point=2 t=-1.000 et=409.759</Score>
+<Score et="410.0">Enrique Ojeda(10) lap=3 point=0 t=-1.000 et=409.759</Score>
+<Score et="410.9">Pierre-Andre Bulle(13) lap=3 point=0 t=128.725 et=410.861</Score>
+<Incident et="413.7">L Vargas(8) reported contact (40.35) with Post</Incident>
+<TrackLimits Driver="E Jarow" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="414.3">No Further Action</TrackLimits>
+<Score et="414.7">Craig Reimertz(9) lap=3 point=0 t=121.736 et=414.540</Score>
+<TrackLimits Driver="L Vargas" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="415.2">No Further Action</TrackLimits>
+<Sector et="415.8">Pierre-Andre Bulle(13) reports new suspension damage</Sector>
+<Sector et="415.8">Pierre-Andre Bulle(13) reports new suspension damage</Sector>
+<Incident et="415.8">Pierre-Andre Bulle(13) reported contact (401.15) with Immovable</Incident>
+<Score et="415.9">ivano buglione(16) lap=2 point=2 t=-1.000 et=415.721</Score>
+<Score et="415.9">ivano buglione(16) lap=3 point=0 t=-1.000 et=415.721</Score>
+<TrackLimits Driver="Pierre-Andre Bulle" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="418.5">No Further Action</TrackLimits>
+<Score et="419.8">Josean Fernandez(4) lap=3 point=1 t=-1.000 et=419.452</Score>
+<Score et="419.8">Josean Fernandez(4) lap=3 point=2 t=-1.000 et=419.452</Score>
+<Score et="419.8">Josean Fernandez(4) lap=4 point=0 t=-1.000 et=419.452</Score>
+<Score et="419.8">Marco Iammancini(7) lap=3 point=1 t=35.476 et=419.740</Score>
+<Score et="419.9">L Vargas(8) lap=3 point=1 t=-1.000 et=419.669</Score>
+<Score et="419.9">L Vargas(8) lap=3 point=2 t=-1.000 et=419.669</Score>
+<Score et="419.9">L Vargas(8) lap=4 point=0 t=-1.000 et=419.669</Score>
+<TrackLimits Driver="E Jarow" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="422.8">No Further Action</TrackLimits>
+<Score et="429.8">Projek Paul(3) lap=3 point=1 t=36.217 et=429.700</Score>
+<Score et="432.9">Craig Reimertz(9) lap=3 point=1 t=-1.000 et=432.792</Score>
+<Score et="432.9">Craig Reimertz(9) lap=3 point=2 t=-1.000 et=432.792</Score>
+<Score et="432.9">Craig Reimertz(9) lap=4 point=0 t=-1.000 et=432.792</Score>
+<Score et="437.4">Blake Moe(18) lap=2 point=2 t=94.090 et=437.260</Score>
+<Score et="438.0">Ghost NW(14) lap=3 point=0 t=117.106 et=438.000</Score>
+</Stream>
+<MostLapsCompleted>4</MostLapsCompleted>
+<Driver>
+<Name>Driver 0707</Name>
+<Connected>1</Connected>
+<VehFile>9_PREMA_LMAA381349.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Prema Racing #9:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Prema Racing #9</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="--.---" topspeed="255.85" fuel="0.102" fuelUsed="0.898" twfl="0.988" twfr="0.992" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="1" et="146.4800" s1="34.2584" s2="51.7878" s3="28.7344" topspeed="277.02" fuel="0.059" fuelUsed="0.043" twfl="0.976" twfr="0.980" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.7806</Lap>
+<Lap num="3" p="1" et="261.2600" s1="34.3980" s2="50.8036" s3="28.1328" topspeed="277.92" fuel="0.012" fuelUsed="0.047" twfl="0.965" twfr="0.973" twrl="0.965" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.3343</Lap>
+<Lap num="4" p="1" et="374.6001" topspeed="252.70" fuel="0.141" fuelUsed="-0.129" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>113.3343</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0292</Name>
+<Connected>1</Connected>
+<VehFile>45_24_CROWB035605E.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Crowdstrike Racing by APR 2024 #45:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Crowdstrike Racing by APR 2024 #45</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="--.---" topspeed="259.00" fuel="0.145" fuelUsed="0.855" twfl="0.988" twfr="0.988" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="4" et="148.5000" s1="34.7430" topspeed="279.27" fuel="0.102" fuelUsed="0.043" twfl="0.965" twfr="0.976" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.8162</Lap>
+<Lap num="3" p="2" et="266.3201" s1="34.4426" s2="51.1471" s3="28.3657" topspeed="279.27" fuel="0.059" fuelUsed="0.043" twfl="0.953" twfr="0.969" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.9554</Lap>
+<BestLapTime>113.9554</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0728</Name>
+<Connected>1</Connected>
+<VehFile>14_24_AO_L43BDE906.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>AO by TF 2024 #14:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>AO by TF 2024 #14</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="--.---" topspeed="255.85" fuel="0.102" fuelUsed="0.898" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="3" et="282.3999" s1="34.5573" s2="50.9071" s3="28.5356" topspeed="277.02" fuel="0.055" fuelUsed="0.047" twfl="0.961" twfr="0.973" twrl="0.976" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.9999</Lap>
+<Lap num="3" p="3" et="396.3999" topspeed="259.90" fuel="0.141" fuelUsed="-0.086" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>113.9999</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Steering=1,Clutch,Opposite,SpinRecovery,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1816</Name>
+<Connected>1</Connected>
+<VehFile>28_24_IDEC6AF83972.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>IDEC Sport 2024 #28:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>IDEC Sport 2024 #28</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="--.---" topspeed="258.10" fuel="0.275" fuelUsed="0.725" twfl="0.984" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="1" et="151.4600" s1="34.5920" s2="51.1584" s3="28.4255" topspeed="277.02" fuel="0.231" fuelUsed="0.043" twfl="0.965" twfr="0.973" twrl="0.976" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.1760</Lap>
+<Lap num="3" p="1" et="265.6399" topspeed="278.82" fuel="0.318" fuelUsed="-0.086" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>114.1760</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2203</Name>
+<Connected>1</Connected>
+<VehFile>397_24_ORECA07.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Oreca 07 Custom Team 2024 #397</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>Hesse Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="--.---" topspeed="256.75" fuel="0.196" fuelUsed="0.804" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="2" et="146.5601" s1="35.3552" s2="50.6316" s3="28.8620" topspeed="277.47" fuel="0.149" fuelUsed="0.047" twfl="0.973" twfr="0.984" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.8487</Lap>
+<Lap num="3" p="3" et="261.4199" s1="35.4407" s2="50.9833" s3="28.1912" topspeed="277.92" fuel="0.106" fuelUsed="0.043" twfl="0.941" twfr="0.973" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.6152</Lap>
+<Lap num="4" p="4" et="376.0200" topspeed="276.12" fuel="0.239" fuelUsed="-0.133" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>114.6152</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1670</Name>
+<Connected>1</Connected>
+<VehFile>9_PREMA_LMAA381349.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Prema Racing #9:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Prema Racing #9</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="--.---" topspeed="257.65" fuel="0.165" fuelUsed="0.835" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="4" et="152.2200" s1="34.7666" s2="51.8367" s3="28.6697" topspeed="278.37" fuel="0.122" fuelUsed="0.043" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.2730</Lap>
+<Lap num="3" p="5" et="267.5000" s1="36.0939" s2="51.8491" s3="28.8254" topspeed="277.92" fuel="0.078" fuelUsed="0.043" twfl="0.953" twfr="0.965" twrl="0.969" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">116.7684</Lap>
+<BestLapTime>115.2730</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0083</Name>
+<Connected>1</Connected>
+<VehFile>9_24_PROTOA1C2A176.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition 2024 #9:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Proton Competition 2024 #9</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="--.---" topspeed="258.55" fuel="0.149" fuelUsed="0.851" twfl="0.984" twfr="0.988" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="5" et="157.8799" s1="35.0210" topspeed="279.27" fuel="0.106" fuelUsed="0.043" twfl="0.969" twfr="0.976" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.7924</Lap>
+<Lap num="3" p="5" et="273.6799" s1="35.0337" topspeed="279.72" fuel="0.192" fuelUsed="-0.086" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>115.7924</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0681</Name>
+<Connected>1</Connected>
+<VehFile>34_INTER_W8878CA94.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inter Europol Competition #34:EC</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Inter Europol Competition #34</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="--.---" topspeed="254.95" fuel="0.957" fuelUsed="0.043" twfl="0.980" twfr="0.969" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="9" et="159.3999" topspeed="275.22" fuel="0.910" fuelUsed="0.047" twfl="0.961" twfr="0.933" twrl="0.961" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="7" et="275.7000" s1="35.3492" s2="52.2392" s3="29.3636" topspeed="274.77" fuel="0.871" fuelUsed="0.039" twfl="0.941" twfr="0.922" twrl="0.949" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">116.9519</Lap>
+<BestLapTime>116.9519</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0912</Name>
+<Connected>1</Connected>
+<VehFile>65_24_PANI34903F7D.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Panis Racing 2024 #65:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Panis Racing 2024 #65</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="--.---" topspeed="254.50" fuel="0.957" fuelUsed="0.043" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="11" et="201.5801" s1="35.8630" s2="53.3976" s3="30.0617" topspeed="275.22" fuel="0.918" fuelUsed="0.039" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.3223</Lap>
+<Lap num="3" p="9" et="320.8999" s1="36.2186" s2="51.8820" s3="29.0058" topspeed="274.77" fuel="0.875" fuelUsed="0.043" twfl="0.969" twfr="0.976" twrl="0.973" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.1064</Lap>
+<BestLapTime>117.1064</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2195</Name>
+<Connected>1</Connected>
+<VehFile>65_24_PANI34903F7D.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Panis Racing 2024 #65:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>Panis Racing 2024 #65</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="--.---" topspeed="257.20" fuel="0.275" fuelUsed="0.725" twfl="0.984" twfr="0.941" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="5" et="153.0400" s1="35.4877" s2="52.8546" s3="28.8771" topspeed="277.92" fuel="0.231" fuelUsed="0.043" twfl="0.965" twfr="0.929" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.2195</Lap>
+<Lap num="3" p="7" et="270.2600" s1="38.0796" s2="52.7834" s3="30.0492" topspeed="277.47" fuel="0.188" fuelUsed="0.043" twfl="0.941" twfr="0.914" twrl="0.965" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">120.9122</Lap>
+<Lap num="4" p="9" et="391.1799" topspeed="272.52" fuel="0.318" fuelUsed="-0.129" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>117.2195</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2617</Name>
+<Connected>1</Connected>
+<VehFile>25_24_ALGAD7AF4A6D.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Algarve Pro Racing 2024 #25:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>Algarve Pro Racing 2024 #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="254.05" fuel="0.071" fuelUsed="0.929" twfl="0.980" twfr="0.973" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="7" et="191.6599" s1="35.4039" s2="52.9790" s3="29.1671" topspeed="275.22" fuel="0.027" fuelUsed="0.043" twfl="0.957" twfr="0.933" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.5501</Lap>
+<Lap num="3" p="7" et="309.2000" topspeed="275.22" fuel="0.110" fuelUsed="-0.082" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>117.5501</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1306</Name>
+<Connected>1</Connected>
+<VehFile>25_24_ALGAD7AF4A6D.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Algarve Pro Racing 2024 #25:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Algarve Pro Racing 2024 #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="--.---" topspeed="250.90" fuel="0.196" fuelUsed="0.804" twfl="0.976" twfr="0.980" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="7" et="173.6599" s1="35.1785" s2="53.2680" s3="29.3392" topspeed="273.87" fuel="0.157" fuelUsed="0.039" twfl="0.957" twfr="0.969" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.7858</Lap>
+<Lap num="3" p="11" et="291.4399" s1="35.1299" topspeed="277.47" fuel="0.114" fuelUsed="0.043" twfl="0.922" twfr="0.957" twrl="0.973" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="11" et="408.4399" topspeed="258.55" fuel="0.239" fuelUsed="-0.125" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>117.7858</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1208</Name>
+<Connected>1</Connected>
+<VehFile>22_UNITED_EE321628.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports #22:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>United Autosports #22</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="--.---" topspeed="251.80" fuel="0.149" fuelUsed="0.851" twfl="0.988" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="10" et="265.5400" s1="35.8313" s2="53.0649" s3="29.7557" topspeed="275.67" fuel="0.106" fuelUsed="0.043" twfl="0.961" twfr="0.961" twrl="0.976" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.6519</Lap>
+<Lap num="3" p="12" et="384.2000" topspeed="253.15" fuel="0.192" fuelUsed="-0.086" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>118.6519</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2180</Name>
+<Connected>1</Connected>
+<VehFile>30_DUQUEIN8BA0435F.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Duqueine Team #30:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>Duqueine Team #30</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="--.---" topspeed="254.50" fuel="0.149" fuelUsed="0.851" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="6" et="151.0200" s1="36.1348" s2="53.0693" s3="29.6808" topspeed="277.02" fuel="0.110" fuelUsed="0.039" twfl="0.973" twfr="0.984" twrl="0.984" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.8849</Lap>
+<Lap num="3" p="12" et="269.9199" s1="35.4050" s2="53.9458" s3="34.2263" topspeed="274.77" fuel="0.071" fuelUsed="0.039" twfl="0.941" twfr="0.976" twrl="0.953" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.5772</Lap>
+<BestLapTime>118.8849</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1465</Name>
+<Connected>1</Connected>
+<VehFile>183_24_AFCF9BD1ED6.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse 2024 #183:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>AF Corse 2024 #183</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="--.---" topspeed="257.20" fuel="0.212" fuelUsed="0.788" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="9" et="147.2000" s1="45.4288" topspeed="278.37" fuel="0.169" fuelUsed="0.043" twfl="0.945" twfr="0.973" twrl="0.929" twrr="0.894" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">129.7719</Lap>
+<Lap num="3" p="15" et="276.9600" s1="35.4705" topspeed="277.92" fuel="0.125" fuelUsed="0.043" twfl="0.929" twfr="0.961" twrl="0.922" twrr="0.886" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">120.2274</Lap>
+<Lap num="4" p="15" et="397.2000" topspeed="278.82" fuel="0.255" fuelUsed="-0.129" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>120.2274</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0321</Name>
+<Connected>1</Connected>
+<VehFile>45_24_CROWB035605E.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Crowdstrike Racing by APR 2024 #45:LM</VehName>
+<Category>WEC 2024, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>Crowdstrike Racing by APR 2024 #45</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="--.---" topspeed="254.95" fuel="0.169" fuelUsed="0.831" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="12" et="221.8799" s1="37.8920" s2="53.4478" s3="29.9499" topspeed="278.82" fuel="0.125" fuelUsed="0.043" twfl="0.980" twfr="0.984" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.2897</Lap>
+<BestLapTime>121.2897</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0986</Name>
+<Connected>1</Connected>
+<VehFile>43_DKRCBF2351E.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #43:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>DKR Engineering #43</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="--.---" topspeed="251.80" fuel="0.200" fuelUsed="0.800" twfl="0.910" twfr="0.988" twrl="0.945" twrr="0.965" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="9" et="164.8999" s1="37.4855" s2="54.2586" s3="29.7147" topspeed="274.32" fuel="0.161" fuelUsed="0.039" twfl="0.902" twfr="0.980" twrl="0.941" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.4589</Lap>
+<Lap num="3" p="10" et="286.3601" topspeed="252.70" fuel="0.239" fuelUsed="-0.078" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>121.4589</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0505</Name>
+<Connected>1</Connected>
+<VehFile>30_DUQUEIN8BA0435F.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Duqueine Team #30:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>Duqueine Team #30</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="--.---" topspeed="255.40" fuel="0.341" fuelUsed="0.659" twfl="0.976" twfr="0.992" twrl="0.973" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="11" et="169.2800" s1="39.0185" s2="54.4793" s3="30.0342" topspeed="274.32" fuel="0.302" fuelUsed="0.039" twfl="0.922" twfr="0.984" twrl="0.871" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.5320</Lap>
+<Lap num="3" p="18" et="292.8000" s1="38.3476" s2="53.5629" s3="29.8259" topspeed="277.47" fuel="0.259" fuelUsed="0.043" twfl="0.910" twfr="0.961" twrl="0.863" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.7364</Lap>
+<Lap num="4" p="18" et="414.5400" topspeed="273.87" fuel="0.380" fuelUsed="-0.122" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>121.7364</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1086</Name>
+<Connected>1</Connected>
+<VehFile>9_PREMA_LMAA381349.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Prema Racing #9:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>Prema Racing #9</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="--.---" topspeed="227.02" fuel="0.961" fuelUsed="0.039" twfl="0.992" twfr="0.996" twrl="0.996" twrr="0.996" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="13" et="186.2000" s1="37.7330" s2="58.9102" s3="31.3398" topspeed="268.91" fuel="0.922" fuelUsed="0.039" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.9830</Lap>
+<Lap num="3" p="19" et="314.1799" s1="38.0877" topspeed="270.26" fuel="1.000" fuelUsed="-0.078" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>127.9830</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2161</Name>
+<Connected>1</Connected>
+<VehFile>41_WRT_LM30F2FF39.VEH</VehFile>
+<UpgradeCode>28050000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT #41:LM</VehName>
+<Category>WEC 2023, LMP2, Oreca 07</Category>
+<CarType>Oreca 07</CarType>
+<CarClass>LMP2</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Team WRT #41</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>20</Position>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="--.---" topspeed="253.60" fuel="0.961" fuelUsed="0.039" twfl="0.988" twfr="0.988" twrl="0.988" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="9" et="153.3958" s1="39.6439" s2="58.3808" s3="30.7162" topspeed="274.32" fuel="0.922" fuelUsed="0.039" twfl="0.973" twfr="0.929" twrl="0.961" twrr="0.941" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.7410</Lap>
+<Lap num="3" p="20" et="282.1368" s1="36.5010" s2="55.8920" s3="36.3316" topspeed="275.67" fuel="0.878" fuelUsed="0.043" twfl="0.953" twfr="0.906" twrl="0.851" twrr="0.925" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">128.7246</Lap>
+<BestLapTime>128.7246</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+</Qualify>
+</RaceResults>
+</rFactorXML>

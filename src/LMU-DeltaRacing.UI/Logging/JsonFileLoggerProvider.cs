@@ -1,3 +1,4 @@
+using System.Text;
 using System.Text.Json;
 
 namespace LMU_DeltaRacing.UI.Logging;
@@ -7,7 +8,6 @@ namespace LMU_DeltaRacing.UI.Logging;
 /// </summary>
 public sealed class JsonFileLoggerProvider : ILoggerProvider
 {
-    private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web);
     private readonly object writeLock = new();
     private readonly StreamWriter writer;
     private readonly LogLevel minimumLevel;
@@ -63,15 +63,28 @@ public sealed class JsonFileLoggerProvider : ILoggerProvider
                 return;
             }
 
-            writer.WriteLine(JsonSerializer.Serialize(new
+            using var stream = new MemoryStream();
+            using (var jsonWriter = new Utf8JsonWriter(stream))
             {
-                Timestamp = DateTimeOffset.UtcNow,
-                Severity = logLevel.ToString(),
-                Category = category,
-                EventId = eventId.Id,
-                Message = message,
-                Exception = exception?.ToString()
-            }, JsonOptions));
+                jsonWriter.WriteStartObject();
+                jsonWriter.WriteString("timestamp", DateTimeOffset.UtcNow);
+                jsonWriter.WriteString("severity", logLevel.ToString());
+                jsonWriter.WriteString("category", category);
+                jsonWriter.WriteNumber("eventId", eventId.Id);
+                jsonWriter.WriteString("message", message);
+                if (exception is null)
+                {
+                    jsonWriter.WriteNull("exception");
+                }
+                else
+                {
+                    jsonWriter.WriteString("exception", exception.ToString());
+                }
+
+                jsonWriter.WriteEndObject();
+            }
+
+            writer.WriteLine(Encoding.UTF8.GetString(stream.GetBuffer(), 0, (int)stream.Length));
         }
     }
 

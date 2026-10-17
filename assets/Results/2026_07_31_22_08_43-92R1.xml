@@ -1,0 +1,1561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>2</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1785526236</DateTime>
+<TimeString>2026/07/31 21:30:36</TimeString>
+<TrackVenue>Circuit de Spa-Francorchamps</TrackVenue>
+<TrackCourse>Circuit de Spa-Francorchamps</TrackCourse>
+<TrackEvent>6 Hours of Spa-Francorchamps</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Spa_2023\1.29\layoutSpa.mas</TrackData>
+<TrackLength>6981.6</TrackLength>
+<GameVersion>1.4000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>GTE_Corvette_C8.R,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1785527030</DateTime>
+<TimeString>2026/07/31 21:43:50</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<Penalty Driver="Ariel Gomez" ID="6" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="129.3">Ariel Gomez received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="137.4">Kitso Matjila(3) reported contact (668.45) with another vehicle Ossian Norlin(4)</Incident>
+<Incident et="137.7">Jimbo Hart(1) reported contact (2178.25) with another vehicle Kitso Matjila(3)</Incident>
+<Incident et="137.8">Kitso Matjila(3) reported contact (1065.53) with another vehicle Jimbo Hart(1)</Incident>
+<Incident et="137.8">Kitso Matjila(3) reported contact (558.76) with another vehicle Ossian Norlin(4)</Incident>
+<Incident et="138.7">Jimbo Hart(1) reported contact (133.10) with another vehicle Kitso Matjila(3)</Incident>
+<Sector et="140.1">Kitso Matjila(3) reports new suspension damage</Sector>
+<Incident et="140.2">Ossian Norlin(4) reported contact (749.53) with another vehicle Kitso Matjila(3)</Incident>
+<Incident et="140.2">Kitso Matjila(3) reported contact (1718.25) with another vehicle Ossian Norlin(4)</Incident>
+<Penalty Driver="Roman Setinsky" ID="17" Penalty="Disqualify" et="142.2">Disqualify</Penalty>
+<Incident et="142.8">Niggan Booia(10) reported contact (339.01) with another vehicle Junior Vicosa(7)</Incident>
+<TrackLimits Driver="Young don" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="145.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="145.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="159.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="159.0">No Further Action</TrackLimits>
+<Incident et="160.6">Nikita Shatkin(13) reported contact (1070.81) with another vehicle Ian Frank(8)</Incident>
+<Incident et="160.6">Ian Frank(8) reported contact (1364.74) with another vehicle Nikita Shatkin(13)</Incident>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="162.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="162.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="169.8">Warning</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="169.8">Warning</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="1" Class="GTE" et="171.7">Jimbo Hart(1) set new best for sector 1</Sector>
+<Score et="171.7">Jimbo Hart(1) lap=0 point=1 t=42.400 et=171.680</Score>
+<Score et="171.9">Kitso Matjila(3) lap=0 point=1 t=42.441 et=171.720</Score>
+<Score et="173.2">Ossian Norlin(4) lap=0 point=1 t=43.845 et=173.120</Score>
+<Score et="173.4">Paul C(12) lap=0 point=1 t=44.131 et=173.400</Score>
+<Score et="174.0">Niggan Booia(10) lap=0 point=1 t=44.693 et=173.960</Score>
+<Score et="174.3">Danny Kostic(5) lap=0 point=1 t=45.003 et=174.280</Score>
+<Score et="174.7">Young don(15) lap=0 point=1 t=45.378 et=174.660</Score>
+<Score et="175.5">Junior Vicosa(7) lap=0 point=1 t=46.069 et=175.340</Score>
+<Score et="176.0">P-A Fugeekies(2) lap=0 point=1 t=46.740 et=176.003</Score>
+<Score et="177.3">YUSEF ALSAEED(16) lap=0 point=1 t=47.991 et=177.260</Score>
+<Score et="178.1">Daniel Pfeiffer(19) lap=0 point=1 t=48.784 et=178.060</Score>
+<Score et="178.1">Alessandro Pierazzuoli(0) lap=0 point=1 t=48.832 et=178.100</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="178.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="178.9">No Further Action</TrackLimits>
+<Score et="178.9">Jiri Bartonicek(14) lap=0 point=1 t=49.617 et=178.880</Score>
+<Score et="179.3">Nikita Shatkin(13) lap=0 point=1 t=49.991 et=179.260</Score>
+<Score et="179.6">Ariel Gomez(6) lap=0 point=1 t=-1.000 et=179.560</Score>
+<Score et="179.8">Alexs Sadov(18) lap=0 point=1 t=50.450 et=179.720</Score>
+<Score et="180.4">Ian Frank(8) lap=0 point=1 t=51.112 et=180.380</Score>
+<Score et="181.0">Baptiste WALTER(9) lap=0 point=1 t=51.695 et=180.960</Score>
+<Sector et="181.3">Ariel Gomez(6) reports new suspension damage</Sector>
+<Incident et="181.4">Nikita Shatkin(13) reported contact (2555.04) with another vehicle Ariel Gomez(6)</Incident>
+<Incident et="181.4">Ariel Gomez(6) reported contact (2384.41) with another vehicle Nikita Shatkin(13)</Incident>
+<Incident et="183.3">Jiri Bartonicek(14) reported contact (258.25) with another vehicle Nikita Shatkin(13)</Incident>
+<Incident et="183.3">Nikita Shatkin(13) reported contact (244.69) with another vehicle Jiri Bartonicek(14)</Incident>
+<Incident et="183.9">Ariel Gomez(6) reported contact (1855.40) with Immovable</Incident>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="188.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="190.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="190.3">No Further Action</TrackLimits>
+<Sector et="202.9">Niggan Booia(10) reports new suspension damage</Sector>
+<Incident et="203.0">Niggan Booia(10) reported contact (3903.88) with Immovable</Incident>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="205.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="205.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="216.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="216.4">No Further Action</TrackLimits>
+<Incident et="223.3">Alexs Sadov(18) reported contact (3030.23) with Immovable</Incident>
+<Incident et="225.9">Alexs Sadov(18) reported contact (885.99) with Immovable</Incident>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="228.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="228.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="230.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="230.8">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="2" Class="GTE" et="235.3">Jimbo Hart(1) set new best for sector 2</Sector>
+<Score et="235.3">Jimbo Hart(1) lap=0 point=2 t=105.969 et=235.240</Score>
+<Score et="236.1">Kitso Matjila(3) lap=0 point=2 t=106.703 et=235.980</Score>
+<Score et="236.9">Ossian Norlin(4) lap=0 point=2 t=107.570 et=236.840</Score>
+<Score et="237.2">Paul C(12) lap=0 point=2 t=107.874 et=237.140</Score>
+<Score et="239.8">Danny Kostic(5) lap=0 point=2 t=110.502 et=239.780</Score>
+<Score et="240.1">Young don(15) lap=0 point=2 t=110.799 et=240.080</Score>
+<Score et="241.0">Junior Vicosa(7) lap=0 point=2 t=111.582 et=240.860</Score>
+<Score et="241.8">P-A Fugeekies(2) lap=0 point=2 t=112.558 et=241.821</Score>
+<Score et="242.5">YUSEF ALSAEED(16) lap=0 point=2 t=113.127 et=242.400</Score>
+<Score et="244.0">Daniel Pfeiffer(19) lap=0 point=2 t=114.743 et=244.020</Score>
+<Score et="246.2">Alessandro Pierazzuoli(0) lap=0 point=2 t=116.888 et=246.160</Score>
+<Score et="247.7">Nikita Shatkin(13) lap=0 point=2 t=118.382 et=247.660</Score>
+<Score et="249.3">Ian Frank(8) lap=0 point=2 t=119.964 et=249.240</Score>
+<Score et="249.9">Jiri Bartonicek(14) lap=0 point=2 t=120.600 et=249.880</Score>
+<Score et="250.5">Baptiste WALTER(9) lap=0 point=2 t=121.220 et=250.500</Score>
+<Score et="254.3">Ariel Gomez(6) lap=0 point=2 t=-1.000 et=254.220</Score>
+<Score et="255.5">Alexs Sadov(18) lap=0 point=2 t=126.153 et=255.420</Score>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="264.7">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="264.7">No Further Action</TrackLimits>
+<Score et="264.9">Niggan Booia(10) lap=0 point=2 t=135.561 et=264.840</Score>
+<Incident et="266.1">Paul C(12) reported contact (556.36) with Immovable</Incident>
+<Incident et="266.6">Paul C(12) reported contact (637.70) with Immovable</Incident>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="272.6">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="3" Class="GTE" et="275.5">Jimbo Hart(1) set new best for sector 3</Sector>
+<Score et="275.5">Jimbo Hart(1) lap=1 point=0 t=146.160 et=275.440</Score>
+<Incident et="275.9">Danny Kostic(5) reported contact (13.92) with Post</Incident>
+<Incident et="275.9">Danny Kostic(5) reported contact (13.96) with Post</Incident>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="276.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="276.2">No Further Action</TrackLimits>
+<Score et="276.8">Kitso Matjila(3) lap=1 point=0 t=147.314 et=276.580</Score>
+<Incident et="277.6">Danny Kostic(5) reported contact (20.41) with Post</Incident>
+<Incident et="278.0">Danny Kostic(5) reported contact (19.57) with Post</Incident>
+<Incident et="278.1">Danny Kostic(5) reported contact (78.89) with Post</Incident>
+<Incident et="278.3">Danny Kostic(5) reported contact (74.16) with Post</Incident>
+<Incident et="279.1">Danny Kostic(5) reported contact (75.03) with Post</Incident>
+<Score et="279.7">Ossian Norlin(4) lap=1 point=0 t=150.396 et=279.660</Score>
+<Score et="281.3">Young don(15) lap=1 point=0 t=152.008 et=281.280</Score>
+<Score et="282.3">Junior Vicosa(7) lap=1 point=0 t=152.897 et=282.160</Score>
+<Score et="283.3">P-A Fugeekies(2) lap=1 point=0 t=153.988 et=283.251</Score>
+<Incident et="283.3">Jiri Bartonicek(14) reported contact (1717.75) with another vehicle Ian Frank(8)</Incident>
+<Incident et="283.3">Ian Frank(8) reported contact (1288.23) with another vehicle Jiri Bartonicek(14)</Incident>
+<Score et="283.8">YUSEF ALSAEED(16) lap=1 point=0 t=154.464 et=283.740</Score>
+<Sector Driver="Daniel Pfeiffer" ID="19" Sector="3" Class="GTE" et="284.0">Daniel Pfeiffer(19) set new best for sector 3</Sector>
+<Score et="284.0">Daniel Pfeiffer(19) lap=1 point=0 t=154.677 et=283.940</Score>
+<Score et="284.9">Paul C(12) lap=1 point=0 t=155.572 et=284.840</Score>
+<Incident et="285.1">Nikita Shatkin(13) reported contact (1695.51) with Immovable</Incident>
+<Score et="285.9">Danny Kostic(5) lap=1 point=0 t=156.589 et=285.860</Score>
+<Score et="288.7">Alessandro Pierazzuoli(0) lap=1 point=0 t=159.385 et=288.660</Score>
+<Incident et="290.2">Young don(15) reported contact (847.60) with Immovable</Incident>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.7">No Further Action</TrackLimits>
+<Incident et="291.6">Young don(15) reported contact (197.91) with Immovable</Incident>
+<Score et="291.7">Ian Frank(8) lap=1 point=0 t=162.396 et=291.660</Score>
+<Incident et="292.4">Young don(15) reported contact (110.15) with Immovable</Incident>
+<Score et="292.5">Jiri Bartonicek(14) lap=1 point=0 t=163.131 et=292.400</Score>
+<Score et="292.7">Baptiste WALTER(9) lap=1 point=0 t=163.442 et=292.720</Score>
+<Incident et="292.9">Daniel Pfeiffer(19) reported contact (391.37) with another vehicle YUSEF ALSAEED(16)</Incident>
+<Incident et="293.0">YUSEF ALSAEED(16) reported contact (370.81) with another vehicle Daniel Pfeiffer(19)</Incident>
+<Score et="295.0">Ariel Gomez(6) lap=1 point=0 t=-1.000 et=294.940</Score>
+<Score et="298.3">Alexs Sadov(18) lap=1 point=0 t=168.967 et=298.240</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.1">No Further Action</TrackLimits>
+<Score et="306.9">Nikita Shatkin(13) lap=1 point=0 t=177.567 et=306.840</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="307.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="307.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="311.0">Warning</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="311.0">Warning</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.2">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.8">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="311.8">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="1" Class="GTE" et="314.0">Jimbo Hart(1) set new best for sector 1</Sector>
+<Score et="314.0">Jimbo Hart(1) lap=1 point=1 t=38.506 et=313.940</Score>
+<Sector Driver="Kitso Matjila" ID="3" Sector="1" Class="GTE" et="315.0">Kitso Matjila(3) set new best for sector 1</Sector>
+<Score et="315.0">Kitso Matjila(3) lap=1 point=1 t=38.234 et=314.820</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="319.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="319.1">No Further Action</TrackLimits>
+<Score et="320.7">Ossian Norlin(4) lap=1 point=1 t=41.007 et=320.680</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="321.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="321.4">No Further Action</TrackLimits>
+<Score et="322.2">Junior Vicosa(7) lap=1 point=1 t=-1.000 et=322.120</Score>
+<Score et="323.0">P-A Fugeekies(2) lap=1 point=1 t=39.742 et=322.993</Score>
+<Score et="324.8">Daniel Pfeiffer(19) lap=1 point=1 t=40.849 et=324.800</Score>
+<Score et="324.9">Paul C(12) lap=1 point=1 t=40.030 et=324.880</Score>
+<Score et="325.0">Danny Kostic(5) lap=1 point=1 t=39.086 et=324.940</Score>
+<Score et="325.6">YUSEF ALSAEED(16) lap=1 point=1 t=41.852 et=325.580</Score>
+<Incident et="328.6">Danny Kostic(5) reported contact (192.88) with another vehicle Paul C(12)</Incident>
+<Incident et="328.6">Paul C(12) reported contact (123.94) with another vehicle Danny Kostic(5)</Incident>
+<Score et="330.5">Young don(15) lap=1 point=1 t=49.189 et=330.460</Score>
+<Score et="332.5">Ian Frank(8) lap=1 point=1 t=40.728 et=332.400</Score>
+<Score et="332.5">Jiri Bartonicek(14) lap=1 point=1 t=40.074 et=332.480</Score>
+<Incident et="333.0">Danny Kostic(5) reported contact (261.33) with another vehicle Paul C(12)</Incident>
+<Incident et="333.0">Paul C(12) reported contact (291.60) with another vehicle Danny Kostic(5)</Incident>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="333.7">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="333.7">No Further Action</TrackLimits>
+<Score et="333.8">Baptiste WALTER(9) lap=1 point=1 t=41.029 et=333.740</Score>
+<Score et="334.9">Ariel Gomez(6) lap=1 point=1 t=39.885 et=334.820</Score>
+<Incident et="336.1">Nikita Shatkin(13) reported contact (3339.52) with Immovable</Incident>
+<Sector et="336.1">Nikita Shatkin(13) reports new suspension damage</Sector>
+<Incident et="336.2">Nikita Shatkin(13) reported contact (48.36) with Wing</Incident>
+<Score et="338.7">Alexs Sadov(18) lap=1 point=1 t=40.446 et=338.680</Score>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="340.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="340.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="1" WarningPoints="0.75" CurrentPoints="0.75" Resolution="4" et="342.0">Warning</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="1" WarningPoints="0.75" CurrentPoints="0.75" Resolution="4" et="342.0">Warning</TrackLimits>
+<Sector et="343.8">Danny Kostic(5) reports new suspension damage</Sector>
+<Incident et="343.9">Danny Kostic(5) reported contact (1237.26) with another vehicle Paul C(12)</Incident>
+<Incident et="343.9">Paul C(12) reported contact (1878.61) with another vehicle Danny Kostic(5)</Incident>
+<Score et="349.3">Alessandro Pierazzuoli(0) lap=1 point=1 t=60.596 et=349.260</Score>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="351.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="351.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="353.6">Warning</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="353.6">Warning</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="354.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="354.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="355.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="355.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="357.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="357.3">No Further Action</TrackLimits>
+<Score et="359.4">Nikita Shatkin(13) lap=1 point=1 t=52.493 et=359.340</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="367.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="367.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="370.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="370.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="372.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="372.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="376.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="376.5">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="2" Class="GTE" et="377.3">Jimbo Hart(1) set new best for sector 2</Sector>
+<Score et="377.3">Jimbo Hart(1) lap=1 point=2 t=101.801 et=377.240</Score>
+<Score et="378.7">Kitso Matjila(3) lap=1 point=2 t=101.936 et=378.520</Score>
+<Score et="384.2">Ossian Norlin(4) lap=1 point=2 t=104.500 et=384.160</Score>
+<Score et="388.6">P-A Fugeekies(2) lap=1 point=2 t=105.366 et=388.617</Score>
+<Score et="389.5">Daniel Pfeiffer(19) lap=1 point=2 t=105.489 et=389.440</Score>
+<Score et="391.5">YUSEF ALSAEED(16) lap=1 point=2 t=107.703 et=391.440</Score>
+<Score et="393.9">Young don(15) lap=1 point=2 t=-1.000 et=393.840</Score>
+<Score et="395.7">Danny Kostic(5) lap=1 point=2 t=109.829 et=395.700</Score>
+<Score et="397.3">Ian Frank(8) lap=1 point=2 t=105.550 et=397.220</Score>
+<Score et="398.5">Jiri Bartonicek(14) lap=1 point=2 t=106.082 et=398.480</Score>
+<Score et="399.5">Ariel Gomez(6) lap=1 point=2 t=104.508 et=399.440</Score>
+<Score et="400.3">Baptiste WALTER(9) lap=1 point=2 t=107.580 et=400.300</Score>
+<Incident et="401.6">Nikita Shatkin(13) reported contact (65.57) with Immovable</Incident>
+<Score et="404.0">Paul C(12) lap=1 point=2 t=119.076 et=403.920</Score>
+<Score et="408.2">Alexs Sadov(18) lap=1 point=2 t=-1.000 et=408.140</Score>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="408.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="408.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="408.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="408.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="410.2">Warning</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="410.2">Warning</TrackLimits>
+<Score et="416.9">Alessandro Pierazzuoli(0) lap=1 point=2 t=128.231 et=416.880</Score>
+<Score et="417.2">Jimbo Hart(1) lap=2 point=0 t=141.737 et=417.160</Score>
+<Sector Driver="Kitso Matjila" ID="3" Sector="3" Class="GTE" et="418.6">Kitso Matjila(3) set new best for sector 3</Sector>
+<Score et="418.6">Kitso Matjila(3) lap=2 point=0 t=141.850 et=418.440</Score>
+<Score et="419.0">Junior Vicosa(7) lap=1 point=2 t=-1.000 et=418.900</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="421.9">Warning</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="421.9">Warning</TrackLimits>
+<Score et="424.6">Ossian Norlin(4) lap=2 point=0 t=144.917 et=424.580</Score>
+<Score et="429.5">P-A Fugeekies(2) lap=2 point=0 t=146.260 et=429.511</Score>
+<Score et="430.2">Daniel Pfeiffer(19) lap=2 point=0 t=146.207 et=430.160</Score>
+<Score et="431.9">YUSEF ALSAEED(16) lap=2 point=0 t=148.101 et=431.840</Score>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="432.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="432.3">No Further Action</TrackLimits>
+<Score et="433.8">Young don(15) lap=2 point=0 t=-1.000 et=433.720</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="433.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="433.8">No Further Action</TrackLimits>
+<Score et="436.1">Danny Kostic(5) lap=2 point=0 t=150.248 et=436.100</Score>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="436.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="436.7">No Further Action</TrackLimits>
+<Score et="438.0">Ian Frank(8) lap=2 point=0 t=-1.000 et=437.920</Score>
+<Incident et="439.0">Alexs Sadov(18) reported contact (3895.31) with Immovable</Incident>
+<Score et="440.3">Jiri Bartonicek(14) lap=2 point=0 t=147.824 et=440.220</Score>
+<Incident et="440.9">Paul C(12) reported contact (773.86) with Immovable</Incident>
+<Score et="441.5">Ariel Gomez(6) lap=2 point=0 t=-1.000 et=441.440</Score>
+<Score et="442.2">Baptiste WALTER(9) lap=2 point=0 t=149.461 et=442.180</Score>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="445.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="445.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="450.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="450.4">No Further Action</TrackLimits>
+<Incident et="450.7">Nikita Shatkin(13) reported contact (402.07) with Immovable</Incident>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="453.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="453.4">No Further Action</TrackLimits>
+<Score et="455.6">Jimbo Hart(1) lap=2 point=1 t=38.379 et=455.540</Score>
+<Score et="456.9">Kitso Matjila(3) lap=2 point=1 t=38.282 et=456.720</Score>
+<Score et="460.7">Alessandro Pierazzuoli(0) lap=2 point=0 t=171.985 et=460.640</Score>
+<Score et="461.5">Junior Vicosa(7) lap=2 point=0 t=-1.000 et=461.320</Score>
+<Score et="463.1">Ossian Norlin(4) lap=2 point=1 t=38.481 et=463.060</Score>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="466.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="466.2">No Further Action</TrackLimits>
+<Score et="466.3">Alexs Sadov(18) lap=2 point=0 t=-1.000 et=466.240</Score>
+<Score et="468.2">P-A Fugeekies(2) lap=2 point=1 t=38.659 et=468.170</Score>
+<Score et="468.6">Daniel Pfeiffer(19) lap=2 point=1 t=38.450 et=468.600</Score>
+<Score et="472.0">YUSEF ALSAEED(16) lap=2 point=1 t=40.074 et=471.920</Score>
+<Score et="472.2">Young don(15) lap=2 point=1 t=38.411 et=472.120</Score>
+<Score et="476.0">Danny Kostic(5) lap=2 point=1 t=39.910 et=476.020</Score>
+<Score et="476.7">Ian Frank(8) lap=2 point=1 t=38.716 et=476.640</Score>
+<Score et="479.3">Jiri Bartonicek(14) lap=2 point=1 t=39.074 et=479.300</Score>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.2">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.2">No Further Action</TrackLimits>
+<Score et="480.6">Ariel Gomez(6) lap=2 point=1 t=39.174 et=480.600</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="481.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="481.4">No Further Action</TrackLimits>
+<Score et="481.5">Paul C(12) lap=2 point=0 t=196.625 et=481.460</Score>
+<Score et="481.7">Baptiste WALTER(9) lap=2 point=1 t=39.546 et=481.720</Score>
+<Score et="495.7">Niggan Booia(10) lap=1 point=0 t=366.345 et=495.620</Score>
+<Score et="499.2">Nikita Shatkin(13) lap=1 point=2 t=192.349 et=499.180</Score>
+<Score et="500.4">Junior Vicosa(7) lap=2 point=1 t=38.978 et=500.300</Score>
+<Score et="500.7">Alessandro Pierazzuoli(0) lap=2 point=1 t=40.005 et=500.640</Score>
+<Score et="507.2">Alexs Sadov(18) lap=2 point=1 t=40.869 et=507.100</Score>
+<TrackLimits Driver="Paul C" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="513.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul C" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="513.9">No Further Action</TrackLimits>
+<Score et="519.2">Jimbo Hart(1) lap=2 point=2 t=101.964 et=519.140</Score>
+<Sector Driver="Kitso Matjila" ID="3" Sector="2" Class="GTE" et="520.1">Kitso Matjila(3) set new best for sector 2</Sector>
+<Score et="520.1">Kitso Matjila(3) lap=2 point=2 t=101.497 et=519.940</Score>
+<Score et="526.9">Ossian Norlin(4) lap=2 point=2 t=102.277 et=526.860</Score>
+<Score et="527.3">Paul C(12) lap=2 point=1 t=45.778 et=527.240</Score>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="528.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="528.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.0">No Further Action</TrackLimits>
+<Score et="533.5">P-A Fugeekies(2) lap=2 point=2 t=103.937 et=533.448</Score>
+<Score et="533.9">Daniel Pfeiffer(19) lap=2 point=2 t=103.694 et=533.860</Score>
+<Score et="536.6">Young don(15) lap=2 point=2 t=102.875 et=536.580</Score>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="537.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="537.2">No Further Action</TrackLimits>
+<Score et="538.0">YUSEF ALSAEED(16) lap=2 point=2 t=106.143 et=537.980</Score>
+<Incident et="540.3">Nikita Shatkin(13) reported contact (58.06) with Sign</Incident>
+<Incident et="540.3">Nikita Shatkin(13) reported contact (2639.61) with Immovable</Incident>
+<Incident et="540.3">Nikita Shatkin(13) reported contact (63.91) with Sign</Incident>
+<Score et="540.8">Danny Kostic(5) lap=2 point=2 t=104.704 et=540.820</Score>
+<Score et="541.6">Ian Frank(8) lap=2 point=2 t=103.652 et=541.580</Score>
+<Score et="541.8">Niggan Booia(10) lap=1 point=1 t=46.149 et=541.760</Score>
+<Incident et="542.0">Nikita Shatkin(13) reported contact (26.71) with Sign</Incident>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="542.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="542.3">No Further Action</TrackLimits>
+<Incident et="542.7">Nikita Shatkin(13) reported contact (25.00) with Sign</Incident>
+<Score et="544.9">Ariel Gomez(6) lap=2 point=2 t=103.400 et=544.840</Score>
+<Score et="545.5">Jiri Bartonicek(14) lap=2 point=2 t=105.248 et=545.480</Score>
+<Score et="547.1">Baptiste WALTER(9) lap=2 point=2 t=104.952 et=547.120</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="548.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="548.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="556.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="556.3">No Further Action</TrackLimits>
+<Score et="559.8">Jimbo Hart(1) lap=3 point=0 t=142.573 et=559.740</Score>
+<Score et="560.7">Kitso Matjila(3) lap=3 point=0 t=142.079 et=560.520</Score>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="563.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="563.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="564.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="564.9">No Further Action</TrackLimits>
+<Score et="565.3">Junior Vicosa(7) lap=2 point=2 t=-1.000 et=565.140</Score>
+<Score et="567.5">Ossian Norlin(4) lap=3 point=0 t=142.857 et=567.440</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="569.3">Warning</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="569.3">Warning</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="570.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="570.5">No Further Action</TrackLimits>
+<Score et="574.1">Daniel Pfeiffer(19) lap=3 point=0 t=143.949 et=574.100</Score>
+<Score et="575.4">P-A Fugeekies(2) lap=3 point=0 t=145.909 et=575.420</Score>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="576.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="576.3">No Further Action</TrackLimits>
+<Score et="577.2">Young don(15) lap=3 point=0 t=143.418 et=577.140</Score>
+<Score et="577.4">Alexs Sadov(18) lap=2 point=2 t=111.103 et=577.340</Score>
+<Score et="577.6">Alessandro Pierazzuoli(0) lap=2 point=2 t=116.960 et=577.600</Score>
+<Score et="580.7">YUSEF ALSAEED(16) lap=3 point=0 t=148.772 et=580.600</Score>
+<Score et="581.1">Danny Kostic(5) lap=3 point=0 t=144.934 et=581.040</Score>
+<Score et="582.4">Ian Frank(8) lap=3 point=0 t=144.400 et=582.320</Score>
+<Score et="587.5">Jiri Bartonicek(14) lap=3 point=0 t=147.178 et=587.400</Score>
+<Score et="588.7">Baptiste WALTER(9) lap=3 point=0 t=146.465 et=588.640</Score>
+<Incident et="589.8">Nikita Shatkin(13) reported contact (4374.87) with Immovable</Incident>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="593.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Nikita Shatkin" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="593.9">No Further Action</TrackLimits>
+<Score et="596.5">Ariel Gomez(6) lap=3 point=0 t=155.012 et=596.440</Score>
+<Sector Driver="Jimbo Hart" ID="1" Sector="1" Class="GTE" et="597.9">Jimbo Hart(1) set new best for sector 1</Sector>
+<Score et="597.9">Jimbo Hart(1) lap=3 point=1 t=38.148 et=597.900</Score>
+<Score et="599.0">Kitso Matjila(3) lap=3 point=1 t=38.289 et=598.800</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="600.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="600.0">No Further Action</TrackLimits>
+<Penalty Driver="Nikita Shatkin" ID="13" Penalty="Disqualify" et="602.6">Disqualify</Penalty>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="602.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="602.6">No Further Action</TrackLimits>
+<Score et="605.8">Niggan Booia(10) lap=1 point=2 t=110.165 et=605.780</Score>
+<Score et="606.4">Ossian Norlin(4) lap=3 point=1 t=38.869 et=606.320</Score>
+<Score et="606.7">Junior Vicosa(7) lap=3 point=0 t=-1.000 et=606.580</Score>
+<Penalty et="607.2">Ariel Gomez served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Penalty Driver="Ariel Gomez" ID="6" Penalty="Drive Thru" Time="10" Laps="0" Reason="Speeding In Pitlane" et="607.2">Ariel Gomez received Drive Thru penalty, 10s, 0laps for Speeding In Pitlane. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="608.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="608.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="613.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="613.2">No Further Action</TrackLimits>
+<Score et="613.4">Daniel Pfeiffer(19) lap=3 point=1 t=39.290 et=613.400</Score>
+<Score et="614.1">P-A Fugeekies(2) lap=3 point=1 t=38.663 et=614.083</Score>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="614.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="615.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="615.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="615.4">Warning</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="615.4">Warning</TrackLimits>
+<Score et="616.0">Young don(15) lap=3 point=1 t=38.836 et=615.960</Score>
+<Score et="620.7">YUSEF ALSAEED(16) lap=3 point=1 t=40.058 et=620.660</Score>
+<Score et="620.9">Ian Frank(8) lap=3 point=1 t=38.479 et=620.800</Score>
+<Score et="620.9">Danny Kostic(5) lap=3 point=1 t=39.874 et=620.920</Score>
+<Score et="624.3">Alexs Sadov(18) lap=3 point=0 t=158.023 et=624.260</Score>
+<Score et="624.4">Alessandro Pierazzuoli(0) lap=3 point=0 t=163.721 et=624.360</Score>
+<Score et="627.3">Jiri Bartonicek(14) lap=3 point=1 t=39.853 et=627.260</Score>
+<Score et="628.0">Baptiste WALTER(9) lap=3 point=1 t=39.357 et=628.000</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="629.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="629.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="637.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="637.4">No Further Action</TrackLimits>
+<Score et="642.8">Ariel Gomez(6) lap=3 point=1 t=46.339 et=642.780</Score>
+<Score et="645.5">Junior Vicosa(7) lap=3 point=1 t=38.749 et=645.340</Score>
+<Sector Driver="Niggan Booia" ID="10" Sector="3" Class="GTE" et="645.6">Niggan Booia(10) set new best for sector 3</Sector>
+<Score et="645.6">Niggan Booia(10) lap=2 point=0 t=149.906 et=645.520</Score>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="647.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="647.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="650.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="650.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="654.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="654.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="656.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="656.8">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="656.9">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="2" Class="GTE" et="661.0">Jimbo Hart(1) set new best for sector 2</Sector>
+<Score et="661.0">Jimbo Hart(1) lap=3 point=2 t=101.213 et=660.960</Score>
+<Score et="662.2">Kitso Matjila(3) lap=3 point=2 t=101.527 et=662.040</Score>
+<Score et="664.9">Alessandro Pierazzuoli(0) lap=3 point=1 t=40.543 et=664.900</Score>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="665.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="665.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="667.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="667.1">No Further Action</TrackLimits>
+<Score et="670.3">Ossian Norlin(4) lap=3 point=2 t=-1.000 et=670.240</Score>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="671.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="671.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="672.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="672.3">No Further Action</TrackLimits>
+<Score et="678.0">Daniel Pfeiffer(19) lap=3 point=2 t=103.920 et=678.020</Score>
+<Score et="679.7">Young don(15) lap=3 point=2 t=102.554 et=679.680</Score>
+<Score et="680.8">P-A Fugeekies(2) lap=3 point=2 t=105.351 et=680.771</Score>
+<Score et="681.4">Alexs Sadov(18) lap=3 point=1 t=57.120 et=681.380</Score>
+<Score et="684.3">Niggan Booia(10) lap=2 point=1 t=38.695 et=684.220</Score>
+<Score et="686.6">YUSEF ALSAEED(16) lap=3 point=2 t=105.912 et=686.520</Score>
+<Score et="686.9">Danny Kostic(5) lap=3 point=2 t=105.846 et=686.880</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="688.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="688.0">No Further Action</TrackLimits>
+<Score et="688.1">Ian Frank(8) lap=3 point=2 t=105.726 et=688.060</Score>
+<Score et="694.7">Baptiste WALTER(9) lap=3 point=2 t=105.997 et=694.640</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="695.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="695.1">No Further Action</TrackLimits>
+<Score et="697.0">Jiri Bartonicek(14) lap=3 point=2 t=109.520 et=696.920</Score>
+<Score et="701.0">Jimbo Hart(1) lap=4 point=0 t=141.160 et=700.900</Score>
+<Score et="702.1">Kitso Matjila(3) lap=4 point=0 t=141.384 et=701.900</Score>
+<Score et="710.3">Ossian Norlin(4) lap=4 point=0 t=-1.000 et=710.240</Score>
+<Score et="710.8">Junior Vicosa(7) lap=3 point=2 t=103.640 et=710.220</Score>
+<Score et="714.0">Ariel Gomez(6) lap=3 point=2 t=117.477 et=713.920</Score>
+<Score et="717.9">Daniel Pfeiffer(19) lap=4 point=0 t=143.730 et=717.840</Score>
+<Score et="719.6">Young don(15) lap=4 point=0 t=142.402 et=719.540</Score>
+<Score et="721.6">P-A Fugeekies(2) lap=4 point=0 t=146.163 et=721.583</Score>
+<Incident et="722.5">YUSEF ALSAEED(16) reported contact (703.41) with another vehicle Ian Frank(8)</Incident>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="722.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="722.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="725.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="725.2">No Further Action</TrackLimits>
+<Sector et="726.3">Alexs Sadov(18) reports new suspension damage</Sector>
+<Incident et="726.4">Alexs Sadov(18) reported contact (1300.52) with Immovable</Incident>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="727.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="727.4">No Further Action</TrackLimits>
+<Score et="730.8">Ian Frank(8) lap=4 point=0 t=148.359 et=730.680</Score>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="731.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="731.3">No Further Action</TrackLimits>
+<Score et="731.4">Danny Kostic(5) lap=4 point=0 t=150.384 et=731.420</Score>
+<Score et="732.0">YUSEF ALSAEED(16) lap=4 point=0 t=151.337 et=731.940</Score>
+<Sector et="733.9">Junior Vicosa(7) reports new suspension damage</Sector>
+<Incident et="734.0">Junior Vicosa(7) reported contact (4023.64) with Immovable</Incident>
+<Score et="736.1">Baptiste WALTER(9) lap=4 point=0 t=147.407 et=736.040</Score>
+<Score et="738.3">Jiri Bartonicek(14) lap=4 point=0 t=150.817 et=738.220</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="738.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="738.3">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="1" Class="GTE" et="739.0">Jimbo Hart(1) set new best for sector 1</Sector>
+<Score et="739.0">Jimbo Hart(1) lap=4 point=1 t=38.124 et=739.020</Score>
+<Score et="740.5">Kitso Matjila(3) lap=4 point=1 t=38.462 et=740.360</Score>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="746.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Alexs Sadov" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="746.1">No Further Action</TrackLimits>
+<Score et="748.5">Niggan Booia(10) lap=2 point=2 t=102.983 et=748.500</Score>
+<Score et="749.0">Ossian Norlin(4) lap=4 point=1 t=38.703 et=748.940</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="752.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="752.4">No Further Action</TrackLimits>
+<Score et="756.3">Daniel Pfeiffer(19) lap=4 point=1 t=38.490 et=756.320</Score>
+<Score et="757.8">Young don(15) lap=4 point=1 t=38.181 et=757.720</Score>
+<Score et="758.8">Alessandro Pierazzuoli(0) lap=3 point=2 t=134.396 et=758.760</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="760.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="760.2">No Further Action</TrackLimits>
+<Score et="760.3">P-A Fugeekies(2) lap=4 point=1 t=38.754 et=760.337</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="1.5" CurrentPoints="2" Resolution="4" et="760.4">Warning</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="3" WarningPoints="1.5" CurrentPoints="2" Resolution="4" et="760.4">Warning</TrackLimits>
+<Score et="763.7">Alexs Sadov(18) lap=3 point=2 t=139.394 et=763.660</Score>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="764.7">No Further Action</TrackLimits>
+<Score et="768.6">Ariel Gomez(6) lap=4 point=0 t=-1.000 et=768.580</Score>
+<Score et="769.9">Ian Frank(8) lap=4 point=1 t=39.132 et=769.820</Score>
+<Score et="770.1">Danny Kostic(5) lap=4 point=1 t=38.666 et=770.100</Score>
+<Score et="771.7">YUSEF ALSAEED(16) lap=4 point=1 t=39.701 et=771.640</Score>
+<Score et="775.6">Baptiste WALTER(9) lap=4 point=1 t=39.523 et=775.580</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="776.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="776.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="777.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="777.3">No Further Action</TrackLimits>
+<Score et="778.4">Jiri Bartonicek(14) lap=4 point=1 t=40.128 et=778.360</Score>
+<Penalty et="779.3">Ariel Gomez served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,10s</Penalty>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="787.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="787.3">No Further Action</TrackLimits>
+<Score et="788.7">Niggan Booia(10) lap=3 point=0 t=143.149 et=788.680</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="794.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="794.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="4" WarningPoints="0" CurrentPoints="2" Resolution="7" et="802.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="4" WarningPoints="0" CurrentPoints="2" Resolution="7" et="802.0">No Further Action</TrackLimits>
+<Sector Driver="Jimbo Hart" ID="1" Sector="2" Class="GTE" et="802.0">Jimbo Hart(1) set new best for sector 2</Sector>
+<Score et="802.0">Jimbo Hart(1) lap=4 point=2 t=101.114 et=802.020</Score>
+<Score et="803.7">Kitso Matjila(3) lap=4 point=2 t=101.596 et=803.500</Score>
+<Score et="808.0">Alessandro Pierazzuoli(0) lap=4 point=0 t=183.588 et=807.960</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="811.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="811.5">No Further Action</TrackLimits>
+<Score et="813.0">Ossian Norlin(4) lap=4 point=2 t=102.769 et=813.000</Score>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="815.0">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="815.0">No Further Action</TrackLimits>
+<Score et="815.6">Ariel Gomez(6) lap=4 point=1 t=46.954 et=815.540</Score>
+<Score et="820.5">Daniel Pfeiffer(19) lap=4 point=2 t=102.610 et=820.440</Score>
+<Score et="820.8">Young don(15) lap=4 point=2 t=101.252 et=820.780</Score>
+<Penalty Driver="Alexs Sadov" ID="18" Penalty="Drive Thru" Time="0" Laps="0" Reason="Pitlane Misbehaviour" et="824.0">Alexs Sadov received Drive Thru penalty, 0s, 0laps for Pitlane Misbehaviour. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Score et="826.3">P-A Fugeekies(2) lap=4 point=2 t=104.745 et=826.327</Score>
+<TrackLimits Driver="Young don" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="827.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="827.2">No Further Action</TrackLimits>
+<Score et="827.3">Niggan Booia(10) lap=3 point=1 t=38.583 et=827.260</Score>
+<Penalty Driver="Alexs Sadov" ID="18" Penalty="Disqualify" et="831.0">Disqualify</Penalty>
+<Score et="835.1">Ian Frank(8) lap=4 point=2 t=104.306 et=835.000</Score>
+<Score et="835.5">Danny Kostic(5) lap=4 point=2 t=104.008 et=835.440</Score>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="835.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="835.7">No Further Action</TrackLimits>
+<Score et="838.3">YUSEF ALSAEED(16) lap=4 point=2 t=106.275 et=838.220</Score>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="839.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="839.8">No Further Action</TrackLimits>
+<Score et="841.9">Baptiste WALTER(9) lap=4 point=2 t=105.812 et=841.860</Score>
+<Score et="842.1">Jimbo Hart(1) lap=5 point=0 t=141.090 et=842.000</Score>
+<Score et="843.5">Kitso Matjila(3) lap=5 point=0 t=141.476 et=843.380</Score>
+<Score et="846.5">Jiri Bartonicek(14) lap=4 point=2 t=108.201 et=846.420</Score>
+<Score et="848.1">Alessandro Pierazzuoli(0) lap=4 point=1 t=40.073 et=848.020</Score>
+<Score et="853.6">Ossian Norlin(4) lap=5 point=0 t=143.306 et=853.540</Score>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="858.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Danny Kostic" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="858.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="860.4">Warning</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="860.4">Warning</TrackLimits>
+<Score et="860.5">Daniel Pfeiffer(19) lap=5 point=0 t=142.683 et=860.520</Score>
+<Score et="861.5">Young don(15) lap=5 point=0 t=141.890 et=861.420</Score>
+<Score et="867.4">P-A Fugeekies(2) lap=5 point=0 t=145.803 et=867.386</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="868.9">Warning</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="868.9">Warning</TrackLimits>
+<Score et="876.2">Danny Kostic(5) lap=5 point=0 t=144.768 et=876.200</Score>
+<Score et="877.4">Ian Frank(8) lap=5 point=0 t=-1.000 et=877.360</Score>
+<Score et="878.0">Junior Vicosa(7) lap=4 point=0 t=271.267 et=877.860</Score>
+<Score et="878.6">YUSEF ALSAEED(16) lap=5 point=0 t=146.641 et=878.580</Score>
+<Score et="880.0">Jimbo Hart(1) lap=5 point=1 t=-1.000 et=879.940</Score>
+<Score et="880.5">Ariel Gomez(6) lap=4 point=2 t=111.874 et=880.460</Score>
+<Score et="881.8">Kitso Matjila(3) lap=5 point=1 t=38.249 et=881.620</Score>
+<Score et="882.7">Baptiste WALTER(9) lap=5 point=0 t=146.670 et=882.720</Score>
+<Sector et="882.9">Niggan Booia(10) reports new suspension damage</Sector>
+<Incident et="883.0">Niggan Booia(10) reported contact (2589.45) with Immovable</Incident>
+<Sector et="883.0">Niggan Booia(10) reports new suspension damage</Sector>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="884.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="884.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="887.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="887.0">No Further Action</TrackLimits>
+<Score et="888.7">Jiri Bartonicek(14) lap=5 point=0 t=150.391 et=888.620</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="889.1">Warning</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="889.1">Warning</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="890.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="890.3">No Further Action</TrackLimits>
+<Score et="892.5">Ossian Norlin(4) lap=5 point=1 t=38.926 et=892.460</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="893.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="894.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="894.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="4" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="898.0">Warning</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="4" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="898.0">Warning</TrackLimits>
+<Score et="898.8">Daniel Pfeiffer(19) lap=5 point=1 t=38.238 et=898.760</Score>
+<Score et="899.8">Young don(15) lap=5 point=1 t=38.300 et=899.720</Score>
+<Score et="903.8">Niggan Booia(10) lap=3 point=2 t=115.142 et=903.820</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="904.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="904.7">No Further Action</TrackLimits>
+<Score et="906.8">P-A Fugeekies(2) lap=5 point=1 t=39.397 et=906.783</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="7" et="910.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="7" et="910.9">No Further Action</TrackLimits>
+<Score et="915.0">Danny Kostic(5) lap=5 point=1 t=38.738 et=914.940</Score>
+<Score et="915.8">Alessandro Pierazzuoli(0) lap=4 point=2 t=107.793 et=915.740</Score>
+<Score et="916.4">Ian Frank(8) lap=5 point=1 t=38.909 et=916.280</Score>
+<Score et="917.6">YUSEF ALSAEED(16) lap=5 point=1 t=38.935 et=917.520</Score>
+<Score et="922.0">Baptiste WALTER(9) lap=5 point=1 t=39.222 et=921.940</Score>
+<Score et="923.4">Ariel Gomez(6) lap=5 point=0 t=154.765 et=923.360</Score>
+<Score et="923.8">Junior Vicosa(7) lap=4 point=1 t=-1.000 et=923.640</Score>
+<Score et="928.5">Jiri Bartonicek(14) lap=5 point=1 t=39.913 et=928.520</Score>
+<Score et="943.7">Jimbo Hart(1) lap=5 point=2 t=-1.000 et=943.700</Score>
+<Score et="944.4">Niggan Booia(10) lap=4 point=0 t=155.679 et=944.360</Score>
+<Score et="945.6">Kitso Matjila(3) lap=5 point=2 t=102.052 et=945.420</Score>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="952.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="952.8">No Further Action</TrackLimits>
+<Score et="956.3">Ossian Norlin(4) lap=5 point=2 t=102.702 et=956.240</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="957.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="957.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="957.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="957.3">No Further Action</TrackLimits>
+<Score et="957.3">Alessandro Pierazzuoli(0) lap=5 point=0 t=149.344 et=957.300</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="958.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="958.1">No Further Action</TrackLimits>
+<Score et="963.0">Daniel Pfeiffer(19) lap=5 point=2 t=102.429 et=962.940</Score>
+<Score et="963.4">Ariel Gomez(6) lap=5 point=1 t=40.030 et=963.380</Score>
+<Score et="972.8">P-A Fugeekies(2) lap=5 point=2 t=105.433 et=972.819</Score>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="973.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="973.6">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="977.1">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="977.1">No Further Action</TrackLimits>
+<Score et="980.0">Danny Kostic(5) lap=5 point=2 t=103.761 et=979.960</Score>
+<Score et="981.7">Ian Frank(8) lap=5 point=2 t=104.308 et=981.680</Score>
+<Score et="982.9">Niggan Booia(10) lap=4 point=1 t=38.540 et=982.900</Score>
+<Score et="983.4">Jimbo Hart(1) lap=6 point=0 t=-1.000 et=983.360</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="983.7">No Further Action</TrackLimits>
+<Score et="984.1">Young don(15) lap=5 point=2 t=122.609 et=984.040</Score>
+<Score et="986.0">Kitso Matjila(3) lap=6 point=0 t=142.500 et=985.880</Score>
+<Score et="986.9">Baptiste WALTER(9) lap=5 point=2 t=104.174 et=986.900</Score>
+<Score et="989.1">Junior Vicosa(7) lap=4 point=2 t=-1.000 et=988.940</Score>
+<Score et="992.1">YUSEF ALSAEED(16) lap=5 point=2 t=113.480 et=992.060</Score>
+<Score et="995.7">Jiri Bartonicek(14) lap=5 point=2 t=107.073 et=995.680</Score>
+<Score et="996.7">Ossian Norlin(4) lap=6 point=0 t=143.165 et=996.700</Score>
+<Score et="997.2">Alessandro Pierazzuoli(0) lap=5 point=1 t=39.823 et=997.120</Score>
+<Sector Driver="Daniel Pfeiffer" ID="19" Sector="3" Class="GTE" et="1002.6">Daniel Pfeiffer(19) set new best for sector 3</Sector>
+<Score et="1002.6">Daniel Pfeiffer(19) lap=6 point=0 t=142.015 et=1002.540</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1004.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1004.2">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1007.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1008.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1008.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="5" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1012.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="5" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1012.6">No Further Action</TrackLimits>
+<Score et="1016.9">P-A Fugeekies(2) lap=6 point=0 t=149.552 et=1016.938</Score>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1018.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1018.1">No Further Action</TrackLimits>
+<Score et="1020.4">Danny Kostic(5) lap=6 point=0 t=144.187 et=1020.380</Score>
+<Score et="1021.6">Jimbo Hart(1) lap=6 point=1 t=38.205 et=1021.560</Score>
+<Score et="1022.8">Ian Frank(8) lap=6 point=0 t=145.346 et=1022.720</Score>
+<Score et="1024.2">Kitso Matjila(3) lap=6 point=1 t=38.147 et=1024.020</Score>
+<Score et="1024.8">Young don(15) lap=6 point=0 t=163.360 et=1024.780</Score>
+<Score et="1027.5">Baptiste WALTER(9) lap=6 point=0 t=144.794 et=1027.520</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1028.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1028.0">No Further Action</TrackLimits>
+<Score et="1028.6">Ariel Gomez(6) lap=5 point=2 t=105.251 et=1028.600</Score>
+<Score et="1030.9">Junior Vicosa(7) lap=5 point=0 t=-1.000 et=1030.800</Score>
+<Score et="1032.8">YUSEF ALSAEED(16) lap=6 point=0 t=154.160 et=1032.740</Score>
+<Score et="1035.5">Ossian Norlin(4) lap=6 point=1 t=38.735 et=1035.440</Score>
+<Score et="1037.1">Jiri Bartonicek(14) lap=6 point=0 t=148.461 et=1037.080</Score>
+<Score et="1040.7">Daniel Pfeiffer(19) lap=6 point=1 t=38.191 et=1040.720</Score>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1042.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1042.4">No Further Action</TrackLimits>
+<Score et="1046.4">Niggan Booia(10) lap=4 point=2 t=102.060 et=1046.420</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1048.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1048.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1053.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1053.4">No Further Action</TrackLimits>
+<Score et="1056.0">P-A Fugeekies(2) lap=6 point=1 t=39.086 et=1056.024</Score>
+<Score et="1059.1">Danny Kostic(5) lap=6 point=1 t=38.683 et=1059.060</Score>
+<Score et="1061.5">Ian Frank(8) lap=6 point=1 t=38.721 et=1061.440</Score>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1063.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1063.2">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1063.2">No Further Action</TrackLimits>
+<Score et="1063.3">Young don(15) lap=6 point=1 t=38.410 et=1063.200</Score>
+<Score et="1063.8">Alessandro Pierazzuoli(0) lap=5 point=2 t=106.477 et=1063.780</Score>
+<Score et="1066.7">Baptiste WALTER(9) lap=6 point=1 t=39.147 et=1066.660</Score>
+<Score et="1069.4">Ariel Gomez(6) lap=6 point=0 t=146.043 et=1069.400</Score>
+<Score et="1071.0">Junior Vicosa(7) lap=5 point=1 t=38.977 et=1069.780</Score>
+<Score et="1072.5">YUSEF ALSAEED(16) lap=6 point=1 t=39.729 et=1072.480</Score>
+<Score et="1076.8">Jiri Bartonicek(14) lap=6 point=1 t=39.748 et=1076.820</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1082.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1082.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1083.9">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1083.9">Warning</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1084.1">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1084.1">No Further Action</TrackLimits>
+<Score et="1085.0">Jimbo Hart(1) lap=6 point=2 t=101.659 et=1085.020</Score>
+<Score et="1086.5">Niggan Booia(10) lap=5 point=0 t=142.073 et=1086.420</Score>
+<Score et="1087.6">Kitso Matjila(3) lap=6 point=2 t=101.552 et=1087.420</Score>
+<Incident et="1089.0">Ariel Gomez(6) reported contact (116.56) with Immovable</Incident>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1092.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1092.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1095.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1095.8">No Further Action</TrackLimits>
+<Score et="1099.5">Ossian Norlin(4) lap=6 point=2 t=102.823 et=1099.520</Score>
+<Score et="1105.7">Daniel Pfeiffer(19) lap=6 point=2 t=-1.000 et=1105.680</Score>
+<Score et="1109.3">Ariel Gomez(6) lap=6 point=1 t=39.871 et=1109.260</Score>
+<Score et="1109.7">Alessandro Pierazzuoli(0) lap=6 point=0 t=152.361 et=1109.660</Score>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1112.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1112.0">No Further Action</TrackLimits>
+<Score et="1123.4">P-A Fugeekies(2) lap=6 point=2 t=106.408 et=1123.345</Score>
+<Score et="1124.4">Danny Kostic(5) lap=6 point=2 t=104.034 et=1124.420</Score>
+<Score et="1124.9">Niggan Booia(10) lap=5 point=1 t=38.480 et=1124.900</Score>
+<Score et="1125.1">Jimbo Hart(1) lap=7 point=0 t=141.610 et=1124.960</Score>
+<Score et="1126.7">Ian Frank(8) lap=6 point=2 t=103.888 et=1126.600</Score>
+<Score et="1127.2">Young don(15) lap=6 point=2 t=102.326 et=1127.100</Score>
+<Score et="1127.3">Kitso Matjila(3) lap=7 point=0 t=141.301 et=1127.180</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1129.6">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1129.6">Warning</TrackLimits>
+<Score et="1131.3">Baptiste WALTER(9) lap=6 point=2 t=103.799 et=1131.320</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1132.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1132.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1135.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1135.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1138.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1138.0">No Further Action</TrackLimits>
+<Score et="1138.9">YUSEF ALSAEED(16) lap=6 point=2 t=106.125 et=1138.880</Score>
+<Score et="1140.1">Ossian Norlin(4) lap=7 point=0 t=143.336 et=1140.040</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1140.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1140.8">No Further Action</TrackLimits>
+<Incident et="1142.2">Junior Vicosa(7) reported contact (2015.35) with Immovable</Incident>
+<Incident et="1143.3">Junior Vicosa(7) reported contact (160.83) with Immovable</Incident>
+<Score et="1144.8">Jiri Bartonicek(14) lap=6 point=2 t=107.656 et=1144.740</Score>
+<Score et="1145.6">Daniel Pfeiffer(19) lap=7 point=0 t=-1.000 et=1145.560</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1146.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1146.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1149.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1149.1">No Further Action</TrackLimits>
+<Score et="1149.7">Alessandro Pierazzuoli(0) lap=6 point=1 t=40.021 et=1149.680</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1152.3">Warning</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1152.3">Warning</TrackLimits>
+<Incident et="1155.3">P-A Fugeekies(2) reported contact (127.91) with Immovable</Incident>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1157.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1158.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1158.1">No Further Action</TrackLimits>
+<Score et="1160.2">Junior Vicosa(7) lap=5 point=2 t=129.295 et=1160.100</Score>
+<Score et="1163.3">Jimbo Hart(1) lap=7 point=1 t=-1.000 et=1163.280</Score>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1163.5">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1163.5">No Further Action</TrackLimits>
+<Score et="1165.6">Danny Kostic(5) lap=7 point=0 t=145.239 et=1165.620</Score>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1165.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1165.8">No Further Action</TrackLimits>
+<Score et="1165.9">Kitso Matjila(3) lap=7 point=1 t=38.565 et=1165.740</Score>
+<Score et="1165.9">P-A Fugeekies(2) lap=7 point=0 t=148.982 et=1165.919</Score>
+<Score et="1167.2">Ian Frank(8) lap=7 point=0 t=144.401 et=1167.120</Score>
+<Score et="1172.6">Baptiste WALTER(9) lap=7 point=0 t=145.046 et=1172.560</Score>
+<Score et="1173.5">Ariel Gomez(6) lap=6 point=2 t=104.093 et=1173.480</Score>
+<Score et="1176.2">Young don(15) lap=7 point=0 t=151.407 et=1176.180</Score>
+<Score et="1178.7">Ossian Norlin(4) lap=7 point=1 t=38.578 et=1178.620</Score>
+<Score et="1179.4">YUSEF ALSAEED(16) lap=7 point=0 t=146.610 et=1179.360</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1183.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1183.6">No Further Action</TrackLimits>
+<Score et="1184.7">Daniel Pfeiffer(19) lap=7 point=1 t=39.161 et=1184.720</Score>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1185.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ossian Norlin" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1185.5">No Further Action</TrackLimits>
+<Score et="1187.2">Jiri Bartonicek(14) lap=7 point=0 t=149.979 et=1187.060</Score>
+<Score et="1188.7">Niggan Booia(10) lap=5 point=2 t=102.241 et=1188.660</Score>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1192.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Pfeiffer" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1192.3">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1192.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1198.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1198.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="2.25" Resolution="4" et="1198.4">Warning</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="2.25" Resolution="4" et="1198.4">Warning</TrackLimits>
+<Score et="1201.9">Junior Vicosa(7) lap=6 point=0 t=170.934 et=1201.740</Score>
+<TrackLimits Driver="Young don" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1202.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1202.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1203.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1203.7">No Further Action</TrackLimits>
+<Score et="1204.3">Danny Kostic(5) lap=7 point=1 t=38.658 et=1204.280</Score>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1205.5">No Further Action</TrackLimits>
+<TrackLimits Driver="YUSEF ALSAEED" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1205.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1205.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="6" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1205.5">No Further Action</TrackLimits>
+<Score et="1205.5">P-A Fugeekies(2) lap=7 point=1 t=39.603 et=1205.522</Score>
+<Score et="1205.9">Ian Frank(8) lap=7 point=1 t=38.742 et=1205.860</Score>
+<Score et="1211.4">Baptiste WALTER(9) lap=7 point=1 t=38.789 et=1211.340</Score>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1212.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1212.7">No Further Action</TrackLimits>
+<Score et="1214.7">Young don(15) lap=7 point=1 t=38.446 et=1214.640</Score>
+<Score et="1217.9">Ariel Gomez(6) lap=7 point=0 t=-1.000 et=1217.860</Score>
+<Score et="1218.5">Alessandro Pierazzuoli(0) lap=6 point=2 t=108.771 et=1218.420</Score>
+<Score et="1219.3">YUSEF ALSAEED(16) lap=7 point=1 t=39.871 et=1219.220</Score>
+<Score et="1226.5">Jimbo Hart(1) lap=7 point=2 t=-1.000 et=1226.460</Score>
+<Score et="1226.9">Jiri Bartonicek(14) lap=7 point=1 t=39.786 et=1226.840</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1228.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1228.1">No Further Action</TrackLimits>
+<Score et="1228.6">Niggan Booia(10) lap=6 point=0 t=142.170 et=1228.600</Score>
+<Score et="1229.3">Kitso Matjila(3) lap=7 point=2 t=101.998 et=1229.180</Score>
+<Score et="1241.1">Junior Vicosa(7) lap=6 point=1 t=39.214 et=1240.940</Score>
+<Score et="1242.2">Ossian Norlin(4) lap=7 point=2 t=102.149 et=1242.200</Score>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1242.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Alessandro Pierazzuoli" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1242.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="7" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1244.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="7" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1244.5">No Further Action</TrackLimits>
+<Score et="1249.0">Daniel Pfeiffer(19) lap=7 point=2 t=103.417 et=1248.980</Score>
+<Score et="1257.9">Ariel Gomez(6) lap=7 point=1 t=40.036 et=1257.900</Score>
+<Score et="1260.6">Alessandro Pierazzuoli(0) lap=7 point=0 t=150.910 et=1260.560</Score>
+<Score et="1267.0">Niggan Booia(10) lap=6 point=1 t=38.388 et=1266.980</Score>
+<Score et="1267.1">Jimbo Hart(1) lap=8 point=0 t=-1.000 et=1267.020</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1267.8">No Further Action</TrackLimits>
+<Score et="1269.5">Kitso Matjila(3) lap=8 point=0 t=142.107 et=1269.280</Score>
+<Score et="1269.6">Danny Kostic(5) lap=7 point=2 t=103.932 et=1269.560</Score>
+<Score et="1272.3">Ian Frank(8) lap=7 point=2 t=105.084 et=1272.200</Score>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1273.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1273.6">No Further Action</TrackLimits>
+<Score et="1274.5">P-A Fugeekies(2) lap=7 point=2 t=108.604 et=1274.523</Score>
+<Score et="1276.5">Baptiste WALTER(9) lap=7 point=2 t=103.936 et=1276.500</Score>
+<Score et="1279.2">Young don(15) lap=7 point=2 t=102.967 et=1279.160</Score>
+<Score et="1282.5">Ossian Norlin(4) lap=8 point=0 t=142.436 et=1282.480</Score>
+<Score et="1284.8">YUSEF ALSAEED(16) lap=7 point=2 t=105.338 et=1284.700</Score>
+<Score et="1289.4">Daniel Pfeiffer(19) lap=8 point=0 t=143.819 et=1289.380</Score>
+<Score et="1293.6">Jiri Bartonicek(14) lap=7 point=2 t=106.492 et=1293.540</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="8" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1294.3">Warning</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="8" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="1294.3">Warning</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1297.4">No Further Action</TrackLimits>
+<Score et="1300.8">Alessandro Pierazzuoli(0) lap=7 point=1 t=40.148 et=1300.720</Score>
+<Score et="1305.4">Jimbo Hart(1) lap=8 point=1 t=-1.000 et=1305.360</Score>
+<Score et="1306.6">Junior Vicosa(7) lap=6 point=2 t=104.697 et=1306.440</Score>
+<Score et="1307.7">Kitso Matjila(3) lap=8 point=1 t=38.253 et=1307.540</Score>
+<Score et="1310.5">Danny Kostic(5) lap=8 point=0 t=144.850 et=1310.480</Score>
+<Score et="1312.7">Ian Frank(8) lap=8 point=0 t=145.526 et=1312.640</Score>
+<Score et="1316.9">P-A Fugeekies(2) lap=8 point=0 t=150.970 et=1316.889</Score>
+<Score et="1317.3">Baptiste WALTER(9) lap=8 point=0 t=144.682 et=1317.240</Score>
+<Score et="1319.8">Young don(15) lap=8 point=0 t=143.542 et=1319.740</Score>
+<Score et="1321.0">Ossian Norlin(4) lap=8 point=1 t=38.526 et=1321.000</Score>
+<Score et="1325.2">Ariel Gomez(6) lap=7 point=2 t=107.233 et=1325.100</Score>
+<Score et="1328.5">Daniel Pfeiffer(19) lap=8 point=1 t=39.107 et=1328.480</Score>
+<Score et="1329.0">YUSEF ALSAEED(16) lap=8 point=0 t=149.591 et=1328.940</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1330.1">No Further Action</TrackLimits>
+<Score et="1330.7">Niggan Booia(10) lap=6 point=2 t=102.097 et=1330.700</Score>
+<Score et="1336.0">Jiri Bartonicek(14) lap=8 point=0 t=148.891 et=1335.940</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1338.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1338.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1345.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Young don" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1345.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1348.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1348.2">No Further Action</TrackLimits>
+<Score et="1348.5">Junior Vicosa(7) lap=7 point=0 t=146.635 et=1348.360</Score>
+<Score et="1349.5">Danny Kostic(5) lap=8 point=1 t=38.993 et=1349.460</Score>
+<Score et="1351.1">Ian Frank(8) lap=8 point=1 t=38.426 et=1351.060</Score>
+<Score et="1356.5">Baptiste WALTER(9) lap=8 point=1 t=39.247 et=1356.480</Score>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="7" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1357.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="7" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1357.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1358.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1358.4">No Further Action</TrackLimits>
+<Score et="1358.7">Young don(15) lap=8 point=1 t=38.890 et=1358.620</Score>
+<Score et="1360.4">P-A Fugeekies(2) lap=8 point=1 t=43.523 et=1360.412</Score>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Baptiste WALTER" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.7">No Further Action</TrackLimits>
+<Score et="1368.9">Ariel Gomez(6) lap=8 point=0 t=151.034 et=1368.900</Score>
+<Score et="1369.0">Alessandro Pierazzuoli(0) lap=7 point=2 t=108.384 et=1368.960</Score>
+<Score et="1369.4">Jimbo Hart(1) lap=8 point=2 t=-1.000 et=1369.360</Score>
+<Score et="1370.0">YUSEF ALSAEED(16) lap=8 point=1 t=41.034 et=1369.980</Score>
+<Score et="1370.4">Niggan Booia(10) lap=7 point=0 t=141.778 et=1370.380</Score>
+<Score et="1371.4">Kitso Matjila(3) lap=8 point=2 t=101.961 et=1371.240</Score>
+<Score et="1376.0">Jiri Bartonicek(14) lap=8 point=1 t=40.027 et=1375.980</Score>
+<Score et="1385.4">Ossian Norlin(4) lap=8 point=2 t=102.867 et=1385.340</Score>
+<Score et="1387.9">Junior Vicosa(7) lap=7 point=1 t=39.370 et=1387.740</Score>
+<Score et="1392.5">Daniel Pfeiffer(19) lap=8 point=2 t=103.125 et=1392.500</Score>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="8" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1394.0">Warning</TrackLimits>
+<TrackLimits Driver="Jimbo Hart" ID="1" Lap="8" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1394.0">Warning</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1394.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1394.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="8" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1394.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Ariel Gomez" ID="6" Lap="8" WarningPoints="0" CurrentPoints="2.25" Resolution="7" et="1394.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="8" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1395.8">Warning</TrackLimits>
+<TrackLimits Driver="Kitso Matjila" ID="3" Lap="8" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1395.8">Warning</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1403.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Jiri Bartonicek" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1403.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1406.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Niggan Booia" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1406.8">No Further Action</TrackLimits>
+<Score et="1407.8">Ariel Gomez(6) lap=8 point=1 t=38.893 et=1407.780</Score>
+<Incident et="1409.2">Junior Vicosa(7) reported contact (75.82) with Immovable</Incident>
+<Incident et="1409.5">Junior Vicosa(7) reported contact (1584.43) with Immovable</Incident>
+<Sector et="1409.5">Junior Vicosa(7) reports new suspension damage</Sector>
+<Incident et="1409.5">Junior Vicosa(7) reported contact (2055.14) with Immovable</Incident>
+<Score et="1410.2">Checkered for Jimbo Hart, laps=9/2147483647, endET=1410.139893/1329.262451, crossedAfterTime=0</Score>
+<Score et="1410.2">Jimbo Hart(1) lap=9 point=0 t=-1.000 et=1410.140</Score>
+<Score et="1411.7">Kitso Matjila(3) lap=9 point=0 t=-1.000 et=1411.480</Score>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1412.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Junior Vicosa" ID="7" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1412.4">No Further Action</TrackLimits>
+<Score et="1414.5">Danny Kostic(5) lap=8 point=2 t=104.048 et=1414.520</Score>
+<Score et="1414.8">Alessandro Pierazzuoli(0) lap=8 point=0 t=154.201 et=1414.760</Score>
+<Score et="1416.0">Ian Frank(8) lap=8 point=2 t=103.345 et=1415.980</Score>
+<Score et="1420.0">Niggan Booia(10) lap=7 point=1 t=49.583 et=1419.960</Score>
+<Score et="1421.4">Baptiste WALTER(9) lap=8 point=2 t=104.101 et=1421.340</Score>
+<Score et="1423.1">Young don(15) lap=8 point=2 t=103.329 et=1423.060</Score>
+<Score et="1425.9">Ossian Norlin(4) lap=9 point=0 t=143.379 et=1425.860</Score>
+<Score et="1428.4">P-A Fugeekies(2) lap=8 point=2 t=111.504 et=1428.393</Score>
+<Score et="1432.3">Daniel Pfeiffer(19) lap=9 point=0 t=142.876 et=1432.260</Score>
+<Score et="1436.2">YUSEF ALSAEED(16) lap=8 point=2 t=107.206 et=1436.160</Score>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1438.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Ian Frank" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1438.6">No Further Action</TrackLimits>
+<Score et="1443.5">Jiri Bartonicek(14) lap=8 point=2 t=107.475 et=1443.420</Score>
+<Score et="1455.4">Danny Kostic(5) lap=9 point=0 t=144.895 et=1455.360</Score>
+<ChatMessage et="1456.3">D Pfeiffer: gg</ChatMessage>
+<Score et="1456.8">Ian Frank(8) lap=9 point=0 t=144.138 et=1456.780</Score>
+<Score et="1458.0">Junior Vicosa(7) lap=7 point=2 t=109.500 et=1457.860</Score>
+<Score et="1462.2">Baptiste WALTER(9) lap=9 point=0 t=144.913 et=1462.160</Score>
+<Score et="1463.7">Young don(15) lap=9 point=0 t=143.904 et=1463.640</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="2" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1466.9">No Further Action</TrackLimits>
+<Score et="1471.9">Ariel Gomez(6) lap=8 point=2 t=102.943 et=1471.840</Score>
+<Score et="1478.6">YUSEF ALSAEED(16) lap=9 point=0 t=149.637 et=1478.580</Score>
+<Score et="1480.6">P-A Fugeekies(2) lap=9 point=0 t=163.716 et=1480.606</Score>
+<Score et="1484.8">Niggan Booia(10) lap=7 point=2 t=114.306 et=1484.680</Score>
+<ChatMessage et="1486.1">D Kostic: nice one</ChatMessage>
+<Score et="1486.4">Jiri Bartonicek(14) lap=9 point=0 t=150.288 et=1486.240</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>9</MostLapsCompleted>
+<Driver>
+<Name>Driver 1220</Name>
+<Connected>1</Connected>
+<VehFile>86_GRRACINBAD908BD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>GR Racing #86:BR</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>GR Racing #86</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>1</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="129.2625" s1="42.4002" s2="63.5687" s3="40.1915" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.1604</Lap>
+<Lap num="2" p="1" et="275.4399" s1="38.5056" s2="63.2955" s3="39.9356" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.7367</Lap>
+<Lap num="3" p="1" et="417.1599" s1="38.3791" s2="63.5847" s3="40.6096" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.5734</Lap>
+<Lap num="4" p="1" et="559.7400" s1="38.1485" s2="63.0647" s3="39.9471" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.1603</Lap>
+<Lap num="5" p="1" et="700.8999" s1="38.1238" s2="62.9903" s3="39.9755" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.0897</Lap>
+<Lap num="6" p="1" et="842.0000" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="7" p="1" et="983.3601" s1="38.2051" s2="63.4536" s3="39.9515" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.6102</Lap>
+<Lap num="8" p="1" et="1124.9600" topspeed="260.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="9" p="1" et="1267.0200" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>141.0897</BestLapTime>
+<FinishTime>1280.8774</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1432</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>2</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="129.2625" s1="42.4414" s2="64.2614" s3="40.6112" topspeed="262.61" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">147.3139</Lap>
+<Lap num="2" p="2" et="276.5801" s1="38.2345" s2="63.7014" s3="39.9142" topspeed="260.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.8501</Lap>
+<Lap num="3" p="2" et="418.4399" s1="38.2817" s2="63.2157" s3="40.5811" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.0786</Lap>
+<Lap num="4" p="2" et="560.5200" s1="38.2885" s2="63.2389" s3="39.8571" topspeed="260.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.3845</Lap>
+<Lap num="5" p="2" et="701.8999" s1="38.4622" s2="63.1342" s3="39.8798" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.4761</Lap>
+<Lap num="6" p="2" et="843.3799" s1="38.2487" s2="63.8035" s3="40.4478" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.5000</Lap>
+<Lap num="7" p="2" et="985.8799" s1="38.1473" s2="63.4050" s3="39.7483" topspeed="261.26" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.3006</Lap>
+<Lap num="8" p="2" et="1127.1799" s1="38.5646" s2="63.4338" s3="40.1082" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.1066</Lap>
+<Lap num="9" p="2" et="1269.2800" s1="38.2528" s2="63.7081" topspeed="261.26" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<BestLapTime>141.3006</BestLapTime>
+<FinishTime>1282.2175</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1964</Name>
+<Connected>1</Connected>
+<VehFile>54_AFCORSE6810C92B.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #54:EC</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>AF Corse #54</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>15</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="129.2625" s1="44.6929" s2="90.8684" s3="230.7833" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">366.3445</Lap>
+<Lap num="2" p="16" et="495.6201" s1="46.1493" s2="64.0156" s3="39.7409" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">149.9058</Lap>
+<Lap num="3" p="16" et="645.5200" s1="38.6954" s2="64.2880" s3="40.1656" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.1490</Lap>
+<Lap num="4" p="15" et="788.6799" s1="38.5831" s2="76.5585" s3="40.5379" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">155.6794</Lap>
+<Lap num="5" p="15" et="944.3601" s1="38.5400" s2="63.5204" s3="40.0129" topspeed="256.30" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.0734</Lap>
+<Lap num="6" p="15" et="1086.4199" s1="38.4802" s2="63.7611" s3="39.9290" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.1703</Lap>
+<Lap num="7" p="15" et="1228.6001" s1="38.3881" s2="63.7086" s3="39.6810" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.7777</Lap>
+<BestLapTime>141.7777</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2769</Name>
+<Connected>1</Connected>
+<VehFile>77_PROTONLAECAE80B.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Dempsey-Proton Racing #77:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>Dempsey-Proton Racing #77</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>8</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="129.2625" s1="45.3780" s2="65.4212" s3="41.2090" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">152.0083</Lap>
+<Lap num="2" p="7" et="281.2800" s1="49.1892" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="6" et="433.7200" s1="38.4110" s2="64.4644" s3="40.5425" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.4180</Lap>
+<Lap num="4" p="5" et="577.1399" s1="38.8365" s2="63.7177" s3="39.8483" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.4024</Lap>
+<Lap num="5" p="5" et="719.5400" s1="38.1808" s2="63.0708" s3="40.6384" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">141.8900</Lap>
+<Lap num="6" p="8" et="861.4199" s1="38.2998" s2="84.3096" s3="40.7505" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">163.3599</Lap>
+<Lap num="7" p="9" et="1024.7800" s1="38.4100" s2="63.9161" s3="49.0804" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">151.4066</Lap>
+<Lap num="8" p="9" et="1176.1799" s1="38.4458" s2="64.5210" s3="40.5754" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.5422</Lap>
+<Lap num="9" p="8" et="1319.7400" s1="38.8901" s2="64.4388" s3="40.5746" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.9036</Lap>
+<BestLapTime>141.8900</BestLapTime>
+<FinishTime>1334.3774</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0554</Name>
+<Connected>1</Connected>
+<VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>D&apos;station Racing #777:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>D&apos;station Racing #777</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>4</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="129.2625" s1="48.7838" s2="65.9597" s3="39.9330" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">154.6765</Lap>
+<Lap num="2" p="5" et="283.9399" s1="40.8488" s2="64.6402" s3="40.7178" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.2068</Lap>
+<Lap num="3" p="4" et="430.1599" s1="38.4497" s2="65.2447" s3="40.2542" topspeed="260.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.9486</Lap>
+<Lap num="4" p="4" et="574.1001" s1="39.2902" s2="64.6296" s3="39.8104" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.7301</Lap>
+<Lap num="5" p="4" et="717.8401" s1="38.4895" s2="64.1205" s3="40.0730" topspeed="259.90" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.6830</Lap>
+<Lap num="6" p="4" et="860.5200" s1="38.2377" s2="64.1912" s3="39.5861" topspeed="261.26" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.0150</Lap>
+<Lap num="7" p="4" et="1002.5400" s1="38.1911" topspeed="260.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="8" p="4" et="1145.5601" s1="39.1605" s2="64.2565" s3="40.4023" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.8193</Lap>
+<Lap num="9" p="4" et="1289.3799" s1="39.1066" s2="64.0189" s3="39.7510" topspeed="260.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.8765</Lap>
+<BestLapTime>142.0150</BestLapTime>
+<FinishTime>1302.9975</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2029</Name>
+<Connected>1</Connected>
+<VehFile>57_KESSELLC54EE96D.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Kessel Racing #57:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>Kessel Racing #57</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>3</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="129.2625" s1="43.8453" s2="63.7247" s3="42.8257" topspeed="255.40" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.3956</Lap>
+<Lap num="2" p="3" et="279.6599" s1="41.0070" s2="63.4926" s3="40.4174" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.9171</Lap>
+<Lap num="3" p="3" et="424.5801" s1="38.4812" s2="63.7953" s3="40.5809" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.8575</Lap>
+<Lap num="4" p="3" et="567.4399" s1="38.8690" topspeed="256.30" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="5" p="3" et="710.2400" s1="38.7031" s2="64.0659" s3="40.5367" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.3058</Lap>
+<Lap num="6" p="3" et="853.5400" s1="38.9257" s2="63.7759" s3="40.4633" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.1649</Lap>
+<Lap num="7" p="3" et="996.7000" s1="38.7347" s2="64.0886" s3="40.5128" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.3361</Lap>
+<Lap num="8" p="3" et="1140.0400" s1="38.5785" s2="63.5706" s3="40.2871" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">142.4362</Lap>
+<Lap num="9" p="3" et="1282.4800" s1="38.5259" s2="64.3411" s3="40.5116" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">143.3785</Lap>
+<BestLapTime>142.4362</BestLapTime>
+<FinishTime>1296.5976</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1045</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSE19F69870.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:MZ</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>6</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="129.2625" s1="51.1118" s2="68.8523" s3="42.4322" topspeed="251.35" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">162.3963</Lap>
+<Lap num="2" p="9" et="291.6599" s1="40.7279" s2="64.8217" topspeed="255.85" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">--.----</Lap>
+<Lap num="3" p="9" et="437.9199" s1="38.7165" s2="64.9357" s3="40.7479" topspeed="256.75" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">144.4001</Lap>
+<Lap num="4" p="7" et="582.3201" s1="38.4786" s2="67.2477" s3="42.6326" topspeed="258.10" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">148.3588</Lap>
+<Lap num="5" p="8" et="730.6799" s1="39.1323" s2="65.1737" topspeed="257.20" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">--.----</Lap>
+<Lap num="6" p="7" et="877.3601" s1="38.9094" s2="65.3990" s3="41.0378" topspeed="257.20" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">145.3462</Lap>
+<Lap num="7" p="7" et="1022.7200" s1="38.7213" s2="65.1665" s3="40.5128" topspeed="258.55" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">144.4006</Lap>
+<Lap num="8" p="6" et="1167.1201" s1="38.7422" s2="66.3422" s3="40.4419" topspeed="258.10" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">145.5262</Lap>
+<Lap num="9" p="6" et="1312.6399" s1="38.4264" s2="64.9189" s3="40.7924" topspeed="258.10" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">144.1377</Lap>
+<BestLapTime>144.1377</BestLapTime>
+<FinishTime>1327.5175</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0572</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>5</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="129.2625" s1="45.0033" s2="65.4987" s3="46.0875" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">156.5895</Lap>
+<Lap num="2" p="8" et="285.8601" s1="39.0859" s2="70.7434" s3="40.4186" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.2480</Lap>
+<Lap num="3" p="8" et="436.1001" s1="39.9104" s2="64.7941" s3="40.2298" topspeed="251.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.9343</Lap>
+<Lap num="4" p="8" et="581.0400" s1="39.8741" s2="65.9714" s3="44.5385" topspeed="252.25" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.3840</Lap>
+<Lap num="5" p="7" et="731.4199" s1="38.6658" s2="65.3421" s3="40.7603" topspeed="259.45" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.7681</Lap>
+<Lap num="6" p="6" et="876.2000" s1="38.7380" s2="65.0233" s3="40.4254" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.1867</Lap>
+<Lap num="7" p="5" et="1020.3799" s1="38.6828" s2="65.3513" s3="41.2045" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">145.2386</Lap>
+<Lap num="8" p="5" et="1165.6201" s1="38.6577" s2="65.2743" s3="40.9183" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.8503</Lap>
+<Lap num="9" p="5" et="1310.4800" s1="38.9930" s2="65.0547" s3="40.8469" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.8947</Lap>
+<BestLapTime>144.1867</BestLapTime>
+<FinishTime>1326.0976</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0263</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>7</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="129.2625" s1="51.6946" s2="69.5255" s3="42.2220" topspeed="247.29" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">163.4421</Lap>
+<Lap num="2" p="12" et="292.7200" s1="41.0294" s2="66.5501" s3="41.8819" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">149.4614</Lap>
+<Lap num="3" p="11" et="442.1799" s1="39.5458" s2="65.4058" s3="41.5137" topspeed="256.30" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.4652</Lap>
+<Lap num="4" p="10" et="588.6399" s1="39.3569" s2="66.6405" s3="41.4093" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">147.4067</Lap>
+<Lap num="5" p="10" et="736.0400" s1="39.5229" s2="66.2889" s3="40.8581" topspeed="254.50" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.6699</Lap>
+<Lap num="6" p="9" et="882.7200" s1="39.2217" s2="64.9525" s3="40.6196" topspeed="255.40" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.7939</Lap>
+<Lap num="7" p="8" et="1027.5200" s1="39.1473" s2="64.6517" s3="41.2471" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">145.0461</Lap>
+<Lap num="8" p="8" et="1172.5601" s1="38.7887" s2="65.1471" s3="40.7458" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.6816</Lap>
+<Lap num="9" p="7" et="1317.2400" s1="39.2468" s2="64.8538" s3="40.8124" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">144.9130</Lap>
+<BestLapTime>144.6816</BestLapTime>
+<FinishTime>1332.8974</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2038</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT80C98836.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:EC</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>10</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="129.2625" s1="46.7401" s2="65.8179" s3="41.4303" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">153.9884</Lap>
+<Lap num="2" p="4" et="283.2600" s1="39.7422" s2="65.6242" s3="40.8934" topspeed="256.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.2599</Lap>
+<Lap num="3" p="5" et="429.5200" s1="38.6595" s2="65.2774" s3="41.9724" topspeed="258.66" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">145.9092</Lap>
+<Lap num="4" p="6" et="575.4199" s1="38.6633" s2="66.6880" s3="40.8113" topspeed="258.10" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.1627</Lap>
+<Lap num="5" p="6" et="721.6001" s1="38.7545" s2="65.9902" s3="41.0587" topspeed="258.21" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">145.8033</Lap>
+<Lap num="6" p="5" et="867.3999" s1="39.3969" s2="66.0363" s3="44.1185" topspeed="256.86" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">149.5516</Lap>
+<Lap num="7" p="6" et="1016.9399" s1="39.0861" s2="67.3214" s3="42.5740" topspeed="258.29" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">148.9815</Lap>
+<Lap num="8" p="7" et="1165.9199" s1="39.6029" s2="69.0011" s3="42.3661" topspeed="256.39" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.9701</Lap>
+<Lap num="9" p="10" et="1316.8999" s1="43.5228" s2="67.9813" s3="52.2122" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">163.7163</Lap>
+<BestLapTime>145.8033</BestLapTime>
+<FinishTime>1351.3431</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0226</Name>
+<Connected>1</Connected>
+<VehFile>25_ORTLMA14S6SD.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>ORT by TF #25:LM</VehName>
+<Category>WEC 2023, GTE, Aston Martin Vantage AMR</Category>
+<CarType>Aston Martin Vantage AMR</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>ORT by TF #25</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>12</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="129.2625" topspeed="253.15" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="2" p="11" et="294.9399" s1="39.8846" s2="64.6236" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="12" et="441.4399" s1="39.1743" s2="64.2261" s3="51.6114" topspeed="255.40" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">155.0117</Lap>
+<Lap num="4" p="12" et="596.4399" s1="46.3392" s2="71.1375" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">--.----</Lap>
+<Lap num="5" p="12" et="768.5801" s1="46.9545" s2="64.9193" s3="42.8909" topspeed="252.70" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">154.7646</Lap>
+<Lap num="6" p="12" et="923.3601" s1="40.0304" s2="65.2204" s3="40.7920" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.0428</Lap>
+<Lap num="7" p="12" et="1069.3999" s1="39.8706" s2="64.2222" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="8" p="12" et="1217.8601" s1="40.0360" s2="67.1971" s3="43.8009" topspeed="255.40" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">151.0341</Lap>
+<BestLapTime>146.0428</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2775</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>9</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="129.2625" s1="47.9907" s2="65.1367" s3="41.3365" topspeed="251.80" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">154.4639</Lap>
+<Lap num="2" p="6" et="283.7400" s1="41.8524" s2="65.8510" s3="40.3977" topspeed="253.60" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">148.1011</Lap>
+<Lap num="3" p="7" et="431.8401" s1="40.0740" s2="66.0688" s3="42.6293" topspeed="253.60" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">148.7721</Lap>
+<Lap num="4" p="9" et="580.6001" s1="40.0582" s2="65.8539" s3="45.4250" topspeed="254.05" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">151.3371</Lap>
+<Lap num="5" p="9" et="731.9399" s1="39.7010" s2="66.5742" s3="40.3660" topspeed="255.40" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">146.6412</Lap>
+<Lap num="6" p="10" et="878.5801" s1="38.9346" s2="74.5450" s3="40.6807" topspeed="256.30" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">154.1603</Lap>
+<Lap num="7" p="10" et="1032.7400" s1="39.7294" s2="66.3959" s3="40.4845" topspeed="255.40" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">146.6097</Lap>
+<Lap num="8" p="10" et="1179.3601" s1="39.8708" s2="65.4668" s3="44.2531" topspeed="254.95" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">149.5907</Lap>
+<Lap num="9" p="9" et="1328.9399" s1="41.0339" s2="66.1724" s3="42.4304" topspeed="251.80" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">149.6367</Lap>
+<BestLapTime>146.6097</BestLapTime>
+<FinishTime>1349.3176</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1360</Name>
+<Connected>1</Connected>
+<VehFile>60_IRONLYNB5413BF4.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Iron Lynx #60:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>Iron Lynx #60</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>14</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="129.2625" s1="46.0691" s2="65.5128" s3="41.3150" topspeed="254.05" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">152.8970</Lap>
+<Lap num="2" p="14" et="282.1599" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="13" et="461.3201" s1="38.9784" topspeed="256.75" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="4" p="14" et="606.5801" s1="38.7491" s2="64.8907" s3="167.6273" topspeed="258.55" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">271.2671</Lap>
+<Lap num="5" p="14" et="877.8601" topspeed="257.20" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="6" p="14" et="1030.8000" s1="38.9774" s2="90.3173" s3="41.6398" topspeed="257.65" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">170.9344</Lap>
+<Lap num="7" p="14" et="1201.7400" s1="39.2140" s2="65.4834" s3="41.9371" topspeed="254.95" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">146.6345</Lap>
+<BestLapTime>146.6345</BestLapTime>
+<Laps>7</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1225</Name>
+<Connected>1</Connected>
+<VehFile>56_REXYWECCF8A67B9.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Project 1 - AO #56:FB</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>Project 1 - AO #56</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>11</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="129.2625" s1="49.6173" s2="70.9827" s3="42.5315" topspeed="249.09" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">163.1315</Lap>
+<Lap num="2" p="10" et="292.3999" s1="40.0735" s2="66.0085" s3="41.7421" topspeed="253.60" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">147.8242</Lap>
+<Lap num="3" p="10" et="440.2200" s1="39.0742" s2="66.1737" s3="41.9299" topspeed="255.85" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">147.1778</Lap>
+<Lap num="4" p="11" et="587.3999" s1="39.8528" s2="69.6667" s3="41.2971" topspeed="251.80" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.8167</Lap>
+<Lap num="5" p="11" et="738.2200" s1="40.1282" s2="68.0723" s3="42.1910" topspeed="254.05" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.3915</Lap>
+<Lap num="6" p="11" et="888.6201" s1="39.9131" s2="67.1594" s3="41.3888" topspeed="253.15" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">148.4614</Lap>
+<Lap num="7" p="11" et="1037.0801" s1="39.7476" s2="67.9083" s3="42.3226" topspeed="254.05" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">149.9785</Lap>
+<Lap num="8" p="11" et="1187.0601" s1="39.7855" s2="66.7067" s3="42.3993" topspeed="252.25" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">148.8915</Lap>
+<Lap num="9" p="11" et="1335.9399" s1="40.0266" s2="67.4484" s3="42.8130" topspeed="254.50" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">150.2880</Lap>
+<BestLapTime>147.1778</BestLapTime>
+<FinishTime>1356.9775</FinishTime>
+<Laps>9</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="9">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0085</Name>
+<Connected>1</Connected>
+<VehFile>88_PROTONL745C67A8.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Proton Competition #88:LM</VehName>
+<Category>WEC 2023, GTE, Porsche 911 RSR-19</Category>
+<CarType>Porsche 911 RSR-19</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>Proton Competition #88</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>13</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="129.2625" s1="48.8319" s2="68.0564" s3="42.4970" topspeed="248.64" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">159.3853</Lap>
+<Lap num="2" p="13" et="288.6599" s1="60.5960" s2="67.6347" s3="43.7545" topspeed="253.15" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">171.9852</Lap>
+<Lap num="3" p="15" et="460.6399" s1="40.0051" s2="76.9554" s3="46.7606" topspeed="254.05" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">163.7210</Lap>
+<Lap num="4" p="13" et="624.3601" s1="40.5425" s2="93.8533" s3="49.1925" topspeed="253.15" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">183.5884</Lap>
+<Lap num="5" p="13" et="807.9600" s1="40.0726" s2="67.7206" s3="41.5506" topspeed="254.95" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">149.3438</Lap>
+<Lap num="6" p="13" et="957.3000" s1="39.8234" s2="66.6537" s3="45.8834" topspeed="254.05" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">152.3605</Lap>
+<Lap num="7" p="13" et="1109.6599" s1="40.0208" s2="68.7507" s3="42.1389" topspeed="254.50" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">150.9104</Lap>
+<Lap num="8" p="13" et="1260.5601" s1="40.1478" s2="68.2358" s3="45.8176" topspeed="254.50" fcompound="1,Medium" rcompound="1,Medium" FL="1,Medium" FR="1,Medium" RL="1,Medium" RR="1,Medium">154.2013</Lap>
+<BestLapTime>149.3438</BestLapTime>
+<FinishTime>1285.4975</FinishTime>
+<Laps>8</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>Finished Normally</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2084</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>17</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="129.2625" s1="44.1308" s2="63.7427" s3="47.6987" topspeed="259.00" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">155.5722</Lap>
+<Lap num="2" p="16" et="284.8401" s1="40.0298" s2="79.0461" s3="77.5487" topspeed="254.50" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft" pit="1">196.6246</Lap>
+<BestLapTime>155.5722</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2466</Name>
+<Connected>1</Connected>
+<VehFile>100_WALKEN1B80023E.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>Walkenhorst Motorsport #100:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>Walkenhorst Motorsport #100</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>19</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+</Driver>
+<Driver>
+<Name>Driver 0127</Name>
+<Connected>1</Connected>
+<VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #21:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>AF Corse #21</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>16</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="129.2625" s1="50.4504" s2="75.7024" s3="42.8144" topspeed="251.35" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">168.9672</Lap>
+<Lap num="2" p="15" et="298.2400" s1="40.4462" topspeed="249.99" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">--.----</Lap>
+<Lap num="3" p="14" et="466.2400" s1="40.8694" s2="70.2337" s3="46.9203" topspeed="245.94" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">158.0234</Lap>
+<BestLapTime>158.0234</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DQ</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1970</Name>
+<Connected>1</Connected>
+<VehFile>33_CORVETT9BB51D89.VEH</VehFile>
+<UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
+<VehName>Corvette Racing #33:LM</VehName>
+<Category>WEC 2023, GTE, Corvette C8.R GTE</Category>
+<CarType>Corvette C8.R GTE</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>Corvette Racing #33</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>18</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="129.2625" s1="49.9912" s2="68.3909" s3="59.1851" topspeed="249.09" fcompound="0,Soft" rcompound="0,Soft" FL="0,Soft" FR="0,Soft" RL="0,Soft" RR="0,Soft">177.5672</Lap>
+<BestLapTime>177.5672</BestLapTime>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DQ</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,AutoShift=3,Braking=1,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2302</Name>
+<Connected>1</Connected>
+<VehFile>83_AFCORSE7FBCECA5.VEH</VehFile>
+<UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
+<VehName>AF Corse #83:LM</VehName>
+<Category>WEC 2023, GTE, Ferrari 488 GTE EVO</Category>
+<CarType>Ferrari 488 GTE EVO</CarType>
+<CarClass>GTE</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>AF Corse #83</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>20</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DQ</FinishStatus>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

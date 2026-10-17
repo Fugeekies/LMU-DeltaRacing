@@ -80,13 +80,13 @@ public sealed class LmuApplicationOptionsValidator : IValidateOptions<LmuApplica
     }
 
     /// <summary>
-    /// Resolves the configured result directory or the repository test-assets default.
+    /// Resolves the configured result directory or the repository assets default.
     /// </summary>
     /// <param name="options">The application options.</param>
     /// <returns>An absolute results directory path.</returns>
     public string ResolveResultsDirectory(LmuApplicationOptions options) =>
         string.IsNullOrWhiteSpace(options.ResultsDirectory)
-            ? XmlFileDiscovery.FindTestAssetsResultsDirectory(baseDirectory)
+            ? XmlFileDiscovery.FindAssetsResultsDirectory(baseDirectory)
             : ResolvePath(options.ResultsDirectory);
 
     /// <summary>

@@ -11,10 +11,10 @@ namespace LMU_DeltaRacing.Tests.Infrastructure;
 [TestClass]
 public sealed class XmlResultParserTests
 {
-    private const string FixturePath = "TestAssets/Results/2025_09_20_19_03_47-43P1.xml";
+    private const string FixturePath = "assets/Results/2025_09_20_19_03_47-43P1.xml";
 
     /// <summary>
-    /// Verifies that a real result file populates session, driver, lap, and sector data.
+    /// Verifies that an anonymized package fixture populates session, driver, lap, and sector data.
     /// </summary>
     [TestMethod]
     public void Parse_reads_session_metadata_drivers_and_laps_from_a_real_result_file()
@@ -30,8 +30,9 @@ public sealed class XmlResultParserTests
         session.Drivers.Should().HaveCount(21);
 
         var driver = session.Drivers.Should()
-            .ContainSingle(item => item.Name == "Josh Harper-Jones")
+            .ContainSingle(item => item.CarNumber == "16" && item.Position == 1)
             .Which;
+        driver.Name.Should().MatchRegex("^Driver \\d{4,}$");
         driver.CarNumber.Should().Be("16");
         driver.Position.Should().Be(1);
         driver.Laps.Should().HaveCount(2);

@@ -33,7 +33,7 @@
 
 5. **Test-Driven Development (TDD) Obligatoire :**
    - Écris TOUJOURS les tests unitaires / d'intégration (`MSTest` + `FluentAssertions`) avant le code métier.
-   - Utilise les fichiers XML réels dans `tests/testAssets/Results/` pour valider le parsing.
+   - Utilise les fichiers XML anonymisés de `assets/Results/` pour valider le parsing et évite les copies dans les dossiers de tests.
 
 6. **Logging & Observabilité (OpenTelemetry & JSON) :**
    - Tous les logs applicatifs doivent être émis via les abstractions `Microsoft.Extensions.Logging` / OpenTelemetry.
@@ -76,5 +76,5 @@
 - `src/LMU-DeltaRacing.Console/`
 - `ui/LMU-DeltaRacing.UI/`
 - `tests/LMU-DeltaRacing.Tests/` 
-- `tests/testAssets/Results/`
+- `assets/Results/`
 - `docs/` (`ARCHITECTURE.md`, `ROADMAP.md`, `benchmarks/`)

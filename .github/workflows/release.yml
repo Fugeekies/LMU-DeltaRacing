@@ -1,0 +1,90 @@
+name: Build and release Windows installer
+
+on:
+  push:
+    tags:
+      - "v*"
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  build-installer:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore
+
+      - name: Publish self-contained dashboard
+        run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 -o publish_output
+
+      - name: Validate anonymized fallback result assets
+        run: pwsh -NoProfile -File scripts/Test-PackageAssets.ps1 -ResultsDirectory assets/Results
+
+      - name: Copy committed fallback result assets
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Path publish_output/TestAssets -Force | Out-Null
+          Copy-Item -LiteralPath assets/Results -Destination publish_output/TestAssets -Recurse
+
+      - name: Verify the published executable
+        run: pwsh -NoProfile -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output
+
+      - name: Install Inno Setup
+        run: choco install innosetup --no-progress --yes
+
+      - name: Build installer
+        shell: pwsh
+        run: |
+          if ($env:GITHUB_REF_TYPE -eq 'tag') {
+            $version = $env:GITHUB_REF_NAME -replace '^v', ''
+          }
+          else {
+            $version = "0.0.$env:GITHUB_RUN_NUMBER"
+          }
+          if ([string]::IsNullOrWhiteSpace($version)) {
+            throw "An installer version could not be determined."
+          }
+          iscc "/DAppVersion=$version" "scripts/installer.iss"
+
+      - name: Upload installer artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: LMU-DeltaRacing-Setup
+          path: output/LMU-DeltaRacing-Setup.exe
+          if-no-files-found: error
+
+  release:
+    if: startsWith(github.ref, 'refs/tags/')
+    needs: build-installer
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Download installer artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: LMU-DeltaRacing-Setup
+          path: output
+
+      - name: Create GitHub release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: LMU-DeltaRacing ${{ github.ref_name }}
+          files: output/LMU-DeltaRacing-Setup.exe
+          draft: false
+          prerelease: false

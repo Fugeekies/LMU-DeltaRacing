@@ -26,23 +26,19 @@ public static class XmlFileDiscovery
     }
 
     /// <summary>
-    /// Searches the specified directory and its parents for repository XML test assets.
+    /// Searches the specified directory and its parents for repository XML result assets.
     /// </summary>
     /// <param name="startingDirectory">The directory where the search begins.</param>
-    /// <returns>The repository's test results directory.</returns>
-    /// <exception cref="DirectoryNotFoundException">The test assets directory could not be found.</exception>
-    public static string FindTestAssetsResultsDirectory(string startingDirectory)
+    /// <returns>The repository's results directory.</returns>
+    /// <exception cref="DirectoryNotFoundException">The results assets directory could not be found.</exception>
+    public static string FindAssetsResultsDirectory(string startingDirectory)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(startingDirectory);
 
         var directory = new DirectoryInfo(Path.GetFullPath(startingDirectory));
         while (directory is not null)
         {
-            var resultsDirectory = Path.Combine(
-                directory.FullName,
-                "tests",
-                "testAssets",
-                "Results");
+            var resultsDirectory = Path.Combine(directory.FullName, "assets", "Results");
 
             if (Directory.Exists(resultsDirectory))
             {
@@ -53,6 +49,6 @@ public static class XmlFileDiscovery
         }
 
         throw new DirectoryNotFoundException(
-            $"Could not find the repository test assets directory starting from '{startingDirectory}'.");
+            $"Could not find the repository results assets directory starting from '{startingDirectory}'.");
     }
 }

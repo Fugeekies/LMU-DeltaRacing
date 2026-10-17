@@ -117,7 +117,9 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     {
         try
         {
-            var resultsDirectory = ResolveResultsDirectory();
+            var resultsDirectory = ResultsDirectoryResolver.Resolve(
+                configuration["LMU:ResultsDirectory"],
+                AppContext.BaseDirectory);
             var files = Directory.EnumerateFiles(resultsDirectory, "*.xml", SearchOption.TopDirectoryOnly)
                 .OrderBy(filePath => Path.GetFileName(filePath), StringComparer.OrdinalIgnoreCase)
                 .ToArray();
@@ -177,37 +179,6 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
             NotifyStateChanged();
         }
-    }
-
-    private string ResolveResultsDirectory()
-    {
-        var configuredDirectory = configuration["LMU:ResultsDirectory"];
-        if (!string.IsNullOrWhiteSpace(configuredDirectory))
-        {
-            var resolvedPath = Path.GetFullPath(configuredDirectory, AppContext.BaseDirectory);
-            if (!Directory.Exists(resolvedPath))
-            {
-                throw new DirectoryNotFoundException(
-                    $"The configured results directory does not exist: '{resolvedPath}'.");
-            }
-
-            return resolvedPath;
-        }
-
-        DirectoryInfo? directory = new(AppContext.BaseDirectory);
-        while (directory is not null)
-        {
-            var defaultDirectory = Path.Combine(directory.FullName, "tests", "testAssets", "Results");
-            if (Directory.Exists(defaultDirectory))
-            {
-                return defaultDirectory;
-            }
-
-            directory = directory.Parent;
-        }
-
-        throw new DirectoryNotFoundException(
-            "No results directory is configured. Set LMU:ResultsDirectory in appsettings.json.");
     }
 
     private void OnImportCompleted(SessionImportResult result)

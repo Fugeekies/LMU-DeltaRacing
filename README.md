@@ -6,7 +6,7 @@ La [feuille de route](docs/ROADMAP.md) présente les jalons envisagés et une li
 
 ## État actuel
 
-Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche une progression pendant l'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest s'appuient sur des fichiers XML réels de `tests/testAssets/Results`.
+Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche une progression pendant l'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
 
 ## Projets
 
@@ -27,6 +27,11 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
+- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results`
+- `pwsh -File scripts/Test-PackageAssets.ps1`
+- `Copy-Item assets/Results -Destination publish_output/TestAssets -Recurse`
+- `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
+- `iscc /DAppVersion=1.0.0 scripts/installer.iss`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 
@@ -38,9 +43,13 @@ Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'e
 
 Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-deltaracing-stats.json`, au même endroit. Le fichier indique les imports réussis/échoués, la durée moyenne par fichier, le débit moyen d'import, ainsi que les moyennes du working set et du heap .NET. Il est lui aussi conservé après l'arrêt et réinitialisé au prochain lancement. Les traces et métriques OpenTelemetry ne polluent pas le terminal.
 
-Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `tests/testAssets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
+Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `assets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
 
-Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable. La publication `win-x64` inclut le runtime .NET; lancez `LMU-DeltaRacing.UI.exe` depuis le dossier `publish`.
+Le dashboard Blazor charge les XML au démarrage, affiche les sessions et leur classement, puis actualise les données à l'arrivée de nouveaux fichiers. Il s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. En développement, le dossier des fixtures est découvert par défaut; pour une utilisation autonome, renseignez `LMU:ResultsDirectory` dans `src/LMU-DeltaRacing.UI/appsettings.json` ou dans celui publié à côté de l'exécutable.
+
+Le profil `win-x64` produit une publication autonome, élaguée et à fichier unique. Le jeu unique de résultats de démonstration anonymisés est versionné dans `assets/Results`; le workflow le valide puis le copie vers la destination d'installation `TestAssets/Results` sans le régénérer. Pour renouveler ce jeu de données depuis un autre dossier de résultats LMU, exécutez `Prepare-PackageAssets.ps1` vers `assets/Results`, vérifiez-le avec `Test-PackageAssets.ps1` et incluez les fichiers XML mis à jour dans la modification. Pour construire et vérifier manuellement l'installeur, publiez d'abord l'UI avec ce profil dans `publish_output`, copiez les fixtures vers `publish_output/TestAssets`, exécutez `Test-PublishedApp.ps1`, puis compilez `scripts/installer.iss` avec Inno Setup. Les fixtures utilisent des alias de pilotes stables entre fichiers; les noms des résultats LMU de l'utilisateur ne sont pas modifiés. L'installeur choisit un dossier de résultats LMU détecté ou, en l'absence de résultats, les fixtures anonymisées installées avec l'application. La configuration existante est conservée lors des mises à niveau.
+
+Le workflow `.github/workflows/release.yml` construit et vérifie l'application puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub pour chaque tag `v*`.
 
 Le projet de test génère les entrées XML et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10, 100 et 500 fichiers sur disque puis les supprime. Le rapport Markdown contient la durée, le débit, les allocations et la mémoire observée ; il est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test.
 

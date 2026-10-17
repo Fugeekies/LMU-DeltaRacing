@@ -19,7 +19,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 
 ## Jalon — Gestion de la configuration
 - [x] Configurer la gestion dynamique des paramètres applicatifs (`IOptionsMonitor<T>` / `appsettings.json`)
-- [x] Permettre la configuration du chemin local du dossier de résultats LMU -> chemin des `testAssets` par défaut
+- [x] Permettre la configuration du chemin local du dossier de résultats LMU -> assets anonymisés par défaut
 - [x] Configurer le chemin local du log -> fichier à côté de l'exécutable par défaut
 - [x] Configurer le niveau minimal du fichier de log JSON via la configuration -> `Debug` par défaut (aucun log affiché dans la console)
 - [x] Valider les chemins et le niveau de log au démarrage de l'application
@@ -53,13 +53,13 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Gérer les états de chargement, d'erreur et les listes vides.
 
 ## Jalon — Packaging, Déploiement & Installeur Autonome
-- [ ] Configurer le profil de publication .NET en `Self-Contained` et `Single-File` dans le projet UI
-- [ ] Activer le `Trimming` (nettoyage des DLLs inutilisées) pour réduire la taille de l'exécutable au minimum
-- [ ] Configurer un script **Inno Setup** pour générer l'installeur `LMU-DeltaRacing-Setup.exe`
-- [ ] Détecter automatiquement le chemin par défaut de LMU (`UserData/Log/Results/`) lors de l'installation, si non trouver mettre les assets des tests
-- [ ] Anonymiser les nom des drives en gardant une cohérence des nom pour l'utilisation des assets
-- [ ] Ajouter un test automatisé vérifiant qu'aucune DLL externe n'est requise au lancement de l'exécutable publié
-- [ ] adapter si besoin le workflow GitHub Actions (`.github/workflows/release.yml`) pour automatiser le build et la publication de l'installeur `.exe`
+- [x] Configurer le profil de publication .NET en `Self-Contained` et `Single-File` dans le projet UI.
+- [x] Activer le `Trimming` pour réduire les dépendances distribuées.
+- [x] Configurer un script **Inno Setup** pour générer l'installeur `LMU-DeltaRacing-Setup.exe`.
+- [x] Détecter les dossiers de résultats LMU usuels à l'installation et sélectionner les fixtures si aucun résultat LMU n'est présent.
+- [x] Anonymiser les noms des pilotes dans les fixtures livrées en conservant un alias cohérent entre les fichiers.
+- [x] Ajouter un test automatisé vérifiant qu'aucune DLL externe n'est requise au lancement de l'exécutable publié.
+- [x] Déclencher le build et la publication de l'installeur `.exe` depuis le workflow GitHub Actions lors de la création d'un tag de version.
 
 ## Liste d'idées à prioriser
 - [ ] Exporter les résultats et statistiques en CSV.

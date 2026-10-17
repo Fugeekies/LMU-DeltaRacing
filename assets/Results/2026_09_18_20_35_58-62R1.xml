@@ -1,0 +1,1810 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>2</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1789754464</DateTime>
+<TimeString>2026/09/18 20:01:04</TimeString>
+<TrackVenue>Autodromo Nazionale Monza</TrackVenue>
+<TrackCourse>Autodromo Nazionale Monza</TrackCourse>
+<TrackEvent>6 Hours of Monza</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\Monza_2023\1.29\layoutMonza.mas</TrackData>
+<TrackLength>5780.6</TrackLength>
+<GameVersion>1.4150</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>20</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>ADESS_AD25_LMP3,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>63</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<TireWarmers>0</TireWarmers>
+<Race>
+<DateTime>1789755142</DateTime>
+<TimeString>2026/09/18 20:12:22</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>20</Minutes>
+<Stream>
+<ChatMessage et="16.2">G Ultimate: Slowing to pit</ChatMessage>
+<ChatMessage et="29.8">T Proust: good race be careful</ChatMessage>
+<ChatMessage et="30.3">P Fugeekies: GL ;)</ChatMessage>
+<ChatMessage et="31.4">S Govender: Thank you</ChatMessage>
+<ChatMessage et="54.4">M C 4: HF be careful please</ChatMessage>
+<Incident et="90.1">Joram Dreef(12) reported contact (608.97) with another vehicle Aitor Fuentes(0)</Incident>
+<Incident et="90.1">Aitor Fuentes(0) reported contact (609.71) with another vehicle Joram Dreef(12)</Incident>
+<Penalty Driver="Gustav Ultimate" ID="15" Penalty="Time" Time="10" Laps="0" Reason="Erratic driving" et="127.1">Gustav Ultimate received Time penalty, 10s, 0laps for Erratic driving. Result: penalties=1, 1st=Time,10s</Penalty>
+<Penalty Driver="Giuseppe Losco" ID="19" Penalty="Drive Thru" Time="0" Laps="0" Reason="Irregolarità nella corsia dei box" et="127.1">Giuseppe Losco received Drive Thru penalty, 0s, 0laps for Irregolarità nella corsia dei box. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="130.5">Gustav Ultimate(15) reported contact (72.02) with another vehicle Roman Kutsir(17)</Incident>
+<Incident et="130.5">Roman Kutsir(17) reported contact (107.10) with another vehicle Gustav Ultimate(15)</Incident>
+<Penalty et="142.0">Giuseppe Losco served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Incident et="144.1">Paul Allen(11) reported contact (367.18) with another vehicle Martin Cavojsky 4(6)</Incident>
+<Incident et="144.1">Martin Cavojsky 4(6) reported contact (229.17) with another vehicle Paul Allen(11)</Incident>
+<Incident et="145.3">Paul Allen(11) reported contact (113.46) with another vehicle Martin Cavojsky 4(6)</Incident>
+<Incident et="145.4">Martin Cavojsky 4(6) reported contact (102.21) with another vehicle Paul Allen(11)</Incident>
+<Incident et="146.8">Fabian Kraus(2) reported contact (204.00) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="146.8">Eleyzer VENTURA#8554(3) reported contact (207.63) with another vehicle Fabian Kraus(2)</Incident>
+<Incident et="147.1">Eleyzer VENTURA#8554(3) reported contact (629.45) with another vehicle Paul Allen(11)</Incident>
+<Incident et="147.1">Paul Allen(11) reported contact (555.36) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="150.0">Paul Allen(11) reported contact (2158.34) with another vehicle Safuan Syukri(10)</Incident>
+<Incident et="150.1">Safuan Syukri(10) reported contact (2253.14) with another vehicle Paul Allen(11)</Incident>
+<Incident et="150.7">Dylan De Brabanter(4) reported contact (690.50) with another vehicle Safuan Syukri(10)</Incident>
+<Incident et="150.8">Safuan Syukri(10) reported contact (444.98) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="151.7">Fabian Kraus(2) reported contact (39.39) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="151.7">Eleyzer VENTURA#8554(3) reported contact (28.62) with another vehicle Fabian Kraus(2)</Incident>
+<Incident et="152.8">Paul Allen(11) reported contact (349.67) with Immovable</Incident>
+<Incident et="152.8">David Jelovsek(5) reported contact (516.34) with another vehicle Costa Castro(1)</Incident>
+<Incident et="152.9">Costa Castro(1) reported contact (762.60) with another vehicle David Jelovsek(5)</Incident>
+<Incident et="153.4">Paul Allen(11) reported contact (52.40) with Immovable</Incident>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="0" WarningPoints="1.25" CurrentPoints="1.25" Resolution="4" et="154.0">Warning</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="0" WarningPoints="1.25" CurrentPoints="1.25" Resolution="4" et="154.0">Warning</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.6">No Further Action</TrackLimits>
+<Incident et="159.0">Eleyzer VENTURA#8554(3) reported contact (36.49) with another vehicle Costa Castro(1)</Incident>
+<Incident et="159.0">Eleyzer VENTURA#8554(3) reported contact (161.20) with another vehicle Costa Castro(1)</Incident>
+<Incident et="159.0">Costa Castro(1) reported contact (101.37) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="159.4">Eleyzer VENTURA#8554(3) reported contact (744.05) with another vehicle David Jelovsek(5)</Incident>
+<Incident et="159.4">David Jelovsek(5) reported contact (757.96) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="159.8">Eleyzer VENTURA#8554(3) reported contact (1850.37) with another vehicle Tais Proust(9)</Incident>
+<Incident et="159.8">Tais Proust(9) reported contact (1834.16) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="160.2">Fabian Kraus(2) reported contact (113.16) with another vehicle Costa Castro(1)</Incident>
+<Incident et="160.2">Costa Castro(1) reported contact (162.88) with another vehicle Fabian Kraus(2)</Incident>
+<Incident et="160.3">David Jelovsek(5) reported contact (1176.82) with another vehicle Costa Castro(1)</Incident>
+<Incident et="160.3">Costa Castro(1) reported contact (1170.80) with another vehicle David Jelovsek(5)</Incident>
+<Sector et="163.1">David Jelovsek(5) reports new suspension damage</Sector>
+<Incident et="163.1">David Jelovsek(5) reported contact (3188.30) with Immovable</Incident>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="166.3">No Further Action</TrackLimits>
+<Score et="168.4">Martin Cavojsky 4(6) lap=0 point=1 t=-1.000 et=168.340</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="1" Class="LMP3" et="170.0">Fabian Kraus(2) set new best for sector 1</Sector>
+<Score et="170.0">Fabian Kraus(2) lap=0 point=1 t=42.840 et=169.960</Score>
+<Score et="170.3">Costa Castro(1) lap=0 point=1 t=43.009 et=170.120</Score>
+<Score et="170.8">Seshan Govender(16) lap=0 point=1 t=43.365 et=170.480</Score>
+<Score et="171.3">Tais Proust(9) lap=0 point=1 t=44.156 et=171.260</Score>
+<Incident et="171.8">Daniel Aldave(7) reported contact (89.35) with another vehicle Dylan De Brabanter(4)</Incident>
+<Score et="171.8">Safuan Syukri(10) lap=0 point=1 t=44.536 et=171.640</Score>
+<Incident et="171.8">Dylan De Brabanter(4) reported contact (164.59) with another vehicle Daniel Aldave(7)</Incident>
+<Score et="171.9">Eleyzer VENTURA#8554(3) lap=0 point=1 t=44.745 et=171.860</Score>
+<Score et="171.9">Daniel Aldave(7) lap=0 point=1 t=44.727 et=171.840</Score>
+<Score et="172.0">Dylan De Brabanter(4) lap=0 point=1 t=44.760 et=171.880</Score>
+<Score et="172.2">Gustav Ultimate(15) lap=0 point=1 t=-1.000 et=172.180</Score>
+<Score et="173.0">Paul Allen(11) lap=0 point=1 t=45.845 et=172.960</Score>
+<Score et="173.2">Julien PETIT(8) lap=0 point=1 t=45.989 et=173.100</Score>
+<TrackLimits Driver="David Jelovsek" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="173.6">No Further Action</TrackLimits>
+<TrackLimits Driver="David Jelovsek" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="173.6">No Further Action</TrackLimits>
+<Score et="173.6">Joram Dreef(12) lap=0 point=1 t=46.440 et=173.560</Score>
+<Score et="173.9">Aitor Fuentes(0) lap=0 point=1 t=46.731 et=173.840</Score>
+<Score et="174.4">John Wooldridge(18) lap=0 point=1 t=47.201 et=174.320</Score>
+<Score et="174.8">P-A Fugeekies(14) lap=0 point=1 t=47.651 et=174.753</Score>
+<Score et="175.3">Roman Kutsir(17) lap=0 point=1 t=48.149 et=175.260</Score>
+<Incident et="175.6">Daniel Aldave(7) reported contact (103.61) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="175.6">Eleyzer VENTURA#8554(3) reported contact (90.25) with another vehicle Daniel Aldave(7)</Incident>
+<Score et="178.4">Giuseppe Losco(19) lap=0 point=1 t=-1.000 et=178.260</Score>
+<Incident et="178.4">Daniel Aldave(7) reported contact (687.87) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="178.5">Dylan De Brabanter(4) reported contact (732.58) with another vehicle Daniel Aldave(7)</Incident>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="178.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="178.7">No Further Action</TrackLimits>
+<Score et="179.7">Marvin Soapert(13) lap=0 point=1 t=52.487 et=179.600</Score>
+<Incident et="184.3">Gustav Ultimate(15) reported contact (606.19) with another vehicle Roman Kutsir(17)</Incident>
+<Incident et="184.3">Roman Kutsir(17) reported contact (559.70) with another vehicle Gustav Ultimate(15)</Incident>
+<Incident et="184.4">Gustav Ultimate(15) reported contact (1210.30) with another vehicle Roman Kutsir(17)</Incident>
+<Incident et="185.3">Roman Kutsir(17) reported contact (1615.56) with Immovable</Incident>
+<Incident et="185.7">Gustav Ultimate(15) reported contact (1778.15) with Immovable</Incident>
+<Incident et="186.3">Dylan De Brabanter(4) reported contact (197.17) with another vehicle Paul Allen(11)</Incident>
+<Incident et="186.4">Paul Allen(11) reported contact (190.88) with another vehicle Dylan De Brabanter(4)</Incident>
+<Score et="186.4">David Jelovsek(5) lap=0 point=1 t=59.215 et=186.320</Score>
+<Incident et="186.9">Paul Allen(11) reported contact (448.62) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="187.0">Paul Allen(11) reported contact (448.62) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="187.0">Dylan De Brabanter(4) reported contact (205.59) with another vehicle Paul Allen(11)</Incident>
+<Incident et="187.0">Paul Allen(11) reported contact (1038.76) with Immovable</Incident>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="189.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="189.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="196.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="196.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.6">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.6">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="201.6">Warning</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="201.6">Warning</TrackLimits>
+<Score et="203.7">Martin Cavojsky 4(6) lap=0 point=2 t=-1.000 et=203.600</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="2" Class="LMP3" et="205.2">Fabian Kraus(2) set new best for sector 2</Sector>
+<Score et="205.2">Fabian Kraus(2) lap=0 point=2 t=78.044 et=205.160</Score>
+<Score et="206.1">Costa Castro(1) lap=0 point=2 t=78.855 et=205.960</Score>
+<Score et="206.8">Seshan Govender(16) lap=0 point=2 t=79.491 et=206.600</Score>
+<Score et="207.2">Tais Proust(9) lap=0 point=2 t=79.959 et=207.080</Score>
+<Score et="207.7">Safuan Syukri(10) lap=0 point=2 t=80.387 et=207.500</Score>
+<Score et="208.8">Eleyzer VENTURA#8554(3) lap=0 point=2 t=81.623 et=208.740</Score>
+<Score et="209.4">Daniel Aldave(7) lap=0 point=2 t=82.264 et=209.380</Score>
+<Score et="210.6">Paul Allen(11) lap=0 point=2 t=83.358 et=210.480</Score>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="210.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="210.9">No Further Action</TrackLimits>
+<Score et="211.3">Julien PETIT(8) lap=0 point=2 t=-1.000 et=211.180</Score>
+<Score et="211.6">Joram Dreef(12) lap=0 point=2 t=84.397 et=211.500</Score>
+<Score et="211.7">Aitor Fuentes(0) lap=0 point=2 t=84.566 et=211.680</Score>
+<Score et="212.4">John Wooldridge(18) lap=0 point=2 t=85.220 et=212.340</Score>
+<Score et="212.7">P-A Fugeekies(14) lap=0 point=2 t=85.601 et=212.704</Score>
+<Score et="215.0">Giuseppe Losco(19) lap=0 point=2 t=-1.000 et=214.880</Score>
+<Score et="218.0">Dylan De Brabanter(4) lap=0 point=2 t=90.799 et=217.920</Score>
+<Score et="218.6">Marvin Soapert(13) lap=0 point=2 t=91.460 et=218.580</Score>
+<Score et="227.7">Gustav Ultimate(15) lap=0 point=2 t=-1.000 et=227.640</Score>
+<Score et="227.9">David Jelovsek(5) lap=0 point=2 t=100.703 et=227.820</Score>
+<Score et="228.0">Roman Kutsir(17) lap=0 point=2 t=100.794 et=227.900</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.0">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="229.0">No Further Action</TrackLimits>
+<Incident et="232.7">Roman Kutsir(17) reported contact (1347.66) with Immovable</Incident>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="233.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="233.0">No Further Action</TrackLimits>
+<TrackLimits Driver="David Jelovsek" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="233.8">No Further Action</TrackLimits>
+<TrackLimits Driver="David Jelovsek" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="233.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.2">No Further Action</TrackLimits>
+<Incident et="237.0">David Jelovsek(5) reported contact (32.52) with Immovable</Incident>
+<Incident et="237.2">David Jelovsek(5) reported contact (6992.84) with Immovable</Incident>
+<Score et="238.0">Martin Cavojsky 4(6) lap=1 point=0 t=-1.000 et=237.880</Score>
+<Incident et="239.1">David Jelovsek(5) reported contact (9.92) with Immovable</Incident>
+<ChatMessage et="239.3">D Jelovsek: Slowing to pit</ChatMessage>
+<Sector Driver="Fabian Kraus" ID="2" Sector="3" Class="LMP3" et="239.6">Fabian Kraus(2) set new best for sector 3</Sector>
+<Score et="239.6">Fabian Kraus(2) lap=1 point=0 t=112.435 et=239.540</Score>
+<Score et="240.7">Costa Castro(1) lap=1 point=0 t=113.472 et=240.580</Score>
+<Score et="241.8">Seshan Govender(16) lap=1 point=0 t=114.367 et=241.480</Score>
+<Score et="242.0">Tais Proust(9) lap=1 point=0 t=114.827 et=241.940</Score>
+<Score et="242.3">Safuan Syukri(10) lap=1 point=0 t=115.051 et=242.160</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="242.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="242.5">No Further Action</TrackLimits>
+<Sector Driver="Eleyzer VENTURA#8554" ID="3" Sector="3" Class="LMP3" et="243.1">Eleyzer VENTURA#8554(3) set new best for sector 3</Sector>
+<Score et="243.2">Eleyzer VENTURA#8554(3) lap=1 point=0 t=115.996 et=243.100</Score>
+<Score et="244.3">Daniel Aldave(7) lap=1 point=0 t=117.138 et=244.260</Score>
+<Score et="245.1">Paul Allen(11) lap=1 point=0 t=117.976 et=245.080</Score>
+<Score et="246.1">Julien PETIT(8) lap=1 point=0 t=-1.000 et=246.100</Score>
+<Score et="246.9">Aitor Fuentes(0) lap=1 point=0 t=119.719 et=246.840</Score>
+<Score et="247.2">Joram Dreef(12) lap=1 point=0 t=120.034 et=247.140</Score>
+<Score et="248.8">P-A Fugeekies(14) lap=1 point=0 t=121.649 et=248.752</Score>
+<Score et="250.9">Giuseppe Losco(19) lap=1 point=0 t=-1.000 et=250.800</Score>
+<Score et="252.9">Dylan De Brabanter(4) lap=1 point=0 t=125.754 et=252.860</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="253.8">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="253.8">No Further Action</TrackLimits>
+<Score et="254.5">Marvin Soapert(13) lap=1 point=0 t=127.362 et=254.480</Score>
+<Score et="261.8">John Wooldridge(18) lap=1 point=0 t=134.655 et=261.760</Score>
+<Score et="263.6">Gustav Ultimate(15) lap=1 point=0 t=-1.000 et=263.580</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="267.4">Warning</TrackLimits>
+<Sector Driver="Martin Cavojsky 4" ID="6" Sector="1" Class="LMP3" et="273.0">Martin Cavojsky 4(6) set new best for sector 1</Sector>
+<Score et="273.0">Martin Cavojsky 4(6) lap=1 point=1 t=35.109 et=272.980</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="273.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="273.8">No Further Action</TrackLimits>
+<Score et="274.8">Fabian Kraus(2) lap=1 point=1 t=35.171 et=274.720</Score>
+<Score et="276.2">Costa Castro(1) lap=1 point=1 t=35.482 et=276.060</Score>
+<Score et="277.2">Tais Proust(9) lap=1 point=1 t=35.165 et=277.100</Score>
+<Score et="277.3">Seshan Govender(16) lap=1 point=1 t=35.633 et=277.120</Score>
+<Score et="278.0">Safuan Syukri(10) lap=1 point=1 t=35.569 et=277.740</Score>
+<Score et="278.5">Roman Kutsir(17) lap=1 point=0 t=151.376 et=278.480</Score>
+<Score et="278.7">Eleyzer VENTURA#8554(3) lap=1 point=1 t=35.485 et=278.600</Score>
+<Score et="279.6">Daniel Aldave(7) lap=1 point=1 t=35.299 et=279.540</Score>
+<Score et="280.6">Paul Allen(11) lap=1 point=1 t=35.477 et=280.560</Score>
+<Score et="281.5">Julien PETIT(8) lap=1 point=1 t=35.355 et=281.440</Score>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="1" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="281.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="1" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="281.6">No Further Action</TrackLimits>
+<Score et="282.8">Aitor Fuentes(0) lap=1 point=1 t=35.877 et=282.700</Score>
+<Score et="284.8">P-A Fugeekies(14) lap=1 point=1 t=-1.000 et=284.755</Score>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="284.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="284.8">No Further Action</TrackLimits>
+<Score et="286.7">Giuseppe Losco(19) lap=1 point=1 t=35.884 et=286.680</Score>
+<Score et="288.4">Dylan De Brabanter(4) lap=1 point=1 t=35.460 et=288.320</Score>
+<Score et="290.2">Marvin Soapert(13) lap=1 point=1 t=35.578 et=290.060</Score>
+<Score et="292.8">Joram Dreef(12) lap=1 point=1 t=45.583 et=292.740</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="297.3">No Further Action</TrackLimits>
+<Score et="297.6">John Wooldridge(18) lap=1 point=1 t=35.802 et=297.560</Score>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="297.8">Warning</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="297.8">Warning</TrackLimits>
+<Score et="299.5">Gustav Ultimate(15) lap=1 point=1 t=35.906 et=299.480</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
+<Score et="308.6">Martin Cavojsky 4(6) lap=1 point=2 t=70.603 et=308.480</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="2" Class="LMP3" et="309.9">Fabian Kraus(2) set new best for sector 2</Sector>
+<Score et="309.9">Fabian Kraus(2) lap=1 point=2 t=70.306 et=309.860</Score>
+<Score et="312.0">Costa Castro(1) lap=1 point=2 t=71.285 et=311.880</Score>
+<Score et="313.4">Seshan Govender(16) lap=1 point=2 t=71.689 et=313.160</Score>
+<Score et="313.9">Tais Proust(9) lap=1 point=2 t=71.852 et=313.800</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.0">No Further Action</TrackLimits>
+<Score et="314.3">Eleyzer VENTURA#8554(3) lap=1 point=2 t=71.143 et=314.260</Score>
+<Score et="314.5">Safuan Syukri(10) lap=1 point=2 t=-1.000 et=314.240</Score>
+<Score et="314.8">Roman Kutsir(17) lap=1 point=1 t=36.286 et=314.780</Score>
+<Score et="315.9">Daniel Aldave(7) lap=1 point=2 t=71.534 et=315.780</Score>
+<Score et="316.0">Paul Allen(11) lap=1 point=2 t=70.881 et=315.960</Score>
+<Score et="317.2">Julien PETIT(8) lap=1 point=2 t=71.063 et=317.160</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="317.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="317.8">No Further Action</TrackLimits>
+<Score et="318.5">Aitor Fuentes(0) lap=1 point=2 t=71.565 et=318.400</Score>
+<Incident et="321.5">Safuan Syukri(10) reported contact (328.26) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Score et="321.9">P-A Fugeekies(14) lap=1 point=2 t=-1.000 et=321.929</Score>
+<Score et="323.0">Giuseppe Losco(19) lap=1 point=2 t=72.018 et=322.820</Score>
+<Incident et="323.2">Safuan Syukri(10) reported contact (164.38) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Score et="324.4">Dylan De Brabanter(4) lap=1 point=2 t=71.481 et=324.340</Score>
+<Score et="326.3">Marvin Soapert(13) lap=1 point=2 t=71.779 et=326.260</Score>
+<Incident et="326.7">Safuan Syukri(10) reported contact (3454.98) with Immovable</Incident>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="329.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="329.1">No Further Action</TrackLimits>
+<Score et="330.2">Joram Dreef(12) lap=1 point=2 t=83.006 et=330.160</Score>
+<Incident et="331.0">Safuan Syukri(10) reported contact (635.11) with Immovable</Incident>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="333.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="333.0">No Further Action</TrackLimits>
+<Score et="336.1">John Wooldridge(18) lap=1 point=2 t=74.300 et=336.060</Score>
+<Score et="336.5">Gustav Ultimate(15) lap=1 point=2 t=72.861 et=336.440</Score>
+<Incident et="337.2">Eleyzer VENTURA#8554(3) reported contact (33.83) with another vehicle Paul Allen(11)</Incident>
+<Incident et="337.2">Paul Allen(11) reported contact (12.79) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="337.5">Paul Allen(11) reported contact (53.77) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="337.7">Paul Allen(11) reported contact (7.04) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="338.0">Paul Allen(11) reported contact (13.80) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="339.1">Eleyzer VENTURA#8554(3) reported contact (82.11) with another vehicle Paul Allen(11)</Incident>
+<Incident et="339.1">Paul Allen(11) reported contact (22.44) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="339.5">Eleyzer VENTURA#8554(3) reported contact (90.21) with another vehicle Paul Allen(11)</Incident>
+<Incident et="339.6">Paul Allen(11) reported contact (22.82) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="340.1">Paul Allen(11) reported contact (21.13) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="340.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="340.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="340.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="340.8">No Further Action</TrackLimits>
+<Incident et="341.1">Eleyzer VENTURA#8554(3) reported contact (69.86) with another vehicle Paul Allen(11)</Incident>
+<Incident et="341.2">Paul Allen(11) reported contact (12.90) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="341.2">Paul Allen(11) reported contact (55.71) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Incident et="342.4">Paul Allen(11) reported contact (31.81) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Score et="343.0">Martin Cavojsky 4(6) lap=2 point=0 t=105.082 et=342.960</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="3" Class="LMP3" et="344.2">Fabian Kraus(2) set new best for sector 3</Sector>
+<Score et="344.2">Fabian Kraus(2) lap=2 point=0 t=104.641 et=344.180</Score>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="344.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="344.9">No Further Action</TrackLimits>
+<Score et="346.6">Costa Castro(1) lap=2 point=0 t=105.899 et=346.480</Score>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="347.2">Warning</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="347.2">Warning</TrackLimits>
+<Score et="348.3">Seshan Govender(16) lap=2 point=0 t=106.582 et=348.060</Score>
+<Score et="348.8">Tais Proust(9) lap=2 point=0 t=106.763 et=348.700</Score>
+<Score et="350.7">Daniel Aldave(7) lap=2 point=0 t=106.436 et=350.680</Score>
+<Score et="351.4">Eleyzer VENTURA#8554(3) lap=2 point=0 t=108.223 et=351.340</Score>
+<Score et="351.4">Roman Kutsir(17) lap=1 point=2 t=72.867 et=351.360</Score>
+<Score et="351.8">Paul Allen(11) lap=2 point=0 t=-1.000 et=351.760</Score>
+<Score et="352.2">Julien PETIT(8) lap=2 point=0 t=106.018 et=352.120</Score>
+<Score et="353.0">Aitor Fuentes(0) lap=2 point=0 t=106.098 et=352.920</Score>
+<Score et="357.8">P-A Fugeekies(14) lap=2 point=0 t=-1.000 et=357.831</Score>
+<Score et="358.6">Giuseppe Losco(19) lap=2 point=0 t=107.753 et=358.540</Score>
+<Score et="359.2">Dylan De Brabanter(4) lap=2 point=0 t=106.204 et=359.080</Score>
+<Score et="362.2">Marvin Soapert(13) lap=2 point=0 t=107.719 et=362.200</Score>
+<Incident et="363.5">Julien PETIT(8) reported contact (426.84) with another vehicle Paul Allen(11)</Incident>
+<Incident et="363.5">Paul Allen(11) reported contact (435.08) with another vehicle Julien PETIT(8)</Incident>
+<Score et="365.5">Joram Dreef(12) lap=2 point=0 t=118.283 et=365.420</Score>
+<Incident et="367.8">Paul Allen(11) reported contact (765.81) with Sign</Incident>
+<Incident et="368.1">Paul Allen(11) reported contact (574.01) with Sign</Incident>
+<Score et="368.5">Safuan Syukri(10) lap=2 point=0 t=-1.000 et=368.300</Score>
+<Incident et="368.8">Paul Allen(11) reported contact (697.65) with Sign</Incident>
+<Incident et="368.8">Paul Allen(11) reported contact (777.31) with Sign</Incident>
+<Incident et="369.6">Paul Allen(11) reported contact (109.99) with Sign</Incident>
+<Incident et="370.4">Tais Proust(9) reported contact (13.16) with Sign</Incident>
+<Incident et="371.7">Paul Allen(11) reported contact (164.26) with Sign</Incident>
+<Score et="372.1">Gustav Ultimate(15) lap=2 point=0 t=108.475 et=372.060</Score>
+<Score et="372.1">John Wooldridge(18) lap=2 point=0 t=110.332 et=372.100</Score>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="2" WarningPoints="0.75" CurrentPoints="0.75" Resolution="4" et="374.2">Warning</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="2" WarningPoints="0.75" CurrentPoints="0.75" Resolution="4" et="374.2">Warning</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="377.4">Warning</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="377.4">Warning</TrackLimits>
+<Sector Driver="Martin Cavojsky 4" ID="6" Sector="1" Class="LMP3" et="378.0">Martin Cavojsky 4(6) set new best for sector 1</Sector>
+<Score et="378.0">Martin Cavojsky 4(6) lap=2 point=1 t=34.999 et=377.960</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="1" Class="LMP3" et="379.2">Fabian Kraus(2) set new best for sector 1</Sector>
+<Score et="379.2">Fabian Kraus(2) lap=2 point=1 t=34.998 et=379.180</Score>
+<Score et="381.8">Costa Castro(1) lap=2 point=1 t=35.202 et=381.680</Score>
+<Score et="383.7">Seshan Govender(16) lap=2 point=1 t=35.375 et=383.440</Score>
+<Score et="384.1">Tais Proust(9) lap=2 point=1 t=35.358 et=384.060</Score>
+<Incident et="384.8">Giuseppe Losco(19) reported contact (504.09) with Sign</Incident>
+<Score et="386.1">Daniel Aldave(7) lap=2 point=1 t=35.339 et=386.020</Score>
+<Score et="387.3">Roman Kutsir(17) lap=2 point=0 t=108.772 et=387.260</Score>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="387.4">Warning</TrackLimits>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="387.4">Warning</TrackLimits>
+<Score et="387.5">Paul Allen(11) lap=2 point=1 t=-1.000 et=387.400</Score>
+<Score et="387.8">Julien PETIT(8) lap=2 point=1 t=35.660 et=387.780</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="388.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="388.4">No Further Action</TrackLimits>
+<Score et="388.4">Eleyzer VENTURA#8554(3) lap=2 point=1 t=-1.000 et=388.340</Score>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="2" WarningPoints="5" CurrentPoints="0" Resolution="2" et="388.4">Drive Through Penalty</TrackLimits>
+<Penalty Driver="Paul Allen" ID="11" Penalty="Drive Thru" Time="0" Laps="0" Reason="Track Limits" et="388.4">Paul Allen received Drive Thru penalty, 0s, 0laps for Track Limits. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="2" WarningPoints="5" CurrentPoints="0" Resolution="2" et="388.4">Drive Through Penalty</TrackLimits>
+<Score et="389.0">Aitor Fuentes(0) lap=2 point=1 t=-1.000 et=388.940</Score>
+<Score et="393.6">P-A Fugeekies(14) lap=2 point=1 t=35.724 et=393.555</Score>
+<Score et="394.6">Giuseppe Losco(19) lap=2 point=1 t=35.932 et=394.480</Score>
+<Score et="394.6">Dylan De Brabanter(4) lap=2 point=1 t=35.471 et=394.540</Score>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="396.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="396.7">No Further Action</TrackLimits>
+<Score et="397.7">Marvin Soapert(13) lap=2 point=1 t=35.439 et=397.640</Score>
+<Score et="404.3">Safuan Syukri(10) lap=2 point=1 t=35.775 et=404.080</Score>
+<Incident et="404.9">Dylan De Brabanter(4) reported contact (60.77) with another vehicle Giuseppe Losco(19)</Incident>
+<Incident et="404.9">Giuseppe Losco(19) reported contact (71.41) with another vehicle Dylan De Brabanter(4)</Incident>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="406.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="406.0">No Further Action</TrackLimits>
+<Score et="406.2">Joram Dreef(12) lap=2 point=1 t=40.689 et=406.120</Score>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="407.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="407.8">No Further Action</TrackLimits>
+<Score et="409.1">Gustav Ultimate(15) lap=2 point=1 t=36.925 et=408.980</Score>
+<Score et="409.2">John Wooldridge(18) lap=2 point=1 t=37.031 et=409.140</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="411.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="411.8">No Further Action</TrackLimits>
+<Incident et="412.2">Gustav Ultimate(15) reported contact (285.88) with another vehicle John Wooldridge(18)</Incident>
+<Incident et="412.2">John Wooldridge(18) reported contact (317.28) with another vehicle Gustav Ultimate(15)</Incident>
+<Score et="413.2">Martin Cavojsky 4(6) lap=2 point=2 t=70.181 et=413.140</Score>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="2" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="414.8">Warning</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="2" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="414.8">Warning</TrackLimits>
+<Score et="414.9">Fabian Kraus(2) lap=2 point=2 t=-1.000 et=414.880</Score>
+<Score et="417.0">Costa Castro(1) lap=2 point=2 t=70.401 et=416.880</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="418.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="419.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="419.3">No Further Action</TrackLimits>
+<Score et="419.8">Tais Proust(9) lap=2 point=2 t=70.988 et=419.700</Score>
+<Score et="420.0">Seshan Govender(16) lap=2 point=2 t=71.773 et=419.840</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="421.2">Warning</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="421.2">Warning</TrackLimits>
+<Incident et="421.8">John Wooldridge(18) reported contact (54.30) with Immovable</Incident>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="421.9">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="421.9">No Further Action</TrackLimits>
+<Score et="422.0">Daniel Aldave(7) lap=2 point=2 t=71.262 et=421.940</Score>
+<Score et="423.0">Paul Allen(11) lap=2 point=2 t=-1.000 et=422.940</Score>
+<Score et="424.0">Julien PETIT(8) lap=2 point=2 t=71.788 et=423.900</Score>
+<Score et="424.0">Eleyzer VENTURA#8554(3) lap=2 point=2 t=-1.000 et=423.920</Score>
+<Score et="424.1">Roman Kutsir(17) lap=2 point=1 t=36.732 et=424.000</Score>
+<Score et="424.4">Aitor Fuentes(0) lap=2 point=2 t=-1.000 et=424.320</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="429.1">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="429.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="429.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="429.3">No Further Action</TrackLimits>
+<Score et="430.3">P-A Fugeekies(14) lap=2 point=2 t=72.432 et=430.263</Score>
+<Score et="431.0">Dylan De Brabanter(4) lap=2 point=2 t=-1.000 et=430.880</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="431.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="431.0">No Further Action</TrackLimits>
+<Score et="432.0">Giuseppe Losco(19) lap=2 point=2 t=73.269 et=431.820</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="432.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="432.8">No Further Action</TrackLimits>
+<Score et="433.8">Marvin Soapert(13) lap=2 point=2 t=71.613 et=433.800</Score>
+<Score et="440.1">Safuan Syukri(10) lap=2 point=2 t=71.629 et=439.920</Score>
+<Score et="443.1">Joram Dreef(12) lap=2 point=2 t=77.620 et=443.040</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="443.4">Warning</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="444.5">Warning</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="444.5">Warning</TrackLimits>
+<Score et="446.6">Gustav Ultimate(15) lap=2 point=2 t=74.510 et=446.560</Score>
+<Score et="447.6">Martin Cavojsky 4(6) lap=3 point=0 t=104.569 et=447.520</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.6">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="448.6">No Further Action</TrackLimits>
+<Score et="449.1">Fabian Kraus(2) lap=3 point=0 t=-1.000 et=449.080</Score>
+<Score et="451.4">Costa Castro(1) lap=3 point=0 t=104.845 et=451.320</Score>
+<Score et="454.5">Tais Proust(9) lap=3 point=0 t=105.725 et=454.420</Score>
+<Score et="455.0">Seshan Govender(16) lap=3 point=0 t=106.687 et=454.740</Score>
+<Score et="456.9">Daniel Aldave(7) lap=3 point=0 t=106.165 et=456.860</Score>
+<Score et="457.7">Paul Allen(11) lap=3 point=0 t=-1.000 et=457.700</Score>
+<Score et="458.7">Eleyzer VENTURA#8554(3) lap=3 point=0 t=-1.000 et=458.700</Score>
+<Score et="459.1">Aitor Fuentes(0) lap=3 point=0 t=-1.000 et=459.020</Score>
+<Score et="459.1">Julien PETIT(8) lap=3 point=0 t=106.991 et=459.100</Score>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="459.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="459.7">No Further Action</TrackLimits>
+<Score et="460.6">John Wooldridge(18) lap=2 point=2 t=88.411 et=460.500</Score>
+<Score et="460.8">Roman Kutsir(17) lap=2 point=2 t=-1.000 et=460.780</Score>
+<Score et="466.0">Dylan De Brabanter(4) lap=3 point=0 t=-1.000 et=465.960</Score>
+<Score et="466.1">P-A Fugeekies(14) lap=3 point=0 t=-1.000 et=466.043</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="466.8">Warning</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="466.8">Warning</TrackLimits>
+<Score et="467.6">Giuseppe Losco(19) lap=3 point=0 t=108.786 et=467.340</Score>
+<Score et="470.1">Marvin Soapert(13) lap=3 point=0 t=107.875 et=470.060</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="471.3">Warning</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="471.3">Warning</TrackLimits>
+<Score et="474.9">Safuan Syukri(10) lap=3 point=0 t=106.443 et=474.740</Score>
+<Score et="478.7">Joram Dreef(12) lap=3 point=0 t=113.258 et=478.680</Score>
+<Score et="483.0">Martin Cavojsky 4(6) lap=3 point=1 t=35.482 et=483.000</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="1" Class="LMP3" et="484.0">Fabian Kraus(2) set new best for sector 1</Sector>
+<Score et="484.0">Fabian Kraus(2) lap=3 point=1 t=34.884 et=483.960</Score>
+<Score et="485.1">Gustav Ultimate(15) lap=3 point=0 t=112.987 et=485.040</Score>
+<Score et="486.7">Costa Castro(1) lap=3 point=1 t=35.167 et=486.500</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="487.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="487.7">No Further Action</TrackLimits>
+<Score et="489.7">Tais Proust(9) lap=3 point=1 t=35.221 et=489.640</Score>
+<Score et="490.4">Seshan Govender(16) lap=3 point=1 t=35.460 et=490.200</Score>
+<Score et="492.2">Daniel Aldave(7) lap=3 point=1 t=35.324 et=492.180</Score>
+<Score et="493.2">Paul Allen(11) lap=3 point=1 t=35.483 et=493.180</Score>
+<Score et="494.9">Eleyzer VENTURA#8554(3) lap=3 point=1 t=36.131 et=494.840</Score>
+<Score et="495.2">Aitor Fuentes(0) lap=3 point=1 t=36.082 et=495.100</Score>
+<Score et="495.3">Julien PETIT(8) lap=3 point=1 t=36.145 et=495.240</Score>
+<Score et="495.7">John Wooldridge(18) lap=3 point=0 t=-1.000 et=495.640</Score>
+<Score et="496.7">Roman Kutsir(17) lap=3 point=0 t=-1.000 et=496.660</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="500.2">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="500.2">Warning</TrackLimits>
+<Score et="501.6">Dylan De Brabanter(4) lap=3 point=1 t=35.530 et=501.500</Score>
+<Score et="502.4">P-A Fugeekies(14) lap=3 point=1 t=36.307 et=502.349</Score>
+<Score et="503.2">Giuseppe Losco(19) lap=3 point=1 t=35.763 et=503.100</Score>
+<Score et="508.1">Marvin Soapert(13) lap=3 point=1 t=38.016 et=508.080</Score>
+<Score et="510.5">Safuan Syukri(10) lap=3 point=1 t=35.527 et=510.260</Score>
+<Score et="514.6">Joram Dreef(12) lap=3 point=1 t=35.802 et=514.480</Score>
+<Score et="518.2">Martin Cavojsky 4(6) lap=3 point=2 t=70.637 et=518.160</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="2" Class="LMP3" et="519.0">Fabian Kraus(2) set new best for sector 2</Sector>
+<Score et="519.0">Fabian Kraus(2) lap=3 point=2 t=69.873 et=518.960</Score>
+<Score et="522.2">Costa Castro(1) lap=3 point=2 t=70.683 et=522.020</Score>
+<Score et="523.0">Gustav Ultimate(15) lap=3 point=1 t=37.841 et=522.880</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="523.4">Warning</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="523.4">Warning</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="523.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="523.7">No Further Action</TrackLimits>
+<Score et="525.2">Tais Proust(9) lap=3 point=2 t=70.711 et=525.140</Score>
+<Score et="525.8">Seshan Govender(16) lap=3 point=2 t=70.910 et=525.660</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="527.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="527.4">No Further Action</TrackLimits>
+<Score et="528.5">Daniel Aldave(7) lap=3 point=2 t=-1.000 et=528.440</Score>
+<Score et="528.7">Paul Allen(11) lap=3 point=2 t=70.895 et=528.600</Score>
+<Score et="530.4">Eleyzer VENTURA#8554(3) lap=3 point=2 t=71.622 et=530.320</Score>
+<Score et="530.6">Aitor Fuentes(0) lap=3 point=2 t=71.507 et=530.520</Score>
+<Score et="531.2">John Wooldridge(18) lap=3 point=1 t=35.559 et=531.180</Score>
+<Score et="531.3">Julien PETIT(8) lap=3 point=2 t=72.179 et=531.280</Score>
+<Score et="532.6">Roman Kutsir(17) lap=3 point=1 t=35.850 et=532.500</Score>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="535.0">Warning</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="535.0">Warning</TrackLimits>
+<Score et="537.4">Dylan De Brabanter(4) lap=3 point=2 t=71.311 et=537.280</Score>
+<Score et="538.6">P-A Fugeekies(14) lap=3 point=2 t=72.542 et=538.584</Score>
+<Score et="539.8">Giuseppe Losco(19) lap=3 point=2 t=-1.000 et=539.740</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="540.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="540.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="541.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="541.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="543.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="543.4">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="543.8">No Further Action</TrackLimits>
+<Incident et="545.1">Julien PETIT(8) reported contact (1460.02) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="545.1">Dylan De Brabanter(4) reported contact (1646.58) with another vehicle Julien PETIT(8)</Incident>
+<Score et="546.5">Safuan Syukri(10) lap=3 point=2 t=71.577 et=546.320</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="546.5">Warning</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="3" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="546.5">Warning</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="548.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="548.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="551.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="551.0">No Further Action</TrackLimits>
+<Score et="551.7">Joram Dreef(12) lap=3 point=2 t=72.966 et=551.660</Score>
+<Sector Driver="Martin Cavojsky 4" ID="6" Sector="3" Class="LMP3" et="552.3">Martin Cavojsky 4(6) set new best for sector 3</Sector>
+<Score et="552.4">Martin Cavojsky 4(6) lap=4 point=0 t=104.779 et=552.300</Score>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="552.7">Warning</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.75" Resolution="4" et="552.7">Warning</TrackLimits>
+<Score et="553.2">Fabian Kraus(2) lap=4 point=0 t=104.086 et=553.160</Score>
+<Score et="553.6">Marvin Soapert(13) lap=3 point=2 t=83.475 et=553.540</Score>
+<Score et="556.9">Costa Castro(1) lap=4 point=0 t=105.399 et=556.720</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="558.2">Warning</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="558.2">Warning</TrackLimits>
+<Score et="559.3">Gustav Ultimate(15) lap=3 point=2 t=74.189 et=559.240</Score>
+<Score et="559.8">Tais Proust(9) lap=4 point=0 t=105.377 et=559.800</Score>
+<Score et="560.5">Seshan Govender(16) lap=4 point=0 t=105.578 et=560.320</Score>
+<Score et="563.4">Paul Allen(11) lap=4 point=0 t=-1.000 et=563.300</Score>
+<Score et="564.8">Eleyzer VENTURA#8554(3) lap=4 point=0 t=105.993 et=564.700</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="565.0">Warning</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="565.0">Warning</TrackLimits>
+<Score et="565.2">Aitor Fuentes(0) lap=4 point=0 t=106.115 et=565.120</Score>
+<Score et="568.6">John Wooldridge(18) lap=3 point=2 t=72.907 et=568.540</Score>
+<Score et="569.0">Roman Kutsir(17) lap=3 point=2 t=72.305 et=568.960</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="571.4">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="3" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="571.4">Warning</TrackLimits>
+<Score et="573.8">Julien PETIT(8) lap=4 point=0 t=114.696 et=573.800</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="574.6">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="574.6">No Further Action</TrackLimits>
+<Score et="574.8">P-A Fugeekies(14) lap=4 point=0 t=108.713 et=574.755</Score>
+<Score et="575.0">Daniel Aldave(7) lap=4 point=0 t=-1.000 et=574.960</Score>
+<Score et="575.4">Giuseppe Losco(19) lap=4 point=0 t=-1.000 et=575.320</Score>
+<Score et="580.6">Dylan De Brabanter(4) lap=4 point=0 t=114.476 et=580.440</Score>
+<Score et="581.3">Safuan Syukri(10) lap=4 point=0 t=-1.000 et=581.180</Score>
+<Score et="587.1">Joram Dreef(12) lap=4 point=0 t=-1.000 et=587.060</Score>
+<Score et="587.5">Martin Cavojsky 4(6) lap=4 point=1 t=35.158 et=587.460</Score>
+<Score et="588.2">Fabian Kraus(2) lap=4 point=1 t=34.926 et=588.100</Score>
+<Score et="589.7">Marvin Soapert(13) lap=4 point=0 t=119.572 et=589.640</Score>
+<Score et="592.2">Costa Castro(1) lap=4 point=1 t=35.403 et=592.120</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="4" WarningPoints="1.25" CurrentPoints="1.5" Resolution="4" et="594.3">Warning</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="4" WarningPoints="1.25" CurrentPoints="1.5" Resolution="4" et="594.3">Warning</TrackLimits>
+<Score et="595.2">Gustav Ultimate(15) lap=4 point=0 t=110.144 et=595.180</Score>
+<Score et="595.2">Tais Proust(9) lap=4 point=1 t=35.372 et=595.180</Score>
+<Score et="596.2">Seshan Govender(16) lap=4 point=1 t=35.609 et=595.940</Score>
+<Score et="598.7">Paul Allen(11) lap=4 point=1 t=35.373 et=598.660</Score>
+<Score et="600.1">Eleyzer VENTURA#8554(3) lap=4 point=1 t=35.419 et=600.120</Score>
+<Score et="600.4">Aitor Fuentes(0) lap=4 point=1 t=35.137 et=600.260</Score>
+<Score et="604.1">John Wooldridge(18) lap=4 point=0 t=108.435 et=604.060</Score>
+<Score et="604.6">Roman Kutsir(17) lap=4 point=0 t=107.833 et=604.500</Score>
+<Score et="609.3">Julien PETIT(8) lap=4 point=1 t=-1.000 et=609.240</Score>
+<Score et="610.2">Daniel Aldave(7) lap=4 point=1 t=35.205 et=610.160</Score>
+<Score et="611.2">P-A Fugeekies(14) lap=4 point=1 t=36.385 et=611.140</Score>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="611.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="611.2">No Further Action</TrackLimits>
+<Score et="611.4">Giuseppe Losco(19) lap=4 point=1 t=36.035 et=611.360</Score>
+<Score et="616.1">Dylan De Brabanter(4) lap=4 point=1 t=35.565 et=616.000</Score>
+<Score et="617.0">Safuan Syukri(10) lap=4 point=1 t=35.568 et=616.760</Score>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="617.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="617.6">No Further Action</TrackLimits>
+<Score et="622.5">Joram Dreef(12) lap=4 point=1 t=35.390 et=622.440</Score>
+<Score et="622.9">Martin Cavojsky 4(6) lap=4 point=2 t=70.564 et=622.860</Score>
+<Score et="623.5">Fabian Kraus(2) lap=4 point=2 t=70.335 et=623.500</Score>
+<Score et="625.6">Marvin Soapert(13) lap=4 point=1 t=35.899 et=625.540</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="627.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="627.8">No Further Action</TrackLimits>
+<Score et="627.8">Costa Castro(1) lap=4 point=2 t=70.989 et=627.720</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="629.0">No Further Action</TrackLimits>
+<Score et="630.8">Tais Proust(9) lap=4 point=2 t=70.884 et=630.680</Score>
+<Score et="630.9">Gustav Ultimate(15) lap=4 point=1 t=35.720 et=630.900</Score>
+<Score et="632.0">Seshan Govender(16) lap=4 point=2 t=71.434 et=631.760</Score>
+<Score et="634.2">Paul Allen(11) lap=4 point=2 t=70.898 et=634.200</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="635.1">No Further Action</TrackLimits>
+<Score et="635.8">Eleyzer VENTURA#8554(3) lap=4 point=2 t=71.065 et=635.760</Score>
+<Score et="636.1">Aitor Fuentes(0) lap=4 point=2 t=70.916 et=636.040</Score>
+<Score et="640.2">John Wooldridge(18) lap=4 point=1 t=36.088 et=640.160</Score>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="640.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Gustav Ultimate" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="640.5">No Further Action</TrackLimits>
+<Score et="645.1">Julien PETIT(8) lap=4 point=2 t=-1.000 et=645.020</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="646.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="646.2">No Further Action</TrackLimits>
+<Score et="646.2">Daniel Aldave(7) lap=4 point=2 t=71.224 et=646.180</Score>
+<Score et="647.7">P-A Fugeekies(14) lap=4 point=2 t=72.918 et=647.674</Score>
+<Score et="647.8">Giuseppe Losco(19) lap=4 point=2 t=72.442 et=647.760</Score>
+<Score et="652.0">Dylan De Brabanter(4) lap=4 point=2 t=71.505 et=651.940</Score>
+<Score et="652.7">Safuan Syukri(10) lap=4 point=2 t=71.381 et=652.560</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="653.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="653.0">No Further Action</TrackLimits>
+<Score et="654.9">Roman Kutsir(17) lap=4 point=1 t=50.412 et=654.900</Score>
+<Score et="657.2">Martin Cavojsky 4(6) lap=5 point=0 t=104.806 et=657.120</Score>
+<Score et="657.9">Fabian Kraus(2) lap=5 point=0 t=104.646 et=657.820</Score>
+<Score et="658.8">Joram Dreef(12) lap=4 point=2 t=71.697 et=658.760</Score>
+<Incident et="661.9">Eleyzer VENTURA#8554(3) reported contact (41.50) with Immovable</Incident>
+<Score et="662.0">Marvin Soapert(13) lap=4 point=2 t=72.262 et=661.900</Score>
+<Score et="662.2">Costa Castro(1) lap=5 point=0 t=105.398 et=662.120</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="663.0">Warning</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="663.0">Warning</TrackLimits>
+<Score et="665.4">Tais Proust(9) lap=5 point=0 t=105.513 et=665.320</Score>
+<Score et="666.6">Seshan Govender(16) lap=5 point=0 t=105.959 et=666.280</Score>
+<Score et="670.8">Aitor Fuentes(0) lap=5 point=0 t=105.518 et=670.640</Score>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="671.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="671.0">No Further Action</TrackLimits>
+<Score et="675.6">Paul Allen(11) lap=5 point=0 t=112.252 et=675.540</Score>
+<Score et="678.3">John Wooldridge(18) lap=4 point=2 t=74.148 et=678.220</Score>
+<Score et="679.4">Gustav Ultimate(15) lap=4 point=2 t=84.097 et=679.280</Score>
+<Score et="679.9">Julien PETIT(8) lap=5 point=0 t=-1.000 et=679.860</Score>
+<Score et="681.1">Daniel Aldave(7) lap=5 point=0 t=106.079 et=681.040</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="681.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="681.5">No Further Action</TrackLimits>
+<Score et="682.0">Eleyzer VENTURA#8554(3) lap=5 point=0 t=117.169 et=681.860</Score>
+<Score et="683.9">Giuseppe Losco(19) lap=5 point=0 t=108.456 et=683.780</Score>
+<Score et="684.9">P-A Fugeekies(14) lap=5 point=0 t=110.115 et=684.870</Score>
+<Score et="687.8">Dylan De Brabanter(4) lap=5 point=0 t=-1.000 et=687.740</Score>
+<Score et="688.3">Safuan Syukri(10) lap=5 point=0 t=106.865 et=688.040</Score>
+<Incident et="689.0">Seshan Govender(16) reported contact (113.22) with Sign</Incident>
+<Incident et="689.1">Seshan Govender(16) reported contact (115.96) with Sign</Incident>
+<Incident et="690.6">Seshan Govender(16) reported contact (47.01) with Sign</Incident>
+<Incident et="691.2">Seshan Govender(16) reported contact (131.55) with Immovable</Incident>
+<Incident et="692.1">Seshan Govender(16) reported contact (383.41) with Immovable</Incident>
+<Score et="692.3">Martin Cavojsky 4(6) lap=5 point=1 t=35.079 et=692.200</Score>
+<Score et="692.3">Roman Kutsir(17) lap=4 point=2 t=87.775 et=692.260</Score>
+<Sector Driver="Fabian Kraus" ID="2" Sector="1" Class="LMP3" et="692.6">Fabian Kraus(2) set new best for sector 1</Sector>
+<Score et="692.6">Fabian Kraus(2) lap=5 point=1 t=34.755 et=692.580</Score>
+<Score et="694.5">Joram Dreef(12) lap=5 point=0 t=107.351 et=694.400</Score>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="695.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="695.4">No Further Action</TrackLimits>
+<Penalty et="695.6">Paul Allen served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Score et="697.3">Costa Castro(1) lap=5 point=1 t=35.094 et=697.220</Score>
+<Score et="697.7">Marvin Soapert(13) lap=5 point=0 t=108.010 et=697.660</Score>
+<Score et="700.6">Tais Proust(9) lap=5 point=1 t=35.163 et=700.480</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="5" WarningPoints="0.75" CurrentPoints="1.5" Resolution="4" et="704.0">Warning</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="5" WarningPoints="0.75" CurrentPoints="1.5" Resolution="4" et="704.0">Warning</TrackLimits>
+<Score et="706.1">Aitor Fuentes(0) lap=5 point=1 t=35.393 et=706.040</Score>
+<Score et="711.4">Seshan Govender(16) lap=5 point=1 t=44.865 et=711.160</Score>
+<Score et="714.4">John Wooldridge(18) lap=5 point=0 t=110.302 et=714.360</Score>
+<Score et="715.2">Julien PETIT(8) lap=5 point=1 t=35.306 et=715.160</Score>
+<Score et="716.1">Gustav Ultimate(15) lap=5 point=0 t=120.819 et=716.000</Score>
+<Score et="716.3">Daniel Aldave(7) lap=5 point=1 t=35.176 et=716.200</Score>
+<Score et="717.6">Eleyzer VENTURA#8554(3) lap=5 point=1 t=35.588 et=717.460</Score>
+<Score et="719.8">Giuseppe Losco(19) lap=5 point=1 t=-1.000 et=719.760</Score>
+<Score et="720.8">P-A Fugeekies(14) lap=5 point=1 t=35.881 et=720.751</Score>
+<Score et="723.4">Dylan De Brabanter(4) lap=5 point=1 t=35.558 et=723.300</Score>
+<Score et="723.9">Safuan Syukri(10) lap=5 point=1 t=35.665 et=723.720</Score>
+<Score et="727.4">Martin Cavojsky 4(6) lap=5 point=2 t=70.160 et=727.280</Score>
+<Score et="727.6">Fabian Kraus(2) lap=5 point=2 t=69.772 et=727.580</Score>
+<Score et="728.4">Roman Kutsir(17) lap=5 point=0 t=123.782 et=728.280</Score>
+<Score et="729.8">Joram Dreef(12) lap=5 point=1 t=35.404 et=729.800</Score>
+<Score et="730.3">Paul Allen(11) lap=5 point=1 t=54.711 et=730.260</Score>
+<Score et="732.8">Costa Castro(1) lap=5 point=2 t=70.472 et=732.600</Score>
+<Score et="733.5">Marvin Soapert(13) lap=5 point=1 t=35.804 et=733.460</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="736.1">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="736.1">Warning</TrackLimits>
+<Score et="736.4">Tais Proust(9) lap=5 point=2 t=70.974 et=736.300</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="740.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="740.2">No Further Action</TrackLimits>
+<Score et="741.7">Aitor Fuentes(0) lap=5 point=2 t=70.968 et=741.620</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="741.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="741.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="743.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="743.0">No Further Action</TrackLimits>
+<Score et="746.8">Seshan Govender(16) lap=5 point=2 t=80.407 et=746.700</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="749.7">Warning</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="749.7">Warning</TrackLimits>
+<Score et="750.0">John Wooldridge(18) lap=5 point=1 t=35.543 et=749.920</Score>
+<Score et="751.0">Julien PETIT(8) lap=5 point=2 t=71.008 et=750.860</Score>
+<Score et="752.1">Gustav Ultimate(15) lap=5 point=1 t=36.025 et=752.040</Score>
+<Score et="752.4">Daniel Aldave(7) lap=5 point=2 t=-1.000 et=752.320</Score>
+<Score et="753.0">Eleyzer VENTURA#8554(3) lap=5 point=2 t=71.117 et=752.980</Score>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="753.5">Warning</TrackLimits>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="753.5">Warning</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="753.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="753.9">No Further Action</TrackLimits>
+<Score et="756.1">Giuseppe Losco(19) lap=5 point=2 t=-1.000 et=756.020</Score>
+<Score et="757.4">P-A Fugeekies(14) lap=5 point=2 t=72.551 et=757.421</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.6">No Further Action</TrackLimits>
+<Score et="759.4">Dylan De Brabanter(4) lap=5 point=2 t=-1.000 et=759.260</Score>
+<Score et="759.5">Safuan Syukri(10) lap=5 point=2 t=71.364 et=759.420</Score>
+<Score et="761.6">Martin Cavojsky 4(6) lap=6 point=0 t=104.408 et=761.520</Score>
+<Score et="761.9">Fabian Kraus(2) lap=6 point=0 t=104.058 et=761.880</Score>
+<Score et="764.8">Roman Kutsir(17) lap=5 point=1 t=36.414 et=764.680</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="5" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="765.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="5" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="765.4">No Further Action</TrackLimits>
+<Score et="766.7">Joram Dreef(12) lap=5 point=2 t=72.217 et=766.620</Score>
+<Score et="766.8">Paul Allen(11) lap=5 point=2 t=91.197 et=766.740</Score>
+<Score et="767.4">Costa Castro(1) lap=6 point=0 t=105.026 et=767.160</Score>
+<Score et="770.3">Marvin Soapert(13) lap=5 point=2 t=72.577 et=770.220</Score>
+<Score et="771.1">Tais Proust(9) lap=6 point=0 t=105.758 et=771.080</Score>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="771.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="771.8">No Further Action</TrackLimits>
+<Score et="776.0">Aitor Fuentes(0) lap=6 point=0 t=105.303 et=775.960</Score>
+<Score et="782.3">Seshan Govender(16) lap=6 point=0 t=-1.000 et=782.020</Score>
+<Score et="785.9">Julien PETIT(8) lap=6 point=0 t=105.995 et=785.860</Score>
+<Score et="786.5">John Wooldridge(18) lap=5 point=2 t=72.071 et=786.440</Score>
+<Score et="787.2">Daniel Aldave(7) lap=6 point=0 t=-1.000 et=787.100</Score>
+<Score et="787.4">Eleyzer VENTURA#8554(3) lap=6 point=0 t=105.529 et=787.400</Score>
+<Score et="792.0">Giuseppe Losco(19) lap=6 point=0 t=-1.000 et=791.940</Score>
+<Score et="793.0">P-A Fugeekies(14) lap=6 point=0 t=108.114 et=792.984</Score>
+<Score et="794.3">Dylan De Brabanter(4) lap=6 point=0 t=-1.000 et=794.280</Score>
+<Score et="794.7">Safuan Syukri(10) lap=6 point=0 t=106.515 et=794.560</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="795.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="795.3">No Further Action</TrackLimits>
+<Score et="796.7">Martin Cavojsky 4(6) lap=6 point=1 t=35.129 et=796.640</Score>
+<Score et="796.8">Fabian Kraus(2) lap=6 point=1 t=34.909 et=796.780</Score>
+<Score et="801.2">Roman Kutsir(17) lap=5 point=2 t=72.882 et=801.160</Score>
+<Score et="801.9">Paul Allen(11) lap=6 point=0 t=126.282 et=801.820</Score>
+<Incident et="802.3">Eleyzer VENTURA#8554(3) reported contact (519.09) with another vehicle Daniel Aldave(7)</Incident>
+<Incident et="802.3">Daniel Aldave(7) reported contact (517.17) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<Score et="802.5">Costa Castro(1) lap=6 point=1 t=35.140 et=802.300</Score>
+<Score et="803.0">Joram Dreef(12) lap=6 point=0 t=108.567 et=802.980</Score>
+<Incident et="803.4">Eleyzer VENTURA#8554(3) reported contact (255.00) with another vehicle Daniel Aldave(7)</Incident>
+<Incident et="803.4">Daniel Aldave(7) reported contact (449.67) with another vehicle Eleyzer VENTURA#8554(3)</Incident>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="804.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="804.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="805.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="805.6">No Further Action</TrackLimits>
+<Score et="806.3">Marvin Soapert(13) lap=6 point=0 t=108.567 et=806.220</Score>
+<Score et="806.5">Tais Proust(9) lap=6 point=1 t=35.377 et=806.460</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="807.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="807.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="808.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="808.7">No Further Action</TrackLimits>
+<Score et="811.2">Aitor Fuentes(0) lap=6 point=1 t=35.146 et=811.100</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="6" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="811.8">Warning</TrackLimits>
+<Score et="817.6">Seshan Govender(16) lap=6 point=1 t=35.380 et=817.400</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="820.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="820.0">No Further Action</TrackLimits>
+<Score et="820.9">Julien PETIT(8) lap=6 point=1 t=35.038 et=820.880</Score>
+<Score et="821.8">John Wooldridge(18) lap=6 point=0 t=107.435 et=821.800</Score>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="1.5" Resolution="4" et="823.0">Warning</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="1.5" Resolution="4" et="823.0">Warning</TrackLimits>
+<Score et="825.0">Daniel Aldave(7) lap=6 point=1 t=37.785 et=824.900</Score>
+<Score et="826.1">Eleyzer VENTURA#8554(3) lap=6 point=1 t=38.682 et=826.080</Score>
+<Score et="827.6">Giuseppe Losco(19) lap=6 point=1 t=35.654 et=827.580</Score>
+<Score et="829.0">P-A Fugeekies(14) lap=6 point=1 t=-1.000 et=829.010</Score>
+<Score et="829.8">Dylan De Brabanter(4) lap=6 point=1 t=35.449 et=829.720</Score>
+<Score et="830.5">Safuan Syukri(10) lap=6 point=1 t=35.761 et=830.320</Score>
+<Score et="832.1">Fabian Kraus(2) lap=6 point=2 t=70.217 et=832.100</Score>
+<Score et="832.2">Martin Cavojsky 4(6) lap=6 point=2 t=-1.000 et=832.140</Score>
+<Score et="837.2">Paul Allen(11) lap=6 point=1 t=35.372 et=837.200</Score>
+<Score et="837.9">Costa Castro(1) lap=6 point=2 t=70.601 et=837.760</Score>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="838.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="838.7">No Further Action</TrackLimits>
+<Score et="838.8">Joram Dreef(12) lap=6 point=1 t=35.794 et=838.760</Score>
+<Score et="841.7">Marvin Soapert(13) lap=6 point=1 t=35.447 et=841.660</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="6" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="842.1">Warning</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="6" WarningPoints="0.5" CurrentPoints="1" Resolution="4" et="842.1">Warning</TrackLimits>
+<Score et="842.1">Tais Proust(9) lap=6 point=2 t=70.999 et=842.080</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="845.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="845.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="845.7">Warning</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="845.7">Warning</TrackLimits>
+<Score et="846.6">Aitor Fuentes(0) lap=6 point=2 t=70.593 et=846.540</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="851.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="851.7">No Further Action</TrackLimits>
+<Score et="853.5">Seshan Govender(16) lap=6 point=2 t=71.268 et=853.280</Score>
+<Score et="853.8">Roman Kutsir(17) lap=6 point=0 t=125.448 et=853.720</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="6" WarningPoints="0.25" CurrentPoints="1.5" Resolution="4" et="855.9">Warning</TrackLimits>
+<Score et="856.8">Julien PETIT(8) lap=6 point=2 t=70.861 et=856.720</Score>
+<Score et="857.8">John Wooldridge(18) lap=6 point=1 t=-1.000 et=857.780</Score>
+<Score et="861.0">Daniel Aldave(7) lap=6 point=2 t=73.822 et=860.920</Score>
+<Score et="861.6">Eleyzer VENTURA#8554(3) lap=6 point=2 t=74.199 et=861.600</Score>
+<Score et="864.6">Giuseppe Losco(19) lap=6 point=2 t=72.594 et=864.520</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="866.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="866.0">No Further Action</TrackLimits>
+<Score et="866.0">Dylan De Brabanter(4) lap=6 point=2 t=71.679 et=865.960</Score>
+<Score et="866.2">Safuan Syukri(10) lap=6 point=2 t=71.526 et=866.080</Score>
+<Score et="866.5">P-A Fugeekies(14) lap=6 point=2 t=-1.000 et=866.453</Score>
+<Score et="867.0">Fabian Kraus(2) lap=7 point=0 t=105.021 et=866.900</Score>
+<Score et="867.3">Martin Cavojsky 4(6) lap=7 point=0 t=-1.000 et=867.260</Score>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="871.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="871.0">No Further Action</TrackLimits>
+<Score et="872.4">Costa Castro(1) lap=7 point=0 t=105.054 et=872.200</Score>
+<Score et="872.8">Paul Allen(11) lap=6 point=2 t=70.891 et=872.720</Score>
+<Score et="875.1">Joram Dreef(12) lap=6 point=2 t=72.111 et=875.080</Score>
+<Score et="876.7">Tais Proust(9) lap=7 point=0 t=105.558 et=876.640</Score>
+<Score et="878.3">Marvin Soapert(13) lap=6 point=2 t=72.012 et=878.220</Score>
+<Score et="880.9">Aitor Fuentes(0) lap=7 point=0 t=104.926 et=880.880</Score>
+<Score et="888.2">Seshan Govender(16) lap=7 point=0 t=106.012 et=888.040</Score>
+<Score et="891.6">Julien PETIT(8) lap=7 point=0 t=105.733 et=891.580</Score>
+<Score et="892.3">Roman Kutsir(17) lap=6 point=1 t=38.546 et=892.260</Score>
+<Score et="894.4">John Wooldridge(18) lap=6 point=2 t=-1.000 et=894.300</Score>
+<Score et="896.0">Daniel Aldave(7) lap=7 point=0 t=108.787 et=895.900</Score>
+<Score et="896.2">Eleyzer VENTURA#8554(3) lap=7 point=0 t=108.749 et=896.140</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="900.2">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="7" et="900.2">No Further Action</TrackLimits>
+<Score et="900.6">Giuseppe Losco(19) lap=7 point=0 t=108.597 et=900.520</Score>
+<Score et="901.0">Dylan De Brabanter(4) lap=7 point=0 t=106.680 et=900.960</Score>
+<Score et="901.7">Fabian Kraus(2) lap=7 point=1 t=34.787 et=901.680</Score>
+<Score et="901.8">Safuan Syukri(10) lap=7 point=0 t=106.955 et=901.520</Score>
+<Score et="902.3">Martin Cavojsky 4(6) lap=7 point=1 t=34.989 et=902.260</Score>
+<Score et="902.9">P-A Fugeekies(14) lap=7 point=0 t=-1.000 et=902.914</Score>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="903.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="903.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="904.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="904.5">No Further Action</TrackLimits>
+<Score et="907.3">Paul Allen(11) lap=7 point=0 t=105.401 et=907.220</Score>
+<Score et="907.5">Costa Castro(1) lap=7 point=1 t=35.158 et=907.360</Score>
+<Score et="910.8">Joram Dreef(12) lap=7 point=0 t=107.727 et=910.700</Score>
+<Score et="913.6">Marvin Soapert(13) lap=7 point=0 t=107.268 et=913.480</Score>
+<Score et="915.0">Tais Proust(9) lap=7 point=1 t=38.285 et=914.920</Score>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="915.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="915.8">No Further Action</TrackLimits>
+<Score et="916.2">Aitor Fuentes(0) lap=7 point=1 t=35.283 et=916.160</Score>
+<Score et="923.5">Seshan Govender(16) lap=7 point=1 t=35.268 et=923.300</Score>
+<Score et="926.8">Julien PETIT(8) lap=7 point=1 t=35.153 et=926.740</Score>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="927.1">Warning</TrackLimits>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="927.1">Warning</TrackLimits>
+<Score et="930.0">John Wooldridge(18) lap=7 point=0 t=-1.000 et=929.940</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="930.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="930.0">No Further Action</TrackLimits>
+<Score et="931.2">Daniel Aldave(7) lap=7 point=1 t=35.275 et=931.160</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.7">No Further Action</TrackLimits>
+<Score et="935.2">Eleyzer VENTURA#8554(3) lap=7 point=1 t=39.052 et=935.200</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="935.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="935.3">No Further Action</TrackLimits>
+<Score et="936.6">Dylan De Brabanter(4) lap=7 point=1 t=35.558 et=936.520</Score>
+<Score et="937.0">Fabian Kraus(2) lap=7 point=2 t=-1.000 et=936.960</Score>
+<Score et="937.4">Safuan Syukri(10) lap=7 point=1 t=35.701 et=937.220</Score>
+<Score et="937.6">Martin Cavojsky 4(6) lap=7 point=2 t=70.199 et=937.460</Score>
+<Score et="938.8">P-A Fugeekies(14) lap=7 point=1 t=35.872 et=938.786</Score>
+<Score et="942.5">Paul Allen(11) lap=7 point=1 t=35.186 et=942.420</Score>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="943.1">Warning</TrackLimits>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="943.1">Warning</TrackLimits>
+<Score et="943.5">Costa Castro(1) lap=7 point=2 t=71.171 et=943.380</Score>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="943.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Eleyzer VENTURA#8554" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="943.5">No Further Action</TrackLimits>
+<Score et="946.0">Roman Kutsir(17) lap=6 point=2 t=92.150 et=945.880</Score>
+<Score et="946.1">Joram Dreef(12) lap=7 point=1 t=35.357 et=946.060</Score>
+<Score et="950.2">Marvin Soapert(13) lap=7 point=1 t=36.653 et=950.140</Score>
+<Score et="950.6">Tais Proust(9) lap=7 point=2 t=73.944 et=950.580</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="950.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="950.7">No Further Action</TrackLimits>
+<Score et="951.6">Aitor Fuentes(0) lap=7 point=2 t=70.605 et=951.480</Score>
+<Score et="952.7">Giuseppe Losco(19) lap=7 point=1 t=52.106 et=952.640</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="957.7">Warning</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="957.7">Warning</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="958.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="958.7">No Further Action</TrackLimits>
+<Score et="959.6">Seshan Govender(16) lap=7 point=2 t=71.296 et=959.340</Score>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="960.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Paul Allen" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="960.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="7" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="961.7">Warning</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="7" WarningPoints="0.5" CurrentPoints="1.5" Resolution="4" et="961.7">Warning</TrackLimits>
+<Score et="962.9">Julien PETIT(8) lap=7 point=2 t=71.290 et=962.880</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="963.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="963.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="963.5">No Further Action</TrackLimits>
+<Score et="965.7">John Wooldridge(18) lap=7 point=1 t=35.717 et=965.660</Score>
+<Score et="967.5">Daniel Aldave(7) lap=7 point=2 t=-1.000 et=967.400</Score>
+<Score et="970.8">Eleyzer VENTURA#8554(3) lap=7 point=2 t=74.566 et=970.700</Score>
+<Score et="971.2">Fabian Kraus(2) lap=8 point=0 t=-1.000 et=971.200</Score>
+<Sector Driver="Martin Cavojsky 4" ID="6" Sector="3" Class="LMP3" et="971.5">Martin Cavojsky 4(6) set new best for sector 3</Sector>
+<Score et="971.6">Martin Cavojsky 4(6) lap=8 point=0 t=104.222 et=971.480</Score>
+<Score et="972.6">Dylan De Brabanter(4) lap=7 point=2 t=71.521 et=972.480</Score>
+<Score et="973.3">Safuan Syukri(10) lap=7 point=2 t=71.555 et=973.080</Score>
+<Score et="975.4">P-A Fugeekies(14) lap=7 point=2 t=72.517 et=975.431</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="976.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="976.6">No Further Action</TrackLimits>
+<Score et="978.0">Costa Castro(1) lap=8 point=0 t=105.687 et=977.900</Score>
+<Score et="978.3">Paul Allen(11) lap=7 point=2 t=70.966 et=978.200</Score>
+<Score et="982.3">Joram Dreef(12) lap=7 point=2 t=71.543 et=982.240</Score>
+<Score et="985.3">Tais Proust(9) lap=8 point=0 t=108.690 et=985.320</Score>
+<Score et="986.3">Marvin Soapert(13) lap=7 point=2 t=72.757 et=986.240</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="986.5">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="7" WarningPoints="0" CurrentPoints="1" Resolution="7" et="986.5">No Further Action</TrackLimits>
+<Score et="986.7">Aitor Fuentes(0) lap=8 point=0 t=-1.000 et=986.660</Score>
+<Score et="989.0">Giuseppe Losco(19) lap=7 point=2 t=88.361 et=988.880</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="993.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="993.9">No Further Action</TrackLimits>
+<Score et="994.6">Seshan Govender(16) lap=8 point=0 t=106.314 et=994.340</Score>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="8" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="994.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="8" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="994.8">No Further Action</TrackLimits>
+<Score et="997.7">Julien PETIT(8) lap=8 point=0 t=106.062 et=997.640</Score>
+<Score et="1002.6">Daniel Aldave(7) lap=8 point=0 t=-1.000 et=1002.500</Score>
+<Score et="1003.4">John Wooldridge(18) lap=7 point=2 t=73.417 et=1003.360</Score>
+<Score et="1005.2">Eleyzer VENTURA#8554(3) lap=8 point=0 t=108.977 et=1005.120</Score>
+<Score et="1006.5">Fabian Kraus(2) lap=8 point=1 t=35.241 et=1006.440</Score>
+<Score et="1007.4">Roman Kutsir(17) lap=7 point=0 t=153.517 et=1007.240</Score>
+<Score et="1007.6">Dylan De Brabanter(4) lap=8 point=0 t=106.482 et=1007.440</Score>
+<Score et="1008.1">Safuan Syukri(10) lap=8 point=0 t=106.353 et=1007.880</Score>
+<Score et="1008.8">Martin Cavojsky 4(6) lap=8 point=1 t=37.259 et=1008.740</Score>
+<Score et="1011.6">P-A Fugeekies(14) lap=8 point=0 t=108.638 et=1011.552</Score>
+<Score et="1013.0">Paul Allen(11) lap=8 point=0 t=105.740 et=1012.960</Score>
+<Score et="1013.5">Costa Castro(1) lap=8 point=1 t=35.440 et=1013.340</Score>
+<Score et="1017.3">Joram Dreef(12) lap=8 point=0 t=106.521 et=1017.220</Score>
+<Score et="1020.8">Tais Proust(9) lap=8 point=1 t=35.464 et=1020.780</Score>
+<Score et="1021.6">Marvin Soapert(13) lap=8 point=0 t=108.103 et=1021.580</Score>
+<Score et="1021.9">Aitor Fuentes(0) lap=8 point=1 t=35.141 et=1021.800</Score>
+<Score et="1024.4">Giuseppe Losco(19) lap=8 point=0 t=123.857 et=1024.380</Score>
+<Score et="1029.6">Seshan Govender(16) lap=8 point=1 t=35.014 et=1029.360</Score>
+<Score et="1033.0">Julien PETIT(8) lap=8 point=1 t=35.331 et=1032.980</Score>
+<Score et="1037.7">Daniel Aldave(7) lap=8 point=1 t=35.160 et=1037.660</Score>
+<Score et="1038.8">John Wooldridge(18) lap=8 point=0 t=108.796 et=1038.740</Score>
+<Score et="1040.6">Eleyzer VENTURA#8554(3) lap=8 point=1 t=35.429 et=1040.540</Score>
+<Score et="1042.2">Fabian Kraus(2) lap=8 point=2 t=70.900 et=1042.100</Score>
+<Score et="1042.9">Dylan De Brabanter(4) lap=8 point=1 t=35.338 et=1042.780</Score>
+<Score et="1043.5">Safuan Syukri(10) lap=8 point=1 t=35.471 et=1043.340</Score>
+<Score et="1043.9">Martin Cavojsky 4(6) lap=8 point=2 t=72.346 et=1043.840</Score>
+<Score et="1047.8">P-A Fugeekies(14) lap=8 point=1 t=36.264 et=1047.816</Score>
+<Score et="1048.4">Paul Allen(11) lap=8 point=1 t=35.379 et=1048.340</Score>
+<Score et="1049.1">Costa Castro(1) lap=8 point=2 t=71.095 et=1048.980</Score>
+<Score et="1052.8">Joram Dreef(12) lap=8 point=1 t=35.579 et=1052.800</Score>
+<Score et="1056.6">Tais Proust(9) lap=8 point=2 t=71.121 et=1056.440</Score>
+<Score et="1057.0">Aitor Fuentes(0) lap=8 point=2 t=70.321 et=1056.980</Score>
+<Score et="1057.2">Marvin Soapert(13) lap=8 point=1 t=35.511 et=1057.100</Score>
+<Score et="1060.3">Giuseppe Losco(19) lap=8 point=1 t=35.823 et=1060.200</Score>
+<Score et="1065.1">Seshan Govender(16) lap=8 point=2 t=70.600 et=1064.940</Score>
+<Score et="1068.5">Julien PETIT(8) lap=8 point=2 t=70.779 et=1068.420</Score>
+<Score et="1073.8">Daniel Aldave(7) lap=8 point=2 t=71.279 et=1073.780</Score>
+<Score et="1074.4">John Wooldridge(18) lap=8 point=1 t=35.603 et=1074.340</Score>
+<Score et="1076.2">Eleyzer VENTURA#8554(3) lap=8 point=2 t=71.027 et=1076.140</Score>
+<Score et="1076.6">Fabian Kraus(2) lap=9 point=0 t=105.294 et=1076.480</Score>
+<Score et="1078.0">Martin Cavojsky 4(6) lap=9 point=0 t=106.437 et=1077.920</Score>
+<Score et="1078.7">Dylan De Brabanter(4) lap=8 point=2 t=71.225 et=1078.660</Score>
+<Score et="1079.1">Safuan Syukri(10) lap=8 point=2 t=71.100 et=1078.980</Score>
+<Score et="1083.6">Costa Castro(1) lap=9 point=0 t=105.571 et=1083.460</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1084.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1084.6">No Further Action</TrackLimits>
+<Score et="1084.6">Paul Allen(11) lap=8 point=2 t=71.544 et=1084.520</Score>
+<Score et="1085.1">P-A Fugeekies(14) lap=8 point=2 t=73.511 et=1085.062</Score>
+<Score et="1089.0">Joram Dreef(12) lap=8 point=2 t=71.759 et=1088.980</Score>
+<Score et="1091.1">Tais Proust(9) lap=9 point=0 t=105.695 et=1091.020</Score>
+<Score et="1091.5">Aitor Fuentes(0) lap=9 point=0 t=104.783 et=1091.440</Score>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="8" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1092.5">Warning</TrackLimits>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="8" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1092.5">Warning</TrackLimits>
+<Score et="1093.2">Marvin Soapert(13) lap=8 point=2 t=71.579 et=1093.160</Score>
+<Score et="1096.9">Giuseppe Losco(19) lap=8 point=2 t=72.460 et=1096.840</Score>
+<Score et="1099.9">Seshan Govender(16) lap=9 point=0 t=105.401 et=1099.740</Score>
+<Score et="1103.4">Julien PETIT(8) lap=9 point=0 t=105.767 et=1103.420</Score>
+<Score et="1108.6">Daniel Aldave(7) lap=9 point=0 t=106.059 et=1108.560</Score>
+<Score et="1110.6">Eleyzer VENTURA#8554(3) lap=9 point=0 t=105.461 et=1110.580</Score>
+<Score et="1111.5">Fabian Kraus(2) lap=9 point=1 t=34.825 et=1111.320</Score>
+<Score et="1111.8">John Wooldridge(18) lap=8 point=2 t=73.020 et=1111.760</Score>
+<Score et="1112.8">Martin Cavojsky 4(6) lap=9 point=1 t=34.838 et=1112.760</Score>
+<Score et="1113.7">Dylan De Brabanter(4) lap=9 point=0 t=106.186 et=1113.620</Score>
+<Score et="1114.0">Safuan Syukri(10) lap=9 point=0 t=-1.000 et=1113.820</Score>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1114.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Aitor Fuentes" ID="0" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1114.4">No Further Action</TrackLimits>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="8" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1115.6">Warning</TrackLimits>
+<Score et="1118.8">Costa Castro(1) lap=9 point=1 t=35.162 et=1118.620</Score>
+<Score et="1119.3">Paul Allen(11) lap=9 point=0 t=106.257 et=1119.220</Score>
+<Score et="1121.1">P-A Fugeekies(14) lap=9 point=0 t=-1.000 et=1121.098</Score>
+<Incident et="1124.2">Dylan De Brabanter(4) reported contact (988.45) with another vehicle Safuan Syukri(10)</Incident>
+<Score et="1124.3">Joram Dreef(12) lap=9 point=0 t=107.064 et=1124.280</Score>
+<Incident et="1124.4">Safuan Syukri(10) reported contact (485.58) with another vehicle Dylan De Brabanter(4)</Incident>
+<Incident et="1125.2">Safuan Syukri(10) reported contact (950.33) with Sign</Incident>
+<Incident et="1125.3">Safuan Syukri(10) reported contact (922.74) with Sign</Incident>
+<Incident et="1125.6">Safuan Syukri(10) reported contact (3054.16) with Immovable</Incident>
+<Incident et="1126.2">Safuan Syukri(10) reported contact (343.44) with Sign</Incident>
+<Incident et="1126.3">Safuan Syukri(10) reported contact (275.38) with Sign</Incident>
+<Incident et="1126.3">Safuan Syukri(10) reported contact (430.72) with Sign</Incident>
+<Score et="1126.7">Tais Proust(9) lap=9 point=1 t=35.611 et=1126.640</Score>
+<Score et="1128.2">Aitor Fuentes(0) lap=9 point=1 t=36.654 et=1128.100</Score>
+<Score et="1128.6">Marvin Soapert(13) lap=9 point=0 t=107.006 et=1128.600</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1129.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1129.8">No Further Action</TrackLimits>
+<Score et="1133.1">Giuseppe Losco(19) lap=9 point=0 t=108.660 et=1133.040</Score>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1134.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Fabian Kraus" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1134.6">No Further Action</TrackLimits>
+<Score et="1135.0">Seshan Govender(16) lap=9 point=1 t=35.045 et=1134.800</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="9" WarningPoints="6.25" CurrentPoints="0" Resolution="2" et="1138.1">Drive Through Penalty</TrackLimits>
+<Penalty Driver="Dylan De Brabanter" ID="4" Penalty="Drive Thru" Time="0" Laps="0" Reason="Track Limits" et="1138.1">Dylan De Brabanter received Drive Thru penalty, 0s, 0laps for Track Limits. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="9" WarningPoints="6.25" CurrentPoints="0" Resolution="2" et="1138.1">Drive Through Penalty</TrackLimits>
+<Score et="1138.6">Julien PETIT(8) lap=9 point=1 t=35.158 et=1138.580</Score>
+<Incident et="1138.7">Paul Allen(11) reported contact (287.71) with Sign</Incident>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="9" WarningPoints="3.25" CurrentPoints="0" Resolution="2" et="1138.8">Drive Through Penalty</TrackLimits>
+<Penalty Driver="Safuan Syukri" ID="10" Penalty="Drive Thru" Time="0" Laps="0" Reason="Track Limits" et="1138.8">Safuan Syukri received Drive Thru penalty, 0s, 0laps for Track Limits. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<TrackLimits Driver="Safuan Syukri" ID="10" Lap="9" WarningPoints="3.25" CurrentPoints="0" Resolution="2" et="1138.8">Drive Through Penalty</TrackLimits>
+<Score et="1146.1">Eleyzer VENTURA#8554(3) lap=9 point=1 t=35.484 et=1146.060</Score>
+<Score et="1146.6">Fabian Kraus(2) lap=9 point=2 t=70.051 et=1146.540</Score>
+<Score et="1147.0">John Wooldridge(18) lap=9 point=0 t=108.249 et=1146.980</Score>
+<Score et="1147.0">Dylan De Brabanter(4) lap=9 point=1 t=-1.000 et=1147.000</Score>
+<Score et="1147.8">Martin Cavojsky 4(6) lap=9 point=2 t=69.830 et=1147.760</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1148.8">Warning</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1148.8">Warning</TrackLimits>
+<Score et="1149.0">Safuan Syukri(10) lap=9 point=1 t=-1.000 et=1148.860</Score>
+<Score et="1150.3">Daniel Aldave(7) lap=9 point=1 t=41.739 et=1150.300</Score>
+<Score et="1154.0">Costa Castro(1) lap=9 point=2 t=70.497 et=1153.960</Score>
+<Score et="1154.5">Paul Allen(11) lap=9 point=1 t=35.149 et=1154.380</Score>
+<Score et="1157.3">P-A Fugeekies(14) lap=9 point=1 t=36.160 et=1157.258</Score>
+<Score et="1160.0">Joram Dreef(12) lap=9 point=1 t=35.652 et=1159.940</Score>
+<Score et="1161.8">Tais Proust(9) lap=9 point=2 t=70.763 et=1161.780</Score>
+<Score et="1163.6">Aitor Fuentes(0) lap=9 point=2 t=72.089 et=1163.540</Score>
+<Score et="1164.2">Marvin Soapert(13) lap=9 point=1 t=35.614 et=1164.200</Score>
+<Score et="1166.4">Roman Kutsir(17) lap=7 point=1 t=159.000 et=1166.240</Score>
+<Score et="1169.2">Giuseppe Losco(19) lap=9 point=1 t=36.027 et=1169.080</Score>
+<Score et="1170.7">Seshan Govender(16) lap=9 point=2 t=70.866 et=1170.620</Score>
+<Score et="1174.2">Julien PETIT(8) lap=9 point=2 t=-1.000 et=1174.180</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1176.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1176.2">No Further Action</TrackLimits>
+<Score et="1181.0">Fabian Kraus(2) lap=10 point=0 t=104.460 et=1180.940</Score>
+<Score et="1181.7">Eleyzer VENTURA#8554(3) lap=9 point=2 t=71.066 et=1181.640</Score>
+<Score et="1182.0">Martin Cavojsky 4(6) lap=10 point=0 t=104.000 et=1181.920</Score>
+<Score et="1182.7">John Wooldridge(18) lap=9 point=1 t=35.629 et=1182.620</Score>
+<Score et="1183.8">Dylan De Brabanter(4) lap=9 point=2 t=-1.000 et=1183.700</Score>
+<Score et="1185.0">Safuan Syukri(10) lap=9 point=2 t=-1.000 et=1184.820</Score>
+<Score et="1186.5">Daniel Aldave(7) lap=9 point=2 t=77.822 et=1186.380</Score>
+<Score et="1188.6">Costa Castro(1) lap=10 point=0 t=105.043 et=1188.500</Score>
+<Score et="1189.7">Paul Allen(11) lap=9 point=2 t=70.387 et=1189.620</Score>
+<Score et="1193.9">P-A Fugeekies(14) lap=9 point=2 t=72.799 et=1193.896</Score>
+<Score et="1196.1">Joram Dreef(12) lap=9 point=2 t=71.792 et=1196.080</Score>
+<Score et="1196.6">Tais Proust(9) lap=10 point=0 t=105.505 et=1196.520</Score>
+<Score et="1198.1">Aitor Fuentes(0) lap=10 point=0 t=106.611 et=1198.060</Score>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1200.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1200.0">No Further Action</TrackLimits>
+<Score et="1200.6">Marvin Soapert(13) lap=9 point=2 t=71.876 et=1200.480</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="9" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="1202.3">Warning</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="9" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="1202.3">Warning</TrackLimits>
+<Score et="1205.6">Seshan Govender(16) lap=10 point=0 t=105.647 et=1205.400</Score>
+<Score et="1206.4">Giuseppe Losco(19) lap=9 point=2 t=73.206 et=1206.260</Score>
+<Score et="1208.9">Julien PETIT(8) lap=10 point=0 t=-1.000 et=1208.900</Score>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1213.0">Warning</TrackLimits>
+<TrackLimits Driver="Giuseppe Losco" ID="19" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1213.0">Warning</TrackLimits>
+<Score et="1216.0">Fabian Kraus(2) lap=10 point=1 t=35.020 et=1215.960</Score>
+<Score et="1216.0">Eleyzer VENTURA#8554(3) lap=10 point=0 t=105.423 et=1216.000</Score>
+<Score et="1217.1">Martin Cavojsky 4(6) lap=10 point=1 t=35.104 et=1217.040</Score>
+<Score et="1218.7">Dylan De Brabanter(4) lap=10 point=0 t=-1.000 et=1218.600</Score>
+<Score et="1219.2">John Wooldridge(18) lap=9 point=2 t=72.118 et=1219.100</Score>
+<Score et="1220.1">Safuan Syukri(10) lap=10 point=0 t=-1.000 et=1219.840</Score>
+<Score et="1222.6">Daniel Aldave(7) lap=10 point=0 t=113.976 et=1222.540</Score>
+<Score et="1223.0">Roman Kutsir(17) lap=7 point=2 t=215.706 et=1222.940</Score>
+<Score et="1223.8">Costa Castro(1) lap=10 point=1 t=35.180 et=1223.680</Score>
+<Score et="1224.3">Paul Allen(11) lap=10 point=0 t=105.041 et=1224.260</Score>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="10" WarningPoints="0.5" CurrentPoints="2.25" Resolution="4" et="1225.6">Warning</TrackLimits>
+<TrackLimits Driver="Martin Cavojsky 4" ID="6" Lap="10" WarningPoints="0.5" CurrentPoints="2.25" Resolution="4" et="1225.6">Warning</TrackLimits>
+<Score et="1229.9">P-A Fugeekies(14) lap=10 point=0 t=108.746 et=1229.844</Score>
+<Score et="1231.4">Joram Dreef(12) lap=10 point=0 t=-1.000 et=1231.280</Score>
+<Score et="1231.6">Tais Proust(9) lap=10 point=1 t=35.057 et=1231.580</Score>
+<Score et="1233.7">Aitor Fuentes(0) lap=10 point=1 t=35.597 et=1233.660</Score>
+<Score et="1235.6">Marvin Soapert(13) lap=10 point=0 t=107.008 et=1235.600</Score>
+<Score et="1241.0">Seshan Govender(16) lap=10 point=1 t=35.431 et=1240.820</Score>
+<Score et="1242.2">Giuseppe Losco(19) lap=10 point=0 t=-1.000 et=1242.160</Score>
+<Score et="1244.0">Julien PETIT(8) lap=10 point=1 t=35.018 et=1243.920</Score>
+<Score et="1251.4">Fabian Kraus(2) lap=10 point=2 t=70.368 et=1251.320</Score>
+<Score et="1251.6">Eleyzer VENTURA#8554(3) lap=10 point=1 t=35.538 et=1251.540</Score>
+<Score et="1252.5">Martin Cavojsky 4(6) lap=10 point=2 t=-1.000 et=1252.420</Score>
+<Score et="1254.2">Dylan De Brabanter(4) lap=10 point=1 t=35.520 et=1254.120</Score>
+<Score et="1254.8">John Wooldridge(18) lap=10 point=0 t=107.792 et=1254.780</Score>
+<Score et="1256.1">Safuan Syukri(10) lap=10 point=1 t=36.042 et=1255.880</Score>
+<Score et="1257.8">Daniel Aldave(7) lap=10 point=1 t=35.269 et=1257.800</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1258.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1258.7">No Further Action</TrackLimits>
+<Score et="1259.3">Costa Castro(1) lap=10 point=2 t=70.631 et=1259.140</Score>
+<Score et="1259.6">Paul Allen(11) lap=10 point=1 t=35.334 et=1259.600</Score>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1263.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Dylan De Brabanter" ID="4" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1263.6">No Further Action</TrackLimits>
+<Score et="1265.6">P-A Fugeekies(14) lap=10 point=1 t=35.781 et=1265.624</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1267.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1267.4">No Further Action</TrackLimits>
+<Score et="1269.4">Aitor Fuentes(0) lap=10 point=2 t=71.330 et=1269.380</Score>
+<Score et="1270.2">Tais Proust(9) lap=10 point=2 t=73.636 et=1270.160</Score>
+<Score et="1271.6">Marvin Soapert(13) lap=10 point=1 t=35.971 et=1271.580</Score>
+<Score et="1272.2">Roman Kutsir(17) lap=8 point=0 t=264.965 et=1272.200</Score>
+<Score et="1276.6">Seshan Govender(16) lap=10 point=2 t=70.996 et=1276.400</Score>
+<Score et="1278.1">Giuseppe Losco(19) lap=10 point=1 t=35.867 et=1278.040</Score>
+<Score et="1279.0">Joram Dreef(12) lap=10 point=1 t=47.646 et=1278.940</Score>
+<Score et="1279.7">Julien PETIT(8) lap=10 point=2 t=70.655 et=1279.560</Score>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1281.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Seshan Govender" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1281.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1282.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Daniel Aldave" ID="7" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1282.0">No Further Action</TrackLimits>
+<Score et="1285.9">Fabian Kraus(2) lap=11 point=0 t=104.766 et=1285.720</Score>
+<Score et="1286.6">Martin Cavojsky 4(6) lap=11 point=0 t=-1.000 et=1286.440</Score>
+<Score et="1287.0">Eleyzer VENTURA#8554(3) lap=10 point=2 t=71.006 et=1287.000</Score>
+<Score et="1291.0">John Wooldridge(18) lap=10 point=1 t=36.135 et=1290.920</Score>
+<Score et="1292.1">Safuan Syukri(10) lap=10 point=2 t=72.121 et=1291.960</Score>
+<Score et="1292.8">Dylan De Brabanter(4) lap=10 point=2 t=74.152 et=1292.740</Score>
+<Score et="1293.8">Costa Castro(1) lap=11 point=0 t=105.072 et=1293.580</Score>
+<Score et="1293.8">Daniel Aldave(7) lap=10 point=2 t=71.253 et=1293.780</Score>
+<Score et="1294.9">Paul Allen(11) lap=10 point=2 t=70.562 et=1294.820</Score>
+<Score et="1302.1">P-A Fugeekies(14) lap=10 point=2 t=72.282 et=1302.125</Score>
+<Score et="1303.8">Aitor Fuentes(0) lap=11 point=0 t=105.736 et=1303.800</Score>
+<Score et="1304.8">Tais Proust(9) lap=11 point=0 t=108.245 et=1304.760</Score>
+<Score et="1307.8">Marvin Soapert(13) lap=10 point=2 t=72.194 et=1307.800</Score>
+<Score et="1311.4">Seshan Govender(16) lap=11 point=0 t=105.795 et=1311.200</Score>
+<Score et="1314.3">Julien PETIT(8) lap=11 point=0 t=105.318 et=1314.220</Score>
+<Score et="1314.7">Giuseppe Losco(19) lap=10 point=2 t=72.470 et=1314.640</Score>
+<Score et="1315.8">Joram Dreef(12) lap=10 point=2 t=84.451 et=1315.740</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1318.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1318.9">No Further Action</TrackLimits>
+<Score et="1320.5">Fabian Kraus(2) lap=11 point=1 t=34.777 et=1320.500</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1320.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="1320.8">No Further Action</TrackLimits>
+<Score et="1321.4">Martin Cavojsky 4(6) lap=11 point=1 t=34.879 et=1321.320</Score>
+<Score et="1321.5">Eleyzer VENTURA#8554(3) lap=11 point=0 t=105.427 et=1321.440</Score>
+<Score et="1325.6">Roman Kutsir(17) lap=8 point=1 t=53.397 et=1325.600</Score>
+<Score et="1327.2">John Wooldridge(18) lap=10 point=2 t=72.311 et=1327.080</Score>
+<Score et="1328.8">Costa Castro(1) lap=11 point=1 t=35.086 et=1328.660</Score>
+<Score et="1328.9">Daniel Aldave(7) lap=11 point=0 t=106.281 et=1328.820</Score>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1329.1">Warning</TrackLimits>
+<TrackLimits Driver="Joram Dreef" ID="12" Lap="10" WarningPoints="0.25" CurrentPoints="1" Resolution="4" et="1329.1">Warning</TrackLimits>
+<Score et="1329.5">Paul Allen(11) lap=11 point=0 t=105.114 et=1329.380</Score>
+<Score et="1333.0">Safuan Syukri(10) lap=11 point=0 t=112.885 et=1332.720</Score>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1333.0">No Further Action</TrackLimits>
+<TrackLimits Driver="John Wooldridge" ID="18" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="7" et="1333.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1333.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Roman Kutsir" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1333.7">No Further Action</TrackLimits>
+<Score et="1333.9">Dylan De Brabanter(4) lap=11 point=0 t=115.222 et=1333.820</Score>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="11" WarningPoints="1.25" CurrentPoints="1.25" Resolution="4" et="1338.0">Warning</TrackLimits>
+<TrackLimits Driver="Costa Castro" ID="1" Lap="11" WarningPoints="1.25" CurrentPoints="1.25" Resolution="4" et="1338.0">Warning</TrackLimits>
+<Score et="1338.1">P-A Fugeekies(14) lap=11 point=0 t=108.252 et=1338.096</Score>
+<Score et="1339.0">Aitor Fuentes(0) lap=11 point=1 t=35.181 et=1338.980</Score>
+<Score et="1340.2">Tais Proust(9) lap=11 point=1 t=35.327 et=1340.100</Score>
+<Score et="1343.7">Marvin Soapert(13) lap=11 point=0 t=108.097 et=1343.700</Score>
+<Score et="1346.5">Seshan Govender(16) lap=11 point=1 t=35.074 et=1346.260</Score>
+<Score et="1349.4">Julien PETIT(8) lap=11 point=1 t=35.179 et=1349.400</Score>
+<Score et="1350.8">Giuseppe Losco(19) lap=11 point=0 t=108.576 et=1350.740</Score>
+<Penalty et="1352.8">Safuan Syukri served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Penalty et="1353.8">Dylan De Brabanter served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
+<Sector Driver="Fabian Kraus" ID="2" Sector="2" Class="LMP3" et="1355.5">Fabian Kraus(2) set new best for sector 2</Sector>
+<Score et="1355.6">Fabian Kraus(2) lap=11 point=2 t=69.765 et=1355.480</Score>
+<Sector Driver="Martin Cavojsky 4" ID="6" Sector="2" Class="LMP3" et="1356.3">Martin Cavojsky 4(6) set new best for sector 2</Sector>
+<Score et="1356.3">Martin Cavojsky 4(6) lap=11 point=2 t=69.815 et=1356.260</Score>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1357.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Tais Proust" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1357.2">No Further Action</TrackLimits>
+<Score et="1357.4">Eleyzer VENTURA#8554(3) lap=11 point=1 t=35.876 et=1357.300</Score>
+<Score et="1362.8">Joram Dreef(12) lap=11 point=0 t=-1.000 et=1362.720</Score>
+<Score et="1362.9">John Wooldridge(18) lap=11 point=0 t=108.132 et=1362.900</Score>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Marvin Soapert" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1363.4">No Further Action</TrackLimits>
+<Score et="1364.2">Daniel Aldave(7) lap=11 point=1 t=35.303 et=1364.120</Score>
+<Score et="1364.4">Costa Castro(1) lap=11 point=2 t=-1.000 et=1364.320</Score>
+<Score et="1364.6">Paul Allen(11) lap=11 point=1 t=35.081 et=1364.460</Score>
+<Score et="1374.1">P-A Fugeekies(14) lap=11 point=1 t=36.003 et=1374.099</Score>
+<Score et="1374.4">Aitor Fuentes(0) lap=11 point=2 t=70.537 et=1374.320</Score>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1374.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Julien PETIT" ID="8" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1374.8">No Further Action</TrackLimits>
+<Score et="1375.6">Tais Proust(9) lap=11 point=2 t=70.725 et=1375.500</Score>
+<Score et="1376.1">Roman Kutsir(17) lap=8 point=2 t=103.808 et=1376.020</Score>
+<TrackLimits Driver="P-A Fugeekies" ID="14" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1398.9">No Further Action</TrackLimits>
+<Score et="1411.1">P-A Fugeekies(14) lap=11 point=2 t=72.986 et=1411.082</Score>
+</Stream>
+<FormationAndStart>1</FormationAndStart>
+<MostLapsCompleted>11</MostLapsCompleted>
+<Driver>
+<Name>Driver 1712</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>7</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>1</GridPos>
+<Position>16</Position>
+<ClassGridPos>1</ClassGridPos>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="1" et="127.1025" topspeed="268.91" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="1" et="237.8799" s1="35.1094" s2="35.4939" s3="34.4786" topspeed="277.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0819</Lap>
+<Lap num="3" p="1" et="342.9600" s1="34.9987" s2="35.1819" s3="34.3879" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.5686</Lap>
+<Lap num="4" p="1" et="447.5200" s1="35.4816" s2="35.1554" s3="34.1417" topspeed="277.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.7787</Lap>
+<Lap num="5" p="1" et="552.3000" s1="35.1580" s2="35.4059" s3="34.2424" topspeed="277.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.8063</Lap>
+<Lap num="6" p="1" et="657.1201" s1="35.0792" s2="35.0804" s3="34.2488" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.4083</Lap>
+<Lap num="7" p="2" et="761.5200" s1="35.1288" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="2" et="867.2600" s1="34.9889" s2="35.2104" s3="34.0232" topspeed="280.17" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.2225</Lap>
+<Lap num="9" p="2" et="971.4800" s1="37.2587" s2="35.0875" s3="34.0908" topspeed="281.98" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.4371</Lap>
+<Lap num="10" p="2" et="1077.9199" s1="34.8378" s2="34.9918" s3="34.1708" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.0004</Lap>
+<Lap num="11" p="2" et="1181.9199" s1="35.1044" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<BestLapTime>104.0004</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0764</Name>
+<Connected>1</Connected>
+<VehFile>397_25_G61LTP3EVO.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Ginetta G61-LT-P3 Custom Team #397:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>3</CarNumber>
+<TeamName>LMP2 Team IchMachDen</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>4</GridPos>
+<Position>13</Position>
+<ClassGridPos>4</ClassGridPos>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="2" et="127.1025" s1="42.8399" s2="35.2039" s3="34.3911" topspeed="269.36" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.4349</Lap>
+<Lap num="2" p="2" et="239.5400" s1="35.1711" s2="35.1348" s3="34.3355" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.6414</Lap>
+<Lap num="3" p="2" et="344.1799" s1="34.9984" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="2" et="449.0801" s1="34.8837" s2="34.9897" s3="34.2124" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.0858</Lap>
+<Lap num="5" p="2" et="553.1599" s1="34.9263" s2="35.4092" s3="34.3104" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.6458</Lap>
+<Lap num="6" p="2" et="657.8201" s1="34.7554" s2="35.0162" s3="34.2861" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.0578</Lap>
+<Lap num="7" p="1" et="761.8799" s1="34.9091" s2="35.3084" s3="34.8037" topspeed="280.62" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0212</Lap>
+<Lap num="8" p="1" et="866.8999" s1="34.7870" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="1" et="971.2000" s1="35.2405" s2="35.6596" s3="34.3936" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.2937</Lap>
+<Lap num="10" p="1" et="1076.4800" s1="34.8252" s2="35.2257" s3="34.4087" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.4596</Lap>
+<Lap num="11" p="1" et="1180.9399" s1="35.0203" s2="35.3474" s3="34.3984" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.7661</Lap>
+<BestLapTime>104.0578</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0053</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>1</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>12</GridPos>
+<Position>15</Position>
+<ClassGridPos>12</ClassGridPos>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="11" et="127.1025" s1="46.7309" s2="37.8352" s3="35.1532" topspeed="269.36" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.7192</Lap>
+<Lap num="2" p="10" et="246.8401" s1="35.8775" s2="35.6873" s3="34.5331" topspeed="277.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0978</Lap>
+<Lap num="3" p="9" et="352.9199" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="8" et="459.0200" s1="36.0825" s2="35.4242" s3="34.6086" topspeed="280.17" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.1153</Lap>
+<Lap num="5" p="6" et="565.1201" s1="35.1366" s2="35.7793" s3="34.6026" topspeed="279.27" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5185</Lap>
+<Lap num="6" p="5" et="670.6399" s1="35.3929" s2="35.5748" s3="34.3356" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.3033</Lap>
+<Lap num="7" p="5" et="775.9600" s1="35.1458" s2="35.4477" s3="34.3323" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.9258</Lap>
+<Lap num="8" p="5" et="880.8799" s1="35.2828" s2="35.3218" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="5" et="986.6599" s1="35.1406" s2="35.1802" s3="34.4624" topspeed="277.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.7832</Lap>
+<Lap num="10" p="5" et="1091.4399" s1="36.6536" s2="35.4358" s3="34.5221" topspeed="279.72" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.6115</Lap>
+<Lap num="11" p="4" et="1198.0601" s1="35.5967" s2="35.7333" s3="34.4064" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7363</Lap>
+<BestLapTime>104.7832</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0500</Name>
+<Connected>1</Connected>
+<VehFile>397_25_D09P3.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Duqueine D09 P3 Custom Team 2025 #397</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>2</CarNumber>
+<TeamName>BlackBelt JiuJitsu Racing PORRADA</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>5</GridPos>
+<Position>14</Position>
+<ClassGridPos>5</ClassGridPos>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="3" et="127.1025" s1="43.0089" s2="35.8466" s3="34.6167" topspeed="268.01" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.4721</Lap>
+<Lap num="2" p="3" et="240.5801" s1="35.4821" s2="35.8033" s3="34.6135" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.8989</Lap>
+<Lap num="3" p="3" et="346.4800" s1="35.2021" s2="35.1993" s3="34.4431" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">104.8445</Lap>
+<Lap num="4" p="3" et="451.3201" s1="35.1671" s2="35.5161" s3="34.7156" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.3988</Lap>
+<Lap num="5" p="3" et="556.7200" s1="35.4030" s2="35.5855" s3="34.4097" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.3982</Lap>
+<Lap num="6" p="3" et="662.1201" s1="35.0944" s2="35.3779" s3="34.5536" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0259</Lap>
+<Lap num="7" p="3" et="767.1599" s1="35.1401" s2="35.4609" s3="34.4526" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0536</Lap>
+<Lap num="8" p="3" et="872.2000" s1="35.1584" s2="36.0129" s3="34.5152" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.6865</Lap>
+<Lap num="9" p="3" et="977.8999" s1="35.4401" s2="35.6548" s3="34.4764" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5714</Lap>
+<Lap num="10" p="3" et="1083.4600" s1="35.1619" s2="35.3356" s3="34.5457" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0431</Lap>
+<Lap num="11" p="3" et="1188.5000" s1="35.1803" s2="35.4510" s3="34.4402" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0715</Lap>
+<BestLapTime>104.8445</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2082</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>12</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>3</GridPos>
+<Position>6</Position>
+<ClassGridPos>3</ClassGridPos>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="127.1025" s1="45.8451" s2="37.5132" s3="34.6179" topspeed="267.11" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.9761</Lap>
+<Lap num="2" p="8" et="245.0801" s1="35.4766" s2="35.4046" topspeed="275.22" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="7" et="351.7600" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="6" et="457.7000" s1="35.4827" s2="35.4124" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="7" et="563.3000" s1="35.3727" s2="35.5257" s3="41.3531" topspeed="273.42" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">112.2515</Lap>
+<Lap num="6" p="14" et="675.5400" s1="54.7105" s2="36.4862" s3="35.0854" topspeed="268.91" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">126.2822</Lap>
+<Lap num="7" p="14" et="801.8201" s1="35.3715" s2="35.5198" s3="34.5096" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.4009</Lap>
+<Lap num="8" p="13" et="907.2200" s1="35.1864" s2="35.7801" s3="34.7736" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7401</Lap>
+<Lap num="9" p="12" et="1012.9600" s1="35.3791" s2="36.1653" s3="34.7126" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.2570</Lap>
+<Lap num="10" p="12" et="1119.2200" s1="35.1492" s2="35.2375" s3="34.6543" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.0410</Lap>
+<Lap num="11" p="10" et="1224.2600" s1="35.3345" s2="35.2274" s3="34.5520" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.1139</Lap>
+<BestLapTime>105.0410</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1352</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>9</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>20</GridPos>
+<Position>4</Position>
+<ClassGridPos>20</ClassGridPos>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="10" et="127.1025" s1="45.9894" topspeed="268.01" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="9" et="246.1001" s1="35.3548" s2="35.7081" s3="34.9555" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0184</Lap>
+<Lap num="3" p="10" et="352.1201" s1="35.6596" s2="36.1287" s3="35.2032" topspeed="281.07" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.9914</Lap>
+<Lap num="4" p="9" et="459.1001" s1="36.1450" s2="36.0344" s3="42.5162" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.6956</Lap>
+<Lap num="5" p="8" et="573.8000" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="7" et="679.8601" s1="35.3056" s2="35.7025" s3="34.9873" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.9954</Lap>
+<Lap num="7" p="7" et="785.8601" s1="35.0385" s2="35.8221" s3="34.8720" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7325</Lap>
+<Lap num="8" p="7" et="891.5801" s1="35.1525" s2="36.1375" s3="34.7723" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0623</Lap>
+<Lap num="9" p="7" et="997.6399" s1="35.3307" s2="35.4480" s3="34.9888" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7675</Lap>
+<Lap num="10" p="7" et="1103.4199" s1="35.1581" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="7" et="1208.8999" s1="35.0179" s2="35.6372" s3="34.6630" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.3181</Lap>
+<BestLapTime>105.3181</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2522</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>10</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>9</GridPos>
+<Position>1</Position>
+<ClassGridPos>9</ClassGridPos>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="5" et="127.1025" s1="44.1561" s2="35.8031" s3="34.8679" topspeed="270.26" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.8272</Lap>
+<Lap num="2" p="5" et="241.9399" s1="35.1646" s2="36.6877" s3="34.9109" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.7632</Lap>
+<Lap num="3" p="4" et="348.7000" s1="35.3576" s2="35.6307" s3="34.7366" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7249</Lap>
+<Lap num="4" p="4" et="454.4199" s1="35.2213" s2="35.4901" s3="34.6656" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.3771</Lap>
+<Lap num="5" p="4" et="559.8000" s1="35.3721" s2="35.5124" s3="34.6282" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5126</Lap>
+<Lap num="6" p="4" et="665.3201" s1="35.1627" s2="35.8113" s3="34.7843" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7583</Lap>
+<Lap num="7" p="4" et="771.0801" s1="35.3765" s2="35.6221" s3="34.5593" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5580</Lap>
+<Lap num="8" p="4" et="876.6399" s1="38.2850" s2="35.6590" s3="34.7462" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.6902</Lap>
+<Lap num="9" p="4" et="985.3201" s1="35.4637" s2="35.6570" s3="34.5745" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.6952</Lap>
+<Lap num="10" p="4" et="1091.0200" s1="35.6108" s2="35.1522" s3="34.7423" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5054</Lap>
+<Lap num="11" p="5" et="1196.5200" s1="35.0568" s2="38.5791" s3="34.6086" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2445</Lap>
+<BestLapTime>105.3771</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2410</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>17</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>7</GridPos>
+<Position>2</Position>
+<ClassGridPos>7</ClassGridPos>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="127.1025" s1="43.3648" s2="36.1260" s3="34.8763" topspeed="268.01" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.3670</Lap>
+<Lap num="2" p="4" et="241.4800" s1="35.6333" s2="36.0556" s3="34.8931" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.5820</Lap>
+<Lap num="3" p="5" et="348.0601" s1="35.3747" s2="36.3979" s3="34.9148" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.6873</Lap>
+<Lap num="4" p="5" et="454.7400" s1="35.4602" s2="35.4495" s3="34.6678" topspeed="279.27" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5775</Lap>
+<Lap num="5" p="5" et="560.3201" s1="35.6088" s2="35.8256" s3="34.5249" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.9593</Lap>
+<Lap num="6" p="6" et="666.2800" s1="44.8645" s2="35.5422" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="6" et="782.0200" s1="35.3805" s2="35.8876" s3="34.7441" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0122</Lap>
+<Lap num="8" p="6" et="888.0400" s1="35.2676" s2="36.0286" s3="35.0179" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.3141</Lap>
+<Lap num="9" p="6" et="994.3401" s1="35.0138" s2="35.5863" s3="34.8008" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.4009</Lap>
+<Lap num="10" p="6" et="1099.7400" s1="35.0449" s2="35.8207" s3="34.7815" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.6471</Lap>
+<Lap num="11" p="6" et="1205.3999" s1="35.4309" s2="35.5647" s3="34.7996" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.7952</Lap>
+<BestLapTime>105.4009</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0703</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>4</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>2</GridPos>
+<Position>3</Position>
+<ClassGridPos>2</ClassGridPos>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="7" et="127.1025" s1="44.7453" s2="36.8778" s3="34.3726" topspeed="268.01" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.9957</Lap>
+<Lap num="2" p="7" et="243.1001" s1="35.4850" s2="35.6580" s3="37.0803" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2233</Lap>
+<Lap num="3" p="8" et="351.3401" topspeed="273.87" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="7" et="458.7000" s1="36.1305" s2="35.4916" s3="34.3705" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.9926</Lap>
+<Lap num="5" p="10" et="564.7000" s1="35.4189" s2="35.6458" s3="46.1041" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.1687</Lap>
+<Lap num="6" p="9" et="681.8601" s1="35.5876" s2="35.5294" s3="34.4121" topspeed="273.87" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.5292</Lap>
+<Lap num="7" p="9" et="787.3999" s1="38.6821" s2="35.5171" s3="34.5497" topspeed="279.27" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7488</Lap>
+<Lap num="8" p="9" et="896.1399" s1="39.0521" s2="35.5140" s3="34.4109" topspeed="279.72" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.9771</Lap>
+<Lap num="9" p="9" et="1005.1201" s1="35.4288" s2="35.5980" s3="34.4346" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.4614</Lap>
+<Lap num="10" p="8" et="1110.5801" s1="35.4838" s2="35.5824" s3="34.3573" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.4235</Lap>
+<Lap num="11" p="8" et="1216.0000" s1="35.5378" s2="35.4683" s3="34.4207" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">105.4268</Lap>
+<BestLapTime>105.4235</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0537</Name>
+<Connected>1</Connected>
+<VehFile>46_25_ADES51981969.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ADESS Racing Team 2025 #46:ELMS</VehName>
+<Category>ELMS 2025, LMP3, ADESS AD25 LMP3</Category>
+<CarType>ADESS AD25 LMP3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>8</CarNumber>
+<TeamName>ADESS Racing Team 2025 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>11</GridPos>
+<Position>17</Position>
+<ClassGridPos>11</ClassGridPos>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="8" et="127.1025" s1="44.7267" s2="37.5375" s3="34.8735" topspeed="268.91" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">117.1377</Lap>
+<Lap num="2" p="6" et="244.2600" s1="35.2993" s2="36.2343" s3="34.9027" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.4364</Lap>
+<Lap num="3" p="6" et="350.6799" s1="35.3393" s2="35.9225" s3="34.9028" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.1646</Lap>
+<Lap num="4" p="11" et="456.8601" s1="35.3242" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="9" et="574.9600" s1="35.2051" s2="36.0185" s3="34.8553" topspeed="279.72" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0789</Lap>
+<Lap num="6" p="8" et="681.0400" s1="35.1763" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="8" et="787.1001" s1="37.7851" s2="36.0372" s3="34.9650" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7873</Lap>
+<Lap num="8" p="8" et="895.8999" s1="35.2753" topspeed="278.82" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="9" p="8" et="1002.5000" s1="35.1599" s2="36.1190" s3="34.7797" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.0585</Lap>
+<Lap num="10" p="11" et="1108.5601" s1="41.7391" s2="36.0833" s3="36.1537" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.9761</Lap>
+<Lap num="11" p="9" et="1222.5400" s1="35.2688" s2="35.9846" s3="35.0272" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.2806</Lap>
+<BestLapTime>106.0585</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0675</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>5</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>10</GridPos>
+<Position>10</Position>
+<ClassGridPos>10</ClassGridPos>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="15" et="127.1025" s1="44.7595" s2="46.0393" s3="34.9557" topspeed="267.11" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.7545</Lap>
+<Lap num="2" p="13" et="252.8601" s1="35.4604" s2="36.0209" s3="34.7230" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.2043</Lap>
+<Lap num="3" p="11" et="359.0801" s1="35.4709" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="13" et="465.9600" s1="35.5297" s2="35.7809" s3="43.1650" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">114.4756</Lap>
+<Lap num="5" p="13" et="580.4399" s1="35.5651" s2="35.9397" topspeed="272.52" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="6" p="12" et="687.7400" s1="35.5579" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="11" et="794.2800" s1="35.4495" s2="36.2296" s3="35.0009" topspeed="272.52" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.6799</Lap>
+<Lap num="8" p="10" et="900.9600" s1="35.5577" s2="35.9629" s3="34.9615" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.4822</Lap>
+<Lap num="9" p="10" et="1007.4399" s1="35.3384" s2="35.8868" s3="34.9608" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.1861</Lap>
+<Lap num="10" p="9" et="1113.6201" topspeed="272.07" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="12" et="1218.6001" s1="35.5201" s2="38.6315" s3="41.0708" topspeed="273.42" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">115.2224</Lap>
+<BestLapTime>106.1861</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2337</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>11</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>8</GridPos>
+<Position>9</Position>
+<ClassGridPos>8</ClassGridPos>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="6" et="127.1025" s1="44.5361" s2="35.8509" s3="34.6644" topspeed="267.11" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">115.0514</Lap>
+<Lap num="2" p="16" et="242.1599" s1="35.5686" topspeed="278.82" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="15" et="368.3000" s1="35.7746" s2="35.8545" s3="34.8140" topspeed="271.16" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.4431</Lap>
+<Lap num="4" p="14" et="474.7400" s1="35.5273" s2="36.0500" topspeed="270.71" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="14" et="581.1799" s1="35.5679" s2="35.8132" s3="35.4836" topspeed="271.16" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.8647</Lap>
+<Lap num="6" p="13" et="688.0400" s1="35.6650" s2="35.6990" s3="35.1509" topspeed="273.87" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.5149</Lap>
+<Lap num="7" p="12" et="794.5601" s1="35.7607" s2="35.7657" s3="35.4288" topspeed="273.42" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.9553</Lap>
+<Lap num="8" p="11" et="901.5200" s1="35.7006" s2="35.8549" s3="34.7979" topspeed="271.62" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.3533</Lap>
+<Lap num="9" p="11" et="1007.8799" s1="35.4709" s2="35.6289" topspeed="272.52" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="10" p="10" et="1113.8201" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="11" et="1219.8401" s1="36.0416" s2="36.0797" s3="40.7635" topspeed="264.41" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">112.8849</Lap>
+<BestLapTime>106.3533</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1288</Name>
+<Connected>1</Connected>
+<VehFile>46_25_ADES51981969.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ADESS Racing Team 2025 #46:ELMS</VehName>
+<Category>ELMS 2025, LMP3, ADESS AD25 LMP3</Category>
+<CarType>ADESS AD25 LMP3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>13</CarNumber>
+<TeamName>ADESS Racing Team 2025 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>16</GridPos>
+<Position>12</Position>
+<ClassGridPos>16</ClassGridPos>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="12" et="127.1025" s1="46.4397" s2="37.9570" s3="35.6376" topspeed="268.01" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">120.0343</Lap>
+<Lap num="2" p="15" et="247.1399" s1="45.5833" s2="37.4229" s3="35.2765" topspeed="280.62" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">118.2827</Lap>
+<Lap num="3" p="16" et="365.4199" s1="40.6889" s2="36.9308" s3="35.6380" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">113.2578</Lap>
+<Lap num="4" p="15" et="478.6799" s1="35.8020" s2="37.1639" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="15" et="587.0601" s1="35.3901" s2="36.3072" s3="35.6541" topspeed="278.37" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.3513</Lap>
+<Lap num="6" p="15" et="694.3999" s1="35.4039" s2="36.8135" s3="36.3500" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.5674</Lap>
+<Lap num="7" p="15" et="802.9800" s1="35.7939" s2="36.3167" s3="35.6161" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.7267</Lap>
+<Lap num="8" p="14" et="910.7000" s1="35.3574" s2="36.1852" s3="34.9782" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">106.5208</Lap>
+<Lap num="9" p="14" et="1017.2200" s1="35.5792" s2="36.1793" s3="35.3058" topspeed="277.92" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.0643</Lap>
+<Lap num="10" p="14" et="1124.2800" s1="35.6516" s2="36.1399" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="16" et="1231.2800" s1="47.6461" s2="36.8053" topspeed="273.42" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">--.----</Lap>
+<BestLapTime>106.5208</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1722</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>14</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>14</GridPos>
+<Position>8</Position>
+<ClassGridPos>14</ClassGridPos>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="127.1025" s1="52.4872" s2="38.9730" s3="35.9015" topspeed="266.66" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">127.3618</Lap>
+<Lap num="2" p="14" et="254.4800" s1="35.5778" s2="36.2007" s3="35.9405" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.7190</Lap>
+<Lap num="3" p="14" et="362.2000" s1="35.4394" s2="36.1735" s3="36.2623" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.8751</Lap>
+<Lap num="4" p="16" et="470.0601" s1="38.0156" s2="45.4594" s3="36.0972" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">119.5722</Lap>
+<Lap num="5" p="16" et="589.6399" s1="35.8986" s2="36.3638" s3="35.7481" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.0105</Lap>
+<Lap num="6" p="16" et="697.6599" s1="35.8041" s2="36.7731" s3="35.9898" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.5670</Lap>
+<Lap num="7" p="16" et="806.2200" s1="35.4465" s2="36.5653" s3="35.2563" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.2681</Lap>
+<Lap num="8" p="15" et="913.4800" s1="36.6530" s2="36.1038" s3="35.3458" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.1027</Lap>
+<Lap num="9" p="15" et="1021.5801" s1="35.5115" s2="36.0675" s3="35.4269" topspeed="276.57" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.0059</Lap>
+<Lap num="10" p="15" et="1128.6001" s1="35.6135" s2="36.2627" s3="35.1322" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.0084</Lap>
+<Lap num="11" p="14" et="1235.6001" s1="35.9709" s2="36.2227" s3="35.9032" topspeed="277.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.0968</Lap>
+<BestLapTime>107.0059</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1264</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>19</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>19</GridPos>
+<Position>11</Position>
+<ClassGridPos>19</ClassGridPos>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="127.1025" s1="47.2009" s2="38.0191" s3="49.4348" topspeed="261.71" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">134.6547</Lap>
+<Lap num="2" p="18" et="261.7600" s1="35.8018" s2="38.4987" s3="36.0312" topspeed="272.52" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.3317</Lap>
+<Lap num="3" p="18" et="372.1001" s1="37.0312" s2="51.3795" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="18" et="495.6399" s1="35.5592" s2="37.3474" s3="35.5284" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.4350</Lap>
+<Lap num="5" p="17" et="604.0601" s1="36.0881" s2="38.0600" s3="36.1541" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.3021</Lap>
+<Lap num="6" p="17" et="714.3601" s1="35.5427" s2="36.5281" s3="35.3641" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.4350</Lap>
+<Lap num="7" p="17" et="821.8000" topspeed="275.22" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="17" et="929.9399" s1="35.7167" s2="37.7006" s3="35.3790" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7963</Lap>
+<Lap num="9" p="17" et="1038.7400" s1="35.6033" s2="37.4167" s3="35.2286" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2487</Lap>
+<Lap num="10" p="17" et="1146.9800" s1="35.6289" s2="36.4895" s3="35.6736" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.7920</Lap>
+<Lap num="11" p="17" et="1254.7800" s1="36.1348" s2="36.1763" s3="35.8210" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.1321</Lap>
+<BestLapTime>107.4350</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0927</Name>
+<Connected>1</Connected>
+<VehFile>46_25_ADES51981969.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ADESS Racing Team 2025 #46:ELMS</VehName>
+<Category>ELMS 2025, LMP3, ADESS AD25 LMP3</Category>
+<CarType>ADESS AD25 LMP3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>20</CarNumber>
+<TeamName>ADESS Racing Team 2025 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>13</GridPos>
+<Position>7</Position>
+<ClassGridPos>13</ClassGridPos>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="127.1025" topspeed="266.66" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="12" et="250.8000" s1="35.8838" s2="36.1346" s3="35.7348" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.7532</Lap>
+<Lap num="3" p="13" et="358.5400" s1="35.9317" s2="37.3373" s3="35.5172" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7862</Lap>
+<Lap num="4" p="12" et="467.3401" s1="35.7635" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="5" p="11" et="575.3201" s1="36.0350" s2="36.4072" s3="36.0143" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.4564</Lap>
+<Lap num="6" p="10" et="683.7800" topspeed="275.22" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="7" p="10" et="791.9399" s1="35.6537" s2="36.9402" s3="36.0032" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.5972</Lap>
+<Lap num="8" p="16" et="900.5200" s1="52.1058" s2="36.2552" s3="35.4964" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.8574</Lap>
+<Lap num="9" p="16" et="1024.3799" s1="35.8229" s2="36.6367" s3="36.2007" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.6603</Lap>
+<Lap num="10" p="16" et="1133.0400" s1="36.0273" s2="37.1785" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="11" p="15" et="1242.1599" s1="35.8672" s2="36.6030" s3="36.1053" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.5756</Lap>
+<BestLapTime>107.7532</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2300</Name>
+<Connected>1</Connected>
+<VehFile>4_25_DKR_E8E7FBE8C.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>DKR Engineering #4:ELMS25</VehName>
+<Category>ELMS 2025, LMP3, Ginetta G61-LT-P325 Evo</Category>
+<CarType>Ginetta G61-LT-P325 Evo</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>18</CarNumber>
+<TeamName>DKR Engineering #4</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>15</GridPos>
+<Position>18</Position>
+<ClassGridPos>15</ClassGridPos>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="127.1025" s1="48.1495" s2="52.6445" s3="50.5819" topspeed="262.61" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">151.3758</Lap>
+<Lap num="2" p="19" et="278.4800" s1="36.2855" s2="36.5818" s3="35.9049" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7723</Lap>
+<Lap num="3" p="19" et="387.2600" s1="36.7320" topspeed="272.07" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="19" et="496.6599" s1="35.8497" s2="36.4551" s3="35.5280" topspeed="272.97" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">107.8327</Lap>
+<Lap num="5" p="19" et="604.5000" s1="50.4119" s2="37.3636" s3="36.0067" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">123.7821</Lap>
+<Lap num="6" p="18" et="728.2800" s1="36.4135" s2="36.4684" s3="52.5657" topspeed="267.56" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">125.4477</Lap>
+<Lap num="7" p="18" et="853.7200" s1="38.5457" s2="53.6042" s3="61.3672" topspeed="253.15" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium" pit="1">153.5171</Lap>
+<Lap num="8" p="18" et="1007.2400" s1="159.0005" s2="56.7053" s3="49.2588" topspeed="146.39" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">264.9646</Lap>
+<BestLapTime>107.8327</BestLapTime>
+<Laps>8</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="8">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2038</Name>
+<Connected>1</Connected>
+<VehFile>46_25_ADES81662442.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ADESS Racing Team 2025 #46:LMU2</VehName>
+<Category>ELMS 2025, LMP3, ADESS AD25 LMP3</Category>
+<CarType>ADESS AD25 LMP3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>15</CarNumber>
+<TeamName>ADESS Racing Team 2025 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>18</GridPos>
+<Position>5</Position>
+<ClassGridPos>18</ClassGridPos>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="13" et="127.1025" s1="47.6509" s2="37.9502" s3="36.0481" topspeed="266.21" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">121.6492</Lap>
+<Lap num="2" p="11" et="248.7600" topspeed="274.84" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="3" p="12" et="357.8401" s1="35.7239" s2="36.7084" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="4" p="10" et="466.0601" s1="36.3069" s2="36.2348" s3="36.1711" topspeed="263.61" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7128</Lap>
+<Lap num="5" p="12" et="574.7600" s1="36.3851" s2="36.5333" s3="37.1962" topspeed="273.02" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1146</Lap>
+<Lap num="6" p="11" et="684.8799" s1="35.8810" s2="36.6703" s3="35.5629" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.1143</Lap>
+<Lap num="7" p="13" et="793.0000" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="8" p="12" et="902.9199" s1="35.8723" s2="36.6448" s3="36.1210" topspeed="274.47" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.6381</Lap>
+<Lap num="9" p="13" et="1011.5601" s1="36.2644" s2="37.2462" topspeed="275.41" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="10" p="13" et="1121.1001" s1="36.1599" s2="36.6388" s3="35.9474" topspeed="273.87" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.7461</Lap>
+<Lap num="11" p="13" et="1229.8601" s1="35.7805" s2="36.5011" s3="35.9703" topspeed="274.77" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.2520</Lap>
+<BestLapTime>108.1143</BestLapTime>
+<Laps>11</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="11">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0969</Name>
+<Connected>1</Connected>
+<VehFile>46_25_ADES51981969.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>ADESS Racing Team 2025 #46:ELMS</VehName>
+<Category>ELMS 2025, LMP3, ADESS AD25 LMP3</Category>
+<CarType>ADESS AD25 LMP3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>16</CarNumber>
+<TeamName>ADESS Racing Team 2025 #46</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>17</GridPos>
+<Position>19</Position>
+<ClassGridPos>17</ClassGridPos>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Lap num="1" p="18" et="127.1025" topspeed="266.21" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">--.----</Lap>
+<Lap num="2" p="17" et="263.5801" s1="35.9060" s2="36.9549" s3="35.6141" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">108.4750</Lap>
+<Lap num="3" p="17" et="372.0601" s1="36.9254" s2="37.5851" s3="38.4769" topspeed="274.32" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">112.9873</Lap>
+<Lap num="4" p="17" et="485.0400" s1="37.8409" s2="36.3477" s3="35.9557" topspeed="276.12" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">110.1442</Lap>
+<Lap num="5" p="18" et="595.1799" s1="35.7197" s2="48.3774" s3="36.7220" topspeed="275.67" fcompound="0,Medium" rcompound="0,Medium" FL="0,Medium" FR="0,Medium" RL="0,Medium" RR="0,Medium">120.8192</Lap>
+<BestLapTime>108.4750</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>DNF</DNFReason>
+<ControlAndAids startLap="1" endLap="5">PlayerControl,ABS=2</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0593</Name>
+<Connected>1</Connected>
+<VehFile>12_25_WTM_7FC250D8.VEH</VehFile>
+<UpgradeCode>01a60000 00000000 00000000 00000000</UpgradeCode>
+<VehName>WTM by Rinaldi Racing 2025 #12:ELMS</VehName>
+<Category>ELMS 2025, LMP3, Duqueine D09 P3</Category>
+<CarType>Duqueine D09 P3</CarType>
+<CarClass>LMP3</CarClass>
+<CarNumber>6</CarNumber>
+<TeamName>WTM by Rinaldi Racing 2025 #12</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<GridPos>6</GridPos>
+<Position>20</Position>
+<ClassGridPos>6</ClassGridPos>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>21</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>DNF</FinishStatus>
+<DNFReason>Engine</DNFReason>
+</Driver>
+</Race>
+</RaceResults>
+</rFactorXML>

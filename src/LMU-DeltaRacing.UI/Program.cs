@@ -70,24 +70,27 @@ if (dashboardUrl is null)
     throw new InvalidOperationException("The local dashboard did not receive a loopback address.");
 }
 
-try
+if (app.Configuration.GetValue("LMU:OpenBrowser", defaultValue: true))
 {
-    using var browser = Process.Start(new ProcessStartInfo(dashboardUrl)
+    try
     {
-        UseShellExecute = true
-    });
-    if (browser is null)
-    {
-        app.Logger.LogWarning("The dashboard is available at {DashboardUrl}, but no browser was launched", dashboardUrl);
+        using var browser = Process.Start(new ProcessStartInfo(dashboardUrl)
+        {
+            UseShellExecute = true
+        });
+        if (browser is null)
+        {
+            app.Logger.LogWarning("The dashboard is available at {DashboardUrl}, but no browser was launched", dashboardUrl);
+        }
     }
-}
-catch (Exception exception) when (
-    exception is Win32Exception or InvalidOperationException or UnauthorizedAccessException)
-{
-    app.Logger.LogError(
-        exception,
-        "Could not open the default browser; the local dashboard is available at {DashboardUrl}",
-        dashboardUrl);
+    catch (Exception exception) when (
+        exception is Win32Exception or InvalidOperationException or UnauthorizedAccessException)
+    {
+        app.Logger.LogError(
+            exception,
+            "Could not open the default browser; the local dashboard is available at {DashboardUrl}",
+            dashboardUrl);
+    }
 }
 
 await app.WaitForShutdownAsync();

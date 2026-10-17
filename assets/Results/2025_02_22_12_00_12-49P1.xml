@@ -1,0 +1,1990 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rF [
+<!ENTITY rFEnt "rFactor Entity">
+]>
+<rFactorXML version="1.0">
+<RaceResults>
+<Setting>Multiplayer</Setting>
+<ServerName></ServerName>
+<ClientFuelVisible>1</ClientFuelVisible>
+<PlayerFile>Settings</PlayerFile>
+<DateTime>1740220691</DateTime>
+<TimeString>2025/02/22 11:38:11</TimeString>
+<TrackVenue>Circuit de la Sarthe</TrackVenue>
+<TrackCourse>Circuit de la Sarthe</TrackCourse>
+<TrackEvent>24 Heures du Mans</TrackEvent>
+<TrackData>S:\SteamLibrary\steamapps\common\Le Mans Ultimate\Installed\Locations\LeMans_2023\1.07\layoutLeMans.mas</TrackData>
+<TrackLength>13624.0</TrackLength>
+<GameVersion>0.4000</GameVersion>
+<Dedicated>0</Dedicated>
+<ConnectionType upload="1000" download="8000">ADSL2+ 16M</ConnectionType>
+<RaceLaps>0</RaceLaps>
+<RaceTime>60</RaceTime>
+<MechFailRate>1</MechFailRate>
+<DamageMult>100</DamageMult>
+<FuelMult>1</FuelMult>
+<TireMult>1</TireMult>
+<VehiclesAllowed>McLaren_720S_LMGT3_Evo,</VehiclesAllowed>
+<ParcFerme>3</ParcFerme>
+<FixedSetups>0</FixedSetups>
+<FreeSettings>2147483647</FreeSettings>
+<FixedUpgrades>0</FixedUpgrades>
+<LimitedTires>1</LimitedTires>
+<Practice1>
+<DateTime>1740220704</DateTime>
+<TimeString>2025/02/22 11:38:24</TimeString>
+<Laps>2147483647</Laps>
+<Minutes>165</Minutes>
+<Stream>
+<Score et="2.0">Patrick Helbig(5) lap=1 point=1 t=38.742 et=480.660</Score>
+<Sector et="2.0">Patrick Helbig(5) set new best for sector 2</Sector>
+<Score et="2.0">Frank Zakrzewski(1) lap=0 point=1 t=-1.000 et=482.460</Score>
+<Score et="2.0">Yio Astur(25) lap=0 point=1 t=-1.000 et=484.760</Score>
+<Score et="2.0">Noah Rupp(21) lap=0 point=2 t=-1.000 et=486.920</Score>
+<Score et="493.9">Ell Gould(14) lap=0 point=1 t=-1.000 et=493.820</Score>
+<Incident et="495.1">Verbalase Beatbox(10) reported contact (12.02) with Post</Incident>
+<Incident et="495.3">Verbalase Beatbox(10) reported contact (160.71) with Post</Incident>
+<Score et="495.5">step plasmon(6) lap=1 point=1 t=39.423 et=495.380</Score>
+<Incident et="495.8">Ell Gould(14) reported contact (233.57) with Post</Incident>
+<Score et="504.7">Dominik Matusz(0) lap=1 point=2 t=-1.000 et=504.620</Score>
+<Score et="506.6">Mr Temshik(13) lap=1 point=2 t=-1.000 et=506.560</Score>
+<Incident et="507.5">Verbalase Beatbox(10) reported contact (80.90) with Post</Incident>
+<Score et="510.4">Daniel Quercus(19) lap=0 point=2 t=-1.000 et=510.320</Score>
+<Score et="519.0">Verbalase Beatbox(10) lap=1 point=0 t=-1.000 et=518.820</Score>
+<Incident et="520.3">Andreas Kaercher(12) reported contact (21.44) with Post</Incident>
+<Incident et="520.3">Andreas Kaercher(12) reported contact (21.43) with Post</Incident>
+<Score et="522.1">Burak Akin(28) lap=0 point=1 t=-1.000 et=522.040</Score>
+<Score et="524.2">Andreas Kaercher(12) lap=1 point=0 t=-1.000 et=524.140</Score>
+<Score et="526.2">Arnaud Besse(29) lap=0 point=1 t=-1.000 et=526.060</Score>
+<Incident et="527.7">pim de Ruijter(4) reported contact (18.08) with Post</Incident>
+<Incident et="529.4">Dodo Lepilote(17) reported contact (33.51) with Post</Incident>
+<Score et="530.8">Manuel Neumann(27) lap=0 point=1 t=-1.000 et=530.660</Score>
+<Score et="533.8">pim de Ruijter(4) lap=2 point=1 t=-1.000 et=533.820</Score>
+<Incident et="534.2">Antonio Lavecchia(16) reported contact (1603.98) with Immovable</Incident>
+<Sector et="536.3">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="536.3">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="536.3">Paul Lockley(26) set new best for sector 3</Sector>
+<Sector et="536.3">Daniel Quercus(19) set new best for sector 3</Sector>
+<Sector et="536.3">Chris Aebersold(20) set new best for sector 3</Sector>
+<Sector et="536.3">Lars Riemen(11) set new best for sector 3</Sector>
+<Sector et="536.3">Dominik Matusz(0) set new best for sector 3</Sector>
+<Sector et="536.3">MR H(30) set new best for sector 3</Sector>
+<Sector et="536.3">Dodo Lepilote(17) set new best for sector 3</Sector>
+<Sector et="536.3">Andreas Kaercher(12) set new best for sector 3</Sector>
+<Score et="536.3">Jeremy Moeller(2) lap=1 point=2 t=135.673 et=536.220</Score>
+<Sector et="536.3">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="536.3">Patrick Behrens(23) set new best for sector 3</Sector>
+<Sector et="536.3">Mr Temshik(13) set new best for sector 3</Sector>
+<Sector et="536.3">Frank Zakrzewski(1) set new best for sector 3</Sector>
+<Sector et="536.3">step plasmon(6) set new best for sector 3</Sector>
+<Sector et="536.3">Arnaud Besse(29) set new best for sector 3</Sector>
+<Sector et="536.3">Chris Brown#5064(8) set new best for sector 3</Sector>
+<Sector et="536.3">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="536.3">pim de Ruijter(4) set new best for sector 3</Sector>
+<Sector et="536.3">Noah Rupp(21) set new best for sector 3</Sector>
+<Sector et="536.4">flav v(18) set new best for sector 3</Sector>
+<Sector et="536.4">Antonio Lavecchia(16) set new best for sector 3</Sector>
+<Sector et="536.4">Bertogucci Alfonso(33) set new best for sector 3</Sector>
+<Sector et="536.4">C. K-Hoese(31) set new best for sector 3</Sector>
+<Sector et="536.4">Ell Gould(14) set new best for sector 3</Sector>
+<Sector et="536.4">Burak Akin(28) set new best for sector 3</Sector>
+<Sector et="536.4">Manuel Neumann(27) set new best for sector 3</Sector>
+<Sector et="536.4">Yio Astur(25) set new best for sector 3</Sector>
+<Sector et="536.4">Dimitar Dimitrov(15) set new best for sector 3</Sector>
+<Sector et="536.4">Patrick Helbig(5) set new best for sector 3</Sector>
+<Sector et="536.6">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Sector et="536.6">Daryl Carter#3691(24) set new best for sector 3</Sector>
+<Score et="536.6">Patrick Behrens(23) lap=0 point=2 t=-1.000 et=536.580</Score>
+<Incident et="536.7">Dodo Lepilote(17) reported contact (12.41) with Post</Incident>
+<Incident et="536.7">Dodo Lepilote(17) reported contact (118.83) with Post</Incident>
+<Incident et="536.7">Dodo Lepilote(17) reported contact (124.72) with Post</Incident>
+<Score et="538.7">Dodo Lepilote(17) lap=1 point=0 t=-1.000 et=538.640</Score>
+<Score et="544.8">Pierre-Andre Bulle(32) lap=0 point=1 t=-1.000 et=544.813</Score>
+<Score et="548.2">Chris Aebersold(20) lap=0 point=1 t=-1.000 et=548.100</Score>
+<Score et="548.8">Paul Lockley(26) lap=0 point=2 t=-1.000 et=548.760</Score>
+<Incident et="549.6">Patrick Helbig(5) reported contact (147.15) with Post</Incident>
+<Score et="549.8">Antonio Lavecchia(16) lap=1 point=0 t=-1.000 et=549.760</Score>
+<Score et="558.1">Verbalase Beatbox(10) lap=1 point=1 t=38.979 et=557.800</Score>
+<Sector et="558.1">Bertogucci Alfonso(33) set new best for sector 2</Sector>
+<Score et="563.3">Andreas Kaercher(12) lap=1 point=1 t=39.069 et=563.220</Score>
+<Sector et="563.3">Massimiliano Ribolli(34) set new best for sector 2</Sector>
+<Score et="567.5">Nicolas Kucipak(22) lap=1 point=0 t=-1.000 et=567.480</Score>
+<Incident et="569.3">Antonio Lavecchia(16) reported contact (167.29) with Post</Incident>
+<Score et="572.0">Chris Brown#5064(8) lap=1 point=0 t=-1.000 et=571.940</Score>
+<Score et="573.0">Lars Riemen(11) lap=1 point=0 t=-1.000 et=573.000</Score>
+<Score et="574.7">Dimitar Dimitrov(15) lap=1 point=0 t=-1.000 et=574.580</Score>
+<Incident et="576.1">Antonio Lavecchia(16) reported contact (129.37) with Post</Incident>
+<Incident et="576.2">Antonio Lavecchia(16) reported contact (124.04) with Post</Incident>
+<Incident et="576.4">Antonio Lavecchia(16) reported contact (202.84) with Post</Incident>
+<Incident et="576.9">MR H(30) reported contact (45.70) with Cone</Incident>
+<Incident et="576.9">MR H(30) reported contact (45.68) with Cone</Incident>
+<Incident et="577.1">MR H(30) reported contact (183.18) with Cone</Incident>
+<Incident et="577.1">MR H(30) reported contact (139.99) with Cone</Incident>
+<Sector et="577.3">Bertogucci Alfonso(33) set new best for sector 2</Sector>
+<Sector et="577.3">MR H(30) set new best for sector 2</Sector>
+<Score et="577.3">Dodo Lepilote(17) lap=1 point=1 t=38.595 et=577.240</Score>
+<Sector et="577.3">Dodo Lepilote(17) set new best for sector 2</Sector>
+<Sector et="577.3">Massimiliano Ribolli(34) set new best for sector 2</Sector>
+<Sector et="577.3">Arnaud Besse(29) set new best for sector 2</Sector>
+<Incident et="577.5">MR H(30) reported contact (142.80) with Cone</Incident>
+<Score et="578.1">Patrick Helbig(5) lap=1 point=2 t=136.149 et=578.060</Score>
+<Sector et="578.2">Massimiliano Ribolli(34) set new best for sector 3</Sector>
+<Incident et="579.4">Pierre-Andre Bulle(32) reported contact (142.89) with Post</Incident>
+<Score et="580.3">Frank Zakrzewski(1) lap=0 point=2 t=-1.000 et=580.300</Score>
+<Incident et="581.1">MR H(30) reported contact (55.33) with Cone</Incident>
+<Sector et="581.5">Pierre-Andre Bulle(32) reports new suspension damage</Sector>
+<Incident et="581.6">Pierre-Andre Bulle(32) reported contact (4924.97) with Immovable</Incident>
+<Score et="583.5">Antonio Lavecchia(16) lap=1 point=1 t=-1.000 et=583.363</Score>
+<Score et="583.5">Antonio Lavecchia(16) lap=1 point=2 t=-1.000 et=583.363</Score>
+<Score et="583.5">Antonio Lavecchia(16) lap=2 point=0 t=-1.000 et=583.363</Score>
+<Score et="584.7">Yio Astur(25) lap=0 point=2 t=-1.000 et=584.680</Score>
+<Score et="594.2">step plasmon(6) lap=1 point=2 t=138.171 et=594.120</Score>
+<Score et="600.4">Noah Rupp(21) lap=1 point=0 t=-1.000 et=600.320</Score>
+<Sector et="605.0">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="605.0">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Score et="605.0">Nicolas Kucipak(22) lap=1 point=1 t=37.515 et=605.000</Score>
+<Sector et="605.0">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="605.0">pim de Ruijter(4) set new best for sector 2</Sector>
+<Sector et="605.0">Daniel Quercus(19) set new best for sector 2</Sector>
+<Sector et="605.0">Lars Riemen(11) set new best for sector 2</Sector>
+<Sector et="605.0">Paul Lockley(26) set new best for sector 2</Sector>
+<Sector et="605.0">Arnaud Besse(29) set new best for sector 2</Sector>
+<Sector et="605.0">Bertogucci Alfonso(33) set new best for sector 2</Sector>
+<Sector et="605.0">Dominik Matusz(0) set new best for sector 2</Sector>
+<Sector et="605.0">step plasmon(6) set new best for sector 2</Sector>
+<Sector et="605.0">Noah Rupp(21) set new best for sector 2</Sector>
+<Sector et="605.1">MR H(30) set new best for sector 2</Sector>
+<Sector et="605.1">Andreas Kaercher(12) set new best for sector 2</Sector>
+<Sector et="605.1">Dodo Lepilote(17) set new best for sector 2</Sector>
+<Sector et="605.1">Manuel Neumann(27) set new best for sector 2</Sector>
+<Sector et="605.1">Antonio Lavecchia(16) set new best for sector 2</Sector>
+<Sector et="605.1">Frank Zakrzewski(1) set new best for sector 2</Sector>
+<Sector et="605.1">Mr Temshik(13) set new best for sector 2</Sector>
+<Sector et="605.1">Patrick Behrens(23) set new best for sector 2</Sector>
+<Sector et="605.1">Burak Akin(28) set new best for sector 2</Sector>
+<Sector et="605.1">Chris Brown#5064(8) set new best for sector 2</Sector>
+<Sector et="605.1">Chris Aebersold(20) set new best for sector 2</Sector>
+<Sector et="605.1">Massimiliano Ribolli(34) set new best for sector 2</Sector>
+<Sector et="605.1">flav v(18) set new best for sector 2</Sector>
+<Sector et="605.1">Dimitar Dimitrov(15) set new best for sector 2</Sector>
+<Sector et="605.2">Ell Gould(14) set new best for sector 2</Sector>
+<Sector et="605.2">Yio Astur(25) set new best for sector 2</Sector>
+<Sector et="605.2">Jeremy Moeller(2) set new best for sector 2</Sector>
+<Sector et="605.2">Patrick Helbig(5) set new best for sector 2</Sector>
+<Sector et="605.4">Verbalase Beatbox(10) set new best for sector 2</Sector>
+<Sector et="605.4">Daryl Carter#3691(24) set new best for sector 2</Sector>
+<Score et="607.1">Ell Gould(14) lap=0 point=2 t=-1.000 et=607.040</Score>
+<Score et="612.7">Lars Riemen(11) lap=1 point=1 t=39.684 et=612.680</Score>
+<Score et="613.1">Dimitar Dimitrov(15) lap=1 point=1 t=38.454 et=613.020</Score>
+<Score et="615.5">Dominik Matusz(0) lap=2 point=0 t=-1.000 et=615.520</Score>
+<Score et="617.2">MR H(30) lap=0 point=1 t=-1.000 et=617.100</Score>
+<Incident et="619.1">Lars Riemen(11) reported contact (91.64) with Post</Incident>
+<Incident et="619.1">Lars Riemen(11) reported contact (674.29) with Post</Incident>
+<Score et="620.8">Daryl Carter#3691(24) lap=1 point=1 t=-1.000 et=620.520</Score>
+<Score et="623.7">Burak Akin(28) lap=0 point=2 t=-1.000 et=623.620</Score>
+<Score et="624.1">Chris Brown#5064(8) lap=1 point=1 t=52.101 et=624.040</Score>
+<Score et="624.2">Arnaud Besse(29) lap=0 point=2 t=-1.000 et=624.200</Score>
+<Score et="627.9">Daniel Quercus(19) lap=1 point=0 t=-1.000 et=627.880</Score>
+<Score et="628.5">Manuel Neumann(27) lap=0 point=2 t=-1.000 et=628.440</Score>
+<Score et="629.8">Mr Temshik(13) lap=2 point=0 t=-1.000 et=629.760</Score>
+<Score et="630.2">pim de Ruijter(4) lap=2 point=2 t=-1.000 et=630.160</Score>
+<Incident et="636.8">Antonio Lavecchia(16) reported contact (51.06) with Post</Incident>
+<Score et="639.7">Noah Rupp(21) lap=1 point=1 t=39.246 et=639.580</Score>
+<Incident et="640.0">Yio Astur(25) reported contact (2992.57) with Immovable</Incident>
+<Score et="644.9">Chris Aebersold(20) lap=0 point=2 t=-1.000 et=644.860</Score>
+<Sector et="647.5">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="647.5">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="647.5">Arnaud Besse(29) set new best for sector 1</Sector>
+<Score et="647.5">Jeremy Moeller(2) lap=2 point=0 t=246.895 et=647.460</Score>
+<Sector et="647.5">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="647.5">Chris Aebersold(20) set new best for sector 1</Sector>
+<Sector et="647.5">Lars Riemen(11) set new best for sector 1</Sector>
+<Sector et="647.5">Frank Zakrzewski(1) set new best for sector 1</Sector>
+<Sector et="647.5">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="647.6">Dominik Matusz(0) set new best for sector 1</Sector>
+<Sector et="647.6">pim de Ruijter(4) set new best for sector 1</Sector>
+<Sector et="647.6">Daniel Quercus(19) set new best for sector 1</Sector>
+<Sector et="647.6">step plasmon(6) set new best for sector 1</Sector>
+<Sector et="647.6">Bertogucci Alfonso(33) set new best for sector 1</Sector>
+<Sector et="647.6">Noah Rupp(21) set new best for sector 1</Sector>
+<Sector et="647.6">Yio Astur(25) set new best for sector 1</Sector>
+<Sector et="647.6">Paul Lockley(26) set new best for sector 1</Sector>
+<Sector et="647.6">Manuel Neumann(27) set new best for sector 1</Sector>
+<Sector et="647.6">Antonio Lavecchia(16) set new best for sector 1</Sector>
+<Sector et="647.6">MR H(30) set new best for sector 1</Sector>
+<Sector et="647.6">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Sector et="647.6">Andreas Kaercher(12) set new best for sector 1</Sector>
+<Sector et="647.6">Massimiliano Ribolli(34) set new best for sector 1</Sector>
+<Sector et="647.6">flav v(18) set new best for sector 1</Sector>
+<Sector et="647.6">Ell Gould(14) set new best for sector 1</Sector>
+<Sector et="647.6">Patrick Behrens(23) set new best for sector 1</Sector>
+<Sector et="647.6">Mr Temshik(13) set new best for sector 1</Sector>
+<Sector et="647.6">Chris Brown#5064(8) set new best for sector 1</Sector>
+<Sector et="647.6">Burak Akin(28) set new best for sector 1</Sector>
+<Sector et="647.7">Dimitar Dimitrov(15) set new best for sector 1</Sector>
+<Sector et="647.7">Patrick Helbig(5) set new best for sector 1</Sector>
+<Incident et="647.8">Lars Riemen(11) reported contact (30.17) with Post</Incident>
+<Sector et="647.9">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="647.9">Daryl Carter#3691(24) set new best for sector 1</Sector>
+<Score et="651.5">Patrick Behrens(23) lap=1 point=0 t=-1.000 et=651.460</Score>
+<Score et="653.8">Dominik Matusz(0) lap=2 point=1 t=38.279 et=653.800</Score>
+<Sector et="654.0">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Sector et="654.1">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Score et="654.1">Verbalase Beatbox(10) lap=1 point=2 t=135.044 et=653.860</Score>
+<Sector et="654.1">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Sector et="654.1">Daniel Quercus(19) set new best for sector 3</Sector>
+<Sector et="654.1">Lars Riemen(11) set new best for sector 3</Sector>
+<Sector et="654.1">Dominik Matusz(0) set new best for sector 3</Sector>
+<Sector et="654.1">Arnaud Besse(29) set new best for sector 3</Sector>
+<Sector et="654.1">pim de Ruijter(4) set new best for sector 3</Sector>
+<Sector et="654.1">step plasmon(6) set new best for sector 3</Sector>
+<Sector et="654.1">Paul Lockley(26) set new best for sector 3</Sector>
+<Sector et="654.1">Manuel Neumann(27) set new best for sector 3</Sector>
+<Sector et="654.1">Noah Rupp(21) set new best for sector 3</Sector>
+<Sector et="654.1">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="654.1">Bertogucci Alfonso(33) set new best for sector 3</Sector>
+<Sector et="654.1">MR H(30) set new best for sector 3</Sector>
+<Sector et="654.2">Chris Aebersold(20) set new best for sector 3</Sector>
+<Sector et="654.2">Andreas Kaercher(12) set new best for sector 3</Sector>
+<Sector et="654.2">Dodo Lepilote(17) set new best for sector 3</Sector>
+<Sector et="654.2">Massimiliano Ribolli(34) set new best for sector 3</Sector>
+<Sector et="654.2">Ell Gould(14) set new best for sector 3</Sector>
+<Sector et="654.2">Patrick Behrens(23) set new best for sector 3</Sector>
+<Sector et="654.2">Frank Zakrzewski(1) set new best for sector 3</Sector>
+<Sector et="654.2">flav v(18) set new best for sector 3</Sector>
+<Sector et="654.2">Antonio Lavecchia(16) set new best for sector 3</Sector>
+<Sector et="654.2">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="654.2">Mr Temshik(13) set new best for sector 3</Sector>
+<Sector et="654.2">Chris Brown#5064(8) set new best for sector 3</Sector>
+<Sector et="654.2">Yio Astur(25) set new best for sector 3</Sector>
+<Sector et="654.2">Burak Akin(28) set new best for sector 3</Sector>
+<Sector et="654.2">Dimitar Dimitrov(15) set new best for sector 3</Sector>
+<Sector et="654.3">Patrick Helbig(5) set new best for sector 3</Sector>
+<Sector et="654.5">Daryl Carter#3691(24) set new best for sector 3</Sector>
+<Incident et="654.7">MR H(30) reported contact (34.91) with Post</Incident>
+<Score et="658.8">Antonio Lavecchia(16) lap=2 point=1 t=-1.000 et=658.700</Score>
+<Score et="660.6">Paul Lockley(26) lap=1 point=0 t=-1.000 et=660.520</Score>
+<Score et="662.6">Pierre-Andre Bulle(32) lap=0 point=2 t=-1.000 et=662.559</Score>
+<Incident et="665.1">Antonio Lavecchia(16) reported contact (1130.18) with Post</Incident>
+<Incident et="665.3">pim de Ruijter(4) reported contact (3253.65) with Immovable</Incident>
+<Score et="665.5">Andreas Kaercher(12) lap=1 point=2 t=141.360 et=665.500</Score>
+<Incident et="666.6">pim de Ruijter(4) reported contact (48.51) with Post</Incident>
+<Incident et="666.6">pim de Ruijter(4) reported contact (47.46) with Post</Incident>
+<Incident et="666.7">pim de Ruijter(4) reported contact (758.88) with Immovable</Incident>
+<Score et="667.7">Chris Brown#5064(8) lap=1 point=2 t=-1.000 et=667.652</Score>
+<Score et="667.7">Chris Brown#5064(8) lap=2 point=0 t=-1.000 et=667.652</Score>
+<Sector et="668.5">pim de Ruijter(4) reports new suspension damage</Sector>
+<Incident et="668.6">pim de Ruijter(4) reported contact (4808.59) with Immovable</Incident>
+<Sector et="668.7">pim de Ruijter(4) reports new suspension damage</Sector>
+<Score et="669.6">Daniel Quercus(19) lap=1 point=1 t=41.665 et=669.540</Score>
+<Score et="670.4">Mr Temshik(13) lap=2 point=1 t=40.539 et=670.300</Score>
+<Incident et="672.4">pim de Ruijter(4) reported contact (127.77) with Immovable</Incident>
+<Score et="674.0">Dodo Lepilote(17) lap=1 point=2 t=135.384 et=674.020</Score>
+<Incident et="677.9">pim de Ruijter(4) reported contact (3071.11) with Immovable</Incident>
+<Incident et="685.3">Dimitar Dimitrov(15) reported contact (2112.16) with Immovable</Incident>
+<Incident et="685.5">Dimitar Dimitrov(15) reported contact (85.73) with Wheel</Incident>
+<Sector et="685.6">Ell Gould(14) reports new suspension damage</Sector>
+<Incident et="685.7">Dimitar Dimitrov(15) reported contact (10.32) with Wheel</Incident>
+<Incident et="685.7">Ell Gould(14) reported contact (4316.55) with Immovable</Incident>
+<Incident et="686.0">Dimitar Dimitrov(15) reported contact (179.76) with Wheel</Incident>
+<Incident et="686.0">Dimitar Dimitrov(15) reported contact (430.53) with Wheel</Incident>
+<Score et="686.5">Jeremy Moeller(2) lap=2 point=1 t=38.999 et=686.460</Score>
+<Incident et="686.7">Dimitar Dimitrov(15) reported contact (36.45) with Wheel</Incident>
+<Score et="688.5">Dimitar Dimitrov(15) lap=1 point=2 t=-1.000 et=688.447</Score>
+<Score et="688.5">Dimitar Dimitrov(15) lap=2 point=0 t=-1.000 et=688.447</Score>
+<Score et="689.4">Patrick Helbig(5) lap=2 point=0 t=247.347 et=689.260</Score>
+<Score et="689.8">Patrick Behrens(23) lap=1 point=1 t=38.299 et=689.760</Score>
+<Score et="691.8">pim de Ruijter(4) lap=3 point=0 t=-1.000 et=691.795</Score>
+<Incident et="691.9">Verbalase Beatbox(10) reported contact (694.71) with Wheel</Incident>
+<Score et="692.1">Ell Gould(14) lap=1 point=0 t=-1.000 et=692.087</Score>
+<Score et="693.1">flav v(18) lap=1 point=1 t=-1.000 et=693.060</Score>
+<Score et="695.5">Frank Zakrzewski(1) lap=1 point=0 t=-1.000 et=695.480</Score>
+<Score et="698.7">Paul Lockley(26) lap=1 point=1 t=38.141 et=698.660</Score>
+<Sector et="699.7">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="699.7">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="699.7">Bertogucci Alfonso(33) set new best for sector 3</Sector>
+<Sector et="699.7">MR H(30) set new best for sector 3</Sector>
+<Score et="699.8">Nicolas Kucipak(22) lap=1 point=2 t=132.220 et=699.700</Score>
+<Sector et="699.8">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="699.8">Chris Aebersold(20) set new best for sector 3</Sector>
+<Sector et="699.8">step plasmon(6) set new best for sector 3</Sector>
+<Sector et="699.8">Dodo Lepilote(17) set new best for sector 3</Sector>
+<Sector et="699.8">Andreas Kaercher(12) set new best for sector 3</Sector>
+<Sector et="699.8">Arnaud Besse(29) set new best for sector 3</Sector>
+<Sector et="699.8">Massimiliano Ribolli(34) set new best for sector 3</Sector>
+<Sector et="699.8">Patrick Behrens(23) set new best for sector 3</Sector>
+<Sector et="699.8">Antonio Lavecchia(16) set new best for sector 3</Sector>
+<Sector et="699.8">Lars Riemen(11) set new best for sector 3</Sector>
+<Sector et="699.8">Daniel Quercus(19) set new best for sector 3</Sector>
+<Sector et="699.8">Dominik Matusz(0) set new best for sector 3</Sector>
+<Sector et="699.8">Burak Akin(28) set new best for sector 3</Sector>
+<Sector et="699.8">Mr Temshik(13) set new best for sector 3</Sector>
+<Sector et="699.8">Noah Rupp(21) set new best for sector 3</Sector>
+<Sector et="699.8">Paul Lockley(26) set new best for sector 3</Sector>
+<Sector et="699.8">flav v(18) set new best for sector 3</Sector>
+<Sector et="699.8">Manuel Neumann(27) set new best for sector 3</Sector>
+<Sector et="699.8">Frank Zakrzewski(1) set new best for sector 3</Sector>
+<Sector et="699.8">Yio Astur(25) set new best for sector 3</Sector>
+<Sector et="699.9">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="699.9">Dimitar Dimitrov(15) set new best for sector 3</Sector>
+<Sector et="699.9">Patrick Helbig(5) set new best for sector 3</Sector>
+<Sector et="700.1">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Sector et="700.1">Daryl Carter#3691(24) set new best for sector 3</Sector>
+<Incident et="700.8">Andreas Kaercher(12) reported contact (1407.35) with Immovable</Incident>
+<Incident et="700.8">Andreas Kaercher(12) reported contact (33.73) with Wing</Incident>
+<Sector et="701.7">Ell Gould(14) set new best for sector 3</Sector>
+<Incident et="702.0">Andreas Kaercher(12) reported contact (2741.11) with Immovable</Incident>
+<Sector et="702.6">pim de Ruijter(4) set new best for sector 3</Sector>
+<Incident et="708.1">Andreas Kaercher(12) reported contact (40.10) with Immovable</Incident>
+<Score et="708.4">step plasmon(6) lap=2 point=0 t=252.391 et=708.340</Score>
+<Score et="709.0">Andreas Kaercher(12) lap=2 point=0 t=-1.000 et=708.924</Score>
+<Score et="714.7">Lars Riemen(11) lap=1 point=2 t=-1.000 et=714.660</Score>
+<Score et="716.8">MR H(30) lap=0 point=2 t=-1.000 et=716.740</Score>
+<Score et="717.9">Daryl Carter#3691(24) lap=1 point=2 t=-1.000 et=717.660</Score>
+<Score et="720.2">Yio Astur(25) lap=1 point=0 t=-1.000 et=720.180</Score>
+<Score et="728.0">Patrick Helbig(5) lap=2 point=1 t=38.663 et=727.920</Score>
+<Score et="736.1">Frank Zakrzewski(1) lap=1 point=1 t=40.572 et=736.040</Score>
+<Score et="736.6">Noah Rupp(21) lap=1 point=2 t=136.217 et=736.540</Score>
+<Score et="739.0">Burak Akin(28) lap=1 point=0 t=-1.000 et=738.960</Score>
+<Score et="740.4">Arnaud Besse(29) lap=1 point=0 t=-1.000 et=740.380</Score>
+<Incident et="743.5">Dimitar Dimitrov(15) reported contact (118.46) with Post</Incident>
+<Score et="748.0">step plasmon(6) lap=2 point=1 t=39.578 et=747.920</Score>
+<Score et="749.7">Dimitar Dimitrov(15) lap=2 point=1 t=-1.000 et=749.640</Score>
+<Score et="749.8">Dominik Matusz(0) lap=2 point=2 t=-1.000 et=749.720</Score>
+<Score et="750.4">Manuel Neumann(27) lap=1 point=0 t=-1.000 et=750.340</Score>
+<Score et="751.9">Massimiliano Ribolli(34) lap=0 point=1 t=-1.000 et=751.840</Score>
+<Score et="752.7">Arnaud Besse(29) lap=1 point=1 t=-1.000 et=752.592</Score>
+<Score et="752.7">Arnaud Besse(29) lap=1 point=2 t=-1.000 et=752.592</Score>
+<Score et="752.7">Arnaud Besse(29) lap=2 point=0 t=-1.000 et=752.592</Score>
+<Score et="755.7">Antonio Lavecchia(16) lap=2 point=2 t=-1.000 et=755.600</Score>
+<Score et="756.1">Chris Aebersold(20) lap=1 point=0 t=-1.000 et=755.980</Score>
+<Incident et="758.2">Verbalase Beatbox(10) reported contact (1264.38) with Immovable</Incident>
+<Score et="760.7">Yio Astur(25) lap=1 point=1 t=40.404 et=760.600</Score>
+<Score et="762.3">Ell Gould(14) lap=1 point=1 t=-1.000 et=762.220</Score>
+<Sector et="765.6">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="765.6">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="765.6">Daniel Quercus(19) set new best for sector 1</Sector>
+<Sector et="765.6">pim de Ruijter(4) set new best for sector 1</Sector>
+<Sector et="765.6">Bertogucci Alfonso(33) set new best for sector 1</Sector>
+<Sector et="765.7">MR H(30) set new best for sector 1</Sector>
+<Sector et="765.7">Andreas Kaercher(12) set new best for sector 1</Sector>
+<Sector et="765.7">Manuel Neumann(27) set new best for sector 1</Sector>
+<Score et="765.7">Verbalase Beatbox(10) lap=2 point=0 t=246.608 et=765.440</Score>
+<Sector et="765.7">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="765.7">Lars Riemen(11) set new best for sector 1</Sector>
+<Sector et="765.7">Noah Rupp(21) set new best for sector 1</Sector>
+<Sector et="765.7">Dominik Matusz(0) set new best for sector 1</Sector>
+<Sector et="765.7">step plasmon(6) set new best for sector 1</Sector>
+<Sector et="765.7">flav v(18) set new best for sector 1</Sector>
+<Sector et="765.7">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="765.7">Mr Temshik(13) set new best for sector 1</Sector>
+<Sector et="765.7">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Sector et="765.7">Patrick Behrens(23) set new best for sector 1</Sector>
+<Sector et="765.7">Burak Akin(28) set new best for sector 1</Sector>
+<Sector et="765.7">Frank Zakrzewski(1) set new best for sector 1</Sector>
+<Sector et="765.7">Paul Lockley(26) set new best for sector 1</Sector>
+<Sector et="765.7">Massimiliano Ribolli(34) set new best for sector 1</Sector>
+<Sector et="765.7">Antonio Lavecchia(16) set new best for sector 1</Sector>
+<Sector et="765.7">Ell Gould(14) set new best for sector 1</Sector>
+<Sector et="765.7">Chris Aebersold(20) set new best for sector 1</Sector>
+<Sector et="765.7">Patrick Helbig(5) set new best for sector 1</Sector>
+<Sector et="765.7">Dimitar Dimitrov(15) set new best for sector 1</Sector>
+<Sector et="765.7">Yio Astur(25) set new best for sector 1</Sector>
+<Sector et="766.0">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="766.0">Daryl Carter#3691(24) set new best for sector 1</Sector>
+<Score et="771.3">Mr Temshik(13) lap=2 point=2 t=-1.000 et=771.200</Score>
+<Incident et="771.6">Burak Akin(28) reported contact (148.94) with Post</Incident>
+<Score et="771.9">Daniel Quercus(19) lap=1 point=2 t=143.944 et=771.820</Score>
+<Sector et="772.6">Noah Rupp(21) reports new suspension damage</Sector>
+<Incident et="772.7">Noah Rupp(21) reported contact (3673.25) with Immovable</Incident>
+<Incident et="780.1">step plasmon(6) reported contact (15.80) with Post</Incident>
+<Incident et="780.2">step plasmon(6) reported contact (20.20) with Post</Incident>
+<Score et="782.3">Jeremy Moeller(2) lap=2 point=2 t=134.813 et=782.260</Score>
+<Score et="784.6">Burak Akin(28) lap=1 point=1 t=-1.000 et=784.500</Score>
+<Sector et="785.1">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="785.1">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="785.2">Daniel Quercus(19) set new best for sector 1</Sector>
+<Sector et="785.2">pim de Ruijter(4) set new best for sector 1</Sector>
+<Sector et="785.2">step plasmon(6) set new best for sector 1</Sector>
+<Sector et="785.2">MR H(30) set new best for sector 1</Sector>
+<Sector et="785.2">Chris Aebersold(20) set new best for sector 1</Sector>
+<Sector et="785.2">Noah Rupp(21) set new best for sector 1</Sector>
+<Score et="785.2">Dodo Lepilote(17) lap=2 point=0 t=246.457 et=785.100</Score>
+<Sector et="785.2">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="785.2">Andreas Kaercher(12) set new best for sector 1</Sector>
+<Sector et="785.2">Paul Lockley(26) set new best for sector 1</Sector>
+<Sector et="785.2">Frank Zakrzewski(1) set new best for sector 1</Sector>
+<Sector et="785.2">Manuel Neumann(27) set new best for sector 1</Sector>
+<Sector et="785.2">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Sector et="785.2">Massimiliano Ribolli(34) set new best for sector 1</Sector>
+<Sector et="785.2">Lars Riemen(11) set new best for sector 1</Sector>
+<Sector et="785.2">Dominik Matusz(0) set new best for sector 1</Sector>
+<Sector et="785.2">Antonio Lavecchia(16) set new best for sector 1</Sector>
+<Sector et="785.2">flav v(18) set new best for sector 1</Sector>
+<Sector et="785.2">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="785.2">Bertogucci Alfonso(33) set new best for sector 1</Sector>
+<Sector et="785.2">Ell Gould(14) set new best for sector 1</Sector>
+<Sector et="785.2">Mr Temshik(13) set new best for sector 1</Sector>
+<Sector et="785.2">Dimitar Dimitrov(15) set new best for sector 1</Sector>
+<Sector et="785.2">Burak Akin(28) set new best for sector 1</Sector>
+<Sector et="785.2">Patrick Behrens(23) set new best for sector 1</Sector>
+<Sector et="785.2">Patrick Helbig(5) set new best for sector 1</Sector>
+<Sector et="785.3">Yio Astur(25) set new best for sector 1</Sector>
+<Score et="785.3">Andreas Kaercher(12) lap=2 point=1 t=-1.000 et=785.260</Score>
+<Sector et="785.4">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="785.5">Daryl Carter#3691(24) set new best for sector 1</Sector>
+<Score et="785.6">Patrick Behrens(23) lap=1 point=2 t=134.068 et=785.520</Score>
+<Sector et="786.2">Frank Zakrzewski(1) reports new suspension damage</Sector>
+<Incident et="786.2">Frank Zakrzewski(1) reported contact (665.98) with Immovable</Incident>
+<Score et="787.2">Noah Rupp(21) lap=2 point=0 t=-1.000 et=787.192</Score>
+<Score et="789.5">Manuel Neumann(27) lap=1 point=1 t=39.083 et=789.420</Score>
+<Score et="790.2">flav v(18) lap=1 point=2 t=-1.000 et=790.180</Score>
+<Score et="792.6">Pierre-Andre Bulle(32) lap=1 point=0 t=-1.000 et=792.581</Score>
+<Incident et="793.2">flav v(18) reported contact (34.47) with Immovable</Incident>
+<Sector et="793.8">flav v(18) reports new suspension damage</Sector>
+<Incident et="793.9">flav v(18) reported contact (5618.89) with Immovable</Incident>
+<Score et="794.2">Paul Lockley(26) lap=1 point=2 t=133.613 et=794.120</Score>
+<Score et="794.2">Chris Aebersold(20) lap=1 point=1 t=38.185 et=794.160</Score>
+<Score et="797.3">flav v(18) lap=2 point=0 t=-1.000 et=797.176</Score>
+<Score et="804.4">Verbalase Beatbox(10) lap=2 point=1 t=38.688 et=804.120</Score>
+<Score et="808.8">pim de Ruijter(4) lap=3 point=1 t=-1.000 et=808.700</Score>
+<Sector et="809.0">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Sector et="809.0">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Score et="809.0">Nicolas Kucipak(22) lap=2 point=0 t=241.546 et=809.020</Score>
+<Sector et="809.0">Nicolas Kucipak(22) set new best for sector 1</Sector>
+<Sector et="809.1">Daniel Quercus(19) set new best for sector 1</Sector>
+<Sector et="809.1">Dominik Matusz(0) set new best for sector 1</Sector>
+<Sector et="809.1">Lars Riemen(11) set new best for sector 1</Sector>
+<Sector et="809.1">step plasmon(6) set new best for sector 1</Sector>
+<Sector et="809.1">Paul Lockley(26) set new best for sector 1</Sector>
+<Sector et="809.1">pim de Ruijter(4) set new best for sector 1</Sector>
+<Sector et="809.1">Andreas Kaercher(12) set new best for sector 1</Sector>
+<Sector et="809.1">MR H(30) set new best for sector 1</Sector>
+<Sector et="809.1">Bertogucci Alfonso(33) set new best for sector 1</Sector>
+<Sector et="809.1">Dodo Lepilote(17) set new best for sector 1</Sector>
+<Sector et="809.1">flav v(18) set new best for sector 1</Sector>
+<Sector et="809.1">Noah Rupp(21) set new best for sector 1</Sector>
+<Sector et="809.1">Chris Aebersold(20) set new best for sector 1</Sector>
+<Sector et="809.1">Frank Zakrzewski(1) set new best for sector 1</Sector>
+<Sector et="809.1">Massimiliano Ribolli(34) set new best for sector 1</Sector>
+<Sector et="809.1">Mr Temshik(13) set new best for sector 1</Sector>
+<Sector et="809.1">Burak Akin(28) set new best for sector 1</Sector>
+<Sector et="809.1">Ell Gould(14) set new best for sector 1</Sector>
+<Sector et="809.1">Patrick Behrens(23) set new best for sector 1</Sector>
+<Sector et="809.1">Manuel Neumann(27) set new best for sector 1</Sector>
+<Sector et="809.1">Jeremy Moeller(2) set new best for sector 1</Sector>
+<Sector et="809.1">Antonio Lavecchia(16) set new best for sector 1</Sector>
+<Sector et="809.2">Yio Astur(25) set new best for sector 1</Sector>
+<Sector et="809.2">Patrick Helbig(5) set new best for sector 1</Sector>
+<Sector et="809.2">Dimitar Dimitrov(15) set new best for sector 1</Sector>
+<Sector et="809.4">Verbalase Beatbox(10) set new best for sector 1</Sector>
+<Sector et="809.4">Daryl Carter#3691(24) set new best for sector 1</Sector>
+<Incident et="818.9">flav v(18) reported contact (16.75) with Immovable</Incident>
+<Incident et="819.9">Burak Akin(28) reported contact (14.60) with Post</Incident>
+<Incident et="819.9">Burak Akin(28) reported contact (30.49) with Post</Incident>
+<Score et="823.4">Dodo Lepilote(17) lap=2 point=1 t=38.215 et=823.300</Score>
+<Score et="824.7">Patrick Helbig(5) lap=2 point=2 t=135.362 et=824.620</Score>
+<Score et="825.5">Lars Riemen(11) lap=2 point=0 t=-1.000 et=825.480</Score>
+<Incident et="829.1">Antonio Lavecchia(16) reported contact (235.64) with Post</Incident>
+<Incident et="829.1">Antonio Lavecchia(16) reported contact (81.00) with Post</Incident>
+<Score et="829.7">Daryl Carter#3691(24) lap=2 point=0 t=-1.000 et=829.480</Score>
+<Score et="832.3">MR H(30) lap=1 point=0 t=-1.000 et=832.200</Score>
+<Score et="834.0">Frank Zakrzewski(1) lap=1 point=2 t=138.422 et=833.900</Score>
+<Incident et="837.1">Pierre-Andre Bulle(32) reported contact (30.87) with Cone</Incident>
+<Penalty et="838.4">Pierre-Andre Bulle received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<Incident et="842.8">Dimitar Dimitrov(15) reported contact (169.69) with Post</Incident>
+<Incident et="845.5">step plasmon(6) reported contact (22.07) with Post</Incident>
+<Score et="845.8">Dimitar Dimitrov(15) lap=2 point=2 t=-1.000 et=845.740</Score>
+<Score et="846.2">step plasmon(6) lap=2 point=2 t=-1.000 et=846.140</Score>
+<Sector et="846.7">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="846.7">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="846.7">pim de Ruijter(4) set new best for sector 2</Sector>
+<Sector et="846.7">Bertogucci Alfonso(33) set new best for sector 2</Sector>
+<Sector et="846.7">Andreas Kaercher(12) set new best for sector 2</Sector>
+<Sector et="846.7">Dodo Lepilote(17) set new best for sector 2</Sector>
+<Sector et="846.7">MR H(30) set new best for sector 2</Sector>
+<Sector et="846.7">Chris Aebersold(20) set new best for sector 2</Sector>
+<Sector et="846.7">Ell Gould(14) set new best for sector 2</Sector>
+<Sector et="846.7">Manuel Neumann(27) set new best for sector 2</Sector>
+<Score et="846.7">Nicolas Kucipak(22) lap=2 point=1 t=37.623 et=846.640</Score>
+<Sector et="846.7">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="846.7">Daniel Quercus(19) set new best for sector 2</Sector>
+<Sector et="846.7">Antonio Lavecchia(16) set new best for sector 2</Sector>
+<Sector et="846.7">Lars Riemen(11) set new best for sector 2</Sector>
+<Sector et="846.7">Dominik Matusz(0) set new best for sector 2</Sector>
+<Sector et="846.7">step plasmon(6) set new best for sector 2</Sector>
+<Sector et="846.7">Frank Zakrzewski(1) set new best for sector 2</Sector>
+<Sector et="846.7">Paul Lockley(26) set new best for sector 2</Sector>
+<Sector et="846.7">Noah Rupp(21) set new best for sector 2</Sector>
+<Sector et="846.7">flav v(18) set new best for sector 2</Sector>
+<Sector et="846.7">Mr Temshik(13) set new best for sector 2</Sector>
+<Sector et="846.7">Patrick Behrens(23) set new best for sector 2</Sector>
+<Sector et="846.8">Burak Akin(28) set new best for sector 2</Sector>
+<Sector et="846.8">Jeremy Moeller(2) set new best for sector 2</Sector>
+<Sector et="846.8">Massimiliano Ribolli(34) set new best for sector 2</Sector>
+<Sector et="846.8">Yio Astur(25) set new best for sector 2</Sector>
+<Sector et="846.8">Patrick Helbig(5) set new best for sector 2</Sector>
+<Sector et="846.8">Dimitar Dimitrov(15) set new best for sector 2</Sector>
+<Sector et="847.0">Daryl Carter#3691(24) set new best for sector 2</Sector>
+<Sector et="847.0">Verbalase Beatbox(10) set new best for sector 2</Sector>
+<Score et="848.4">Massimiliano Ribolli(34) lap=0 point=2 t=-1.000 et=848.340</Score>
+<Incident et="850.7">Daniel Quercus(19) reported contact (143.66) with Immovable</Incident>
+<Score et="851.3">flav v(18) lap=2 point=1 t=-1.000 et=851.238</Score>
+<Score et="851.3">flav v(18) lap=2 point=2 t=-1.000 et=851.238</Score>
+<Score et="851.3">flav v(18) lap=3 point=0 t=-1.000 et=851.238</Score>
+<Score et="854.1">Noah Rupp(21) lap=2 point=1 t=-1.000 et=854.060</Score>
+<Sector et="855.5">Burak Akin(28) reports new suspension damage</Sector>
+<Incident et="855.6">Burak Akin(28) reported contact (2189.04) with Immovable</Incident>
+<Sector et="855.6">Burak Akin(28) reports new suspension damage</Sector>
+<Incident et="858.1">Burak Akin(28) reported contact (528.66) with Immovable</Incident>
+<Score et="859.7">Dominik Matusz(0) lap=3 point=0 t=-1.000 et=859.640</Score>
+<Score et="861.3">Yio Astur(25) lap=1 point=2 t=141.041 et=861.220</Score>
+<Score et="862.0">Burak Akin(28) lap=1 point=2 t=-1.000 et=861.987</Score>
+<Score et="862.0">Burak Akin(28) lap=2 point=0 t=-1.000 et=861.987</Score>
+<Score et="864.0">Lars Riemen(11) lap=2 point=1 t=38.440 et=863.920</Score>
+<Score et="867.1">Antonio Lavecchia(16) lap=3 point=0 t=-1.000 et=867.080</Score>
+<Incident et="868.2">Lars Riemen(11) reported contact (1254.87) with Immovable</Incident>
+<Score et="868.6">Daryl Carter#3691(24) lap=2 point=1 t=38.829 et=868.320</Score>
+<Score et="872.1">MR H(30) lap=1 point=1 t=39.876 et=872.080</Score>
+<Score et="874.2">Ell Gould(14) lap=1 point=2 t=-1.000 et=874.160</Score>
+<Score et="875.5">Pierre-Andre Bulle(32) lap=1 point=1 t=-1.000 et=875.534</Score>
+<Incident et="880.8">Dimitar Dimitrov(15) reported contact (2437.16) with Immovable</Incident>
+<Sector et="880.8">Dimitar Dimitrov(15) reports new suspension damage</Sector>
+<Score et="881.3">Andreas Kaercher(12) lap=2 point=2 t=-1.000 et=881.260</Score>
+<Incident et="882.2">Dimitar Dimitrov(15) reported contact (436.57) with Immovable</Incident>
+<Sector et="882.3">Dimitar Dimitrov(15) reports new suspension damage</Sector>
+<Incident et="882.8">Dimitar Dimitrov(15) reported contact (99.73) with Immovable</Incident>
+<Incident et="883.6">Dimitar Dimitrov(15) reported contact (147.77) with Immovable</Incident>
+<Incident et="884.1">Dimitar Dimitrov(15) reported contact (169.20) with Immovable</Incident>
+<Score et="885.8">Manuel Neumann(27) lap=1 point=2 t=-1.000 et=885.740</Score>
+<Score et="886.0">Dimitar Dimitrov(15) lap=3 point=0 t=-1.000 et=885.873</Score>
+<Score et="888.6">Daniel Quercus(19) lap=2 point=0 t=260.640 et=888.520</Score>
+<Score et="889.5">Chris Aebersold(20) lap=1 point=2 t=133.428 et=889.400</Score>
+<Score et="891.5">Mr Temshik(13) lap=3 point=0 t=-1.000 et=891.440</Score>
+<Score et="893.2">Jeremy Moeller(2) lap=3 point=0 t=-1.000 et=893.120</Score>
+<Score et="895.5">Patrick Behrens(23) lap=2 point=0 t=243.998 et=895.460</Score>
+<Score et="897.8">Dominik Matusz(0) lap=3 point=1 t=38.069 et=897.720</Score>
+<Score et="900.3">Verbalase Beatbox(10) lap=2 point=2 t=134.648 et=900.080</Score>
+<Incident et="900.6">Verbalase Beatbox(10) reported contact (158.34) with Post</Incident>
+<Score et="903.1">Paul Lockley(26) lap=2 point=0 t=242.552 et=903.060</Score>
+<Score et="905.3">Antonio Lavecchia(16) lap=3 point=1 t=38.126 et=905.220</Score>
+<Score et="906.4">pim de Ruijter(4) lap=3 point=2 t=-1.000 et=906.400</Score>
+<Incident et="907.1">Daryl Carter#3691(24) reported contact (3194.81) with Immovable</Incident>
+<Sector et="907.4">Daryl Carter#3691(24) reports new suspension damage</Sector>
+<Score et="910.8">Daryl Carter#3691(24) lap=2 point=2 t=-1.000 et=910.566</Score>
+<Score et="910.8">Daryl Carter#3691(24) lap=3 point=0 t=-1.000 et=910.566</Score>
+<Score et="916.2">Daniel Quercus(19) lap=2 point=1 t=-1.000 et=916.159</Score>
+<Score et="916.2">Daniel Quercus(19) lap=2 point=2 t=-1.000 et=916.159</Score>
+<Score et="916.2">Daniel Quercus(19) lap=3 point=0 t=-1.000 et=916.159</Score>
+<Score et="919.7">Dodo Lepilote(17) lap=2 point=2 t=134.552 et=919.640</Score>
+<Score et="931.6">Jeremy Moeller(2) lap=3 point=1 t=38.318 et=931.440</Score>
+<Score et="931.6">Mr Temshik(13) lap=3 point=1 t=40.137 et=931.560</Score>
+<Score et="933.8">Patrick Behrens(23) lap=2 point=1 t=38.240 et=933.700</Score>
+<Sector et="935.5">Mr Temshik(13) reports new suspension damage</Sector>
+<Incident et="935.6">Mr Temshik(13) reported contact (3730.84) with Immovable</Incident>
+<Sector et="935.6">Mr Temshik(13) reports new suspension damage</Sector>
+<Score et="936.0">Paul Lockley(26) lap=2 point=1 t=-1.000 et=935.791</Score>
+<Score et="936.0">Paul Lockley(26) lap=2 point=2 t=-1.000 et=935.791</Score>
+<Score et="936.0">Paul Lockley(26) lap=3 point=0 t=-1.000 et=935.791</Score>
+<Score et="937.0">Patrick Helbig(5) lap=3 point=0 t=247.656 et=936.920</Score>
+<Incident et="938.7">step plasmon(6) reported contact (1242.72) with Immovable</Incident>
+<Incident et="938.7">step plasmon(6) reported contact (53.64) with Wing</Incident>
+<Incident et="938.7">step plasmon(6) reported contact (51.98) with Wing</Incident>
+<Incident et="939.8">step plasmon(6) reported contact (2285.12) with Immovable</Incident>
+<Sector et="941.7">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="941.7">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Score et="941.7">Nicolas Kucipak(22) lap=2 point=2 t=132.658 et=941.680</Score>
+<Sector et="941.7">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="941.7">Noah Rupp(21) set new best for sector 3</Sector>
+<Sector et="941.7">step plasmon(6) set new best for sector 3</Sector>
+<Sector et="941.7">Dominik Matusz(0) set new best for sector 3</Sector>
+<Sector et="941.7">pim de Ruijter(4) set new best for sector 3</Sector>
+<Sector et="941.7">Manuel Neumann(27) set new best for sector 3</Sector>
+<Sector et="941.7">Daniel Quercus(19) set new best for sector 3</Sector>
+<Sector et="941.7">MR H(30) set new best for sector 3</Sector>
+<Sector et="941.7">flav v(18) set new best for sector 3</Sector>
+<Sector et="941.7">Frank Zakrzewski(1) set new best for sector 3</Sector>
+<Sector et="941.8">Dodo Lepilote(17) set new best for sector 3</Sector>
+<Sector et="941.8">Bertogucci Alfonso(33) set new best for sector 3</Sector>
+<Sector et="941.8">Chris Aebersold(20) set new best for sector 3</Sector>
+<Sector et="941.8">Paul Lockley(26) set new best for sector 3</Sector>
+<Sector et="941.8">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="941.8">Andreas Kaercher(12) set new best for sector 3</Sector>
+<Sector et="941.8">Lars Riemen(11) set new best for sector 3</Sector>
+<Sector et="941.8">Patrick Behrens(23) set new best for sector 3</Sector>
+<Sector et="941.8">Mr Temshik(13) set new best for sector 3</Sector>
+<Sector et="941.8">Antonio Lavecchia(16) set new best for sector 3</Sector>
+<Sector et="941.8">Burak Akin(28) set new best for sector 3</Sector>
+<Sector et="941.8">Massimiliano Ribolli(34) set new best for sector 3</Sector>
+<Sector et="941.8">Yio Astur(25) set new best for sector 3</Sector>
+<Sector et="941.8">Patrick Helbig(5) set new best for sector 3</Sector>
+<Sector et="942.0">Ell Gould(14) set new best for sector 3</Sector>
+<Sector et="942.1">Verbalase Beatbox(10) set new best for sector 3</Sector>
+<Score et="945.4">step plasmon(6) lap=3 point=0 t=-1.000 et=945.407</Score>
+<Score et="947.7">Frank Zakrzewski(1) lap=2 point=0 t=252.123 et=947.600</Score>
+<Incident et="952.4">Mr Temshik(13) reported contact (4731.04) with Immovable</Incident>
+<Score et="953.0">Noah Rupp(21) lap=2 point=2 t=-1.000 et=952.960</Score>
+<Incident et="954.6">Mr Temshik(13) reported contact (186.53) with Immovable</Incident>
+<Sector et="961.2">Mr Temshik(13) reports new suspension damage</Sector>
+<Incident et="961.3">Mr Temshik(13) reported contact (3985.18) with Immovable</Incident>
+<Incident et="962.3">Mr Temshik(13) reported contact (1719.70) with Immovable</Incident>
+<Score et="962.8">Massimiliano Ribolli(34) lap=1 point=0 t=-1.000 et=962.720</Score>
+<Incident et="964.2">Mr Temshik(13) reported contact (693.82) with Immovable</Incident>
+<Incident et="968.3">Mr Temshik(13) reported contact (1234.17) with Immovable</Incident>
+<Score et="976.0">Patrick Helbig(5) lap=3 point=1 t=39.045 et=975.960</Score>
+<Score et="976.8">MR H(30) lap=1 point=2 t=144.528 et=976.740</Score>
+<Score et="978.0">Pierre-Andre Bulle(32) lap=1 point=2 t=-1.000 et=977.996</Score>
+<Score et="978.1">Yio Astur(25) lap=2 point=0 t=257.884 et=978.080</Score>
+<Score et="981.2">Lars Riemen(11) lap=2 point=2 t=155.743 et=981.220</Score>
+<Score et="987.0">Frank Zakrzewski(1) lap=2 point=1 t=39.399 et=987.000</Score>
+<Score et="992.0">Andreas Kaercher(12) lap=3 point=0 t=-1.000 et=991.920</Score>
+<Score et="993.4">Dominik Matusz(0) lap=3 point=2 t=-1.000 et=993.380</Score>
+<Incident et="993.7">Dominik Matusz(0) reported contact (39.02) with Post</Incident>
+<Incident et="993.7">Dominik Matusz(0) reported contact (175.15) with Post</Incident>
+<Score et="993.8">Ell Gould(14) lap=2 point=0 t=-1.000 et=993.800</Score>
+<Incident et="995.6">Mr Temshik(13) reported contact (3674.07) with Immovable</Incident>
+<Incident et="995.7">Mr Temshik(13) reported contact (70.73) with Post</Incident>
+<Incident et="995.8">Mr Temshik(13) reported contact (21.85) with Post</Incident>
+<Incident et="996.8">Mr Temshik(13) reported contact (1497.15) with Immovable</Incident>
+<Score et="997.7">Manuel Neumann(27) lap=2 point=0 t=-1.000 et=997.640</Score>
+<Score et="998.8">Chris Aebersold(20) lap=2 point=0 t=242.813 et=998.780</Score>
+<Score et="1001.4">Massimiliano Ribolli(34) lap=1 point=1 t=38.630 et=1001.340</Score>
+<Score et="1001.7">Antonio Lavecchia(16) lap=3 point=2 t=134.590 et=1001.680</Score>
+<Incident et="1002.2">Mr Temshik(13) reported contact (2771.48) with Immovable</Incident>
+<Score et="1004.0">Yio Astur(25) lap=2 point=1 t=-1.000 et=1003.949</Score>
+<Score et="1004.0">Yio Astur(25) lap=2 point=2 t=-1.000 et=1003.949</Score>
+<Score et="1004.0">Yio Astur(25) lap=3 point=0 t=-1.000 et=1003.949</Score>
+<Incident et="1004.1">Mr Temshik(13) reported contact (204.60) with Immovable</Incident>
+<Incident et="1005.1">Mr Temshik(13) reported contact (130.94) with Immovable</Incident>
+<Incident et="1005.8">Mr Temshik(13) reported contact (82.80) with Immovable</Incident>
+<Score et="1009.2">Verbalase Beatbox(10) lap=3 point=0 t=243.566 et=1009.000</Score>
+<Incident et="1013.1">Mr Temshik(13) reported contact (601.13) with Immovable</Incident>
+<Incident et="1017.0">Pierre-Andre Bulle(32) reported contact (555.20) with another vehicle Lars Riemen(11)</Incident>
+<Incident et="1017.0">Lars Riemen(11) reported contact (666.87) with another vehicle Pierre-Andre Bulle(32)</Incident>
+<Score et="1018.0">Mr Temshik(13) lap=3 point=2 t=-1.000 et=1017.895</Score>
+<Score et="1018.0">Mr Temshik(13) lap=4 point=0 t=-1.000 et=1017.895</Score>
+<Incident et="1019.8">Verbalase Beatbox(10) reported contact (240.39) with Immovable</Incident>
+<Incident et="1020.9">Ell Gould(14) reported contact (199.83) with Post</Incident>
+<Incident et="1020.9">Ell Gould(14) reported contact (200.05) with Post</Incident>
+<Score et="1027.4">Jeremy Moeller(2) lap=3 point=2 t=134.169 et=1027.280</Score>
+<Score et="1029.3">Patrick Behrens(23) lap=2 point=2 t=133.853 et=1029.300</Score>
+<Score et="1030.4">Andreas Kaercher(12) lap=3 point=1 t=38.425 et=1030.340</Score>
+<Score et="1031.0">Dodo Lepilote(17) lap=3 point=0 t=245.813 et=1030.900</Score>
+<Score et="1033.7">Ell Gould(14) lap=2 point=1 t=39.868 et=1033.660</Score>
+<Score et="1035.4">Verbalase Beatbox(10) lap=3 point=1 t=-1.000 et=1035.173</Score>
+<Score et="1035.4">Verbalase Beatbox(10) lap=3 point=2 t=-1.000 et=1035.173</Score>
+<Score et="1035.4">Verbalase Beatbox(10) lap=4 point=0 t=-1.000 et=1035.173</Score>
+<Score et="1035.6">flav v(18) lap=3 point=1 t=-1.000 et=1035.500</Score>
+<Score et="1036.1">Manuel Neumann(27) lap=2 point=1 t=38.411 et=1036.060</Score>
+<Sector et="1039.8">Noah Rupp(21) reports new suspension damage</Sector>
+<Sector et="1039.8">Noah Rupp(21) reports new suspension damage</Sector>
+<Sector et="1039.8">Noah Rupp(21) reports new suspension damage</Sector>
+<Incident et="1039.8">Noah Rupp(21) reported contact (2173.70) with Immovable</Incident>
+<Incident et="1039.8">Noah Rupp(21) reported contact (8909.68) with Immovable</Incident>
+<Score et="1040.5">pim de Ruijter(4) lap=4 point=0 t=-1.000 et=1040.440</Score>
+<Score et="1042.3">Chris Aebersold(20) lap=2 point=1 t=43.429 et=1042.220</Score>
+<Score et="1044.9">Noah Rupp(21) lap=3 point=0 t=-1.000 et=1044.831</Score>
+<Score et="1051.0">Nicolas Kucipak(22) lap=3 point=0 t=-1.000 et=1050.920</Score>
+<Incident et="1055.4">Noah Rupp(21) reported contact (311.74) with Immovable</Incident>
+<Score et="1069.5">Dodo Lepilote(17) lap=3 point=1 t=38.545 et=1069.460</Score>
+<Sector et="1069.6">Walter BILS(36) set new best for sector 2</Sector>
+<Sector et="1069.8">haoye NB(35) set new best for sector 2</Sector>
+<Score et="1070.8">Massimiliano Ribolli(34) lap=1 point=2 t=-1.000 et=1070.684</Score>
+<Score et="1070.8">Massimiliano Ribolli(34) lap=2 point=0 t=-1.000 et=1070.684</Score>
+<Score et="1072.5">Patrick Helbig(5) lap=3 point=2 t=135.562 et=1072.480</Score>
+<Sector et="1072.6">Walter BILS(36) set new best for sector 3</Sector>
+<Sector et="1072.8">haoye NB(35) set new best for sector 3</Sector>
+<Sector et="1073.2">Axel Distexhe(37) set new best for sector 3</Sector>
+<Sector et="1074.2">flav v(18) reports new suspension damage</Sector>
+<Incident et="1074.2">flav v(18) reported contact (6556.01) with Immovable</Incident>
+<Incident et="1077.3">Antonio Lavecchia(16) reported contact (239.48) with Immovable</Incident>
+<Score et="1079.5">pim de Ruijter(4) lap=4 point=1 t=38.986 et=1079.420</Score>
+<Sector et="1079.5">Axel Distexhe(37) set new best for sector 2</Sector>
+<Score et="1079.6">flav v(18) lap=3 point=2 t=-1.000 et=1079.571</Score>
+<Score et="1079.6">flav v(18) lap=4 point=0 t=-1.000 et=1079.571</Score>
+<Incident et="1081.9">Antonio Lavecchia(16) reported contact (1152.83) with Immovable</Incident>
+<Sector et="1082.0">Antonio Lavecchia(16) reports new suspension damage</Sector>
+<Score et="1084.8">Frank Zakrzewski(1) lap=2 point=2 t=137.100 et=1084.700</Score>
+<Incident et="1085.1">pim de Ruijter(4) reported contact (23.51) with Post</Incident>
+<Incident et="1085.2">pim de Ruijter(4) reported contact (17.98) with Post</Incident>
+<Sector et="1086.8">(38) set new best for sector 3</Sector>
+<Incident et="1088.0">Noah Rupp(21) reported contact (14.04) with Post</Incident>
+<Incident et="1088.0">Noah Rupp(21) reported contact (14.08) with Post</Incident>
+<Sector et="1088.5">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="1088.5">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="1088.6">Noah Rupp(21) set new best for sector 2</Sector>
+<Sector et="1088.6">Dodo Lepilote(17) set new best for sector 2</Sector>
+<Sector et="1088.6">Walter BILS(36) set new best for sector 2</Sector>
+<Sector et="1088.6">flav v(18) set new best for sector 2</Sector>
+<Sector et="1088.6">Chris Aebersold(20) set new best for sector 2</Sector>
+<Sector et="1088.6">Andreas Kaercher(12) set new best for sector 2</Sector>
+<Score et="1088.6">Nicolas Kucipak(22) lap=3 point=1 t=37.597 et=1088.520</Score>
+<Sector et="1088.6">Nicolas Kucipak(22) set new best for sector 2</Sector>
+<Sector et="1088.6">Ell Gould(14) set new best for sector 2</Sector>
+<Sector et="1088.6">pim de Ruijter(4) set new best for sector 2</Sector>
+<Sector et="1088.6">MR H(30) set new best for sector 2</Sector>
+<Sector et="1088.6">Lars Riemen(11) set new best for sector 2</Sector>
+<Sector et="1088.6">Patrick Behrens(23) set new best for sector 2</Sector>
+<Sector et="1088.6">Dominik Matusz(0) set new best for sector 2</Sector>
+<Sector et="1088.6">Bertogucci Alfonso(33) set new best for sector 2</Sector>
+<Sector et="1088.6">Frank Zakrzewski(1) set new best for sector 2</Sector>
+<Sector et="1088.6">Axel Distexhe(37) set new best for sector 2</Sector>
+<Sector et="1088.6">Paul Lockley(26) set new best for sector 2</Sector>
+<Sector et="1088.6">Patrick Helbig(5) set new best for sector 2</Sector>
+<Sector et="1088.7">Manuel Neumann(27) set new best for sector 2</Sector>
+<Sector et="1088.7">Antonio Lavecchia(16) set new best for sector 2</Sector>
+<Sector et="1088.7">Burak Akin(28) set new best for sector 2</Sector>
+<Sector et="1088.7">Jeremy Moeller(2) set new best for sector 2</Sector>
+<Sector et="1088.9">Verbalase Beatbox(10) set new best for sector 2</Sector>
+<Sector et="1088.9">haoye NB(35) set new best for sector 2</Sector>
+<Score et="1089.0">MR H(30) lap=2 point=0 t=256.726 et=1088.920</Score>
+<Sector et="1089.0">Axel Distexhe(37) set new best for sector 1</Sector>
+<Sector et="1089.0">Walter BILS(36) set new best for sector 1</Sector>
+<Sector et="1089.3">haoye NB(35) set new best for sector 1</Sector>
+<Sector et="1089.6">Cai Bingjun(38) set new best for sector 2</Sector>
+<Sector et="1089.6">Cai Bingjun(38) set new best for sector 1</Sector>
+<Score et="1094.9">Antonio Lavecchia(16) lap=4 point=0 t=-1.000 et=1094.832</Score>
+<Sector et="1098.2">Ferdinandus Andrian(39) set new best for sector 2</Sector>
+<Sector et="1098.4">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Score et="1101.2">Lars Riemen(11) lap=3 point=0 t=275.694 et=1101.180</Score>
+<Sector et="1101.3">Walter BILS(36) set new best for sector 1</Sector>
+<Sector et="1101.3">Axel Distexhe(37) set new best for sector 1</Sector>
+<Sector et="1101.4">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1101.5">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1101.6">haoye NB(35) set new best for sector 1</Sector>
+<Score et="1103.8">Dominik Matusz(0) lap=4 point=0 t=-1.000 et=1103.820</Score>
+<Score et="1107.0">Noah Rupp(21) lap=3 point=1 t=-1.000 et=1107.000</Score>
+<Score et="1115.0">MR H(30) lap=2 point=1 t=-1.000 et=1114.910</Score>
+<Score et="1115.0">MR H(30) lap=2 point=2 t=-1.000 et=1114.910</Score>
+<Score et="1115.0">MR H(30) lap=3 point=0 t=-1.000 et=1114.910</Score>
+<Score et="1120.0">Dominik Matusz(0) lap=4 point=1 t=-1.000 et=1119.903</Score>
+<Score et="1120.0">Dominik Matusz(0) lap=4 point=2 t=-1.000 et=1119.903</Score>
+<Score et="1120.0">Dominik Matusz(0) lap=5 point=0 t=-1.000 et=1119.903</Score>
+<Score et="1125.3">Pierre-Andre Bulle(32) lap=2 point=0 t=-1.000 et=1125.335</Score>
+<Score et="1126.1">Andreas Kaercher(12) lap=3 point=2 t=134.130 et=1126.040</Score>
+<Sector et="1126.1">Euan House(40) set new best for sector 3</Sector>
+<Sector et="1126.1">Walter BILS(36) set new best for sector 3</Sector>
+<Sector et="1126.1">Axel Distexhe(37) set new best for sector 3</Sector>
+<Sector et="1126.3">Ferdinandus Andrian(39) set new best for sector 3</Sector>
+<Sector et="1126.4">haoye NB(35) set new best for sector 3</Sector>
+<Sector et="1126.5">Cai Bingjun(38) set new best for sector 3</Sector>
+<Incident et="1132.0">haoye NB(35) reported contact (73.72) with Immovable</Incident>
+<Incident et="1132.0">haoye NB(35) reported contact (93.59) with Immovable</Incident>
+<Score et="1133.8">Manuel Neumann(27) lap=2 point=2 t=-1.000 et=1133.720</Score>
+<Score et="1137.7">Chris Aebersold(20) lap=2 point=2 t=-1.000 et=1137.660</Score>
+<Score et="1138.8">Jeremy Moeller(2) lap=4 point=0 t=245.609 et=1138.720</Score>
+<Sector et="1138.8">Walter BILS(36) set new best for sector 1</Sector>
+<Sector et="1138.8">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1138.8">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1138.9">Axel Distexhe(37) set new best for sector 1</Sector>
+<Sector et="1138.9">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1139.0">Dodo Lepilote(17) reports new suspension damage</Sector>
+<Sector et="1139.0">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Incident et="1139.0">Dodo Lepilote(17) reported contact (2023.18) with Immovable</Incident>
+<Sector et="1139.1">haoye NB(35) set new best for sector 1</Sector>
+<Sector et="1139.1">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1139.3">Axel Distexhe(37) set new best for sector 1</Sector>
+<Sector et="1139.3">Walter BILS(36) set new best for sector 1</Sector>
+<Sector et="1139.3">Dario Sogaro(41) set new best for sector 1</Sector>
+<Score et="1139.4">Patrick Behrens(23) lap=3 point=0 t=243.804 et=1139.260</Score>
+<Sector et="1139.4">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1139.5">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1139.5">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1139.6">haoye NB(35) set new best for sector 1</Sector>
+<Incident et="1139.6">Dodo Lepilote(17) reported contact (51.15) with Wing</Incident>
+<Sector et="1139.7">Cai Bingjun(38) set new best for sector 1</Sector>
+<Score et="1139.7">Lars Riemen(11) lap=3 point=1 t=38.528 et=1139.700</Score>
+<Sector et="1139.7">Euan House(40) set new best for sector 2</Sector>
+<Sector et="1139.8">Dario Sogaro(41) set new best for sector 2</Sector>
+<Sector et="1139.8">Thomas Fagnot(42) set new best for sector 2</Sector>
+<Incident et="1139.9">Dodo Lepilote(17) reported contact (41.79) with Wing</Incident>
+<Score et="1141.4">Ell Gould(14) lap=2 point=2 t=147.579 et=1141.380</Score>
+<Sector et="1141.4">Dario Sogaro(41) set new best for sector 3</Sector>
+<Incident et="1141.6">haoye NB(35) reported contact (77.82) with Immovable</Incident>
+<Incident et="1141.9">Dodo Lepilote(17) reported contact (15.21) with Wing</Incident>
+<Incident et="1143.3">Dodo Lepilote(17) reported contact (6.54) with Wing</Incident>
+<Incident et="1143.7">Dodo Lepilote(17) reported contact (24.33) with Wing</Incident>
+<Sector et="1144.9">Thomas Fagnot(42) set new best for sector 3</Sector>
+<Incident et="1148.3">flav v(18) reported contact (83.84) with Immovable</Incident>
+<Score et="1150.7">flav v(18) lap=4 point=1 t=-1.000 et=1150.660</Score>
+<Score et="1152.4">Walter BILS(36) lap=0 point=1 t=-1.000 et=1152.320</Score>
+<Incident et="1154.1">Walter BILS(36) reported contact (179.32) with Post</Incident>
+<Incident et="1159.0">Dodo Lepilote(17) reported contact (3005.37) with Immovable</Incident>
+<Score et="1159.2">Antonio Lavecchia(16) lap=4 point=1 t=-1.000 et=1159.180</Score>
+<Incident et="1161.6">Dodo Lepilote(17) reported contact (1250.34) with Immovable</Incident>
+<Score et="1165.4">Dodo Lepilote(17) lap=3 point=2 t=-1.000 et=1165.330</Score>
+<Score et="1165.4">Dodo Lepilote(17) lap=4 point=0 t=-1.000 et=1165.330</Score>
+<Score et="1176.7">Jeremy Moeller(2) lap=4 point=1 t=37.871 et=1176.600</Score>
+<Sector et="1176.7">Dario Sogaro(41) set new best for sector 2</Sector>
+<Sector et="1176.7">Dmitriy Perov(44) set new best for sector 2</Sector>
+<Sector et="1176.8">Hazem Aloui(43) set new best for sector 2</Sector>
+<Sector et="1176.8">Thomas Fagnot(42) set new best for sector 2</Sector>
+<Sector et="1176.8">Euan House(40) set new best for sector 2</Sector>
+<Score et="1177.2">Patrick Behrens(23) lap=3 point=1 t=37.892 et=1177.140</Score>
+<Incident et="1177.2">Dario Sogaro(41) reported contact (40.11) with Post</Incident>
+<Sector et="1183.5">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="1183.5">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Score et="1183.5">Nicolas Kucipak(22) lap=3 point=2 t=132.532 et=1183.440</Score>
+<Sector et="1183.5">Nicolas Kucipak(22) set new best for sector 3</Sector>
+<Sector et="1183.5">Paul Lockley(26) set new best for sector 3</Sector>
+<Sector et="1183.5">Lars Riemen(11) set new best for sector 3</Sector>
+<Sector et="1183.5">pim de Ruijter(4) set new best for sector 3</Sector>
+<Sector et="1183.5">Thomas Fagnot(42) set new best for sector 3</Sector>
+<Sector et="1183.5">Noah Rupp(21) set new best for sector 3</Sector>
+<Sector et="1183.5">Hazem Aloui(43) set new best for sector 3</Sector>
+<Sector et="1183.5">Euan House(40) set new best for sector 3</Sector>
+<Sector et="1183.5">Andreas Kaercher(12) set new best for sector 3</Sector>
+<Sector et="1183.5">Dominik Matusz(0) set new best for sector 3</Sector>
+<Sector et="1183.5">Patrick Helbig(5) set new best for sector 3</Sector>
+<Sector et="1183.5">Axel Distexhe(37) set new best for sector 3</Sector>
+<Sector et="1183.5">MR H(30) set new best for sector 3</Sector>
+<Sector et="1183.5">Walter BILS(36) set new best for sector 3</Sector>
+<Sector et="1183.5">Bertogucci Alfonso(33) set new best for sector 3</Sector>
+<Sector et="1183.5">Chris Aebersold(20) set new best for sector 3</Sector>
+<Sector et="1183.5">Ell Gould(14) set new best for sector 3</Sector>
+<Sector et="1183.5">Dodo Lepilote(17) set new best for sector 3</Sector>
+<Sector et="1183.5">flav v(18) set new best for sector 3</Sector>
+<Sector et="1183.5">Patrick Behrens(23) set new best for sector 3</Sector>
+<Sector et="1183.5">Burak Akin(28) set new best for sector 3</Sector>
+<Sector et="1183.5">Dario Sogaro(41) set new best for sector 3</Sector>
+<Sector et="1183.5">Dmitriy Perov(44) set new best for sector 3</Sector>
+<Sector et="1183.6">Frank Zakrzewski(1) set new best for sector 3</Sector>
+<Sector et="1183.6">Manuel Neumann(27) set new best for sector 3</Sector>
+<Sector et="1183.6">Antonio Lavecchia(16) set new best for sector 3</Sector>
+<Sector et="1183.6">Jeremy Moeller(2) set new best for sector 3</Sector>
+<Sector et="1183.7">Ferdinandus Andrian(39) set new best for sector 3</Sector>
+<Sector et="1183.8">haoye NB(35) set new best for sector 3</Sector>
+<Sector et="1183.8">Cai Bingjun(38) set new best for sector 3</Sector>
+<Score et="1185.0">Patrick Helbig(5) lap=4 point=0 t=-1.000 et=1184.900</Score>
+<Score et="1185.7">pim de Ruijter(4) lap=4 point=2 t=145.242 et=1185.680</Score>
+<Sector et="1186.3">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1194.9">haoye NB(35) lap=0 point=1 t=-1.000 et=1194.700</Score>
+<Score et="1199.0">Frank Zakrzewski(1) lap=3 point=0 t=251.375 et=1198.980</Score>
+<Sector et="1199.1">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1199.1">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1199.3">Sam Imlay(45) set new best for sector 1</Sector>
+<Score et="1200.0">Ferdinandus Andrian(39) lap=0 point=1 t=-1.000 et=1200.060</Score>
+<Score et="1201.1">Dario Sogaro(41) lap=0 point=1 t=-1.000 et=1201.020</Score>
+<Incident et="1212.1">Chris Aebersold(20) reported contact (1568.16) with Immovable</Incident>
+<Score et="1217.0">Noah Rupp(21) lap=3 point=2 t=-1.000 et=1216.920</Score>
+<Incident et="1220.8">Ell Gould(14) reported contact (3016.38) with Immovable</Incident>
+<Incident et="1220.8">Ell Gould(14) reported contact (22.23) with Post</Incident>
+<Incident et="1221.3">Ell Gould(14) reported contact (6.49) with Wing</Incident>
+<Incident et="1221.3">Ell Gould(14) reported contact (12.91) with Wing</Incident>
+<Sector et="1221.6">haoye NB(35) reports new suspension damage</Sector>
+<Incident et="1221.7">haoye NB(35) reported contact (687.33) with Immovable</Incident>
+<Incident et="1222.0">haoye NB(35) reported contact (1059.81) with Immovable</Incident>
+<Sector et="1222.3">haoye NB(35) reports new suspension damage</Sector>
+<Score et="1223.7">Patrick Helbig(5) lap=4 point=1 t=38.802 et=1223.700</Score>
+<Sector et="1224.1">Sam Imlay(45) set new best for sector 2</Sector>
+<Penalty et="1227.0">Thomas Fagnot received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
+<Score et="1230.4">Chris Aebersold(20) lap=3 point=0 t=-1.000 et=1230.344</Score>
+<Score et="1230.8">haoye NB(35) lap=0 point=2 t=-1.000 et=1230.631</Score>
+<Score et="1230.8">haoye NB(35) lap=1 point=0 t=-1.000 et=1230.631</Score>
+<Incident et="1231.7">Nicolas Kucipak(22) reported contact (804.74) with Immovable</Incident>
+<Incident et="1231.8">Nicolas Kucipak(22) reported contact (16.79) with Wing</Incident>
+<Incident et="1231.8">Nicolas Kucipak(22) reported contact (14.86) with Wing</Incident>
+<Score et="1232.5">Cai Bingjun(38) lap=0 point=1 t=-1.000 et=1232.280</Score>
+<Incident et="1232.8">Nicolas Kucipak(22) reported contact (22.50) with Wing</Incident>
+<Incident et="1232.9">Nicolas Kucipak(22) reported contact (90.75) with Wing</Incident>
+<Incident et="1233.0">Nicolas Kucipak(22) reported contact (86.68) with Wing</Incident>
+<Incident et="1233.4">Nicolas Kucipak(22) reported contact (50.06) with Wing</Incident>
+<Incident et="1233.7">Nicolas Kucipak(22) reported contact (65.58) with Wing</Incident>
+<Incident et="1234.0">Nicolas Kucipak(22) reported contact (82.44) with Wing</Incident>
+<Incident et="1234.5">Nicolas Kucipak(22) reported contact (74.74) with Wing</Incident>
+<Incident et="1234.9">Nicolas Kucipak(22) reported contact (60.01) with Wing</Incident>
+<Incident et="1235.7">Hazem Aloui(43) reported contact (6.89) with Cone</Incident>
+<Incident et="1235.7">Hazem Aloui(43) reported contact (27.76) with Cone</Incident>
+<Incident et="1235.9">Nicolas Kucipak(22) reported contact (69.24) with Wing</Incident>
+<Score et="1236.0">Andreas Kaercher(12) lap=4 point=0 t=-1.000 et=1235.960</Score>
+<Score et="1236.3">Lars Riemen(11) lap=3 point=2 t=-1.000 et=1236.280</Score>
+<Incident et="1236.4">Nicolas Kucipak(22) reported contact (49.88) with Wing</Incident>
+<Incident et="1236.7">Nicolas Kucipak(22) reported contact (63.36) with Wing</Incident>
+<Incident et="1237.7">Nicolas Kucipak(22) reported contact (40.36) with Wing</Incident>
+<Incident et="1237.9">Nicolas Kucipak(22) reported contact (67.03) with Wing</Incident>
+<Score et="1238.5">Frank Zakrzewski(1) lap=3 point=1 t=39.472 et=1238.440</Score>
+<Incident et="1238.6">Nicolas Kucipak(22) reported contact (39.86) with Wing</Incident>
+<Incident et="1239.0">Nicolas Kucipak(22) reported contact (64.85) with Wing</Incident>
+<Incident et="1240.0">Nicolas Kucipak(22) reported contact (39.17) with Wing</Incident>
+<Incident et="1240.5">Nicolas Kucipak(22) reported contact (58.84) with Wing</Incident>
+<Score et="1240.7">Nicolas Kucipak(22) lap=4 point=0 t=-1.000 et=1240.609</Score>
+<Score et="1245.0">Manuel Neumann(27) lap=3 point=0 t=-1.000 et=1244.880</Score>
+<Score et="1245.9">Patrick Helbig(5) lap=4 point=2 t=-1.000 et=1245.904</Score>
+<Score et="1245.9">Patrick Helbig(5) lap=5 point=0 t=-1.000 et=1245.904</Score>
+<Score et="1248.1">flav v(18) lap=4 point=2 t=-1.000 et=1248.060</Score>
+<Score et="1248.9">Walter BILS(36) lap=0 point=2 t=-1.000 et=1248.900</Score>
+<Score et="1254.0">Dmitriy Perov(44) lap=0 point=1 t=-1.000 et=1253.980</Score>
+<Score et="1255.6">Antonio Lavecchia(16) lap=4 point=2 t=-1.000 et=1255.500</Score>
+<Score et="1257.0">Dominik Matusz(0) lap=5 point=1 t=-1.000 et=1256.880</Score>
+<Incident et="1260.1">Ell Gould(14) reported contact (3507.33) with Immovable</Incident>
+<Incident et="1260.9">Ell Gould(14) reported contact (678.06) with Immovable</Incident>
+<Incident et="1261.1">Ell Gould(14) reported contact (4985.19) with Immovable</Incident>
+<Sector et="1261.1">Ell Gould(14) reports new suspension damage</Sector>
+<Incident et="1261.1">Ell Gould(14) reported contact (4879.91) with Immovable</Incident>
+<Incident et="1261.4">Ell Gould(14) reported contact (7.77) with Post</Incident>
+<Incident et="1261.4">Ell Gould(14) reported contact (11.64) with Post</Incident>
+<Score et="1266.1">Pierre-Andre Bulle(32) lap=2 point=1 t=-1.000 et=1266.079</Score>
+<Score et="1267.0">Thomas Fagnot(42) lap=0 point=1 t=-1.000 et=1266.960</Score>
+<Score et="1271.8">Jeremy Moeller(2) lap=4 point=2 t=-1.000 et=1271.680</Score>
+<Score et="1272.0">Hazem Aloui(43) lap=0 point=1 t=-1.000 et=1271.900</Score>
+<Score et="1272.6">Patrick Behrens(23) lap=3 point=2 t=-1.000 et=1272.520</Score>
+<Sector et="1272.8">pim de Ruijter(4) reports new suspension damage</Sector>
+<Incident et="1272.9">Ell Gould(14) reported contact (2266.96) with another vehicle pim de Ruijter(4)</Incident>
+<Incident et="1272.9">pim de Ruijter(4) reported contact (2310.27) with another vehicle Ell Gould(14)</Incident>
+<Incident et="1272.9">Ell Gould(14) reported contact (15.02) with Wheel</Incident>
+<Incident et="1273.0">pim de Ruijter(4) reported contact (50.95) with Wheel</Incident>
+<Incident et="1273.0">pim de Ruijter(4) reported contact (401.93) with Wheel</Incident>
+<Incident et="1273.3">Ell Gould(14) reported contact (143.59) with Immovable</Incident>
+<Sector et="1273.5">Ferdinandus Andrian(39) reports new suspension damage</Sector>
+<Incident et="1273.5">Ell Gould(14) reported contact (252.12) with Immovable</Incident>
+<Incident et="1273.6">Ferdinandus Andrian(39) reported contact (1369.82) with Immovable</Incident>
+<Incident et="1275.7">pim de Ruijter(4) reported contact (5465.58) with Immovable</Incident>
+<Incident et="1277.1">Ell Gould(14) reported contact (873.85) with Immovable</Incident>
+<Score et="1278.7">Andreas Kaercher(12) lap=4 point=1 t=-1.000 et=1278.612</Score>
+<Score et="1278.7">Andreas Kaercher(12) lap=4 point=2 t=-1.000 et=1278.612</Score>
+<Score et="1278.7">Andreas Kaercher(12) lap=5 point=0 t=-1.000 et=1278.612</Score>
+<Score et="1278.7">Ferdinandus Andrian(39) lap=0 point=2 t=-1.000 et=1278.665</Score>
+<Score et="1278.7">Ferdinandus Andrian(39) lap=1 point=0 t=-1.000 et=1278.665</Score>
+<Score et="1284.0">Manuel Neumann(27) lap=3 point=1 t=39.098 et=1283.980</Score>
+<Sector et="1284.3">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1290.6">Ell Gould(14) lap=3 point=0 t=-1.000 et=1290.507</Score>
+<Score et="1297.2">pim de Ruijter(4) lap=5 point=0 t=-1.000 et=1297.170</Score>
+<Score et="1298.4">Dario Sogaro(41) lap=0 point=2 t=-1.000 et=1298.360</Score>
+<Incident et="1298.7">Dario Sogaro(41) reported contact (117.01) with Post</Incident>
+<Incident et="1298.7">Dario Sogaro(41) reported contact (130.69) with Post</Incident>
+<Score et="1306.7">Euan House(40) lap=0 point=1 t=-1.000 et=1306.640</Score>
+<Incident et="1311.7">Lars Riemen(11) reported contact (280.13) with Immovable</Incident>
+<Score et="1328.7">Cai Bingjun(38) lap=0 point=2 t=-1.000 et=1328.360</Score>
+<Score et="1329.4">Noah Rupp(21) lap=4 point=0 t=-1.000 et=1329.400</Score>
+<Score et="1332.8">flav v(18) lap=5 point=0 t=-1.000 et=1332.709</Score>
+<Incident et="1334.5">pim de Ruijter(4) reported contact (232.52) with Cone</Incident>
+<Score et="1335.8">Frank Zakrzewski(1) lap=3 point=2 t=136.791 et=1335.760</Score>
+<Sector et="1336.1">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1336.2">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1339.7">Dodo Lepilote(17) lap=4 point=1 t=-1.000 et=1339.640</Score>
+<Score et="1345.0">pim de Ruijter(4) lap=5 point=1 t=-1.000 et=1344.907</Score>
+<Score et="1345.0">pim de Ruijter(4) lap=5 point=2 t=-1.000 et=1344.907</Score>
+<Score et="1345.0">pim de Ruijter(4) lap=6 point=0 t=-1.000 et=1344.907</Score>
+<Score et="1348.3">Lars Riemen(11) lap=4 point=0 t=-1.000 et=1348.260</Score>
+<Score et="1352.5">Dmitriy Perov(44) lap=0 point=2 t=-1.000 et=1352.420</Score>
+<Score et="1352.8">Dominik Matusz(0) lap=5 point=2 t=-1.000 et=1352.740</Score>
+<Score et="1362.0">Walter BILS(36) lap=1 point=0 t=-1.000 et=1361.980</Score>
+<Score et="1365.6">Pierre-Andre Bulle(32) lap=2 point=2 t=-1.000 et=1365.612</Score>
+<Score et="1366.6">Antonio Lavecchia(16) lap=5 point=0 t=-1.000 et=1366.580</Score>
+<Score et="1366.8">Hazem Aloui(43) lap=0 point=2 t=-1.000 et=1366.720</Score>
+<Score et="1368.0">Noah Rupp(21) lap=4 point=1 t=38.497 et=1367.900</Score>
+<Score et="1368.0">Thomas Fagnot(42) lap=0 point=2 t=-1.000 et=1367.900</Score>
+<Sector et="1368.3">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1369.4">Dominik Matusz(0) lap=6 point=0 t=-1.000 et=1369.322</Score>
+<Score et="1377.9">Ferdinandus Andrian(39) lap=1 point=1 t=-1.000 et=1377.720</Score>
+<Score et="1380.1">Manuel Neumann(27) lap=3 point=2 t=135.196 et=1380.080</Score>
+<Sector et="1380.4">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1380.5">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1383.0">Patrick Behrens(23) lap=4 point=0 t=-1.000 et=1382.880</Score>
+<Score et="1386.6">Lars Riemen(11) lap=4 point=1 t=38.300 et=1386.560</Score>
+<Sector et="1387.0">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1391.9">Patrick Behrens(23) lap=4 point=1 t=-1.000 et=1391.821</Score>
+<Score et="1391.9">Patrick Behrens(23) lap=4 point=2 t=-1.000 et=1391.821</Score>
+<Score et="1391.9">Patrick Behrens(23) lap=5 point=0 t=-1.000 et=1391.821</Score>
+<Score et="1398.8">Jeremy Moeller(2) lap=5 point=0 t=-1.000 et=1398.700</Score>
+<Score et="1400.0">Walter BILS(36) lap=1 point=1 t=37.976 et=1399.940</Score>
+<Sector et="1400.3">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1405.9">Antonio Lavecchia(16) lap=5 point=1 t=39.266 et=1405.840</Score>
+<Sector et="1406.2">Nash Anderson(46) set new best for sector 2</Sector>
+<Incident et="1406.3">Noah Rupp(21) reported contact (193.75) with Post</Incident>
+<Score et="1409.0">Dario Sogaro(41) lap=1 point=0 t=-1.000 et=1408.940</Score>
+<Score et="1419.7">Euan House(40) lap=0 point=2 t=-1.000 et=1419.620</Score>
+<Score et="1422.2">Antonio Lavecchia(16) lap=5 point=2 t=-1.000 et=1422.170</Score>
+<Score et="1422.2">Antonio Lavecchia(16) lap=6 point=0 t=-1.000 et=1422.170</Score>
+<Score et="1426.7">Jeremy Moeller(2) lap=5 point=1 t=-1.000 et=1426.595</Score>
+<Score et="1426.7">Jeremy Moeller(2) lap=5 point=2 t=-1.000 et=1426.595</Score>
+<Score et="1426.7">Jeremy Moeller(2) lap=6 point=0 t=-1.000 et=1426.595</Score>
+<Score et="1436.7">Dodo Lepilote(17) lap=4 point=2 t=-1.000 et=1436.580</Score>
+<Score et="1438.9">Cai Bingjun(38) lap=1 point=0 t=-1.000 et=1438.680</Score>
+<Score et="1440.8">Ell Gould(14) lap=3 point=1 t=-1.000 et=1440.800</Score>
+<Score et="1447.2">Dario Sogaro(41) lap=1 point=1 t=38.232 et=1447.180</Score>
+<Sector et="1447.3">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1447.5">Nash Anderson(46) set new best for sector 2</Sector>
+<Sector et="1447.5">yannick galtro(48) set new best for sector 2</Sector>
+<Score et="1449.7">Frank Zakrzewski(1) lap=4 point=0 t=250.663 et=1449.640</Score>
+<Sector et="1449.7">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1449.7">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1449.7">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1449.8">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1450.0">Sam Imlay(45) set new best for sector 1</Sector>
+<Sector et="1450.1">Nash Anderson(46) set new best for sector 1</Sector>
+<Score et="1456.0">flav v(18) lap=5 point=1 t=-1.000 et=1456.000</Score>
+<Score et="1468.2">Dmitriy Perov(44) lap=1 point=0 t=-1.000 et=1468.080</Score>
+<Score et="1470.2">Noah Rupp(21) lap=4 point=2 t=140.754 et=1470.160</Score>
+<Sector et="1470.2">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1470.3">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1470.5">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1470.6">Sam Imlay(45) set new best for sector 3</Sector>
+<Sector et="1472.3">Dodo Lepilote(17) reports new suspension damage</Sector>
+<Incident et="1472.3">Dodo Lepilote(17) reported contact (3744.07) with Immovable</Incident>
+<Score et="1472.4">Chris Aebersold(20) lap=3 point=1 t=-1.000 et=1472.280</Score>
+<Incident et="1473.0">Dodo Lepilote(17) reported contact (301.90) with Immovable</Incident>
+<Sector et="1475.1">Dodo Lepilote(17) reports new suspension damage</Sector>
+<Incident et="1475.2">Dodo Lepilote(17) reported contact (4895.39) with Immovable</Incident>
+<Score et="1477.8">Cai Bingjun(38) lap=1 point=1 t=38.861 et=1477.540</Score>
+<Sector et="1477.8">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1477.8">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1478.2">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1479.4">Nash Anderson(46) lap=0 point=1 t=-1.000 et=1479.220</Score>
+<Score et="1481.5">Hazem Aloui(43) lap=1 point=0 t=-1.000 et=1481.412</Score>
+<Sector et="1483.3">Dodo Lepilote(17) reports new suspension damage</Sector>
+<Incident et="1483.4">Dodo Lepilote(17) reported contact (3965.45) with Immovable</Incident>
+<Score et="1483.5">Lars Riemen(11) lap=4 point=2 t=135.260 et=1483.520</Score>
+<Sector et="1483.5">Dodo Lepilote(17) reports new suspension damage</Sector>
+<Sector et="1483.6">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1483.6">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1483.6">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1483.9">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1483.9">Sam Imlay(45) set new best for sector 3</Sector>
+<Incident et="1484.6">Dodo Lepilote(17) reported contact (808.51) with Immovable</Incident>
+<Score et="1485.2">Antonio Lavecchia(16) lap=6 point=1 t=-1.000 et=1485.120</Score>
+<Score et="1487.9">Thomas Fagnot(42) lap=1 point=0 t=-1.000 et=1487.860</Score>
+<Score et="1488.4">Pierre-Andre Bulle(32) lap=3 point=0 t=-1.000 et=1488.367</Score>
+<Score et="1489.0">Frank Zakrzewski(1) lap=4 point=1 t=39.298 et=1488.940</Score>
+<Sector et="1489.0">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1489.1">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1489.1">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1489.3">Nash Anderson(46) set new best for sector 2</Sector>
+<Sector et="1489.5">(50) set new best for sector 2</Sector>
+<Score et="1489.5">Dodo Lepilote(17) lap=5 point=0 t=-1.000 et=1489.492</Score>
+<Score et="1491.2">Manuel Neumann(27) lap=4 point=0 t=246.293 et=1491.180</Score>
+<Sector et="1491.3">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1491.3">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1491.3">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1491.3">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1491.3">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1491.4">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1491.6">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1491.6">Sam Imlay(45) set new best for sector 1</Sector>
+<Score et="1494.4">Ferdinandus Andrian(39) lap=1 point=2 t=-1.000 et=1494.240</Score>
+<Score et="1495.6">Walter BILS(36) lap=1 point=2 t=-1.000 et=1495.560</Score>
+<Score et="1505.8">Sam Imlay(45) lap=0 point=1 t=-1.000 et=1505.660</Score>
+<Incident et="1510.8">yannick galtro(48) reported contact (17.30) with Post</Incident>
+<Score et="1514.0">Dmitriy Perov(44) lap=1 point=1 t=45.845 et=1513.920</Score>
+<Score et="1527.2">Xander bono(47) lap=0 point=1 t=-1.000 et=1527.140</Score>
+<Score et="1529.3">Pierre-Andre Bulle(32) lap=3 point=1 t=40.939 et=1529.306</Score>
+<Sector et="1529.6">Conner White(51) set new best for sector 2</Sector>
+<Score et="1530.0">Manuel Neumann(27) lap=4 point=1 t=38.777 et=1529.940</Score>
+<Sector et="1530.0">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1530.0">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1530.0">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1530.0">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1530.2">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1530.4">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1536.5">yannick galtro(48) lap=0 point=1 t=-1.000 et=1536.400</Score>
+<Score et="1539.8">Euan House(40) lap=1 point=0 t=-1.000 et=1539.760</Score>
+<Score et="1539.9">Ell Gould(14) lap=3 point=2 t=-1.000 et=1539.840</Score>
+<Score et="1542.7">Dario Sogaro(41) lap=1 point=2 t=133.706 et=1542.660</Score>
+<Sector et="1542.7">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1542.8">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1542.8">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1542.8">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1542.9">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1543.0">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1543.1">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1553.2">flav v(18) lap=5 point=2 t=-1.000 et=1553.020</Score>
+<Score et="1567.2">Simon Rogowski(49) lap=0 point=1 t=-1.000 et=1567.100</Score>
+<Score et="1567.7">Chris Aebersold(20) lap=3 point=2 t=-1.000 et=1567.620</Score>
+<Score et="1573.7">Cai Bingjun(38) lap=1 point=2 t=134.820 et=1573.500</Score>
+<Sector et="1573.8">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1573.8">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1573.8">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1573.8">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1573.9">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1574.1">Sam Imlay(45) set new best for sector 3</Sector>
+<Sector et="1574.1">Nash Anderson(46) set new best for sector 3</Sector>
+<Score et="1576.8">Nash Anderson(46) lap=0 point=2 t=-1.000 et=1576.580</Score>
+<Incident et="1577.1">Conner White(51) reported contact (58.87) with Post</Incident>
+<Score et="1578.5">Euan House(40) lap=1 point=1 t=38.608 et=1578.360</Score>
+<Sector et="1578.5">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1578.5">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1578.5">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1578.5">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1578.7">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1578.8">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1581.0">Antonio Lavecchia(16) lap=6 point=2 t=-1.000 et=1580.960</Score>
+<Score et="1582.0">Noah Rupp(21) lap=5 point=0 t=252.601 et=1582.000</Score>
+<Sector et="1582.1">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1582.1">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1582.1">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1582.1">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1582.1">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1582.1">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1582.3">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1582.3">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1582.4">Sam Imlay(45) set new best for sector 1</Sector>
+<Score et="1584.5">Adam Speed(50) lap=0 point=1 t=-1.000 et=1584.460</Score>
+<Score et="1587.0">Frank Zakrzewski(1) lap=4 point=2 t=137.349 et=1586.980</Score>
+<Sector et="1587.0">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1587.0">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1587.0">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1587.1">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1587.2">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1587.4">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1587.4">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1589.3">Thomas Fagnot(42) lap=1 point=1 t=-1.000 et=1589.260</Score>
+<Sector et="1594.5">Adam Speed(50) set new best for sector 1</Sector>
+<Score et="1594.5">Lars Riemen(11) lap=5 point=0 t=246.239 et=1594.500</Score>
+<Sector et="1594.5">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1594.6">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1594.6">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1594.6">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1594.6">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1594.7">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1594.9">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1594.9">Sam Imlay(45) set new best for sector 1</Sector>
+<Score et="1596.6">Conner White(51) lap=0 point=1 t=-1.000 et=1596.480</Score>
+<Score et="1602.5">Sam Imlay(45) lap=0 point=2 t=-1.000 et=1602.280</Score>
+<Incident et="1602.7">Sam Imlay(45) reported contact (64.48) with Post</Incident>
+<Incident et="1602.8">Sam Imlay(45) reported contact (131.02) with Post</Incident>
+<Incident et="1602.8">Sam Imlay(45) reported contact (131.02) with Post</Incident>
+<Incident et="1603.1">Sam Imlay(45) reported contact (3.13) with Post</Incident>
+<Incident et="1603.2">Sam Imlay(45) reported contact (10.14) with Post</Incident>
+<Incident et="1603.6">Sam Imlay(45) reported contact (19.23) with Post</Incident>
+<Score et="1610.6">Walter BILS(36) lap=2 point=0 t=-1.000 et=1610.520</Score>
+<Score et="1611.8">Dmitriy Perov(44) lap=1 point=2 t=143.650 et=1611.720</Score>
+<Sector et="1611.9">Mikhail Eremin(52) set new best for sector 3</Sector>
+<Score et="1614.0">Ferdinandus Andrian(39) lap=2 point=0 t=-1.000 et=1613.880</Score>
+<Sector et="1620.5">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1620.5">yannick galtro(48) set new best for sector 2</Sector>
+<Score et="1620.5">Noah Rupp(21) lap=5 point=1 t=38.419 et=1620.420</Score>
+<Sector et="1620.5">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1620.5">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1620.6">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1620.6">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1620.8">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1624.9">Xander bono(47) lap=0 point=2 t=-1.000 et=1624.820</Score>
+<Sector et="1626.2">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1626.2">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1626.2">Simon Rogowski(49) set new best for sector 3</Sector>
+<Score et="1626.2">Manuel Neumann(27) lap=4 point=2 t=134.983 et=1626.160</Score>
+<Sector et="1626.2">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1626.4">Mikhail Eremin(52) set new best for sector 3</Sector>
+<Sector et="1626.5">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1626.6">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1626.6">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1628.4">Pierre-Andre Bulle(32) lap=3 point=2 t=140.001 et=1628.368</Score>
+<Score et="1633.0">Lars Riemen(11) lap=5 point=1 t=38.494 et=1633.000</Score>
+<Sector et="1633.3">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1634.5">yannick galtro(48) lap=0 point=2 t=-1.000 et=1634.500</Score>
+<Score et="1649.4">Walter BILS(36) lap=2 point=1 t=38.813 et=1649.320</Score>
+<Sector et="1649.4">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1649.7">Nash Anderson(46) set new best for sector 2</Sector>
+<Sector et="1652.4">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1652.4">Massimo Stagnitta(53) set new best for sector 1</Sector>
+<Sector et="1652.4">yannick galtro(48) set new best for sector 1</Sector>
+<Score et="1652.4">Dario Sogaro(41) lap=2 point=0 t=243.387 et=1652.340</Score>
+<Sector et="1652.4">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1652.4">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1652.4">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1652.4">Walter BILS(36) set new best for sector 1</Sector>
+<Sector et="1652.5">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1652.5">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1652.5">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1652.5">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1652.6">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1652.6">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1652.6">Mikhail Eremin(52) set new best for sector 1</Sector>
+<Sector et="1652.7">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1652.7">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1652.8">Sam Imlay(45) set new best for sector 1</Sector>
+<Sector et="1656.7">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Score et="1656.7">Ferdinandus Andrian(39) lap=2 point=1 t=42.650 et=1656.540</Score>
+<Sector et="1657.0">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1657.4">Ell Gould(14) lap=4 point=0 t=-1.000 et=1657.380</Score>
+<Score et="1663.5">flav v(18) lap=6 point=0 t=-1.000 et=1663.500</Score>
+<Sector et="1664.2">Pierre-Andre Bulle(32) reports new suspension damage</Sector>
+<Sector et="1664.3">Pierre-Andre Bulle(32) reports new suspension damage</Sector>
+<Incident et="1664.3">Pierre-Andre Bulle(32) reported contact (9431.19) with Immovable</Incident>
+<Score et="1664.8">Simon Rogowski(49) lap=0 point=2 t=-1.000 et=1664.820</Score>
+<Score et="1669.4">Walter BILS(36) lap=2 point=2 t=-1.000 et=1669.380</Score>
+<Score et="1669.4">Walter BILS(36) lap=3 point=0 t=-1.000 et=1669.380</Score>
+<Penalty et="1673.0">Massimo Stagnitta received Stop/Go penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
+<Score et="1674.8">Mikhail Eremin(52) lap=0 point=1 t=-1.000 et=1674.680</Score>
+<Score et="1676.7">Chris Aebersold(20) lap=4 point=0 t=-1.000 et=1676.600</Score>
+<Sector et="1683.7">Cai Bingjun(38) set new best for sector 1</Sector>
+<Score et="1683.8">Cai Bingjun(38) lap=2 point=0 t=244.895 et=1683.560</Score>
+<Sector et="1683.8">Massimo Stagnitta(53) set new best for sector 1</Sector>
+<Sector et="1683.8">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1683.8">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1683.8">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1683.8">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1683.8">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1683.8">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1683.8">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1683.9">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1683.9">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1683.9">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1684.0">Mikhail Eremin(52) set new best for sector 1</Sector>
+<Sector et="1684.1">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1684.1">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1684.1">Sam Imlay(45) set new best for sector 1</Sector>
+<Incident et="1684.2">Nash Anderson(46) reported contact (512.10) with Immovable</Incident>
+<Score et="1685.2">Adam Speed(50) lap=0 point=2 t=-1.000 et=1685.160</Score>
+<Sector et="1687.2">Adam Speed(50) set new best for sector 3</Sector>
+<Score et="1687.2">Euan House(40) lap=1 point=2 t=147.371 et=1687.120</Score>
+<Sector et="1687.2">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1687.2">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1687.2">Massimo Stagnitta(53) set new best for sector 3</Sector>
+<Sector et="1687.2">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1687.3">Mikhail Eremin(52) set new best for sector 3</Sector>
+<Sector et="1687.3">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1687.6">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1687.7">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1688.3">Thomas Fagnot(42) lap=1 point=2 t=-1.000 et=1688.200</Score>
+<Score et="1689.8">Nash Anderson(46) lap=1 point=0 t=-1.000 et=1689.660</Score>
+<Score et="1690.3">Dario Sogaro(41) lap=2 point=1 t=37.962 et=1690.300</Score>
+<Sector et="1690.4">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1690.4">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1690.4">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1690.4">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1690.4">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1690.5">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1690.5">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1690.7">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1692.7">Antonio Lavecchia(16) lap=7 point=0 t=-1.000 et=1692.680</Score>
+<Score et="1694.5">Conner White(51) lap=0 point=2 t=-1.000 et=1694.340</Score>
+<Score et="1695.7">Pierre-Andre Bulle(32) lap=4 point=0 t=-1.000 et=1695.841</Score>
+<Score et="1700.1">Frank Zakrzewski(1) lap=5 point=0 t=250.389 et=1700.020</Score>
+<Sector et="1700.1">Massimo Stagnitta(53) set new best for sector 1</Sector>
+<Sector et="1700.1">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1700.1">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1700.1">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1700.1">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1700.1">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1700.1">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1700.1">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1700.1">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1700.1">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1700.3">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1700.3">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1700.3">Mikhail Eremin(52) set new best for sector 1</Sector>
+<Sector et="1700.3">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1700.4">Sam Imlay(45) set new best for sector 1</Sector>
+<Sector et="1700.4">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1702.6">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1702.7">Adam Speed(50) set new best for sector 2</Sector>
+<Score et="1702.7">flav v(18) lap=6 point=1 t=39.100 et=1702.600</Score>
+<Sector et="1702.7">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1702.7">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1702.7">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1702.8">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1702.8">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1703.0">Nash Anderson(46) set new best for sector 2</Sector>
+<Sector et="1705.3">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1705.3">Massimo Stagnitta(53) set new best for sector 1</Sector>
+<Sector et="1705.3">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1705.3">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1705.3">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1705.3">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1705.3">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1705.4">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1705.4">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1705.4">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1705.4">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1705.4">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1705.5">Mikhail Eremin(52) set new best for sector 1</Sector>
+<Sector et="1705.6">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1705.6">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Sector et="1705.6">Sam Imlay(45) set new best for sector 1</Sector>
+<Sector et="1708.7">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1708.7">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1708.7">yannick galtro(48) set new best for sector 3</Sector>
+<Sector et="1708.7">Massimo Stagnitta(53) set new best for sector 3</Sector>
+<Sector et="1708.7">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1708.8">Mikhail Eremin(52) set new best for sector 3</Sector>
+<Sector et="1708.9">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1709.1">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1709.3">Sam Imlay(45) set new best for sector 3</Sector>
+<Score et="1711.7">Massimo Stagnitta(53) lap=0 point=1 t=-1.000 et=1711.660</Score>
+<Sector et="1711.9">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1711.9">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1711.9">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1711.9">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1711.9">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1712.0">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1712.1">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1712.2">Nash Anderson(46) set new best for sector 2</Sector>
+<Sector et="1714.4">Thomas Fagnot(42) set new best for sector 2</Sector>
+<Score et="1714.4">Chris Aebersold(20) lap=4 point=1 t=37.764 et=1714.360</Score>
+<Sector et="1714.4">Hazem Aloui(43) set new best for sector 2</Sector>
+<Sector et="1714.4">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1714.4">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1714.5">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1714.5">Euan House(40) set new best for sector 2</Sector>
+<Sector et="1714.5">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1714.5">Dmitriy Perov(44) set new best for sector 2</Sector>
+<Sector et="1714.5">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1714.5">Dario Sogaro(41) set new best for sector 2</Sector>
+<Sector et="1714.6">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1714.6">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1714.8">Nash Anderson(46) set new best for sector 2</Sector>
+<Score et="1715.8">Hazem Aloui(43) lap=1 point=1 t=-1.000 et=1715.720</Score>
+<Sector et="1717.4">yannick galtro(48) set new best for sector 3</Sector>
+<Score et="1717.4">Noah Rupp(21) lap=5 point=2 t=135.281 et=1717.280</Score>
+<Sector et="1717.4">Simon Rogowski(49) set new best for sector 3</Sector>
+<Sector et="1717.4">Massimo Stagnitta(53) set new best for sector 3</Sector>
+<Sector et="1717.4">Adam Speed(50) set new best for sector 3</Sector>
+<Sector et="1717.4">Xander bono(47) set new best for sector 3</Sector>
+<Sector et="1717.5">Mikhail Eremin(52) set new best for sector 3</Sector>
+<Sector et="1717.6">Conner White(51) set new best for sector 3</Sector>
+<Sector et="1717.6">Sam Imlay(45) set new best for sector 3</Sector>
+<Sector et="1717.7">Nash Anderson(46) set new best for sector 3</Sector>
+<Sector et="1721.6">Massimo Stagnitta(53) set new best for sector 1</Sector>
+<Sector et="1721.6">Adam Speed(50) set new best for sector 1</Sector>
+<Sector et="1721.6">Thomas Fagnot(42) set new best for sector 1</Sector>
+<Sector et="1721.6">Simon Rogowski(49) set new best for sector 1</Sector>
+<Sector et="1721.6">yannick galtro(48) set new best for sector 1</Sector>
+<Sector et="1721.6">Euan House(40) set new best for sector 1</Sector>
+<Sector et="1721.6">Xander bono(47) set new best for sector 1</Sector>
+<Sector et="1721.6">Hazem Aloui(43) set new best for sector 1</Sector>
+<Sector et="1721.7">Dmitriy Perov(44) set new best for sector 1</Sector>
+<Sector et="1721.7">Dario Sogaro(41) set new best for sector 1</Sector>
+<Sector et="1721.8">Conner White(51) set new best for sector 1</Sector>
+<Sector et="1721.8">Ferdinandus Andrian(39) set new best for sector 1</Sector>
+<Score et="1721.8">Cai Bingjun(38) lap=2 point=1 t=38.063 et=1721.640</Score>
+<Sector et="1721.9">Mikhail Eremin(52) set new best for sector 1</Sector>
+<Sector et="1721.9">Cai Bingjun(38) set new best for sector 1</Sector>
+<Sector et="1722.0">Sam Imlay(45) set new best for sector 1</Sector>
+<Sector et="1722.0">Nash Anderson(46) set new best for sector 1</Sector>
+<Sector et="1724.2">yannick galtro(48) set new best for sector 2</Sector>
+<Sector et="1724.2">Adam Speed(50) set new best for sector 2</Sector>
+<Sector et="1724.2">Simon Rogowski(49) set new best for sector 2</Sector>
+<Sector et="1724.2">Xander bono(47) set new best for sector 2</Sector>
+<Sector et="1724.2">Massimo Stagnitta(53) set new best for sector 2</Sector>
+<Sector et="1724.3">Mikhail Eremin(52) set new best for sector 2</Sector>
+<Sector et="1724.4">Conner White(51) set new best for sector 2</Sector>
+<Sector et="1724.5">Nash Anderson(46) set new best for sector 2</Sector>
+</Stream>
+<MostLapsCompleted>7</MostLapsCompleted>
+<Driver>
+<Name>Driver 2094</Name>
+<Connected>1</Connected>
+<VehFile>155_24_SORABB7F1C1.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Spirit Of Race 2024 #155:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>155</CarNumber>
+<TeamName>Spirit Of Race</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>1</Position>
+<ClassPosition>1</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="24" et="--.---" topspeed="280.17" fuel="0.082" fuelUsed="0.593" ve="0.906" veUsed="0.094" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="2" et="660.5200" s1="38.1409" s2="95.4722" s3="108.9395" topspeed="280.62" fuel="0.020" fuelUsed="0.063" ve="0.812" veUsed="0.094" twfl="0.957" twfr="0.965" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">242.5525</Lap>
+<Lap num="3" p="2" et="903.0600" topspeed="236.03" fuel="0.141" fuelUsed="-0.122" ve="1.000" veUsed="-0.188" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<BestLapTime>242.5525</BestLapTime>
+<Laps>3</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0429</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_F1E39333.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WE2</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>2</Position>
+<ClassPosition>2</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="17" et="--.---" topspeed="279.72" fuel="0.192" fuelUsed="0.375" ve="0.337" veUsed="0.663" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="3" et="755.9800" s1="38.1852" s2="95.2425" s3="109.3855" topspeed="281.07" fuel="0.141" fuelUsed="0.051" ve="0.243" veUsed="0.094" twfl="0.961" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">242.8132</Lap>
+<Lap num="3" p="3" et="998.7800" s1="43.4290" topspeed="281.52" fuel="0.565" fuelUsed="-0.424" ve="0.431" veUsed="-0.188" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="2" et="1230.3439" topspeed="281.07" fuel="0.192" fuelUsed="0.373" ve="0.337" veUsed="0.094" twfl="0.984" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<BestLapTime>242.8132</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0577</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>3</Position>
+<ClassPosition>3</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="--.---" topspeed="276.57" fuel="0.227" fuelUsed="0.423" ve="0.349" veUsed="0.651" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="3" et="1408.9399" s1="38.2321" s2="95.4740" s3="109.6810" topspeed="280.17" fuel="0.169" fuelUsed="0.059" ve="0.251" veUsed="0.098" twfl="0.976" twfr="0.980" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">243.3871</Lap>
+<BestLapTime>243.3871</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0379</Name>
+<Connected>1</Connected>
+<VehFile>81_24_TFS_F0B5E0D0.VEH</VehFile>
+<UpgradeCode>33130000 00000000 00000000 00000000</UpgradeCode>
+<VehName>TF Sport #81:LM</VehName>
+<Category>WEC 2024, GT3, Chevrolet Corvette Z06 LMGT3.R</Category>
+<CarType>Chevrolet Corvette Z06 LMGT3.R</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>81</CarNumber>
+<TeamName>TF Sport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>4</Position>
+<ClassPosition>4</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="274.32" fuel="0.286" fuelUsed="0.347" ve="0.455" veUsed="0.545" twfl="0.988" twfr="0.992" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="4" et="1438.6801" s1="38.8611" s2="95.9589" s3="110.0751" topspeed="274.32" fuel="0.227" fuelUsed="0.059" ve="0.361" veUsed="0.094" twfl="0.980" twfr="0.980" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">244.8950</Lap>
+<BestLapTime>244.8950</BestLapTime>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1473</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>5</Position>
+<ClassPosition>5</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="9" et="--.---" topspeed="277.92" fuel="0.318" fuelUsed="0.332" ve="0.482" veUsed="0.518" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="10" et="573.0000" s1="39.6841" topspeed="277.92" fuel="0.259" fuelUsed="0.059" ve="0.392" veUsed="0.090" twfl="0.973" twfr="0.976" twrl="0.980" twrr="0.980" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="11" et="825.4800" s1="38.4401" s2="117.3030" s3="119.9509" topspeed="274.77" fuel="0.200" fuelUsed="0.059" ve="0.294" veUsed="0.098" twfl="0.941" twfr="0.957" twrl="0.945" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium">275.6940</Lap>
+<Lap num="4" p="7" et="1101.1801" s1="38.5278" topspeed="279.72" fuel="0.141" fuelUsed="0.059" ve="0.200" veUsed="0.094" twfl="0.925" twfr="0.941" twrl="0.937" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="5" p="3" et="1348.2600" s1="38.3004" s2="96.9601" s3="110.9780" topspeed="278.82" fuel="0.082" fuelUsed="0.059" ve="0.106" veUsed="0.094" twfl="0.910" twfr="0.929" twrl="0.925" twrr="0.937" fcompound="0,Medium" rcompound="0,Medium">246.2385</Lap>
+<BestLapTime>246.2385</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="5">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1648</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>6</Position>
+<ClassPosition>6</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="24" et="--.---" topspeed="277.02" fuel="0.255" fuelUsed="0.395" ve="0.388" veUsed="0.612" twfl="0.984" twfr="0.980" twrl="0.984" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="20" et="750.3400" s1="39.0826" topspeed="280.17" fuel="0.192" fuelUsed="0.063" ve="0.294" veUsed="0.094" twfl="0.973" twfr="0.973" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="16" et="997.6400" s1="38.4109" topspeed="281.98" fuel="0.133" fuelUsed="0.059" ve="0.196" veUsed="0.098" twfl="0.957" twfr="0.961" twrl="0.961" twrr="0.957" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="4" et="1244.8800" s1="39.0981" s2="96.0975" s3="111.0973" topspeed="281.07" fuel="0.071" fuelUsed="0.063" ve="0.098" veUsed="0.098" twfl="0.941" twfr="0.945" twrl="0.949" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium">246.2930</Lap>
+<BestLapTime>246.2930</BestLapTime>
+<Laps>4</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0848</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>7</Position>
+<ClassPosition>7</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="4" et="--.---" topspeed="279.72" fuel="0.588" fuelUsed="0.062" ve="0.902" veUsed="0.098" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="8" et="695.4800" s1="40.5717" s2="97.8502" s3="113.7015" topspeed="279.72" fuel="0.525" fuelUsed="0.063" ve="0.804" veUsed="0.098" twfl="0.980" twfr="0.980" twrl="0.984" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">252.1234</Lap>
+<Lap num="3" p="8" et="947.6000" s1="39.3995" s2="97.7009" s3="114.2750" topspeed="278.82" fuel="0.467" fuelUsed="0.059" ve="0.706" veUsed="0.098" twfl="0.969" twfr="0.969" twrl="0.976" twrr="0.976" fcompound="0,Medium" rcompound="0,Medium">251.3754</Lap>
+<Lap num="4" p="4" et="1198.9800" s1="39.4719" s2="97.3192" s3="113.8717" topspeed="279.27" fuel="0.404" fuelUsed="0.063" ve="0.608" veUsed="0.098" twfl="0.957" twfr="0.957" twrl="0.973" twrr="0.969" fcompound="0,Medium" rcompound="0,Medium">250.6628</Lap>
+<Lap num="5" p="7" et="1449.6400" s1="39.2982" s2="98.0510" s3="113.0399" topspeed="279.27" fuel="0.345" fuelUsed="0.059" ve="0.510" veUsed="0.098" twfl="0.945" twfr="0.945" twrl="0.965" twrr="0.961" fcompound="0,Medium" rcompound="0,Medium">250.3892</Lap>
+<BestLapTime>250.3892</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="5">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1983</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>8</Position>
+<ClassPosition>8</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="--.---" topspeed="277.92" fuel="0.592" fuelUsed="0.058" ve="0.910" veUsed="0.090" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="18" et="600.3200" s1="39.2462" s2="96.9709" topspeed="279.72" fuel="0.651" fuelUsed="-0.059" ve="1.000" veUsed="-0.090" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="17" et="787.1922" topspeed="279.72" fuel="0.651" fuelUsed="0.000" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="13" et="1044.8311" topspeed="279.27" fuel="0.592" fuelUsed="0.059" ve="0.906" veUsed="0.094" twfl="0.984" twfr="0.992" twrl="0.980" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="5" p="5" et="1329.4000" s1="38.4971" s2="102.2567" s3="111.8475" topspeed="279.72" fuel="0.533" fuelUsed="0.059" ve="0.812" veUsed="0.094" twfl="0.973" twfr="0.980" twrl="0.969" twrr="0.973" fcompound="0,Medium" rcompound="0,Medium">252.6013</Lap>
+<BestLapTime>252.6013</BestLapTime>
+<Laps>5</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="5">PlayerControl,Clutch</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0213</Name>
+<Connected>1</Connected>
+<VehFile>66_24_JMW_3051A6BA.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>JMW Motorsport 2024 2024 #66:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>66</CarNumber>
+<TeamName>JMW Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>9</Position>
+<ClassPosition>9</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="14" et="--.---" topspeed="279.72" fuel="0.290" fuelUsed="0.385" ve="0.427" veUsed="0.573" twfl="0.980" twfr="0.976" twrl="0.984" twrr="0.973" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="14" et="549.7600" topspeed="234.68" fuel="0.675" fuelUsed="-0.384" ve="0.522" veUsed="-0.094" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="15" et="583.3628" topspeed="279.72" fuel="0.290" fuelUsed="0.384" ve="0.427" veUsed="0.094" twfl="0.988" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="16" et="867.0800" s1="38.1263" s2="96.4634" topspeed="280.17" fuel="0.675" fuelUsed="-0.384" ve="0.522" veUsed="-0.094" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="5" p="10" et="1094.8323" topspeed="280.17" fuel="0.290" fuelUsed="0.384" ve="0.427" veUsed="0.094" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="6" p="8" et="1366.5800" s1="39.2664" topspeed="236.03" fuel="0.675" fuelUsed="-0.384" ve="0.522" veUsed="-0.094" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="7" p="9" et="1422.1699" topspeed="279.72" fuel="0.290" fuelUsed="0.384" ve="0.427" veUsed="0.094" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>7</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="7">PlayerControl,Clutch,AutoLift,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0809</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_C8F1B81C.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>10</Position>
+<ClassPosition>10</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="105" et="--.---" topspeed="0.00" fuel="0.567" fuelUsed="0.000" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="15,N/A" rcompound="15,N/A">--.----</Lap>
+<Lap num="2" p="15" et="--.---" topspeed="279.27" fuel="0.565" fuelUsed="0.435" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="3" p="16" et="797.1762" topspeed="195.94" fuel="0.565" fuelUsed="0.000" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="16" et="851.2375" topspeed="279.72" fuel="0.565" fuelUsed="0.000" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="5" p="12" et="1079.5710" topspeed="279.27" fuel="0.565" fuelUsed="0.000" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="6" p="9" et="1332.7089" topspeed="279.27" fuel="0.514" fuelUsed="0.051" ve="0.906" veUsed="0.094" twfl="0.984" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>6</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
+<ControlAndAids startLap="2" endLap="6">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0367</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>11</Position>
+<ClassPosition>11</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="25" et="--.---" topspeed="277.02" fuel="0.588" fuelUsed="0.062" ve="0.902" veUsed="0.098" twfl="0.984" twfr="0.988" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="25" et="738.9600" topspeed="275.22" fuel="0.651" fuelUsed="-0.063" ve="1.000" veUsed="-0.098" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2161</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>12</Position>
+<ClassPosition>12</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="27" et="--.---" topspeed="277.47" fuel="0.588" fuelUsed="0.062" ve="0.906" veUsed="0.094" twfl="0.980" twfr="0.984" twrl="0.988" twrr="0.988" fcompound="0,Medium" rcompound="0,Medium" pit="1">--.----</Lap>
+<Lap num="2" p="20" et="792.5807" topspeed="261.26" fuel="0.588" fuelUsed="0.000" ve="0.902" veUsed="0.004" twfl="0.949" twfr="0.945" twrl="0.961" twrr="0.953" fcompound="0,Medium" rcompound="0,Medium" pit="1">--.----</Lap>
+<Lap num="3" p="12" et="1125.3346" topspeed="277.98" fuel="0.592" fuelUsed="-0.004" ve="0.906" veUsed="-0.004" twfl="0.937" twfr="0.933" twrl="0.953" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="4" p="12" et="1488.3674" s1="40.9388" s2="99.0618" topspeed="281.07" fuel="0.651" fuelUsed="-0.059" ve="1.000" veUsed="-0.094" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>4</Laps>
+<Pitstops>2</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0310</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_6CBE4475.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:WEC</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>13</Position>
+<ClassPosition>13</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 0790</Name>
+<Connected>1</Connected>
+<VehFile>59_24_UNIT78FD2ADC.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #59:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>59</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>14</Position>
+<ClassPosition>14</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="22" et="--.---" topspeed="277.47" fuel="0.651" fuelUsed="-0.001" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Lap num="2" p="15" et="1278.6647" topspeed="277.92" fuel="0.592" fuelUsed="0.059" ve="0.910" veUsed="0.090" twfl="0.988" twfr="0.980" twrl="0.988" twrr="0.984" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>2</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="2">PlayerControl</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0751</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>15</Position>
+<ClassPosition>15</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="16" et="--.---" topspeed="274.77" fuel="0.592" fuelUsed="0.058" ve="0.910" veUsed="0.090" twfl="0.980" twfr="0.949" twrl="0.957" twrr="0.945" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2555</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>16</Position>
+<ClassPosition>16</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="19" et="--.---" topspeed="277.92" fuel="0.596" fuelUsed="0.054" ve="0.914" veUsed="0.086" twfl="0.992" twfr="0.992" twrl="0.996" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium" pit="1">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>1</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 1010</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_F1E39333.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:WE2</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>17</Position>
+<ClassPosition>17</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="--.---" topspeed="280.17" fuel="0.275" fuelUsed="0.292" ve="1.000" veUsed="0.000" twfl="1.000" twfr="1.000" twrl="1.000" twrr="1.000" fcompound="0,Medium" rcompound="0,Medium" pit="1">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 0638</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>18</Position>
+<ClassPosition>18</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="21" et="--.---" topspeed="278.82" fuel="0.588" fuelUsed="0.062" ve="0.906" veUsed="0.094" twfl="0.992" twfr="0.992" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2351</Name>
+<Connected>1</Connected>
+<VehFile>66_24_JMW_3051A6BA.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>JMW Motorsport 2024 2024 #66:LM</VehName>
+<Category>WEC 2024, GT3, Ferrari 296 LMGT3</Category>
+<CarType>Ferrari 296 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>66</CarNumber>
+<TeamName>JMW Motorsport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>19</Position>
+<ClassPosition>19</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 1932</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>20</Position>
+<ClassPosition>20</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Lap num="1" p="20" et="--.---" topspeed="278.37" fuel="0.090" fuelUsed="0.476" ve="0.157" veUsed="0.843" twfl="0.988" twfr="0.988" twrl="0.992" twrr="0.992" fcompound="0,Medium" rcompound="0,Medium">--.----</Lap>
+<Laps>1</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+<ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
+</Driver>
+<Driver>
+<Name>Driver 2742</Name>
+<Connected>1</Connected>
+<VehFile>95_24_UNITE72F634D.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #95:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>95</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>21</Position>
+<ClassPosition>21</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 2755</Name>
+<Connected>1</Connected>
+<VehFile>95_24_UNITE72F634D.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>United Autosports 2024 #95:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>95</CarNumber>
+<TeamName>United Autosports</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>22</Position>
+<ClassPosition>22</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 2436</Name>
+<Connected>1</Connected>
+<VehFile>70_24_INCEE7C900BF.VEH</VehFile>
+<UpgradeCode>66060000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Inception Racing 2024 #70:LM</VehName>
+<Category>WEC 2024, GT3, McLaren 720S LMGT3 Evo</Category>
+<CarType>McLaren 720S LMGT3 Evo</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>70</CarNumber>
+<TeamName>Inception Racing</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>23</Position>
+<ClassPosition>23</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 0023</Name>
+<Connected>1</Connected>
+<VehFile>46_24_WRT_C8F1B81C.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #46:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>46</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>24</Position>
+<ClassPosition>24</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 0487</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>25</Position>
+<ClassPosition>25</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 1882</Name>
+<Connected>1</Connected>
+<VehFile>31_24_WRT_F2B895A5.VEH</VehFile>
+<UpgradeCode>33030000 00000000 00000000 00000000</UpgradeCode>
+<VehName>Team WRT 2024 #31:LM</VehName>
+<Category>WEC 2024, GT3, BMW M4 LMGT3</Category>
+<CarType>BMW M4 LMGT3</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>31</CarNumber>
+<TeamName>Team WRT</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>26</Position>
+<ClassPosition>26</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+<Driver>
+<Name>Driver 1726</Name>
+<Connected>1</Connected>
+<VehFile>81_24_TFS_F0B5E0D0.VEH</VehFile>
+<UpgradeCode>33130000 00000000 00000000 00000000</UpgradeCode>
+<VehName>TF Sport #81:LM</VehName>
+<Category>WEC 2024, GT3, Chevrolet Corvette Z06 LMGT3.R</Category>
+<CarType>Chevrolet Corvette Z06 LMGT3.R</CarType>
+<CarClass>GT3</CarClass>
+<CarNumber>81</CarNumber>
+<TeamName>TF Sport</TeamName>
+<isPlayer>1</isPlayer>
+<ServerScored>1</ServerScored>
+<Position>27</Position>
+<ClassPosition>27</ClassPosition>
+<LapRankIncludingDiscos>28</LapRankIncludingDiscos>
+<Laps>0</Laps>
+<Pitstops>0</Pitstops>
+<FinishStatus>None</FinishStatus>
+</Driver>
+</Practice1>
+</RaceResults>
+</rFactorXML>

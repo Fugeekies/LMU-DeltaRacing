@@ -17,8 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="..\testAssets\Results\2025_09_20_19_03_47-43P1.xml">
-      <Link>TestAssets\Results\2025_09_20_19_03_47-43P1.xml</Link>
+    <Content Include="..\..\assets\Results\*.xml">
+      <Link>assets\Results\%(Filename)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
