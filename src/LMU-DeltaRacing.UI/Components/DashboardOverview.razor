@@ -40,16 +40,16 @@
 <section class="summary-grid" aria-label="Résumé des résultats">
     <article class="summary-card">
         <span class="summary-label">SESSIONS IMPORTÉES</span>
-        <strong class="summary-value">@state.Sessions.Count</strong>
-        <span class="summary-detail">Historique disponible</span>
+        <strong class="summary-value">@playerSessions.Count</strong>
+        <span class="summary-detail">Sessions de @GetDriverLabel()</span>
     </article>
     <article class="summary-card summary-card-accent">
         <span class="summary-label">DERNIÈRE SESSION</span>
         <strong class="summary-value summary-value-text">
-            @(DashboardPresentation.OrderSessions(state.Sessions).FirstOrDefault()?.TrackVenue ?? "—")
+            @(DashboardPresentation.OrderSessions(playerSessions).FirstOrDefault()?.TrackVenue ?? "—")
         </strong>
         <span class="summary-detail">
-            @(DashboardPresentation.OrderSessions(state.Sessions).FirstOrDefault()?.StartedAt.ToString("dd/MM/yyyy HH:mm") ?? "Aucune session")
+            @(DashboardPresentation.OrderSessions(playerSessions).FirstOrDefault()?.StartedAt.ToString("dd/MM/yyyy HH:mm") ?? "Aucune session")
         </span>
     </article>
     <article class="summary-card">
@@ -81,24 +81,24 @@
         <div class="panel-heading">
             <div>
                 <p class="eyebrow">ARCHIVES DE COURSE</p>
-                <h2>Sessions récentes</h2>
+                <h2>Sessions récentes de @GetDriverLabel()</h2>
             </div>
-            <span class="count-badge">@state.Sessions.Count</span>
+            <span class="count-badge">@playerSessions.Count</span>
         </div>
 
-        @if (state.IsLoading && state.Sessions.Count == 0)
+        @if (state.IsLoading && playerSessions.Count == 0)
         {
             <div class="empty-state">
                 <span class="loading-spinner" aria-hidden="true"></span>
                 <p>Lecture des fichiers de résultats…</p>
             </div>
         }
-        else if (state.Sessions.Count == 0)
+        else if (playerSessions.Count == 0)
         {
             <div class="empty-state">
                 <span class="empty-icon" aria-hidden="true">○</span>
-                <h3>Aucune session importée</h3>
-                <p>Ajoutez des fichiers XML LMU au dossier de résultats configuré. Les nouveaux fichiers seront détectés automatiquement.</p>
+                <h3>Aucune session pour ce pilote</h3>
+                <p>Les sessions contenant le pilote sélectionné apparaîtront ici.</p>
             </div>
         }
         else
@@ -111,12 +111,13 @@
                             <th scope="col">CIRCUIT</th>
                             <th scope="col">ÉVÉNEMENT</th>
                             <th scope="col">SESSION</th>
-                            <th scope="col" class="numeric-cell">PILOTES</th>
+                            <th scope="col">VOITURE</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var session in DashboardPresentation.OrderSessions(state.Sessions))
+                        @foreach (var session in DashboardPresentation.OrderSessions(playerSessions))
                         {
+                            var driver = DriverProfile.FindDriver(session, state.UserName);
                             <tr class="session-row">
                                 <td class="date-cell">@session.StartedAt.ToString("dd/MM/yyyy HH:mm")</td>
                                 <td class="track-cell">
@@ -125,7 +126,7 @@
                                 </td>
                                 <td>@session.TrackEvent</td>
                                 <td><span class="session-type">@session.SessionType</span></td>
-                                <td class="numeric-cell">@session.Drivers.Count</td>
+                                <td>@(driver?.CarType ?? "—")</td>
                             </tr>
                         }
                     </tbody>
@@ -137,6 +138,10 @@
 
 @code {
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyList<Session> playerSessions => DriverProfile.FilterSessions(state.Sessions, state.UserName);
+
+    private string GetDriverLabel() =>
+        string.IsNullOrWhiteSpace(state.UserName) ? "le pilote sélectionné" : state.UserName;
 
     protected override void OnInitialized()
     {

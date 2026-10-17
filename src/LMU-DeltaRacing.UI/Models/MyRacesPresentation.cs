@@ -11,7 +11,7 @@ public static class MyRacesPresentation
     /// Combines qualifying and race results and calculates deltas against the previous
     /// matching session for each circuit, category, and vehicle.
     /// </summary>
-    public static IReadOnlyList<MyRaceRecord> CreateRecords(IEnumerable<Session> sessions)
+    public static IReadOnlyList<MyRaceRecord> CreateRecords(IEnumerable<Session> sessions, string? userName)
     {
         ArgumentNullException.ThrowIfNull(sessions);
 
@@ -24,7 +24,7 @@ public static class MyRacesPresentation
                 continue;
             }
 
-            var driver = session.Drivers.FirstOrDefault(driver => driver.IsPlayer);
+            var driver = DriverProfile.FindDriver(session, userName);
             if (driver is null)
             {
                 continue;

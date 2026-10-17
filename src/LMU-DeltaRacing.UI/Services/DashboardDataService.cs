@@ -12,14 +12,17 @@ namespace LMU_DeltaRacing.UI.Services;
 public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 {
     private readonly object stateLock = new();
+    private readonly object userNameLock = new();
     private readonly SemaphoreSlim reloadLock = new(1, 1);
     private readonly IConfiguration configuration;
     private readonly ISessionImportService importer;
     private readonly ISessionRepository repository;
+    private readonly DashboardSettingsStore settingsStore;
     private readonly ILogger<DashboardDataService> logger;
     private readonly ILogger<ResultsDirectoryWatcher> watcherLogger;
     private readonly CancellationTokenSource cancellation = new();
     private IReadOnlyList<Session> sessions = [];
+    private IReadOnlyList<DriverFrequency> driverFrequencies = [];
     private IReadOnlyList<SessionImportResult> failures = [];
     private ResultsDirectoryWatcher? watcher;
     private Task? initializationTask;
@@ -29,6 +32,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private int filesLoaded;
     private string? errorMessage;
     private string? resultsDirectory;
+    private string? userName;
 
     /// <summary>
     /// Creates the startup loader and live results monitor.
@@ -38,19 +42,23 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         ISessionImportService importer,
         ISessionRepository repository,
         ILogger<DashboardDataService> logger,
-        ILogger<ResultsDirectoryWatcher> watcherLogger)
+        ILogger<ResultsDirectoryWatcher> watcherLogger,
+        DashboardSettingsStore settingsStore)
     {
         ArgumentNullException.ThrowIfNull(configuration);
         ArgumentNullException.ThrowIfNull(importer);
         ArgumentNullException.ThrowIfNull(repository);
         ArgumentNullException.ThrowIfNull(logger);
         ArgumentNullException.ThrowIfNull(watcherLogger);
+        ArgumentNullException.ThrowIfNull(settingsStore);
 
         this.configuration = configuration;
         this.importer = importer;
         this.repository = repository;
         this.logger = logger;
         this.watcherLogger = watcherLogger;
+        this.settingsStore = settingsStore;
+        userName = configuration["LMU:UserName"]?.Trim();
     }
 
     /// <summary>
@@ -75,9 +83,47 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     errorMessage,
                     sessions,
                     failures,
-                    resultsDirectory);
+                    resultsDirectory)
+                {
+                    UserName = userName,
+                    DriverFrequencies = driverFrequencies
+                };
             }
         }
+    }
+
+    /// <summary>
+    /// Saves the selected driver and refreshes all views using the new profile.
+    /// </summary>
+    public void SelectUserName(string selectedUserName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(selectedUserName);
+
+        lock (userNameLock)
+        {
+            var normalizedName = selectedUserName.Trim();
+            lock (stateLock)
+            {
+                var candidate = driverFrequencies.FirstOrDefault(driver =>
+                    string.Equals(driver.Name, normalizedName, StringComparison.OrdinalIgnoreCase));
+                if (candidate is null)
+                {
+                    throw new ArgumentException(
+                        "The selected driver is not present in the imported results.",
+                        nameof(selectedUserName));
+                }
+
+                normalizedName = candidate.Name;
+            }
+
+            settingsStore.SaveUserName(normalizedName);
+            lock (stateLock)
+            {
+                userName = normalizedName;
+            }
+        }
+
+        NotifyStateChanged();
     }
 
     /// <summary>
@@ -230,6 +276,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 errorMessage = null;
                 resultsDirectory = status.DirectoryPath;
                 sessions = [];
+                driverFrequencies = [];
                 failures = [];
             }
 
@@ -268,8 +315,14 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
             lock (stateLock)
             {
-                isLoading = false;
                 sessions = repository.GetAll().ToArray();
+                driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
+            }
+
+            EnsureUserNameSelected();
+            lock (stateLock)
+            {
+                isLoading = false;
             }
 
             NotifyStateChanged();
@@ -287,7 +340,8 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or ArgumentException
-                or NotSupportedException or InvalidOperationException or System.Security.SecurityException)
+                or NotSupportedException or InvalidOperationException or System.Security.SecurityException
+                or System.Text.Json.JsonException)
         {
             if (nextWatcher is not null)
             {
@@ -331,6 +385,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private void OnImportCompleted(SessionImportResult result)
     {
         ApplyImportResult(result);
+        EnsureUserNameSelected();
         NotifyStateChanged();
     }
 
@@ -344,6 +399,36 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
             }
 
             sessions = repository.GetAll().ToArray();
+            if (!isLoading)
+            {
+                driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
+            }
+        }
+    }
+
+    private void EnsureUserNameSelected()
+    {
+        lock (userNameLock)
+        {
+            string detectedName;
+            lock (stateLock)
+            {
+                if (!string.IsNullOrWhiteSpace(userName) || driverFrequencies.Count == 0)
+                {
+                    return;
+                }
+
+                detectedName = driverFrequencies[0].Name;
+            }
+
+            settingsStore.SaveUserName(detectedName);
+            lock (stateLock)
+            {
+                if (string.IsNullOrWhiteSpace(userName))
+                {
+                    userName = detectedName;
+                }
+            }
         }
     }
 
