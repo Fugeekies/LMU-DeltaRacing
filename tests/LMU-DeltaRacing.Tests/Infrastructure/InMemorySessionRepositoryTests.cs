@@ -31,4 +31,27 @@ public sealed class InMemorySessionRepositoryTests
         repository.GetById(session.Id).Should().BeSameAs(session);
         repository.GetAll().Should().ContainSingle().Which.Should().BeSameAs(session);
     }
+
+    /// <summary>
+    /// Verifies that clearing the repository removes all sessions and identifiers.
+    /// </summary>
+    [TestMethod]
+    public void Clear_removes_all_sessions()
+    {
+        var repository = new InMemorySessionRepository();
+        var session = new Session(
+            Guid.NewGuid(),
+            DateTimeOffset.UnixEpoch,
+            "Circuit",
+            "Layout",
+            "Event",
+            "Race",
+            []);
+        repository.Save(session);
+
+        repository.Clear();
+
+        repository.GetAll().Should().BeEmpty();
+        repository.GetById(session.Id).Should().BeNull();
+    }
 }

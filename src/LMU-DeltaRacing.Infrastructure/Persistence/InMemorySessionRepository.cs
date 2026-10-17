@@ -22,5 +22,8 @@ public sealed class InMemorySessionRepository : ISessionRepository
     public IReadOnlyCollection<Session> GetAll() => sessions.Values.ToArray();
 
     /// <inheritdoc />
+    public void Clear() => sessions.Clear();
+
+    /// <inheritdoc />
     public Session? GetById(Guid id) => sessions.GetValueOrDefault(id);
 }

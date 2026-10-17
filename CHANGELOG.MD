@@ -10,6 +10,8 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Ajout d'une page Options pour choisir, valider, enregistrer et recharger le dossier des résultats, avec sélecteur de dossiers Windows natif et préférence de démarrage du watcher.
+- Déplacement de l'état d'import, des erreurs et de l'historique du dashboard sous les options, sans tableau de classement des pilotes.
 - Ajout du shell LMU avec navigation horizontale supérieure, fond dégradé, surfaces sombres translucides et état du watcher en direct.
 - Ajout dans la console Spectre de vues statistiques par circuit et par classe/équipe, avec deltas chronologiques des meilleurs tours valides et graphiques des mesures récentes.
 - Ajout au menu de lancement du choix des tableaux statistiques à afficher et exclusion des sessions Practice des statistiques.

@@ -5,15 +5,14 @@
 <div class="app-shell">
     <header class="topbar">
         <div class="topbar-inner">
-            <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
+            <a class="brand" href="/" aria-label="LMU DeltaRacing - options">
                 <span class="brand-mark" aria-hidden="true">LMU</span>
                 <span>DELTA<span class="brand-accent">RACING</span></span>
             </a>
             <nav class="primary-nav" aria-label="Navigation principale">
                 <NavLink href="/my-races">Mes courses</NavLink>
-                <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
                 <NavLink href="/race-details">Détail des courses</NavLink>
-                <NavLink href="/settings">Options</NavLink>
+                <NavLink href="/">Options</NavLink>
             </nav>
             <div class="system-status" role="status" aria-live="polite">
                 <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
@@ -39,7 +38,7 @@
 </div>
 
 @code {
-    private DashboardState state = new(true, 0, 0, false, null, [], []);
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
 
     protected override void OnInitialized()
     {

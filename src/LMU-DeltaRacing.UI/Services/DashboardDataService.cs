@@ -7,11 +7,12 @@ using LMU_DeltaRacing.UI.Models;
 namespace LMU_DeltaRacing.UI.Services;
 
 /// <summary>
-/// Loads the configured results on startup and keeps the dashboard in sync with new imports.
+/// Loads configured results and keeps the dashboard in sync with new imports.
 /// </summary>
 public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 {
     private readonly object stateLock = new();
+    private readonly SemaphoreSlim reloadLock = new(1, 1);
     private readonly IConfiguration configuration;
     private readonly ISessionImportService importer;
     private readonly ISessionRepository repository;
@@ -27,6 +28,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private int filesToLoad;
     private int filesLoaded;
     private string? errorMessage;
+    private string? resultsDirectory;
 
     /// <summary>
     /// Creates the startup loader and live results monitor.
@@ -72,8 +74,62 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     isWatching,
                     errorMessage,
                     sessions,
-                    failures);
+                    failures,
+                    resultsDirectory);
             }
+        }
+    }
+
+    /// <summary>
+    /// Resolves and checks a results directory without changing the active import or watcher.
+    /// </summary>
+    public ResultsDirectoryStatus CheckResultsDirectory(string? configuredDirectory)
+    {
+        try
+        {
+            var resolvedDirectory = ResultsDirectoryResolver.Resolve(
+                configuredDirectory,
+                AppContext.BaseDirectory);
+            var fileCount = Directory.EnumerateFiles(
+                resolvedDirectory,
+                "*.xml",
+                SearchOption.TopDirectoryOnly).Count();
+            return new ResultsDirectoryStatus(true, resolvedDirectory, fileCount, null);
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or ArgumentException
+                or NotSupportedException or InvalidOperationException or System.Security.SecurityException)
+        {
+            return new ResultsDirectoryStatus(
+                false,
+                string.IsNullOrWhiteSpace(configuredDirectory) ? null : configuredDirectory,
+                0,
+                exception.Message);
+        }
+    }
+
+    /// <summary>
+    /// Validates, reloads results from the selected directory, and starts its file watcher.
+    /// </summary>
+    public async Task<ResultsDirectoryStatus> ReloadResultsAsync(
+        string? configuredDirectory,
+        CancellationToken cancellationToken = default)
+    {
+        var status = CheckResultsDirectory(configuredDirectory);
+        if (!status.IsValid)
+        {
+            return status;
+        }
+
+        await reloadLock.WaitAsync(cancellationToken).ConfigureAwait(false);
+        try
+        {
+            return await ReloadResolvedResultsAsync(status, startWatcher: true, cancellationToken)
+                .ConfigureAwait(false);
+        }
+        finally
+        {
+            reloadLock.Release();
         }
     }
 
@@ -90,7 +146,9 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         cancellation.Cancel();
         if (watcher is not null)
         {
+            watcher.ImportCompleted -= OnImportCompleted;
             await watcher.DisposeAsync().ConfigureAwait(false);
+            watcher = null;
         }
 
         if (initializationTask is not null)
@@ -111,39 +169,93 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     {
         await StopAsync(CancellationToken.None).ConfigureAwait(false);
         cancellation.Dispose();
+        reloadLock.Dispose();
     }
 
     private async Task InitializeAsync(CancellationToken cancellationToken)
     {
+        var status = CheckResultsDirectory(configuration["LMU:ResultsDirectory"]);
+        if (!status.IsValid)
+        {
+            SetInitializationError(status.ErrorMessage ?? "The results directory is unavailable.");
+            return;
+        }
+
+        await reloadLock.WaitAsync(cancellationToken).ConfigureAwait(false);
         try
         {
-            var resultsDirectory = ResultsDirectoryResolver.Resolve(
-                configuration["LMU:ResultsDirectory"],
-                AppContext.BaseDirectory);
-            var files = Directory.EnumerateFiles(resultsDirectory, "*.xml", SearchOption.TopDirectoryOnly)
+            var watchOnStartup = configuration.GetValue("LMU:WatchResultsOnStartup", true);
+            await ReloadResolvedResultsAsync(status, watchOnStartup, cancellationToken)
+                .ConfigureAwait(false);
+        }
+        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+        {
+            logger.LogDebug("Dashboard initialization cancelled during shutdown");
+        }
+        finally
+        {
+            reloadLock.Release();
+        }
+    }
+
+    private async Task<ResultsDirectoryStatus> ReloadResolvedResultsAsync(
+        ResultsDirectoryStatus status,
+        bool startWatcher,
+        CancellationToken cancellationToken)
+    {
+        ResultsDirectoryWatcher? nextWatcher = null;
+        try
+        {
+            if (watcher is not null)
+            {
+                watcher.ImportCompleted -= OnImportCompleted;
+                await watcher.DisposeAsync().ConfigureAwait(false);
+                watcher = null;
+            }
+
+            var files = Directory.EnumerateFiles(
+                    status.DirectoryPath!,
+                    "*.xml",
+                    SearchOption.TopDirectoryOnly)
                 .OrderBy(filePath => Path.GetFileName(filePath), StringComparer.OrdinalIgnoreCase)
                 .ToArray();
 
+            repository.Clear();
             lock (stateLock)
             {
+                isLoading = true;
+                isWatching = false;
                 filesToLoad = files.Length;
-            }
-
-            var resultsWatcher = new ResultsDirectoryWatcher(resultsDirectory, importer, watcherLogger);
-            resultsWatcher.ImportCompleted += OnImportCompleted;
-            watcher = resultsWatcher;
-            await resultsWatcher.StartAsync(files, cancellationToken).ConfigureAwait(false);
-            lock (stateLock)
-            {
-                isWatching = true;
+                filesLoaded = 0;
+                errorMessage = null;
+                resultsDirectory = status.DirectoryPath;
+                sessions = [];
+                failures = [];
             }
 
             NotifyStateChanged();
 
+            if (startWatcher)
+            {
+                nextWatcher = new ResultsDirectoryWatcher(status.DirectoryPath!, importer, watcherLogger);
+                nextWatcher.ImportCompleted += OnImportCompleted;
+                await nextWatcher.StartAsync(files, cancellationToken).ConfigureAwait(false);
+                watcher = nextWatcher;
+                nextWatcher = null;
+                lock (stateLock)
+                {
+                    isWatching = true;
+                }
+
+                NotifyStateChanged();
+            }
+
             foreach (var file in files)
             {
                 cancellationToken.ThrowIfCancellationRequested();
-                ApplyImportResult(await Task.Run(() => importer.ImportFile(file), cancellationToken)
+                ApplyImportResult(await Task.Run(
+                        () => importer.ImportFile(file),
+                        cancellationToken)
                     .ConfigureAwait(false));
 
                 lock (stateLock)
@@ -161,24 +273,59 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
             }
 
             NotifyStateChanged();
+            return status with { XmlFileCount = files.Length };
         }
         catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
         {
-            logger.LogDebug("Dashboard initialization cancelled during shutdown");
+            if (nextWatcher is not null)
+            {
+                nextWatcher.ImportCompleted -= OnImportCompleted;
+                await nextWatcher.DisposeAsync().ConfigureAwait(false);
+            }
+
+            throw;
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or ArgumentException
-                or NotSupportedException or InvalidOperationException)
+                or NotSupportedException or InvalidOperationException or System.Security.SecurityException)
         {
-            logger.LogError(exception, "Could not initialize the dashboard results feed");
+            if (nextWatcher is not null)
+            {
+                nextWatcher.ImportCompleted -= OnImportCompleted;
+                await nextWatcher.DisposeAsync().ConfigureAwait(false);
+            }
+
+            if (watcher is not null)
+            {
+                watcher.ImportCompleted -= OnImportCompleted;
+                await watcher.DisposeAsync().ConfigureAwait(false);
+                watcher = null;
+            }
+
+            logger.LogError(exception, "Could not reload dashboard results from {ResultsDirectory}", status.DirectoryPath);
             lock (stateLock)
             {
                 isLoading = false;
+                isWatching = false;
                 errorMessage = exception.Message;
+                sessions = repository.GetAll().ToArray();
             }
 
             NotifyStateChanged();
+            return status with { IsValid = false, ErrorMessage = exception.Message };
         }
+    }
+
+    private void SetInitializationError(string message)
+    {
+        lock (stateLock)
+        {
+            isLoading = false;
+            errorMessage = message;
+        }
+
+        logger.LogError("Could not resolve the dashboard results directory: {ErrorMessage}", message);
+        NotifyStateChanged();
     }
 
     private void OnImportCompleted(SessionImportResult result)

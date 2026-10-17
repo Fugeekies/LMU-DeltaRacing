@@ -3,7 +3,7 @@ using LMU_DeltaRacing.Domain.Entities;
 namespace LMU_DeltaRacing.UI.Models;
 
 /// <summary>
-/// Defines stable presentation ordering for dashboard results.
+/// Defines stable presentation ordering for dashboard sessions.
 /// </summary>
 public static class DashboardPresentation
 {
@@ -19,16 +19,4 @@ public static class DashboardPresentation
     }
 
     /// <summary>
-    /// Orders drivers by finishing position, then by display name; missing positions appear last.
-    /// </summary>
-    /// <param name="session">The session to classify.</param>
-    /// <returns>The classified drivers.</returns>
-    public static IReadOnlyList<Driver> GetClassification(Session session)
-    {
-        ArgumentNullException.ThrowIfNull(session);
-        return session.Drivers
-            .OrderBy(driver => driver.Position ?? int.MaxValue)
-            .ThenBy(driver => driver.Name, StringComparer.CurrentCultureIgnoreCase)
-            .ToArray();
-    }
 }

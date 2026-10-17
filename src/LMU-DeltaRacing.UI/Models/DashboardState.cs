@@ -13,6 +13,7 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="ErrorMessage">A startup error, when results could not be loaded.</param>
 /// <param name="Sessions">The imported sessions.</param>
 /// <param name="ImportFailures">The failures observed during this run.</param>
+/// <param name="ResultsDirectory">The results directory currently being monitored.</param>
 public sealed record DashboardState(
     bool IsLoading,
     int FilesToLoad,
@@ -20,4 +21,5 @@ public sealed record DashboardState(
     bool IsWatching,
     string? ErrorMessage,
     IReadOnlyList<Session> Sessions,
-    IReadOnlyList<SessionImportResult> ImportFailures);
+    IReadOnlyList<SessionImportResult> ImportFailures,
+    string? ResultsDirectory);
