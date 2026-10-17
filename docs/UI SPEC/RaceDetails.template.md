@@ -3,6 +3,14 @@
 ### Description
 Analyse télémétrique et classement détaillé d'une course spécifique sélectionnée par l'utilisateur.
 
+### Spécifications fonctionnelles :
+* Sélecteur : Liste déroulante des sessions enregistrées.
+* Structure du Tableau : POS, Nom du coureur, Voiture, Secteur 1, Secteur 2, Secteur 3, Diff 1er.
+* Règles de couleurs WEC :
+  * Meilleur secteur absolu de la session : Fond violet #b066ff / badge 🟣.
+  * Meilleur secteur personnel du pilote : Fond vert #22c55e / badge 🟢.
+  * Temps standard : Texte jaune #eab308.
+
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐
