@@ -1,69 +1,83 @@
-# Directives Graphiques et Maquette UI - LMU-DeltaRacing
+# Spécification Visuelle & Design UI - LMU-DeltaRacing
 
-Ce document sert de référence visuelle et fonctionnelle pour la conception des composants de l'interface utilisateur Blazor de **LMU-DeltaRacing**, inspirée par l'identité officielle du championnat WEC et de *Le Mans Ultimate*.
-
----
-
-## 🎨 Charte Graphique & Code Couleurs WEC
-
-L'interface doit adopter une esthétique sombre (*Dark Racing Theme*), rappelant un mur des stands ou un logiciel d'ingénierie de course professionnel.
-
-### 1. Palette de Couleurs Principales
-- **Fond Principal (Background) :** `#0e1116` (Gris très sombre / Noir mat)
-- **Fond des Cartes / Panneaux (Cards/Surfaces) :** `#161b22` ou `#1f242c`
-- **Bordures & Séparateurs :** `#30363d` (Gris anthracite discret)
-- **Texte Principal :** `#f0f6fc` (Blanc cassé / très lisible)
-- **Texte Secondaire :** `#8b949e` (Gris clair pour les libellés)
-- **Accent Principal (Brand) :** `#3b82f6` (Bleu électrique LMU)
-
-### 2. Le Code Couleur Magique du Chronométrage (Secteurs & Deltas)
-Ces codes couleurs doivent impérativement être respectés pour l'affichage des temps au tour et des secteurs (*Timing Screen*) :
-- 🟣 **Violet (`#b066ff`)** : Meilleur secteur absolu de la session (*Session Best*).
-- 🟢 **Vert (`#22c55e`)** : Meilleur secteur personnel (*Personal Best*).
-- 🟡 **Jaune (`#eab308`)** : Secteur standard / correct.
-- 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps.
-
-### 3. Badges de Catégories WEC
-- **Hypercar :** Fond rouge foncé / texte blanc
-- **LMP2 :** Fond bleu vif / texte blanc
-- **LMGT3 :** Fond orange / texte noir ou blanc
+Ce document définit l'identité visuelle, la charte graphique et l'ergonomie de l'application **LMU-DeltaRacing**. L'interface est conçue pour offrir une expérience immersive sombre (*Dark Racing Theme*), rappelant l'univers de *Le Mans Ultimate* et les logiciels de télémétrie d'ingénierie de piste du FIA WEC.
 
 ---
 
-## 📐 Maquette du Dashboard Principal ("Le Mur des Stands")
+## 🎨 Identity & Charte Graphique
 
-Ci-dessous la structure visuelle attendue pour la vue d'accueil / tableau de bord général :
+### 1. Palette de Couleurs & Ambiance
+L'arrière-plan de l'application utilise un dégradé subtil passant d'un bleu nuit sombre (coin inférieur gauche) à un rouge bordeaux profond (coin supérieur droit), évoquant la charte officielle LMU :
+
+* **Fond Principal (Gradient Global) :** `linear-gradient(135deg, #0d1b2a 0%, #0e1116 50%, #3a0d18 100%)`
+* **Conteneurs / Cartes / Panneaux :** `rgba(14, 17, 22, 0.85)` avec flou d'arrière-plan (`backdrop-filter: blur(6px)`) et bordures fines `#30363d`.
+* **Header / Navigation :** `rgba(10, 12, 16, 0.95)` fixé en haut de page (`sticky top-0`).
+* **Texte Principal :** `#f0f6fc` (Blanc cassé haute lisibilité).
+* **Texte Secondaire :** `#8b949e` (Gris pour libellés et sous-titres).
+* **Accent Rouge LMU / WEC :** `#e11d48` (Utilisé pour le sous-lignage des onglets actifs et les boutons d'action).
+
+---
+
+### 2. Typographies
+* **Interface & Données :** `Inter`, `Roboto` ou police sans-serif système pour une lisibilité parfaite des chronos et données textuelles.
+* **Header & Onglets de Navigation :** `Oswald`, `Impact` ou police condensée en majuscules avec espacement des lettres (`letter-spacing: 0.05em`) pour reproduire le style officiel du site LMU.
+
+---
+
+### 3. Code Couleur Officiel du Chronométrage WEC (Secteurs & Deltas)
+Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux secteurs et aux écarts :
+* 🟣 **Violet (`#b066ff`)** : Meilleur secteur / chrono absolu de la session (*Session Best*).
+* 🟢 **Vert (`#22c55e`)** : Meilleur secteur / chrono personnel (*Personal Best*) ou amélioration de delta (n-1).
+* 🟡 **Jaune (`#eab308`)** : Secteur / chrono standard correct.
+* 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps ou régression de delta (n-1).
+
+---
+
+### 4. Badges de Catégories WEC
+* **Hypercar :** Fond bordeaux / rouge foncé (`#881337`), texte blanc.
+* **LMP2 :** Fond bleu vif (`#1d4ed8`), texte blanc.
+* **LMGT3 :** Fond orange / ambre (`#d97706`), texte blanc ou noir.
+
+---
+
+## 📂 Navigation & Templates des Vues (`UISpec/`)
+
+La structure de navigation est désormais **horizontale** et positionnée en haut de page. 
+
+Les maquettes visuelles ASCII détaillées ainsi que les règles métiers spécifiques de chaque menu sont formalisées dans les fichiers de spécifications dédiés situés dans le dossier `UISpec/` :
 
 ```text
-┌────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ 🏎️ LMU-DeltaRacing                      🟢 FileSystemWatcher : Actif (12 sessions en mémoire)  │
-├────────────────────────────────────────────────────────────────────────────────────────────────┤
-│ [ 📊 Dashboard ]    [ ⏱️ Timing Screen ]    [ 📈 Analyse & Delta ]    [ ⚙️ Configuration ]    │
-└────────────────────────────────────────────────────────────────────────────────────────────────┘
-
- ⚡ BIENVENUE DANS TON ESPACE INGÉNIEUR DE PISTE
-
- ┌──────────────────────────────┐  ┌──────────────────────────────┐  ┌──────────────────────────────┐
- │ 🕒 DERNIÈRE SESSION          │  │ ⏱️ TEMPS TOTAL PILOTÉ        │  │ 🛡️ INDICE DE PROPRETÉ        │
- │ 6H Spa-Francorchamps         │  │ 42h 18m                      │  │ 94.2%                        │
- │ Hypercar • Ferrari 499P      │  │ Équivalent 7 relais complets │  │ Moyenne des pénalités : Basse│
- └──────────────────────────────┘  └──────────────────────────────┘  └──────────────────────────────┘
-
- 📋 HISTORIQUE RÉCENT DES COURSES IMPORTÉES
-──────────────────────────────────────────────────────────────────────────────────────────────────
- Date / Heure       Circuit            Catégorie        Voiture              Pilotes   Meilleur Tour
-──────────────────────────────────────────────────────────────────────────────────────────────────
- 16/10/2026 18:00   Spa-Francorchamps  [ HYPERCAR ]     Ferrari 499P         24        2:02.451  👁️
- 15/10/2026 21:15   Le Mans (Circuit)  [   LMP2   ]     Oreca 07 Gibson      18        3:26.102  👁️
- 14/10/2026 19:30   Monza              [  LMGT3   ]     BMW M4 GT3           30        1:47.890  👁️
- 12/10/2026 14:00   Sebring            [ HYPERCAR ]     Toyota GR010         22        1:45.120  👁️
-──────────────────────────────────────────────────────────────────────────────────────────────────
+UISpec/
+├── 01_MesCourses.md         --> Spécification de la vue "Mes Courses"
+├── 02_ClassementCoureurs.md --> Spécification de la vue "Classement des Coureurs"
+├── 03_DetailCourses.md      --> Spécification de la vue "Détail des Courses"
+└── 04_Options.md            --> Spécification de la vue "Options / Paramètres"
 ```
+
+### Récapitulatif des 4 Menus Principaux :
+
+1. **🏎️ Mes Courses (`/my-races`)** *(Voir template `UISpec/01_MesCourses.md`)*
+   * Historique et progression personnelle groupés par circuit.
+   * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMGT3`).
+   * Calcul automatique du delta par rapport à la session précédente (n-1) à circuit, catégorie et voiture identiques.
+
+2. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template `UISpec/02_ClassementCoureurs.md`)*
+   * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec tous les pilotes affrontés.
+   * Nombre de courses affrontées, victoires, défaites et pourcentage de domination.
+
+3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template `UISpec/03_DetailCourses.md`)*
+   * Analyse télémétrique fine d'une session sélectionnée via une liste déroulante.
+   * Tableau par secteur avec application stricte des couleurs WEC (🟣, 🟢, 🟡) et écart avec le 1er.
+
+4. **⚙️ Options (`/settings`)** *(Voir template `UISpec/04_Options.md`)*
+   * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
+   * Sélecteur de dossier, indicateur d'état du `FileSystemWatcher` et options de démarrage.
 
 ---
 
-## 🛠️ Instructions d'implémentation pour l'UI Blazor
+## 🛠️ Instructions d'implémentation Blazor & CSS
 
-1. **Isolation des styles :** Utiliser des composants Razor modulaires avec des classes CSS dédiées ou Tailwind CSS si configuré.
-2. **Accessibilité & Contraste :** Le texte blanc sur fond sombre doit conserver un ratio de contraste élevé pour éviter la fatigue visuelle lors des sessions de simulation nocturnes.
-3. **Réactivité :** Les tableaux de timing et de sessions doivent supporter le défilement fluide (*scroll*) en cas de grilles de départ importantes (plus de 40 voitures).
+1. **Conformité aux Templates :** L'agent AI et les développeurs doivent suivre rigoureusement les wireframes ASCII et la disposition des colonnes définis dans le dossier `UISpec/`.
+2. **Performance des Grilles :** Utiliser la virtualisation Blazor (`<Virtualize>`) ou un défilement optimisé pour les grilles de temps comportant de nombreux pilotes (> 40 voitures).
+3. **Réactivité :** Les filtres et les sélecteurs doivent mettre à jour les tableaux sans rechargement complet de la page.
+4. **Traçabilité :** Chaque changement de vue ou de filtre doit émettre des logs structurés (OpenTelemetry/Serilog).
