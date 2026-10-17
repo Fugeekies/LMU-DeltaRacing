@@ -49,7 +49,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 
 ## Jalon — Première interface Blazor
 - [x] Mettre en place l'hébergement Blazor local, ouvert dans le navigateur par défaut et limité à `127.0.0.1`.
-- [x] Afficher la liste des sessions et le classement des pilotes.
+- [x] Afficher la liste des sessions importées.
 - [x] Gérer les états de chargement, d'erreur et les listes vides.
 
 ## Jalon — Packaging, Déploiement & Installeur Autonome
@@ -67,11 +67,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Intégrer l'indicateur d'état du `FileSystemWatcher` dans le Header.
 - [x] Appliquer le style des cartes sombres semi-transparentes avec effet de flou arrière-plan (`backdrop-filter: blur`).
 
- # Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
-- [ ] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
-- [ ] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
-- [ ] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
-- [ ] Déplacer le dashboard avec les imports réussi/échec ainsi que les session récente en dessous des options  
+## Jalon — UI : Menu "Options & Paramètres" (`Settings.razor`)
+- [x] Implémenter la vue de configuration du chemin des résultats XML (`UserData/Log/Results`).
+- [x] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
+- [x] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
+- [x] Déplacer le dashboard avec les imports réussi/échec ainsi que les session récente en dessous des options.
 
 ## Jalon — UI : Menu "Mes Courses" (`MyRaces.razor`)
 - [ ] Structurer la vue avec groupement par circuit.

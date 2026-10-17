@@ -44,6 +44,11 @@ builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
 builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
 builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
 builder.Services.AddSingleton<DashboardDataService>();
+builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
+    new DashboardSettingsStore(
+        (IConfigurationRoot)serviceProvider.GetRequiredService<IConfiguration>(),
+        Path.Combine(AppContext.BaseDirectory, "appsettings.json")));
+builder.Services.AddSingleton<WindowsFolderPicker>();
 builder.Services.AddHostedService(serviceProvider =>
     serviceProvider.GetRequiredService<DashboardDataService>());
 

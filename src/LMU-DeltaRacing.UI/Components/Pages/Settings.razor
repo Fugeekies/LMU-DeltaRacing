@@ -1,0 +1,214 @@
+@page "/"
+@page "/settings"
+@implements IDisposable
+@inject IConfiguration Configuration
+@inject DashboardDataService DashboardData
+@inject DashboardSettingsStore SettingsStore
+@inject WindowsFolderPicker FolderPicker
+
+<PageTitle>Options | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading settings-heading">
+    <div>
+        <p class="eyebrow">CONFIGURATION &amp; PARAMÈTRES</p>
+        <h1>Options</h1>
+        <p class="page-subtitle">Configurez la source des résultats et la surveillance des fichiers LMU.</p>
+    </div>
+</section>
+
+<section class="panel settings-panel" aria-labelledby="results-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">EMPLACEMENT DES FICHIERS DU JEU</p>
+            <h2 id="results-settings-heading">Dossier des résultats XML</h2>
+        </div>
+    </div>
+
+    <div class="settings-content">
+        <label class="settings-label" for="results-directory">
+            Chemin du dossier <span>(UserData/Log/Results)</span>
+        </label>
+        <div class="directory-picker">
+            <input id="results-directory"
+                   class="settings-input"
+                   type="text"
+                   @bind="resultsDirectory"
+                   @bind:after="ValidateSelectedDirectory"
+                   placeholder="@GetDefaultDirectoryPlaceholder()"
+                   autocomplete="off"
+                   spellcheck="false" />
+            <button class="button button-secondary"
+                    type="button"
+                    @onclick="BrowseForDirectoryAsync"
+                    disabled="@(!OperatingSystem.IsWindows() || isBusy)">
+                Parcourir…
+            </button>
+        </div>
+
+        @if (directoryStatus is not null)
+        {
+            <div class="directory-status @(directoryStatus.IsValid ? "status-valid" : "status-invalid")"
+                 role="status"
+                 aria-live="polite">
+                <span class="status-dot @(directoryStatus.IsValid ? "is-live" : "is-error")" aria-hidden="true"></span>
+                @if (directoryStatus.IsValid)
+                {
+                    <span>Dossier valide · @directoryStatus.XmlFileCount fichier(s) XML</span>
+                    <code>@directoryStatus.DirectoryPath</code>
+                }
+                else
+                {
+                    <span>Dossier introuvable ou illisible</span>
+                    <span>@directoryStatus.ErrorMessage</span>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="directory-status">
+                <span class="status-dot is-idle" aria-hidden="true"></span>
+                <span>Vérifiez ou choisissez un dossier de résultats.</span>
+            </div>
+        }
+
+        <div class="settings-actions">
+            <button class="button button-primary"
+                    type="button"
+                    @onclick="ReloadResultsAsync"
+                    disabled="@(isBusy || directoryStatus is { IsValid: false })">
+                @(isReloading ? "Chargement…" : "Tester la connexion & recharger")
+            </button>
+            @if (!OperatingSystem.IsWindows())
+            {
+                <span class="settings-help">Le sélecteur de dossiers natif est disponible sous Windows.</span>
+            }
+        </div>
+    </div>
+</section>
+
+<section class="panel settings-panel watcher-settings" aria-labelledby="watcher-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">SURVEILLANCE &amp; DÉMARRAGE</p>
+            <h2 id="watcher-settings-heading">Démarrage automatique</h2>
+        </div>
+    </div>
+    <div class="settings-content watcher-preference">
+        <label class="settings-checkbox">
+            <input type="checkbox" @bind="watchOnStartup" disabled="@isBusy" />
+            <span>Lancer la surveillance des fichiers XML automatiquement au démarrage de l’application</span>
+        </label>
+        <p class="settings-help">Ce réglage s’applique au prochain démarrage. Le bouton de rechargement active la surveillance immédiatement.</p>
+    </div>
+</section>
+
+<div class="settings-save-row">
+    <div class="settings-feedback" role="status" aria-live="polite">@feedbackMessage</div>
+    <button class="button button-primary save-button"
+            type="button"
+            @onclick="SaveSettings"
+            disabled="@(isBusy || directoryStatus is not { IsValid: true })">
+        Enregistrer
+    </button>
+</div>
+
+<section class="dashboard-below-settings" aria-label="État des imports et sessions récentes">
+    <DashboardOverview />
+</section>
+
+@code {
+    private string resultsDirectory = string.Empty;
+    private bool watchOnStartup = true;
+    private bool isBusy;
+    private bool isReloading;
+    private ResultsDirectoryStatus? directoryStatus;
+    private string? feedbackMessage;
+
+    protected override void OnInitialized()
+    {
+        resultsDirectory = Configuration["LMU:ResultsDirectory"] ?? string.Empty;
+        watchOnStartup = Configuration.GetValue("LMU:WatchResultsOnStartup", true);
+        directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
+    }
+
+    public void Dispose()
+    {
+    }
+
+    private string GetDefaultDirectoryPlaceholder() =>
+        DashboardData.Snapshot.ResultsDirectory
+        ?? "Détection automatique du dossier LMU";
+
+    private void ValidateSelectedDirectory()
+    {
+        directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
+        feedbackMessage = null;
+    }
+
+    private async Task BrowseForDirectoryAsync()
+    {
+        try
+        {
+            var selectedDirectory = await FolderPicker.PickFolderAsync(
+                directoryStatus?.DirectoryPath ?? resultsDirectory);
+            if (selectedDirectory is not null)
+            {
+                resultsDirectory = selectedDirectory;
+                ValidateSelectedDirectory();
+            }
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or PlatformNotSupportedException
+                or System.Runtime.InteropServices.COMException)
+        {
+            feedbackMessage = $"Impossible d’ouvrir le sélecteur de dossiers : {exception.Message}";
+        }
+    }
+
+    private async Task ReloadResultsAsync()
+    {
+        isBusy = true;
+        isReloading = true;
+        feedbackMessage = null;
+        try
+        {
+            directoryStatus = await DashboardData.ReloadResultsAsync(resultsDirectory);
+            feedbackMessage = directoryStatus.IsValid
+                ? $"Chargement terminé : {directoryStatus.XmlFileCount} fichier(s) traité(s). La surveillance est active."
+                : directoryStatus.ErrorMessage;
+        }
+        finally
+        {
+            isReloading = false;
+            isBusy = false;
+        }
+    }
+
+    private void SaveSettings()
+    {
+        isBusy = true;
+        feedbackMessage = null;
+        try
+        {
+            directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
+            if (directoryStatus.IsValid)
+            {
+                SettingsStore.SaveResultsSettings(resultsDirectory, watchOnStartup);
+                feedbackMessage = "Options enregistrées dans appsettings.json.";
+            }
+            else
+            {
+                feedbackMessage = directoryStatus.ErrorMessage;
+            }
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = $"Impossible d’enregistrer les options : {exception.Message}";
+        }
+        finally
+        {
+            isBusy = false;
+        }
+    }
+}

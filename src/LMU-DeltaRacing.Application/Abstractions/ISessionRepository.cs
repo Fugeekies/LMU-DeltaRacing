@@ -20,6 +20,11 @@ public interface ISessionRepository
     IReadOnlyCollection<Session> GetAll();
 
     /// <summary>
+    /// Removes all sessions from the repository.
+    /// </summary>
+    void Clear();
+
+    /// <summary>
     /// Finds a stored session by its identifier.
     /// </summary>
     /// <param name="id">The session identifier.</param>

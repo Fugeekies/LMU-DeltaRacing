@@ -76,6 +76,132 @@ public sealed class DashboardDataServiceTests
         }
     }
 
+    /// <summary>
+    /// Verifies that reloading switches the watcher and replaces sessions from the old directory.
+    /// </summary>
+    [TestMethod]
+    public async Task ReloadResultsAsync_replaces_the_active_results_and_watcher()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_09_20_19_03_47-43P1.xml");
+        var firstDirectory = CreateResultsDirectory(sourceFile, "first.xml");
+        var secondDirectory = CreateResultsDirectory(sourceFile, "second.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = firstDirectory
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var firstState = await WaitForStateAsync(service, state => !state.IsLoading && state.IsWatching);
+            firstState.Sessions.Should().ContainSingle();
+
+            var invalidStatus = service.CheckResultsDirectory(Path.Combine(firstDirectory, "missing"));
+            invalidStatus.IsValid.Should().BeFalse();
+            service.Snapshot.Sessions.Should().ContainSingle();
+            var invalidReload = await service.ReloadResultsAsync(Path.Combine(firstDirectory, "missing"));
+            invalidReload.IsValid.Should().BeFalse();
+            service.Snapshot.IsWatching.Should().BeTrue();
+
+            var reloaded = await service.ReloadResultsAsync(secondDirectory);
+
+            reloaded.IsValid.Should().BeTrue();
+            reloaded.XmlFileCount.Should().Be(1);
+            var secondState = service.Snapshot;
+            secondState.ResultsDirectory.Should().Be(secondDirectory);
+            secondState.IsWatching.Should().BeTrue();
+            secondState.Sessions.Should().ContainSingle();
+
+            File.Copy(sourceFile, Path.Combine(firstDirectory, "old-watcher-results.xml"));
+            await Task.Delay(300);
+            service.Snapshot.Sessions.Should().ContainSingle();
+
+            File.Copy(sourceFile, Path.Combine(secondDirectory, "new-results.xml"));
+            var updatedState = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
+            updatedState.Sessions.Should().HaveCount(2);
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(firstDirectory, recursive: true);
+            Directory.Delete(secondDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that startup loads the configured sessions without watching when disabled.
+    /// </summary>
+    [TestMethod]
+    public async Task StartAsync_does_not_start_the_watcher_when_disabled_in_settings()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_09_20_19_03_47-43P1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsLoading);
+            state.Sessions.Should().ContainSingle();
+            state.IsWatching.Should().BeFalse();
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    private static DashboardDataService CreateService(
+        IConfiguration configuration,
+        SessionImportService importer,
+        InMemorySessionRepository repository) =>
+        new(
+            configuration,
+            importer,
+            repository,
+            NullLogger<DashboardDataService>.Instance,
+            NullLogger<ResultsDirectoryWatcher>.Instance);
+
+    private static string CreateResultsDirectory(string sourceFile, string fileName)
+    {
+        var directory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(directory);
+        File.Copy(sourceFile, Path.Combine(directory, fileName));
+        return directory;
+    }
+
     private static async Task<DashboardState> WaitForStateAsync(
         DashboardDataService service,
         Func<DashboardState, bool> predicate)
