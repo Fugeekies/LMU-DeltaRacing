@@ -25,7 +25,7 @@ public sealed class MyRacesPresentationTests
 
         records.Should().HaveCount(2);
         records[0].Category.Should().Be("Hypercar");
-        records[0].Car.Should().Be("#7 · Toyota");
+        records[0].Car.Should().Be("Test Car");
         records[0].QualifyingTime.Should().Be(TimeSpan.FromSeconds(121.75));
         records[0].QualifyingDelta.Should().Be(TimeSpan.FromSeconds(-0.5));
         records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125.5));
@@ -76,7 +76,7 @@ public sealed class MyRacesPresentationTests
             [firstQualifying, secondQualifying, firstRace, secondRace]);
 
         records.Should().ContainSingle();
-        records[0].Car.Should().Be("#7 · Toyota");
+        records[0].Car.Should().Be("Test Car");
         records[0].QualifyingTime.Should().Be(TimeSpan.FromSeconds(122));
         records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125));
     }
@@ -98,7 +98,10 @@ public sealed class MyRacesPresentationTests
 
         records.Should().HaveCount(4);
         var spaHypercar = records.Should()
-            .ContainSingle(record => record.TrackVenue == "Spa" && record.Car == "#8 · Toyota")
+            .ContainSingle(record =>
+                record.TrackVenue == "Spa"
+                && record.Category == "Hypercar"
+                && record.QualifyingTime == TimeSpan.FromSeconds(123))
             .Which;
         spaHypercar.QualifyingDelta.Should().Be(TimeSpan.FromSeconds(1));
 
@@ -142,5 +145,6 @@ public sealed class MyRacesPresentationTests
             team,
             1,
             lapTimes.Select((time, index) => new Lap(index + 1, TimeSpan.FromSeconds(time), [])),
-            isPlayer);
+            isPlayer,
+            "Test Car");
 }

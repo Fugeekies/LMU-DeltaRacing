@@ -36,9 +36,11 @@ public static class MyRacesPresentation
                 continue;
             }
 
-            var car = string.IsNullOrWhiteSpace(driver.CarNumber)
-                ? driver.TeamName
-                : $"#{driver.CarNumber}{(string.IsNullOrWhiteSpace(driver.TeamName) ? string.Empty : $" · {driver.TeamName}")}";
+            var car = !string.IsNullOrWhiteSpace(driver.CarType)
+                ? driver.CarType
+                : string.IsNullOrWhiteSpace(driver.CarNumber)
+                    ? "—"
+                    : $"#{driver.CarNumber}";
 
             results.Add(new SessionResult(
                 session.TrackVenue,

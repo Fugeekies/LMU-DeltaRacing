@@ -34,6 +34,7 @@ public sealed class XmlResultParserTests
             .Which;
         driver.Name.Should().MatchRegex("^Driver \\d{4,}$");
         driver.CarNumber.Should().Be("16");
+        driver.CarType.Should().Be("Corvette C8.R GTE");
         driver.Position.Should().Be(1);
         driver.IsPlayer.Should().BeTrue();
         driver.Laps.Should().HaveCount(2);
