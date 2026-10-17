@@ -66,7 +66,6 @@ public sealed class MyRacesPresentationTests
             "Other team",
             "2025-02-22T11:00:00Z",
             [110],
-            isPlayer: false,
             driverName: "Opponent");
         var firstRace = CreateSession(
             "Race",
@@ -84,7 +83,6 @@ public sealed class MyRacesPresentationTests
             "Other team",
             "2025-02-22T12:00:00Z",
             [110],
-            isPlayer: false,
             driverName: "Opponent");
 
         var records = MyRacesPresentation.CreateRecords(
@@ -135,7 +133,6 @@ public sealed class MyRacesPresentationTests
         string team,
         string startedAt,
         double[] lapTimes,
-        bool isPlayer = true,
         int? gridPosition = null,
         TimeSpan? finishTime = null,
         int? mostLapsCompleted = null,
@@ -148,7 +145,7 @@ public sealed class MyRacesPresentationTests
             track,
             $"Event {startedAt[..10]}",
             type,
-            [CreateDriver(driverName, carNumber, carClass, team, lapTimes, isPlayer, gridPosition, finishTime)],
+            [CreateDriver(driverName, carNumber, carClass, team, lapTimes, gridPosition, finishTime)],
             mostLapsCompleted);
     }
 
@@ -158,7 +155,6 @@ public sealed class MyRacesPresentationTests
         string carClass,
         string team,
         double[] lapTimes,
-        bool isPlayer,
         int? gridPosition = null,
         TimeSpan? finishTime = null) =>
         new(
@@ -168,7 +164,6 @@ public sealed class MyRacesPresentationTests
             team,
             1,
             lapTimes.Select((time, index) => new Lap(index + 1, TimeSpan.FromSeconds(time), [])),
-            isPlayer,
             "Test Car",
             gridPosition,
             finishTime);
