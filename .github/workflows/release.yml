@@ -4,7 +4,11 @@ on:
   workflow_dispatch:
     inputs:
       version_tag:
-        description: 'Numéro de version (ex: v1.0.0)'
+        description: 'Tag et version de l’installeur (ex: v1.0.0)'
+        required: true
+        type: string
+      release_name:
+        description: 'Nom affiché de la release GitHub'
         required: true
         type: string
 
@@ -18,6 +22,19 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Validate release inputs
+        shell: pwsh
+        env:
+          RELEASE_TAG: ${{ inputs.version_tag }}
+          RELEASE_NAME: ${{ inputs.release_name }}
+        run: |
+          if ($env:RELEASE_TAG -notmatch '^v?[0-9]+\.[0-9]+\.[0-9]+$') {
+            throw "The release tag must be a semantic version such as v1.0.0."
+          }
+          if ([string]::IsNullOrWhiteSpace($env:RELEASE_NAME)) {
+            throw "A release name must be provided."
+          }
 
       - name: Setup .NET 10
         uses: actions/setup-dotnet@v4
@@ -44,14 +61,10 @@ jobs:
 
       - name: Build installer
         shell: pwsh
+        env:
+          RELEASE_TAG: ${{ inputs.version_tag }}
         run: |
-          # Récupère la version saisie manuellement (ex: v1.0.0 -> 1.0.0)
-          $rawVersion = "${{ inputs.version_tag }}"
-          $version = $rawVersion -replace '^v', ''
-          
-          if ([string]::IsNullOrWhiteSpace($version)) {
-            throw "An installer version could not be determined."
-          }
+          $version = $env:RELEASE_TAG -replace '^v', ''
           iscc "/DAppVersion=$version" "scripts/installer.iss"
 
       - name: Upload installer artifact
@@ -78,18 +91,24 @@ jobs:
           path: output
 
       - name: Create Git Tag Automatically
+        env:
+          RELEASE_TAG: ${{ inputs.version_tag }}
         run: |
+          if [[ ! "$RELEASE_TAG" =~ ^v?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "The release tag must be a semantic version such as v1.0.0." >&2
+            exit 1
+          fi
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git tag ${{ inputs.version_tag }}
-          git push origin ${{ inputs.version_tag }}
+          git tag "$RELEASE_TAG"
+          git push origin "refs/tags/$RELEASE_TAG"
         shell: bash
 
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ inputs.version_tag }}
-          name: LMU-DeltaRacing ${{ inputs.version_tag }}
+          name: ${{ inputs.release_name }}
           files: output/LMU-DeltaRacing-Setup.exe
           draft: false
           prerelease: false

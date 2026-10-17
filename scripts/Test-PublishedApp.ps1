@@ -70,7 +70,7 @@ try {
     if ($response.StatusCode -ne 200) {
         throw "The published dashboard returned HTTP $($response.StatusCode) instead of 200."
     }
-    if ($response.Content -notmatch 'Tableau de bord') {
+    if ($response.Content -notmatch 'Mes courses') {
         throw "The published dashboard did not render its expected home page."
     }
     if ($response.Content -match '<h1[^>]*>\s*(Une erreur est survenue|The dashboard encountered an error)\s*</h1>') {
