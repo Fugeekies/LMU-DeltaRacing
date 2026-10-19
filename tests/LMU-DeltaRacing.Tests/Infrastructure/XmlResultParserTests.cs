@@ -36,7 +36,6 @@ public sealed class XmlResultParserTests
         driver.CarNumber.Should().Be("16");
         driver.CarType.Should().Be("Corvette C8.R GTE");
         driver.Position.Should().Be(1);
-        driver.IsPlayer.Should().BeTrue();
         driver.Laps.Should().HaveCount(2);
         driver.Laps[0].Time.Should().BeNull();
         driver.Laps[1].Time.Should().Be(TimeSpan.FromSeconds(65.1692));

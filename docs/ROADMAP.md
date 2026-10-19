@@ -79,13 +79,13 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Implémenter le calcul dynamique du delta $n-1$ (session précédente du même circuit et de la même catégorie).
 - [x] Appliquer la coloration conditionnelle des deltas (🟢 gain de temps, 🔴 perte de temps).
 
-## Jalon — Déterminer l'utilisateur princial
-- [ ] Parmi tout les drivers dans les fichiers, détecter le nom qui reviens le plus souvent et le sauvegarder dans un appsetting `UserName`
-- [ ] Au premier démarrage si l'appsettings n'a pas encore le nom, attendre le chargement de toutes les données puis faire la detection
-- [ ] Afficher le nom du joueur sur la bar du menu au dessus
-- [ ] Toute les données afficher dans les menus devront etre basé sur se driver
-- [ ] Si le nom du driver n'est pas dans un fichier, ne pas prendre en compte le fichier
-- [ ] Permettre le changement du driver détecter dans le menu option en triant les noms par pourcentage d'apparition global et le sauvegarder dans le appsetting
+## Jalon — Déterminer l'utilisateur principal
+- [x] Détecter le pilote le plus fréquent dans les fichiers de résultats et enregistrer son nom dans `LMU:UserName`.
+- [x] Au premier démarrage, attendre la fin du chargement des données avant de détecter le pilote si aucun nom n'est configuré.
+- [x] Afficher le nom du pilote sélectionné dans la barre de navigation.
+- [x] Basculer les vues de résultats sur le pilote sélectionné.
+- [x] Ignorer les fichiers qui ne contiennent pas le pilote sélectionné.
+- [x] Permettre de sélectionner un pilote dans Options, trié par pourcentage d'apparition global, et enregistrer ce choix dans `appsettings.json`.
 
 ## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)
 - [x] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).

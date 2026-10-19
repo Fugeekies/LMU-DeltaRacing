@@ -67,7 +67,6 @@ public sealed class XmlResultParser : IResultXmlParser
             Value(element, "TeamName") ?? string.Empty,
             ParseOptionalInt(Value(element, "Position")),
             laps,
-            Value(element, "isPlayer") == "1",
             Value(element, "CarType") ?? string.Empty,
             ParseOptionalInt(Value(element, "GridPos")),
             ParseOptionalSeconds(Value(element, "FinishTime")));

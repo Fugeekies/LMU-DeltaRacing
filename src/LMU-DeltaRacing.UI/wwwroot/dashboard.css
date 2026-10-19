@@ -164,6 +164,16 @@ a {
     letter-spacing: 0.1em;
 }
 
+.active-driver {
+    max-width: 14rem;
+    overflow: hidden;
+    color: var(--text);
+    font-size: 0.72rem;
+    letter-spacing: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .status-dot {
     width: 8px;
     height: 8px;
@@ -1148,6 +1158,11 @@ h3 {
         gap: 0.4rem;
         font-size: 0.52rem;
         letter-spacing: 0.06em;
+    }
+
+    .active-driver {
+        max-width: 6rem;
+        font-size: 0.58rem;
     }
 
     .primary-nav {

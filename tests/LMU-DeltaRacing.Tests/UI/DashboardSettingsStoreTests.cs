@@ -42,8 +42,10 @@ public sealed class DashboardSettingsStoreTests
         try
         {
             store.SaveResultsSettings(@"C:\LMU\Results", watchOnStartup: false);
+            store.SaveUserName("Driver One");
 
             configuration["LMU:ResultsDirectory"].Should().Be(@"C:\LMU\Results");
+            configuration["LMU:UserName"].Should().Be("Driver One");
             configuration.GetValue<bool>("LMU:WatchResultsOnStartup").Should().BeFalse();
             configuration["LMU:LogFilePath"].Should().Be("existing.log");
             configuration.GetValue<bool>("LMU:OpenBrowser").Should().BeFalse();

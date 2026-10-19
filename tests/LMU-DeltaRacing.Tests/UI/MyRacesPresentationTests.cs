@@ -31,7 +31,7 @@ public sealed class MyRacesPresentationTests
                 mostLapsCompleted: 8)
         };
 
-        var records = MyRacesPresentation.CreateRecords(sessions);
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
 
         records.Should().HaveCount(2);
         records[0].Category.Should().Be("Hypercar");
@@ -48,7 +48,7 @@ public sealed class MyRacesPresentationTests
     }
 
     [TestMethod]
-    public void CreateRecords_uses_only_player_results_and_returns_one_record_per_race()
+    public void CreateRecords_uses_only_selected_driver_results_and_returns_one_record_per_race()
     {
         var firstQualifying = CreateSession(
             "Qualify",
@@ -66,7 +66,7 @@ public sealed class MyRacesPresentationTests
             "Other team",
             "2025-02-22T11:00:00Z",
             [110],
-            isPlayer: false);
+            driverName: "Opponent");
         var firstRace = CreateSession(
             "Race",
             "Spa",
@@ -83,10 +83,11 @@ public sealed class MyRacesPresentationTests
             "Other team",
             "2025-02-22T12:00:00Z",
             [110],
-            isPlayer: false);
+            driverName: "Opponent");
 
         var records = MyRacesPresentation.CreateRecords(
-            [firstQualifying, secondQualifying, firstRace, secondRace]);
+            [firstQualifying, secondQualifying, firstRace, secondRace],
+            "Driver");
 
         records.Should().ContainSingle();
         records[0].Car.Should().Be("Test Car");
@@ -107,7 +108,7 @@ public sealed class MyRacesPresentationTests
             CreateSession("Qualify", "Spa", "Unknown", "7", "Toyota", "2025-02-24T12:00:00Z", [120])
         };
 
-        var records = MyRacesPresentation.CreateRecords(sessions);
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
 
         records.Should().HaveCount(4);
         var spaHypercar = records.Should()
@@ -132,10 +133,10 @@ public sealed class MyRacesPresentationTests
         string team,
         string startedAt,
         double[] lapTimes,
-        bool isPlayer = true,
         int? gridPosition = null,
         TimeSpan? finishTime = null,
-        int? mostLapsCompleted = null)
+        int? mostLapsCompleted = null,
+        string driverName = "Driver")
     {
         return new Session(
             Guid.NewGuid(),
@@ -144,7 +145,7 @@ public sealed class MyRacesPresentationTests
             track,
             $"Event {startedAt[..10]}",
             type,
-            [CreateDriver("Driver", carNumber, carClass, team, lapTimes, isPlayer, gridPosition, finishTime)],
+            [CreateDriver(driverName, carNumber, carClass, team, lapTimes, gridPosition, finishTime)],
             mostLapsCompleted);
     }
 
@@ -154,7 +155,6 @@ public sealed class MyRacesPresentationTests
         string carClass,
         string team,
         double[] lapTimes,
-        bool isPlayer,
         int? gridPosition = null,
         TimeSpan? finishTime = null) =>
         new(
@@ -164,7 +164,6 @@ public sealed class MyRacesPresentationTests
             team,
             1,
             lapTimes.Select((time, index) => new Lap(index + 1, TimeSpan.FromSeconds(time), [])),
-            isPlayer,
             "Test Car",
             gridPosition,
             finishTime);

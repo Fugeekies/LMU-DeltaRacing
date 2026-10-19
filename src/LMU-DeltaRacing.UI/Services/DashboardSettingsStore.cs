@@ -35,19 +35,46 @@ public sealed class DashboardSettingsStore
     public void SaveResultsSettings(string resultsDirectory, bool watchOnStartup)
     {
         ArgumentNullException.ThrowIfNull(resultsDirectory);
-        var root = File.Exists(configurationFilePath)
+        var root = LoadSettings();
+        var lmuSettings = GetLmuSettings(root);
+        lmuSettings["ResultsDirectory"] = resultsDirectory;
+        lmuSettings["WatchResultsOnStartup"] = watchOnStartup;
+
+        Save(root);
+    }
+
+    /// <summary>
+    /// Saves the selected driver name to application settings.
+    /// </summary>
+    public void SaveUserName(string userName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(userName);
+        var root = LoadSettings();
+        GetLmuSettings(root)["UserName"] = userName.Trim();
+
+        Save(root);
+    }
+
+    private JsonObject LoadSettings() =>
+        File.Exists(configurationFilePath)
             ? JsonNode.Parse(File.ReadAllText(configurationFilePath)) as JsonObject
                 ?? throw new JsonException("The application settings file must contain a JSON object.")
             : new JsonObject();
+
+    private static JsonObject GetLmuSettings(JsonObject root)
+    {
         var lmuSettings = root["LMU"] as JsonObject;
         if (lmuSettings is null)
         {
             lmuSettings = new JsonObject();
             root["LMU"] = lmuSettings;
         }
-        lmuSettings["ResultsDirectory"] = resultsDirectory;
-        lmuSettings["WatchResultsOnStartup"] = watchOnStartup;
 
+        return lmuSettings;
+    }
+
+    private void Save(JsonObject root)
+    {
         var temporaryPath = $"{configurationFilePath}.{Guid.NewGuid():N}.tmp";
         try
         {

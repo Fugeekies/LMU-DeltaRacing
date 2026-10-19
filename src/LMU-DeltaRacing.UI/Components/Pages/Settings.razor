@@ -85,6 +85,40 @@
     </div>
 </section>
 
+<section class="panel settings-panel" aria-labelledby="driver-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">PROFIL DE PILOTE</p>
+            <h2 id="driver-settings-heading">Pilote principal</h2>
+        </div>
+    </div>
+    <div class="settings-content">
+        <label class="settings-label" for="user-name">Pilote utilisé dans les vues de résultats</label>
+        <select id="user-name"
+                class="settings-input"
+                value="@selectedUserName"
+                @onchange="SaveSelectedUserName"
+                disabled="@(state.IsLoading || state.DriverFrequencies.Count == 0)">
+            @if (string.IsNullOrWhiteSpace(selectedUserName))
+            {
+                <option value="">Détection après le chargement…</option>
+            }
+            else if (!state.DriverFrequencies.Any(driver =>
+                string.Equals(driver.Name, selectedUserName, StringComparison.OrdinalIgnoreCase)))
+            {
+                <option value="@selectedUserName">@selectedUserName (absent des résultats chargés)</option>
+            }
+            @foreach (var driver in state.DriverFrequencies)
+            {
+                <option value="@driver.Name">
+                    @driver.Name — @driver.Percentage.ToString("P1") (@driver.AppearanceCount/@driver.TotalResults fichiers)
+                </option>
+            }
+        </select>
+        <p class="settings-help">Les pilotes sont triés par pourcentage de fichiers importés dans lesquels ils apparaissent. Le choix est enregistré automatiquement.</p>
+    </div>
+</section>
+
 <section class="panel settings-panel watcher-settings" aria-labelledby="watcher-settings-heading">
     <div class="panel-heading">
         <div>
@@ -117,22 +151,33 @@
 
 @code {
     private string resultsDirectory = string.Empty;
+    private string selectedUserName = string.Empty;
     private bool watchOnStartup = true;
     private bool isBusy;
     private bool isReloading;
     private ResultsDirectoryStatus? directoryStatus;
     private string? feedbackMessage;
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
 
     protected override void OnInitialized()
     {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        state = DashboardData.Snapshot;
+        selectedUserName = state.UserName ?? string.Empty;
         resultsDirectory = Configuration["LMU:ResultsDirectory"] ?? string.Empty;
         watchOnStartup = Configuration.GetValue("LMU:WatchResultsOnStartup", true);
         directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
     }
 
-    public void Dispose()
-    {
-    }
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            state = DashboardData.Snapshot;
+            selectedUserName = state.UserName ?? string.Empty;
+            StateHasChanged();
+        });
 
     private string GetDefaultDirectoryPlaceholder() =>
         DashboardData.Snapshot.ResultsDirectory
@@ -180,6 +225,27 @@
         {
             isReloading = false;
             isBusy = false;
+        }
+    }
+
+    private void SaveSelectedUserName(ChangeEventArgs args)
+    {
+        if (args.Value is not string name || string.IsNullOrWhiteSpace(name))
+        {
+            return;
+        }
+
+        try
+        {
+            DashboardData.SelectUserName(name);
+            feedbackMessage = $"Profil pilote enregistré : {name}.";
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or ArgumentException
+                or System.Text.Json.JsonException or InvalidOperationException)
+        {
+            selectedUserName = DashboardData.Snapshot.UserName ?? string.Empty;
+            feedbackMessage = $"Impossible d’enregistrer le pilote sélectionné : {exception.Message}";
         }
     }
 

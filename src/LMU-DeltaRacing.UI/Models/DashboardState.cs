@@ -22,4 +22,15 @@ public sealed record DashboardState(
     string? ErrorMessage,
     IReadOnlyList<Session> Sessions,
     IReadOnlyList<SessionImportResult> ImportFailures,
-    string? ResultsDirectory);
+    string? ResultsDirectory)
+{
+    /// <summary>
+    /// Gets the selected driver name from application settings.
+    /// </summary>
+    public string? UserName { get; init; }
+
+    /// <summary>
+    /// Gets driver frequencies calculated from the imported result files.
+    /// </summary>
+    public IReadOnlyList<DriverFrequency> DriverFrequencies { get; init; } = [];
+}

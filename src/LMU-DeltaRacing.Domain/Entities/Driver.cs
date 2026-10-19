@@ -14,7 +14,6 @@ public sealed class Driver
     /// <param name="teamName">The team name, when available.</param>
     /// <param name="position">The finishing position, when available.</param>
     /// <param name="laps">The laps recorded for the driver.</param>
-    /// <param name="isPlayer">Whether this result belongs to the player.</param>
     /// <param name="carType">The vehicle model, when available.</param>
     /// <param name="gridPosition">The starting grid position, when available.</param>
     /// <param name="finishTime">The total race time, when available.</param>
@@ -25,7 +24,6 @@ public sealed class Driver
         string teamName,
         int? position,
         IEnumerable<Lap> laps,
-        bool isPlayer = false,
         string carType = "",
         int? gridPosition = null,
         TimeSpan? finishTime = null)
@@ -43,7 +41,6 @@ public sealed class Driver
         TeamName = teamName;
         Position = position;
         Laps = Array.AsReadOnly(laps.ToArray());
-        IsPlayer = isPlayer;
         CarType = carType;
         GridPosition = gridPosition;
         FinishTime = finishTime;
@@ -93,9 +90,4 @@ public sealed class Driver
     /// Gets the laps recorded for the driver.
     /// </summary>
     public IReadOnlyList<Lap> Laps { get; }
-
-    /// <summary>
-    /// Gets whether this result belongs to the player.
-    /// </summary>
-    public bool IsPlayer { get; }
 }
