@@ -9,7 +9,8 @@ AppVersion={#AppVersion}
 AppPublisher=Fugeekies
 DefaultDirName={localappdata}\Programs\LMU-DeltaRacing
 DefaultGroupName=LMU-DeltaRacing
-UninstallDisplayIcon={app}\LMU-DeltaRacing.UI.exe
+SetupIconFile=..\assets\icons\Logo-Delta-Racing-rouge-et-blanc-1.ico
+UninstallDisplayIcon={app}\LMU-DeltaRacing.ico
 OutputDir=..\output
 OutputBaseFilename=LMU-DeltaRacing-Setup
 ArchitecturesAllowed=x64
@@ -25,11 +26,12 @@ Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescri
 
 [Files]
 Source: "..\publish_output\appsettings.json"; DestDir: "{app}"; Flags: onlyifdoesntexist
+Source: "..\assets\icons\Logo-Delta-Racing-rouge-et-blanc-1.ico"; DestDir: "{app}"; DestName: "LMU-DeltaRacing.ico"; Flags: ignoreversion
 Source: "..\publish_output\*"; DestDir: "{app}"; Excludes: "appsettings.json,appsettings.Development.json,*.pdb,web.config"; Flags: ignoreversion recursesubdirs createallsubdirs
 
 [Icons]
-Name: "{group}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; WorkingDir: "{app}"
-Name: "{autodesktop}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; WorkingDir: "{app}"; Tasks: desktopicon
+Name: "{group}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; WorkingDir: "{app}"; IconFilename: "{app}\LMU-DeltaRacing.ico"
+Name: "{autodesktop}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; WorkingDir: "{app}"; IconFilename: "{app}\LMU-DeltaRacing.ico"; Tasks: desktopicon
 
 [Run]
 Filename: "{app}\LMU-DeltaRacing.UI.exe"; Description: "Lancer LMU-DeltaRacing"; Flags: postinstall nowait skipifsilent
