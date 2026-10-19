@@ -54,6 +54,24 @@ public sealed class SessionImportService : ISessionImportService
             using var stream = OpenResultFile(filePath, sourceFile);
             logger.LogDebug("Parsing result file {SourceFile}", sourceFile);
             var session = parser.Parse(stream);
+
+            if (session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
+            {
+                logger.LogInformation(
+                    "Skipped practice session in {SourceFile}; practice data is not loaded",
+                    sourceFile);
+                activity?.SetTag("import.status", "skipped_practice");
+                ApplicationTelemetry.Imports.Add(
+                    1,
+                    new KeyValuePair<string, object?>("import.status", "skipped_practice"));
+
+                return new SessionImportResult(
+                    sourceFile,
+                    SessionImportStatus.SkippedPractice,
+                    null,
+                    null);
+            }
+
             logger.LogDebug("Parsed result file {SourceFile}; saving session {SessionId}", sourceFile, session.Id);
             repository.Save(session);
             logger.LogInformation(

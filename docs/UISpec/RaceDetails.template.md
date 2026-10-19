@@ -5,7 +5,7 @@ Analyse télémétrique et classement détaillé d'une course spécifique sélec
 
 ### Spécifications fonctionnelles :
 * Sélecteur : Liste déroulante des sessions enregistrées.
-* Structure du Tableau : POS, Nom du coureur, Voiture, Secteur 1, Secteur 2, Secteur 3, Diff 1er.
+* Structure du Tableau : POS, Nom du coureur, Voiture, temps et delta vers le meilleur absolu pour les secteurs 1 à 3, meilleur temps au tour et delta vers le meilleur tour de la session.
 * Règles de couleurs WEC :
   * Meilleur secteur absolu de la session : Fond violet #b066ff / badge 🟣.
   * Meilleur secteur personnel du pilote : Fond vert #22c55e / badge 🟢.

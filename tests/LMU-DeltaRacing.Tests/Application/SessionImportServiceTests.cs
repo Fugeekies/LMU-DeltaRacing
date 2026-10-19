@@ -1,8 +1,6 @@
 using FluentAssertions;
-using LMU_DeltaRacing.Application.Abstractions;
 using LMU_DeltaRacing.Application.Models;
 using LMU_DeltaRacing.Application.Services;
-using LMU_DeltaRacing.Domain.Entities;
 using LMU_DeltaRacing.Infrastructure.Persistence;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using Microsoft.Extensions.Logging.Abstractions;
@@ -15,7 +13,7 @@ namespace LMU_DeltaRacing.Tests.Application;
 [TestClass]
 public sealed class SessionImportServiceTests
 {
-    private const string FixturePath = "assets/Results/2025_09_20_19_03_47-43P1.xml";
+    private const string FixturePath = "assets/Results/2025_02_24_20_26_56-18R1.xml";
 
     /// <summary>
     /// Verifies that a parsed session is stored and returned as a successful import.
@@ -67,6 +65,30 @@ public sealed class SessionImportServiceTests
         {
             File.Delete(path);
         }
+    }
+
+    /// <summary>
+    /// Verifies that practice data is not stored or returned to consuming menus.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_skips_practice_sessions_without_storing_them()
+    {
+        var repository = new InMemorySessionRepository();
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var path = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_09_20_19_03_47-43P1.xml");
+
+        var result = service.ImportFile(path);
+
+        result.Status.Should().Be(SessionImportStatus.SkippedPractice);
+        result.Session.Should().BeNull();
+        repository.GetAll().Should().BeEmpty();
     }
 
     /// <summary>

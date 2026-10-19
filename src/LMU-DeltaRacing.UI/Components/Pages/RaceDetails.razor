@@ -1,0 +1,216 @@
+@page "/race-details"
+@implements IDisposable
+@inject DashboardDataService DashboardData
+
+<PageTitle>Détail des courses | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">ANALYSE DE SESSION</p>
+        <h1>Détail des courses</h1>
+        <p class="page-subtitle">Classement, meilleurs secteurs et écarts de la session sélectionnée.</p>
+    </div>
+</section>
+
+@if (state.IsLoading && state.Sessions.Count == 0)
+{
+    <section class="panel empty-state" aria-live="polite">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Chargement de l’historique des courses…</p>
+    </section>
+}
+else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <p>@state.ErrorMessage</p>
+            <p>Vérifiez le dossier configuré dans Options.</p>
+        </div>
+    </section>
+}
+else if (sessions.Count == 0)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucune session disponible</h3>
+        <p>Les résultats détaillés apparaîtront ici lorsqu’une session aura été importée.</p>
+    </section>
+}
+else
+{
+    var selectedSession = GetSelectedSession();
+    var results = selectedSession is null
+        ? Array.Empty<RaceDetailsDriverResult>()
+        : RaceDetailsPresentation.CreateResults(selectedSession, state.UserName);
+
+    <section class="panel race-details-panel">
+        <div class="race-details-toolbar">
+            <label class="race-filter race-session-filter">
+                <span>SÉLECTIONNER UNE COURSE</span>
+                <select @bind="selectedSessionId" aria-label="Sélectionner une session">
+                    @foreach (var session in sessions)
+                    {
+                        <option value="@session.Id">@FormatSessionLabel(session)</option>
+                    }
+                </select>
+            </label>
+            @if (selectedSession is not null)
+            {
+                <div class="session-meta">
+                    <span class="category-badge">@selectedSession.SessionType</span>
+                    <span>@selectedSession.TrackVenue</span>
+                    @if (!string.Equals(selectedSession.TrackVenue, selectedSession.TrackCourse, StringComparison.OrdinalIgnoreCase))
+                    {
+                        <span class="circuit-course">@selectedSession.TrackCourse</span>
+                    }
+                </div>
+            }
+        </div>
+
+        @if (results.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Cette session ne contient aucun résultat de pilote.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-scroll race-details-scroll">
+                <table class="data-table race-details-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">POS</th>
+                            <th scope="col">NOM DU COUREUR</th>
+                            <th scope="col">VOITURE</th>
+                            <th scope="col" class="numeric-cell">SECTEUR 1</th>
+                            <th scope="col" class="numeric-cell">DELTA S1</th>
+                            <th scope="col" class="numeric-cell">SECTEUR 2</th>
+                            <th scope="col" class="numeric-cell">DELTA S2</th>
+                            <th scope="col" class="numeric-cell">SECTEUR 3</th>
+                            <th scope="col" class="numeric-cell">DELTA S3</th>
+                            <th scope="col" class="numeric-cell">TEMPS TOUR</th>
+                            <th scope="col" class="numeric-cell">DELTA TOUR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var result in results)
+                        {
+                            <tr>
+                                <td class="numeric-cell">@(result.Position?.ToString("00") ?? "—")</td>
+                                <td class="race-driver-name">
+                                    @result.Name
+                                    @if (result.IsPlayer)
+                                    {
+                                        <span class="player-tag">VOUS</span>
+                                    }
+                                </td>
+                                <td>@result.Car</td>
+                                @foreach (var sector in result.Sectors)
+                                {
+                                    <td class="numeric-cell">
+                                        <span class="sector-time @GetSectorClass(sector.Performance)">
+                                            @FormatSector(sector.Time)
+                                        </span>
+                                    </td>
+                                    <td class="numeric-cell">
+                                        <span class="delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
+                                    </td>
+                                }
+                                <td class="numeric-cell"><span class="lap-time">@FormatSector(result.FastestLap)</span></td>
+                                <td class="numeric-cell">
+                                    <span class="delta-time @GetDeltaClass(result.DeltaToBestLap)">
+                                        @FormatGap(result.DeltaToBestLap)
+                                    </span>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+
+        <div class="sector-legend" aria-label="Légende des secteurs">
+            <span><i class="sector-legend-swatch sector-session-best" aria-hidden="true"></i>Meilleur absolu session</span>
+            <span><i class="sector-legend-swatch sector-personal-best" aria-hidden="true"></i>Meilleur personnel</span>
+            <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>Temps standard</span>
+        </div>
+    </section>
+}
+
+@code {
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyList<Session> sessions = [];
+    private string selectedSessionId = string.Empty;
+
+    protected override void OnInitialized()
+    {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        UpdateState();
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            UpdateState();
+            StateHasChanged();
+        });
+
+    private void UpdateState()
+    {
+        state = DashboardData.Snapshot;
+        sessions = DriverProfile.FilterSessions(state.Sessions, state.UserName)
+            .OrderByDescending(session => session.StartedAt)
+            .ToArray();
+
+        if (!Guid.TryParse(selectedSessionId, out var selectedId)
+            || sessions.All(session => session.Id != selectedId))
+        {
+            selectedSessionId = sessions.FirstOrDefault()?.Id.ToString() ?? string.Empty;
+        }
+    }
+
+    private Session? GetSelectedSession() =>
+        Guid.TryParse(selectedSessionId, out var selectedId)
+            ? sessions.FirstOrDefault(session => session.Id == selectedId)
+            : null;
+
+    private string FormatSessionLabel(Session session)
+    {
+        var category = DriverProfile.FindDriver(session, state.UserName)?.CarClass;
+        var label = string.Create(
+            System.Globalization.CultureInfo.CurrentCulture,
+            $"{session.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {session.TrackVenue} ({session.SessionType})");
+        return string.IsNullOrWhiteSpace(category) ? label : $"{label} - {category}";
+    }
+
+    private static string GetSectorClass(SectorPerformance performance) =>
+        performance switch
+        {
+            SectorPerformance.SessionBest => "sector-session-best",
+            SectorPerformance.PersonalBest => "sector-personal-best",
+            _ => "sector-standard"
+        };
+
+    private static string GetDeltaClass(TimeSpan? delta) =>
+        delta switch
+        {
+            { } value when value == TimeSpan.Zero => "delta-best",
+            { } value when value > TimeSpan.Zero => "delta-loss",
+            { } => "delta-best",
+            _ => "delta-unavailable"
+        };
+
+    private static string FormatSector(TimeSpan? time) =>
+        time is { } sectorTime
+            ? $"{sectorTime.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
+            : "—";
+
+    private static string FormatGap(TimeSpan? gap) =>
+        gap is { } value
+            ? $"{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
+            : "—";
+}

@@ -11,6 +11,11 @@ public enum SessionImportStatus
     Imported,
 
     /// <summary>
+    /// The file contained a practice session, which is intentionally not stored.
+    /// </summary>
+    SkippedPractice,
+
+    /// <summary>
     /// The file could not be read or parsed.
     /// </summary>
     Failed

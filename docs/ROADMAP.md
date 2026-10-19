@@ -88,14 +88,14 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Permettre de sélectionner un pilote dans Options, trié par pourcentage d'apparition global, et enregistrer ce choix dans `appsettings.json`.
 
 ## Jalon — UI : Menu "Classement des Coureurs" (`DriversRanking.razor`)
-- [ ] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).
-- [ ] Afficher le tableau avec les colonnes : `Nom`, `Courses affrontées`, `Victoires`, `Défaites`, `% Victoire`.
-- [ ] Ajouter la barre de recherche par nom et le tri dynamique (par défaut : volume d'affrontements décroissant).
+- [x] Implémenter le service d'agrégation d'historique Head-to-Head (H2H).
+- [x] Afficher le tableau avec les colonnes : `Nom`, `Courses affrontées`, `Victoires`, `Défaites`, `% Victoire`.
+- [x] Ajouter la barre de recherche par nom et le tri dynamique (par défaut : volume d'affrontements décroissant).
 
 ## Jalon — UI : Menu "Détail des Courses" (`RaceDetails.razor`)
-- [ ] Intégrer le sélecteur de session (dropdown) en haut de page.
-- [ ] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
-- [ ] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
+- [x] Intégrer le sélecteur de session (dropdown) en haut de page.
+- [x] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
+- [x] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
 
 ## Liste d'idées à prioriser
 - [ ] Multi langue.

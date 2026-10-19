@@ -31,6 +31,7 @@ public static class ConsoleDashboard
         ArgumentOutOfRangeException.ThrowIfNegative(totalFiles);
 
         var successfulImports = imports.Count(result => result.Status == SessionImportStatus.Imported);
+        var skippedPracticeImports = imports.Count(result => result.Status == SessionImportStatus.SkippedPractice);
         var failedImports = imports
             .Where(result => result.Status == SessionImportStatus.Failed)
             .ToArray();
@@ -42,7 +43,9 @@ public static class ConsoleDashboard
         }
 
         AnsiConsole.MarkupLine(
-            $"Chargement terminé : [green]{successfulImports} réussi(s)[/], [red]{failedImports.Length} échec(s)[/].");
+            $"Chargement terminé : [green]{successfulImports} réussi(s)[/], " +
+            $"[dim]{skippedPracticeImports} session(s) Practice ignorée(s)[/], " +
+            $"[red]{failedImports.Length} échec(s)[/].");
         foreach (var failure in failedImports)
         {
             AnsiConsole.MarkupLine(
@@ -65,6 +68,13 @@ public static class ConsoleDashboard
             AnsiConsole.MarkupLine(
                 $"[green]Nouveau résultat importé[/] : {Escape(result.SourceFile)} — " +
                 $"{Escape(session.TrackVenue)} / {Escape(session.SessionType)}.");
+            return;
+        }
+
+        if (result.Status == SessionImportStatus.SkippedPractice)
+        {
+            AnsiConsole.MarkupLine(
+                $"[dim]Session Practice ignorée[/] : {Escape(result.SourceFile)}.");
             return;
         }
 
