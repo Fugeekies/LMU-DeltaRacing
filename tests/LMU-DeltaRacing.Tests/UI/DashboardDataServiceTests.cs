@@ -26,7 +26,7 @@ public sealed class DashboardDataServiceTests
             AppContext.BaseDirectory,
             "assets",
             "Results",
-            "2025_09_20_19_03_47-43P1.xml");
+            "2025_02_24_20_26_56-18R1.xml");
         var resultsDirectory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");
         Directory.CreateDirectory(resultsDirectory);
         var initialFile = Path.Combine(resultsDirectory, Path.GetFileName(sourceFile));
@@ -86,7 +86,7 @@ public sealed class DashboardDataServiceTests
             AppContext.BaseDirectory,
             "assets",
             "Results",
-            "2025_09_20_19_03_47-43P1.xml");
+            "2025_02_24_20_26_56-18R1.xml");
         var firstDirectory = CreateResultsDirectory(sourceFile, "first.xml");
         var secondDirectory = CreateResultsDirectory(sourceFile, "second.xml");
         var repository = new InMemorySessionRepository();
@@ -151,7 +151,7 @@ public sealed class DashboardDataServiceTests
             AppContext.BaseDirectory,
             "assets",
             "Results",
-            "2025_09_20_19_03_47-43P1.xml");
+            "2025_02_24_20_26_56-18R1.xml");
         var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
         var repository = new InMemorySessionRepository();
         var importer = new SessionImportService(
