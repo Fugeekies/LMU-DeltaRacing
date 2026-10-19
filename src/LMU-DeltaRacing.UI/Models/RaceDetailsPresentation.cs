@@ -8,7 +8,7 @@ namespace LMU_DeltaRacing.UI.Models;
 public static class RaceDetailsPresentation
 {
     /// <summary>
-    /// Creates a position-ordered classification with fastest-lap sectors and leader gaps.
+    /// Creates a position-ordered classification with sector and fastest-lap deltas.
     /// </summary>
     public static IReadOnlyList<RaceDetailsDriverResult> CreateResults(Session session)
     {
@@ -30,13 +30,13 @@ public static class RaceDetailsPresentation
             .SelectMany(driver => driver.PersonalBestSectors)
             .GroupBy(sector => sector.Key)
             .ToDictionary(group => group.Key, group => group.Min(sector => sector.Value));
+        var sessionBestLap = drivers
+            .Where(driver => driver.FastestLap is not null)
+            .Min(driver => driver.FastestLap!.Time);
         var orderedDrivers = drivers
             .OrderBy(driver => driver.Driver.Position ?? int.MaxValue)
             .ThenBy(driver => driver.Driver.Name, StringComparer.OrdinalIgnoreCase)
             .ToArray();
-        var leader = orderedDrivers.FirstOrDefault();
-        var compareFinishTimes = leader?.Driver.FinishTime.HasValue == true;
-        var leaderTime = compareFinishTimes ? leader!.Driver.FinishTime : leader?.FastestLap?.Time;
 
         return orderedDrivers
             .Select(driver =>
@@ -49,11 +49,8 @@ public static class RaceDetailsPresentation
                             ? bestSector
                             : null))
                     .ToArray();
-                var comparisonTime = compareFinishTimes
-                    ? driver.Driver.FinishTime
-                    : driver.FastestLap?.Time;
-                TimeSpan? gap = leaderTime is { } firstTime && comparisonTime is { } time
-                    ? time - firstTime
+                TimeSpan? lapDelta = sessionBestLap is { } bestLap && driver.FastestLap?.Time is { } lapTime
+                    ? lapTime - bestLap
                     : null;
 
                 return new RaceDetailsDriverResult(
@@ -63,7 +60,7 @@ public static class RaceDetailsPresentation
                     driver.Driver.IsPlayer,
                     driver.FastestLap?.Time,
                     sectors,
-                    gap);
+                    lapDelta);
             })
             .ToArray();
     }
@@ -86,7 +83,11 @@ public static class RaceDetailsPresentation
                     ? SectorPerformance.PersonalBest
                     : SectorPerformance.Standard;
 
-        return new RaceDetailsSectorResult(number, time, performance);
+        TimeSpan? delta = time is { } sectorTime && sessionBest is { } bestTime
+            ? sectorTime - bestTime
+            : null;
+
+        return new RaceDetailsSectorResult(number, time, delta, performance);
     }
 
     private static string GetCarName(Driver driver) =>
@@ -112,7 +113,7 @@ public sealed record RaceDetailsDriverResult(
     bool IsPlayer,
     TimeSpan? FastestLap,
     IReadOnlyList<RaceDetailsSectorResult> Sectors,
-    TimeSpan? GapToLeader);
+    TimeSpan? DeltaToBestLap);
 
 /// <summary>
 /// A sector time and its WEC-style performance classification.
@@ -120,6 +121,7 @@ public sealed record RaceDetailsDriverResult(
 public sealed record RaceDetailsSectorResult(
     int Number,
     TimeSpan? Time,
+    TimeSpan? Delta,
     SectorPerformance Performance);
 
 /// <summary>

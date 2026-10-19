@@ -1007,7 +1007,7 @@ h3 {
 }
 
 .race-details-table {
-    min-width: 820px;
+    min-width: 1320px;
 }
 
 .race-details-table th:first-child,
@@ -1035,6 +1035,10 @@ h3 {
     padding: 0.2rem 0.35rem;
     border-radius: 3px;
     font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.race-details-table td.numeric-cell {
     white-space: nowrap;
 }
 

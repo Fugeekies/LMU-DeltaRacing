@@ -85,9 +85,13 @@ else
                             <th scope="col">NOM DU COUREUR</th>
                             <th scope="col">VOITURE</th>
                             <th scope="col" class="numeric-cell">SECTEUR 1</th>
+                            <th scope="col" class="numeric-cell">DELTA S1</th>
                             <th scope="col" class="numeric-cell">SECTEUR 2</th>
+                            <th scope="col" class="numeric-cell">DELTA S2</th>
                             <th scope="col" class="numeric-cell">SECTEUR 3</th>
-                            <th scope="col" class="numeric-cell">DIFF 1ER</th>
+                            <th scope="col" class="numeric-cell">DELTA S3</th>
+                            <th scope="col" class="numeric-cell">TEMPS TOUR</th>
+                            <th scope="col" class="numeric-cell">DELTA TOUR</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -110,17 +114,10 @@ else
                                             @FormatSector(sector.Time)
                                         </span>
                                     </td>
+                                    <td class="numeric-cell">@FormatGap(sector.Delta)</td>
                                 }
-                                <td class="numeric-cell">
-                                    @if (ReferenceEquals(result, results[0]))
-                                    {
-                                        <span class="leader-label">LEADER</span>
-                                    }
-                                    else
-                                    {
-                                        @FormatGap(result.GapToLeader)
-                                    }
-                                </td>
+                                <td class="numeric-cell">@FormatSector(result.FastestLap)</td>
+                                <td class="numeric-cell">@FormatGap(result.DeltaToBestLap)</td>
                             </tr>
                         }
                     </tbody>

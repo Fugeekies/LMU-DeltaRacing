@@ -45,15 +45,18 @@ public sealed class RaceDetailsPresentationTests
         results.Select(result => result.Name).Should().Equal("Player", "Rival");
         results[0].FastestLap.Should().Be(TimeSpan.FromSeconds(90));
         results[0].Sectors[0].Time.Should().Be(TimeSpan.FromSeconds(30));
+        results[0].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(1));
         results[0].Sectors[0].Performance.Should().Be(SectorPerformance.Standard);
         results[0].Sectors[1].Performance.Should().Be(SectorPerformance.SessionBest);
+        results[0].Sectors[1].Delta.Should().Be(TimeSpan.Zero);
         results[0].Sectors[2].Performance.Should().Be(SectorPerformance.PersonalBest);
-        results[0].GapToLeader.Should().Be(TimeSpan.Zero);
-        results[1].GapToLeader.Should().Be(TimeSpan.FromSeconds(2));
+        results[0].FastestLap.Should().Be(TimeSpan.FromSeconds(90));
+        results[0].DeltaToBestLap.Should().Be(TimeSpan.Zero);
+        results[1].DeltaToBestLap.Should().Be(TimeSpan.FromSeconds(2));
     }
 
     [TestMethod]
-    public void CreateResults_uses_best_lap_gap_when_leader_has_no_finish_time()
+    public void CreateResults_calculates_sector_and_lap_deltas_independently_of_classification()
     {
         var session = new Session(
             Guid.NewGuid(),
@@ -69,7 +72,10 @@ public sealed class RaceDetailsPresentationTests
 
         var results = RaceDetailsPresentation.CreateResults(session);
 
-        results[1].GapToLeader.Should().Be(TimeSpan.FromSeconds(1.25));
+        results[1].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(0.5));
+        results[1].Sectors[1].Delta.Should().Be(TimeSpan.FromSeconds(0.25));
+        results[1].Sectors[2].Delta.Should().Be(TimeSpan.FromSeconds(0.5));
+        results[1].DeltaToBestLap.Should().Be(TimeSpan.FromSeconds(1.25));
     }
 
     private static Driver CreateDriver(
