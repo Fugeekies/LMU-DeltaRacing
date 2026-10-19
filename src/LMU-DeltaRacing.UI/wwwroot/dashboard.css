@@ -1066,6 +1066,28 @@ h3 {
     color: var(--yellow);
 }
 
+.race-details-table .sector-time,
+.race-details-table .lap-time {
+    color: var(--text);
+}
+
+.delta-time {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.delta-best {
+    color: var(--green);
+}
+
+.delta-loss {
+    color: var(--red);
+}
+
+.delta-unavailable {
+    color: var(--muted);
+}
+
 .leader-label {
     color: var(--green);
     font-size: 0.65rem;

@@ -43,7 +43,7 @@ else
     var selectedSession = GetSelectedSession();
     var results = selectedSession is null
         ? Array.Empty<RaceDetailsDriverResult>()
-        : RaceDetailsPresentation.CreateResults(selectedSession);
+        : RaceDetailsPresentation.CreateResults(selectedSession, state.UserName);
 
     <section class="panel race-details-panel">
         <div class="race-details-toolbar">
@@ -114,10 +114,16 @@ else
                                             @FormatSector(sector.Time)
                                         </span>
                                     </td>
-                                    <td class="numeric-cell">@FormatGap(sector.Delta)</td>
+                                    <td class="numeric-cell">
+                                        <span class="delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
+                                    </td>
                                 }
-                                <td class="numeric-cell">@FormatSector(result.FastestLap)</td>
-                                <td class="numeric-cell">@FormatGap(result.DeltaToBestLap)</td>
+                                <td class="numeric-cell"><span class="lap-time">@FormatSector(result.FastestLap)</span></td>
+                                <td class="numeric-cell">
+                                    <span class="delta-time @GetDeltaClass(result.DeltaToBestLap)">
+                                        @FormatGap(result.DeltaToBestLap)
+                                    </span>
+                                </td>
                             </tr>
                         }
                     </tbody>
@@ -156,7 +162,7 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        sessions = state.Sessions
+        sessions = DriverProfile.FilterSessions(state.Sessions, state.UserName)
             .OrderByDescending(session => session.StartedAt)
             .ToArray();
 
@@ -172,9 +178,9 @@ else
             ? sessions.FirstOrDefault(session => session.Id == selectedId)
             : null;
 
-    private static string FormatSessionLabel(Session session)
+    private string FormatSessionLabel(Session session)
     {
-        var category = session.Drivers.FirstOrDefault(driver => driver.IsPlayer)?.CarClass;
+        var category = DriverProfile.FindDriver(session, state.UserName)?.CarClass;
         var label = string.Create(
             System.Globalization.CultureInfo.CurrentCulture,
             $"{session.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {session.TrackVenue} ({session.SessionType})");
@@ -187,6 +193,15 @@ else
             SectorPerformance.SessionBest => "sector-session-best",
             SectorPerformance.PersonalBest => "sector-personal-best",
             _ => "sector-standard"
+        };
+
+    private static string GetDeltaClass(TimeSpan? delta) =>
+        delta switch
+        {
+            { } value when value == TimeSpan.Zero => "delta-best",
+            { } value when value > TimeSpan.Zero => "delta-loss",
+            { } => "delta-best",
+            _ => "delta-unavailable"
         };
 
     private static string FormatSector(TimeSpan? time) =>

@@ -10,7 +10,7 @@ public static class RaceDetailsPresentation
     /// <summary>
     /// Creates a position-ordered classification with sector and fastest-lap deltas.
     /// </summary>
-    public static IReadOnlyList<RaceDetailsDriverResult> CreateResults(Session session)
+    public static IReadOnlyList<RaceDetailsDriverResult> CreateResults(Session session, string? userName)
     {
         ArgumentNullException.ThrowIfNull(session);
 
@@ -57,7 +57,10 @@ public static class RaceDetailsPresentation
                     driver.Driver.Name,
                     GetCarName(driver.Driver),
                     driver.Driver.Position,
-                    driver.Driver.IsPlayer,
+                    string.Equals(
+                        driver.Driver.Name.Trim(),
+                        userName?.Trim(),
+                        StringComparison.OrdinalIgnoreCase),
                     driver.FastestLap?.Time,
                     sectors,
                     lapDelta);

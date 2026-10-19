@@ -15,25 +15,14 @@ public sealed class DriversRankingPresentationTests
     {
         var sessions = new[]
         {
-            CreateSession(
-                ("Player", 1, true),
-                ("Rival", 2, false)),
-            CreateSession(
-                ("Player", 4, true),
-                ("Rival", 2, false)),
-            CreateSession(
-                ("Player", 1, true),
-                ("Rival", 1, false)),
-            CreateSession(
-                ("Player", 2, true),
-                ("Unknown position", null, false)),
-            CreateSession(
-                ("Player", 1, true),
-                ("Unrelated session", 2, false),
-                playerIsMarked: false)
+            CreateSession(("Player", 1), ("Rival", 2)),
+            CreateSession(("Player", 4), ("Rival", 2)),
+            CreateSession(("Player", 1), ("Rival", 1)),
+            CreateSession(("Player", 2), ("Unknown position", null)),
+            CreateSession(("Different driver", 1), ("Unrelated session", 2))
         };
 
-        var rivalries = DriversRankingPresentation.CreateRivalries(sessions);
+        var rivalries = DriversRankingPresentation.CreateRivalries(sessions, "Player");
 
         rivalries.Should().ContainSingle();
         rivalries[0].Name.Should().Be("Rival");
@@ -44,19 +33,9 @@ public sealed class DriversRankingPresentationTests
     }
 
     private static Session CreateSession(
-        (string Name, int? Position, bool IsPlayer) first,
-        (string Name, int? Position, bool IsPlayer) second,
-        (string Name, int? Position, bool IsPlayer)? third = null,
-        bool playerIsMarked = true)
+        (string Name, int? Position) first,
+        (string Name, int? Position) second)
     {
-        var entries = third is { } thirdEntry
-            ? new[] { first, second, thirdEntry }
-            : [first, second];
-        if (!playerIsMarked)
-        {
-            entries = entries.Select(entry => (entry.Name, entry.Position, IsPlayer: false)).ToArray();
-        }
-
         return new Session(
             Guid.NewGuid(),
             DateTimeOffset.UtcNow,
@@ -64,13 +43,12 @@ public sealed class DriversRankingPresentationTests
             "Track",
             "Event",
             "Race",
-            entries.Select(entry => new Driver(
+            new[] { first, second }.Select(entry => new Driver(
                 entry.Name,
                 string.Empty,
                 "Hyper",
                 string.Empty,
                 entry.Position,
-                [],
-                entry.IsPlayer)));
+                [])));
     }
 }

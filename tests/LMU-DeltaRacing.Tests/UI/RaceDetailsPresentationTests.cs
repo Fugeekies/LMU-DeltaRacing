@@ -40,9 +40,11 @@ public sealed class RaceDetailsPresentationTests
             "Race",
             [rival, player]);
 
-        var results = RaceDetailsPresentation.CreateResults(session);
+        var results = RaceDetailsPresentation.CreateResults(session, "Player");
 
         results.Select(result => result.Name).Should().Equal("Player", "Rival");
+        results[0].IsPlayer.Should().BeTrue();
+        results[1].IsPlayer.Should().BeFalse();
         results[0].FastestLap.Should().Be(TimeSpan.FromSeconds(90));
         results[0].Sectors[0].Time.Should().Be(TimeSpan.FromSeconds(30));
         results[0].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(1));
@@ -70,7 +72,7 @@ public sealed class RaceDetailsPresentationTests
                 CreateDriver("Rival", 2, false, null, [CreateLap(91.25, 30.5, 30.25, 30.5)])
             ]);
 
-        var results = RaceDetailsPresentation.CreateResults(session);
+        var results = RaceDetailsPresentation.CreateResults(session, "Player");
 
         results[1].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(0.5));
         results[1].Sectors[1].Delta.Should().Be(TimeSpan.FromSeconds(0.25));
@@ -91,7 +93,6 @@ public sealed class RaceDetailsPresentationTests
             "Team",
             position,
             laps,
-            isPlayer,
             $"{name} Car",
             finishTime: finishTime);
 

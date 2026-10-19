@@ -131,7 +131,7 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        rivalries = DriversRankingPresentation.CreateRivalries(state.Sessions);
+        rivalries = DriversRankingPresentation.CreateRivalries(state.Sessions, state.UserName);
     }
 
     private IReadOnlyList<DriverRivalry> GetFilteredRivalries()
