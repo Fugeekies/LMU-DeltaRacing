@@ -11,6 +11,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>LMU_DeltaRacing.UI</RootNamespace>
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
+    <ApplicationIcon>..\..\assets\icons\Logo-Delta-Racing-rouge-et-blanc-1.ico</ApplicationIcon>
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
   </PropertyGroup>
 
