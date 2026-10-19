@@ -925,6 +925,174 @@ h3 {
     min-height: 140px;
 }
 
+.ranking-panel,
+.race-details-panel {
+    overflow: hidden;
+}
+
+.ranking-filters,
+.race-details-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 1rem;
+    padding: 1.25rem;
+}
+
+.ranking-filter {
+    display: grid;
+    min-width: 230px;
+    gap: 0.4rem;
+    color: var(--muted);
+    font-size: 0.63rem;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+}
+
+.ranking-filter input,
+.ranking-filter select,
+.race-session-filter select {
+    min-height: 40px;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-raised);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.78rem;
+    letter-spacing: normal;
+}
+
+.ranking-filter input:focus-visible,
+.ranking-filter select:focus-visible,
+.race-session-filter select:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.ranking-search {
+    flex: 1 1 280px;
+}
+
+.ranking-table {
+    min-width: 590px;
+}
+
+.ranking-driver,
+.race-driver-name {
+    font-weight: 650;
+}
+
+.race-session-filter {
+    flex: 1 1 420px;
+    max-width: 850px;
+}
+
+.race-session-filter select {
+    width: 100%;
+}
+
+.session-meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 0.75rem;
+    padding-bottom: 0.15rem;
+    color: var(--muted);
+    font-size: 0.74rem;
+}
+
+.race-details-scroll {
+    max-height: 680px;
+}
+
+.race-details-table {
+    min-width: 820px;
+}
+
+.race-details-table th:first-child,
+.race-details-table td:first-child {
+    padding-left: 1.25rem;
+}
+
+.race-details-table th:last-child,
+.race-details-table td:last-child {
+    padding-right: 1.25rem;
+}
+
+.player-tag {
+    margin-left: 0.4rem;
+    color: var(--accent);
+    font-size: 0.57rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    white-space: nowrap;
+}
+
+.sector-time {
+    display: inline-block;
+    min-width: 5.3rem;
+    padding: 0.2rem 0.35rem;
+    border-radius: 3px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+
+.sector-session-best {
+    background: rgb(176 102 255 / 18%);
+    color: var(--purple);
+}
+
+.sector-personal-best {
+    background: rgb(34 197 94 / 13%);
+    color: var(--green);
+}
+
+.sector-standard {
+    color: var(--yellow);
+}
+
+.leader-label {
+    color: var(--green);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.sector-legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem 1.5rem;
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.68rem;
+}
+
+.sector-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.sector-legend-swatch {
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+}
+
+.sector-legend-swatch.sector-session-best {
+    background: var(--purple);
+}
+
+.sector-legend-swatch.sector-personal-best {
+    background: var(--green);
+}
+
+.sector-legend-swatch.sector-standard {
+    background: var(--yellow);
+}
+
 @media (max-width: 1120px) {
 }
 
@@ -935,6 +1103,18 @@ h3 {
 
     .race-filter {
         min-width: 0;
+    }
+
+    .ranking-filters,
+    .race-details-toolbar {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .ranking-filter,
+    .race-session-filter {
+        min-width: 0;
+        max-width: none;
     }
 
     .circuit-heading {

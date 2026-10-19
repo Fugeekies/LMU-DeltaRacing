@@ -1,0 +1,159 @@
+@page "/drivers-ranking"
+@implements IDisposable
+@inject DashboardDataService DashboardData
+
+<PageTitle>Classement des coureurs | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">RIVALITÉ &amp; HISTORIQUE DES ADVERSAIRES</p>
+        <h1>Classement des coureurs</h1>
+        <p class="page-subtitle">Vos résultats face aux pilotes rencontrés dans les sessions importées.</p>
+    </div>
+</section>
+
+@if (state.IsLoading && state.Sessions.Count == 0)
+{
+    <section class="panel empty-state" aria-live="polite">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Chargement de l’historique des courses…</p>
+    </section>
+}
+else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <p>@state.ErrorMessage</p>
+            <p>Vérifiez le dossier configuré dans Options.</p>
+        </div>
+    </section>
+}
+else if (rivalries.Count == 0)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucun affrontement disponible</h3>
+        <p>Les confrontations apparaîtront lorsque des sessions importées contiendront un résultat classé pour vous et vos adversaires.</p>
+    </section>
+}
+else
+{
+    var filteredRivalries = GetFilteredRivalries();
+    <section class="panel ranking-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">HISTORIQUE HEAD-TO-HEAD</p>
+                <h2>Adversaires rencontrés</h2>
+            </div>
+            <span class="count-badge">@filteredRivalries.Count</span>
+        </div>
+
+        <div class="ranking-filters">
+            <label class="ranking-filter ranking-search">
+                <span>RECHERCHER UN PILOTE</span>
+                <input @bind="searchText"
+                       @bind:event="oninput"
+                       type="search"
+                       placeholder="Nom du pilote…"
+                       aria-label="Rechercher un pilote par nom" />
+            </label>
+            <label class="ranking-filter">
+                <span>TRIER PAR</span>
+                <select @bind="sortOrder" aria-label="Trier le classement">
+                    <option value="sessions">Courses affrontées (décroissant)</option>
+                    <option value="wins">Victoires (décroissant)</option>
+                    <option value="percentage">% de victoire (décroissant)</option>
+                    <option value="name">Nom (A à Z)</option>
+                </select>
+            </label>
+        </div>
+
+        @if (filteredRivalries.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Aucun pilote ne correspond à cette recherche.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-scroll">
+                <table class="data-table ranking-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">NOM DU PILOTE</th>
+                            <th scope="col" class="numeric-cell">COURSES AFFRONTÉES</th>
+                            <th scope="col" class="numeric-cell">VICTOIRES</th>
+                            <th scope="col" class="numeric-cell">DÉFAITES</th>
+                            <th scope="col" class="numeric-cell">% DE VICTOIRE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var rivalry in filteredRivalries)
+                        {
+                            <tr>
+                                <td class="ranking-driver">@rivalry.Name</td>
+                                <td class="numeric-cell">@rivalry.SessionsFaced</td>
+                                <td class="numeric-cell">@rivalry.Wins</td>
+                                <td class="numeric-cell">@rivalry.Losses</td>
+                                <td class="numeric-cell">@rivalry.WinPercentage.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)%</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </section>
+}
+
+@code {
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyList<DriverRivalry> rivalries = [];
+    private string searchText = string.Empty;
+    private string sortOrder = "sessions";
+
+    protected override void OnInitialized()
+    {
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        UpdateState();
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            UpdateState();
+            StateHasChanged();
+        });
+
+    private void UpdateState()
+    {
+        state = DashboardData.Snapshot;
+        rivalries = DriversRankingPresentation.CreateRivalries(state.Sessions);
+    }
+
+    private IReadOnlyList<DriverRivalry> GetFilteredRivalries()
+    {
+        var filtered = rivalries.Where(rivalry =>
+            string.IsNullOrWhiteSpace(searchText)
+            || rivalry.Name.Contains(searchText, StringComparison.OrdinalIgnoreCase));
+
+        return sortOrder switch
+        {
+            "wins" => filtered.OrderByDescending(rivalry => rivalry.Wins)
+                .ThenByDescending(rivalry => rivalry.SessionsFaced)
+                .ThenBy(rivalry => rivalry.Name, StringComparer.OrdinalIgnoreCase)
+                .ToArray(),
+            "percentage" => filtered.OrderByDescending(rivalry => rivalry.WinPercentage)
+                .ThenByDescending(rivalry => rivalry.SessionsFaced)
+                .ThenBy(rivalry => rivalry.Name, StringComparer.OrdinalIgnoreCase)
+                .ToArray(),
+            "name" => filtered.OrderBy(rivalry => rivalry.Name, StringComparer.OrdinalIgnoreCase).ToArray(),
+            _ => filtered.OrderByDescending(rivalry => rivalry.SessionsFaced)
+                .ThenBy(rivalry => rivalry.Name, StringComparer.OrdinalIgnoreCase)
+                .ToArray()
+        };
+    }
+}
