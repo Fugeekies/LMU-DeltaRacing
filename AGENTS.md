@@ -40,7 +40,7 @@ Points d'attention :
 
 Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 - Racine `rFactorXML/RaceResults` avec un DOCTYPE interne (garder `DtdProcessing.Ignore`, sans `XmlResolver`).
-- Une phase par fichier : `Practice1`, `Qualify` ou `Race`. La console **ignore les sessions Practice à l'import** (`SessionImportStatus.SkippedPractice`) ; le dashboard les importe (`SessionImportService(..., importPracticeSessions: true)`) et ne les affiche que dans « Détail des courses », sur demande. Dans un même événement, essais, qualif et course partagent le même `RaceResults/DateTime`.
+- Une phase par fichier : `Practice1`, `Qualify` ou `Race`. La console **ignore les sessions Practice à l'import** (`SessionImportStatus.SkippedPractice`) ; le dashboard les importe (`SessionImportService(..., importPracticeSessions: true)`) et ne les affiche que dans l'onglet Essais de « Détail des courses » (séances d'un même événement fusionnées). Dans un même événement, essais, qualif et course partagent le même `RaceResults/DateTime`.
 - `RaceResults/DateTime` est un timestamp Unix (UTC). `TimeString` est l'heure locale. Afficher avec `ToLocalTime()`.
 - `<Lap num=".." s1 s2 s3>` : secteurs **partiels** (s1+s2+s3 = temps du tour). Un tour invalide vaut `--.----` et un secteur peut manquer.
 - Valeurs de `CarClass` présentes : `Hyper`, `LMP2`, `LMP3`, `GTE`, `GT3`. Des sessions sont **multiclasses**.

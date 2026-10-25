@@ -5,13 +5,13 @@ using LMU_DeltaRacing.UI.Models;
 namespace LMU_DeltaRacing.Tests.UI;
 
 /// <summary>
-/// Verifies the race and qualifying histories and their delta calculations.
+/// Verifies the race-history pairing and delta calculations.
 /// </summary>
 [TestClass]
 public sealed class MyRacesPresentationTests
 {
     [TestMethod]
-    public void CreateSessions_returns_one_row_per_race_and_qualifying_with_deltas_per_session_type()
+    public void CreateRecords_pairs_each_race_with_the_preceding_qualifying_even_on_the_same_day()
     {
         var sessions = new[]
         {
@@ -30,50 +30,99 @@ public sealed class MyRacesPresentationTests
                 lapsCompleted: 8)
         };
 
-        var rows = MyRacesPresentation.CreateSessions(sessions, "Driver");
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
 
-        var races = rows.Where(row => row.Kind == MyRaceSessionKind.Race).ToArray();
-        races.Should().HaveCount(2);
-        races[0].StartedAt.Should().Be(Date("2025-02-22T12:30:00Z"));
-        races[0].Category.Should().Be("Hypercar");
-        races[0].Car.Should().Be("Toyota");
-        races[0].BestLap.Should().Be(TimeSpan.FromSeconds(125.5));
-        races[0].Delta.Should().Be(TimeSpan.FromSeconds(1));
-        races[0].GridPosition.Should().Be(2);
-        races[0].LapsCompleted.Should().Be(8);
-        races[0].FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
-        races[1].BestLap.Should().Be(TimeSpan.FromSeconds(124.5));
-        races[1].Delta.Should().BeNull();
-
-        var qualifyings = rows.Where(row => row.Kind == MyRaceSessionKind.Qualifying).ToArray();
-        qualifyings.Should().HaveCount(2);
-        qualifyings[0].BestLap.Should().Be(TimeSpan.FromSeconds(121.75));
-        qualifyings[0].Delta.Should().Be(TimeSpan.FromSeconds(-0.5));
-        qualifyings[1].Delta.Should().BeNull();
+        records.Should().HaveCount(2);
+        records[0].StartedAt.Should().Be(DateTimeOffset.Parse("2025-02-22T12:00:00Z", System.Globalization.CultureInfo.InvariantCulture));
+        records[0].Category.Should().Be("Hypercar");
+        records[0].Car.Should().Be("Toyota");
+        records[0].QualifyingTime.Should().Be(TimeSpan.FromSeconds(121.75));
+        records[0].QualifyingDelta.Should().Be(TimeSpan.FromSeconds(-0.5));
+        records[0].GridPosition.Should().Be(2);
+        records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125.5));
+        records[0].RaceDelta.Should().Be(TimeSpan.FromSeconds(1));
+        records[0].LapsCompleted.Should().Be(8);
+        records[0].FinishTime.Should().Be(TimeSpan.FromSeconds(1326.8575));
+        records[1].QualifyingTime.Should().Be(TimeSpan.FromSeconds(122.25));
+        records[1].RaceTime.Should().Be(TimeSpan.FromSeconds(124.5));
+        records[1].GridPosition.Should().Be(4);
+        records[1].QualifyingDelta.Should().BeNull();
+        records[1].RaceDelta.Should().BeNull();
     }
 
     [TestMethod]
-    public void CreateSessions_uses_only_selected_driver_results_and_ignores_practice()
+    public void CreateRecords_keeps_unpaired_qualifying_and_race_sessions_as_partial_records()
     {
         var sessions = new[]
         {
-            CreateSession("Practice1", "Spa", "Hyper", "Toyota", "2025-02-22T10:00:00Z", [120]),
+            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T10:00:00Z", [126]),
+            CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T11:00:00Z", [123]),
+            CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T12:00:00Z", [122]),
+            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T12:30:00Z", [125])
+        };
+
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
+
+        records.Should().HaveCount(3);
+        records[0].QualifyingTime.Should().Be(TimeSpan.FromSeconds(122));
+        records[0].RaceTime.Should().Be(TimeSpan.FromSeconds(125));
+        records[1].QualifyingTime.Should().Be(TimeSpan.FromSeconds(123));
+        records[1].RaceTime.Should().BeNull();
+        records[2].QualifyingTime.Should().BeNull();
+        records[2].RaceTime.Should().Be(TimeSpan.FromSeconds(126));
+    }
+
+    [TestMethod]
+    public void CreateRecords_does_not_pair_sessions_from_different_circuits()
+    {
+        var sessions = new[]
+        {
+            CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T11:00:00Z", [122]),
+            CreateSession("Race", "Monza", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [105])
+        };
+
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
+
+        records.Should().HaveCount(2);
+        records.Should().Contain(record => record.TrackVenue == "Spa" && record.RaceTime == null);
+        records.Should().Contain(record => record.TrackVenue == "Monza" && record.QualifyingTime == null);
+    }
+
+    [TestMethod]
+    public void CreateRecords_uses_the_race_category_and_car_when_they_differ_from_qualifying()
+    {
+        var sessions = new[]
+        {
+            CreateSession("Qualify", "Spa", "LMP2", "Oreca 07", "2025-02-22T11:00:00Z", [130]),
+            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [125])
+        };
+
+        var record = MyRacesPresentation.CreateRecords(sessions, "Driver").Should().ContainSingle().Which;
+
+        record.Category.Should().Be("Hypercar");
+        record.Car.Should().Be("Toyota");
+    }
+
+    [TestMethod]
+    public void CreateRecords_uses_only_selected_driver_results()
+    {
+        var sessions = new[]
+        {
             CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T11:00:00Z", [122]),
             CreateSession("Qualify", "Spa", "Hyper", "Other", "2025-02-22T11:00:00Z", [110], driverName: "Opponent"),
             CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T12:00:00Z", [125]),
             CreateSession("Race", "Spa", "Hyper", "Other", "2025-02-22T12:00:00Z", [110], driverName: "Opponent")
         };
 
-        var rows = MyRacesPresentation.CreateSessions(sessions, "Driver");
+        var record = MyRacesPresentation.CreateRecords(sessions, "Driver").Should().ContainSingle().Which;
 
-        rows.Should().HaveCount(2);
-        rows.Should().OnlyContain(row => row.Car == "Toyota");
-        rows.Single(row => row.Kind == MyRaceSessionKind.Qualifying).BestLap.Should().Be(TimeSpan.FromSeconds(122));
-        rows.Single(row => row.Kind == MyRaceSessionKind.Race).BestLap.Should().Be(TimeSpan.FromSeconds(125));
+        record.Car.Should().Be("Toyota");
+        record.QualifyingTime.Should().Be(TimeSpan.FromSeconds(122));
+        record.RaceTime.Should().Be(TimeSpan.FromSeconds(125));
     }
 
     [TestMethod]
-    public void CreateSessions_maps_every_lmu_class_and_keeps_unknown_classes_under_their_raw_name()
+    public void CreateRecords_maps_every_lmu_class_and_keeps_unknown_classes_under_their_raw_name()
     {
         var sessions = new[]
         {
@@ -85,44 +134,45 @@ public sealed class MyRacesPresentationTests
             CreateSession("Qualify", "Spa", "Classic", "Car", "2025-02-26T11:00:00Z", [125])
         };
 
-        var rows = MyRacesPresentation.CreateSessions(sessions, "Driver");
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
 
-        rows.Select(row => row.Category)
+        records.Select(record => record.Category)
             .Should()
             .BeEquivalentTo(["Classic", "LMGT3", "LMGTE", "LMP3", "LMP2", "Hypercar"], options => options.WithStrictOrdering());
     }
 
     [TestMethod]
-    public void CreateSessions_compares_previous_results_on_same_track_and_category_even_when_vehicle_changes()
+    public void CreateRecords_compares_previous_results_on_same_track_and_category_even_when_vehicle_changes()
     {
         var sessions = new[]
         {
             CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T11:00:00Z", [122]),
             CreateSession("Qualify", "Le Mans", "Hyper", "Toyota", "2025-02-23T11:00:00Z", [121]),
             CreateSession("Qualify", "Spa", "GT3", "BMW", "2025-02-24T12:00:00Z", [130]),
-            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-24T13:00:00Z", [125]),
-            CreateSession("Qualify", "Spa", "Hyper", "Ferrari", "2025-02-25T13:00:00Z", [123])
+            CreateSession("Qualify", "Spa", "Hyper", "Ferrari", "2025-02-25T13:00:00Z", [123]),
+            CreateSession("Practice", "Spa", "Hyper", "Toyota", "2025-02-24T11:00:00Z", [120])
         };
 
-        var rows = MyRacesPresentation.CreateSessions(sessions, "Driver");
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
 
-        rows.Should().HaveCount(5);
-        rows.Should().ContainSingle(row =>
-                row.TrackVenue == "Spa"
-                && row.Kind == MyRaceSessionKind.Qualifying
-                && row.Category == "Hypercar"
-                && row.BestLap == TimeSpan.FromSeconds(123))
-            .Which.Delta.Should().Be(TimeSpan.FromSeconds(1));
-        rows.Should().Contain(row => row.TrackVenue == "Le Mans" && row.Delta == null);
-        rows.Should().Contain(row => row.Category == "LMGT3" && row.Delta == null);
-        rows.Should().Contain(row => row.Kind == MyRaceSessionKind.Race && row.Delta == null);
+        records.Should().HaveCount(4);
+        records.Should().ContainSingle(record =>
+                record.TrackVenue == "Spa"
+                && record.Category == "Hypercar"
+                && record.QualifyingTime == TimeSpan.FromSeconds(123))
+            .Which.QualifyingDelta.Should().Be(TimeSpan.FromSeconds(1));
+        records.Should().Contain(record =>
+            record.TrackVenue == "Le Mans" && record.Category == "Hypercar" && record.QualifyingDelta == null);
+        records.Should().Contain(record =>
+            record.TrackVenue == "Spa" && record.Category == "LMGT3" && record.QualifyingDelta == null);
     }
 
     /// <summary>
-    /// Guards against merging races: every race of the main fixture driver must have its own row.
+    /// Guards against the former grouping by day, which merged the 87 races of the main fixture
+    /// driver into 37 rows and hid every GTE and LMP3 session.
     /// </summary>
     [TestMethod]
-    public void CreateSessions_on_real_fixtures_keeps_every_race_and_every_class()
+    public void CreateRecords_on_real_fixtures_keeps_every_race_and_every_class()
     {
         var parser = new LMU_DeltaRacing.Infrastructure.Parsing.XmlResultParser();
         var sessions = Directory
@@ -133,15 +183,15 @@ public sealed class MyRacesPresentationTests
                 return parser.Parse(stream);
             })
             .ToArray();
+        var raceCount = sessions.Count(session =>
+            session.SessionType == "Race" && DriverProfile.FindDriver(session, "Driver Tom") is not null);
 
-        var rows = MyRacesPresentation.CreateSessions(sessions, "Driver Tom");
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver Tom");
 
-        rows.Count(row => row.Kind == MyRaceSessionKind.Race).Should().Be(87);
-        rows.Select(row => row.Category).Should().Contain(["LMGTE", "LMP3", "LMGT3", "LMP2", "Hypercar"]);
+        raceCount.Should().Be(87);
+        records.Count.Should().BeGreaterThanOrEqualTo(raceCount);
+        records.Select(record => record.Category).Should().Contain(["LMGTE", "LMP3", "LMGT3", "LMP2", "Hypercar"]);
     }
-
-    private static DateTimeOffset Date(string value) =>
-        DateTimeOffset.Parse(value, System.Globalization.CultureInfo.InvariantCulture);
 
     private static Session CreateSession(
         string type,
@@ -157,7 +207,7 @@ public sealed class MyRacesPresentationTests
     {
         return new Session(
             Guid.NewGuid(),
-            Date(startedAt),
+            DateTimeOffset.Parse(startedAt, System.Globalization.CultureInfo.InvariantCulture),
             track,
             track,
             $"Event {track}",

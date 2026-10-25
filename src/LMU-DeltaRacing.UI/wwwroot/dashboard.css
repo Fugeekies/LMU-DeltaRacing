@@ -871,33 +871,38 @@ h3 {
     margin-bottom: 0.15rem;
 }
 
-.session-table-title {
+.session-tabs {
     display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 0.9rem 1.25rem 0.5rem;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    padding: 0 1.25rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.session-tab {
+    padding: 0.7rem 1rem 0.6rem;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    background: transparent;
     color: var(--muted);
+    cursor: pointer;
     font-family: Oswald, "Roboto Condensed", "Arial Narrow", Impact, sans-serif;
-    font-size: 0.72rem;
+    font-size: 0.74rem;
     letter-spacing: 0.08em;
 }
 
-.session-table-title span {
+.session-tab:hover {
     color: var(--text);
 }
 
-.session-table-empty {
-    margin: 0;
-    padding: 0 1.25rem 0.9rem;
-    color: var(--muted);
-    font-size: 0.74rem;
+.session-tab.is-active {
+    border-bottom-color: var(--accent);
+    color: var(--text);
 }
 
-.practice-toggle {
-    align-self: flex-end;
-    padding-bottom: 0.65rem;
-    white-space: nowrap;
+.session-tab:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
 }
 
 .circuit-heading h3 {

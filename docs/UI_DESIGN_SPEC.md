@@ -60,7 +60,7 @@ UISpec/
 ### Récapitulatif des 4 Menus Principaux :
 
 1. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
-   * Historique et progression personnelle groupés par circuit : un tableau Course puis un tableau Qualification, une ligne par session.
+   * Historique et progression personnelle groupés par circuit, une ligne par paire qualification + course.
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
    * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 
@@ -69,7 +69,7 @@ UISpec/
    * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
-   * Analyse télémétrique fine d'une session sélectionnée via une liste déroulante.
+   * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
    * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal et écart au leader de la classe (DIFF 1ER).
 
 4. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*

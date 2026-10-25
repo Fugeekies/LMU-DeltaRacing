@@ -96,89 +96,43 @@ else
                                 <span class="circuit-course">@circuit.Key.TrackCourse</span>
                             }
                         </div>
-                        <span class="count-badge">@circuit.Count() sessions</span>
+                        <span class="count-badge">@circuit.Count() résultats</span>
                     </div>
-
-                    @* The race comes first: it is the result that counts. *@
-                    @{
-                        var races = circuit.Where(record => record.Kind == MyRaceSessionKind.Race).ToArray();
-                        var qualifyings = circuit.Where(record => record.Kind == MyRaceSessionKind.Qualifying).ToArray();
-                    }
-                    <h4 class="session-table-title">COURSE <span>@races.Length</span></h4>
-                    @if (races.Length == 0)
-                    {
-                        <p class="session-table-empty">Aucune course sur ce circuit.</p>
-                    }
-                    else
-                    {
-                        <div class="table-scroll">
-                            <table class="data-table races-table">
-                                <thead>
+                    <div class="table-scroll">
+                        <table class="data-table races-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">DATE / HEURE</th>
+                                    <th scope="col">CATÉGORIE</th>
+                                    <th scope="col">VOITURE</th>
+                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR QUALIF</th>
+                                    <th scope="col" class="numeric-cell">DELTA QUALIF (n-1)</th>
+                                    <th scope="col" class="numeric-cell">GRILLE</th>
+                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR COURSE</th>
+                                    <th scope="col" class="numeric-cell">DELTA COURSE (n-1)</th>
+                                    <th scope="col" class="numeric-cell">TOURS</th>
+                                    <th scope="col" class="numeric-cell">TEMPS TOTAL COURSE</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var record in circuit.OrderByDescending(record => record.StartedAt))
+                                {
                                     <tr>
-                                        <th scope="col">DATE / HEURE</th>
-                                        <th scope="col">CATÉGORIE</th>
-                                        <th scope="col">VOITURE</th>
-                                        <th scope="col" class="numeric-cell">GRILLE</th>
-                                        <th scope="col" class="numeric-cell">MEILLEUR TOUR</th>
-                                        <th scope="col" class="numeric-cell">DELTA (n-1)</th>
-                                        <th scope="col" class="numeric-cell">TOURS</th>
-                                        <th scope="col" class="numeric-cell">TEMPS TOTAL</th>
+                                        <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td><span class="category-badge">@record.Category</span></td>
+                                        <td class="car-cell"><strong>@record.Car</strong></td>
+                                        <td class="numeric-cell">@FormatLap(record.QualifyingTime)</td>
+                                        <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
+                                        <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
+                                        <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
+                                        <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
+                                        <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
+                                        <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
                                     </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var record in races)
-                                    {
-                                        <tr>
-                                            <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
-                                            <td><span class="category-badge">@record.Category</span></td>
-                                            <td class="car-cell"><strong>@record.Car</strong></td>
-                                            <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
-                                            <td class="numeric-cell">@FormatLap(record.BestLap)</td>
-                                            <td class="numeric-cell">@FormatDelta(record.Delta)</td>
-                                            <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
-                                            <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    }
-
-                    <h4 class="session-table-title">QUALIFICATION <span>@qualifyings.Length</span></h4>
-                    @if (qualifyings.Length == 0)
-                    {
-                        <p class="session-table-empty">Aucune qualification sur ce circuit.</p>
-                    }
-                    else
-                    {
-                        <div class="table-scroll">
-                            <table class="data-table races-table">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">DATE / HEURE</th>
-                                        <th scope="col">CATÉGORIE</th>
-                                        <th scope="col">VOITURE</th>
-                                        <th scope="col" class="numeric-cell">MEILLEUR TOUR</th>
-                                        <th scope="col" class="numeric-cell">DELTA (n-1)</th>
-                                        <th scope="col" class="numeric-cell">TOURS</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    @foreach (var record in qualifyings)
-                                    {
-                                        <tr>
-                                            <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
-                                            <td><span class="category-badge">@record.Category</span></td>
-                                            <td class="car-cell"><strong>@record.Car</strong></td>
-                                            <td class="numeric-cell">@FormatLap(record.BestLap)</td>
-                                            <td class="numeric-cell">@FormatDelta(record.Delta)</td>
-                                            <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
-                                        </tr>
-                                    }
-                                </tbody>
-                            </table>
-                        </div>
-                    }
+                                }
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
             }
         }
@@ -187,7 +141,7 @@ else
 
 @code {
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
-    private IReadOnlyList<MyRaceSession> records = [];
+    private IReadOnlyList<MyRaceRecord> records = [];
     private string[] tracks = [];
     private string[] categories = [.. CarCategory.Known];
     private string selectedTrack = string.Empty;
@@ -211,7 +165,7 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        records = MyRacesPresentation.CreateSessions(state.Sessions, state.UserName);
+        records = MyRacesPresentation.CreateRecords(state.Sessions, state.UserName);
         tracks = records
             .Select(record => record.TrackVenue)
             .Distinct(StringComparer.OrdinalIgnoreCase)
@@ -230,7 +184,7 @@ else
         ];
     }
 
-    private IReadOnlyList<MyRaceSession> GetFilteredRecords() =>
+    private IReadOnlyList<MyRaceRecord> GetFilteredRecords() =>
         records
             .Where(record => string.IsNullOrEmpty(selectedTrack)
                 || string.Equals(record.TrackVenue, selectedTrack, StringComparison.OrdinalIgnoreCase))
