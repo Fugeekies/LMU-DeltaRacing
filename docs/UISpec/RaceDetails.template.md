@@ -28,7 +28,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * **Delta secteur** = meilleur secteur du pilote − meilleur secteur de la classe.
   * **Delta tour** = meilleur tour du pilote − meilleur tour de la classe.
   * **Leader de la classe** : pilote de plus petite position en classe (`ClassPosition`, à défaut position générale).
-* **DIFF 1ER (écart au leader de la classe) :**
+* **Écart au 1er** (ligne secondaire de la colonne TEMPS TOTAL, écart au leader de la classe) :
   * Leader de la classe : `LEADER`.
   * En course, dans cet ordre :
     1. pilote `DNF` ou `DQ` (`FinishStatus`) : le statut est affiché ;
@@ -48,9 +48,9 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | POS / CLASSE | Position générale (`01`, `02`… ou `—`) | Badge de catégorie (voir « Mes courses ») + position en classe (`LMGT3 P2`) |
   | PILOTE / VOITURE | Nom, suivi du tag **VOUS** pour le pilote sélectionné | `CarType`, à défaut `#<CarNumber>`, à défaut `—` (tronqué avec « … » si trop long) |
   | SECTEUR 1 / 2 / 3 / ÉCART | Meilleur secteur personnel, coloré selon les règles WEC (`38.120s`) | Écart au meilleur secteur de la classe (`+0.130s` / `0.000s`) |
-  | TOUR IDÉAL | Somme des meilleurs secteurs (`m:ss.fff`) | — |
+  | TOUR IDÉAL / ÉCART | Somme des meilleurs secteurs (`m:ss.fff`) | Écart au meilleur tour idéal de la classe (`+2.309s`) |
   | MEILLEUR TOUR / ÉCART | Meilleur tour du pilote (`m:ss.fff`) | Écart au meilleur tour de la classe (`+0.469s`) |
-  | DIFF 1ER | Écart au leader de la classe : `LEADER`, `+12.500s`, `+1 tour`, `DNF` | — |
+  | TEMPS TOTAL / ÉCART AU 1ER | En course : temps total du pilote (`FinishTime`, `h:mm:ss.fff` si ≥ 1 h sinon `m:ss.fff`) ; `—` en qualification, pour un pilote DNF/DQ ou sans temps | Écart au leader de la classe : `LEADER` (vert), `+12.500s`, `+1 tour`, `DNF` (rouge) |
 
 * **Ligne du pilote sélectionné :** légèrement surlignée (fond rouge LMU translucide), en plus du tag **VOUS**.
 * Le tableau garde sa zone de défilement **vertical** (hauteur maximale 680 px, en-tête fixe).
@@ -77,17 +77,17 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
 │  [ 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Essais · Qualif · Course) - LMGT3 ▼ ]     Circuit de Spa-Francorchamps                      │
 │  [ COURSE ]   QUALIFICATION   ESSAIS                                                                                                               │
 │  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  POS        PILOTE                  SECTEUR 1    SECTEUR 2    SECTEUR 3    TOUR IDÉAL   MEILLEUR TOUR   DIFF 1ER                                     │
-│  CLASSE     VOITURE                 ÉCART        ÉCART        ÉCART                     ÉCART                                                        │
+│  POS        PILOTE                  SECTEUR 1    SECTEUR 2    SECTEUR 3    TOUR IDÉAL   MEILLEUR TOUR   TEMPS TOTAL                                  │
+│  CLASSE     VOITURE                 ÉCART        ÉCART        ÉCART        ÉCART        ÉCART           ÉCART AU 1ER                                 │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  01         Driver Louis            🟣 41.859s   🟡 74.351s   🟣 44.395s   2:40.605     2:41.796        LEADER                                       │
-│  LMGT3 P1   BMW M4 LMGT3            0.000s       +0.370s      0.000s                    0.000s                                                       │
+│  01         Driver Louis            🟣 41.859s   🟡 74.351s   🟣 44.395s   2:40.605     2:41.796        21:47.737                                    │
+│  LMGT3 P1   BMW M4 LMGT3            0.000s       +0.370s      0.000s       0.000s       0.000s          LEADER                                       │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  04         Driver Tom VOUS         🟡 42.478s   🟡 74.602s   🟡 45.835s   2:42.914     2:44.849        +49.908s       ← ligne surlignée             │
-│  LMGT3 P4   Porsche 911 GT3 R       +0.619s      +0.621s      +1.439s                   +3.054s                                                      │
+│  04         Driver Tom VOUS         🟡 42.478s   🟡 74.602s   🟡 45.835s   2:42.914     2:44.849        22:37.645      ← ligne surlignée             │
+│  LMGT3 P4   Porsche 911 GT3 R       +0.619s      +0.621s      +1.439s      +2.309s      +3.054s         +49.908s                                     │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  11         Driver Emma             🟡 42.411s   🟡 75.358s   🟡 45.068s   2:42.836     2:43.196        DNF                                          │
-│  LMGT3 P11  McLaren 720S LMGT3      +0.551s      +1.378s      +0.672s                   +1.400s                                                      │
+│  11         Driver Emma             🟡 42.411s   🟡 75.358s   🟡 45.068s   2:42.836     2:43.196        —                                            │
+│  LMGT3 P11  McLaren 720S LMGT3      +0.551s      +1.378s      +0.672s      +2.231s      +1.400s         DNF                                          │
 │                                                                                                                                                    │
 │  🟣 Meilleur secteur de la classe   🟡 Temps standard   Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

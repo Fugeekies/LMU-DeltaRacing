@@ -24,14 +24,19 @@ public static class RaceDetailsPresentation
             .Select(driver =>
             {
                 var timedLaps = driver.Laps.Where(lap => lap.Time.HasValue).ToArray();
+                var bestSectors = timedLaps
+                    .SelectMany(lap => lap.Sectors)
+                    .GroupBy(sector => sector.Number)
+                    .ToDictionary(group => group.Key, group => group.Min(sector => sector.Time));
+                TimeSpan? idealLap = Enumerable.Range(1, 3).All(bestSectors.ContainsKey)
+                    ? bestSectors[1] + bestSectors[2] + bestSectors[3]
+                    : null;
                 return new DriverTiming(
                     driver,
                     driver.CarClass.Trim(),
                     timedLaps.Min(lap => lap.Time),
-                    timedLaps
-                        .SelectMany(lap => lap.Sectors)
-                        .GroupBy(sector => sector.Number)
-                        .ToDictionary(group => group.Key, group => group.Min(sector => sector.Time)));
+                    bestSectors,
+                    idealLap);
             })
             .ToArray();
 
@@ -45,6 +50,7 @@ public static class RaceDetailsPresentation
                         .GroupBy(sector => sector.Key)
                         .ToDictionary(sector => sector.Key, sector => sector.Min(item => item.Value)),
                     group.Min(driver => driver.FastestLap),
+                    group.Min(driver => driver.IdealLap),
                     group
                         .Where(driver => GetRank(driver.Driver).HasValue)
                         .OrderBy(driver => GetRank(driver.Driver))
@@ -62,9 +68,6 @@ public static class RaceDetailsPresentation
                         driver.BestSectors.TryGetValue(number, out var time) ? time : null,
                         reference.BestSectors.TryGetValue(number, out var classBest) ? classBest : null))
                     .ToArray();
-                TimeSpan? idealLap = sectors.All(sector => sector.Time.HasValue)
-                    ? sectors.Aggregate(TimeSpan.Zero, (total, sector) => total + sector.Time!.Value)
-                    : null;
 
                 return new RaceDetailsDriverResult(
                     driver.Driver.Name,
@@ -78,8 +81,10 @@ public static class RaceDetailsPresentation
                         StringComparison.OrdinalIgnoreCase),
                     driver.FastestLap,
                     sectors,
-                    idealLap,
+                    driver.IdealLap,
+                    driver.IdealLap - reference.BestIdealLap,
                     driver.FastestLap - reference.BestLap,
+                    isRace && !IsRetired(driver.Driver) ? driver.Driver.FinishTime : null,
                     isRace
                         ? GetRaceGap(driver.Driver, reference.Leader?.Driver)
                         : GetLapGap(driver, reference));
@@ -108,8 +113,7 @@ public static class RaceDetailsPresentation
             return new LeaderGap(LeaderGapKind.Leader);
         }
 
-        if (driver.FinishStatus.Equals("DNF", StringComparison.OrdinalIgnoreCase)
-            || driver.FinishStatus.Equals("DQ", StringComparison.OrdinalIgnoreCase))
+        if (IsRetired(driver))
         {
             return new LeaderGap(LeaderGapKind.Status, Status: driver.FinishStatus.ToUpperInvariant());
         }
@@ -146,6 +150,13 @@ public static class RaceDetailsPresentation
     /// </summary>
     private static int? GetRank(Driver driver) => driver.ClassPosition ?? driver.Position;
 
+    /// <summary>
+    /// Whether the driver retired or was disqualified: their total time is not a race time.
+    /// </summary>
+    private static bool IsRetired(Driver driver) =>
+        driver.FinishStatus.Equals("DNF", StringComparison.OrdinalIgnoreCase)
+        || driver.FinishStatus.Equals("DQ", StringComparison.OrdinalIgnoreCase);
+
     private static string GetCarName(Driver driver) =>
         !string.IsNullOrWhiteSpace(driver.CarType)
             ? driver.CarType
@@ -157,11 +168,13 @@ public static class RaceDetailsPresentation
         Driver Driver,
         string CarClass,
         TimeSpan? FastestLap,
-        IReadOnlyDictionary<int, TimeSpan> BestSectors);
+        IReadOnlyDictionary<int, TimeSpan> BestSectors,
+        TimeSpan? IdealLap);
 
     private sealed record ClassReference(
         IReadOnlyDictionary<int, TimeSpan> BestSectors,
         TimeSpan? BestLap,
+        TimeSpan? BestIdealLap,
         DriverTiming? Leader);
 }
 
@@ -177,7 +190,9 @@ public static class RaceDetailsPresentation
 /// <param name="FastestLap">The fastest timed lap.</param>
 /// <param name="Sectors">The driver's best time for each sector, across timed laps.</param>
 /// <param name="IdealLap">The sum of the best sectors, when all three are known.</param>
+/// <param name="DeltaToBestIdealLap">The gap between the ideal lap and the best ideal lap of the class.</param>
 /// <param name="DeltaToBestLap">The gap between the fastest lap and the best lap of the class.</param>
+/// <param name="TotalTime">The total race time, for classified race finishers.</param>
 /// <param name="GapToLeader">The gap to the class leader.</param>
 public sealed record RaceDetailsDriverResult(
     string Name,
@@ -189,7 +204,9 @@ public sealed record RaceDetailsDriverResult(
     TimeSpan? FastestLap,
     IReadOnlyList<RaceDetailsSectorResult> Sectors,
     TimeSpan? IdealLap,
+    TimeSpan? DeltaToBestIdealLap,
     TimeSpan? DeltaToBestLap,
+    TimeSpan? TotalTime,
     LeaderGap GapToLeader);
 
 /// <summary>

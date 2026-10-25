@@ -70,7 +70,7 @@ UISpec/
 
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
-   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal et écart au leader de la classe (DIFF 1ER).
+   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total et écart au leader de la classe.
 
 4. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
