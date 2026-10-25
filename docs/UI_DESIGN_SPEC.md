@@ -48,28 +48,28 @@ Les maquettes visuelles ASCII détaillées ainsi que les règles métiers spéci
 
 ```text
 UISpec/
-├── 01_MesCourses.md         --> Spécification de la vue "Mes Courses"
-├── 02_ClassementCoureurs.md --> Spécification de la vue "Classement des Coureurs"
-├── 03_DetailCourses.md      --> Spécification de la vue "Détail des Courses"
-└── 04_Options.md            --> Spécification de la vue "Options / Paramètres"
+├── MyRaces.template.md        --> Spécification de la vue "Mes Courses"
+├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
+├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
+└── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 ```
 
 ### Récapitulatif des 4 Menus Principaux :
 
-1. **🏎️ Mes Courses (`/my-races`)** *(Voir template `UISpec/01_MesCourses.md`)*
+1. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
    * Historique et progression personnelle groupés par circuit.
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMGT3`).
    * Calcul automatique du delta par rapport à la session précédente (n-1) à circuit, catégorie et voiture identiques.
 
-2. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template `UISpec/02_ClassementCoureurs.md`)*
+2. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
    * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec tous les pilotes affrontés.
    * Nombre de courses affrontées, victoires, défaites et pourcentage de domination.
 
-3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template `UISpec/03_DetailCourses.md`)*
+3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse télémétrique fine d'une session sélectionnée via une liste déroulante.
    * Tableau par secteur avec application stricte des couleurs WEC (🟣, 🟢, 🟡) et écart avec le 1er.
 
-4. **⚙️ Options (`/settings`)** *(Voir template `UISpec/04_Options.md`)*
+4. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
    * Sélecteur de dossier, indicateur d'état du `FileSystemWatcher` et options de démarrage.
 
