@@ -97,26 +97,21 @@ else
                 <table class="data-table race-details-table">
                     <thead>
                         <tr>
-                            <th scope="col">POS</th>
-                            <th scope="col">CLASSE</th>
-                            <th scope="col">NOM DU COUREUR</th>
-                            <th scope="col">VOITURE</th>
-                            <th scope="col" class="numeric-cell">SECTEUR 1</th>
-                            <th scope="col" class="numeric-cell">DELTA S1</th>
-                            <th scope="col" class="numeric-cell">SECTEUR 2</th>
-                            <th scope="col" class="numeric-cell">DELTA S2</th>
-                            <th scope="col" class="numeric-cell">SECTEUR 3</th>
-                            <th scope="col" class="numeric-cell">DELTA S3</th>
-                            <th scope="col" class="numeric-cell">TOUR IDÉAL</th>
-                            <th scope="col" class="numeric-cell">MEILLEUR TOUR</th>
-                            <th scope="col" class="numeric-cell">DELTA TOUR</th>
-                            <th scope="col" class="numeric-cell">DIFF 1ER</th>
+                            @* Each cell stacks a value and its gap, so the grid fits without horizontal scrolling. *@
+                            <th scope="col">POS <span class="th-sub">CLASSE</span></th>
+                            <th scope="col">PILOTE <span class="th-sub">VOITURE</span></th>
+                            <th scope="col" class="numeric-cell">SECTEUR 1 <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">SECTEUR 2 <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">SECTEUR 3 <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">TOUR IDÉAL <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">MEILLEUR TOUR <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">TEMPS TOTAL <span class="th-sub">ÉCART</span></th>
                         </tr>
                     </thead>
                     <tbody>
                         @if (results.Length > VirtualizationThreshold)
                         {
-                            <Virtualize Items="results" ItemContent="RenderRow" ItemSize="44" SpacerElement="tr" />
+                            <Virtualize Items="results" ItemContent="RenderRow" ItemSize="62" SpacerElement="tr" />
                         }
                         else
                         {
@@ -232,35 +227,43 @@ else
     }
 
     private RenderFragment<RaceDetailsDriverResult> RenderRow => result =>
-        @<tr>
-            <td class="numeric-cell">@(result.Position?.ToString("00") ?? "—")</td>
-            <td class="class-cell">
-                <span class="category-badge">@result.Category</span>
-                <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
+        @<tr class="@(result.IsPlayer ? "player-row" : string.Empty)">
+            <td class="stacked-cell">
+                <span class="position-value">@(result.Position?.ToString("00") ?? "—")</span>
+                <span class="cell-sub">
+                    <span class="category-badge">@result.Category</span>
+                    <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
+                </span>
             </td>
-            <td class="race-driver-name">
-                @result.Name
-                @if (result.IsPlayer)
-                {
-                    <span class="player-tag">VOUS</span>
-                }
+            <td class="stacked-cell race-driver-name">
+                <span>
+                    @result.Name
+                    @if (result.IsPlayer)
+                    {
+                        <span class="player-tag">VOUS</span>
+                    }
+                </span>
+                <span class="cell-sub car-name">@result.Car</span>
             </td>
-            <td>@result.Car</td>
             @foreach (var sector in result.Sectors)
             {
-                <td class="numeric-cell">
+                <td class="numeric-cell stacked-cell">
                     <span class="sector-time @GetSectorClass(sector)">@FormatSector(sector.Time)</span>
-                </td>
-                <td class="numeric-cell">
-                    <span class="delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
+                    <span class="cell-sub delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
                 </td>
             }
-            <td class="numeric-cell"><span class="lap-time">@FormatLap(result.IdealLap)</span></td>
-            <td class="numeric-cell"><span class="lap-time">@FormatLap(result.FastestLap)</span></td>
-            <td class="numeric-cell">
-                <span class="delta-time @GetDeltaClass(result.DeltaToBestLap)">@FormatGap(result.DeltaToBestLap)</span>
+            <td class="numeric-cell stacked-cell">
+                <span class="lap-time">@FormatLap(result.IdealLap)</span>
+                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestIdealLap)">@FormatGap(result.DeltaToBestIdealLap)</span>
             </td>
-            <td class="numeric-cell"><span class="leader-gap">@FormatLeaderGap(result.GapToLeader)</span></td>
+            <td class="numeric-cell stacked-cell">
+                <span class="lap-time">@FormatLap(result.FastestLap)</span>
+                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestLap)">@FormatGap(result.DeltaToBestLap)</span>
+            </td>
+            <td class="numeric-cell stacked-cell">
+                <span class="lap-time">@FormatTotalTime(result.TotalTime)</span>
+                <span class="cell-sub leader-gap @GetLeaderGapClass(result.GapToLeader)">@FormatLeaderGap(result.GapToLeader)</span>
+            </td>
         </tr>;
 
     private static string GetSectorClass(RaceDetailsSectorResult sector) =>
@@ -286,6 +289,24 @@ else
         gap is { } value
             ? $"{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
             : "—";
+
+    private static string FormatTotalTime(TimeSpan? time) =>
+        time is not { } totalTime
+            ? "—"
+            : totalTime.TotalHours >= 1
+                ? totalTime.ToString(@"h\:mm\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture)
+                : totalTime.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture);
+
+    /// <summary>
+    /// Colours the gap like the other gaps: green for the leader, red when behind, muted when unknown.
+    /// </summary>
+    private static string GetLeaderGapClass(LeaderGap gap) =>
+        gap.Kind switch
+        {
+            LeaderGapKind.Leader => "delta-best",
+            LeaderGapKind.Time or LeaderGapKind.Laps or LeaderGapKind.Status => "delta-loss",
+            _ => "delta-unavailable"
+        };
 
     private static string FormatLeaderGap(LeaderGap gap) =>
         gap.Kind switch

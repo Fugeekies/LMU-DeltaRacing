@@ -46,6 +46,7 @@ public sealed class RaceDetailsPresentationTests
             SectorPerformance.Standard);
         results[0].Sectors.Select(sector => sector.Delta).Should().Equal(TimeSpan.Zero, TimeSpan.Zero, Seconds(1));
         results[0].IdealLap.Should().Be(Seconds(89));
+        results[0].DeltaToBestIdealLap.Should().Be(TimeSpan.Zero);
         results[0].FastestLap.Should().Be(Seconds(90));
         results[0].DeltaToBestLap.Should().Be(TimeSpan.Zero);
 
@@ -55,6 +56,7 @@ public sealed class RaceDetailsPresentationTests
             SectorPerformance.Standard,
             SectorPerformance.ClassBest);
         results[1].IdealLap.Should().Be(Seconds(90.5));
+        results[1].DeltaToBestIdealLap.Should().Be(Seconds(1.5));
         results[1].DeltaToBestLap.Should().Be(Seconds(2));
     }
 
@@ -92,8 +94,11 @@ public sealed class RaceDetailsPresentationTests
             CreateDriver("Lapped", "GT3", position: 4, classPosition: 3, finishTime: Seconds(1530), lapsCompleted: 19),
             CreateDriver("Retired", "GT3", position: 5, classPosition: 4, lapsCompleted: 8, finishStatus: "DNF"));
 
-        var gaps = RaceDetailsPresentation.CreateResults(session, "Second")
-            .ToDictionary(result => result.Name, result => result.GapToLeader);
+        var results = RaceDetailsPresentation.CreateResults(session, "Second");
+        var gaps = results.ToDictionary(result => result.Name, result => result.GapToLeader);
+
+        results.Single(result => result.Name == "Second").TotalTime.Should().Be(Seconds(1512.5));
+        results.Single(result => result.Name == "Retired").TotalTime.Should().BeNull();
 
         gaps["Prototype"].Kind.Should().Be(LeaderGapKind.Leader);
         gaps["Leader"].Kind.Should().Be(LeaderGapKind.Leader);
