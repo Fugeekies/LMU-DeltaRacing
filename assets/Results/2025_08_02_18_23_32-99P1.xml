@@ -37,11 +37,68 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 2796" ID="0" Lap="0" WarningPoints="63.75" CurrentPoints="63.75" Resolution="3" et="153.8">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Driver 2796" ID="0" Lap="0" WarningPoints="0" CurrentPoints="63.75" Resolution="5" et="167.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3617" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4436" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3617" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="203.9">No Further Action</TrackLimits>
+<Sent et="56.3">&quot;Driver 4692&quot; has taken the wheel.</Sent>
+<Sent et="56.3">&quot;Driver 5262&quot; has taken the wheel.</Sent>
+<Sent et="56.3">&quot;Driver 5538&quot; has taken the wheel.</Sent>
+<Sent et="56.3">&quot;Driver 3642&quot; has taken the wheel.</Sent>
+<Sent et="56.3">&quot;Driver 5698&quot; has taken the wheel.</Sent>
+<Sent et="57.4">&quot;Driver 5141&quot; has taken the wheel.</Sent>
+<Sent et="62.8">&quot;Driver 5104&quot; has taken the wheel.</Sent>
+<Sent et="65.0">&quot;Driver 5675&quot; has taken the wheel.</Sent>
+<Sent et="65.8">&quot;Driver 4150&quot; has taken the wheel.</Sent>
+<Sent et="73.9">&quot;Driver 3926&quot; has taken the wheel.</Sent>
+<Sent et="76.8">&quot;Driver 3949&quot; has taken the wheel.</Sent>
+<Sent et="80.5">&quot;Driver 5564&quot; has taken the wheel.</Sent>
+<Sent et="89.5">&quot;Driver 5538&quot; has taken the wheel.</Sent>
+<Sent et="90.0">&quot;Driver 3243&quot; has taken the wheel.</Sent>
+<Sent et="91.3">&quot;Driver 2830&quot; has taken the wheel.</Sent>
+<Score et="128.4">Driver 4692(9) lap=1 point=0 t=-1.000 et=128.400</Score>
+<Sector et="132.2">Driver 5141(18) reports new suspension damage</Sector>
+<Incident et="132.3">Driver 5141(18) reported contact (1780.90) with Immovable</Incident>
+<Sector et="132.3">Driver 5141(18) reports new suspension damage</Sector>
+<Incident et="135.0">Driver 2830(0) reported contact (271.62) with Immovable</Incident>
+<Score et="137.5">Driver 5141(18) lap=1 point=0 t=-1.000 et=137.567</Score>
+<Score et="137.5">Driver 5141(18) lap=1 point=1 t=-1.000 et=137.567</Score>
+<Score et="137.5">Driver 5141(18) lap=1 point=2 t=-1.000 et=137.567</Score>
+<Score et="138.2">Driver 5675(11) lap=1 point=0 t=-1.000 et=138.280</Score>
+<Incident et="144.1">Driver 2830(0) reported contact (441.29) with Immovable</Incident>
+<Sector et="145.5">Driver 2830(0) reports new suspension damage</Sector>
+<Incident et="145.6">Driver 2830(0) reported contact (2236.15) with Immovable</Incident>
+<Incident et="146.4">Driver 2830(0) reported contact (1171.36) with Immovable</Incident>
+<Incident et="148.0">Driver 2830(0) reported contact (685.22) with Immovable</Incident>
+<Incident et="149.3">Driver 5675(11) reported contact (561.70) with Immovable</Incident>
+<Incident et="149.4">Driver 5675(11) reported contact (116.63) with Wing</Incident>
+<Incident et="149.5">Driver 5675(11) reported contact (13.17) with Wing</Incident>
+<Incident et="150.2">Driver 2830(0) reported contact (167.37) with Immovable</Incident>
+<Score et="150.3">Driver 5125(6) lap=1 point=0 t=-1.000 et=150.324</Score>
+<Incident et="153.6">Driver 2830(0) reported contact (641.03) with Immovable</Incident>
+<TrackLimits Driver="Driver 2830" ID="0" Lap="0" WarningPoints="63.75" CurrentPoints="63.75" Resolution="3" et="153.8">Invalid Lap Cut Track</TrackLimits>
+<Score et="156.8">Driver 3243(10) lap=1 point=0 t=-1.000 et=156.980</Score>
+<Score et="158.7">Driver 5675(11) lap=1 point=1 t=-1.000 et=158.475</Score>
+<Score et="158.7">Driver 5675(11) lap=1 point=2 t=-1.000 et=158.475</Score>
+<Score et="161.4">Driver 4150(13) lap=1 point=0 t=-1.000 et=161.320</Score>
+<Incident et="162.4">Driver 5141(18) reported contact (514.38) with Immovable</Incident>
+<Score et="163.3">Driver 5538(7) lap=1 point=0 t=-1.000 et=163.260</Score>
+<Sent et="164.0">&quot;Driver 4281&quot; has taken the wheel.</Sent>
+<TrackLimits Driver="Driver 2830" ID="0" Lap="0" WarningPoints="0" CurrentPoints="63.75" Resolution="5" et="167.1">No Further Action</TrackLimits>
+<Score et="175.3">Driver 4692(9) lap=1 point=1 t=46.860 et=175.260</Score>
+<TrackLimits Driver="Driver 3949" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.4">No Further Action</TrackLimits>
+<Score et="182.7">Driver 2830(0) lap=1 point=0 t=-1.000 et=182.620</Score>
+<Score et="185.7">Driver 3949(16) lap=1 point=0 t=-1.000 et=185.620</Score>
+<Sector et="197.2">Driver 3949(16) reports new suspension damage</Sector>
+<Sector et="197.2">Driver 3949(16) reports new suspension damage</Sector>
+<Incident et="197.3">Driver 3949(16) reported contact (591.40) with Immovable</Incident>
+<TrackLimits Driver="Driver 5125" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.3">No Further Action</TrackLimits>
+<Score et="199.6">Driver 5125(6) lap=1 point=1 t=49.262 et=199.586</Score>
+<Incident et="199.9">Driver 3949(16) reported contact (346.94) with Immovable</Incident>
+<Sent et="202.5">&quot;Driver 5197&quot; has taken the wheel.</Sent>
+<Incident et="203.4">Driver 2830(0) reported contact (929.32) with Immovable</Incident>
+<TrackLimits Driver="Driver 3949" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="203.9">No Further Action</TrackLimits>
+<Score et="204.7">Driver 3243(10) lap=1 point=1 t=47.717 et=204.700</Score>
+<Score et="208.0">Driver 3949(16) lap=1 point=1 t=-1.000 et=207.959</Score>
+<Score et="208.0">Driver 3949(16) lap=1 point=2 t=-1.000 et=207.959</Score>
+<Sector Driver="Driver 4692" ID="9" Sector="2" Class="GTE" et="208.3">Driver 4692(9) set new best for sector 2</Sector>
+<Score et="208.3">Driver 4692(9) lap=1 point=2 t=79.862 et=208.280</Score>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>

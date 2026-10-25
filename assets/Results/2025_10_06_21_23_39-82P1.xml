@@ -36,8 +36,32 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 4362" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="164.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4362" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.0">No Further Action</TrackLimits>
+<Sector et="74.9">Driver 3043(1) reports new suspension damage</Sector>
+<Sector et="74.9">Driver 3043(1) reports new suspension damage</Sector>
+<Incident et="75.0">Driver 3043(1) reported contact (2480.65) with Immovable</Incident>
+<Incident et="81.7">Driver 3995(19) reported contact (71.24) with Immovable</Incident>
+<Incident et="81.8">Driver 3995(19) reported contact (1126.35) with Immovable</Incident>
+<Sector et="81.8">Driver 3995(19) reports new suspension damage</Sector>
+<Incident et="82.4">Driver 3995(19) reported contact (1286.19) with Immovable</Incident>
+<Incident et="82.5">Driver 3995(19) reported contact (1286.19) with Immovable</Incident>
+<Incident et="82.9">Driver 3995(19) reported contact (2905.79) with Immovable</Incident>
+<Score et="115.9">Driver 5027(7) lap=1 point=0 t=-1.000 et=115.880</Score>
+<Incident et="135.5">Driver 5687(11) reported contact (1494.14) with Immovable</Incident>
+<Score et="153.9">Driver 3043(1) lap=1 point=0 t=-1.000 et=153.780</Score>
+<Score et="154.3">Driver 3442(21) lap=1 point=0 t=-1.000 et=154.260</Score>
+<Score et="155.4">Driver 3995(19) lap=1 point=0 t=-1.000 et=155.340</Score>
+<TrackLimits Driver="Driver 5027" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="164.8">No Further Action</TrackLimits>
+<Score et="170.7">Driver 5027(7) lap=1 point=1 t=-1.000 et=170.700</Score>
+<TrackLimits Driver="Driver 5027" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.0">No Further Action</TrackLimits>
+<Score et="175.8">Driver 5129(12) lap=1 point=0 t=-1.000 et=175.740</Score>
+<Score et="193.9">Driver 5687(11) lap=1 point=0 t=-1.000 et=193.860</Score>
+<Sector Driver="Driver 3442" ID="21" Sector="1" Class="GT3" et="202.2">Driver 3442(21) set new best for sector 1</Sector>
+<Score et="202.2">Driver 3442(21) lap=1 point=1 t=47.920 et=202.180</Score>
+<Score et="202.4">Driver 3043(1) lap=1 point=1 t=48.612 et=202.380</Score>
+<Sector Driver="Driver 3995" ID="19" Sector="1" Class="GT3" et="203.0">Driver 3995(19) set new best for sector 1</Sector>
+<Score et="203.1">Driver 3995(19) lap=1 point=1 t=47.592 et=202.940</Score>
+<Score et="208.3">Driver 5027(7) lap=1 point=2 t=92.349 et=208.240</Score>
+<Incident et="209.4">Driver 5546(14) reported contact (931.24) with Immovable</Incident>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>

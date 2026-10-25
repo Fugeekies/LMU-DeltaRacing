@@ -37,16 +37,64 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 4347" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="118.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3273" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="136.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3899" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="145.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3899" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="149.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3934" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3150" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4798" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="188.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4798" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3899" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="201.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4798" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="208.0">No Further Action</TrackLimits>
+<Sent et="0.0">&quot;&quot; has taken the wheel.</Sent>
+<Sent et="0.0">&quot;&quot; has taken the wheel.</Sent>
+<Sent et="0.1">&quot;Driver 3464&quot; has taken the wheel.</Sent>
+<Sent et="0.1">&quot;Driver 2913&quot; has taken the wheel.</Sent>
+<Sent et="60.4">&quot;Driver 3698&quot; has taken the wheel.</Sent>
+<Sent et="60.4">&quot;Driver 5640&quot; has taken the wheel.</Sent>
+<Sent et="60.4">&quot;Driver 5276&quot; has taken the wheel.</Sent>
+<Sent et="60.4">&quot;Driver 3798&quot; has taken the wheel.</Sent>
+<Sent et="60.4">&quot;Driver 5614&quot; has taken the wheel.</Sent>
+<Sent et="63.9">&quot;Driver 3550&quot; has taken the wheel.</Sent>
+<Sent et="66.6">&quot;Driver 3294&quot; has taken the wheel.</Sent>
+<Sent et="90.9">&quot;Driver 5638&quot; has taken the wheel.</Sent>
+<Sent et="92.1">&quot;Driver 5110&quot; has taken the wheel.</Sent>
+<Sent et="93.4">&quot;Driver 4766&quot; has taken the wheel.</Sent>
+<Score et="103.6">Driver 3464(3) lap=0 point=1 t=-1.000 et=103.220</Score>
+<Sent et="104.9">&quot;Driver 4345&quot; has taken the wheel.</Sent>
+<Sent et="106.6">&quot;Driver 5252&quot; has taken the wheel.</Sent>
+<Score et="111.3">Driver 5640(13) lap=0 point=1 t=-1.000 et=110.980</Score>
+<TrackLimits Driver="Driver 5010" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="118.6">No Further Action</TrackLimits>
+<Sent et="119.6">&quot;Driver 4405&quot; has taken the wheel.</Sent>
+<Incident et="121.2">Driver 4345(10) reported contact (941.96) with Immovable</Incident>
+<Score et="127.5">Driver 3464(3) lap=0 point=2 t=-1.000 et=127.280</Score>
+<Score et="128.3">Driver 3698(4) lap=0 point=1 t=-1.000 et=128.000</Score>
+<Score et="131.2">Driver 3294(17) lap=0 point=1 t=-1.000 et=130.960</Score>
+<Sent et="131.5">&quot;Driver 3137&quot; has taken the wheel.</Sent>
+<Score et="133.9">Driver 5614(2) lap=0 point=1 t=-1.000 et=133.820</Score>
+<Score et="135.0">Driver 5640(13) lap=0 point=2 t=-1.000 et=134.780</Score>
+<TrackLimits Driver="Driver 3464" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="136.0">No Further Action</TrackLimits>
+<Score et="140.3">Driver 5010(8) lap=0 point=1 t=-1.000 et=140.303</Score>
+<TrackLimits Driver="Driver 4345" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="145.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="149.8">No Further Action</TrackLimits>
+<Score et="152.5">Driver 3698(4) lap=0 point=2 t=-1.000 et=152.280</Score>
+<Score et="156.1">Driver 3294(17) lap=0 point=2 t=-1.000 et=155.980</Score>
+<Score et="158.0">Driver 5614(2) lap=0 point=2 t=-1.000 et=157.900</Score>
+<Sector et="162.7">Driver 5614(2) reports new suspension damage</Sector>
+<Incident et="162.8">Driver 5614(2) reported contact (1309.06) with another vehicle Driver 3294(17)</Incident>
+<Sector et="162.8">Driver 3294(17) reports new suspension damage</Sector>
+<Incident et="162.9">Driver 3294(17) reported contact (1335.18) with another vehicle Driver 5614(2)</Incident>
+<Score et="164.7">Driver 5010(8) lap=0 point=2 t=-1.000 et=164.655</Score>
+<Score et="166.3">Driver 3464(3) lap=1 point=0 t=-1.000 et=166.180</Score>
+<TrackLimits Driver="Driver 4405" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.5">No Further Action</TrackLimits>
+<Score et="169.5">Driver 5614(2) lap=1 point=0 t=-1.000 et=169.108</Score>
+<Score et="171.6">Driver 4345(10) lap=0 point=1 t=-1.000 et=171.660</Score>
+<Score et="172.2">Driver 5640(13) lap=1 point=0 t=-1.000 et=172.040</Score>
+<TrackLimits Driver="Driver 3294" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 5640" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="188.1">No Further Action</TrackLimits>
+<Score et="188.9">Driver 4405(0) lap=0 point=1 t=-1.000 et=189.000</Score>
+<Incident et="190.3">Driver 5640(13) reported contact (1866.55) with Immovable</Incident>
+<Sector et="190.5">Driver 5640(13) reports new suspension damage</Sector>
+<Score et="190.9">Driver 3698(4) lap=1 point=0 t=-1.000 et=190.800</Score>
+<Score et="194.6">Driver 5638(5) lap=0 point=1 t=-1.000 et=194.540</Score>
+<Incident et="195.4">Driver 5640(13) reported contact (89.95) with Immovable</Incident>
+<Score et="196.1">Driver 4345(10) lap=0 point=2 t=-1.000 et=196.180</Score>
+<TrackLimits Driver="Driver 5640" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="201.9">No Further Action</TrackLimits>
+<Score et="203.3">Driver 3464(3) lap=1 point=1 t=37.046 et=203.240</Score>
+<Score et="204.4">Driver 5010(8) lap=1 point=0 t=-1.000 et=204.394</Score>
+<TrackLimits Driver="Driver 5640" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="208.0">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>

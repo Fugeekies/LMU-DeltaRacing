@@ -36,21 +36,59 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 3975" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="80.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3787" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="99.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3673" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="113.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3251" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="115.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3673" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="133.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3251" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="134.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3975" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="136.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4240" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="142.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3841" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="144.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3975" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="147.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4240" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 2808" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="165.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3251" ID="0" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="3" et="194.2">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Driver 3841" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="194.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3841" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="206.2">No Further Action</TrackLimits>
+<Incident et="67.2">Driver 4193(6) reported contact (94.54) with another vehicle Driver 3289(8)</Incident>
+<Incident et="67.2">Driver 4193(6) reported contact (129.80) with another vehicle Driver 3289(8)</Incident>
+<Incident et="67.2">Driver 3289(8) reported contact (38.06) with another vehicle Driver 4193(6)</Incident>
+<Incident et="67.2">Driver 3289(8) reported contact (95.18) with another vehicle Driver 4193(6)</Incident>
+<Incident et="68.6">Driver 3289(8) reported contact (456.49) with another vehicle Driver 4925(12)</Incident>
+<Incident et="68.6">Driver 4925(12) reported contact (341.97) with another vehicle Driver 3289(8)</Incident>
+<TrackLimits Driver="Driver 4462" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="80.8">No Further Action</TrackLimits>
+<Sector et="90.4">Driver 2845(2) reports new suspension damage</Sector>
+<Incident et="90.5">Driver 2845(2) reported contact (1222.28) with Immovable</Incident>
+<Sector et="91.2">Driver 2845(2) reports new suspension damage</Sector>
+<Incident et="91.3">Driver 2845(2) reported contact (2140.82) with Immovable</Incident>
+<Sector et="91.5">Driver 2845(2) reports new suspension damage</Sector>
+<Incident et="91.6">Driver 2845(2) reported contact (2475.24) with Immovable</Incident>
+<Sector et="91.9">Driver 2845(2) reports new suspension damage</Sector>
+<Score et="92.8">Driver 4462(13) lap=0 point=1 t=-1.000 et=92.760</Score>
+<Score et="97.6">Driver 3441(0) lap=0 point=1 t=-1.000 et=97.520</Score>
+<TrackLimits Driver="Driver 4193" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="99.3">No Further Action</TrackLimits>
+<Score et="111.0">Driver 3289(8) lap=0 point=1 t=-1.000 et=110.860</Score>
+<Score et="111.9">Driver 4925(12) lap=0 point=1 t=-1.000 et=111.800</Score>
+<TrackLimits Driver="Driver 4054" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="113.1">No Further Action</TrackLimits>
+<Score et="114.5">Driver 4193(6) lap=0 point=1 t=-1.000 et=114.440</Score>
+<TrackLimits Driver="Driver 3441" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="115.3">No Further Action</TrackLimits>
+<Score et="118.3">Driver 4054(15) lap=0 point=1 t=-1.000 et=118.240</Score>
+<Score et="128.3">Driver 4462(13) lap=0 point=2 t=-1.000 et=128.280</Score>
+<TrackLimits Driver="Driver 4054" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="133.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="134.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4462" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="136.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4830" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="142.7">No Further Action</TrackLimits>
+<Score et="143.4">Driver 3441(0) lap=0 point=2 t=-1.000 et=143.360</Score>
+<TrackLimits Driver="Driver 4272" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="144.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4462" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="147.1">No Further Action</TrackLimits>
+<Score et="147.5">Driver 3289(8) lap=0 point=2 t=-1.000 et=147.440</Score>
+<Score et="148.2">Driver 4925(12) lap=0 point=2 t=-1.000 et=148.160</Score>
+<TrackLimits Driver="Driver 4830" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.3">No Further Action</TrackLimits>
+<Score et="150.4">Driver 2845(2) lap=0 point=1 t=-1.000 et=150.240</Score>
+<Score et="155.1">Driver 4193(6) lap=0 point=2 t=-1.000 et=155.080</Score>
+<Score et="156.1">Driver 4054(15) lap=0 point=2 t=-1.000 et=156.040</Score>
+<Score et="156.3">Driver 4272(5) lap=0 point=1 t=-1.000 et=155.830</Score>
+<Score et="156.3">Driver 4272(5) lap=0 point=2 t=-1.000 et=155.830</Score>
+<Score et="156.3">Driver 4272(5) lap=1 point=0 t=-1.000 et=155.830</Score>
+<Score et="156.6">Driver 4830(18) lap=0 point=1 t=-1.000 et=156.600</Score>
+<TrackLimits Driver="Driver 2845" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="165.8">No Further Action</TrackLimits>
+<Score et="177.3">Driver 4925(12) lap=1 point=0 t=-1.000 et=176.632</Score>
+<Score et="186.9">Driver 2845(2) lap=0 point=2 t=-1.000 et=186.720</Score>
+<Score et="191.0">Driver 4462(13) lap=1 point=0 t=-1.000 et=190.898</Score>
+<Score et="191.4">Driver 3289(8) lap=1 point=0 t=-1.000 et=191.320</Score>
+<Score et="194.0">Driver 4830(18) lap=0 point=2 t=-1.000 et=193.980</Score>
+<TrackLimits Driver="Driver 3441" ID="0" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="3" et="194.2">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4272" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="194.6">No Further Action</TrackLimits>
+<Score et="197.5">Driver 3441(0) lap=1 point=0 t=-1.000 et=197.520</Score>
+<Score et="199.2">Driver 4054(15) lap=1 point=0 t=-1.000 et=199.220</Score>
+<Score et="200.9">Driver 4193(6) lap=1 point=0 t=-1.000 et=200.880</Score>
+<TrackLimits Driver="Driver 4272" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="206.2">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>

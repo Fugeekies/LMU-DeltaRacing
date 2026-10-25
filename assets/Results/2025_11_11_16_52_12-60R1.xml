@@ -36,10 +36,35 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 2804" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="115.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3169" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="117.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4347" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="119.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3062" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="134.5">No Further Action</TrackLimits>
+<Incident et="102.1">Driver 5010(11) reported contact (164.19) with another vehicle Driver 4408(16)</Incident>
+<Incident et="102.1">Driver 4408(16) reported contact (185.07) with another vehicle Driver 5010(11)</Incident>
+<Incident et="102.5">Driver 5010(11) reported contact (981.27) with another vehicle Driver 5491(19)</Incident>
+<Penalty et="109.4">Driver 5491 received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
+<Incident et="110.3">Driver 5010(11) reported contact (131.02) with another vehicle Driver 5491(19)</Incident>
+<Incident et="110.3">Driver 5010(11) reported contact (379.71) with another vehicle Driver 5491(19)</Incident>
+<Incident et="111.2">Driver 5010(11) reported contact (1400.27) with another vehicle Driver 5491(19)</Incident>
+<Sector et="111.2">Driver 5010(11) reports new suspension damage</Sector>
+<Incident et="111.2">Driver 5010(11) reported contact (4248.99) with another vehicle Driver 5491(19)</Incident>
+<Sector et="111.2">Driver 5010(11) reports new suspension damage</Sector>
+<Incident et="111.5">Driver 5010(11) reported contact (666.61) with another vehicle Driver 4408(16)</Incident>
+<Incident et="111.5">Driver 4408(16) reported contact (321.01) with another vehicle Driver 5010(11)</Incident>
+<Incident et="112.2">Driver 5010(11) reported contact (1522.25) with Immovable</Incident>
+<Incident et="112.6">Driver 5010(11) reported contact (2080.29) with Immovable</Incident>
+<Incident et="112.7">Driver 5010(11) reported contact (488.60) with another vehicle Driver 5491(19)</Incident>
+<Incident et="114.0">Driver 5010(11) reported contact (1344.36) with Immovable</Incident>
+<TrackLimits Driver="Driver 2841" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="115.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3321" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="117.4">No Further Action</TrackLimits>
+<Incident et="119.3">Driver 5010(11) reported contact (374.07) with Immovable</Incident>
+<TrackLimits Driver="Driver 5010" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="119.3">No Further Action</TrackLimits>
+<Score et="119.8">Driver 5491(19) lap=1 point=0 t=-1.000 et=118.560</Score>
+<Incident et="120.1">Driver 5010(11) reported contact (290.62) with Immovable</Incident>
+<Incident et="132.3">Driver 5180(6) reported contact (756.46) with another vehicle Driver 3163(0)</Incident>
+<Incident et="132.8">Driver 3163(0) reported contact (38.40) with another vehicle Driver 5180(6)</Incident>
+<TrackLimits Driver="Driver 3170" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="134.5">No Further Action</TrackLimits>
+<Incident et="135.0">Driver 2834(4) reported contact (453.93) with another vehicle Driver 4408(16)</Incident>
+<Incident et="135.0">Driver 4408(16) reported contact (433.34) with another vehicle Driver 2834(4)</Incident>
+<Incident et="135.4">Driver 5180(6) reported contact (288.37) with another vehicle Driver 3280(14)</Incident>
+<Incident et="135.4">Driver 3280(14) reported contact (243.48) with another vehicle Driver 5180(6)</Incident>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>1</MostLapsCompleted>

@@ -36,13 +36,23 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Driver 4435" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4435" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4347" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3261" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4435" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="184.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 2841" ID="11" Lap="0" WarningPoints="3" CurrentPoints="3" Resolution="3" et="200.9">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Driver 3261" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.9">No Further Action</TrackLimits>
+<Score et="147.1">Driver 3173(20) lap=0 point=1 t=-1.000 et=147.040</Score>
+<TrackLimits Driver="Driver 5124" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 5124" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 5010" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3452" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 5124" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="184.7">No Further Action</TrackLimits>
+<Score et="186.7">Driver 3173(20) lap=0 point=2 t=-1.000 et=186.660</Score>
+<Score et="191.0">Driver 4158(12) lap=0 point=1 t=-1.000 et=191.080</Score>
+<Score et="195.7">Driver 5010(1) lap=0 point=1 t=-1.000 et=195.689</Score>
+<Score et="200.4">Driver 3452(4) lap=0 point=1 t=-1.000 et=200.140</Score>
+<TrackLimits Driver="Driver 2886" ID="11" Lap="0" WarningPoints="3" CurrentPoints="3" Resolution="3" et="200.9">Invalid Lap Cut Track</TrackLimits>
+<Score et="201.7">Driver 5124(16) lap=0 point=1 t=-1.000 et=201.780</Score>
+<TrackLimits Driver="Driver 3452" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.9">No Further Action</TrackLimits>
+<Sector et="208.6">Driver 4158(12) reports new suspension damage</Sector>
+<Sector et="208.6">Driver 4158(12) reports new suspension damage</Sector>
+<Incident et="208.7">Driver 4158(12) reported contact (5975.30) with another vehicle Driver 5010(1)</Incident>
+<Incident et="208.8">Driver 5010(1) reported contact (4309.65) with another vehicle Driver 4158(12)</Incident>
 </Stream>
 <MostLapsCompleted>0</MostLapsCompleted>
 <Driver>
