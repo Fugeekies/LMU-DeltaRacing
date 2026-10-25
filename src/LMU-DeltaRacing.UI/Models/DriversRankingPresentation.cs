@@ -8,8 +8,12 @@ namespace LMU_DeltaRacing.UI.Models;
 public static class DriversRankingPresentation
 {
     /// <summary>
-    /// Creates one record per opponent with a classified result against the player.
+    /// Creates one record per opponent met in a race, in the same vehicle class as the player.
     /// </summary>
+    /// <remarks>
+    /// Qualifying sessions are ignored because the view counts races. In multiclass races, only
+    /// drivers of the player's class are real opponents: beating a slower-class car says nothing.
+    /// </remarks>
     public static IReadOnlyList<DriverRivalry> CreateRivalries(
         IEnumerable<Session> sessions,
         string? userName)
@@ -21,10 +25,11 @@ public static class DriversRankingPresentation
         }
 
         var totals = new Dictionary<string, RivalryTotals>(StringComparer.OrdinalIgnoreCase);
-        foreach (var session in sessions)
+        foreach (var session in sessions.Where(session =>
+            session.SessionType.Contains("Race", StringComparison.OrdinalIgnoreCase)))
         {
             var player = DriverProfile.FindDriver(session, userName);
-            if (player?.Position is not { } playerPosition)
+            if (player is null || GetRank(player) is not { } playerRank)
             {
                 continue;
             }
@@ -34,7 +39,11 @@ public static class DriversRankingPresentation
                         driver.Name.Trim(),
                         player.Name.Trim(),
                         StringComparison.OrdinalIgnoreCase)
-                    && driver.Position.HasValue)
+                    && string.Equals(
+                        driver.CarClass.Trim(),
+                        player.CarClass.Trim(),
+                        StringComparison.OrdinalIgnoreCase)
+                    && GetRank(driver).HasValue)
                 .GroupBy(driver => driver.Name, StringComparer.OrdinalIgnoreCase)
                 .Select(group => group.First()))
             {
@@ -45,11 +54,11 @@ public static class DriversRankingPresentation
                 }
 
                 rival.SessionsFaced++;
-                if (playerPosition < opponent.Position)
+                if (playerRank < GetRank(opponent))
                 {
                     rival.Wins++;
                 }
-                else if (playerPosition > opponent.Position)
+                else if (playerRank > GetRank(opponent))
                 {
                     rival.Losses++;
                 }
@@ -64,6 +73,12 @@ public static class DriversRankingPresentation
                 rival.Losses))
             .ToArray();
     }
+
+    /// <summary>
+    /// Ranks a driver within their class. The overall position keeps the same order between
+    /// drivers of one class, so it is a valid fallback when the class position is missing.
+    /// </summary>
+    private static int? GetRank(Driver driver) => driver.ClassPosition ?? driver.Position;
 
     private sealed class RivalryTotals(string name)
     {

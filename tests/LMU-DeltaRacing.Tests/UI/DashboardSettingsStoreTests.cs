@@ -14,7 +14,7 @@ public sealed class DashboardSettingsStoreTests
     /// Verifies that results settings are saved while unrelated application settings are preserved.
     /// </summary>
     [TestMethod]
-    public void SaveResultsSettings_updates_lmu_values_and_preserves_other_settings()
+    public void Save_methods_update_lmu_values_independently_and_preserve_other_settings()
     {
         var directory = Path.Combine(Path.GetTempPath(), $"lmu-settings-{Guid.NewGuid():N}");
         Directory.CreateDirectory(directory);
@@ -41,7 +41,8 @@ public sealed class DashboardSettingsStoreTests
 
         try
         {
-            store.SaveResultsSettings(@"C:\LMU\Results", watchOnStartup: false);
+            store.SaveResultsDirectory(@"C:\LMU\Results");
+            store.SaveWatchOnStartup(false);
             store.SaveUserName("Driver One");
 
             configuration["LMU:ResultsDirectory"].Should().Be(@"C:\LMU\Results");

@@ -80,6 +80,52 @@ public sealed class XmlResultParserTests
     }
 
     /// <summary>
+    /// Verifies that the class classification, completed laps and finish status are read, because
+    /// multiclass comparisons and the gap to the class leader depend on them.
+    /// </summary>
+    [TestMethod]
+    public void Parse_reads_class_position_completed_laps_and_finish_status()
+    {
+        const string xml = """
+            <rFactorXML>
+              <RaceResults>
+                <DateTime>1790967271</DateTime>
+                <TrackVenue>Track</TrackVenue>
+                <TrackCourse>Course</TrackCourse>
+                <Race>
+                  <Driver>
+                    <Name>Player</Name>
+                    <CarClass>GT3</CarClass>
+                    <Position>7</Position>
+                    <ClassPosition>2</ClassPosition>
+                    <Laps>11</Laps>
+                    <FinishStatus>Finished Normally</FinishStatus>
+                  </Driver>
+                  <Driver>
+                    <Name>Retired</Name>
+                    <Position>8</Position>
+                    <FinishStatus>DNF</FinishStatus>
+                  </Driver>
+                </Race>
+              </RaceResults>
+            </rFactorXML>
+            """;
+        var parser = new XmlResultParser();
+        using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(xml));
+
+        var session = parser.Parse(stream);
+
+        var player = session.Drivers.Should().ContainSingle(driver => driver.Name == "Player").Which;
+        player.ClassPosition.Should().Be(2);
+        player.LapsCompleted.Should().Be(11);
+        player.FinishStatus.Should().Be("Finished Normally");
+        var retired = session.Drivers.Should().ContainSingle(driver => driver.Name == "Retired").Which;
+        retired.ClassPosition.Should().BeNull();
+        retired.LapsCompleted.Should().BeNull();
+        retired.FinishStatus.Should().Be("DNF");
+    }
+
+    /// <summary>
     /// Verifies that malformed XML is reported to the caller.
     /// </summary>
     [TestMethod]

@@ -21,7 +21,12 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
   * 🟢 « Dossier valide · N fichier(s) XML » + chemin résolu ;
   * 🔴 « Dossier introuvable ou illisible » + message d'erreur ;
   * ⚪ « Vérifiez ou choisissez un dossier de résultats. » si aucune vérification n'a eu lieu.
-* Bouton **« Tester la connexion & recharger »** : vide le dépôt en mémoire, réimporte tout le dossier et (re)démarre la surveillance immédiatement. Il **n'enregistre pas** le réglage. Il affiche « Chargement… » pendant le traitement et est désactivé si le dossier est invalide. Message de retour : « Chargement terminé : N fichier(s) traité(s). La surveillance est active. »
+* Bouton **« Appliquer »**, en une seule action :
+  1. revalide le dossier ;
+  2. enregistre `LMU:ResultsDirectory` dans `appsettings.json` (écriture atomique, à côté de l'exécutable ; champ vide = détection automatique) ;
+  3. vide le dépôt en mémoire, réimporte tout le dossier et (re)démarre la surveillance.
+
+  Il affiche « Chargement… » pendant le traitement et est désactivé si le dossier est invalide. Message de retour : « Dossier enregistré et chargé : N fichier(s) traité(s). La surveillance est active. », ou le message d'erreur.
 
 #### Panneau « Pilote principal »
 * Liste déroulante des pilotes présents dans les résultats importés, triés par fréquence d'apparition décroissante puis par nom. Libellé : `Nom — 12,3 % (n/N fichiers)`.
@@ -32,21 +37,18 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 
 #### Panneau « Démarrage automatique »
 * Case à cocher « Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application » (`LMU:WatchResultsOnStartup`, cochée par défaut).
-* Le réglage s'applique au prochain démarrage. Le bouton de rechargement active la surveillance immédiatement, quelle que soit la case.
-
-#### Enregistrement
-* Bouton **« Enregistrer »** : revalide le dossier puis écrit `LMU:ResultsDirectory` et `LMU:WatchResultsOnStartup` dans `appsettings.json` (écriture atomique, à côté de l'exécutable). Il ne recharge pas les résultats. Il est désactivé si le dossier n'est pas valide.
-* Messages de retour : « Options enregistrées dans appsettings.json. » ou message d'erreur.
+* Le choix est **enregistré immédiatement** dans `appsettings.json` (message « Préférence de démarrage enregistrée. ») et s'applique au prochain démarrage. Le bouton « Appliquer » active la surveillance immédiatement, quelle que soit la case.
+* Les messages de retour de la page s'affichent sous les panneaux. Il n'y a plus de bouton « Enregistrer » : chaque réglage est enregistré par son action.
 
 #### État des imports (sous les options, également accessible via `/dashboard`)
 * Pendant l'import initial : barre de progression « N / M fichiers traités ».
-* Encadré d'erreur si les résultats n'ont pas pu être chargés.
+* Encadré d'erreur si les résultats n'ont pas pu être chargés, avec un lien vers Options.
 * Trois cartes :
   * **SESSIONS IMPORTÉES** : nombre de sessions du pilote ;
   * **DERNIÈRE SESSION** : lieu et date de la plus récente ;
   * **FICHIERS EN ÉCHEC** : nombre d'échecs (en couleur d'alerte si > 0).
 * Liste des fichiers en échec (nom + message) lorsqu'il y en a.
-* Tableau **« Sessions récentes de <pilote> »** trié du plus récent au plus ancien : DATE / HEURE, CIRCUIT (lieu + tracé), ÉVÉNEMENT, SESSION (badge du type), VOITURE.
+* Tableau **« Sessions récentes de <pilote> »** trié du plus récent au plus ancien : DATE / HEURE (heure locale), CIRCUIT (lieu + tracé), ÉVÉNEMENT, SESSION (badge du type), VOITURE.
 
 #### Barre de navigation (commune à toutes les pages)
 * À droite : nom du pilote sélectionné (ou « Pilote non défini ») et état de l'application :
@@ -68,7 +70,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ Chemin du dossier (UserData/Log/Results)                                                                │  │
 │  │ [ C:\Users\…\Documents\Le Mans Ultimate\UserData\Log\Results                    ] [ Parcourir… ]       │  │
 │  │ 🟢 Dossier valide · 342 fichier(s) XML   C:\Users\…\Results                                             │  │
-│  │ [ Tester la connexion & recharger ]                                                                     │  │
+│  │ [ Appliquer ]  Enregistre le dossier, puis recharge les résultats et la surveillance.                   │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
 │  │ PROFIL DE PILOTE                                                                                        │  │
@@ -81,17 +83,14 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ SURVEILLANCE & DÉMARRAGE                                                                                │  │
 │  │ Démarrage automatique                                                                                   │  │
 │  │ ☑ Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application                 │  │
-│  │ Ce réglage s'applique au prochain démarrage. Le bouton de rechargement active la surveillance…          │  │
+│  │ Ce choix est enregistré immédiatement et s'applique au prochain démarrage…                              │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
-│                                                         Options enregistrées dans appsettings.json. [ Enregistrer ] │
+│  Dossier enregistré et chargé : 342 fichier(s) traité(s). La surveillance est active.                         │
 │                                                                                                               │
 │  ESPACE INGÉNIEUR DE PISTE — Tableau de bord                                                                  │
 │  [ SESSIONS IMPORTÉES 170 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
 │  ARCHIVES DE COURSE — Sessions récentes de Driver 2038                                                [ 170 ]   │
 │  DATE / HEURE      CIRCUIT                          ÉVÉNEMENT                       SESSION   VOITURE          │
-│  02/10/2026 19:00  Circuit de Spa-Francorchamps     6 Hours of Spa-Francorchamps    Race      …                │
+│  02/10/2026 21:00  Circuit de Spa-Francorchamps     6 Hours of Spa-Francorchamps    Race      …                │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-### Écarts connus
-Les comportements à corriger ou à arbitrer sont suivis dans la [feuille de route](../ROADMAP.md), jalon « Écarts UI à traiter ».

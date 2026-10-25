@@ -30,15 +30,24 @@ public sealed class DashboardSettingsStore
     }
 
     /// <summary>
-    /// Saves the results directory and startup-watcher preference atomically.
+    /// Saves the results directory atomically. An empty value restores automatic detection.
     /// </summary>
-    public void SaveResultsSettings(string resultsDirectory, bool watchOnStartup)
+    public void SaveResultsDirectory(string resultsDirectory)
     {
         ArgumentNullException.ThrowIfNull(resultsDirectory);
         var root = LoadSettings();
-        var lmuSettings = GetLmuSettings(root);
-        lmuSettings["ResultsDirectory"] = resultsDirectory;
-        lmuSettings["WatchResultsOnStartup"] = watchOnStartup;
+        GetLmuSettings(root)["ResultsDirectory"] = resultsDirectory;
+
+        Save(root);
+    }
+
+    /// <summary>
+    /// Saves whether the results watcher starts with the application.
+    /// </summary>
+    public void SaveWatchOnStartup(bool watchOnStartup)
+    {
+        var root = LoadSettings();
+        GetLmuSettings(root)["WatchResultsOnStartup"] = watchOnStartup;
 
         Save(root);
     }

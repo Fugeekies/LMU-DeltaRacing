@@ -25,8 +25,19 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Remplacement de `.github/copilot-instruction.md`, ignoré par Copilot à cause de son nom, par `AGENTS.md` ; correction du chemin du projet UI et de l'organisation de la solution.
 - Renommage de `CHANGELOG.MD` en `CHANGELOG.md`, nom attendu par les instructions de contribution.
 - Correction des références documentaires vers des fichiers inexistants : maquettes `docs/UISpec/*.template.md`, rapport `performance-report.md`, script `Test-PackageAssets.ps1` supprimé, `IResultXmlParser`, `docs/ROADMAP.md` et `LMU-DeltaRacing.slnx`.
+- Mes courses : plusieurs courses disputées le même jour sur un même circuit ne sont plus fusionnées en une seule ligne ; chaque course est associée à la qualification qui la précède (sur les fixtures : 89 lignes au lieu de 37).
+- Mes courses : les classes LMP3 et GTE (LMGTE) ne sont plus masquées, et une classe inconnue reste affichée sous son nom brut.
+- Mes courses : la colonne TOURS affiche les tours du pilote et non ceux du vainqueur.
+- Classement des coureurs : seules les courses comptent, et uniquement contre les pilotes de la même classe.
+- Détail des courses : les couleurs jaune et violette des secteurs s'affichent réellement (elles étaient écrasées par la couleur du texte).
+- Dates de l'état des imports affichées en heure locale au lieu de l'heure UTC.
 
 ### Changed
+- Détail des courses : meilleurs secteurs personnels sur les tours chronométrés, colonne TOUR IDÉAL, comparaisons par classe (règle WEC), position en classe, colonne DIFF 1ER (écart au leader de la classe, tours de retard, DNF/DQ), temps au tour au format `m:ss.fff`, virtualisation au-delà de 40 pilotes.
+- Classement des coureurs : barre visuelle victoires/défaites dans la colonne % de victoire.
+- Options : un bouton unique « Appliquer » valide, enregistre et recharge le dossier des résultats ; la préférence de démarrage est enregistrée dès qu'on la coche.
+- Le parser lit la position en classe, le nombre de tours et le statut d'arrivée de chaque pilote.
+- Specs `docs/UISpec/`, `UI_DESIGN_SPEC.md` et ROADMAP mises à jour selon les règles arbitrées (jalon « Écarts UI à traiter »).
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
 - Affichage d'un titre dès le démarrage et remplacement du tableau des imports par une barre de progression et un résumé des résultats.
 - Publication du dashboard en exécutable autonome, fichier unique et élagué; l'installeur sélectionne les résultats LMU présents ou les fixtures anonymisées et le workflow de release est déclenché par tag.

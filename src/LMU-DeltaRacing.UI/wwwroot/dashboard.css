@@ -563,10 +563,6 @@ h3 {
     margin-bottom: 2.5rem;
 }
 
-.save-button {
-    min-width: 150px;
-}
-
 .dashboard-below-settings {
     padding-top: 0.25rem;
     border-top: 1px solid var(--border);
@@ -988,6 +984,30 @@ h3 {
     min-width: 590px;
 }
 
+.win-rate {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.win-rate-bar {
+    display: inline-flex;
+    width: 4.5rem;
+    height: 0.4rem;
+    overflow: hidden;
+    border-radius: 2px;
+    background: var(--border);
+}
+
+.win-rate-wins {
+    background: var(--green);
+}
+
+.win-rate-losses {
+    background: var(--red);
+}
+
 .ranking-driver,
 .race-driver-name {
     font-weight: 650;
@@ -1017,7 +1037,7 @@ h3 {
 }
 
 .race-details-table {
-    min-width: 1320px;
+    min-width: 1500px;
 }
 
 .race-details-table th:first-child,
@@ -1052,23 +1072,32 @@ h3 {
     white-space: nowrap;
 }
 
-.sector-session-best {
+.sector-class-best {
     background: rgb(176 102 255 / 18%);
     color: var(--purple);
-}
-
-.sector-personal-best {
-    background: rgb(34 197 94 / 13%);
-    color: var(--green);
 }
 
 .sector-standard {
     color: var(--yellow);
 }
 
-.race-details-table .sector-time,
 .race-details-table .lap-time {
     color: var(--text);
+}
+
+.class-cell {
+    white-space: nowrap;
+}
+
+.class-position {
+    margin-left: 0.4rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.leader-gap {
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
 }
 
 .delta-time {
@@ -1117,12 +1146,8 @@ h3 {
     border-radius: 2px;
 }
 
-.sector-legend-swatch.sector-session-best {
+.sector-legend-swatch.sector-class-best {
     background: var(--purple);
-}
-
-.sector-legend-swatch.sector-personal-best {
-    background: var(--green);
 }
 
 .sector-legend-swatch.sector-standard {
@@ -1254,10 +1279,6 @@ h3 {
 
     .settings-save-row {
         align-items: flex-end;
-    }
-
-    .save-button {
-        min-width: 120px;
     }
 
     .sessions-table th,

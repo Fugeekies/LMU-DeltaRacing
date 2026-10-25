@@ -17,7 +17,7 @@ internal static class MyRacesBenchmark
         output.AppendLine("## Opérations de la vue Mes courses");
         output.AppendLine();
         output.AppendLine(
-            "Mesures sur des historiques synthétiques de 20 circuits et trois catégories, " +
+            "Mesures sur des historiques synthétiques de 20 circuits et cinq catégories, " +
             "avec une distribution uniforme des événements. Le jeu de données est généré avant les mesures.");
         output.AppendLine(
             $"Chaque opération est préchauffée {WarmupIterations} fois ; les résultats sont la médiane de " +
@@ -46,7 +46,7 @@ internal static class MyRacesBenchmark
         for (var index = 0; index < count; index++)
         {
             var track = index % 20;
-            var category = index % 3;
+            var category = index % Categories.Length;
             var startedAt = start.AddSeconds(index);
             records[index] = new MyRaceRecord(
                 $"Circuit {track:D2}",
@@ -67,7 +67,7 @@ internal static class MyRacesBenchmark
         return records;
     }
 
-    private static readonly string[] Categories = ["Hypercar", "LMP2", "LMGT3"];
+    private static readonly string[] Categories = ["Hypercar", "LMP2", "LMP3", "LMGTE", "LMGT3"];
 
     private static void AppendMeasurement(
         StringBuilder output,

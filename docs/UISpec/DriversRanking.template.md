@@ -6,13 +6,14 @@
 Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectionné et l'ensemble des pilotes croisés dans les sessions importées (route `/drivers-ranking`).
 
 ### Spécifications fonctionnelles
-* **Sessions prises en compte :** toutes les sessions importées (qualifications **et** courses ; les Practice ne sont jamais importées) dans lesquelles le pilote sélectionné a une position de classement.
-* **Règle métier H2H :** pour chaque session retenue et chaque adversaire classé (position renseignée) :
-  * l'adversaire n'est compté qu'une fois par session (dédoublonnage par nom, insensible à la casse) ;
+* **Sessions prises en compte :** uniquement les **courses** (type contenant `Race`) dans lesquelles le pilote sélectionné est classé. Les qualifications sont ignorées.
+* **Règle métier H2H :** pour chaque course retenue et chaque adversaire classé **de la même classe** (`CarClass`) que le pilote :
+  * les pilotes des autres classes sont ignorés (en multiclasse, devancer une voiture d'une classe plus lente n'est pas une victoire) ;
+  * l'adversaire n'est compté qu'une fois par course (dédoublonnage par nom, insensible à la casse) ;
   * « Courses affrontées » +1 ;
-  * position du pilote < position de l'adversaire → **Victoire** ;
+  * position en classe (`ClassPosition`, à défaut position générale) du pilote < celle de l'adversaire → **Victoire** ;
   * position du pilote > position de l'adversaire → **Défaite** ;
-  * la comparaison utilise le **classement général** de la session, toutes classes confondues ;
+  * deux pilotes d'une même course n'ont jamais la même position : victoires + défaites = courses affrontées ;
   * `% de victoire` = victoires / courses affrontées × 100.
 * **Recherche :** champ « Nom du pilote… » filtrant en direct à chaque frappe (« contient », insensible à la casse).
 * **Tri :**
@@ -25,10 +26,10 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
   | Colonne | Contenu | Format |
   |---|---|---|
   | NOM DU PILOTE | Nom de l'adversaire | texte |
-  | COURSES AFFRONTÉES | Sessions partagées et classées | entier |
-  | VICTOIRES | Sessions où le pilote finit devant | entier |
-  | DÉFAITES | Sessions où le pilote finit derrière | entier |
-  | % DE VICTOIRE | Part des victoires | `66.7%` (une décimale, point) |
+  | COURSES AFFRONTÉES | Courses partagées et classées, dans la même classe | entier |
+  | VICTOIRES | Courses où le pilote finit devant en classe | entier |
+  | DÉFAITES | Courses où le pilote finit derrière en classe | entier |
+  | % DE VICTOIRE | Barre proportionnelle (vert = victoires, rouge = défaites) suivie du pourcentage | `66.7%` (une décimale, point) |
 
 * Un badge dans l'en-tête du panneau indique le nombre d'adversaires après filtrage.
 * **États de la page :**
@@ -54,13 +55,10 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
 │  ───────────────────────────────────────────────────────────────────────────────────────────────────────────  │
 │  NOM DU PILOTE             COURSES AFFRONTÉES    VICTOIRES       DÉFAITES       % DE VICTOIRE                  │
 │  ───────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  Driver 2161               18                    12              6              66.7%                          │
-│  Driver 1662               14                    5               9              35.7%                          │
-│  Driver 0412               12                    8               4              66.7%                          │
-│  Driver 0087               9                     9               0              100.0%                         │
+│  Driver 2161               18                    12              6              [🟩🟩🟩🟩🟥🟥] 66.7%            │
+│  Driver 1662               14                    5               9              [🟩🟩🟥🟥🟥🟥] 35.7%            │
+│  Driver 0412               12                    8               4              [🟩🟩🟩🟩🟥🟥] 66.7%            │
+│  Driver 0087               9                     9               0              [🟩🟩🟩🟩🟩🟩] 100.0%           │
 │                                                                                                               │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-### Écarts connus
-Les comportements à corriger ou à arbitrer sont suivis dans la [feuille de route](../ROADMAP.md), jalon « Écarts UI à traiter ».
