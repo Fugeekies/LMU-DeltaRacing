@@ -7,7 +7,7 @@ Classement détaillé d'une session choisie par l'utilisateur (route `/race-deta
 
 ### Spécifications fonctionnelles
 * **Sélecteur de session :**
-  * Liste les sessions importées (qualifications et courses) contenant le pilote sélectionné, de la plus récente à la plus ancienne.
+  * Liste les sessions importées contenant le pilote sélectionné, de la plus récente à la plus ancienne : courses et qualifications, plus les essais si la case **« Afficher les essais »** (à droite du sélecteur, décochée par défaut, non mémorisée) est cochée.
   * Libellé : `dd/MM/yyyy HH:mm - <Lieu> (<Type de session>) - <Catégorie du pilote>` (heure locale ; la catégorie est omise si la classe est vide).
   * Par défaut, la session la plus récente est sélectionnée. Si la session sélectionnée disparaît (rechargement), la plus récente est resélectionnée.
 * **Métadonnées** à côté du sélecteur : badge du type de session, lieu, tracé s'il diffère du lieu.

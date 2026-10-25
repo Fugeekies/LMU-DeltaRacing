@@ -3,10 +3,10 @@
 > Spécification alignée sur le code au 25/10/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
 
 ### Description
-Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
+Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Pour chaque circuit, deux tableaux se suivent : **Course** d'abord (le résultat qui compte), puis **Qualification**. Chaque ligne est une session ; son meilleur tour est comparé à celui de la session précédente du même type ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
 
 ### Spécifications fonctionnelles
-* **Sessions prises en compte :** sessions de qualification (type contenant `Qual`) et de course (type contenant `Race`) dans lesquelles figure le pilote sélectionné. Les sessions Practice ne sont jamais importées.
+* **Sessions prises en compte :** sessions de course (type contenant `Race`) et de qualification (type contenant `Qual`) dans lesquelles figure le pilote sélectionné. Les sessions d'essais sont importées mais n'apparaissent pas ici : elles se consultent dans « Détail des courses ».
 * **Catégorie :** déduite de la `CarClass` du pilote (`CarCategory.cs`) :
   * contient `Hyper` → **Hypercar** ;
   * contient `LMP2` ou vaut `P2` → **LMP2** ;
@@ -14,40 +14,33 @@ Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la prog
   * contient `GTE` → **LMGTE** ;
   * contient `GT3` → **LMGT3** ;
   * toute autre classe : affichée sous son nom brut (jamais exclue) ; classe vide : `—`.
-* **Une ligne = une paire qualif + course :**
-  * Les sessions du pilote sont parcourues chronologiquement, circuit par circuit (même lieu `TrackVenue`, même tracé `TrackCourse`, même événement `TrackEvent`).
-  * Chaque course est associée à la **dernière qualification qui la précède sur ce circuit, sans autre course entre les deux**.
-  * Une qualification suivie d'une autre qualification, ou une course sans qualification avant elle, donne une **ligne partielle** (colonnes de l'autre session à `—`).
-  * Plusieurs courses le même jour sur le même circuit donnent donc plusieurs lignes.
-  * Date / heure : début de la qualification, à défaut de la course (heure locale).
-  * Catégorie et voiture : celles de la course, à défaut celles de la qualification.
+* **Une ligne = une session.** Plusieurs courses le même jour sur le même circuit donnent plusieurs lignes.
   * Meilleur tour : plus petit temps de tour chronométré de la session. LMU efface le temps des tours invalidés pour limites de piste, qui sont donc exclus.
-  * Grille, tours et temps total : ceux de la course.
+  * Date / heure : début de l'événement (`RaceResults/DateTime`, commun aux essais, à la qualif et à la course d'un même événement), en heure locale.
 * **Voiture :** `CarType` ; à défaut `#<CarNumber>` ; à défaut `—`.
 * **Filtres :**
   * Circuit : « Tous les circuits » ou un lieu parmi ceux présents dans les lignes (tri alphabétique). Le filtre porte sur `TrackVenue`.
   * Catégorie : « Toutes les catégories », Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les éventuelles classes inconnues présentes dans les lignes.
-  * Les filtres s'appliquent sans rechargement et sont conservés lors des mises à jour en direct.
-* **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N résultats ». Les lignes d'un bloc sont triées de la plus récente à la plus ancienne.
-* **Structure du tableau :**
+  * Les filtres s'appliquent aux deux tableaux, sans rechargement, et sont conservés lors des mises à jour en direct.
+* **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N sessions ». Dans le bloc, le titre « COURSE N » précède le tableau des courses, puis « QUALIFICATION N » celui des qualifications. Un type sans session affiche « Aucune course sur ce circuit. » ou « Aucune qualification sur ce circuit. ». Les lignes sont triées de la plus récente à la plus ancienne.
+* **Tableau Course :**
 
   | Colonne | Contenu | Format |
   |---|---|---|
-  | DATE / HEURE | Début de la qualif, à défaut de la course (heure locale) | `dd/MM/yyyy HH:mm` |
+  | DATE / HEURE | Début de l'événement (heure locale) | `dd/MM/yyyy HH:mm` |
   | CATÉGORIE | Badge de catégorie | — |
   | VOITURE | Modèle du véhicule | texte gras |
-  | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
-  | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
-  | GRILLE | Position de départ en course (`GridPos`) | entier |
-  | MEILLEUR TOUR COURSE | Meilleur tour en course | `m:ss.fff` |
-  | DELTA COURSE (n-1) | Écart avec la course précédente | voir règle delta |
-  | TOURS | Tours effectués par le pilote en course (`Laps`) | entier |
-  | TEMPS TOTAL COURSE | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
+  | GRILLE | Position de départ (`GridPos`) | entier |
+  | MEILLEUR TOUR | Meilleur tour en course | `m:ss.fff` |
+  | DELTA (n-1) | Écart avec la course précédente | voir règle delta |
+  | TOURS | Tours effectués par le pilote (`Laps`) | entier |
+  | TEMPS TOTAL | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
 
-  Toute valeur absente s'affiche `—`.
+* **Tableau Qualification :** DATE / HEURE, CATÉGORIE, VOITURE, MEILLEUR TOUR, DELTA (n-1), TOURS (mêmes formats).
+* Toute valeur absente s'affiche `—`.
 * **Règle métier delta ($n-1$) :**
-  * Historique = lignes de même lieu + même tracé + même catégorie, triées chronologiquement. Le véhicule n'est pas pris en compte.
-  * Qualif et course sont calculées séparément : delta = temps courant − dernier temps non vide précédent du même type.
+  * Historique = sessions du même type (course ou qualification), même lieu + même tracé + même catégorie, triées chronologiquement. Le véhicule n'est pas pris en compte.
+  * Delta = meilleur tour courant − dernier meilleur tour non vide précédent de l'historique.
   * Première mesure de l'historique : `—`.
   * Gain de temps (delta < 0) : texte vert `🟢 -0.245s`.
   * Perte de temps (delta > 0) : texte rouge `🔴 +0.102s`.
@@ -56,34 +49,38 @@ Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la prog
 * **États de la page :**
   * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».
   * Erreur de chargement sans session : encadré d'erreur avec le message et un lien vers Options.
-  * Aucune ligne : « Aucune course disponible ».
+  * Aucune session : « Aucune course disponible ».
   * Filtres sans résultat : « Aucune course ne correspond à ces filtres ».
   * La page se met à jour automatiquement à chaque nouvel import.
 
 ### Wireframe ASCII
 ```text
-┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS        Driver Tom   🟢 SURVEILLANCE ACTIVE │
-├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  HISTORIQUE & PROGRESSION                                                                                                        │
-│  Mes courses                                                                                                                     │
-│  Vos meilleurs temps, comparés à la session précédente sur le même circuit et dans la même catégorie.                           │
-│                                                                                                                                  │
-│  PERFORMANCES ENREGISTRÉES                                                                                                [ 5 ]  │
-│  Progression par circuit                                                                                                         │
-│  CIRCUIT [ Tous les circuits ▼ ]   CATÉGORIE [ Toutes les catégories ▼ ]                                                        │
-│                                                                                                                                  │
-│  CIRCUIT                                                                                                                         │
-│  Circuit de Spa-Francorchamps                                                                                      [ 3 résultats ] │
-│  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  DATE / HEURE      CATÉGORIE  VOITURE       MT QUALIF  DELTA QUALIF  GRILLE  MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL         │
-│  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  16/10/2026 21:00  Hypercar   Ferrari 499P  2:02.451   🟢 -0.245s    3       2:03.110   🟢 -0.120s    12     25:01.432           │
-│  16/10/2026 20:20  Hypercar   Ferrari 499P  2:02.696   🔴 +0.102s    5       2:03.230   🔴 +0.450s    12     25:03.876           │
-│  16/10/2026 19:40  Hypercar   Ferrari 499P  2:02.594   —             —       —          —             —      —                   │
-│  12/10/2026 14:00  LMGTE      Porsche 911   2:17.594   —             8       2:18.780   —             11     25:40.120           │
-│                                                                                                                                  │
-├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
-│  LE MANS ULTIMATE                                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │
-└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 SURVEILLANCE ACTIVE │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  HISTORIQUE & PROGRESSION                                                                                        │
+│  Mes courses                                                                                                     │
+│  Vos meilleurs temps, comparés à la session précédente sur le même circuit et dans la même catégorie.            │
+│                                                                                                                  │
+│  PERFORMANCES ENREGISTRÉES                                                                               [ 170 ] │
+│  Progression par circuit                                                                                         │
+│  CIRCUIT [ Tous les circuits ▼ ]   CATÉGORIE [ Toutes les catégories ▼ ]                                         │
+│                                                                                                                  │
+│  CIRCUIT                                                                                                         │
+│  Algarve International Circuit                                                                    [ 22 sessions ] │
+│                                                                                                                  │
+│  COURSE 11                                                                                                       │
+│  DATE / HEURE      CATÉGORIE  VOITURE              GRILLE  MEILLEUR TOUR  DELTA (n-1)   TOURS  TEMPS TOTAL       │
+│  24/01/2026 17:01  LMGT3      Ford Mustang LMGT3   4       1:48.242       🟢 -0.772s    11     20:32.043         │
+│  24/01/2026 16:21  LMGT3      Mercedes-AMG LMGT3   17      1:49.014       🔴 +0.701s    12     22:14.337         │
+│  17/10/2025 18:20  LMP2       Oreca 07             16      1:41.811       —             13     22:44.958         │
+│                                                                                                                  │
+│  QUALIFICATION 11                                                                                                │
+│  DATE / HEURE      CATÉGORIE  VOITURE              MEILLEUR TOUR  DELTA (n-1)   TOURS                            │
+│  24/01/2026 17:01  LMGT3      Ford Mustang LMGT3   1:48.424       🟢 -0.949s    3                                │
+│  24/01/2026 16:21  LMGT3      Mercedes-AMG LMGT3   1:49.373       🔴 +1.468s    3                                │
+│                                                                                                                  │
+├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│  LE MANS ULTIMATE                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │
+└──────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```

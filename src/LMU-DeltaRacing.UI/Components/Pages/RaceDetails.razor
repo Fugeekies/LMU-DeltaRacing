@@ -56,6 +56,10 @@ else
                     }
                 </select>
             </label>
+            <label class="settings-checkbox practice-toggle">
+                <input type="checkbox" @bind="showPractice" @bind:after="UpdateState" />
+                <span>Afficher les essais</span>
+            </label>
             @if (selectedSession is not null)
             {
                 <div class="session-meta">
@@ -132,6 +136,7 @@ else
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<Session> sessions = [];
     private string selectedSessionId = string.Empty;
+    private bool showPractice;
 
     protected override void OnInitialized()
     {
@@ -151,7 +156,10 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
+        // Practice sessions are imported but only listed on request, to keep the selector short.
         sessions = DriverProfile.FilterSessions(state.Sessions, state.UserName)
+            .Where(session => showPractice
+                || !session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
             .OrderByDescending(session => session.StartedAt)
             .ToArray();
 

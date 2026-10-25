@@ -16,6 +16,7 @@ public sealed class SessionImportService : ISessionImportService
     private readonly IResultXmlParser parser;
     private readonly ISessionRepository repository;
     private readonly ILogger<SessionImportService> logger;
+    private readonly bool importPracticeSessions;
 
     /// <summary>
     /// Creates an importer using the specified parser and session repository.
@@ -23,10 +24,15 @@ public sealed class SessionImportService : ISessionImportService
     /// <param name="parser">The result XML parser.</param>
     /// <param name="repository">The destination session repository.</param>
     /// <param name="logger">The logger used to report import progress and failures.</param>
+    /// <param name="importPracticeSessions">
+    /// Whether practice sessions are stored. The console statistics ignore them, while the
+    /// dashboard keeps them so the race-details page can display them on request.
+    /// </param>
     public SessionImportService(
         IResultXmlParser parser,
         ISessionRepository repository,
-        ILogger<SessionImportService> logger)
+        ILogger<SessionImportService> logger,
+        bool importPracticeSessions = false)
     {
         ArgumentNullException.ThrowIfNull(parser);
         ArgumentNullException.ThrowIfNull(repository);
@@ -35,6 +41,7 @@ public sealed class SessionImportService : ISessionImportService
         this.parser = parser;
         this.repository = repository;
         this.logger = logger;
+        this.importPracticeSessions = importPracticeSessions;
     }
 
     /// <inheritdoc />
@@ -55,7 +62,8 @@ public sealed class SessionImportService : ISessionImportService
             logger.LogDebug("Parsing result file {SourceFile}", sourceFile);
             var session = parser.Parse(stream);
 
-            if (session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
+            if (!importPracticeSessions
+                && session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
             {
                 logger.LogInformation(
                     "Skipped practice session in {SourceFile}; practice data is not loaded",

@@ -92,6 +92,31 @@ public sealed class SessionImportServiceTests
     }
 
     /// <summary>
+    /// Verifies that the dashboard can keep practice sessions, which the race-details page can display.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_stores_practice_sessions_when_practice_import_is_enabled()
+    {
+        var repository = new InMemorySessionRepository();
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance,
+            importPracticeSessions: true);
+        var path = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_09_20_19_03_47-43P1.xml");
+
+        var result = service.ImportFile(path);
+
+        result.Status.Should().Be(SessionImportStatus.Imported);
+        result.Session!.SessionType.Should().Be("Practice1");
+        repository.GetAll().Should().ContainSingle();
+    }
+
+    /// <summary>
     /// Verifies that a blank file path is rejected as invalid input.
     /// </summary>
     [TestMethod]

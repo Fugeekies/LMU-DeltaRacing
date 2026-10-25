@@ -871,6 +871,35 @@ h3 {
     margin-bottom: 0.15rem;
 }
 
+.session-table-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0.9rem 1.25rem 0.5rem;
+    color: var(--muted);
+    font-family: Oswald, "Roboto Condensed", "Arial Narrow", Impact, sans-serif;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+}
+
+.session-table-title span {
+    color: var(--text);
+}
+
+.session-table-empty {
+    margin: 0;
+    padding: 0 1.25rem 0.9rem;
+    color: var(--muted);
+    font-size: 0.74rem;
+}
+
+.practice-toggle {
+    align-self: flex-end;
+    padding-bottom: 0.65rem;
+    white-space: nowrap;
+}
+
 .circuit-heading h3 {
     margin: 0;
     font-size: 1rem;

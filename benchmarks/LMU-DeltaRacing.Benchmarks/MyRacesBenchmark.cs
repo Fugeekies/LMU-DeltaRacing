@@ -39,29 +39,29 @@ internal static class MyRacesBenchmark
         return output.ToString();
     }
 
-    private static MyRaceRecord[] CreateRecords(int count)
+    private static MyRaceSession[] CreateRecords(int count)
     {
-        var records = new MyRaceRecord[count];
+        var records = new MyRaceSession[count];
         var start = DateTimeOffset.UnixEpoch;
         for (var index = 0; index < count; index++)
         {
             var track = index % 20;
             var category = index % Categories.Length;
             var startedAt = start.AddSeconds(index);
-            records[index] = new MyRaceRecord(
+            var isRace = index % 2 == 0;
+            records[index] = new MyRaceSession(
                 $"Circuit {track:D2}",
                 $"Layout {track % 4}",
                 $"Event {index / 60:D5}",
                 startedAt,
+                isRace ? MyRaceSessionKind.Race : MyRaceSessionKind.Qualifying,
                 Categories[category],
                 $"#{index % 200:D3} · Team",
-                TimeSpan.FromSeconds(100 + index % 20),
+                TimeSpan.FromSeconds(isRace ? 110 + index % 25 : 100 + index % 20),
                 null,
-                null,
-                TimeSpan.FromSeconds(110 + index % 25),
-                null,
-                8,
-                TimeSpan.FromSeconds(1320 + index % 90));
+                isRace ? 8 : null,
+                isRace ? 12 : 6,
+                isRace ? TimeSpan.FromSeconds(1320 + index % 90) : null);
         }
 
         return records;
@@ -73,8 +73,8 @@ internal static class MyRacesBenchmark
         StringBuilder output,
         int recordCount,
         string operation,
-        MyRaceRecord[] records,
-        Func<MyRaceRecord[], int> action)
+        MyRaceSession[] records,
+        Func<MyRaceSession[], int> action)
     {
         for (var iteration = 0; iteration < WarmupIterations; iteration++)
         {
@@ -105,23 +105,23 @@ internal static class MyRacesBenchmark
             $"{processedCount.ToString("N0", CultureInfo.InvariantCulture)} |");
     }
 
-    private static int Sort(MyRaceRecord[] records) =>
+    private static int Sort(MyRaceSession[] records) =>
         records.OrderByDescending(record => record.StartedAt).ToArray().Length;
 
-    private static int Group(MyRaceRecord[] records) =>
+    private static int Group(MyRaceSession[] records) =>
         records
             .GroupBy(record => new { record.TrackVenue, record.Category })
             .Select(group => group.Count())
             .ToArray()
             .Length;
 
-    private static int FilterTrack(MyRaceRecord[] records) =>
+    private static int FilterTrack(MyRaceSession[] records) =>
         records.Where(record => record.TrackVenue == "Circuit 03").ToArray().Length;
 
-    private static int FilterCategory(MyRaceRecord[] records) =>
+    private static int FilterCategory(MyRaceSession[] records) =>
         records.Where(record => record.Category == "LMGT3").ToArray().Length;
 
-    private static int FilterTrackAndCategory(MyRaceRecord[] records) =>
+    private static int FilterTrackAndCategory(MyRaceSession[] records) =>
         records
             .Where(record => record.TrackVenue == "Circuit 03" && record.Category == "LMGT3")
             .ToArray()

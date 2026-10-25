@@ -42,7 +42,13 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
 builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
-builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
+// The dashboard keeps practice sessions: the race-details page can display them on request.
+builder.Services.AddSingleton<ISessionImportService>(serviceProvider =>
+    new SessionImportService(
+        serviceProvider.GetRequiredService<IResultXmlParser>(),
+        serviceProvider.GetRequiredService<ISessionRepository>(),
+        serviceProvider.GetRequiredService<ILogger<SessionImportService>>(),
+        importPracticeSessions: true));
 builder.Services.AddSingleton<DashboardDataService>();
 builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
     new DashboardSettingsStore(

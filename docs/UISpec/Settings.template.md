@@ -44,7 +44,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Pendant l'import initial : barre de progression « N / M fichiers traités ».
 * Encadré d'erreur si les résultats n'ont pas pu être chargés, avec un lien vers Options.
 * Trois cartes :
-  * **SESSIONS IMPORTÉES** : nombre de sessions du pilote ;
+  * **SESSIONS IMPORTÉES** : nombre de sessions du pilote, essais compris ;
   * **DERNIÈRE SESSION** : lieu et date de la plus récente ;
   * **FICHIERS EN ÉCHEC** : nombre d'échecs (en couleur d'alerte si > 0).
 * Liste des fichiers en échec (nom + message) lorsqu'il y en a.
@@ -76,7 +76,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ PROFIL DE PILOTE                                                                                        │  │
 │  │ Pilote principal                                                                                        │  │
 │  │ Pilote utilisé dans les vues de résultats                                                               │  │
-│  │ [ Driver Tom — 81,7 % (170/208 fichiers)                                                          ▼ ]   │  │
+│  │ [ Driver Tom — 81,3 % (278/342 fichiers)                                                          ▼ ]   │  │
 │  │ Les pilotes sont triés par pourcentage de fichiers importés… Le choix est enregistré automatiquement.   │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
@@ -88,8 +88,8 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  Dossier enregistré et chargé : 342 fichier(s) traité(s). La surveillance est active.                         │
 │                                                                                                               │
 │  ESPACE INGÉNIEUR DE PISTE — Tableau de bord                                                                  │
-│  [ SESSIONS IMPORTÉES 170 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
-│  ARCHIVES DE COURSE — Sessions récentes de Driver Tom                                                 [ 170 ]   │
+│  [ SESSIONS IMPORTÉES 278 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
+│  ARCHIVES DE COURSE — Sessions récentes de Driver Tom                                                 [ 278 ]   │
 │  DATE / HEURE      CIRCUIT                          ÉVÉNEMENT                       SESSION   VOITURE          │
 │  02/10/2026 21:00  Circuit de Spa-Francorchamps     6 Hours of Spa-Francorchamps    Race      …                │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

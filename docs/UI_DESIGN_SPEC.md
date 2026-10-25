@@ -60,7 +60,7 @@ UISpec/
 ### Récapitulatif des 4 Menus Principaux :
 
 1. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
-   * Historique et progression personnelle groupés par circuit, une ligne par paire qualification + course.
+   * Historique et progression personnelle groupés par circuit : un tableau Course puis un tableau Qualification, une ligne par session.
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
    * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 

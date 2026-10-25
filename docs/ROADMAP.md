@@ -106,7 +106,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] **Tours invalides :** vérification faite sur les fixtures. LMU efface déjà le temps (`--.----`) des tours visés par « Invalid Lap Cut Track » (35/35 cas vérifiés ; l'attribut `Lap` de l'événement est en base 0). Cet événement n'apparaît qu'en essais et en qualification. Règle retenue : un tour valide est un tour chronométré ; les secteurs d'un tour sans temps sont exclus des meilleurs secteurs.
 
 ### Mes courses (`MyRaces.razor`)
-- [x] **Une ligne = une paire qualif + course.** Chaque course est associée à la dernière qualification du même circuit (lieu + tracé + événement) qui la précède, sans autre course entre les deux. Une qualif sans course, ou une course sans qualif, donne une ligne partielle. Fin de la fusion par jour : sur les fixtures, les 87 courses du pilote principal donnaient 37 lignes, elles en donnent maintenant 89 (87 courses + 2 qualifs isolées).
+- [x] **Une ligne = une paire qualif + course.** Chaque course est associée à la dernière qualification du même circuit (lieu + tracé + événement) qui la précède, sans autre course entre les deux. Une qualif sans course, ou une course sans qualif, donne une ligne partielle. Fin de la fusion par jour : sur les fixtures, les 87 courses du pilote principal donnaient 37 lignes, elles en donnent maintenant 89 (87 courses + 2 qualifs isolées). *Remplacé depuis par le jalon « Mes courses par type de session ».*
 - [x] Catégorie et voiture d'une ligne : celles de la course, à défaut celles de la qualif.
 - [x] **Catégories :** Hypercar, LMP2, LMP3, LMGTE, LMGT3, chacune avec son badge et son filtre. Une classe inconnue reste affichée sous son nom brut au lieu d'être exclue.
 - [x] **Delta n-1 :** inchangé (même lieu + même tracé + même catégorie, quelle que soit la voiture). Corriger `UI_DESIGN_SPEC.md`, qui exige à tort une voiture identique.
@@ -134,6 +134,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] La case « démarrage automatique de la surveillance » est enregistrée dès qu'on la coche, comme le pilote principal.
 - [x] Afficher en heure locale les dates du tableau des sessions récentes (aujourd'hui en UTC).
 - [x] Renvoyer vers la page Options plutôt que vers `appsettings.json` dans l'encadré d'erreur de l'état des imports.
+
+## Jalon — Mes courses par type de session [Terminé]
+- [x] Deux tableaux par circuit, **Course** d'abord puis **Qualification**, une ligne par session avec son propre delta n-1 (même circuit, même catégorie, même type de session). Remplace l'association qualif + course sur une même ligne.
+- [x] Le dashboard importe les sessions d'essais (la console continue de les ignorer).
+- [x] Détail des courses : case « Afficher les essais » (décochée par défaut) pour lister les essais dans le sélecteur de session. Les essais n'apparaissent pas dans Mes courses ni dans le classement des coureurs.
 
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
