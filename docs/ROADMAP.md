@@ -95,7 +95,37 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 ## Jalon — UI : Menu "Détail des Courses" (`RaceDetails.razor`)
 - [x] Intégrer le sélecteur de session (dropdown) en haut de page.
 - [x] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
-- [x] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer l'écart avec le 1er.
+- [x] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer les écarts au meilleur secteur et au meilleur tour de la session.
+
+## Jalon — Écarts UI à traiter
+Écarts relevés lors de la resynchronisation des specs `docs/UISpec/` avec le code. Chaque point est à arbitrer (règle métier) avant correction.
+
+### Mes courses (`MyRaces.razor`)
+- [ ] Ne plus fusionner les courses d'un même jour sur un même circuit : définir l'unité d'une ligne (session, paire qualif/course…). Sur les fixtures, 87 courses du pilote principal donnent au plus 37 lignes.
+- [ ] Regrouper par date locale et non UTC (une course vers minuit peut changer de jour).
+- [ ] Prendre en charge les classes `GTE` et `LMP3` présentes dans les résultats LMU, aujourd'hui exclues sans message (environ 41 % des sessions du pilote principal des fixtures).
+- [ ] Colonne TOURS : afficher les tours du pilote et non `MostLapsCompleted` (tours du vainqueur).
+- [ ] Rendre déterministes la catégorie et la voiture d'une ligne quand le pilote change de voiture.
+- [ ] Définir ce qu'est un « tour valide » (limites de piste) pour le calcul du meilleur tour.
+- [ ] Trancher la règle du delta n-1 : même véhicule ou non (`UI_DESIGN_SPEC.md` et `MyRaces.template.md` se contredisent ; le code ignore le véhicule).
+
+### Classement des coureurs (`DriversRanking.razor`)
+- [ ] Exclure les qualifications du décompte des « courses affrontées », ou les signaler distinctement.
+- [ ] Comparer les positions par classe en session multiclasse.
+- [ ] Définir le traitement des positions égales (comptées comme affrontées sans victoire ni défaite).
+- [ ] Ajouter la barre visuelle victoires/défaites (🟩🟥) de la maquette d'origine, ou la retirer définitivement de la spec.
+
+### Détail des courses (`RaceDetails.razor`)
+- [ ] Ajouter la colonne « DIFF 1ER » (écart au leader) prévue par la maquette d'origine, ou acter son remplacement par l'écart au meilleur tour.
+- [ ] Calculer les meilleurs secteurs et tours par classe en session multiclasse (règle WEC).
+- [ ] Décider s'il faut afficher les meilleurs secteurs réalisés hors du meilleur tour (aujourd'hui, seuls les secteurs du meilleur tour sont affichés).
+- [ ] Afficher le temps au tour au format `m:ss.fff`, comme dans « Mes courses ».
+- [ ] Virtualiser les grandes grilles (> 40 voitures), comme demandé par `UI_DESIGN_SPEC.md`.
+
+### Options (`Settings.razor`)
+- [ ] Simplifier le changement de dossier : « Tester & recharger » n'enregistre pas et « Enregistrer » ne recharge pas.
+- [ ] Afficher en heure locale les dates du tableau des sessions récentes (aujourd'hui en UTC).
+- [ ] Renvoyer vers la page Options plutôt que vers `appsettings.json` dans l'encadré d'erreur de l'état des imports.
 
 ## Liste d'idées à prioriser
 - [ ] Multi langue.
@@ -104,5 +134,5 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [ ] Ajouter une fiche pilote avec ses statistiques cumulées.
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
 - [ ] Afficher les incidents et avertissements de limites de piste lorsqu'ils sont présents dans le XML.
-- [ ] Permettre de choisir le dossier de résultats depuis l'interface.
-- [ ] Ajouter un indicateur de progression et un résumé des derniers imports.
+- [x] Permettre de choisir le dossier de résultats depuis l'interface (page Options).
+- [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
