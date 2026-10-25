@@ -1115,7 +1115,53 @@ h3 {
 }
 
 .race-details-table {
-    min-width: 1500px;
+    table-layout: auto;
+}
+
+.race-details-table th,
+.race-details-table td {
+    padding: 0.6rem 0.65rem;
+    vertical-align: top;
+}
+
+.th-sub {
+    display: block;
+    margin-top: 0.15rem;
+    color: var(--muted);
+    font-size: 0.55rem;
+    font-weight: 600;
+    opacity: 0.75;
+}
+
+.stacked-cell > span {
+    display: block;
+}
+
+.cell-sub {
+    margin-top: 0.2rem;
+    font-size: 0.68rem;
+}
+
+.position-value {
+    font-weight: 750;
+    font-variant-numeric: tabular-nums;
+}
+
+.stacked-cell .cell-sub .category-badge {
+    padding: 0.08rem 0.32rem;
+    font-size: 0.6rem;
+}
+
+.car-name {
+    color: var(--muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 16rem;
+}
+
+.player-row td {
+    background: rgb(225 29 72 / 7%);
 }
 
 .race-details-table th:first-child,

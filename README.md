@@ -94,14 +94,14 @@ Pour chaque pilote :
 
 | Colonne | Signification |
 |---|---|
-| **POS / CLASSE** | Position au général, catégorie et position dans la catégorie |
-| **SECTEUR 1, 2, 3** | Meilleur temps du pilote sur chaque secteur. 🟣 **Violet** : meilleur de la catégorie. 🟡 **Jaune** : temps standard |
-| **DELTA S1, S2, S3** | Écart avec le meilleur temps de la catégorie sur ce secteur |
+| **POS / CLASSE** | Position au général et, dessous, catégorie et position dans la catégorie |
+| **PILOTE** | Nom du pilote et, dessous, sa voiture |
+| **SECTEUR 1, 2, 3** | Meilleur temps du pilote sur chaque secteur. 🟣 **Violet** : meilleur de la catégorie. 🟡 **Jaune** : temps standard. En petit dessous : l'écart avec le meilleur temps de la catégorie sur ce secteur |
 | **TOUR IDÉAL** | Somme des trois meilleurs secteurs : le tour que le pilote aurait pu faire |
-| **MEILLEUR TOUR / DELTA TOUR** | Meilleur tour réel et écart avec le meilleur tour de la catégorie |
+| **MEILLEUR TOUR** | Meilleur tour réel et, dessous, écart avec le meilleur tour de la catégorie |
 | **DIFF 1ER** | Écart avec le premier de la catégorie : **LEADER**, un temps, **+1 tour** ou **DNF** |
 
-Votre ligne est repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
+Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
 
 ### Options
 

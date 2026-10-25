@@ -35,6 +35,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dates de l'état des imports affichées en heure locale au lieu de l'heure UTC.
 
 ### Changed
+- Détail des courses : tableau compacté de 14 à 8 colonnes, sans défilement horizontal à partir de 1 280 px — chaque temps porte son écart en dessous, la voiture passe sous le nom du pilote et la catégorie sous la position ; la ligne du pilote sélectionné est surlignée.
 - Détail des courses : le sélecteur propose des **événements** (essais, qualification et course disputés à la suite sur un circuit) et des sous-onglets **Course**, **Qualification** et **Essais** affichent le classement de chaque session ; plusieurs séances d'essais d'un même événement sont fusionnées en un seul classement.
 - Options : nouvelle case « Charger les sessions d'essais » (`LMU:LoadPracticeSessions`, décochée par défaut) ; la cocher ou la décocher enregistre le choix et recharge les résultats. Les essais chargés ne s'affichent que dans l'onglet Essais du détail des courses ; la console continue de les ignorer.
 - Fixtures : alias lisibles à prénom (`Driver Tom`, `Driver Lucas`…) au lieu de `Driver NNNN`. Le pilote principal devient `Driver Tom`.
