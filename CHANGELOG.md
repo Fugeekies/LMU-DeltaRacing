@@ -46,6 +46,9 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ### Performance
 - Test de charge de l'import dynamique sur 50 fichiers XML injectés simultanément; résultats consignés dans `docs/benchmarks/dynamic-import-load-report.md`.
 
+### Security
+- Anonymisation complète des fixtures `assets/Results` : les noms réels restaient dans les changements de pilote (`Swap`), l'attribut `Driver` des événements (`TrackLimits`, `Penalty`) et les textes du `Stream` (contacts, pénalités, scoring, secteurs, chat). `Prepare-PackageAssets.ps1` remplace désormais tous ces noms par les mêmes alias en **conservant tous les événements de course** ; seul le contenu des messages de chat est retiré (l'alias de l'expéditeur est gardé). Le script vérifie qu'aucun nom réel ne subsiste et peut être rejoué sur des fixtures déjà anonymisées sans changer les alias existants.
+
 ### 🏗️ Architecture & Core (Clean Architecture)
 - **Domain Layer (`src/LMU-DeltaRacing.Domain/`) :**
   - Création des entités métiers pures : `Session`, `Driver`, `Lap`, et `Sector`.

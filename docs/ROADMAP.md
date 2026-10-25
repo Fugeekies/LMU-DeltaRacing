@@ -101,7 +101,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 Écarts relevés lors de la resynchronisation des specs `docs/UISpec/` avec le code. Les règles métier ont été arbitrées le 25/10/2026. Mettre à jour la spec `docs/UISpec/` concernée en même temps que chaque correction.
 
 ### Prérequis : données
-- [x] **Vie privée des fixtures :** `Name`, `Swap` et `TrackLimits` anonymisés avec les mêmes alias, événements à texte libre du `Stream` supprimés, fixtures régénérées en place (PR #28). Les résultats LMU d'origine n'étant pas disponibles, les alias des événements `TrackLimits` des fixtures actuelles ne correspondent pas à ceux des `<Driver>`.
+- [x] **Vie privée des fixtures :** noms anonymisés avec les mêmes alias dans `Name`, `Swap`, l'attribut `Driver` des événements et les textes du `Stream` ; tous les événements de course sont conservés, seul le contenu du chat est retiré. Fixtures régénérées en place (PR #28). Les résultats LMU d'origine n'étant pas disponibles, les alias utilisés dans les événements des fixtures actuelles ne correspondent pas à ceux des `<Driver>`.
 - [x] **Parser :** lire `ClassPosition`, `Laps` (tours du pilote) et `FinishStatus`.
 - [x] **Tours invalides :** vérification faite sur les fixtures. LMU efface déjà le temps (`--.----`) des tours visés par « Invalid Lap Cut Track » (35/35 cas vérifiés ; l'attribut `Lap` de l'événement est en base 0). Cet événement n'apparaît qu'en essais et en qualification. Règle retenue : un tour valide est un tour chronométré ; les secteurs d'un tour sans temps sont exclus des meilleurs secteurs.
 
