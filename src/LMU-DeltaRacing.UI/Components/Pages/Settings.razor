@@ -136,6 +136,22 @@
     </div>
 </section>
 
+<section class="panel settings-panel" aria-labelledby="practice-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">DONNÉES CHARGÉES</p>
+            <h2 id="practice-settings-heading">Sessions d’essais</h2>
+        </div>
+    </div>
+    <div class="settings-content">
+        <label class="settings-checkbox">
+            <input type="checkbox" @bind="loadPracticeSessions" @bind:after="SaveLoadPracticeSessionsAsync" disabled="@isBusy" />
+            <span>Charger les sessions d’essais (onglet Essais du détail des courses)</span>
+        </label>
+        <p class="settings-help">Les essais sont souvent vides ; les ignorer accélère le chargement. Le choix est enregistré et les résultats sont rechargés immédiatement.</p>
+    </div>
+</section>
+
 <div class="settings-save-row">
     <div class="settings-feedback" role="status" aria-live="polite">@feedbackMessage</div>
 </div>
@@ -148,6 +164,7 @@
     private string resultsDirectory = string.Empty;
     private string selectedUserName = string.Empty;
     private bool watchOnStartup = true;
+    private bool loadPracticeSessions;
     private bool isBusy;
     private bool isReloading;
     private ResultsDirectoryStatus? directoryStatus;
@@ -161,6 +178,7 @@
         selectedUserName = state.UserName ?? string.Empty;
         resultsDirectory = Configuration["LMU:ResultsDirectory"] ?? string.Empty;
         watchOnStartup = Configuration.GetValue("LMU:WatchResultsOnStartup", true);
+        loadPracticeSessions = Configuration.GetValue("LMU:LoadPracticeSessions", false);
         directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
     }
 
@@ -258,6 +276,35 @@
         {
             selectedUserName = DashboardData.Snapshot.UserName ?? string.Empty;
             feedbackMessage = $"Impossible d’enregistrer le pilote sélectionné : {exception.Message}";
+        }
+    }
+
+    /// <summary>
+    /// Saves the practice preference, then reloads the configured folder so practice sessions
+    /// appear or disappear without restarting the application.
+    /// </summary>
+    private async Task SaveLoadPracticeSessionsAsync()
+    {
+        isBusy = true;
+        feedbackMessage = null;
+        try
+        {
+            SettingsStore.SaveLoadPracticeSessions(loadPracticeSessions);
+            var status = await DashboardData.ReloadResultsAsync(Configuration["LMU:ResultsDirectory"]);
+            feedbackMessage = status.IsValid
+                ? loadPracticeSessions
+                    ? "Sessions d’essais chargées."
+                    : "Sessions d’essais retirées."
+                : status.ErrorMessage;
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = $"Impossible d’enregistrer la préférence des essais : {exception.Message}";
+        }
+        finally
+        {
+            isBusy = false;
         }
     }
 

@@ -16,7 +16,7 @@ public sealed class SessionImportService : ISessionImportService
     private readonly IResultXmlParser parser;
     private readonly ISessionRepository repository;
     private readonly ILogger<SessionImportService> logger;
-    private readonly bool importPracticeSessions;
+    private readonly Func<bool> importPracticeSessions;
 
     /// <summary>
     /// Creates an importer using the specified parser and session repository.
@@ -26,17 +26,35 @@ public sealed class SessionImportService : ISessionImportService
     /// <param name="logger">The logger used to report import progress and failures.</param>
     /// <param name="importPracticeSessions">
     /// Whether practice sessions are stored. The console statistics ignore them, while the
-    /// dashboard keeps them so the race-details page can display them on request.
+    /// dashboard keeps them for the practice tab of the race-details page.
     /// </param>
     public SessionImportService(
         IResultXmlParser parser,
         ISessionRepository repository,
         ILogger<SessionImportService> logger,
         bool importPracticeSessions = false)
+        : this(parser, repository, logger, () => importPracticeSessions)
+    {
+    }
+
+    /// <summary>
+    /// Creates an importer whose practice preference is read at each import, so a setting
+    /// changed while the application runs applies to the next reload.
+    /// </summary>
+    /// <param name="parser">The result XML parser.</param>
+    /// <param name="repository">The destination session repository.</param>
+    /// <param name="logger">The logger used to report import progress and failures.</param>
+    /// <param name="importPracticeSessions">Returns whether practice sessions are stored.</param>
+    public SessionImportService(
+        IResultXmlParser parser,
+        ISessionRepository repository,
+        ILogger<SessionImportService> logger,
+        Func<bool> importPracticeSessions)
     {
         ArgumentNullException.ThrowIfNull(parser);
         ArgumentNullException.ThrowIfNull(repository);
         ArgumentNullException.ThrowIfNull(logger);
+        ArgumentNullException.ThrowIfNull(importPracticeSessions);
 
         this.parser = parser;
         this.repository = repository;
@@ -62,7 +80,7 @@ public sealed class SessionImportService : ISessionImportService
             logger.LogDebug("Parsing result file {SourceFile}", sourceFile);
             var session = parser.Parse(stream);
 
-            if (!importPracticeSessions
+            if (!importPracticeSessions()
                 && session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
             {
                 logger.LogInformation(

@@ -117,6 +117,31 @@ public sealed class SessionImportServiceTests
     }
 
     /// <summary>
+    /// Verifies that the practice preference is read at each import, so the dashboard option
+    /// applies to the next reload without restarting the application.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_reads_the_practice_preference_at_each_import()
+    {
+        var repository = new InMemorySessionRepository();
+        var importPractice = false;
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance,
+            () => importPractice);
+        var path = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_09_20_19_03_47-43P1.xml");
+
+        service.ImportFile(path).Status.Should().Be(SessionImportStatus.SkippedPractice);
+        importPractice = true;
+        service.ImportFile(path).Status.Should().Be(SessionImportStatus.Imported);
+    }
+
+    /// <summary>
     /// Verifies that a blank file path is rejected as invalid input.
     /// </summary>
     [TestMethod]

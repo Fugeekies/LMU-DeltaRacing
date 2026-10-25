@@ -34,7 +34,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ### Changed
 - Détail des courses : le sélecteur propose des **événements** (essais, qualification et course disputés à la suite sur un circuit) et des sous-onglets **Course**, **Qualification** et **Essais** affichent le classement de chaque session ; plusieurs séances d'essais d'un même événement sont fusionnées en un seul classement.
-- Le dashboard importe désormais les sessions d'essais (la console continue de les ignorer) ; elles ne s'affichent que dans l'onglet Essais.
+- Options : nouvelle case « Charger les sessions d'essais » (`LMU:LoadPracticeSessions`, décochée par défaut) ; la cocher ou la décocher enregistre le choix et recharge les résultats. Les essais chargés ne s'affichent que dans l'onglet Essais du détail des courses ; la console continue de les ignorer.
 - Fixtures : alias lisibles à prénom (`Driver Tom`, `Driver Lucas`…) au lieu de `Driver NNNN`. Le pilote principal devient `Driver Tom`.
 - Fixtures : les pilotes n'ayant fait qu'une course sont fusionnés avec des pilotes qu'ils n'ont jamais croisés (`Prepare-PackageAssets.ps1 -MergeSingleRaceDrivers`) ; 5 599 noms donnent 239 alias, dont 237 avec au moins 5 courses, ce qui enrichit le classement des coureurs. Le pilote principal n'est jamais fusionné, et aucune session ne contient deux fois le même alias.
 - Détail des courses : meilleurs secteurs personnels sur les tours chronométrés, colonne TOUR IDÉAL, comparaisons par classe (règle WEC), position en classe, colonne DIFF 1ER (écart au leader de la classe, tours de retard, DNF/DQ), temps au tour au format `m:ss.fff`, virtualisation au-delà de 40 pilotes.

@@ -135,10 +135,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Afficher en heure locale les dates du tableau des sessions récentes (aujourd'hui en UTC).
 - [x] Renvoyer vers la page Options plutôt que vers `appsettings.json` dans l'encadré d'erreur de l'état des imports.
 
-## Jalon — Détail des courses par événement [Terminé]
+## Jalon — Détail des courses par événement
 - [x] Regrouper les sessions en événements (essais → qualification → course sur un même circuit, à moins de 2 heures d'écart), séances d'essais fusionnées en un seul classement.
 - [x] Sélecteur d'événement et sous-onglets **Course**, **Qualification**, **Essais** sous le sélecteur (Course par défaut).
-- [x] Le dashboard importe les sessions d'essais (la console continue de les ignorer) ; elles n'apparaissent que dans l'onglet Essais.
+- [x] Option « Charger les sessions d'essais » dans Options (`LMU:LoadPracticeSessions`, décochée par défaut, rechargement immédiat) ; la console ignore toujours les essais. Ils n'apparaissent que dans l'onglet Essais.
+- [ ] Optimisation : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt.
 
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).

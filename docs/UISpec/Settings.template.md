@@ -38,13 +38,19 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 #### Panneau « Démarrage automatique »
 * Case à cocher « Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application » (`LMU:WatchResultsOnStartup`, cochée par défaut).
 * Le choix est **enregistré immédiatement** dans `appsettings.json` (message « Préférence de démarrage enregistrée. ») et s'applique au prochain démarrage. Le bouton « Appliquer » active la surveillance immédiatement, quelle que soit la case.
+
+#### Panneau « Sessions d'essais »
+* Case à cocher « Charger les sessions d'essais (onglet Essais du détail des courses) » (`LMU:LoadPracticeSessions`, **décochée par défaut** : les essais sont souvent vides et ralentissent le chargement).
+* Le choix est **enregistré immédiatement**, puis les résultats du dossier configuré sont **rechargés** (messages « Sessions d'essais chargées. » / « Sessions d'essais retirées. »).
+* Décochée : les fichiers d'essais sont lus mais pas conservés ; l'onglet Essais du détail des courses n'apparaît plus.
+
 * Les messages de retour de la page s'affichent sous les panneaux. Il n'y a plus de bouton « Enregistrer » : chaque réglage est enregistré par son action.
 
 #### État des imports (sous les options, également accessible via `/dashboard`)
 * Pendant l'import initial : barre de progression « N / M fichiers traités ».
 * Encadré d'erreur si les résultats n'ont pas pu être chargés, avec un lien vers Options.
 * Trois cartes :
-  * **SESSIONS IMPORTÉES** : nombre de sessions du pilote, essais compris ;
+  * **SESSIONS IMPORTÉES** : nombre de sessions du pilote (essais compris s'ils sont chargés) ;
   * **DERNIÈRE SESSION** : lieu et date de la plus récente ;
   * **FICHIERS EN ÉCHEC** : nombre d'échecs (en couleur d'alerte si > 0).
 * Liste des fichiers en échec (nom + message) lorsqu'il y en a.
@@ -76,7 +82,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ PROFIL DE PILOTE                                                                                        │  │
 │  │ Pilote principal                                                                                        │  │
 │  │ Pilote utilisé dans les vues de résultats                                                               │  │
-│  │ [ Driver Tom — 81,3 % (278/342 fichiers)                                                          ▼ ]   │  │
+│  │ [ Driver Tom — 81,7 % (170/208 fichiers)                                                          ▼ ]   │  │
 │  │ Les pilotes sont triés par pourcentage de fichiers importés… Le choix est enregistré automatiquement.   │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
@@ -85,11 +91,17 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ ☑ Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application                 │  │
 │  │ Ce choix est enregistré immédiatement et s'applique au prochain démarrage…                              │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
+│  │ DONNÉES CHARGÉES                                                                                        │  │
+│  │ Sessions d'essais                                                                                      │  │
+│  │ ☐ Charger les sessions d'essais (onglet Essais du détail des courses)                                   │  │
+│  │ Les essais sont souvent vides ; les ignorer accélère le chargement…                                     │  │
+│  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  Dossier enregistré et chargé : 342 fichier(s) traité(s). La surveillance est active.                         │
 │                                                                                                               │
 │  ESPACE INGÉNIEUR DE PISTE — Tableau de bord                                                                  │
-│  [ SESSIONS IMPORTÉES 278 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
-│  ARCHIVES DE COURSE — Sessions récentes de Driver Tom                                                 [ 278 ]   │
+│  [ SESSIONS IMPORTÉES 170 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
+│  ARCHIVES DE COURSE — Sessions récentes de Driver Tom                                                 [ 170 ]   │
 │  DATE / HEURE      CIRCUIT                          ÉVÉNEMENT                       SESSION   VOITURE          │
 │  02/10/2026 21:00  Circuit de Spa-Francorchamps     6 Hours of Spa-Francorchamps    Race      …                │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
