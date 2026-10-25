@@ -32,7 +32,7 @@
         <div>
             <h2>Les résultats n'ont pas pu être chargés</h2>
             <p>@state.ErrorMessage</p>
-            <p>Vérifiez <code>LMU:ResultsDirectory</code> dans <code>appsettings.json</code>.</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
         </div>
     </section>
 }
@@ -49,7 +49,7 @@
             @(DashboardPresentation.OrderSessions(playerSessions).FirstOrDefault()?.TrackVenue ?? "—")
         </strong>
         <span class="summary-detail">
-            @(DashboardPresentation.OrderSessions(playerSessions).FirstOrDefault()?.StartedAt.ToString("dd/MM/yyyy HH:mm") ?? "Aucune session")
+            @(DashboardPresentation.OrderSessions(playerSessions).FirstOrDefault()?.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm") ?? "Aucune session")
         </span>
     </article>
     <article class="summary-card">
@@ -119,7 +119,7 @@
                         {
                             var driver = DriverProfile.FindDriver(session, state.UserName);
                             <tr class="session-row">
-                                <td class="date-cell">@session.StartedAt.ToString("dd/MM/yyyy HH:mm")</td>
+                                <td class="date-cell">@session.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
                                 <td class="track-cell">
                                     <strong>@session.TrackVenue</strong>
                                     <span>@session.TrackCourse</span>

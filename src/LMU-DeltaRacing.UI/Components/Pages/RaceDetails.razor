@@ -8,7 +8,7 @@
     <div>
         <p class="eyebrow">ANALYSE DE SESSION</p>
         <h1>Détail des courses</h1>
-        <p class="page-subtitle">Classement, meilleurs secteurs et écarts de la session sélectionnée.</p>
+        <p class="page-subtitle">Classement, meilleurs secteurs et écarts de la session sélectionnée, comparés au sein de chaque classe.</p>
     </div>
 </section>
 
@@ -26,7 +26,7 @@ else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count 
         <div>
             <h2>Les résultats n’ont pas pu être chargés</h2>
             <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans Options.</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
         </div>
     </section>
 }
@@ -41,9 +41,9 @@ else if (sessions.Count == 0)
 else
 {
     var selectedSession = GetSelectedSession();
-    var results = selectedSession is null
-        ? Array.Empty<RaceDetailsDriverResult>()
-        : RaceDetailsPresentation.CreateResults(selectedSession, state.UserName);
+    RaceDetailsDriverResult[] results = selectedSession is null
+        ? []
+        : [.. RaceDetailsPresentation.CreateResults(selectedSession, state.UserName)];
 
     <section class="panel race-details-panel">
         <div class="race-details-toolbar">
@@ -69,7 +69,7 @@ else
             }
         </div>
 
-        @if (results.Count == 0)
+        @if (results.Length == 0)
         {
             <div class="empty-state race-empty-state">
                 <p>Cette session ne contient aucun résultat de pilote.</p>
@@ -82,6 +82,7 @@ else
                     <thead>
                         <tr>
                             <th scope="col">POS</th>
+                            <th scope="col">CLASSE</th>
                             <th scope="col">NOM DU COUREUR</th>
                             <th scope="col">VOITURE</th>
                             <th scope="col" class="numeric-cell">SECTEUR 1</th>
@@ -90,41 +91,23 @@ else
                             <th scope="col" class="numeric-cell">DELTA S2</th>
                             <th scope="col" class="numeric-cell">SECTEUR 3</th>
                             <th scope="col" class="numeric-cell">DELTA S3</th>
-                            <th scope="col" class="numeric-cell">TEMPS TOUR</th>
+                            <th scope="col" class="numeric-cell">TOUR IDÉAL</th>
+                            <th scope="col" class="numeric-cell">MEILLEUR TOUR</th>
                             <th scope="col" class="numeric-cell">DELTA TOUR</th>
+                            <th scope="col" class="numeric-cell">DIFF 1ER</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach (var result in results)
+                        @if (results.Length > VirtualizationThreshold)
                         {
-                            <tr>
-                                <td class="numeric-cell">@(result.Position?.ToString("00") ?? "—")</td>
-                                <td class="race-driver-name">
-                                    @result.Name
-                                    @if (result.IsPlayer)
-                                    {
-                                        <span class="player-tag">VOUS</span>
-                                    }
-                                </td>
-                                <td>@result.Car</td>
-                                @foreach (var sector in result.Sectors)
-                                {
-                                    <td class="numeric-cell">
-                                        <span class="sector-time @GetSectorClass(sector.Performance)">
-                                            @FormatSector(sector.Time)
-                                        </span>
-                                    </td>
-                                    <td class="numeric-cell">
-                                        <span class="delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
-                                    </td>
-                                }
-                                <td class="numeric-cell"><span class="lap-time">@FormatSector(result.FastestLap)</span></td>
-                                <td class="numeric-cell">
-                                    <span class="delta-time @GetDeltaClass(result.DeltaToBestLap)">
-                                        @FormatGap(result.DeltaToBestLap)
-                                    </span>
-                                </td>
-                            </tr>
+                            <Virtualize Items="results" ItemContent="RenderRow" ItemSize="44" SpacerElement="tr" />
+                        }
+                        else
+                        {
+                            @foreach (var result in results)
+                            {
+                                @RenderRow(result)
+                            }
                         }
                     </tbody>
                 </table>
@@ -132,14 +115,20 @@ else
         }
 
         <div class="sector-legend" aria-label="Légende des secteurs">
-            <span><i class="sector-legend-swatch sector-session-best" aria-hidden="true"></i>Meilleur absolu session</span>
-            <span><i class="sector-legend-swatch sector-personal-best" aria-hidden="true"></i>Meilleur personnel</span>
+            <span><i class="sector-legend-swatch sector-class-best" aria-hidden="true"></i>Meilleur secteur de la classe</span>
             <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>Temps standard</span>
+            <span>Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe</span>
         </div>
     </section>
 }
 
 @code {
+    /// <summary>
+    /// Grids larger than this are virtualized, as required by UI_DESIGN_SPEC.md. Smaller grids are
+    /// rendered in full so they appear in the prerendered page without waiting for the browser.
+    /// </summary>
+    private const int VirtualizationThreshold = 40;
+
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<Session> sessions = [];
     private string selectedSessionId = string.Empty;
@@ -180,25 +169,51 @@ else
 
     private string FormatSessionLabel(Session session)
     {
-        var category = DriverProfile.FindDriver(session, state.UserName)?.CarClass;
+        var carClass = DriverProfile.FindDriver(session, state.UserName)?.CarClass;
         var label = string.Create(
             System.Globalization.CultureInfo.CurrentCulture,
             $"{session.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {session.TrackVenue} ({session.SessionType})");
-        return string.IsNullOrWhiteSpace(category) ? label : $"{label} - {category}";
+        return string.IsNullOrWhiteSpace(carClass) ? label : $"{label} - {CarCategory.FromCarClass(carClass)}";
     }
 
-    private static string GetSectorClass(SectorPerformance performance) =>
-        performance switch
-        {
-            SectorPerformance.SessionBest => "sector-session-best",
-            SectorPerformance.PersonalBest => "sector-personal-best",
-            _ => "sector-standard"
-        };
+    private RenderFragment<RaceDetailsDriverResult> RenderRow => result =>
+        @<tr>
+            <td class="numeric-cell">@(result.Position?.ToString("00") ?? "—")</td>
+            <td class="class-cell">
+                <span class="category-badge">@result.Category</span>
+                <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
+            </td>
+            <td class="race-driver-name">
+                @result.Name
+                @if (result.IsPlayer)
+                {
+                    <span class="player-tag">VOUS</span>
+                }
+            </td>
+            <td>@result.Car</td>
+            @foreach (var sector in result.Sectors)
+            {
+                <td class="numeric-cell">
+                    <span class="sector-time @GetSectorClass(sector)">@FormatSector(sector.Time)</span>
+                </td>
+                <td class="numeric-cell">
+                    <span class="delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
+                </td>
+            }
+            <td class="numeric-cell"><span class="lap-time">@FormatLap(result.IdealLap)</span></td>
+            <td class="numeric-cell"><span class="lap-time">@FormatLap(result.FastestLap)</span></td>
+            <td class="numeric-cell">
+                <span class="delta-time @GetDeltaClass(result.DeltaToBestLap)">@FormatGap(result.DeltaToBestLap)</span>
+            </td>
+            <td class="numeric-cell"><span class="leader-gap">@FormatLeaderGap(result.GapToLeader)</span></td>
+        </tr>;
+
+    private static string GetSectorClass(RaceDetailsSectorResult sector) =>
+        sector.Performance == SectorPerformance.ClassBest ? "sector-class-best" : "sector-standard";
 
     private static string GetDeltaClass(TimeSpan? delta) =>
         delta switch
         {
-            { } value when value == TimeSpan.Zero => "delta-best",
             { } value when value > TimeSpan.Zero => "delta-loss",
             { } => "delta-best",
             _ => "delta-unavailable"
@@ -209,8 +224,21 @@ else
             ? $"{sectorTime.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
             : "—";
 
+    private static string FormatLap(TimeSpan? time) =>
+        time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
+
     private static string FormatGap(TimeSpan? gap) =>
         gap is { } value
             ? $"{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
             : "—";
+
+    private static string FormatLeaderGap(LeaderGap gap) =>
+        gap.Kind switch
+        {
+            LeaderGapKind.Leader => "LEADER",
+            LeaderGapKind.Time => FormatGap(gap.Time),
+            LeaderGapKind.Laps => gap.Laps == 1 ? "+1 tour" : $"+{gap.Laps} tours",
+            LeaderGapKind.Status => gap.Status ?? "—",
+            _ => "—"
+        };
 }

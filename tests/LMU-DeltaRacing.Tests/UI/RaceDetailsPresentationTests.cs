@@ -5,101 +5,134 @@ using LMU_DeltaRacing.UI.Models;
 namespace LMU_DeltaRacing.Tests.UI;
 
 /// <summary>
-/// Verifies detailed session classification and sector performance calculations.
+/// Verifies detailed session classification, sector and gap calculations.
 /// </summary>
 [TestClass]
 public sealed class RaceDetailsPresentationTests
 {
     [TestMethod]
-    public void CreateResults_uses_fastest_lap_sectors_and_classifies_session_and_personal_bests()
+    public void CreateResults_shows_personal_best_sectors_from_timed_laps_and_marks_class_bests()
     {
         var player = CreateDriver(
             "Player",
-            1,
-            true,
-            TimeSpan.FromSeconds(100),
+            "Hyper",
+            position: 1,
+            laps:
             [
                 CreateLap(90, 30, 30, 30),
-                CreateLap(91, 29, 31, 31)
+                CreateLap(91, 29, 31, 31),
+                // A lap without time (cut or incomplete) must not provide best sectors.
+                CreateLap(null, 28, 28, 28)
             ]);
         var rival = CreateDriver(
             "Rival",
-            2,
-            false,
-            TimeSpan.FromSeconds(102),
+            "Hyper",
+            position: 2,
+            laps:
             [
                 CreateLap(92, 31, 31, 29),
                 CreateLap(93, 32, 30.5, 30.5)
             ]);
-        var session = new Session(
-            Guid.NewGuid(),
-            DateTimeOffset.UtcNow,
-            "Spa",
-            "Grand Prix",
-            "Race",
-            "Race",
-            [rival, player]);
 
-        var results = RaceDetailsPresentation.CreateResults(session, "Player");
+        var results = RaceDetailsPresentation.CreateResults(CreateSession("Qualify", rival, player), "Player");
 
         results.Select(result => result.Name).Should().Equal("Player", "Rival");
         results[0].IsPlayer.Should().BeTrue();
-        results[1].IsPlayer.Should().BeFalse();
-        results[0].FastestLap.Should().Be(TimeSpan.FromSeconds(90));
-        results[0].Sectors[0].Time.Should().Be(TimeSpan.FromSeconds(30));
-        results[0].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(1));
-        results[0].Sectors[0].Performance.Should().Be(SectorPerformance.Standard);
-        results[0].Sectors[1].Performance.Should().Be(SectorPerformance.SessionBest);
-        results[0].Sectors[1].Delta.Should().Be(TimeSpan.Zero);
-        results[0].Sectors[2].Performance.Should().Be(SectorPerformance.PersonalBest);
-        results[0].FastestLap.Should().Be(TimeSpan.FromSeconds(90));
+        results[0].Category.Should().Be("Hypercar");
+        results[0].Sectors.Select(sector => sector.Time).Should().Equal(Seconds(29), Seconds(30), Seconds(30));
+        results[0].Sectors.Select(sector => sector.Performance).Should().Equal(
+            SectorPerformance.ClassBest,
+            SectorPerformance.ClassBest,
+            SectorPerformance.Standard);
+        results[0].Sectors.Select(sector => sector.Delta).Should().Equal(TimeSpan.Zero, TimeSpan.Zero, Seconds(1));
+        results[0].IdealLap.Should().Be(Seconds(89));
+        results[0].FastestLap.Should().Be(Seconds(90));
         results[0].DeltaToBestLap.Should().Be(TimeSpan.Zero);
-        results[1].DeltaToBestLap.Should().Be(TimeSpan.FromSeconds(2));
+
+        results[1].Sectors.Select(sector => sector.Time).Should().Equal(Seconds(31), Seconds(30.5), Seconds(29));
+        results[1].Sectors.Select(sector => sector.Performance).Should().Equal(
+            SectorPerformance.Standard,
+            SectorPerformance.Standard,
+            SectorPerformance.ClassBest);
+        results[1].IdealLap.Should().Be(Seconds(90.5));
+        results[1].DeltaToBestLap.Should().Be(Seconds(2));
     }
 
     [TestMethod]
-    public void CreateResults_calculates_sector_and_lap_deltas_independently_of_classification()
+    public void CreateResults_compares_sectors_and_laps_within_each_class()
     {
-        var session = new Session(
-            Guid.NewGuid(),
-            DateTimeOffset.UtcNow,
-            "Spa",
-            "Grand Prix",
-            "Qualifying",
-            "Qualify",
-            [
-                CreateDriver("Player", 1, true, null, [CreateLap(90, 30, 30, 30)]),
-                CreateDriver("Rival", 2, false, null, [CreateLap(91.25, 30.5, 30.25, 30.5)])
-            ]);
+        var prototype = CreateDriver("Prototype", "Hyper", position: 1, classPosition: 1, laps: [CreateLap(75, 25, 25, 25)]);
+        var player = CreateDriver("Player", "GT3", position: 2, classPosition: 1, laps: [CreateLap(90, 30, 30, 30)]);
+        var rival = CreateDriver("Rival", "GT3", position: 3, classPosition: 2, laps: [CreateLap(93, 31, 31, 31)]);
 
-        var results = RaceDetailsPresentation.CreateResults(session, "Player");
+        var results = RaceDetailsPresentation.CreateResults(CreateSession("Qualify", prototype, player, rival), "Player");
 
-        results[1].Sectors[0].Delta.Should().Be(TimeSpan.FromSeconds(0.5));
-        results[1].Sectors[1].Delta.Should().Be(TimeSpan.FromSeconds(0.25));
-        results[1].Sectors[2].Delta.Should().Be(TimeSpan.FromSeconds(0.5));
-        results[1].DeltaToBestLap.Should().Be(TimeSpan.FromSeconds(1.25));
+        var playerResult = results.Single(result => result.Name == "Player");
+        playerResult.Category.Should().Be("LMGT3");
+        playerResult.ClassPosition.Should().Be(1);
+        playerResult.Sectors.Should().OnlyContain(sector =>
+            sector.Performance == SectorPerformance.ClassBest && sector.Delta == TimeSpan.Zero);
+        playerResult.DeltaToBestLap.Should().Be(TimeSpan.Zero);
+        playerResult.GapToLeader.Kind.Should().Be(LeaderGapKind.Leader);
+
+        var rivalResult = results.Single(result => result.Name == "Rival");
+        rivalResult.Sectors[0].Delta.Should().Be(Seconds(1));
+        rivalResult.DeltaToBestLap.Should().Be(Seconds(3));
+        rivalResult.GapToLeader.Should().Be(new LeaderGap(LeaderGapKind.Time, Time: Seconds(3)));
     }
+
+    [TestMethod]
+    public void CreateResults_calculates_race_gaps_to_the_class_leader()
+    {
+        var session = CreateSession(
+            "Race",
+            CreateDriver("Prototype", "Hyper", position: 1, classPosition: 1, finishTime: Seconds(1400), lapsCompleted: 22),
+            CreateDriver("Leader", "GT3", position: 2, classPosition: 1, finishTime: Seconds(1500), lapsCompleted: 20),
+            CreateDriver("Second", "GT3", position: 3, classPosition: 2, finishTime: Seconds(1512.5), lapsCompleted: 20),
+            CreateDriver("Lapped", "GT3", position: 4, classPosition: 3, finishTime: Seconds(1530), lapsCompleted: 19),
+            CreateDriver("Retired", "GT3", position: 5, classPosition: 4, lapsCompleted: 8, finishStatus: "DNF"));
+
+        var gaps = RaceDetailsPresentation.CreateResults(session, "Second")
+            .ToDictionary(result => result.Name, result => result.GapToLeader);
+
+        gaps["Prototype"].Kind.Should().Be(LeaderGapKind.Leader);
+        gaps["Leader"].Kind.Should().Be(LeaderGapKind.Leader);
+        gaps["Second"].Should().Be(new LeaderGap(LeaderGapKind.Time, Time: Seconds(12.5)));
+        gaps["Lapped"].Should().Be(new LeaderGap(LeaderGapKind.Laps, Laps: 1));
+        gaps["Retired"].Should().Be(new LeaderGap(LeaderGapKind.Status, Status: "DNF"));
+    }
+
+    private static TimeSpan Seconds(double value) => TimeSpan.FromSeconds(value);
+
+    private static Session CreateSession(string type, params Driver[] drivers) =>
+        new(Guid.NewGuid(), DateTimeOffset.UtcNow, "Spa", "Grand Prix", "Event", type, drivers);
 
     private static Driver CreateDriver(
         string name,
+        string carClass,
         int position,
-        bool isPlayer,
-        TimeSpan? finishTime,
-        IEnumerable<Lap> laps) =>
+        int? classPosition = null,
+        TimeSpan? finishTime = null,
+        int? lapsCompleted = null,
+        string finishStatus = "",
+        IEnumerable<Lap>? laps = null) =>
         new(
             name,
             position.ToString(System.Globalization.CultureInfo.InvariantCulture),
-            "Hyper",
+            carClass,
             "Team",
             position,
-            laps,
+            laps ?? [],
             $"{name} Car",
-            finishTime: finishTime);
+            finishTime: finishTime,
+            classPosition: classPosition,
+            lapsCompleted: lapsCompleted,
+            finishStatus: finishStatus);
 
-    private static Lap CreateLap(double time, double sector1, double sector2, double sector3) =>
+    private static Lap CreateLap(double? time, double sector1, double sector2, double sector3) =>
         new(
             1,
-            TimeSpan.FromSeconds(time),
+            time is { } value ? TimeSpan.FromSeconds(value) : null,
             [
                 new Sector(1, TimeSpan.FromSeconds(sector1)),
                 new Sector(2, TimeSpan.FromSeconds(sector2)),

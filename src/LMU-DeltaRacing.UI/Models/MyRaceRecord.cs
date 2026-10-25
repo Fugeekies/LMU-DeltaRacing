@@ -1,7 +1,8 @@
 namespace LMU_DeltaRacing.UI.Models;
 
 /// <summary>
-/// A vehicle's qualifying and race performance for one event.
+/// A qualifying session and the race that follows it, as driven by the selected driver.
+/// Either side can be missing when a session could not be paired.
 /// </summary>
 public sealed record MyRaceRecord(
     string TrackVenue,
@@ -15,5 +16,5 @@ public sealed record MyRaceRecord(
     int? GridPosition,
     TimeSpan? RaceTime,
     TimeSpan? RaceDelta,
-    int? MostLapsCompleted,
+    int? LapsCompleted,
     TimeSpan? FinishTime);
