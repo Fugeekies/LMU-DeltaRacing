@@ -33,6 +33,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private string? errorMessage;
     private string? resultsDirectory;
     private string? userName;
+    private IReadOnlyList<DriverMerge> driverMerges;
 
     /// <summary>
     /// Creates the startup loader and live results monitor.
@@ -59,6 +60,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         this.watcherLogger = watcherLogger;
         this.settingsStore = settingsStore;
         userName = configuration["LMU:UserName"]?.Trim();
+        driverMerges = LoadDriverMerges(configuration);
     }
 
     /// <summary>
@@ -85,7 +87,8 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     failures,
                     resultsDirectory)
                 {
-                    UserName = userName,
+                    UserName = DriverMerges.Resolve(userName, driverMerges),
+                    DriverMerges = driverMerges,
                     DriverFrequencies = driverFrequencies
                 };
             }
@@ -125,6 +128,54 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
         NotifyStateChanged();
     }
+
+    /// <summary>
+    /// Saves the driver merges and applies them to the loaded sessions without reloading files:
+    /// the repository keeps the original names, so a cancelled merge restores them.
+    /// </summary>
+    public void SetDriverMerges(IReadOnlyList<DriverMerge> merges)
+    {
+        ArgumentNullException.ThrowIfNull(merges);
+
+        settingsStore.SaveDriverMerges(merges);
+        lock (stateLock)
+        {
+            driverMerges = [.. merges];
+            sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
+            if (!isLoading)
+            {
+                driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
+            }
+        }
+
+        NotifyStateChanged();
+    }
+
+    /// <summary>
+    /// Counts the original sessions in which both drivers took part, including the names already
+    /// merged into each of them. One person cannot drive twice in a session, so a non-zero count
+    /// warns that the two names probably belong to different people.
+    /// </summary>
+    public int CountSharedSessions(string firstName, string secondName)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(firstName);
+        ArgumentException.ThrowIfNullOrWhiteSpace(secondName);
+
+        IReadOnlyList<DriverMerge> merges;
+        lock (stateLock)
+        {
+            merges = driverMerges;
+        }
+
+        return DriverMerges.CountSharedSessions(repository.GetAll(), firstName, secondName, merges);
+    }
+
+    private static IReadOnlyList<DriverMerge> LoadDriverMerges(IConfiguration configuration) =>
+        configuration.GetSection("LMU:DriverMerges")
+            .GetChildren()
+            .Select(merge => new DriverMerge(merge["From"]?.Trim() ?? string.Empty, merge["To"]?.Trim() ?? string.Empty))
+            .Where(merge => merge.From.Length > 0 && merge.To.Length > 0)
+            .ToArray();
 
     /// <summary>
     /// Resolves and checks a results directory without changing the active import or watcher.
@@ -315,7 +366,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
             lock (stateLock)
             {
-                sessions = repository.GetAll().ToArray();
+                sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
                 driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
             }
 
@@ -362,7 +413,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 isLoading = false;
                 isWatching = false;
                 errorMessage = exception.Message;
-                sessions = repository.GetAll().ToArray();
+                sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
             }
 
             NotifyStateChanged();
@@ -398,7 +449,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 failures = [.. failures, result];
             }
 
-            sessions = repository.GetAll().ToArray();
+            sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
             if (!isLoading)
             {
                 driverFrequencies = DriverProfile.CalculateFrequencies(sessions);

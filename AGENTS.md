@@ -35,6 +35,7 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 Points d'attention :
 - UI et console ont chacune leur composition, leur logging (UI : `JsonFileLoggerProvider` ; console : OpenTelemetry + `FileLogExporter`) et leur logique de delta (`MyRacesPresentation` vs `SessionStatistics`). Vérifier les deux côtés avant de modifier une règle commune.
 - `appsettings.json` est lu et écrit **à côté de l'exécutable** (`AppContext.BaseDirectory`), section `LMU`.
+- Les fusions de pilotes (`LMU:DriverMerges`, `Models/DriverMerges.cs`) sont appliquées **en mémoire** par `DashboardDataService` : le dépôt garde les noms d'origine, ce qui permet d'annuler une fusion et de détecter les pilotes qui se sont croisés.
 
 ## Faits vérifiés sur le format XML LMU
 

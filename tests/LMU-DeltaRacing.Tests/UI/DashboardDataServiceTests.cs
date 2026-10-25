@@ -191,6 +191,62 @@ public sealed class DashboardDataServiceTests
         }
     }
 
+    /// <summary>
+    /// Verifies that driver merges rename drivers in memory only, and can be cancelled.
+    /// </summary>
+    [TestMethod]
+    public async Task Driver_merges_rename_drivers_in_memory_and_can_be_cancelled()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false",
+                ["LMU:UserName"] = "Driver Gaspard",
+                ["LMU:DriverMerges:0:From"] = "Driver Gaspard",
+                ["LMU:DriverMerges:0:To"] = "Driver Renamed"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsLoading);
+            var driverNames = state.Sessions.Single().Drivers.Select(driver => driver.Name).ToArray();
+            driverNames.Should().Contain("Driver Renamed").And.NotContain("Driver Gaspard");
+            state.UserName.Should().Be("Driver Renamed");
+            state.DriverMerges.Should().ContainSingle();
+            repository.GetAll().Single().Drivers.Should().Contain(driver => driver.Name == "Driver Gaspard");
+            service.CountSharedSessions("Driver Juliette", "Driver Samuel").Should().Be(1);
+            service.CountSharedSessions("Driver Juliette", "Driver Renamed").Should().Be(1);
+
+            service.SetDriverMerges([]);
+
+            service.Snapshot.Sessions.Single().Drivers.Should().Contain(driver => driver.Name == "Driver Gaspard");
+            service.Snapshot.DriverMerges.Should().BeEmpty();
+            File.ReadAllText(Path.Combine(resultsDirectory, "appsettings.json")).Should().Contain("\"DriverMerges\": []");
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
     private static DashboardDataService CreateService(
         IConfiguration configuration,
         SessionImportService importer,

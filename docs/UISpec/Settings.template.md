@@ -35,6 +35,15 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Pilote non défini : option « Détection après le chargement… ». Au premier démarrage, le pilote le plus fréquent est sélectionné et enregistré automatiquement à la fin de l'import initial.
 * Pilote configuré absent des résultats : option « <nom> (absent des résultats chargés) ».
 
+#### Panneau « Fusion de pilotes »
+* But : après un changement de nom (pseudo), déclarer que deux noms désignent le même pilote, pour ne pas couper son historique.
+* Deux listes déroulantes (« Ancien nom », « Nom conservé ») proposent les pilotes des résultats chargés ; bouton **« Fusionner »**, désactivé si un nom manque ou si les deux sont identiques.
+* **Fusion en mémoire uniquement :** les fichiers de résultats ne sont jamais modifiés. Dans toutes les vues (Mes courses, Classement, Détail, choix du pilote principal), l'ancien nom est remplacé par le nom conservé. Si le pilote principal est un ancien nom, le nom conservé est utilisé.
+* Enregistrement immédiat dans `appsettings.json` (`LMU:DriverMerges`, liste de `{ "From", "To" }`), sans recharger les fichiers.
+* Cohérence des fusions : un ancien nom pointe toujours directement vers un nom conservé (pas de chaîne) ; fusionner un nom conservé dans un de ses anciens noms inverse la fusion.
+* **Avertissement :** si les deux pilotes ont participé ensemble à au moins une session (données d'origine, en tenant compte des noms déjà fusionnés), un encadré d'alerte indique le nombre de sessions communes : une même personne ne peut pas courir deux fois dans une session. La fusion reste possible.
+* Liste des fusions enregistrées : « Ancien nom → Nom conservé », avec « ⚠ N session(s) en commun » si le cas se présente, et un bouton **« Annuler »** qui restaure les noms d'origine.
+
 #### Panneau « Démarrage automatique »
 * Case à cocher « Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application » (`LMU:WatchResultsOnStartup`, cochée par défaut).
 * Le choix est **enregistré immédiatement** dans `appsettings.json` (message « Préférence de démarrage enregistrée. ») et s'applique au prochain démarrage. Le bouton « Appliquer » active la surveillance immédiatement, quelle que soit la case.
@@ -84,6 +93,13 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ Pilote utilisé dans les vues de résultats                                                               │  │
 │  │ [ Driver Tom — 81,7 % (170/208 fichiers)                                                          ▼ ]   │  │
 │  │ Les pilotes sont triés par pourcentage de fichiers importés… Le choix est enregistré automatiquement.   │  │
+│  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
+│  │ CHANGEMENT DE NOM                                                                                       │  │
+│  │ Fusion de pilotes                                                                                       │  │
+│  │ Ancien nom [ Driver Tristan ▼ ]   Nom conservé [ Driver Lucas ▼ ]   [ Fusionner ]                       │  │
+│  │ ! Ces deux pilotes ont participé ensemble à 2 session(s) : ce sont probablement deux personnes…         │  │
+│  │ Driver Paul → Driver Iris                                                             [ Annuler ]       │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
 │  │ SURVEILLANCE & DÉMARRAGE                                                                                │  │
