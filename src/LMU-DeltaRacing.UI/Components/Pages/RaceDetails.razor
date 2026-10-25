@@ -30,7 +30,7 @@ else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count 
         </div>
     </section>
 }
-else if (sessions.Count == 0)
+else if (events.Count == 0)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -40,7 +40,10 @@ else if (sessions.Count == 0)
 }
 else
 {
-    var selectedSession = GetSelectedSession();
+    var selectedEvent = GetSelectedEvent();
+    var tabs = selectedEvent is null ? [] : GetTabs(selectedEvent);
+    var activeTab = tabs.Contains(selectedTab) ? selectedTab : tabs.FirstOrDefault();
+    var selectedSession = selectedEvent is null ? null : GetSession(selectedEvent, activeTab);
     RaceDetailsDriverResult[] results = selectedSession is null
         ? []
         : [.. RaceDetailsPresentation.CreateResults(selectedSession, state.UserName)];
@@ -49,23 +52,36 @@ else
         <div class="race-details-toolbar">
             <label class="race-filter race-session-filter">
                 <span>SÉLECTIONNER UNE COURSE</span>
-                <select @bind="selectedSessionId" aria-label="Sélectionner une session">
-                    @foreach (var session in sessions)
+                <select @bind="selectedEventId" aria-label="Sélectionner un événement">
+                    @foreach (var raceEvent in events)
                     {
-                        <option value="@session.Id">@FormatSessionLabel(session)</option>
+                        <option value="@raceEvent.Id">@FormatEventLabel(raceEvent)</option>
                     }
                 </select>
             </label>
-            @if (selectedSession is not null)
+            @if (selectedEvent is not null)
             {
                 <div class="session-meta">
-                    <span class="category-badge">@selectedSession.SessionType</span>
-                    <span>@selectedSession.TrackVenue</span>
-                    @if (!string.Equals(selectedSession.TrackVenue, selectedSession.TrackCourse, StringComparison.OrdinalIgnoreCase))
+                    <span>@selectedEvent.TrackVenue</span>
+                    @if (!string.Equals(selectedEvent.TrackVenue, selectedEvent.TrackCourse, StringComparison.OrdinalIgnoreCase))
                     {
-                        <span class="circuit-course">@selectedSession.TrackCourse</span>
+                        <span class="circuit-course">@selectedEvent.TrackCourse</span>
                     }
                 </div>
+            }
+        </div>
+
+        @* The race tab comes first: it is the result that counts. *@
+        <div class="session-tabs" role="tablist" aria-label="Sessions de l'événement">
+            @foreach (var tab in tabs)
+            {
+                <button type="button"
+                        role="tab"
+                        class="session-tab @(tab == activeTab ? "is-active" : string.Empty)"
+                        aria-selected="@(tab == activeTab ? "true" : "false")"
+                        @onclick="() => selectedTab = tab">
+                    @GetTabLabel(tab, selectedEvent!)
+                </button>
             }
         </div>
 
@@ -130,8 +146,19 @@ else
     private const int VirtualizationThreshold = 40;
 
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
-    private IReadOnlyList<Session> sessions = [];
-    private string selectedSessionId = string.Empty;
+    private IReadOnlyList<RaceEvent> events = [];
+    private string selectedEventId = string.Empty;
+    private SessionTab selectedTab = SessionTab.Race;
+
+    /// <summary>
+    /// The session tabs, in display order: the race first because it is the result that counts.
+    /// </summary>
+    private enum SessionTab
+    {
+        Race,
+        Qualifying,
+        Practice
+    }
 
     protected override void OnInitialized()
     {
@@ -151,28 +178,56 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        sessions = DriverProfile.FilterSessions(state.Sessions, state.UserName)
-            .OrderByDescending(session => session.StartedAt)
-            .ToArray();
+        events = RaceEventPresentation.CreateEvents(state.Sessions, state.UserName);
 
-        if (!Guid.TryParse(selectedSessionId, out var selectedId)
-            || sessions.All(session => session.Id != selectedId))
+        if (events.All(raceEvent => raceEvent.Id != selectedEventId))
         {
-            selectedSessionId = sessions.FirstOrDefault()?.Id.ToString() ?? string.Empty;
+            selectedEventId = events.FirstOrDefault()?.Id ?? string.Empty;
         }
     }
 
-    private Session? GetSelectedSession() =>
-        Guid.TryParse(selectedSessionId, out var selectedId)
-            ? sessions.FirstOrDefault(session => session.Id == selectedId)
-            : null;
+    private RaceEvent? GetSelectedEvent() =>
+        events.FirstOrDefault(raceEvent => raceEvent.Id == selectedEventId);
 
-    private string FormatSessionLabel(Session session)
+    private static SessionTab[] GetTabs(RaceEvent raceEvent) =>
+        [
+            .. raceEvent.Race is null ? Array.Empty<SessionTab>() : [SessionTab.Race],
+            .. raceEvent.Qualifying is null ? Array.Empty<SessionTab>() : [SessionTab.Qualifying],
+            .. raceEvent.Practice is null ? Array.Empty<SessionTab>() : [SessionTab.Practice]
+        ];
+
+    private static Session? GetSession(RaceEvent raceEvent, SessionTab tab) =>
+        tab switch
+        {
+            SessionTab.Race => raceEvent.Race,
+            SessionTab.Qualifying => raceEvent.Qualifying,
+            _ => raceEvent.Practice
+        };
+
+    private static string GetTabLabel(SessionTab tab, RaceEvent raceEvent) =>
+        tab switch
+        {
+            SessionTab.Race => "COURSE",
+            SessionTab.Qualifying => "QUALIFICATION",
+            _ => raceEvent.PracticeSessionCount > 1 ? $"ESSAIS ({raceEvent.PracticeSessionCount} séances)" : "ESSAIS"
+        };
+
+    private string FormatEventLabel(RaceEvent raceEvent)
     {
-        var carClass = DriverProfile.FindDriver(session, state.UserName)?.CarClass;
+        var carClass = raceEvent.Sessions
+            .Select(session => DriverProfile.FindDriver(session, state.UserName)?.CarClass)
+            .FirstOrDefault(value => !string.IsNullOrWhiteSpace(value));
+        var sessionsLabel = string.Join(
+            " · ",
+            new[]
+            {
+                raceEvent.Practice is null ? null : "Essais",
+                raceEvent.Qualifying is null ? null : "Qualif",
+                raceEvent.Race is null ? null : "Course"
+            }.OfType<string>());
         var label = string.Create(
             System.Globalization.CultureInfo.CurrentCulture,
-            $"{session.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {session.TrackVenue} ({session.SessionType})");
+            $"{raceEvent.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {raceEvent.TrackVenue} ({sessionsLabel})");
         return string.IsNullOrWhiteSpace(carClass) ? label : $"{label} - {CarCategory.FromCarClass(carClass)}";
     }
 

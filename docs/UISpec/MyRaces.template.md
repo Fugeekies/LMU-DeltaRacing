@@ -6,7 +6,7 @@
 Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
 
 ### Spécifications fonctionnelles
-* **Sessions prises en compte :** sessions de qualification (type contenant `Qual`) et de course (type contenant `Race`) dans lesquelles figure le pilote sélectionné. Les sessions Practice ne sont jamais importées.
+* **Sessions prises en compte :** sessions de qualification (type contenant `Qual`) et de course (type contenant `Race`) dans lesquelles figure le pilote sélectionné. Les sessions d'essais sont importées mais ne s'affichent que dans l'onglet Essais de « Détail des courses ».
 * **Catégorie :** déduite de la `CarClass` du pilote (`CarCategory.cs`) :
   * contient `Hyper` → **Hypercar** ;
   * contient `LMP2` ou vaut `P2` → **LMP2** ;

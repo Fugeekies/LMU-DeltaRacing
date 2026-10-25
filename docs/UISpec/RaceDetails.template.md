@@ -1,16 +1,23 @@
 ## 3. ⏱️ Menu : Détail des Courses (`RaceDetails.razor`)
 
-> Spécification alignée sur le code au 25/10/2026 (`RaceDetails.razor`, `RaceDetailsPresentation.cs`).
+> Spécification alignée sur le code au 25/10/2026 (`RaceDetails.razor`, `RaceEventPresentation.cs`, `RaceDetailsPresentation.cs`).
 
 ### Description
-Classement détaillé d'une session choisie par l'utilisateur (route `/race-details`). Pour chaque pilote, la page affiche ses meilleurs secteurs, son tour idéal, son meilleur tour et son écart au leader. Toutes les comparaisons se font **au sein de la classe du pilote**, comme dans le chronométrage WEC.
+Classement détaillé d'un événement choisi par l'utilisateur (route `/race-details`). Un événement regroupe les essais, la qualification et la course disputés à la suite sur un circuit ; des sous-onglets sous le sélecteur affichent le classement de chaque session. Pour chaque pilote, la page affiche ses meilleurs secteurs, son tour idéal, son meilleur tour et son écart au leader. Toutes les comparaisons se font **au sein de la classe du pilote**, comme dans le chronométrage WEC.
 
 ### Spécifications fonctionnelles
-* **Sélecteur de session :**
-  * Liste les sessions importées (qualifications et courses) contenant le pilote sélectionné, de la plus récente à la plus ancienne.
-  * Libellé : `dd/MM/yyyy HH:mm - <Lieu> (<Type de session>) - <Catégorie du pilote>` (heure locale ; la catégorie est omise si la classe est vide).
-  * Par défaut, la session la plus récente est sélectionnée. Si la session sélectionnée disparaît (rechargement), la plus récente est resélectionnée.
-* **Métadonnées** à côté du sélecteur : badge du type de session, lieu, tracé s'il diffère du lieu.
+* **Regroupement en événements** (`RaceEventPresentation.cs`) :
+  * Les sessions d'un même circuit (lieu + tracé + événement) sont parcourues chronologiquement.
+  * Une session rejoint l'événement en cours si elle respecte l'ordre **essais → qualification → course** et démarre au plus **2 heures** après la session précédente. Sinon, un nouvel événement commence. Deux qualifications ou deux courses ne sont jamais dans le même événement ; plusieurs séances d'essais peuvent l'être.
+  * Ces seuils viennent des fixtures : les sessions d'un événement se suivent à moins de 30 minutes, deux événements sont séparés de plus de 30 minutes après une course.
+  * **Essais multiples :** les séances d'essais d'un événement sont fusionnées en un seul classement. Chaque pilote garde tous ses tours (renumérotés), ses tours effectués sont additionnés, et les pilotes sont classés par meilleur tour chronométré (position générale et position en classe recalculées).
+  * Seuls les événements où le pilote sélectionné a participé à au moins une session sont proposés.
+* **Sélecteur d'événement :**
+  * Liste les événements du plus récent au plus ancien.
+  * Libellé : `dd/MM/yyyy HH:mm - <Lieu> (<Sessions présentes>) - <Catégorie du pilote>`, par exemple `02/10/2026 21:00 - Circuit de Spa-Francorchamps (Essais · Qualif · Course) - LMGT3` (heure locale du début de la première session ; la catégorie est omise si la classe est vide).
+  * Par défaut, l'événement le plus récent est sélectionné. S'il disparaît (rechargement), le plus récent est resélectionné.
+* **Métadonnées** à côté du sélecteur : lieu, tracé s'il diffère du lieu.
+* **Sous-onglets** sous le sélecteur, dans cet ordre : **COURSE**, **QUALIFICATION**, **ESSAIS** (« ESSAIS (N séances) » si plusieurs séances ont été fusionnées). Seuls les onglets des sessions présentes dans l'événement sont affichés ; l'onglet Essais n'existe que si l'option « Charger les sessions d'essais » est cochée dans Options (décochée par défaut). Par défaut, l'onglet Course (le résultat qui compte) ; l'onglet choisi est conservé en changeant d'événement s'il existe dans le nouvel événement, sinon le premier onglet disponible est affiché.
 * **Ordre du classement :** position générale croissante, pilotes sans position en fin de liste, égalité départagée par nom.
 * **Tours pris en compte :** uniquement les tours chronométrés. LMU efface le temps des tours invalidés pour limites de piste et des tours incomplets ; leurs secteurs sont donc exclus.
 * **Calculs par pilote :**
@@ -68,11 +75,12 @@ Classement détaillé d'une session choisie par l'utilisateur (route `/race-deta
 │  Classement, meilleurs secteurs et écarts de la session sélectionnée, comparés au sein de chaque classe.                                          │
 │                                                                                                                                                    │
 │  SÉLECTIONNER UNE COURSE                                                                                                                           │
-│  [ 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Race) - LMGT3 ▼ ]     [Race]  Circuit de Spa-Francorchamps                                     │
-│                                                                                                                                                    │
+│  [ 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Essais · Qualif · Course) - LMGT3 ▼ ]     Circuit de Spa-Francorchamps                      │
+│  [ COURSE ]   QUALIFICATION   ESSAIS                                                                                                               │
+│  ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
 │  POS CLASSE     NOM DU COUREUR    VOITURE         S1          Δ S1     S2          Δ S2     S3          Δ S3     IDÉAL     MEILLEUR  Δ TOUR   DIFF 1ER │
-│  01  LMGT3 P1   Driver Hugo       BMW M4 LMGT3    🟣 41.859s  0.000s   🟡 74.351s  +0.370s  🟣 44.395s  0.000s   2:40.605  2:41.796  0.000s   LEADER   │
-│  02  LMGT3 P2   Driver Rose       Porsche 911     🟡 42.567s  +0.708s  🟡 75.294s  +1.313s  🟡 45.957s  +1.561s  2:43.817  2:44.243  +2.448s  +23.480s │
+│  01  LMGT3 P1   Driver Louis      BMW M4 LMGT3    🟣 41.859s  0.000s   🟡 74.351s  +0.370s  🟣 44.395s  0.000s   2:40.605  2:41.796  0.000s   LEADER   │
+│  02  LMGT3 P2   Driver Adam       Porsche 911     🟡 42.567s  +0.708s  🟡 75.294s  +1.313s  🟡 45.957s  +1.561s  2:43.817  2:44.243  +2.448s  +23.480s │
 │  04  LMGT3 P4   Driver Tom VOUS   Porsche 911     🟡 42.478s  +0.619s  🟡 74.602s  +0.621s  🟡 45.835s  +1.439s  2:42.914  2:44.849  +3.054s  +49.908s │
 │  07  LMGT3 P7   Driver Jade       Mercedes-AMG    🟡 43.085s  +1.225s  🟡 76.873s  +2.893s  🟡 45.953s  +1.558s  2:45.910  2:46.476  +4.680s  +1 tour  │
 │  11  LMGT3 P11  Driver Emma       McLaren 720S    🟡 42.411s  +0.551s  🟡 75.358s  +1.378s  🟡 45.068s  +0.672s  2:42.836  2:43.196  +1.400s  DNF      │

@@ -53,6 +53,17 @@ public sealed class DashboardSettingsStore
     }
 
     /// <summary>
+    /// Saves whether practice sessions are loaded (they are mostly empty and slow down loading).
+    /// </summary>
+    public void SaveLoadPracticeSessions(bool loadPracticeSessions)
+    {
+        var root = LoadSettings();
+        GetLmuSettings(root)["LoadPracticeSessions"] = loadPracticeSessions;
+
+        Save(root);
+    }
+
+    /// <summary>
     /// Saves the selected driver name to application settings.
     /// </summary>
     public void SaveUserName(string userName)

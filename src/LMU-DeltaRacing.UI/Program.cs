@@ -42,7 +42,17 @@ builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
 builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
 builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
-builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
+// Practice sessions are mostly empty, so they are only loaded when enabled in the Options page
+// (race-details practice tab). The setting is read at each import so a reload applies it.
+builder.Services.AddSingleton<ISessionImportService>(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+    return new SessionImportService(
+        serviceProvider.GetRequiredService<IResultXmlParser>(),
+        serviceProvider.GetRequiredService<ISessionRepository>(),
+        serviceProvider.GetRequiredService<ILogger<SessionImportService>>(),
+        () => configuration.GetValue("LMU:LoadPracticeSessions", defaultValue: false));
+});
 builder.Services.AddSingleton<DashboardDataService>();
 builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
     new DashboardSettingsStore(
