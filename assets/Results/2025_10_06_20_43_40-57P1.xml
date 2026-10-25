@@ -36,30 +36,13 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<TrackLimits Driver="Leon van Arkel" ID="17" Lap="0" WarningPoints="4.25" CurrentPoints="4.25" Resolution="3" et="109.9">Invalid Lap Cut Track</TrackLimits>
-<Incident et="110.4">Mateusz Dabkowski(15) reported contact (639.56) with Immovable</Incident>
-<TrackLimits Driver="Mateusz Dabkowski" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="113.0">No Further Action</TrackLimits>
-<Sector et="119.3">M P#9008(2) reports new suspension damage</Sector>
-<Incident et="119.4">M P#9008(2) reported contact (3623.24) with Immovable</Incident>
-<Sector et="119.4">M P#9008(2) reports new suspension damage</Sector>
-<Score et="121.2">Leon van Arkel(17) lap=1 point=0 t=-1.000 et=121.120</Score>
-<TrackLimits Driver="M P#9008" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="122.2">No Further Action</TrackLimits>
-<Score et="122.3">Mateusz Dabkowski(15) lap=1 point=0 t=-1.000 et=122.240</Score>
-<Score et="130.6">M P#9008(2) lap=1 point=0 t=-1.000 et=130.580</Score>
-<TrackLimits Driver="Mateusz Dabkowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.6">No Further Action</TrackLimits>
-<Incident et="154.3">Mateusz Dabkowski(15) reported contact (610.98) with Immovable</Incident>
-<Incident et="156.3">Mateusz Dabkowski(15) reported contact (259.97) with Immovable</Incident>
-<TrackLimits Driver="M P#9008" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Mateusz Dabkowski" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="164.3">No Further Action</TrackLimits>
-<Score et="165.5">P-A Fugeekies(9) lap=1 point=0 t=-1.000 et=165.523</Score>
-<Score et="170.9">BRT SOmbraT(7) lap=1 point=0 t=-1.000 et=170.920</Score>
-<Score et="173.4">Leon van Arkel(17) lap=1 point=1 t=-1.000 et=173.380</Score>
-<Sector Driver="Mateusz Dabkowski" ID="15" Sector="1" Class="GT3" et="186.5">Mateusz Dabkowski(15) set new best for sector 1</Sector>
-<Score et="186.5">Mateusz Dabkowski(15) lap=1 point=1 t=64.199 et=186.440</Score>
-<TrackLimits Driver="Leon van Arkel" ID="17" Lap="1" WarningPoints="0" CurrentPoints="4.25" Resolution="5" et="190.2">No Further Action</TrackLimits>
-<Sector Driver="M P#9008" ID="2" Sector="1" Class="GT3" et="191.0">M P#9008(2) set new best for sector 1</Sector>
-<Score et="191.0">M P#9008(2) lap=1 point=1 t=60.411 et=190.980</Score>
-<Score et="198.7">A F#7567(21) lap=1 point=0 t=-1.000 et=198.660</Score>
+<TrackLimits Driver="Driver 3939" ID="17" Lap="0" WarningPoints="4.25" CurrentPoints="4.25" Resolution="3" et="109.9">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4117" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="113.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4021" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="122.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4117" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4021" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4117" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="164.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3939" ID="17" Lap="1" WarningPoints="0" CurrentPoints="4.25" Resolution="5" et="190.2">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>

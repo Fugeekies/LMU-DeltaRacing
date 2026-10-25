@@ -36,1213 +36,383 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<ChatMessage et="61.4">F Hermann#5980: good luck all</ChatMessage>
-<ChatMessage et="66.0">d suel: gl hf</ChatMessage>
-<Penalty et="142.9">Philipp Roth received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty et="142.9">Damian Padding received Drive Thru penalty, 0s, 0laps for &quot;Erratic driving&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="157.4">Fiona Graessner(18) reported contact (64.42) with another vehicle Marcio Lopes(4)</Incident>
-<Incident et="157.4">Marcio Lopes(4) reported contact (32.08) with another vehicle Fiona Graessner(18)</Incident>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.9">No Further Action</TrackLimits>
-<Incident et="162.7">Niklas Weike(14) reported contact (707.90) with another vehicle Fiona Graessner(18)</Incident>
-<Incident et="162.7">Fiona Graessner(18) reported contact (1064.01) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="164.8">Fiona Graessner(18) reported contact (1184.62) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="164.8">Niklas Weike(14) reported contact (1107.76) with another vehicle Fiona Graessner(18)</Incident>
-<Incident et="165.5">P-A Fugeekies(3) reported contact (847.20) with another vehicle Antho Rigg(1)</Incident>
-<Incident et="165.6">Olivier Tosi(11) reported contact (296.56) with another vehicle Hans moises(17)</Incident>
-<Incident et="165.6">Antho Rigg(1) reported contact (942.74) with another vehicle P-A Fugeekies(3)</Incident>
-<Sector et="165.6">Hans moises(17) reports new suspension damage</Sector>
-<Incident et="165.7">Hans moises(17) reported contact (244.08) with another vehicle Olivier Tosi(11)</Incident>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.0">No Further Action</TrackLimits>
-<Sector et="166.1">Vladislav Venok(6) reports new suspension damage</Sector>
-<Incident et="166.1">Olivier Tosi(11) reported contact (292.49) with another vehicle Vladislav Venok(6)</Incident>
-<Incident et="166.1">Vladislav Venok(6) reported contact (280.80) with another vehicle Olivier Tosi(11)</Incident>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
-<Incident et="168.2">P-A Fugeekies(3) reported contact (314.74) with another vehicle Hans moises(17)</Incident>
-<Incident et="168.3">P-A Fugeekies(3) reported contact (1388.13) with another vehicle Hans moises(17)</Incident>
-<Incident et="168.3">P-A Fugeekies(3) reported contact (1515.17) with another vehicle Hans moises(17)</Incident>
-<Incident et="168.6">Hans moises(17) reported contact (2351.76) with another vehicle P-A Fugeekies(3)</Incident>
-<Incident et="169.4">Marcio Lopes(4) reported contact (873.62) with another vehicle Sir Pinkelpott(0)</Incident>
-<Incident et="169.4">Sir Pinkelpott(0) reported contact (792.53) with another vehicle Marcio Lopes(4)</Incident>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.6">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="1" Class="GTE" et="171.2">Filippo Pirola(10) set new best for sector 1</Sector>
-<Score et="171.2">Filippo Pirola(10) lap=0 point=1 t=28.234 et=171.120</Score>
-<Score et="171.9">donatien suel(2) lap=0 point=1 t=28.944 et=171.840</Score>
-<Score et="172.0">Damian Padding(15) lap=0 point=1 t=-1.000 et=171.940</Score>
-<Score et="172.5">Daniel Fredriksen(5) lap=0 point=1 t=29.507 et=172.400</Score>
-<Score et="172.7">Philipp Roth(8) lap=0 point=1 t=-1.000 et=172.600</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="173.2">No Further Action</TrackLimits>
-<Score et="174.4">Antho Rigg(1) lap=0 point=1 t=31.440 et=174.340</Score>
-<Score et="174.8">Hans moises(17) lap=0 point=1 t=31.684 et=174.580</Score>
-<Score et="175.5">Olivier Tosi(11) lap=0 point=1 t=32.495 et=175.380</Score>
-<Score et="176.0">Marcio Lopes(4) lap=0 point=1 t=33.036 et=175.920</Score>
-<Score et="176.3">Vladislav Venok(6) lap=0 point=1 t=33.262 et=176.160</Score>
-<Score et="176.5">Sir Pinkelpott(0) lap=0 point=1 t=33.515 et=176.400</Score>
-<Score et="176.8">Bryn Nobbs(9) lap=0 point=1 t=33.798 et=176.700</Score>
-<Score et="177.0">Fiona Graessner(18) lap=0 point=1 t=34.030 et=176.920</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.0">No Further Action</TrackLimits>
-<Score et="177.2">Chris Hammer(7) lap=0 point=1 t=34.207 et=177.100</Score>
-<Score et="177.6">Niklas Weike(14) lap=0 point=1 t=34.715 et=177.600</Score>
-<Score et="180.2">Franz Hermann#5980(19) lap=0 point=1 t=37.256 et=180.140</Score>
-<Score et="181.4">Jack Smith#8929(12) lap=0 point=1 t=38.430 et=181.320</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="181.5">No Further Action</TrackLimits>
-<Score et="181.9">Matisse Gabriel(16) lap=0 point=1 t=38.959 et=181.860</Score>
-<Score et="186.9">P-A Fugeekies(3) lap=0 point=1 t=44.007 et=186.890</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="187.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.9">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="2" Class="GTE" et="210.3">Filippo Pirola(10) set new best for sector 2</Sector>
-<Score et="210.3">Filippo Pirola(10) lap=0 point=2 t=67.334 et=210.220</Score>
-<Score et="210.6">Damian Padding(15) lap=0 point=2 t=-1.000 et=210.500</Score>
-<Sector Driver="donatien suel" ID="2" Sector="2" Class="GTE" et="210.7">donatien suel(2) set new best for sector 2</Sector>
-<Score et="210.7">donatien suel(2) lap=0 point=2 t=67.741 et=210.640</Score>
-<Score et="211.4">Daniel Fredriksen(5) lap=0 point=2 t=68.363 et=211.260</Score>
-<Score et="211.9">Philipp Roth(8) lap=0 point=2 t=-1.000 et=211.860</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="214.1">No Further Action</TrackLimits>
-<Score et="214.4">Hans moises(17) lap=0 point=2 t=71.338 et=214.240</Score>
-<Score et="214.6">Antho Rigg(1) lap=0 point=2 t=71.697 et=214.580</Score>
-<Score et="215.0">Olivier Tosi(11) lap=0 point=2 t=71.990 et=214.880</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="215.6">No Further Action</TrackLimits>
-<Score et="215.7">Marcio Lopes(4) lap=0 point=2 t=72.757 et=215.640</Score>
-<Score et="216.5">Sir Pinkelpott(0) lap=0 point=2 t=73.521 et=216.420</Score>
-<Score et="217.2">Bryn Nobbs(9) lap=0 point=2 t=74.226 et=217.120</Score>
-<Score et="218.0">Fiona Graessner(18) lap=0 point=2 t=74.979 et=217.880</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="218.3">No Further Action</TrackLimits>
-<Score et="218.5">Niklas Weike(14) lap=0 point=2 t=75.534 et=218.420</Score>
-<Score et="218.9">Chris Hammer(7) lap=0 point=2 t=75.966 et=218.860</Score>
-<Score et="219.5">Franz Hermann#5980(19) lap=0 point=2 t=76.566 et=219.460</Score>
-<Score et="219.9">Vladislav Venok(6) lap=0 point=2 t=76.938 et=219.840</Score>
-<Score et="220.6">Jack Smith#8929(12) lap=0 point=2 t=77.591 et=220.480</Score>
-<Score et="221.1">Matisse Gabriel(16) lap=0 point=2 t=78.144 et=221.040</Score>
-<Incident et="221.3">Filippo Pirola(10) reported contact (231.77) with another vehicle Damian Padding(15)</Incident>
-<Incident et="221.3">Damian Padding(15) reported contact (242.97) with another vehicle Filippo Pirola(10)</Incident>
-<Score et="225.9">P-A Fugeekies(3) lap=0 point=2 t=82.974 et=225.857</Score>
-<Incident et="232.1">Marcio Lopes(4) reported contact (606.09) with another vehicle Olivier Tosi(11)</Incident>
-<Incident et="232.2">Olivier Tosi(11) reported contact (608.80) with another vehicle Marcio Lopes(4)</Incident>
-<Incident et="232.7">Damian Padding(15) reported contact (121.09) with another vehicle Filippo Pirola(10)</Incident>
-<Incident et="232.7">Filippo Pirola(10) reported contact (88.41) with another vehicle Damian Padding(15)</Incident>
-<Incident et="232.8">Olivier Tosi(11) reported contact (81.80) with another vehicle Marcio Lopes(4)</Incident>
-<Incident et="233.1">Olivier Tosi(11) reported contact (155.37) with another vehicle Marcio Lopes(4)</Incident>
-<Incident et="233.2">Olivier Tosi(11) reported contact (155.37) with another vehicle Marcio Lopes(4)</Incident>
-<Incident et="233.8">Marcio Lopes(4) reported contact (222.95) with another vehicle Olivier Tosi(11)</Incident>
-<ChatMessage et="241.6">O Tosi: dude really ;;; </ChatMessage>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="254.0">Warning</TrackLimits>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="254.6">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="3" Class="GTE" et="256.6">Filippo Pirola(10) set new best for sector 3</Sector>
-<Score et="256.6">Filippo Pirola(10) lap=1 point=0 t=113.679 et=256.580</Score>
-<Score et="256.9">Damian Padding(15) lap=1 point=0 t=-1.000 et=256.780</Score>
-<Sector Driver="donatien suel" ID="2" Sector="3" Class="GTE" et="257.0">donatien suel(2) set new best for sector 3</Sector>
-<Score et="257.1">donatien suel(2) lap=1 point=0 t=114.085 et=256.980</Score>
-<Sector Driver="Daniel Fredriksen" ID="5" Sector="3" Class="GTE" et="257.6">Daniel Fredriksen(5) set new best for sector 3</Sector>
-<Score et="257.7">Daniel Fredriksen(5) lap=1 point=0 t=114.702 et=257.600</Score>
-<Score et="258.7">Philipp Roth(8) lap=1 point=0 t=-1.000 et=258.560</Score>
-<Sector Driver="Antho Rigg" ID="1" Sector="3" Class="GTE" et="260.9">Antho Rigg(1) set new best for sector 3</Sector>
-<Score et="261.0">Antho Rigg(1) lap=1 point=0 t=118.000 et=260.900</Score>
-<Score et="261.8">Hans moises(17) lap=1 point=0 t=118.680 et=261.580</Score>
-<Score et="262.9">Marcio Lopes(4) lap=1 point=0 t=119.914 et=262.800</Score>
-<Score et="263.2">Sir Pinkelpott(0) lap=1 point=0 t=120.242 et=263.140</Score>
-<Score et="264.1">Bryn Nobbs(9) lap=1 point=0 t=-1.000 et=264.020</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="0" WarningPoints="0.75" CurrentPoints="0.75" Resolution="2" et="264.7">Warning</TrackLimits>
-<Score et="265.1">Fiona Graessner(18) lap=1 point=0 t=122.143 et=265.040</Score>
-<Score et="266.7">Niklas Weike(14) lap=1 point=0 t=123.734 et=266.620</Score>
-<Score et="266.8">Franz Hermann#5980(19) lap=1 point=0 t=123.829 et=266.720</Score>
-<Score et="267.5">Chris Hammer(7) lap=1 point=0 t=124.555 et=267.440</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="267.9">No Further Action</TrackLimits>
-<Score et="268.0">Matisse Gabriel(16) lap=1 point=0 t=-1.000 et=267.760</Score>
-<Score et="268.6">Vladislav Venok(6) lap=1 point=0 t=125.564 et=268.460</Score>
-<Score et="269.3">Jack Smith#8929(12) lap=1 point=0 t=126.320 et=269.220</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="269.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="271.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="272.2">No Further Action</TrackLimits>
-<Score et="272.7">P-A Fugeekies(3) lap=1 point=0 t=129.830 et=272.713</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="272.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="275.3">No Further Action</TrackLimits>
-<Incident et="276.4">Marcio Lopes(4) reported contact (195.13) with another vehicle Hans moises(17)</Incident>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="276.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.4">No Further Action</TrackLimits>
-<Incident et="277.4">Franz Hermann#5980(19) reported contact (235.87) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="277.5">Niklas Weike(14) reported contact (252.65) with another vehicle Franz Hermann#5980(19)</Incident>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="278.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="279.2">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="1" Class="GTE" et="279.5">Filippo Pirola(10) set new best for sector 1</Sector>
-<Score et="279.5">Filippo Pirola(10) lap=1 point=1 t=22.829 et=279.400</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="280.3">No Further Action</TrackLimits>
-<Score et="280.3">donatien suel(2) lap=1 point=1 t=23.215 et=280.200</Score>
-<Score et="280.4">Damian Padding(15) lap=1 point=1 t=23.525 et=280.300</Score>
-<Score et="280.5">Daniel Fredriksen(5) lap=1 point=1 t=22.881 et=280.480</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="280.8">No Further Action</TrackLimits>
-<Sector Driver="Philipp Roth" ID="8" Sector="1" Class="GTE" et="281.4">Philipp Roth(8) set new best for sector 1</Sector>
-<Score et="281.4">Philipp Roth(8) lap=1 point=1 t=22.818 et=281.380</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="283.1">No Further Action</TrackLimits>
-<Score et="283.9">Antho Rigg(1) lap=1 point=1 t=22.985 et=283.880</Score>
-<Score et="284.7">Olivier Tosi(11) lap=1 point=0 t=141.698 et=284.600</Score>
-<Score et="286.4">Hans moises(17) lap=1 point=1 t=24.624 et=286.200</Score>
-<Score et="286.6">Sir Pinkelpott(0) lap=1 point=1 t=23.361 et=286.500</Score>
-<Score et="287.1">Bryn Nobbs(9) lap=1 point=1 t=23.003 et=287.020</Score>
-<Score et="287.3">Marcio Lopes(4) lap=1 point=1 t=24.432 et=287.240</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="288.5">No Further Action</TrackLimits>
-<Score et="288.6">Fiona Graessner(18) lap=1 point=1 t=23.420 et=288.460</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.6">No Further Action</TrackLimits>
-<Score et="290.5">Niklas Weike(14) lap=1 point=1 t=23.694 et=290.320</Score>
-<Score et="290.5">Franz Hermann#5980(19) lap=1 point=1 t=23.674 et=290.400</Score>
-<Score et="291.3">Matisse Gabriel(16) lap=1 point=1 t=23.424 et=291.200</Score>
-<Score et="291.5">Chris Hammer(7) lap=1 point=1 t=23.960 et=291.400</Score>
-<Incident et="291.9">Franz Hermann#5980(19) reported contact (21.34) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="291.9">Niklas Weike(14) reported contact (15.69) with another vehicle Franz Hermann#5980(19)</Incident>
-<Incident et="292.0">Franz Hermann#5980(19) reported contact (39.21) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="292.0">Niklas Weike(14) reported contact (72.95) with another vehicle Franz Hermann#5980(19)</Incident>
-<Incident et="292.1">Franz Hermann#5980(19) reported contact (48.63) with another vehicle Niklas Weike(14)</Incident>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="292.4">No Further Action</TrackLimits>
-<Score et="292.8">Vladislav Venok(6) lap=1 point=1 t=24.221 et=292.680</Score>
-<Score et="293.1">Jack Smith#8929(12) lap=1 point=1 t=23.802 et=293.020</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="294.6">No Further Action</TrackLimits>
-<Score et="295.5">P-A Fugeekies(3) lap=1 point=1 t=22.827 et=295.539</Score>
-<Score et="307.5">Olivier Tosi(11) lap=1 point=1 t=-1.000 et=307.400</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="307.9">No Further Action</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="308.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="309.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="311.4">No Further Action</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="311.7">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="2" Class="GTE" et="317.6">Filippo Pirola(10) set new best for sector 2</Sector>
-<Score et="317.6">Filippo Pirola(10) lap=1 point=2 t=60.966 et=317.540</Score>
-<Sector Driver="Damian Padding" ID="15" Sector="2" Class="GTE" et="318.2">Damian Padding(15) set new best for sector 2</Sector>
-<Score et="318.3">Damian Padding(15) lap=1 point=2 t=61.457 et=318.220</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="318.5">No Further Action</TrackLimits>
-<Score et="319.1">donatien suel(2) lap=1 point=2 t=62.127 et=319.100</Score>
-<Score et="319.9">Daniel Fredriksen(5) lap=1 point=2 t=62.229 et=319.820</Score>
-<Score et="320.3">Philipp Roth(8) lap=1 point=2 t=61.686 et=320.240</Score>
-<Score et="322.4">Antho Rigg(1) lap=1 point=2 t=61.439 et=322.340</Score>
-<Score et="325.3">Hans moises(17) lap=1 point=2 t=63.529 et=325.100</Score>
-<Score et="325.4">Sir Pinkelpott(0) lap=1 point=2 t=62.235 et=325.360</Score>
-<Score et="326.1">Bryn Nobbs(9) lap=1 point=2 t=62.024 et=326.040</Score>
-<Score et="326.4">Marcio Lopes(4) lap=1 point=2 t=63.501 et=326.300</Score>
-<Score et="327.8">Fiona Graessner(18) lap=1 point=2 t=62.735 et=327.780</Score>
-<Score et="329.0">Franz Hermann#5980(19) lap=1 point=2 t=62.244 et=328.960</Score>
-<Score et="329.8">Niklas Weike(14) lap=1 point=2 t=63.049 et=329.680</Score>
-<Score et="330.2">Matisse Gabriel(16) lap=1 point=2 t=62.311 et=330.080</Score>
-<Score et="330.9">Chris Hammer(7) lap=1 point=2 t=63.343 et=330.800</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.7">No Further Action</TrackLimits>
-<Score et="332.2">Jack Smith#8929(12) lap=1 point=2 t=62.825 et=332.040</Score>
-<Score et="332.9">Vladislav Venok(6) lap=1 point=2 t=64.350 et=332.800</Score>
-<Score et="334.4">P-A Fugeekies(3) lap=1 point=2 t=61.696 et=334.408</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="338.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="340.9">No Further Action</TrackLimits>
-<Score et="346.3">Olivier Tosi(11) lap=1 point=2 t=61.656 et=346.240</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="351.6">Warning</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="353.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="359.5">No Further Action</TrackLimits>
-<Sector Driver="Filippo Pirola" ID="10" Sector="3" Class="GTE" et="363.0">Filippo Pirola(10) set new best for sector 3</Sector>
-<Score et="363.0">Filippo Pirola(10) lap=2 point=0 t=106.354 et=362.920</Score>
-<Score et="363.4">Damian Padding(15) lap=2 point=0 t=-1.000 et=363.380</Score>
-<Score et="364.9">donatien suel(2) lap=2 point=0 t=107.840 et=364.820</Score>
-<Score et="365.9">Daniel Fredriksen(5) lap=2 point=0 t=108.219 et=365.820</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="366.3">No Further Action</TrackLimits>
-<Score et="367.4">Philipp Roth(8) lap=2 point=0 t=108.752 et=367.320</Score>
-<Score et="368.5">Antho Rigg(1) lap=2 point=0 t=107.529 et=368.420</Score>
-<Score et="372.4">Hans moises(17) lap=2 point=0 t=110.630 et=372.200</Score>
-<Score et="372.6">Sir Pinkelpott(0) lap=2 point=0 t=109.412 et=372.540</Score>
-<Score et="373.3">Marcio Lopes(4) lap=2 point=0 t=110.440 et=373.240</Score>
-<Score et="373.5">Bryn Nobbs(9) lap=2 point=0 t=109.385 et=373.400</Score>
-<Score et="374.4">Fiona Graessner(18) lap=2 point=0 t=109.321 et=374.360</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.0">No Further Action</TrackLimits>
-<Score et="375.3">Franz Hermann#5980(19) lap=2 point=0 t=108.513 et=375.240</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.4">No Further Action</TrackLimits>
-<Score et="377.1">Matisse Gabriel(16) lap=2 point=0 t=109.259 et=377.020</Score>
-<Score et="377.7">Niklas Weike(14) lap=2 point=0 t=110.945 et=377.580</Score>
-<Score et="377.9">Chris Hammer(7) lap=2 point=0 t=110.355 et=377.800</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.5">No Further Action</TrackLimits>
-<Score et="379.0">Jack Smith#8929(12) lap=2 point=0 t=109.697 et=378.900</Score>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="379.7">No Further Action</TrackLimits>
-<Score et="381.7">P-A Fugeekies(3) lap=2 point=0 t=109.002 et=381.714</Score>
-<Score et="382.2">Vladislav Venok(6) lap=2 point=0 t=113.598 et=382.060</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="382.3">Warning</TrackLimits>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="383.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="383.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="383.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="385.2">No Further Action</TrackLimits>
-<Score et="386.0">Filippo Pirola(10) lap=2 point=1 t=23.079 et=386.000</Score>
-<Score et="386.2">Damian Padding(15) lap=2 point=1 t=-1.000 et=386.180</Score>
-<Sector Driver="donatien suel" ID="2" Sector="1" Class="GTE" et="387.1">donatien suel(2) set new best for sector 1</Sector>
-<Score et="387.1">donatien suel(2) lap=2 point=1 t=22.260 et=387.080</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="387.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="387.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.1">No Further Action</TrackLimits>
-<Score et="388.6">Daniel Fredriksen(5) lap=2 point=1 t=-1.000 et=388.480</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="389.2">No Further Action</TrackLimits>
-<Score et="390.1">Philipp Roth(8) lap=2 point=1 t=22.788 et=390.100</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="391.1">No Further Action</TrackLimits>
-<Score et="391.2">Antho Rigg(1) lap=2 point=1 t=22.695 et=391.120</Score>
-<Score et="392.3">Olivier Tosi(11) lap=2 point=0 t=107.597 et=392.180</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="392.5">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="392.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="394.5">No Further Action</TrackLimits>
-<Score et="396.1">Sir Pinkelpott(0) lap=2 point=1 t=23.495 et=396.040</Score>
-<Score et="396.5">Hans moises(17) lap=2 point=1 t=24.014 et=396.220</Score>
-<Score et="396.7">Marcio Lopes(4) lap=2 point=1 t=23.380 et=396.620</Score>
-<Score et="398.1">Fiona Graessner(18) lap=2 point=1 t=23.691 et=398.040</Score>
-<Score et="398.7">Franz Hermann#5980(19) lap=2 point=1 t=23.424 et=398.660</Score>
-<Score et="400.0">Matisse Gabriel(16) lap=2 point=1 t=22.908 et=399.940</Score>
-<Score et="400.5">Niklas Weike(14) lap=2 point=1 t=22.858 et=400.420</Score>
-<Score et="400.6">Bryn Nobbs(9) lap=2 point=1 t=-1.000 et=400.500</Score>
-<Score et="401.3">Chris Hammer(7) lap=2 point=1 t=23.476 et=401.280</Score>
-<Score et="402.8">Jack Smith#8929(12) lap=2 point=1 t=23.826 et=402.740</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.7">No Further Action</TrackLimits>
-<Score et="405.1">P-A Fugeekies(3) lap=2 point=1 t=23.411 et=405.126</Score>
-<Score et="406.1">Vladislav Venok(6) lap=2 point=1 t=24.035 et=406.080</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="408.0">No Further Action</TrackLimits>
-<Incident et="414.5">Niklas Weike(14) reported contact (13.66) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="414.5">Niklas Weike(14) reported contact (49.02) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="414.5">Chris Hammer(7) reported contact (47.38) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="414.5">Niklas Weike(14) reported contact (98.06) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="414.5">Chris Hammer(7) reported contact (91.11) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="414.6">Niklas Weike(14) reported contact (98.06) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="414.6">Chris Hammer(7) reported contact (106.54) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="414.7">Chris Hammer(7) reported contact (220.69) with another vehicle Niklas Weike(14)</Incident>
-<Score et="415.2">Olivier Tosi(11) lap=2 point=1 t=22.973 et=415.160</Score>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="416.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="417.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="421.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="422.1">No Further Action</TrackLimits>
-<Score et="424.3">Filippo Pirola(10) lap=2 point=2 t=61.269 et=424.200</Score>
-<Score et="424.6">Damian Padding(15) lap=2 point=2 t=-1.000 et=424.540</Score>
-<Sector Driver="donatien suel" ID="2" Sector="2" Class="GTE" et="424.9">donatien suel(2) set new best for sector 2</Sector>
-<Score et="425.0">donatien suel(2) lap=2 point=2 t=60.084 et=424.900</Score>
-<Score et="426.3">Daniel Fredriksen(5) lap=2 point=2 t=60.379 et=426.200</Score>
-<Incident et="427.3">Damian Padding(15) reported contact (1241.39) with another vehicle Filippo Pirola(10)</Incident>
-<Incident et="427.3">Filippo Pirola(10) reported contact (1202.16) with another vehicle Damian Padding(15)</Incident>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="428.1">No Further Action</TrackLimits>
-<Score et="428.6">Philipp Roth(8) lap=2 point=2 t=61.191 et=428.500</Score>
-<Score et="429.4">Antho Rigg(1) lap=2 point=2 t=60.988 et=429.400</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="433.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="433.1">No Further Action</TrackLimits>
-<Score et="435.4">Sir Pinkelpott(0) lap=2 point=2 t=62.852 et=435.400</Score>
-<Score et="435.9">Marcio Lopes(4) lap=2 point=2 t=62.582 et=435.820</Score>
-<Score et="436.7">Hans moises(17) lap=2 point=2 t=64.171 et=436.380</Score>
-<Score et="437.3">Fiona Graessner(18) lap=2 point=2 t=62.893 et=437.240</Score>
-<Score et="437.7">Franz Hermann#5980(19) lap=2 point=2 t=62.435 et=437.660</Score>
-<Score et="438.5">Matisse Gabriel(16) lap=2 point=2 t=61.475 et=438.500</Score>
-<Score et="439.6">Chris Hammer(7) lap=2 point=2 t=61.768 et=439.580</Score>
-<Score et="440.0">Niklas Weike(14) lap=2 point=2 t=62.318 et=439.880</Score>
-<Score et="440.3">Bryn Nobbs(9) lap=2 point=2 t=66.857 et=440.260</Score>
-<Score et="441.6">Jack Smith#8929(12) lap=2 point=2 t=62.624 et=441.540</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.8">No Further Action</TrackLimits>
-<Score et="443.9">P-A Fugeekies(3) lap=2 point=2 t=62.142 et=443.857</Score>
-<Score et="445.9">Vladislav Venok(6) lap=2 point=2 t=63.808 et=445.860</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="446.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.8">No Further Action</TrackLimits>
-<Score et="453.9">Olivier Tosi(11) lap=2 point=2 t=61.700 et=453.880</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="466.5">Warning</TrackLimits>
-<Score et="471.4">Filippo Pirola(10) lap=3 point=0 t=108.347 et=471.280</Score>
-<Score et="471.7">donatien suel(2) lap=3 point=0 t=106.798 et=471.620</Score>
-<Score et="472.3">Daniel Fredriksen(5) lap=3 point=0 t=106.409 et=472.220</Score>
-<Score et="475.8">Antho Rigg(1) lap=3 point=0 t=-1.000 et=475.700</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="477.0">Warning</TrackLimits>
-<ChatMessage et="479.6">V Venok: Slowing to pit</ChatMessage>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.7">No Further Action</TrackLimits>
-<Score et="481.5">Sir Pinkelpott(0) lap=3 point=0 t=108.936 et=481.480</Score>
-<Score et="481.9">Marcio Lopes(4) lap=3 point=0 t=108.548 et=481.800</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="483.6">Warning</TrackLimits>
-<Score et="483.9">Hans moises(17) lap=3 point=0 t=111.475 et=483.680</Score>
-<Score et="484.0">Franz Hermann#5980(19) lap=3 point=0 t=108.674 et=483.900</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="484.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="484.4">No Further Action</TrackLimits>
-<Score et="484.8">Matisse Gabriel(16) lap=3 point=0 t=107.738 et=484.760</Score>
-<Score et="485.3">Fiona Graessner(18) lap=3 point=0 t=110.850 et=485.200</Score>
-<Score et="486.0">Chris Hammer(7) lap=3 point=0 t=-1.000 et=485.920</Score>
-<Score et="487.4">Niklas Weike(14) lap=3 point=0 t=109.718 et=487.280</Score>
-<Score et="487.7">Bryn Nobbs(9) lap=3 point=0 t=114.216 et=487.620</Score>
-<Score et="489.0">Jack Smith#8929(12) lap=3 point=0 t=110.029 et=488.940</Score>
-<Score et="489.3">Damian Padding(15) lap=3 point=0 t=-1.000 et=489.220</Score>
-<Incident et="490.1">Hans moises(17) reported contact (265.50) with another vehicle Franz Hermann#5980(19)</Incident>
-<Score et="490.4">P-A Fugeekies(3) lap=3 point=0 t=108.723 et=490.438</Score>
-<Score et="493.8">Filippo Pirola(10) lap=3 point=1 t=-1.000 et=493.700</Score>
-<Sector Driver="donatien suel" ID="2" Sector="1" Class="GTE" et="493.9">donatien suel(2) set new best for sector 1</Sector>
-<Score et="494.0">donatien suel(2) lap=3 point=1 t=22.255 et=493.880</Score>
-<Score et="494.3">Vladislav Venok(6) lap=3 point=0 t=112.209 et=494.260</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="494.6">No Further Action</TrackLimits>
-<Score et="494.6">Daniel Fredriksen(5) lap=3 point=1 t=-1.000 et=494.540</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="495.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="495.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="496.4">No Further Action</TrackLimits>
-<Penalty et="497.4">Damian Padding served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="497.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="498.0">No Further Action</TrackLimits>
-<Score et="498.4">Antho Rigg(1) lap=3 point=1 t=22.658 et=498.340</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="499.2">No Further Action</TrackLimits>
-<Sector et="499.6">Matisse Gabriel(16) reports new suspension damage</Sector>
-<Incident et="499.7">Fiona Graessner(18) reported contact (435.25) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="499.7">Matisse Gabriel(16) reported contact (577.37) with another vehicle Fiona Graessner(18)</Incident>
-<Score et="500.9">Olivier Tosi(11) lap=3 point=0 t=108.628 et=500.820</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="503.8">No Further Action</TrackLimits>
-<Score et="504.6">Sir Pinkelpott(0) lap=3 point=1 t=23.060 et=504.540</Score>
-<Score et="505.0">Marcio Lopes(4) lap=3 point=1 t=23.140 et=504.940</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="506.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="506.9">No Further Action</TrackLimits>
-<Score et="507.1">Hans moises(17) lap=3 point=1 t=23.248 et=506.920</Score>
-<Score et="507.9">Franz Hermann#5980(19) lap=3 point=1 t=23.896 et=507.800</Score>
-<Score et="508.7">Chris Hammer(7) lap=3 point=1 t=22.701 et=508.620</Score>
-<Score et="510.1">Fiona Graessner(18) lap=3 point=1 t=24.881 et=510.080</Score>
-<Score et="510.2">Matisse Gabriel(16) lap=3 point=1 t=25.339 et=510.100</Score>
-<Score et="510.6">Niklas Weike(14) lap=3 point=1 t=23.221 et=510.520</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="510.6">No Further Action</TrackLimits>
-<Score et="511.0">Philipp Roth(8) lap=3 point=0 t=143.622 et=510.940</Score>
-<Score et="512.2">Bryn Nobbs(9) lap=3 point=1 t=24.540 et=512.160</Score>
-<Score et="513.0">Jack Smith#8929(12) lap=3 point=1 t=24.026 et=512.960</Score>
-<Score et="513.7">P-A Fugeekies(3) lap=3 point=1 t=23.287 et=513.725</Score>
-<ChatMessage et="514.7">V Venok: Slowing to pit</ChatMessage>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="516.3">No Further Action</TrackLimits>
-<Sector et="518.6">Fiona Graessner(18) reports new suspension damage</Sector>
-<Incident et="518.7">Niklas Weike(14) reported contact (2484.92) with another vehicle Fiona Graessner(18)</Incident>
-<Incident et="518.7">Fiona Graessner(18) reported contact (2388.85) with another vehicle Niklas Weike(14)</Incident>
-<Score et="519.0">Vladislav Venok(6) lap=3 point=1 t=24.646 et=518.900</Score>
-<Penalty et="519.2">Philipp Roth served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="521.8">Damian Padding(15) lap=3 point=1 t=32.560 et=521.780</Score>
-<Score et="523.7">Olivier Tosi(11) lap=3 point=1 t=22.804 et=523.620</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="524.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="525.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="530.5">No Further Action</TrackLimits>
-<Score et="532.1">Filippo Pirola(10) lap=3 point=2 t=-1.000 et=532.060</Score>
-<Score et="532.3">donatien suel(2) lap=3 point=2 t=60.588 et=532.200</Score>
-<Score et="533.0">Daniel Fredriksen(5) lap=3 point=2 t=60.683 et=532.900</Score>
-<Score et="536.4">Antho Rigg(1) lap=3 point=2 t=60.689 et=536.380</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="537.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="538.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="539.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="541.2">No Further Action</TrackLimits>
-<Score et="543.2">Sir Pinkelpott(0) lap=3 point=2 t=61.622 et=543.100</Score>
-<Score et="543.6">Marcio Lopes(4) lap=3 point=2 t=61.710 et=543.500</Score>
-<Score et="543.9">Philipp Roth(8) lap=3 point=1 t=32.902 et=543.840</Score>
-<Score et="546.4">Hans moises(17) lap=3 point=2 t=62.529 et=546.200</Score>
-<Score et="547.4">Franz Hermann#5980(19) lap=3 point=2 t=63.471 et=547.380</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="549.5">No Further Action</TrackLimits>
-<Score et="549.6">Matisse Gabriel(16) lap=3 point=2 t=64.763 et=549.520</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.9">No Further Action</TrackLimits>
-<Score et="551.1">Bryn Nobbs(9) lap=3 point=2 t=63.467 et=551.080</Score>
-<Score et="552.1">Jack Smith#8929(12) lap=3 point=2 t=63.092 et=552.020</Score>
-<Score et="552.4">P-A Fugeekies(3) lap=3 point=2 t=61.953 et=552.391</Score>
-<Score et="553.4">Fiona Graessner(18) lap=3 point=2 t=68.199 et=553.400</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="555.5">No Further Action</TrackLimits>
-<Score et="557.8">Chris Hammer(7) lap=3 point=2 t=71.791 et=557.700</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="559.4">No Further Action</TrackLimits>
-<Score et="559.5">Niklas Weike(14) lap=3 point=2 t=72.130 et=559.420</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="559.6">No Further Action</TrackLimits>
-<Score et="559.8">Damian Padding(15) lap=3 point=2 t=70.475 et=559.700</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="560.1">No Further Action</TrackLimits>
-<Incident et="560.4">Damian Padding(15) reported contact (806.07) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="560.4">Niklas Weike(14) reported contact (805.76) with another vehicle Damian Padding(15)</Incident>
-<Score et="562.8">Olivier Tosi(11) lap=3 point=2 t=61.885 et=562.700</Score>
-<Score et="566.9">Vladislav Venok(6) lap=3 point=2 t=72.491 et=566.760</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="573.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="577.6">Warning</TrackLimits>
-<Score et="577.8">Filippo Pirola(10) lap=4 point=0 t=-1.000 et=577.660</Score>
-<Score et="577.8">donatien suel(2) lap=4 point=0 t=106.106 et=577.720</Score>
-<Score et="578.8">Daniel Fredriksen(5) lap=4 point=0 t=106.560 et=578.780</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="580.7">No Further Action</TrackLimits>
-<Score et="582.3">Antho Rigg(1) lap=4 point=0 t=106.576 et=582.260</Score>
-<Score et="582.5">Philipp Roth(8) lap=3 point=2 t=71.459 et=582.400</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="585.8">Warning</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="587.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="587.5">No Further Action</TrackLimits>
-<Incident et="588.4">Philipp Roth(8) reported contact (1284.40) with Immovable</Incident>
-<Score et="589.5">Sir Pinkelpott(0) lap=4 point=0 t=107.932 et=589.420</Score>
-<Score et="589.7">Marcio Lopes(4) lap=4 point=0 t=-1.000 et=589.540</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="590.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="592.9">No Further Action</TrackLimits>
-<Score et="594.0">Hans moises(17) lap=4 point=0 t=110.024 et=593.700</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="594.2">Warning</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="3" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="595.2">Warning</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="3" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="596.9">Warning</TrackLimits>
-<Score et="598.0">Bryn Nobbs(9) lap=4 point=0 t=110.386 et=598.000</Score>
-<Score et="598.7">Franz Hermann#5980(19) lap=4 point=0 t=-1.000 et=598.660</Score>
-<Score et="599.2">P-A Fugeekies(3) lap=4 point=0 t=-1.000 et=599.192</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="599.8">No Further Action</TrackLimits>
-<Score et="600.4">donatien suel(2) lap=4 point=1 t=22.585 et=600.300</Score>
-<Score et="600.5">Jack Smith#8929(12) lap=4 point=0 t=111.526 et=600.460</Score>
-<Score et="600.9">Fiona Graessner(18) lap=4 point=0 t=115.609 et=600.820</Score>
-<Score et="600.9">Filippo Pirola(10) lap=4 point=1 t=23.185 et=600.840</Score>
-<Score et="601.3">Daniel Fredriksen(5) lap=4 point=1 t=22.390 et=601.180</Score>
-<Score et="601.5">Matisse Gabriel(16) lap=4 point=0 t=-1.000 et=601.400</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="604.0">No Further Action</TrackLimits>
-<Score et="604.3">Chris Hammer(7) lap=4 point=0 t=118.364 et=604.280</Score>
-<Score et="605.0">Antho Rigg(1) lap=4 point=1 t=22.689 et=604.960</Score>
-<Score et="605.3">Damian Padding(15) lap=4 point=0 t=116.031 et=605.260</Score>
-<Score et="606.9">Niklas Weike(14) lap=4 point=0 t=119.534 et=606.820</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="607.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="608.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="609.1">No Further Action</TrackLimits>
-<Score et="609.1">Olivier Tosi(11) lap=4 point=0 t=108.231 et=609.040</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="609.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="611.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.9">No Further Action</TrackLimits>
-<Score et="612.8">Marcio Lopes(4) lap=4 point=1 t=23.226 et=612.760</Score>
-<Score et="616.6">Vladislav Venok(6) lap=4 point=0 t=122.253 et=616.520</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.3">No Further Action</TrackLimits>
-<Score et="617.8">Hans moises(17) lap=4 point=1 t=23.917 et=617.620</Score>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.6">No Further Action</TrackLimits>
-<Score et="621.2">Bryn Nobbs(9) lap=4 point=1 t=23.115 et=621.120</Score>
-<Score et="621.5">Franz Hermann#5980(19) lap=4 point=1 t=22.826 et=621.500</Score>
-<Score et="622.3">Sir Pinkelpott(0) lap=4 point=1 t=32.858 et=622.280</Score>
-<Score et="622.7">P-A Fugeekies(3) lap=4 point=1 t=23.502 et=622.694</Score>
-<Score et="624.0">Jack Smith#8929(12) lap=4 point=1 t=23.410 et=623.880</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="624.5">No Further Action</TrackLimits>
-<Score et="625.1">Matisse Gabriel(16) lap=4 point=1 t=23.618 et=625.020</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="625.7">No Further Action</TrackLimits>
-<Score et="626.0">Fiona Graessner(18) lap=4 point=1 t=25.164 et=625.980</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="627.2">No Further Action</TrackLimits>
-<Score et="627.7">Chris Hammer(7) lap=4 point=1 t=23.296 et=627.580</Score>
-<Score et="628.0">Damian Padding(15) lap=4 point=1 t=22.617 et=627.860</Score>
-<Score et="630.2">Niklas Weike(14) lap=4 point=1 t=23.300 et=630.120</Score>
-<Score et="632.0">Olivier Tosi(11) lap=4 point=1 t=22.869 et=631.920</Score>
-<Incident et="634.2">Filippo Pirola(10) reported contact (1461.05) with Immovable</Incident>
-<Score et="635.1">Philipp Roth(8) lap=4 point=0 t=124.043 et=634.980</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="637.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="638.1">No Further Action</TrackLimits>
-<Score et="638.7">donatien suel(2) lap=4 point=2 t=60.834 et=638.560</Score>
-<Score et="639.6">Daniel Fredriksen(5) lap=4 point=2 t=60.771 et=639.560</Score>
-<Score et="643.0">Vladislav Venok(6) lap=4 point=1 t=26.422 et=642.940</Score>
-<Score et="643.5">Antho Rigg(1) lap=4 point=2 t=61.091 et=643.360</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="644.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="645.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="648.5">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="650.3">No Further Action</TrackLimits>
-<Score et="651.3">Marcio Lopes(4) lap=4 point=2 t=61.634 et=651.180</Score>
-<Score et="655.1">Filippo Pirola(10) lap=4 point=2 t=77.375 et=655.020</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="655.6">No Further Action</TrackLimits>
-<Score et="658.0">Hans moises(17) lap=4 point=2 t=64.031 et=657.740</Score>
-<Score et="658.6">Philipp Roth(8) lap=4 point=1 t=23.531 et=658.520</Score>
-<Score et="660.1">Bryn Nobbs(9) lap=4 point=2 t=62.060 et=660.060</Score>
-<Score et="660.4">Franz Hermann#5980(19) lap=4 point=2 t=61.694 et=660.360</Score>
-<Score et="661.1">Sir Pinkelpott(0) lap=4 point=2 t=71.654 et=661.060</Score>
-<Score et="661.5">P-A Fugeekies(3) lap=4 point=2 t=62.283 et=661.475</Score>
-<Score et="663.3">Jack Smith#8929(12) lap=4 point=2 t=62.694 et=663.160</Score>
-<Score et="664.3">Matisse Gabriel(16) lap=4 point=2 t=62.848 et=664.260</Score>
-<Score et="665.2">Fiona Graessner(18) lap=4 point=2 t=64.341 et=665.160</Score>
-<Score et="666.0">Chris Hammer(7) lap=4 point=2 t=61.666 et=665.940</Score>
-<Score et="666.4">Damian Padding(15) lap=4 point=2 t=61.157 et=666.400</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="669.1">No Further Action</TrackLimits>
-<Score et="670.0">Niklas Weike(14) lap=4 point=2 t=63.199 et=670.020</Score>
-<Score et="670.7">Olivier Tosi(11) lap=4 point=2 t=61.541 et=670.580</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="681.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="681.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="683.9">No Further Action</TrackLimits>
-<Score et="684.4">Vladislav Venok(6) lap=4 point=2 t=67.792 et=684.300</Score>
-<Score et="684.4">donatien suel(2) lap=5 point=0 t=106.632 et=684.360</Score>
-<Score et="685.8">Daniel Fredriksen(5) lap=5 point=0 t=106.910 et=685.700</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="4" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="688.9">Warning</TrackLimits>
-<Score et="689.1">Antho Rigg(1) lap=5 point=0 t=106.782 et=689.040</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="692.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="4" WarningPoints="0.5" CurrentPoints="0.75" Resolution="2" et="693.6">Warning</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.7">No Further Action</TrackLimits>
-<Score et="697.3">Marcio Lopes(4) lap=5 point=0 t=107.743 et=697.280</Score>
-<Score et="698.1">Philipp Roth(8) lap=4 point=2 t=63.123 et=698.100</Score>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="4" WarningPoints="1" CurrentPoints="2" Resolution="2" et="698.3">Warning</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="699.6">Warning</TrackLimits>
-<Score et="701.0">Filippo Pirola(10) lap=5 point=0 t=-1.000 et=700.900</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="4" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="703.1">Warning</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="4" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="703.1">Warning</TrackLimits>
-<Score et="705.6">Hans moises(17) lap=5 point=0 t=111.688 et=705.380</Score>
-<Score et="706.8">Franz Hermann#5980(19) lap=5 point=0 t=108.077 et=706.740</Score>
-<Score et="707.1">donatien suel(2) lap=5 point=1 t=22.639 et=707.000</Score>
-<Score et="707.5">Sir Pinkelpott(0) lap=5 point=0 t=-1.000 et=707.460</Score>
-<Score et="707.6">Bryn Nobbs(9) lap=5 point=0 t=-1.000 et=707.560</Score>
-<Score et="708.1">Daniel Fredriksen(5) lap=5 point=1 t=-1.000 et=708.040</Score>
-<Score et="708.1">P-A Fugeekies(3) lap=5 point=0 t=108.919 et=708.111</Score>
-<Score et="710.0">Jack Smith#8929(12) lap=5 point=0 t=109.476 et=709.940</Score>
-<Score et="710.2">Matisse Gabriel(16) lap=5 point=0 t=108.770 et=710.180</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="711.4">No Further Action</TrackLimits>
-<Score et="711.6">Fiona Graessner(18) lap=5 point=0 t=110.750 et=711.560</Score>
-<Score et="711.7">Antho Rigg(1) lap=5 point=1 t=-1.000 et=711.620</Score>
-<Score et="712.5">Chris Hammer(7) lap=5 point=0 t=108.124 et=712.400</Score>
-<Score et="712.8">Damian Padding(15) lap=5 point=0 t=107.413 et=712.660</Score>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="713.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Filippo Pirola" ID="10" Lap="5" WarningPoints="0.25" CurrentPoints="2.25" Resolution="2" et="713.3">Warning</TrackLimits>
-<Score et="716.9">Olivier Tosi(11) lap=5 point=0 t=107.769 et=716.820</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="717.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="718.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="5" et="718.9">No Further Action</TrackLimits>
-<Score et="720.0">Marcio Lopes(4) lap=5 point=1 t=22.604 et=719.900</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="721.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="722.1">No Further Action</TrackLimits>
-<Score et="723.8">Filippo Pirola(10) lap=5 point=1 t=-1.000 et=723.720</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="725.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="5" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="727.5">Warning</TrackLimits>
-<Score et="729.1">Hans moises(17) lap=5 point=1 t=-1.000 et=728.780</Score>
-<Score et="730.3">Franz Hermann#5980(19) lap=5 point=1 t=23.564 et=730.300</Score>
-<Score et="730.9">Sir Pinkelpott(0) lap=5 point=1 t=23.377 et=730.820</Score>
-<Score et="730.9">Bryn Nobbs(9) lap=5 point=1 t=23.316 et=730.880</Score>
-<Score et="731.2">P-A Fugeekies(3) lap=5 point=1 t=-1.000 et=731.217</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="732.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="732.6">No Further Action</TrackLimits>
-<Score et="733.1">Vladislav Venok(6) lap=5 point=0 t=116.545 et=733.060</Score>
-<Score et="733.2">Matisse Gabriel(16) lap=5 point=1 t=22.948 et=733.120</Score>
-<Score et="734.1">Jack Smith#8929(12) lap=5 point=1 t=24.158 et=734.100</Score>
-<Score et="735.5">Fiona Graessner(18) lap=5 point=1 t=23.859 et=735.420</Score>
-<Sector et="735.8">Fiona Graessner(18) reports new suspension damage</Sector>
-<Score et="735.8">Chris Hammer(7) lap=5 point=1 t=23.320 et=735.720</Score>
-<Incident et="735.8">Fiona Graessner(18) reported contact (4231.05) with Immovable</Incident>
-<Score et="736.3">Damian Padding(15) lap=5 point=1 t=23.572 et=736.240</Score>
-<Incident et="737.6">Sir Pinkelpott(0) reported contact (168.46) with another vehicle Bryn Nobbs(9)</Incident>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="738.5">No Further Action</TrackLimits>
-<Incident et="739.6">Bryn Nobbs(9) reported contact (1443.24) with another vehicle Franz Hermann#5980(19)</Incident>
-<Incident et="739.7">Franz Hermann#5980(19) reported contact (709.46) with another vehicle Bryn Nobbs(9)</Incident>
-<Score et="739.8">Olivier Tosi(11) lap=5 point=1 t=22.863 et=739.680</Score>
-<Sector et="742.5">P-A Fugeekies(3) reports new suspension damage</Sector>
-<Incident et="742.6">P-A Fugeekies(3) reported contact (749.61) with another vehicle Bryn Nobbs(9)</Incident>
-<Incident et="742.6">Bryn Nobbs(9) reported contact (589.26) with another vehicle P-A Fugeekies(3)</Incident>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="744.3">No Further Action</TrackLimits>
-<Score et="745.7">donatien suel(2) lap=5 point=2 t=61.287 et=745.640</Score>
-<Score et="745.7">Philipp Roth(8) lap=5 point=0 t=110.681 et=745.660</Score>
-<Score et="746.0">Daniel Fredriksen(5) lap=5 point=2 t=-1.000 et=745.960</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="5" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="746.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="747.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="749.3">No Further Action</TrackLimits>
-<Score et="749.9">Antho Rigg(1) lap=5 point=2 t=60.826 et=749.880</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="751.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="754.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="755.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.0">No Further Action</TrackLimits>
-<Score et="757.8">Vladislav Venok(6) lap=5 point=1 t=24.706 et=757.760</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="758.3">No Further Action</TrackLimits>
-<Score et="758.5">Marcio Lopes(4) lap=5 point=2 t=61.107 et=758.400</Score>
-<Score et="758.8">Niklas Weike(14) lap=5 point=0 t=151.850 et=758.680</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="761.7">No Further Action</TrackLimits>
-<Score et="762.2">Filippo Pirola(10) lap=5 point=2 t=-1.000 et=762.120</Score>
-<Score et="768.2">Hans moises(17) lap=5 point=2 t=62.606 et=768.000</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="769.4">No Further Action</TrackLimits>
-<Score et="769.4">Franz Hermann#5980(19) lap=5 point=2 t=62.532 et=769.280</Score>
-<Score et="769.8">Sir Pinkelpott(0) lap=5 point=2 t=62.304 et=769.760</Score>
-<Score et="770.5">P-A Fugeekies(3) lap=5 point=2 t=-1.000 et=770.477</Score>
-<Score et="771.4">Philipp Roth(8) lap=5 point=1 t=25.696 et=771.360</Score>
-<Score et="771.5">Bryn Nobbs(9) lap=5 point=2 t=63.867 et=771.420</Score>
-<Score et="772.4">Matisse Gabriel(16) lap=5 point=2 t=62.174 et=772.360</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="772.9">No Further Action</TrackLimits>
-<Score et="773.5">Jack Smith#8929(12) lap=5 point=2 t=63.468 et=773.400</Score>
-<Score et="774.3">Chris Hammer(7) lap=5 point=2 t=61.791 et=774.200</Score>
-<Score et="774.5">Damian Padding(15) lap=5 point=2 t=61.727 et=774.400</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="776.4">No Further Action</TrackLimits>
-<Score et="778.5">Olivier Tosi(11) lap=5 point=2 t=61.683 et=778.500</Score>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="781.7">No Further Action</TrackLimits>
-<Score et="782.3">Niklas Weike(14) lap=5 point=1 t=23.505 et=782.180</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="789.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="791.6">No Further Action</TrackLimits>
-<Score et="791.7">donatien suel(2) lap=6 point=0 t=107.284 et=791.640</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="792.1">No Further Action</TrackLimits>
-<Score et="792.2">Daniel Fredriksen(5) lap=6 point=0 t=-1.000 et=792.140</Score>
-<Score et="795.8">Antho Rigg(1) lap=6 point=0 t=106.714 et=795.760</Score>
-<Incident et="797.8">Damian Padding(15) reported contact (281.95) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="797.8">Chris Hammer(7) reported contact (260.54) with another vehicle Damian Padding(15)</Incident>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="798.5">No Further Action</TrackLimits>
-<Score et="798.8">Vladislav Venok(6) lap=5 point=2 t=65.688 et=798.740</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="799.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="802.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="802.6">Warning</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="802.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="5" WarningPoints="0.5" CurrentPoints="0.75" Resolution="2" et="803.6">Warning</TrackLimits>
-<Score et="803.8">Fiona Graessner(18) lap=5 point=2 t=92.214 et=803.780</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="804.0">No Further Action</TrackLimits>
-<Score et="804.1">Marcio Lopes(4) lap=6 point=0 t=106.724 et=804.020</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="5" WarningPoints="0.5" CurrentPoints="1.75" Resolution="2" et="806.2">Warning</TrackLimits>
-<Score et="808.0">Filippo Pirola(10) lap=6 point=0 t=-1.000 et=807.960</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="809.5">No Further Action</TrackLimits>
-<Score et="810.8">Philipp Roth(8) lap=5 point=2 t=65.102 et=810.760</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="814.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="814.4">Warning</TrackLimits>
-<Score et="814.4">donatien suel(2) lap=6 point=1 t=22.712 et=814.340</Score>
-<Score et="815.1">Daniel Fredriksen(5) lap=6 point=1 t=-1.000 et=815.040</Score>
-<Score et="815.8">Franz Hermann#5980(19) lap=6 point=0 t=-1.000 et=815.680</Score>
-<Score et="815.8">Hans moises(17) lap=6 point=0 t=110.290 et=815.680</Score>
-<Score et="816.3">Sir Pinkelpott(0) lap=6 point=0 t=-1.000 et=816.200</Score>
-<Score et="817.3">P-A Fugeekies(3) lap=6 point=0 t=-1.000 et=817.260</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="817.3">No Further Action</TrackLimits>
-<Score et="818.5">Matisse Gabriel(16) lap=6 point=0 t=-1.000 et=818.380</Score>
-<Score et="818.7">Antho Rigg(1) lap=6 point=1 t=-1.000 et=818.640</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="818.9">No Further Action</TrackLimits>
-<Incident et="820.3">Franz Hermann#5980(19) reported contact (98.86) with another vehicle Hans moises(17)</Incident>
-<Incident et="820.4">Hans moises(17) reported contact (203.79) with another vehicle Franz Hermann#5980(19)</Incident>
-<Score et="821.1">Jack Smith#8929(12) lap=6 point=0 t=111.135 et=821.080</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="821.4">No Further Action</TrackLimits>
-<Score et="821.7">Damian Padding(15) lap=6 point=0 t=108.950 et=821.620</Score>
-<Score et="821.8">Chris Hammer(7) lap=6 point=0 t=109.304 et=821.700</Score>
-<Score et="822.4">Niklas Weike(14) lap=5 point=2 t=63.686 et=822.360</Score>
-<Sector et="822.7">Filippo Pirola(10) reports new suspension damage</Sector>
-<Incident et="822.8">Filippo Pirola(10) reported contact (11736.10) with Immovable</Incident>
-<Score et="824.4">Olivier Tosi(11) lap=6 point=0 t=107.484 et=824.300</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="826.6">No Further Action</TrackLimits>
-<Score et="826.9">Marcio Lopes(4) lap=6 point=1 t=22.777 et=826.780</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="828.4">No Further Action</TrackLimits>
-<Score et="831.3">Bryn Nobbs(9) lap=6 point=0 t=123.571 et=831.140</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="832.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="832.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="833.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="834.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="838.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="839.2">No Further Action</TrackLimits>
-<Score et="839.8">Franz Hermann#5980(19) lap=6 point=1 t=24.080 et=839.760</Score>
-<Score et="840.2">Hans moises(17) lap=6 point=1 t=24.307 et=839.980</Score>
-<Score et="840.6">P-A Fugeekies(3) lap=6 point=1 t=23.320 et=840.580</Score>
-<Score et="840.6">Sir Pinkelpott(0) lap=6 point=1 t=24.359 et=840.560</Score>
-<Incident et="840.9">P-A Fugeekies(3) reported contact (13.25) with another vehicle Sir Pinkelpott(0)</Incident>
-<Score et="841.6">Matisse Gabriel(16) lap=6 point=1 t=23.139 et=841.520</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="842.0">No Further Action</TrackLimits>
-<Score et="844.7">Damian Padding(15) lap=6 point=1 t=22.997 et=844.620</Score>
-<Score et="845.3">Chris Hammer(7) lap=6 point=1 t=23.583 et=845.280</Score>
-<Score et="846.1">Jack Smith#8929(12) lap=6 point=1 t=24.939 et=846.020</Score>
-<Score et="847.0">Olivier Tosi(11) lap=6 point=1 t=22.665 et=846.960</Score>
-<Score et="852.7">donatien suel(2) lap=6 point=2 t=61.021 et=852.660</Score>
-<Score et="853.3">Daniel Fredriksen(5) lap=6 point=2 t=61.091 et=853.240</Score>
-<Incident et="853.8">Sir Pinkelpott(0) reported contact (474.92) with another vehicle Franz Hermann#5980(19)</Incident>
-<Incident et="853.8">Franz Hermann#5980(19) reported contact (196.92) with another vehicle Sir Pinkelpott(0)</Incident>
-<Score et="854.2">Bryn Nobbs(9) lap=6 point=1 t=23.025 et=854.160</Score>
-<Incident et="854.7">P-A Fugeekies(3) reported contact (1307.70) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="854.8">Matisse Gabriel(16) reported contact (1216.19) with another vehicle P-A Fugeekies(3)</Incident>
-<Score et="856.9">Antho Rigg(1) lap=6 point=2 t=-1.000 et=856.820</Score>
-<Score et="857.6">Philipp Roth(8) lap=6 point=0 t=111.790 et=857.460</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="859.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="861.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="862.3">No Further Action</TrackLimits>
-<Score et="866.8">Vladislav Venok(6) lap=6 point=0 t=133.680 et=866.740</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="867.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="868.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="869.2">No Further Action</TrackLimits>
-<Score et="869.9">Marcio Lopes(4) lap=6 point=2 t=65.801 et=869.820</Score>
-<Score et="870.3">Niklas Weike(14) lap=6 point=0 t=111.611 et=870.280</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="872.2">No Further Action</TrackLimits>
-<Score et="879.5">Hans moises(17) lap=6 point=2 t=63.710 et=879.380</Score>
-<Score et="879.7">Sir Pinkelpott(0) lap=6 point=2 t=63.377 et=879.580</Score>
-<Score et="880.6">Franz Hermann#5980(19) lap=6 point=2 t=64.837 et=880.520</Score>
-<Score et="880.6">Philipp Roth(8) lap=6 point=1 t=23.116 et=880.560</Score>
-<Score et="881.8">Matisse Gabriel(16) lap=6 point=2 t=63.321 et=881.700</Score>
-<Score et="882.9">P-A Fugeekies(3) lap=6 point=2 t=65.654 et=882.915</Score>
-<Score et="883.0">Damian Padding(15) lap=6 point=2 t=61.304 et=882.920</Score>
-<Score et="883.5">Chris Hammer(7) lap=6 point=2 t=61.750 et=883.460</Score>
-<Score et="885.1">Jack Smith#8929(12) lap=6 point=2 t=63.974 et=885.040</Score>
-<Score et="885.6">Olivier Tosi(11) lap=6 point=2 t=61.236 et=885.540</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="6" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="885.9">Warning</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="890.6">No Further Action</TrackLimits>
-<Score et="891.3">Vladislav Venok(6) lap=6 point=1 t=24.522 et=891.260</Score>
-<Score et="893.4">Bryn Nobbs(9) lap=6 point=2 t=62.207 et=893.340</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="894.1">No Further Action</TrackLimits>
-<Score et="894.5">Niklas Weike(14) lap=6 point=1 t=24.097 et=894.380</Score>
-<Score et="898.9">donatien suel(2) lap=7 point=0 t=-1.000 et=898.860</Score>
-<Score et="899.5">Daniel Fredriksen(5) lap=7 point=0 t=107.284 et=899.420</Score>
-<Score et="902.6">Antho Rigg(1) lap=7 point=0 t=-1.000 et=902.580</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="905.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="906.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="910.7">No Further Action</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="911.3">Warning</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="7" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="911.7">Warning</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="912.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="914.4">No Further Action</TrackLimits>
-<Score et="916.5">Marcio Lopes(4) lap=7 point=0 t=112.355 et=916.360</Score>
-<Score et="920.1">Philipp Roth(8) lap=6 point=2 t=62.627 et=920.080</Score>
-<Score et="921.6">donatien suel(2) lap=7 point=1 t=-1.000 et=921.560</Score>
-<Score et="922.1">Daniel Fredriksen(5) lap=7 point=1 t=-1.000 et=922.000</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="922.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="923.3">No Further Action</TrackLimits>
-<Score et="925.0">Antho Rigg(1) lap=7 point=1 t=22.411 et=924.980</Score>
-<Score et="926.9">Franz Hermann#5980(19) lap=7 point=0 t=111.122 et=926.800</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="926.9">No Further Action</TrackLimits>
-<Score et="928.0">Hans moises(17) lap=7 point=0 t=112.058 et=927.740</Score>
-<Score et="928.4">Matisse Gabriel(16) lap=7 point=0 t=109.903 et=928.280</Score>
-<Score et="928.4">Damian Padding(15) lap=7 point=0 t=106.706 et=928.320</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="929.4">No Further Action</TrackLimits>
-<Score et="929.5">Chris Hammer(7) lap=7 point=0 t=107.748 et=929.460</Score>
-<Score et="929.9">P-A Fugeekies(3) lap=7 point=0 t=112.611 et=929.871</Score>
-<Score et="932.1">Olivier Tosi(11) lap=7 point=0 t=107.660 et=931.960</Score>
-<Score et="932.1">Vladislav Venok(6) lap=6 point=2 t=65.242 et=931.980</Score>
-<Score et="932.1">Jack Smith#8929(12) lap=7 point=0 t=110.923 et=932.000</Score>
-<Score et="933.0">Sir Pinkelpott(0) lap=7 point=0 t=116.730 et=932.940</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="933.8">No Further Action</TrackLimits>
-<Score et="934.2">Niklas Weike(14) lap=6 point=2 t=63.813 et=934.100</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="939.1">No Further Action</TrackLimits>
-<Score et="939.3">Marcio Lopes(4) lap=7 point=1 t=22.883 et=939.240</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="939.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="940.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="943.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="943.1">No Further Action</TrackLimits>
-<Sector et="944.0">Chris Hammer(7) reports new suspension damage</Sector>
-<Incident et="944.1">Chris Hammer(7) reported contact (1602.08) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="944.1">Matisse Gabriel(16) reported contact (1656.04) with another vehicle Chris Hammer(7)</Incident>
-<Incident et="946.7">P-A Fugeekies(3) reported contact (119.71) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="946.8">Matisse Gabriel(16) reported contact (135.55) with another vehicle P-A Fugeekies(3)</Incident>
-<Incident et="946.9">Chris Hammer(7) reported contact (1196.83) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="946.9">Matisse Gabriel(16) reported contact (1581.41) with another vehicle Chris Hammer(7)</Incident>
-<Sector et="947.0">Chris Hammer(7) reports new suspension damage</Sector>
-<Incident et="947.0">P-A Fugeekies(3) reported contact (434.62) with another vehicle Matisse Gabriel(16)</Incident>
-<Sector et="947.0">P-A Fugeekies(3) reports new suspension damage</Sector>
-<Incident et="947.1">Matisse Gabriel(16) reported contact (233.65) with another vehicle P-A Fugeekies(3)</Incident>
-<Score et="948.8">Bryn Nobbs(9) lap=7 point=0 t=117.568 et=948.700</Score>
-<Score et="949.9">Franz Hermann#5980(19) lap=7 point=1 t=23.050 et=949.860</Score>
-<Score et="950.9">Hans moises(17) lap=7 point=1 t=-1.000 et=950.660</Score>
-<Score et="951.1">Damian Padding(15) lap=7 point=1 t=22.709 et=951.040</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="952.9">No Further Action</TrackLimits>
-<Score et="953.2">Chris Hammer(7) lap=7 point=1 t=23.722 et=953.180</Score>
-<Score et="953.4">Matisse Gabriel(16) lap=7 point=1 t=25.028 et=953.320</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="7" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="955.2">Warning</TrackLimits>
-<Score et="955.2">Olivier Tosi(11) lap=7 point=1 t=23.170 et=955.120</Score>
-<Score et="956.6">Jack Smith#8929(12) lap=7 point=1 t=24.463 et=956.460</Score>
-<Score et="956.9">Sir Pinkelpott(0) lap=7 point=1 t=23.860 et=956.800</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="958.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="959.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="959.3">No Further Action</TrackLimits>
-<Score et="959.9">donatien suel(2) lap=7 point=2 t=-1.000 et=959.820</Score>
-<Score et="960.4">Daniel Fredriksen(5) lap=7 point=2 t=-1.000 et=960.320</Score>
-<Score et="963.2">Antho Rigg(1) lap=7 point=2 t=60.474 et=963.060</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="963.6">No Further Action</TrackLimits>
-<Score et="964.6">P-A Fugeekies(3) lap=7 point=1 t=34.692 et=964.563</Score>
-<Score et="966.8">Philipp Roth(8) lap=7 point=0 t=109.317 et=966.760</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="968.6">No Further Action</TrackLimits>
-<Score et="972.3">Bryn Nobbs(9) lap=7 point=1 t=-1.000 et=972.220</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="973.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="976.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="977.0">No Further Action</TrackLimits>
-<Score et="977.7">Marcio Lopes(4) lap=7 point=2 t=61.245 et=977.620</Score>
-<Score et="981.6">Vladislav Venok(6) lap=7 point=0 t=114.803 et=981.540</Score>
-<Score et="985.9">Fiona Graessner(18) lap=6 point=0 t=274.296 et=985.860</Score>
-<Score et="988.8">Franz Hermann#5980(19) lap=7 point=2 t=61.930 et=988.740</Score>
-<Score et="989.0">Damian Padding(15) lap=7 point=2 t=60.585 et=988.900</Score>
-<Score et="989.8">Philipp Roth(8) lap=7 point=1 t=22.890 et=989.660</Score>
-<Score et="989.8">Niklas Weike(14) lap=7 point=0 t=119.440 et=989.720</Score>
-<Score et="990.9">Hans moises(17) lap=7 point=2 t=-1.000 et=990.600</Score>
-<Score et="992.6">Chris Hammer(7) lap=7 point=2 t=63.114 et=992.560</Score>
-<Score et="992.9">Matisse Gabriel(16) lap=7 point=2 t=64.570 et=992.860</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="993.0">No Further Action</TrackLimits>
-<Score et="993.9">Olivier Tosi(11) lap=7 point=2 t=61.859 et=993.820</Score>
-<Score et="995.2">Sir Pinkelpott(0) lap=7 point=2 t=62.172 et=995.120</Score>
-<Score et="995.9">Jack Smith#8929(12) lap=7 point=2 t=63.803 et=995.800</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="2" et="996.2">Warning</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1000.6">No Further Action</TrackLimits>
-<Score et="1004.1">P-A Fugeekies(3) lap=7 point=2 t=74.171 et=1004.042</Score>
-<Score et="1006.0">donatien suel(2) lap=8 point=0 t=-1.000 et=1005.920</Score>
-<Score et="1006.1">Vladislav Venok(6) lap=7 point=1 t=24.418 et=1005.960</Score>
-<Score et="1006.8">Daniel Fredriksen(5) lap=8 point=0 t=-1.000 et=1006.800</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1007.7">No Further Action</TrackLimits>
-<Score et="1009.3">Antho Rigg(1) lap=8 point=0 t=106.620 et=1009.200</Score>
-<Score et="1011.0">Bryn Nobbs(9) lap=7 point=2 t=62.176 et=1010.880</Score>
-<Score et="1013.7">Niklas Weike(14) lap=7 point=1 t=23.920 et=1013.640</Score>
-<Incident et="1015.4">Chris Hammer(7) reported contact (1271.60) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="1015.4">Matisse Gabriel(16) reported contact (1354.29) with another vehicle Chris Hammer(7)</Incident>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1016.4">No Further Action</TrackLimits>
-<Score et="1020.7">Fiona Graessner(18) lap=6 point=1 t=34.722 et=1020.580</Score>
-<Score et="1024.1">Marcio Lopes(4) lap=8 point=0 t=107.710 et=1024.080</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1024.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="1026.7">Warning</TrackLimits>
-<Score et="1027.9">Philipp Roth(8) lap=7 point=2 t=61.043 et=1027.820</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1028.8">No Further Action</TrackLimits>
-<Score et="1028.8">donatien suel(2) lap=8 point=1 t=22.827 et=1028.740</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1029.2">No Further Action</TrackLimits>
-<Score et="1029.3">Daniel Fredriksen(5) lap=8 point=1 t=22.461 et=1029.260</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="7" WarningPoints="0.5" CurrentPoints="2.25" Resolution="2" et="1030.5">Warning</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1031.1">No Further Action</TrackLimits>
-<Score et="1032.1">Antho Rigg(1) lap=8 point=1 t=22.867 et=1032.060</Score>
-<Sector et="1033.3">Philipp Roth(8) reports new suspension damage</Sector>
-<Incident et="1033.4">Philipp Roth(8) reported contact (4376.55) with Immovable</Incident>
-<Score et="1035.4">Damian Padding(15) lap=8 point=0 t=107.019 et=1035.340</Score>
-<Score et="1036.0">Franz Hermann#5980(19) lap=8 point=0 t=-1.000 et=1035.900</Score>
-<Score et="1039.3">Hans moises(17) lap=8 point=0 t=-1.000 et=1039.060</Score>
-<Score et="1039.4">Matisse Gabriel(16) lap=8 point=0 t=-1.000 et=1039.320</Score>
-<Score et="1039.9">Chris Hammer(7) lap=8 point=0 t=110.337 et=1039.780</Score>
-<Score et="1040.1">Olivier Tosi(11) lap=8 point=0 t=108.029 et=1039.980</Score>
-<Score et="1040.9">Sir Pinkelpott(0) lap=8 point=0 t=107.946 et=1040.880</Score>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1042.6">No Further Action</TrackLimits>
-<Score et="1043.0">Jack Smith#8929(12) lap=8 point=0 t=110.892 et=1042.880</Score>
-<Score et="1046.5">Vladislav Venok(6) lap=7 point=2 t=64.831 et=1046.380</Score>
-<Score et="1047.1">Marcio Lopes(4) lap=8 point=1 t=22.942 et=1047.020</Score>
-<Score et="1051.3">P-A Fugeekies(3) lap=8 point=0 t=121.370 et=1051.241</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1053.7">No Further Action</TrackLimits>
-<Score et="1053.9">Niklas Weike(14) lap=7 point=2 t=64.174 et=1053.900</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1055.0">No Further Action</TrackLimits>
-<Score et="1057.2">Bryn Nobbs(9) lap=8 point=0 t=108.366 et=1057.060</Score>
-<Score et="1058.0">Damian Padding(15) lap=8 point=1 t=22.581 et=1057.920</Score>
-<Score et="1059.6">Fiona Graessner(18) lap=6 point=2 t=73.619 et=1059.480</Score>
-<Incident et="1060.4">Matisse Gabriel(16) reported contact (21.37) with another vehicle Hans moises(17)</Incident>
-<Incident et="1060.5">Matisse Gabriel(16) reported contact (85.54) with another vehicle Hans moises(17)</Incident>
-<Incident et="1060.5">Matisse Gabriel(16) reported contact (212.46) with another vehicle Hans moises(17)</Incident>
-<Incident et="1062.6">Matisse Gabriel(16) reported contact (432.52) with another vehicle Hans moises(17)</Incident>
-<Incident et="1062.7">Hans moises(17) reported contact (289.53) with another vehicle Matisse Gabriel(16)</Incident>
-<Score et="1063.5">Olivier Tosi(11) lap=8 point=1 t=23.485 et=1063.480</Score>
-<Score et="1063.9">Hans moises(17) lap=8 point=1 t=24.685 et=1063.740</Score>
-<Score et="1064.1">Chris Hammer(7) lap=8 point=1 t=24.223 et=1064.020</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1064.1">No Further Action</TrackLimits>
-<Score et="1064.1">Sir Pinkelpott(0) lap=8 point=1 t=23.196 et=1064.080</Score>
-<Incident et="1065.2">Matisse Gabriel(16) reported contact (1158.05) with Immovable</Incident>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="8" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1066.5">No Further Action</TrackLimits>
-<Score et="1066.9">donatien suel(2) lap=8 point=2 t=60.971 et=1066.880</Score>
-<Score et="1066.9">Jack Smith#8929(12) lap=8 point=1 t=23.996 et=1066.880</Score>
-<Score et="1067.0">Matisse Gabriel(16) lap=8 point=1 t=27.594 et=1066.900</Score>
-<Score et="1067.5">Daniel Fredriksen(5) lap=8 point=2 t=60.640 et=1067.440</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1069.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1070.2">No Further Action</TrackLimits>
-<Score et="1070.6">Antho Rigg(1) lap=8 point=2 t=61.300 et=1070.500</Score>
-<Score et="1070.8">Franz Hermann#5980(19) lap=8 point=1 t=34.880 et=1070.780</Score>
-<Score et="1074.3">P-A Fugeekies(3) lap=8 point=1 t=23.068 et=1074.308</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1076.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1076.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1076.9">No Further Action</TrackLimits>
-<Score et="1081.7">Bryn Nobbs(9) lap=8 point=1 t=24.505 et=1081.560</Score>
-<Incident et="1083.5">Bryn Nobbs(9) reported contact (472.47) with Immovable</Incident>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1084.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1085.0">No Further Action</TrackLimits>
-<Score et="1085.6">Marcio Lopes(4) lap=8 point=2 t=61.434 et=1085.500</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1086.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1093.9">No Further Action</TrackLimits>
-<Score et="1094.8">Vladislav Venok(6) lap=8 point=0 t=113.134 et=1094.680</Score>
-<Score et="1096.0">Damian Padding(15) lap=8 point=2 t=60.609 et=1095.940</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1096.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1101.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1102.2">No Further Action</TrackLimits>
-<Score et="1102.3">Olivier Tosi(11) lap=8 point=2 t=62.251 et=1102.240</Score>
-<Score et="1104.3">Chris Hammer(7) lap=8 point=2 t=64.505 et=1104.300</Score>
-<Score et="1104.6">Sir Pinkelpott(0) lap=8 point=2 t=63.576 et=1104.460</Score>
-<Score et="1105.2">Hans moises(17) lap=8 point=2 t=65.980 et=1105.040</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1105.7">No Further Action</TrackLimits>
-<Score et="1106.2">Jack Smith#8929(12) lap=8 point=2 t=63.155 et=1106.040</Score>
-<Score et="1107.1">Fiona Graessner(18) lap=7 point=0 t=121.182 et=1107.040</Score>
-<Score et="1109.3">Franz Hermann#5980(19) lap=8 point=2 t=73.367 et=1109.260</Score>
-<Score et="1110.6">Matisse Gabriel(16) lap=8 point=2 t=71.169 et=1110.480</Score>
-<Score et="1112.6">Niklas Weike(14) lap=8 point=0 t=122.857 et=1112.580</Score>
-<Score et="1113.1">donatien suel(2) lap=9 point=0 t=107.083 et=1113.000</Score>
-<Score et="1113.1">P-A Fugeekies(3) lap=8 point=2 t=61.817 et=1113.058</Score>
-<Score et="1113.7">Daniel Fredriksen(5) lap=9 point=0 t=106.904 et=1113.700</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="8" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1114.0">Warning</TrackLimits>
-<Score et="1116.1">Antho Rigg(1) lap=9 point=0 t=106.797 et=1116.000</Score>
-<Score et="1119.0">Vladislav Venok(6) lap=8 point=1 t=-1.000 et=1118.980</Score>
-<Incident et="1120.4">Niklas Weike(14) reported contact (128.77) with another vehicle donatien suel(2)</Incident>
-<Incident et="1120.4">donatien suel(2) reported contact (96.23) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="1120.5">Niklas Weike(14) reported contact (324.25) with another vehicle donatien suel(2)</Incident>
-<TrackLimits Driver="donatien suel" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1123.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1124.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1126.2">No Further Action</TrackLimits>
-<Score et="1130.4">Fiona Graessner(18) lap=7 point=1 t=23.260 et=1130.300</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1132.2">No Further Action</TrackLimits>
-<Score et="1132.3">Marcio Lopes(4) lap=9 point=0 t=108.131 et=1132.200</Score>
-<Score et="1133.9">Bryn Nobbs(9) lap=8 point=2 t=76.822 et=1133.880</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1135.3">No Further Action</TrackLimits>
-<Score et="1136.1">donatien suel(2) lap=9 point=1 t=-1.000 et=1136.060</Score>
-<Score et="1136.8">Niklas Weike(14) lap=8 point=1 t=24.135 et=1136.720</Score>
-<Score et="1137.0">Daniel Fredriksen(5) lap=9 point=1 t=23.279 et=1136.980</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1137.7">No Further Action</TrackLimits>
-<Score et="1139.1">Antho Rigg(1) lap=9 point=1 t=22.970 et=1138.960</Score>
-<Score et="1141.8">Damian Padding(15) lap=9 point=0 t=106.391 et=1141.740</Score>
-<Incident et="1144.3">Niklas Weike(14) reported contact (1449.83) with another vehicle Daniel Fredriksen(5)</Incident>
-<Incident et="1144.4">Daniel Fredriksen(5) reported contact (1466.36) with another vehicle Niklas Weike(14)</Incident>
-<Sector et="1146.0">donatien suel(2) reports new suspension damage</Sector>
-<Incident et="1146.0">Niklas Weike(14) reported contact (2298.45) with another vehicle donatien suel(2)</Incident>
-<Incident et="1146.0">donatien suel(2) reported contact (2242.61) with another vehicle Niklas Weike(14)</Incident>
-<Score et="1148.7">Olivier Tosi(11) lap=9 point=0 t=108.636 et=1148.620</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1149.4">No Further Action</TrackLimits>
-<Score et="1150.6">Chris Hammer(7) lap=9 point=0 t=110.758 et=1150.540</Score>
-<Score et="1150.8">Sir Pinkelpott(0) lap=9 point=0 t=109.866 et=1150.760</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1151.9">No Further Action</TrackLimits>
-<Score et="1152.5">Hans moises(17) lap=9 point=0 t=113.303 et=1152.360</Score>
-<Score et="1152.9">Jack Smith#8929(12) lap=9 point=0 t=109.958 et=1152.840</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1153.0">No Further Action</TrackLimits>
-<Score et="1155.0">Franz Hermann#5980(19) lap=9 point=0 t=119.065 et=1154.960</Score>
-<Score et="1155.1">Marcio Lopes(4) lap=9 point=1 t=22.776 et=1154.980</Score>
-<Score et="1156.5">Matisse Gabriel(16) lap=9 point=0 t=117.140 et=1156.460</Score>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1159.1">No Further Action</TrackLimits>
-<Score et="1159.2">P-A Fugeekies(3) lap=9 point=0 t=107.911 et=1159.152</Score>
-<TrackLimits Driver="Chris Hammer" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1160.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1161.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1163.2">No Further Action</TrackLimits>
-<Score et="1163.9">Vladislav Venok(6) lap=8 point=2 t=-1.000 et=1163.780</Score>
-<Score et="1164.0">Damian Padding(15) lap=9 point=1 t=22.282 et=1164.020</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1167.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1167.9">No Further Action</TrackLimits>
-<Score et="1169.5">Fiona Graessner(18) lap=7 point=2 t=62.414 et=1169.460</Score>
-<Score et="1171.7">Olivier Tosi(11) lap=9 point=1 t=22.991 et=1171.620</Score>
-<Score et="1173.8">Chris Hammer(7) lap=9 point=1 t=23.227 et=1173.780</Score>
-<Score et="1174.5">Sir Pinkelpott(0) lap=9 point=1 t=23.718 et=1174.460</Score>
-<Score et="1175.6">Daniel Fredriksen(5) lap=9 point=2 t=61.831 et=1175.540</Score>
-<Score et="1175.7">Hans moises(17) lap=9 point=1 t=23.229 et=1175.580</Score>
-<Incident et="1177.3">Franz Hermann#5980(19) reported contact (92.46) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="1177.4">Matisse Gabriel(16) reported contact (131.97) with another vehicle Franz Hermann#5980(19)</Incident>
-<Score et="1178.0">donatien suel(2) lap=9 point=2 t=64.899 et=1177.900</Score>
-<Score et="1178.6">Antho Rigg(1) lap=9 point=2 t=62.579 et=1178.580</Score>
-<Score et="1179.3">Franz Hermann#5980(19) lap=9 point=1 t=24.252 et=1179.200</Score>
-<Score et="1179.3">Matisse Gabriel(16) lap=9 point=1 t=22.827 et=1179.280</Score>
-<Score et="1180.5">Bryn Nobbs(9) lap=9 point=0 t=123.360 et=1180.420</Score>
-<Score et="1182.2">P-A Fugeekies(3) lap=9 point=1 t=23.066 et=1182.217</Score>
-<Score et="1186.1">Jack Smith#8929(12) lap=9 point=1 t=33.151 et=1186.000</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1188.9">No Further Action</TrackLimits>
-<Incident et="1188.9">Franz Hermann#5980(19) reported contact (86.96) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="1188.9">Matisse Gabriel(16) reported contact (56.96) with another vehicle Franz Hermann#5980(19)</Incident>
-<TrackLimits Driver="Hans moises" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1190.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1191.9">No Further Action</TrackLimits>
-<Sector et="1192.1">Franz Hermann#5980(19) reports new suspension damage</Sector>
-<Incident et="1192.2">Franz Hermann#5980(19) reported contact (588.66) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="1192.2">Matisse Gabriel(16) reported contact (586.18) with another vehicle Franz Hermann#5980(19)</Incident>
-<Score et="1193.5">Marcio Lopes(4) lap=9 point=2 t=61.211 et=1193.420</Score>
-<Score et="1199.5">Niklas Weike(14) lap=8 point=2 t=86.889 et=1199.460</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="8" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="1201.0">Warning</TrackLimits>
-<Score et="1202.0">Damian Padding(15) lap=9 point=2 t=60.192 et=1201.920</Score>
-<Score et="1203.9">Bryn Nobbs(9) lap=9 point=1 t=23.391 et=1203.820</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1208.3">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1210.1">No Further Action</TrackLimits>
-<Score et="1210.6">Olivier Tosi(11) lap=9 point=2 t=61.895 et=1210.520</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="9" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1211.6">No Further Action</TrackLimits>
-<Score et="1213.1">Vladislav Venok(6) lap=9 point=0 t=-1.000 et=1213.020</Score>
-<Score et="1213.3">Sir Pinkelpott(0) lap=9 point=2 t=62.310 et=1213.060</Score>
-<Score et="1215.2">Fiona Graessner(18) lap=8 point=0 t=108.043 et=1215.080</Score>
-<Score et="1215.4">Hans moises(17) lap=9 point=2 t=62.785 et=1215.140</Score>
-<Score et="1218.6">Franz Hermann#5980(19) lap=9 point=2 t=63.557 et=1218.520</Score>
-<Score et="1219.4">Matisse Gabriel(16) lap=9 point=2 t=62.918 et=1219.380</Score>
-<Score et="1221.3">P-A Fugeekies(3) lap=9 point=2 t=62.160 et=1221.312</Score>
-<Score et="1221.7">Daniel Fredriksen(5) lap=10 point=0 t=107.904 et=1221.620</Score>
-<Score et="1223.8">donatien suel(2) lap=10 point=0 t=110.736 et=1223.740</Score>
-<Score et="1224.6">Antho Rigg(1) lap=10 point=0 t=108.477 et=1224.480</Score>
-<Score et="1225.2">Jack Smith#8929(12) lap=9 point=2 t=72.238 et=1225.080</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1231.7">No Further Action</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1233.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1234.7">No Further Action</TrackLimits>
-<Score et="1236.6">Vladislav Venok(6) lap=9 point=1 t=23.489 et=1236.520</Score>
-<Score et="1237.7">Philipp Roth(8) lap=8 point=0 t=270.848 et=1237.620</Score>
-<Score et="1238.0">Fiona Graessner(18) lap=8 point=1 t=22.842 et=1237.920</Score>
-<Score et="1240.0">Marcio Lopes(4) lap=10 point=0 t=107.681 et=1239.880</Score>
-<Score et="1243.5">Bryn Nobbs(9) lap=9 point=2 t=63.033 et=1243.460</Score>
-<Score et="1244.3">Daniel Fredriksen(5) lap=10 point=1 t=-1.000 et=1244.160</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1245.9">No Further Action</TrackLimits>
-<Score et="1246.5">donatien suel(2) lap=10 point=1 t=-1.000 et=1246.420</Score>
-<Score et="1247.3">Antho Rigg(1) lap=10 point=1 t=22.748 et=1247.220</Score>
-<Score et="1247.7">Niklas Weike(14) lap=9 point=0 t=135.016 et=1247.600</Score>
-<Score et="1247.9">Damian Padding(15) lap=10 point=0 t=106.093 et=1247.820</Score>
-<TrackLimits Driver="donatien suel" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1247.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1251.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1253.3">No Further Action</TrackLimits>
-<Incident et="1253.8">Damian Padding(15) reported contact (411.84) with another vehicle Niklas Weike(14)</Incident>
-<Incident et="1253.8">Niklas Weike(14) reported contact (492.53) with another vehicle Damian Padding(15)</Incident>
-<Score et="1257.0">Olivier Tosi(11) lap=10 point=0 t=108.254 et=1256.880</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1258.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1258.9">No Further Action</TrackLimits>
-<Score et="1259.6">Sir Pinkelpott(0) lap=10 point=0 t=108.781 et=1259.540</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1259.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="9" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1262.3">No Further Action</TrackLimits>
-<Score et="1262.6">Marcio Lopes(4) lap=10 point=1 t=22.700 et=1262.580</Score>
-<Score et="1262.8">Hans moises(17) lap=10 point=0 t=110.126 et=1262.480</Score>
-<Score et="1265.2">Franz Hermann#5980(19) lap=10 point=0 t=110.212 et=1265.160</Score>
-<Score et="1266.5">Matisse Gabriel(16) lap=10 point=0 t=109.941 et=1266.400</Score>
-<TrackLimits Driver="Olivier Tosi" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.3">No Further Action</TrackLimits>
-<Score et="1267.8">P-A Fugeekies(3) lap=10 point=0 t=108.605 et=1267.757</Score>
-<Score et="1272.2">Damian Padding(15) lap=10 point=1 t=24.291 et=1272.120</Score>
-<Score et="1272.4">Jack Smith#8929(12) lap=10 point=0 t=119.505 et=1272.360</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1272.8">No Further Action</TrackLimits>
-<Score et="1273.1">Niklas Weike(14) lap=9 point=1 t=25.366 et=1272.960</Score>
-<Score et="1274.7">Philipp Roth(8) lap=8 point=1 t=37.023 et=1274.640</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="10" WarningPoints="0.5" CurrentPoints="1.75" Resolution="2" et="1277.4">Warning</TrackLimits>
-<Score et="1277.6">Vladislav Venok(6) lap=9 point=2 t=64.477 et=1277.500</Score>
-<Score et="1277.7">Fiona Graessner(18) lap=8 point=2 t=62.509 et=1277.600</Score>
-<Score et="1280.3">Olivier Tosi(11) lap=10 point=1 t=23.321 et=1280.200</Score>
-<Score et="1282.1">Daniel Fredriksen(5) lap=10 point=2 t=60.387 et=1282.000</Score>
-<Score et="1282.4">Sir Pinkelpott(0) lap=10 point=1 t=22.763 et=1282.300</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="10" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1284.6">No Further Action</TrackLimits>
-<Score et="1284.7">donatien suel(2) lap=10 point=2 t=60.901 et=1284.640</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1284.8">No Further Action</TrackLimits>
-<Score et="1285.5">Antho Rigg(1) lap=10 point=2 t=60.957 et=1285.420</Score>
-<Score et="1286.3">Hans moises(17) lap=10 point=1 t=23.560 et=1286.040</Score>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1286.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Hans moises" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1288.1">No Further Action</TrackLimits>
-<Score et="1288.7">Franz Hermann#5980(19) lap=10 point=1 t=-1.000 et=1288.620</Score>
-<Score et="1290.1">Matisse Gabriel(16) lap=10 point=1 t=23.597 et=1290.000</Score>
-<Score et="1290.5">P-A Fugeekies(3) lap=10 point=1 t=22.732 et=1290.489</Score>
-<Score et="1295.8">Jack Smith#8929(12) lap=10 point=1 t=23.443 et=1295.800</Score>
-<Score et="1300.9">Bryn Nobbs(9) lap=10 point=0 t=120.441 et=1300.860</Score>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1303.2">No Further Action</TrackLimits>
-<Score et="1303.7">Marcio Lopes(4) lap=10 point=2 t=63.751 et=1303.640</Score>
-<Score et="1310.1">Damian Padding(15) lap=10 point=2 t=62.232 et=1310.060</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1311.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1311.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="9" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="1312.6">Warning</TrackLimits>
-<Score et="1313.5">Niklas Weike(14) lap=9 point=2 t=65.852 et=1313.440</Score>
-<Score et="1314.0">Philipp Roth(8) lap=8 point=2 t=76.322 et=1313.940</Score>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1317.2">No Further Action</TrackLimits>
-<Score et="1319.0">Olivier Tosi(11) lap=10 point=2 t=62.048 et=1318.920</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1320.2">No Further Action</TrackLimits>
-<Score et="1320.8">Sir Pinkelpott(0) lap=10 point=2 t=61.140 et=1320.680</Score>
-<Score et="1324.2">Fiona Graessner(18) lap=9 point=0 t=109.093 et=1324.180</Score>
-<Score et="1324.6">Bryn Nobbs(9) lap=10 point=1 t=23.667 et=1324.540</Score>
-<Score et="1325.7">Hans moises(17) lap=10 point=2 t=62.953 et=1325.440</Score>
-<Score et="1325.8">Vladislav Venok(6) lap=10 point=0 t=-1.000 et=1325.680</Score>
-<Score et="1327.8">Franz Hermann#5980(19) lap=10 point=2 t=-1.000 et=1327.740</Score>
-<Score et="1328.3">Daniel Fredriksen(5) lap=11 point=0 t=106.696 et=1328.300</Score>
-<Score et="1329.4">Matisse Gabriel(16) lap=10 point=2 t=62.937 et=1329.340</Score>
-<Score et="1329.5">P-A Fugeekies(3) lap=10 point=2 t=61.763 et=1329.521</Score>
-<Score et="1330.9">donatien suel(2) lap=11 point=0 t=107.123 et=1330.860</Score>
-<Score et="1331.3">Antho Rigg(1) lap=11 point=0 t=106.716 et=1331.180</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="1334.5">No Further Action</TrackLimits>
-<Score et="1335.5">Jack Smith#8929(12) lap=10 point=2 t=63.090 et=1335.440</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1336.5">No Further Action</TrackLimits>
-<TrackLimits Driver="donatien suel" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1341.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1342.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1343.7">No Further Action</TrackLimits>
-<Score et="1347.9">Fiona Graessner(18) lap=9 point=1 t=23.649 et=1347.820</Score>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1348.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1348.4">No Further Action</TrackLimits>
-<Score et="1349.7">Vladislav Venok(6) lap=10 point=1 t=23.968 et=1349.640</Score>
-<Score et="1350.0">Marcio Lopes(4) lap=11 point=0 t=110.019 et=1349.900</Score>
-<Score et="1350.7">Daniel Fredriksen(5) lap=11 point=1 t=-1.000 et=1350.640</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1350.9">No Further Action</TrackLimits>
-<Score et="1354.0">donatien suel(2) lap=11 point=1 t=23.094 et=1353.960</Score>
-<TrackLimits Driver="Daniel Fredriksen" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1354.2">No Further Action</TrackLimits>
-<Score et="1354.5">Antho Rigg(1) lap=11 point=1 t=-1.000 et=1354.480</Score>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1355.7">No Further Action</TrackLimits>
-<Score et="1355.9">Damian Padding(15) lap=11 point=0 t=107.961 et=1355.780</Score>
-<TrackLimits Driver="Marcio Lopes" ID="4" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1360.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1361.6">No Further Action</TrackLimits>
-<Score et="1362.2">Philipp Roth(8) lap=9 point=0 t=124.517 et=1362.140</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1363.3">No Further Action</TrackLimits>
-<Score et="1364.6">Bryn Nobbs(9) lap=10 point=2 t=63.680 et=1364.540</Score>
-<Score et="1365.4">Olivier Tosi(11) lap=11 point=0 t=108.415 et=1365.300</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="10" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1366.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1366.4">No Further Action</TrackLimits>
-<Score et="1367.6">Sir Pinkelpott(0) lap=11 point=0 t=107.976 et=1367.500</Score>
-<TrackLimits Driver="Vladislav Venok" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1371.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1372.3">No Further Action</TrackLimits>
-<Score et="1372.7">Marcio Lopes(4) lap=11 point=1 t=22.673 et=1372.580</Score>
-<Score et="1373.4">Hans moises(17) lap=11 point=0 t=110.674 et=1373.160</Score>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1375.3">No Further Action</TrackLimits>
-<Score et="1375.6">Franz Hermann#5980(19) lap=11 point=0 t=-1.000 et=1375.520</Score>
-<Score et="1376.4">Matisse Gabriel(16) lap=11 point=0 t=109.949 et=1376.340</Score>
-<Score et="1376.5">P-A Fugeekies(3) lap=11 point=0 t=108.699 et=1376.456</Score>
-<Score et="1378.1">Damian Padding(15) lap=11 point=1 t=22.287 et=1378.080</Score>
-<TrackLimits Driver="Sir Pinkelpott" ID="0" Lap="11" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1378.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Antho Rigg" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1382.8">No Further Action</TrackLimits>
-<Score et="1383.8">Jack Smith#8929(12) lap=11 point=0 t=111.427 et=1383.780</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1384.1">No Further Action</TrackLimits>
-<Score et="1385.5">Philipp Roth(8) lap=9 point=1 t=23.317 et=1385.440</Score>
-<Score et="1386.1">Fiona Graessner(18) lap=9 point=2 t=61.917 et=1386.100</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1387.6">No Further Action</TrackLimits>
-<Score et="1388.6">Olivier Tosi(11) lap=11 point=1 t=23.267 et=1388.560</Score>
-<Score et="1388.9">Daniel Fredriksen(5) lap=11 point=2 t=60.548 et=1388.860</Score>
-<Score et="1390.6">Sir Pinkelpott(0) lap=11 point=1 t=23.060 et=1390.560</Score>
-<Score et="1392.6">donatien suel(2) lap=11 point=2 t=61.579 et=1392.440</Score>
-<Score et="1393.8">Antho Rigg(1) lap=11 point=2 t=62.527 et=1393.720</Score>
-<TrackLimits Driver="Jack Smith#8929" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1394.3">No Further Action</TrackLimits>
-<Score et="1394.6">Niklas Weike(14) lap=10 point=0 t=146.939 et=1394.540</Score>
-<Score et="1395.5">Vladislav Venok(6) lap=10 point=2 t=69.753 et=1395.440</Score>
-<Score et="1396.5">Hans moises(17) lap=11 point=1 t=-1.000 et=1396.320</Score>
-<Score et="1398.9">Franz Hermann#5980(19) lap=11 point=1 t=23.360 et=1398.880</Score>
-<TrackLimits Driver="Hans moises" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1400.0">No Further Action</TrackLimits>
-<Score et="1400.1">Matisse Gabriel(16) lap=11 point=1 t=23.634 et=1399.980</Score>
-<Score et="1400.7">P-A Fugeekies(3) lap=11 point=1 t=24.221 et=1400.677</Score>
-<Score et="1407.4">Jack Smith#8929(12) lap=11 point=1 t=23.536 et=1407.320</Score>
-<Score et="1410.8">Marcio Lopes(4) lap=11 point=2 t=60.840 et=1410.740</Score>
-<Score et="1411.8">Bryn Nobbs(9) lap=11 point=0 t=110.824 et=1411.680</Score>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1413.2">No Further Action</TrackLimits>
-<Sector Driver="Damian Padding" ID="15" Sector="2" Class="GTE" et="1415.8">Damian Padding(15) set new best for sector 2</Sector>
-<Score et="1415.9">Damian Padding(15) lap=11 point=2 t=60.031 et=1415.820</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1416.4">No Further Action</TrackLimits>
-<Score et="1417.6">Niklas Weike(14) lap=10 point=1 t=-1.000 et=1417.500</Score>
-<TrackLimits Driver="Philipp Roth" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1422.0">No Further Action</TrackLimits>
-<Score et="1424.6">Philipp Roth(8) lap=9 point=2 t=62.363 et=1424.500</Score>
-<Score et="1427.5">Olivier Tosi(11) lap=11 point=2 t=62.172 et=1427.460</Score>
-<Score et="1428.9">Sir Pinkelpott(0) lap=11 point=2 t=61.355 et=1428.860</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1429.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="1429.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Niklas Weike" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1432.1">No Further Action</TrackLimits>
-<Score et="1432.6">Fiona Graessner(18) lap=10 point=0 t=108.383 et=1432.560</Score>
-<Score et="1434.9">Bryn Nobbs(9) lap=11 point=1 t=23.168 et=1434.860</Score>
-<Score et="1435.3">Checkered for Daniel Fredriksen, laps=12/2147483647, endET=1435.280029/1342.882568, crossedAfterTime=0</Score>
-<Score et="1435.3">Daniel Fredriksen(5) lap=12 point=0 t=106.978 et=1435.280</Score>
-<Score et="1435.8">Hans moises(17) lap=11 point=2 t=62.489 et=1435.640</Score>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1436.1">No Further Action</TrackLimits>
-<Score et="1438.6">donatien suel(2) lap=12 point=0 t=107.685 et=1438.540</Score>
-<Score et="1438.8">Franz Hermann#5980(19) lap=11 point=2 t=63.175 et=1438.700</Score>
-<Score et="1438.9">Matisse Gabriel(16) lap=11 point=2 t=62.493 et=1438.840</Score>
-<Score et="1439.6">Antho Rigg(1) lap=12 point=0 t=108.365 et=1439.560</Score>
-<Score et="1440.1">P-A Fugeekies(3) lap=11 point=2 t=63.657 et=1440.113</Score>
-<Score et="1443.7">Vladislav Venok(6) lap=11 point=0 t=117.929 et=1443.600</Score>
-<Sector et="1445.9">Matisse Gabriel(16) reports new suspension damage</Sector>
-<Incident et="1445.9">Franz Hermann#5980(19) reported contact (200.26) with another vehicle Matisse Gabriel(16)</Incident>
-<Incident et="1446.0">Matisse Gabriel(16) reported contact (103.88) with another vehicle Franz Hermann#5980(19)</Incident>
-<Score et="1446.3">Jack Smith#8929(12) lap=11 point=2 t=62.388 et=1446.160</Score>
-<Incident et="1449.5">Matisse Gabriel(16) reported contact (1039.55) with Immovable</Incident>
-<TrackLimits Driver="Damian Padding" ID="15" Lap="11" WarningPoints="0.75" CurrentPoints="1.25" Resolution="2" et="1452.6">Warning</TrackLimits>
-<ChatMessage et="1453.0">A Rigg: gg</ChatMessage>
-<Score et="1456.0">Fiona Graessner(18) lap=10 point=1 t=23.424 et=1455.980</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="11" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1456.3">No Further Action</TrackLimits>
-<Score et="1456.9">Marcio Lopes(4) lap=12 point=0 t=106.848 et=1456.760</Score>
-<Score et="1458.3">Niklas Weike(14) lap=10 point=2 t=63.644 et=1458.180</Score>
-<Score et="1462.4">Damian Padding(15) lap=12 point=0 t=-1.000 et=1462.360</Score>
-<TrackLimits Driver="Matisse Gabriel" ID="16" Lap="11" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1465.8">No Further Action</TrackLimits>
-<ChatMessage et="1467.7">O Tosi: G</ChatMessage>
-<ChatMessage et="1469.6">A Rigg: suel sorry for the dive </ChatMessage>
-<Score et="1471.8">Philipp Roth(8) lap=10 point=0 t=109.621 et=1471.760</Score>
-<ChatMessage et="1472.2">O Tosi: GGµ</ChatMessage>
-<Score et="1473.9">Bryn Nobbs(9) lap=11 point=2 t=62.204 et=1473.900</Score>
-<Score et="1474.3">Olivier Tosi(11) lap=12 point=0 t=108.942 et=1474.240</Score>
-<Score et="1475.3">Sir Pinkelpott(0) lap=12 point=0 t=107.757 et=1475.260</Score>
-<TrackLimits Driver="Franz Hermann#5980" ID="19" Lap="11" WarningPoints="0.5" CurrentPoints="2.25" Resolution="2" et="1477.0">Warning</TrackLimits>
-<Score et="1483.3">Hans moises(17) lap=12 point=0 t=109.926 et=1483.080</Score>
-<Score et="1486.1">Franz Hermann#5980(19) lap=12 point=0 t=-1.000 et=1486.100</Score>
-<Score et="1486.3">P-A Fugeekies(3) lap=12 point=0 t=109.845 et=1486.302</Score>
-<ChatMessage et="1491.9">M Gabriel: herman wtf</ChatMessage>
-<Incident et="1492.8">Franz Hermann#5980(19) reported contact (83.88) with Immovable</Incident>
-<Score et="1493.2">Jack Smith#8929(12) lap=12 point=0 t=109.256 et=1493.040</Score>
-<ChatMessage et="1493.4">M Lopes: sorry tosy im a idiot sorry</ChatMessage>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1494.0">No Further Action</TrackLimits>
-<Score et="1495.0">Fiona Graessner(18) lap=10 point=2 t=62.332 et=1494.900</Score>
-<Sector et="1495.4">Franz Hermann#5980(19) reports new suspension damage</Sector>
-<Sector et="1495.4">Franz Hermann#5980(19) reports new engine damage</Sector>
-<Incident et="1495.5">Franz Hermann#5980(19) reported contact (1861.01) with Immovable</Incident>
-<Score et="1502.5">Matisse Gabriel(16) lap=12 point=0 t=126.071 et=1502.420</Score>
-<ChatMessage et="1502.7">d suel: np rig </ChatMessage>
-<ChatMessage et="1503.0">H moises: gg</ChatMessage>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1503.2">No Further Action</TrackLimits>
-<Sector et="1505.4">Niklas Weike(14) reports new suspension damage</Sector>
-<Incident et="1505.5">Niklas Weike(14) reported contact (1063.39) with Immovable</Incident>
-<Incident et="1505.6">Niklas Weike(14) reported contact (2212.98) with Immovable</Incident>
-<Sector et="1505.6">Niklas Weike(14) reports new suspension damage</Sector>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1506.8">No Further Action</TrackLimits>
-<ChatMessage et="1507.9">D Padding: gg</ChatMessage>
-<Score et="1508.7">Niklas Weike(14) lap=11 point=0 t=114.106 et=1508.640</Score>
-<Incident et="1510.0">Niklas Weike(14) reported contact (1672.74) with Immovable</Incident>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1514.3">No Further Action</TrackLimits>
-<Incident et="1517.3">Niklas Weike(14) reported contact (12.45) with Immovable</Incident>
-<Incident et="1518.1">Niklas Weike(14) reported contact (8.24) with Immovable</Incident>
-<Incident et="1519.8">Niklas Weike(14) reported contact (5.12) with Immovable</Incident>
-<Incident et="1521.4">Niklas Weike(14) reported contact (3.35) with Immovable</Incident>
-<Incident et="1522.8">Niklas Weike(14) reported contact (2.60) with Immovable</Incident>
-<Incident et="1524.3">Niklas Weike(14) reported contact (1.89) with Immovable</Incident>
-<Incident et="1525.3">Niklas Weike(14) reported contact (1.84) with Immovable</Incident>
-<Incident et="1526.3">Niklas Weike(14) reported contact (1.81) with Immovable</Incident>
-<Incident et="1527.3">Niklas Weike(14) reported contact (1.92) with Immovable</Incident>
-<TrackLimits Driver="Bryn Nobbs" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1528.2">No Further Action</TrackLimits>
-<Incident et="1528.3">Niklas Weike(14) reported contact (1.88) with Immovable</Incident>
-<Incident et="1529.3">Niklas Weike(14) reported contact (1.81) with Immovable</Incident>
-<Incident et="1530.2">Niklas Weike(14) reported contact (2.15) with Immovable</Incident>
-<Incident et="1531.2">Niklas Weike(14) reported contact (2.07) with Immovable</Incident>
-<ChatMessage et="1532.1">O Tosi: its okay lopez </ChatMessage>
-<Incident et="1532.1">Niklas Weike(14) reported contact (2.11) with Immovable</Incident>
-<Incident et="1533.2">Niklas Weike(14) reported contact (2.15) with Immovable</Incident>
-<Incident et="1534.2">Niklas Weike(14) reported contact (2.01) with Immovable</Incident>
-<Score et="1534.8">Bryn Nobbs(9) lap=12 point=0 t=123.069 et=1534.760</Score>
-<Incident et="1535.2">Niklas Weike(14) reported contact (2.04) with Immovable</Incident>
-<Incident et="1536.2">Niklas Weike(14) reported contact (2.14) with Immovable</Incident>
-<TrackLimits Driver="Fiona Graessner" ID="18" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1536.8">No Further Action</TrackLimits>
-<Incident et="1537.4">Niklas Weike(14) reported contact (1.94) with Immovable</Incident>
-<Incident et="1538.4">Niklas Weike(14) reported contact (1.86) with Immovable</Incident>
-<ChatMessage et="1541.6">O Tosi: next time be carful dude</ChatMessage>
-<Score et="1542.8">Fiona Graessner(18) lap=11 point=0 t=110.193 et=1542.760</Score>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="173.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="181.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="187.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="214.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="215.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="218.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="254.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="254.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="0" WarningPoints="0.75" CurrentPoints="0.75" Resolution="2" et="264.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="267.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="269.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="271.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="272.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="272.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="275.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="276.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="278.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="279.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="280.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="280.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="283.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="288.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="292.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="294.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="307.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="308.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="309.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="311.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="311.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="318.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="338.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="340.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="351.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="353.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="359.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="366.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="379.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="382.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="383.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="383.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="383.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="385.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="387.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="387.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="389.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="391.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="392.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="392.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="394.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="408.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="416.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="417.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="421.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="422.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="428.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="433.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="433.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="446.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="466.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="2" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="477.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="483.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="484.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="484.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="494.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="495.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="495.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="496.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="497.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="498.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="499.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="503.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="506.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="506.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="510.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="516.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="524.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="525.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="530.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="537.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="538.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="539.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="541.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="549.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="555.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="559.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="559.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="560.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="573.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="577.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="580.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="3" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="585.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="587.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="587.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="590.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="592.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="594.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="3" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="595.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="3" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="596.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="599.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="604.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="607.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="608.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="609.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="609.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="4" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="611.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="624.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="625.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="627.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="637.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="638.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="644.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="645.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="648.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="650.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="655.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="669.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="681.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="681.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="683.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="4" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="688.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="4" WarningPoints="0" CurrentPoints="1" Resolution="5" et="692.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="4" WarningPoints="0.5" CurrentPoints="0.75" Resolution="2" et="693.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="4" WarningPoints="1" CurrentPoints="2" Resolution="2" et="698.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="5" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="699.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="4" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="703.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="4" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="703.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="711.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="713.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3405" ID="10" Lap="5" WarningPoints="0.25" CurrentPoints="2.25" Resolution="2" et="713.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="717.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="718.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="5" et="718.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="721.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="722.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="725.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="5" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="727.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="732.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="732.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="738.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="744.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="5" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="746.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="747.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="749.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="751.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="754.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="755.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="758.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="761.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="769.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="772.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="776.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="781.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="789.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="791.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="792.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="798.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="799.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="802.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="5" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="802.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="802.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="5" WarningPoints="0.5" CurrentPoints="0.75" Resolution="2" et="803.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="804.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="5" WarningPoints="0.5" CurrentPoints="1.75" Resolution="2" et="806.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="809.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="814.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="814.4">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="5" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="817.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="818.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="821.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="826.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="828.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="832.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="832.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="833.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="834.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="838.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="839.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="842.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="859.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="861.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="862.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="867.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="868.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="869.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="872.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="6" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="885.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="890.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="894.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="905.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="906.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="910.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="911.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="7" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="911.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="912.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="914.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="922.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="923.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="926.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="929.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="933.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="7" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="939.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="939.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="940.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="943.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="943.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="952.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="7" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="955.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="958.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="959.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="959.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="963.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="968.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="973.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="976.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="977.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="993.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="7" WarningPoints="0.25" CurrentPoints="1" Resolution="2" et="996.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1000.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="7" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1007.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1016.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1024.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="7" WarningPoints="0.5" CurrentPoints="1.25" Resolution="2" et="1026.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1028.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1029.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="7" WarningPoints="0.5" CurrentPoints="2.25" Resolution="2" et="1030.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1031.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1042.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1053.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1055.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1064.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="8" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1066.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1069.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1070.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1076.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1076.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1076.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1084.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1085.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1086.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1093.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1096.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1101.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1102.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1105.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="8" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1114.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1123.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1124.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1126.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1132.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="8" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1135.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1137.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="9" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1149.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1151.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1153.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1159.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3115" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1160.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1161.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1163.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1167.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1167.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1188.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1190.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1191.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="8" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="1201.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1208.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="9" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1210.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="9" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1211.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1231.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1233.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1234.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1245.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1247.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1251.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1253.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1258.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1258.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1259.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="9" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1262.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4329" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="9" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1272.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="10" WarningPoints="0.5" CurrentPoints="1.75" Resolution="2" et="1277.4">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="10" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1284.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1284.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1286.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1288.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1303.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1311.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1311.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="9" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="1312.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1317.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1320.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="10" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="1334.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1336.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3281" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1341.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1342.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1343.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1348.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1348.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1350.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3192" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1354.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1355.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4061" ID="4" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1360.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1361.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1363.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="10" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1366.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1366.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4848" ID="6" Lap="10" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1371.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1372.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1375.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4644" ID="0" Lap="11" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1378.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2943" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1382.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1384.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1387.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3638" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1394.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3544" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1400.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1413.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1416.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4424" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1422.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="3" Lap="11" WarningPoints="0" CurrentPoints="1.5" Resolution="5" et="1429.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="5" et="1429.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4296" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1432.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1436.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3178" ID="15" Lap="11" WarningPoints="0.75" CurrentPoints="1.25" Resolution="2" et="1452.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="11" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1456.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4131" ID="16" Lap="11" WarningPoints="0" CurrentPoints="2.25" Resolution="5" et="1465.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3446" ID="19" Lap="11" WarningPoints="0.5" CurrentPoints="2.25" Resolution="2" et="1477.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1494.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1503.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1506.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1514.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3064" ID="9" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="5" et="1528.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3409" ID="18" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1536.8">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>12</MostLapsCompleted>

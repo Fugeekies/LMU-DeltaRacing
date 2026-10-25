@@ -36,1003 +36,294 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Penalty et="127.7">Matthew Fernandez received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty et="127.7">Mat Django received Drive Thru penalty, 0s, 0laps for &quot;Out of position&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="144.3">Maj Perne(17) reported contact (1012.85) with another vehicle nino komplet(19)</Incident>
-<Incident et="144.3">nino komplet(19) reported contact (1053.06) with another vehicle Maj Perne(17)</Incident>
-<Incident et="146.4">P-A Fugeekies(6) reported contact (9.82) with Post</Incident>
-<Incident et="147.1">Benno Spahgetto(18) reported contact (213.74) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="147.1">Victor Lightside(5) reported contact (340.44) with another vehicle Benno Spahgetto(18)</Incident>
-<Incident et="147.3">Jonathan scheibner(12) reported contact (104.09) with another vehicle Maj Perne(17)</Incident>
-<Incident et="147.3">Maj Perne(17) reported contact (138.78) with another vehicle Jonathan scheibner(12)</Incident>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.3">No Further Action</TrackLimits>
-<TrackLimits Driver="nino komplet" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.5">No Further Action</TrackLimits>
-<Incident et="148.6">Alex Koenig#9938(16) reported contact (839.29) with another vehicle Matthew Fernandez(8)</Incident>
-<Incident et="148.6">Matthew Fernandez(8) reported contact (889.75) with another vehicle Alex Koenig#9938(16)</Incident>
-<Incident et="149.5">Victor Lightside(5) reported contact (333.88) with another vehicle Benno Spahgetto(18)</Incident>
-<Incident et="149.5">Benno Spahgetto(18) reported contact (164.41) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="149.5">Tymon Kniazuk(14) reported contact (378.77) with another vehicle Kylian Mbacle(4)</Incident>
-<Incident et="149.5">Kylian Mbacle(4) reported contact (435.48) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="149.8">andrea costanzo#1020(3) reported contact (48.59) with another vehicle nino komplet(19)</Incident>
-<Incident et="149.8">nino komplet(19) reported contact (54.06) with another vehicle andrea costanzo#1020(3)</Incident>
-<Incident et="150.0">Sinka Balint(1) reported contact (42.35) with Post</Incident>
-<Incident et="150.0">Sinka Balint(1) reported contact (41.90) with Post</Incident>
-<Incident et="150.0">P-A Fugeekies(6) reported contact (388.88) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="150.1">Tymon Kniazuk(14) reported contact (381.91) with another vehicle P-A Fugeekies(6)</Incident>
-<TrackLimits Driver="Sinka Balint" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.5">No Further Action</TrackLimits>
-<Incident et="150.5">Timo Kauz(9) reported contact (266.84) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="150.5">Manoa Peters(11) reported contact (226.46) with another vehicle Timo Kauz(9)</Incident>
-<Incident et="150.6">Timo Kauz(9) reported contact (1334.15) with another vehicle Robin Kook(15)</Incident>
-<Incident et="150.6">Robin Kook(15) reported contact (970.48) with another vehicle Timo Kauz(9)</Incident>
-<Sector et="150.7">Robin Kook(15) reports new suspension damage</Sector>
-<Sector et="150.7">Timo Kauz(9) reports new suspension damage</Sector>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.8">No Further Action</TrackLimits>
-<Incident et="151.1">Jonathan scheibner(12) reported contact (853.18) with another vehicle Robin Kook(15)</Incident>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.1">No Further Action</TrackLimits>
-<Incident et="151.2">Robin Kook(15) reported contact (791.75) with another vehicle Jonathan scheibner(12)</Incident>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.2">No Further Action</TrackLimits>
-<Incident et="151.2">andrea costanzo#1020(3) reported contact (20.67) with Post</Incident>
-<Sector et="151.4">Manoa Peters(11) reports new suspension damage</Sector>
-<Incident et="151.4">Manoa Peters(11) reported contact (279.17) with another vehicle Tymon Kniazuk(14)</Incident>
-<Sector et="151.4">Manoa Peters(11) reports new suspension damage</Sector>
-<Incident et="151.4">Tymon Kniazuk(14) reported contact (322.41) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="151.6">Timo Kauz(9) reported contact (1042.73) with another vehicle Jonathan scheibner(12)</Incident>
-<Incident et="151.6">Jonathan scheibner(12) reported contact (1060.64) with another vehicle Timo Kauz(9)</Incident>
-<TrackLimits Driver="Robin Kook" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.7">No Further Action</TrackLimits>
-<Incident et="152.0">Timo Kauz(9) reported contact (327.18) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="152.0">Timo Kauz(9) reported contact (1164.49) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="152.0">Manoa Peters(11) reported contact (245.26) with another vehicle Timo Kauz(9)</Incident>
-<Incident et="152.0">Kylian Mbacle(4) reported contact (19.38) with Post</Incident>
-<Sector et="152.1">Jonathan scheibner(12) reports new suspension damage</Sector>
-<Incident et="152.2">Jonathan scheibner(12) reported contact (898.51) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="152.2">Manoa Peters(11) reported contact (954.06) with another vehicle Jonathan scheibner(12)</Incident>
-<Incident et="152.4">Manoa Peters(11) reported contact (605.21) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="152.4">Tymon Kniazuk(14) reported contact (636.98) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="154.1">Jonathan scheibner(12) reported contact (971.68) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="154.1">Tymon Kniazuk(14) reported contact (985.08) with another vehicle Jonathan scheibner(12)</Incident>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="154.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="154.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Mat Django" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="156.4">No Further Action</TrackLimits>
-<Incident et="156.8">Mat Django(10) reported contact (130.32) with another vehicle Robert Gemeniuc(0)</Incident>
-<Incident et="156.8">Robert Gemeniuc(0) reported contact (129.52) with another vehicle Mat Django(10)</Incident>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="157.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="161.4">No Further Action</TrackLimits>
-<Incident et="164.8">nino komplet(19) reported contact (12.18) with Post</Incident>
-<Incident et="164.8">nino komplet(19) reported contact (11.33) with Post</Incident>
-<Incident et="166.0">andrea costanzo#1020(3) reported contact (48.45) with another vehicle nino komplet(19)</Incident>
-<Incident et="166.0">nino komplet(19) reported contact (81.01) with another vehicle andrea costanzo#1020(3)</Incident>
-<TrackLimits Driver="nino komplet" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.1">No Further Action</TrackLimits>
-<Incident et="167.0">Maj Perne(17) reported contact (637.76) with another vehicle Alex Koenig#9938(16)</Incident>
-<Incident et="167.0">Alex Koenig#9938(16) reported contact (647.75) with another vehicle Maj Perne(17)</Incident>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
-<Sector Driver="Matyas Bukovsky" ID="7" Sector="1" Class="LMP2" et="168.1">Matyas Bukovsky(7) set new best for sector 1</Sector>
-<Score et="168.2">Matyas Bukovsky(7) lap=0 point=1 t=40.398 et=168.100</Score>
-<Incident et="168.6">andrea costanzo#1020(3) reported contact (177.08) with another vehicle Kylian Mbacle(4)</Incident>
-<Incident et="168.6">Kylian Mbacle(4) reported contact (183.19) with another vehicle andrea costanzo#1020(3)</Incident>
-<Score et="168.8">Benno Spahgetto(18) lap=0 point=1 t=41.073 et=168.760</Score>
-<Incident et="168.9">Alex Koenig#9938(16) reported contact (102.23) with Post</Incident>
-<Incident et="168.9">Alex Koenig#9938(16) reported contact (114.80) with Post</Incident>
-<Score et="169.2">Victor Lightside(5) lap=0 point=1 t=41.384 et=169.080</Score>
-<Incident et="169.4">andrea costanzo#1020(3) reported contact (47.70) with Post</Incident>
-<Incident et="170.1">Robert Gemeniuc(0) reported contact (58.63) with Post</Incident>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.7">No Further Action</TrackLimits>
-<Score et="171.1">Sinka Balint(1) lap=0 point=1 t=43.324 et=171.020</Score>
-<Incident et="171.9">Matthew Fernandez(8) reported contact (29.06) with Post</Incident>
-<Score et="173.4">Alex Koenig#9938(16) lap=0 point=1 t=45.638 et=173.340</Score>
-<Score et="173.6">Kylian Mbacle(4) lap=0 point=1 t=45.825 et=173.520</Score>
-<Score et="173.9">Mat Django(10) lap=0 point=1 t=-1.000 et=173.840</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.1">No Further Action</TrackLimits>
-<Score et="174.3">Robin Kook(15) lap=0 point=1 t=46.482 et=174.180</Score>
-<Score et="174.4">Manoa Peters(11) lap=0 point=1 t=46.657 et=174.340</Score>
-<Score et="174.5">Robert Gemeniuc(0) lap=0 point=1 t=46.701 et=174.400</Score>
-<Score et="174.6">Tymon Kniazuk(14) lap=0 point=1 t=46.835 et=174.520</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.8">No Further Action</TrackLimits>
-<Score et="175.0">Maj Perne(17) lap=0 point=1 t=47.296 et=174.980</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.3">No Further Action</TrackLimits>
-<Score et="175.3">Matthew Fernandez(8) lap=0 point=1 t=-1.000 et=175.160</Score>
-<Score et="175.5">Timo Kauz(9) lap=0 point=1 t=47.761 et=175.460</Score>
-<Score et="178.3">andrea costanzo#1020(3) lap=0 point=1 t=50.625 et=178.320</Score>
-<Score et="180.0">P-A Fugeekies(6) lap=0 point=1 t=52.317 et=179.999</Score>
-<TrackLimits Driver="Robert Gemeniuc" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.7">No Further Action</TrackLimits>
-<Score et="182.8">nino komplet(19) lap=0 point=1 t=55.064 et=182.760</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="184.5">No Further Action</TrackLimits>
-<Score et="187.6">Maxim Goflin(13) lap=0 point=1 t=59.927 et=187.620</Score>
-<Incident et="188.1">Manoa Peters(11) reported contact (119.22) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="188.1">Tymon Kniazuk(14) reported contact (147.23) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="188.1">Manoa Peters(11) reported contact (240.52) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="188.1">Tymon Kniazuk(14) reported contact (148.07) with another vehicle Manoa Peters(11)</Incident>
-<Score et="191.4">Jonathan scheibner(12) lap=0 point=1 t=63.661 et=191.360</Score>
-<TrackLimits Driver="Robin Kook" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="192.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="193.9">No Further Action</TrackLimits>
-<Incident et="202.5">Manoa Peters(11) reported contact (319.59) with another vehicle Matthew Fernandez(8)</Incident>
-<Incident et="202.6">Matthew Fernandez(8) reported contact (273.91) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="203.4">Manoa Peters(11) reported contact (1505.49) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="203.4">Tymon Kniazuk(14) reported contact (1497.34) with another vehicle Manoa Peters(11)</Incident>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Robert Gemeniuc" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.6">No Further Action</TrackLimits>
-<TrackLimits Driver="nino komplet" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="215.2">No Further Action</TrackLimits>
-<Sector Driver="Matyas Bukovsky" ID="7" Sector="2" Class="LMP2" et="219.6">Matyas Bukovsky(7) set new best for sector 2</Sector>
-<Score et="219.7">Matyas Bukovsky(7) lap=0 point=2 t=91.932 et=219.620</Score>
-<Score et="220.7">Benno Spahgetto(18) lap=0 point=2 t=92.906 et=220.600</Score>
-<Score et="222.6">Victor Lightside(5) lap=0 point=2 t=94.810 et=222.500</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.7">No Further Action</TrackLimits>
-<Score et="222.8">Sinka Balint(1) lap=0 point=2 t=95.089 et=222.780</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="225.4">No Further Action</TrackLimits>
-<Score et="225.8">Mat Django(10) lap=0 point=2 t=-1.000 et=225.740</Score>
-<Score et="227.2">Alex Koenig#9938(16) lap=0 point=2 t=99.412 et=227.100</Score>
-<Score et="228.9">Maj Perne(17) lap=0 point=2 t=101.095 et=228.780</Score>
-<Score et="229.2">Robin Kook(15) lap=0 point=2 t=-1.000 et=229.180</Score>
-<Score et="229.5">Tymon Kniazuk(14) lap=0 point=2 t=101.685 et=229.380</Score>
-<Score et="229.7">Manoa Peters(11) lap=0 point=2 t=101.928 et=229.620</Score>
-<Score et="230.4">Robert Gemeniuc(0) lap=0 point=2 t=102.624 et=230.320</Score>
-<Score et="230.8">Timo Kauz(9) lap=0 point=2 t=103.047 et=230.740</Score>
-<Score et="231.5">Matthew Fernandez(8) lap=0 point=2 t=-1.000 et=231.360</Score>
-<Score et="231.5">andrea costanzo#1020(3) lap=0 point=2 t=103.773 et=231.460</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="232.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Robin Kook" ID="15" Lap="0" WarningPoints="9.5" CurrentPoints="0" Resolution="1" et="232.9">Drive Through Penalty</TrackLimits>
-<Penalty et="232.9">Robin Kook received Drive Thru penalty, 0s, 0laps for &quot;Track Limits&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Score et="233.8">P-A Fugeekies(6) lap=0 point=2 t=106.100 et=233.782</Score>
-<Score et="234.4">Kylian Mbacle(4) lap=0 point=2 t=106.654 et=234.340</Score>
-<Score et="237.0">nino komplet(19) lap=0 point=2 t=109.282 et=236.980</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="237.6">No Further Action</TrackLimits>
-<Score et="240.0">Maxim Goflin(13) lap=0 point=2 t=112.358 et=240.060</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="241.4">No Further Action</TrackLimits>
-<Score et="243.3">Jonathan scheibner(12) lap=0 point=2 t=115.499 et=243.200</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="244.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="245.1">No Further Action</TrackLimits>
-<Sector Driver="Matyas Bukovsky" ID="7" Sector="3" Class="LMP2" et="248.3">Matyas Bukovsky(7) set new best for sector 3</Sector>
-<Score et="248.3">Matyas Bukovsky(7) lap=1 point=0 t=120.570 et=248.260</Score>
-<Sector Driver="Benno Spahgetto" ID="18" Sector="3" Class="LMP2" et="248.9">Benno Spahgetto(18) set new best for sector 3</Sector>
-<Score et="248.9">Benno Spahgetto(18) lap=1 point=0 t=121.205 et=248.900</Score>
-<Incident et="249.9">Manoa Peters(11) reported contact (912.82) with another vehicle Robin Kook(15)</Incident>
-<Incident et="249.9">Robin Kook(15) reported contact (909.47) with another vehicle Manoa Peters(11)</Incident>
-<Score et="252.3">Victor Lightside(5) lap=1 point=0 t=124.458 et=252.160</Score>
-<Score et="252.6">Sinka Balint(1) lap=1 point=0 t=124.870 et=252.560</Score>
-<Incident et="253.9">Robin Kook(15) reported contact (1856.63) with Immovable</Incident>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="254.1">No Further Action</TrackLimits>
-<Score et="254.4">Mat Django(10) lap=1 point=0 t=-1.000 et=254.320</Score>
-<Sector et="255.4">Manoa Peters(11) reports new suspension damage</Sector>
-<Incident et="255.5">Manoa Peters(11) reported contact (1105.70) with Immovable</Incident>
-<Score et="256.4">Alex Koenig#9938(16) lap=1 point=0 t=128.590 et=256.280</Score>
-<Score et="257.6">Maj Perne(17) lap=1 point=0 t=129.904 et=257.600</Score>
-<TrackLimits Driver="Robin Kook" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="257.8">No Further Action</TrackLimits>
-<Score et="258.2">Tymon Kniazuk(14) lap=1 point=0 t=130.346 et=258.040</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.2">No Further Action</TrackLimits>
-<Score et="259.6">Robert Gemeniuc(0) lap=1 point=0 t=131.804 et=259.500</Score>
-<Score et="259.9">Timo Kauz(9) lap=1 point=0 t=132.155 et=259.840</Score>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="262.3">No Further Action</TrackLimits>
-<Score et="263.4">P-A Fugeekies(6) lap=1 point=0 t=135.732 et=263.415</Score>
-<Score et="266.7">nino komplet(19) lap=1 point=0 t=138.865 et=266.560</Score>
-<Score et="267.0">Matthew Fernandez(8) lap=1 point=0 t=-1.000 et=266.860</Score>
-<Score et="268.3">Robin Kook(15) lap=1 point=0 t=-1.000 et=268.180</Score>
-<Score et="268.3">Manoa Peters(11) lap=1 point=0 t=140.506 et=268.200</Score>
-<Score et="269.5">Maxim Goflin(13) lap=1 point=0 t=141.868 et=269.560</Score>
-<Score et="269.8">andrea costanzo#1020(3) lap=1 point=0 t=141.983 et=269.680</Score>
-<Incident et="271.9">Timo Kauz(9) reported contact (333.20) with another vehicle Robert Gemeniuc(0)</Incident>
-<Incident et="271.9">Robert Gemeniuc(0) reported contact (539.44) with another vehicle Timo Kauz(9)</Incident>
-<Score et="273.8">Jonathan scheibner(12) lap=1 point=0 t=145.992 et=273.680</Score>
-<TrackLimits Driver="Robert Gemeniuc" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="278.6">No Further Action</TrackLimits>
-<Score et="278.6">Kylian Mbacle(4) lap=1 point=0 t=150.816 et=278.500</Score>
-<Incident et="282.0">Maxim Goflin(13) reported contact (77.85) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="282.0">Maxim Goflin(13) reported contact (98.69) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="282.1">Manoa Peters(11) reported contact (175.50) with another vehicle Maxim Goflin(13)</Incident>
-<Sector Driver="Matyas Bukovsky" ID="7" Sector="1" Class="LMP2" et="282.7">Matyas Bukovsky(7) set new best for sector 1</Sector>
-<Score et="282.7">Matyas Bukovsky(7) lap=1 point=1 t=34.358 et=282.620</Score>
-<Incident et="283.0">Maxim Goflin(13) reported contact (46.39) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="283.0">Manoa Peters(11) reported contact (68.09) with another vehicle Maxim Goflin(13)</Incident>
-<Score et="283.4">Benno Spahgetto(18) lap=1 point=1 t=34.490 et=283.380</Score>
-<Score et="287.0">Victor Lightside(5) lap=1 point=1 t=34.755 et=286.900</Score>
-<Incident et="287.1">Maxim Goflin(13) reported contact (757.76) with another vehicle andrea costanzo#1020(3)</Incident>
-<Incident et="287.2">andrea costanzo#1020(3) reported contact (709.85) with another vehicle Maxim Goflin(13)</Incident>
-<Score et="287.8">Sinka Balint(1) lap=1 point=1 t=35.129 et=287.700</Score>
-<Score et="288.9">Mat Django(10) lap=1 point=1 t=34.541 et=288.860</Score>
-<Penalty et="289.9">Matthew Fernandez served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Incident et="290.7">andrea costanzo#1020(3) reported contact (307.89) with Sign</Incident>
-<Incident et="290.8">andrea costanzo#1020(3) reported contact (121.59) with Sign</Incident>
-<Penalty et="291.0">Robin Kook served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Penalty et="291.0">Robin Kook received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
-<Score et="291.3">Alex Koenig#9938(16) lap=1 point=1 t=34.905 et=291.180</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="291.4">No Further Action</TrackLimits>
-<Score et="292.5">Tymon Kniazuk(14) lap=1 point=1 t=34.437 et=292.480</Score>
-<Incident et="292.9">andrea costanzo#1020(3) reported contact (6.47) with Sign</Incident>
-<Score et="293.3">Maj Perne(17) lap=1 point=1 t=35.570 et=293.160</Score>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="294.8">No Further Action</TrackLimits>
-<Score et="296.1">Timo Kauz(9) lap=1 point=1 t=36.176 et=296.020</Score>
-<Score et="299.5">P-A Fugeekies(6) lap=1 point=1 t=36.055 et=299.469</Score>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="301.5">No Further Action</TrackLimits>
-<Score et="302.2">nino komplet(19) lap=1 point=1 t=35.574 et=302.140</Score>
-<Score et="305.3">Manoa Peters(11) lap=1 point=1 t=37.031 et=305.240</Score>
-<Score et="305.9">Maxim Goflin(13) lap=1 point=1 t=36.265 et=305.820</Score>
-<Sector Driver="Jonathan scheibner" ID="12" Sector="1" Class="LMP2" et="308.1">Jonathan scheibner(12) set new best for sector 1</Sector>
-<Score et="308.1">Jonathan scheibner(12) lap=1 point=1 t=34.348 et=308.040</Score>
-<Score et="312.9">Robert Gemeniuc(0) lap=1 point=1 t=53.341 et=312.840</Score>
-<Score et="313.8">Kylian Mbacle(4) lap=1 point=1 t=35.193 et=313.700</Score>
-<Incident et="315.6">nino komplet(19) reported contact (36.80) with Post</Incident>
-<Incident et="315.6">nino komplet(19) reported contact (32.34) with Post</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="316.6">No Further Action</TrackLimits>
-<Score et="319.5">andrea costanzo#1020(3) lap=1 point=1 t=49.801 et=319.480</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="321.9">No Further Action</TrackLimits>
-<Score et="324.7">Matthew Fernandez(8) lap=1 point=1 t=57.698 et=324.560</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.8">No Further Action</TrackLimits>
-<Sector Driver="Matyas Bukovsky" ID="7" Sector="2" Class="LMP2" et="333.8">Matyas Bukovsky(7) set new best for sector 2</Sector>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="333.8">No Further Action</TrackLimits>
-<Score et="333.8">Matyas Bukovsky(7) lap=1 point=2 t=85.507 et=333.760</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.5">No Further Action</TrackLimits>
-<Score et="335.3">Benno Spahgetto(18) lap=1 point=2 t=86.406 et=335.300</Score>
-<Score et="338.7">Victor Lightside(5) lap=1 point=2 t=86.165 et=338.320</Score>
-<Score et="339.3">Sinka Balint(1) lap=1 point=2 t=86.680 et=339.240</Score>
-<Sector Driver="Mat Django" ID="10" Sector="2" Class="LMP2" et="340.1">Mat Django(10) set new best for sector 2</Sector>
-<Score et="340.1">Mat Django(10) lap=1 point=2 t=85.666 et=339.980</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="342.4">No Further Action</TrackLimits>
-<Sector Driver="Tymon Kniazuk" ID="14" Sector="2" Class="LMP2" et="343.4">Tymon Kniazuk(14) set new best for sector 2</Sector>
-<Score et="343.4">Tymon Kniazuk(14) lap=1 point=2 t=85.329 et=343.360</Score>
-<Score et="343.9">Alex Koenig#9938(16) lap=1 point=2 t=87.603 et=343.880</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="344.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Robert Gemeniuc" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="344.6">No Further Action</TrackLimits>
-<Score et="345.2">Maj Perne(17) lap=1 point=2 t=87.496 et=345.100</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="348.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="350.4">No Further Action</TrackLimits>
-<Score et="356.2">nino komplet(19) lap=1 point=2 t=89.625 et=356.180</Score>
-<Score et="356.9">Timo Kauz(9) lap=1 point=2 t=96.998 et=356.840</Score>
-<Score et="357.4">P-A Fugeekies(6) lap=1 point=2 t=93.929 et=357.344</Score>
-<Score et="358.1">Maxim Goflin(13) lap=1 point=2 t=88.500 et=358.060</Score>
-<Score et="358.6">Manoa Peters(11) lap=1 point=2 t=90.301 et=358.500</Score>
-<Score et="359.1">Jonathan scheibner(12) lap=1 point=2 t=85.309 et=359.000</Score>
-<Score et="362.3">Matyas Bukovsky(7) lap=2 point=0 t=113.981 et=362.240</Score>
-<Score et="363.9">Benno Spahgetto(18) lap=2 point=0 t=114.899 et=363.800</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="364.5">No Further Action</TrackLimits>
-<Score et="366.0">Kylian Mbacle(4) lap=1 point=2 t=87.364 et=365.880</Score>
-<Score et="367.0">Victor Lightside(5) lap=2 point=0 t=114.760 et=366.920</Score>
-<Score et="367.4">Robert Gemeniuc(0) lap=1 point=2 t=107.759 et=367.260</Score>
-<Score et="368.0">Sinka Balint(1) lap=2 point=0 t=115.274 et=367.840</Score>
-<Score et="368.6">Mat Django(10) lap=2 point=0 t=114.140 et=368.460</Score>
-<Score et="372.1">Tymon Kniazuk(14) lap=2 point=0 t=114.046 et=372.080</Score>
-<Score et="372.5">andrea costanzo#1020(3) lap=1 point=2 t=-1.000 et=372.480</Score>
-<Score et="373.0">Alex Koenig#9938(16) lap=2 point=0 t=116.649 et=372.940</Score>
-<Score et="373.6">Maj Perne(17) lap=2 point=0 t=115.995 et=373.600</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="373.9">No Further Action</TrackLimits>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.4">No Further Action</TrackLimits>
-<Score et="381.2">Matthew Fernandez(8) lap=1 point=2 t=114.234 et=381.080</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="381.8">No Further Action</TrackLimits>
-<Score et="385.3">nino komplet(19) lap=2 point=0 t=118.680 et=385.240</Score>
-<Score et="386.4">P-A Fugeekies(6) lap=2 point=0 t=122.940 et=386.355</Score>
-<Score et="386.5">Timo Kauz(9) lap=2 point=0 t=126.568 et=386.420</Score>
-<Score et="387.2">Maxim Goflin(13) lap=2 point=0 t=117.593 et=387.160</Score>
-<Score et="387.8">Jonathan scheibner(12) lap=2 point=0 t=114.048 et=387.740</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.0">No Further Action</TrackLimits>
-<Score et="389.0">Manoa Peters(11) lap=2 point=0 t=120.722 et=388.920</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="390.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="390.9">No Further Action</TrackLimits>
-<ChatMessage et="393.9">R Gemeniuc: Go Right</ChatMessage>
-<Score et="394.6">Kylian Mbacle(4) lap=2 point=0 t=116.047 et=394.560</Score>
-<Score et="396.8">Matyas Bukovsky(7) lap=2 point=1 t=34.509 et=396.760</Score>
-<Score et="398.6">Benno Spahgetto(18) lap=2 point=1 t=34.715 et=398.520</Score>
-<Incident et="399.7">Timo Kauz(9) reported contact (5.22) with Post</Incident>
-<Score et="401.7">Victor Lightside(5) lap=2 point=1 t=34.646 et=401.560</Score>
-<Score et="402.1">andrea costanzo#1020(3) lap=2 point=0 t=132.376 et=402.060</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="402.5">No Further Action</TrackLimits>
-<Score et="402.6">Sinka Balint(1) lap=2 point=1 t=34.746 et=402.580</Score>
-<Score et="403.1">Mat Django(10) lap=2 point=1 t=34.626 et=403.080</Score>
-<Score et="407.2">Tymon Kniazuk(14) lap=2 point=1 t=35.037 et=407.120</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="408.7">No Further Action</TrackLimits>
-<Score et="409.1">Maj Perne(17) lap=2 point=1 t=35.386 et=408.980</Score>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="409.3">No Further Action</TrackLimits>
-<Score et="410.8">Matthew Fernandez(8) lap=2 point=0 t=143.809 et=410.660</Score>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="414.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="414.8">No Further Action</TrackLimits>
-<Score et="416.0">Alex Koenig#9938(16) lap=2 point=1 t=42.967 et=415.900</Score>
-<Score et="420.5">nino komplet(19) lap=2 point=1 t=35.210 et=420.440</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="421.4">No Further Action</TrackLimits>
-<Score et="422.7">Maxim Goflin(13) lap=2 point=1 t=35.454 et=422.600</Score>
-<Score et="422.9">Jonathan scheibner(12) lap=2 point=1 t=35.075 et=422.800</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.9">No Further Action</TrackLimits>
-<Score et="424.3">Manoa Peters(11) lap=2 point=1 t=35.308 et=424.220</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="426.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.0">No Further Action</TrackLimits>
-<Score et="429.8">Kylian Mbacle(4) lap=2 point=1 t=35.122 et=429.680</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.1">No Further Action</TrackLimits>
-<Score et="430.5">P-A Fugeekies(6) lap=2 point=1 t=44.090 et=430.444</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.8">No Further Action</TrackLimits>
-<Score et="433.8">Timo Kauz(9) lap=2 point=1 t=47.255 et=433.680</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="436.5">No Further Action</TrackLimits>
-<Score et="437.5">andrea costanzo#1020(3) lap=2 point=1 t=35.417 et=437.460</Score>
-<Incident et="445.5">Maxim Goflin(13) reported contact (1187.35) with another vehicle Jonathan scheibner(12)</Incident>
-<Score et="447.1">Matthew Fernandez(8) lap=2 point=1 t=36.318 et=446.980</Score>
-<Score et="447.8">Matyas Bukovsky(7) lap=2 point=2 t=85.523 et=447.760</Score>
-<Score et="449.8">Benno Spahgetto(18) lap=2 point=2 t=85.952 et=449.740</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="451.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="452.0">No Further Action</TrackLimits>
-<Score et="452.9">Victor Lightside(5) lap=2 point=2 t=85.860 et=452.780</Score>
-<Score et="453.8">Sinka Balint(1) lap=2 point=2 t=85.953 et=453.780</Score>
-<Score et="454.7">Mat Django(10) lap=2 point=2 t=86.141 et=454.600</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="454.7">No Further Action</TrackLimits>
-<Score et="460.1">Tymon Kniazuk(14) lap=2 point=2 t=87.923 et=460.000</Score>
-<Score et="460.8">Maj Perne(17) lap=2 point=2 t=87.060 et=460.660</Score>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.5">No Further Action</TrackLimits>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="467.0">No Further Action</TrackLimits>
-<Score et="469.7">Alex Koenig#9938(16) lap=2 point=2 t=96.704 et=469.640</Score>
-<Score et="473.6">nino komplet(19) lap=2 point=2 t=88.248 et=473.480</Score>
-<Score et="474.1">Jonathan scheibner(12) lap=2 point=2 t=86.286 et=474.020</Score>
-<Score et="476.3">Manoa Peters(11) lap=2 point=2 t=87.324 et=476.240</Score>
-<Score et="476.3">Matyas Bukovsky(7) lap=3 point=0 t=114.028 et=476.280</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="477.2">No Further Action</TrackLimits>
-<Score et="478.3">Benno Spahgetto(18) lap=3 point=0 t=114.488 et=478.280</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.3">No Further Action</TrackLimits>
-<Score et="480.3">Maxim Goflin(13) lap=2 point=2 t=93.030 et=480.180</Score>
-<Score et="481.2">Victor Lightside(5) lap=3 point=0 t=114.227 et=481.140</Score>
-<Score et="481.9">Kylian Mbacle(4) lap=2 point=2 t=87.309 et=481.860</Score>
-<Score et="482.4">Sinka Balint(1) lap=3 point=0 t=114.497 et=482.340</Score>
-<Score et="485.4">P-A Fugeekies(6) lap=2 point=2 t=99.052 et=485.406</Score>
-<Score et="486.8">Timo Kauz(9) lap=2 point=2 t=100.271 et=486.680</Score>
-<Sector Driver="Tymon Kniazuk" ID="14" Sector="3" Class="LMP2" et="488.2">Tymon Kniazuk(14) set new best for sector 3</Sector>
-<Score et="488.2">Tymon Kniazuk(14) lap=3 point=0 t=116.052 et=488.140</Score>
-<Score et="489.4">Maj Perne(17) lap=3 point=0 t=115.679 et=489.280</Score>
-<Score et="494.2">Mat Django(10) lap=3 point=0 t=125.709 et=494.160</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="495.1">No Further Action</TrackLimits>
-<Score et="499.0">Alex Koenig#9938(16) lap=3 point=0 t=125.951 et=498.880</Score>
-<Score et="500.7">Matthew Fernandez(8) lap=2 point=2 t=89.871 et=500.540</Score>
-<Score et="500.8">andrea costanzo#1020(3) lap=2 point=2 t=98.659 et=500.720</Score>
-<Score et="503.1">nino komplet(19) lap=3 point=0 t=117.773 et=503.000</Score>
-<Score et="503.4">Jonathan scheibner(12) lap=3 point=0 t=115.547 et=503.280</Score>
-<Score et="504.8">Manoa Peters(11) lap=3 point=0 t=115.841 et=504.760</Score>
-<Score et="509.1">Maxim Goflin(13) lap=3 point=0 t=121.878 et=509.040</Score>
-<Score et="510.3">Kylian Mbacle(4) lap=3 point=0 t=115.691 et=510.240</Score>
-<Score et="510.9">Matyas Bukovsky(7) lap=3 point=1 t=34.540 et=510.820</Score>
-<Incident et="513.3">Jonathan scheibner(12) reported contact (537.28) with another vehicle nino komplet(19)</Incident>
-<Incident et="513.3">nino komplet(19) reported contact (891.19) with another vehicle Jonathan scheibner(12)</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="513.8">No Further Action</TrackLimits>
-<Score et="516.5">Victor Lightside(5) lap=3 point=1 t=35.222 et=516.360</Score>
-<Penalty et="517.1">Mat Django served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="518.0">Sinka Balint(1) lap=3 point=1 t=35.573 et=517.900</Score>
-<Incident et="519.8">andrea costanzo#1020(3) reported contact (480.14) with another vehicle Matthew Fernandez(8)</Incident>
-<Incident et="519.8">Matthew Fernandez(8) reported contact (460.48) with another vehicle andrea costanzo#1020(3)</Incident>
-<Score et="520.5">Benno Spahgetto(18) lap=3 point=1 t=42.117 et=520.400</Score>
-<Score et="522.3">P-A Fugeekies(6) lap=3 point=0 t=135.982 et=522.337</Score>
-<Score et="522.6">Tymon Kniazuk(14) lap=3 point=1 t=34.409 et=522.540</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="523.0">No Further Action</TrackLimits>
-<Score et="524.3">Maj Perne(17) lap=3 point=1 t=34.935 et=524.200</Score>
-<Score et="525.3">Timo Kauz(9) lap=3 point=0 t=138.797 et=525.220</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="527.5">No Further Action</TrackLimits>
-<Incident et="531.6">Jonathan scheibner(12) reported contact (914.30) with Immovable</Incident>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.9">No Further Action</TrackLimits>
-<Score et="534.1">Alex Koenig#9938(16) lap=3 point=1 t=35.114 et=534.000</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="534.1">No Further Action</TrackLimits>
-<Score et="538.9">nino komplet(19) lap=3 point=1 t=35.765 et=538.780</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="539.5">No Further Action</TrackLimits>
-<Score et="539.8">andrea costanzo#1020(3) lap=3 point=0 t=137.701 et=539.760</Score>
-<Score et="539.8">Manoa Peters(11) lap=3 point=1 t=35.047 et=539.800</Score>
-<Score et="541.0">Matthew Fernandez(8) lap=3 point=0 t=130.280 et=540.940</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="541.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="544.2">No Further Action</TrackLimits>
-<Score et="544.6">Maxim Goflin(13) lap=3 point=1 t=35.446 et=544.480</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="544.9">No Further Action</TrackLimits>
-<Score et="545.5">Kylian Mbacle(4) lap=3 point=1 t=35.167 et=545.420</Score>
-<Score et="550.1">Mat Django(10) lap=3 point=1 t=55.830 et=550.000</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="551.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="552.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="554.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="557.5">No Further Action</TrackLimits>
-<Score et="559.0">P-A Fugeekies(6) lap=3 point=1 t=36.674 et=559.011</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="564.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="566.4">No Further Action</TrackLimits>
-<Score et="566.7">Jonathan scheibner(12) lap=3 point=1 t=63.347 et=566.620</Score>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="568.1">No Further Action</TrackLimits>
-<Score et="568.3">Victor Lightside(5) lap=3 point=2 t=87.097 et=568.240</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="568.4">No Further Action</TrackLimits>
-<Score et="569.3">Matyas Bukovsky(7) lap=3 point=2 t=93.011 et=569.280</Score>
-<Score et="569.9">Sinka Balint(1) lap=3 point=2 t=87.443 et=569.780</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="569.9">No Further Action</TrackLimits>
-<Score et="569.9">Timo Kauz(9) lap=3 point=1 t=44.674 et=569.880</Score>
-<Score et="572.6">Benno Spahgetto(18) lap=3 point=2 t=94.243 et=572.520</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="574.1">No Further Action</TrackLimits>
-<Score et="575.8">Tymon Kniazuk(14) lap=3 point=2 t=87.620 et=575.760</Score>
-<Score et="576.0">andrea costanzo#1020(3) lap=3 point=1 t=36.221 et=575.980</Score>
-<Score et="576.8">Maj Perne(17) lap=3 point=2 t=87.512 et=576.780</Score>
-<Score et="578.6">Matthew Fernandez(8) lap=3 point=1 t=37.493 et=578.440</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="579.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="582.2">No Further Action</TrackLimits>
-<Score et="586.6">Alex Koenig#9938(16) lap=3 point=2 t=87.612 et=586.500</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="589.0">No Further Action</TrackLimits>
-<Score et="591.4">nino komplet(19) lap=3 point=2 t=88.366 et=591.380</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="591.6">No Further Action</TrackLimits>
-<Score et="592.3">Manoa Peters(11) lap=3 point=2 t=87.468 et=592.220</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.7">No Further Action</TrackLimits>
-<Score et="596.9">Victor Lightside(5) lap=4 point=0 t=115.710 et=596.840</Score>
-<Score et="597.7">Matyas Bukovsky(7) lap=4 point=0 t=121.352 et=597.620</Score>
-<Score et="597.7">Maxim Goflin(13) lap=3 point=2 t=88.603 et=597.640</Score>
-<Score et="598.5">Sinka Balint(1) lap=4 point=0 t=116.098 et=598.440</Score>
-<Score et="601.2">Mat Django(10) lap=3 point=2 t=106.902 et=601.080</Score>
-<Score et="601.4">Benno Spahgetto(18) lap=4 point=0 t=123.031 et=601.320</Score>
-<Score et="604.2">Tymon Kniazuk(14) lap=4 point=0 t=115.985 et=604.120</Score>
-<Score et="605.1">Kylian Mbacle(4) lap=3 point=2 t=94.775 et=605.020</Score>
-<Score et="605.6">Maj Perne(17) lap=4 point=0 t=116.298 et=605.560</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="609.2">No Further Action</TrackLimits>
-<Score et="615.0">P-A Fugeekies(6) lap=3 point=2 t=92.605 et=614.942</Score>
-<Score et="616.1">Alex Koenig#9938(16) lap=4 point=0 t=117.091 et=615.980</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
-<Score et="618.2">Jonathan scheibner(12) lap=3 point=2 t=114.873 et=618.160</Score>
-<Score et="620.7">nino komplet(19) lap=4 point=0 t=117.600 et=620.600</Score>
-<Score et="621.1">Manoa Peters(11) lap=4 point=0 t=116.253 et=621.020</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="622.2">No Further Action</TrackLimits>
-<Score et="624.8">Timo Kauz(9) lap=3 point=2 t=99.541 et=624.760</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="625.5">No Further Action</TrackLimits>
-<Score et="626.7">Maxim Goflin(13) lap=4 point=0 t=117.536 et=626.560</Score>
-<Score et="629.2">andrea costanzo#1020(3) lap=3 point=2 t=-1.000 et=629.160</Score>
-<Score et="629.5">Mat Django(10) lap=4 point=0 t=135.210 et=629.380</Score>
-<Score et="631.6">Victor Lightside(5) lap=4 point=1 t=34.693 et=631.540</Score>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="631.9">No Further Action</TrackLimits>
-<Score et="632.1">Matthew Fernandez(8) lap=3 point=2 t=91.020 et=631.960</Score>
-<Score et="632.3">Matyas Bukovsky(7) lap=4 point=1 t=34.544 et=632.160</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="633.2">No Further Action</TrackLimits>
-<Score et="633.3">Sinka Balint(1) lap=4 point=1 t=34.725 et=633.160</Score>
-<Score et="633.6">Kylian Mbacle(4) lap=4 point=0 t=123.263 et=633.500</Score>
-<Score et="636.3">Benno Spahgetto(18) lap=4 point=1 t=34.905 et=636.220</Score>
-<Incident et="636.9">Manoa Peters(11) reported contact (118.73) with another vehicle nino komplet(19)</Incident>
-<Incident et="636.9">nino komplet(19) reported contact (98.72) with another vehicle Manoa Peters(11)</Incident>
-<Score et="638.6">Tymon Kniazuk(14) lap=4 point=1 t=34.401 et=638.520</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="639.2">No Further Action</TrackLimits>
-<Incident et="640.0">nino komplet(19) reported contact (231.11) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="640.0">Manoa Peters(11) reported contact (247.99) with another vehicle nino komplet(19)</Incident>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="640.1">No Further Action</TrackLimits>
-<Score et="640.5">Maj Perne(17) lap=4 point=1 t=34.836 et=640.400</Score>
-<Incident et="640.5">nino komplet(19) reported contact (36.71) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="640.5">Manoa Peters(11) reported contact (24.48) with another vehicle nino komplet(19)</Incident>
-<Incident et="641.1">Manoa Peters(11) reported contact (16.39) with another vehicle nino komplet(19)</Incident>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="643.8">No Further Action</TrackLimits>
-<Score et="643.9">P-A Fugeekies(6) lap=4 point=0 t=121.559 et=643.896</Score>
-<Score et="646.9">Jonathan scheibner(12) lap=4 point=0 t=143.512 et=646.800</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="649.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="656.7">No Further Action</TrackLimits>
-<Score et="657.4">nino komplet(19) lap=4 point=1 t=36.719 et=657.320</Score>
-<Score et="657.6">Manoa Peters(11) lap=4 point=1 t=36.573 et=657.580</Score>
-<Sector Driver="andrea costanzo#1020" ID="3" Sector="3" Class="LMP2" et="659.2">andrea costanzo#1020(3) set new best for sector 3</Sector>
-<Score et="659.2">andrea costanzo#1020(3) lap=4 point=0 t=119.372 et=659.120</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="660.8">No Further Action</TrackLimits>
-<Score et="661.3">Timo Kauz(9) lap=4 point=0 t=136.050 et=661.260</Score>
-<Score et="661.9">Maxim Goflin(13) lap=4 point=1 t=35.235 et=661.800</Score>
-<Score et="663.0">Alex Koenig#9938(16) lap=4 point=1 t=46.882 et=662.860</Score>
-<Score et="663.3">Matthew Fernandez(8) lap=4 point=0 t=122.149 et=663.100</Score>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.0">No Further Action</TrackLimits>
-<Score et="664.0">Mat Django(10) lap=4 point=1 t=34.621 et=664.000</Score>
-<TrackLimits Driver="Sinka Balint" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="668.4">No Further Action</TrackLimits>
-<Score et="668.5">Kylian Mbacle(4) lap=4 point=1 t=34.902 et=668.420</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="669.4">No Further Action</TrackLimits>
-<TrackLimits Driver="andrea costanzo#1020" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="677.5">No Further Action</TrackLimits>
-<Score et="679.1">P-A Fugeekies(6) lap=4 point=1 t=35.176 et=679.072</Score>
-<Score et="681.6">Jonathan scheibner(12) lap=4 point=1 t=34.740 et=681.540</Score>
-<Sector et="683.1">andrea costanzo#1020(3) reports new suspension damage</Sector>
-<Incident et="683.2">andrea costanzo#1020(3) reported contact (211.00) with Immovable</Incident>
-<Incident et="683.2">andrea costanzo#1020(3) reported contact (431.53) with Immovable</Incident>
-<Score et="683.9">Matyas Bukovsky(7) lap=4 point=2 t=86.160 et=683.780</Score>
-<Score et="685.4">Sinka Balint(1) lap=4 point=2 t=86.889 et=685.320</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="689.7">No Further Action</TrackLimits>
-<Score et="690.4">Tymon Kniazuk(14) lap=4 point=2 t=86.182 et=690.300</Score>
-<Score et="691.9">Victor Lightside(5) lap=4 point=2 t=95.034 et=691.880</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.0">No Further Action</TrackLimits>
-<Score et="696.6">Benno Spahgetto(18) lap=4 point=2 t=95.227 et=696.540</Score>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.7">No Further Action</TrackLimits>
-<Score et="698.5">Matthew Fernandez(8) lap=4 point=1 t=35.275 et=698.360</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="699.3">No Further Action</TrackLimits>
-<Score et="700.1">Maj Perne(17) lap=4 point=2 t=94.439 et=700.000</Score>
-<TrackLimits Driver="Sinka Balint" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="708.2">No Further Action</TrackLimits>
-<Score et="709.3">nino komplet(19) lap=4 point=2 t=88.629 et=709.240</Score>
-<Score et="709.7">Manoa Peters(11) lap=4 point=2 t=88.627 et=709.640</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="712.1">No Further Action</TrackLimits>
-<Score et="712.4">Matyas Bukovsky(7) lap=5 point=0 t=114.684 et=712.300</Score>
-<Score et="713.5">Maxim Goflin(13) lap=4 point=2 t=86.866 et=713.440</Score>
-<Score et="714.4">Sinka Balint(1) lap=5 point=0 t=115.913 et=714.340</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="714.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.6">No Further Action</TrackLimits>
-<Score et="715.7">Mat Django(10) lap=4 point=2 t=86.253 et=715.640</Score>
-<Score et="718.2">Alex Koenig#9938(16) lap=4 point=2 t=102.158 et=718.140</Score>
-<Score et="719.1">Tymon Kniazuk(14) lap=5 point=0 t=114.874 et=719.000</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="719.3">No Further Action</TrackLimits>
-<Score et="720.4">Kylian Mbacle(4) lap=4 point=2 t=86.832 et=720.340</Score>
-<Score et="720.8">Victor Lightside(5) lap=5 point=0 t=123.896 et=720.740</Score>
-<Score et="725.7">Benno Spahgetto(18) lap=5 point=0 t=124.280 et=725.600</Score>
-<Score et="728.8">Maj Perne(17) lap=5 point=0 t=123.112 et=728.680</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="729.4">No Further Action</TrackLimits>
-<Score et="731.6">P-A Fugeekies(6) lap=4 point=2 t=87.654 et=731.549</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="731.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="733.4">No Further Action</TrackLimits>
-<Score et="733.6">Jonathan scheibner(12) lap=4 point=2 t=86.737 et=733.520</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="735.5">No Further Action</TrackLimits>
-<Score et="738.3">Manoa Peters(11) lap=5 point=0 t=117.270 et=738.280</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="738.7">No Further Action</TrackLimits>
-<Score et="739.3">nino komplet(19) lap=5 point=0 t=118.616 et=739.220</Score>
-<Score et="742.4">Maxim Goflin(13) lap=5 point=0 t=115.745 et=742.320</Score>
-<TrackLimits Driver="Timo Kauz" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.1">No Further Action</TrackLimits>
-<Score et="743.9">Mat Django(10) lap=5 point=0 t=114.434 et=743.820</Score>
-<Score et="746.8">Matyas Bukovsky(7) lap=5 point=1 t=34.403 et=746.720</Score>
-<Score et="747.4">Alex Koenig#9938(16) lap=5 point=0 t=131.350 et=747.320</Score>
-<Score et="748.8">Kylian Mbacle(4) lap=5 point=0 t=115.218 et=748.720</Score>
-<Score et="749.1">Sinka Balint(1) lap=5 point=1 t=34.753 et=749.100</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="752.9">No Further Action</TrackLimits>
-<Score et="753.5">Tymon Kniazuk(14) lap=5 point=1 t=34.391 et=753.380</Score>
-<Score et="755.6">Victor Lightside(5) lap=5 point=1 t=34.770 et=755.520</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="757.8">No Further Action</TrackLimits>
-<Score et="760.5">P-A Fugeekies(6) lap=5 point=0 t=116.620 et=760.516</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="760.7">No Further Action</TrackLimits>
-<Score et="761.1">Benno Spahgetto(18) lap=5 point=1 t=35.458 et=761.060</Score>
-<Score et="762.3">Jonathan scheibner(12) lap=5 point=0 t=115.460 et=762.260</Score>
-<Score et="762.8">Matthew Fernandez(8) lap=4 point=2 t=99.558 et=762.640</Score>
-<Score et="764.5">Maj Perne(17) lap=5 point=1 t=35.755 et=764.440</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="769.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="770.5">No Further Action</TrackLimits>
-<Score et="773.8">Manoa Peters(11) lap=5 point=1 t=35.451 et=773.740</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.1">No Further Action</TrackLimits>
-<Score et="775.7">nino komplet(19) lap=5 point=1 t=36.393 et=775.620</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.7">No Further Action</TrackLimits>
-<Score et="777.8">Maxim Goflin(13) lap=5 point=1 t=35.398 et=777.720</Score>
-<Score et="778.5">Mat Django(10) lap=5 point=1 t=34.612 et=778.420</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="780.1">No Further Action</TrackLimits>
-<Score et="783.6">Alex Koenig#9938(16) lap=5 point=1 t=36.167 et=783.500</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="783.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="786.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="790.3">No Further Action</TrackLimits>
-<Score et="792.8">Kylian Mbacle(4) lap=5 point=1 t=43.971 et=792.700</Score>
-<Score et="793.8">Matthew Fernandez(8) lap=5 point=0 t=130.540 et=793.640</Score>
-<Score et="795.9">P-A Fugeekies(6) lap=5 point=1 t=35.337 et=795.853</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="797.0">No Further Action</TrackLimits>
-<Score et="797.0">Jonathan scheibner(12) lap=5 point=1 t=34.764 et=797.020</Score>
-<Score et="798.1">Matyas Bukovsky(7) lap=5 point=2 t=85.616 et=797.920</Score>
-<Score et="800.6">Sinka Balint(1) lap=5 point=2 t=86.193 et=800.540</Score>
-<Score et="805.9">Tymon Kniazuk(14) lap=5 point=2 t=86.855 et=805.860</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="806.4">No Further Action</TrackLimits>
-<Score et="807.3">Victor Lightside(5) lap=5 point=2 t=86.463 et=807.200</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="809.2">No Further Action</TrackLimits>
-<Score et="816.6">Maj Perne(17) lap=5 point=2 t=87.814 et=816.500</Score>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="817.6">No Further Action</TrackLimits>
-<Incident et="818.3">Mat Django(10) reported contact (264.42) with another vehicle Maxim Goflin(13)</Incident>
-<Incident et="818.4">Maxim Goflin(13) reported contact (290.31) with another vehicle Mat Django(10)</Incident>
-<Incident et="819.0">Maxim Goflin(13) reported contact (11.47) with another vehicle Mat Django(10)</Incident>
-<Score et="820.7">Benno Spahgetto(18) lap=5 point=2 t=95.092 et=820.680</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="823.1">No Further Action</TrackLimits>
-<Score et="826.1">Matyas Bukovsky(7) lap=6 point=0 t=113.770 et=826.080</Score>
-<Score et="827.0">Manoa Peters(11) lap=5 point=2 t=88.621 et=826.900</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="827.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="827.3">No Further Action</TrackLimits>
-<Score et="829.1">Sinka Balint(1) lap=6 point=0 t=114.701 et=829.040</Score>
-<Score et="829.8">nino komplet(19) lap=5 point=2 t=90.494 et=829.720</Score>
-<Score et="830.0">Mat Django(10) lap=5 point=2 t=86.111 et=829.920</Score>
-<Score et="830.2">Matthew Fernandez(8) lap=5 point=1 t=36.465 et=830.100</Score>
-<Score et="831.1">Maxim Goflin(13) lap=5 point=2 t=88.698 et=831.020</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="833.9">No Further Action</TrackLimits>
-<Score et="834.0">Tymon Kniazuk(14) lap=6 point=0 t=114.961 et=833.960</Score>
-<Score et="836.0">Victor Lightside(5) lap=6 point=0 t=115.195 et=835.940</Score>
-<Score et="837.0">Alex Koenig#9938(16) lap=5 point=2 t=89.622 et=836.940</Score>
-<Score et="845.5">Maj Perne(17) lap=6 point=0 t=116.733 et=845.420</Score>
-<Score et="849.1">Jonathan scheibner(12) lap=5 point=2 t=86.844 et=849.100</Score>
-<Score et="849.6">P-A Fugeekies(6) lap=5 point=2 t=89.118 et=849.634</Score>
-<Score et="850.2">Benno Spahgetto(18) lap=6 point=0 t=124.532 et=850.120</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="852.5">No Further Action</TrackLimits>
-<Score et="855.6">Kylian Mbacle(4) lap=5 point=2 t=106.752 et=855.480</Score>
-<Score et="855.6">Manoa Peters(11) lap=6 point=0 t=117.271 et=855.560</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="858.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="858.8">No Further Action</TrackLimits>
-<Score et="859.0">Mat Django(10) lap=6 point=0 t=115.149 et=858.960</Score>
-<Score et="859.7">nino komplet(19) lap=6 point=0 t=120.431 et=859.660</Score>
-<Score et="860.3">Maxim Goflin(13) lap=6 point=0 t=117.872 et=860.180</Score>
-<Score et="860.7">Matyas Bukovsky(7) lap=6 point=1 t=34.549 et=860.620</Score>
-<Score et="863.7">Sinka Balint(1) lap=6 point=1 t=34.591 et=863.640</Score>
-<Score et="866.7">Alex Koenig#9938(16) lap=6 point=0 t=119.253 et=866.580</Score>
-<Sector Driver="Tymon Kniazuk" ID="14" Sector="1" Class="LMP2" et="868.3">Tymon Kniazuk(14) set new best for sector 1</Sector>
-<Score et="868.3">Tymon Kniazuk(14) lap=6 point=1 t=34.274 et=868.240</Score>
-<Score et="871.0">Victor Lightside(5) lap=6 point=1 t=34.926 et=870.860</Score>
-<Incident et="871.7">Mat Django(10) reported contact (1146.80) with another vehicle Maxim Goflin(13)</Incident>
-<Incident et="871.7">Maxim Goflin(13) reported contact (1152.40) with another vehicle Mat Django(10)</Incident>
-<Incident et="872.2">Mat Django(10) reported contact (1169.72) with another vehicle nino komplet(19)</Incident>
-<Incident et="872.2">nino komplet(19) reported contact (1132.30) with another vehicle Mat Django(10)</Incident>
-<Incident et="872.3">nino komplet(19) reported contact (719.75) with another vehicle Maxim Goflin(13)</Incident>
-<Incident et="872.3">Maxim Goflin(13) reported contact (724.83) with another vehicle nino komplet(19)</Incident>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="873.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="875.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="875.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="876.8">No Further Action</TrackLimits>
-<TrackLimits Driver="nino komplet" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.3">No Further Action</TrackLimits>
-<Score et="877.8">Jonathan scheibner(12) lap=6 point=0 t=115.526 et=877.780</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="878.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="878.8">No Further Action</TrackLimits>
-<Score et="879.5">P-A Fugeekies(6) lap=6 point=0 t=118.986 et=879.502</Score>
-<Score et="880.6">Maj Perne(17) lap=6 point=1 t=35.156 et=880.560</Score>
-<Score et="884.0">Kylian Mbacle(4) lap=6 point=0 t=135.165 et=883.900</Score>
-<Score et="884.3">Matthew Fernandez(8) lap=5 point=2 t=90.532 et=884.160</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="885.3">No Further Action</TrackLimits>
-<Score et="885.7">Benno Spahgetto(18) lap=6 point=1 t=35.547 et=885.680</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="886.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Mat Django" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="887.6">No Further Action</TrackLimits>
-<Score et="890.7">Manoa Peters(11) lap=6 point=1 t=35.026 et=890.580</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Sinka Balint" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="895.8">No Further Action</TrackLimits>
-<Score et="897.6">Maxim Goflin(13) lap=6 point=1 t=37.296 et=897.480</Score>
-<Score et="898.7">nino komplet(19) lap=6 point=1 t=38.968 et=898.620</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="898.8">No Further Action</TrackLimits>
-<Score et="903.1">Alex Koenig#9938(16) lap=6 point=1 t=36.386 et=902.960</Score>
-<Score et="905.3">Mat Django(10) lap=6 point=1 t=46.220 et=905.180</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="909.8">No Further Action</TrackLimits>
-<Score et="911.7">Matyas Bukovsky(7) lap=6 point=2 t=85.561 et=911.640</Score>
-<Score et="912.9">Jonathan scheibner(12) lap=6 point=1 t=35.096 et=912.880</Score>
-<Score et="914.6">Matthew Fernandez(8) lap=6 point=0 t=120.915 et=914.540</Score>
-<Score et="915.3">Sinka Balint(1) lap=6 point=2 t=86.123 et=915.160</Score>
-<Sector et="915.8">P-A Fugeekies(6) reports new suspension damage</Sector>
-<Incident et="915.9">P-A Fugeekies(6) reported contact (1622.97) with Immovable</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="917.8">No Further Action</TrackLimits>
-<Score et="919.7">Kylian Mbacle(4) lap=6 point=1 t=35.581 et=919.480</Score>
-<Score et="920.7">Tymon Kniazuk(14) lap=6 point=2 t=86.718 et=920.680</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="922.2">No Further Action</TrackLimits>
-<Score et="922.9">Victor Lightside(5) lap=6 point=2 t=86.896 et=922.840</Score>
-<Score et="923.2">P-A Fugeekies(6) lap=6 point=1 t=43.644 et=923.145</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="927.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="929.6">No Further Action</TrackLimits>
-<Score et="932.6">Maj Perne(17) lap=6 point=2 t=87.117 et=932.540</Score>
-<Score et="938.6">Benno Spahgetto(18) lap=6 point=2 t=88.355 et=938.480</Score>
-<Score et="940.2">Matyas Bukovsky(7) lap=7 point=0 t=113.972 et=940.060</Score>
-<Score et="943.8">Sinka Balint(1) lap=7 point=0 t=114.681 et=943.720</Score>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="948.3">No Further Action</TrackLimits>
-<Score et="949.4">Tymon Kniazuk(14) lap=7 point=0 t=115.306 et=949.260</Score>
-<Score et="949.7">Maxim Goflin(13) lap=6 point=2 t=89.437 et=949.620</Score>
-<Score et="950.0">Matthew Fernandez(8) lap=6 point=1 t=35.326 et=949.880</Score>
-<Score et="951.4">nino komplet(19) lap=6 point=2 t=91.686 et=951.340</Score>
-<Score et="951.5">Victor Lightside(5) lap=7 point=0 t=115.536 et=951.480</Score>
-<Score et="954.4">Manoa Peters(11) lap=6 point=2 t=98.753 et=954.300</Score>
-<Score et="955.4">Alex Koenig#9938(16) lap=6 point=2 t=88.773 et=955.360</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="958.1">No Further Action</TrackLimits>
-<Score et="958.4">Mat Django(10) lap=6 point=2 t=99.398 et=958.360</Score>
-<Score et="962.3">Maj Perne(17) lap=7 point=0 t=116.779 et=962.200</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="964.0">No Further Action</TrackLimits>
-<Score et="964.6">Jonathan scheibner(12) lap=6 point=2 t=86.746 et=964.520</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="967.1">No Further Action</TrackLimits>
-<Score et="969.4">Benno Spahgetto(18) lap=7 point=0 t=119.241 et=969.380</Score>
-<Score et="972.5">Kylian Mbacle(4) lap=6 point=2 t=88.503 et=972.400</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="973.0">No Further Action</TrackLimits>
-<Score et="974.6">Matyas Bukovsky(7) lap=7 point=1 t=34.466 et=974.520</Score>
-<Score et="978.7">Maxim Goflin(13) lap=7 point=0 t=118.446 et=978.640</Score>
-<Score et="979.0">Sinka Balint(1) lap=7 point=1 t=35.139 et=978.860</Score>
-<Score et="980.4">nino komplet(19) lap=7 point=0 t=120.625 et=980.280</Score>
-<Score et="983.1">Manoa Peters(11) lap=7 point=0 t=127.457 et=983.020</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="984.2">No Further Action</TrackLimits>
-<Score et="985.0">Alex Koenig#9938(16) lap=7 point=0 t=118.241 et=984.820</Score>
-<Score et="986.1">Victor Lightside(5) lap=7 point=1 t=34.602 et=986.080</Score>
-<Score et="987.6">Mat Django(10) lap=7 point=0 t=128.616 et=987.580</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="987.8">No Further Action</TrackLimits>
-<Score et="987.8">Tymon Kniazuk(14) lap=7 point=1 t=38.462 et=987.720</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="990.5">No Further Action</TrackLimits>
-<Score et="994.2">Jonathan scheibner(12) lap=7 point=0 t=116.334 et=994.120</Score>
-<Score et="994.6">P-A Fugeekies(6) lap=6 point=2 t=115.047 et=994.549</Score>
-<Score et="997.0">Maj Perne(17) lap=7 point=1 t=34.748 et=996.940</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="997.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="997.3">No Further Action</TrackLimits>
-<Score et="1001.0">Kylian Mbacle(4) lap=7 point=0 t=117.106 et=1001.000</Score>
-<Score et="1003.2">Matthew Fernandez(8) lap=6 point=2 t=88.567 et=1003.120</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1003.7">No Further Action</TrackLimits>
-<Score et="1005.6">Benno Spahgetto(18) lap=7 point=1 t=36.193 et=1005.560</Score>
-<Incident et="1012.6">Benno Spahgetto(18) reported contact (128.52) with Post</Incident>
-<Incident et="1012.7">Benno Spahgetto(18) reported contact (75.29) with Post</Incident>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1014.2">No Further Action</TrackLimits>
-<Score et="1014.5">Maxim Goflin(13) lap=7 point=1 t=35.519 et=1014.140</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1015.2">No Further Action</TrackLimits>
-<Score et="1016.7">nino komplet(19) lap=7 point=1 t=36.251 et=1016.540</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1017.4">No Further Action</TrackLimits>
-<Score et="1018.9">Manoa Peters(11) lap=7 point=1 t=35.771 et=1018.780</Score>
-<Score et="1020.2">Alex Koenig#9938(16) lap=7 point=1 t=35.299 et=1020.120</Score>
-<Score et="1023.3">Mat Django(10) lap=7 point=1 t=35.612 et=1023.200</Score>
-<Score et="1024.0">P-A Fugeekies(6) lap=7 point=0 t=144.478 et=1023.980</Score>
-<Score et="1026.2">Matyas Bukovsky(7) lap=7 point=2 t=86.116 et=1026.160</Score>
-<Score et="1030.1">Jonathan scheibner(12) lap=7 point=1 t=35.939 et=1030.040</Score>
-<Score et="1030.8">Sinka Balint(1) lap=7 point=2 t=86.979 et=1030.700</Score>
-<Incident et="1032.1">Manoa Peters(11) reported contact (2148.51) with another vehicle nino komplet(19)</Incident>
-<Incident et="1032.1">nino komplet(19) reported contact (2149.78) with another vehicle Manoa Peters(11)</Incident>
-<Score et="1032.8">Matthew Fernandez(8) lap=7 point=0 t=118.161 et=1032.700</Score>
-<Incident et="1032.9">nino komplet(19) reported contact (54.23) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="1033.1">nino komplet(19) reported contact (66.56) with another vehicle Manoa Peters(11)</Incident>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1033.7">No Further Action</TrackLimits>
-<Score et="1036.2">Kylian Mbacle(4) lap=7 point=1 t=35.078 et=1036.080</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1036.6">No Further Action</TrackLimits>
-<TrackLimits Driver="nino komplet" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1037.7">No Further Action</TrackLimits>
-<Score et="1037.9">Victor Lightside(5) lap=7 point=2 t=86.368 et=1037.840</Score>
-<TrackLimits Driver="Mat Django" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1038.5">No Further Action</TrackLimits>
-<Score et="1039.7">Tymon Kniazuk(14) lap=7 point=2 t=90.330 et=1039.600</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1044.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1045.1">No Further Action</TrackLimits>
-<Incident et="1046.0">P-A Fugeekies(6) reported contact (356.62) with Immovable</Incident>
-<Incident et="1046.0">P-A Fugeekies(6) reported contact (1098.19) with Immovable</Incident>
-<Sector et="1046.0">P-A Fugeekies(6) reports new suspension damage</Sector>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1046.8">No Further Action</TrackLimits>
-<Score et="1048.7">Maj Perne(17) lap=7 point=2 t=86.444 et=1048.640</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1051.4">No Further Action</TrackLimits>
-<Score et="1055.2">Matyas Bukovsky(7) lap=8 point=0 t=115.077 et=1055.120</Score>
-<Score et="1059.5">Sinka Balint(1) lap=8 point=0 t=115.700 et=1059.420</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1061.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1062.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1064.5">No Further Action</TrackLimits>
-<Score et="1067.3">Maxim Goflin(13) lap=7 point=2 t=88.284 et=1066.920</Score>
-<Score et="1068.1">Matthew Fernandez(8) lap=7 point=1 t=35.329 et=1068.040</Score>
-<Score et="1068.3">Victor Lightside(5) lap=8 point=0 t=116.751 et=1068.220</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1069.2">No Further Action</TrackLimits>
-<Score et="1069.3">P-A Fugeekies(6) lap=7 point=1 t=45.354 et=1069.334</Score>
-<Score et="1069.6">Tymon Kniazuk(14) lap=8 point=0 t=120.257 et=1069.520</Score>
-<Score et="1074.6">nino komplet(19) lap=7 point=2 t=94.230 et=1074.520</Score>
-<Score et="1075.0">Mat Django(10) lap=7 point=2 t=87.409 et=1074.980</Score>
-<Score et="1075.3">Manoa Peters(11) lap=7 point=2 t=92.224 et=1075.240</Score>
-<Score et="1076.3">Benno Spahgetto(18) lap=7 point=2 t=106.930 et=1076.300</Score>
-<Score et="1078.4">Maj Perne(17) lap=8 point=0 t=116.088 et=1078.280</Score>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1081.1">No Further Action</TrackLimits>
-<Score et="1081.8">Alex Koenig#9938(16) lap=7 point=2 t=96.872 et=1081.680</Score>
-<Score et="1083.7">Jonathan scheibner(12) lap=7 point=2 t=89.471 et=1083.580</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1086.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.7">No Further Action</TrackLimits>
-<Score et="1088.5">Kylian Mbacle(4) lap=7 point=2 t=87.442 et=1088.440</Score>
-<Score et="1090.0">Matyas Bukovsky(7) lap=8 point=1 t=34.792 et=1089.920</Score>
-<Score et="1094.3">Sinka Balint(1) lap=8 point=1 t=34.800 et=1094.220</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1095.3">No Further Action</TrackLimits>
-<Incident et="1096.2">Manoa Peters(11) reported contact (30.19) with another vehicle nino komplet(19)</Incident>
-<Score et="1096.3">Maxim Goflin(13) lap=8 point=0 t=118.143 et=1096.780</Score>
-<Incident et="1097.4">Tymon Kniazuk(14) reported contact (24.67) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="1097.5">Victor Lightside(5) reported contact (68.29) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="1097.5">Tymon Kniazuk(14) reported contact (394.39) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="1097.5">Victor Lightside(5) reported contact (177.41) with another vehicle Tymon Kniazuk(14)</Incident>
-<Incident et="1097.5">Victor Lightside(5) reported contact (729.95) with another vehicle Tymon Kniazuk(14)</Incident>
-<Sector et="1097.5">Victor Lightside(5) reports new suspension damage</Sector>
-<Incident et="1097.7">Manoa Peters(11) reported contact (73.47) with another vehicle nino komplet(19)</Incident>
-<Incident et="1097.7">nino komplet(19) reported contact (45.05) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="1098.4">Manoa Peters(11) reported contact (5.14) with another vehicle nino komplet(19)</Incident>
-<Incident et="1098.4">Manoa Peters(11) reported contact (7.00) with another vehicle nino komplet(19)</Incident>
-<Incident et="1098.5">Manoa Peters(11) reported contact (14.60) with another vehicle nino komplet(19)</Incident>
-<Incident et="1098.6">Manoa Peters(11) reported contact (19.45) with another vehicle nino komplet(19)</Incident>
-<Incident et="1098.7">nino komplet(19) reported contact (5.68) with another vehicle Manoa Peters(11)</Incident>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1098.8">No Further Action</TrackLimits>
-<Incident et="1098.8">nino komplet(19) reported contact (31.60) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="1098.9">nino komplet(19) reported contact (38.01) with another vehicle Manoa Peters(11)</Incident>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.4">No Further Action</TrackLimits>
-<Score et="1103.8">Mat Django(10) lap=8 point=0 t=116.115 et=1103.700</Score>
-<Score et="1104.6">Victor Lightside(5) lap=8 point=1 t=36.261 et=1104.480</Score>
-<Score et="1104.6">nino komplet(19) lap=8 point=0 t=124.250 et=1104.540</Score>
-<Score et="1104.7">Manoa Peters(11) lap=8 point=0 t=121.633 et=1104.640</Score>
-<Score et="1105.8">Benno Spahgetto(18) lap=8 point=0 t=136.361 et=1105.740</Score>
-<Score et="1105.9">Tymon Kniazuk(14) lap=8 point=1 t=36.274 et=1105.800</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1110.0">No Further Action</TrackLimits>
-<Score et="1110.8">Alex Koenig#9938(16) lap=8 point=0 t=125.952 et=1110.760</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1111.4">No Further Action</TrackLimits>
-<Score et="1113.4">Maj Perne(17) lap=8 point=1 t=35.085 et=1113.360</Score>
-<Incident et="1113.5">Manoa Peters(11) reported contact (60.38) with another vehicle nino komplet(19)</Incident>
-<Incident et="1113.5">nino komplet(19) reported contact (69.90) with another vehicle Manoa Peters(11)</Incident>
-<Score et="1113.8">Jonathan scheibner(12) lap=8 point=0 t=119.601 et=1113.720</Score>
-<Incident et="1115.2">Manoa Peters(11) reported contact (358.26) with another vehicle nino komplet(19)</Incident>
-<Incident et="1115.2">nino komplet(19) reported contact (471.45) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="1115.4">Mat Django(10) reported contact (1233.95) with another vehicle nino komplet(19)</Incident>
-<Incident et="1115.4">nino komplet(19) reported contact (1282.51) with another vehicle Mat Django(10)</Incident>
-<Incident et="1115.8">Mat Django(10) reported contact (514.57) with another vehicle Manoa Peters(11)</Incident>
-<Incident et="1115.8">Manoa Peters(11) reported contact (562.98) with another vehicle Mat Django(10)</Incident>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1115.9">No Further Action</TrackLimits>
-<Score et="1116.9">Kylian Mbacle(4) lap=8 point=0 t=115.888 et=1116.880</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1119.9">No Further Action</TrackLimits>
-<Incident et="1121.1">Manoa Peters(11) reported contact (254.76) with another vehicle Mat Django(10)</Incident>
-<Incident et="1121.1">Mat Django(10) reported contact (287.03) with another vehicle Manoa Peters(11)</Incident>
-<TrackLimits Driver="Mat Django" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1121.4">No Further Action</TrackLimits>
-<Sector et="1122.1">Mat Django(10) reports new suspension damage</Sector>
-<Incident et="1122.2">Mat Django(10) reported contact (971.06) with another vehicle nino komplet(19)</Incident>
-<Incident et="1122.2">nino komplet(19) reported contact (972.67) with another vehicle Mat Django(10)</Incident>
-<Score et="1123.2">Matthew Fernandez(8) lap=7 point=2 t=90.348 et=1123.060</Score>
-<TrackLimits Driver="nino komplet" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1123.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1125.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1131.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1132.1">No Further Action</TrackLimits>
-<Score et="1132.1">Maxim Goflin(13) lap=8 point=1 t=35.542 et=1132.320</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1134.7">No Further Action</TrackLimits>
-<Score et="1135.1">P-A Fugeekies(6) lap=7 point=2 t=111.146 et=1135.126</Score>
-<Sector et="1138.3">Mat Django(10) reports new suspension damage</Sector>
-<Sector et="1138.4">nino komplet(19) reports new suspension damage</Sector>
-<Incident et="1138.4">Mat Django(10) reported contact (5221.27) with another vehicle nino komplet(19)</Incident>
-<Incident et="1138.4">nino komplet(19) reported contact (5310.80) with another vehicle Mat Django(10)</Incident>
-<Incident et="1138.5">Mat Django(10) reported contact (172.15) with Immovable</Incident>
-<Incident et="1138.5">Mat Django(10) reported contact (24.96) with Wing</Incident>
-<Incident et="1138.5">Mat Django(10) reported contact (678.94) with Wing</Incident>
-<Sector et="1139.0">Mat Django(10) reports new suspension damage</Sector>
-<Incident et="1139.1">Mat Django(10) reported contact (1582.60) with Immovable</Incident>
-<Incident et="1139.1">Mat Django(10) reported contact (82.82) with Wing</Incident>
-<Incident et="1140.2">Mat Django(10) reported contact (897.63) with another vehicle nino komplet(19)</Incident>
-<Incident et="1140.2">nino komplet(19) reported contact (847.36) with another vehicle Mat Django(10)</Incident>
-<Score et="1140.9">Manoa Peters(11) lap=8 point=1 t=36.199 et=1140.840</Score>
-<Incident et="1141.0">Mat Django(10) reported contact (362.49) with another vehicle nino komplet(19)</Incident>
-<Incident et="1141.0">nino komplet(19) reported contact (364.39) with another vehicle Mat Django(10)</Incident>
-<TrackLimits Driver="nino komplet" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1141.2">No Further Action</TrackLimits>
-<TrackLimits Driver="nino komplet" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1141.4">No Further Action</TrackLimits>
-<Score et="1142.0">Matyas Bukovsky(7) lap=8 point=2 t=86.808 et=1141.940</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.1">No Further Action</TrackLimits>
-<Score et="1143.4">Benno Spahgetto(18) lap=8 point=1 t=37.595 et=1143.320</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1144.6">No Further Action</TrackLimits>
-<Score et="1146.0">Sinka Balint(1) lap=8 point=2 t=86.563 et=1145.980</Score>
-<Score et="1146.9">Alex Koenig#9938(16) lap=8 point=1 t=36.034 et=1146.800</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1147.0">No Further Action</TrackLimits>
-<Score et="1151.2">Jonathan scheibner(12) lap=8 point=1 t=37.434 et=1151.140</Score>
-<Score et="1152.0">Kylian Mbacle(4) lap=8 point=1 t=35.100 et=1151.980</Score>
-<Incident et="1153.0">nino komplet(19) reported contact (568.84) with another vehicle Mat Django(10)</Incident>
-<Incident et="1153.1">Mat Django(10) reported contact (588.49) with another vehicle nino komplet(19)</Incident>
-<Score et="1155.0">Matthew Fernandez(8) lap=8 point=0 t=122.111 et=1154.820</Score>
-<Score et="1156.8">Victor Lightside(5) lap=8 point=2 t=88.477 et=1156.700</Score>
-<Incident et="1157.5">nino komplet(19) reported contact (93.57) with another vehicle Mat Django(10)</Incident>
-<Incident et="1157.5">Mat Django(10) reported contact (89.56) with another vehicle nino komplet(19)</Incident>
-<Score et="1157.7">Tymon Kniazuk(14) lap=8 point=2 t=88.104 et=1157.620</Score>
-<Incident et="1157.8">Mat Django(10) reported contact (626.76) with another vehicle nino komplet(19)</Incident>
-<Incident et="1157.8">nino komplet(19) reported contact (610.74) with another vehicle Mat Django(10)</Incident>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1162.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1163.2">No Further Action</TrackLimits>
-<Score et="1164.8">P-A Fugeekies(6) lap=8 point=0 t=140.784 et=1164.764</Score>
-<Score et="1165.5">Maj Perne(17) lap=8 point=2 t=87.164 et=1165.440</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1166.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1170.5">No Further Action</TrackLimits>
-<Score et="1171.1">Matyas Bukovsky(7) lap=9 point=0 t=115.911 et=1171.040</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1172.6">No Further Action</TrackLimits>
-<Score et="1174.7">Sinka Balint(1) lap=9 point=0 t=115.243 et=1174.660</Score>
-<ChatMessage et="1178.9">n komplet: m  django fck noob </ChatMessage>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1179.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1182.8">No Further Action</TrackLimits>
-<Score et="1185.2">Maxim Goflin(13) lap=8 point=2 t=88.387 et=1185.160</Score>
-<Score et="1186.3">Tymon Kniazuk(14) lap=9 point=0 t=116.740 et=1186.260</Score>
-<Score et="1186.6">Victor Lightside(5) lap=9 point=0 t=118.283 et=1186.500</Score>
-<ChatMessage et="1187.8">n komplet: delete game and life</ChatMessage>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1191.7">No Further Action</TrackLimits>
-<Score et="1192.0">Matthew Fernandez(8) lap=8 point=1 t=37.114 et=1191.940</Score>
-<Score et="1193.6">Manoa Peters(11) lap=8 point=2 t=88.844 et=1193.480</Score>
-<Score et="1194.3">Maj Perne(17) lap=9 point=0 t=115.961 et=1194.240</Score>
-<Score et="1198.5">Benno Spahgetto(18) lap=8 point=2 t=92.695 et=1198.420</Score>
-<Score et="1199.6">Alex Koenig#9938(16) lap=8 point=2 t=88.785 et=1199.560</Score>
-<ChatMessage et="1203.4">M Django: komplet is noob </ChatMessage>
-<Score et="1204.2">Kylian Mbacle(4) lap=8 point=2 t=87.283 et=1204.160</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.9">No Further Action</TrackLimits>
-<Score et="1205.1">Jonathan scheibner(12) lap=8 point=2 t=91.384 et=1205.100</Score>
-<Score et="1205.4">Matyas Bukovsky(7) lap=9 point=1 t=34.304 et=1205.340</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1207.6">No Further Action</TrackLimits>
-<Score et="1209.4">Sinka Balint(1) lap=9 point=1 t=34.684 et=1209.360</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1210.4">No Further Action</TrackLimits>
-<Score et="1210.6">P-A Fugeekies(6) lap=8 point=1 t=45.801 et=1210.565</Score>
-<Score et="1214.8">Maxim Goflin(13) lap=9 point=0 t=118.026 et=1214.800</Score>
-<ChatMessage et="1215.8">n komplet: i see noob delete game</ChatMessage>
-<Score et="1220.8">Tymon Kniazuk(14) lap=9 point=1 t=34.476 et=1220.740</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1221.7">No Further Action</TrackLimits>
-<Score et="1221.8">Victor Lightside(5) lap=9 point=1 t=35.250 et=1221.760</Score>
-<Score et="1222.5">Manoa Peters(11) lap=9 point=0 t=117.781 et=1222.420</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1222.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1223.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1223.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1226.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1227.0">No Further Action</TrackLimits>
-<Score et="1229.3">Maj Perne(17) lap=9 point=1 t=34.945 et=1229.180</Score>
-<Score et="1229.3">Alex Koenig#9938(16) lap=9 point=0 t=118.453 et=1229.220</Score>
-<Score et="1229.7">Benno Spahgetto(18) lap=9 point=0 t=123.913 et=1229.640</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1231.4">Warning</TrackLimits>
-<Score et="1232.8">Kylian Mbacle(4) lap=9 point=0 t=115.831 et=1232.720</Score>
-<Score et="1234.9">Jonathan scheibner(12) lap=9 point=0 t=121.119 et=1234.840</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1238.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1239.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1242.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1248.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1249.8">No Further Action</TrackLimits>
-<Score et="1250.0">Maxim Goflin(13) lap=9 point=1 t=35.146 et=1249.940</Score>
-<TrackLimits Driver="Matyas Bukovsky" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1250.7">No Further Action</TrackLimits>
-<Score et="1251.3">Matthew Fernandez(8) lap=8 point=2 t=96.385 et=1251.200</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1254.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1257.4">No Further Action</TrackLimits>
-<Score et="1258.3">Matyas Bukovsky(7) lap=9 point=2 t=87.198 et=1258.240</Score>
-<Score et="1260.5">Manoa Peters(11) lap=9 point=1 t=37.955 et=1260.380</Score>
-<Score et="1260.7">Sinka Balint(1) lap=9 point=2 t=85.944 et=1260.620</Score>
-<Score et="1266.9">P-A Fugeekies(6) lap=8 point=2 t=102.118 et=1266.882</Score>
-<Score et="1267.3">Benno Spahgetto(18) lap=9 point=1 t=37.560 et=1267.200</Score>
-<ChatMessage et="1267.9">M Django: no iam fuck you </ChatMessage>
-<Score et="1268.0">Kylian Mbacle(4) lap=9 point=1 t=35.233 et=1267.940</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1268.5">No Further Action</TrackLimits>
-<Score et="1271.3">Jonathan scheibner(12) lap=9 point=1 t=36.366 et=1271.200</Score>
-<Score et="1272.7">Tymon Kniazuk(14) lap=9 point=2 t=86.335 et=1272.600</Score>
-<Score et="1273.9">Alex Koenig#9938(16) lap=9 point=1 t=44.656 et=1273.880</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1281.2">No Further Action</TrackLimits>
-<Score et="1281.5">Matthew Fernandez(8) lap=9 point=0 t=126.485 et=1281.300</Score>
-<Score et="1283.0">Victor Lightside(5) lap=9 point=2 t=-1.000 et=1282.960</Score>
-<TrackLimits Driver="Sinka Balint" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1283.3">No Further Action</TrackLimits>
-<Score et="1283.4">Maj Perne(17) lap=9 point=2 t=89.092 et=1283.340</Score>
-<TrackLimits Driver="Maxim Goflin" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1285.3">No Further Action</TrackLimits>
-<Score et="1287.7">Matyas Bukovsky(7) lap=10 point=0 t=116.583 et=1287.620</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1289.3">No Further Action</TrackLimits>
-<Score et="1289.8">Sinka Balint(1) lap=10 point=0 t=115.013 et=1289.680</Score>
-<TrackLimits Driver="Victor Lightside" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1292.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.4">No Further Action</TrackLimits>
-<Score et="1296.7">P-A Fugeekies(6) lap=9 point=0 t=131.932 et=1296.696</Score>
-<ChatMessage et="1298.2">M Django: you don&apos;t know how to brake </ChatMessage>
-<Score et="1301.0">Tymon Kniazuk(14) lap=10 point=0 t=114.595 et=1300.860</Score>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1304.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1309.6">No Further Action</TrackLimits>
-<Score et="1312.8">Maj Perne(17) lap=10 point=0 t=118.518 et=1312.760</Score>
-<Score et="1312.9">Victor Lightside(5) lap=10 point=0 t=-1.000 et=1312.800</Score>
-<Score et="1313.2">Maxim Goflin(13) lap=9 point=2 t=98.345 et=1313.140</Score>
-<Incident et="1315.2">Maj Perne(17) reported contact (48.34) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="1315.3">Victor Lightside(5) reported contact (19.35) with another vehicle Maj Perne(17)</Incident>
-<Score et="1317.0">Matthew Fernandez(8) lap=9 point=1 t=35.585 et=1316.880</Score>
-<Score et="1319.9">Manoa Peters(11) lap=9 point=2 t=97.486 et=1319.920</Score>
-<Score et="1322.5">Benno Spahgetto(18) lap=9 point=2 t=92.766 et=1322.400</Score>
-<Score et="1322.6">Matyas Bukovsky(7) lap=10 point=1 t=34.899 et=1322.520</Score>
-<Score et="1324.8">Sinka Balint(1) lap=10 point=1 t=35.036 et=1324.720</Score>
-<Score et="1325.5">Jonathan scheibner(12) lap=9 point=2 t=90.610 et=1325.440</Score>
-<Score et="1326.1">Kylian Mbacle(4) lap=9 point=2 t=93.380 et=1326.100</Score>
-<TrackLimits Driver="Benno Spahgetto" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1326.8">No Further Action</TrackLimits>
-<Score et="1327.8">Alex Koenig#9938(16) lap=9 point=2 t=98.450 et=1327.680</Score>
-<ChatMessage et="1333.0">M Django: and you ruin the parts of others</ChatMessage>
-<Score et="1333.3">P-A Fugeekies(6) lap=9 point=1 t=36.567 et=1333.263</Score>
-<TrackLimits Driver="Kylian Mbacle" ID="4" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.9">No Further Action</TrackLimits>
-<Score et="1335.7">Tymon Kniazuk(14) lap=10 point=1 t=34.732 et=1335.580</Score>
-<Score et="1342.3">Maxim Goflin(13) lap=10 point=0 t=127.448 et=1342.240</Score>
-<Score et="1348.4">Victor Lightside(5) lap=10 point=1 t=35.532 et=1348.320</Score>
-<Score et="1349.0">Maj Perne(17) lap=10 point=1 t=36.170 et=1348.920</Score>
-<Score et="1349.2">Manoa Peters(11) lap=10 point=0 t=126.702 et=1349.120</Score>
-<Score et="1352.8">Benno Spahgetto(18) lap=10 point=0 t=123.108 et=1352.760</Score>
-<Score et="1355.4">Kylian Mbacle(4) lap=10 point=0 t=122.652 et=1355.360</Score>
-<Score et="1355.5">Jonathan scheibner(12) lap=10 point=0 t=120.599 et=1355.440</Score>
-<Score et="1357.4">Alex Koenig#9938(16) lap=10 point=0 t=128.106 et=1357.320</Score>
-<ChatMessage et="1360.3">M Django: delete the game komplet </ChatMessage>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.1">No Further Action</TrackLimits>
-<Incident et="1367.7">Jonathan scheibner(12) reported contact (955.44) with another vehicle Kylian Mbacle(4)</Incident>
-<Incident et="1367.7">Kylian Mbacle(4) reported contact (930.80) with another vehicle Jonathan scheibner(12)</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1369.6">No Further Action</TrackLimits>
-<Score et="1371.4">Matthew Fernandez(8) lap=9 point=2 t=89.975 et=1371.280</Score>
-<Score et="1373.6">Matyas Bukovsky(7) lap=10 point=2 t=85.896 et=1373.520</Score>
-<Incident et="1373.9">Victor Lightside(5) reported contact (262.18) with another vehicle Maj Perne(17)</Incident>
-<Incident et="1373.9">Maj Perne(17) reported contact (325.31) with another vehicle Victor Lightside(5)</Incident>
-<Score et="1376.6">Sinka Balint(1) lap=10 point=2 t=86.798 et=1376.480</Score>
-<Score et="1377.4">Maxim Goflin(13) lap=10 point=1 t=35.070 et=1377.320</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.5">No Further Action</TrackLimits>
-<Incident et="1380.7">Maj Perne(17) reported contact (96.56) with another vehicle Victor Lightside(5)</Incident>
-<Incident et="1380.7">Victor Lightside(5) reported contact (106.99) with another vehicle Maj Perne(17)</Incident>
-<Score et="1384.7">Manoa Peters(11) lap=10 point=1 t=35.545 et=1384.680</Score>
-<Score et="1387.9">Tymon Kniazuk(14) lap=10 point=2 t=87.053 et=1387.900</Score>
-<Score et="1389.9">Benno Spahgetto(18) lap=10 point=1 t=37.130 et=1389.880</Score>
-<TrackLimits Driver="Tymon Kniazuk" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1391.3">No Further Action</TrackLimits>
-<Score et="1392.3">Kylian Mbacle(4) lap=10 point=1 t=36.841 et=1392.200</Score>
-<Score et="1392.9">Jonathan scheibner(12) lap=10 point=1 t=37.371 et=1392.800</Score>
-<Score et="1393.3">Alex Koenig#9938(16) lap=10 point=1 t=35.916 et=1393.240</Score>
-<Score et="1397.1">P-A Fugeekies(6) lap=9 point=2 t=100.408 et=1397.104</Score>
-<Score et="1401.0">Matthew Fernandez(8) lap=10 point=0 t=119.574 et=1400.880</Score>
-<Score et="1401.6">Victor Lightside(5) lap=10 point=2 t=88.807 et=1401.600</Score>
-<Score et="1402.0">Maj Perne(17) lap=10 point=2 t=89.179 et=1401.940</Score>
-<Score et="1402.1">Checkered for Matyas Bukovsky, laps=11/2147483647, endET=1402.080078/1327.682495, crossedAfterTime=0</Score>
-<Score et="1402.1">Matyas Bukovsky(7) lap=11 point=0 t=114.454 et=1402.080</Score>
-<Score et="1405.3">Sinka Balint(1) lap=11 point=0 t=115.484 et=1405.160</Score>
-<TrackLimits Driver="Maj Perne" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1407.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Koenig#9938" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1408.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Manoa Peters" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1416.2">No Further Action</TrackLimits>
-<Score et="1416.3">Tymon Kniazuk(14) lap=11 point=0 t=115.346 et=1416.200</Score>
-<TrackLimits Driver="Matthew Fernandez" ID="8" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1416.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Jonathan scheibner" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1425.8">No Further Action</TrackLimits>
-<Score et="1426.2">P-A Fugeekies(6) lap=10 point=0 t=129.479 et=1426.175</Score>
-<Score et="1430.5">Maxim Goflin(13) lap=10 point=2 t=88.076 et=1430.320</Score>
-<Score et="1430.9">Victor Lightside(5) lap=11 point=0 t=118.050 et=1430.840</Score>
-<Score et="1431.3">Maj Perne(17) lap=11 point=0 t=118.492 et=1431.260</Score>
-<ChatMessage et="1434.1">T Kniazuk: lightside nice battle</ChatMessage>
-<Incident et="1436.1">Alex Koenig#9938(16) reported contact (146.95) with another vehicle Jonathan scheibner(12)</Incident>
-<Incident et="1436.1">Jonathan scheibner(12) reported contact (214.69) with another vehicle Alex Koenig#9938(16)</Incident>
-<Score et="1437.5">Matthew Fernandez(8) lap=10 point=1 t=36.530 et=1437.400</Score>
-<Score et="1438.9">Manoa Peters(11) lap=10 point=2 t=89.676 et=1438.800</Score>
-<Score et="1444.7">Kylian Mbacle(4) lap=10 point=2 t=89.304 et=1444.680</Score>
-<Score et="1445.6">Benno Spahgetto(18) lap=10 point=2 t=92.802 et=1445.560</Score>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4643" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4518" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="151.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="154.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="154.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="156.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="157.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="161.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="174.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4512" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="184.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4518" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="192.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="193.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4512" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="215.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="225.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="232.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4518" ID="15" Lap="0" WarningPoints="9.5" CurrentPoints="0" Resolution="1" et="232.9">Drive Through Penalty</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="237.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="241.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="244.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="245.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="254.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4518" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="257.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="262.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4512" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="278.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="291.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="294.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="301.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="316.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="321.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="331.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="333.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="342.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="344.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4512" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="344.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="348.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="350.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="364.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="373.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="381.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="390.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="390.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="402.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="408.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="409.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="414.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="414.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="421.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="426.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="430.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="436.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="451.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="452.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="454.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="464.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="467.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="477.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="495.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="513.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="523.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="527.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="534.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="539.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="541.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="544.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="544.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="551.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="552.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="554.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="557.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="564.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="566.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="568.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="568.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="569.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="574.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="579.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="582.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="589.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="591.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="609.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="622.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="625.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="631.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="633.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="639.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="640.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="643.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="649.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="656.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="660.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4643" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="664.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="668.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="669.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2915" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="677.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="689.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="696.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="699.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4643" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="708.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="712.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="714.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="719.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="729.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="731.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="733.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="735.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="738.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4748" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="752.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="757.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="760.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="769.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="770.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="780.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="783.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="786.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="790.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="797.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="806.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="809.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="817.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="823.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="827.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="827.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="833.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="852.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="858.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="858.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="873.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="875.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="875.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="876.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="878.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="878.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="885.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="886.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="887.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4643" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="895.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="898.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="909.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="917.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="922.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="927.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="929.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="948.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="958.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="964.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="967.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="973.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="984.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="987.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="990.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="997.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="997.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1003.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1014.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1015.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1017.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1033.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1036.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1037.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1038.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1044.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1045.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1046.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1051.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1061.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1062.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1064.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1069.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1081.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1086.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1095.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1098.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1110.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1111.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1115.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1119.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4111" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1121.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1123.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1125.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1131.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1132.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1134.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1141.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4302" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1141.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1144.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1147.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1162.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1163.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1166.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1170.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1172.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1179.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1182.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1191.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1207.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1210.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1221.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1222.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1223.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1223.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1226.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1227.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1231.4">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1238.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1239.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1242.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1248.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1249.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4154" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1250.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1254.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1257.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1268.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1281.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4643" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1283.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4178" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1285.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1289.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4827" ID="5" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1292.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1304.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1309.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3022" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1326.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3906" ID="4" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1364.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1369.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4802" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1391.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4033" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1407.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2868" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1408.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4041" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1416.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4144" ID="8" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1416.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3770" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1425.8">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>11</MostLapsCompleted>

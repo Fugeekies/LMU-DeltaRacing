@@ -36,87 +36,20 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<Incident et="73.1">Kacper Gosiewski(11) reported contact (908.35) with Immovable</Incident>
-<Incident et="95.8">Kacper Gosiewski(11) reported contact (183.66) with Immovable</Incident>
-<TrackLimits Driver="Kacper Gosiewski" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="97.6">No Further Action</TrackLimits>
-<Score et="100.8">Daniel Schmalus(2) lap=1 point=0 t=-1.000 et=100.220</Score>
-<TrackLimits Driver="mike cockslong" ID="10" Lap="0" WarningPoints="4" CurrentPoints="4" Resolution="3" et="102.5">Invalid Lap Cut Track</TrackLimits>
-<Score et="112.7">mike cockslong(10) lap=1 point=0 t=-1.000 et=112.400</Score>
-<Incident et="116.5">Jakub Novotny(0) reported contact (191.02) with Immovable</Incident>
-<Score et="117.0">Altan Sahin(14) lap=1 point=0 t=-1.000 et=116.640</Score>
-<Score et="117.1">connor mcdavid(12) lap=1 point=0 t=-1.000 et=116.640</Score>
-<Incident et="117.6">Altan Sahin(14) reported contact (61.80) with another vehicle connor mcdavid(12)</Incident>
-<Incident et="117.6">connor mcdavid(12) reported contact (58.18) with another vehicle Altan Sahin(14)</Incident>
-<Score et="119.5">Kacper Gosiewski(11) lap=1 point=0 t=-1.000 et=119.320</Score>
-<Sector et="123.5">mike cockslong(10) reports new suspension damage</Sector>
-<Incident et="123.6">mike cockslong(10) reported contact (1257.07) with Immovable</Incident>
-<Sector et="123.8">mike cockslong(10) reports new suspension damage</Sector>
-<Incident et="123.8">mike cockslong(10) reported contact (3420.93) with Immovable</Incident>
-<Sector Driver="Daniel Schmalus" ID="2" Sector="1" Class="GTE" et="124.0">Daniel Schmalus(2) set new best for sector 1</Sector>
-<Score et="124.0">Daniel Schmalus(2) lap=1 point=1 t=23.524 et=123.740</Score>
-<Sector et="127.6">Altan Sahin(14) reports new suspension damage</Sector>
-<Incident et="127.7">Altan Sahin(14) reported contact (5654.95) with Immovable</Incident>
-<Sector et="127.8">Altan Sahin(14) reports new suspension damage</Sector>
-<TrackLimits Driver="mike cockslong" ID="10" Lap="1" WarningPoints="0" CurrentPoints="4" Resolution="5" et="127.9">No Further Action</TrackLimits>
-<Score et="128.3">Liam Saxton(5) lap=1 point=0 t=-1.000 et=128.020</Score>
-<TrackLimits Driver="Altan Sahin" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="129.1">No Further Action</TrackLimits>
-<Sector et="130.2">Altan Sahin(14) reports new suspension damage</Sector>
-<Incident et="130.3">Altan Sahin(14) reported contact (3987.63) with Immovable</Incident>
-<Incident et="131.6">Altan Sahin(14) reported contact (927.86) with Immovable</Incident>
-<Score et="133.6">Altan Sahin(14) lap=1 point=1 t=-1.000 et=133.328</Score>
-<Score et="133.6">Altan Sahin(14) lap=1 point=2 t=-1.000 et=133.328</Score>
-<TrackLimits Driver="Daniel Schmalus" ID="2" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="3" et="136.4">Invalid Lap Cut Track</TrackLimits>
-<Score et="136.7">Daniel Schmalus(2) lap=1 point=2 t=-1.000 et=136.520</Score>
-<TrackLimits Driver="Matheus Anido" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="137.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Daniel Schmalus" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="138.9">No Further Action</TrackLimits>
-<Score et="143.1">Kacper Gosiewski(11) lap=1 point=1 t=23.656 et=142.960</Score>
-<Sector et="147.1">Altan Sahin(14) reports new suspension damage</Sector>
-<Incident et="147.2">Altan Sahin(14) reported contact (920.97) with Immovable</Incident>
-<Incident et="148.6">Altan Sahin(14) reported contact (2416.86) with Immovable</Incident>
-<Score et="148.7">William Kupszta(3) lap=1 point=0 t=-1.000 et=148.640</Score>
-<TrackLimits Driver="connor mcdavid" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.8">No Further Action</TrackLimits>
-<Score et="149.9">Harry Kember(19) lap=1 point=0 t=-1.000 et=149.740</Score>
-<Sector Driver="Liam Saxton" ID="5" Sector="1" Class="GTE" et="151.5">Liam Saxton(5) set new best for sector 1</Sector>
-<Score et="151.6">Liam Saxton(5) lap=1 point=1 t=23.364 et=151.380</Score>
-<Score et="151.9">Jakub Novotny(0) lap=1 point=0 t=-1.000 et=151.700</Score>
-<Score et="156.4">Matheus Anido(9) lap=1 point=0 t=-1.000 et=156.300</Score>
-<Sector Driver="Kacper Gosiewski" ID="11" Sector="2" Class="GTE" et="156.4">Kacper Gosiewski(11) set new best for sector 2</Sector>
-<Score et="156.5">Kacper Gosiewski(11) lap=1 point=2 t=37.052 et=156.360</Score>
-<Score et="157.1">Steve Rethmeier(7) lap=1 point=0 t=-1.000 et=157.040</Score>
-<Score et="157.3">connor mcdavid(12) lap=1 point=1 t=40.463 et=157.100</Score>
-<Incident et="159.5">Altan Sahin(14) reported contact (1545.48) with Immovable</Incident>
-<TrackLimits Driver="Liam Saxton" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.0">No Further Action</TrackLimits>
-<Score et="164.8">Daniel Schmalus(2) lap=2 point=0 t=-1.000 et=164.620</Score>
-<Score et="165.3">Liam Saxton(5) lap=1 point=2 t=37.149 et=165.160</Score>
-<Incident et="169.7">Altan Sahin(14) reported contact (376.61) with Immovable</Incident>
-<Sector Driver="connor mcdavid" ID="12" Sector="2" Class="GTE" et="170.4">connor mcdavid(12) set new best for sector 2</Sector>
-<Score et="170.4">connor mcdavid(12) lap=1 point=2 t=53.587 et=170.220</Score>
-<TrackLimits Driver="Rudolfs Berzins" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.5">No Further Action</TrackLimits>
-<Score et="172.5">William Kupszta(3) lap=1 point=1 t=23.826 et=172.460</Score>
-<Sector Driver="Harry Kember" ID="19" Sector="1" Class="GTE" et="173.1">Harry Kember(19) set new best for sector 1</Sector>
-<Score et="173.1">Harry Kember(19) lap=1 point=1 t=23.232 et=172.980</Score>
-<Score et="175.9">Jakub Novotny(0) lap=1 point=1 t=24.097 et=175.800</Score>
-<TrackLimits Driver="Harry Kember" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.2">No Further Action</TrackLimits>
-<Score et="180.9">Matheus Anido(9) lap=1 point=1 t=24.480 et=180.780</Score>
-<Score et="181.2">Steve Rethmeier(7) lap=1 point=1 t=24.101 et=181.140</Score>
-<TrackLimits Driver="Daniel Schmalus" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="183.1">No Further Action</TrackLimits>
-<Sector Driver="Kacper Gosiewski" ID="11" Sector="3" Class="GTE" et="185.4">Kacper Gosiewski(11) set new best for sector 3</Sector>
-<Score et="185.5">Kacper Gosiewski(11) lap=2 point=0 t=66.069 et=185.380</Score>
-<Score et="186.4">William Kupszta(3) lap=1 point=2 t=37.724 et=186.360</Score>
-<Score et="186.7">Harry Kember(19) lap=1 point=2 t=-1.000 et=186.640</Score>
-<TrackLimits Driver="Harry Kember" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="186.8">No Further Action</TrackLimits>
-<Score et="189.3">Rudolfs Berzins(4) lap=1 point=0 t=-1.000 et=189.400</Score>
-<Score et="189.5">Daniel Schmalus(2) lap=2 point=1 t=-1.000 et=189.390</Score>
-<Score et="189.5">Daniel Schmalus(2) lap=2 point=2 t=-1.000 et=189.390</Score>
-<Score et="189.8">Jakub Novotny(0) lap=1 point=2 t=37.978 et=189.680</Score>
-<Sector Driver="Liam Saxton" ID="5" Sector="3" Class="GTE" et="193.7">Liam Saxton(5) set new best for sector 3</Sector>
-<Score et="193.7">Liam Saxton(5) lap=2 point=0 t=65.587 et=193.600</Score>
-<Score et="194.5">Matheus Anido(9) lap=1 point=2 t=38.091 et=194.380</Score>
-<Score et="195.2">Steve Rethmeier(7) lap=1 point=2 t=38.042 et=195.100</Score>
-<Score et="198.9">connor mcdavid(12) lap=2 point=0 t=82.084 et=198.720</Score>
-<Incident et="204.1">Altan Sahin(14) reported contact (506.15) with Immovable</Incident>
-<TrackLimits Driver="Kacper Gosiewski" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.2">No Further Action</TrackLimits>
-<Score et="209.4">Kacper Gosiewski(11) lap=2 point=1 t=23.935 et=209.320</Score>
+<TrackLimits Driver="Driver 3839" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="97.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4229" ID="10" Lap="0" WarningPoints="4" CurrentPoints="4" Resolution="3" et="102.5">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4229" ID="10" Lap="1" WarningPoints="0" CurrentPoints="4" Resolution="5" et="127.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2900" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="129.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3204" ID="2" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="3" et="136.4">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4124" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="137.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3204" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="138.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3153" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="148.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3951" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="160.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4550" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3555" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3204" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="183.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3555" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="186.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3839" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="205.2">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>2</MostLapsCompleted>
 <Driver>

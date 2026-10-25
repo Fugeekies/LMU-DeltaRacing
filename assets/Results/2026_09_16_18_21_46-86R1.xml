@@ -36,930 +36,315 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Penalty Driver="Jordi Bull" ID="19" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="125.4">Jordi Bull received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="127.7">P-A Fugeekies(13) reported contact (257.73) with another vehicle Vitalii Krch(10)</Incident>
-<Incident et="127.8">Vitalii Krch(10) reported contact (736.09) with another vehicle P-A Fugeekies(13)</Incident>
-<Incident et="145.2">Swen Rijpstra(6) reported contact (804.45) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="145.2">Angel Herrero(4) reported contact (799.49) with another vehicle Swen Rijpstra(6)</Incident>
-<Incident et="145.7">Samuel Groeber(5) reported contact (140.99) with another vehicle Marcin Skowronski(0)</Incident>
-<Incident et="145.8">Marcin Skowronski(0) reported contact (199.08) with another vehicle Samuel Groeber(5)</Incident>
-<Incident et="147.9">Hessam Hensens(9) reported contact (142.35) with Immovable</Incident>
-<Incident et="148.5">Swen Rijpstra(6) reported contact (632.82) with another vehicle YANG FAN(1)</Incident>
-<Incident et="148.5">YANG FAN(1) reported contact (623.12) with another vehicle Swen Rijpstra(6)</Incident>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Jordi Bull" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Jordi Bull" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="152.2">Warning</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="152.2">Warning</TrackLimits>
-<Incident et="152.4">Max Teichmanm(17) reported contact (139.32) with another vehicle YANG FAN(1)</Incident>
-<Incident et="152.4">Max Teichmanm(17) reported contact (505.98) with another vehicle YANG FAN(1)</Incident>
-<Incident et="154.2">Vitalii Krch(10) reported contact (1752.62) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="154.2">Angel Herrero(4) reported contact (1858.11) with another vehicle Vitalii Krch(10)</Incident>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
-<Score et="167.2">Marcin Skowronski(0) lap=0 point=1 t=-1.000 et=167.180</Score>
-<Sector Driver="Samuel Groeber" ID="5" Sector="1" Class="LMP3" et="167.4">Samuel Groeber(5) set new best for sector 1</Sector>
-<Score et="167.4">Samuel Groeber(5) lap=0 point=1 t=41.896 et=167.320</Score>
-<Score et="168.3">Hessam Hensens(9) lap=0 point=1 t=42.822 et=168.260</Score>
-<Score et="169.0">Faustin ILLI(7) lap=0 point=1 t=43.428 et=168.860</Score>
-<Score et="169.6">Luis Galceran Ruiz(15) lap=0 point=1 t=44.168 et=169.600</Score>
-<Score et="170.2">Jordi Bull(19) lap=0 point=1 t=-1.000 et=170.020</Score>
-<ChatMessage et="170.4">Y FAN: thx mate</ChatMessage>
-<Score et="170.6">P Thanakorn(8) lap=0 point=1 t=45.001 et=170.440</Score>
-<Score et="171.4">P-A Fugeekies(13) lap=0 point=1 t=45.937 et=171.360</Score>
-<Score et="172.3">Swen Rijpstra(6) lap=0 point=1 t=46.759 et=172.200</Score>
-<Score et="172.4">Max Teichmanm(17) lap=0 point=1 t=46.961 et=172.400</Score>
-<Score et="174.3">YANG FAN(1) lap=0 point=1 t=48.783 et=174.220</Score>
-<Score et="175.0">Vitalii Krch(10) lap=0 point=1 t=49.555 et=174.980</Score>
-<Score et="175.4">Angel Herrero(4) lap=0 point=1 t=49.850 et=175.280</Score>
-<Score et="176.0">Laszlo Agocs(3) lap=0 point=1 t=50.567 et=176.000</Score>
-<Incident et="176.2">Marcin Skowronski(0) reported contact (1059.96) with another vehicle Samuel Groeber(5)</Incident>
-<Score et="177.4">Pierre Fredouet(12) lap=0 point=1 t=51.859 et=177.300</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="179.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="179.3">No Further Action</TrackLimits>
-<Score et="179.8">Timofey Shishkin(16) lap=0 point=1 t=54.261 et=179.700</Score>
-<Score et="181.2">Peter Waksman(2) lap=0 point=1 t=55.757 et=181.180</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.6">No Further Action</TrackLimits>
-<Score et="182.6">Marvin Soapert(14) lap=0 point=1 t=57.100 et=182.540</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.8">No Further Action</TrackLimits>
-<Incident et="195.9">Vitalii Krch(10) reported contact (6.71) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="195.9">Angel Herrero(4) reported contact (27.78) with another vehicle Vitalii Krch(10)</Incident>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="196.7">Warning</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="196.7">Warning</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.0">No Further Action</TrackLimits>
-<ChatMessage et="202.8">M Skowronski: clownb</ChatMessage>
-<Sector Driver="Samuel Groeber" ID="5" Sector="2" Class="LMP3" et="204.0">Samuel Groeber(5) set new best for sector 2</Sector>
-<Score et="204.0">Samuel Groeber(5) lap=0 point=2 t=78.545 et=203.980</Score>
-<Score et="205.2">Marcin Skowronski(0) lap=0 point=2 t=-1.000 et=205.120</Score>
-<Score et="206.0">Hessam Hensens(9) lap=0 point=2 t=80.557 et=205.980</Score>
-<Score et="206.1">Faustin ILLI(7) lap=0 point=2 t=80.582 et=206.020</Score>
-<Score et="206.6">Luis Galceran Ruiz(15) lap=0 point=2 t=-1.000 et=206.440</Score>
-<Score et="208.0">P Thanakorn(8) lap=0 point=2 t=82.371 et=207.800</Score>
-<Score et="209.5">Swen Rijpstra(6) lap=0 point=2 t=84.012 et=209.440</Score>
-<Score et="209.9">P-A Fugeekies(13) lap=0 point=2 t=84.427 et=209.850</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="209.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="209.9">No Further Action</TrackLimits>
-<Sector Driver="YANG FAN" ID="1" Sector="2" Class="LMP3" et="210.8">YANG FAN(1) set new best for sector 2</Sector>
-<Score et="210.8">YANG FAN(1) lap=0 point=2 t=85.286 et=210.720</Score>
-<Score et="211.0">Max Teichmanm(17) lap=0 point=2 t=85.559 et=211.000</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="212.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="212.0">No Further Action</TrackLimits>
-<Score et="212.6">Laszlo Agocs(3) lap=0 point=2 t=87.086 et=212.520</Score>
-<Score et="212.7">Vitalii Krch(10) lap=0 point=2 t=87.180 et=212.620</Score>
-<Score et="212.8">Angel Herrero(4) lap=0 point=2 t=87.256 et=212.680</Score>
-<Score et="214.6">Pierre Fredouet(12) lap=0 point=2 t=89.100 et=214.540</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.8">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.8">No Further Action</TrackLimits>
-<Score et="217.6">Timofey Shishkin(16) lap=0 point=2 t=92.016 et=217.440</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.8">No Further Action</TrackLimits>
-<Score et="218.0">Peter Waksman(2) lap=0 point=2 t=92.551 et=217.980</Score>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="218.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="218.2">No Further Action</TrackLimits>
-<Score et="219.3">Marvin Soapert(14) lap=0 point=2 t=93.783 et=219.220</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
-<Sector Driver="Samuel Groeber" ID="5" Sector="3" Class="LMP3" et="239.0">Samuel Groeber(5) set new best for sector 3</Sector>
-<Score et="239.0">Samuel Groeber(5) lap=1 point=0 t=113.559 et=239.000</Score>
-<Score et="239.7">Marcin Skowronski(0) lap=1 point=0 t=-1.000 et=239.640</Score>
-<Score et="241.6">Faustin ILLI(7) lap=1 point=0 t=116.108 et=241.540</Score>
-<Score et="241.6">Hessam Hensens(9) lap=1 point=0 t=116.133 et=241.560</Score>
-<Score et="242.2">Luis Galceran Ruiz(15) lap=1 point=0 t=-1.000 et=242.140</Score>
-<ChatMessage et="243.7">M Skowronski: but ssry i moved way to late</ChatMessage>
-<Score et="244.1">P Thanakorn(8) lap=1 point=0 t=118.540 et=243.980</Score>
-<Sector Driver="Swen Rijpstra" ID="6" Sector="3" Class="LMP3" et="244.3">Swen Rijpstra(6) set new best for sector 3</Sector>
-<Score et="244.4">Swen Rijpstra(6) lap=1 point=0 t=118.840 et=244.280</Score>
-<Score et="245.6">P-A Fugeekies(13) lap=1 point=0 t=120.154 et=245.577</Score>
-<Score et="246.1">YANG FAN(1) lap=1 point=0 t=120.574 et=246.000</Score>
-<Score et="246.8">Max Teichmanm(17) lap=1 point=0 t=121.332 et=246.760</Score>
-<Score et="247.7">Laszlo Agocs(3) lap=1 point=0 t=122.252 et=247.680</Score>
-<Score et="248.1">Angel Herrero(4) lap=1 point=0 t=122.645 et=248.080</Score>
-<ChatMessage et="249.1">M Skowronski: but t1</ChatMessage>
-<Score et="249.2">Vitalii Krch(10) lap=1 point=0 t=123.732 et=249.160</Score>
-<Score et="250.4">Pierre Fredouet(12) lap=1 point=0 t=124.883 et=250.320</Score>
-<Score et="253.4">Peter Waksman(2) lap=1 point=0 t=127.950 et=253.380</Score>
-<Score et="253.8">Timofey Shishkin(16) lap=1 point=0 t=128.332 et=253.760</Score>
-<Score et="254.6">Marvin Soapert(14) lap=1 point=0 t=129.047 et=254.480</Score>
-<Incident et="258.3">Hessam Hensens(9) reported contact (97.55) with another vehicle Faustin ILLI(7)</Incident>
-<Incident et="258.3">Faustin ILLI(7) reported contact (87.16) with another vehicle Hessam Hensens(9)</Incident>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="269.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="269.7">No Further Action</TrackLimits>
-<Sector Driver="Samuel Groeber" ID="5" Sector="1" Class="LMP3" et="274.3">Samuel Groeber(5) set new best for sector 1</Sector>
-<Score et="274.4">Samuel Groeber(5) lap=1 point=1 t=35.327 et=274.320</Score>
-<Score et="275.2">Marcin Skowronski(0) lap=1 point=1 t=35.547 et=275.180</Score>
-<Score et="277.5">Hessam Hensens(9) lap=1 point=1 t=35.865 et=277.440</Score>
-<Score et="277.8">Faustin ILLI(7) lap=1 point=1 t=36.228 et=277.760</Score>
-<Score et="278.3">Luis Galceran Ruiz(15) lap=1 point=1 t=36.092 et=278.220</Score>
-<Score et="280.5">Swen Rijpstra(6) lap=1 point=1 t=36.193 et=280.460</Score>
-<Score et="280.5">P Thanakorn(8) lap=1 point=1 t=36.408 et=280.380</Score>
-<Score et="281.0">P-A Fugeekies(13) lap=1 point=1 t=35.427 et=281.004</Score>
-<Sector Driver="YANG FAN" ID="1" Sector="1" Class="LMP3" et="281.3">YANG FAN(1) set new best for sector 1</Sector>
-<Score et="281.3">YANG FAN(1) lap=1 point=1 t=35.212 et=281.220</Score>
-<Score et="283.6">Laszlo Agocs(3) lap=1 point=1 t=35.899 et=283.580</Score>
-<Score et="283.7">Angel Herrero(4) lap=1 point=1 t=35.525 et=283.600</Score>
-<Score et="286.2">Max Teichmanm(17) lap=1 point=1 t=39.422 et=286.180</Score>
-<Score et="287.2">Vitalii Krch(10) lap=1 point=1 t=37.966 et=287.140</Score>
-<Score et="287.4">Pierre Fredouet(12) lap=1 point=1 t=36.952 et=287.260</Score>
-<Score et="289.0">Peter Waksman(2) lap=1 point=1 t=35.613 et=289.000</Score>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.6">No Further Action</TrackLimits>
-<Score et="289.7">Timofey Shishkin(16) lap=1 point=1 t=35.813 et=289.580</Score>
-<Score et="289.8">Marvin Soapert(14) lap=1 point=1 t=35.231 et=289.720</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.9">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.1">No Further Action</TrackLimits>
-<Incident et="295.4">Marvin Soapert(14) reported contact (406.33) with another vehicle Timofey Shishkin(16)</Incident>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="303.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="303.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="304.1">Warning</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="304.1">Warning</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre Fredouet" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre Fredouet" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="13" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="307.9">Warning</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="308.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="308.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="309.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="309.9">No Further Action</TrackLimits>
-<Sector Driver="Samuel Groeber" ID="5" Sector="2" Class="LMP3" et="310.1">Samuel Groeber(5) set new best for sector 2</Sector>
-<Score et="310.1">Samuel Groeber(5) lap=1 point=2 t=71.030 et=310.020</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="2" Class="LMP3" et="310.7">Marcin Skowronski(0) set new best for sector 2</Sector>
-<Score et="310.8">Marcin Skowronski(0) lap=1 point=2 t=71.062 et=310.700</Score>
-<Score et="313.7">Hessam Hensens(9) lap=1 point=2 t=72.141 et=313.700</Score>
-<Score et="314.4">Faustin ILLI(7) lap=1 point=2 t=-1.000 et=314.300</Score>
-<Score et="315.0">Luis Galceran Ruiz(15) lap=1 point=2 t=72.745 et=314.880</Score>
-<Score et="317.6">P Thanakorn(8) lap=1 point=2 t=73.323 et=317.300</Score>
-<Score et="317.6">YANG FAN(1) lap=1 point=2 t=71.474 et=317.480</Score>
-<Score et="317.8">P-A Fugeekies(13) lap=1 point=2 t=-1.000 et=317.776</Score>
-<Score et="318.6">Swen Rijpstra(6) lap=1 point=2 t=74.217 et=318.480</Score>
-<Score et="320.2">Angel Herrero(4) lap=1 point=2 t=72.103 et=320.180</Score>
-<Score et="320.3">Laszlo Agocs(3) lap=1 point=2 t=72.538 et=320.220</Score>
-<Score et="324.4">Max Teichmanm(17) lap=1 point=2 t=77.645 et=324.400</Score>
-<Score et="325.0">Vitalii Krch(10) lap=1 point=2 t=75.777 et=324.940</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="325.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
-<Score et="325.2">Pierre Fredouet(12) lap=1 point=2 t=74.857 et=325.180</Score>
-<Score et="325.6">Peter Waksman(2) lap=1 point=2 t=72.110 et=325.500</Score>
-<Incident et="327.2">P-A Fugeekies(13) reported contact (3296.72) with Immovable</Incident>
-<Incident et="327.5">P-A Fugeekies(13) reported contact (51.67) with Wheel</Incident>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="327.8">Warning</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="327.8">Warning</TrackLimits>
-<Score et="328.1">Timofey Shishkin(16) lap=1 point=2 t=74.177 et=327.940</Score>
-<Score et="333.0">Marvin Soapert(14) lap=1 point=2 t=78.497 et=332.980</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.0">No Further Action</TrackLimits>
-<Incident et="337.7">Max Teichmanm(17) reported contact (67.03) with another vehicle Vitalii Krch(10)</Incident>
-<Incident et="337.7">Vitalii Krch(10) reported contact (86.69) with another vehicle Max Teichmanm(17)</Incident>
-<Incident et="338.0">Max Teichmanm(17) reported contact (481.54) with another vehicle Vitalii Krch(10)</Incident>
-<Incident et="338.0">Vitalii Krch(10) reported contact (443.98) with another vehicle Max Teichmanm(17)</Incident>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.5">No Further Action</TrackLimits>
-<Score et="345.0">Samuel Groeber(5) lap=2 point=0 t=105.891 et=344.880</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="3" Class="LMP3" et="345.1">Marcin Skowronski(0) set new best for sector 3</Sector>
-<Score et="345.1">Marcin Skowronski(0) lap=2 point=0 t=105.445 et=345.080</Score>
-<Score et="348.7">Hessam Hensens(9) lap=2 point=0 t=107.078 et=348.640</Score>
-<Score et="349.9">Faustin ILLI(7) lap=2 point=0 t=-1.000 et=349.780</Score>
-<Score et="350.3">Luis Galceran Ruiz(15) lap=2 point=0 t=108.084 et=350.220</Score>
-<TrackLimits Driver="Pierre Fredouet" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="352.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre Fredouet" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="352.1">No Further Action</TrackLimits>
-<Score et="352.9">YANG FAN(1) lap=2 point=0 t=106.821 et=352.820</Score>
-<Score et="354.0">P Thanakorn(8) lap=2 point=0 t=109.781 et=353.760</Score>
-<Score et="355.6">Angel Herrero(4) lap=2 point=0 t=107.426 et=355.500</Score>
-<Score et="355.7">Swen Rijpstra(6) lap=2 point=0 t=111.369 et=355.640</Score>
-<Score et="355.9">Laszlo Agocs(3) lap=2 point=0 t=108.125 et=355.800</Score>
-<Score et="361.2">Peter Waksman(2) lap=2 point=0 t=107.733 et=361.120</Score>
-<Incident et="361.3">Marcin Skowronski(0) reported contact (325.11) with Immovable</Incident>
-<Score et="361.6">Vitalii Krch(10) lap=2 point=0 t=112.291 et=361.460</Score>
-<Score et="362.0">Max Teichmanm(17) lap=2 point=0 t=115.191 et=361.960</Score>
-<Score et="362.2">Pierre Fredouet(12) lap=2 point=0 t=111.871 et=362.180</Score>
-<Incident et="362.5">Samuel Groeber(5) reported contact (626.26) with another vehicle Marcin Skowronski(0)</Incident>
-<Incident et="362.5">Marcin Skowronski(0) reported contact (656.21) with another vehicle Samuel Groeber(5)</Incident>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="363.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="363.1">No Further Action</TrackLimits>
-<Score et="368.7">Marvin Soapert(14) lap=2 point=0 t=114.159 et=368.640</Score>
-<Incident et="370.5">Laszlo Agocs(3) reported contact (193.91) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="370.5">Angel Herrero(4) reported contact (91.76) with another vehicle Laszlo Agocs(3)</Incident>
-<Incident et="370.6">Laszlo Agocs(3) reported contact (193.91) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="370.6">Angel Herrero(4) reported contact (92.51) with another vehicle Laszlo Agocs(3)</Incident>
-<Incident et="370.9">Angel Herrero(4) reported contact (193.70) with another vehicle Laszlo Agocs(3)</Incident>
-<Incident et="370.9">Laszlo Agocs(3) reported contact (208.51) with another vehicle Angel Herrero(4)</Incident>
-<Score et="373.1">Timofey Shishkin(16) lap=2 point=0 t=119.256 et=373.020</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="380.3">Warning</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="380.3">Warning</TrackLimits>
-<Score et="381.3">Samuel Groeber(5) lap=2 point=1 t=36.398 et=381.280</Score>
-<Score et="381.8">Marcin Skowronski(0) lap=2 point=1 t=36.597 et=381.680</Score>
-<Score et="384.6">Hessam Hensens(9) lap=2 point=1 t=35.943 et=384.580</Score>
-<Score et="386.0">Faustin ILLI(7) lap=2 point=1 t=36.127 et=385.900</Score>
-<Score et="386.0">Luis Galceran Ruiz(15) lap=2 point=1 t=35.694 et=385.920</Score>
-<Score et="388.3">YANG FAN(1) lap=2 point=1 t=35.393 et=388.220</Score>
-<Score et="389.9">P Thanakorn(8) lap=2 point=1 t=36.034 et=389.780</Score>
-<Score et="391.6">Swen Rijpstra(6) lap=2 point=1 t=35.949 et=391.580</Score>
-<Score et="392.3">Angel Herrero(4) lap=2 point=1 t=-1.000 et=392.180</Score>
-<Score et="394.0">Laszlo Agocs(3) lap=2 point=1 t=38.010 et=393.820</Score>
-<Sector Driver="Peter Waksman" ID="2" Sector="1" Class="LMP3" et="396.3">Peter Waksman(2) set new best for sector 1</Sector>
-<Score et="396.4">Peter Waksman(2) lap=2 point=1 t=35.186 et=396.300</Score>
-<Score et="397.9">Vitalii Krch(10) lap=2 point=1 t=36.327 et=397.780</Score>
-<Score et="398.2">Pierre Fredouet(12) lap=2 point=1 t=35.910 et=398.100</Score>
-<Score et="399.1">Max Teichmanm(17) lap=2 point=1 t=37.126 et=399.080</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="401.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="401.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="404.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="404.0">No Further Action</TrackLimits>
-<Score et="404.6">Marvin Soapert(14) lap=2 point=1 t=35.913 et=404.560</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="407.2">Warning</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="407.2">Warning</TrackLimits>
-<Score et="409.3">Timofey Shishkin(16) lap=2 point=1 t=36.247 et=409.260</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="412.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="412.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="412.8">Warning</TrackLimits>
-<TrackLimits Driver="Faustin ILLI" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="412.8">Warning</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="413.3">Warning</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="413.3">Warning</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.1">No Further Action</TrackLimits>
-<Score et="417.3">Samuel Groeber(5) lap=2 point=2 t=72.297 et=417.180</Score>
-<Score et="417.3">Marcin Skowronski(0) lap=2 point=2 t=72.129 et=417.220</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="418.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="418.0">No Further Action</TrackLimits>
-<Score et="420.9">Hessam Hensens(9) lap=2 point=2 t=72.192 et=420.840</Score>
-<Score et="423.1">Faustin ILLI(7) lap=2 point=2 t=-1.000 et=423.040</Score>
-<Score et="423.3">Luis Galceran Ruiz(15) lap=2 point=2 t=-1.000 et=423.180</Score>
-<Score et="424.2">YANG FAN(1) lap=2 point=2 t=71.278 et=424.100</Score>
-<Score et="426.5">P Thanakorn(8) lap=2 point=2 t=72.553 et=426.300</Score>
-<Score et="427.8">Swen Rijpstra(6) lap=2 point=2 t=72.084 et=427.720</Score>
-<Score et="428.8">Angel Herrero(4) lap=2 point=2 t=-1.000 et=428.680</Score>
-<Score et="430.1">Laszlo Agocs(3) lap=2 point=2 t=74.214 et=430.020</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="430.6">Warning</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="430.6">Warning</TrackLimits>
-<Score et="432.6">Peter Waksman(2) lap=2 point=2 t=71.370 et=432.480</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="433.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="433.9">No Further Action</TrackLimits>
-<Score et="434.6">Vitalii Krch(10) lap=2 point=2 t=73.120 et=434.580</Score>
-<Score et="434.9">Pierre Fredouet(12) lap=2 point=2 t=72.726 et=434.920</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
-<Score et="436.2">Max Teichmanm(17) lap=2 point=2 t=74.192 et=436.140</Score>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="440.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="440.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.1">No Further Action</TrackLimits>
-<Score et="447.1">Timofey Shishkin(16) lap=2 point=2 t=73.962 et=446.980</Score>
-<Score et="447.9">Marvin Soapert(14) lap=2 point=2 t=79.188 et=447.820</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="3" Class="LMP3" et="451.6">Marcin Skowronski(0) set new best for sector 3</Sector>
-<Score et="451.6">Marcin Skowronski(0) lap=3 point=0 t=106.455 et=451.540</Score>
-<Score et="452.7">Samuel Groeber(5) lap=3 point=0 t=107.731 et=452.620</Score>
-<Score et="455.8">Hessam Hensens(9) lap=3 point=0 t=107.144 et=455.780</Score>
-<Score et="458.5">Faustin ILLI(7) lap=3 point=0 t=-1.000 et=458.420</Score>
-<Score et="459.1">Luis Galceran Ruiz(15) lap=3 point=0 t=-1.000 et=459.080</Score>
-<Score et="459.4">YANG FAN(1) lap=3 point=0 t=-1.000 et=459.380</Score>
-<Score et="462.3">P Thanakorn(8) lap=3 point=0 t=108.288 et=462.040</Score>
-<Score et="462.7">Swen Rijpstra(6) lap=3 point=0 t=106.981 et=462.620</Score>
-<Score et="464.3">Angel Herrero(4) lap=3 point=0 t=-1.000 et=464.260</Score>
-<Score et="465.0">Laszlo Agocs(3) lap=3 point=0 t=109.175 et=464.980</Score>
-<Score et="467.3">Peter Waksman(2) lap=3 point=0 t=106.122 et=467.240</Score>
-<Score et="470.8">Vitalii Krch(10) lap=3 point=0 t=109.337 et=470.800</Score>
-<Score et="471.3">Pierre Fredouet(12) lap=3 point=0 t=109.089 et=471.280</Score>
-<Incident et="472.2">Faustin ILLI(7) reported contact (1634.51) with another vehicle Luis Galceran Ruiz(15)</Incident>
-<Incident et="472.2">Luis Galceran Ruiz(15) reported contact (1668.14) with another vehicle Faustin ILLI(7)</Incident>
-<Score et="472.4">Max Teichmanm(17) lap=3 point=0 t=110.399 et=472.360</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="482.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="482.2">No Further Action</TrackLimits>
-<Incident et="483.3">Faustin ILLI(7) reported contact (924.33) with another vehicle Luis Galceran Ruiz(15)</Incident>
-<Incident et="483.3">Luis Galceran Ruiz(15) reported contact (868.97) with another vehicle Faustin ILLI(7)</Incident>
-<Score et="483.4">Marvin Soapert(14) lap=3 point=0 t=114.708 et=483.340</Score>
-<Score et="484.6">Timofey Shishkin(16) lap=3 point=0 t=111.373 et=484.400</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="1" Class="LMP3" et="486.7">Marcin Skowronski(0) set new best for sector 1</Sector>
-<Score et="486.8">Marcin Skowronski(0) lap=3 point=1 t=35.110 et=486.660</Score>
-<Score et="488.2">Samuel Groeber(5) lap=3 point=1 t=35.495 et=488.100</Score>
-<Score et="491.8">Hessam Hensens(9) lap=3 point=1 t=35.901 et=491.680</Score>
-<ChatMessage et="494.1">F ILLI: wtf was that idiot</ChatMessage>
-<Score et="494.6">YANG FAN(1) lap=3 point=1 t=35.204 et=494.580</Score>
-<Score et="498.1">P Thanakorn(8) lap=3 point=1 t=35.896 et=497.940</Score>
-<Score et="498.4">Swen Rijpstra(6) lap=3 point=1 t=35.710 et=498.340</Score>
-<Sector Driver="Laszlo Agocs" ID="3" Sector="1" Class="LMP3" et="500.1">Laszlo Agocs(3) set new best for sector 1</Sector>
-<Score et="500.1">Laszlo Agocs(3) lap=3 point=1 t=35.057 et=500.040</Score>
-<Score et="500.1">Angel Herrero(4) lap=3 point=1 t=35.746 et=500.020</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="501.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="501.5">No Further Action</TrackLimits>
-<Score et="502.6">Peter Waksman(2) lap=3 point=1 t=35.255 et=502.500</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="506.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="506.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.1">No Further Action</TrackLimits>
-<Score et="507.4">Vitalii Krch(10) lap=3 point=1 t=36.499 et=507.300</Score>
-<Score et="507.5">Pierre Fredouet(12) lap=3 point=1 t=36.219 et=507.500</Score>
-<Score et="508.4">Max Teichmanm(17) lap=3 point=1 t=36.007 et=508.360</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="518.0">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="518.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.5">Warning</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.5">Warning</TrackLimits>
-<Score et="519.1">Luis Galceran Ruiz(15) lap=3 point=1 t=59.929 et=519.000</Score>
-<Score et="519.5">Marvin Soapert(14) lap=3 point=1 t=36.029 et=519.380</Score>
-<Score et="520.8">Timofey Shishkin(16) lap=3 point=1 t=36.387 et=520.780</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="2" Class="LMP3" et="522.1">Marcin Skowronski(0) set new best for sector 2</Sector>
-<Score et="522.2">Marcin Skowronski(0) lap=3 point=2 t=70.558 et=522.100</Score>
-<Score et="523.9">Samuel Groeber(5) lap=3 point=2 t=71.224 et=523.840</Score>
-<Incident et="524.0">Laszlo Agocs(3) reported contact (3057.90) with Immovable</Incident>
-<Incident et="524.1">Laszlo Agocs(3) reported contact (66.19) with Wing</Incident>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="525.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="525.2">No Further Action</TrackLimits>
-<Score et="528.2">Hessam Hensens(9) lap=3 point=2 t=72.326 et=528.120</Score>
-<Incident et="528.8">Laszlo Agocs(3) reported contact (4.63) with Wing</Incident>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.3">No Further Action</TrackLimits>
-<Incident et="529.4">Laszlo Agocs(3) reported contact (7.15) with Wing</Incident>
-<Score et="530.3">YANG FAN(1) lap=3 point=2 t=70.849 et=530.220</Score>
-<Incident et="531.4">Laszlo Agocs(3) reported contact (5.94) with Wing</Incident>
-<Incident et="531.8">Laszlo Agocs(3) reported contact (9.45) with Wing</Incident>
-<Incident et="532.0">Laszlo Agocs(3) reported contact (16.00) with Wing</Incident>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="533.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="533.3">No Further Action</TrackLimits>
-<Score et="534.6">Swen Rijpstra(6) lap=3 point=2 t=-1.000 et=534.520</Score>
-<Score et="535.6">P Thanakorn(8) lap=3 point=2 t=73.334 et=535.380</Score>
-<Score et="537.3">Angel Herrero(4) lap=3 point=2 t=72.934 et=537.200</Score>
-<Score et="538.7">Peter Waksman(2) lap=3 point=2 t=71.471 et=538.700</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="544.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="544.1">No Further Action</TrackLimits>
-<Score et="544.6">Vitalii Krch(10) lap=3 point=2 t=73.728 et=544.520</Score>
-<Score et="544.8">Pierre Fredouet(12) lap=3 point=2 t=73.462 et=544.740</Score>
-<Score et="545.8">Max Teichmanm(17) lap=3 point=2 t=73.341 et=545.700</Score>
-<Score et="550.6">Laszlo Agocs(3) lap=3 point=2 t=85.613 et=550.600</Score>
-<Score et="556.0">Marvin Soapert(14) lap=3 point=2 t=72.529 et=555.880</Score>
-<Score et="556.3">Luis Galceran Ruiz(15) lap=3 point=2 t=97.192 et=556.260</Score>
-<Score et="556.5">Marcin Skowronski(0) lap=4 point=0 t=104.899 et=556.440</Score>
-<Score et="558.5">Samuel Groeber(5) lap=4 point=0 t=105.798 et=558.420</Score>
-<Score et="558.6">Timofey Shishkin(16) lap=3 point=2 t=74.097 et=558.480</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.3">No Further Action</TrackLimits>
-<Score et="563.2">Hessam Hensens(9) lap=4 point=0 t=107.367 et=563.160</Score>
-<Score et="564.8">YANG FAN(1) lap=4 point=0 t=105.406 et=564.780</Score>
-<Score et="569.4">Swen Rijpstra(6) lap=4 point=0 t=-1.000 et=569.320</Score>
-<Score et="570.9">P Thanakorn(8) lap=4 point=0 t=108.686 et=570.720</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="572.6">Warning</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="572.6">Warning</TrackLimits>
-<Score et="572.9">Angel Herrero(4) lap=4 point=0 t=108.542 et=572.820</Score>
-<Score et="573.4">Peter Waksman(2) lap=4 point=0 t=106.044 et=573.280</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="577.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="577.1">No Further Action</TrackLimits>
-<Score et="580.6">Pierre Fredouet(12) lap=4 point=0 t=109.239 et=580.520</Score>
-<Score et="580.8">Vitalii Krch(10) lap=4 point=0 t=109.901 et=580.700</Score>
-<Score et="581.6">Max Teichmanm(17) lap=4 point=0 t=109.155 et=581.500</Score>
-<Score et="591.4">Marvin Soapert(14) lap=4 point=0 t=108.054 et=591.400</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="1" Class="LMP3" et="591.5">Marcin Skowronski(0) set new best for sector 1</Sector>
-<Score et="591.5">Marcin Skowronski(0) lap=4 point=1 t=35.012 et=591.460</Score>
-<Score et="591.9">Luis Galceran Ruiz(15) lap=4 point=0 t=132.736 et=591.800</Score>
-<Score et="594.0">Samuel Groeber(5) lap=4 point=1 t=35.470 et=593.880</Score>
-<Score et="594.7">Timofey Shishkin(16) lap=4 point=0 t=-1.000 et=594.620</Score>
-<Score et="598.8">Hessam Hensens(9) lap=4 point=1 t=35.597 et=598.760</Score>
-<Score et="600.3">YANG FAN(1) lap=4 point=1 t=35.473 et=600.260</Score>
-<Score et="604.7">Swen Rijpstra(6) lap=4 point=1 t=35.317 et=604.640</Score>
-<Score et="606.7">P Thanakorn(8) lap=4 point=1 t=35.830 et=606.560</Score>
-<Score et="608.5">Angel Herrero(4) lap=4 point=1 t=35.484 et=608.300</Score>
-<Score et="608.9">Peter Waksman(2) lap=4 point=1 t=35.536 et=608.820</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="611.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="611.7">No Further Action</TrackLimits>
-<Score et="614.2">Laszlo Agocs(3) lap=4 point=0 t=149.149 et=614.140</Score>
-<Score et="616.3">Pierre Fredouet(12) lap=4 point=1 t=35.699 et=616.220</Score>
-<Score et="617.3">Vitalii Krch(10) lap=4 point=1 t=36.436 et=617.120</Score>
-<Score et="617.9">Max Teichmanm(17) lap=4 point=1 t=36.258 et=617.760</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="2" Class="LMP3" et="626.9">Marcin Skowronski(0) set new best for sector 2</Sector>
-<Score et="626.9">Marcin Skowronski(0) lap=4 point=2 t=70.373 et=626.820</Score>
-<Score et="627.3">Marvin Soapert(14) lap=4 point=1 t=35.830 et=627.240</Score>
-<Score et="628.0">Luis Galceran Ruiz(15) lap=4 point=1 t=36.102 et=627.900</Score>
-<Score et="629.6">Samuel Groeber(5) lap=4 point=2 t=71.112 et=629.520</Score>
-<Score et="633.4">Timofey Shishkin(16) lap=4 point=1 t=38.711 et=633.340</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="4" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="634.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="4" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="634.6">No Further Action</TrackLimits>
-<Score et="634.8">Hessam Hensens(9) lap=4 point=2 t=71.557 et=634.720</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.9">No Further Action</TrackLimits>
-<Score et="636.0">YANG FAN(1) lap=4 point=2 t=71.105 et=635.880</Score>
-<Incident et="640.0">Peter Waksman(2) reported contact (241.23) with another vehicle Angel Herrero(4)</Incident>
-<Incident et="640.0">Angel Herrero(4) reported contact (153.66) with another vehicle Peter Waksman(2)</Incident>
-<Score et="640.5">Swen Rijpstra(6) lap=4 point=2 t=71.133 et=640.460</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="642.1">Warning</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="642.1">Warning</TrackLimits>
-<Score et="643.6">P Thanakorn(8) lap=4 point=2 t=72.688 et=643.420</Score>
-<Score et="645.0">Peter Waksman(2) lap=4 point=2 t=71.663 et=644.940</Score>
-<Score et="645.1">Angel Herrero(4) lap=4 point=2 t=72.255 et=645.060</Score>
-<Score et="652.9">Pierre Fredouet(12) lap=4 point=2 t=72.403 et=652.920</Score>
-<Score et="654.3">Max Teichmanm(17) lap=4 point=2 t=72.697 et=654.200</Score>
-<Score et="654.3">Vitalii Krch(10) lap=4 point=2 t=73.563 et=654.260</Score>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="657.0">Warning</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="657.0">Warning</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="658.9">Warning</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="658.9">Warning</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="659.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="659.6">No Further Action</TrackLimits>
-<Score et="661.4">Marcin Skowronski(0) lap=5 point=0 t=104.886 et=661.320</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="662.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="662.1">No Further Action</TrackLimits>
-<Score et="663.6">Marvin Soapert(14) lap=4 point=2 t=72.148 et=663.540</Score>
-<Score et="664.3">Luis Galceran Ruiz(15) lap=4 point=2 t=72.396 et=664.200</Score>
-<Score et="664.3">Samuel Groeber(5) lap=5 point=0 t=105.841 et=664.260</Score>
-<Score et="669.5">Hessam Hensens(9) lap=5 point=0 t=106.258 et=669.420</Score>
-<Score et="671.3">YANG FAN(1) lap=5 point=0 t=-1.000 et=671.220</Score>
-<Score et="671.6">Timofey Shishkin(16) lap=4 point=2 t=76.819 et=671.440</Score>
-<Score et="675.3">Swen Rijpstra(6) lap=5 point=0 t=105.851 et=675.180</Score>
-<Score et="679.4">P Thanakorn(8) lap=5 point=0 t=-1.000 et=679.140</Score>
-<Score et="679.7">Peter Waksman(2) lap=5 point=0 t=106.304 et=679.580</Score>
-<Score et="681.1">Angel Herrero(4) lap=5 point=0 t=-1.000 et=681.040</Score>
-<Score et="688.4">Pierre Fredouet(12) lap=5 point=0 t=107.820 et=688.340</Score>
-<Score et="690.7">Vitalii Krch(10) lap=5 point=0 t=109.840 et=690.540</Score>
-<Score et="691.2">Max Teichmanm(17) lap=5 point=0 t=109.645 et=691.160</Score>
-<Score et="696.6">Marcin Skowronski(0) lap=5 point=1 t=35.209 et=696.540</Score>
-<Score et="699.1">Marvin Soapert(14) lap=5 point=0 t=107.663 et=699.060</Score>
-<Score et="699.5">Samuel Groeber(5) lap=5 point=1 t=35.200 et=699.460</Score>
-<Score et="700.2">Luis Galceran Ruiz(15) lap=5 point=0 t=108.236 et=700.040</Score>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.2">No Further Action</TrackLimits>
-<Score et="704.5">Hessam Hensens(9) lap=5 point=1 t=35.072 et=704.480</Score>
-<Score et="706.9">YANG FAN(1) lap=5 point=1 t=35.604 et=706.820</Score>
-<Score et="707.4">Timofey Shishkin(16) lap=5 point=0 t=112.609 et=707.240</Score>
-<Score et="710.5">Swen Rijpstra(6) lap=5 point=1 t=35.234 et=710.420</Score>
-<Score et="715.1">P Thanakorn(8) lap=5 point=1 t=35.812 et=714.960</Score>
-<Score et="715.4">Peter Waksman(2) lap=5 point=1 t=35.697 et=715.280</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="715.7">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="715.7">No Further Action</TrackLimits>
-<Score et="716.9">Angel Herrero(4) lap=5 point=1 t=35.777 et=716.820</Score>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="719.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="719.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="723.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="723.2">No Further Action</TrackLimits>
-<Score et="724.2">Pierre Fredouet(12) lap=5 point=1 t=35.831 et=724.160</Score>
-<Score et="727.3">Max Teichmanm(17) lap=5 point=1 t=36.061 et=727.220</Score>
-<Score et="728.3">Vitalii Krch(10) lap=5 point=1 t=37.734 et=728.260</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="2" Class="LMP3" et="731.5">Marcin Skowronski(0) set new best for sector 2</Sector>
-<Score et="731.6">Marcin Skowronski(0) lap=5 point=2 t=70.160 et=731.480</Score>
-<Score et="731.7">Laszlo Agocs(3) lap=4 point=1 t=117.483 et=731.620</Score>
-<Score et="734.5">Marvin Soapert(14) lap=5 point=1 t=35.441 et=734.500</Score>
-<Score et="735.4">Samuel Groeber(5) lap=5 point=2 t=71.063 et=735.320</Score>
-<Score et="736.4">Luis Galceran Ruiz(15) lap=5 point=1 t=36.237 et=736.280</Score>
-<Score et="740.3">Hessam Hensens(9) lap=5 point=2 t=70.810 et=740.220</Score>
-<Score et="742.8">YANG FAN(1) lap=5 point=2 t=71.529 et=742.740</Score>
-<Score et="743.2">Timofey Shishkin(16) lap=5 point=1 t=35.947 et=743.180</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="747.8">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="747.8">No Further Action</TrackLimits>
-<Score et="748.3">Swen Rijpstra(6) lap=5 point=2 t=73.114 et=748.300</Score>
-<Score et="751.3">P Thanakorn(8) lap=5 point=2 t=71.922 et=751.060</Score>
-<Score et="751.6">Peter Waksman(2) lap=5 point=2 t=71.913 et=751.500</Score>
-<Score et="753.0">Angel Herrero(4) lap=5 point=2 t=71.915 et=752.940</Score>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="756.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="756.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
-<Score et="760.9">Pierre Fredouet(12) lap=5 point=2 t=72.475 et=760.820</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="5" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="762.9">Warning</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="5" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="762.9">Warning</TrackLimits>
-<Score et="763.7">Max Teichmanm(17) lap=5 point=2 t=72.488 et=763.640</Score>
-<Score et="765.1">Vitalii Krch(10) lap=5 point=2 t=74.550 et=765.080</Score>
-<Score et="766.0">Marcin Skowronski(0) lap=6 point=0 t=104.595 et=765.920</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="768.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="768.5">No Further Action</TrackLimits>
-<Score et="770.0">Samuel Groeber(5) lap=6 point=0 t=105.618 et=769.880</Score>
-<Score et="770.1">Laszlo Agocs(3) lap=4 point=2 t=155.871 et=770.000</Score>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
-<Score et="771.1">Marvin Soapert(14) lap=5 point=2 t=72.036 et=771.100</Score>
-<Score et="772.7">Luis Galceran Ruiz(15) lap=5 point=2 t=-1.000 et=772.640</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="772.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="772.9">No Further Action</TrackLimits>
-<Score et="775.1">Hessam Hensens(9) lap=6 point=0 t=105.566 et=774.980</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.2">No Further Action</TrackLimits>
-<Score et="778.2">YANG FAN(1) lap=6 point=0 t=106.875 et=778.100</Score>
-<Score et="781.6">Timofey Shishkin(16) lap=5 point=2 t=74.238 et=781.480</Score>
-<Score et="783.3">Swen Rijpstra(6) lap=6 point=0 t=108.028 et=783.200</Score>
-<Score et="786.6">Peter Waksman(2) lap=6 point=0 t=106.938 et=786.520</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="786.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="786.7">No Further Action</TrackLimits>
-<Score et="787.2">P Thanakorn(8) lap=6 point=0 t=107.872 et=787.020</Score>
-<Score et="788.1">Angel Herrero(4) lap=6 point=0 t=107.014 et=788.040</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="788.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="788.2">No Further Action</TrackLimits>
-<Score et="796.4">Pierre Fredouet(12) lap=6 point=0 t=107.971 et=796.300</Score>
-<Score et="800.6">Max Teichmanm(17) lap=6 point=0 t=109.347 et=800.500</Score>
-<Score et="801.1">Vitalii Krch(10) lap=6 point=0 t=110.430 et=800.960</Score>
-<Score et="803.5">Marcin Skowronski(0) lap=6 point=1 t=37.516 et=803.440</Score>
-<Score et="805.0">Samuel Groeber(5) lap=6 point=1 t=35.124 et=805.000</Score>
-<Score et="806.6">Marvin Soapert(14) lap=6 point=0 t=107.481 et=806.540</Score>
-<Score et="808.1">Luis Galceran Ruiz(15) lap=6 point=0 t=-1.000 et=808.060</Score>
-<Score et="809.5">Laszlo Agocs(3) lap=5 point=0 t=195.284 et=809.420</Score>
-<Score et="810.6">Hessam Hensens(9) lap=6 point=1 t=35.575 et=810.560</Score>
-<Score et="813.6">YANG FAN(1) lap=6 point=1 t=35.447 et=813.540</Score>
-<Score et="817.5">Timofey Shishkin(16) lap=6 point=0 t=110.206 et=817.440</Score>
-<Score et="818.7">Swen Rijpstra(6) lap=6 point=1 t=35.422 et=818.620</Score>
-<Score et="822.0">Peter Waksman(2) lap=6 point=1 t=35.445 et=821.960</Score>
-<Score et="823.3">P Thanakorn(8) lap=6 point=1 t=36.031 et=823.040</Score>
-<Score et="823.7">Angel Herrero(4) lap=6 point=1 t=35.512 et=823.560</Score>
-<Score et="832.3">Pierre Fredouet(12) lap=6 point=1 t=35.926 et=832.240</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="835.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="835.8">No Further Action</TrackLimits>
-<Score et="836.9">Max Teichmanm(17) lap=6 point=1 t=36.314 et=836.820</Score>
-<Score et="838.1">Vitalii Krch(10) lap=6 point=1 t=37.046 et=838.000</Score>
-<Score et="838.9">Marcin Skowronski(0) lap=6 point=2 t=72.882 et=838.800</Score>
-<Score et="840.7">Samuel Groeber(5) lap=6 point=2 t=70.808 et=840.680</Score>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="841.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="841.2">No Further Action</TrackLimits>
-<Score et="842.1">Marvin Soapert(14) lap=6 point=1 t=35.460 et=842.000</Score>
-<Score et="845.0">Laszlo Agocs(3) lap=5 point=1 t=35.563 et=844.980</Score>
-<Score et="846.9">Hessam Hensens(9) lap=6 point=2 t=71.842 et=846.820</Score>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="847.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="847.0">No Further Action</TrackLimits>
-<Score et="849.2">YANG FAN(1) lap=6 point=2 t=71.029 et=849.120</Score>
-<Score et="853.8">Timofey Shishkin(16) lap=6 point=1 t=36.179 et=853.620</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="854.2">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="854.2">No Further Action</TrackLimits>
-<Score et="854.7">Swen Rijpstra(6) lap=6 point=2 t=71.406 et=854.620</Score>
-<Score et="854.7">Luis Galceran Ruiz(15) lap=6 point=1 t=46.579 et=854.640</Score>
-<Score et="858.5">Peter Waksman(2) lap=6 point=2 t=71.863 et=858.380</Score>
-<Score et="859.8">Angel Herrero(4) lap=6 point=2 t=71.619 et=859.660</Score>
-<Score et="859.9">P Thanakorn(8) lap=6 point=2 t=72.750 et=859.760</Score>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="864.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="864.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="864.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="864.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="865.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="865.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="867.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="867.4">No Further Action</TrackLimits>
-<Score et="868.7">Pierre Fredouet(12) lap=6 point=2 t=72.361 et=868.660</Score>
-<Score et="873.3">Marcin Skowronski(0) lap=7 point=0 t=107.233 et=873.160</Score>
-<Score et="873.7">Max Teichmanm(17) lap=6 point=2 t=73.165 et=873.660</Score>
-<Score et="875.3">Samuel Groeber(5) lap=7 point=0 t=105.362 et=875.240</Score>
-<Score et="876.7">Vitalii Krch(10) lap=6 point=2 t=75.693 et=876.660</Score>
-<Incident et="877.2">YANG FAN(1) reported contact (2425.07) with Immovable</Incident>
-<Score et="878.4">Marvin Soapert(14) lap=6 point=2 t=71.797 et=878.340</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="879.1">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="879.1">No Further Action</TrackLimits>
-<Score et="881.2">Laszlo Agocs(3) lap=5 point=2 t=71.707 et=881.120</Score>
-<Score et="881.5">Hessam Hensens(9) lap=7 point=0 t=106.502 et=881.480</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="887.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="887.2">No Further Action</TrackLimits>
-<Score et="889.4">Swen Rijpstra(6) lap=7 point=0 t=106.087 et=889.300</Score>
-<Score et="890.9">Timofey Shishkin(16) lap=6 point=2 t=73.309 et=890.740</Score>
-<Score et="891.2">YANG FAN(1) lap=7 point=0 t=113.026 et=891.120</Score>
-<Score et="891.5">Luis Galceran Ruiz(15) lap=6 point=2 t=83.349 et=891.400</Score>
-<Score et="893.6">Peter Waksman(2) lap=7 point=0 t=106.965 et=893.480</Score>
-<Score et="895.1">Angel Herrero(4) lap=7 point=0 t=106.888 et=894.940</Score>
-<Score et="895.8">P Thanakorn(8) lap=7 point=0 t=108.518 et=895.540</Score>
-<Score et="904.3">Pierre Fredouet(12) lap=7 point=0 t=107.960 et=904.260</Score>
-<Score et="908.5">Marcin Skowronski(0) lap=7 point=1 t=35.271 et=908.420</Score>
-<Score et="909.3">Max Teichmanm(17) lap=7 point=0 t=108.648 et=909.140</Score>
-<Score et="910.8">Samuel Groeber(5) lap=7 point=1 t=35.514 et=910.740</Score>
-<Score et="912.5">Vitalii Krch(10) lap=7 point=0 t=111.445 et=912.400</Score>
-<Score et="913.4">Marvin Soapert(14) lap=7 point=0 t=106.729 et=913.280</Score>
-<Score et="916.8">Hessam Hensens(9) lap=7 point=1 t=35.213 et=916.700</Score>
-<Score et="917.3">Laszlo Agocs(3) lap=6 point=0 t=107.743 et=917.160</Score>
-<Score et="924.8">Swen Rijpstra(6) lap=7 point=1 t=35.389 et=924.680</Score>
-<Score et="926.6">Timofey Shishkin(16) lap=7 point=0 t=109.105 et=926.540</Score>
-<Score et="927.2">Luis Galceran Ruiz(15) lap=7 point=0 t=119.062 et=927.120</Score>
-<Score et="927.3">YANG FAN(1) lap=7 point=1 t=36.121 et=927.240</Score>
-<Score et="928.8">Peter Waksman(2) lap=7 point=1 t=35.139 et=928.620</Score>
-<Score et="930.8">Angel Herrero(4) lap=7 point=1 t=35.619 et=930.560</Score>
-<Score et="931.7">P Thanakorn(8) lap=7 point=1 t=35.904 et=931.440</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.2">No Further Action</TrackLimits>
-<Score et="940.2">Pierre Fredouet(12) lap=7 point=1 t=35.852 et=940.120</Score>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="940.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="940.6">No Further Action</TrackLimits>
-<Score et="944.5">Marcin Skowronski(0) lap=7 point=2 t=71.228 et=944.380</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="944.9">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="944.9">No Further Action</TrackLimits>
-<Score et="945.4">Max Teichmanm(17) lap=7 point=1 t=36.227 et=945.380</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="945.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="945.8">No Further Action</TrackLimits>
-<Score et="946.4">Samuel Groeber(5) lap=7 point=2 t=71.130 et=946.360</Score>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="948.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="948.3">No Further Action</TrackLimits>
-<Score et="948.8">Vitalii Krch(10) lap=7 point=1 t=36.269 et=948.680</Score>
-<Score et="949.2">Marvin Soapert(14) lap=7 point=1 t=35.814 et=949.080</Score>
-<Score et="952.6">Laszlo Agocs(3) lap=6 point=1 t=35.399 et=952.560</Score>
-<Score et="952.7">Hessam Hensens(9) lap=7 point=2 t=71.189 et=952.660</Score>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="956.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="956.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="7" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="957.0">Warning</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="7" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="957.0">Warning</TrackLimits>
-<Score et="960.8">Swen Rijpstra(6) lap=7 point=2 t=71.422 et=960.720</Score>
-<Score et="963.3">YANG FAN(1) lap=7 point=2 t=72.086 et=963.200</Score>
-<Score et="963.6">Luis Galceran Ruiz(15) lap=7 point=1 t=36.445 et=963.560</Score>
-<Score et="963.9">Timofey Shishkin(16) lap=7 point=1 t=37.244 et=963.780</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="964.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="964.0">No Further Action</TrackLimits>
-<Score et="964.8">Peter Waksman(2) lap=7 point=2 t=71.263 et=964.760</Score>
-<Score et="967.0">Angel Herrero(4) lap=7 point=2 t=-1.000 et=966.700</Score>
-<Score et="968.4">P Thanakorn(8) lap=7 point=2 t=72.656 et=968.200</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="976.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="976.8">No Further Action</TrackLimits>
-<Score et="977.0">Pierre Fredouet(12) lap=7 point=2 t=72.632 et=976.900</Score>
-<Score et="979.1">Marcin Skowronski(0) lap=8 point=0 t=105.882 et=979.040</Score>
-<Score et="981.1">Samuel Groeber(5) lap=8 point=0 t=105.811 et=981.040</Score>
-<Score et="982.1">Max Teichmanm(17) lap=7 point=2 t=72.897 et=982.040</Score>
-<Score et="985.8">Marvin Soapert(14) lap=7 point=2 t=72.473 et=985.740</Score>
-<Score et="985.8">Vitalii Krch(10) lap=7 point=2 t=73.325 et=985.740</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="987.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="987.2">No Further Action</TrackLimits>
-<Score et="987.4">Hessam Hensens(9) lap=8 point=0 t=105.864 et=987.340</Score>
-<Score et="989.4">Laszlo Agocs(3) lap=6 point=2 t=72.124 et=989.280</Score>
-<Score et="995.7">Swen Rijpstra(6) lap=8 point=0 t=106.325 et=995.620</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="997.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="997.1">No Further Action</TrackLimits>
-<Score et="998.2">YANG FAN(1) lap=8 point=0 t=106.931 et=998.040</Score>
-<Score et="999.3">Peter Waksman(2) lap=8 point=0 t=105.742 et=999.240</Score>
-<Score et="1000.2">Luis Galceran Ruiz(15) lap=7 point=2 t=72.997 et=1000.120</Score>
-<Score et="1001.1">Timofey Shishkin(16) lap=7 point=2 t=74.461 et=1001.000</Score>
-<Score et="1001.8">Angel Herrero(4) lap=8 point=0 t=-1.000 et=1001.700</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1002.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1002.5">No Further Action</TrackLimits>
-<Score et="1003.8">P Thanakorn(8) lap=8 point=0 t=108.062 et=1003.600</Score>
-<Score et="1012.6">Pierre Fredouet(12) lap=8 point=0 t=108.255 et=1012.520</Score>
-<Score et="1014.2">Marcin Skowronski(0) lap=8 point=1 t=35.081 et=1014.120</Score>
-<Sector Driver="Samuel Groeber" ID="5" Sector="1" Class="LMP3" et="1016.1">Samuel Groeber(5) set new best for sector 1</Sector>
-<Score et="1016.1">Samuel Groeber(5) lap=8 point=1 t=34.969 et=1016.020</Score>
-<Score et="1018.0">Max Teichmanm(17) lap=8 point=0 t=108.724 et=1017.880</Score>
-<Score et="1022.2">Vitalii Krch(10) lap=8 point=0 t=109.722 et=1022.140</Score>
-<Score et="1022.6">Hessam Hensens(9) lap=8 point=1 t=35.161 et=1022.500</Score>
-<Score et="1025.4">Laszlo Agocs(3) lap=7 point=0 t=108.153 et=1025.320</Score>
-<Score et="1031.3">Marvin Soapert(14) lap=8 point=0 t=117.959 et=1031.240</Score>
-<Score et="1031.4">Swen Rijpstra(6) lap=8 point=1 t=35.726 et=1031.340</Score>
-<Score et="1033.7">YANG FAN(1) lap=8 point=1 t=35.577 et=1033.620</Score>
-<Score et="1034.4">Peter Waksman(2) lap=8 point=1 t=35.147 et=1034.380</Score>
-<Score et="1035.6">Luis Galceran Ruiz(15) lap=8 point=0 t=108.466 et=1035.580</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1035.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1035.8">No Further Action</TrackLimits>
-<Score et="1037.2">Timofey Shishkin(16) lap=8 point=0 t=110.582 et=1037.120</Score>
-<Score et="1037.3">Angel Herrero(4) lap=8 point=1 t=35.467 et=1037.160</Score>
-<Score et="1040.0">P Thanakorn(8) lap=8 point=1 t=36.246 et=1039.840</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1044.3">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1044.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.0">No Further Action</TrackLimits>
-<Score et="1048.8">Pierre Fredouet(12) lap=8 point=1 t=36.175 et=1048.700</Score>
-<Score et="1049.6">Marcin Skowronski(0) lap=8 point=2 t=70.508 et=1049.540</Score>
-<Score et="1051.7">Samuel Groeber(5) lap=8 point=2 t=70.533 et=1051.580</Score>
-<Score et="1054.1">Max Teichmanm(17) lap=8 point=1 t=36.213 et=1054.080</Score>
-<Score et="1058.1">Hessam Hensens(9) lap=8 point=2 t=70.673 et=1058.020</Score>
-<Score et="1058.8">Vitalii Krch(10) lap=8 point=1 t=36.575 et=1058.700</Score>
-<Score et="1060.8">Laszlo Agocs(3) lap=7 point=1 t=35.378 et=1060.700</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="8" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1061.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="8" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1061.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1062.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1062.2">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1064.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1064.0">No Further Action</TrackLimits>
-<Score et="1066.7">Marvin Soapert(14) lap=8 point=1 t=35.386 et=1066.620</Score>
-<Score et="1067.1">Swen Rijpstra(6) lap=8 point=2 t=71.370 et=1066.980</Score>
-<Score et="1070.3">YANG FAN(1) lap=8 point=2 t=72.110 et=1070.160</Score>
-<Score et="1070.5">Peter Waksman(2) lap=8 point=2 t=71.254 et=1070.480</Score>
-<Score et="1071.5">Luis Galceran Ruiz(15) lap=8 point=1 t=35.810 et=1071.400</Score>
-<Score et="1073.2">Timofey Shishkin(16) lap=8 point=1 t=36.003 et=1073.140</Score>
-<Score et="1073.4">Angel Herrero(4) lap=8 point=2 t=71.629 et=1073.320</Score>
-<Score et="1076.3">P Thanakorn(8) lap=8 point=2 t=72.566 et=1076.160</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1077.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1077.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1078.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1078.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1080.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1080.9">No Further Action</TrackLimits>
-<Score et="1085.6">Marcin Skowronski(0) lap=9 point=0 t=106.420 et=1085.460</Score>
-<Score et="1085.6">Pierre Fredouet(12) lap=8 point=2 t=73.059 et=1085.580</Score>
-<Score et="1086.2">Samuel Groeber(5) lap=9 point=0 t=105.095 et=1086.140</Score>
-<Score et="1091.8">Max Teichmanm(17) lap=8 point=2 t=73.850 et=1091.720</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1091.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1091.9">No Further Action</TrackLimits>
-<Score et="1092.6">Hessam Hensens(9) lap=9 point=0 t=105.115 et=1092.460</Score>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1092.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Marvin Soapert" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1092.6">No Further Action</TrackLimits>
-<Score et="1096.4">Vitalii Krch(10) lap=8 point=2 t=74.254 et=1096.380</Score>
-<Score et="1096.9">Laszlo Agocs(3) lap=7 point=2 t=71.519 et=1096.840</Score>
-<Score et="1101.8">Swen Rijpstra(6) lap=9 point=0 t=106.118 et=1101.740</Score>
-<Score et="1103.2">Marvin Soapert(14) lap=8 point=2 t=71.863 et=1103.100</Score>
-<Score et="1105.2">YANG FAN(1) lap=9 point=0 t=107.090 et=1105.140</Score>
-<Score et="1105.6">Peter Waksman(2) lap=9 point=0 t=106.193 et=1105.420</Score>
-<Score et="1107.8">Luis Galceran Ruiz(15) lap=8 point=2 t=72.147 et=1107.740</Score>
-<Score et="1108.4">Angel Herrero(4) lap=9 point=0 t=106.656 et=1108.340</Score>
-<Score et="1110.4">Timofey Shishkin(16) lap=8 point=2 t=73.136 et=1110.260</Score>
-<Score et="1111.8">P Thanakorn(8) lap=9 point=0 t=108.025 et=1111.620</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1113.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1113.2">No Further Action</TrackLimits>
-<Incident et="1116.0">YANG FAN(1) reported contact (258.31) with another vehicle Peter Waksman(2)</Incident>
-<Incident et="1116.0">Peter Waksman(2) reported contact (94.64) with another vehicle YANG FAN(1)</Incident>
-<Incident et="1116.7">Peter Waksman(2) reported contact (174.66) with Sign</Incident>
-<Incident et="1116.8">Peter Waksman(2) reported contact (273.08) with Sign</Incident>
-<Incident et="1117.0">Peter Waksman(2) reported contact (2589.50) with Immovable</Incident>
-<Incident et="1117.6">Peter Waksman(2) reported contact (145.90) with Sign</Incident>
-<Incident et="1117.7">Peter Waksman(2) reported contact (135.94) with Sign</Incident>
-<Score et="1120.7">Marcin Skowronski(0) lap=9 point=1 t=35.191 et=1120.640</Score>
-<Incident et="1121.2">Peter Waksman(2) reported contact (325.52) with Immovable</Incident>
-<Score et="1121.3">Samuel Groeber(5) lap=9 point=1 t=35.067 et=1121.200</Score>
-<Score et="1121.3">Pierre Fredouet(12) lap=9 point=0 t=108.691 et=1121.220</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1127.2">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1127.2">No Further Action</TrackLimits>
-<Score et="1127.7">Max Teichmanm(17) lap=9 point=0 t=109.707 et=1127.580</Score>
-<ChatMessage et="1128.4">Y FAN: oops</ChatMessage>
-<Score et="1128.5">Hessam Hensens(9) lap=9 point=1 t=35.976 et=1128.440</Score>
-<Score et="1132.3">Vitalii Krch(10) lap=9 point=0 t=110.064 et=1132.200</Score>
-<Score et="1132.6">Laszlo Agocs(3) lap=8 point=0 t=107.237 et=1132.560</Score>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1135.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1135.6">No Further Action</TrackLimits>
-<Score et="1137.2">Swen Rijpstra(6) lap=9 point=1 t=35.383 et=1137.120</Score>
-<Score et="1139.0">Marvin Soapert(14) lap=9 point=0 t=107.697 et=1138.920</Score>
-<Score et="1143.1">YANG FAN(1) lap=9 point=1 t=37.949 et=1143.080</Score>
-<Score et="1143.3">Luis Galceran Ruiz(15) lap=9 point=0 t=107.599 et=1143.180</Score>
-<Score et="1144.2">Angel Herrero(4) lap=9 point=1 t=35.701 et=1144.040</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1146.0">Warning</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1146.0">Warning</TrackLimits>
-<Score et="1146.1">Timofey Shishkin(16) lap=9 point=0 t=108.871 et=1146.000</Score>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1146.7">Warning</TrackLimits>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1146.7">Warning</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.5">No Further Action</TrackLimits>
-<Score et="1147.6">P Thanakorn(8) lap=9 point=1 t=35.853 et=1147.480</Score>
-<Score et="1151.3">Peter Waksman(2) lap=9 point=1 t=45.668 et=1151.100</Score>
-<Score et="1156.0">Marcin Skowronski(0) lap=9 point=2 t=-1.000 et=1155.940</Score>
-<Score et="1156.7">Samuel Groeber(5) lap=9 point=2 t=-1.000 et=1156.620</Score>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="9" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1157.0">Warning</TrackLimits>
-<TrackLimits Driver="Swen Rijpstra" ID="6" Lap="9" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1157.0">Warning</TrackLimits>
-<Score et="1157.3">Pierre Fredouet(12) lap=9 point=1 t=36.077 et=1157.280</Score>
-<Score et="1164.0">Max Teichmanm(17) lap=9 point=1 t=36.371 et=1163.960</Score>
-<Score et="1164.4">Hessam Hensens(9) lap=9 point=2 t=71.860 et=1164.320</Score>
-<Score et="1168.6">Laszlo Agocs(3) lap=8 point=1 t=35.948 et=1168.500</Score>
-<Score et="1169.6">Vitalii Krch(10) lap=9 point=1 t=37.366 et=1169.560</Score>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1172.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1172.9">No Further Action</TrackLimits>
-<Score et="1173.4">Swen Rijpstra(6) lap=9 point=2 t=-1.000 et=1173.300</Score>
-<Score et="1176.0">Marvin Soapert(14) lap=9 point=1 t=36.951 et=1175.880</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1177.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1177.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Vitalii Krch" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.1">No Further Action</TrackLimits>
-<Score et="1179.2">Luis Galceran Ruiz(15) lap=9 point=1 t=35.933 et=1179.120</Score>
-<Score et="1179.5">YANG FAN(1) lap=9 point=2 t=74.286 et=1179.420</Score>
-<Score et="1180.4">Angel Herrero(4) lap=9 point=2 t=71.992 et=1180.340</Score>
-<Score et="1181.9">Timofey Shishkin(16) lap=9 point=1 t=35.816 et=1181.820</Score>
-<Score et="1184.4">P Thanakorn(8) lap=9 point=2 t=72.589 et=1184.220</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="9" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1185.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="9" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1185.3">No Further Action</TrackLimits>
-<Score et="1187.6">Peter Waksman(2) lap=9 point=2 t=82.058 et=1187.480</Score>
-<Score et="1190.4">Marcin Skowronski(0) lap=10 point=0 t=-1.000 et=1190.280</Score>
-<Score et="1191.3">Samuel Groeber(5) lap=10 point=0 t=-1.000 et=1191.280</Score>
-<Score et="1193.8">Pierre Fredouet(12) lap=9 point=2 t=72.569 et=1193.780</Score>
-<Score et="1199.0">Hessam Hensens(9) lap=10 point=0 t=106.473 et=1198.940</Score>
-<Score et="1201.6">Max Teichmanm(17) lap=9 point=2 t=73.961 et=1201.540</Score>
-<Score et="1204.8">Laszlo Agocs(3) lap=8 point=2 t=72.171 et=1204.720</Score>
-<Score et="1208.0">Vitalii Krch(10) lap=9 point=2 t=75.668 et=1207.860</Score>
-<Score et="1208.1">Swen Rijpstra(6) lap=10 point=0 t=-1.000 et=1208.100</Score>
-<Score et="1213.0">Marvin Soapert(14) lap=9 point=2 t=73.996 et=1212.920</Score>
-<Score et="1214.5">YANG FAN(1) lap=10 point=0 t=109.277 et=1214.420</Score>
-<Score et="1215.5">Angel Herrero(4) lap=10 point=0 t=107.049 et=1215.400</Score>
-<Score et="1215.5">Luis Galceran Ruiz(15) lap=9 point=2 t=72.271 et=1215.460</Score>
-<Score et="1218.7">Timofey Shishkin(16) lap=9 point=2 t=72.622 et=1218.620</Score>
-<Score et="1220.0">P Thanakorn(8) lap=10 point=0 t=108.103 et=1219.720</Score>
-<Score et="1222.7">Peter Waksman(2) lap=10 point=0 t=117.159 et=1222.580</Score>
-<Sector Driver="Marcin Skowronski" ID="0" Sector="1" Class="LMP3" et="1225.2">Marcin Skowronski(0) set new best for sector 1</Sector>
-<Score et="1225.2">Marcin Skowronski(0) lap=10 point=1 t=34.872 et=1225.140</Score>
-<Score et="1226.5">Samuel Groeber(5) lap=10 point=1 t=35.172 et=1226.440</Score>
-<Score et="1229.2">Pierre Fredouet(12) lap=10 point=0 t=107.987 et=1229.200</Score>
-<Score et="1234.4">Hessam Hensens(9) lap=10 point=1 t=35.387 et=1234.320</Score>
-<Score et="1237.3">Max Teichmanm(17) lap=10 point=0 t=109.682 et=1237.260</Score>
-<Score et="1239.7">Laszlo Agocs(3) lap=9 point=0 t=107.078 et=1239.620</Score>
-<Score et="1243.4">Swen Rijpstra(6) lap=10 point=1 t=35.227 et=1243.320</Score>
-<Score et="1243.4">Vitalii Krch(10) lap=10 point=0 t=111.131 et=1243.320</Score>
-<Score et="1250.0">YANG FAN(1) lap=10 point=1 t=35.423 et=1249.840</Score>
-<Score et="1251.1">Angel Herrero(4) lap=10 point=1 t=35.670 et=1251.060</Score>
-<Score et="1251.3">Luis Galceran Ruiz(15) lap=10 point=0 t=108.012 et=1251.200</Score>
-<Score et="1254.7">Timofey Shishkin(16) lap=10 point=0 t=108.650 et=1254.640</Score>
-<Score et="1255.8">P Thanakorn(8) lap=10 point=1 t=35.912 et=1255.640</Score>
-<Score et="1258.0">Peter Waksman(2) lap=10 point=1 t=35.367 et=1257.940</Score>
-<Score et="1259.0">Marvin Soapert(14) lap=10 point=0 t=120.035 et=1258.960</Score>
-<Score et="1260.3">Marcin Skowronski(0) lap=10 point=2 t=69.961 et=1260.240</Score>
-<Score et="1262.1">Samuel Groeber(5) lap=10 point=2 t=70.787 et=1262.060</Score>
-<Score et="1264.9">Pierre Fredouet(12) lap=10 point=1 t=35.630 et=1264.820</Score>
-<Score et="1270.3">Hessam Hensens(9) lap=10 point=2 t=71.293 et=1270.220</Score>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1273.3">No Further Action</TrackLimits>
-<TrackLimits Driver="YANG FAN" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1273.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1273.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1273.4">No Further Action</TrackLimits>
-<Score et="1273.4">Max Teichmanm(17) lap=10 point=1 t=36.029 et=1273.300</Score>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.4">No Further Action</TrackLimits>
-<Score et="1275.0">Laszlo Agocs(3) lap=9 point=1 t=35.285 et=1274.920</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="10" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1275.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="10" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1275.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Peter Waksman" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.0">No Further Action</TrackLimits>
-<Score et="1279.2">Swen Rijpstra(6) lap=10 point=2 t=71.031 et=1279.120</Score>
-<Score et="1280.0">Vitalii Krch(10) lap=10 point=1 t=36.586 et=1279.920</Score>
-<Score et="1285.8">YANG FAN(1) lap=10 point=2 t=71.297 et=1285.720</Score>
-<Score et="1287.1">Luis Galceran Ruiz(15) lap=10 point=1 t=35.814 et=1287.020</Score>
-<Score et="1287.2">Angel Herrero(4) lap=10 point=2 t=71.797 et=1287.200</Score>
-<Score et="1291.0">Timofey Shishkin(16) lap=10 point=1 t=36.220 et=1290.860</Score>
-<Score et="1292.6">P Thanakorn(8) lap=10 point=2 t=72.612 et=1292.340</Score>
-<Score et="1294.6">Marcin Skowronski(0) lap=11 point=0 t=104.288 et=1294.560</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1295.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1295.6">No Further Action</TrackLimits>
-<Score et="1296.9">Samuel Groeber(5) lap=11 point=0 t=105.558 et=1296.840</Score>
-<Score et="1301.8">Pierre Fredouet(12) lap=10 point=2 t=72.546 et=1301.740</Score>
-<Score et="1305.2">Hessam Hensens(9) lap=11 point=0 t=106.185 et=1305.120</Score>
-<Score et="1309.6">Peter Waksman(2) lap=10 point=2 t=86.942 et=1309.520</Score>
-<Score et="1311.0">Laszlo Agocs(3) lap=9 point=2 t=71.287 et=1310.920</Score>
-<Score et="1311.1">Max Teichmanm(17) lap=10 point=2 t=73.785 et=1311.040</Score>
-<Score et="1314.3">Swen Rijpstra(6) lap=11 point=0 t=106.096 et=1314.180</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1315.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1315.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Teichmanm" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.8">No Further Action</TrackLimits>
-<Score et="1317.2">Vitalii Krch(10) lap=10 point=2 t=73.769 et=1317.100</Score>
-<Score et="1321.0">YANG FAN(1) lap=11 point=0 t=106.426 et=1320.840</Score>
-<Score et="1322.4">Angel Herrero(4) lap=11 point=0 t=106.916 et=1322.320</Score>
-<Score et="1324.2">Luis Galceran Ruiz(15) lap=10 point=2 t=72.944 et=1324.140</Score>
-<Score et="1324.2">Marvin Soapert(14) lap=10 point=1 t=65.195 et=1324.160</Score>
-<Score et="1328.1">P Thanakorn(8) lap=11 point=0 t=108.145 et=1327.860</Score>
-<Score et="1328.1">Timofey Shishkin(16) lap=10 point=2 t=73.374 et=1328.020</Score>
-<Score et="1329.6">Marcin Skowronski(0) lap=11 point=1 t=34.980 et=1329.540</Score>
-<Score et="1331.9">Samuel Groeber(5) lap=11 point=1 t=35.019 et=1331.840</Score>
-<Score et="1337.3">Pierre Fredouet(12) lap=11 point=0 t=108.046 et=1337.240</Score>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1339.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Samuel Groeber" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1339.8">No Further Action</TrackLimits>
-<Score et="1340.5">Hessam Hensens(9) lap=11 point=1 t=35.366 et=1340.480</Score>
-<Score et="1345.2">Peter Waksman(2) lap=11 point=0 t=122.479 et=1345.060</Score>
-<Score et="1346.3">Laszlo Agocs(3) lap=10 point=0 t=106.607 et=1346.240</Score>
-<Score et="1347.3">Max Teichmanm(17) lap=11 point=0 t=110.030 et=1347.300</Score>
-<Score et="1349.7">Swen Rijpstra(6) lap=11 point=1 t=35.454 et=1349.640</Score>
-<Score et="1352.3">Vitalii Krch(10) lap=11 point=0 t=108.947 et=1352.280</Score>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1353.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcin Skowronski" ID="0" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1353.0">No Further Action</TrackLimits>
-<Score et="1356.4">YANG FAN(1) lap=11 point=1 t=35.539 et=1356.380</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1356.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1356.6">No Further Action</TrackLimits>
-<Score et="1358.2">Angel Herrero(4) lap=11 point=1 t=35.703 et=1358.020</Score>
-<Score et="1359.7">Luis Galceran Ruiz(15) lap=11 point=0 t=108.413 et=1359.620</Score>
-<Score et="1361.3">Marvin Soapert(14) lap=10 point=2 t=102.269 et=1361.240</Score>
-<Score et="1364.1">P Thanakorn(8) lap=11 point=1 t=36.106 et=1363.980</Score>
-<Score et="1364.5">Timofey Shishkin(16) lap=11 point=0 t=109.784 et=1364.440</Score>
-<Score et="1365.0">Marcin Skowronski(0) lap=11 point=2 t=70.385 et=1364.940</Score>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="11" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1366.0">Warning</TrackLimits>
-<TrackLimits Driver="Hessam Hensens" ID="9" Lap="11" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1366.0">Warning</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1373.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P Thanakorn" ID="8" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1373.1">No Further Action</TrackLimits>
-<Score et="1373.1">Pierre Fredouet(12) lap=11 point=1 t=35.838 et=1373.080</Score>
-<Score et="1373.8">Samuel Groeber(5) lap=11 point=2 t=76.906 et=1373.740</Score>
-<Score et="1376.9">Hessam Hensens(9) lap=11 point=2 t=-1.000 et=1376.800</Score>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="11" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1378.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Angel Herrero" ID="4" Lap="11" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1378.4">No Further Action</TrackLimits>
-<Score et="1380.7">Peter Waksman(2) lap=11 point=1 t=35.549 et=1380.620</Score>
-<Score et="1382.1">Laszlo Agocs(3) lap=10 point=1 t=35.836 et=1382.080</Score>
-<Score et="1383.8">Max Teichmanm(17) lap=11 point=1 t=36.397 et=1383.680</Score>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1385.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Timofey Shishkin" ID="16" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1385.4">No Further Action</TrackLimits>
-<Score et="1385.9">Swen Rijpstra(6) lap=11 point=2 t=71.570 et=1385.760</Score>
-<Score et="1388.8">Vitalii Krch(10) lap=11 point=1 t=36.451 et=1388.720</Score>
-<Score et="1392.3">YANG FAN(1) lap=11 point=2 t=71.400 et=1392.240</Score>
-<Score et="1394.7">Angel Herrero(4) lap=11 point=2 t=72.275 et=1394.580</Score>
-<Score et="1395.7">Luis Galceran Ruiz(15) lap=11 point=1 t=36.024 et=1395.640</Score>
-<Score et="1396.4">Marvin Soapert(14) lap=11 point=0 t=137.389 et=1396.360</Score>
-<Score et="1399.8">Checkered for Marcin Skowronski, laps=12/2147483647, endET=1399.780029/1325.422485, crossedAfterTime=0</Score>
-<Score et="1399.8">Marcin Skowronski(0) lap=12 point=0 t=105.214 et=1399.780</Score>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1400.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Laszlo Agocs" ID="3" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1400.0">No Further Action</TrackLimits>
-<Score et="1401.4">Timofey Shishkin(16) lap=11 point=1 t=36.904 et=1401.340</Score>
-<Score et="1401.8">P Thanakorn(8) lap=11 point=2 t=73.731 et=1401.600</Score>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1404.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Luis Galceran Ruiz" ID="15" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1404.2">No Further Action</TrackLimits>
-<Score et="1408.5">Samuel Groeber(5) lap=12 point=0 t=111.643 et=1408.480</Score>
-<Score et="1410.2">Pierre Fredouet(12) lap=11 point=2 t=72.908 et=1410.160</Score>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="150.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3781" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3781" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="152.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="152.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="163.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="179.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="179.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="195.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="196.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="196.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="197.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="209.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="0" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="209.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="212.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="212.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="215.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="218.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="218.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="269.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="269.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="289.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="291.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="293.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="301.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="303.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="303.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="304.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="304.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="305.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4433" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4433" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="306.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="13" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="307.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="308.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="308.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="309.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="309.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="325.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="327.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="327.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="339.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4433" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="352.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4433" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="352.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="363.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="363.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="379.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="380.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="1.5" CurrentPoints="1.5" Resolution="4" et="380.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="401.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="401.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="404.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="404.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="407.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="407.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="412.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="412.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="412.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3386" ID="7" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="412.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="413.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="413.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="418.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="418.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="430.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="430.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="433.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="2" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="433.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="440.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="440.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="442.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="476.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="482.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="482.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="501.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="501.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="506.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="506.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="507.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="518.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="518.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="518.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="525.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="3" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="525.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="529.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="533.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="533.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="544.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="544.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="562.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="572.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="572.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="577.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="577.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="611.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="611.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="4" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="634.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="4" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="634.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="635.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="642.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="4" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="642.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="657.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="657.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="658.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="4" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="658.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="659.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="659.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="662.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="662.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="700.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="715.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="715.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="719.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="719.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="723.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="723.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="747.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="747.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="756.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="756.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="758.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="759.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="5" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="762.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="5" WarningPoints="0.5" CurrentPoints="1.25" Resolution="4" et="762.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="768.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="768.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="770.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="772.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="772.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="786.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="786.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="788.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="6" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="788.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="835.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="6" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="835.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="841.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="841.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="847.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="847.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="854.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="854.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="864.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="864.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="864.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="6" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="864.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="865.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="865.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="867.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="867.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="879.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="879.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="887.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="7" et="887.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="7" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="934.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="940.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="940.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="944.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="944.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="945.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="945.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="948.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="948.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="956.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="956.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="7" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="957.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="7" WarningPoints="0.25" CurrentPoints="2" Resolution="4" et="957.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="964.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="964.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="976.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="7" et="976.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="987.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="987.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="997.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="997.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1002.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1002.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1035.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1035.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1044.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1044.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1046.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="8" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1061.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="8" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1061.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1062.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1062.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1064.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1064.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1077.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="8" WarningPoints="0" CurrentPoints="1.5" Resolution="7" et="1077.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1078.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1078.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1080.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1080.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1091.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1091.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1092.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4107" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1092.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1113.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="8" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1113.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1127.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1127.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1135.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1135.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1146.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="9" WarningPoints="0.25" CurrentPoints="1.75" Resolution="4" et="1146.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1146.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1146.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1147.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="9" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1157.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4690" ID="6" Lap="9" WarningPoints="0.25" CurrentPoints="0.5" Resolution="4" et="1157.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1172.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1172.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1177.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1177.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4836" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1178.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="9" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1185.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="9" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1185.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1273.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4893" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="1273.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1273.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1273.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1274.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="10" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1275.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="10" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1275.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4411" ID="2" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1279.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1295.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="10" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1295.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1315.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1315.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4175" ID="17" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1316.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1339.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4587" ID="5" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1339.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1353.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4059" ID="0" Lap="11" WarningPoints="0" CurrentPoints="1.75" Resolution="7" et="1353.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1356.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1356.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="11" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1366.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3574" ID="9" Lap="11" WarningPoints="0.25" CurrentPoints="0.25" Resolution="4" et="1366.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1373.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4345" ID="8" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1373.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="11" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1378.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2937" ID="4" Lap="11" WarningPoints="0" CurrentPoints="2" Resolution="7" et="1378.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1385.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4752" ID="16" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="1385.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1400.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3916" ID="3" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="7" et="1400.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1404.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4006" ID="15" Lap="11" WarningPoints="0" CurrentPoints="1.25" Resolution="7" et="1404.2">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>12</MostLapsCompleted>

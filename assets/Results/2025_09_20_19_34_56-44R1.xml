@@ -36,1045 +36,221 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<ChatMessage et="42.6">C Vetto: good luck all have fun!</ChatMessage>
-<Penalty et="138.0">Yalcin Eser received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty et="138.0">Stephan Hochfeld received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty et="138.0">Alain Robles received Drive Thru penalty, 0s, 0laps for &quot;Out of position&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="156.0">Spooky Quack(1) reported contact (188.02) with another vehicle Wang Agora(2)</Incident>
-<Incident et="156.0">Wang Agora(2) reported contact (250.58) with another vehicle Spooky Quack(1)</Incident>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="157.2">No Further Action</TrackLimits>
-<Incident et="162.1">Josh Harper-Jones(15) reported contact (578.72) with another vehicle Lee Jimmy(19)</Incident>
-<Incident et="162.2">Lee Jimmy(19) reported contact (546.71) with another vehicle Josh Harper-Jones(15)</Incident>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="162.7">No Further Action</TrackLimits>
-<Incident et="163.1">Josh Harper-Jones(15) reported contact (1041.66) with another vehicle Wang Agora(2)</Incident>
-<Incident et="163.2">Wang Agora(2) reported contact (1433.03) with another vehicle Josh Harper-Jones(15)</Incident>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="163.6">No Further Action</TrackLimits>
-<Incident et="166.3">Ruslan Chevdar(0) reported contact (1016.28) with another vehicle GOGO Gomez(13)</Incident>
-<Incident et="166.4">GOGO Gomez(13) reported contact (1297.23) with another vehicle Ruslan Chevdar(0)</Incident>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.8">No Further Action</TrackLimits>
-<Incident et="167.3">cedric chomette(9) reported contact (70.32) with another vehicle Airam Gaug(16)</Incident>
-<Incident et="167.3">Airam Gaug(16) reported contact (50.21) with another vehicle cedric chomette(9)</Incident>
-<Incident et="167.3">cedric chomette(9) reported contact (72.48) with another vehicle Airam Gaug(16)</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
-<Sector Driver="Spooky Quack" ID="1" Sector="1" Class="GTE" et="167.8">Spooky Quack(1) set new best for sector 1</Sector>
-<Score et="167.8">Spooky Quack(1) lap=0 point=1 t=29.659 et=167.720</Score>
-<Score et="167.9">Cri Vetto(6) lap=0 point=1 t=29.843 et=167.900</Score>
-<Score et="168.6">Lee Jimmy(19) lap=0 point=1 t=30.304 et=168.360</Score>
-<Score et="169.1">Wang Agora(2) lap=0 point=1 t=30.898 et=168.960</Score>
-<Score et="169.8">Stephan Hochfeld(10) lap=0 point=1 t=-1.000 et=169.720</Score>
-<Score et="170.0">abdu wake(14) lap=0 point=1 t=31.784 et=169.840</Score>
-<Score et="170.2">A Martin(12) lap=0 point=1 t=32.112 et=170.160</Score>
-<Sector et="170.5">Airam Gaug(16) reports new suspension damage</Sector>
-<Incident et="170.6">Airam Gaug(16) reported contact (1607.47) with Immovable</Incident>
-<Score et="171.2">Andreas Karlsson#9173(17) lap=0 point=1 t=33.071 et=171.120</Score>
-<Score et="171.6">Yalcin Eser(8) lap=0 point=1 t=-1.000 et=171.560</Score>
-<Score et="172.3">cedric chomette(9) lap=0 point=1 t=34.194 et=172.240</Score>
-<Score et="172.8">Shadow Moon(20) lap=0 point=1 t=34.689 et=172.740</Score>
-<Score et="173.4">P-A Fugeekies(11) lap=0 point=1 t=35.336 et=173.379</Score>
-<Score et="174.1">Ruslan Chevdar(0) lap=0 point=1 t=36.016 et=174.060</Score>
-<Score et="174.4">Alain Robles(18) lap=0 point=1 t=-1.000 et=174.280</Score>
-<Score et="174.6">GOGO Gomez(13) lap=0 point=1 t=36.435 et=174.480</Score>
-<Score et="175.4">Anthony Heytens(5) lap=0 point=1 t=37.264 et=175.320</Score>
-<Incident et="175.4">A Martin(12) reported contact (171.07) with another vehicle abdu wake(14)</Incident>
-<Incident et="175.4">abdu wake(14) reported contact (11.50) with another vehicle A Martin(12)</Incident>
-<Incident et="175.5">abdu wake(14) reported contact (21.91) with another vehicle A Martin(12)</Incident>
-<Incident et="175.5">abdu wake(14) reported contact (35.63) with another vehicle A Martin(12)</Incident>
-<Incident et="175.6">abdu wake(14) reported contact (85.30) with another vehicle A Martin(12)</Incident>
-<TrackLimits Driver="Airam Gaug" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
-<TrackLimits Driver="A Martin" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.0">No Further Action</TrackLimits>
-<Score et="178.1">Josh Harper-Jones(15) lap=0 point=1 t=39.966 et=178.020</Score>
-<Incident et="178.8">Alain Robles(18) reported contact (749.86) with another vehicle Ruslan Chevdar(0)</Incident>
-<Incident et="178.9">Ruslan Chevdar(0) reported contact (629.51) with another vehicle Alain Robles(18)</Incident>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.4">No Further Action</TrackLimits>
-<Score et="180.6">Airam Gaug(16) lap=0 point=1 t=42.440 et=180.500</Score>
-<Sector Driver="Spooky Quack" ID="1" Sector="2" Class="GTE" et="180.9">Spooky Quack(1) set new best for sector 2</Sector>
-<Score et="180.9">Spooky Quack(1) lap=0 point=2 t=42.798 et=180.860</Score>
-<Score et="181.1">Cri Vetto(6) lap=0 point=2 t=43.050 et=181.100</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="181.7">No Further Action</TrackLimits>
-<Score et="181.9">Lee Jimmy(19) lap=0 point=2 t=43.655 et=181.700</Score>
-<Score et="182.1">Wang Agora(2) lap=0 point=2 t=-1.000 et=181.960</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.1">No Further Action</TrackLimits>
-<Score et="183.1">Stephan Hochfeld(10) lap=0 point=2 t=-1.000 et=183.040</Score>
-<Score et="183.9">abdu wake(14) lap=0 point=2 t=45.699 et=183.760</Score>
-<Incident et="184.3">A Martin(12) reported contact (167.49) with Sign</Incident>
-<Incident et="184.4">A Martin(12) reported contact (164.29) with Sign</Incident>
-<Score et="185.0">Andreas Karlsson#9173(17) lap=0 point=2 t=46.877 et=184.920</Score>
-<Score et="185.7">Yalcin Eser(8) lap=0 point=2 t=-1.000 et=185.580</Score>
-<Score et="186.0">cedric chomette(9) lap=0 point=2 t=47.848 et=185.900</Score>
-<Score et="186.7">Shadow Moon(20) lap=0 point=2 t=48.568 et=186.620</Score>
-<Score et="187.4">A Martin(12) lap=0 point=2 t=-1.000 et=187.340</Score>
-<Score et="187.6">P-A Fugeekies(11) lap=0 point=2 t=49.596 et=187.639</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="188.6">No Further Action</TrackLimits>
-<Score et="188.7">Alain Robles(18) lap=0 point=2 t=-1.000 et=188.600</Score>
-<Score et="189.2">GOGO Gomez(13) lap=0 point=2 t=50.971 et=189.020</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.4">No Further Action</TrackLimits>
-<Score et="189.6">Ruslan Chevdar(0) lap=0 point=2 t=51.491 et=189.540</Score>
-<Score et="190.4">Anthony Heytens(5) lap=0 point=2 t=52.253 et=190.300</Score>
-<Score et="191.9">Josh Harper-Jones(15) lap=0 point=2 t=53.726 et=191.780</Score>
-<TrackLimits Driver="Airam Gaug" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="193.8">No Further Action</TrackLimits>
-<Score et="194.1">Airam Gaug(16) lap=0 point=2 t=55.967 et=194.020</Score>
-<Sector Driver="Spooky Quack" ID="1" Sector="3" Class="GTE" et="209.4">Spooky Quack(1) set new best for sector 3</Sector>
-<Score et="209.4">Spooky Quack(1) lap=1 point=0 t=71.274 et=209.320</Score>
-<Score et="209.8">Cri Vetto(6) lap=1 point=0 t=71.583 et=209.640</Score>
-<Score et="210.7">Wang Agora(2) lap=1 point=0 t=72.556 et=210.600</Score>
-<Score et="211.0">Lee Jimmy(19) lap=1 point=0 t=72.373 et=210.420</Score>
-<Score et="211.7">Stephan Hochfeld(10) lap=1 point=0 t=-1.000 et=211.620</Score>
-<Sector Driver="abdu wake" ID="14" Sector="3" Class="GTE" et="212.3">abdu wake(14) set new best for sector 3</Sector>
-<Score et="212.3">abdu wake(14) lap=1 point=0 t=74.163 et=212.220</Score>
-<Sector Driver="Andreas Karlsson#9173" ID="17" Sector="3" Class="GTE" et="213.4">Andreas Karlsson#9173(17) set new best for sector 3</Sector>
-<Score et="213.4">Andreas Karlsson#9173(17) lap=1 point=0 t=75.302 et=213.360</Score>
-<Score et="214.7">Yalcin Eser(8) lap=1 point=0 t=-1.000 et=214.620</Score>
-<Score et="215.6">cedric chomette(9) lap=1 point=0 t=77.433 et=215.480</Score>
-<Score et="216.5">Shadow Moon(20) lap=1 point=0 t=78.306 et=216.360</Score>
-<Score et="217.2">A Martin(12) lap=1 point=0 t=79.155 et=217.200</Score>
-<Score et="217.4">P-A Fugeekies(11) lap=1 point=0 t=79.377 et=217.420</Score>
-<Score et="218.0">Alain Robles(18) lap=1 point=0 t=-1.000 et=217.980</Score>
-<Score et="218.5">GOGO Gomez(13) lap=1 point=0 t=80.277 et=218.320</Score>
-<Score et="220.5">Ruslan Chevdar(0) lap=1 point=0 t=82.338 et=220.400</Score>
-<Score et="220.6">Josh Harper-Jones(15) lap=1 point=0 t=82.459 et=220.520</Score>
-<Score et="220.7">Anthony Heytens(5) lap=1 point=0 t=82.605 et=220.660</Score>
-<Score et="224.2">Airam Gaug(16) lap=1 point=0 t=86.059 et=224.120</Score>
-<Incident et="230.1">Ruslan Chevdar(0) reported contact (260.41) with another vehicle Anthony Heytens(5)</Incident>
-<Sector et="231.2">Yalcin Eser(8) reports new suspension damage</Sector>
-<Incident et="231.3">Yalcin Eser(8) reported contact (3845.41) with Immovable</Incident>
-<Sector et="231.3">Yalcin Eser(8) reports new suspension damage</Sector>
-<Sector Driver="Spooky Quack" ID="1" Sector="1" Class="GTE" et="232.4">Spooky Quack(1) set new best for sector 1</Sector>
-<Score et="232.4">Spooky Quack(1) lap=1 point=1 t=23.002 et=232.320</Score>
-<Sector Driver="Cri Vetto" ID="6" Sector="1" Class="GTE" et="232.6">Cri Vetto(6) set new best for sector 1</Sector>
-<Score et="232.7">Cri Vetto(6) lap=1 point=1 t=22.965 et=232.600</Score>
-<TrackLimits Driver="Yalcin Eser" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="233.4">No Further Action</TrackLimits>
-<Score et="234.4">Wang Agora(2) lap=1 point=1 t=23.619 et=234.220</Score>
-<Incident et="234.9">Airam Gaug(16) reported contact (4185.96) with Immovable</Incident>
-<Score et="235.0">Lee Jimmy(19) lap=1 point=1 t=24.139 et=234.560</Score>
-<Score et="235.2">Stephan Hochfeld(10) lap=1 point=1 t=23.473 et=235.100</Score>
-<Incident et="235.5">Yalcin Eser(8) reported contact (391.03) with Immovable</Incident>
-<Score et="235.9">abdu wake(14) lap=1 point=1 t=23.623 et=235.840</Score>
-<Score et="237.1">Andreas Karlsson#9173(17) lap=1 point=1 t=23.695 et=237.040</Score>
-<TrackLimits Driver="Yalcin Eser" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="237.4">No Further Action</TrackLimits>
-<Score et="240.8">cedric chomette(9) lap=1 point=1 t=25.212 et=240.700</Score>
-<Score et="241.1">Shadow Moon(20) lap=1 point=1 t=24.673 et=241.040</Score>
-<Score et="241.5">A Martin(12) lap=1 point=1 t=24.186 et=241.400</Score>
-<Score et="241.8">Yalcin Eser(8) lap=1 point=1 t=27.146 et=241.760</Score>
-<Score et="241.8">P-A Fugeekies(11) lap=1 point=1 t=24.363 et=241.783</Score>
-<Score et="242.4">Alain Robles(18) lap=1 point=1 t=24.312 et=242.300</Score>
-<TrackLimits Driver="Airam Gaug" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="242.7">No Further Action</TrackLimits>
-<Score et="243.1">GOGO Gomez(13) lap=1 point=1 t=24.643 et=242.980</Score>
-<Score et="243.9">Josh Harper-Jones(15) lap=1 point=1 t=23.348 et=243.860</Score>
-<TrackLimits Driver="Stephan Hochfeld" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="244.0">No Further Action</TrackLimits>
-<Sector Driver="Spooky Quack" ID="1" Sector="2" Class="GTE" et="245.1">Spooky Quack(1) set new best for sector 2</Sector>
-<Score et="245.1">Spooky Quack(1) lap=1 point=2 t=35.780 et=245.100</Score>
-<Score et="245.8">Cri Vetto(6) lap=1 point=2 t=35.789 et=245.420</Score>
-<Score et="246.0">Ruslan Chevdar(0) lap=1 point=1 t=25.605 et=246.000</Score>
-<Sector Driver="Wang Agora" ID="2" Sector="2" Class="GTE" et="247.0">Wang Agora(2) set new best for sector 2</Sector>
-<Score et="247.0">Wang Agora(2) lap=1 point=2 t=36.279 et=246.880</Score>
-<Score et="247.0">Anthony Heytens(5) lap=1 point=1 t=26.310 et=246.960</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="247.7">No Further Action</TrackLimits>
-<Score et="248.0">Lee Jimmy(19) lap=1 point=2 t=37.256 et=247.680</Score>
-<Score et="248.3">Stephan Hochfeld(10) lap=1 point=2 t=36.603 et=248.220</Score>
-<Score et="249.0">abdu wake(14) lap=1 point=2 t=36.732 et=248.940</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="249.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Yalcin Eser" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.1">No Further Action</TrackLimits>
-<Score et="250.4">Andreas Karlsson#9173(17) lap=1 point=2 t=36.938 et=250.300</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Airam Gaug" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.8">No Further Action</TrackLimits>
-<Score et="253.7">cedric chomette(9) lap=1 point=2 t=38.184 et=253.660</Score>
-<Score et="254.5">Shadow Moon(20) lap=1 point=2 t=38.114 et=254.480</Score>
-<Score et="254.9">A Martin(12) lap=1 point=2 t=37.679 et=254.880</Score>
-<Score et="255.8">P-A Fugeekies(11) lap=1 point=2 t=38.384 et=255.803</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.9">No Further Action</TrackLimits>
-<Score et="256.1">Alain Robles(18) lap=1 point=2 t=38.102 et=256.080</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="256.9">No Further Action</TrackLimits>
-<Score et="257.4">Josh Harper-Jones(15) lap=1 point=2 t=36.742 et=257.260</Score>
-<Score et="257.6">GOGO Gomez(13) lap=1 point=2 t=39.088 et=257.420</Score>
-<Sector et="258.8">GOGO Gomez(13) reports new suspension damage</Sector>
-<Sector et="258.9">GOGO Gomez(13) reports new suspension damage</Sector>
-<Incident et="258.9">GOGO Gomez(13) reported contact (4236.43) with Immovable</Incident>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="259.0">No Further Action</TrackLimits>
-<Score et="260.3">Ruslan Chevdar(0) lap=1 point=2 t=39.761 et=260.160</Score>
-<Score et="260.7">Anthony Heytens(5) lap=1 point=2 t=39.997 et=260.660</Score>
-<Incident et="261.2">Yalcin Eser(8) reported contact (22.16) with Cone</Incident>
-<Incident et="261.2">Yalcin Eser(8) reported contact (16.62) with Cone</Incident>
-<Incident et="262.5">Ruslan Chevdar(0) reported contact (557.34) with another vehicle GOGO Gomez(13)</Incident>
-<Incident et="262.6">GOGO Gomez(13) reported contact (454.58) with another vehicle Ruslan Chevdar(0)</Incident>
-<Score et="262.7">Yalcin Eser(8) lap=1 point=2 t=48.079 et=262.700</Score>
-<Score et="274.0">Spooky Quack(1) lap=2 point=0 t=64.584 et=273.920</Score>
-<Score et="274.5">Cri Vetto(6) lap=2 point=0 t=64.563 et=274.200</Score>
-<Sector Driver="Wang Agora" ID="2" Sector="3" Class="GTE" et="275.2">Wang Agora(2) set new best for sector 3</Sector>
-<Score et="275.2">Wang Agora(2) lap=2 point=0 t=64.533 et=275.140</Score>
-<Score et="276.4">Lee Jimmy(19) lap=2 point=0 t=65.527 et=275.960</Score>
-<Score et="277.7">abdu wake(14) lap=2 point=0 t=65.339 et=277.560</Score>
-<Score et="278.2">Stephan Hochfeld(10) lap=2 point=0 t=66.547 et=278.160</Score>
-<Score et="278.7">Andreas Karlsson#9173(17) lap=2 point=0 t=65.299 et=278.660</Score>
-<Score et="282.5">cedric chomette(9) lap=2 point=0 t=66.885 et=282.360</Score>
-<Score et="283.7">Shadow Moon(20) lap=2 point=0 t=67.322 et=283.680</Score>
-<Score et="283.9">A Martin(12) lap=2 point=0 t=66.654 et=283.860</Score>
-<Score et="284.8">P-A Fugeekies(11) lap=2 point=0 t=67.402 et=284.821</Score>
-<Score et="285.9">Josh Harper-Jones(15) lap=2 point=0 t=65.276 et=285.780</Score>
-<Sector et="285.9">Wang Agora(2) reports new suspension damage</Sector>
-<Incident et="286.0">Wang Agora(2) reported contact (2729.41) with Immovable</Incident>
-<Sector et="286.1">Wang Agora(2) reports new suspension damage</Sector>
-<Score et="286.4">Alain Robles(18) lap=2 point=0 t=68.365 et=286.340</Score>
-<Score et="290.8">Ruslan Chevdar(0) lap=2 point=0 t=70.404 et=290.800</Score>
-<Score et="291.2">Anthony Heytens(5) lap=2 point=0 t=70.446 et=291.100</Score>
-<Score et="292.9">GOGO Gomez(13) lap=2 point=0 t=74.422 et=292.760</Score>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="296.8">No Further Action</TrackLimits>
-<Score et="297.6">Spooky Quack(1) lap=2 point=1 t=23.630 et=297.540</Score>
-<Score et="297.9">Cri Vetto(6) lap=2 point=1 t=23.671 et=297.860</Score>
-<TrackLimits Driver="Stephan Hochfeld" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Alain Robles" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.6">No Further Action</TrackLimits>
-<Score et="299.4">Lee Jimmy(19) lap=2 point=1 t=23.295 et=299.240</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="301.0">No Further Action</TrackLimits>
-<Score et="301.3">abdu wake(14) lap=2 point=1 t=23.689 et=301.240</Score>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="302.6">No Further Action</TrackLimits>
-<Score et="302.7">Andreas Karlsson#9173(17) lap=2 point=1 t=23.961 et=302.620</Score>
-<Score et="303.5">Stephan Hochfeld(10) lap=2 point=1 t=25.255 et=303.420</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.6">No Further Action</TrackLimits>
-<Score et="306.4">cedric chomette(9) lap=2 point=1 t=23.905 et=306.280</Score>
-<Score et="308.1">A Martin(12) lap=2 point=1 t=24.180 et=308.040</Score>
-<Score et="309.3">Shadow Moon(20) lap=2 point=1 t=25.527 et=309.200</Score>
-<Score et="309.8">P-A Fugeekies(11) lap=2 point=1 t=24.946 et=309.768</Score>
-<Score et="310.0">Josh Harper-Jones(15) lap=2 point=1 t=24.189 et=309.980</Score>
-<Score et="310.4">Spooky Quack(1) lap=2 point=2 t=36.460 et=310.380</Score>
-<Score et="311.0">Cri Vetto(6) lap=2 point=2 t=36.546 et=310.740</Score>
-<Score et="311.7">Alain Robles(18) lap=2 point=1 t=25.312 et=311.660</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="312.5">No Further Action</TrackLimits>
-<Score et="312.8">Lee Jimmy(19) lap=2 point=2 t=36.600 et=312.560</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="314.6">No Further Action</TrackLimits>
-<Score et="314.6">abdu wake(14) lap=2 point=2 t=36.992 et=314.540</Score>
-<Score et="314.7">Wang Agora(2) lap=2 point=1 t=39.448 et=314.580</Score>
-<Score et="315.7">Ruslan Chevdar(0) lap=2 point=1 t=24.798 et=315.600</Score>
-<Score et="315.9">Andreas Karlsson#9173(17) lap=2 point=2 t=37.174 et=315.820</Score>
-<Score et="316.7">Anthony Heytens(5) lap=2 point=1 t=25.498 et=316.600</Score>
-<Score et="317.5">GOGO Gomez(13) lap=2 point=1 t=24.672 et=317.420</Score>
-<Incident et="317.7">Wang Agora(2) reported contact (42.87) with Sign</Incident>
-<Incident et="317.8">Wang Agora(2) reported contact (77.85) with Sign</Incident>
-<Score et="318.0">Stephan Hochfeld(10) lap=2 point=2 t=-1.000 et=317.960</Score>
-<TrackLimits Driver="Stephan Hochfeld" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="318.2">No Further Action</TrackLimits>
-<Incident et="318.8">Wang Agora(2) reported contact (52.41) with Sign</Incident>
-<Score et="319.3">cedric chomette(9) lap=2 point=2 t=-1.000 et=319.280</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="319.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="319.4">No Further Action</TrackLimits>
-<Score et="321.2">A Martin(12) lap=2 point=2 t=37.236 et=321.100</Score>
-<Score et="322.7">Shadow Moon(20) lap=2 point=2 t=38.955 et=322.640</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="323.1">No Further Action</TrackLimits>
-<Score et="323.4">Josh Harper-Jones(15) lap=2 point=2 t=37.527 et=323.320</Score>
-<Score et="323.6">P-A Fugeekies(11) lap=2 point=2 t=38.772 et=323.593</Score>
-<TrackLimits Driver="Alain Robles" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="325.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="329.8">No Further Action</TrackLimits>
-<Score et="330.0">Ruslan Chevdar(0) lap=2 point=2 t=39.138 et=329.940</Score>
-<TrackLimits Driver="Anthony Heytens" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="330.3">No Further Action</TrackLimits>
-<Score et="330.7">Anthony Heytens(5) lap=2 point=2 t=39.515 et=330.620</Score>
-<Score et="331.4">GOGO Gomez(13) lap=2 point=2 t=38.546 et=331.300</Score>
-<Score et="332.1">Alain Robles(18) lap=2 point=2 t=45.765 et=332.100</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.3">No Further Action</TrackLimits>
-<Score et="338.8">Spooky Quack(1) lap=3 point=0 t=64.808 et=338.720</Score>
-<Score et="339.5">Cri Vetto(6) lap=3 point=0 t=65.239 et=339.440</Score>
-<Score et="341.2">Lee Jimmy(19) lap=3 point=0 t=65.025 et=340.980</Score>
-<Sector Driver="abdu wake" ID="14" Sector="3" Class="GTE" et="342.9">abdu wake(14) set new best for sector 3</Sector>
-<Score et="342.9">abdu wake(14) lap=3 point=0 t=65.230 et=342.780</Score>
-<Incident et="343.3">Shadow Moon(20) reported contact (1160.31) with Immovable</Incident>
-<Incident et="343.4">Shadow Moon(20) reported contact (16.93) with Wing</Incident>
-<Incident et="343.4">Shadow Moon(20) reported contact (7.12) with Wing</Incident>
-<Incident et="344.0">Shadow Moon(20) reported contact (23.04) with Wing</Incident>
-<Score et="344.3">Andreas Karlsson#9173(17) lap=3 point=0 t=65.594 et=344.240</Score>
-<Incident et="344.4">Shadow Moon(20) reported contact (12.12) with Wing</Incident>
-<Incident et="344.7">Shadow Moon(20) reported contact (36.61) with Wing</Incident>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.1">No Further Action</TrackLimits>
-<Sector et="347.3">Cri Vetto(6) reports new suspension damage</Sector>
-<Incident et="347.4">Cri Vetto(6) reported contact (880.94) with Immovable</Incident>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="2" WarningPoints="1" CurrentPoints="1" Resolution="2" et="348.0">Warning</TrackLimits>
-<Score et="348.5">Stephan Hochfeld(10) lap=3 point=0 t=70.261 et=348.420</Score>
-<Penalty et="348.5">Stephan Hochfeld served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Sector Driver="cedric chomette" ID="9" Sector="3" Class="GTE" et="348.5">cedric chomette(9) set new best for sector 3</Sector>
-<Score et="348.5">cedric chomette(9) lap=3 point=0 t=66.091 et=348.460</Score>
-<Sector et="349.8">Cri Vetto(6) reports new suspension damage</Sector>
-<Incident et="349.8">Cri Vetto(6) reported contact (2394.77) with Immovable</Incident>
-<Score et="350.1">A Martin(12) lap=3 point=0 t=66.104 et=349.960</Score>
-<Score et="352.1">Josh Harper-Jones(15) lap=3 point=0 t=66.224 et=352.020</Score>
-<Score et="352.1">Wang Agora(2) lap=2 point=2 t=-1.000 et=352.000</Score>
-<ChatMessage et="352.7">C Vetto: Go Right</ChatMessage>
-<Score et="353.4">P-A Fugeekies(11) lap=3 point=0 t=68.532 et=353.353</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="358.5">No Further Action</TrackLimits>
-<Score et="359.5">Ruslan Chevdar(0) lap=3 point=0 t=68.651 et=359.440</Score>
-<Score et="359.7">Shadow Moon(20) lap=3 point=0 t=75.864 et=359.540</Score>
-<Score et="360.2">Anthony Heytens(5) lap=3 point=0 t=69.078 et=360.180</Score>
-<Score et="361.0">GOGO Gomez(13) lap=3 point=0 t=68.187 et=360.940</Score>
-<Score et="362.0">Spooky Quack(1) lap=3 point=1 t=23.214 et=361.940</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="363.5">No Further Action</TrackLimits>
-<Score et="366.1">abdu wake(14) lap=3 point=1 t=23.264 et=366.040</Score>
-<Score et="367.7">Andreas Karlsson#9173(17) lap=3 point=1 t=23.374 et=367.620</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="369.6">No Further Action</TrackLimits>
-<Score et="372.3">cedric chomette(9) lap=3 point=1 t=23.780 et=372.240</Score>
-<Score et="373.7">A Martin(12) lap=3 point=1 t=23.695 et=373.660</Score>
-<Score et="374.4">Lee Jimmy(19) lap=3 point=1 t=33.128 et=374.100</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.0">No Further Action</TrackLimits>
-<Score et="375.1">Spooky Quack(1) lap=3 point=2 t=36.359 et=375.080</Score>
-<Score et="375.4">Josh Harper-Jones(15) lap=3 point=1 t=23.277 et=375.280</Score>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.6">No Further Action</TrackLimits>
-<Score et="377.4">P-A Fugeekies(11) lap=3 point=1 t=24.003 et=377.356</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="379.3">No Further Action</TrackLimits>
-<Score et="379.5">abdu wake(14) lap=3 point=2 t=36.526 et=379.320</Score>
-<Score et="381.0">Andreas Karlsson#9173(17) lap=3 point=2 t=-1.000 et=380.900</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="381.1">No Further Action</TrackLimits>
-<TrackLimits Driver="A Martin" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="382.5">Warning</TrackLimits>
-<Score et="384.5">Ruslan Chevdar(0) lap=3 point=1 t=25.012 et=384.460</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="384.9">No Further Action</TrackLimits>
-<Score et="385.2">cedric chomette(9) lap=3 point=2 t=36.679 et=385.140</Score>
-<Score et="385.5">Anthony Heytens(5) lap=3 point=1 t=25.327 et=385.500</Score>
-<Score et="386.6">GOGO Gomez(13) lap=3 point=1 t=25.520 et=386.460</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="386.7">No Further Action</TrackLimits>
-<Score et="386.8">A Martin(12) lap=3 point=2 t=-1.000 et=386.740</Score>
-<TrackLimits Driver="Lee Jimmy" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.2">No Further Action</TrackLimits>
-<Score et="388.3">Lee Jimmy(19) lap=3 point=2 t=-1.000 et=388.040</Score>
-<Score et="388.3">Josh Harper-Jones(15) lap=3 point=2 t=36.285 et=388.300</Score>
-<Score et="390.6">P-A Fugeekies(11) lap=3 point=2 t=37.218 et=390.571</Score>
-<Score et="392.5">Alain Robles(18) lap=3 point=0 t=106.123 et=392.460</Score>
-<Penalty et="392.5">Alain Robles served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.1">No Further Action</TrackLimits>
-<Score et="393.3">Shadow Moon(20) lap=3 point=1 t=33.669 et=393.220</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="398.6">No Further Action</TrackLimits>
-<Score et="398.8">Ruslan Chevdar(0) lap=3 point=2 t=39.298 et=398.740</Score>
-<TrackLimits Driver="Anthony Heytens" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="398.9">No Further Action</TrackLimits>
-<Score et="399.4">Anthony Heytens(5) lap=3 point=2 t=39.096 et=399.280</Score>
-<Score et="400.5">GOGO Gomez(13) lap=3 point=2 t=-1.000 et=400.400</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="400.7">No Further Action</TrackLimits>
-<Score et="403.6">Spooky Quack(1) lap=4 point=0 t=64.831 et=403.540</Score>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="405.0">No Further Action</TrackLimits>
-<Score et="407.6">abdu wake(14) lap=4 point=0 t=64.690 et=407.480</Score>
-<Sector Driver="Andreas Karlsson#9173" ID="17" Sector="3" Class="GTE" et="409.3">Andreas Karlsson#9173(17) set new best for sector 3</Sector>
-<Score et="409.4">Andreas Karlsson#9173(17) lap=4 point=0 t=65.044 et=409.300</Score>
-<Score et="414.0">cedric chomette(9) lap=4 point=0 t=65.462 et=413.920</Score>
-<Score et="415.7">A Martin(12) lap=4 point=0 t=-1.000 et=415.660</Score>
-<Score et="416.8">Josh Harper-Jones(15) lap=4 point=0 t=64.795 et=416.800</Score>
-<Score et="417.1">Lee Jimmy(19) lap=4 point=0 t=75.898 et=416.880</Score>
-<Score et="419.3">P-A Fugeekies(11) lap=4 point=0 t=65.949 et=419.302</Score>
-<Score et="419.5">Shadow Moon(20) lap=3 point=2 t=59.852 et=419.400</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.3">No Further Action</TrackLimits>
-<Score et="427.4">Spooky Quack(1) lap=4 point=1 t=23.722 et=427.280</Score>
-<Score et="427.8">Ruslan Chevdar(0) lap=4 point=0 t=68.351 et=427.800</Score>
-<Score et="428.4">Anthony Heytens(5) lap=4 point=0 t=68.155 et=428.340</Score>
-<Score et="430.4">GOGO Gomez(13) lap=4 point=0 t=69.242 et=430.180</Score>
-<Score et="430.7">abdu wake(14) lap=4 point=1 t=23.121 et=430.600</Score>
-<Score et="432.6">Andreas Karlsson#9173(17) lap=4 point=1 t=23.293 et=432.580</Score>
-<Score et="437.5">cedric chomette(9) lap=4 point=1 t=23.526 et=437.440</Score>
-<Score et="439.0">A Martin(12) lap=4 point=1 t=23.250 et=438.900</Score>
-<Score et="440.0">Josh Harper-Jones(15) lap=4 point=1 t=23.137 et=439.940</Score>
-<Score et="440.3">Spooky Quack(1) lap=4 point=2 t=36.654 et=440.200</Score>
-<Score et="440.8">Lee Jimmy(19) lap=4 point=1 t=23.494 et=440.360</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.8">No Further Action</TrackLimits>
-<Score et="443.4">P-A Fugeekies(11) lap=4 point=1 t=24.039 et=443.341</Score>
-<Score et="443.7">abdu wake(14) lap=4 point=2 t=-1.000 et=443.640</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="445.5">Warning</TrackLimits>
-<Score et="445.9">Andreas Karlsson#9173(17) lap=4 point=2 t=36.571 et=445.860</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="447.4">No Further Action</TrackLimits>
-<Score et="450.5">cedric chomette(9) lap=4 point=2 t=36.485 et=450.400</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="451.1">No Further Action</TrackLimits>
-<Score et="452.0">A Martin(12) lap=4 point=2 t=36.344 et=452.000</Score>
-<Score et="452.5">Ruslan Chevdar(0) lap=4 point=1 t=24.546 et=452.340</Score>
-<Score et="453.1">Josh Harper-Jones(15) lap=4 point=2 t=36.187 et=453.000</Score>
-<Score et="453.2">Anthony Heytens(5) lap=4 point=1 t=24.804 et=453.140</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.9">No Further Action</TrackLimits>
-<Score et="455.9">GOGO Gomez(13) lap=4 point=1 t=25.532 et=455.720</Score>
-<Score et="456.3">P-A Fugeekies(11) lap=4 point=2 t=37.034 et=456.335</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="466.1">No Further Action</TrackLimits>
-<Score et="466.6">Ruslan Chevdar(0) lap=4 point=2 t=38.727 et=466.520</Score>
-<Score et="467.1">Anthony Heytens(5) lap=4 point=2 t=38.708 et=467.040</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="467.4">No Further Action</TrackLimits>
-<Incident et="468.5">Farrel Zeva(7) reported contact (848.37) with Immovable</Incident>
-<Score et="468.5">Spooky Quack(1) lap=5 point=0 t=64.906 et=468.460</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="469.6">No Further Action</TrackLimits>
-<Score et="470.2">GOGO Gomez(13) lap=4 point=2 t=39.601 et=469.780</Score>
-<Score et="474.6">Andreas Karlsson#9173(17) lap=5 point=0 t=65.277 et=474.560</Score>
-<Score et="476.4">abdu wake(14) lap=5 point=0 t=-1.000 et=476.320</Score>
-<Score et="479.4">cedric chomette(9) lap=5 point=0 t=65.454 et=479.380</Score>
-<Score et="480.7">A Martin(12) lap=5 point=0 t=65.001 et=480.660</Score>
-<Score et="481.2">Josh Harper-Jones(15) lap=5 point=0 t=64.344 et=481.160</Score>
-<Score et="485.4">P-A Fugeekies(11) lap=5 point=0 t=66.041 et=485.343</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="491.7">No Further Action</TrackLimits>
-<Score et="491.7">Spooky Quack(1) lap=5 point=1 t=23.161 et=491.620</Score>
-<Score et="495.7">Ruslan Chevdar(0) lap=5 point=0 t=67.837 et=495.640</Score>
-<Score et="496.5">Anthony Heytens(5) lap=5 point=0 t=68.090 et=496.420</Score>
-<Score et="497.9">Andreas Karlsson#9173(17) lap=5 point=1 t=23.295 et=497.860</Score>
-<Score et="500.0">abdu wake(14) lap=5 point=1 t=23.595 et=499.900</Score>
-<Score et="500.4">GOGO Gomez(13) lap=5 point=0 t=69.873 et=500.060</Score>
-<Score et="503.3">cedric chomette(9) lap=5 point=1 t=23.911 et=503.280</Score>
-<Score et="504.5">A Martin(12) lap=5 point=1 t=23.818 et=504.480</Score>
-<Score et="504.5">Spooky Quack(1) lap=5 point=2 t=36.049 et=504.500</Score>
-<Score et="504.7">Josh Harper-Jones(15) lap=5 point=1 t=23.493 et=504.640</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.4">No Further Action</TrackLimits>
-<Score et="511.0">Andreas Karlsson#9173(17) lap=5 point=2 t=36.326 et=510.900</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="511.4">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="511.8">No Further Action</TrackLimits>
-<Score et="513.1">abdu wake(14) lap=5 point=2 t=36.721 et=513.040</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="515.9">No Further Action</TrackLimits>
-<Score et="516.4">cedric chomette(9) lap=5 point=2 t=36.932 et=516.300</Score>
-<Score et="517.7">P-A Fugeekies(11) lap=5 point=1 t=32.315 et=517.658</Score>
-<Score et="517.7">Josh Harper-Jones(15) lap=5 point=2 t=36.492 et=517.640</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="518.5">No Further Action</TrackLimits>
-<Score et="518.7">A Martin(12) lap=5 point=2 t=37.933 et=518.600</Score>
-<Score et="520.1">Ruslan Chevdar(0) lap=5 point=1 t=24.393 et=520.020</Score>
-<Score et="521.4">Anthony Heytens(5) lap=5 point=1 t=24.912 et=521.340</Score>
-<Penalty et="524.5">Shadow Moon received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
-<Score et="525.0">GOGO Gomez(13) lap=5 point=1 t=24.889 et=524.940</Score>
-<Score et="531.6">P-A Fugeekies(11) lap=5 point=2 t=46.209 et=531.552</Score>
-<Score et="533.2">Spooky Quack(1) lap=6 point=0 t=64.665 et=533.120</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="534.0">No Further Action</TrackLimits>
-<Score et="534.3">Ruslan Chevdar(0) lap=5 point=2 t=38.527 et=534.160</Score>
-<Score et="535.2">Anthony Heytens(5) lap=5 point=2 t=38.724 et=535.160</Score>
-<Score et="539.0">GOGO Gomez(13) lap=5 point=2 t=38.741 et=538.800</Score>
-<Score et="539.3">Andreas Karlsson#9173(17) lap=6 point=0 t=64.685 et=539.260</Score>
-<Score et="541.6">abdu wake(14) lap=6 point=0 t=65.123 et=541.440</Score>
-<Score et="545.5">cedric chomette(9) lap=6 point=0 t=66.027 et=545.400</Score>
-<Score et="545.9">Farrel Zeva(7) lap=0 point=1 t=-1.000 et=545.840</Score>
-<Score et="546.2">Josh Harper-Jones(15) lap=6 point=0 t=64.980 et=546.120</Score>
-<Score et="547.4">A Martin(12) lap=6 point=0 t=66.711 et=547.360</Score>
-<Score et="552.3">Shadow Moon(20) lap=4 point=0 t=192.636 et=552.180</Score>
-<Sector Driver="Spooky Quack" ID="1" Sector="1" Class="GTE" et="556.1">Spooky Quack(1) set new best for sector 1</Sector>
-<Score et="556.1">Spooky Quack(1) lap=6 point=1 t=22.905 et=556.020</Score>
-<Score et="559.7">Farrel Zeva(7) lap=0 point=2 t=-1.000 et=559.600</Score>
-<Score et="561.1">P-A Fugeekies(11) lap=6 point=0 t=75.726 et=561.069</Score>
-<Score et="562.7">Andreas Karlsson#9173(17) lap=6 point=1 t=23.340 et=562.600</Score>
-<Score et="563.5">Ruslan Chevdar(0) lap=6 point=0 t=67.776 et=563.400</Score>
-<Score et="564.6">Anthony Heytens(5) lap=6 point=0 t=68.053 et=564.480</Score>
-<Score et="564.8">abdu wake(14) lap=6 point=1 t=23.222 et=564.660</Score>
-<Score et="568.8">GOGO Gomez(13) lap=6 point=0 t=68.630 et=568.680</Score>
-<Score et="568.9">Spooky Quack(1) lap=6 point=2 t=35.732 et=568.860</Score>
-<Score et="569.2">cedric chomette(9) lap=6 point=1 t=23.773 et=569.180</Score>
-<Score et="569.8">Josh Harper-Jones(15) lap=6 point=1 t=23.621 et=569.760</Score>
-<Score et="570.9">A Martin(12) lap=6 point=1 t=23.449 et=570.820</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="574.1">No Further Action</TrackLimits>
-<Score et="575.9">Andreas Karlsson#9173(17) lap=6 point=2 t=36.563 et=575.820</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="576.2">No Further Action</TrackLimits>
-<TrackLimits Driver="abdu wake" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="576.3">No Further Action</TrackLimits>
-<Score et="577.6">Shadow Moon(20) lap=4 point=1 t=25.371 et=577.560</Score>
-<Score et="578.2">abdu wake(14) lap=6 point=2 t=36.583 et=578.020</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="581.0">No Further Action</TrackLimits>
-<Score et="582.3">cedric chomette(9) lap=6 point=2 t=36.807 et=582.220</Score>
-<Score et="582.7">Josh Harper-Jones(15) lap=6 point=2 t=36.486 et=582.620</Score>
-<Score et="584.2">A Martin(12) lap=6 point=2 t=36.778 et=584.140</Score>
-<Score et="584.9">P-A Fugeekies(11) lap=6 point=1 t=23.830 et=584.899</Score>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="585.7">No Further Action</TrackLimits>
-<Score et="587.9">Ruslan Chevdar(0) lap=6 point=1 t=24.432 et=587.840</Score>
-<Incident et="588.3">Spooky Quack(1) reported contact (374.64) with Immovable</Incident>
-<Score et="588.7">Farrel Zeva(7) lap=1 point=0 t=-1.000 et=588.560</Score>
-<Score et="589.3">Wang Agora(2) lap=3 point=0 t=-1.000 et=589.200</Score>
-<Score et="589.3">Anthony Heytens(5) lap=6 point=1 t=24.799 et=589.280</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="590.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Shadow Moon" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="591.5">No Further Action</TrackLimits>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="592.1">No Further Action</TrackLimits>
-<Score et="593.7">GOGO Gomez(13) lap=6 point=1 t=24.921 et=593.600</Score>
-<Score et="597.5">Spooky Quack(1) lap=7 point=0 t=64.277 et=597.400</Score>
-<Score et="598.6">P-A Fugeekies(11) lap=6 point=2 t=37.525 et=598.594</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="601.8">No Further Action</TrackLimits>
-<Score et="602.0">Ruslan Chevdar(0) lap=6 point=2 t=38.565 et=601.980</Score>
-<Score et="603.2">Anthony Heytens(5) lap=6 point=2 t=38.677 et=603.160</Score>
-<Score et="604.5">Andreas Karlsson#9173(17) lap=7 point=0 t=65.226 et=604.480</Score>
-<Score et="604.7">Shadow Moon(20) lap=4 point=2 t=52.463 et=604.640</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="605.8">No Further Action</TrackLimits>
-<Incident et="606.1">Farrel Zeva(7) reported contact (971.48) with Immovable</Incident>
-<Score et="606.5">abdu wake(14) lap=7 point=0 t=64.921 et=606.360</Score>
-<Score et="607.8">GOGO Gomez(13) lap=6 point=2 t=39.032 et=607.720</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="609.6">No Further Action</TrackLimits>
-<Score et="610.8">Josh Harper-Jones(15) lap=7 point=0 t=64.552 et=610.680</Score>
-<Score et="611.0">cedric chomette(9) lap=7 point=0 t=65.451 et=610.860</Score>
-<Score et="613.3">A Martin(12) lap=7 point=0 t=65.898 et=613.260</Score>
-<Incident et="614.8">Spooky Quack(1) reported contact (1151.74) with another vehicle Farrel Zeva(7)</Incident>
-<Incident et="614.8">Farrel Zeva(7) reported contact (957.92) with another vehicle Spooky Quack(1)</Incident>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="5" et="615.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.3">No Further Action</TrackLimits>
-<TrackLimits Driver="abdu wake" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="622.8">No Further Action</TrackLimits>
-<Score et="624.4">Wang Agora(2) lap=3 point=1 t=35.079 et=624.280</Score>
-<Score et="626.3">Spooky Quack(1) lap=7 point=1 t=28.860 et=626.260</Score>
-<Score et="627.0">Farrel Zeva(7) lap=1 point=1 t=38.328 et=626.880</Score>
-<Score et="628.2">Andreas Karlsson#9173(17) lap=7 point=1 t=23.649 et=628.120</Score>
-<Score et="628.6">P-A Fugeekies(11) lap=7 point=0 t=67.564 et=628.633</Score>
-<Score et="629.7">abdu wake(14) lap=7 point=1 t=23.270 et=629.620</Score>
-<Score et="631.4">Ruslan Chevdar(0) lap=7 point=0 t=67.964 et=631.380</Score>
-<Score et="632.4">Anthony Heytens(5) lap=7 point=0 t=67.908 et=632.380</Score>
-<Score et="634.0">Josh Harper-Jones(15) lap=7 point=1 t=23.259 et=633.940</Score>
-<Score et="634.5">cedric chomette(9) lap=7 point=1 t=23.651 et=634.500</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="5" et="635.6">No Further Action</TrackLimits>
-<Score et="636.7">A Martin(12) lap=7 point=1 t=23.312 et=636.580</Score>
-<Score et="637.2">Wang Agora(2) lap=3 point=2 t=47.883 et=637.080</Score>
-<Score et="638.3">GOGO Gomez(13) lap=7 point=0 t=69.408 et=638.100</Score>
-<Score et="639.3">Spooky Quack(1) lap=7 point=2 t=-1.000 et=639.240</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="640.7">No Further Action</TrackLimits>
-<Score et="641.0">Farrel Zeva(7) lap=1 point=2 t=52.183 et=640.740</Score>
-<Score et="641.7">Andreas Karlsson#9173(17) lap=7 point=2 t=37.115 et=641.600</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.3">No Further Action</TrackLimits>
-<Score et="642.9">abdu wake(14) lap=7 point=2 t=36.432 et=642.780</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="643.6">No Further Action</TrackLimits>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="645.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="646.8">No Further Action</TrackLimits>
-<Score et="647.0">Josh Harper-Jones(15) lap=7 point=2 t=36.200 et=646.880</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="647.5">No Further Action</TrackLimits>
-<Score et="647.5">cedric chomette(9) lap=7 point=2 t=-1.000 et=647.500</Score>
-<Score et="649.6">A Martin(12) lap=7 point=2 t=36.301 et=649.560</Score>
-<Score et="652.3">P-A Fugeekies(11) lap=7 point=1 t=23.693 et=652.326</Score>
-<Score et="655.5">Ruslan Chevdar(0) lap=7 point=1 t=24.109 et=655.480</Score>
-<Score et="656.8">Anthony Heytens(5) lap=7 point=1 t=24.385 et=656.780</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="661.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="661.8">No Further Action</TrackLimits>
-<Score et="663.1">GOGO Gomez(13) lap=7 point=1 t=24.768 et=662.860</Score>
-<Score et="665.3">Wang Agora(2) lap=4 point=0 t=75.964 et=665.160</Score>
-<Score et="665.6">P-A Fugeekies(11) lap=7 point=2 t=36.985 et=665.618</Score>
-<Score et="668.5">Spooky Quack(1) lap=8 point=0 t=71.075 et=668.480</Score>
-<Score et="669.2">Ruslan Chevdar(0) lap=7 point=2 t=37.738 et=669.120</Score>
-<Score et="670.1">Farrel Zeva(7) lap=2 point=0 t=81.332 et=669.900</Score>
-<Score et="670.4">Anthony Heytens(5) lap=7 point=2 t=37.928 et=670.320</Score>
-<Score et="670.5">Andreas Karlsson#9173(17) lap=8 point=0 t=65.961 et=670.440</Score>
-<Score et="671.2">abdu wake(14) lap=8 point=0 t=64.761 et=671.120</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="674.7">No Further Action</TrackLimits>
-<Score et="675.3">Josh Harper-Jones(15) lap=8 point=0 t=64.575 et=675.260</Score>
-<Score et="676.3">cedric chomette(9) lap=8 point=0 t=65.389 et=676.240</Score>
-<Score et="677.0">GOGO Gomez(13) lap=7 point=2 t=38.735 et=676.820</Score>
-<Score et="678.6">A Martin(12) lap=8 point=0 t=65.195 et=678.460</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="685.9">No Further Action</TrackLimits>
-<Score et="688.5">Wang Agora(2) lap=4 point=1 t=23.287 et=688.440</Score>
-<Score et="691.7">Spooky Quack(1) lap=8 point=1 t=23.188 et=691.660</Score>
-<Incident et="694.0">Farrel Zeva(7) reported contact (250.34) with Immovable</Incident>
-<Score et="694.2">Andreas Karlsson#9173(17) lap=8 point=1 t=23.724 et=694.160</Score>
-<Score et="694.7">P-A Fugeekies(11) lap=8 point=0 t=66.107 et=694.740</Score>
-<Score et="695.2">abdu wake(14) lap=8 point=1 t=23.974 et=695.100</Score>
-<Incident et="697.3">Farrel Zeva(7) reported contact (319.90) with Immovable</Incident>
-<Score et="698.3">Ruslan Chevdar(0) lap=8 point=0 t=66.804 et=698.180</Score>
-<Score et="698.5">Josh Harper-Jones(15) lap=8 point=1 t=23.184 et=698.440</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="699.0">No Further Action</TrackLimits>
-<Score et="699.6">cedric chomette(9) lap=8 point=1 t=23.292 et=699.540</Score>
-<Score et="699.8">Anthony Heytens(5) lap=8 point=0 t=67.340 et=699.720</Score>
-<Score et="701.3">Wang Agora(2) lap=4 point=2 t=36.036 et=701.200</Score>
-<Score et="702.1">A Martin(12) lap=8 point=1 t=23.612 et=702.080</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="704.7">No Further Action</TrackLimits>
-<Score et="704.7">Spooky Quack(1) lap=8 point=2 t=36.195 et=704.660</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="706.9">No Further Action</TrackLimits>
-<Score et="707.0">GOGO Gomez(13) lap=8 point=0 t=68.765 et=706.860</Score>
-<Score et="707.5">Andreas Karlsson#9173(17) lap=8 point=2 t=37.027 et=707.460</Score>
-<Score et="707.5">Farrel Zeva(7) lap=2 point=1 t=37.421 et=707.320</Score>
-<Score et="708.4">abdu wake(14) lap=8 point=2 t=37.170 et=708.280</Score>
-<Score et="711.2">Josh Harper-Jones(15) lap=8 point=2 t=35.928 et=711.180</Score>
-<Score et="712.6">cedric chomette(9) lap=8 point=2 t=36.326 et=712.580</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.1">No Further Action</TrackLimits>
-<TrackLimits Driver="A Martin" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="715.1">No Further Action</TrackLimits>
-<Score et="715.2">A Martin(12) lap=8 point=2 t=36.742 et=715.200</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="717.5">No Further Action</TrackLimits>
-<Score et="719.0">P-A Fugeekies(11) lap=8 point=1 t=24.234 et=718.974</Score>
-<Score et="722.6">Farrel Zeva(7) lap=2 point=2 t=52.502 et=722.400</Score>
-<Score et="722.6">Ruslan Chevdar(0) lap=8 point=1 t=24.399 et=722.580</Score>
-<Score et="724.3">Anthony Heytens(5) lap=8 point=1 t=24.489 et=724.220</Score>
-<Score et="729.5">Wang Agora(2) lap=5 point=0 t=64.235 et=729.400</Score>
-<Incident et="731.7">GOGO Gomez(13) reported contact (188.21) with Immovable</Incident>
-<Score et="732.4">P-A Fugeekies(11) lap=8 point=2 t=37.673 et=732.413</Score>
-<Score et="733.0">Spooky Quack(1) lap=9 point=0 t=64.456 et=732.920</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="733.4">No Further Action</TrackLimits>
-<Score et="733.7">GOGO Gomez(13) lap=8 point=1 t=26.705 et=733.560</Score>
-<Score et="735.7">Andreas Karlsson#9173(17) lap=9 point=0 t=65.208 et=735.640</Score>
-<Score et="736.5">Ruslan Chevdar(0) lap=8 point=2 t=38.224 et=736.400</Score>
-<Score et="736.6">abdu wake(14) lap=9 point=0 t=65.404 et=736.520</Score>
-<Score et="738.0">Anthony Heytens(5) lap=8 point=2 t=38.251 et=737.980</Score>
-<Score et="739.4">Josh Harper-Jones(15) lap=9 point=0 t=64.126 et=739.380</Score>
-<Score et="741.2">cedric chomette(9) lap=9 point=0 t=64.902 et=741.140</Score>
-<Score et="744.0">A Martin(12) lap=9 point=0 t=65.543 et=744.000</Score>
-<Score et="748.7">GOGO Gomez(13) lap=8 point=2 t=41.700 et=748.560</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="750.9">No Further Action</TrackLimits>
-<Score et="751.4">Farrel Zeva(7) lap=3 point=0 t=81.231 et=751.120</Score>
-<Sector Driver="Wang Agora" ID="2" Sector="1" Class="GTE" et="752.4">Wang Agora(2) set new best for sector 1</Sector>
-<Score et="752.4">Wang Agora(2) lap=5 point=1 t=22.875 et=752.260</Score>
-<Score et="756.6">Spooky Quack(1) lap=9 point=1 t=23.646 et=756.580</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.8">No Further Action</TrackLimits>
-<Score et="759.0">Andreas Karlsson#9173(17) lap=9 point=1 t=23.267 et=758.920</Score>
-<Score et="759.8">abdu wake(14) lap=9 point=1 t=23.169 et=759.700</Score>
-<Score et="761.8">P-A Fugeekies(11) lap=9 point=0 t=67.031 et=761.771</Score>
-<Score et="762.7">Josh Harper-Jones(15) lap=9 point=1 t=23.286 et=762.680</Score>
-<Score et="765.1">Wang Agora(2) lap=5 point=2 t=-1.000 et=765.020</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="5" et="765.3">No Further Action</TrackLimits>
-<Score et="765.7">cedric chomette(9) lap=9 point=1 t=24.385 et=765.540</Score>
-<Score et="765.9">Ruslan Chevdar(0) lap=9 point=0 t=67.702 et=765.880</Score>
-<Score et="767.2">Anthony Heytens(5) lap=9 point=0 t=67.422 et=767.140</Score>
-<Score et="767.6">A Martin(12) lap=9 point=1 t=23.533 et=767.540</Score>
-<Score et="769.5">Spooky Quack(1) lap=9 point=2 t=-1.000 et=769.420</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="771.2">No Further Action</TrackLimits>
-<Score et="772.0">Andreas Karlsson#9173(17) lap=9 point=2 t=36.295 et=771.940</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="772.1">No Further Action</TrackLimits>
-<Score et="773.1">abdu wake(14) lap=9 point=2 t=36.436 et=772.960</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.3">No Further Action</TrackLimits>
-<Score et="775.4">Farrel Zeva(7) lap=3 point=1 t=24.081 et=775.200</Score>
-<Score et="775.6">Josh Harper-Jones(15) lap=9 point=2 t=36.163 et=775.540</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="777.8">No Further Action</TrackLimits>
-<Score et="778.6">GOGO Gomez(13) lap=9 point=0 t=71.592 et=778.440</Score>
-<Score et="778.6">cedric chomette(9) lap=9 point=2 t=37.408 et=778.560</Score>
-<Score et="780.9">A Martin(12) lap=9 point=2 t=36.856 et=780.860</Score>
-<Score et="785.5">P-A Fugeekies(11) lap=9 point=1 t=23.751 et=785.522</Score>
-<Score et="789.1">Farrel Zeva(7) lap=3 point=2 t=37.811 et=788.940</Score>
-<Score et="790.4">Ruslan Chevdar(0) lap=9 point=1 t=24.417 et=790.300</Score>
-<Score et="792.2">Anthony Heytens(5) lap=9 point=1 t=24.982 et=792.140</Score>
-<Sector Driver="Wang Agora" ID="2" Sector="3" Class="GTE" et="793.0">Wang Agora(2) set new best for sector 3</Sector>
-<Score et="793.0">Wang Agora(2) lap=6 point=0 t=63.509 et=792.900</Score>
-<Score et="798.7">Spooky Quack(1) lap=10 point=0 t=65.729 et=798.660</Score>
-<Score et="798.9">P-A Fugeekies(11) lap=9 point=2 t=37.168 et=798.940</Score>
-<Score et="800.4">Andreas Karlsson#9173(17) lap=10 point=0 t=64.643 et=800.300</Score>
-<Score et="801.2">abdu wake(14) lap=10 point=0 t=64.577 et=801.100</Score>
-<Score et="802.8">GOGO Gomez(13) lap=9 point=1 t=24.318 et=802.760</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="803.7">No Further Action</TrackLimits>
-<Score et="803.7">Josh Harper-Jones(15) lap=10 point=0 t=64.277 et=803.660</Score>
-<Score et="803.9">Ruslan Chevdar(0) lap=9 point=2 t=37.987 et=803.860</Score>
-<Score et="805.7">Anthony Heytens(5) lap=9 point=2 t=38.526 et=805.680</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="5" et="805.9">No Further Action</TrackLimits>
-<Score et="807.1">cedric chomette(9) lap=10 point=0 t=65.909 et=807.060</Score>
-<Score et="809.9">A Martin(12) lap=10 point=0 t=65.810 et=809.820</Score>
-<TrackLimits Driver="abdu wake" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="815.1">No Further Action</TrackLimits>
-<Score et="816.2">Wang Agora(2) lap=6 point=1 t=23.172 et=816.080</Score>
-<Score et="816.7">GOGO Gomez(13) lap=9 point=2 t=38.127 et=816.580</Score>
-<Score et="818.0">Farrel Zeva(7) lap=4 point=0 t=66.647 et=817.780</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="818.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="818.9">No Further Action</TrackLimits>
-<Score et="824.1">Andreas Karlsson#9173(17) lap=10 point=1 t=23.740 et=824.040</Score>
-<Score et="825.0">abdu wake(14) lap=10 point=1 t=23.820 et=824.920</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="5" et="825.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="826.1">No Further Action</TrackLimits>
-<Score et="827.6">Josh Harper-Jones(15) lap=10 point=1 t=23.864 et=827.520</Score>
-<Score et="827.8">Spooky Quack(1) lap=10 point=1 t=29.047 et=827.700</Score>
-<Score et="828.6">P-A Fugeekies(11) lap=10 point=0 t=66.783 et=828.554</Score>
-<Score et="829.2">Wang Agora(2) lap=6 point=2 t=36.137 et=829.040</Score>
-<Score et="830.7">cedric chomette(9) lap=10 point=1 t=23.622 et=830.680</Score>
-<Score et="833.3">Ruslan Chevdar(0) lap=10 point=0 t=67.331 et=833.220</Score>
-<Score et="833.4">A Martin(12) lap=10 point=1 t=23.507 et=833.320</Score>
-<Score et="835.0">Anthony Heytens(5) lap=10 point=0 t=67.781 et=834.920</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="837.1">No Further Action</TrackLimits>
-<Score et="837.4">Andreas Karlsson#9173(17) lap=10 point=2 t=37.071 et=837.360</Score>
-<Score et="838.3">abdu wake(14) lap=10 point=2 t=37.008 et=838.100</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="839.4">No Further Action</TrackLimits>
-<Score et="841.2">Josh Harper-Jones(15) lap=10 point=2 t=37.440 et=841.100</Score>
-<Score et="841.5">Spooky Quack(1) lap=10 point=2 t=42.757 et=841.420</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="841.9">No Further Action</TrackLimits>
-<Score et="842.0">Farrel Zeva(7) lap=4 point=1 t=23.906 et=841.680</Score>
-<Score et="843.8">cedric chomette(9) lap=10 point=2 t=36.705 et=843.760</Score>
-<Score et="846.5">A Martin(12) lap=10 point=2 t=36.642 et=846.460</Score>
-<Score et="846.9">GOGO Gomez(13) lap=10 point=0 t=68.334 et=846.780</Score>
-<Score et="852.5">P-A Fugeekies(11) lap=10 point=1 t=23.887 et=852.441</Score>
-<Score et="855.2">Farrel Zeva(7) lap=4 point=2 t=37.178 et=854.940</Score>
-<Score et="857.3">Ruslan Chevdar(0) lap=10 point=1 t=24.029 et=857.240</Score>
-<Score et="857.7">Wang Agora(2) lap=7 point=0 t=64.684 et=857.580</Score>
-<Score et="859.3">Anthony Heytens(5) lap=10 point=1 t=24.353 et=859.280</Score>
-<Sector et="861.5">abdu wake(14) reports new suspension damage</Sector>
-<Sector et="861.5">abdu wake(14) reports new suspension damage</Sector>
-<Incident et="861.5">abdu wake(14) reported contact (627.55) with Immovable</Incident>
-<Incident et="862.0">Spooky Quack(1) reported contact (1075.67) with Immovable</Incident>
-<TrackLimits Driver="abdu wake" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="863.4">No Further Action</TrackLimits>
-<Score et="865.6">Andreas Karlsson#9173(17) lap=11 point=0 t=65.251 et=865.540</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="865.9">No Further Action</TrackLimits>
-<Score et="866.0">P-A Fugeekies(11) lap=10 point=2 t=37.410 et=865.965</Score>
-<Score et="866.8">abdu wake(14) lap=11 point=0 t=65.522 et=866.620</Score>
-<Score et="869.4">Josh Harper-Jones(15) lap=11 point=0 t=65.661 et=869.320</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="870.5">No Further Action</TrackLimits>
-<Score et="870.8">Ruslan Chevdar(0) lap=10 point=2 t=37.560 et=870.780</Score>
-<Score et="872.2">GOGO Gomez(13) lap=10 point=1 t=25.298 et=872.080</Score>
-<Score et="873.0">Anthony Heytens(5) lap=10 point=2 t=37.971 et=872.900</Score>
-<Score et="873.0">cedric chomette(9) lap=11 point=0 t=65.878 et=872.940</Score>
-<Score et="875.8">A Martin(12) lap=11 point=0 t=65.924 et=875.740</Score>
-<Incident et="876.3">Spooky Quack(1) reported contact (1043.21) with Immovable</Incident>
-<Sector et="876.3">Spooky Quack(1) reports new suspension damage</Sector>
-<Incident et="877.6">Spooky Quack(1) reported contact (574.68) with Immovable</Incident>
-<Incident et="878.0">abdu wake(14) reported contact (2161.41) with Immovable</Incident>
-<Incident et="878.0">abdu wake(14) reported contact (64.07) with Wing</Incident>
-<Incident et="878.7">abdu wake(14) reported contact (107.53) with Wing</Incident>
-<Incident et="879.8">abdu wake(14) reported contact (51.31) with Wing</Incident>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="880.2">No Further Action</TrackLimits>
-<Score et="880.8">Wang Agora(2) lap=7 point=1 t=23.119 et=880.700</Score>
-<Incident et="881.1">abdu wake(14) reported contact (308.67) with Wing</Incident>
-<Incident et="881.3">GOGO Gomez(13) reported contact (1468.90) with Immovable</Incident>
-<Sector et="881.3">GOGO Gomez(13) reports new suspension damage</Sector>
-<TrackLimits Driver="abdu wake" ID="14" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="883.0">No Further Action</TrackLimits>
-<Score et="883.9">Farrel Zeva(7) lap=5 point=0 t=65.952 et=883.720</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="886.6">No Further Action</TrackLimits>
-<Score et="889.3">Andreas Karlsson#9173(17) lap=11 point=1 t=23.726 et=889.260</Score>
-<Score et="890.2">GOGO Gomez(13) lap=10 point=2 t=43.303 et=890.080</Score>
-<Sector et="890.7">cedric chomette(9) reports new suspension damage</Sector>
-<Incident et="890.8">cedric chomette(9) reported contact (3275.04) with Immovable</Incident>
-<Incident et="892.1">cedric chomette(9) reported contact (811.52) with another vehicle abdu wake(14)</Incident>
-<Incident et="892.1">abdu wake(14) reported contact (914.09) with another vehicle cedric chomette(9)</Incident>
-<Incident et="892.2">cedric chomette(9) reported contact (286.48) with Immovable</Incident>
-<Incident et="892.3">cedric chomette(9) reported contact (668.57) with Immovable</Incident>
-<Score et="892.5">Josh Harper-Jones(15) lap=11 point=1 t=23.115 et=892.440</Score>
-<Incident et="892.8">cedric chomette(9) reported contact (493.76) with another vehicle abdu wake(14)</Incident>
-<Score et="893.2">Spooky Quack(1) lap=11 point=0 t=94.517 et=893.180</Score>
-<Score et="893.7">Wang Agora(2) lap=7 point=2 t=35.948 et=893.540</Score>
-<Incident et="893.8">cedric chomette(9) reported contact (420.19) with Immovable</Incident>
-<Incident et="893.9">abdu wake(14) reported contact (506.15) with another vehicle cedric chomette(9)</Incident>
-<Score et="894.9">P-A Fugeekies(11) lap=11 point=0 t=66.360 et=894.914</Score>
-<Incident et="895.2">cedric chomette(9) reported contact (249.29) with Immovable</Incident>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="895.2">No Further Action</TrackLimits>
-<Incident et="895.5">cedric chomette(9) reported contact (416.91) with another vehicle abdu wake(14)</Incident>
-<Incident et="896.3">abdu wake(14) reported contact (310.62) with another vehicle cedric chomette(9)</Incident>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="898.3">No Further Action</TrackLimits>
-<TrackLimits Driver="abdu wake" ID="14" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="898.5">No Further Action</TrackLimits>
-<Score et="899.5">Ruslan Chevdar(0) lap=11 point=0 t=66.273 et=899.480</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="899.8">No Further Action</TrackLimits>
-<Score et="900.3">A Martin(12) lap=11 point=1 t=24.396 et=900.140</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="901.5">No Further Action</TrackLimits>
-<Score et="902.4">Anthony Heytens(5) lap=11 point=0 t=67.384 et=902.320</Score>
-<Score et="902.8">Andreas Karlsson#9173(17) lap=11 point=2 t=37.260 et=902.800</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="903.7">No Further Action</TrackLimits>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="904.7">No Further Action</TrackLimits>
-<Score et="905.4">Josh Harper-Jones(15) lap=11 point=2 t=35.970 et=905.300</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="907.1">No Further Action</TrackLimits>
-<Score et="908.0">Farrel Zeva(7) lap=5 point=1 t=24.074 et=907.800</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="908.1">No Further Action</TrackLimits>
-<Score et="912.3">cedric chomette(9) lap=11 point=1 t=39.250 et=912.180</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="913.1">No Further Action</TrackLimits>
-<Score et="913.3">A Martin(12) lap=11 point=2 t=37.478 et=913.220</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="916.1">No Further Action</TrackLimits>
-<Score et="916.8">Spooky Quack(1) lap=11 point=1 t=23.631 et=916.800</Score>
-<Score et="918.6">P-A Fugeekies(11) lap=11 point=1 t=23.648 et=918.562</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.6">No Further Action</TrackLimits>
-<Score et="921.7">Wang Agora(2) lap=8 point=0 t=63.945 et=921.520</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.7">No Further Action</TrackLimits>
-<Score et="924.2">Ruslan Chevdar(0) lap=11 point=1 t=24.637 et=924.120</Score>
-<Score et="926.8">Anthony Heytens(5) lap=11 point=1 t=24.479 et=926.800</Score>
-<Incident et="931.2">Farrel Zeva(7) reported contact (1023.94) with Immovable</Incident>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="931.9">No Further Action</TrackLimits>
-<Score et="932.0">Andreas Karlsson#9173(17) lap=12 point=0 t=66.462 et=932.000</Score>
-<Score et="932.3">GOGO Gomez(13) lap=11 point=0 t=85.425 et=932.200</Score>
-<Score et="932.6">P-A Fugeekies(11) lap=11 point=2 t=37.685 et=932.599</Score>
-<Incident et="933.6">Farrel Zeva(7) reported contact (311.12) with Immovable</Incident>
-<Score et="933.8">Josh Harper-Jones(15) lap=12 point=0 t=64.428 et=933.740</Score>
-<Score et="937.0">cedric chomette(9) lap=11 point=2 t=63.990 et=936.920</Score>
-<Score et="937.8">Ruslan Chevdar(0) lap=11 point=2 t=38.287 et=937.780</Score>
-<Score et="938.2">Spooky Quack(1) lap=11 point=2 t=44.998 et=938.180</Score>
-<Score et="940.8">Anthony Heytens(5) lap=11 point=2 t=38.462 et=940.780</Score>
-<Score et="942.6">A Martin(12) lap=12 point=0 t=66.803 et=942.540</Score>
-<Score et="944.7">Wang Agora(2) lap=8 point=1 t=23.010 et=944.540</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="951.7">No Further Action</TrackLimits>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="954.7">No Further Action</TrackLimits>
-<Score et="956.0">Andreas Karlsson#9173(17) lap=12 point=1 t=23.929 et=955.940</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="956.6">No Further Action</TrackLimits>
-<Sector Driver="Wang Agora" ID="2" Sector="2" Class="GTE" et="957.2">Wang Agora(2) set new best for sector 2</Sector>
-<Score et="957.2">Wang Agora(2) lap=8 point=2 t=35.586 et=957.120</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="957.4">No Further Action</TrackLimits>
-<Score et="957.4">Josh Harper-Jones(15) lap=12 point=1 t=23.630 et=957.380</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="958.6">No Further Action</TrackLimits>
-<Score et="961.8">P-A Fugeekies(11) lap=12 point=0 t=66.906 et=961.820</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.6">No Further Action</TrackLimits>
-<Score et="966.5">A Martin(12) lap=12 point=1 t=23.879 et=966.420</Score>
-<Score et="966.8">GOGO Gomez(13) lap=11 point=1 t=34.495 et=966.700</Score>
-<Score et="967.1">Ruslan Chevdar(0) lap=12 point=0 t=67.548 et=967.040</Score>
-<Score et="969.3">Andreas Karlsson#9173(17) lap=12 point=2 t=37.232 et=969.240</Score>
-<Score et="970.0">Anthony Heytens(5) lap=12 point=0 t=67.628 et=969.940</Score>
-<Score et="971.3">Josh Harper-Jones(15) lap=12 point=2 t=37.520 et=971.260</Score>
-<Score et="972.1">Farrel Zeva(7) lap=5 point=2 t=88.093 et=971.820</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="976.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="8" WarningPoints="0" CurrentPoints="1" Resolution="5" et="978.5">No Further Action</TrackLimits>
-<TrackLimits Driver="A Martin" ID="12" Lap="12" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="979.8">No Further Action</TrackLimits>
-<Score et="980.0">A Martin(12) lap=12 point=2 t=37.371 et=979.920</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="985.3">No Further Action</TrackLimits>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="11" WarningPoints="1" CurrentPoints="1" Resolution="2" et="985.5">Warning</TrackLimits>
-<Score et="986.4">Wang Agora(2) lap=9 point=0 t=64.694 et=986.220</Score>
-<Score et="986.5">P-A Fugeekies(11) lap=12 point=1 t=24.647 et=986.467</Score>
-<Score et="989.8">GOGO Gomez(13) lap=11 point=2 t=-1.000 et=989.720</Score>
-<Score et="991.2">Ruslan Chevdar(0) lap=12 point=1 t=24.081 et=991.120</Score>
-<Score et="994.7">Anthony Heytens(5) lap=12 point=1 t=24.740 et=994.680</Score>
-<Score et="997.7">Andreas Karlsson#9173(17) lap=13 point=0 t=65.581 et=997.580</Score>
-<Score et="1000.2">Josh Harper-Jones(15) lap=13 point=0 t=66.376 et=1000.120</Score>
-<Score et="1000.4">P-A Fugeekies(11) lap=12 point=2 t=38.574 et=1000.394</Score>
-<Score et="1001.6">Farrel Zeva(7) lap=6 point=0 t=117.650 et=1001.380</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1004.7">No Further Action</TrackLimits>
-<Score et="1004.9">Ruslan Chevdar(0) lap=12 point=2 t=37.770 et=1004.800</Score>
-<Score et="1008.3">Anthony Heytens(5) lap=12 point=2 t=38.311 et=1008.260</Score>
-<Score et="1009.2">A Martin(12) lap=13 point=0 t=66.624 et=1009.160</Score>
-<Score et="1009.5">Wang Agora(2) lap=9 point=1 t=23.110 et=1009.340</Score>
-<Score et="1021.3">Andreas Karlsson#9173(17) lap=13 point=1 t=23.609 et=1021.200</Score>
-<Score et="1022.7">Wang Agora(2) lap=9 point=2 t=36.291 et=1022.520</Score>
-<Sector Driver="Josh Harper-Jones" ID="15" Sector="1" Class="GTE" et="1022.9">Josh Harper-Jones(15) set new best for sector 1</Sector>
-<Score et="1022.9">Josh Harper-Jones(15) lap=13 point=1 t=22.762 et=1022.880</Score>
-<Score et="1025.5">Farrel Zeva(7) lap=6 point=1 t=23.923 et=1025.300</Score>
-<Score et="1029.5">P-A Fugeekies(11) lap=13 point=0 t=67.643 et=1029.463</Score>
-<Score et="1030.7">Spooky Quack(1) lap=12 point=0 t=137.417 et=1030.600</Score>
-<Score et="1033.1">A Martin(12) lap=13 point=1 t=23.857 et=1033.020</Score>
-<Score et="1033.8">Ruslan Chevdar(0) lap=13 point=0 t=66.688 et=1033.720</Score>
-<Score et="1034.4">Andreas Karlsson#9173(17) lap=13 point=2 t=36.688 et=1034.280</Score>
-<Score et="1035.8">Josh Harper-Jones(15) lap=13 point=2 t=35.577 et=1035.700</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="13" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1037.7">No Further Action</TrackLimits>
-<Score et="1037.8">Anthony Heytens(5) lap=13 point=0 t=67.800 et=1037.740</Score>
-<Score et="1039.2">Farrel Zeva(7) lap=6 point=2 t=37.572 et=1038.940</Score>
-<Score et="1046.4">A Martin(12) lap=13 point=2 t=37.170 et=1046.340</Score>
-<Score et="1050.9">Wang Agora(2) lap=10 point=0 t=64.527 et=1050.760</Score>
-<Score et="1054.4">P-A Fugeekies(11) lap=13 point=1 t=24.892 et=1054.355</Score>
-<Score et="1054.5">Spooky Quack(1) lap=12 point=1 t=23.842 et=1054.440</Score>
-<Score et="1056.1">cedric chomette(9) lap=12 point=0 t=183.115 et=1056.040</Score>
-<Score et="1057.8">Ruslan Chevdar(0) lap=13 point=1 t=24.006 et=1057.720</Score>
-<Score et="1062.1">Anthony Heytens(5) lap=13 point=1 t=24.299 et=1062.040</Score>
-<Score et="1063.0">Andreas Karlsson#9173(17) lap=14 point=0 t=65.362 et=1062.940</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1063.9">No Further Action</TrackLimits>
-<Score et="1064.2">Josh Harper-Jones(15) lap=14 point=0 t=64.016 et=1064.140</Score>
-<Score et="1067.6">Spooky Quack(1) lap=12 point=2 t=36.918 et=1067.520</Score>
-<Score et="1068.0">Farrel Zeva(7) lap=7 point=0 t=66.443 et=1067.820</Score>
-<Score et="1068.5">P-A Fugeekies(11) lap=13 point=2 t=39.020 et=1068.483</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1070.5">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="13" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1071.2">No Further Action</TrackLimits>
-<Score et="1071.3">Ruslan Chevdar(0) lap=13 point=2 t=37.544 et=1071.260</Score>
-<Score et="1074.0">Wang Agora(2) lap=10 point=1 t=23.113 et=1073.860</Score>
-<Score et="1075.6">A Martin(12) lap=14 point=0 t=66.328 et=1075.500</Score>
-<Score et="1075.8">Anthony Heytens(5) lap=13 point=2 t=37.976 et=1075.720</Score>
-<Score et="1080.7">cedric chomette(9) lap=12 point=1 t=24.585 et=1080.640</Score>
-<Score et="1086.5">Andreas Karlsson#9173(17) lap=14 point=1 t=23.453 et=1086.400</Score>
-<Score et="1086.8">Wang Agora(2) lap=10 point=2 t=35.911 et=1086.660</Score>
-<Score et="1087.2">Josh Harper-Jones(15) lap=14 point=1 t=22.944 et=1087.080</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.9">No Further Action</TrackLimits>
-<Score et="1091.7">Farrel Zeva(7) lap=7 point=1 t=23.627 et=1091.440</Score>
-<Score et="1094.1">cedric chomette(9) lap=12 point=2 t=38.036 et=1094.080</Score>
-<Score et="1097.4">Spooky Quack(1) lap=13 point=0 t=66.754 et=1097.340</Score>
-<Score et="1098.2">P-A Fugeekies(11) lap=14 point=0 t=68.736 et=1098.199</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1098.6">No Further Action</TrackLimits>
-<Score et="1099.5">A Martin(12) lap=14 point=1 t=23.954 et=1099.440</Score>
-<Score et="1099.6">Andreas Karlsson#9173(17) lap=14 point=2 t=36.601 et=1099.540</Score>
-<Score et="1100.0">Josh Harper-Jones(15) lap=14 point=2 t=35.821 et=1099.960</Score>
-<Score et="1100.4">Ruslan Chevdar(0) lap=14 point=0 t=66.669 et=1100.380</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.4">No Further Action</TrackLimits>
-<Score et="1105.2">Farrel Zeva(7) lap=7 point=2 t=37.183 et=1105.000</Score>
-<Score et="1105.3">Anthony Heytens(5) lap=14 point=0 t=67.502 et=1105.240</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="14" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1107.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1107.2">No Further Action</TrackLimits>
-<Score et="1112.9">A Martin(12) lap=14 point=2 t=37.249 et=1112.740</Score>
-<Score et="1114.9">Wang Agora(2) lap=11 point=0 t=64.010 et=1114.760</Score>
-<Score et="1120.7">Spooky Quack(1) lap=13 point=1 t=23.355 et=1120.700</Score>
-<Score et="1122.1">P-A Fugeekies(11) lap=14 point=1 t=23.884 et=1122.083</Score>
-<Score et="1123.3">cedric chomette(9) lap=13 point=0 t=67.138 et=1123.180</Score>
-<Score et="1124.6">Ruslan Chevdar(0) lap=14 point=1 t=24.160 et=1124.540</Score>
-<Score et="1128.6">Josh Harper-Jones(15) lap=15 point=0 t=64.275 et=1128.420</Score>
-<Score et="1128.8">Andreas Karlsson#9173(17) lap=15 point=0 t=65.702 et=1128.660</Score>
-<Score et="1130.4">Anthony Heytens(5) lap=14 point=1 t=25.042 et=1130.280</Score>
-<Score et="1133.7">Spooky Quack(1) lap=13 point=2 t=36.285 et=1133.640</Score>
-<Score et="1134.5">Farrel Zeva(7) lap=8 point=0 t=66.471 et=1134.280</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1135.3">No Further Action</TrackLimits>
-<Score et="1135.6">P-A Fugeekies(11) lap=14 point=2 t=37.384 et=1135.583</Score>
-<Score et="1137.8">Wang Agora(2) lap=11 point=1 t=22.967 et=1137.720</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1138.1">No Further Action</TrackLimits>
-<Score et="1138.2">Ruslan Chevdar(0) lap=14 point=2 t=37.707 et=1138.100</Score>
-<Score et="1142.2">A Martin(12) lap=15 point=0 t=66.673 et=1142.160</Score>
-<Score et="1144.2">Anthony Heytens(5) lap=14 point=2 t=38.883 et=1144.120</Score>
-<Score et="1147.4">cedric chomette(9) lap=13 point=1 t=24.157 et=1147.340</Score>
-<Score et="1150.7">Wang Agora(2) lap=11 point=2 t=35.819 et=1150.580</Score>
-<Score et="1151.6">Josh Harper-Jones(15) lap=15 point=1 t=23.151 et=1151.560</Score>
-<Score et="1152.4">Andreas Karlsson#9173(17) lap=15 point=1 t=23.729 et=1152.380</Score>
-<Score et="1158.5">Farrel Zeva(7) lap=8 point=1 t=23.984 et=1158.280</Score>
-<Score et="1160.7">cedric chomette(9) lap=13 point=2 t=37.440 et=1160.620</Score>
-<Score et="1162.2">Spooky Quack(1) lap=14 point=0 t=64.719 et=1162.060</Score>
-<Score et="1164.5">Josh Harper-Jones(15) lap=15 point=2 t=35.990 et=1164.400</Score>
-<Score et="1165.0">P-A Fugeekies(11) lap=15 point=0 t=66.751 et=1164.950</Score>
-<Score et="1165.6">Andreas Karlsson#9173(17) lap=15 point=2 t=36.896 et=1165.540</Score>
-<Score et="1166.2">A Martin(12) lap=15 point=1 t=23.966 et=1166.140</Score>
-<Score et="1167.0">Ruslan Chevdar(0) lap=15 point=0 t=66.613 et=1167.000</Score>
-<Score et="1171.7">Farrel Zeva(7) lap=8 point=2 t=37.141 et=1171.420</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1171.9">No Further Action</TrackLimits>
-<Sector et="1172.3">Wang Agora(2) reports new suspension damage</Sector>
-<Incident et="1172.4">Wang Agora(2) reported contact (1101.26) with Immovable</Incident>
-<Score et="1173.6">Anthony Heytens(5) lap=15 point=0 t=68.264 et=1173.500</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1174.5">No Further Action</TrackLimits>
-<Score et="1179.4">A Martin(12) lap=15 point=2 t=37.130 et=1179.300</Score>
-<Score et="1181.0">Wang Agora(2) lap=12 point=0 t=66.068 et=1180.820</Score>
-<Score et="1185.5">Spooky Quack(1) lap=14 point=1 t=23.356 et=1185.420</Score>
-<Score et="1188.7">P-A Fugeekies(11) lap=15 point=1 t=23.719 et=1188.669</Score>
-<Score et="1190.0">cedric chomette(9) lap=14 point=0 t=66.688 et=1189.880</Score>
-<Sector et="1190.7">Anthony Heytens(5) reports new suspension damage</Sector>
-<Incident et="1190.8">Anthony Heytens(5) reported contact (5859.02) with Immovable</Incident>
-<Score et="1191.0">Ruslan Chevdar(0) lap=15 point=1 t=23.998 et=1191.000</Score>
-<Incident et="1191.9">Anthony Heytens(5) reported contact (652.25) with Immovable</Incident>
-<Score et="1192.7">Josh Harper-Jones(15) lap=16 point=0 t=64.188 et=1192.600</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1192.9">No Further Action</TrackLimits>
-<Score et="1194.2">Andreas Karlsson#9173(17) lap=16 point=0 t=65.424 et=1194.080</Score>
-<TrackLimits Driver="Anthony Heytens" ID="5" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1195.3">No Further Action</TrackLimits>
-<Score et="1198.5">Spooky Quack(1) lap=14 point=2 t=36.423 et=1198.480</Score>
-<Score et="1200.6">Farrel Zeva(7) lap=9 point=0 t=66.000 et=1200.280</Score>
-<Score et="1201.2">Anthony Heytens(5) lap=15 point=1 t=27.664 et=1201.180</Score>
-<Score et="1202.2">P-A Fugeekies(11) lap=15 point=2 t=37.239 et=1202.189</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.4">No Further Action</TrackLimits>
-<Score et="1204.6">Ruslan Chevdar(0) lap=15 point=2 t=37.523 et=1204.520</Score>
-<Score et="1205.4">Wang Agora(2) lap=12 point=1 t=24.452 et=1205.280</Score>
-<Score et="1208.7">A Martin(12) lap=16 point=0 t=66.493 et=1208.660</Score>
-<Score et="1214.0">cedric chomette(9) lap=14 point=1 t=24.154 et=1214.020</Score>
-<Score et="1214.9">Anthony Heytens(5) lap=15 point=2 t=41.342 et=1214.860</Score>
-<Score et="1216.1">Josh Harper-Jones(15) lap=16 point=1 t=23.424 et=1216.020</Score>
-<Score et="1217.7">Andreas Karlsson#9173(17) lap=16 point=1 t=23.524 et=1217.600</Score>
-<Score et="1218.4">Wang Agora(2) lap=12 point=2 t=-1.000 et=1218.260</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1218.4">No Further Action</TrackLimits>
-<Score et="1224.3">Farrel Zeva(7) lap=9 point=1 t=23.833 et=1224.120</Score>
-<Score et="1227.0">Spooky Quack(1) lap=15 point=0 t=64.924 et=1226.980</Score>
-<Score et="1227.1">cedric chomette(9) lap=14 point=2 t=37.169 et=1227.040</Score>
-<Score et="1229.0">Josh Harper-Jones(15) lap=16 point=2 t=36.324 et=1228.920</Score>
-<Score et="1230.7">Andreas Karlsson#9173(17) lap=16 point=2 t=36.496 et=1230.580</Score>
-<Score et="1231.0">P-A Fugeekies(11) lap=16 point=0 t=66.074 et=1231.025</Score>
-<Score et="1232.5">A Martin(12) lap=16 point=1 t=23.774 et=1232.440</Score>
-<Score et="1233.5">Ruslan Chevdar(0) lap=16 point=0 t=66.472 et=1233.480</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1234.0">No Further Action</TrackLimits>
-<Incident et="1238.0">Wang Agora(2) reported contact (280.17) with Immovable</Incident>
-<Score et="1238.4">Farrel Zeva(7) lap=9 point=2 t=37.825 et=1238.120</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1239.9">No Further Action</TrackLimits>
-<ChatMessage et="1240.0">J Harper-Jones: last to first lol</ChatMessage>
-<Score et="1243.3">GOGO Gomez(13) lap=12 point=0 t=-1.000 et=1243.120</Score>
-<Score et="1244.2">Anthony Heytens(5) lap=16 point=0 t=70.649 et=1244.160</Score>
-<Score et="1246.0">A Martin(12) lap=16 point=2 t=37.285 et=1245.940</Score>
-<Score et="1247.0">Wang Agora(2) lap=13 point=0 t=66.107 et=1246.940</Score>
-<Sector et="1250.1">Andreas Karlsson#9173(17) reports new suspension damage</Sector>
-<Incident et="1250.1">Andreas Karlsson#9173(17) reported contact (2426.39) with Immovable</Incident>
-<Sector et="1250.2">Andreas Karlsson#9173(17) reports new suspension damage</Sector>
-<Score et="1250.4">Spooky Quack(1) lap=15 point=1 t=23.289 et=1250.280</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1251.8">No Further Action</TrackLimits>
-<Sector et="1253.3">Andreas Karlsson#9173(17) reports new suspension damage</Sector>
-<Incident et="1253.4">Andreas Karlsson#9173(17) reported contact (1976.68) with Immovable</Incident>
-<Sector et="1253.5">Andreas Karlsson#9173(17) reports new suspension damage</Sector>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1254.6">No Further Action</TrackLimits>
-<Score et="1255.3">P-A Fugeekies(11) lap=16 point=1 t=24.233 et=1255.257</Score>
-<Incident et="1256.2">Andreas Karlsson#9173(17) reported contact (33.32) with Cone</Incident>
-<Incident et="1256.3">Andreas Karlsson#9173(17) reported contact (33.72) with Cone</Incident>
-<Score et="1256.5">cedric chomette(9) lap=15 point=0 t=66.552 et=1256.420</Score>
-<Incident et="1256.6">Andreas Karlsson#9173(17) reported contact (2351.67) with Immovable</Incident>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1256.8">No Further Action</TrackLimits>
-<Score et="1257.1">Josh Harper-Jones(15) lap=17 point=0 t=64.430 et=1257.040</Score>
-<Score et="1257.7">Ruslan Chevdar(0) lap=16 point=1 t=24.131 et=1257.600</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="15" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1263.3">Warning</TrackLimits>
-<Score et="1263.3">Spooky Quack(1) lap=15 point=2 t=-1.000 et=1263.240</Score>
-<Incident et="1265.3">cedric chomette(9) reported contact (207.05) with Immovable</Incident>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.1">No Further Action</TrackLimits>
-<Score et="1267.2">Farrel Zeva(7) lap=10 point=0 t=66.675 et=1266.960</Score>
-<Score et="1268.7">P-A Fugeekies(11) lap=16 point=2 t=37.710 et=1268.735</Score>
-<Score et="1269.9">Anthony Heytens(5) lap=16 point=1 t=25.712 et=1269.860</Score>
-<Score et="1270.9">Wang Agora(2) lap=13 point=1 t=23.887 et=1270.820</Score>
-<Score et="1271.2">Ruslan Chevdar(0) lap=16 point=2 t=37.625 et=1271.100</Score>
-<Score et="1271.3">GOGO Gomez(13) lap=12 point=1 t=28.056 et=1271.180</Score>
-<Score et="1275.4">A Martin(12) lap=17 point=0 t=66.706 et=1275.360</Score>
-<Score et="1280.6">cedric chomette(9) lap=15 point=1 t=24.123 et=1280.540</Score>
-<Score et="1280.7">Josh Harper-Jones(15) lap=17 point=1 t=23.615 et=1280.640</Score>
-<Incident et="1281.0">Andreas Karlsson#9173(17) reported contact (2150.91) with Immovable</Incident>
-<Score et="1283.5">Anthony Heytens(5) lap=16 point=2 t=39.265 et=1283.420</Score>
-<Score et="1284.1">Wang Agora(2) lap=13 point=2 t=37.043 et=1283.980</Score>
-<TrackLimits Driver="Anthony Heytens" ID="5" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1285.3">No Further Action</TrackLimits>
-<Score et="1285.4">GOGO Gomez(13) lap=12 point=2 t=42.156 et=1285.280</Score>
-<Score et="1290.8">Farrel Zeva(7) lap=10 point=1 t=23.621 et=1290.580</Score>
-<Score et="1291.4">Spooky Quack(1) lap=16 point=0 t=-1.000 et=1291.300</Score>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.6">No Further Action</TrackLimits>
-<Score et="1293.8">Josh Harper-Jones(15) lap=17 point=2 t=36.705 et=1293.740</Score>
-<Score et="1294.5">cedric chomette(9) lap=15 point=2 t=37.987 et=1294.420</Score>
-<Score et="1297.8">P-A Fugeekies(11) lap=17 point=0 t=66.814 et=1297.838</Score>
-<Score et="1299.4">A Martin(12) lap=17 point=1 t=24.020 et=1299.380</Score>
-<Score et="1299.9">Ruslan Chevdar(0) lap=17 point=0 t=66.405 et=1299.880</Score>
-<Incident et="1300.5">Andreas Karlsson#9173(17) reported contact (1092.58) with Immovable</Incident>
-<Incident et="1301.7">Andreas Karlsson#9173(17) reported contact (15.37) with Cone</Incident>
-<Incident et="1302.2">Andreas Karlsson#9173(17) reported contact (9.17) with Cone</Incident>
-<Incident et="1302.4">Andreas Karlsson#9173(17) reported contact (14.17) with Cone</Incident>
-<Incident et="1302.6">Andreas Karlsson#9173(17) reported contact (25.71) with Cone</Incident>
-<Incident et="1303.0">Andreas Karlsson#9173(17) reported contact (37.69) with Cone</Incident>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1303.2">No Further Action</TrackLimits>
-<Score et="1303.6">Farrel Zeva(7) lap=10 point=2 t=36.500 et=1303.460</Score>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1304.7">No Further Action</TrackLimits>
-<Incident et="1304.7">Andreas Karlsson#9173(17) reported contact (24.21) with Cone</Incident>
-<Incident et="1305.7">Andreas Karlsson#9173(17) reported contact (33.15) with Cone</Incident>
-<Incident et="1307.6">Andreas Karlsson#9173(17) reported contact (12.56) with Cone</Incident>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1309.9">No Further Action</TrackLimits>
-<Incident et="1310.8">Andreas Karlsson#9173(17) reported contact (15.88) with Cone</Incident>
-<Incident et="1311.0">Andreas Karlsson#9173(17) reported contact (27.63) with Cone</Incident>
-<Incident et="1311.2">Andreas Karlsson#9173(17) reported contact (159.68) with Cone</Incident>
-<Incident et="1311.3">Andreas Karlsson#9173(17) reported contact (159.68) with Cone</Incident>
-<TrackLimits Driver="A Martin" ID="12" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1312.6">No Further Action</TrackLimits>
-<Score et="1312.8">A Martin(12) lap=17 point=2 t=37.379 et=1312.740</Score>
-<Score et="1313.7">Anthony Heytens(5) lap=17 point=0 t=69.540 et=1313.700</Score>
-<Incident et="1313.9">Andreas Karlsson#9173(17) reported contact (64.27) with Cone</Incident>
-<Incident et="1314.1">Andreas Karlsson#9173(17) reported contact (194.12) with Cone</Incident>
-<Score et="1315.2">GOGO Gomez(13) lap=13 point=0 t=71.938 et=1315.060</Score>
-<Score et="1315.6">Spooky Quack(1) lap=16 point=1 t=24.179 et=1315.480</Score>
-<Score et="1315.7">Wang Agora(2) lap=14 point=0 t=68.600 et=1315.540</Score>
-<Incident et="1316.5">P-A Fugeekies(11) reported contact (1968.82) with Immovable</Incident>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1318.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1321.5">No Further Action</TrackLimits>
-<Score et="1322.2">Josh Harper-Jones(15) lap=18 point=0 t=65.126 et=1322.160</Score>
-<Score et="1323.3">cedric chomette(9) lap=16 point=0 t=66.841 et=1323.260</Score>
-<Score et="1324.5">Ruslan Chevdar(0) lap=17 point=1 t=24.589 et=1324.460</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1327.9">No Further Action</TrackLimits>
-<Incident et="1328.7">Andreas Karlsson#9173(17) reported contact (294.98) with Immovable</Incident>
-<Score et="1328.7">Spooky Quack(1) lap=16 point=2 t=37.272 et=1328.580</Score>
-<Score et="1328.8">Andreas Karlsson#9173(17) lap=17 point=0 t=134.650 et=1328.720</Score>
-<Score et="1332.8">Farrel Zeva(7) lap=11 point=0 t=65.696 et=1332.660</Score>
-<TrackLimits Driver="Ruslan Chevdar" ID="0" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.8">No Further Action</TrackLimits>
-<Score et="1334.8">P-A Fugeekies(11) lap=17 point=1 t=36.912 et=1334.750</Score>
-<Incident et="1335.1">Andreas Karlsson#9173(17) reported contact (228.14) with Immovable</Incident>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1336.7">No Further Action</TrackLimits>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1337.3">No Further Action</TrackLimits>
-<Score et="1338.2">Ruslan Chevdar(0) lap=17 point=2 t=38.221 et=1338.100</Score>
-<Score et="1338.5">Anthony Heytens(5) lap=17 point=1 t=24.733 et=1338.420</Score>
-<Score et="1339.5">Wang Agora(2) lap=14 point=1 t=23.850 et=1339.380</Score>
-<TrackLimits Driver="GOGO Gomez" ID="13" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1339.7">No Further Action</TrackLimits>
-<Score et="1341.5">GOGO Gomez(13) lap=13 point=1 t=26.321 et=1341.380</Score>
-<Score et="1342.5">A Martin(12) lap=18 point=0 t=67.062 et=1342.420</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1343.5">No Further Action</TrackLimits>
-<Score et="1345.2">Josh Harper-Jones(15) lap=18 point=1 t=22.935 et=1345.100</Score>
-<Score et="1347.1">cedric chomette(9) lap=16 point=1 t=23.781 et=1347.040</Score>
-<Score et="1349.7">P-A Fugeekies(11) lap=17 point=2 t=51.892 et=1349.730</Score>
-<Incident et="1350.3">Farrel Zeva(7) reported contact (2275.71) with Immovable</Incident>
-<Score et="1352.0">Anthony Heytens(5) lap=17 point=2 t=38.317 et=1352.020</Score>
-<Score et="1352.6">Wang Agora(2) lap=14 point=2 t=36.923 et=1352.460</Score>
-<Score et="1355.4">GOGO Gomez(13) lap=13 point=2 t=40.224 et=1355.280</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1355.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Josh Harper-Jones" ID="15" Lap="18" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1356.3">No Further Action</TrackLimits>
-<Score et="1357.0">Spooky Quack(1) lap=17 point=0 t=65.577 et=1356.880</Score>
-<Score et="1358.2">Josh Harper-Jones(15) lap=18 point=2 t=35.930 et=1358.100</Score>
-<TrackLimits Driver="cedric chomette" ID="9" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1358.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1358.4">No Further Action</TrackLimits>
-<Score et="1360.1">cedric chomette(9) lap=16 point=2 t=36.705 et=1359.980</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1361.2">No Further Action</TrackLimits>
-<TrackLimits Driver="A Martin" ID="12" Lap="18" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1363.7">No Further Action</TrackLimits>
-<Sector et="1366.0">Spooky Quack(1) reports new suspension damage</Sector>
-<Incident et="1366.1">Spooky Quack(1) reported contact (7642.29) with Immovable</Incident>
-<Sector et="1366.2">Spooky Quack(1) reports new suspension damage</Sector>
-<Score et="1367.1">A Martin(12) lap=18 point=1 t=24.653 et=1367.080</Score>
-<Score et="1367.8">Ruslan Chevdar(0) lap=18 point=0 t=67.834 et=1367.720</Score>
-<Score et="1368.0">Farrel Zeva(7) lap=11 point=1 t=35.079 et=1367.740</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1374.4">No Further Action</TrackLimits>
-<Score et="1374.8">Andreas Karlsson#9173(17) lap=17 point=1 t=46.064 et=1374.780</Score>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1375.1">No Further Action</TrackLimits>
-<Score et="1379.6">P-A Fugeekies(11) lap=18 point=0 t=81.717 et=1379.555</Score>
-<TrackLimits Driver="A Martin" ID="12" Lap="18" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1380.5">No Further Action</TrackLimits>
-<Score et="1380.6">A Martin(12) lap=18 point=2 t=38.115 et=1380.540</Score>
-<Score et="1381.4">Farrel Zeva(7) lap=11 point=2 t=48.498 et=1381.160</Score>
-<Score et="1381.4">Wang Agora(2) lap=15 point=0 t=65.732 et=1381.260</Score>
-<Score et="1382.0">Anthony Heytens(5) lap=18 point=0 t=68.225 et=1381.920</Score>
-<Score et="1385.1">GOGO Gomez(13) lap=14 point=0 t=69.979 et=1385.040</Score>
-<Score et="1386.2">Checkered for Josh Harper-Jones, laps=19/2147483647, endET=1386.139893/1338.042480, crossedAfterTime=0</Score>
-<Score et="1386.2">Josh Harper-Jones(15) lap=19 point=0 t=63.970 et=1386.140</Score>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1388.1">No Further Action</TrackLimits>
-<Score et="1388.4">cedric chomette(9) lap=17 point=0 t=65.016 et=1388.280</Score>
-<Score et="1393.1">Ruslan Chevdar(0) lap=18 point=1 t=25.328 et=1393.040</Score>
-<Score et="1394.7">Andreas Karlsson#9173(17) lap=17 point=2 t=65.917 et=1394.640</Score>
-<Score et="1394.8">Spooky Quack(1) lap=17 point=1 t=37.899 et=1394.780</Score>
-<Incident et="1398.6">P-A Fugeekies(11) reported contact (1602.34) with Immovable</Incident>
-<Incident et="1400.9">Farrel Zeva(7) reported contact (260.60) with Immovable</Incident>
-<TrackLimits Driver="Wang Agora" ID="2" Lap="15" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1401.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Farrel Zeva" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.7">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="18" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1404.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Spooky Quack" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1405.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1406.4">No Further Action</TrackLimits>
-<Score et="1407.2">Anthony Heytens(5) lap=18 point=1 t=25.162 et=1407.080</Score>
-<Score et="1407.2">Ruslan Chevdar(0) lap=18 point=2 t=39.380 et=1407.100</Score>
-<Score et="1407.7">Wang Agora(2) lap=15 point=1 t=26.310 et=1407.580</Score>
-<Score et="1409.8">GOGO Gomez(13) lap=14 point=1 t=24.573 et=1409.620</Score>
-<Score et="1409.9">A Martin(12) lap=19 point=0 t=67.450 et=1409.880</Score>
-<Score et="1410.6">Farrel Zeva(7) lap=12 point=0 t=77.629 et=1410.280</Score>
-<TrackLimits Driver="Andreas Karlsson#9173" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1412.4">No Further Action</TrackLimits>
-<Score et="1413.4">Spooky Quack(1) lap=17 point=2 t=56.482 et=1413.360</Score>
-<Score et="1417.0">P-A Fugeekies(11) lap=18 point=1 t=37.411 et=1416.966</Score>
-<Score et="1421.7">Anthony Heytens(5) lap=18 point=2 t=39.671 et=1421.600</Score>
-<Score et="1421.8">Wang Agora(2) lap=15 point=2 t=40.418 et=1421.680</Score>
-<Score et="1423.5">GOGO Gomez(13) lap=14 point=2 t=38.321 et=1423.360</Score>
-<Score et="1431.8">P-A Fugeekies(11) lap=18 point=2 t=52.272 et=1431.827</Score>
-<Score et="1437.2">Ruslan Chevdar(0) lap=19 point=0 t=69.388 et=1437.100</Score>
-<Score et="1442.7">Andreas Karlsson#9173(17) lap=18 point=0 t=113.945 et=1442.660</Score>
-<Score et="1447.3">Spooky Quack(1) lap=18 point=0 t=90.379 et=1447.260</Score>
-<Score et="1451.1">Wang Agora(2) lap=16 point=0 t=69.724 et=1451.000</Score>
-<Score et="1451.6">Anthony Heytens(5) lap=19 point=0 t=69.599 et=1451.520</Score>
-<Score et="1453.0">GOGO Gomez(13) lap=15 point=0 t=67.799 et=1452.840</Score>
-<Score et="1462.2">P-A Fugeekies(11) lap=19 point=0 t=82.661 et=1462.216</Score>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="157.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="162.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="163.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="167.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2831" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="181.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="188.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2831" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="193.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4892" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="233.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4892" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="237.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2831" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="242.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4668" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="244.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="247.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="249.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4892" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2831" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="256.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="259.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="296.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4668" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2837" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="301.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="302.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="312.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="314.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4668" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="318.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="319.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="319.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="323.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2837" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="325.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="329.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2945" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="330.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="2" WarningPoints="1" CurrentPoints="1" Resolution="2" et="348.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="358.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="363.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="369.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="379.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="381.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="3" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="382.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="384.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="386.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3929" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="388.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="398.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2945" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="398.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="400.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="405.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="4" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="445.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="447.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="451.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="466.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="467.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="469.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="491.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="505.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="511.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="511.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="515.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="518.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="534.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="574.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="576.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="576.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="581.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="585.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="590.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4622" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="591.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="592.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="601.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="605.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="609.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="5" et="615.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="617.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="622.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="3" WarningPoints="0" CurrentPoints="1" Resolution="5" et="635.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="640.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="643.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="645.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="646.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="647.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="661.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="661.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="674.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="685.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="699.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="704.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="706.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="715.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="717.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="733.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="750.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="5" WarningPoints="0" CurrentPoints="1" Resolution="5" et="765.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="771.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="772.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="777.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="803.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="5" et="805.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="815.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="818.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="818.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="6" WarningPoints="0" CurrentPoints="1" Resolution="5" et="825.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="826.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="837.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="839.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="841.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="10" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="863.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="865.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="870.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="880.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="883.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="886.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="895.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="898.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2800" ID="14" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="898.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="899.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="901.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="903.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="904.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="907.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="908.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="11" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="913.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="916.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="931.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="951.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="954.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="956.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="957.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="958.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="976.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="8" WarningPoints="0" CurrentPoints="1" Resolution="5" et="978.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="12" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="979.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="985.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="11" WarningPoints="1" CurrentPoints="1" Resolution="2" et="985.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1004.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="13" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1037.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1063.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1070.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="13" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1071.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="12" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1087.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1098.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="14" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1107.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1107.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1135.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1138.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1171.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="11" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1174.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="14" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1192.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2945" ID="5" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1195.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1204.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1218.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1234.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1239.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1251.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1254.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="12" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1256.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="15" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1263.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="15" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2945" ID="5" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1285.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="10" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1303.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1304.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1309.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1312.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1318.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1321.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1327.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4553" ID="0" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1336.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1337.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3504" ID="13" Lap="13" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1339.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1343.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1355.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3801" ID="15" Lap="18" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1356.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3092" ID="9" Lap="16" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1358.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1358.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1361.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="18" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1363.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1374.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1375.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2793" ID="12" Lap="18" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1380.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1388.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4858" ID="2" Lap="15" WarningPoints="0" CurrentPoints="1" Resolution="5" et="1401.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3383" ID="7" Lap="11" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="18" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1404.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4657" ID="1" Lap="17" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1405.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1406.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2919" ID="17" Lap="17" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1412.4">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>19</MostLapsCompleted>

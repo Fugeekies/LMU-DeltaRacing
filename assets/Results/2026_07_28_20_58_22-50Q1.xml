@@ -36,258 +36,81 @@
 <Laps>2147483647</Laps>
 <Minutes>7</Minutes>
 <Stream>
-<Penalty Driver="Emmett Matulac" ID="16" Penalty="Stop/Go" Time="10" Laps="0" Reason="Exiting Pits Under Red" et="25.6">Emmett Matulac received Stop/Go penalty, 10s, 0laps for Exiting Pits Under Red. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
-<Incident et="33.5">Emmett Matulac(16) reported contact (1385.81) with Immovable</Incident>
-<TrackLimits Driver="Emmett Matulac" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="35.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Emmett Matulac" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="35.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Emmett Matulac" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="47.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Emmett Matulac" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="47.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Ignat Mihai" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="51.8">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Ignat Mihai" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="51.8">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="56.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="56.1">No Further Action</TrackLimits>
-<Score et="61.4">Emmett Matulac(16) lap=0 point=1 t=-1.000 et=61.240</Score>
-<TrackLimits Driver="Ignat Mihai" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="64.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Ignat Mihai" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="64.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="66.2">Invalid Lap Cut Track</TrackLimits>
-<Score et="70.5">Tomashq Zawierucha(3) lap=0 point=1 t=-1.000 et=70.420</Score>
-<Score et="70.7">MaDy SoLoN(1) lap=0 point=1 t=-1.000 et=70.640</Score>
-<Score et="71.4">Szymon Lech(7) lap=0 point=1 t=-1.000 et=71.280</Score>
-<Score et="71.7">Krzysztof Krysiak(4) lap=0 point=1 t=-1.000 et=71.580</Score>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="72.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="72.7">No Further Action</TrackLimits>
-<Score et="72.8">Emmett Matulac(16) lap=0 point=2 t=-1.000 et=72.678</Score>
-<Score et="72.8">Emmett Matulac(16) lap=1 point=0 t=-1.000 et=72.678</Score>
-<Score et="77.7">Ignat Mihai(12) lap=0 point=1 t=-1.000 et=77.660</Score>
-<Score et="82.3">Fabian Witkowski(2) lap=0 point=1 t=-1.000 et=82.200</Score>
-<Score et="84.7">Andres Burgos#2409(5) lap=0 point=1 t=-1.000 et=84.580</Score>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="85.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="85.1">No Further Action</TrackLimits>
-<Score et="86.8">Luis Dias#2362(0) lap=0 point=1 t=-1.000 et=86.800</Score>
-<Score et="92.3">Olyver Silva(13) lap=0 point=1 t=-1.000 et=92.120</Score>
-<Score et="93.4">P-A Fugeekies(11) lap=0 point=1 t=-1.000 et=93.343</Score>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="98.7">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="98.7">No Further Action</TrackLimits>
-<Score et="120.5">Samuel Ferdinand(6) lap=0 point=1 t=-1.000 et=120.460</Score>
-<Sector et="127.3">Tomashq Zawierucha(3) reports new suspension damage</Sector>
-<Incident et="127.4">Tomashq Zawierucha(3) reported contact (1476.87) with Immovable</Incident>
-<Sector et="127.4">Tomashq Zawierucha(3) reports new suspension damage</Sector>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="133.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="133.4">No Further Action</TrackLimits>
-<Score et="135.7">Krzysztof Krysiak(4) lap=0 point=2 t=-1.000 et=135.680</Score>
-<Score et="143.2">Tomashq Zawierucha(3) lap=0 point=2 t=-1.000 et=143.160</Score>
-<Score et="143.5">MaDy SoLoN(1) lap=0 point=2 t=-1.000 et=143.420</Score>
-<Score et="144.0">Ignat Mihai(12) lap=0 point=2 t=-1.000 et=143.920</Score>
-<Score et="145.4">Szymon Lech(7) lap=0 point=2 t=-1.000 et=145.340</Score>
-<Score et="147.1">Fabian Witkowski(2) lap=0 point=2 t=-1.000 et=147.120</Score>
-<Score et="149.8">Tomashq Zawierucha(3) lap=1 point=0 t=-1.000 et=149.778</Score>
-<Score et="150.1">Luis Dias#2362(0) lap=0 point=2 t=-1.000 et=150.040</Score>
-<Score et="151.3">Andres Burgos#2409(5) lap=0 point=2 t=-1.000 et=151.200</Score>
-<Score et="157.4">Olyver Silva(13) lap=0 point=2 t=-1.000 et=157.260</Score>
-<Score et="158.5">MR Thibault(17) lap=0 point=1 t=-1.000 et=158.460</Score>
-<Score et="160.7">P-A Fugeekies(11) lap=0 point=2 t=-1.000 et=160.687</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="161.6">No Further Action</TrackLimits>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.5">No Further Action</TrackLimits>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.5">No Further Action</TrackLimits>
-<Score et="176.0">Krzysztof Krysiak(4) lap=1 point=0 t=-1.000 et=175.980</Score>
-<Score et="184.5">Samuel Ferdinand(6) lap=0 point=2 t=-1.000 et=184.480</Score>
-<Score et="185.6">MaDy SoLoN(1) lap=1 point=0 t=-1.000 et=185.600</Score>
-<Score et="185.9">Ignat Mihai(12) lap=1 point=0 t=-1.000 et=185.880</Score>
-<Score et="187.4">Szymon Lech(7) lap=1 point=0 t=-1.000 et=187.340</Score>
-<Score et="187.7">Fabian Witkowski(2) lap=1 point=0 t=-1.000 et=187.720</Score>
-<Score et="189.9">Luis Dias#2362(0) lap=1 point=0 t=-1.000 et=189.900</Score>
-<Score et="193.3">Andres Burgos#2409(5) lap=1 point=0 t=-1.000 et=193.140</Score>
-<Score et="198.0">Olyver Silva(13) lap=1 point=0 t=-1.000 et=197.880</Score>
-<Score et="200.5">Karl Martemp(10) lap=0 point=1 t=-1.000 et=201.160</Score>
-<TrackLimits Driver="Krzysztof Krysiak" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Krzysztof Krysiak" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.7">No Further Action</TrackLimits>
-<Score et="203.0">P-A Fugeekies(11) lap=1 point=0 t=-1.000 et=203.017</Score>
-<Score et="206.3">Alexis Chamoux(15) lap=0 point=1 t=-1.000 et=206.280</Score>
-<Sector et="211.0">Alexis Chamoux(15) reports new suspension damage</Sector>
-<Incident et="211.1">Alexis Chamoux(15) reported contact (1062.81) with Immovable</Incident>
-<TrackLimits Driver="Alexis Chamoux" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="212.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Alexis Chamoux" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="212.9">No Further Action</TrackLimits>
-<Sector Driver="Krzysztof Krysiak" ID="4" Sector="1" Class="GTE" et="215.3">Krzysztof Krysiak(4) set new best for sector 1</Sector>
-<Score et="215.3">Krzysztof Krysiak(4) lap=1 point=1 t=39.320 et=215.300</Score>
-<Score et="217.2">Tomashq Zawierucha(3) lap=1 point=1 t=-1.000 et=217.200</Score>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="219.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="219.1">No Further Action</TrackLimits>
-<Sector Driver="MaDy SoLoN" ID="1" Sector="1" Class="GTE" et="224.0">MaDy SoLoN(1) set new best for sector 1</Sector>
-<Score et="224.0">MaDy SoLoN(1) lap=1 point=1 t=38.372 et=223.980</Score>
-<Score et="224.6">MR Thibault(17) lap=0 point=2 t=-1.000 et=224.520</Score>
-<Score et="226.1">Ignat Mihai(12) lap=1 point=1 t=40.147 et=226.040</Score>
-<Score et="226.9">Fabian Witkowski(2) lap=1 point=1 t=39.216 et=226.920</Score>
-<Score et="227.7">Samuel Ferdinand(6) lap=1 point=0 t=-1.000 et=227.720</Score>
-<Score et="228.7">Szymon Lech(7) lap=1 point=1 t=41.303 et=228.640</Score>
-<Score et="228.9">Luis Dias#2362(0) lap=1 point=1 t=39.022 et=228.920</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="230.0">No Further Action</TrackLimits>
-<Score et="232.8">Andres Burgos#2409(5) lap=1 point=1 t=39.498 et=232.640</Score>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.0">No Further Action</TrackLimits>
-<Sector Driver="Olyver Silva" ID="13" Sector="1" Class="GTE" et="236.2">Olyver Silva(13) set new best for sector 1</Sector>
-<Score et="236.2">Olyver Silva(13) lap=1 point=1 t=38.233 et=236.120</Score>
-<Score et="244.0">P-A Fugeekies(11) lap=1 point=1 t=41.018 et=244.035</Score>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.1">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="253.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Samuel Ferdinand" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="257.1">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Samuel Ferdinand" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="257.1">Invalid Lap Cut Track</TrackLimits>
-<Score et="265.6">MR Thibault(17) lap=1 point=0 t=-1.000 et=265.620</Score>
-<Score et="266.5">Samuel Ferdinand(6) lap=1 point=1 t=-1.000 et=266.520</Score>
-<Score et="267.5">Karl Martemp(10) lap=0 point=2 t=-1.000 et=267.620</Score>
-<Score et="274.1">Alexis Chamoux(15) lap=0 point=2 t=-1.000 et=274.080</Score>
-<Sector Driver="Krzysztof Krysiak" ID="4" Sector="2" Class="GTE" et="279.1">Krzysztof Krysiak(4) set new best for sector 2</Sector>
-<Score et="279.1">Krzysztof Krysiak(4) lap=1 point=2 t=103.082 et=279.060</Score>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.7">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.0">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.0">No Further Action</TrackLimits>
-<Score et="292.1">Ignat Mihai(12) lap=1 point=2 t=106.192 et=292.080</Score>
-<Sector Driver="Luis Dias#2362" ID="0" Sector="2" Class="GTE" et="292.2">Luis Dias#2362(0) set new best for sector 2</Sector>
-<Score et="292.2">Luis Dias#2362(0) lap=1 point=2 t=102.271 et=292.180</Score>
-<Score et="293.2">MaDy SoLoN(1) lap=1 point=2 t=107.618 et=293.220</Score>
-<Score et="295.8">Szymon Lech(7) lap=1 point=2 t=108.396 et=295.740</Score>
-<Score et="296.8">Tomashq Zawierucha(3) lap=1 point=2 t=-1.000 et=296.740</Score>
-<Score et="296.9">Fabian Witkowski(2) lap=1 point=2 t=109.183 et=296.900</Score>
-<Score et="299.7">Andres Burgos#2409(5) lap=1 point=2 t=106.389 et=299.540</Score>
-<Score et="300.1">Olyver Silva(13) lap=1 point=2 t=102.080 et=299.960</Score>
-<Score et="304.3">MR Thibault(17) lap=1 point=1 t=38.661 et=304.280</Score>
-<Score et="308.4">Karl Martemp(10) lap=1 point=0 t=-1.000 et=308.440</Score>
-<Score et="309.0">Alexis Chamoux(15) lap=1 point=0 t=-1.000 et=308.935</Score>
-<Score et="309.0">Alexis Chamoux(15) lap=1 point=1 t=-1.000 et=308.935</Score>
-<Score et="309.0">Alexis Chamoux(15) lap=1 point=2 t=-1.000 et=308.935</Score>
-<Score et="309.0">Alexis Chamoux(15) lap=2 point=0 t=-1.000 et=308.935</Score>
-<Score et="312.0">P-A Fugeekies(11) lap=1 point=2 t=109.000 et=312.017</Score>
-<Sector Driver="Krzysztof Krysiak" ID="4" Sector="3" Class="GTE" et="319.2">Krzysztof Krysiak(4) set new best for sector 3</Sector>
-<Score et="319.2">Krzysztof Krysiak(4) lap=2 point=0 t=143.196 et=319.180</Score>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.9">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.9">No Further Action</TrackLimits>
-<Score et="330.6">Samuel Ferdinand(6) lap=1 point=2 t=-1.000 et=330.600</Score>
-<Score et="332.5">Luis Dias#2362(0) lap=2 point=0 t=142.588 et=332.500</Score>
-<Score et="333.4">Ignat Mihai(12) lap=2 point=0 t=147.463 et=333.360</Score>
-<TrackLimits Driver="Karl Martemp" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Karl Martemp" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.8">No Further Action</TrackLimits>
-<Score et="336.3">MaDy SoLoN(1) lap=2 point=0 t=150.693 et=336.300</Score>
-<Score et="336.6">Szymon Lech(7) lap=2 point=0 t=149.262 et=336.600</Score>
-<Score et="337.1">Fabian Witkowski(2) lap=2 point=0 t=149.355 et=337.060</Score>
-<Score et="337.7">Tomashq Zawierucha(3) lap=2 point=0 t=-1.000 et=337.680</Score>
-<Score et="341.7">Andres Burgos#2409(5) lap=2 point=0 t=148.462 et=341.600</Score>
-<Score et="348.5">Karl Martemp(10) lap=1 point=1 t=40.088 et=348.520</Score>
-<Score et="354.4">P-A Fugeekies(11) lap=2 point=0 t=151.364 et=354.381</Score>
-<Sector Driver="Krzysztof Krysiak" ID="4" Sector="1" Class="GTE" et="357.3">Krzysztof Krysiak(4) set new best for sector 1</Sector>
-<Score et="357.3">Krzysztof Krysiak(4) lap=2 point=1 t=38.139 et=357.320</Score>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="363.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="363.5">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.1">No Further Action</TrackLimits>
-<TrackLimits Driver="MaDy SoLoN" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.1">No Further Action</TrackLimits>
-<Score et="369.1">MR Thibault(17) lap=1 point=2 t=103.510 et=369.120</Score>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="369.3">Invalid Lap Cut Track</TrackLimits>
-<TrackLimits Driver="Andres Burgos#2409" ID="5" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="369.3">Invalid Lap Cut Track</TrackLimits>
-<Score et="371.4">Luis Dias#2362(0) lap=2 point=1 t=38.922 et=371.420</Score>
-<Score et="371.5">Samuel Ferdinand(6) lap=2 point=0 t=-1.000 et=371.460</Score>
-<Score et="373.3">Ignat Mihai(12) lap=2 point=1 t=39.935 et=373.280</Score>
-<Score et="375.9">Fabian Witkowski(2) lap=2 point=1 t=38.839 et=375.900</Score>
-<Score et="376.0">Szymon Lech(7) lap=2 point=1 t=39.405 et=376.000</Score>
-<Score et="376.3">MaDy SoLoN(1) lap=2 point=1 t=39.992 et=376.280</Score>
-<Score et="376.6">Tomashq Zawierucha(3) lap=2 point=1 t=38.923 et=376.600</Score>
-<Score et="380.5">Andres Burgos#2409(5) lap=2 point=1 t=-1.000 et=380.380</Score>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Szymon Lech" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.4">No Further Action</TrackLimits>
-<Score et="386.5">Rafal W(19) lap=0 point=1 t=-1.000 et=386.500</Score>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="391.8">No Further Action</TrackLimits>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="391.8">No Further Action</TrackLimits>
-<Score et="395.7">P-A Fugeekies(11) lap=2 point=1 t=41.319 et=395.700</Score>
-<TrackLimits Driver="Rafal W" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Rafal W" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.6">No Further Action</TrackLimits>
-<Incident et="401.2">Fabian Witkowski(2) reported contact (2417.02) with Immovable</Incident>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.2">No Further Action</TrackLimits>
-<Score et="410.2">Samuel Ferdinand(6) lap=2 point=1 t=38.790 et=410.240</Score>
-<Score et="413.2">Karl Martemp(10) lap=1 point=2 t=104.770 et=413.200</Score>
-<Score et="415.9">MR Thibault(17) lap=2 point=0 t=150.246 et=415.860</Score>
-<Score et="420.6">Krzysztof Krysiak(4) lap=2 point=2 t=101.451 et=420.620</Score>
-<Sector Driver="Luis Dias#2362" ID="0" Sector="2" Class="GTE" et="434.0">Luis Dias#2362(0) set new best for sector 2</Sector>
-<Score et="434.0">Luis Dias#2362(0) lap=2 point=2 t=101.525 et=434.020</Score>
-<Score et="438.7">Ignat Mihai(12) lap=2 point=2 t=105.349 et=438.700</Score>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Tomashq Zawierucha" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.6">No Further Action</TrackLimits>
-<Score et="441.7">MaDy SoLoN(1) lap=2 point=2 t=105.343 et=441.640</Score>
-<Score et="441.7">Szymon Lech(7) lap=2 point=2 t=105.094 et=441.700</Score>
-<TrackLimits Driver="Krzysztof Krysiak" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Krzysztof Krysiak" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.4">No Further Action</TrackLimits>
-<Score et="445.7">Andres Burgos#2409(5) lap=2 point=2 t=-1.000 et=445.560</Score>
-<Score et="446.2">Tomashq Zawierucha(3) lap=2 point=2 t=108.502 et=446.180</Score>
-<TrackLimits Driver="Samuel Ferdinand" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="450.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Samuel Ferdinand" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="450.9">No Further Action</TrackLimits>
-<Score et="454.5">MR Thibault(17) lap=2 point=1 t=38.658 et=454.520</Score>
-<Score et="456.0">Fabian Witkowski(2) lap=2 point=2 t=118.982 et=456.040</Score>
-<Score et="456.1">Rafal W(19) lap=0 point=2 t=-1.000 et=456.040</Score>
-<Score et="457.5">Karl Martemp(10) lap=2 point=0 t=149.086 et=457.520</Score>
-<Sector Driver="Krzysztof Krysiak" ID="4" Sector="3" Class="GTE" et="460.7">Krzysztof Krysiak(4) set new best for sector 3</Sector>
-<Score et="460.7">Krzysztof Krysiak(4) lap=3 point=0 t=141.405 et=460.580</Score>
-<Score et="462.0">P-A Fugeekies(11) lap=2 point=2 t=107.626 et=462.007</Score>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="462.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="462.3">No Further Action</TrackLimits>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="463.6">No Further Action</TrackLimits>
-<TrackLimits Driver="MR Thibault" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="463.6">No Further Action</TrackLimits>
-<Score et="464.4">Karl Martemp(10) lap=2 point=1 t=-1.000 et=464.322</Score>
-<Score et="464.4">Karl Martemp(10) lap=2 point=2 t=-1.000 et=464.322</Score>
-<Score et="464.4">Karl Martemp(10) lap=3 point=0 t=-1.000 et=464.322</Score>
-<Score et="473.9">Samuel Ferdinand(6) lap=2 point=2 t=102.413 et=473.880</Score>
-<Score et="474.3">Luis Dias#2362(0) lap=3 point=0 t=141.850 et=474.340</Score>
-<Score et="479.7">Ignat Mihai(12) lap=3 point=0 t=146.331 et=479.680</Score>
-<Score et="481.3">Krzysztof Krysiak(4) lap=3 point=1 t=-1.000 et=481.294</Score>
-<Score et="481.3">Krzysztof Krysiak(4) lap=3 point=2 t=-1.000 et=481.294</Score>
-<Score et="481.3">Krzysztof Krysiak(4) lap=4 point=0 t=-1.000 et=481.294</Score>
-<Score et="482.3">MaDy SoLoN(1) lap=3 point=0 t=145.980 et=482.280</Score>
-<Score et="483.6">Szymon Lech(7) lap=3 point=0 t=147.025 et=483.620</Score>
-<Score et="486.4">Andres Burgos#2409(5) lap=3 point=0 t=-1.000 et=486.220</Score>
-<Score et="487.4">Tomashq Zawierucha(3) lap=3 point=0 t=149.749 et=487.420</Score>
-<Score et="490.3">Ignat Mihai(12) lap=3 point=1 t=-1.000 et=490.294</Score>
-<Score et="490.3">Ignat Mihai(12) lap=3 point=2 t=-1.000 et=490.294</Score>
-<Score et="490.3">Ignat Mihai(12) lap=4 point=0 t=-1.000 et=490.294</Score>
-<Score et="490.5">Szymon Lech(7) lap=3 point=1 t=-1.000 et=490.431</Score>
-<Score et="490.5">Szymon Lech(7) lap=3 point=2 t=-1.000 et=490.431</Score>
-<Score et="490.5">Szymon Lech(7) lap=4 point=0 t=-1.000 et=490.431</Score>
-<Score et="494.8">Tomashq Zawierucha(3) lap=3 point=1 t=-1.000 et=494.743</Score>
-<Score et="494.8">Tomashq Zawierucha(3) lap=3 point=2 t=-1.000 et=494.743</Score>
-<Score et="494.8">Tomashq Zawierucha(3) lap=4 point=0 t=-1.000 et=494.743</Score>
-<Score et="496.5">Andres Burgos#2409(5) lap=3 point=1 t=-1.000 et=496.328</Score>
-<Score et="496.5">Andres Burgos#2409(5) lap=3 point=2 t=-1.000 et=496.328</Score>
-<Score et="496.5">Andres Burgos#2409(5) lap=4 point=0 t=-1.000 et=496.328</Score>
-<Score et="497.1">Fabian Witkowski(2) lap=3 point=0 t=159.983 et=497.040</Score>
-<Score et="497.9">Rafal W(19) lap=1 point=0 t=-1.000 et=497.880</Score>
-<Score et="499.2">MaDy SoLoN(1) lap=3 point=1 t=-1.000 et=499.150</Score>
-<Score et="499.2">MaDy SoLoN(1) lap=3 point=2 t=-1.000 et=499.150</Score>
-<Score et="499.2">MaDy SoLoN(1) lap=4 point=0 t=-1.000 et=499.150</Score>
-<Score et="504.3">P-A Fugeekies(11) lap=3 point=0 t=149.910 et=504.291</Score>
-<ChatMessage et="505.8">R W: wtf</ChatMessage>
-<ChatMessage et="508.5">F Witkowski: no abs</ChatMessage>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Fabian Witkowski" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.6">No Further Action</TrackLimits>
-<ChatMessage et="512.4">F Witkowski: hahaha</ChatMessage>
-<Score et="513.9">Samuel Ferdinand(6) lap=3 point=0 t=142.464 et=513.920</Score>
-<ChatMessage et="518.0">E Matulac: wait theres no abs</ChatMessage>
-<Score et="519.4">MR Thibault(17) lap=2 point=2 t=103.485 et=519.340</Score>
-<Score et="523.8">Samuel Ferdinand(6) lap=3 point=1 t=-1.000 et=523.748</Score>
-<Score et="523.8">Samuel Ferdinand(6) lap=3 point=2 t=-1.000 et=523.748</Score>
-<Score et="523.8">Samuel Ferdinand(6) lap=4 point=0 t=-1.000 et=523.748</Score>
-<ChatMessage et="530.2">E Matulac: oh no</ChatMessage>
-<ChatMessage et="534.4">E Matulac: im cooked</ChatMessage>
-<Score et="537.9">Luis Dias#2362(0) lap=3 point=1 t=-1.000 et=537.883</Score>
-<Score et="537.9">Luis Dias#2362(0) lap=3 point=2 t=-1.000 et=537.883</Score>
-<Score et="537.9">Luis Dias#2362(0) lap=4 point=0 t=-1.000 et=537.883</Score>
-<ChatMessage et="538.2">F Witkowski: i spun times </ChatMessage>
-<TrackLimits Driver="P-A Fugeekies" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="541.4">No Further Action</TrackLimits>
-<ChatMessage et="546.2">E Matulac: shit</ChatMessage>
-<ChatMessage et="549.5">F Witkowski: i dont know how to brake</ChatMessage>
-<ChatMessage et="559.7">E Matulac: im on controller</ChatMessage>
-<ChatMessage et="560.1">F Witkowski: *two times</ChatMessage>
-<Score et="560.2">MR Thibault(17) lap=3 point=0 t=144.342 et=560.200</Score>
+<TrackLimits Driver="Driver 3335" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="35.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3335" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="35.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3335" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="47.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3335" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="47.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3604" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="51.8">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 3604" ID="12" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="51.8">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="56.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="56.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3604" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="64.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3604" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="64.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="0" WarningPoints="0.5" CurrentPoints="0.5" Resolution="5" et="66.2">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="72.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="72.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="85.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="85.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="98.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="98.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="133.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="133.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="161.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="165.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3901" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3901" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="202.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2886" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="212.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2886" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="212.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="217.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="219.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="219.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="230.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="236.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="249.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="252.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="253.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4585" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="257.1">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4585" ID="6" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="257.1">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="279.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="325.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3856" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3856" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="334.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="363.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="363.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4030" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="369.3">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 2925" ID="5" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="5" et="369.3">Invalid Lap Cut Track</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4697" ID="7" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="383.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="391.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="391.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4468" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4468" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="398.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="404.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4774" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3901" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3901" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="444.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4585" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="450.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4585" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="7" et="450.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="462.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="462.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="463.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4258" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="463.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3376" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="510.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="541.4">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>4</MostLapsCompleted>
 <Driver>

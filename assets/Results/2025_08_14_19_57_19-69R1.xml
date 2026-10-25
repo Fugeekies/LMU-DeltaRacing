@@ -37,646 +37,180 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Sent et="0.0">&quot;Michael Campbell&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Frank Bauer&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;PARCE suizo&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Marcel Prosty&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Dmitriy Butcher&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Brent Timmermans&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Filip Kamarad&quot; has taken the wheel.</Sent>
-<Sent et="4.0">&quot;Abdulrahman El-Hagracy&quot; has taken the wheel.</Sent>
-<Sent et="4.6">&quot;Linh Vo&quot; has taken the wheel.</Sent>
-<Sent et="5.0">&quot;Pablo Rodriguez#2402&quot; has taken the wheel.</Sent>
-<Sent et="5.0">&quot;ailson souza&quot; has taken the wheel.</Sent>
-<Sent et="5.1">&quot;Sanmanat Ruenroengchan&quot; has taken the wheel.</Sent>
-<Sent et="6.1">&quot;Zinho Melo&quot; has taken the wheel.</Sent>
-<Sent et="8.2">&quot;Kemal Malovcic&quot; has taken the wheel.</Sent>
-<Sent et="8.2">&quot;Gabriel Magevski&quot; has taken the wheel.</Sent>
-<Penalty et="144.2">ailson souza received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty et="144.2">Dmitriy Butcher received Drive Thru penalty, 0s, 0laps for &quot;Speeding&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="166.5">Brent Timmermans(0) reported contact (85.95) with another vehicle Zinho Melo(1)</Incident>
-<Incident et="166.6">Filip Kamarad(3) reported contact (270.27) with another vehicle Gabriel Magevski(19)</Incident>
-<Incident et="166.6">Zinho Melo(1) reported contact (8.67) with another vehicle Brent Timmermans(0)</Incident>
-<Incident et="166.8">Gabriel Magevski(19) reported contact (61.46) with another vehicle Filip Kamarad(3)</Incident>
-<Incident et="166.9">Gabriel Magevski(19) reported contact (146.11) with another vehicle Filip Kamarad(3)</Incident>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="179.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="180.2">Warning</TrackLimits>
-<Score et="186.5">Abdulrahman El-Hagracy(18) lap=0 point=1 t=42.209 et=186.440</Score>
-<Score et="188.5">Brent Timmermans(0) lap=0 point=1 t=44.227 et=188.460</Score>
-<Score et="188.7">Kemal Malovcic(12) lap=0 point=1 t=44.385 et=188.620</Score>
-<Score et="188.7">Zinho Melo(1) lap=0 point=1 t=44.349 et=188.580</Score>
-<Score et="189.1">P-A Fugeekies(6) lap=0 point=1 t=44.863 et=189.085</Score>
-<Score et="190.0">Michael Campbell(2) lap=0 point=1 t=45.717 et=189.940</Score>
-<Score et="190.3">Pablo Rodriguez#2402(8) lap=0 point=1 t=45.892 et=190.120</Score>
-<Score et="190.4">Linh Vo(20) lap=0 point=1 t=46.046 et=190.280</Score>
-<Score et="191.9">Gabriel Magevski(19) lap=0 point=1 t=-1.000 et=191.540</Score>
-<Score et="191.9">Filip Kamarad(3) lap=0 point=1 t=47.562 et=191.800</Score>
-<Score et="191.9">Sanmanat Ruenroengchan(13) lap=0 point=1 t=47.383 et=191.620</Score>
-<Score et="192.6">Dmitriy Butcher(17) lap=0 point=1 t=-1.000 et=192.460</Score>
-<Score et="192.8">Marcel Prosty(9) lap=0 point=1 t=48.548 et=192.780</Score>
-<Score et="193.7">Frank Bauer(10) lap=0 point=1 t=49.464 et=193.700</Score>
-<Score et="194.4">ailson souza(16) lap=0 point=1 t=-1.000 et=194.140</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="199.8">No Further Action</TrackLimits>
-<Sector et="202.8">Dmitriy Butcher(17) reports new suspension damage</Sector>
-<Incident et="202.9">Dmitriy Butcher(17) reported contact (604.67) with another vehicle Sanmanat Ruenroengchan(13)</Incident>
-<Sector et="202.9">Sanmanat Ruenroengchan(13) reports new suspension damage</Sector>
-<Sector et="202.9">Dmitriy Butcher(17) reports new suspension damage</Sector>
-<Incident et="203.0">Sanmanat Ruenroengchan(13) reported contact (645.07) with another vehicle Dmitriy Butcher(17)</Incident>
-<Incident et="212.5">Dmitriy Butcher(17) reported contact (88.46) with another vehicle Sanmanat Ruenroengchan(13)</Incident>
-<Incident et="212.6">Sanmanat Ruenroengchan(13) reported contact (980.99) with another vehicle Dmitriy Butcher(17)</Incident>
-<Incident et="212.9">Filip Kamarad(3) reported contact (477.17) with another vehicle Linh Vo(20)</Incident>
-<Incident et="213.0">Linh Vo(20) reported contact (581.02) with another vehicle Filip Kamarad(3)</Incident>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="217.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="218.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="235.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="236.3">No Further Action</TrackLimits>
-<Incident et="241.3">Michael Campbell(2) reported contact (756.08) with another vehicle Pablo Rodriguez#2402(8)</Incident>
-<Incident et="241.4">Pablo Rodriguez#2402(8) reported contact (740.96) with another vehicle Michael Campbell(2)</Incident>
-<TrackLimits Driver="Michael Campbell" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="241.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="243.4">No Further Action</TrackLimits>
-<Sector et="245.4">Pablo Rodriguez#2402(8) reports new suspension damage</Sector>
-<Incident et="245.5">Pablo Rodriguez#2402(8) reported contact (5126.48) with Immovable</Incident>
-<Incident et="250.2">Pablo Rodriguez#2402(8) reported contact (824.83) with Immovable</Incident>
-<Sector Driver="Abdulrahman El-Hagracy" ID="18" Sector="2" Class="GT3" et="251.1">Abdulrahman El-Hagracy(18) set new best for sector 2</Sector>
-<Score et="251.1">Abdulrahman El-Hagracy(18) lap=0 point=2 t=106.786 et=251.020</Score>
-<Score et="254.2">Brent Timmermans(0) lap=0 point=2 t=109.944 et=254.180</Score>
-<Score et="254.7">Zinho Melo(1) lap=0 point=2 t=110.238 et=254.480</Score>
-<Score et="255.0">Kemal Malovcic(12) lap=0 point=2 t=110.715 et=254.940</Score>
-<Score et="256.7">P-A Fugeekies(6) lap=0 point=2 t=-1.000 et=256.676</Score>
-<Score et="258.1">Michael Campbell(2) lap=0 point=2 t=113.807 et=258.040</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Pablo Rodriguez#2402" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.5">No Further Action</TrackLimits>
-<Score et="259.1">Filip Kamarad(3) lap=0 point=2 t=114.846 et=259.080</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="260.4">No Further Action</TrackLimits>
-<Score et="263.5">Marcel Prosty(9) lap=0 point=2 t=119.133 et=263.360</Score>
-<Score et="263.6">Dmitriy Butcher(17) lap=0 point=2 t=-1.000 et=263.600</Score>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="264.0">No Further Action</TrackLimits>
-<Score et="264.3">Linh Vo(20) lap=0 point=2 t=119.968 et=264.200</Score>
-<Score et="264.5">ailson souza(16) lap=0 point=2 t=-1.000 et=264.340</Score>
-<Score et="265.2">Sanmanat Ruenroengchan(13) lap=0 point=2 t=120.741 et=264.980</Score>
-<Score et="265.7">Frank Bauer(10) lap=0 point=2 t=121.442 et=265.680</Score>
-<Score et="268.6">Gabriel Magevski(19) lap=0 point=2 t=-1.000 et=268.380</Score>
-<Score et="274.1">Pablo Rodriguez#2402(8) lap=0 point=2 t=129.569 et=273.800</Score>
-<TrackLimits Driver="Kemal Malovcic" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.6">No Further Action</TrackLimits>
-<Incident et="287.6">Dmitriy Butcher(17) reported contact (2760.20) with Immovable</Incident>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="290.4">No Further Action</TrackLimits>
-<Sector Driver="Abdulrahman El-Hagracy" ID="18" Sector="3" Class="GT3" et="292.7">Abdulrahman El-Hagracy(18) set new best for sector 3</Sector>
-<Score et="292.7">Abdulrahman El-Hagracy(18) lap=1 point=0 t=148.417 et=292.640</Score>
-<Sector Driver="Brent Timmermans" ID="0" Sector="3" Class="GT3" et="295.0">Brent Timmermans(0) set new best for sector 3</Sector>
-<Score et="295.0">Brent Timmermans(0) lap=1 point=0 t=150.775 et=295.000</Score>
-<Score et="295.6">Zinho Melo(1) lap=1 point=0 t=151.162 et=295.400</Score>
-<Score et="295.9">Kemal Malovcic(12) lap=1 point=0 t=151.645 et=295.880</Score>
-<Score et="298.6">P-A Fugeekies(6) lap=1 point=0 t=154.397 et=298.619</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.6">No Further Action</TrackLimits>
-<Score et="299.8">Michael Campbell(2) lap=1 point=0 t=155.482 et=299.720</Score>
-<Score et="300.5">Filip Kamarad(3) lap=1 point=0 t=156.248 et=300.480</Score>
-<Score et="304.7">Marcel Prosty(9) lap=1 point=0 t=160.380 et=304.620</Score>
-<Score et="307.7">Linh Vo(20) lap=1 point=0 t=163.316 et=307.540</Score>
-<Score et="308.3">Frank Bauer(10) lap=1 point=0 t=163.967 et=308.200</Score>
-<TrackLimits Driver="ailson souza" ID="16" Lap="0" WarningPoints="1" CurrentPoints="1" Resolution="2" et="308.9">Warning</TrackLimits>
-<Score et="310.8">Gabriel Magevski(19) lap=1 point=0 t=-1.000 et=310.600</Score>
-<Score et="319.5">ailson souza(16) lap=1 point=0 t=-1.000 et=319.260</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="320.4">Warning</TrackLimits>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="320.8">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="324.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.6">No Further Action</TrackLimits>
-<Penalty et="330.2">ailson souza served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="330.9">No Further Action</TrackLimits>
-<Score et="332.0">Abdulrahman El-Hagracy(18) lap=1 point=1 t=-1.000 et=331.980</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="333.8">No Further Action</TrackLimits>
-<Sector Driver="Brent Timmermans" ID="0" Sector="1" Class="GT3" et="334.1">Brent Timmermans(0) set new best for sector 1</Sector>
-<Score et="334.1">Brent Timmermans(0) lap=1 point=1 t=39.088 et=334.100</Score>
-<Sector Driver="Zinho Melo" ID="1" Sector="1" Class="GT3" et="334.4">Zinho Melo(1) set new best for sector 1</Sector>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.5">No Further Action</TrackLimits>
-<Score et="334.5">Zinho Melo(1) lap=1 point=1 t=38.911 et=334.300</Score>
-<Score et="336.0">Kemal Malovcic(12) lap=1 point=1 t=40.074 et=335.960</Score>
-<Score et="337.9">P-A Fugeekies(6) lap=1 point=1 t=39.250 et=337.869</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="339.2">Warning</TrackLimits>
-<Score et="339.6">Michael Campbell(2) lap=1 point=1 t=39.825 et=339.540</Score>
-<Score et="339.8">Filip Kamarad(3) lap=1 point=1 t=39.183 et=339.660</Score>
-<Score et="344.0">Marcel Prosty(9) lap=1 point=1 t=39.326 et=343.940</Score>
-<Score et="347.4">Linh Vo(20) lap=1 point=1 t=39.726 et=347.280</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="347.6">No Further Action</TrackLimits>
-<Score et="348.0">Frank Bauer(10) lap=1 point=1 t=39.773 et=347.980</Score>
-<TrackLimits Driver="Zinho Melo" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="348.3">No Further Action</TrackLimits>
-<Score et="351.1">Gabriel Magevski(19) lap=1 point=1 t=-1.000 et=350.920</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="358.1">No Further Action</TrackLimits>
-<Score et="365.6">ailson souza(16) lap=1 point=1 t=46.190 et=365.460</Score>
-<TrackLimits Driver="ailson souza" ID="16" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="5" et="372.2">No Further Action</TrackLimits>
-<Score et="372.9">Sanmanat Ruenroengchan(13) lap=1 point=0 t=228.395 et=372.620</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="373.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="373.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="382.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="385.0">No Further Action</TrackLimits>
-<Sector et="393.5">Zinho Melo(1) reports new suspension damage</Sector>
-<Incident et="393.5">Zinho Melo(1) reported contact (6675.47) with Immovable</Incident>
-<TrackLimits Driver="Zinho Melo" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="394.8">No Further Action</TrackLimits>
-<Score et="395.8">Dmitriy Butcher(17) lap=1 point=0 t=-1.000 et=395.760</Score>
-<Score et="397.7">Abdulrahman El-Hagracy(18) lap=1 point=2 t=-1.000 et=397.620</Score>
-<Score et="399.7">Brent Timmermans(0) lap=1 point=2 t=104.692 et=399.700</Score>
-<Score et="402.7">Kemal Malovcic(12) lap=1 point=2 t=106.790 et=402.660</Score>
-<Score et="405.0">P-A Fugeekies(6) lap=1 point=2 t=106.330 et=404.950</Score>
-<Score et="406.0">Zinho Melo(1) lap=1 point=2 t=110.481 et=405.880</Score>
-<Score et="406.1">Michael Campbell(2) lap=1 point=2 t=106.263 et=405.980</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="406.3">No Further Action</TrackLimits>
-<Score et="406.5">Filip Kamarad(3) lap=1 point=2 t=105.967 et=406.440</Score>
-<Penalty et="406.7">Dmitriy Butcher received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=2, 1st=Drive Thru,0s</Penalty>
-<Score et="408.8">Marcel Prosty(9) lap=1 point=2 t=104.157 et=408.760</Score>
-<Score et="414.0">Frank Bauer(10) lap=1 point=2 t=105.772 et=413.980</Score>
-<Score et="418.6">Linh Vo(20) lap=1 point=2 t=110.885 et=418.440</Score>
-<Score et="419.1">Gabriel Magevski(19) lap=1 point=2 t=-1.000 et=418.960</Score>
-<Score et="420.7">Sanmanat Ruenroengchan(13) lap=1 point=1 t=47.878 et=420.500</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="422.8">No Further Action</TrackLimits>
-<Score et="431.0">ailson souza(16) lap=1 point=2 t=111.650 et=430.920</Score>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="437.9">No Further Action</TrackLimits>
-<Sector Driver="Brent Timmermans" ID="0" Sector="3" Class="GT3" et="440.4">Brent Timmermans(0) set new best for sector 3</Sector>
-<Score et="440.4">Brent Timmermans(0) lap=2 point=0 t=145.341 et=440.340</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="442.4">No Further Action</TrackLimits>
-<Score et="442.9">Dmitriy Butcher(17) lap=1 point=1 t=47.012 et=442.780</Score>
-<Score et="443.6">Kemal Malovcic(12) lap=2 point=0 t=147.683 et=443.560</Score>
-<Score et="443.9">Abdulrahman El-Hagracy(18) lap=2 point=0 t=-1.000 et=443.860</Score>
-<Score et="446.4">P-A Fugeekies(6) lap=2 point=0 t=147.814 et=446.433</Score>
-<Score et="448.4">Filip Kamarad(3) lap=2 point=0 t=147.856 et=448.340</Score>
-<Score et="449.3">Michael Campbell(2) lap=2 point=0 t=149.531 et=449.240</Score>
-<Score et="449.7">Marcel Prosty(9) lap=2 point=0 t=145.051 et=449.660</Score>
-<Incident et="450.3">Frank Bauer(10) reported contact (1191.92) with Immovable</Incident>
-<Incident et="451.5">Frank Bauer(10) reported contact (652.14) with Immovable</Incident>
-<Incident et="455.1">Frank Bauer(10) reported contact (59.82) with Immovable</Incident>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="456.6">No Further Action</TrackLimits>
-<Incident et="457.1">Frank Bauer(10) reported contact (27.13) with Immovable</Incident>
-<Incident et="457.8">Frank Bauer(10) reported contact (39.13) with Immovable</Incident>
-<Incident et="458.0">Frank Bauer(10) reported contact (66.84) with Immovable</Incident>
-<Incident et="458.2">Frank Bauer(10) reported contact (132.58) with Immovable</Incident>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.3">No Further Action</TrackLimits>
-<Incident et="458.4">Frank Bauer(10) reported contact (211.66) with Immovable</Incident>
-<Incident et="459.2">Frank Bauer(10) reported contact (243.79) with Immovable</Incident>
-<Score et="460.3">Linh Vo(20) lap=2 point=0 t=152.441 et=460.000</Score>
-<Incident et="461.2">Frank Bauer(10) reported contact (115.12) with Immovable</Incident>
-<Score et="462.1">Gabriel Magevski(19) lap=2 point=0 t=-1.000 et=461.880</Score>
-<Incident et="463.4">Frank Bauer(10) reported contact (473.78) with Immovable</Incident>
-<Incident et="467.8">Frank Bauer(10) reported contact (653.40) with Immovable</Incident>
-<Incident et="471.7">Frank Bauer(10) reported contact (947.22) with Immovable</Incident>
-<Score et="472.5">ailson souza(16) lap=2 point=0 t=153.050 et=472.320</Score>
-<Incident et="475.4">Frank Bauer(10) reported contact (846.78) with Immovable</Incident>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="475.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="475.9">No Further Action</TrackLimits>
-<Score et="479.0">Brent Timmermans(0) lap=2 point=1 t=38.674 et=479.020</Score>
-<Sector Driver="Brent Timmermans" ID="0" Sector="1" Class="GT3" et="479.0">Brent Timmermans(0) set new best for sector 1</Sector>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.5">No Further Action</TrackLimits>
-<Score et="483.2">Abdulrahman El-Hagracy(18) lap=2 point=1 t=39.296 et=483.140</Score>
-<Score et="483.5">Kemal Malovcic(12) lap=2 point=1 t=39.881 et=483.440</Score>
-<Score et="485.3">P-A Fugeekies(6) lap=2 point=1 t=38.887 et=485.320</Score>
-<Score et="487.0">Frank Bauer(10) lap=2 point=0 t=178.812 et=487.020</Score>
-<Score et="487.3">Sanmanat Ruenroengchan(13) lap=1 point=2 t=114.533 et=487.160</Score>
-<Score et="489.0">Filip Kamarad(3) lap=2 point=1 t=40.627 et=488.960</Score>
-<Score et="489.1">Michael Campbell(2) lap=2 point=1 t=39.799 et=489.040</Score>
-<Score et="489.5">Marcel Prosty(9) lap=2 point=1 t=39.745 et=489.400</Score>
-<Incident et="492.8">Filip Kamarad(3) reported contact (1474.76) with another vehicle Michael Campbell(2)</Incident>
-<Incident et="492.8">Michael Campbell(2) reported contact (1462.26) with another vehicle Filip Kamarad(3)</Incident>
-<TrackLimits Driver="Michael Campbell" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="496.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="497.1">No Further Action</TrackLimits>
-<Score et="500.5">Linh Vo(20) lap=2 point=1 t=40.246 et=500.240</Score>
-<Score et="502.5">Gabriel Magevski(19) lap=2 point=1 t=40.444 et=502.320</Score>
-<Score et="509.7">Dmitriy Butcher(17) lap=1 point=2 t=113.853 et=509.620</Score>
-<Score et="512.2">ailson souza(16) lap=2 point=1 t=39.651 et=511.960</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="526.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="527.2">No Further Action</TrackLimits>
-<Score et="527.9">Frank Bauer(10) lap=2 point=1 t=40.846 et=527.860</Score>
-<Score et="529.0">Sanmanat Ruenroengchan(13) lap=2 point=0 t=156.098 et=528.720</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="529.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.6">No Further Action</TrackLimits>
-<Score et="544.6">Brent Timmermans(0) lap=2 point=2 t=104.218 et=544.560</Score>
-<Score et="546.1">PARCE suizo(14) lap=0 point=1 t=-1.000 et=546.100</Score>
-<Score et="548.6">Abdulrahman El-Hagracy(18) lap=2 point=2 t=104.687 et=548.540</Score>
-<Score et="549.2">Kemal Malovcic(12) lap=2 point=2 t=105.610 et=549.180</Score>
-<TrackLimits Driver="Kemal Malovcic" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.1">No Further Action</TrackLimits>
-<Score et="551.6">P-A Fugeekies(6) lap=2 point=2 t=105.159 et=551.592</Score>
-<Score et="555.5">Filip Kamarad(3) lap=2 point=2 t=107.057 et=555.400</Score>
-<Score et="555.9">Michael Campbell(2) lap=2 point=2 t=106.526 et=555.780</Score>
-<Score et="556.6">Marcel Prosty(9) lap=2 point=2 t=106.889 et=556.560</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="556.8">No Further Action</TrackLimits>
-<Sector et="557.1">Gabriel Magevski(19) reports new suspension damage</Sector>
-<Incident et="557.2">Linh Vo(20) reported contact (1119.81) with another vehicle Gabriel Magevski(19)</Incident>
-<Incident et="557.2">Gabriel Magevski(19) reported contact (2030.11) with another vehicle Linh Vo(20)</Incident>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="2" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="559.8">Warning</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="562.5">No Further Action</TrackLimits>
-<Score et="563.4">Dmitriy Butcher(17) lap=2 point=0 t=167.507 et=563.280</Score>
-<Score et="568.7">Sanmanat Ruenroengchan(13) lap=2 point=1 t=39.836 et=568.560</Score>
-<Score et="569.5">Gabriel Magevski(19) lap=2 point=2 t=107.382 et=569.260</Score>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="569.9">No Further Action</TrackLimits>
-<Score et="573.2">Linh Vo(20) lap=2 point=2 t=113.030 et=573.020</Score>
-<Penalty et="574.0">Dmitriy Butcher served 1st Drive Thru penalty, result: penalties=1, 1st=Drive Thru,10s</Penalty>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="577.1">Warning</TrackLimits>
-<Score et="577.8">ailson souza(16) lap=2 point=2 t=105.185 et=577.500</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="579.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="580.5">No Further Action</TrackLimits>
-<Score et="585.5">Brent Timmermans(0) lap=3 point=0 t=145.092 et=585.440</Score>
-<Incident et="586.0">Michael Campbell(2) reported contact (949.27) with another vehicle Marcel Prosty(9)</Incident>
-<Incident et="586.0">Marcel Prosty(9) reported contact (920.77) with another vehicle Michael Campbell(2)</Incident>
-<Score et="589.3">Abdulrahman El-Hagracy(18) lap=3 point=0 t=-1.000 et=589.200</Score>
-<Score et="590.4">Kemal Malovcic(12) lap=3 point=0 t=146.741 et=590.300</Score>
-<Score et="592.9">P-A Fugeekies(6) lap=3 point=0 t=-1.000 et=592.865</Score>
-<Score et="593.9">Frank Bauer(10) lap=2 point=2 t=106.825 et=593.840</Score>
-<Score et="596.9">Filip Kamarad(3) lap=3 point=0 t=148.500 et=596.840</Score>
-<Score et="598.4">Michael Campbell(2) lap=3 point=0 t=149.117 et=598.360</Score>
-<Score et="603.6">Marcel Prosty(9) lap=3 point=0 t=153.853 et=603.520</Score>
-<Incident et="610.0">Marcel Prosty(9) reported contact (339.84) with Immovable</Incident>
-<Score et="610.8">Dmitriy Butcher(17) lap=2 point=1 t=47.493 et=610.760</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.4">No Further Action</TrackLimits>
-<Score et="611.8">Gabriel Magevski(19) lap=3 point=0 t=149.700 et=611.580</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="612.2">No Further Action</TrackLimits>
-<Score et="612.8">PARCE suizo(14) lap=0 point=2 t=-1.000 et=612.760</Score>
-<Score et="615.8">Linh Vo(20) lap=3 point=0 t=155.498 et=615.480</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="3" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="617.0">Warning</TrackLimits>
-<Score et="618.8">ailson souza(16) lap=3 point=0 t=146.273 et=618.600</Score>
-<TrackLimits Driver="PARCE suizo" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.6">No Further Action</TrackLimits>
-<Score et="624.3">Brent Timmermans(0) lap=3 point=1 t=38.817 et=624.260</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="626.5">No Further Action</TrackLimits>
-<Score et="628.3">Abdulrahman El-Hagracy(18) lap=3 point=1 t=-1.000 et=628.200</Score>
-<Score et="630.6">Kemal Malovcic(12) lap=3 point=1 t=40.198 et=630.500</Score>
-<Score et="631.8">P-A Fugeekies(6) lap=3 point=1 t=38.947 et=631.813</Score>
-<Score et="634.8">Frank Bauer(10) lap=3 point=0 t=147.722 et=634.740</Score>
-<Score et="635.2">Sanmanat Ruenroengchan(13) lap=2 point=2 t=106.227 et=634.960</Score>
-<Score et="638.7">Michael Campbell(2) lap=3 point=1 t=40.223 et=638.580</Score>
-<Score et="639.0">Filip Kamarad(3) lap=3 point=1 t=42.088 et=638.920</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="639.0">No Further Action</TrackLimits>
-<Score et="642.9">Marcel Prosty(9) lap=3 point=1 t=39.294 et=642.820</Score>
-<TrackLimits Driver="ailson souza" ID="16" Lap="3" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="646.6">Warning</TrackLimits>
-<Score et="651.7">Gabriel Magevski(19) lap=3 point=1 t=39.873 et=651.460</Score>
-<Score et="655.1">PARCE suizo(14) lap=1 point=0 t=-1.000 et=655.120</Score>
-<Score et="656.4">Linh Vo(20) lap=3 point=1 t=40.652 et=656.140</Score>
-<Score et="656.7">Zinho Melo(1) lap=2 point=0 t=361.095 et=656.480</Score>
-<Score et="657.9">ailson souza(16) lap=3 point=1 t=-1.000 et=657.680</Score>
-<Score et="674.5">Frank Bauer(10) lap=3 point=1 t=39.784 et=674.520</Score>
-<Score et="677.0">Sanmanat Ruenroengchan(13) lap=3 point=0 t=148.041 et=676.760</Score>
-<Score et="678.0">Dmitriy Butcher(17) lap=2 point=2 t=114.662 et=677.940</Score>
-<Incident et="679.8">Linh Vo(20) reported contact (267.11) with another vehicle ailson souza(16)</Incident>
-<Incident et="679.8">ailson souza(16) reported contact (35.30) with another vehicle Linh Vo(20)</Incident>
-<Score et="689.9">Brent Timmermans(0) lap=3 point=2 t=104.446 et=689.880</Score>
-<Score et="693.3">Abdulrahman El-Hagracy(18) lap=3 point=2 t=-1.000 et=693.200</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="693.9">No Further Action</TrackLimits>
-<Score et="696.7">Kemal Malovcic(12) lap=3 point=2 t=106.351 et=696.660</Score>
-<Score et="698.4">P-A Fugeekies(6) lap=3 point=2 t=105.553 et=698.418</Score>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="703.2">No Further Action</TrackLimits>
-<Score et="703.9">Zinho Melo(1) lap=2 point=1 t=47.275 et=703.760</Score>
-<Score et="704.5">Michael Campbell(2) lap=3 point=2 t=106.128 et=704.500</Score>
-<Score et="706.7">Filip Kamarad(3) lap=3 point=2 t=109.770 et=706.600</Score>
-<Score et="707.7">Marcel Prosty(9) lap=3 point=2 t=104.136 et=707.660</Score>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.6">No Further Action</TrackLimits>
-<Score et="717.2">Sanmanat Ruenroengchan(13) lap=3 point=1 t=40.262 et=717.020</Score>
-<Score et="718.7">Gabriel Magevski(19) lap=3 point=2 t=106.889 et=718.480</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="720.6">No Further Action</TrackLimits>
-<Score et="724.0">ailson souza(16) lap=3 point=2 t=-1.000 et=723.720</Score>
-<Score et="727.6">Linh Vo(20) lap=3 point=2 t=111.869 et=727.360</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="730.2">No Further Action</TrackLimits>
-<Score et="730.8">Brent Timmermans(0) lap=4 point=0 t=145.303 et=730.740</Score>
-<Score et="733.8">Abdulrahman El-Hagracy(18) lap=4 point=0 t=-1.000 et=733.720</Score>
-<Score et="737.5">Kemal Malovcic(12) lap=4 point=0 t=147.094 et=737.400</Score>
-<Score et="739.9">Dmitriy Butcher(17) lap=3 point=0 t=176.607 et=739.880</Score>
-<Score et="740.0">P-A Fugeekies(6) lap=4 point=0 t=147.131 et=739.996</Score>
-<Score et="741.6">Frank Bauer(10) lap=3 point=2 t=106.802 et=741.540</Score>
-<Incident et="744.1">Zinho Melo(1) reported contact (3135.44) with Immovable</Incident>
-<Score et="746.4">Michael Campbell(2) lap=4 point=0 t=148.023 et=746.380</Score>
-<Score et="748.0">Filip Kamarad(3) lap=4 point=0 t=151.121 et=747.960</Score>
-<Score et="748.6">Marcel Prosty(9) lap=4 point=0 t=145.033 et=748.540</Score>
-<TrackLimits Driver="Zinho Melo" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="755.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="760.4">No Further Action</TrackLimits>
-<Score et="760.9">Gabriel Magevski(19) lap=4 point=0 t=149.195 et=760.780</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="4" WarningPoints="0.5" CurrentPoints="2" Resolution="2" et="761.6">Warning</TrackLimits>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="764.6">No Further Action</TrackLimits>
-<Score et="765.0">ailson souza(16) lap=4 point=0 t=-1.000 et=764.800</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="766.2">No Further Action</TrackLimits>
-<Sector Driver="Brent Timmermans" ID="0" Sector="1" Class="GT3" et="769.4">Brent Timmermans(0) set new best for sector 1</Sector>
-<Score et="769.4">Brent Timmermans(0) lap=4 point=1 t=38.658 et=769.400</Score>
-<Score et="769.7">Linh Vo(20) lap=4 point=0 t=153.962 et=769.440</Score>
-<Score et="772.7">Abdulrahman El-Hagracy(18) lap=4 point=1 t=-1.000 et=772.640</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.0">No Further Action</TrackLimits>
-<Score et="777.1">Kemal Malovcic(12) lap=4 point=1 t=39.645 et=777.040</Score>
-<Score et="779.4">P-A Fugeekies(6) lap=4 point=1 t=39.359 et=779.355</Score>
-<Score et="782.6">Frank Bauer(10) lap=4 point=0 t=147.851 et=782.580</Score>
-<Score et="785.2">Sanmanat Ruenroengchan(13) lap=3 point=2 t=108.093 et=784.860</Score>
-<Score et="786.4">Michael Campbell(2) lap=4 point=1 t=40.004 et=786.380</Score>
-<Score et="787.1">Dmitriy Butcher(17) lap=3 point=1 t=47.152 et=787.020</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="787.8">No Further Action</TrackLimits>
-<Score et="787.9">Zinho Melo(1) lap=2 point=2 t=131.269 et=787.760</Score>
-<Score et="788.0">Filip Kamarad(3) lap=4 point=1 t=39.967 et=787.920</Score>
-<Score et="788.1">Marcel Prosty(9) lap=4 point=1 t=39.460 et=788.020</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="795.2">No Further Action</TrackLimits>
-<Score et="801.1">Gabriel Magevski(19) lap=4 point=1 t=40.181 et=800.960</Score>
-<Score et="804.0">ailson souza(16) lap=4 point=1 t=39.085 et=803.880</Score>
-<Score et="809.5">Linh Vo(20) lap=4 point=1 t=39.889 et=809.340</Score>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="811.1">No Further Action</TrackLimits>
-<Incident et="818.3">Filip Kamarad(3) reported contact (467.97) with another vehicle Marcel Prosty(9)</Incident>
-<Incident et="818.3">Marcel Prosty(9) reported contact (415.61) with another vehicle Filip Kamarad(3)</Incident>
-<Score et="822.7">Frank Bauer(10) lap=4 point=1 t=40.008 et=822.600</Score>
-<Score et="827.0">Sanmanat Ruenroengchan(13) lap=4 point=0 t=149.978 et=826.740</Score>
-<Score et="835.2">Brent Timmermans(0) lap=4 point=2 t=104.397 et=835.140</Score>
-<TrackLimits Driver="Kemal Malovcic" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="837.0">No Further Action</TrackLimits>
-<Score et="837.8">Abdulrahman El-Hagracy(18) lap=4 point=2 t=-1.000 et=837.680</Score>
-<Score et="843.0">Kemal Malovcic(12) lap=4 point=2 t=105.571 et=842.960</Score>
-<Score et="845.9">P-A Fugeekies(6) lap=4 point=2 t=105.906 et=845.902</Score>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="849.2">No Further Action</TrackLimits>
-<Score et="852.2">Michael Campbell(2) lap=4 point=2 t=105.753 et=852.140</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="852.6">No Further Action</TrackLimits>
-<Score et="853.7">Filip Kamarad(3) lap=4 point=2 t=105.689 et=853.640</Score>
-<Score et="854.1">Marcel Prosty(9) lap=4 point=2 t=105.441 et=854.000</Score>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="855.5">No Further Action</TrackLimits>
-<Score et="855.8">Dmitriy Butcher(17) lap=3 point=2 t=115.921 et=855.800</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="857.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="4" WarningPoints="0" CurrentPoints="2" Resolution="5" et="862.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Kemal Malovcic" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="866.1">No Further Action</TrackLimits>
-<Score et="867.5">Sanmanat Ruenroengchan(13) lap=4 point=1 t=40.567 et=867.320</Score>
-<Score et="868.0">Gabriel Magevski(19) lap=4 point=2 t=106.978 et=867.760</Score>
-<Score et="869.4">ailson souza(16) lap=4 point=2 t=104.325 et=869.120</Score>
-<Sector Driver="Brent Timmermans" ID="0" Sector="3" Class="GT3" et="875.7">Brent Timmermans(0) set new best for sector 3</Sector>
-<Score et="875.7">Brent Timmermans(0) lap=5 point=0 t=144.910 et=875.660</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.6">No Further Action</TrackLimits>
-<Score et="878.8">Abdulrahman El-Hagracy(18) lap=5 point=0 t=-1.000 et=878.700</Score>
-<Score et="881.2">Linh Vo(20) lap=4 point=2 t=111.651 et=881.100</Score>
-<Score et="884.4">Kemal Malovcic(12) lap=5 point=0 t=146.959 et=884.360</Score>
-<Score et="887.4">P-A Fugeekies(6) lap=5 point=0 t=147.440 et=887.436</Score>
-<Score et="889.2">Frank Bauer(10) lap=4 point=2 t=106.645 et=889.220</Score>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="889.9">No Further Action</TrackLimits>
-<Score et="893.7">Michael Campbell(2) lap=5 point=0 t=147.226 et=893.620</Score>
-<Score et="895.1">Filip Kamarad(3) lap=5 point=0 t=147.133 et=895.080</Score>
-<Score et="895.3">Marcel Prosty(9) lap=5 point=0 t=146.706 et=895.260</Score>
-<Score et="899.7">Dmitriy Butcher(17) lap=4 point=0 t=159.712 et=899.580</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="901.8">No Further Action</TrackLimits>
-<Incident et="902.0">Filip Kamarad(3) reported contact (785.09) with another vehicle Marcel Prosty(9)</Incident>
-<Incident et="902.0">Marcel Prosty(9) reported contact (762.25) with another vehicle Filip Kamarad(3)</Incident>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="904.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="5" WarningPoints="0.75" CurrentPoints="2.75" Resolution="2" et="906.6">Warning</TrackLimits>
-<Score et="910.2">Gabriel Magevski(19) lap=5 point=0 t=149.122 et=909.900</Score>
-<Score et="910.4">ailson souza(16) lap=5 point=0 t=145.393 et=910.200</Score>
-<Score et="914.8">Brent Timmermans(0) lap=5 point=1 t=39.079 et=914.740</Score>
-<Score et="917.6">Abdulrahman El-Hagracy(18) lap=5 point=1 t=-1.000 et=917.500</Score>
-<Score et="918.5">Zinho Melo(1) lap=3 point=0 t=261.877 et=918.360</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.5">No Further Action</TrackLimits>
-<Score et="923.3">Linh Vo(20) lap=5 point=0 t=153.682 et=923.140</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="923.5">Warning</TrackLimits>
-<Score et="924.5">Kemal Malovcic(12) lap=5 point=1 t=40.133 et=924.480</Score>
-<Score et="927.9">P-A Fugeekies(6) lap=5 point=1 t=40.444 et=927.880</Score>
-<Score et="930.3">Frank Bauer(10) lap=5 point=0 t=147.671 et=930.260</Score>
-<Score et="933.8">Michael Campbell(2) lap=5 point=1 t=40.077 et=933.680</Score>
-<Score et="934.5">Filip Kamarad(3) lap=5 point=1 t=39.405 et=934.500</Score>
-<Score et="934.6">Sanmanat Ruenroengchan(13) lap=4 point=2 t=107.688 et=934.440</Score>
-<Score et="934.7">Marcel Prosty(9) lap=5 point=1 t=-1.000 et=934.680</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="936.9">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="938.1">No Further Action</TrackLimits>
-<TrackLimits Driver="ailson souza" ID="16" Lap="5" WarningPoints="0.5" CurrentPoints="2" Resolution="2" et="938.9">Warning</TrackLimits>
-<Score et="939.6">Dmitriy Butcher(17) lap=4 point=1 t=39.913 et=939.500</Score>
-<Score et="950.3">ailson souza(16) lap=5 point=1 t=-1.000 et=950.040</Score>
-<Score et="950.4">Gabriel Magevski(19) lap=5 point=1 t=40.321 et=950.220</Score>
-<Incident et="951.4">Filip Kamarad(3) reported contact (868.09) with another vehicle Marcel Prosty(9)</Incident>
-<Incident et="951.4">Marcel Prosty(9) reported contact (919.16) with another vehicle Filip Kamarad(3)</Incident>
-<Score et="965.2">Zinho Melo(1) lap=3 point=1 t=46.677 et=965.040</Score>
-<Score et="966.0">Linh Vo(20) lap=5 point=1 t=42.715 et=965.840</Score>
-<Score et="970.2">Frank Bauer(10) lap=5 point=1 t=39.973 et=970.220</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="973.9">No Further Action</TrackLimits>
-<Score et="976.5">Sanmanat Ruenroengchan(13) lap=5 point=0 t=149.517 et=976.260</Score>
-<Score et="980.6">Brent Timmermans(0) lap=5 point=2 t=104.875 et=980.520</Score>
-<Score et="982.6">Abdulrahman El-Hagracy(18) lap=5 point=2 t=-1.000 et=982.500</Score>
-<Score et="990.4">Kemal Malovcic(12) lap=5 point=2 t=105.974 et=990.320</Score>
-<Score et="994.9">P-A Fugeekies(6) lap=5 point=2 t=107.471 et=994.907</Score>
-<Score et="999.2">Michael Campbell(2) lap=5 point=2 t=105.582 et=999.200</Score>
-<Score et="1000.7">Filip Kamarad(3) lap=5 point=2 t=-1.000 et=1000.660</Score>
-<Score et="1001.2">Marcel Prosty(9) lap=5 point=2 t=-1.000 et=1001.180</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1001.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1002.3">No Further Action</TrackLimits>
-<Score et="1006.7">Dmitriy Butcher(17) lap=4 point=2 t=107.037 et=1006.620</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1010.9">No Further Action</TrackLimits>
-<Score et="1015.7">ailson souza(16) lap=5 point=2 t=-1.000 et=1015.520</Score>
-<Score et="1016.0">Sanmanat Ruenroengchan(13) lap=5 point=1 t=39.513 et=1015.780</Score>
-<Score et="1017.2">Gabriel Magevski(19) lap=5 point=2 t=107.171 et=1017.060</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1017.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1021.0">No Further Action</TrackLimits>
-<Score et="1021.3">Brent Timmermans(0) lap=6 point=0 t=145.564 et=1021.220</Score>
-<Score et="1023.2">Abdulrahman El-Hagracy(18) lap=6 point=0 t=-1.000 et=1023.100</Score>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1024.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1026.8">No Further Action</TrackLimits>
-<Sector et="1028.2">Marcel Prosty(9) reports new suspension damage</Sector>
-<Incident et="1028.3">Marcel Prosty(9) reported contact (4446.83) with Immovable</Incident>
-<Score et="1031.0">Zinho Melo(1) lap=3 point=2 t=112.495 et=1030.860</Score>
-<Incident et="1031.2">Marcel Prosty(9) reported contact (1625.51) with Immovable</Incident>
-<Score et="1031.5">Kemal Malovcic(12) lap=6 point=0 t=147.137 et=1031.500</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1033.3">No Further Action</TrackLimits>
-<Score et="1036.1">P-A Fugeekies(6) lap=6 point=0 t=148.697 et=1036.133</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1038.2">No Further Action</TrackLimits>
-<Score et="1040.3">Linh Vo(20) lap=5 point=2 t=116.912 et=1040.040</Score>
-<Score et="1040.5">Michael Campbell(2) lap=6 point=0 t=146.821 et=1040.440</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1040.5">No Further Action</TrackLimits>
-<Score et="1042.3">Filip Kamarad(3) lap=6 point=0 t=147.151 et=1042.240</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1046.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1047.3">No Further Action</TrackLimits>
-<Incident et="1050.2">Marcel Prosty(9) reported contact (862.43) with Immovable</Incident>
-<Score et="1050.4">Frank Bauer(10) lap=5 point=2 t=120.047 et=1050.300</Score>
-<Incident et="1052.1">Marcel Prosty(9) reported contact (900.14) with Immovable</Incident>
-<TrackLimits Driver="Zinho Melo" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1053.4">No Further Action</TrackLimits>
-<Incident et="1053.5">Marcel Prosty(9) reported contact (363.71) with Immovable</Incident>
-<Incident et="1055.8">Marcel Prosty(9) reported contact (215.36) with Immovable</Incident>
-<Incident et="1055.9">Marcel Prosty(9) reported contact (297.18) with Immovable</Incident>
-<Score et="1057.0">ailson souza(16) lap=6 point=0 t=-1.000 et=1056.740</Score>
-<Incident et="1057.2">Marcel Prosty(9) reported contact (257.79) with Immovable</Incident>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1058.3">No Further Action</TrackLimits>
-<Incident et="1058.9">Marcel Prosty(9) reported contact (263.06) with Immovable</Incident>
-<Sector Driver="Brent Timmermans" ID="0" Sector="1" Class="GT3" et="1059.6">Brent Timmermans(0) set new best for sector 1</Sector>
-<Score et="1059.6">Brent Timmermans(0) lap=6 point=1 t=38.375 et=1059.600</Score>
-<Score et="1059.7">Gabriel Magevski(19) lap=6 point=0 t=149.614 et=1059.520</Score>
-<Score et="1062.2">Abdulrahman El-Hagracy(18) lap=6 point=1 t=38.994 et=1062.100</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="1064.0">Warning</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1064.9">No Further Action</TrackLimits>
-<Score et="1065.7">Dmitriy Butcher(17) lap=5 point=0 t=166.028 et=1065.620</Score>
-<TrackLimits Driver="Michael Campbell" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1066.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1070.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="6" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1070.9">No Further Action</TrackLimits>
-<Score et="1071.5">Kemal Malovcic(12) lap=6 point=1 t=40.011 et=1071.500</Score>
-<Score et="1071.9">Zinho Melo(1) lap=4 point=0 t=153.424 et=1071.800</Score>
-<Incident et="1073.3">Linh Vo(20) reported contact (92.18) with Immovable</Incident>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1074.5">No Further Action</TrackLimits>
-<Score et="1075.4">P-A Fugeekies(6) lap=6 point=1 t=-1.000 et=1075.397</Score>
-<Score et="1080.0">Michael Campbell(2) lap=6 point=1 t=39.483 et=1079.920</Score>
-<Score et="1081.8">Sanmanat Ruenroengchan(13) lap=5 point=2 t=105.291 et=1081.560</Score>
-<Score et="1082.6">Filip Kamarad(3) lap=6 point=1 t=40.272 et=1082.520</Score>
-<Score et="1084.2">Linh Vo(20) lap=6 point=0 t=160.959 et=1084.100</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1086.1">No Further Action</TrackLimits>
-<Score et="1091.9">Frank Bauer(10) lap=6 point=0 t=161.627 et=1091.880</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1093.7">No Further Action</TrackLimits>
-<Score et="1096.2">ailson souza(16) lap=6 point=1 t=39.292 et=1096.040</Score>
-<Score et="1099.9">Gabriel Magevski(19) lap=6 point=1 t=40.150 et=1099.660</Score>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1106.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1108.5">No Further Action</TrackLimits>
-<Score et="1110.8">Zinho Melo(1) lap=4 point=1 t=38.825 et=1110.620</Score>
-<Score et="1112.2">Dmitriy Butcher(17) lap=5 point=1 t=46.570 et=1112.180</Score>
-<Score et="1123.7">Sanmanat Ruenroengchan(13) lap=6 point=0 t=147.147 et=1123.400</Score>
-<Score et="1125.0">Brent Timmermans(0) lap=6 point=2 t=103.811 et=1125.020</Score>
-<Score et="1125.7">Linh Vo(20) lap=6 point=1 t=41.456 et=1125.540</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1125.8">No Further Action</TrackLimits>
-<Score et="1127.4">Abdulrahman El-Hagracy(18) lap=6 point=2 t=104.239 et=1127.340</Score>
-<Score et="1131.8">Frank Bauer(10) lap=6 point=1 t=39.907 et=1131.780</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1133.1">No Further Action</TrackLimits>
-<Score et="1137.5">Kemal Malovcic(12) lap=6 point=2 t=105.957 et=1137.440</Score>
-<Score et="1141.8">P-A Fugeekies(6) lap=6 point=2 t=-1.000 et=1141.782</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Dmitriy Butcher" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.7">No Further Action</TrackLimits>
-<Score et="1146.4">Michael Campbell(2) lap=6 point=2 t=105.907 et=1146.340</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1147.9">No Further Action</TrackLimits>
-<Score et="1149.7">Filip Kamarad(3) lap=6 point=2 t=107.441 et=1149.680</Score>
-<Score et="1151.7">Marcel Prosty(9) lap=6 point=0 t=-1.000 et=1151.600</Score>
-<Incident et="1152.5">Zinho Melo(1) reported contact (1054.07) with Immovable</Incident>
-<Incident et="1156.5">Linh Vo(20) reported contact (664.66) with Immovable</Incident>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1157.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Zinho Melo" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1159.1">No Further Action</TrackLimits>
-<Score et="1161.6">ailson souza(16) lap=6 point=2 t=104.676 et=1161.420</Score>
-<Penalty et="1162.4">Marcel Prosty received Drive Thru penalty, 10s, 0laps for &quot;Speeding In Pitlane&quot;. Result: penalties=1, 1st=Drive Thru,10s</Penalty>
-<Score et="1163.2">Sanmanat Ruenroengchan(13) lap=6 point=1 t=39.663 et=1163.080</Score>
-<Sector Driver="Brent Timmermans" ID="0" Sector="3" Class="GT3" et="1165.5">Brent Timmermans(0) set new best for sector 3</Sector>
-<Score et="1165.6">Brent Timmermans(0) lap=7 point=0 t=144.249 et=1165.460</Score>
-<Score et="1167.1">Gabriel Magevski(19) lap=6 point=2 t=107.402 et=1166.920</Score>
-<Score et="1168.2">Abdulrahman El-Hagracy(18) lap=7 point=0 t=144.987 et=1168.080</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1169.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1175.1">No Further Action</TrackLimits>
-<Score et="1178.6">Kemal Malovcic(12) lap=7 point=0 t=147.039 et=1178.540</Score>
-<Score et="1180.7">Dmitriy Butcher(17) lap=5 point=2 t=115.056 et=1180.680</Score>
-<Score et="1183.4">P-A Fugeekies(6) lap=7 point=0 t=-1.000 et=1183.384</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1184.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1187.4">No Further Action</TrackLimits>
-<Score et="1188.1">Michael Campbell(2) lap=7 point=0 t=147.636 et=1188.060</Score>
-<Score et="1190.4">Zinho Melo(1) lap=4 point=2 t=118.413 et=1190.200</Score>
-<Score et="1191.4">Filip Kamarad(3) lap=7 point=0 t=149.052 et=1191.300</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1194.6">No Further Action</TrackLimits>
-<Score et="1198.4">Marcel Prosty(9) lap=6 point=1 t=46.685 et=1198.280</Score>
-<Score et="1199.5">Frank Bauer(10) lap=6 point=2 t=107.535 et=1199.420</Score>
-<Score et="1201.4">Linh Vo(20) lap=6 point=2 t=117.063 et=1201.160</Score>
-<Score et="1202.7">ailson souza(16) lap=7 point=0 t=145.722 et=1202.480</Score>
-<Score et="1204.1">Brent Timmermans(0) lap=7 point=1 t=38.593 et=1204.060</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1206.1">No Further Action</TrackLimits>
-<Score et="1207.2">Abdulrahman El-Hagracy(18) lap=7 point=1 t=38.939 et=1207.020</Score>
-<Score et="1209.4">Gabriel Magevski(19) lap=7 point=0 t=149.664 et=1209.180</Score>
-<TrackLimits Driver="Brent Timmermans" ID="0" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1211.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1215.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1217.4">No Further Action</TrackLimits>
-<Score et="1219.5">Kemal Malovcic(12) lap=7 point=1 t=40.871 et=1219.400</Score>
-<Score et="1223.0">P-A Fugeekies(6) lap=7 point=1 t=39.570 et=1222.955</Score>
-<Score et="1227.5">Michael Campbell(2) lap=7 point=1 t=39.390 et=1227.460</Score>
-<Score et="1229.4">Sanmanat Ruenroengchan(13) lap=6 point=2 t=105.841 et=1229.240</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1230.2">No Further Action</TrackLimits>
-<Score et="1230.4">Filip Kamarad(3) lap=7 point=1 t=39.079 et=1230.380</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1234.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1235.9">No Further Action</TrackLimits>
-<Score et="1238.5">Dmitriy Butcher(17) lap=6 point=0 t=172.820 et=1238.440</Score>
-<Penalty et="1238.5">Dmitriy Butcher served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,10s</Penalty>
-<Score et="1241.6">Frank Bauer(10) lap=7 point=0 t=149.600 et=1241.480</Score>
-<Score et="1241.7">ailson souza(16) lap=7 point=1 t=39.031 et=1241.500</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1242.2">No Further Action</TrackLimits>
-<Score et="1243.5">Linh Vo(20) lap=7 point=0 t=159.292 et=1243.380</Score>
-<Score et="1249.6">Gabriel Magevski(19) lap=7 point=1 t=40.232 et=1249.400</Score>
-<Score et="1266.7">Marcel Prosty(9) lap=6 point=2 t=115.042 et=1266.640</Score>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1269.3">No Further Action</TrackLimits>
-<Score et="1269.8">Brent Timmermans(0) lap=7 point=2 t=104.253 et=1269.720</Score>
-<Score et="1271.4">Sanmanat Ruenroengchan(13) lap=7 point=0 t=147.638 et=1271.040</Score>
-<Score et="1272.6">Abdulrahman El-Hagracy(18) lap=7 point=2 t=104.347 et=1272.440</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1272.9">No Further Action</TrackLimits>
-<Score et="1281.7">Frank Bauer(10) lap=7 point=1 t=40.118 et=1281.600</Score>
-<Score et="1282.9">Linh Vo(20) lap=7 point=1 t=39.366 et=1282.740</Score>
-<Score et="1285.6">Kemal Malovcic(12) lap=7 point=2 t=107.045 et=1285.580</Score>
-<Score et="1289.7">P-A Fugeekies(6) lap=7 point=2 t=106.284 et=1289.668</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1289.9">No Further Action</TrackLimits>
-<Score et="1293.5">Michael Campbell(2) lap=7 point=2 t=105.421 et=1293.480</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1295.4">No Further Action</TrackLimits>
-<Score et="1297.2">Filip Kamarad(3) lap=7 point=2 t=105.917 et=1297.200</Score>
-<Score et="1307.1">ailson souza(16) lap=7 point=2 t=104.390 et=1306.860</Score>
-<Score et="1308.3">Marcel Prosty(9) lap=7 point=0 t=156.658 et=1308.260</Score>
-<Score et="1310.6">Brent Timmermans(0) lap=8 point=0 t=145.067 et=1310.540</Score>
-<Score et="1311.0">Sanmanat Ruenroengchan(13) lap=7 point=1 t=39.754 et=1310.800</Score>
-<Score et="1313.2">Abdulrahman El-Hagracy(18) lap=8 point=0 t=144.984 et=1313.080</Score>
-<TrackLimits Driver="ailson souza" ID="16" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="5" et="1313.4">No Further Action</TrackLimits>
-<Score et="1316.2">Gabriel Magevski(19) lap=7 point=2 t=106.839 et=1316.020</Score>
-<TrackLimits Driver="Michael Campbell" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1318.7">No Further Action</TrackLimits>
-<Score et="1319.9">Zinho Melo(1) lap=5 point=0 t=247.952 et=1319.740</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1320.3">No Further Action</TrackLimits>
-<Score et="1326.6">Kemal Malovcic(12) lap=8 point=0 t=148.005 et=1326.540</Score>
-<Score et="1330.9">P-A Fugeekies(6) lap=8 point=0 t=147.499 et=1330.883</Score>
-<Score et="1334.8">Michael Campbell(2) lap=8 point=0 t=146.670 et=1334.740</Score>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1335.7">No Further Action</TrackLimits>
-<Score et="1338.6">Filip Kamarad(3) lap=8 point=0 t=147.193 et=1338.480</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="1338.7">Warning</TrackLimits>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="8" WarningPoints="0.25" CurrentPoints="0" Resolution="1" et="1340.7">Drive Through Penalty</TrackLimits>
-<Penalty et="1340.8">Abdulrahman El-Hagracy received Drive Thru penalty, 0s, 0laps for &quot;Track Limits&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Score et="1348.1">Marcel Prosty(9) lap=7 point=1 t=-1.000 et=1348.040</Score>
-<Score et="1348.4">Frank Bauer(10) lap=7 point=2 t=106.857 et=1348.340</Score>
-<Score et="1348.4">ailson souza(16) lap=8 point=0 t=145.676 et=1348.140</Score>
-<Score et="1349.4">Brent Timmermans(0) lap=8 point=1 t=38.760 et=1349.300</Score>
-<Score et="1352.8">Abdulrahman El-Hagracy(18) lap=8 point=1 t=-1.000 et=1352.740</Score>
-<Score et="1353.4">Linh Vo(20) lap=7 point=2 t=109.757 et=1353.140</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1355.0">No Further Action</TrackLimits>
-<Score et="1358.6">Gabriel Magevski(19) lap=8 point=0 t=149.148 et=1358.320</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="8" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="1361.7">Warning</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1366.2">No Further Action</TrackLimits>
-<Score et="1366.6">Kemal Malovcic(12) lap=8 point=1 t=39.990 et=1366.520</Score>
-<Score et="1367.8">Zinho Melo(1) lap=5 point=1 t=47.894 et=1367.640</Score>
-<Score et="1370.3">P-A Fugeekies(6) lap=8 point=1 t=39.380 et=1370.263</Score>
-<Score et="1374.7">Michael Campbell(2) lap=8 point=1 t=39.856 et=1374.600</Score>
-<Score et="1377.5">Sanmanat Ruenroengchan(13) lap=7 point=2 t=106.278 et=1377.320</Score>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1378.1">No Further Action</TrackLimits>
-<Score et="1379.1">Filip Kamarad(3) lap=8 point=1 t=40.549 et=1379.040</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1385.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Gabriel Magevski" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1386.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1386.8">No Further Action</TrackLimits>
-<Score et="1387.8">ailson souza(16) lap=8 point=1 t=39.447 et=1387.600</Score>
-<Score et="1389.9">Frank Bauer(10) lap=8 point=0 t=148.404 et=1389.880</Score>
-<Score et="1400.8">Gabriel Magevski(19) lap=8 point=1 t=42.219 et=1400.540</Score>
-<TrackLimits Driver="Linh Vo" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.3">No Further Action</TrackLimits>
-<Score et="1407.9">Linh Vo(20) lap=8 point=0 t=164.372 et=1407.760</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1410.2">No Further Action</TrackLimits>
-<Score et="1415.8">Brent Timmermans(0) lap=8 point=2 t=105.180 et=1415.720</Score>
-<Score et="1417.4">Abdulrahman El-Hagracy(18) lap=8 point=2 t=-1.000 et=1417.260</Score>
-<Score et="1419.3">Marcel Prosty(9) lap=7 point=2 t=-1.000 et=1419.220</Score>
-<Score et="1419.7">Sanmanat Ruenroengchan(13) lap=8 point=0 t=148.436 et=1419.480</Score>
-<TrackLimits Driver="Filip Kamarad" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.5">No Further Action</TrackLimits>
-<Score et="1429.9">Frank Bauer(10) lap=8 point=1 t=39.950 et=1429.840</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1431.1">No Further Action</TrackLimits>
-<Score et="1433.1">Kemal Malovcic(12) lap=8 point=2 t=106.501 et=1433.040</Score>
-<Score et="1433.9">Zinho Melo(1) lap=5 point=2 t=113.989 et=1433.740</Score>
-<Score et="1437.3">P-A Fugeekies(6) lap=8 point=2 t=106.365 et=1437.249</Score>
-<Score et="1440.9">Michael Campbell(2) lap=8 point=2 t=106.079 et=1440.820</Score>
-<Score et="1446.1">Filip Kamarad(3) lap=8 point=2 t=107.563 et=1446.040</Score>
-<Score et="1448.4">Linh Vo(20) lap=8 point=1 t=40.448 et=1448.200</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1451.6">No Further Action</TrackLimits>
-<Score et="1452.8">ailson souza(16) lap=8 point=2 t=104.396 et=1452.540</Score>
-<TrackLimits Driver="Abdulrahman El-Hagracy" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1453.1">No Further Action</TrackLimits>
-<Score et="1456.9">Checkered for Brent Timmermans, laps=9/2147483647, endET=1456.860107/1344.222534, crossedAfterTime=0</Score>
-<Score et="1456.9">Brent Timmermans(0) lap=9 point=0 t=146.324 et=1456.860</Score>
-<TrackLimits Driver="Marcel Prosty" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1458.1">No Further Action</TrackLimits>
-<Score et="1459.7">Sanmanat Ruenroengchan(13) lap=8 point=1 t=39.876 et=1459.360</Score>
-<Penalty et="1462.0">Marcel Prosty finished before serving penalty, added 35 seconds to totalET</Penalty>
-<Score et="1462.0">Marcel Prosty(9) lap=8 point=0 t=-1.000 et=1461.920</Score>
-<Penalty et="1462.0">Marcel Prosty served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,10s</Penalty>
-<Score et="1468.4">Gabriel Magevski(19) lap=8 point=2 t=109.851 et=1468.180</Score>
-<Penalty et="1469.3">Abdulrahman El-Hagracy finished before serving penalty, added 25 seconds to totalET</Penalty>
-<Score et="1469.3">Abdulrahman El-Hagracy(18) lap=9 point=0 t=-1.000 et=1469.260</Score>
-<Penalty et="1469.3">Abdulrahman El-Hagracy served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="1474.1">Kemal Malovcic(12) lap=9 point=0 t=147.542 et=1474.080</Score>
-<Score et="1477.0">Zinho Melo(1) lap=6 point=0 t=157.102 et=1476.840</Score>
-<Score et="1478.5">P-A Fugeekies(6) lap=9 point=0 t=147.573 et=1478.456</Score>
-<Score et="1481.8">Michael Campbell(2) lap=9 point=0 t=147.003 et=1481.740</Score>
-<Score et="1487.8">Filip Kamarad(3) lap=9 point=0 t=149.255 et=1487.740</Score>
-<Score et="1493.9">ailson souza(16) lap=9 point=0 t=145.549 et=1493.700</Score>
-<Score et="1497.9">Frank Bauer(10) lap=8 point=2 t=107.926 et=1497.820</Score>
-<TrackLimits Driver="Sanmanat Ruenroengchan" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1501.5">No Further Action</TrackLimits>
-<Score et="1511.6">Gabriel Magevski(19) lap=9 point=0 t=153.057 et=1511.380</Score>
-<Score et="1518.2">Linh Vo(20) lap=8 point=2 t=110.154 et=1517.900</Score>
-<ChatMessage et="1521.7">G Magevski: a souza, you very good! </ChatMessage>
-<ChatMessage et="1522.3">M Campbell: awesome race</ChatMessage>
-<TrackLimits Driver="Frank Bauer" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1524.0">No Further Action</TrackLimits>
-<Score et="1526.4">Sanmanat Ruenroengchan(13) lap=8 point=2 t=106.764 et=1526.240</Score>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="178.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="179.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="180.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="199.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="217.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="218.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="235.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="236.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4200" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="241.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="243.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4352" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="258.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="260.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="264.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3868" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="277.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="290.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="298.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2829" ID="16" Lap="0" WarningPoints="1" CurrentPoints="1" Resolution="2" et="308.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="320.4">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="320.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="324.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="330.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="333.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="334.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="1" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="339.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="347.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4927" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="348.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="358.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2829" ID="16" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="5" et="372.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="373.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="373.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="382.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="385.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4927" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="394.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="406.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="422.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="437.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="442.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="456.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="475.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="475.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="480.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4200" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="496.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="497.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="526.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="527.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="529.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="532.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3868" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="550.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="556.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="2" WarningPoints="0.5" CurrentPoints="1" Resolution="2" et="559.8">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="562.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="569.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="2" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="577.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="579.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="580.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="611.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="612.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="3" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="617.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4359" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="619.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="626.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="639.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2829" ID="16" Lap="3" WarningPoints="0.5" CurrentPoints="1.5" Resolution="2" et="646.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="693.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="703.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="715.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="720.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="730.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4927" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="755.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="756.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="760.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="4" WarningPoints="0.5" CurrentPoints="2" Resolution="2" et="761.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="764.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="766.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="787.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="795.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="811.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3868" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="837.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="849.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="852.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="855.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="857.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="4" WarningPoints="0" CurrentPoints="2" Resolution="5" et="862.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3868" ID="12" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="866.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="877.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="889.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="901.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="904.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="5" WarningPoints="0.75" CurrentPoints="2.75" Resolution="2" et="906.6">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="921.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="5" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="923.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="936.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="938.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2829" ID="16" Lap="5" WarningPoints="0.5" CurrentPoints="2" Resolution="2" et="938.9">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="973.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1001.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1002.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1010.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1017.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1021.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1024.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1026.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1033.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1038.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1040.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1046.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1047.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4927" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1053.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1058.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="6" WarningPoints="0.25" CurrentPoints="0.5" Resolution="2" et="1064.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1064.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4200" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1066.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1070.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="6" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1070.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1074.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1086.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1093.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1106.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1108.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1125.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1133.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3271" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1143.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1147.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1157.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4927" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1159.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1169.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1175.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1184.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1187.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1194.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1206.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3048" ID="0" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1211.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1215.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1217.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1230.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1234.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1235.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1242.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1267.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1269.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1272.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1289.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="7" WarningPoints="0" CurrentPoints="2.75" Resolution="5" et="1295.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2829" ID="16" Lap="7" WarningPoints="0" CurrentPoints="2" Resolution="5" et="1313.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4200" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1318.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1320.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1335.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="7" WarningPoints="0.25" CurrentPoints="0.75" Resolution="2" et="1338.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="8" WarningPoints="0.25" CurrentPoints="0" Resolution="1" et="1340.7">Drive Through Penalty</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1355.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="8" WarningPoints="0.5" CurrentPoints="0.5" Resolution="2" et="1361.7">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1366.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1378.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1379.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1385.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3461" ID="19" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1386.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1386.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3953" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1410.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3403" ID="3" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1421.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="6" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1431.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1451.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2801" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0.5" Resolution="5" et="1453.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4054" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.75" Resolution="5" et="1458.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4594" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1501.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3441" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1524.0">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>9</MostLapsCompleted>

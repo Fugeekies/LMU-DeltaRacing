@@ -36,456 +36,133 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Penalty Driver="Philippe Leblanc" ID="6" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="123.8">Philippe Leblanc received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty Driver="Levin Maage" ID="13" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="123.9">Levin Maage received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty Driver="Jeremy Rux" ID="3" Penalty="Drive Thru" Time="0" Laps="0" Reason="Speeding" et="123.9">Jeremy Rux received Drive Thru penalty, 0s, 0laps for Speeding. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Penalty Driver="Steven Yerly" ID="12" Penalty="Drive Thru" Time="0" Laps="0" Reason="Jumped the start" et="124.2">Steven Yerly received Drive Thru penalty, 0s, 0laps for Jumped the start. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="131.1">George Abbott(1) reported contact (522.54) with another vehicle Levin Maage(13)</Incident>
-<Incident et="131.1">Levin Maage(13) reported contact (630.12) with another vehicle George Abbott(1)</Incident>
-<Incident et="135.8">Levin Maage(13) reported contact (736.88) with another vehicle Wade Smith(22)</Incident>
-<Incident et="135.9">Wade Smith(22) reported contact (674.01) with another vehicle Levin Maage(13)</Incident>
-<Sector et="136.8">George Abbott(1) reports new suspension damage</Sector>
-<Incident et="136.9">kecs ong(19) reported contact (121.91) with another vehicle George Abbott(1)</Incident>
-<Incident et="136.9">George Abbott(1) reported contact (137.35) with another vehicle kecs ong(19)</Incident>
-<Incident et="136.9">Steven Yerly(12) reported contact (147.41) with another vehicle Vladimir Hmelevskiy(16)</Incident>
-<Incident et="137.0">Vladimir Hmelevskiy(16) reported contact (176.66) with another vehicle Steven Yerly(12)</Incident>
-<Incident et="137.1">George Abbott(1) reported contact (316.59) with another vehicle kecs ong(19)</Incident>
-<Incident et="137.1">kecs ong(19) reported contact (268.12) with another vehicle George Abbott(1)</Incident>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="138.3">No Further Action</TrackLimits>
-<Sector et="139.9">George Abbott(1) reports new suspension damage</Sector>
-<Incident et="139.9">George Abbott(1) reported contact (2098.01) with another vehicle Bruno Donaire(11)</Incident>
-<Incident et="140.0">Bruno Donaire(11) reported contact (640.26) with another vehicle George Abbott(1)</Incident>
-<Incident et="140.9">Philippe Leblanc(6) reported contact (2715.57) with another vehicle Bruno Donaire(11)</Incident>
-<Incident et="140.9">Bruno Donaire(11) reported contact (3086.07) with another vehicle Philippe Leblanc(6)</Incident>
-<Incident et="141.0">Pasa Nasgnet(20) reported contact (346.97) with another vehicle Musti Goneim(17)</Incident>
-<Incident et="141.0">Musti Goneim(17) reported contact (341.88) with another vehicle Pasa Nasgnet(20)</Incident>
-<Incident et="141.1">kecs ong(19) reported contact (596.81) with another vehicle Wade Smith(22)</Incident>
-<Incident et="141.2">Wade Smith(22) reported contact (468.60) with another vehicle kecs ong(19)</Incident>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="141.9">No Further Action</TrackLimits>
-<TrackLimits Driver="David Maraz" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="142.6">No Further Action</TrackLimits>
-<Incident et="142.9">Wade Smith(22) reported contact (4969.86) with Immovable</Incident>
-<Incident et="143.2">Wade Smith(22) reported contact (23.08) with Wing</Incident>
-<Sector et="143.4">Wade Smith(22) reports new suspension damage</Sector>
-<Incident et="144.2">Wade Smith(22) reported contact (1836.10) with Immovable</Incident>
-<TrackLimits Driver="Wade Smith" ID="22" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.5">No Further Action</TrackLimits>
-<Incident et="145.4">Wade Smith(22) reported contact (227.30) with Immovable</Incident>
-<Incident et="146.1">Wade Smith(22) reported contact (151.05) with Immovable</Incident>
-<Incident et="149.2">Wade Smith(22) reported contact (32.85) with Immovable</Incident>
-<TrackLimits Driver="Valkyria Diaz" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.8">No Further Action</TrackLimits>
-<TrackLimits Driver="shiu chan" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="152.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.0">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="154.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
-<TrackLimits Driver="David Maraz" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="157.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="160.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Bennet Jung" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.2">No Further Action</TrackLimits>
-<Incident et="163.8">David Maraz(15) reported contact (192.92) with another vehicle Brody Porter(7)</Incident>
-<Incident et="163.9">Brody Porter(7) reported contact (275.31) with another vehicle David Maraz(15)</Incident>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.2">No Further Action</TrackLimits>
-<Sector Driver="Alexis Louguet" ID="5" Sector="1" Class="GT3" et="169.7">Alexis Louguet(5) set new best for sector 1</Sector>
-<Score et="169.8">Alexis Louguet(5) lap=0 point=1 t=45.840 et=169.680</Score>
-<Score et="170.4">Vladimir Hmelevskiy(16) lap=0 point=1 t=46.474 et=170.300</Score>
-<Score et="170.5">Steven Yerly(12) lap=0 point=1 t=46.688 et=170.520</Score>
-<Score et="171.9">Adam Robair(21) lap=0 point=1 t=47.927 et=171.760</Score>
-<Score et="172.7">P-A Fugeekies(18) lap=0 point=1 t=48.844 et=172.666</Score>
-<Score et="172.7">Jeremy Rux(3) lap=0 point=1 t=48.883 et=172.720</Score>
-<Score et="173.6">Roman Gorshkov(2) lap=0 point=1 t=49.697 et=173.520</Score>
-<Score et="173.8">Levin Maage(13) lap=0 point=1 t=49.883 et=173.720</Score>
-<Score et="174.4">kecs ong(19) lap=0 point=1 t=50.447 et=174.280</Score>
-<Score et="175.2">Brody Porter(7) lap=0 point=1 t=51.221 et=175.060</Score>
-<Score et="175.3">Evan Jacquemart(4) lap=0 point=1 t=51.427 et=175.260</Score>
-<Score et="176.4">David Maraz(15) lap=0 point=1 t=52.408 et=176.240</Score>
-<Score et="176.4">Pasa Nasgnet(20) lap=0 point=1 t=52.526 et=176.360</Score>
-<Score et="176.7">Musti Goneim(17) lap=0 point=1 t=52.833 et=176.660</Score>
-<Score et="178.5">Bruno Donaire(11) lap=0 point=1 t=54.570 et=178.400</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="179.3">No Further Action</TrackLimits>
-<Score et="179.6">George Abbott(1) lap=0 point=1 t=55.682 et=179.520</Score>
-<Score et="180.4">Philippe Leblanc(6) lap=0 point=1 t=-1.000 et=180.340</Score>
-<TrackLimits Driver="Bennet Jung" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.4">No Further Action</TrackLimits>
-<Score et="183.8">Valkyria Diaz(14) lap=0 point=1 t=59.955 et=183.780</Score>
-<Score et="185.0">shiu chan(8) lap=0 point=1 t=61.023 et=184.860</Score>
-<Incident et="186.6">Evan Jacquemart(4) reported contact (28.87) with another vehicle Brody Porter(7)</Incident>
-<Incident et="186.6">Evan Jacquemart(4) reported contact (126.11) with another vehicle Brody Porter(7)</Incident>
-<Incident et="186.6">Brody Porter(7) reported contact (356.13) with another vehicle Evan Jacquemart(4)</Incident>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.7">No Further Action</TrackLimits>
-<Score et="194.4">Bennet Jung(0) lap=0 point=1 t=70.521 et=194.360</Score>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.8">No Further Action</TrackLimits>
-<Incident et="203.9">Musti Goneim(17) reported contact (387.81) with another vehicle Pasa Nasgnet(20)</Incident>
-<Incident et="203.9">Pasa Nasgnet(20) reported contact (386.22) with another vehicle Musti Goneim(17)</Incident>
-<Incident et="208.8">Musti Goneim(17) reported contact (59.88) with another vehicle Pasa Nasgnet(20)</Incident>
-<Incident et="208.8">Pasa Nasgnet(20) reported contact (84.13) with another vehicle Musti Goneim(17)</Incident>
-<Incident et="208.9">Musti Goneim(17) reported contact (62.39) with another vehicle Pasa Nasgnet(20)</Incident>
-<Incident et="220.1">Evan Jacquemart(4) reported contact (208.57) with another vehicle kecs ong(19)</Incident>
-<Incident et="220.1">kecs ong(19) reported contact (181.32) with another vehicle Evan Jacquemart(4)</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="220.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
-<TrackLimits Driver="David Maraz" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="225.0">No Further Action</TrackLimits>
-<Incident et="229.5">Brody Porter(7) reported contact (16.35) with Sign</Incident>
-<Incident et="229.6">Brody Porter(7) reported contact (14.85) with Sign</Incident>
-<Incident et="229.8">Brody Porter(7) reported contact (2023.26) with Immovable</Incident>
-<Sector et="229.9">Brody Porter(7) reports new suspension damage</Sector>
-<Incident et="231.0">Brody Porter(7) reported contact (512.57) with Immovable</Incident>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="234.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="241.6">No Further Action</TrackLimits>
-<Sector Driver="Alexis Louguet" ID="5" Sector="2" Class="GT3" et="243.2">Alexis Louguet(5) set new best for sector 2</Sector>
-<Score et="243.2">Alexis Louguet(5) lap=0 point=2 t=119.366 et=243.200</Score>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="244.9">No Further Action</TrackLimits>
-<Score et="245.9">Steven Yerly(12) lap=0 point=2 t=121.993 et=245.820</Score>
-<Score et="245.9">Vladimir Hmelevskiy(16) lap=0 point=2 t=121.985 et=245.820</Score>
-<Score et="247.3">Adam Robair(21) lap=0 point=2 t=123.352 et=247.180</Score>
-<Score et="247.8">P-A Fugeekies(18) lap=0 point=2 t=123.986 et=247.809</Score>
-<Score et="248.4">Jeremy Rux(3) lap=0 point=2 t=124.474 et=248.300</Score>
-<Score et="250.2">Levin Maage(13) lap=0 point=2 t=126.315 et=250.140</Score>
-<Score et="251.0">Roman Gorshkov(2) lap=0 point=2 t=127.062 et=250.900</Score>
-<Score et="251.3">kecs ong(19) lap=0 point=2 t=127.387 et=251.220</Score>
-<Score et="251.8">Evan Jacquemart(4) lap=0 point=2 t=127.937 et=251.760</Score>
-<Score et="252.5">Musti Goneim(17) lap=0 point=2 t=128.623 et=252.460</Score>
-<Score et="254.5">Pasa Nasgnet(20) lap=0 point=2 t=130.603 et=254.440</Score>
-<Score et="255.4">David Maraz(15) lap=0 point=2 t=131.460 et=255.300</Score>
-<Sector et="255.5">Brody Porter(7) reports new suspension damage</Sector>
-<Incident et="255.6">Brody Porter(7) reported contact (2896.34) with Immovable</Incident>
-<Score et="256.2">Bruno Donaire(11) lap=0 point=2 t=132.118 et=255.960</Score>
-<Score et="256.4">George Abbott(1) lap=0 point=2 t=132.523 et=256.360</Score>
-<Score et="257.3">Philippe Leblanc(6) lap=0 point=2 t=-1.000 et=257.200</Score>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="261.1">No Further Action</TrackLimits>
-<Score et="261.2">shiu chan(8) lap=0 point=2 t=137.285 et=261.120</Score>
-<Score et="262.0">Valkyria Diaz(14) lap=0 point=2 t=138.039 et=261.880</Score>
-<Score et="268.6">Bennet Jung(0) lap=0 point=2 t=144.695 et=268.520</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="271.6">No Further Action</TrackLimits>
-<Score et="273.0">Brody Porter(7) lap=0 point=2 t=149.011 et=272.840</Score>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="281.7">No Further Action</TrackLimits>
-<Incident et="288.0">Musti Goneim(17) reported contact (161.24) with another vehicle Evan Jacquemart(4)</Incident>
-<Incident et="288.7">David Maraz(15) reported contact (276.56) with another vehicle Bruno Donaire(11)</Incident>
-<Incident et="288.8">Bruno Donaire(11) reported contact (202.91) with another vehicle David Maraz(15)</Incident>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.8">No Further Action</TrackLimits>
-<Sector Driver="Alexis Louguet" ID="5" Sector="3" Class="GT3" et="289.6">Alexis Louguet(5) set new best for sector 3</Sector>
-<Score et="289.6">Alexis Louguet(5) lap=1 point=0 t=165.755 et=289.580</Score>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.4">No Further Action</TrackLimits>
-<Sector Driver="Vladimir Hmelevskiy" ID="16" Sector="3" Class="GT3" et="291.2">Vladimir Hmelevskiy(16) set new best for sector 3</Sector>
-<Score et="291.2">Vladimir Hmelevskiy(16) lap=1 point=0 t=167.267 et=291.100</Score>
-<Score et="293.2">Adam Robair(21) lap=1 point=0 t=169.247 et=293.080</Score>
-<Score et="294.4">P-A Fugeekies(18) lap=1 point=0 t=170.554 et=294.376</Score>
-<Score et="296.7">Levin Maage(13) lap=1 point=0 t=172.789 et=296.620</Score>
-<Score et="296.9">Roman Gorshkov(2) lap=1 point=0 t=173.004 et=296.840</Score>
-<Score et="297.4">Evan Jacquemart(4) lap=1 point=0 t=173.510 et=297.340</Score>
-<Score et="297.4">kecs ong(19) lap=1 point=0 t=173.486 et=297.320</Score>
-<TrackLimits Driver="Brody Porter" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="298.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="300.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="300.9">No Further Action</TrackLimits>
-<Score et="302.7">David Maraz(15) lap=1 point=0 t=178.819 et=302.660</Score>
-<Score et="303.5">Bruno Donaire(11) lap=1 point=0 t=179.593 et=303.420</Score>
-<Score et="303.7">George Abbott(1) lap=1 point=0 t=179.779 et=303.620</Score>
-<Score et="305.5">Musti Goneim(17) lap=1 point=0 t=181.581 et=305.420</Score>
-<Score et="305.7">Philippe Leblanc(6) lap=1 point=0 t=-1.000 et=305.620</Score>
-<Score et="306.8">shiu chan(8) lap=1 point=0 t=182.886 et=306.720</Score>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="0" WarningPoints="1" CurrentPoints="1" Resolution="4" et="307.0">Warning</TrackLimits>
-<Score et="308.0">Jeremy Rux(3) lap=1 point=0 t=184.137 et=307.960</Score>
-<Score et="312.0">Pasa Nasgnet(20) lap=1 point=0 t=-1.000 et=311.900</Score>
-<Score et="312.7">Valkyria Diaz(14) lap=1 point=0 t=188.779 et=312.620</Score>
-<TrackLimits Driver="David Maraz" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.0">No Further Action</TrackLimits>
-<Score et="314.2">Bennet Jung(0) lap=1 point=0 t=190.246 et=314.080</Score>
-<Score et="314.8">Steven Yerly(12) lap=1 point=0 t=190.934 et=314.760</Score>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="315.8">No Further Action</TrackLimits>
-<Penalty et="318.7">Jeremy Rux served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="321.9">No Further Action</TrackLimits>
-<TrackLimits Driver="kecs ong" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="326.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="330.3">Warning</TrackLimits>
-<Sector Driver="Alexis Louguet" ID="5" Sector="1" Class="GT3" et="332.3">Alexis Louguet(5) set new best for sector 1</Sector>
-<Score et="332.4">Alexis Louguet(5) lap=1 point=1 t=42.687 et=332.280</Score>
-<TrackLimits Driver="David Maraz" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="332.8">No Further Action</TrackLimits>
-<Score et="334.2">Vladimir Hmelevskiy(16) lap=1 point=1 t=43.003 et=334.100</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="335.2">No Further Action</TrackLimits>
-<Sector et="335.3">Philippe Leblanc(6) reports new suspension damage</Sector>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="335.4">No Further Action</TrackLimits>
-<Incident et="335.4">Philippe Leblanc(6) reported contact (4598.91) with Immovable</Incident>
-<Score et="336.4">Adam Robair(21) lap=1 point=1 t=43.115 et=336.200</Score>
-<TrackLimits Driver="shiu chan" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="336.5">No Further Action</TrackLimits>
-<Score et="337.0">P-A Fugeekies(18) lap=1 point=1 t=42.619 et=336.995</Score>
-<Sector Driver="P-A Fugeekies" ID="18" Sector="1" Class="GT3" et="337.0">P-A Fugeekies(18) set new best for sector 1</Sector>
-<Score et="340.0">Roman Gorshkov(2) lap=1 point=1 t=43.076 et=339.920</Score>
-<Score et="340.2">Evan Jacquemart(4) lap=1 point=1 t=-1.000 et=340.180</Score>
-<Score et="341.1">kecs ong(19) lap=1 point=1 t=43.660 et=340.980</Score>
-<Score et="341.1">Levin Maage(13) lap=1 point=1 t=44.503 et=341.120</Score>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="342.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.7">No Further Action</TrackLimits>
-<Score et="346.8">George Abbott(1) lap=1 point=1 t=43.150 et=346.760</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="347.1">Warning</TrackLimits>
-<Sector Driver="Musti Goneim" ID="17" Sector="1" Class="GT3" et="347.9">Musti Goneim(17) set new best for sector 1</Sector>
-<Score et="347.9">Musti Goneim(17) lap=1 point=1 t=42.426 et=347.840</Score>
-<Score et="347.9">David Maraz(15) lap=1 point=1 t=45.195 et=347.840</Score>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="348.5">No Further Action</TrackLimits>
-<TrackLimits Driver="kecs ong" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="349.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="349.5">No Further Action</TrackLimits>
-<Sector et="351.4">Adam Robair(21) reports new suspension damage</Sector>
-<Score et="351.4">shiu chan(8) lap=1 point=1 t=44.542 et=351.260</Score>
-<Incident et="351.5">Adam Robair(21) reported contact (3403.89) with Immovable</Incident>
-<Score et="352.0">Bruno Donaire(11) lap=1 point=1 t=48.336 et=351.760</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="355.1">No Further Action</TrackLimits>
-<Score et="355.2">Pasa Nasgnet(20) lap=1 point=1 t=43.235 et=355.140</Score>
-<Incident et="355.3">Evan Jacquemart(4) reported contact (3486.63) with Immovable</Incident>
-<Score et="356.9">Jeremy Rux(3) lap=1 point=1 t=48.847 et=356.820</Score>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="357.0">No Further Action</TrackLimits>
-<Score et="358.0">Valkyria Diaz(14) lap=1 point=1 t=45.302 et=357.920</Score>
-<Score et="358.4">Bennet Jung(0) lap=1 point=1 t=44.180 et=358.260</Score>
-<TrackLimits Driver="David Maraz" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="358.8">No Further Action</TrackLimits>
-<Score et="359.6">Philippe Leblanc(6) lap=1 point=1 t=53.838 et=359.460</Score>
-<TrackLimits Driver="George Abbott" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.3">No Further Action</TrackLimits>
-<Score et="366.0">Steven Yerly(12) lap=1 point=1 t=51.199 et=365.960</Score>
-<Score et="376.3">Brody Porter(7) lap=1 point=0 t=252.243 et=376.080</Score>
-<Incident et="378.8">Philippe Leblanc(6) reported contact (1214.94) with Immovable</Incident>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="380.7">No Further Action</TrackLimits>
-<Incident et="382.8">Jeremy Rux(3) reported contact (467.04) with another vehicle Pasa Nasgnet(20)</Incident>
-<Incident et="382.8">Pasa Nasgnet(20) reported contact (545.58) with another vehicle Jeremy Rux(3)</Incident>
-<Incident et="384.7">Jeremy Rux(3) reported contact (1673.85) with Immovable</Incident>
-<Incident et="385.6">Jeremy Rux(3) reported contact (1045.10) with Immovable</Incident>
-<TrackLimits Driver="Jeremy Rux" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="390.1">No Further Action</TrackLimits>
-<Sector Driver="Alexis Louguet" ID="5" Sector="2" Class="GT3" et="405.5">Alexis Louguet(5) set new best for sector 2</Sector>
-<Score et="405.5">Alexis Louguet(5) lap=1 point=2 t=115.846 et=405.440</Score>
-<Score et="408.6">Vladimir Hmelevskiy(16) lap=1 point=2 t=117.292 et=408.400</Score>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.5">No Further Action</TrackLimits>
-<Score et="412.6">P-A Fugeekies(18) lap=1 point=2 t=118.175 et=412.551</Score>
-<Incident et="413.1">Brody Porter(7) reported contact (1098.75) with Immovable</Incident>
-<Score et="416.0">kecs ong(19) lap=1 point=2 t=118.589 et=415.900</Score>
-<TrackLimits Driver="George Abbott" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.2">No Further Action</TrackLimits>
-<Score et="416.8">Levin Maage(13) lap=1 point=2 t=120.071 et=416.700</Score>
-<Sector et="417.1">Philippe Leblanc(6) reports new suspension damage</Sector>
-<Incident et="417.2">Philippe Leblanc(6) reported contact (5974.17) with Immovable</Incident>
-<Score et="417.6">Roman Gorshkov(2) lap=1 point=2 t=120.702 et=417.540</Score>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="7" et="418.5">No Further Action</TrackLimits>
-<Score et="419.4">Evan Jacquemart(4) lap=1 point=2 t=-1.000 et=419.340</Score>
-<Score et="421.6">Musti Goneim(17) lap=1 point=2 t=116.175 et=421.580</Score>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="423.4">No Further Action</TrackLimits>
-<Score et="423.5">George Abbott(1) lap=1 point=2 t=119.858 et=423.460</Score>
-<Score et="425.4">Adam Robair(21) lap=1 point=2 t=-1.000 et=425.260</Score>
-<Score et="426.3">David Maraz(15) lap=1 point=2 t=123.569 et=426.220</Score>
-<Score et="426.7">shiu chan(8) lap=1 point=2 t=119.835 et=426.560</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="427.4">No Further Action</TrackLimits>
-<Score et="429.2">Bruno Donaire(11) lap=1 point=2 t=125.576 et=429.000</Score>
-<Score et="432.5">Bennet Jung(0) lap=1 point=2 t=118.347 et=432.420</Score>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="434.0">No Further Action</TrackLimits>
-<Score et="434.5">Pasa Nasgnet(20) lap=1 point=2 t=122.586 et=434.480</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
-<Score et="436.1">Valkyria Diaz(14) lap=1 point=2 t=123.406 et=436.020</Score>
-<Score et="439.6">Jeremy Rux(3) lap=1 point=2 t=131.615 et=439.580</Score>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.7">No Further Action</TrackLimits>
-<Score et="443.0">Steven Yerly(12) lap=1 point=2 t=128.193 et=442.960</Score>
-<Incident et="444.1">Evan Jacquemart(4) reported contact (1343.87) with another vehicle Roman Gorshkov(2)</Incident>
-<Incident et="444.1">Roman Gorshkov(2) reported contact (1355.77) with another vehicle Evan Jacquemart(4)</Incident>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="446.2">No Further Action</TrackLimits>
-<Incident et="446.7">Roman Gorshkov(2) reported contact (1465.40) with Immovable</Incident>
-<Incident et="447.3">Roman Gorshkov(2) reported contact (1263.30) with Immovable</Incident>
-<Incident et="448.6">Roman Gorshkov(2) reported contact (143.01) with Immovable</Incident>
-<Incident et="449.1">Roman Gorshkov(2) reported contact (381.20) with Immovable</Incident>
-<Incident et="450.1">Roman Gorshkov(2) reported contact (487.50) with Immovable</Incident>
-<Sector Driver="Alexis Louguet" ID="5" Sector="3" Class="GT3" et="450.6">Alexis Louguet(5) set new best for sector 3</Sector>
-<Score et="450.6">Alexis Louguet(5) lap=2 point=0 t=160.994 et=450.580</Score>
-<Incident et="451.9">Roman Gorshkov(2) reported contact (171.52) with Immovable</Incident>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="451.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.7">No Further Action</TrackLimits>
-<Incident et="452.9">Roman Gorshkov(2) reported contact (144.10) with Immovable</Incident>
-<Score et="453.9">Vladimir Hmelevskiy(16) lap=2 point=0 t=162.709 et=453.800</Score>
-<Incident et="454.1">Roman Gorshkov(2) reported contact (128.87) with Immovable</Incident>
-<Incident et="454.4">Roman Gorshkov(2) reported contact (3.54) with Sign</Incident>
-<Incident et="454.4">Roman Gorshkov(2) reported contact (7.47) with Sign</Incident>
-<Incident et="454.5">Roman Gorshkov(2) reported contact (7.47) with Sign</Incident>
-<Incident et="455.0">Roman Gorshkov(2) reported contact (130.31) with Immovable</Incident>
-<Incident et="455.6">Levin Maage(13) reported contact (374.68) with Immovable</Incident>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="455.6">No Further Action</TrackLimits>
-<Incident et="456.9">Roman Gorshkov(2) reported contact (70.22) with Immovable</Incident>
-<TrackLimits Driver="Bennet Jung" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Musti Goneim" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.8">No Further Action</TrackLimits>
-<Score et="458.9">P-A Fugeekies(18) lap=2 point=0 t=164.486 et=458.862</Score>
-<Score et="461.3">kecs ong(19) lap=2 point=0 t=163.974 et=461.300</Score>
-<TrackLimits Driver="Jeremy Rux" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="464.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Pasa Nasgnet" ID="20" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="7" et="466.0">No Further Action</TrackLimits>
-<Score et="466.8">Musti Goneim(17) lap=2 point=0 t=161.358 et=466.780</Score>
-<Score et="471.7">Evan Jacquemart(4) lap=2 point=0 t=-1.000 et=471.640</Score>
-<Score et="472.3">Adam Robair(21) lap=2 point=0 t=-1.000 et=472.200</Score>
-<Score et="473.4">David Maraz(15) lap=2 point=0 t=170.721 et=473.380</Score>
-<TrackLimits Driver="Roman Gorshkov" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="473.8">No Further Action</TrackLimits>
-<Score et="474.0">shiu chan(8) lap=2 point=0 t=167.174 et=473.900</Score>
-<Score et="476.5">Bruno Donaire(11) lap=2 point=0 t=172.926 et=476.360</Score>
-<Score et="477.0">Philippe Leblanc(6) lap=1 point=2 t=171.181 et=476.820</Score>
-<Incident et="477.7">Jeremy Rux(3) reported contact (158.17) with Immovable</Incident>
-<TrackLimits Driver="Alexis Louguet" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="478.5">No Further Action</TrackLimits>
-<Score et="478.7">Bennet Jung(0) lap=2 point=0 t=164.574 et=478.660</Score>
-<TrackLimits Driver="Jeremy Rux" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.9">No Further Action</TrackLimits>
-<Score et="481.4">Pasa Nasgnet(20) lap=2 point=0 t=169.410 et=481.320</Score>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="482.2">No Further Action</TrackLimits>
-<Score et="483.2">Valkyria Diaz(14) lap=2 point=0 t=170.487 et=483.100</Score>
-<Score et="483.9">Levin Maage(13) lap=2 point=0 t=187.267 et=483.880</Score>
-<TrackLimits Driver="David Maraz" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="485.6">No Further Action</TrackLimits>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="487.0">No Further Action</TrackLimits>
-<TrackLimits Driver="kecs ong" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="488.9">No Further Action</TrackLimits>
-<Score et="489.1">Jeremy Rux(3) lap=2 point=0 t=181.072 et=489.040</Score>
-<Sector Driver="Alexis Louguet" ID="5" Sector="1" Class="GT3" et="492.6">Alexis Louguet(5) set new best for sector 1</Sector>
-<Score et="492.6">Alexis Louguet(5) lap=2 point=1 t=41.986 et=492.560</Score>
-<Sector et="496.3">Musti Goneim(17) reports new suspension damage</Sector>
-<Sector et="496.3">Musti Goneim(17) reports new engine damage</Sector>
-<Incident et="496.3">Musti Goneim(17) reported contact (5608.22) with Immovable</Incident>
-<Sector et="496.4">Musti Goneim(17) reports new suspension damage</Sector>
-<Score et="496.4">Vladimir Hmelevskiy(16) lap=2 point=1 t=42.453 et=496.260</Score>
-<TrackLimits Driver="Musti Goneim" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="497.9">No Further Action</TrackLimits>
-<Score et="500.0">Steven Yerly(12) lap=2 point=0 t=185.226 et=500.000</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="500.5">No Further Action</TrackLimits>
-<Score et="501.6">P-A Fugeekies(18) lap=2 point=1 t=42.751 et=501.613</Score>
-<TrackLimits Driver="shiu chan" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="502.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="502.3">Warning</TrackLimits>
-<Score et="503.8">kecs ong(19) lap=2 point=1 t=42.439 et=503.740</Score>
-<Incident et="506.9">Philippe Leblanc(6) reported contact (5286.56) with Immovable</Incident>
-<Sector et="509.4">Pasa Nasgnet(20) reports new engine damage</Sector>
-<Incident et="509.5">Pasa Nasgnet(20) reported contact (8097.47) with Immovable</Incident>
-<Penalty et="510.8">Steven Yerly served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="514.5">Evan Jacquemart(4) lap=2 point=1 t=-1.000 et=514.500</Score>
-<Score et="515.9">Adam Robair(21) lap=2 point=1 t=43.513 et=515.720</Score>
-<Score et="517.0">shiu chan(8) lap=2 point=1 t=42.948 et=516.840</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="517.7">No Further Action</TrackLimits>
-<Score et="520.2">Bruno Donaire(11) lap=2 point=1 t=43.638 et=519.980</Score>
-<Score et="521.1">David Maraz(15) lap=2 point=1 t=47.709 et=521.080</Score>
-<Score et="521.5">Bennet Jung(0) lap=2 point=1 t=42.857 et=521.500</Score>
-<Incident et="522.8">Bennet Jung(0) reported contact (1117.04) with another vehicle David Maraz(15)</Incident>
-<Incident et="522.8">David Maraz(15) reported contact (1118.81) with another vehicle Bennet Jung(0)</Incident>
-<Score et="526.7">Valkyria Diaz(14) lap=2 point=1 t=43.502 et=526.600</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="530.6">No Further Action</TrackLimits>
-<Score et="530.7">George Abbott(1) lap=2 point=0 t=227.073 et=530.680</Score>
-<Score et="532.4">Jeremy Rux(3) lap=2 point=1 t=43.292 et=532.340</Score>
-<Incident et="534.3">Bennet Jung(0) reported contact (408.27) with another vehicle David Maraz(15)</Incident>
-<Incident et="534.3">David Maraz(15) reported contact (358.17) with another vehicle Bennet Jung(0)</Incident>
-<Score et="534.5">Levin Maage(13) lap=2 point=1 t=50.528 et=534.420</Score>
-<Sector et="536.8">Bennet Jung(0) reports new suspension damage</Sector>
-<Incident et="536.9">Bennet Jung(0) reported contact (3339.73) with Immovable</Incident>
-<Incident et="538.5">Bennet Jung(0) reported contact (1154.78) with Immovable</Incident>
-<TrackLimits Driver="Bennet Jung" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="539.8">No Further Action</TrackLimits>
-<Sector et="541.0">Valkyria Diaz(14) reports new suspension damage</Sector>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="542.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Valkyria Diaz" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="547.6">No Further Action</TrackLimits>
-<Score et="549.7">Steven Yerly(12) lap=2 point=1 t=49.641 et=549.640</Score>
-<Incident et="550.9">Evan Jacquemart(4) reported contact (2739.46) with Immovable</Incident>
-<Incident et="551.8">Evan Jacquemart(4) reported contact (226.33) with Immovable</Incident>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="557.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="558.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="558.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="565.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="565.2">No Further Action</TrackLimits>
-<Score et="566.2">Alexis Louguet(5) lap=2 point=2 t=115.535 et=566.120</Score>
-<Score et="571.2">Vladimir Hmelevskiy(16) lap=2 point=2 t=117.368 et=571.180</Score>
-<Score et="577.3">P-A Fugeekies(18) lap=2 point=2 t=118.471 et=577.334</Score>
-<Score et="578.6">kecs ong(19) lap=2 point=2 t=117.245 et=578.540</Score>
-<Score et="580.9">George Abbott(1) lap=2 point=1 t=50.157 et=580.840</Score>
-<Score et="591.0">shiu chan(8) lap=2 point=2 t=117.007 et=590.900</Score>
-<Score et="593.5">Adam Robair(21) lap=2 point=2 t=121.083 et=593.280</Score>
-<Score et="596.2">Bruno Donaire(11) lap=2 point=2 t=119.620 et=595.980</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="597.9">No Further Action</TrackLimits>
-<Score et="600.4">David Maraz(15) lap=2 point=2 t=126.948 et=600.320</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="601.1">No Further Action</TrackLimits>
-<Score et="601.1">Evan Jacquemart(4) lap=2 point=2 t=-1.000 et=601.080</Score>
-<Sector et="603.2">P-A Fugeekies(18) reports new suspension damage</Sector>
-<Incident et="603.2">P-A Fugeekies(18) reported contact (4376.51) with Immovable</Incident>
-<Incident et="606.3">P-A Fugeekies(18) reported contact (1675.33) with Immovable</Incident>
-<Score et="607.8">Jeremy Rux(3) lap=2 point=2 t=118.637 et=607.680</Score>
-<Score et="608.8">Bennet Jung(0) lap=2 point=2 t=130.077 et=608.720</Score>
-<Score et="611.0">Valkyria Diaz(14) lap=2 point=2 t=127.841 et=610.940</Score>
-<Score et="611.4">Alexis Louguet(5) lap=3 point=0 t=160.770 et=611.360</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="612.5">No Further Action</TrackLimits>
-<Score et="616.5">Vladimir Hmelevskiy(16) lap=3 point=0 t=162.612 et=616.420</Score>
-<Score et="620.6">Levin Maage(13) lap=2 point=2 t=136.670 et=620.560</Score>
-<Score et="624.4">kecs ong(19) lap=3 point=0 t=162.998 et=624.300</Score>
-<Score et="625.1">Steven Yerly(12) lap=2 point=2 t=125.040 et=625.040</Score>
-<Incident et="630.7">P-A Fugeekies(18) reported contact (164.32) with Immovable</Incident>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="632.5">No Further Action</TrackLimits>
-<Score et="637.2">shiu chan(8) lap=3 point=0 t=163.223 et=637.120</Score>
-<Score et="640.8">Adam Robair(21) lap=3 point=0 t=168.449 et=640.660</Score>
-<Score et="642.2">Bruno Donaire(11) lap=3 point=0 t=165.678 et=642.020</Score>
-<Score et="645.9">P-A Fugeekies(18) lap=3 point=0 t=186.989 et=645.851</Score>
-<Score et="647.5">Evan Jacquemart(4) lap=3 point=0 t=-1.000 et=647.460</Score>
-<Score et="648.3">David Maraz(15) lap=3 point=0 t=174.896 et=648.260</Score>
-<Score et="653.7">Alexis Louguet(5) lap=3 point=1 t=42.321 et=653.680</Score>
-<Score et="656.0">Jeremy Rux(3) lap=3 point=0 t=166.921 et=655.960</Score>
-<Score et="656.1">George Abbott(1) lap=2 point=2 t=125.349 et=656.040</Score>
-<Score et="659.0">Valkyria Diaz(14) lap=3 point=0 t=175.846 et=658.940</Score>
-<Score et="660.7">Vladimir Hmelevskiy(16) lap=3 point=1 t=44.174 et=660.600</Score>
-<TrackLimits Driver="shiu chan" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="665.3">No Further Action</TrackLimits>
-<Score et="667.1">kecs ong(19) lap=3 point=1 t=42.668 et=666.960</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="668.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="669.5">No Further Action</TrackLimits>
-<Score et="670.5">Steven Yerly(12) lap=3 point=0 t=170.426 et=670.420</Score>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="670.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="675.9">No Further Action</TrackLimits>
-<TrackLimits Driver="David Maraz" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="676.8">No Further Action</TrackLimits>
-<Score et="678.4">Levin Maage(13) lap=3 point=0 t=194.431 et=678.320</Score>
-<Score et="680.7">shiu chan(8) lap=3 point=1 t=43.462 et=680.580</Score>
-<Score et="684.2">Adam Robair(21) lap=3 point=1 t=43.345 et=684.000</Score>
-<Score et="685.5">Bruno Donaire(11) lap=3 point=1 t=43.235 et=685.260</Score>
-<Penalty et="689.0">Levin Maage served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="691.2">Evan Jacquemart(4) lap=3 point=1 t=43.733 et=691.180</Score>
-<Score et="692.8">David Maraz(15) lap=3 point=1 t=44.458 et=692.720</Score>
-<Incident et="697.7">George Abbott(1) reported contact (162.83) with Immovable</Incident>
-<Incident et="697.7">George Abbott(1) reported contact (178.54) with Immovable</Incident>
-<Incident et="698.0">George Abbott(1) reported contact (178.31) with Immovable</Incident>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="698.5">No Further Action</TrackLimits>
-<Score et="699.9">Jeremy Rux(3) lap=3 point=1 t=43.934 et=699.900</Score>
-<TrackLimits Driver="David Maraz" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="701.0">No Further Action</TrackLimits>
-<Penalty Driver="P-A Fugeekies" ID="18" Penalty="Stop/Go" Time="10" Laps="0" Reason="Speeding In Pitlane" et="701.9">P-A Fugeekies received Stop/Go penalty, 10s, 0laps for Speeding In Pitlane. Result: penalties=1, 1st=Stop/Go,10s</Penalty>
-<Incident et="702.4">George Abbott(1) reported contact (22.30) with Immovable</Incident>
-<Incident et="703.4">George Abbott(1) reported contact (22.31) with Immovable</Incident>
-<Score et="703.5">Valkyria Diaz(14) lap=3 point=1 t=44.487 et=703.440</Score>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="713.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Levin Maage" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="716.3">No Further Action</TrackLimits>
-<Score et="717.5">Steven Yerly(12) lap=3 point=1 t=47.032 et=717.460</Score>
-<Score et="718.8">Philippe Leblanc(6) lap=2 point=0 t=413.140 et=718.760</Score>
-<Score et="722.6">Bennet Jung(0) lap=3 point=0 t=243.920 et=722.580</Score>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="725.6">No Further Action</TrackLimits>
-<Score et="727.4">Alexis Louguet(5) lap=3 point=2 t=116.000 et=727.360</Score>
-<Penalty Driver="Philippe Leblanc" ID="6" Penalty="Drive Thru" Time="10" Laps="0" Reason="Speeding In Pitlane" et="729.8">Philippe Leblanc received Drive Thru penalty, 10s, 0laps for Speeding In Pitlane. Result: penalties=2, 1st=Drive Thru,0s</Penalty>
-<Score et="731.6">Levin Maage(13) lap=3 point=1 t=53.243 et=731.560</Score>
-<TrackLimits Driver="Adam Robair" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="732.3">No Further Action</TrackLimits>
-<Score et="736.4">Vladimir Hmelevskiy(16) lap=3 point=2 t=119.801 et=736.220</Score>
-<Score et="741.3">P-A Fugeekies(18) lap=3 point=1 t=95.459 et=741.310</Score>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="741.4">No Further Action</TrackLimits>
-<Score et="742.0">kecs ong(19) lap=3 point=2 t=117.630 et=741.920</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="2" WarningPoints="2.75" CurrentPoints="2.75" Resolution="4" et="742.4">Warning</TrackLimits>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="746.7">No Further Action</TrackLimits>
-<Score et="755.5">shiu chan(8) lap=3 point=2 t=118.204 et=755.320</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="2" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="756.8">No Further Action</TrackLimits>
-<Score et="760.4">Adam Robair(21) lap=3 point=2 t=119.613 et=760.260</Score>
-<Score et="761.7">Bruno Donaire(11) lap=3 point=2 t=119.492 et=761.520</Score>
-<TrackLimits Driver="P-A Fugeekies" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="765.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Steven Yerly" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="765.5">No Further Action</TrackLimits>
-<Score et="766.6">Evan Jacquemart(4) lap=3 point=2 t=119.117 et=766.560</Score>
-<Sector Driver="Alexis Louguet" ID="5" Sector="3" Class="GT3" et="772.5">Alexis Louguet(5) set new best for sector 3</Sector>
-<Score et="772.5">Alexis Louguet(5) lap=4 point=0 t=161.098 et=772.440</Score>
-<Score et="772.5">Philippe Leblanc(6) lap=2 point=1 t=-1.000 et=772.440</Score>
-<Score et="773.2">David Maraz(15) lap=3 point=2 t=124.905 et=773.180</Score>
-<Score et="773.7">Bennet Jung(0) lap=3 point=1 t=51.049 et=773.620</Score>
-<Score et="775.4">Jeremy Rux(3) lap=3 point=2 t=119.384 et=775.340</Score>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.4">No Further Action</TrackLimits>
-<Score et="780.8">Valkyria Diaz(14) lap=3 point=2 t=121.859 et=780.800</Score>
-<TrackLimits Driver="Philippe Leblanc" ID="6" Lap="2" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="781.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Vladimir Hmelevskiy" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="785.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="787.4">No Further Action</TrackLimits>
-<Score et="787.9">kecs ong(19) lap=4 point=0 t=163.542 et=787.840</Score>
-<Score et="791.0">Vladimir Hmelevskiy(16) lap=4 point=0 t=174.440 et=790.860</Score>
-<Score et="793.3">Steven Yerly(12) lap=3 point=2 t=122.805 et=793.220</Score>
-<TrackLimits Driver="Evan Jacquemart" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="795.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Bruno Donaire" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="798.1">No Further Action</TrackLimits>
-<TrackLimits Driver="David Maraz" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="799.9">No Further Action</TrackLimits>
-<Score et="801.2">shiu chan(8) lap=4 point=0 t=163.920 et=801.040</Score>
-<Score et="806.8">Levin Maage(13) lap=3 point=2 t=128.434 et=806.760</Score>
-<Score et="808.6">Bruno Donaire(11) lap=4 point=0 t=166.381 et=808.400</Score>
-<Score et="808.7">Adam Robair(21) lap=4 point=0 t=167.918 et=808.580</Score>
-<Incident et="809.6">P-A Fugeekies(18) reported contact (2012.12) with Immovable</Incident>
-<Incident et="809.6">P-A Fugeekies(18) reported contact (27.05) with Sign</Incident>
-<Incident et="810.6">P-A Fugeekies(18) reported contact (321.58) with Immovable</Incident>
-<Score et="814.7">Alexis Louguet(5) lap=4 point=1 t=42.188 et=814.640</Score>
-<Score et="818.5">Evan Jacquemart(4) lap=4 point=0 t=171.039 et=818.500</Score>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="138.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="141.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="142.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4855" ID="22" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="144.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4818" ID="14" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="151.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4628" ID="8" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="152.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="153.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="154.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="155.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="156.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="157.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="160.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3021" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="161.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="167.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="179.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3021" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="181.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="187.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="191.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="220.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="221.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="222.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="224.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="225.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="234.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="241.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="244.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="261.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="271.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="278.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="281.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="288.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="290.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3054" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="298.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="300.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="300.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="0" WarningPoints="1" CurrentPoints="1" Resolution="4" et="307.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="314.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="315.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="321.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3864" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="326.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="330.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="332.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="335.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="335.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4628" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="336.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="342.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="343.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="1" WarningPoints="0.5" CurrentPoints="0.5" Resolution="4" et="347.1">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="348.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3864" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="349.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="349.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="355.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="357.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="358.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3480" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="364.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="380.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3717" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="390.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="410.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3480" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="416.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="7" et="418.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="423.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="427.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="434.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="435.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="441.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="446.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="451.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="452.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="455.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3021" ID="0" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4263" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="458.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3717" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="464.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4360" ID="20" Lap="1" WarningPoints="0" CurrentPoints="1" Resolution="7" et="466.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4528" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="473.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2888" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="478.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3717" ID="3" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="480.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="482.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="485.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="487.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3864" ID="19" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="488.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4263" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="497.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="500.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4628" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="502.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="2" WarningPoints="0.25" CurrentPoints="0.75" Resolution="4" et="502.3">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="517.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="530.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3021" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="539.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="7" et="542.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4818" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="547.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="557.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="558.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="2" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="558.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="565.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="565.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="597.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="2" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="601.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="612.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="7" et="632.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4628" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="665.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="668.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="669.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="670.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="675.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="676.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="698.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="701.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="713.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3948" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="716.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="725.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2809" ID="21" Lap="3" WarningPoints="0" CurrentPoints="0.5" Resolution="7" et="732.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="741.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="2" WarningPoints="2.75" CurrentPoints="2.75" Resolution="4" et="742.4">Warning</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="746.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="2" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="756.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4347" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="765.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4680" ID="12" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="765.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="776.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4426" ID="6" Lap="2" WarningPoints="0" CurrentPoints="2.75" Resolution="7" et="781.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4844" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="785.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="787.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3365" ID="4" Lap="3" WarningPoints="0" CurrentPoints="0.75" Resolution="7" et="795.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3058" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="798.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3235" ID="15" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="7" et="799.9">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>4</MostLapsCompleted>

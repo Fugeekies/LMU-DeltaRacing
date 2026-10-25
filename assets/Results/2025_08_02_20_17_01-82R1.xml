@@ -37,790 +37,163 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Sent et="0.0">&quot;Mathieu Desmettre&quot; has taken the wheel.</Sent>
-<Sent et="0.0">&quot;Harutyun Yeritsyan&quot; has taken the wheel.</Sent>
-<ChatMessage et="0.0">H Yeritsyan: and also french</ChatMessage>
-<Sent et="0.2">&quot;SRF Butcher&quot; has taken the wheel.</Sent>
-<Sent et="0.6">&quot;Marco Lindemann&quot; has taken the wheel.</Sent>
-<Sent et="0.7">&quot;Morgan chaillie&quot; has taken the wheel.</Sent>
-<Sent et="2.0">&quot;Anton Travin&quot; has taken the wheel.</Sent>
-<Sent et="2.7">&quot;Holgi Ja&quot; has taken the wheel.</Sent>
-<Sent et="3.0">&quot;H Teeffelen&quot; has taken the wheel.</Sent>
-<Sent et="3.1">&quot;Lukas Franke&quot; has taken the wheel.</Sent>
-<Sent et="3.2">&quot;Alex Zonov&quot; has taken the wheel.</Sent>
-<Sent et="3.3">&quot;Max Schumacher&quot; has taken the wheel.</Sent>
-<Sent et="3.4">&quot;A R&quot; has taken the wheel.</Sent>
-<Sent et="3.7">&quot;Devoreaux Craigen&quot; has taken the wheel.</Sent>
-<Sent et="3.9">&quot;Armen Guibert&quot; has taken the wheel.</Sent>
-<ChatMessage et="5.4">A Guibert: same</ChatMessage>
-<Sent et="5.7">&quot;Rafael Prado&quot; has taken the wheel.</Sent>
-<Sent et="5.8">&quot;Marcelo Yadrijevic&quot; has taken the wheel.</Sent>
-<Sent et="9.2">&quot;Iron Moon&quot; has taken the wheel.</Sent>
-<Sent et="9.6">&quot;D Jensen&quot; has taken the wheel.</Sent>
-<ChatMessage et="25.8">H Yeritsyan: really ?? armenian or french</ChatMessage>
-<ChatMessage et="41.9">A Guibert: both armenian from my mom french from my dad</ChatMessage>
-<ChatMessage et="53.6">H Yeritsyan: tu parles francais ?</ChatMessage>
-<ChatMessage et="68.2">L Franke: no we not blöd</ChatMessage>
-<ChatMessage et="72.0">A Guibert: i dont speak french but i speak armenian</ChatMessage>
-<ChatMessage et="75.4">P Bulle: oui</ChatMessage>
-<ChatMessage et="79.0">H Yeritsyan: ok  i see</ChatMessage>
-<Penalty et="142.3">SRF Butcher received Drive Thru penalty, 0s, 0laps for &quot;Erratic driving&quot;. Result: penalties=1, 1st=Drive Thru,0s</Penalty>
-<Incident et="144.4">Max Schumacher(1) reported contact (194.59) with another vehicle Anton Travin(2)</Incident>
-<Incident et="144.4">Anton Travin(2) reported contact (123.87) with another vehicle Max Schumacher(1)</Incident>
-<Incident et="145.5">Anton Travin(2) reported contact (395.42) with Immovable</Incident>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.9">No Further Action</TrackLimits>
-<Incident et="157.3">Marco Lindemann(0) reported contact (385.65) with Immovable</Incident>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.2">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.2">No Further Action</TrackLimits>
-<TrackLimits Driver="D Jensen" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Lukas Franke" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.3">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.5">No Further Action</TrackLimits>
-<Incident et="178.5">SRF Butcher(19) reported contact (128.62) with another vehicle A R(15)</Incident>
-<Incident et="178.5">A R(15) reported contact (77.10) with another vehicle SRF Butcher(19)</Incident>
-<Incident et="179.2">Armen Guibert(17) reported contact (354.87) with another vehicle Marcelo Yadrijevic(5)</Incident>
-<Incident et="179.3">Marcelo Yadrijevic(5) reported contact (415.23) with another vehicle Armen Guibert(17)</Incident>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.6">No Further Action</TrackLimits>
-<Incident et="189.6">Harutyun Yeritsyan(8) reported contact (404.90) with another vehicle Marcelo Yadrijevic(5)</Incident>
-<Incident et="189.7">Marcelo Yadrijevic(5) reported contact (417.55) with another vehicle Harutyun Yeritsyan(8)</Incident>
-<Incident et="194.1">Pierre-Andre Bulle(20) reported contact (463.00) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="194.1">Marco Lindemann(0) reported contact (460.45) with another vehicle Pierre-Andre Bulle(20)</Incident>
-<Score et="195.5">D Jensen(6) lap=0 point=1 t=53.103 et=195.420</Score>
-<Score et="196.1">Marcelo Yadrijevic(5) lap=0 point=1 t=53.515 et=195.820</Score>
-<Score et="196.2">Harutyun Yeritsyan(8) lap=0 point=1 t=53.838 et=196.160</Score>
-<Score et="196.6">Armen Guibert(17) lap=0 point=1 t=54.142 et=196.460</Score>
-<Incident et="196.7">Alex Zonov(13) reported contact (369.75) with another vehicle Anton Travin(2)</Incident>
-<Incident et="196.7">Anton Travin(2) reported contact (323.66) with another vehicle Alex Zonov(13)</Incident>
-<Score et="197.0">Lukas Franke(12) lap=0 point=1 t=54.577 et=196.880</Score>
-<Score et="197.3">A R(15) lap=0 point=1 t=54.830 et=197.140</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.2">No Further Action</TrackLimits>
-<Score et="198.4">SRF Butcher(19) lap=0 point=1 t=-1.000 et=198.260</Score>
-<Score et="198.6">Morgan chaillie(10) lap=0 point=1 t=56.175 et=198.480</Score>
-<Score et="198.8">H Teeffelen(3) lap=0 point=1 t=56.389 et=198.700</Score>
-<Score et="199.3">Devoreaux Craigen(14) lap=0 point=1 t=56.810 et=199.120</Score>
-<Score et="199.7">Holgi Ja(18) lap=0 point=1 t=57.348 et=199.660</Score>
-<Score et="200.4">Max Schumacher(1) lap=0 point=1 t=57.979 et=200.300</Score>
-<Score et="200.7">Iron Moon(16) lap=0 point=1 t=58.382 et=200.700</Score>
-<Score et="201.2">Marco Lindemann(0) lap=0 point=1 t=58.787 et=201.100</Score>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="201.5">No Further Action</TrackLimits>
-<Score et="202.6">Mathieu Desmettre(7) lap=0 point=1 t=60.249 et=202.560</Score>
-<Score et="203.0">Pierre-Andre Bulle(20) lap=0 point=1 t=60.648 et=202.950</Score>
-<Score et="203.2">Alex Zonov(13) lap=0 point=1 t=60.779 et=203.100</Score>
-<Score et="203.6">Anton Travin(2) lap=0 point=1 t=61.182 et=203.500</Score>
-<Score et="204.1">Rafael Prado(9) lap=0 point=1 t=61.569 et=203.880</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.8">No Further Action</TrackLimits>
-<Incident et="212.0">Iron Moon(16) reported contact (140.88) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="212.0">Marco Lindemann(0) reported contact (267.14) with another vehicle Iron Moon(16)</Incident>
-<Incident et="212.0">Iron Moon(16) reported contact (282.14) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="212.0">Iron Moon(16) reported contact (282.14) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="212.1">Marco Lindemann(0) reported contact (553.79) with another vehicle Iron Moon(16)</Incident>
-<Incident et="212.5">Marco Lindemann(0) reported contact (2232.58) with another vehicle Max Schumacher(1)</Incident>
-<Incident et="212.5">Max Schumacher(1) reported contact (2204.50) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="214.3">Iron Moon(16) reported contact (1688.01) with another vehicle Max Schumacher(1)</Incident>
-<Incident et="214.3">Max Schumacher(1) reported contact (1751.15) with another vehicle Iron Moon(16)</Incident>
-<Incident et="215.1">Pierre-Andre Bulle(20) reported contact (1819.40) with another vehicle Mathieu Desmettre(7)</Incident>
-<Incident et="215.1">Mathieu Desmettre(7) reported contact (1771.78) with another vehicle Pierre-Andre Bulle(20)</Incident>
-<Sector et="215.3">Mathieu Desmettre(7) reports new suspension damage</Sector>
-<Incident et="218.0">Max Schumacher(1) reported contact (40.60) with another vehicle Iron Moon(16)</Incident>
-<Sector et="218.3">Max Schumacher(1) reports new suspension damage</Sector>
-<Incident et="218.4">Max Schumacher(1) reported contact (115.60) with another vehicle Alex Zonov(13)</Incident>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="221.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="224.5">No Further Action</TrackLimits>
-<Incident et="224.9">A R(15) reported contact (531.20) with another vehicle Armen Guibert(17)</Incident>
-<Sector et="226.9">Lukas Franke(12) reports new suspension damage</Sector>
-<Incident et="226.9">Lukas Franke(12) reported contact (1881.05) with Immovable</Incident>
-<Sector Driver="D Jensen" ID="6" Sector="2" Class="GTE" et="229.6">D Jensen(6) set new best for sector 2</Sector>
-<Score et="229.6">D Jensen(6) lap=0 point=2 t=87.206 et=229.520</Score>
-<Sector Driver="Harutyun Yeritsyan" ID="8" Sector="2" Class="GTE" et="230.2">Harutyun Yeritsyan(8) set new best for sector 2</Sector>
-<Score et="230.2">Harutyun Yeritsyan(8) lap=0 point=2 t=87.878 et=230.200</Score>
-<Score et="230.3">Marcelo Yadrijevic(5) lap=0 point=2 t=87.738 et=230.060</Score>
-<Score et="231.3">A R(15) lap=0 point=2 t=88.948 et=231.260</Score>
-<Score et="231.9">Armen Guibert(17) lap=0 point=2 t=89.420 et=231.740</Score>
-<Score et="232.4">SRF Butcher(19) lap=0 point=2 t=-1.000 et=232.340</Score>
-<Score et="232.9">Morgan chaillie(10) lap=0 point=2 t=90.516 et=232.820</Score>
-<Score et="233.2">H Teeffelen(3) lap=0 point=2 t=90.823 et=233.140</Score>
-<Score et="233.8">Devoreaux Craigen(14) lap=0 point=2 t=91.315 et=233.620</Score>
-<Score et="234.2">Holgi Ja(18) lap=0 point=2 t=91.878 et=234.200</Score>
-<Score et="237.2">Marco Lindemann(0) lap=0 point=2 t=94.843 et=237.160</Score>
-<Score et="237.8">Pierre-Andre Bulle(20) lap=0 point=2 t=95.475 et=237.778</Score>
-<Score et="240.0">Alex Zonov(13) lap=0 point=2 t=97.609 et=239.920</Score>
-<Score et="240.9">Rafael Prado(9) lap=0 point=2 t=98.408 et=240.720</Score>
-<Score et="241.4">Anton Travin(2) lap=0 point=2 t=99.085 et=241.400</Score>
-<Score et="242.6">Iron Moon(16) lap=0 point=2 t=100.223 et=242.540</Score>
-<Score et="243.8">Max Schumacher(1) lap=0 point=2 t=101.443 et=243.760</Score>
-<Score et="244.7">Mathieu Desmettre(7) lap=0 point=2 t=102.368 et=244.680</Score>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="248.9">No Further Action</TrackLimits>
-<TrackLimits Driver="A R" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="249.2">No Further Action</TrackLimits>
-<TrackLimits Driver="D Jensen" ID="6" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="250.2">Warning</TrackLimits>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.7">No Further Action</TrackLimits>
-<Sector et="250.9">SRF Butcher(19) reports new suspension damage</Sector>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.9">No Further Action</TrackLimits>
-<Incident et="251.0">SRF Butcher(19) reported contact (510.05) with another vehicle Morgan chaillie(10)</Incident>
-<Incident et="251.0">Morgan chaillie(10) reported contact (519.61) with another vehicle SRF Butcher(19)</Incident>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.2">No Further Action</TrackLimits>
-<Sector et="252.5">SRF Butcher(19) reports new suspension damage</Sector>
-<Sector et="252.6">Devoreaux Craigen(14) reports new suspension damage</Sector>
-<Incident et="252.6">SRF Butcher(19) reported contact (2022.74) with another vehicle Devoreaux Craigen(14)</Incident>
-<Incident et="252.7">Devoreaux Craigen(14) reported contact (2807.96) with another vehicle SRF Butcher(19)</Incident>
-<Incident et="253.3">Morgan chaillie(10) reported contact (1204.86) with Immovable</Incident>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.0">No Further Action</TrackLimits>
-<Incident et="260.1">Alex Zonov(13) reported contact (1094.05) with another vehicle Rafael Prado(9)</Incident>
-<Incident et="260.2">Rafael Prado(9) reported contact (1045.14) with another vehicle Alex Zonov(13)</Incident>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="261.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="266.0">No Further Action</TrackLimits>
-<Sector et="267.0">Armen Guibert(17) reports new suspension damage</Sector>
-<Incident et="267.1">Armen Guibert(17) reported contact (2862.75) with Immovable</Incident>
-<Sector et="267.2">Armen Guibert(17) reports new suspension damage</Sector>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="268.2">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="271.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="274.0">No Further Action</TrackLimits>
-<Sector Driver="Marcelo Yadrijevic" ID="5" Sector="3" Class="GTE" et="274.3">Marcelo Yadrijevic(5) set new best for sector 3</Sector>
-<Score et="274.4">Marcelo Yadrijevic(5) lap=1 point=0 t=131.876 et=274.180</Score>
-<Score et="275.2">Harutyun Yeritsyan(8) lap=1 point=0 t=132.781 et=275.100</Score>
-<Score et="276.4">A R(15) lap=1 point=0 t=133.963 et=276.280</Score>
-<Score et="279.3">H Teeffelen(3) lap=1 point=0 t=136.912 et=279.220</Score>
-<Score et="280.2">Holgi Ja(18) lap=1 point=0 t=137.859 et=280.180</Score>
-<Score et="281.4">Devoreaux Craigen(14) lap=1 point=0 t=138.904 et=281.220</Score>
-<Score et="281.5">Armen Guibert(17) lap=1 point=0 t=138.959 et=281.280</Score>
-<Score et="284.1">Pierre-Andre Bulle(20) lap=1 point=0 t=141.795 et=284.098</Score>
-<Incident et="285.9">Armen Guibert(17) reported contact (645.91) with Immovable</Incident>
-<Score et="287.0">Alex Zonov(13) lap=1 point=0 t=144.580 et=286.900</Score>
-<Incident et="287.1">Armen Guibert(17) reported contact (524.89) with Immovable</Incident>
-<Score et="287.2">Marco Lindemann(0) lap=1 point=0 t=144.822 et=287.140</Score>
-<Score et="287.4">Rafael Prado(9) lap=1 point=0 t=144.947 et=287.260</Score>
-<Incident et="288.0">Armen Guibert(17) reported contact (453.32) with Immovable</Incident>
-<Score et="288.1">Anton Travin(2) lap=1 point=0 t=145.702 et=288.020</Score>
-<Score et="289.0">Iron Moon(16) lap=1 point=0 t=146.579 et=288.900</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.6">No Further Action</TrackLimits>
-<Score et="291.5">Morgan chaillie(10) lap=1 point=0 t=149.089 et=291.400</Score>
-<Score et="298.3">Max Schumacher(1) lap=1 point=0 t=155.848 et=298.160</Score>
-<Score et="300.7">SRF Butcher(19) lap=1 point=0 t=-1.000 et=300.640</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="310.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="312.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="320.1">No Further Action</TrackLimits>
-<Sector Driver="Marcelo Yadrijevic" ID="5" Sector="1" Class="GTE" et="321.3">Marcelo Yadrijevic(5) set new best for sector 1</Sector>
-<Score et="321.3">Marcelo Yadrijevic(5) lap=1 point=1 t=46.870 et=321.060</Score>
-<Score et="322.4">Harutyun Yeritsyan(8) lap=1 point=1 t=47.275 et=322.360</Score>
-<Score et="323.3">A R(15) lap=1 point=1 t=46.925 et=323.200</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.1">No Further Action</TrackLimits>
-<Score et="327.0">H Teeffelen(3) lap=1 point=1 t=47.802 et=327.020</Score>
-<Score et="328.4">Holgi Ja(18) lap=1 point=1 t=48.205 et=328.380</Score>
-<Score et="329.2">Devoreaux Craigen(14) lap=1 point=1 t=47.732 et=328.940</Score>
-<Incident et="332.3">Armen Guibert(17) reported contact (1146.21) with Immovable</Incident>
-<Sector et="332.4">Armen Guibert(17) reports new suspension damage</Sector>
-<Score et="332.6">Pierre-Andre Bulle(20) lap=1 point=1 t=48.540 et=332.638</Score>
-<Incident et="333.2">Armen Guibert(17) reported contact (6060.49) with Immovable</Incident>
-<Sector et="333.2">Armen Guibert(17) reports new suspension damage</Sector>
-<Incident et="333.2">Armen Guibert(17) reported contact (6060.49) with Immovable</Incident>
-<Score et="335.1">Alex Zonov(13) lap=1 point=1 t=48.178 et=335.080</Score>
-<Score et="336.2">Rafael Prado(9) lap=1 point=1 t=48.733 et=336.000</Score>
-<Score et="337.8">Marco Lindemann(0) lap=1 point=1 t=50.655 et=337.780</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="339.0">No Further Action</TrackLimits>
-<Score et="339.3">Iron Moon(16) lap=1 point=1 t=50.374 et=339.260</Score>
-<Score et="339.8">Morgan chaillie(10) lap=1 point=1 t=48.315 et=339.720</Score>
-<Incident et="341.1">Max Schumacher(1) reported contact (47.98) with Sign</Incident>
-<Incident et="341.1">Max Schumacher(1) reported contact (48.52) with Sign</Incident>
-<Incident et="341.8">Max Schumacher(1) reported contact (50.91) with Sign</Incident>
-<Incident et="341.8">Max Schumacher(1) reported contact (89.09) with Sign</Incident>
-<Incident et="342.2">Max Schumacher(1) reported contact (697.12) with Immovable</Incident>
-<Score et="343.8">Armen Guibert(17) lap=1 point=1 t=62.398 et=343.660</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.7">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.8">No Further Action</TrackLimits>
-<Score et="349.6">Anton Travin(2) lap=1 point=1 t=61.530 et=349.540</Score>
-<Score et="350.4">SRF Butcher(19) lap=1 point=1 t=49.660 et=350.300</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="351.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="352.9">No Further Action</TrackLimits>
-<Score et="353.7">Max Schumacher(1) lap=1 point=1 t=55.462 et=353.620</Score>
-<Sector Driver="Marcelo Yadrijevic" ID="5" Sector="2" Class="GTE" et="354.4">Marcelo Yadrijevic(5) set new best for sector 2</Sector>
-<Score et="354.4">Marcelo Yadrijevic(5) lap=1 point=2 t=80.077 et=354.260</Score>
-<Score et="355.8">Harutyun Yeritsyan(8) lap=1 point=2 t=80.636 et=355.720</Score>
-<Score et="356.0">Mathieu Desmettre(7) lap=1 point=0 t=213.589 et=355.900</Score>
-<Sector Driver="A R" ID="15" Sector="2" Class="GTE" et="356.4">A R(15) set new best for sector 2</Sector>
-<Score et="356.4">A R(15) lap=1 point=2 t=80.027 et=356.300</Score>
-<Score et="360.5">H Teeffelen(3) lap=1 point=2 t=81.269 et=360.500</Score>
-<Score et="362.3">Holgi Ja(18) lap=1 point=2 t=82.117 et=362.280</Score>
-<Score et="362.6">Devoreaux Craigen(14) lap=1 point=2 t=81.219 et=362.440</Score>
-<Score et="366.2">Pierre-Andre Bulle(20) lap=1 point=2 t=82.111 et=366.209</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="367.3">No Further Action</TrackLimits>
-<Score et="370.2">Rafael Prado(9) lap=1 point=2 t=82.765 et=370.020</Score>
-<Score et="372.2">Alex Zonov(13) lap=1 point=2 t=85.244 et=372.140</Score>
-<Score et="373.0">Marco Lindemann(0) lap=1 point=2 t=85.785 et=372.920</Score>
-<Score et="373.4">Morgan chaillie(10) lap=1 point=2 t=81.939 et=373.340</Score>
-<Score et="374.7">Iron Moon(16) lap=1 point=2 t=85.806 et=374.700</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="376.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.1">No Further Action</TrackLimits>
-<Score et="384.2">Anton Travin(2) lap=1 point=2 t=96.166 et=384.180</Score>
-<Score et="384.6">SRF Butcher(19) lap=1 point=2 t=83.886 et=384.520</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="386.0">Warning</TrackLimits>
-<Score et="386.8">Armen Guibert(17) lap=1 point=2 t=105.341 et=386.620</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="386.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="389.0">No Further Action</TrackLimits>
-<Score et="398.6">Max Schumacher(1) lap=1 point=2 t=100.385 et=398.540</Score>
-<Score et="398.8">Marcelo Yadrijevic(5) lap=2 point=0 t=124.461 et=398.640</Score>
-<Score et="400.9">Harutyun Yeritsyan(8) lap=2 point=0 t=125.747 et=400.840</Score>
-<Score et="401.5">A R(15) lap=2 point=0 t=125.152 et=401.420</Score>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.0">No Further Action</TrackLimits>
-<Score et="405.0">Mathieu Desmettre(7) lap=1 point=1 t=49.106 et=405.000</Score>
-<Score et="405.8">H Teeffelen(3) lap=2 point=0 t=126.583 et=405.800</Score>
-<Score et="407.2">Holgi Ja(18) lap=2 point=0 t=127.009 et=407.180</Score>
-<Score et="408.0">Devoreaux Craigen(14) lap=2 point=0 t=126.673 et=407.880</Score>
-<Score et="411.4">Pierre-Andre Bulle(20) lap=2 point=0 t=127.280 et=411.378</Score>
-<Score et="415.1">Rafael Prado(9) lap=2 point=0 t=-1.000 et=414.940</Score>
-<Score et="418.9">Alex Zonov(13) lap=2 point=0 t=131.977 et=418.860</Score>
-<Score et="419.5">Morgan chaillie(10) lap=2 point=0 t=128.003 et=419.400</Score>
-<Score et="420.0">Marco Lindemann(0) lap=2 point=0 t=132.798 et=419.940</Score>
-<Score et="422.0">Iron Moon(16) lap=2 point=0 t=133.067 et=421.960</Score>
-<Score et="430.6">Anton Travin(2) lap=2 point=0 t=142.506 et=430.520</Score>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="434.0">No Further Action</TrackLimits>
-<Penalty et="434.8">SRF Butcher served 1st Drive Thru penalty, result: penalties=0, 1st=Drive Thru,0s</Penalty>
-<Score et="438.5">Mathieu Desmettre(7) lap=1 point=2 t=82.592 et=438.500</Score>
-<Sector et="439.2">Iron Moon(16) reports new suspension damage</Sector>
-<Incident et="439.2">Iron Moon(16) reported contact (83.54) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="439.2">Marco Lindemann(0) reported contact (215.22) with another vehicle Iron Moon(16)</Incident>
-<Sector Driver="Marcelo Yadrijevic" ID="5" Sector="1" Class="GTE" et="445.3">Marcelo Yadrijevic(5) set new best for sector 1</Sector>
-<Score et="445.3">Marcelo Yadrijevic(5) lap=2 point=1 t=46.380 et=445.020</Score>
-<Score et="447.7">Harutyun Yeritsyan(8) lap=2 point=1 t=46.863 et=447.700</Score>
-<Score et="448.8">A R(15) lap=2 point=1 t=47.244 et=448.680</Score>
-<Score et="453.5">H Teeffelen(3) lap=2 point=1 t=47.609 et=453.420</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="455.5">No Further Action</TrackLimits>
-<Score et="455.5">Holgi Ja(18) lap=2 point=1 t=48.344 et=455.520</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.0">No Further Action</TrackLimits>
-<Score et="458.7">Devoreaux Craigen(14) lap=2 point=1 t=50.633 et=458.520</Score>
-<Score et="459.0">Pierre-Andre Bulle(20) lap=2 point=1 t=47.596 et=458.974</Score>
-<Score et="459.1">SRF Butcher(19) lap=2 point=0 t=158.406 et=459.040</Score>
-<TrackLimits Driver="Marcelo Yadrijevic" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="460.3">No Further Action</TrackLimits>
-<Score et="462.3">Rafael Prado(9) lap=2 point=1 t=47.186 et=462.120</Score>
-<Score et="467.7">Alex Zonov(13) lap=2 point=1 t=48.733 et=467.600</Score>
-<Score et="468.6">Morgan chaillie(10) lap=2 point=1 t=49.094 et=468.500</Score>
-<Score et="470.4">Marco Lindemann(0) lap=2 point=1 t=50.449 et=470.380</Score>
-<Score et="472.2">Iron Moon(16) lap=2 point=1 t=50.227 et=472.180</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="477.9">No Further Action</TrackLimits>
-<Score et="480.7">Marcelo Yadrijevic(5) lap=2 point=2 t=81.890 et=480.540</Score>
-<Score et="481.2">Harutyun Yeritsyan(8) lap=2 point=2 t=80.304 et=481.140</Score>
-<Score et="482.3">A R(15) lap=2 point=2 t=80.760 et=482.180</Score>
-<Score et="482.9">Anton Travin(2) lap=2 point=1 t=52.324 et=482.840</Score>
-<Score et="483.9">Mathieu Desmettre(7) lap=2 point=0 t=127.930 et=483.840</Score>
-<Score et="487.0">H Teeffelen(3) lap=2 point=2 t=81.154 et=486.960</Score>
-<Score et="489.7">Holgi Ja(18) lap=2 point=2 t=82.509 et=489.680</Score>
-<Score et="492.9">Pierre-Andre Bulle(20) lap=2 point=2 t=81.487 et=492.865</Score>
-<Score et="493.5">Devoreaux Craigen(14) lap=2 point=2 t=85.401 et=493.280</Score>
-<Score et="496.2">Rafael Prado(9) lap=2 point=2 t=81.001 et=495.940</Score>
-<Score et="501.9">Alex Zonov(13) lap=2 point=2 t=83.009 et=501.880</Score>
-<Score et="502.5">Morgan chaillie(10) lap=2 point=2 t=83.057 et=502.460</Score>
-<Score et="505.2">Marco Lindemann(0) lap=2 point=2 t=85.204 et=505.140</Score>
-<Score et="506.4">SRF Butcher(19) lap=2 point=1 t=47.265 et=506.320</Score>
-<Score et="506.9">Iron Moon(16) lap=2 point=2 t=84.897 et=506.860</Score>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="508.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="509.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="517.3">No Further Action</TrackLimits>
-<Score et="519.7">Anton Travin(2) lap=2 point=2 t=89.130 et=519.660</Score>
-<Score et="525.4">Marcelo Yadrijevic(5) lap=3 point=0 t=126.541 et=525.180</Score>
-<Score et="525.7">Harutyun Yeritsyan(8) lap=3 point=0 t=124.793 et=525.640</Score>
-<Score et="532.1">H Teeffelen(3) lap=3 point=0 t=126.229 et=532.040</Score>
-<Score et="532.2">Mathieu Desmettre(7) lap=2 point=1 t=48.323 et=532.160</Score>
-<Score et="534.8">Holgi Ja(18) lap=3 point=0 t=127.591 et=534.780</Score>
-<Score et="537.9">Pierre-Andre Bulle(20) lap=3 point=0 t=126.562 et=537.940</Score>
-<Score et="539.0">Devoreaux Craigen(14) lap=3 point=0 t=130.915 et=538.800</Score>
-<Score et="540.6">Rafael Prado(9) lap=3 point=0 t=125.516 et=540.460</Score>
-<Score et="540.7">SRF Butcher(19) lap=2 point=2 t=81.640 et=540.680</Score>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="547.3">No Further Action</TrackLimits>
-<Score et="548.2">Morgan chaillie(10) lap=3 point=0 t=128.694 et=548.100</Score>
-<Score et="552.1">Marco Lindemann(0) lap=3 point=0 t=132.144 et=552.080</Score>
-<Score et="554.4">Iron Moon(16) lap=3 point=0 t=132.351 et=554.320</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="558.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="564.6">No Further Action</TrackLimits>
-<Score et="565.1">Armen Guibert(17) lap=2 point=0 t=283.697 et=564.960</Score>
-<Score et="565.8">Anton Travin(2) lap=3 point=0 t=135.280 et=565.800</Score>
-<Score et="566.3">Mathieu Desmettre(7) lap=2 point=2 t=82.368 et=566.200</Score>
-<Score et="567.7">A R(15) lap=3 point=0 t=166.194 et=567.620</Score>
-<Score et="572.7">Marcelo Yadrijevic(5) lap=3 point=1 t=47.269 et=572.460</Score>
-<Score et="572.7">Harutyun Yeritsyan(8) lap=3 point=1 t=46.965 et=572.600</Score>
-<Score et="579.9">H Teeffelen(3) lap=3 point=1 t=47.848 et=579.880</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="581.7">No Further Action</TrackLimits>
-<Score et="583.7">Holgi Ja(18) lap=3 point=1 t=48.897 et=583.660</Score>
-<Score et="585.2">Max Schumacher(1) lap=2 point=0 t=286.990 et=585.160</Score>
-<Score et="586.1">SRF Butcher(19) lap=3 point=0 t=126.978 et=586.020</Score>
-<Incident et="586.3">Max Schumacher(1) reported contact (523.77) with Immovable</Incident>
-<Score et="587.4">Devoreaux Craigen(14) lap=3 point=1 t=48.499 et=587.300</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="588.1">No Further Action</TrackLimits>
-<Score et="588.4">Rafael Prado(9) lap=3 point=1 t=47.783 et=588.240</Score>
-<Incident et="590.8">Pierre-Andre Bulle(20) reported contact (2929.09) with Immovable</Incident>
-<Sector et="590.9">Pierre-Andre Bulle(20) reports new suspension damage</Sector>
-<Score et="595.1">Alex Zonov(13) lap=3 point=0 t=176.236 et=595.100</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.0">No Further Action</TrackLimits>
-<Score et="596.4">Morgan chaillie(10) lap=3 point=1 t=48.264 et=596.360</Score>
-<Score et="600.4">Pierre-Andre Bulle(20) lap=3 point=1 t=62.480 et=600.420</Score>
-<Score et="601.4">Marco Lindemann(0) lap=3 point=1 t=49.303 et=601.380</Score>
-<Score et="604.2">Iron Moon(16) lap=3 point=1 t=49.909 et=604.220</Score>
-<Sector et="605.7">Max Schumacher(1) reports new suspension damage</Sector>
-<Incident et="605.7">Max Schumacher(1) reported contact (601.11) with Immovable</Incident>
-<Sector et="605.8">Max Schumacher(1) reports new suspension damage</Sector>
-<Score et="606.0">Marcelo Yadrijevic(5) lap=3 point=2 t=80.626 et=605.820</Score>
-<Score et="606.0">Harutyun Yeritsyan(8) lap=3 point=2 t=80.317 et=605.940</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="607.4">No Further Action</TrackLimits>
-<Incident et="610.9">Harutyun Yeritsyan(8) reported contact (1074.99) with another vehicle Marcelo Yadrijevic(5)</Incident>
-<Incident et="610.9">Marcelo Yadrijevic(5) reported contact (932.56) with another vehicle Harutyun Yeritsyan(8)</Incident>
-<Score et="611.1">Mathieu Desmettre(7) lap=3 point=0 t=127.238 et=611.060</Score>
-<Incident et="611.7">Marcelo Yadrijevic(5) reported contact (136.76) with Sign</Incident>
-<Incident et="611.8">Marcelo Yadrijevic(5) reported contact (136.65) with Sign</Incident>
-<Score et="613.0">Armen Guibert(17) lap=2 point=1 t=47.943 et=612.920</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="613.0">No Further Action</TrackLimits>
-<Score et="613.5">H Teeffelen(3) lap=3 point=2 t=81.415 et=613.460</Score>
-<Sector et="614.2">Marcelo Yadrijevic(5) reports new suspension damage</Sector>
-<Incident et="614.2">Marcelo Yadrijevic(5) reported contact (5665.47) with Immovable</Incident>
-<Sector et="614.5">Marcelo Yadrijevic(5) reports new suspension damage</Sector>
-<Sector et="615.0">Harutyun Yeritsyan(8) reports new suspension damage</Sector>
-<Incident et="615.1">Harutyun Yeritsyan(8) reported contact (1982.68) with Immovable</Incident>
-<Score et="615.4">A R(15) lap=3 point=1 t=47.714 et=615.340</Score>
-<Score et="615.7">Anton Travin(2) lap=3 point=1 t=49.863 et=615.660</Score>
-<Score et="617.8">Holgi Ja(18) lap=3 point=2 t=82.998 et=617.760</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcelo Yadrijevic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.6">No Further Action</TrackLimits>
-<Score et="620.8">Devoreaux Craigen(14) lap=3 point=2 t=81.905 et=620.700</Score>
-<Score et="622.0">Rafael Prado(9) lap=3 point=2 t=81.399 et=621.860</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="622.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Harutyun Yeritsyan" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="623.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="624.7">No Further Action</TrackLimits>
-<Incident et="630.1">Pierre-Andre Bulle(20) reported contact (1045.12) with another vehicle Iron Moon(16)</Incident>
-<Incident et="630.1">Iron Moon(16) reported contact (1143.63) with another vehicle Pierre-Andre Bulle(20)</Incident>
-<Score et="630.8">Morgan chaillie(10) lap=3 point=2 t=82.571 et=630.660</Score>
-<TrackLimits Driver="Marcelo Yadrijevic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="631.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="633.0">No Further Action</TrackLimits>
-<Score et="634.7">SRF Butcher(19) lap=3 point=1 t=48.652 et=634.680</Score>
-<Score et="635.5">Max Schumacher(1) lap=2 point=1 t=50.285 et=635.440</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="635.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Marcelo Yadrijevic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="635.7">No Further Action</TrackLimits>
-<Sector et="635.7">Holgi Ja(18) reports new suspension damage</Sector>
-<Incident et="635.8">Holgi Ja(18) reported contact (171.97) with another vehicle Marcelo Yadrijevic(5)</Incident>
-<Score et="636.8">Marco Lindemann(0) lap=3 point=2 t=84.736 et=636.820</Score>
-<TrackLimits Driver="Harutyun Yeritsyan" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="639.6">No Further Action</TrackLimits>
-<Incident et="639.9">Holgi Ja(18) reported contact (956.07) with Immovable</Incident>
-<Score et="641.2">Iron Moon(16) lap=3 point=2 t=86.771 et=641.080</Score>
-<TrackLimits Driver="Marcelo Yadrijevic" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.9">No Further Action</TrackLimits>
-<Score et="645.5">Pierre-Andre Bulle(20) lap=3 point=2 t=107.550 et=645.490</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="646.6">No Further Action</TrackLimits>
-<Score et="647.0">Armen Guibert(17) lap=2 point=2 t=81.848 et=646.820</Score>
-<Score et="649.0">A R(15) lap=3 point=2 t=81.239 et=648.860</Score>
-<Score et="651.0">Alex Zonov(13) lap=3 point=1 t=55.888 et=651.000</Score>
-<Score et="652.0">Anton Travin(2) lap=3 point=2 t=86.071 et=651.880</Score>
-<TrackLimits Driver="Iron Moon" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="655.6">No Further Action</TrackLimits>
-<Sector et="656.7">Marcelo Yadrijevic(5) reports new suspension damage</Sector>
-<Incident et="656.7">Marcelo Yadrijevic(5) reported contact (2077.30) with Immovable</Incident>
-<Score et="658.5">H Teeffelen(3) lap=4 point=0 t=126.410 et=658.440</Score>
-<Incident et="658.8">Marcelo Yadrijevic(5) reported contact (1673.46) with Immovable</Incident>
-<Score et="659.7">Mathieu Desmettre(7) lap=3 point=1 t=48.534 et=659.600</Score>
-<Incident et="663.9">Marcelo Yadrijevic(5) reported contact (804.87) with Immovable</Incident>
-<Score et="665.1">Harutyun Yeritsyan(8) lap=4 point=0 t=139.445 et=665.080</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="665.8">No Further Action</TrackLimits>
-<Score et="666.3">Devoreaux Craigen(14) lap=4 point=0 t=127.277 et=666.080</Score>
-<Score et="666.5">Rafael Prado(9) lap=4 point=0 t=125.873 et=666.320</Score>
-<Incident et="668.5">Pierre-Andre Bulle(20) reported contact (6.89) with Cone</Incident>
-<Score et="668.7">SRF Butcher(19) lap=3 point=2 t=82.627 et=668.660</Score>
-<Score et="669.7">Max Schumacher(1) lap=2 point=2 t=84.527 et=669.680</Score>
-<Score et="676.2">Holgi Ja(18) lap=4 point=0 t=141.360 et=676.140</Score>
-<Score et="676.5">Morgan chaillie(10) lap=4 point=0 t=128.313 et=676.420</Score>
-<Score et="684.0">Marco Lindemann(0) lap=4 point=0 t=131.828 et=683.900</Score>
-<Score et="686.1">Alex Zonov(13) lap=3 point=2 t=90.927 et=686.040</Score>
-<Score et="688.0">Iron Moon(16) lap=4 point=0 t=133.580 et=687.900</Score>
-<Sector et="688.4">Anton Travin(2) reports new suspension damage</Sector>
-<Incident et="688.5">Anton Travin(2) reported contact (1307.85) with Immovable</Incident>
-<Sector et="688.6">Anton Travin(2) reports new suspension damage</Sector>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="691.1">No Further Action</TrackLimits>
-<Score et="693.1">Mathieu Desmettre(7) lap=3 point=2 t=81.988 et=693.060</Score>
-<Score et="693.3">Armen Guibert(17) lap=3 point=0 t=128.161 et=693.120</Score>
-<Score et="694.1">A R(15) lap=4 point=0 t=126.359 et=693.980</Score>
-<Score et="698.6">Anton Travin(2) lap=4 point=0 t=132.702 et=698.500</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="700.4">No Further Action</TrackLimits>
-<Score et="706.6">H Teeffelen(3) lap=4 point=1 t=48.098 et=706.540</Score>
-<Score et="712.3">Harutyun Yeritsyan(8) lap=4 point=1 t=47.156 et=712.240</Score>
-<Score et="713.5">SRF Butcher(19) lap=4 point=0 t=127.403 et=713.420</Score>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="713.5">No Further Action</TrackLimits>
-<Score et="714.4">Rafael Prado(9) lap=4 point=1 t=47.796 et=714.120</Score>
-<Score et="715.3">Devoreaux Craigen(14) lap=4 point=1 t=48.966 et=715.040</Score>
-<Score et="715.4">Max Schumacher(1) lap=3 point=0 t=130.168 et=715.320</Score>
-<Score et="724.4">Holgi Ja(18) lap=4 point=1 t=48.180 et=724.320</Score>
-<Score et="724.7">Morgan chaillie(10) lap=4 point=1 t=48.138 et=724.560</Score>
-<Score et="733.0">Alex Zonov(13) lap=4 point=0 t=137.809 et=732.920</Score>
-<Score et="735.7">Marco Lindemann(0) lap=4 point=1 t=51.712 et=735.620</Score>
-<Score et="737.3">Iron Moon(16) lap=4 point=1 t=49.363 et=737.260</Score>
-<Score et="738.2">Mathieu Desmettre(7) lap=4 point=0 t=127.134 et=738.200</Score>
-<Score et="740.2">H Teeffelen(3) lap=4 point=2 t=81.664 et=740.120</Score>
-<Score et="740.6">Armen Guibert(17) lap=3 point=1 t=47.368 et=740.500</Score>
-<Score et="741.1">A R(15) lap=4 point=1 t=47.009 et=740.980</Score>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.8">No Further Action</TrackLimits>
-<Score et="746.2">Harutyun Yeritsyan(8) lap=4 point=2 t=81.065 et=746.140</Score>
-<Score et="748.0">Rafael Prado(9) lap=4 point=2 t=81.396 et=747.720</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="749.5">No Further Action</TrackLimits>
-<Score et="750.6">Devoreaux Craigen(14) lap=4 point=2 t=84.427 et=750.500</Score>
-<Score et="752.6">Anton Travin(2) lap=4 point=1 t=53.995 et=752.500</Score>
-<Score et="758.9">Holgi Ja(18) lap=4 point=2 t=82.700 et=758.840</Score>
-<Score et="759.1">Morgan chaillie(10) lap=4 point=2 t=82.651 et=759.060</Score>
-<Score et="761.4">SRF Butcher(19) lap=4 point=1 t=47.886 et=761.320</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="761.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="764.1">No Further Action</TrackLimits>
-<Score et="765.5">Max Schumacher(1) lap=3 point=1 t=50.136 et=765.460</Score>
-<Score et="771.3">Marco Lindemann(0) lap=4 point=2 t=87.292 et=771.200</Score>
-<Score et="772.0">Iron Moon(16) lap=4 point=2 t=84.078 et=771.960</Score>
-<Score et="773.8">Armen Guibert(17) lap=3 point=2 t=80.547 et=773.680</Score>
-<Sector Driver="A R" ID="15" Sector="2" Class="GTE" et="774.2">A R(15) set new best for sector 2</Sector>
-<Score et="774.2">A R(15) lap=4 point=2 t=80.039 et=774.020</Score>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="783.1">No Further Action</TrackLimits>
-<Score et="785.8">H Teeffelen(3) lap=5 point=0 t=127.315 et=785.760</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="786.1">No Further Action</TrackLimits>
-<Score et="786.5">Mathieu Desmettre(7) lap=4 point=1 t=48.260 et=786.460</Score>
-<Score et="787.0">Alex Zonov(13) lap=4 point=1 t=54.102 et=787.020</Score>
-<Score et="791.2">Harutyun Yeritsyan(8) lap=5 point=0 t=126.037 et=791.120</Score>
-<Score et="792.2">Rafael Prado(9) lap=5 point=0 t=125.691 et=792.020</Score>
-<Score et="792.4">Anton Travin(2) lap=4 point=2 t=93.834 et=792.340</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="792.8">No Further Action</TrackLimits>
-<Score et="795.2">SRF Butcher(19) lap=4 point=2 t=81.716 et=795.140</Score>
-<Score et="796.0">Devoreaux Craigen(14) lap=5 point=0 t=129.757 et=795.840</Score>
-<Score et="799.5">Max Schumacher(1) lap=3 point=2 t=84.168 et=799.480</Score>
-<Score et="805.1">Holgi Ja(18) lap=5 point=0 t=128.928 et=805.060</Score>
-<Score et="805.5">Morgan chaillie(10) lap=5 point=0 t=129.005 et=805.420</Score>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="811.4">No Further Action</TrackLimits>
-<Sector et="812.1">Harutyun Yeritsyan(8) reports new suspension damage</Sector>
-<Incident et="812.2">Harutyun Yeritsyan(8) reported contact (974.06) with another vehicle Rafael Prado(9)</Incident>
-<Sector et="812.2">Rafael Prado(9) reports new suspension damage</Sector>
-<Incident et="812.3">Rafael Prado(9) reported contact (1569.27) with another vehicle Harutyun Yeritsyan(8)</Incident>
-<Sector et="812.3">Harutyun Yeritsyan(8) reports new suspension damage</Sector>
-<Sector et="812.4">Rafael Prado(9) reports new suspension damage</Sector>
-<TrackLimits Driver="Harutyun Yeritsyan" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="812.5">No Further Action</TrackLimits>
-<Score et="818.5">Marco Lindemann(0) lap=5 point=0 t=134.546 et=818.440</Score>
-<Score et="819.0">A R(15) lap=5 point=0 t=124.887 et=818.860</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="819.7">No Further Action</TrackLimits>
-<Score et="819.8">Mathieu Desmettre(7) lap=4 point=2 t=81.561 et=819.760</Score>
-<Score et="820.0">Iron Moon(16) lap=5 point=0 t=132.020 et=819.920</Score>
-<Score et="820.8">Armen Guibert(17) lap=4 point=0 t=127.599 et=820.720</Score>
-<Score et="821.5">Alex Zonov(13) lap=4 point=2 t=88.494 et=821.400</Score>
-<TrackLimits Driver="Harutyun Yeritsyan" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="823.8">No Further Action</TrackLimits>
-<Score et="831.4">Pierre-Andre Bulle(20) lap=4 point=0 t=293.490 et=831.430</Score>
-<Score et="834.0">H Teeffelen(3) lap=5 point=1 t=48.210 et=833.980</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="836.0">No Further Action</TrackLimits>
-<Score et="841.7">SRF Butcher(19) lap=5 point=0 t=128.184 et=841.620</Score>
-<Score et="843.2">Anton Travin(2) lap=5 point=0 t=144.567 et=843.060</Score>
-<Incident et="843.9">Iron Moon(16) reported contact (52.73) with another vehicle Armen Guibert(17)</Incident>
-<Incident et="843.9">Iron Moon(16) reported contact (260.12) with another vehicle Armen Guibert(17)</Incident>
-<Incident et="843.9">Armen Guibert(17) reported contact (86.06) with another vehicle Iron Moon(16)</Incident>
-<Incident et="844.0">Armen Guibert(17) reported contact (268.68) with another vehicle Iron Moon(16)</Incident>
-<Score et="844.0">Devoreaux Craigen(14) lap=5 point=1 t=48.096 et=843.940</Score>
-<Score et="845.3">Max Schumacher(1) lap=4 point=0 t=129.952 et=845.280</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="848.5">No Further Action</TrackLimits>
-<Score et="852.8">Rafael Prado(9) lap=5 point=1 t=60.515 et=852.540</Score>
-<Score et="854.1">Holgi Ja(18) lap=5 point=1 t=48.966 et=854.020</Score>
-<Score et="855.2">Morgan chaillie(10) lap=5 point=1 t=49.657 et=855.080</Score>
-<Score et="865.1">Mathieu Desmettre(7) lap=5 point=0 t=126.853 et=865.060</Score>
-<Score et="866.4">A R(15) lap=5 point=1 t=47.325 et=866.200</Score>
-<Score et="867.5">H Teeffelen(3) lap=5 point=2 t=81.735 et=867.500</Score>
-<Score et="868.0">Alex Zonov(13) lap=5 point=0 t=135.005 et=867.920</Score>
-<Score et="869.0">Marco Lindemann(0) lap=5 point=1 t=50.547 et=869.000</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="870.0">No Further Action</TrackLimits>
-<Score et="870.4">Iron Moon(16) lap=5 point=1 t=50.421 et=870.340</Score>
-<Score et="870.8">Armen Guibert(17) lap=4 point=1 t=49.897 et=870.620</Score>
-<Score et="878.1">Devoreaux Craigen(14) lap=5 point=2 t=82.059 et=877.900</Score>
-<Score et="881.1">Pierre-Andre Bulle(20) lap=4 point=1 t=49.681 et=881.112</Score>
-<Score et="889.0">Holgi Ja(18) lap=5 point=2 t=83.835 et=888.900</Score>
-<Score et="889.5">Morgan chaillie(10) lap=5 point=2 t=83.916 et=889.340</Score>
-<Score et="889.5">SRF Butcher(19) lap=5 point=1 t=47.783 et=889.400</Score>
-<Incident et="890.5">Iron Moon(16) reported contact (952.57) with another vehicle Armen Guibert(17)</Incident>
-<Incident et="890.6">Armen Guibert(17) reported contact (405.38) with another vehicle Iron Moon(16)</Incident>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.0">No Further Action</TrackLimits>
-<Score et="892.6">Rafael Prado(9) lap=5 point=2 t=100.386 et=892.400</Score>
-<Score et="894.8">Max Schumacher(1) lap=4 point=1 t=49.469 et=894.740</Score>
-<Score et="895.4">Anton Travin(2) lap=5 point=1 t=52.266 et=895.340</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="896.9">No Further Action</TrackLimits>
-<Score et="899.5">A R(15) lap=5 point=2 t=80.538 et=899.400</Score>
-<Score et="903.9">Marco Lindemann(0) lap=5 point=2 t=85.407 et=903.860</Score>
-<Score et="905.0">Armen Guibert(17) lap=4 point=2 t=84.136 et=904.860</Score>
-<Score et="906.3">Iron Moon(16) lap=5 point=2 t=86.336 et=906.240</Score>
-<TrackLimits Driver="A R" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="907.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="911.5">No Further Action</TrackLimits>
-<Score et="913.1">H Teeffelen(3) lap=6 point=0 t=127.282 et=913.040</Score>
-<Score et="913.1">Mathieu Desmettre(7) lap=5 point=1 t=48.033 et=913.080</Score>
-<Score et="915.4">Pierre-Andre Bulle(20) lap=4 point=2 t=83.954 et=915.384</Score>
-<Score et="916.7">Alex Zonov(13) lap=5 point=1 t=48.711 et=916.640</Score>
-<Score et="923.1">SRF Butcher(19) lap=5 point=2 t=81.467 et=923.080</Score>
-<Sector et="923.2">Max Schumacher(1) reports new suspension damage</Sector>
-<Incident et="923.2">Max Schumacher(1) reported contact (1716.97) with Immovable</Incident>
-<Sector et="923.3">Max Schumacher(1) reports new suspension damage</Sector>
-<Score et="924.3">Devoreaux Craigen(14) lap=6 point=0 t=128.330 et=924.160</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="926.2">No Further Action</TrackLimits>
-<Score et="934.4">Max Schumacher(1) lap=4 point=2 t=89.079 et=934.340</Score>
-<Score et="935.8">Morgan chaillie(10) lap=6 point=0 t=130.237 et=935.660</Score>
-<Score et="935.8">Anton Travin(2) lap=5 point=2 t=92.676 et=935.740</Score>
-<Score et="936.0">Holgi Ja(18) lap=6 point=0 t=130.868 et=935.920</Score>
-<Sector Driver="A R" ID="15" Sector="3" Class="GTE" et="943.4">A R(15) set new best for sector 3</Sector>
-<Score et="943.4">A R(15) lap=6 point=0 t=124.448 et=943.320</Score>
-<Score et="946.9">Mathieu Desmettre(7) lap=5 point=2 t=81.734 et=946.800</Score>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="949.2">No Further Action</TrackLimits>
-<Score et="950.2">Armen Guibert(17) lap=5 point=0 t=129.358 et=950.080</Score>
-<Score et="951.1">Alex Zonov(13) lap=5 point=2 t=83.126 et=951.040</Score>
-<Score et="951.2">Marco Lindemann(0) lap=6 point=0 t=132.695 et=951.140</Score>
-<Score et="953.6">Iron Moon(16) lap=6 point=0 t=133.664 et=953.580</Score>
-<Score et="960.9">H Teeffelen(3) lap=6 point=1 t=47.800 et=960.840</Score>
-<Score et="961.6">Pierre-Andre Bulle(20) lap=5 point=0 t=130.191 et=961.621</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.6">No Further Action</TrackLimits>
-<TrackLimits Driver="A R" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.8">No Further Action</TrackLimits>
-<Score et="967.7">SRF Butcher(19) lap=6 point=0 t=126.033 et=967.640</Score>
-<Score et="972.3">Devoreaux Craigen(14) lap=6 point=1 t=47.896 et=972.060</Score>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="978.5">No Further Action</TrackLimits>
-<Score et="981.7">Max Schumacher(1) lap=5 point=0 t=136.344 et=981.620</Score>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="984.6">No Further Action</TrackLimits>
-<Score et="985.4">Holgi Ja(18) lap=6 point=1 t=49.354 et=985.280</Score>
-<Score et="985.8">Anton Travin(2) lap=6 point=0 t=142.645 et=985.720</Score>
-<Score et="986.4">Morgan chaillie(10) lap=6 point=1 t=50.656 et=986.320</Score>
-<Score et="992.6">Mathieu Desmettre(7) lap=6 point=0 t=127.473 et=992.520</Score>
-<Score et="992.8">A R(15) lap=6 point=1 t=49.320 et=992.640</Score>
-<Score et="995.4">H Teeffelen(3) lap=6 point=2 t=82.342 et=995.380</Score>
-<Score et="998.0">Alex Zonov(13) lap=6 point=0 t=130.064 et=997.980</Score>
-<Score et="998.1">Armen Guibert(17) lap=5 point=1 t=47.866 et=997.960</Score>
-<Score et="1000.5">Marco Lindemann(0) lap=6 point=1 t=49.273 et=1000.420</Score>
-<Score et="1003.2">Iron Moon(16) lap=6 point=1 t=49.630 et=1003.200</Score>
-<Score et="1005.6">Devoreaux Craigen(14) lap=6 point=2 t=81.344 et=1005.520</Score>
-<Score et="1009.1">Pierre-Andre Bulle(20) lap=5 point=1 t=47.484 et=1009.105</Score>
-<Score et="1015.9">SRF Butcher(19) lap=6 point=1 t=48.174 et=1015.820</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1016.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1019.9">No Further Action</TrackLimits>
-<Score et="1020.9">Morgan chaillie(10) lap=6 point=2 t=85.174 et=1020.820</Score>
-<Score et="1023.2">Holgi Ja(18) lap=6 point=2 t=87.284 et=1023.220</Score>
-<Score et="1026.0">A R(15) lap=6 point=2 t=82.582 et=1025.900</Score>
-<Score et="1031.0">Max Schumacher(1) lap=5 point=1 t=49.263 et=1030.880</Score>
-<Score et="1031.5">Armen Guibert(17) lap=5 point=2 t=81.299 et=1031.380</Score>
-<Score et="1034.6">Marco Lindemann(0) lap=6 point=2 t=83.421 et=1034.560</Score>
-<Score et="1035.1">Anton Travin(2) lap=6 point=1 t=49.330 et=1035.040</Score>
-<Score et="1038.1">Iron Moon(16) lap=6 point=2 t=84.512 et=1038.080</Score>
-<Score et="1038.3">Rafael Prado(9) lap=6 point=0 t=246.040 et=1038.060</Score>
-<Score et="1040.6">Mathieu Desmettre(7) lap=6 point=1 t=48.019 et=1040.540</Score>
-<Score et="1041.5">H Teeffelen(3) lap=7 point=0 t=128.474 et=1041.520</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1043.7">No Further Action</TrackLimits>
-<Score et="1047.0">Alex Zonov(13) lap=6 point=1 t=49.007 et=1047.000</Score>
-<Score et="1049.6">SRF Butcher(19) lap=6 point=2 t=81.868 et=1049.520</Score>
-<Score et="1051.2">Devoreaux Craigen(14) lap=7 point=0 t=126.882 et=1051.040</Score>
-<Score et="1052.4">Pierre-Andre Bulle(20) lap=5 point=2 t=90.743 et=1052.365</Score>
-<Score et="1065.6">Max Schumacher(1) lap=5 point=2 t=83.897 et=1065.520</Score>
-<Score et="1065.6">Morgan chaillie(10) lap=7 point=0 t=129.821 et=1065.480</Score>
-<Score et="1070.7">Anton Travin(2) lap=6 point=2 t=84.860 et=1070.580</Score>
-<Score et="1070.7">A R(15) lap=7 point=0 t=127.252 et=1070.560</Score>
-<Score et="1072.0">Holgi Ja(18) lap=7 point=0 t=136.090 et=1072.020</Score>
-<Score et="1074.3">Mathieu Desmettre(7) lap=6 point=2 t=81.727 et=1074.260</Score>
-<Score et="1078.1">Armen Guibert(17) lap=6 point=0 t=127.907 et=1078.000</Score>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1081.0">No Further Action</TrackLimits>
-<Score et="1081.1">Marco Lindemann(0) lap=7 point=0 t=129.895 et=1081.040</Score>
-<Score et="1081.7">Alex Zonov(13) lap=6 point=2 t=83.707 et=1081.700</Score>
-<Score et="1085.1">Iron Moon(16) lap=7 point=0 t=131.490 et=1085.060</Score>
-<Score et="1085.9">Rafael Prado(9) lap=6 point=1 t=47.657 et=1085.720</Score>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1089.2">No Further Action</TrackLimits>
-<Score et="1089.7">H Teeffelen(3) lap=7 point=1 t=48.115 et=1089.640</Score>
-<Score et="1094.3">SRF Butcher(19) lap=7 point=0 t=126.583 et=1094.220</Score>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1094.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1096.6">No Further Action</TrackLimits>
-<Score et="1097.8">Pierre-Andre Bulle(20) lap=6 point=0 t=136.178 et=1097.800</Score>
-<Score et="1098.9">Devoreaux Craigen(14) lap=7 point=1 t=47.722 et=1098.780</Score>
-<Incident et="1101.5">Max Schumacher(1) reported contact (2175.22) with Immovable</Incident>
-<TrackLimits Driver="Max Schumacher" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.3">No Further Action</TrackLimits>
-<Score et="1115.7">Morgan chaillie(10) lap=7 point=1 t=50.174 et=1115.640</Score>
-<Score et="1118.2">A R(15) lap=7 point=1 t=47.539 et=1118.100</Score>
-<Score et="1119.9">Rafael Prado(9) lap=6 point=2 t=81.587 et=1119.640</Score>
-<Score et="1120.4">Mathieu Desmettre(7) lap=7 point=0 t=127.805 et=1120.340</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1122.6">No Further Action</TrackLimits>
-<Score et="1123.4">H Teeffelen(3) lap=7 point=2 t=81.863 et=1123.380</Score>
-<Score et="1125.3">Armen Guibert(17) lap=6 point=1 t=47.164 et=1125.160</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1126.6">No Further Action</TrackLimits>
-<Score et="1127.3">Holgi Ja(18) lap=7 point=1 t=55.257 et=1127.280</Score>
-<Score et="1129.1">Alex Zonov(13) lap=7 point=0 t=131.066 et=1129.040</Score>
-<Score et="1129.6">Marco Lindemann(0) lap=7 point=1 t=48.527 et=1129.560</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1129.9">No Further Action</TrackLimits>
-<Score et="1132.1">Devoreaux Craigen(14) lap=7 point=2 t=80.889 et=1131.940</Score>
-<Score et="1133.7">Iron Moon(16) lap=7 point=1 t=48.552 et=1133.620</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1133.9">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1138.9">No Further Action</TrackLimits>
-<Score et="1142.0">SRF Butcher(19) lap=7 point=1 t=47.656 et=1141.880</Score>
-<Score et="1149.3">Morgan chaillie(10) lap=7 point=2 t=83.783 et=1149.260</Score>
-<Score et="1151.7">A R(15) lap=7 point=2 t=80.997 et=1151.560</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1154.4">No Further Action</TrackLimits>
-<Score et="1155.5">Pierre-Andre Bulle(20) lap=6 point=1 t=57.704 et=1155.504</Score>
-<Score et="1158.8">Armen Guibert(17) lap=6 point=2 t=80.650 et=1158.640</Score>
-<Score et="1162.4">Holgi Ja(18) lap=7 point=2 t=90.280 et=1162.300</Score>
-<Score et="1164.0">Marco Lindemann(0) lap=7 point=2 t=82.964 et=1164.000</Score>
-<Score et="1165.1">Rafael Prado(9) lap=7 point=0 t=126.875 et=1164.940</Score>
-<Score et="1167.7">Iron Moon(16) lap=7 point=2 t=82.602 et=1167.660</Score>
-<Score et="1169.0">Mathieu Desmettre(7) lap=7 point=1 t=48.613 et=1168.940</Score>
-<Score et="1170.0">H Teeffelen(3) lap=8 point=0 t=128.293 et=1169.820</Score>
-<Score et="1175.3">SRF Butcher(19) lap=7 point=2 t=81.001 et=1175.220</Score>
-<Score et="1177.5">Devoreaux Craigen(14) lap=8 point=0 t=126.323 et=1177.380</Score>
-<Score et="1178.5">Alex Zonov(13) lap=7 point=1 t=49.442 et=1178.500</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1189.4">No Further Action</TrackLimits>
-<Score et="1190.0">Pierre-Andre Bulle(20) lap=6 point=2 t=92.193 et=1189.993</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1193.4">No Further Action</TrackLimits>
-<Score et="1194.1">Morgan chaillie(10) lap=8 point=0 t=128.520 et=1194.000</Score>
-<Score et="1196.0">A R(15) lap=8 point=0 t=125.279 et=1195.840</Score>
-<Score et="1202.7">Mathieu Desmettre(7) lap=7 point=2 t=82.308 et=1202.640</Score>
-<Score et="1204.0">Armen Guibert(17) lap=7 point=0 t=125.892 et=1203.880</Score>
-<Score et="1209.5">Anton Travin(2) lap=7 point=0 t=223.698 et=1209.420</Score>
-<Score et="1210.0">Holgi Ja(18) lap=8 point=0 t=137.957 et=1209.980</Score>
-<Score et="1210.9">Marco Lindemann(0) lap=8 point=0 t=129.876 et=1210.920</Score>
-<Score et="1213.2">Alex Zonov(13) lap=7 point=2 t=84.085 et=1213.140</Score>
-<Score et="1213.2">Rafael Prado(9) lap=7 point=1 t=48.154 et=1213.080</Score>
-<Score et="1213.5">Iron Moon(16) lap=8 point=0 t=128.373 et=1213.440</Score>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1217.3">No Further Action</TrackLimits>
-<Score et="1219.0">H Teeffelen(3) lap=8 point=1 t=49.216 et=1219.020</Score>
-<Score et="1219.6">SRF Butcher(19) lap=8 point=0 t=125.246 et=1219.480</Score>
-<Score et="1225.8">Devoreaux Craigen(14) lap=8 point=1 t=48.273 et=1225.640</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1228.0">No Further Action</TrackLimits>
-<Incident et="1228.6">Holgi Ja(18) reported contact (485.48) with another vehicle Marco Lindemann(0)</Incident>
-<Incident et="1228.6">Marco Lindemann(0) reported contact (543.12) with another vehicle Holgi Ja(18)</Incident>
-<Score et="1236.3">Pierre-Andre Bulle(20) lap=7 point=0 t=138.459 et=1236.258</Score>
-<Score et="1242.3">Morgan chaillie(10) lap=8 point=1 t=48.207 et=1242.200</Score>
-<Score et="1243.4">A R(15) lap=8 point=1 t=47.403 et=1243.240</Score>
-<Score et="1247.0">Rafael Prado(9) lap=7 point=2 t=81.857 et=1246.800</Score>
-<Score et="1248.1">Mathieu Desmettre(7) lap=8 point=0 t=127.712 et=1248.040</Score>
-<Score et="1251.3">Armen Guibert(17) lap=7 point=1 t=47.326 et=1251.220</Score>
-<Score et="1253.2">H Teeffelen(3) lap=8 point=2 t=83.358 et=1253.160</Score>
-<Score et="1257.9">Anton Travin(2) lap=7 point=1 t=48.430 et=1257.840</Score>
-<Score et="1259.4">Devoreaux Craigen(14) lap=8 point=2 t=81.881 et=1259.260</Score>
-<Score et="1260.4">Alex Zonov(13) lap=8 point=0 t=131.304 et=1260.360</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1260.8">No Further Action</TrackLimits>
-<Score et="1261.0">Marco Lindemann(0) lap=8 point=1 t=50.084 et=1261.000</Score>
-<Score et="1264.4">Iron Moon(16) lap=8 point=1 t=50.905 et=1264.340</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1266.0">No Further Action</TrackLimits>
-<Score et="1266.8">Holgi Ja(18) lap=8 point=1 t=56.765 et=1266.740</Score>
-<Score et="1267.2">SRF Butcher(19) lap=8 point=1 t=47.675 et=1267.140</Score>
-<TrackLimits Driver="Mathieu Desmettre" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1273.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1273.6">No Further Action</TrackLimits>
-<Score et="1275.5">Morgan chaillie(10) lap=8 point=2 t=81.506 et=1275.500</Score>
-<Score et="1276.7">A R(15) lap=8 point=2 t=80.752 et=1276.600</Score>
-<TrackLimits Driver="Anton Travin" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1280.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Armen Guibert" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1280.5">No Further Action</TrackLimits>
-<Score et="1285.2">Armen Guibert(17) lap=7 point=2 t=81.083 et=1284.960</Score>
-<TrackLimits Driver="A R" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1286.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1286.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1289.7">No Further Action</TrackLimits>
-<Incident et="1291.5">Holgi Ja(18) reported contact (1427.59) with another vehicle SRF Butcher(19)</Incident>
-<Incident et="1291.5">SRF Butcher(19) reported contact (662.23) with another vehicle Holgi Ja(18)</Incident>
-<Score et="1291.7">Rafael Prado(9) lap=8 point=0 t=126.561 et=1291.500</Score>
-<Score et="1292.3">Anton Travin(2) lap=7 point=2 t=82.802 et=1292.220</Score>
-<TrackLimits Driver="A R" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.4">No Further Action</TrackLimits>
-<Score et="1293.6">Pierre-Andre Bulle(20) lap=7 point=1 t=57.312 et=1293.570</Score>
-<Score et="1295.8">Marco Lindemann(0) lap=8 point=2 t=84.841 et=1295.760</Score>
-<Score et="1298.8">H Teeffelen(3) lap=9 point=0 t=128.899 et=1298.700</Score>
-<Score et="1299.3">Iron Moon(16) lap=8 point=2 t=85.855 et=1299.300</Score>
-<Score et="1301.9">Mathieu Desmettre(7) lap=8 point=1 t=53.855 et=1301.900</Score>
-<Score et="1302.6">SRF Butcher(19) lap=8 point=2 t=83.082 et=1302.560</Score>
-<Score et="1302.8">Holgi Ja(18) lap=8 point=2 t=92.748 et=1302.720</Score>
-<Score et="1304.8">Devoreaux Craigen(14) lap=9 point=0 t=127.350 et=1304.720</Score>
-<Score et="1310.5">Alex Zonov(13) lap=8 point=1 t=50.116 et=1310.460</Score>
-<Score et="1320.2">Morgan chaillie(10) lap=9 point=0 t=126.155 et=1320.140</Score>
-<Score et="1320.8">A R(15) lap=9 point=0 t=124.828 et=1320.680</Score>
-<Score et="1330.0">Pierre-Andre Bulle(20) lap=7 point=2 t=93.760 et=1330.018</Score>
-<Score et="1330.4">Armen Guibert(17) lap=8 point=0 t=126.313 et=1330.200</Score>
-<TrackLimits Driver="A R" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.8">No Further Action</TrackLimits>
-<Score et="1335.7">Mathieu Desmettre(7) lap=8 point=2 t=87.583 et=1335.620</Score>
-<Score et="1338.4">Anton Travin(2) lap=8 point=0 t=128.915 et=1338.320</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1340.9">No Further Action</TrackLimits>
-<Score et="1342.8">Marco Lindemann(0) lap=9 point=0 t=131.820 et=1342.740</Score>
-<Score et="1343.9">Rafael Prado(9) lap=8 point=1 t=52.225 et=1343.720</Score>
-<Score et="1345.8">Iron Moon(16) lap=9 point=0 t=132.288 et=1345.720</Score>
-<Score et="1346.1">Alex Zonov(13) lap=8 point=2 t=85.724 et=1346.080</Score>
-<Score et="1347.5">SRF Butcher(19) lap=9 point=0 t=127.943 et=1347.420</Score>
-<Score et="1348.2">H Teeffelen(3) lap=9 point=1 t=49.496 et=1348.200</Score>
-<Score et="1350.9">Holgi Ja(18) lap=9 point=0 t=140.871 et=1350.840</Score>
-<Score et="1353.0">Devoreaux Craigen(14) lap=9 point=1 t=48.082 et=1352.800</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1360.9">No Further Action</TrackLimits>
-<Score et="1367.8">Morgan chaillie(10) lap=9 point=1 t=47.561 et=1367.720</Score>
-<Score et="1368.4">A R(15) lap=9 point=1 t=47.594 et=1368.260</Score>
-<TrackLimits Driver="Marco Lindemann" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1371.9">No Further Action</TrackLimits>
-<Score et="1377.0">Pierre-Andre Bulle(20) lap=8 point=0 t=140.746 et=1377.004</Score>
-<Score et="1377.2">Rafael Prado(9) lap=8 point=2 t=85.507 et=1377.000</Score>
-<Score et="1377.3">Armen Guibert(17) lap=8 point=1 t=46.990 et=1377.180</Score>
-<Score et="1381.8">Mathieu Desmettre(7) lap=9 point=0 t=133.656 et=1381.700</Score>
-<Score et="1383.4">H Teeffelen(3) lap=9 point=2 t=84.645 et=1383.360</Score>
-<Score et="1386.0">Anton Travin(2) lap=8 point=1 t=47.641 et=1385.960</Score>
-<Score et="1386.9">Devoreaux Craigen(14) lap=9 point=2 t=82.081 et=1386.800</Score>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1390.7">No Further Action</TrackLimits>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1392.1">No Further Action</TrackLimits>
-<Score et="1393.0">Marco Lindemann(0) lap=9 point=1 t=50.231 et=1392.960</Score>
-<Score et="1393.1">Alex Zonov(13) lap=9 point=0 t=132.682 et=1393.040</Score>
-<Score et="1394.3">Iron Moon(16) lap=9 point=1 t=48.521 et=1394.240</Score>
-<Score et="1395.1">SRF Butcher(19) lap=9 point=1 t=47.652 et=1395.060</Score>
-<Sector et="1397.6">Pierre-Andre Bulle(20) reports new suspension damage</Sector>
-<Incident et="1397.6">Pierre-Andre Bulle(20) reported contact (3105.99) with Immovable</Incident>
-<Sector et="1397.8">Pierre-Andre Bulle(20) reports new suspension damage</Sector>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1400.3">No Further Action</TrackLimits>
-<Sector Driver="Morgan chaillie" ID="10" Sector="2" Class="GTE" et="1400.8">Morgan chaillie(10) set new best for sector 2</Sector>
-<Score et="1400.8">Morgan chaillie(10) lap=9 point=2 t=80.581 et=1400.740</Score>
-<Sector Driver="A R" ID="15" Sector="2" Class="GTE" et="1401.4">A R(15) set new best for sector 2</Sector>
-<TrackLimits Driver="Devoreaux Craigen" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1401.4">No Further Action</TrackLimits>
-<Score et="1401.4">A R(15) lap=9 point=2 t=80.609 et=1401.280</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1406.8">No Further Action</TrackLimits>
-<Score et="1407.2">Holgi Ja(18) lap=9 point=1 t=56.280 et=1407.120</Score>
-<Score et="1410.6">Armen Guibert(17) lap=8 point=2 t=80.219 et=1410.420</Score>
-<TrackLimits Driver="A R" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1410.8">No Further Action</TrackLimits>
-<TrackLimits Driver="A R" ID="15" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1418.5">Warning</TrackLimits>
-<Score et="1420.1">Anton Travin(2) lap=8 point=2 t=81.652 et=1419.980</Score>
-<Score et="1421.4">Rafael Prado(9) lap=9 point=0 t=129.757 et=1421.260</Score>
-<Score et="1427.4">Marco Lindemann(0) lap=9 point=2 t=84.660 et=1427.400</Score>
-<Score et="1429.0">Iron Moon(16) lap=9 point=2 t=83.194 et=1428.920</Score>
-<Score et="1429.4">SRF Butcher(19) lap=9 point=2 t=81.965 et=1429.380</Score>
-<Score et="1430.1">Mathieu Desmettre(7) lap=9 point=1 t=48.352 et=1430.060</Score>
-<Score et="1431.3">Checkered for H Teeffelen, laps=10/2147483647, endET=1431.260010/1342.302490, crossedAfterTime=0</Score>
-<Score et="1431.3">H Teeffelen(3) lap=10 point=0 t=132.554 et=1431.260</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1431.7">No Further Action</TrackLimits>
-<Score et="1432.2">Devoreaux Craigen(14) lap=10 point=0 t=127.308 et=1432.040</Score>
-<Score et="1432.8">Pierre-Andre Bulle(20) lap=8 point=1 t=55.779 et=1432.783</Score>
-<Sector et="1434.1">Morgan chaillie(10) reports new suspension damage</Sector>
-<Sector et="1434.1">A R(15) reports new suspension damage</Sector>
-<Incident et="1434.2">Morgan chaillie(10) reported contact (653.12) with another vehicle A R(15)</Incident>
-<Incident et="1434.2">A R(15) reported contact (590.01) with another vehicle Morgan chaillie(10)</Incident>
-<Incident et="1438.4">Morgan chaillie(10) reported contact (344.46) with Immovable</Incident>
-<TrackLimits Driver="Morgan chaillie" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1439.1">No Further Action</TrackLimits>
-<Score et="1442.1">Alex Zonov(13) lap=9 point=1 t=49.034 et=1442.060</Score>
-<Score et="1443.5">Holgi Ja(18) lap=9 point=2 t=92.576 et=1443.420</Score>
-<TrackLimits Driver="Iron Moon" ID="16" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1445.5">No Further Action</TrackLimits>
-<Score et="1445.6">A R(15) lap=10 point=0 t=-1.000 et=1445.460</Score>
-<TrackLimits Driver="SRF Butcher" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1446.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1447.8">No Further Action</TrackLimits>
-<Score et="1449.0">Morgan chaillie(10) lap=10 point=0 t=128.785 et=1448.940</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1454.0">No Further Action</TrackLimits>
-<Score et="1455.4">Armen Guibert(17) lap=9 point=0 t=125.130 et=1455.320</Score>
-<Score et="1463.6">Mathieu Desmettre(7) lap=9 point=2 t=81.843 et=1463.540</Score>
-<Score et="1464.9">Anton Travin(2) lap=9 point=0 t=126.572 et=1464.900</Score>
-<Score et="1466.8">Pierre-Andre Bulle(20) lap=8 point=2 t=89.737 et=1466.741</Score>
-<Incident et="1468.0">SRF Butcher(19) reported contact (79.08) with another vehicle Iron Moon(16)</Incident>
-<Incident et="1468.0">SRF Butcher(19) reported contact (180.91) with another vehicle Iron Moon(16)</Incident>
-<Incident et="1468.0">Iron Moon(16) reported contact (46.56) with another vehicle SRF Butcher(19)</Incident>
-<Incident et="1468.0">Iron Moon(16) reported contact (162.96) with another vehicle SRF Butcher(19)</Incident>
-<Score et="1469.0">Rafael Prado(9) lap=9 point=1 t=47.578 et=1468.840</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1472.6">No Further Action</TrackLimits>
-<Score et="1474.2">Marco Lindemann(0) lap=10 point=0 t=131.448 et=1474.180</Score>
-<Score et="1475.5">SRF Butcher(19) lap=10 point=0 t=128.064 et=1475.480</Score>
-<Score et="1476.2">Iron Moon(16) lap=10 point=0 t=130.482 et=1476.200</Score>
-<Score et="1477.7">Alex Zonov(13) lap=9 point=2 t=84.618 et=1477.660</Score>
-<TrackLimits Driver="Holgi Ja" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1481.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1482.8">No Further Action</TrackLimits>
-<Score et="1492.4">Holgi Ja(18) lap=10 point=0 t=141.499 et=1492.340</Score>
-<TrackLimits Driver="Alex Zonov" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1492.7">No Further Action</TrackLimits>
-<Score et="1503.0">Rafael Prado(9) lap=9 point=2 t=81.622 et=1502.880</Score>
-<Score et="1509.4">Mathieu Desmettre(7) lap=10 point=0 t=127.648 et=1509.360</Score>
-<Incident et="1510.6">Pierre-Andre Bulle(20) reported contact (3198.67) with Immovable</Incident>
-<Sector et="1512.6">Pierre-Andre Bulle(20) reports new suspension damage</Sector>
-<Sector et="1512.6">Pierre-Andre Bulle(20) reports new suspension damage</Sector>
-<Incident et="1512.7">Pierre-Andre Bulle(20) reported contact (1306.05) with Immovable</Incident>
-<Score et="1513.7">Pierre-Andre Bulle(20) lap=9 point=0 t=136.667 et=1513.671</Score>
-<TrackLimits Driver="Pierre-Andre Bulle" ID="20" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1513.7">No Further Action</TrackLimits>
-<TrackLimits Driver="Rafael Prado" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1516.9">No Further Action</TrackLimits>
-<Incident et="1520.9">Pierre-Andre Bulle(20) reported contact (3735.57) with Immovable</Incident>
-<Incident et="1523.3">Pierre-Andre Bulle(20) reported contact (1409.25) with Immovable</Incident>
-<Score et="1524.8">Alex Zonov(13) lap=10 point=0 t=131.711 et=1524.740</Score>
-<Incident et="1525.6">Pierre-Andre Bulle(20) reported contact (1546.99) with Immovable</Incident>
-<Incident et="1528.6">Pierre-Andre Bulle(20) reported contact (180.76) with Immovable</Incident>
-<Score et="1547.7">Rafael Prado(9) lap=10 point=0 t=126.210 et=1547.460</Score>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="150.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="159.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="170.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="171.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3171" ID="6" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="175.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4010" ID="12" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="177.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="180.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="198.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="201.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="204.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="221.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="222.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="224.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="248.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="249.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3171" ID="6" Lap="0" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="250.2">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="250.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="251.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="261.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="266.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="268.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="271.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="274.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="289.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="310.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="312.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="320.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="326.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="339.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="346.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="351.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="352.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="367.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="376.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="1" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="386.0">Warning</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="386.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="389.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="404.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="434.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="453.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="455.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="458.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4057" ID="5" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="460.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="477.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="508.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="2" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="509.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="517.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="547.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="558.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="564.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="581.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="588.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="596.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="607.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="613.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4057" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="618.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="622.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3561" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="623.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="624.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4057" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="631.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="633.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="635.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4057" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="635.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3561" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="639.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4057" ID="5" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="642.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="646.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3617" ID="16" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="655.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="665.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="691.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="700.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="713.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="743.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="749.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="4" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="761.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="764.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="774.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="775.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="783.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="786.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="792.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="811.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3561" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="812.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="819.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3561" ID="8" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="823.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="836.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="848.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="5" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="870.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="891.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="896.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="907.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="911.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="926.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="949.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="965.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="978.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="984.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1016.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1019.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1043.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1081.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1089.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1094.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1096.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4173" ID="1" Lap="5" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1102.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1122.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1126.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1129.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="6" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1133.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1138.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1154.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="6" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1189.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1193.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1217.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1228.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="7" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1260.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1266.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4128" ID="7" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1273.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1273.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2951" ID="2" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1280.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2966" ID="17" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1280.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1286.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="7" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1286.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1289.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1292.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1333.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1340.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1360.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4070" ID="0" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1371.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="8" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1390.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1392.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1400.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3254" ID="14" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1401.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1402.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1406.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1410.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2794" ID="15" Lap="9" WarningPoints="0.25" CurrentPoints="0.25" Resolution="2" et="1418.5">Warning</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1431.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4250" ID="10" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1439.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3617" ID="16" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1445.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4659" ID="19" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1446.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1447.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1454.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1472.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 3578" ID="18" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1481.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="8" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1482.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 2876" ID="13" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1492.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4436" ID="20" Lap="9" WarningPoints="0" CurrentPoints="0" Resolution="5" et="1513.7">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver 4465" ID="9" Lap="9" WarningPoints="0" CurrentPoints="0.25" Resolution="5" et="1516.9">No Further Action</TrackLimits>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>10</MostLapsCompleted>
