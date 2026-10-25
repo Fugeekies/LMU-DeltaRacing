@@ -61,7 +61,7 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 1. **Zéro invention.** Ne jamais extrapoler une balise XML, une règle métier, un comportement UI ou un choix d'architecture non documenté. En cas d'ambiguïté (spec contradictoire, cas limite XML, gestion d'erreur), **s'arrêter et poser la question** avant de coder. Les specs de `docs/` se contredisent parfois : signaler la contradiction au lieu de choisir silencieusement.
 2. **TDD.** Écrire d'abord le test (MSTest + FluentAssertions), le voir échouer, puis implémenter. Préférer les vrais XML de `assets/Results/` (ne pas les copier dans `tests/`) aux données synthétiques pour les règles métier.
 3. **Après chaque modification de code :** `dotnet build` sans avertissement et tests verts avant d'annoncer que c'est terminé.
-4. **Garder la doc synchronisée** : `README.md`, `docs/ARCHITECTURE.md` et `docs/ROADMAP.md` (cocher un jalon seulement quand il est réellement implémenté).
+4. **Garder la doc synchronisée** : `README.md` (guide utilisateur), `docs/DEVELOPMENT.md` (guide développeur), `docs/ARCHITECTURE.md` et `docs/ROADMAP.md` (cocher un jalon seulement quand il est réellement implémenté).
 
 ## Conventions de code
 
