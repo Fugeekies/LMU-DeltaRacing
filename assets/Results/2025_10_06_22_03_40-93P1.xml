@@ -36,32 +36,32 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<Incident et="105.4">Driver 5772(20) reported contact (1879.65) with Immovable</Incident>
-<Incident et="106.5">Driver 4789(19) reported contact (38.78) with Immovable</Incident>
-<Score et="133.8">Driver 4789(19) lap=1 point=0 t=-1.000 et=133.680</Score>
-<Score et="145.3">Driver 3455(9) lap=1 point=0 t=-1.000 et=145.180</Score>
-<Score et="147.5">Driver 3493(5) lap=1 point=0 t=-1.000 et=147.500</Score>
-<Score et="149.5">Driver 4587(17) lap=1 point=0 t=-1.000 et=149.560</Score>
-<Score et="155.8">Driver 5772(20) lap=1 point=0 t=-1.000 et=155.680</Score>
-<Score et="159.2">Driver 5389(21) lap=1 point=0 t=-1.000 et=159.180</Score>
-<Score et="159.8">Driver 4503(13) lap=1 point=0 t=-1.000 et=159.820</Score>
-<Sector et="173.9">Driver 4587(17) reports new suspension damage</Sector>
-<Incident et="174.0">Driver 4587(17) reported contact (4880.93) with Immovable</Incident>
-<Sector Driver="Driver 4789" ID="19" Sector="1" Class="GT3" et="181.4">Driver 4789(19) set new best for sector 1</Sector>
-<Score et="181.4">Driver 4789(19) lap=1 point=1 t=47.634 et=181.320</Score>
-<TrackLimits Driver="Driver 4587" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.1">No Further Action</TrackLimits>
-<Incident et="189.5">Driver 4688(8) reported contact (1212.54) with Immovable</Incident>
-<Score et="193.2">Driver 3455(9) lap=1 point=1 t=47.941 et=193.120</Score>
-<TrackLimits Driver="Driver 3493" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="194.0">No Further Action</TrackLimits>
-<Sector Driver="Driver 3493" ID="5" Sector="1" Class="GT3" et="194.8">Driver 3493(5) set new best for sector 1</Sector>
-<Score et="194.8">Driver 3493(5) lap=1 point=1 t=47.267 et=194.760</Score>
-<Score et="202.9">Driver 3263(11) lap=1 point=0 t=-1.000 et=202.840</Score>
-<TrackLimits Driver="Driver 5772" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="203.1">No Further Action</TrackLimits>
-<Score et="206.1">Driver 5772(20) lap=1 point=1 t=50.409 et=206.080</Score>
+<Incident et="105.4">Driver Orane(20) reported contact (1879.65) with Immovable</Incident>
+<Incident et="106.5">Driver Raoul(19) reported contact (38.78) with Immovable</Incident>
+<Score et="133.8">Driver Raoul(19) lap=1 point=0 t=-1.000 et=133.680</Score>
+<Score et="145.3">Driver Margot(9) lap=1 point=0 t=-1.000 et=145.180</Score>
+<Score et="147.5">Driver Isaac(5) lap=1 point=0 t=-1.000 et=147.500</Score>
+<Score et="149.5">Driver Sandra(17) lap=1 point=0 t=-1.000 et=149.560</Score>
+<Score et="155.8">Driver Orane(20) lap=1 point=0 t=-1.000 et=155.680</Score>
+<Score et="159.2">Driver Dylan(21) lap=1 point=0 t=-1.000 et=159.180</Score>
+<Score et="159.8">Driver Lenny(13) lap=1 point=0 t=-1.000 et=159.820</Score>
+<Sector et="173.9">Driver Sandra(17) reports new suspension damage</Sector>
+<Incident et="174.0">Driver Sandra(17) reported contact (4880.93) with Immovable</Incident>
+<Sector Driver="Driver Raoul" ID="19" Sector="1" Class="GT3" et="181.4">Driver Raoul(19) set new best for sector 1</Sector>
+<Score et="181.4">Driver Raoul(19) lap=1 point=1 t=47.634 et=181.320</Score>
+<TrackLimits Driver="Driver Sandra" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.1">No Further Action</TrackLimits>
+<Incident et="189.5">Driver Basile(8) reported contact (1212.54) with Immovable</Incident>
+<Score et="193.2">Driver Margot(9) lap=1 point=1 t=47.941 et=193.120</Score>
+<TrackLimits Driver="Driver Isaac" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="194.0">No Further Action</TrackLimits>
+<Sector Driver="Driver Isaac" ID="5" Sector="1" Class="GT3" et="194.8">Driver Isaac(5) set new best for sector 1</Sector>
+<Score et="194.8">Driver Isaac(5) lap=1 point=1 t=47.267 et=194.760</Score>
+<Score et="202.9">Driver Cécile(11) lap=1 point=0 t=-1.000 et=202.840</Score>
+<TrackLimits Driver="Driver Orane" ID="20" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="203.1">No Further Action</TrackLimits>
+<Score et="206.1">Driver Orane(20) lap=1 point=1 t=50.409 et=206.080</Score>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>
-<Name>Driver 1846</Name>
+<Name>Driver Fabrice</Name>
 <Connected>1</Connected>
 <VehFile>46_25_WRT_596F2E7B.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -83,7 +83,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0631</Name>
+<Name>Driver Lola</Name>
 <Connected>1</Connected>
 <VehFile>78_25_AKKOF71490E4.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -105,7 +105,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0667</Name>
+<Name>Driver Ethan</Name>
 <Connected>1</Connected>
 <VehFile>31_25_WRT_B619D040.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -127,7 +127,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2764</Name>
+<Name>Driver Stéphane</Name>
 <Connected>1</Connected>
 <VehFile>63_25_IRON3E8BB8AD.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -149,7 +149,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2399</Name>
+<Name>Driver Robin</Name>
 <Connected>1</Connected>
 <VehFile>31_25_WRT_B619D040.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -171,7 +171,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,AutoShift=3,Clutch,Opposite,AutoLift,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1596</Name>
+<Name>Driver Dorian</Name>
 <Connected>1</Connected>
 <VehFile>31_25_WRT_FB7E8382.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -193,7 +193,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1642</Name>
+<Name>Driver Paul</Name>
 <Connected>1</Connected>
 <VehFile>95_24_UNITE72F634D.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -215,7 +215,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0452</Name>
+<Name>Driver Tess</Name>
 <Connected>1</Connected>
 <VehFile>23_25_UNIT907820FF.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -237,7 +237,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Braking=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2034</Name>
+<Name>Driver Vera</Name>
 <Connected>1</Connected>
 <VehFile>44_24_PROT92DCFAD4.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -257,7 +257,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0609</Name>
+<Name>Driver Rémi</Name>
 <Connected>1</Connected>
 <VehFile>70_24_INCEE7C900BF.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -277,7 +277,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2560</Name>
+<Name>Driver Bérénice</Name>
 <Connected>1</Connected>
 <VehFile>31_25_WRT_D751317E.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -297,7 +297,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0046</Name>
+<Name>Driver Sofia</Name>
 <Connected>1</Connected>
 <VehFile>60_25_PROTA8B000C7.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -317,7 +317,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0287</Name>
+<Name>Driver Tania</Name>
 <Connected>1</Connected>
 <VehFile>31_25_WRT_FB7E8382.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -337,7 +337,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>88_25_PROTEFF5EDCF.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -357,7 +357,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0573</Name>
+<Name>Driver Loïc</Name>
 <Connected>1</Connected>
 <VehFile>85_24_IRON46E687F1.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -377,7 +377,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1741</Name>
+<Name>Driver Albane</Name>
 <Connected>1</Connected>
 <VehFile>150_25_AFC7978CC2F.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -397,7 +397,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1106</Name>
+<Name>Driver Alice</Name>
 <Connected>1</Connected>
 <VehFile>87_24_AKKO45998AA0.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -417,7 +417,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1246</Name>
+<Name>Driver Cyril</Name>
 <Connected>1</Connected>
 <VehFile>92_24_MANT5488007D.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -437,7 +437,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1666</Name>
+<Name>Driver Eliott</Name>
 <Connected>1</Connected>
 <VehFile>46_25_WRT_874F6E78.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -457,7 +457,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2101</Name>
+<Name>Driver Patrick</Name>
 <Connected>1</Connected>
 <VehFile>397_25_911GT3R.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -477,7 +477,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1865</Name>
+<Name>Driver Owen</Name>
 <Connected>1</Connected>
 <VehFile>78_25_AKKOF71490E4.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -497,7 +497,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0411</Name>
+<Name>Driver Ursula</Name>
 <Connected>1</Connected>
 <VehFile>397_25_AMG.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>

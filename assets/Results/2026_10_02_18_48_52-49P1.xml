@@ -36,16 +36,16 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<Score et="176.5">Driver 4492(9) lap=0 point=1 t=-1.000 et=176.560</Score>
-<TrackLimits Driver="Driver 4492" ID="9" Lap="0" WarningPoints="0" CurrentPoints="2.5" Resolution="7" et="185.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4492" ID="9" Lap="0" WarningPoints="0" CurrentPoints="2.5" Resolution="7" et="185.3">No Further Action</TrackLimits>
-<ChatMessage et="201.6">Driver 5715: [message retiré]</ChatMessage>
-<Score et="207.5">Driver 4492(9) lap=0 point=2 t=-1.000 et=207.463</Score>
-<Score et="207.5">Driver 4492(9) lap=1 point=0 t=-1.000 et=207.463</Score>
+<Score et="176.5">Driver Valentin(9) lap=0 point=1 t=-1.000 et=176.560</Score>
+<TrackLimits Driver="Driver Valentin" ID="9" Lap="0" WarningPoints="0" CurrentPoints="2.5" Resolution="7" et="185.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Valentin" ID="9" Lap="0" WarningPoints="0" CurrentPoints="2.5" Resolution="7" et="185.3">No Further Action</TrackLimits>
+<ChatMessage et="201.6">Driver Bertille: [message retiré]</ChatMessage>
+<Score et="207.5">Driver Valentin(9) lap=0 point=2 t=-1.000 et=207.463</Score>
+<Score et="207.5">Driver Valentin(9) lap=1 point=0 t=-1.000 et=207.463</Score>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>
-<Name>Driver 2562</Name>
+<Name>Driver Aurore</Name>
 <Connected>1</Connected>
 <VehFile>46_24_WRT_F1E39333.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -67,7 +67,7 @@
 <ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1564</Name>
+<Name>Driver Kevin</Name>
 <Connected>1</Connected>
 <VehFile>77_26_PROT43675534.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -89,7 +89,7 @@
 <ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1585</Name>
+<Name>Driver Romain</Name>
 <Connected>1</Connected>
 <VehFile>77_26_PROT34038378.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -111,7 +111,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,AutoShift=3,Braking=1,Clutch,AutoLift,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1736</Name>
+<Name>Driver Sébastien</Name>
 <Connected>1</Connected>
 <VehFile>54_26_HIGH62031041.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -131,7 +131,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0938</Name>
+<Name>Driver Marine</Name>
 <Connected>1</Connected>
 <VehFile>79_26_IRON66951108.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -151,7 +151,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0994</Name>
+<Name>Driver Nora</Name>
 <Connected>1</Connected>
 <VehFile>46_25_WRT_874F6E78.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -171,7 +171,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0919</Name>
+<Name>Driver Gilles</Name>
 <Connected>1</Connected>
 <VehFile>777_24_DST103B6012.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -191,7 +191,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0455</Name>
+<Name>Driver Prune</Name>
 <Connected>1</Connected>
 <VehFile>61_26_IRON57024276.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -211,7 +211,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2716</Name>
+<Name>Driver Bianca</Name>
 <Connected>1</Connected>
 <VehFile>51_26_AFCO83755194.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -231,7 +231,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2520</Name>
+<Name>Driver Thomas</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -251,7 +251,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2512</Name>
+<Name>Driver Oren</Name>
 <Connected>1</Connected>
 <VehFile>92_26_MANT71544075.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -271,7 +271,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2726</Name>
+<Name>Driver Diane</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -291,7 +291,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2719</Name>
+<Name>Driver Ulysse</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -311,7 +311,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>60_25_PROTA8B000C7.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -331,7 +331,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0506</Name>
+<Name>Driver Florian</Name>
 <Connected>1</Connected>
 <VehFile>32_26_WRT_83524148.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -351,7 +351,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2226</Name>
+<Name>Driver Ava</Name>
 <Connected>1</Connected>
 <VehFile>46_25_WRT_874F6E78.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -371,7 +371,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1450</Name>
+<Name>Driver Ambre</Name>
 <Connected>1</Connected>
 <VehFile>58_26_GARA79992578.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>
@@ -391,7 +391,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1250</Name>
+<Name>Driver Jonas</Name>
 <Connected>1</Connected>
 <VehFile>23_26_THOR64591293.VEH</VehFile>
 <UpgradeCode>c3180600 00000000 00000000 00000000</UpgradeCode>
@@ -411,7 +411,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0534</Name>
+<Name>Driver Léonie</Name>
 <Connected>1</Connected>
 <VehFile>79_26_IRON79382419.VEH</VehFile>
 <UpgradeCode>86310c00 00000000 00000000 00000000</UpgradeCode>

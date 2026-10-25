@@ -45,7 +45,8 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 - `<Lap num=".." s1 s2 s3>` : secteurs **partiels** (s1+s2+s3 = temps du tour). Un tour invalide vaut `--.----` et un secteur peut manquer.
 - Valeurs de `CarClass` présentes : `Hyper`, `LMP2`, `LMP3`, `GTE`, `GT3`. Des sessions sont **multiclasses**.
 - Plusieurs courses peuvent avoir lieu le même jour sur le même circuit.
-- Pilotes des fixtures anonymisés en `Driver NNNN` (alias stables entre fichiers). Pilote principal des fixtures : `Driver 2038`.
+- Pilotes des fixtures anonymisés avec des prénoms (`Driver Tom`, `Driver Lucas`…), alias stables entre fichiers. Pour enrichir les historiques, les pilotes n'ayant fait qu'une course ont été fusionnés avec des pilotes qu'ils n'ont jamais croisés (`Prepare-PackageAssets.ps1 -MergeSingleRaceDrivers`) : un alias ne désigne donc pas toujours une seule personne réelle. Pilote principal des fixtures : `Driver Tom` (jamais fusionné).
+- Les noms présents dans les événements du `Stream` (incidents, pénalités…) des fixtures actuelles ne correspondent pas aux pilotes listés : la correspondance a été perdue lors d'une anonymisation antérieure.
 
 ## Règles Git & PR
 

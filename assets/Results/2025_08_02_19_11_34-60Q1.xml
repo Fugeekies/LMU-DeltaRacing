@@ -37,269 +37,269 @@
 <Laps>2147483647</Laps>
 <Minutes>5</Minutes>
 <Stream>
-<Sent et="0.2">&quot;Driver 3894&quot; has taken the wheel.</Sent>
-<Sent et="0.2">&quot;Driver 4486&quot; has taken the wheel.</Sent>
-<Sent et="0.5">&quot;Driver 3878&quot; has taken the wheel.</Sent>
-<Sent et="0.7">&quot;Driver 5355&quot; has taken the wheel.</Sent>
-<Sent et="0.8">&quot;Driver 4801&quot; has taken the wheel.</Sent>
-<Sent et="0.8">&quot;Driver 3202&quot; has taken the wheel.</Sent>
-<Sent et="0.8">&quot;Driver 3351&quot; has taken the wheel.</Sent>
-<Sent et="1.1">&quot;Driver 5011&quot; has taken the wheel.</Sent>
-<Sent et="1.1">&quot;Driver 5042&quot; has taken the wheel.</Sent>
-<Sent et="3.7">&quot;Driver 3078&quot; has taken the wheel.</Sent>
-<Sent et="3.8">&quot;Driver 4122&quot; has taken the wheel.</Sent>
-<Sent et="4.3">&quot;Driver 3012&quot; has taken the wheel.</Sent>
-<Sent et="4.5">&quot;Driver 5197&quot; has taken the wheel.</Sent>
-<Sent et="4.6">&quot;Driver 3443&quot; has taken the wheel.</Sent>
-<Sent et="5.5">&quot;Driver 5104&quot; has taken the wheel.</Sent>
-<Sent et="6.2">&quot;Driver 3489&quot; has taken the wheel.</Sent>
-<Sent et="7.6">&quot;Driver 3083&quot; has taken the wheel.</Sent>
-<Incident et="20.7">Driver 4801(3) reported contact (461.59) with Immovable</Incident>
-<Sector et="24.0">Driver 3443(7) reports new suspension damage</Sector>
-<Incident et="24.1">Driver 3443(7) reported contact (134.33) with Immovable</Incident>
-<Score et="69.5">Driver 4801(3) lap=1 point=0 t=-1.000 et=69.500</Score>
-<Score et="70.0">Driver 5042(18) lap=1 point=0 t=-1.000 et=69.960</Score>
-<Score et="70.8">Driver 5125(8) lap=1 point=0 t=-1.000 et=70.801</Score>
-<Score et="72.4">Driver 3878(12) lap=1 point=0 t=-1.000 et=72.360</Score>
-<Score et="74.4">Driver 3078(16) lap=1 point=0 t=-1.000 et=74.320</Score>
-<Score et="74.6">Driver 4122(11) lap=1 point=0 t=-1.000 et=74.480</Score>
-<Score et="75.9">Driver 3202(1) lap=1 point=0 t=-1.000 et=75.840</Score>
-<Score et="78.5">Driver 3083(10) lap=1 point=0 t=-1.000 et=78.420</Score>
-<Score et="79.4">Driver 3894(6) lap=1 point=0 t=-1.000 et=79.380</Score>
-<Score et="80.7">Driver 3489(5) lap=1 point=0 t=-1.000 et=80.680</Score>
-<Score et="84.2">Driver 3351(2) lap=1 point=0 t=-1.000 et=84.160</Score>
-<Score et="89.2">Driver 4486(13) lap=1 point=0 t=-1.000 et=89.160</Score>
-<Score et="89.8">Driver 3443(7) lap=1 point=0 t=-1.000 et=89.700</Score>
-<Sent et="90.1">&quot;Driver 3366&quot; has taken the wheel.</Sent>
-<TrackLimits Driver="Driver 5042" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="91.9">No Further Action</TrackLimits>
-<Score et="93.0">Driver 3012(9) lap=1 point=0 t=-1.000 et=92.960</Score>
-<TrackLimits Driver="Driver 3878" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="94.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5042" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="96.5">No Further Action</TrackLimits>
-<Score et="100.5">Driver 5042(18) lap=1 point=1 t=-1.000 et=100.412</Score>
-<Score et="100.5">Driver 5042(18) lap=1 point=2 t=-1.000 et=100.412</Score>
-<TrackLimits Driver="Driver 4122" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="104.0">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4122" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="111.1">No Further Action</TrackLimits>
-<Score et="118.4">Driver 5104(14) lap=1 point=0 t=-1.000 et=118.240</Score>
-<Score et="119.2">Driver 4801(3) lap=1 point=1 t=49.635 et=119.120</Score>
-<Score et="120.0">Driver 5125(8) lap=1 point=1 t=49.215 et=120.016</Score>
-<Score et="121.8">Driver 3878(12) lap=1 point=1 t=49.429 et=121.780</Score>
-<Score et="122.9">Driver 3078(16) lap=1 point=1 t=48.477 et=122.800</Score>
-<Score et="123.3">Driver 3202(1) lap=1 point=1 t=47.414 et=123.240</Score>
-<Score et="126.2">Driver 3083(10) lap=1 point=1 t=47.794 et=126.200</Score>
-<Score et="126.9">Driver 3894(6) lap=1 point=1 t=47.477 et=126.860</Score>
-<Score et="130.1">Driver 3444(19) lap=1 point=0 t=-1.000 et=129.960</Score>
-<Score et="131.6">Driver 3489(5) lap=1 point=1 t=50.846 et=131.520</Score>
-<Score et="133.0">Driver 3351(2) lap=1 point=1 t=48.756 et=132.900</Score>
-<Score et="135.9">Driver 4122(11) lap=1 point=1 t=61.368 et=135.860</Score>
-<Score et="136.4">Driver 3443(7) lap=1 point=1 t=46.582 et=136.280</Score>
-<Score et="136.8">Driver 4486(13) lap=1 point=1 t=47.609 et=136.760</Score>
-<Incident et="137.7">Driver 5125(8) reported contact (10.75) with Sign</Incident>
-<TrackLimits Driver="Driver 5125" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="139.7">No Further Action</TrackLimits>
-<Score et="141.0">Driver 3012(9) lap=1 point=1 t=47.946 et=140.920</Score>
-<Sector Driver="Driver 4801" ID="3" Sector="2" Class="GTE" et="153.7">Driver 4801(3) set new best for sector 2</Sector>
-<Score et="153.7">Driver 4801(3) lap=1 point=2 t=84.147 et=153.640</Score>
-<Sector Driver="Driver 3878" ID="12" Sector="2" Class="GTE" et="155.6">Driver 3878(12) set new best for sector 2</Sector>
-<Score et="155.6">Driver 3878(12) lap=1 point=2 t=83.268 et=155.620</Score>
-<Sector Driver="Driver 3202" ID="1" Sector="2" Class="GTE" et="156.4">Driver 3202(1) set new best for sector 2</Sector>
-<Score et="156.4">Driver 3202(1) lap=1 point=2 t=80.532 et=156.360</Score>
-<Score et="157.0">Driver 3444(19) lap=1 point=1 t=-1.000 et=156.607</Score>
-<Score et="157.0">Driver 3444(19) lap=1 point=2 t=-1.000 et=156.607</Score>
-<Score et="157.2">Driver 3078(16) lap=1 point=2 t=82.796 et=157.120</Score>
-<Incident et="158.1">Driver 5355(17) reported contact (279.19) with Immovable</Incident>
-<Sector Driver="Driver 3083" ID="10" Sector="2" Class="GTE" et="159.1">Driver 3083(10) set new best for sector 2</Sector>
-<Score et="159.1">Driver 3083(10) lap=1 point=2 t=80.675 et=159.080</Score>
-<Score et="160.4">Driver 3894(6) lap=1 point=2 t=80.950 et=160.320</Score>
-<Score et="162.7">Driver 5125(8) lap=1 point=2 t=91.921 et=162.722</Score>
-<Score et="164.2">Driver 3366(15) lap=1 point=0 t=-1.000 et=164.300</Score>
-<Score et="165.5">Driver 3489(5) lap=1 point=2 t=84.743 et=165.420</Score>
-<TrackLimits Driver="Driver 5355" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.2">No Further Action</TrackLimits>
-<Score et="166.5">Driver 5042(18) lap=2 point=0 t=-1.000 et=166.500</Score>
-<Score et="166.7">Driver 5104(14) lap=1 point=1 t=48.251 et=166.500</Score>
-<Score et="167.1">Driver 3351(2) lap=1 point=2 t=82.868 et=167.020</Score>
-<Score et="170.2">Driver 3443(7) lap=1 point=2 t=80.375 et=170.080</Score>
-<Score et="171.0">Driver 4486(13) lap=1 point=2 t=81.776 et=170.940</Score>
-<Score et="172.6">Driver 5355(17) lap=1 point=0 t=-1.000 et=172.460</Score>
-<Score et="173.2">Driver 4122(11) lap=1 point=2 t=98.720 et=173.200</Score>
-<Score et="174.7">Driver 3012(9) lap=1 point=2 t=81.584 et=174.560</Score>
-<Sent et="175.7">&quot;Driver 5011&quot; has taken the wheel.</Sent>
-<TrackLimits Driver="Driver 3489" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3878" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3012" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.3">No Further Action</TrackLimits>
-<Sector et="193.5">Driver 3078(16) reports new suspension damage</Sector>
-<Incident et="193.6">Driver 3078(16) reported contact (2639.71) with Immovable</Incident>
-<Sector et="193.6">Driver 3078(16) reports new suspension damage</Sector>
-<TrackLimits Driver="Driver 3078" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="196.8">No Further Action</TrackLimits>
-<Score et="200.2">Driver 5104(14) lap=1 point=2 t=81.894 et=200.140</Score>
-<Sector Driver="Driver 3202" ID="1" Sector="3" Class="GTE" et="200.4">Driver 3202(1) set new best for sector 3</Sector>
-<Score et="200.4">Driver 3202(1) lap=2 point=0 t=124.549 et=200.380</Score>
-<Score et="201.6">Driver 4801(3) lap=2 point=0 t=132.058 et=201.540</Score>
-<Score et="203.6">Driver 3083(10) lap=2 point=0 t=125.078 et=203.500</Score>
-<Score et="203.8">Driver 3078(16) lap=2 point=0 t=129.391 et=203.720</Score>
-<Score et="205.1">Driver 3894(6) lap=2 point=0 t=125.678 et=205.060</Score>
-<Score et="209.2">Driver 5125(8) lap=2 point=0 t=138.426 et=209.227</Score>
-<Score et="211.4">Driver 3366(15) lap=1 point=1 t=47.119 et=211.420</Score>
-<TrackLimits Driver="Driver 3351" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="213.1">No Further Action</TrackLimits>
-<Score et="214.5">Driver 3443(7) lap=2 point=0 t=124.685 et=214.380</Score>
-<Score et="215.7">Driver 5042(18) lap=2 point=1 t=49.189 et=215.700</Score>
-<Score et="216.8">Driver 4486(13) lap=2 point=0 t=127.611 et=216.760</Score>
-<Sector et="217.5">Driver 3078(16) reports new suspension damage</Sector>
-<Incident et="217.6">Driver 3078(16) reported contact (4034.26) with Immovable</Incident>
-<Sector et="217.7">Driver 3078(16) reports new suspension damage</Sector>
-<Score et="220.1">Driver 3012(9) lap=2 point=0 t=127.058 et=220.020</Score>
-<TrackLimits Driver="Driver 3078" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="221.3">No Further Action</TrackLimits>
-<Score et="222.4">Driver 3878(12) lap=2 point=0 t=149.922 et=222.280</Score>
-<Score et="222.8">Driver 3351(2) lap=2 point=0 t=138.561 et=222.720</Score>
-<Score et="222.9">Driver 4122(11) lap=2 point=0 t=148.249 et=222.740</Score>
-<TrackLimits Driver="Driver 5355" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="227.6">No Further Action</TrackLimits>
-<Sector et="227.8">Driver 3078(16) reports new engine damage</Sector>
-<Incident et="227.9">Driver 3078(16) reported contact (2422.67) with Immovable</Incident>
-<Sent et="229.0">&quot;Driver 5176&quot; has taken the wheel.</Sent>
-<Incident et="229.6">Driver 3078(16) reported contact (191.78) with Immovable</Incident>
-<Score et="231.4">Driver 5355(17) lap=1 point=1 t=58.809 et=231.280</Score>
-<Incident et="233.2">Driver 5042(18) reported contact (10.62) with Sign</Incident>
-<TrackLimits Driver="Driver 5042" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="234.0">No Further Action</TrackLimits>
-<Incident et="241.5">Driver 5104(14) reported contact (581.93) with Immovable</Incident>
-<TrackLimits Driver="Driver 5104" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="243.3">No Further Action</TrackLimits>
-<Score et="243.8">Driver 3078(16) lap=2 point=1 t=-1.000 et=243.436</Score>
-<Score et="243.8">Driver 3078(16) lap=2 point=2 t=-1.000 et=243.436</Score>
-<Sector Driver="Driver 3366" ID="15" Sector="2" Class="GTE" et="244.3">Driver 3366(15) set new best for sector 2</Sector>
-<Score et="244.3">Driver 3366(15) lap=1 point=2 t=79.893 et=244.200</Score>
-<Score et="246.0">Driver 5104(14) lap=2 point=0 t=127.554 et=245.800</Score>
-<Sector Driver="Driver 3202" ID="1" Sector="1" Class="GTE" et="247.0">Driver 3202(1) set new best for sector 1</Sector>
-<Score et="247.0">Driver 3202(1) lap=2 point=1 t=46.563 et=246.940</Score>
-<TrackLimits Driver="Driver 3878" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="248.4">No Further Action</TrackLimits>
-<Score et="250.3">Driver 3083(10) lap=2 point=1 t=46.790 et=250.280</Score>
-<Score et="251.2">Driver 4801(3) lap=2 point=1 t=49.640 et=251.180</Score>
-<Score et="251.7">Driver 3894(6) lap=2 point=1 t=46.583 et=251.640</Score>
-<Score et="253.8">Driver 5042(18) lap=2 point=2 t=87.272 et=253.780</Score>
-<TrackLimits Driver="Driver 3366" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5125" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="256.4">No Further Action</TrackLimits>
-<Score et="258.0">Driver 5125(8) lap=2 point=1 t=48.744 et=257.971</Score>
-<Sector Driver="Driver 3443" ID="7" Sector="1" Class="GTE" et="261.0">Driver 3443(7) set new best for sector 1</Sector>
-<Score et="261.0">Driver 3443(7) lap=2 point=1 t=46.535 et=260.920</Score>
-<Score et="262.1">Driver 3489(5) lap=2 point=0 t=-1.000 et=261.998</Score>
-<Score et="262.1">Driver 3489(5) lap=2 point=1 t=-1.000 et=261.998</Score>
-<Score et="262.1">Driver 3489(5) lap=2 point=2 t=-1.000 et=261.998</Score>
-<Score et="264.2">Driver 4486(13) lap=2 point=1 t=47.372 et=264.140</Score>
-<Score et="266.0">Driver 5011(20) lap=1 point=0 t=-1.000 et=265.980</Score>
-<Score et="267.5">Driver 3012(9) lap=2 point=1 t=47.427 et=267.460</Score>
-<Score et="271.7">Driver 5355(17) lap=1 point=2 t=99.117 et=271.580</Score>
-<Score et="272.0">Driver 3351(2) lap=2 point=1 t=49.257 et=271.960</Score>
-<TrackLimits Driver="Driver 4122" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="274.7">No Further Action</TrackLimits>
-<Score et="275.6">Driver 4122(11) lap=2 point=1 t=52.802 et=275.540</Score>
-<Score et="276.8">Driver 3878(12) lap=2 point=1 t=54.439 et=276.720</Score>
-<Score et="280.2">Driver 3202(1) lap=2 point=2 t=79.783 et=280.160</Score>
-<Score et="283.9">Driver 3083(10) lap=2 point=2 t=80.365 et=283.860</Score>
-<Score et="284.6">Driver 4801(3) lap=2 point=2 t=82.984 et=284.540</Score>
-<Score et="285.0">Driver 3894(6) lap=2 point=2 t=79.824 et=284.880</Score>
-<Sector Driver="Driver 3366" ID="15" Sector="3" Class="GTE" et="288.0">Driver 3366(15) set new best for sector 3</Sector>
-<Score et="288.0">Driver 3366(15) lap=2 point=0 t=123.541 et=287.860</Score>
-<Score et="292.8">Driver 5125(8) lap=2 point=2 t=83.565 et=292.793</Score>
-<Score et="294.0">Driver 3443(7) lap=2 point=2 t=79.535 et=293.920</Score>
-<Score et="294.2">Driver 5104(14) lap=2 point=1 t=48.269 et=294.060</Score>
-<Score et="298.5">Driver 4486(13) lap=2 point=2 t=81.670 et=298.440</Score>
-<Score et="301.3">Driver 5042(18) lap=3 point=0 t=134.779 et=301.280</Score>
-<Score et="301.6">Driver 3012(9) lap=2 point=2 t=81.394 et=301.420</Score>
-<TrackLimits Driver="Driver 5125" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.9">No Further Action</TrackLimits>
-<Score et="306.0">Driver 3351(2) lap=2 point=2 t=83.165 et=305.880</Score>
-<Score et="309.7">Driver 3878(12) lap=2 point=2 t=87.417 et=309.700</Score>
-<Score et="311.2">Driver 4122(11) lap=2 point=2 t=88.365 et=311.100</Score>
-<Score et="315.5">Driver 5011(20) lap=1 point=1 t=49.452 et=315.440</Score>
-<Score et="321.6">Driver 5176(4) lap=1 point=0 t=-1.000 et=321.620</Score>
-<Score et="321.9">Driver 5355(17) lap=2 point=0 t=149.302 et=321.780</Score>
-<Score et="324.7">Driver 3202(1) lap=3 point=0 t=124.295 et=324.680</Score>
-<Score et="327.5">Driver 5104(14) lap=2 point=2 t=81.580 et=327.380</Score>
-<Score et="328.7">Driver 3083(10) lap=3 point=0 t=125.181 et=328.680</Score>
-<Score et="329.6">Driver 3894(6) lap=3 point=0 t=124.493 et=329.540</Score>
-<Score et="331.6">Driver 4801(3) lap=3 point=0 t=130.043 et=331.600</Score>
-<Sector Driver="Driver 3366" ID="15" Sector="1" Class="GTE" et="334.5">Driver 3366(15) set new best for sector 1</Sector>
-<Score et="334.5">Driver 3366(15) lap=2 point=1 t=46.518 et=334.360</Score>
-<Score et="338.2">Driver 3443(7) lap=3 point=0 t=123.690 et=338.080</Score>
-<Score et="339.9">Driver 5125(8) lap=3 point=0 t=130.691 et=339.918</Score>
-<Incident et="340.2">Driver 4486(13) reported contact (591.56) with Immovable</Incident>
-<Incident et="340.2">Driver 4486(13) reported contact (1699.49) with Immovable</Incident>
-<Sector et="340.2">Driver 4486(13) reports new suspension damage</Sector>
-<Sector et="340.2">Driver 4486(13) reports new suspension damage</Sector>
-<TrackLimits Driver="Driver 4486" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="342.0">No Further Action</TrackLimits>
-<Score et="342.9">Driver 4801(3) lap=3 point=1 t=-1.000 et=342.470</Score>
-<Score et="342.9">Driver 4801(3) lap=3 point=2 t=-1.000 et=342.470</Score>
-<Score et="344.7">Driver 4486(13) lap=3 point=0 t=127.885 et=344.660</Score>
-<Score et="346.6">Driver 3012(9) lap=3 point=0 t=126.482 et=346.500</Score>
-<Score et="350.6">Driver 5042(18) lap=3 point=1 t=49.238 et=350.520</Score>
-<Score et="350.8">Driver 5011(20) lap=1 point=2 t=84.833 et=350.820</Score>
-<TrackLimits Driver="Driver 3443" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="351.8">No Further Action</TrackLimits>
-<Score et="352.8">Driver 3351(2) lap=3 point=0 t=-1.000 et=352.759</Score>
-<Score et="352.8">Driver 3351(2) lap=3 point=1 t=-1.000 et=352.759</Score>
-<Score et="352.8">Driver 3351(2) lap=3 point=2 t=-1.000 et=352.759</Score>
-<Score et="354.7">Driver 3878(12) lap=3 point=0 t=132.321 et=354.600</Score>
-<Score et="355.9">Driver 3443(7) lap=3 point=1 t=-1.000 et=355.829</Score>
-<Score et="355.9">Driver 3443(7) lap=3 point=2 t=-1.000 et=355.829</Score>
-<Score et="359.9">Driver 4122(11) lap=3 point=0 t=137.110 et=359.840</Score>
-<Score et="367.4">Driver 3366(15) lap=2 point=2 t=79.329 et=367.180</Score>
-<Score et="370.2">Driver 5176(4) lap=1 point=1 t=48.524 et=370.160</Score>
-<Score et="371.5">Driver 3202(1) lap=3 point=1 t=46.768 et=371.440</Score>
-<TrackLimits Driver="Driver 5125" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="371.9">No Further Action</TrackLimits>
-<Score et="372.7">Driver 5104(14) lap=3 point=0 t=126.722 et=372.520</Score>
-<Score et="375.7">Driver 3083(10) lap=3 point=1 t=46.950 et=375.620</Score>
-<TrackLimits Driver="Driver 5355" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.8">No Further Action</TrackLimits>
-<Score et="377.0">Driver 5355(17) lap=2 point=1 t=55.086 et=376.860</Score>
-<TrackLimits Driver="Driver 3894" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="377.2">No Further Action</TrackLimits>
-<Score et="377.2">Driver 3894(6) lap=3 point=1 t=47.571 et=377.120</Score>
-<TrackLimits Driver="Driver 3366" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.9">No Further Action</TrackLimits>
-<Score et="384.9">Driver 5042(18) lap=3 point=2 t=83.571 et=384.860</Score>
-<TrackLimits Driver="Driver 3012" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.9">No Further Action</TrackLimits>
-<Score et="395.3">Driver 4486(13) lap=3 point=1 t=50.604 et=395.260</Score>
-<Score et="395.4">Driver 3012(9) lap=3 point=1 t=48.776 et=395.280</Score>
-<TrackLimits Driver="Driver 3894" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="395.7">No Further Action</TrackLimits>
-<Score et="398.7">Driver 5011(20) lap=2 point=0 t=132.601 et=398.580</Score>
-<Score et="402.0">Driver 3878(12) lap=3 point=1 t=47.305 et=401.900</Score>
-<Score et="404.3">Driver 3202(1) lap=3 point=2 t=79.590 et=404.260</Score>
-<Score et="408.9">Driver 3083(10) lap=3 point=2 t=80.203 et=408.880</Score>
-<Score et="409.1">Driver 5176(4) lap=1 point=2 t=87.426 et=409.060</Score>
-<TrackLimits Driver="Driver 3894" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="409.3">No Further Action</TrackLimits>
-<Score et="410.6">Driver 4122(11) lap=3 point=1 t=50.695 et=410.540</Score>
-<Score et="411.3">Driver 3366(15) lap=3 point=0 t=123.251 et=411.100</Score>
-<TrackLimits Driver="Driver 5355" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="412.1">No Further Action</TrackLimits>
-<Score et="418.7">Driver 5104(14) lap=3 point=1 t=-1.000 et=418.056</Score>
-<Score et="418.7">Driver 5104(14) lap=3 point=2 t=-1.000 et=418.056</Score>
-<Score et="421.5">Driver 5355(17) lap=2 point=2 t=99.555 et=421.320</Score>
-<TrackLimits Driver="Driver 5176" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3083" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.4">No Further Action</TrackLimits>
-<Score et="428.8">Driver 3012(9) lap=3 point=2 t=82.169 et=428.680</Score>
-<TrackLimits Driver="Driver 5011" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.8">No Further Action</TrackLimits>
-<Score et="430.0">Driver 3894(6) lap=3 point=2 t=100.439 et=429.980</Score>
-<Score et="431.2">Driver 4486(13) lap=3 point=2 t=86.516 et=431.160</Score>
-<Score et="431.4">Driver 5042(18) lap=4 point=0 t=130.070 et=431.360</Score>
-<Score et="434.6">Driver 3083(10) lap=4 point=0 t=-1.000 et=434.345</Score>
-<Score et="434.6">Driver 3083(10) lap=4 point=1 t=-1.000 et=434.345</Score>
-<Score et="434.6">Driver 3083(10) lap=4 point=2 t=-1.000 et=434.345</Score>
-<Score et="434.8">Driver 3878(12) lap=3 point=2 t=80.099 et=434.700</Score>
-<Score et="434.8">Driver 3366(15) lap=3 point=1 t=-1.000 et=434.561</Score>
-<Score et="434.8">Driver 3366(15) lap=3 point=2 t=-1.000 et=434.561</Score>
-<TrackLimits Driver="Driver 4122" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4486" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.9">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3012" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.8">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5355" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.9">No Further Action</TrackLimits>
-<Score et="447.1">Driver 5042(18) lap=4 point=1 t=-1.000 et=447.056</Score>
-<Score et="447.1">Driver 5042(18) lap=4 point=2 t=-1.000 et=447.056</Score>
-<Score et="447.2">Driver 5011(20) lap=2 point=1 t=48.583 et=447.160</Score>
-<Score et="447.8">Driver 4122(11) lap=3 point=2 t=87.907 et=447.760</Score>
-<Score et="448.5">Driver 3202(1) lap=4 point=0 t=123.817 et=448.500</Score>
-<Score et="454.8">Driver 5176(4) lap=2 point=0 t=133.030 et=454.660</Score>
-<Incident et="455.3">Driver 4486(13) reported contact (41.13) with Cone</Incident>
-<TrackLimits Driver="Driver 3202" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="459.1">No Further Action</TrackLimits>
-<Score et="465.2">Driver 5176(4) lap=2 point=1 t=-1.000 et=464.901</Score>
-<Score et="465.2">Driver 5176(4) lap=2 point=2 t=-1.000 et=464.901</Score>
-<Score et="468.7">Driver 3202(1) lap=4 point=1 t=-1.000 et=468.583</Score>
-<Score et="468.7">Driver 3202(1) lap=4 point=2 t=-1.000 et=468.583</Score>
-<TrackLimits Driver="Driver 5125" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="471.9">No Further Action</TrackLimits>
-<Score et="473.4">Driver 3012(9) lap=4 point=0 t=126.770 et=473.280</Score>
-<Score et="474.6">Driver 3894(6) lap=4 point=0 t=144.947 et=474.500</Score>
-<Score et="475.5">Driver 5355(17) lap=3 point=0 t=153.549 et=475.320</Score>
+<Sent et="0.2">&quot;Driver Guillaume&quot; has taken the wheel.</Sent>
+<Sent et="0.2">&quot;Driver Hector&quot; has taken the wheel.</Sent>
+<Sent et="0.5">&quot;Driver Olivia&quot; has taken the wheel.</Sent>
+<Sent et="0.7">&quot;Driver Ilona&quot; has taken the wheel.</Sent>
+<Sent et="0.8">&quot;Driver Lilian&quot; has taken the wheel.</Sent>
+<Sent et="0.8">&quot;Driver Maëlle&quot; has taken the wheel.</Sent>
+<Sent et="0.8">&quot;Driver Maxime&quot; has taken the wheel.</Sent>
+<Sent et="1.1">&quot;Driver Hortense&quot; has taken the wheel.</Sent>
+<Sent et="1.1">&quot;Driver Mattéo&quot; has taken the wheel.</Sent>
+<Sent et="3.7">&quot;Driver Laura&quot; has taken the wheel.</Sent>
+<Sent et="3.8">&quot;Driver Pénélope&quot; has taken the wheel.</Sent>
+<Sent et="4.3">&quot;Driver Hadrien&quot; has taken the wheel.</Sent>
+<Sent et="4.5">&quot;Driver Martin&quot; has taken the wheel.</Sent>
+<Sent et="4.6">&quot;Driver Erwan&quot; has taken the wheel.</Sent>
+<Sent et="5.5">&quot;Driver Manon&quot; has taken the wheel.</Sent>
+<Sent et="6.2">&quot;Driver Fabien&quot; has taken the wheel.</Sent>
+<Sent et="7.6">&quot;Driver David&quot; has taken the wheel.</Sent>
+<Incident et="20.7">Driver Lilian(3) reported contact (461.59) with Immovable</Incident>
+<Sector et="24.0">Driver Erwan(7) reports new suspension damage</Sector>
+<Incident et="24.1">Driver Erwan(7) reported contact (134.33) with Immovable</Incident>
+<Score et="69.5">Driver Lilian(3) lap=1 point=0 t=-1.000 et=69.500</Score>
+<Score et="70.0">Driver Mattéo(18) lap=1 point=0 t=-1.000 et=69.960</Score>
+<Score et="70.8">Driver Emma(8) lap=1 point=0 t=-1.000 et=70.801</Score>
+<Score et="72.4">Driver Olivia(12) lap=1 point=0 t=-1.000 et=72.360</Score>
+<Score et="74.4">Driver Laura(16) lap=1 point=0 t=-1.000 et=74.320</Score>
+<Score et="74.6">Driver Pénélope(11) lap=1 point=0 t=-1.000 et=74.480</Score>
+<Score et="75.9">Driver Maëlle(1) lap=1 point=0 t=-1.000 et=75.840</Score>
+<Score et="78.5">Driver David(10) lap=1 point=0 t=-1.000 et=78.420</Score>
+<Score et="79.4">Driver Guillaume(6) lap=1 point=0 t=-1.000 et=79.380</Score>
+<Score et="80.7">Driver Fabien(5) lap=1 point=0 t=-1.000 et=80.680</Score>
+<Score et="84.2">Driver Maxime(2) lap=1 point=0 t=-1.000 et=84.160</Score>
+<Score et="89.2">Driver Hector(13) lap=1 point=0 t=-1.000 et=89.160</Score>
+<Score et="89.8">Driver Erwan(7) lap=1 point=0 t=-1.000 et=89.700</Score>
+<Sent et="90.1">&quot;Driver Rachel&quot; has taken the wheel.</Sent>
+<TrackLimits Driver="Driver Mattéo" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="91.9">No Further Action</TrackLimits>
+<Score et="93.0">Driver Hadrien(9) lap=1 point=0 t=-1.000 et=92.960</Score>
+<TrackLimits Driver="Driver Olivia" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="94.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Mattéo" ID="18" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="96.5">No Further Action</TrackLimits>
+<Score et="100.5">Driver Mattéo(18) lap=1 point=1 t=-1.000 et=100.412</Score>
+<Score et="100.5">Driver Mattéo(18) lap=1 point=2 t=-1.000 et=100.412</Score>
+<TrackLimits Driver="Driver Pénélope" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="104.0">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Pénélope" ID="11" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="111.1">No Further Action</TrackLimits>
+<Score et="118.4">Driver Manon(14) lap=1 point=0 t=-1.000 et=118.240</Score>
+<Score et="119.2">Driver Lilian(3) lap=1 point=1 t=49.635 et=119.120</Score>
+<Score et="120.0">Driver Emma(8) lap=1 point=1 t=49.215 et=120.016</Score>
+<Score et="121.8">Driver Olivia(12) lap=1 point=1 t=49.429 et=121.780</Score>
+<Score et="122.9">Driver Laura(16) lap=1 point=1 t=48.477 et=122.800</Score>
+<Score et="123.3">Driver Maëlle(1) lap=1 point=1 t=47.414 et=123.240</Score>
+<Score et="126.2">Driver David(10) lap=1 point=1 t=47.794 et=126.200</Score>
+<Score et="126.9">Driver Guillaume(6) lap=1 point=1 t=47.477 et=126.860</Score>
+<Score et="130.1">Driver Nadia(19) lap=1 point=0 t=-1.000 et=129.960</Score>
+<Score et="131.6">Driver Fabien(5) lap=1 point=1 t=50.846 et=131.520</Score>
+<Score et="133.0">Driver Maxime(2) lap=1 point=1 t=48.756 et=132.900</Score>
+<Score et="135.9">Driver Pénélope(11) lap=1 point=1 t=61.368 et=135.860</Score>
+<Score et="136.4">Driver Erwan(7) lap=1 point=1 t=46.582 et=136.280</Score>
+<Score et="136.8">Driver Hector(13) lap=1 point=1 t=47.609 et=136.760</Score>
+<Incident et="137.7">Driver Emma(8) reported contact (10.75) with Sign</Incident>
+<TrackLimits Driver="Driver Emma" ID="8" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="139.7">No Further Action</TrackLimits>
+<Score et="141.0">Driver Hadrien(9) lap=1 point=1 t=47.946 et=140.920</Score>
+<Sector Driver="Driver Lilian" ID="3" Sector="2" Class="GTE" et="153.7">Driver Lilian(3) set new best for sector 2</Sector>
+<Score et="153.7">Driver Lilian(3) lap=1 point=2 t=84.147 et=153.640</Score>
+<Sector Driver="Driver Olivia" ID="12" Sector="2" Class="GTE" et="155.6">Driver Olivia(12) set new best for sector 2</Sector>
+<Score et="155.6">Driver Olivia(12) lap=1 point=2 t=83.268 et=155.620</Score>
+<Sector Driver="Driver Maëlle" ID="1" Sector="2" Class="GTE" et="156.4">Driver Maëlle(1) set new best for sector 2</Sector>
+<Score et="156.4">Driver Maëlle(1) lap=1 point=2 t=80.532 et=156.360</Score>
+<Score et="157.0">Driver Nadia(19) lap=1 point=1 t=-1.000 et=156.607</Score>
+<Score et="157.0">Driver Nadia(19) lap=1 point=2 t=-1.000 et=156.607</Score>
+<Score et="157.2">Driver Laura(16) lap=1 point=2 t=82.796 et=157.120</Score>
+<Incident et="158.1">Driver Ilona(17) reported contact (279.19) with Immovable</Incident>
+<Sector Driver="Driver David" ID="10" Sector="2" Class="GTE" et="159.1">Driver David(10) set new best for sector 2</Sector>
+<Score et="159.1">Driver David(10) lap=1 point=2 t=80.675 et=159.080</Score>
+<Score et="160.4">Driver Guillaume(6) lap=1 point=2 t=80.950 et=160.320</Score>
+<Score et="162.7">Driver Emma(8) lap=1 point=2 t=91.921 et=162.722</Score>
+<Score et="164.2">Driver Rachel(15) lap=1 point=0 t=-1.000 et=164.300</Score>
+<Score et="165.5">Driver Fabien(5) lap=1 point=2 t=84.743 et=165.420</Score>
+<TrackLimits Driver="Driver Ilona" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="166.2">No Further Action</TrackLimits>
+<Score et="166.5">Driver Mattéo(18) lap=2 point=0 t=-1.000 et=166.500</Score>
+<Score et="166.7">Driver Manon(14) lap=1 point=1 t=48.251 et=166.500</Score>
+<Score et="167.1">Driver Maxime(2) lap=1 point=2 t=82.868 et=167.020</Score>
+<Score et="170.2">Driver Erwan(7) lap=1 point=2 t=80.375 et=170.080</Score>
+<Score et="171.0">Driver Hector(13) lap=1 point=2 t=81.776 et=170.940</Score>
+<Score et="172.6">Driver Ilona(17) lap=1 point=0 t=-1.000 et=172.460</Score>
+<Score et="173.2">Driver Pénélope(11) lap=1 point=2 t=98.720 et=173.200</Score>
+<Score et="174.7">Driver Hadrien(9) lap=1 point=2 t=81.584 et=174.560</Score>
+<Sent et="175.7">&quot;Driver Hortense&quot; has taken the wheel.</Sent>
+<TrackLimits Driver="Driver Fabien" ID="5" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="182.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Olivia" ID="12" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Hadrien" ID="9" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="189.3">No Further Action</TrackLimits>
+<Sector et="193.5">Driver Laura(16) reports new suspension damage</Sector>
+<Incident et="193.6">Driver Laura(16) reported contact (2639.71) with Immovable</Incident>
+<Sector et="193.6">Driver Laura(16) reports new suspension damage</Sector>
+<TrackLimits Driver="Driver Laura" ID="16" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="196.8">No Further Action</TrackLimits>
+<Score et="200.2">Driver Manon(14) lap=1 point=2 t=81.894 et=200.140</Score>
+<Sector Driver="Driver Maëlle" ID="1" Sector="3" Class="GTE" et="200.4">Driver Maëlle(1) set new best for sector 3</Sector>
+<Score et="200.4">Driver Maëlle(1) lap=2 point=0 t=124.549 et=200.380</Score>
+<Score et="201.6">Driver Lilian(3) lap=2 point=0 t=132.058 et=201.540</Score>
+<Score et="203.6">Driver David(10) lap=2 point=0 t=125.078 et=203.500</Score>
+<Score et="203.8">Driver Laura(16) lap=2 point=0 t=129.391 et=203.720</Score>
+<Score et="205.1">Driver Guillaume(6) lap=2 point=0 t=125.678 et=205.060</Score>
+<Score et="209.2">Driver Emma(8) lap=2 point=0 t=138.426 et=209.227</Score>
+<Score et="211.4">Driver Rachel(15) lap=1 point=1 t=47.119 et=211.420</Score>
+<TrackLimits Driver="Driver Maxime" ID="2" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="213.1">No Further Action</TrackLimits>
+<Score et="214.5">Driver Erwan(7) lap=2 point=0 t=124.685 et=214.380</Score>
+<Score et="215.7">Driver Mattéo(18) lap=2 point=1 t=49.189 et=215.700</Score>
+<Score et="216.8">Driver Hector(13) lap=2 point=0 t=127.611 et=216.760</Score>
+<Sector et="217.5">Driver Laura(16) reports new suspension damage</Sector>
+<Incident et="217.6">Driver Laura(16) reported contact (4034.26) with Immovable</Incident>
+<Sector et="217.7">Driver Laura(16) reports new suspension damage</Sector>
+<Score et="220.1">Driver Hadrien(9) lap=2 point=0 t=127.058 et=220.020</Score>
+<TrackLimits Driver="Driver Laura" ID="16" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="221.3">No Further Action</TrackLimits>
+<Score et="222.4">Driver Olivia(12) lap=2 point=0 t=149.922 et=222.280</Score>
+<Score et="222.8">Driver Maxime(2) lap=2 point=0 t=138.561 et=222.720</Score>
+<Score et="222.9">Driver Pénélope(11) lap=2 point=0 t=148.249 et=222.740</Score>
+<TrackLimits Driver="Driver Ilona" ID="17" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="227.6">No Further Action</TrackLimits>
+<Sector et="227.8">Driver Laura(16) reports new engine damage</Sector>
+<Incident et="227.9">Driver Laura(16) reported contact (2422.67) with Immovable</Incident>
+<Sent et="229.0">&quot;Driver Eva&quot; has taken the wheel.</Sent>
+<Incident et="229.6">Driver Laura(16) reported contact (191.78) with Immovable</Incident>
+<Score et="231.4">Driver Ilona(17) lap=1 point=1 t=58.809 et=231.280</Score>
+<Incident et="233.2">Driver Mattéo(18) reported contact (10.62) with Sign</Incident>
+<TrackLimits Driver="Driver Mattéo" ID="18" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="234.0">No Further Action</TrackLimits>
+<Incident et="241.5">Driver Manon(14) reported contact (581.93) with Immovable</Incident>
+<TrackLimits Driver="Driver Manon" ID="14" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="243.3">No Further Action</TrackLimits>
+<Score et="243.8">Driver Laura(16) lap=2 point=1 t=-1.000 et=243.436</Score>
+<Score et="243.8">Driver Laura(16) lap=2 point=2 t=-1.000 et=243.436</Score>
+<Sector Driver="Driver Rachel" ID="15" Sector="2" Class="GTE" et="244.3">Driver Rachel(15) set new best for sector 2</Sector>
+<Score et="244.3">Driver Rachel(15) lap=1 point=2 t=79.893 et=244.200</Score>
+<Score et="246.0">Driver Manon(14) lap=2 point=0 t=127.554 et=245.800</Score>
+<Sector Driver="Driver Maëlle" ID="1" Sector="1" Class="GTE" et="247.0">Driver Maëlle(1) set new best for sector 1</Sector>
+<Score et="247.0">Driver Maëlle(1) lap=2 point=1 t=46.563 et=246.940</Score>
+<TrackLimits Driver="Driver Olivia" ID="12" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="248.4">No Further Action</TrackLimits>
+<Score et="250.3">Driver David(10) lap=2 point=1 t=46.790 et=250.280</Score>
+<Score et="251.2">Driver Lilian(3) lap=2 point=1 t=49.640 et=251.180</Score>
+<Score et="251.7">Driver Guillaume(6) lap=2 point=1 t=46.583 et=251.640</Score>
+<Score et="253.8">Driver Mattéo(18) lap=2 point=2 t=87.272 et=253.780</Score>
+<TrackLimits Driver="Driver Rachel" ID="15" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="255.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Emma" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="256.4">No Further Action</TrackLimits>
+<Score et="258.0">Driver Emma(8) lap=2 point=1 t=48.744 et=257.971</Score>
+<Sector Driver="Driver Erwan" ID="7" Sector="1" Class="GTE" et="261.0">Driver Erwan(7) set new best for sector 1</Sector>
+<Score et="261.0">Driver Erwan(7) lap=2 point=1 t=46.535 et=260.920</Score>
+<Score et="262.1">Driver Fabien(5) lap=2 point=0 t=-1.000 et=261.998</Score>
+<Score et="262.1">Driver Fabien(5) lap=2 point=1 t=-1.000 et=261.998</Score>
+<Score et="262.1">Driver Fabien(5) lap=2 point=2 t=-1.000 et=261.998</Score>
+<Score et="264.2">Driver Hector(13) lap=2 point=1 t=47.372 et=264.140</Score>
+<Score et="266.0">Driver Hortense(20) lap=1 point=0 t=-1.000 et=265.980</Score>
+<Score et="267.5">Driver Hadrien(9) lap=2 point=1 t=47.427 et=267.460</Score>
+<Score et="271.7">Driver Ilona(17) lap=1 point=2 t=99.117 et=271.580</Score>
+<Score et="272.0">Driver Maxime(2) lap=2 point=1 t=49.257 et=271.960</Score>
+<TrackLimits Driver="Driver Pénélope" ID="11" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="274.7">No Further Action</TrackLimits>
+<Score et="275.6">Driver Pénélope(11) lap=2 point=1 t=52.802 et=275.540</Score>
+<Score et="276.8">Driver Olivia(12) lap=2 point=1 t=54.439 et=276.720</Score>
+<Score et="280.2">Driver Maëlle(1) lap=2 point=2 t=79.783 et=280.160</Score>
+<Score et="283.9">Driver David(10) lap=2 point=2 t=80.365 et=283.860</Score>
+<Score et="284.6">Driver Lilian(3) lap=2 point=2 t=82.984 et=284.540</Score>
+<Score et="285.0">Driver Guillaume(6) lap=2 point=2 t=79.824 et=284.880</Score>
+<Sector Driver="Driver Rachel" ID="15" Sector="3" Class="GTE" et="288.0">Driver Rachel(15) set new best for sector 3</Sector>
+<Score et="288.0">Driver Rachel(15) lap=2 point=0 t=123.541 et=287.860</Score>
+<Score et="292.8">Driver Emma(8) lap=2 point=2 t=83.565 et=292.793</Score>
+<Score et="294.0">Driver Erwan(7) lap=2 point=2 t=79.535 et=293.920</Score>
+<Score et="294.2">Driver Manon(14) lap=2 point=1 t=48.269 et=294.060</Score>
+<Score et="298.5">Driver Hector(13) lap=2 point=2 t=81.670 et=298.440</Score>
+<Score et="301.3">Driver Mattéo(18) lap=3 point=0 t=134.779 et=301.280</Score>
+<Score et="301.6">Driver Hadrien(9) lap=2 point=2 t=81.394 et=301.420</Score>
+<TrackLimits Driver="Driver Emma" ID="8" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="304.9">No Further Action</TrackLimits>
+<Score et="306.0">Driver Maxime(2) lap=2 point=2 t=83.165 et=305.880</Score>
+<Score et="309.7">Driver Olivia(12) lap=2 point=2 t=87.417 et=309.700</Score>
+<Score et="311.2">Driver Pénélope(11) lap=2 point=2 t=88.365 et=311.100</Score>
+<Score et="315.5">Driver Hortense(20) lap=1 point=1 t=49.452 et=315.440</Score>
+<Score et="321.6">Driver Eva(4) lap=1 point=0 t=-1.000 et=321.620</Score>
+<Score et="321.9">Driver Ilona(17) lap=2 point=0 t=149.302 et=321.780</Score>
+<Score et="324.7">Driver Maëlle(1) lap=3 point=0 t=124.295 et=324.680</Score>
+<Score et="327.5">Driver Manon(14) lap=2 point=2 t=81.580 et=327.380</Score>
+<Score et="328.7">Driver David(10) lap=3 point=0 t=125.181 et=328.680</Score>
+<Score et="329.6">Driver Guillaume(6) lap=3 point=0 t=124.493 et=329.540</Score>
+<Score et="331.6">Driver Lilian(3) lap=3 point=0 t=130.043 et=331.600</Score>
+<Sector Driver="Driver Rachel" ID="15" Sector="1" Class="GTE" et="334.5">Driver Rachel(15) set new best for sector 1</Sector>
+<Score et="334.5">Driver Rachel(15) lap=2 point=1 t=46.518 et=334.360</Score>
+<Score et="338.2">Driver Erwan(7) lap=3 point=0 t=123.690 et=338.080</Score>
+<Score et="339.9">Driver Emma(8) lap=3 point=0 t=130.691 et=339.918</Score>
+<Incident et="340.2">Driver Hector(13) reported contact (591.56) with Immovable</Incident>
+<Incident et="340.2">Driver Hector(13) reported contact (1699.49) with Immovable</Incident>
+<Sector et="340.2">Driver Hector(13) reports new suspension damage</Sector>
+<Sector et="340.2">Driver Hector(13) reports new suspension damage</Sector>
+<TrackLimits Driver="Driver Hector" ID="13" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="342.0">No Further Action</TrackLimits>
+<Score et="342.9">Driver Lilian(3) lap=3 point=1 t=-1.000 et=342.470</Score>
+<Score et="342.9">Driver Lilian(3) lap=3 point=2 t=-1.000 et=342.470</Score>
+<Score et="344.7">Driver Hector(13) lap=3 point=0 t=127.885 et=344.660</Score>
+<Score et="346.6">Driver Hadrien(9) lap=3 point=0 t=126.482 et=346.500</Score>
+<Score et="350.6">Driver Mattéo(18) lap=3 point=1 t=49.238 et=350.520</Score>
+<Score et="350.8">Driver Hortense(20) lap=1 point=2 t=84.833 et=350.820</Score>
+<TrackLimits Driver="Driver Erwan" ID="7" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="351.8">No Further Action</TrackLimits>
+<Score et="352.8">Driver Maxime(2) lap=3 point=0 t=-1.000 et=352.759</Score>
+<Score et="352.8">Driver Maxime(2) lap=3 point=1 t=-1.000 et=352.759</Score>
+<Score et="352.8">Driver Maxime(2) lap=3 point=2 t=-1.000 et=352.759</Score>
+<Score et="354.7">Driver Olivia(12) lap=3 point=0 t=132.321 et=354.600</Score>
+<Score et="355.9">Driver Erwan(7) lap=3 point=1 t=-1.000 et=355.829</Score>
+<Score et="355.9">Driver Erwan(7) lap=3 point=2 t=-1.000 et=355.829</Score>
+<Score et="359.9">Driver Pénélope(11) lap=3 point=0 t=137.110 et=359.840</Score>
+<Score et="367.4">Driver Rachel(15) lap=2 point=2 t=79.329 et=367.180</Score>
+<Score et="370.2">Driver Eva(4) lap=1 point=1 t=48.524 et=370.160</Score>
+<Score et="371.5">Driver Maëlle(1) lap=3 point=1 t=46.768 et=371.440</Score>
+<TrackLimits Driver="Driver Emma" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="371.9">No Further Action</TrackLimits>
+<Score et="372.7">Driver Manon(14) lap=3 point=0 t=126.722 et=372.520</Score>
+<Score et="375.7">Driver David(10) lap=3 point=1 t=46.950 et=375.620</Score>
+<TrackLimits Driver="Driver Ilona" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="375.8">No Further Action</TrackLimits>
+<Score et="377.0">Driver Ilona(17) lap=2 point=1 t=55.086 et=376.860</Score>
+<TrackLimits Driver="Driver Guillaume" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="377.2">No Further Action</TrackLimits>
+<Score et="377.2">Driver Guillaume(6) lap=3 point=1 t=47.571 et=377.120</Score>
+<TrackLimits Driver="Driver Rachel" ID="15" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="378.9">No Further Action</TrackLimits>
+<Score et="384.9">Driver Mattéo(18) lap=3 point=2 t=83.571 et=384.860</Score>
+<TrackLimits Driver="Driver Hadrien" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="393.9">No Further Action</TrackLimits>
+<Score et="395.3">Driver Hector(13) lap=3 point=1 t=50.604 et=395.260</Score>
+<Score et="395.4">Driver Hadrien(9) lap=3 point=1 t=48.776 et=395.280</Score>
+<TrackLimits Driver="Driver Guillaume" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="395.7">No Further Action</TrackLimits>
+<Score et="398.7">Driver Hortense(20) lap=2 point=0 t=132.601 et=398.580</Score>
+<Score et="402.0">Driver Olivia(12) lap=3 point=1 t=47.305 et=401.900</Score>
+<Score et="404.3">Driver Maëlle(1) lap=3 point=2 t=79.590 et=404.260</Score>
+<Score et="408.9">Driver David(10) lap=3 point=2 t=80.203 et=408.880</Score>
+<Score et="409.1">Driver Eva(4) lap=1 point=2 t=87.426 et=409.060</Score>
+<TrackLimits Driver="Driver Guillaume" ID="6" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="409.3">No Further Action</TrackLimits>
+<Score et="410.6">Driver Pénélope(11) lap=3 point=1 t=50.695 et=410.540</Score>
+<Score et="411.3">Driver Rachel(15) lap=3 point=0 t=123.251 et=411.100</Score>
+<TrackLimits Driver="Driver Ilona" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="412.1">No Further Action</TrackLimits>
+<Score et="418.7">Driver Manon(14) lap=3 point=1 t=-1.000 et=418.056</Score>
+<Score et="418.7">Driver Manon(14) lap=3 point=2 t=-1.000 et=418.056</Score>
+<Score et="421.5">Driver Ilona(17) lap=2 point=2 t=99.555 et=421.320</Score>
+<TrackLimits Driver="Driver Eva" ID="4" Lap="1" WarningPoints="0" CurrentPoints="0" Resolution="5" et="423.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver David" ID="10" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.4">No Further Action</TrackLimits>
+<Score et="428.8">Driver Hadrien(9) lap=3 point=2 t=82.169 et=428.680</Score>
+<TrackLimits Driver="Driver Hortense" ID="20" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="428.8">No Further Action</TrackLimits>
+<Score et="430.0">Driver Guillaume(6) lap=3 point=2 t=100.439 et=429.980</Score>
+<Score et="431.2">Driver Hector(13) lap=3 point=2 t=86.516 et=431.160</Score>
+<Score et="431.4">Driver Mattéo(18) lap=4 point=0 t=130.070 et=431.360</Score>
+<Score et="434.6">Driver David(10) lap=4 point=0 t=-1.000 et=434.345</Score>
+<Score et="434.6">Driver David(10) lap=4 point=1 t=-1.000 et=434.345</Score>
+<Score et="434.6">Driver David(10) lap=4 point=2 t=-1.000 et=434.345</Score>
+<Score et="434.8">Driver Olivia(12) lap=3 point=2 t=80.099 et=434.700</Score>
+<Score et="434.8">Driver Rachel(15) lap=3 point=1 t=-1.000 et=434.561</Score>
+<Score et="434.8">Driver Rachel(15) lap=3 point=2 t=-1.000 et=434.561</Score>
+<TrackLimits Driver="Driver Pénélope" ID="11" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Hector" ID="13" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="441.9">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Hadrien" ID="9" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.8">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Ilona" ID="17" Lap="2" WarningPoints="0" CurrentPoints="0" Resolution="5" et="442.9">No Further Action</TrackLimits>
+<Score et="447.1">Driver Mattéo(18) lap=4 point=1 t=-1.000 et=447.056</Score>
+<Score et="447.1">Driver Mattéo(18) lap=4 point=2 t=-1.000 et=447.056</Score>
+<Score et="447.2">Driver Hortense(20) lap=2 point=1 t=48.583 et=447.160</Score>
+<Score et="447.8">Driver Pénélope(11) lap=3 point=2 t=87.907 et=447.760</Score>
+<Score et="448.5">Driver Maëlle(1) lap=4 point=0 t=123.817 et=448.500</Score>
+<Score et="454.8">Driver Eva(4) lap=2 point=0 t=133.030 et=454.660</Score>
+<Incident et="455.3">Driver Hector(13) reported contact (41.13) with Cone</Incident>
+<TrackLimits Driver="Driver Maëlle" ID="1" Lap="4" WarningPoints="0" CurrentPoints="0" Resolution="5" et="459.1">No Further Action</TrackLimits>
+<Score et="465.2">Driver Eva(4) lap=2 point=1 t=-1.000 et=464.901</Score>
+<Score et="465.2">Driver Eva(4) lap=2 point=2 t=-1.000 et=464.901</Score>
+<Score et="468.7">Driver Maëlle(1) lap=4 point=1 t=-1.000 et=468.583</Score>
+<Score et="468.7">Driver Maëlle(1) lap=4 point=2 t=-1.000 et=468.583</Score>
+<TrackLimits Driver="Driver Emma" ID="8" Lap="3" WarningPoints="0" CurrentPoints="0" Resolution="5" et="471.9">No Further Action</TrackLimits>
+<Score et="473.4">Driver Hadrien(9) lap=4 point=0 t=126.770 et=473.280</Score>
+<Score et="474.6">Driver Guillaume(6) lap=4 point=0 t=144.947 et=474.500</Score>
+<Score et="475.5">Driver Ilona(17) lap=3 point=0 t=153.549 et=475.320</Score>
 </Stream>
 <MostLapsCompleted>4</MostLapsCompleted>
 <Driver>
-<Name>Driver 0539</Name>
+<Name>Driver Olivier</Name>
 <Connected>1</Connected>
 <VehFile>54_AFCORSEB48DBC46.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -324,7 +324,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0620</Name>
+<Name>Driver Théo</Name>
 <Connected>1</Connected>
 <VehFile>74_KESSELED952BC5.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -349,7 +349,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0385</Name>
+<Name>Driver Simon</Name>
 <Connected>1</Connected>
 <VehFile>83_AFCORSE7FBCECA5.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -375,7 +375,7 @@
 <ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1025</Name>
+<Name>Driver Alexandre</Name>
 <Connected>1</Connected>
 <VehFile>77_PROTONLAECAE80B.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -401,7 +401,7 @@
 <ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0262</Name>
+<Name>Driver Noémie</Name>
 <Connected>1</Connected>
 <VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -427,7 +427,7 @@
 <ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0198</Name>
+<Name>Driver Gabriel</Name>
 <Connected>1</Connected>
 <VehFile>56_REXY8A686597.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -453,7 +453,7 @@
 <ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2140</Name>
+<Name>Driver Clara</Name>
 <Connected>1</Connected>
 <VehFile>66_JMW36916B99.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -478,7 +478,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1578</Name>
+<Name>Driver Benjamin</Name>
 <Connected>1</Connected>
 <VehFile>54_AFCORSEB48DBC46.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -503,7 +503,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0258</Name>
+<Name>Driver Mathis</Name>
 <Connected>1</Connected>
 <VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -527,7 +527,7 @@
 <ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1857</Name>
+<Name>Driver Joachim</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -552,7 +552,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2072</Name>
+<Name>Driver Katia</Name>
 <Connected>1</Connected>
 <VehFile>74_KESSELED952BC5.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -578,7 +578,7 @@
 <ControlAndAids startLap="1" endLap="4">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2161</Name>
+<Name>Driver Lucas</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT9BB51D89.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -603,7 +603,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1007</Name>
+<Name>Driver Eléa</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT9BB51D89.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -628,7 +628,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2039</Name>
+<Name>Driver Faustine</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>00000200 00000000 00000000 00000000</UpgradeCode>
@@ -652,7 +652,7 @@
 <ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Braking=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2197</Name>
+<Name>Driver Kilian</Name>
 <Connected>1</Connected>
 <VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -676,7 +676,7 @@
 <ControlAndAids startLap="1" endLap="2">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1224</Name>
+<Name>Driver Joséphine</Name>
 <Connected>1</Connected>
 <VehFile>85_IRONDAM1563682E.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -701,7 +701,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,ABS=1,Steering=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0523</Name>
+<Name>Driver Zoé</Name>
 <Connected>1</Connected>
 <VehFile>77_PROTONLAECAE80B.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -726,7 +726,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2361</Name>
+<Name>Driver Cédric</Name>
 <Connected>1</Connected>
 <VehFile>98_NORTHWE595AFE33.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -751,7 +751,7 @@
 <ControlAndAids startLap="1" endLap="3">PlayerControl,AutoShift=3,Clutch,AutoLift,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0663</Name>
+<Name>Driver Pia</Name>
 <Connected>1</Connected>
 <VehFile>86_GRRACIN56C59091.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -774,7 +774,7 @@
 <ControlAndAids startLap="1" endLap="2">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0621</Name>
+<Name>Driver Ilan</Name>
 <Connected>1</Connected>
 <VehFile>56_REXY8A686597.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>
@@ -796,7 +796,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2216</Name>
+<Name>Driver Daphné</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT80C98836.VEH</VehFile>
 <UpgradeCode>00000100 00000000 00000000 00000000</UpgradeCode>

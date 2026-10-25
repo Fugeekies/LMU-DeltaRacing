@@ -36,33 +36,33 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<Score et="100.4">Driver 5710(15) lap=0 point=1 t=-1.000 et=100.340</Score>
-<TrackLimits Driver="Driver 3832" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="108.6">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 3832" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="108.6">No Further Action</TrackLimits>
-<Score et="111.1">Driver 3767(14) lap=0 point=1 t=-1.000 et=111.080</Score>
-<Score et="120.2">Driver 3832(0) lap=0 point=1 t=-1.000 et=120.060</Score>
-<Incident et="152.7">Driver 3767(14) reported contact (15265.08) with Immovable</Incident>
-<Incident et="152.7">Driver 3767(14) reported contact (403.65) with Wheel</Incident>
-<Incident et="152.7">Driver 3767(14) reported contact (20.69) with Wheel</Incident>
-<Incident et="152.9">Driver 3767(14) reported contact (87.63) with Wheel</Incident>
-<Incident et="154.4">Driver 3767(14) reported contact (1664.51) with Immovable</Incident>
-<Sector et="154.4">Driver 3767(14) reports new suspension damage</Sector>
-<Score et="159.3">Driver 4133(4) lap=0 point=1 t=-1.000 et=159.320</Score>
-<Score et="163.4">Driver 3302(10) lap=0 point=1 t=-1.000 et=163.300</Score>
-<Score et="163.6">Driver 5710(15) lap=0 point=2 t=-1.000 et=163.520</Score>
-<TrackLimits Driver="Driver 5632" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5632" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
-<Score et="175.5">Driver 3767(14) lap=0 point=2 t=-1.000 et=175.415</Score>
-<Score et="175.5">Driver 3767(14) lap=1 point=0 t=-1.000 et=175.415</Score>
-<Score et="183.4">Driver 5632(5) lap=0 point=1 t=-1.000 et=183.340</Score>
-<Score et="186.3">Driver 3832(0) lap=0 point=2 t=-1.000 et=186.120</Score>
-<TrackLimits Driver="Driver 5710" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.1">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5710" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.1">No Further Action</TrackLimits>
-<Score et="208.3">Driver 5710(15) lap=1 point=0 t=-1.000 et=208.240</Score>
+<Score et="100.4">Driver Delphine(15) lap=0 point=1 t=-1.000 et=100.340</Score>
+<TrackLimits Driver="Driver Sandra" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="108.6">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Sandra" ID="0" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="108.6">No Further Action</TrackLimits>
+<Score et="111.1">Driver Lenny(14) lap=0 point=1 t=-1.000 et=111.080</Score>
+<Score et="120.2">Driver Sandra(0) lap=0 point=1 t=-1.000 et=120.060</Score>
+<Incident et="152.7">Driver Lenny(14) reported contact (15265.08) with Immovable</Incident>
+<Incident et="152.7">Driver Lenny(14) reported contact (403.65) with Wheel</Incident>
+<Incident et="152.7">Driver Lenny(14) reported contact (20.69) with Wheel</Incident>
+<Incident et="152.9">Driver Lenny(14) reported contact (87.63) with Wheel</Incident>
+<Incident et="154.4">Driver Lenny(14) reported contact (1664.51) with Immovable</Incident>
+<Sector et="154.4">Driver Lenny(14) reports new suspension damage</Sector>
+<Score et="159.3">Driver Tristan(4) lap=0 point=1 t=-1.000 et=159.320</Score>
+<Score et="163.4">Driver Isaac(10) lap=0 point=1 t=-1.000 et=163.300</Score>
+<Score et="163.6">Driver Delphine(15) lap=0 point=2 t=-1.000 et=163.520</Score>
+<TrackLimits Driver="Driver Hortense" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Hortense" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="170.3">No Further Action</TrackLimits>
+<Score et="175.5">Driver Lenny(14) lap=0 point=2 t=-1.000 et=175.415</Score>
+<Score et="175.5">Driver Lenny(14) lap=1 point=0 t=-1.000 et=175.415</Score>
+<Score et="183.4">Driver Hortense(5) lap=0 point=1 t=-1.000 et=183.340</Score>
+<Score et="186.3">Driver Sandra(0) lap=0 point=2 t=-1.000 et=186.120</Score>
+<TrackLimits Driver="Driver Delphine" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.1">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Delphine" ID="15" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="200.1">No Further Action</TrackLimits>
+<Score et="208.3">Driver Delphine(15) lap=1 point=0 t=-1.000 et=208.240</Score>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>
-<Name>Driver 2706</Name>
+<Name>Driver Cécile</Name>
 <Connected>1</Connected>
 <VehFile>56_BTR7B047051.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -84,7 +84,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0909</Name>
+<Name>Driver Cyril</Name>
 <Connected>1</Connected>
 <VehFile>57_KESSELLC54EE96D.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -106,7 +106,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0972</Name>
+<Name>Driver Maya</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -126,7 +126,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1236</Name>
+<Name>Driver Owen</Name>
 <Connected>1</Connected>
 <VehFile>100_WALKEN1B80023E.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -146,7 +146,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0494</Name>
+<Name>Driver Alice</Name>
 <Connected>1</Connected>
 <VehFile>74_KESSELED952BC5.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -166,7 +166,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2631</Name>
+<Name>Driver Dylan</Name>
 <Connected>1</Connected>
 <VehFile>54_AFCORSEB48DBC46.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -186,7 +186,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1015</Name>
+<Name>Driver Yara</Name>
 <Connected>1</Connected>
 <VehFile>777_DSTATI5BFA7EF3.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -206,7 +206,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0148</Name>
+<Name>Driver Tess</Name>
 <Connected>1</Connected>
 <VehFile>54_AFCORSEB48DBC46.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -226,7 +226,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2002</Name>
+<Name>Driver Adèle</Name>
 <Connected>1</Connected>
 <VehFile>85_IRONDAM1563682E.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -246,7 +246,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2212</Name>
+<Name>Driver Bérénice</Name>
 <Connected>1</Connected>
 <VehFile>56_REXY8A686597.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -266,7 +266,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0069</Name>
+<Name>Driver Orane</Name>
 <Connected>1</Connected>
 <VehFile>60_IRONLYN23215450.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -286,7 +286,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT9BB51D89.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -306,7 +306,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1969</Name>
+<Name>Driver Patrick</Name>
 <Connected>1</Connected>
 <VehFile>83_AFCORSE7FBCECA5.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -326,7 +326,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2762</Name>
+<Name>Driver Margot</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -346,7 +346,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1498</Name>
+<Name>Driver Zélie</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -366,7 +366,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0065</Name>
+<Name>Driver Loïc</Name>
 <Connected>1</Connected>
 <VehFile>86_GRRACINBAD908BD.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -386,7 +386,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2055</Name>
+<Name>Driver Robin</Name>
 <Connected>1</Connected>
 <VehFile>74_KESSELED952BC5.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -406,7 +406,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2524</Name>
+<Name>Driver Stéphane</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSE19F69870.VEH</VehFile>
 <UpgradeCode>8c310600 00000000 00000000 00000000</UpgradeCode>
@@ -426,7 +426,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0974</Name>
+<Name>Driver Fabrice</Name>
 <Connected>1</Connected>
 <VehFile>56_REXY8A686597.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>
@@ -446,7 +446,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0383</Name>
+<Name>Driver Valentine</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT9BB51D89.VEH</VehFile>
 <UpgradeCode>c6180300 00000000 00000000 00000000</UpgradeCode>

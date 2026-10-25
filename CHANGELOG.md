@@ -33,6 +33,8 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dates de l'état des imports affichées en heure locale au lieu de l'heure UTC.
 
 ### Changed
+- Fixtures : alias lisibles à prénom (`Driver Tom`, `Driver Lucas`…) au lieu de `Driver NNNN`. Le pilote principal devient `Driver Tom`.
+- Fixtures : les pilotes n'ayant fait qu'une course sont fusionnés avec des pilotes qu'ils n'ont jamais croisés (`Prepare-PackageAssets.ps1 -MergeSingleRaceDrivers`) ; 5 599 noms donnent 239 alias, dont 237 avec au moins 5 courses, ce qui enrichit le classement des coureurs. Le pilote principal n'est jamais fusionné, et aucune session ne contient deux fois le même alias.
 - Détail des courses : meilleurs secteurs personnels sur les tours chronométrés, colonne TOUR IDÉAL, comparaisons par classe (règle WEC), position en classe, colonne DIFF 1ER (écart au leader de la classe, tours de retard, DNF/DQ), temps au tour au format `m:ss.fff`, virtualisation au-delà de 40 pilotes.
 - Classement des coureurs : barre visuelle victoires/défaites dans la colonne % de victoire.
 - Options : un bouton unique « Appliquer » valide, enregistre et recharge le dossier des résultats ; la préférence de démarrage est enregistrée dès qu'on la coche.

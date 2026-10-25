@@ -184,9 +184,9 @@ public sealed class MyRacesPresentationTests
             })
             .ToArray();
         var raceCount = sessions.Count(session =>
-            session.SessionType == "Race" && DriverProfile.FindDriver(session, "Driver 2038") is not null);
+            session.SessionType == "Race" && DriverProfile.FindDriver(session, "Driver Tom") is not null);
 
-        var records = MyRacesPresentation.CreateRecords(sessions, "Driver 2038");
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver Tom");
 
         raceCount.Should().Be(87);
         records.Count.Should().BeGreaterThanOrEqualTo(raceCount);

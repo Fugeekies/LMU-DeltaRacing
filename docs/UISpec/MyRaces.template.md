@@ -63,7 +63,7 @@ Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la prog
 ### Wireframe ASCII
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS        Driver 2038  🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS        Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  HISTORIQUE & PROGRESSION                                                                                                        │
 │  Mes courses                                                                                                                     │

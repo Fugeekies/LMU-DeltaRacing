@@ -36,16 +36,16 @@
 <Laps>2147483647</Laps>
 <Minutes>2</Minutes>
 <Stream>
-<ChatMessage et="110.1">Driver 2806: [message retiré]</ChatMessage>
-<Score et="112.7">Driver 3478(18) lap=0 point=1 t=-1.000 et=112.080</Score>
-<ChatMessage et="112.7">Driver 2806: [message retiré]</ChatMessage>
-<Score et="118.3">Driver 4776(9) lap=0 point=1 t=-1.000 et=118.000</Score>
-<TrackLimits Driver="Driver 4776" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="125.4">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4776" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="125.4">No Further Action</TrackLimits>
+<ChatMessage et="110.1">Driver Oscar: [message retiré]</ChatMessage>
+<Score et="112.7">Driver Margaux(18) lap=0 point=1 t=-1.000 et=112.080</Score>
+<ChatMessage et="112.7">Driver Oscar: [message retiré]</ChatMessage>
+<Score et="118.3">Driver Samuel(9) lap=0 point=1 t=-1.000 et=118.000</Score>
+<TrackLimits Driver="Driver Samuel" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="125.4">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Samuel" ID="9" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="125.4">No Further Action</TrackLimits>
 </Stream>
 <MostLapsCompleted>0</MostLapsCompleted>
 <Driver>
-<Name>Driver 0653</Name>
+<Name>Driver Aaron</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GCHA17031780.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -65,7 +65,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1832</Name>
+<Name>Driver Hanna</Name>
 <Connected>1</Connected>
 <VehFile>11_26_GCHA47509705.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -85,7 +85,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1350</Name>
+<Name>Driver Tristan</Name>
 <Connected>1</Connected>
 <VehFile>12_26_GCHA18747807.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -105,7 +105,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2668</Name>
+<Name>Driver Lucie</Name>
 <Connected>1</Connected>
 <VehFile>2_26_GCHAL98500904.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -125,7 +125,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0770</Name>
+<Name>Driver Ugo</Name>
 <Connected>1</Connected>
 <VehFile>3_26_GCHAL41540517.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -145,7 +145,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0016</Name>
+<Name>Driver Pablo</Name>
 <Connected>1</Connected>
 <VehFile>2_26_GCHAL98500904.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -165,7 +165,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1962</Name>
+<Name>Driver Yoann</Name>
 <Connected>1</Connected>
 <VehFile>7_26_GCHAL34731486.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -185,7 +185,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0918</Name>
+<Name>Driver Frida</Name>
 <Connected>1</Connected>
 <VehFile>1_26_GCHAL73279592.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -205,7 +205,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1572</Name>
+<Name>Driver Yann</Name>
 <Connected>1</Connected>
 <VehFile>5_26_GCHAL67256536.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -225,7 +225,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0244</Name>
+<Name>Driver Timéo</Name>
 <Connected>1</Connected>
 <VehFile>3_26_GCHAL41540517.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -245,7 +245,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2223</Name>
+<Name>Driver Ambroise</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GCHA17031780.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -265,7 +265,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0394</Name>
+<Name>Driver Fanny</Name>
 <Connected>1</Connected>
 <VehFile>8_26_GCHAL79481284.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -285,7 +285,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1719</Name>
+<Name>Driver Gabrielle</Name>
 <Connected>1</Connected>
 <VehFile>8_26_GCHAL79481284.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -305,7 +305,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0025</Name>
+<Name>Driver Hugo</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GCHA17031780.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -325,7 +325,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0143</Name>
+<Name>Driver Dora</Name>
 <Connected>1</Connected>
 <VehFile>1_26_GCHAL73279592.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -345,7 +345,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1338</Name>
+<Name>Driver Vadim</Name>
 <Connected>1</Connected>
 <VehFile>1_26_GCHAL73279592.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -365,7 +365,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1817</Name>
+<Name>Driver Warren</Name>
 <Connected>1</Connected>
 <VehFile>1_26_GCHAL73279592.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -385,7 +385,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0264</Name>
+<Name>Driver Estelle</Name>
 <Connected>1</Connected>
 <VehFile>1_26_GCHAL73279592.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -405,7 +405,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0028</Name>
+<Name>Driver Roxane</Name>
 <Connected>1</Connected>
 <VehFile>11_26_GCHA47509705.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -425,7 +425,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2052</Name>
+<Name>Driver Yvan</Name>
 <Connected>1</Connected>
 <VehFile>6_26_GCHAL89066091.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -445,7 +445,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2118</Name>
+<Name>Driver Solène</Name>
 <Connected>1</Connected>
 <VehFile>11_26_GCHA47509705.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
@@ -465,7 +465,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>8_26_GCHAL79481284.VEH</VehFile>
 <UpgradeCode>c6180600 00000000 00000000 00000000</UpgradeCode>
