@@ -19,6 +19,12 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Ajout d'un dashboard Blazor local avec historique des sessions, classement des pilotes, progression du chargement et actualisation en direct des imports.
 - Ajout d'un profil de publication Windows x64 autonome pour lancer le dashboard sans installer le runtime .NET.
 - Ajout d'un installeur Windows Inno Setup, de fixtures de démonstration anonymisées et d'un test de démarrage de l'application publiée sans DLL externes.
+- Ajout de `AGENTS.md`, source unique des instructions pour GitHub Copilot et Claude Code (via l'import `@AGENTS.md` de `CLAUDE.md`) : commandes, architecture, faits vérifiés sur le format XML LMU et règles de contribution.
+
+### Fixed
+- Remplacement de `.github/copilot-instruction.md`, ignoré par Copilot à cause de son nom, par `AGENTS.md` ; correction du chemin du projet UI et de l'organisation de la solution.
+- Renommage de `CHANGELOG.MD` en `CHANGELOG.md`, nom attendu par les instructions de contribution.
+- Correction des références documentaires vers des fichiers inexistants : maquettes `docs/UISpec/*.template.md`, rapport `performance-report.md`, script `Test-PackageAssets.ps1` supprimé, `IResultXmlParser`, `docs/ROADMAP.md` et `LMU-DeltaRacing.slnx`.
 
 ### Changed
 - Import automatique des résultats au démarrage sans demander de confirmation; le choix d'une vue statistique l'affiche immédiatement au lieu de revenir au menu.
@@ -34,7 +40,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
   - Création des entités métiers pures : `Session`, `Driver`, `Lap`, et `Sector`.
   - Isolation totale du modèle domaine vis-à-vis des dépendances externes et du format XML.
 - **Application Layer (`src/LMU-DeltaRacing.Application/`) :**
-  - Définition des contrats d'interfaces `IXmlParserService` et `ISessionRepository`.
+  - Définition des contrats d'interfaces `IResultXmlParser` et `ISessionRepository`.
   - Intégration des abstractions de métriques et de traçabilité via OpenTelemetry (`System.Diagnostics.ActivitySource` & `Meter`).
 - **Infrastructure Layer (`src/LMU-DeltaRacing.Infrastructure/`) :**
   - Implémentation du parser XML réactif consommant des `Stream` pour l'indépendance du File System.
@@ -62,13 +68,13 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
   - Règle "Zéro Invention" obligeant l'agent à poser des questions techniques/fonctionnelles en cas d'ambiguïté.
   - Exigence de commentaires XML abondants et de logs granulaires (`Trace` à `Critical`).
   - Maintien systématique du `CHANGELOG.md` par PR.
-- **Feuille de Route (`docs/FeuilleDeRoute.md`) :** Découpage en micro-jalons atomiques (Configuration `appsettings.json`, File Locking, FileWatcher, Benchmarking, UI Blazor).
-- **Spécifications d'Agent (`AGENTS.md`) & Architecture (`docs/ARCHITECTURE.md`) :** Mise à jour des documents de cadrage technique.
+- **Feuille de Route (`docs/ROADMAP.md`) :** Découpage en micro-jalons atomiques (Configuration `appsettings.json`, File Locking, FileWatcher, Benchmarking, UI Blazor).
+- **Architecture (`docs/ARCHITECTURE.md`) :** Mise à jour des documents de cadrage technique.
 
 ---
 
 ## [0.1.0-alpha] - 2026-10-16
 
 ### Added
-- Initialisation de la solution .NET 10 `LMU-DeltaRacing.sln`.
+- Initialisation de la solution .NET 10 `LMU-DeltaRacing.slnx`.
 - Structure initiale des projets Clean Architecture (`Domain`, `Application`, `Infrastructure`, `Console`, `UI`, `Tests`).
