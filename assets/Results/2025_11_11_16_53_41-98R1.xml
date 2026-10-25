@@ -36,20 +36,20 @@
 <Laps>2147483647</Laps>
 <Minutes>20</Minutes>
 <Stream>
-<Score et="224.2">Driver 5648(2) lap=0 point=2 t=107.500 et=216.900</Score>
-<Score et="224.3">Driver 5126(5) lap=0 point=2 t=109.247 et=218.640</Score>
-<TrackLimits Driver="Driver 4103" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="227.5">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 5126" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="228.0">No Further Action</TrackLimits>
-<Sector Driver="Driver 3741" ID="3" Sector="3" Class="GTE" et="228.7">Driver 3741(3) set new best for sector 3</Sector>
-<Score et="228.7">Driver 3741(3) lap=1 point=0 t=117.165 et=226.560</Score>
-<Score et="229.7">Driver 3163(0) lap=1 point=0 t=118.169 et=227.560</Score>
-<Score et="229.9">Driver 5180(6) lap=1 point=0 t=118.593 et=227.980</Score>
-<Score et="230.9">Driver 3280(14) lap=1 point=0 t=119.706 et=229.100</Score>
+<Score et="224.2">Driver Eléa(2) lap=0 point=2 t=107.500 et=216.900</Score>
+<Score et="224.3">Driver Ingrid(5) lap=0 point=2 t=109.247 et=218.640</Score>
+<TrackLimits Driver="Driver Anna" ID="7" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="227.5">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Ingrid" ID="5" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="5" et="228.0">No Further Action</TrackLimits>
+<Sector Driver="Driver Mathis" ID="3" Sector="3" Class="GTE" et="228.7">Driver Mathis(3) set new best for sector 3</Sector>
+<Score et="228.7">Driver Mathis(3) lap=1 point=0 t=117.165 et=226.560</Score>
+<Score et="229.7">Driver Enzo(0) lap=1 point=0 t=118.169 et=227.560</Score>
+<Score et="229.9">Driver Coralie(6) lap=1 point=0 t=118.593 et=227.980</Score>
+<Score et="230.9">Driver Mila(14) lap=1 point=0 t=119.706 et=229.100</Score>
 </Stream>
 <FormationAndStart>1</FormationAndStart>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>
-<Name>Driver 0883</Name>
+<Name>Driver Ethan</Name>
 <Connected>1</Connected>
 <VehFile>72_TFSPORTECC3A2D4.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -74,7 +74,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0353</Name>
+<Name>Driver Quentin</Name>
 <Connected>1</Connected>
 <VehFile>911_PROTON8153440A.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -99,7 +99,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2201</Name>
+<Name>Driver Paul</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -124,7 +124,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0472</Name>
+<Name>Driver Valentine</Name>
 <Connected>1</Connected>
 <VehFile>57_KESSELLC54EE96D.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -149,7 +149,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2509</Name>
+<Name>Driver Albane</Name>
 <Connected>1</Connected>
 <VehFile>25_ORT16979D3E.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -173,7 +173,7 @@
 <ControlAndAids startLap="1" endLap="1">UnknownControl</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 2163</Name>
+<Name>Driver Dorian</Name>
 <Connected>1</Connected>
 <VehFile>77_PROTONLAECAE80B.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -195,7 +195,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2647</Name>
+<Name>Driver Fabrice</Name>
 <Connected>1</Connected>
 <VehFile>397_23_488GTE.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -217,7 +217,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0512</Name>
+<Name>Driver Lola</Name>
 <Connected>1</Connected>
 <VehFile>21_AFCORSEFDF53F44.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -240,7 +240,7 @@
 <DNFReason>Suspension</DNFReason>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>85_IRONDAM1563682E.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -263,7 +263,7 @@
 <DNFReason>DNF</DNFReason>
 </Driver>
 <Driver>
-<Name>Driver 2313</Name>
+<Name>Driver Nell</Name>
 <Connected>1</Connected>
 <VehFile>25_ORTLMA14S6SD.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -285,7 +285,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1501</Name>
+<Name>Driver Capucine</Name>
 <Connected>1</Connected>
 <VehFile>54_AFCORSEB48DBC46.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -307,7 +307,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1592</Name>
+<Name>Driver Cyril</Name>
 <Connected>1</Connected>
 <VehFile>25_ORTLMA14S6SD.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -329,7 +329,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1743</Name>
+<Name>Driver Maya</Name>
 <Connected>1</Connected>
 <VehFile>85_IRONDAM1563682E.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -351,7 +351,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0417</Name>
+<Name>Driver Rémi</Name>
 <Connected>1</Connected>
 <VehFile>33_CORVETT9BB51D89.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -373,7 +373,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0364</Name>
+<Name>Driver Tess</Name>
 <Connected>1</Connected>
 <VehFile>60_IRONLYNB5413BF4.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -395,7 +395,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1768</Name>
+<Name>Driver Rebecca</Name>
 <Connected>1</Connected>
 <VehFile>397_23_488GTE.VEH</VehFile>
 <UpgradeCode>18630a00 00000000 00000000 00000000</UpgradeCode>
@@ -417,7 +417,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1201</Name>
+<Name>Driver Alice</Name>
 <Connected>1</Connected>
 <VehFile>86_GRRACINBAD908BD.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -439,7 +439,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2453</Name>
+<Name>Driver Eliott</Name>
 <Connected>1</Connected>
 <VehFile>56_REXY8A686597.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -461,7 +461,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0009</Name>
+<Name>Driver Pierre</Name>
 <Connected>1</Connected>
 <VehFile>86_GRRACIN56C59091.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>
@@ -484,7 +484,7 @@
 <DNFReason>Suspension</DNFReason>
 </Driver>
 <Driver>
-<Name>Driver 0017</Name>
+<Name>Driver Salomé</Name>
 <Connected>1</Connected>
 <VehFile>55_GMB2DFFBF6F.VEH</VehFile>
 <UpgradeCode>8c310500 00000000 00000000 00000000</UpgradeCode>

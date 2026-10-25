@@ -32,7 +32,7 @@ public sealed class XmlResultParserTests
         var driver = session.Drivers.Should()
             .ContainSingle(item => item.CarNumber == "16" && item.Position == 1)
             .Which;
-        driver.Name.Should().MatchRegex("^Driver \\d{4,}$");
+        driver.Name.Should().MatchRegex(@"^Driver \p{Lu}\p{L}+( \d+)?$");
         driver.CarNumber.Should().Be("16");
         driver.CarType.Should().Be("Corvette C8.R GTE");
         driver.Position.Should().Be(1);

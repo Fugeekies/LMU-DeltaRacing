@@ -42,7 +42,7 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver 2038  🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  RIVALITÉ & HISTORIQUE DES ADVERSAIRES                                                                        │
 │  Classement des coureurs                                                                                      │
@@ -55,10 +55,10 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
 │  ───────────────────────────────────────────────────────────────────────────────────────────────────────────  │
 │  NOM DU PILOTE             COURSES AFFRONTÉES    VICTOIRES       DÉFAITES       % DE VICTOIRE                  │
 │  ───────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  Driver 2161               18                    12              6              [🟩🟩🟩🟩🟥🟥] 66.7%            │
-│  Driver 1662               14                    5               9              [🟩🟩🟥🟥🟥🟥] 35.7%            │
-│  Driver 0412               12                    8               4              [🟩🟩🟩🟩🟥🟥] 66.7%            │
-│  Driver 0087               9                     9               0              [🟩🟩🟩🟩🟩🟩] 100.0%           │
+│  Driver Iris               18                    12              6              [🟩🟩🟩🟩🟥🟥] 66.7%            │
+│  Driver Axel               14                    5               9              [🟩🟩🟥🟥🟥🟥] 35.7%            │
+│  Driver Paul               12                    8               4              [🟩🟩🟩🟩🟥🟥] 66.7%            │
+│  Driver Lina               9                     9               0              [🟩🟩🟩🟩🟩🟩] 100.0%           │
 │                                                                                                               │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```

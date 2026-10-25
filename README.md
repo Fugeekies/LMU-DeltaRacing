@@ -27,7 +27,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
-- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results`
+- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results -MergeSingleRaceDrivers`
 - `Copy-Item assets/Results -Destination publish_output/TestAssets -Recurse`
 - `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
 - `iscc /DAppVersion=1.0.0 scripts/installer.iss`

@@ -58,7 +58,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver 2038  🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  CONFIGURATION & PARAMÈTRES                                                                                   │
 │  Options                                                                                                      │
@@ -76,7 +76,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │  │ PROFIL DE PILOTE                                                                                        │  │
 │  │ Pilote principal                                                                                        │  │
 │  │ Pilote utilisé dans les vues de résultats                                                               │  │
-│  │ [ Driver 2038 — 81,7 % (170/208 fichiers)                                                         ▼ ]   │  │
+│  │ [ Driver Tom — 81,7 % (170/208 fichiers)                                                          ▼ ]   │  │
 │  │ Les pilotes sont triés par pourcentage de fichiers importés… Le choix est enregistré automatiquement.   │  │
 │  └─────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
 │  ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
@@ -89,7 +89,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 │                                                                                                               │
 │  ESPACE INGÉNIEUR DE PISTE — Tableau de bord                                                                  │
 │  [ SESSIONS IMPORTÉES 170 ]   [ DERNIÈRE SESSION  Circuit de Spa-Francorchamps ]    [ FICHIERS EN ÉCHEC 0 ]   │
-│  ARCHIVES DE COURSE — Sessions récentes de Driver 2038                                                [ 170 ]   │
+│  ARCHIVES DE COURSE — Sessions récentes de Driver Tom                                                 [ 170 ]   │
 │  DATE / HEURE      CIRCUIT                          ÉVÉNEMENT                       SESSION   VOITURE          │
 │  02/10/2026 21:00  Circuit de Spa-Francorchamps     6 Hours of Spa-Francorchamps    Race      …                │
 └───────────────────────────────────────────────────────────────────────────────────────────────────────────────┘

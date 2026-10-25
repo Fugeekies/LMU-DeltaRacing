@@ -36,21 +36,21 @@
 <Laps>2147483647</Laps>
 <Minutes>3</Minutes>
 <Stream>
-<Score et="142.1">Driver 3032(3) lap=0 point=1 t=-1.000 et=135.300</Score>
-<Score et="142.1">Driver 4578(17) lap=0 point=1 t=-1.000 et=135.480</Score>
-<Score et="142.4">Driver 4095(4) lap=0 point=1 t=-1.000 et=139.220</Score>
-<Score et="165.6">Driver 3152(9) lap=0 point=1 t=-1.000 et=164.860</Score>
-<Incident et="172.1">Driver 3032(3) reported contact (1892.14) with Immovable</Incident>
-<Score et="175.4">Driver 3032(3) lap=0 point=2 t=-1.000 et=174.778</Score>
-<Score et="175.4">Driver 3032(3) lap=1 point=0 t=-1.000 et=174.778</Score>
-<TrackLimits Driver="Driver 4578" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.2">No Further Action</TrackLimits>
-<TrackLimits Driver="Driver 4578" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.2">No Further Action</TrackLimits>
-<Score et="180.6">Driver 3152(9) lap=0 point=2 t=-1.000 et=180.113</Score>
-<Score et="180.6">Driver 3152(9) lap=1 point=0 t=-1.000 et=180.113</Score>
+<Score et="142.1">Driver Victoire(3) lap=0 point=1 t=-1.000 et=135.300</Score>
+<Score et="142.1">Driver Hector(17) lap=0 point=1 t=-1.000 et=135.480</Score>
+<Score et="142.4">Driver Pénélope(4) lap=0 point=1 t=-1.000 et=139.220</Score>
+<Score et="165.6">Driver Guillaume(9) lap=0 point=1 t=-1.000 et=164.860</Score>
+<Incident et="172.1">Driver Victoire(3) reported contact (1892.14) with Immovable</Incident>
+<Score et="175.4">Driver Victoire(3) lap=0 point=2 t=-1.000 et=174.778</Score>
+<Score et="175.4">Driver Victoire(3) lap=1 point=0 t=-1.000 et=174.778</Score>
+<TrackLimits Driver="Driver Hector" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.2">No Further Action</TrackLimits>
+<TrackLimits Driver="Driver Hector" ID="17" Lap="0" WarningPoints="0" CurrentPoints="0" Resolution="7" et="176.2">No Further Action</TrackLimits>
+<Score et="180.6">Driver Guillaume(9) lap=0 point=2 t=-1.000 et=180.113</Score>
+<Score et="180.6">Driver Guillaume(9) lap=1 point=0 t=-1.000 et=180.113</Score>
 </Stream>
 <MostLapsCompleted>1</MostLapsCompleted>
 <Driver>
-<Name>Driver 0340</Name>
+<Name>Driver Nicolas</Name>
 <Connected>1</Connected>
 <VehFile>21_26_AFCO31910023.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -72,7 +72,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=1,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 0220</Name>
+<Name>Driver Henri</Name>
 <Connected>1</Connected>
 <VehFile>32_26_WRT_65186446.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -94,7 +94,7 @@
 <ControlAndAids startLap="1" endLap="1">PlayerControl,ABS=2,Clutch,AutoBlip</ControlAndAids>
 </Driver>
 <Driver>
-<Name>Driver 1633</Name>
+<Name>Driver Cédric</Name>
 <Connected>1</Connected>
 <VehFile>59_26_RSL_16524330.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -114,7 +114,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1193</Name>
+<Name>Driver Pia</Name>
 <Connected>1</Connected>
 <VehFile>85_25_IRON71169233.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -134,7 +134,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0942</Name>
+<Name>Driver Simon</Name>
 <Connected>1</Connected>
 <VehFile>69_26_WRT_87701724.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -154,7 +154,7 @@
 <FinishStatus>None</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1938</Name>
+<Name>Driver Dylan</Name>
 <Connected>1</Connected>
 <VehFile>46_25_WRT_874F6E78.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -174,7 +174,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0116</Name>
+<Name>Driver Iris</Name>
 <Connected>1</Connected>
 <VehFile>78_26_AKKO55813576.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -194,7 +194,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0806</Name>
+<Name>Driver Océane</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -214,7 +214,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 0088</Name>
+<Name>Driver Gaspard</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -234,7 +234,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2272</Name>
+<Name>Driver Malo</Name>
 <Connected>1</Connected>
 <VehFile>69_26_WRT_87701724.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -254,7 +254,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1058</Name>
+<Name>Driver Thaïs</Name>
 <Connected>1</Connected>
 <VehFile>74_26_KESS60006998.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -274,7 +274,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1027</Name>
+<Name>Driver Olivier</Name>
 <Connected>1</Connected>
 <VehFile>70_24_INCEE7C900BF.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -294,7 +294,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2767</Name>
+<Name>Driver Capucine</Name>
 <Connected>1</Connected>
 <VehFile>75_26_PROT92649671.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -314,7 +314,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2309</Name>
+<Name>Driver Fabien</Name>
 <Connected>1</Connected>
 <VehFile>54_26_HIGH62031041.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -334,7 +334,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1420</Name>
+<Name>Driver Katia</Name>
 <Connected>1</Connected>
 <VehFile>397_25_MCLAREN.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -354,7 +354,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2038</Name>
+<Name>Driver Tom</Name>
 <Connected>1</Connected>
 <VehFile>44_24_PROT92DCFAD4.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -374,7 +374,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1889</Name>
+<Name>Driver David</Name>
 <Connected>1</Connected>
 <VehFile>63_25_IRON3E8BB8AD.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>
@@ -394,7 +394,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 2155</Name>
+<Name>Driver Nolan</Name>
 <Connected>1</Connected>
 <VehFile>77_26_PROT43675534.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -414,7 +414,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1219</Name>
+<Name>Driver Joséphine</Name>
 <Connected>1</Connected>
 <VehFile>32_26_WRT_65186446.VEH</VehFile>
 <UpgradeCode>04210900 00000000 00000000 00000000</UpgradeCode>
@@ -434,7 +434,7 @@
 <FinishStatus>Finished Normally</FinishStatus>
 </Driver>
 <Driver>
-<Name>Driver 1984</Name>
+<Name>Driver Erwan</Name>
 <Connected>1</Connected>
 <VehFile>10_26_GARA16926271.VEH</VehFile>
 <UpgradeCode>08421200 00000000 00000000 00000000</UpgradeCode>

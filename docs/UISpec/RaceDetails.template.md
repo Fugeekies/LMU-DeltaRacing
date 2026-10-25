@@ -61,7 +61,7 @@ Classement détaillé d'une session choisie par l'utilisateur (route `/race-deta
 ### Wireframe ASCII
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS                       Driver 2038  🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS                       Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  ANALYSE DE SESSION                                                                                                                                │
 │  Détail des courses                                                                                                                                │
@@ -71,12 +71,12 @@ Classement détaillé d'une session choisie par l'utilisateur (route `/race-deta
 │  [ 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Race) - LMGT3 ▼ ]     [Race]  Circuit de Spa-Francorchamps                                     │
 │                                                                                                                                                    │
 │  POS CLASSE     NOM DU COUREUR    VOITURE         S1          Δ S1     S2          Δ S2     S3          Δ S3     IDÉAL     MEILLEUR  Δ TOUR   DIFF 1ER │
-│  01  LMGT3 P1   Driver 0285       BMW M4 LMGT3    🟣 41.859s  0.000s   🟡 74.351s  +0.370s  🟣 44.395s  0.000s   2:40.605  2:41.796  0.000s   LEADER   │
-│  02  LMGT3 P2   Driver 1379       Porsche 911     🟡 42.567s  +0.708s  🟡 75.294s  +1.313s  🟡 45.957s  +1.561s  2:43.817  2:44.243  +2.448s  +23.480s │
-│  04  LMGT3 P4   Driver 2038 VOUS  Porsche 911     🟡 42.478s  +0.619s  🟡 74.602s  +0.621s  🟡 45.835s  +1.439s  2:42.914  2:44.849  +3.054s  +49.908s │
-│  07  LMGT3 P7   Driver 0282       Mercedes-AMG    🟡 43.085s  +1.225s  🟡 76.873s  +2.893s  🟡 45.953s  +1.558s  2:45.910  2:46.476  +4.680s  +1 tour  │
-│  11  LMGT3 P11  Driver 0307       McLaren 720S    🟡 42.411s  +0.551s  🟡 75.358s  +1.378s  🟡 45.068s  +0.672s  2:42.836  2:43.196  +1.400s  DNF      │
-│  12  LMGT3 P12  Driver 2218       Porsche 911     🟡 42.756s  +0.896s  🟣 73.981s  0.000s   🟡 45.013s  +0.617s  2:41.749  2:42.012  +0.217s  DNF      │
+│  01  LMGT3 P1   Driver Hugo       BMW M4 LMGT3    🟣 41.859s  0.000s   🟡 74.351s  +0.370s  🟣 44.395s  0.000s   2:40.605  2:41.796  0.000s   LEADER   │
+│  02  LMGT3 P2   Driver Rose       Porsche 911     🟡 42.567s  +0.708s  🟡 75.294s  +1.313s  🟡 45.957s  +1.561s  2:43.817  2:44.243  +2.448s  +23.480s │
+│  04  LMGT3 P4   Driver Tom VOUS   Porsche 911     🟡 42.478s  +0.619s  🟡 74.602s  +0.621s  🟡 45.835s  +1.439s  2:42.914  2:44.849  +3.054s  +49.908s │
+│  07  LMGT3 P7   Driver Jade       Mercedes-AMG    🟡 43.085s  +1.225s  🟡 76.873s  +2.893s  🟡 45.953s  +1.558s  2:45.910  2:46.476  +4.680s  +1 tour  │
+│  11  LMGT3 P11  Driver Emma       McLaren 720S    🟡 42.411s  +0.551s  🟡 75.358s  +1.378s  🟡 45.068s  +0.672s  2:42.836  2:43.196  +1.400s  DNF      │
+│  12  LMGT3 P12  Driver Noah       Porsche 911     🟡 42.756s  +0.896s  🟣 73.981s  0.000s   🟡 45.013s  +0.617s  2:41.749  2:42.012  +0.217s  DNF      │
 │                                                                                                                                                    │
 │  🟣 Meilleur secteur de la classe   🟡 Temps standard   Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
