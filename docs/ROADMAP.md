@@ -149,7 +149,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.
-- [ ] Reprise du readme pour la doc d'utilisation 
+- [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
 - [ ] Ajouter une fiche pilote avec ses statistiques cumulées.
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.

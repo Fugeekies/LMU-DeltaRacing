@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- README réécrit pour les utilisateurs : installation, premier lancement, pages, options et questions fréquentes. La documentation technique de l'ancien README est déplacée dans `docs/DEVELOPMENT.md`.
 - Options : bloc **Fusion de pilotes** pour regrouper deux noms d'un même pilote (changement de pseudo) sous le nom conservé, en mémoire et sans modifier les fichiers de résultats (`LMU:DriverMerges`). Un avertissement signale les pilotes qui ont participé à une même session ; chaque fusion peut être annulée.
 - Ajout d'une page Options pour choisir, valider, enregistrer et recharger le dossier des résultats, avec sélecteur de dossiers Windows natif et préférence de démarrage du watcher.
 - Déplacement de l'état d'import, des erreurs et de l'historique du dashboard sous les options, sans tableau de classement des pilotes.

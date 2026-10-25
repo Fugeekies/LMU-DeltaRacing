@@ -1,57 +1,154 @@
-# LMU-DeltaRacing
+# LMU DeltaRacing
 
-Application d'analyse de résultats de course pour Le Mans Ultimate.
+**Suivez votre progression sur Le Mans Ultimate, course après course.**
 
-La [feuille de route](docs/ROADMAP.md) présente les jalons envisagés et une liste d'idées à prioriser.
+LMU DeltaRacing lit les fichiers de résultats que *Le Mans Ultimate* enregistre après chaque session et en tire un tableau de bord personnel :
 
-## État actuel
+- vos meilleurs tours en qualification et en course, comparés à votre session précédente sur le même circuit ;
+- votre bilan face à chaque adversaire rencontré ;
+- le classement détaillé de chaque course, secteur par secteur, comme sur les écrans de chronométrage du WEC.
 
-Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche une progression pendant l'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
+Tout se passe sur votre PC : l'application ne se connecte à aucun service en ligne et **aucune donnée n'est envoyée**.
 
-## Projets
+---
 
-- `src/LMU-DeltaRacing.Domain` : entités métier sans dépendance externe.
-- `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
-- `src/LMU-DeltaRacing.Infrastructure` : parser XML, dépôt en mémoire et surveillance dynamique du dossier de résultats.
-- `src/LMU-DeltaRacing.Console` : import initial et surveillance dynamique des XML, tableaux et graphiques Spectre.Console des statistiques par circuit/voiture, et diagnostic OpenTelemetry.
-- `src/LMU-DeltaRacing.UI` : dashboard Blazor local avec historique des sessions, classements et surveillance dynamique des nouveaux résultats.
-- `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
-- `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.
-- `docs/benchmarks/dynamic-import-load-report.md` : résultats du test de charge de la surveillance sur 50 fichiers XML simultanés.
-- `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks du parsing en mémoire et de lots XML temporaires.
+## Sommaire
 
-## Commandes
+1. [Installation](#installation)
+2. [Premier lancement](#premier-lancement)
+3. [Les pages](#les-pages)
+4. [Les options](#les-options)
+5. [Questions fréquentes](#questions-fréquentes)
 
-- `dotnet build`
-- `dotnet test`
-- `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
-- `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
-- `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
-- `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results -MergeSingleRaceDrivers`
-- `Copy-Item assets/Results -Destination publish_output/TestAssets -Recurse`
-- `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
-- `iscc /DAppVersion=1.0.0 scripts/installer.iss`
-- `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
-- `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
+---
 
-Sans argument, la console charge le dossier configuré et reste en surveillance jusqu'au choix `Quitter`. Les chemins de fichiers XML passés en arguments sont importés en mode ponctuel, sans démarrer le watcher.
+## Installation
 
-Au démarrage, la console affiche son titre puis importe automatiquement les XML du dossier configuré avec une barre de progression et un résumé du chargement (les échecs sont détaillés). Elle surveille ensuite ce dossier jusqu'au choix `Quitter` dans le menu. Les nouveaux XML sont importés automatiquement; les fichiers verrouillés sont réessayés, les doublons ignorés, et les erreurs affichées sans interrompre la surveillance. Le registre des chemins traités est en mémoire et repart de zéro au prochain démarrage, où les fichiers du dossier sont chargés à nouveau. Les vues statistiques peuvent être réaffichées depuis le menu et incluent les sessions importées depuis le démarrage. La modification du dossier de résultats depuis le menu s'applique au prochain démarrage. Les sessions Practice restent importées mais sont exclues des statistiques. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
+**Configuration requise :** Windows 64 bits. Rien d'autre à installer.
 
-Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
+1. Téléchargez `LMU-DeltaRacing-Setup.exe` depuis la page [Releases](https://github.com/Fugeekies/LMU-DeltaRacing/releases) du projet.
+2. Lancez-le. L'installation se fait dans votre profil Windows, sans droits administrateur.
+   > Windows peut afficher un avertissement SmartScreen, car l'installeur n'est pas signé. Cliquez sur **Informations complémentaires**, puis **Exécuter quand même**.
+3. Cochez si vous le souhaitez **Créer une icône sur le bureau**, puis terminez l'installation.
 
-Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-deltaracing-stats.json`, au même endroit. Le fichier indique les imports réussis/échoués, la durée moyenne par fichier, le débit moyen d'import, ainsi que les moyennes du working set et du heap .NET. Il est lui aussi conservé après l'arrêt et réinitialisé au prochain lancement. Les traces et métriques OpenTelemetry ne polluent pas le terminal.
+L'installeur cherche automatiquement le dossier où *Le Mans Ultimate* enregistre vos résultats, dans vos Documents et dans le dossier d'installation Steam du jeu. S'il ne trouve aucun résultat, il configure des **données de démonstration** pour que vous puissiez découvrir l'application. Vous pourrez choisir le bon dossier ensuite (voir [Options](#les-options)).
 
-Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `assets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
+**Mise à jour :** installez simplement la nouvelle version par-dessus l'ancienne. Vos réglages sont conservés.
 
-Le dashboard Blazor s'ouvre sur la page Mes courses. Au premier démarrage, il sélectionne automatiquement le pilote le plus fréquent dans les résultats importés et enregistre son nom dans `LMU:UserName`; le pilote peut ensuite être changé dans Options, où les candidats sont triés par fréquence d'apparition. Les vues de résultats n'affichent que les sessions contenant le pilote sélectionné. La page Options permet aussi de saisir ou choisir le dossier de résultats avec le sélecteur Windows, de le valider, de le sauvegarder et de recharger son watcher. L'état des imports et les erreurs y sont affichés sous la configuration. La préférence `LMU:WatchResultsOnStartup` permet de désactiver la surveillance automatique au lancement. L'application s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement. Le journal des résultats courants est aussi accessible à `/dashboard`.
+**Désinstallation :** depuis *Paramètres Windows › Applications*, comme n'importe quel programme.
 
-Le profil `win-x64` produit une publication autonome et à fichier unique. L'élagage est désactivé afin de préserver la sérialisation d'état utilisée par les composants Blazor interactifs. Le jeu unique de résultats de démonstration anonymisés est versionné dans `assets/Results`; le workflow le copie vers la destination d'installation `TestAssets/Results` sans le régénérer. Pour renouveler ce jeu de données depuis un autre dossier de résultats LMU, exécutez `Prepare-PackageAssets.ps1` vers `assets/Results` et incluez les fichiers XML mis à jour dans la modification. Pour construire et vérifier manuellement l'installeur, publiez d'abord l'UI avec ce profil dans `publish_output`, copiez les fixtures vers `publish_output/TestAssets`, exécutez `Test-PublishedApp.ps1`, puis compilez `scripts/installer.iss` avec Inno Setup. Les fixtures utilisent des alias de pilotes stables entre fichiers; les noms des résultats LMU de l'utilisateur ne sont pas modifiés. L'installeur choisit un dossier de résultats LMU détecté ou, en l'absence de résultats, les fixtures anonymisées installées avec l'application. La configuration existante est conservée lors des mises à niveau.
+---
 
-Le workflow manuel `.github/workflows/release.yml` construit et vérifie l'application puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub. Depuis l'onglet Actions, choisissez « Build and release Windows installer (Manual) » et indiquez uniquement le tag/version sémantique (par exemple `v1.0.0`). Le workflow crée le tag sur la révision sélectionnée et nomme automatiquement la release « LMU-DeltaRacing v1.0.0 ».
+## Premier lancement
 
-Le projet de test génère les entrées XML et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10, 100 et 500 fichiers sur disque puis les supprime. Le rapport Markdown contient la durée, le débit, les allocations et la mémoire observée ; il est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test.
+Lancez **LMU-DeltaRacing** depuis le menu Démarrer ou l'icône du bureau.
 
-Le [dernier rapport de benchmark](benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md) est disponible dans le dépôt. Ses mesures reflètent l'environnement et la charge de cette exécution.
+- Le tableau de bord s'ouvre **dans votre navigateur web**.
+- Une **fenêtre noire** s'ouvre aussi : c'est l'application elle-même. Laissez-la ouverte tant que vous utilisez le tableau de bord ; **la fermer arrête l'application**. Fermer seulement l'onglet du navigateur ne suffit pas.
+- Au démarrage, l'application lit tous vos fichiers de résultats. Une barre de progression s'affiche dans **Options** ; l'indicateur en haut à droite passe de **IMPORT INITIAL** à **SURVEILLANCE ACTIVE**.
+- **Votre pilote est détecté automatiquement :** c'est le nom qui apparaît dans le plus grand nombre de vos fichiers de résultats. Il s'affiche en haut à droite. S'il est incorrect, changez-le dans **Options › Pilote principal**.
 
-Le [rapport de charge de l'import dynamique](docs/benchmarks/dynamic-import-load-report.md) décrit le test d'injection simultanée de 50 fichiers XML.
+Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouvelle session terminée dans *Le Mans Ultimate* apparaît automatiquement dans le tableau de bord, sans rien recharger.
+
+---
+
+## Les pages
+
+Le menu en haut de l'écran donne accès à quatre pages.
+
+### Mes courses
+
+Votre historique, **circuit par circuit**, pour voir si vous progressez.
+
+- Chaque ligne associe une **course** à la **qualification** qui la précède.
+- Pour chacune, vous voyez votre meilleur tour, votre place sur la grille, le nombre de tours et votre temps total de course.
+- La colonne **DELTA (n-1)** compare votre meilleur tour à celui de votre session précédente sur le même circuit, dans la même catégorie :
+  - 🟢 **en vert, négatif** : vous avez été plus rapide ;
+  - 🔴 **en rouge, positif** : vous avez été plus lent.
+
+  La comparaison se fait même si vous avez changé de voiture, tant que la catégorie est la même.
+- Filtrez par **circuit** et par **catégorie** : Hypercar, LMP2, LMP3, LMGTE, LMGT3.
+
+> Les tours invalidés par le jeu (sortie des limites de piste) ne comptent pas : *Le Mans Ultimate* efface leur temps.
+
+### Classement des coureurs
+
+Votre bilan **face à face** contre chaque pilote croisé en course.
+
+- **Courses affrontées :** nombre de courses disputées contre ce pilote.
+- **Victoires / Défaites :** nombre de fois où vous avez terminé devant / derrière lui.
+- **% de victoire**, avec une barre verte (victoires) et rouge (défaites).
+
+Seules les **courses** comptent (pas les qualifications), et seulement contre les pilotes de **votre catégorie** : battre une GT3 au volant d'une Hypercar ne compte pas.
+
+Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
+
+### Détail des courses
+
+Le classement complet d'un événement.
+
+1. Choisissez l'événement dans la liste. Chaque événement regroupe les essais, la qualification et la course disputés à la suite sur un circuit, par exemple « 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Qualif · Course) ».
+2. Passez d'une session à l'autre avec les onglets **COURSE**, **QUALIFICATION** et **ESSAIS**.
+
+Pour chaque pilote :
+
+| Colonne | Signification |
+|---|---|
+| **POS / CLASSE** | Position au général, catégorie et position dans la catégorie |
+| **SECTEUR 1, 2, 3** | Meilleur temps du pilote sur chaque secteur. 🟣 **Violet** : meilleur de la catégorie. 🟡 **Jaune** : temps standard |
+| **DELTA S1, S2, S3** | Écart avec le meilleur temps de la catégorie sur ce secteur |
+| **TOUR IDÉAL** | Somme des trois meilleurs secteurs : le tour que le pilote aurait pu faire |
+| **MEILLEUR TOUR / DELTA TOUR** | Meilleur tour réel et écart avec le meilleur tour de la catégorie |
+| **DIFF 1ER** | Écart avec le premier de la catégorie : **LEADER**, un temps, **+1 tour** ou **DNF** |
+
+Votre ligne est repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
+
+### Options
+
+Les réglages, détaillés ci-dessous. Sous les réglages, un **état des imports** montre la progression du chargement, les fichiers qui n'ont pas pu être lus et vos sessions récentes.
+
+---
+
+## Les options
+
+| Réglage | À quoi ça sert |
+|---|---|
+| **Dossier des résultats XML** | Où *Le Mans Ultimate* enregistre vos résultats, en général `Documents\Le Mans Ultimate\UserData\Log\Results` ou `…\steamapps\common\Le Mans Ultimate\UserData\Log\Results`. Choisissez-le avec **Parcourir…**, puis cliquez sur **Appliquer** : le dossier est enregistré et vos résultats sont rechargés. Laissez le champ vide pour une détection automatique. |
+| **Pilote principal** | Le pilote dont vous suivez les résultats (vous, en principe). La liste est triée par nombre d'apparitions. Le choix est enregistré tout de suite. |
+| **Fusion de pilotes** | Vous avez changé de pseudo ? Choisissez l'**ancien nom** et le **nom conservé**, puis **Fusionner** : les deux historiques sont regroupés. Vos fichiers de résultats ne sont pas modifiés, et chaque fusion peut être annulée. Si les deux noms ont couru ensemble dans une même session, un **avertissement** s'affiche : il s'agit sans doute de deux personnes différentes. |
+| **Démarrage automatique** | Surveiller les nouveaux résultats dès le lancement de l'application (activé par défaut). |
+| **Sessions d'essais** | Charger aussi les essais pour l'onglet **ESSAIS** du détail des courses. Désactivé par défaut, car les essais sont souvent vides et allongent le chargement. |
+
+Les réglages sont enregistrés dans le fichier `appsettings.json` du dossier d'installation (`%LOCALAPPDATA%\Programs\LMU-DeltaRacing`).
+
+---
+
+## Questions fréquentes
+
+**Je ne vois aucune course.**
+Vérifiez dans **Options** que le dossier des résultats est le bon (l'indicateur doit afficher « Dossier valide » avec un nombre de fichiers), puis que le **pilote principal** est bien votre nom de pilote dans le jeu.
+
+**Je vois des pilotes « Driver Tom », « Driver Lucas »…**
+Ce sont les **données de démonstration** installées avec l'application, utilisées quand aucun résultat du jeu n'a été trouvé. Choisissez votre dossier de résultats dans **Options**, puis **Appliquer**.
+
+**Une session que je viens de terminer n'apparaît pas.**
+Le jeu écrit le fichier de résultats à la **fin** de la session. Vérifiez que l'indicateur en haut à droite affiche **SURVEILLANCE ACTIVE**. Sinon, cliquez sur **Appliquer** dans Options pour relancer la surveillance.
+
+**Mon historique est coupé en deux depuis que j'ai changé de pseudo.**
+Utilisez **Options › Fusion de pilotes**.
+
+**Pourquoi ma voiture n'est-elle pas comparée à toutes les autres ?**
+Les écarts, les secteurs violets et le classement face à face se calculent **par catégorie**, comme en championnat d'endurance : une GT3 est comparée aux GT3.
+
+**J'ai fermé le navigateur, comment rouvrir le tableau de bord ?**
+Si la fenêtre noire de l'application est encore ouverte, fermez-la, puis relancez **LMU-DeltaRacing** depuis le menu Démarrer : le navigateur se rouvrira.
+
+**Où trouver le journal en cas de problème ?**
+Dans le fichier `lmu-deltaracing.log` du dossier d'installation. Il est remplacé à chaque lancement.
+
+**Mes données sont-elles envoyées quelque part ?**
+Non. L'application fonctionne uniquement sur votre PC et le tableau de bord n'est accessible que depuis celui-ci.
+
+---
+
+*Développeurs : la documentation technique est dans [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) et [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).*
