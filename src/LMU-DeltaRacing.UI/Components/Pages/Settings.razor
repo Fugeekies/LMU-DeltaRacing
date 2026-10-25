@@ -120,6 +120,72 @@
     </div>
 </section>
 
+<section class="panel settings-panel" aria-labelledby="merge-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">CHANGEMENT DE NOM</p>
+            <h2 id="merge-settings-heading">Fusion de pilotes</h2>
+        </div>
+    </div>
+    <div class="settings-content">
+        <p class="settings-help">Déclarez que deux noms désignent le même pilote, par exemple après un changement de pseudo. Les deux historiques sont regroupés sous le nom conservé ; les fichiers de résultats ne sont pas modifiés et une fusion peut être annulée.</p>
+        <div class="merge-picker">
+            <label class="settings-label">
+                Ancien nom
+                <select class="settings-input" @bind="mergeFrom" @bind:after="UpdateMergeWarning" disabled="@(isBusy || state.DriverFrequencies.Count == 0)">
+                    <option value="">Choisir un pilote…</option>
+                    @foreach (var driver in state.DriverFrequencies)
+                    {
+                        <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
+                    }
+                </select>
+            </label>
+            <label class="settings-label">
+                Nom conservé
+                <select class="settings-input" @bind="mergeTo" @bind:after="UpdateMergeWarning" disabled="@(isBusy || state.DriverFrequencies.Count == 0)">
+                    <option value="">Choisir un pilote…</option>
+                    @foreach (var driver in state.DriverFrequencies)
+                    {
+                        <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
+                    }
+                </select>
+            </label>
+            <button class="button button-primary"
+                    type="button"
+                    @onclick="MergeDrivers"
+                    disabled="@(isBusy || !CanMerge())">
+                Fusionner
+            </button>
+        </div>
+
+        @if (mergeWarningCount > 0)
+        {
+            <div class="notice notice-warning merge-warning" role="alert">
+                <span class="notice-symbol" aria-hidden="true">!</span>
+                <p>Ces deux pilotes ont participé ensemble à @mergeWarningCount session(s) : ce sont probablement deux personnes différentes. La fusion reste possible, mais vérifiez avant de la confirmer.</p>
+            </div>
+        }
+
+        @if (state.DriverMerges.Count > 0)
+        {
+            <ul class="merge-list" aria-label="Fusions enregistrées">
+                @foreach (var merge in state.DriverMerges)
+                {
+                    var sharedSessions = DashboardData.CountSharedSessions(merge.From, merge.To);
+                    <li>
+                        <span><strong>@merge.From</strong> → <strong>@merge.To</strong></span>
+                        @if (sharedSessions > 0)
+                        {
+                            <span class="merge-list-warning" title="Les deux noms apparaissent dans les mêmes sessions">⚠ @sharedSessions session(s) en commun</span>
+                        }
+                        <button class="button button-secondary" type="button" @onclick="() => CancelMerge(merge.From)" disabled="@isBusy">Annuler</button>
+                    </li>
+                }
+            </ul>
+        }
+    </div>
+</section>
+
 <section class="panel settings-panel watcher-settings" aria-labelledby="watcher-settings-heading">
     <div class="panel-heading">
         <div>
@@ -163,6 +229,9 @@
 @code {
     private string resultsDirectory = string.Empty;
     private string selectedUserName = string.Empty;
+    private string mergeFrom = string.Empty;
+    private string mergeTo = string.Empty;
+    private int mergeWarningCount;
     private bool watchOnStartup = true;
     private bool loadPracticeSessions;
     private bool isBusy;
@@ -255,6 +324,49 @@
         {
             isReloading = false;
             isBusy = false;
+        }
+    }
+
+    private bool CanMerge() =>
+        !string.IsNullOrWhiteSpace(mergeFrom)
+        && !string.IsNullOrWhiteSpace(mergeTo)
+        && !string.Equals(mergeFrom, mergeTo, StringComparison.OrdinalIgnoreCase);
+
+    /// <summary>
+    /// Warns when the two selected names drove in the same session: one person cannot.
+    /// </summary>
+    private void UpdateMergeWarning() =>
+        mergeWarningCount = CanMerge() ? DashboardData.CountSharedSessions(mergeFrom, mergeTo) : 0;
+
+    private void MergeDrivers()
+    {
+        try
+        {
+            DashboardData.SetDriverMerges(DriverMerges.Add(DashboardData.Snapshot.DriverMerges, mergeFrom, mergeTo));
+            feedbackMessage = $"{mergeFrom} est fusionné avec {mergeTo}.";
+            mergeFrom = string.Empty;
+            mergeTo = string.Empty;
+            mergeWarningCount = 0;
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or ArgumentException
+                or System.Text.Json.JsonException)
+        {
+            feedbackMessage = $"Impossible de fusionner les pilotes : {exception.Message}";
+        }
+    }
+
+    private void CancelMerge(string from)
+    {
+        try
+        {
+            DashboardData.SetDriverMerges(DriverMerges.Remove(DashboardData.Snapshot.DriverMerges, from));
+            feedbackMessage = $"Fusion de {from} annulée.";
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = $"Impossible d’annuler la fusion : {exception.Message}";
         }
     }
 

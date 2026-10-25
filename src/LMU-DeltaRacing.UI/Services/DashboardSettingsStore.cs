@@ -1,5 +1,6 @@
 using System.Text.Json;
 using System.Text.Json.Nodes;
+using LMU_DeltaRacing.UI.Models;
 using Microsoft.Extensions.Configuration;
 
 namespace LMU_DeltaRacing.UI.Services;
@@ -49,6 +50,28 @@ public sealed class DashboardSettingsStore
         var root = LoadSettings();
         GetLmuSettings(root)["WatchResultsOnStartup"] = watchOnStartup;
 
+        Save(root);
+    }
+
+    /// <summary>
+    /// Saves the driver merges as a list of { From, To } objects. A list is used instead of a
+    /// name-keyed object because configuration keys cannot contain every character of a name.
+    /// </summary>
+    public void SaveDriverMerges(IEnumerable<DriverMerge> merges)
+    {
+        ArgumentNullException.ThrowIfNull(merges);
+        var root = LoadSettings();
+        var array = new JsonArray();
+        foreach (var merge in merges)
+        {
+            array.Add(new JsonObject
+            {
+                ["From"] = merge.From,
+                ["To"] = merge.To
+            });
+        }
+
+        GetLmuSettings(root)["DriverMerges"] = array;
         Save(root);
     }
 

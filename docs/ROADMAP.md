@@ -141,6 +141,11 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Option « Charger les sessions d'essais » dans Options (`LMU:LoadPracticeSessions`, décochée par défaut, rechargement immédiat) ; la console ignore toujours les essais. Ils n'apparaissent que dans l'onglet Essais.
 - [ ] Optimisation : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt.
 
+## Jalon — Fusion de pilotes [Terminé]
+- [x] Bloc « Fusion de pilotes » dans Options : déclarer qu'un ancien nom et un nom conservé désignent le même pilote (changement de pseudo), sans modifier les fichiers de résultats.
+- [x] Fusion appliquée en mémoire à toutes les vues, enregistrée dans `LMU:DriverMerges`, annulable.
+- [x] Avertissement quand les deux pilotes ont participé à une même session (probablement deux personnes différentes), avant la fusion et dans la liste des fusions.
+
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.

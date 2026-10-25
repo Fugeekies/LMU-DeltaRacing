@@ -33,4 +33,9 @@ public sealed record DashboardState(
     /// Gets driver frequencies calculated from the imported result files.
     /// </summary>
     public IReadOnlyList<DriverFrequency> DriverFrequencies { get; init; } = [];
+
+    /// <summary>
+    /// Gets the driver names merged in memory (after a name change).
+    /// </summary>
+    public IReadOnlyList<DriverMerge> DriverMerges { get; init; } = [];
 }

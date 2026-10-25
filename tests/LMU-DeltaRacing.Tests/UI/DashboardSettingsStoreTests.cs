@@ -1,4 +1,5 @@
 using FluentAssertions;
+using LMU_DeltaRacing.UI.Models;
 using LMU_DeltaRacing.UI.Services;
 using Microsoft.Extensions.Configuration;
 
@@ -44,12 +45,15 @@ public sealed class DashboardSettingsStoreTests
             store.SaveResultsDirectory(@"C:\LMU\Results");
             store.SaveWatchOnStartup(false);
             store.SaveLoadPracticeSessions(true);
+            store.SaveDriverMerges([new DriverMerge("Old Name", "New Name")]);
             store.SaveUserName("Driver One");
 
             configuration["LMU:ResultsDirectory"].Should().Be(@"C:\LMU\Results");
             configuration["LMU:UserName"].Should().Be("Driver One");
             configuration.GetValue<bool>("LMU:WatchResultsOnStartup").Should().BeFalse();
             configuration.GetValue<bool>("LMU:LoadPracticeSessions").Should().BeTrue();
+            configuration["LMU:DriverMerges:0:From"].Should().Be("Old Name");
+            configuration["LMU:DriverMerges:0:To"].Should().Be("New Name");
             configuration["LMU:LogFilePath"].Should().Be("existing.log");
             configuration.GetValue<bool>("LMU:OpenBrowser").Should().BeFalse();
             configuration["Logging:LogLevel:Default"].Should().Be("Warning");
