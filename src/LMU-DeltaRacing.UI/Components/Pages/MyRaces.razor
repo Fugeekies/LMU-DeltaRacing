@@ -27,7 +27,7 @@ else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count 
         <div>
             <h2>Les résultats n’ont pas pu être chargés</h2>
             <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans Options.</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
         </div>
     </section>
 }
@@ -36,7 +36,7 @@ else if (records.Count == 0)
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
         <h3>Aucune course disponible</h3>
-        <p>Les sessions de qualification et de course importées apparaîtront ici lorsqu’elles contiendront des tours valides en Hypercar, LMP2 ou LMGT3.</p>
+        <p>Les sessions de qualification et de course du pilote sélectionné apparaîtront ici après leur import.</p>
     </section>
 }
 else
@@ -66,7 +66,7 @@ else
                 <span>CATÉGORIE</span>
                 <select @bind="selectedCategory" aria-label="Filtrer par catégorie">
                     <option value="">Toutes les catégories</option>
-                    @foreach (var category in Categories)
+                    @foreach (var category in categories)
                     {
                         <option value="@category">@category</option>
                     }
@@ -126,7 +126,7 @@ else
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
-                                        <td class="numeric-cell">@(record.MostLapsCompleted?.ToString() ?? "—")</td>
+                                        <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
                                     </tr>
                                 }
@@ -140,10 +140,10 @@ else
 }
 
 @code {
-    private static readonly string[] Categories = ["Hypercar", "LMP2", "LMGT3"];
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<MyRaceRecord> records = [];
     private string[] tracks = [];
+    private string[] categories = [.. CarCategory.Known];
     private string selectedTrack = string.Empty;
     private string selectedCategory = string.Empty;
 
@@ -171,6 +171,17 @@ else
             .Distinct(StringComparer.OrdinalIgnoreCase)
             .Order(StringComparer.OrdinalIgnoreCase)
             .ToArray();
+
+        // Known WEC categories are always offered; unknown classes found in the results are appended.
+        categories =
+        [
+            .. CarCategory.Known,
+            .. records
+                .Select(record => record.Category)
+                .Where(category => !CarCategory.Known.Contains(category))
+                .Distinct(StringComparer.Ordinal)
+                .Order(StringComparer.OrdinalIgnoreCase)
+        ];
     }
 
     private IReadOnlyList<MyRaceRecord> GetFilteredRecords() =>

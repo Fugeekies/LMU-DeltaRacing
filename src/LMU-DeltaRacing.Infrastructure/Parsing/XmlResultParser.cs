@@ -69,7 +69,10 @@ public sealed class XmlResultParser : IResultXmlParser
             laps,
             Value(element, "CarType") ?? string.Empty,
             ParseOptionalInt(Value(element, "GridPos")),
-            ParseOptionalSeconds(Value(element, "FinishTime")));
+            ParseOptionalSeconds(Value(element, "FinishTime")),
+            ParseOptionalInt(Value(element, "ClassPosition")),
+            ParseOptionalInt(Value(element, "Laps")),
+            Value(element, "FinishStatus") ?? string.Empty);
     }
 
     private static Lap ParseLap(XElement element)

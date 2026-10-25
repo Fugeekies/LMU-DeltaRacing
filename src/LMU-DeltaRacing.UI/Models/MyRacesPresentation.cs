@@ -3,14 +3,20 @@ using LMU_DeltaRacing.Domain.Entities;
 namespace LMU_DeltaRacing.UI.Models;
 
 /// <summary>
-/// Builds vehicle performance history from imported LMU sessions.
+/// Builds the selected driver's performance history from imported LMU sessions.
 /// </summary>
 public static class MyRacesPresentation
 {
     /// <summary>
-    /// Combines qualifying and race results and calculates deltas against the previous
-    /// matching session for each circuit, category, and vehicle.
+    /// Pairs each race with the qualifying session that precedes it on the same circuit, then
+    /// calculates deltas against the previous record of the same circuit and category.
     /// </summary>
+    /// <remarks>
+    /// LMU online events run several qualifying/race pairs per evening on the same circuit, so
+    /// sessions are paired chronologically instead of being grouped by day. A qualifying session
+    /// followed by another qualifying session, or a race without a preceding qualifying session,
+    /// produces a partial record.
+    /// </remarks>
     public static IReadOnlyList<MyRaceRecord> CreateRecords(IEnumerable<Session> sessions, string? userName)
     {
         ArgumentNullException.ThrowIfNull(sessions);
@@ -30,82 +36,53 @@ public static class MyRacesPresentation
                 continue;
             }
 
-            var category = GetCategory(driver.CarClass);
-            if (category is null)
-            {
-                continue;
-            }
-
-            var car = !string.IsNullOrWhiteSpace(driver.CarType)
-                ? driver.CarType
-                : string.IsNullOrWhiteSpace(driver.CarNumber)
-                    ? "—"
-                    : $"#{driver.CarNumber}";
-
             results.Add(new SessionResult(
                 session.TrackVenue,
                 session.TrackCourse,
                 session.TrackEvent,
-                DateOnly.FromDateTime(session.StartedAt.Date),
                 session.StartedAt,
-                category,
-                car,
                 isQualifying,
+                CarCategory.FromCarClass(driver.CarClass),
+                GetCarName(driver),
                 driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min(),
                 driver.GridPosition,
                 driver.FinishTime,
-                session.MostLapsCompleted));
+                driver.LapsCompleted));
         }
 
-        var records = results
-            .GroupBy(result => new
+        var records = new List<RecordBuilder>();
+        foreach (var circuit in results
+            .OrderBy(result => result.StartedAt)
+            .ThenBy(result => result.IsQualifying ? 0 : 1)
+            .GroupBy(result => new { result.TrackVenue, result.TrackCourse, result.TrackEvent }))
+        {
+            SessionResult? pendingQualifying = null;
+            foreach (var result in circuit)
             {
-                result.TrackVenue,
-                result.TrackCourse,
-                result.TrackEvent,
-                result.Date
-            })
-            .Select(group =>
+                if (result.IsQualifying)
+                {
+                    // A second qualifying session before any race leaves the first one unpaired.
+                    if (pendingQualifying is not null)
+                    {
+                        records.Add(RecordBuilder.Create(pendingQualifying, null));
+                    }
+
+                    pendingQualifying = result;
+                }
+                else
+                {
+                    records.Add(RecordBuilder.Create(pendingQualifying, result));
+                    pendingQualifying = null;
+                }
+            }
+
+            if (pendingQualifying is not null)
             {
-                var player = group.First();
-                var qualifyingTime = group
-                    .Where(result => result.IsQualifying)
-                    .Select(result => result.BestLap)
-                    .Where(time => time.HasValue)
-                    .Min();
-                var raceTime = group
-                    .Where(result => !result.IsQualifying)
-                    .Select(result => result.BestLap)
-                    .Where(time => time.HasValue)
-                    .Min();
-                var gridPosition = group
-                    .Where(result => !result.IsQualifying)
-                    .Select(result => result.GridPosition)
-                    .FirstOrDefault(position => position.HasValue);
-                var finishTime = group
-                    .Where(result => !result.IsQualifying)
-                    .Select(result => result.FinishTime)
-                    .FirstOrDefault(time => time.HasValue);
-                var mostLapsCompleted = group
-                    .Where(result => !result.IsQualifying)
-                    .Select(result => result.MostLapsCompleted)
-                    .FirstOrDefault(laps => laps.HasValue);
+                records.Add(RecordBuilder.Create(pendingQualifying, null));
+            }
+        }
 
-                return new RecordBuilder(
-                    group.Key.TrackVenue,
-                    group.Key.TrackCourse,
-                    group.Key.TrackEvent,
-                    group.Min(result => result.StartedAt),
-                    player.Category,
-                    player.Car,
-                    qualifyingTime,
-                    gridPosition,
-                    raceTime,
-                    finishTime,
-                    mostLapsCompleted);
-            })
-            .ToArray();
-
+        // The vehicle is intentionally ignored: a car change within a category is still a comparable measure.
         foreach (var history in records
             .GroupBy(record => new
             {
@@ -151,31 +128,17 @@ public static class MyRacesPresentation
                 record.GridPosition,
                 record.RaceTime,
                 record.RaceDelta,
-                record.MostLapsCompleted,
+                record.LapsCompleted,
                 record.FinishTime))
             .ToArray();
     }
 
-    private static string? GetCategory(string carClass)
-    {
-        if (carClass.Contains("Hyper", StringComparison.OrdinalIgnoreCase))
-        {
-            return "Hypercar";
-        }
-
-        if (carClass.Contains("LMP2", StringComparison.OrdinalIgnoreCase)
-            || carClass.Equals("P2", StringComparison.OrdinalIgnoreCase))
-        {
-            return "LMP2";
-        }
-
-        if (carClass.Contains("GT3", StringComparison.OrdinalIgnoreCase))
-        {
-            return "LMGT3";
-        }
-
-        return null;
-    }
+    private static string GetCarName(Driver driver) =>
+        !string.IsNullOrWhiteSpace(driver.CarType)
+            ? driver.CarType
+            : string.IsNullOrWhiteSpace(driver.CarNumber)
+                ? "—"
+                : $"#{driver.CarNumber}";
 
     private static bool IsQualifying(string sessionType) =>
         sessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase);
@@ -187,41 +150,54 @@ public static class MyRacesPresentation
         string TrackVenue,
         string TrackCourse,
         string TrackEvent,
-        DateOnly Date,
         DateTimeOffset StartedAt,
+        bool IsQualifying,
         string Category,
         string Car,
-        bool IsQualifying,
         TimeSpan? BestLap,
         int? GridPosition,
         TimeSpan? FinishTime,
-        int? MostLapsCompleted);
+        int? LapsCompleted);
 
-    private sealed class RecordBuilder(
-        string trackVenue,
-        string trackCourse,
-        string trackEvent,
-        DateTimeOffset startedAt,
-        string category,
-        string car,
-        TimeSpan? qualifyingTime,
-        int? gridPosition,
-        TimeSpan? raceTime,
-        TimeSpan? finishTime,
-        int? mostLapsCompleted)
+    private sealed class RecordBuilder
     {
-        public string TrackVenue { get; } = trackVenue;
-        public string TrackCourse { get; } = trackCourse;
-        public string TrackEvent { get; } = trackEvent;
-        public DateTimeOffset StartedAt { get; } = startedAt;
-        public string Category { get; } = category;
-        public string Car { get; } = car;
-        public TimeSpan? QualifyingTime { get; } = qualifyingTime;
+        public required string TrackVenue { get; init; }
+        public required string TrackCourse { get; init; }
+        public required string TrackEvent { get; init; }
+        public required DateTimeOffset StartedAt { get; init; }
+        public required string Category { get; init; }
+        public required string Car { get; init; }
+        public TimeSpan? QualifyingTime { get; init; }
         public TimeSpan? QualifyingDelta { get; set; }
-        public int? GridPosition { get; } = gridPosition;
-        public TimeSpan? RaceTime { get; } = raceTime;
+        public int? GridPosition { get; init; }
+        public TimeSpan? RaceTime { get; init; }
         public TimeSpan? RaceDelta { get; set; }
-        public int? MostLapsCompleted { get; } = mostLapsCompleted;
-        public TimeSpan? FinishTime { get; } = finishTime;
+        public int? LapsCompleted { get; init; }
+        public TimeSpan? FinishTime { get; init; }
+
+        /// <summary>
+        /// Creates a record from a qualifying session, a race, or both.
+        /// The race defines the category and car because it is the result that counts.
+        /// </summary>
+        public static RecordBuilder Create(SessionResult? qualifying, SessionResult? race)
+        {
+            var reference = race ?? qualifying
+                ?? throw new ArgumentException("A record needs a qualifying session or a race.");
+
+            return new RecordBuilder
+            {
+                TrackVenue = reference.TrackVenue,
+                TrackCourse = reference.TrackCourse,
+                TrackEvent = reference.TrackEvent,
+                StartedAt = (qualifying ?? race)!.StartedAt,
+                Category = reference.Category,
+                Car = reference.Car,
+                QualifyingTime = qualifying?.BestLap,
+                GridPosition = race?.GridPosition,
+                RaceTime = race?.BestLap,
+                LapsCompleted = race?.LapsCompleted,
+                FinishTime = race?.FinishTime
+            };
+        }
     }
 }

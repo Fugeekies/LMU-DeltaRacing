@@ -97,37 +97,46 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Afficher le tableau de classement complet de la course sélectionnée avec les temps par secteur.
 - [x] Appliquer la coloration WEC pour les secteurs (🟣 Best absolu, 🟢 Best perso, 🟡 Standard) et calculer les écarts au meilleur secteur et au meilleur tour de la session.
 
-## Jalon — Écarts UI à traiter
-Écarts relevés lors de la resynchronisation des specs `docs/UISpec/` avec le code. Chaque point est à arbitrer (règle métier) avant correction.
+## Jalon — Écarts UI à traiter [Terminé]
+Écarts relevés lors de la resynchronisation des specs `docs/UISpec/` avec le code. Les règles métier ont été arbitrées le 25/10/2026. Mettre à jour la spec `docs/UISpec/` concernée en même temps que chaque correction.
+
+### Prérequis : données
+- [x] **Vie privée des fixtures :** `Name`, `Swap` et `TrackLimits` anonymisés avec les mêmes alias, événements à texte libre du `Stream` supprimés, fixtures régénérées en place (PR #28). Les résultats LMU d'origine n'étant pas disponibles, les alias des événements `TrackLimits` des fixtures actuelles ne correspondent pas à ceux des `<Driver>`.
+- [x] **Parser :** lire `ClassPosition`, `Laps` (tours du pilote) et `FinishStatus`.
+- [x] **Tours invalides :** vérification faite sur les fixtures. LMU efface déjà le temps (`--.----`) des tours visés par « Invalid Lap Cut Track » (35/35 cas vérifiés ; l'attribut `Lap` de l'événement est en base 0). Cet événement n'apparaît qu'en essais et en qualification. Règle retenue : un tour valide est un tour chronométré ; les secteurs d'un tour sans temps sont exclus des meilleurs secteurs.
 
 ### Mes courses (`MyRaces.razor`)
-- [ ] Ne plus fusionner les courses d'un même jour sur un même circuit : définir l'unité d'une ligne (session, paire qualif/course…). Sur les fixtures, 87 courses du pilote principal donnent au plus 37 lignes.
-- [ ] Regrouper par date locale et non UTC (une course vers minuit peut changer de jour).
-- [ ] Prendre en charge les classes `GTE` et `LMP3` présentes dans les résultats LMU, aujourd'hui exclues sans message (environ 41 % des sessions du pilote principal des fixtures).
-- [ ] Colonne TOURS : afficher les tours du pilote et non `MostLapsCompleted` (tours du vainqueur).
-- [ ] Rendre déterministes la catégorie et la voiture d'une ligne quand le pilote change de voiture.
-- [ ] Définir ce qu'est un « tour valide » (limites de piste) pour le calcul du meilleur tour.
-- [ ] Trancher la règle du delta n-1 : même véhicule ou non (`UI_DESIGN_SPEC.md` et `MyRaces.template.md` se contredisent ; le code ignore le véhicule).
+- [x] **Une ligne = une paire qualif + course.** Chaque course est associée à la dernière qualification du même circuit (lieu + tracé + événement) qui la précède, sans autre course entre les deux. Une qualif sans course, ou une course sans qualif, donne une ligne partielle. Fin de la fusion par jour : sur les fixtures, les 87 courses du pilote principal donnaient 37 lignes, elles en donnent maintenant 89 (87 courses + 2 qualifs isolées).
+- [x] Catégorie et voiture d'une ligne : celles de la course, à défaut celles de la qualif.
+- [x] **Catégories :** Hypercar, LMP2, LMP3, LMGTE, LMGT3, chacune avec son badge et son filtre. Une classe inconnue reste affichée sous son nom brut au lieu d'être exclue.
+- [x] **Delta n-1 :** inchangé (même lieu + même tracé + même catégorie, quelle que soit la voiture). Corriger `UI_DESIGN_SPEC.md`, qui exige à tort une voiture identique.
+- [x] Colonne TOURS : tours effectués par le pilote (`Laps`) et non `MostLapsCompleted`.
+- [x] Afficher toutes les dates en heure locale.
 
 ### Classement des coureurs (`DriversRanking.razor`)
-- [ ] Exclure les qualifications du décompte des « courses affrontées », ou les signaler distinctement.
-- [ ] Comparer les positions par classe en session multiclasse.
-- [ ] Définir le traitement des positions égales (comptées comme affrontées sans victoire ni défaite).
-- [ ] Ajouter la barre visuelle victoires/défaites (🟩🟥) de la maquette d'origine, ou la retirer définitivement de la spec.
+- [x] **Courses uniquement :** seules les sessions Race comptent dans le H2H.
+- [x] **Par classe :** en session multiclasse, seuls les adversaires de la même classe que le pilote comptent, comparés sur `ClassPosition`.
+- [x] Ajouter la barre visuelle victoires/défaites (vert/rouge, proportionnelle) dans la colonne % de victoire.
+- [x] Positions égales : sans objet, deux pilotes d'une même session n'ont jamais la même position.
 
 ### Détail des courses (`RaceDetails.razor`)
-- [ ] Ajouter la colonne « DIFF 1ER » (écart au leader) prévue par la maquette d'origine, ou acter son remplacement par l'écart au meilleur tour.
-- [ ] Calculer les meilleurs secteurs et tours par classe en session multiclasse (règle WEC).
-- [ ] Décider s'il faut afficher les meilleurs secteurs réalisés hors du meilleur tour (aujourd'hui, seuls les secteurs du meilleur tour sont affichés).
-- [ ] Afficher le temps au tour au format `m:ss.fff`, comme dans « Mes courses ».
-- [ ] Virtualiser les grandes grilles (> 40 voitures), comme demandé par `UI_DESIGN_SPEC.md`.
+- [x] **Multiclasse :** meilleurs secteurs et meilleur tour calculés par classe (règle WEC). Afficher la position en classe.
+- [x] **Meilleurs secteurs individuels :** chaque colonne secteur affiche le meilleur secteur du pilote, tous tours valides confondus. Une colonne « TOUR IDÉAL » affiche leur somme.
+- [x] **Couleurs des secteurs :** violet = meilleur secteur de la classe, jaune sinon. Le vert n'est plus utilisé pour les secteurs ; il reste utilisé pour les deltas.
+- [x] **Ajouter la colonne DIFF 1ER** en conservant les deltas actuels :
+  - en course : écart de temps total (`FinishTime`) au premier de la classe, ou « +N tours » si le pilote a au moins un tour de retard ;
+  - en qualif : écart au meilleur tour de la classe.
+- [x] Afficher les temps au tour au format `m:ss.fff`, comme dans « Mes courses ».
+- [x] Virtualiser les grandes grilles (> 40 voitures), comme demandé par `UI_DESIGN_SPEC.md`. Jusqu'à 40 voitures, les lignes sont rendues normalement (et pré-rendues). Le rendu virtualisé reste à vérifier dans un navigateur, par exemple sur la course du 16/09/2026 au Mans (54 voitures).
 
 ### Options (`Settings.razor`)
-- [ ] Simplifier le changement de dossier : « Tester & recharger » n'enregistre pas et « Enregistrer » ne recharge pas.
-- [ ] Afficher en heure locale les dates du tableau des sessions récentes (aujourd'hui en UTC).
-- [ ] Renvoyer vers la page Options plutôt que vers `appsettings.json` dans l'encadré d'erreur de l'état des imports.
+- [x] **Bouton unique « Appliquer » :** il valide le dossier, enregistre `ResultsDirectory`, puis recharge les résultats et le watcher. Il remplace « Tester la connexion & recharger » et « Enregistrer ».
+- [x] La case « démarrage automatique de la surveillance » est enregistrée dès qu'on la coche, comme le pilote principal.
+- [x] Afficher en heure locale les dates du tableau des sessions récentes (aujourd'hui en UTC).
+- [x] Renvoyer vers la page Options plutôt que vers `appsettings.json` dans l'encadré d'erreur de l'état des imports.
 
 ## Liste d'idées à prioriser
+- [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.
 - [ ] Reprise du readme pour la doc d'utilisation 
 - [ ] Exporter les résultats et statistiques en CSV.

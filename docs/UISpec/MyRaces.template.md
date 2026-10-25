@@ -3,40 +3,45 @@
 > Spécification alignée sur le code au 25/10/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
 
 ### Description
-Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Pour chaque événement, elle compare les meilleurs tours en qualification et en course à ceux de l'événement précédent ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
+Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
 
 ### Spécifications fonctionnelles
 * **Sessions prises en compte :** sessions de qualification (type contenant `Qual`) et de course (type contenant `Race`) dans lesquelles figure le pilote sélectionné. Les sessions Practice ne sont jamais importées.
-* **Catégorie :** déduite de la `CarClass` du pilote :
+* **Catégorie :** déduite de la `CarClass` du pilote (`CarCategory.cs`) :
   * contient `Hyper` → **Hypercar** ;
   * contient `LMP2` ou vaut `P2` → **LMP2** ;
+  * contient `LMP3` ou vaut `P3` → **LMP3** ;
+  * contient `GTE` → **LMGTE** ;
   * contient `GT3` → **LMGT3** ;
-  * toute autre classe (`GTE`, `LMP3`…) → session **exclue** de la page.
-* **Regroupement en événement (une ligne du tableau) :** toutes les sessions Q/R du pilote ayant le même lieu (`TrackVenue`), le même tracé (`TrackCourse`), le même événement (`TrackEvent`) et la même **date calendaire (UTC)** forment une seule ligne :
-  * Date / heure : début de la première session du groupe, affichée en heure locale.
-  * Catégorie et voiture : celles de la première session du groupe dans l'ordre du dépôt.
-  * Meilleur tour qualif : plus petit temps de tour chronométré parmi les qualifications du groupe.
-  * Meilleur tour course : plus petit temps de tour chronométré parmi les courses du groupe.
-  * Grille, tours et temps total : première valeur disponible parmi les courses du groupe.
+  * toute autre classe : affichée sous son nom brut (jamais exclue) ; classe vide : `—`.
+* **Une ligne = une paire qualif + course :**
+  * Les sessions du pilote sont parcourues chronologiquement, circuit par circuit (même lieu `TrackVenue`, même tracé `TrackCourse`, même événement `TrackEvent`).
+  * Chaque course est associée à la **dernière qualification qui la précède sur ce circuit, sans autre course entre les deux**.
+  * Une qualification suivie d'une autre qualification, ou une course sans qualification avant elle, donne une **ligne partielle** (colonnes de l'autre session à `—`).
+  * Plusieurs courses le même jour sur le même circuit donnent donc plusieurs lignes.
+  * Date / heure : début de la qualification, à défaut de la course (heure locale).
+  * Catégorie et voiture : celles de la course, à défaut celles de la qualification.
+  * Meilleur tour : plus petit temps de tour chronométré de la session. LMU efface le temps des tours invalidés pour limites de piste, qui sont donc exclus.
+  * Grille, tours et temps total : ceux de la course.
 * **Voiture :** `CarType` ; à défaut `#<CarNumber>` ; à défaut `—`.
 * **Filtres :**
   * Circuit : « Tous les circuits » ou un lieu parmi ceux présents dans les lignes (tri alphabétique). Le filtre porte sur `TrackVenue`.
-  * Catégorie : « Toutes les catégories », Hypercar, LMP2, LMGT3.
+  * Catégorie : « Toutes les catégories », Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les éventuelles classes inconnues présentes dans les lignes.
   * Les filtres s'appliquent sans rechargement et sont conservés lors des mises à jour en direct.
 * **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N résultats ». Les lignes d'un bloc sont triées de la plus récente à la plus ancienne.
 * **Structure du tableau :**
 
   | Colonne | Contenu | Format |
   |---|---|---|
-  | DATE / HEURE | Début de l'événement (heure locale) | `dd/MM/yyyy HH:mm` |
-  | CATÉGORIE | Badge Hypercar / LMP2 / LMGT3 | — |
+  | DATE / HEURE | Début de la qualif, à défaut de la course (heure locale) | `dd/MM/yyyy HH:mm` |
+  | CATÉGORIE | Badge de catégorie | — |
   | VOITURE | Modèle du véhicule | texte gras |
   | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
   | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
   | GRILLE | Position de départ en course (`GridPos`) | entier |
   | MEILLEUR TOUR COURSE | Meilleur tour en course | `m:ss.fff` |
   | DELTA COURSE (n-1) | Écart avec la course précédente | voir règle delta |
-  | TOURS | `MostLapsCompleted` de la session de course | entier |
+  | TOURS | Tours effectués par le pilote en course (`Laps`) | entier |
   | TEMPS TOTAL COURSE | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
 
   Toute valeur absente s'affiche `—`.
@@ -50,8 +55,8 @@ Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la prog
   * Trois décimales, séparateur point.
 * **États de la page :**
   * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».
-  * Erreur de chargement sans session : encadré d'erreur avec le message et « Vérifiez le dossier configuré dans Options ».
-  * Aucune ligne : « Aucune course disponible » (qualifs et courses avec tours valides en Hypercar, LMP2 ou LMGT3).
+  * Erreur de chargement sans session : encadré d'erreur avec le message et un lien vers Options.
+  * Aucune ligne : « Aucune course disponible ».
   * Filtres sans résultat : « Aucune course ne correspond à ces filtres ».
   * La page se met à jour automatiquement à chaque nouvel import.
 
@@ -73,14 +78,12 @@ Page d'accueil de l'application (routes `/` et `/my-races`). Elle montre la prog
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
 │  DATE / HEURE      CATÉGORIE  VOITURE       MT QUALIF  DELTA QUALIF  GRILLE  MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL         │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  16/10/2026 19:00  Hypercar   Ferrari 499P  2:02.451   🟢 -0.245s    3       2:03.110   🟢 -0.120s    12     25:01.432           │
-│  15/10/2026 21:15  Hypercar   Ferrari 499P  2:02.696   🔴 +0.102s    5       2:03.230   🔴 +0.450s    12     25:03.876           │
-│  12/10/2026 14:00  LMGT3      BMW M4 GT3    2:17.594   —             8       2:18.780   —             11     25:40.120           │
+│  16/10/2026 21:00  Hypercar   Ferrari 499P  2:02.451   🟢 -0.245s    3       2:03.110   🟢 -0.120s    12     25:01.432           │
+│  16/10/2026 20:20  Hypercar   Ferrari 499P  2:02.696   🔴 +0.102s    5       2:03.230   🔴 +0.450s    12     25:03.876           │
+│  16/10/2026 19:40  Hypercar   Ferrari 499P  2:02.594   —             —       —          —             —      —                   │
+│  12/10/2026 14:00  LMGTE      Porsche 911   2:17.594   —             8       2:18.780   —             11     25:40.120           │
 │                                                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  LE MANS ULTIMATE                                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
-### Écarts connus
-Les comportements à corriger ou à arbitrer sont suivis dans la [feuille de route](../ROADMAP.md), jalon « Écarts UI à traiter ».

@@ -26,7 +26,7 @@ else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count 
         <div>
             <h2>Les résultats n’ont pas pu être chargés</h2>
             <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans Options.</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
         </div>
     </section>
 }
@@ -97,7 +97,15 @@ else
                                 <td class="numeric-cell">@rivalry.SessionsFaced</td>
                                 <td class="numeric-cell">@rivalry.Wins</td>
                                 <td class="numeric-cell">@rivalry.Losses</td>
-                                <td class="numeric-cell">@rivalry.WinPercentage.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)%</td>
+                                <td class="numeric-cell">
+                                    <span class="win-rate">
+                                        <span class="win-rate-bar" aria-hidden="true">
+                                            <span class="win-rate-wins" style="width: @FormatShare(rivalry.Wins, rivalry.SessionsFaced)"></span>
+                                            <span class="win-rate-losses" style="width: @FormatShare(rivalry.Losses, rivalry.SessionsFaced)"></span>
+                                        </span>
+                                        @rivalry.WinPercentage.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)%
+                                    </span>
+                                </td>
                             </tr>
                         }
                     </tbody>
@@ -133,6 +141,14 @@ else
         state = DashboardData.Snapshot;
         rivalries = DriversRankingPresentation.CreateRivalries(state.Sessions, state.UserName);
     }
+
+    /// <summary>
+    /// Formats a share of the faced races as a CSS width, with an invariant decimal separator.
+    /// </summary>
+    private static string FormatShare(int count, int total) =>
+        string.Create(
+            System.Globalization.CultureInfo.InvariantCulture,
+            $"{(total == 0 ? 0 : count * 100d / total):0.##}%");
 
     private IReadOnlyList<DriverRivalry> GetFilteredRivalries()
     {

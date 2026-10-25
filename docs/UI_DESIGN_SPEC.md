@@ -26,9 +26,9 @@ L'arrière-plan de l'application utilise un dégradé subtil passant d'un bleu n
 
 ### 3. Code Couleur Officiel du Chronométrage WEC (Secteurs & Deltas)
 Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux secteurs et aux écarts :
-* 🟣 **Violet (`#b066ff`)** : Meilleur secteur / chrono absolu de la session (*Session Best*).
-* 🟢 **Vert (`#22c55e`)** : Meilleur secteur / chrono personnel (*Personal Best*) ou amélioration de delta (n-1).
-* 🟡 **Jaune (`#eab308`)** : Secteur / chrono standard correct.
+* 🟣 **Violet (`#b066ff`)** : Meilleur secteur de la **classe** dans la session (*Class Best*). En multiclasse, chaque classe a ses propres références.
+* 🟢 **Vert (`#22c55e`)** : Amélioration de delta (n-1) et écart nul ou négatif au meilleur temps de la classe. Le vert n'est pas utilisé pour colorer les secteurs.
+* 🟡 **Jaune (`#eab308`)** : Secteur standard (plus lent que le meilleur de la classe).
 * 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps ou régression de delta (n-1).
 
 ---
@@ -37,6 +37,9 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * **Hypercar :** Fond bordeaux / rouge foncé (`#881337`), texte blanc.
 * **LMP2 :** Fond bleu vif (`#1d4ed8`), texte blanc.
 * **LMGT3 :** Fond orange / ambre (`#d97706`), texte blanc ou noir.
+* **LMP3** et **LMGTE** : couleurs à définir.
+
+> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`) ; les couleurs ci-dessus ne sont pas encore appliquées.
 
 ---
 
@@ -57,17 +60,17 @@ UISpec/
 ### Récapitulatif des 4 Menus Principaux :
 
 1. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
-   * Historique et progression personnelle groupés par circuit.
-   * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMGT3`).
-   * Calcul automatique du delta par rapport à la session précédente (n-1) à circuit, catégorie et voiture identiques.
+   * Historique et progression personnelle groupés par circuit, une ligne par paire qualification + course.
+   * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
+   * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 
 2. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
-   * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec tous les pilotes affrontés.
-   * Nombre de courses affrontées, victoires, défaites et pourcentage de domination.
+   * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
+   * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse télémétrique fine d'une session sélectionnée via une liste déroulante.
-   * Tableau par secteur avec application stricte des couleurs WEC (🟣, 🟢, 🟡) et écart avec le 1er.
+   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal et écart au leader de la classe (DIFF 1ER).
 
 4. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
