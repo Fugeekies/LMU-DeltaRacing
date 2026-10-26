@@ -63,7 +63,7 @@ UISpec/
 ### Récapitulatif des Menus Principaux :
 
 1. **🏠 Accueil (`/`)** *(Voir template [`UISpec/Home.template.md`](UISpec/Home.template.md))*
-   * Tableau de bord de la carrière du pilote en tuiles par sections : palmarès, qualification & départ, abandons, roulage, forme récente, préférences.
+   * Tableau de bord de la carrière du pilote : bandeau Pilote (favoris inclus) et Forme récente, puis tuiles Palmarès, Roulage, Qualification & départ et Abandons.
    * Chaque compteur affiche son total et sa ventilation par catégorie.
 
 2. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*

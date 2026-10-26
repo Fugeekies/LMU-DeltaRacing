@@ -40,56 +40,22 @@ else if (dashboard.IsEmpty)
 }
 else
 {
-    <div class="home-top">
-        <section class="home-section" aria-labelledby="home-driver">
-            <h2 id="home-driver" class="eyebrow">PILOTE</h2>
-            <article class="home-tile home-driver">
-                <p class="home-driver-name">@state.UserName</p>
-                @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
-                {
-                    <p class="home-rate">Première course : @FormatDay(firstRaceAt)</p>
-                    <p class="home-rate">Dernière course : @FormatDay(lastRaceAt)</p>
-                }
-            </article>
-        </section>
-
-        <section class="home-section" aria-labelledby="home-preferences">
-            <h2 id="home-preferences" class="eyebrow">PRÉFÉRENCES</h2>
-            <div class="home-tiles home-preferences">
+    <div class="home-hero">
+        <article class="home-tile home-driver" aria-labelledby="home-driver">
+            <p id="home-driver" class="summary-label">PILOTE</p>
+            <p class="home-driver-name">@state.UserName</p>
+            @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
+            {
+                <p class="home-rate">En piste du @FormatDay(firstRaceAt) au @FormatDay(lastRaceAt)</p>
+            }
+            <div class="home-favorites">
                 @RenderFavorite("CIRCUIT FAVORI", dashboard.FavoriteCircuit)
                 @RenderFavorite("VOITURE FAVORITE", dashboard.FavoriteCar)
-                <article class="home-tile home-tile-wide">
-                    <h3 class="summary-label">RÉPARTITION PAR CATÉGORIE</h3>
-                    @if (dashboard.CategoryShares.Count == 0)
-                    {
-                        <p class="home-value">—</p>
-                    }
-                    else
-                    {
-                        <div class="home-bar" aria-hidden="true">
-                            @foreach (var share in dashboard.CategoryShares)
-                            {
-                                <span class="home-bar-part @GetCategoryClass(share.Label)" style="width: @FormatPercentWidth(share.Share)"></span>
-                            }
-                        </div>
-                        <ul class="home-share-list">
-                            @foreach (var share in dashboard.CategoryShares)
-                            {
-                                <li>
-                                    <i class="home-swatch @GetCategoryClass(share.Label)" aria-hidden="true"></i>
-                                    @share.Label <strong>@FormatPercent(share.Share)</strong> <span>(@share.Count)</span>
-                                </li>
-                            }
-                        </ul>
-                    }
-                </article>
             </div>
-        </section>
-    </div>
+        </article>
 
-    <section class="home-section" aria-labelledby="home-form">
-        <h2 id="home-form" class="eyebrow">FORME RÉCENTE</h2>
-        <article class="home-tile home-form">
+        <article class="home-tile home-form" aria-labelledby="home-form">
+            <p id="home-form" class="summary-label">FORME RÉCENTE</p>
             @if (dashboard.RecentForm.Count == 0)
             {
                 <p class="home-value">—</p>
@@ -125,7 +91,7 @@ else
                 </div>
             }
         </article>
-    </section>
+    </div>
 
     <section class="home-section" aria-labelledby="home-results">
         <h2 id="home-results" class="eyebrow">PALMARÈS</h2>
@@ -136,6 +102,31 @@ else
             @RenderStat("TOP 5", dashboard.Top5, FormatCount)
             @RenderStat("TOP 10", dashboard.Top10, FormatCount)
             @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage)
+            <article class="home-tile home-tile-wide">
+                <h3 class="summary-label">RÉPARTITION PAR CATÉGORIE</h3>
+                @if (dashboard.CategoryShares.Count == 0)
+                {
+                    <p class="home-value">—</p>
+                }
+                else
+                {
+                    <div class="home-bar" aria-hidden="true">
+                        @foreach (var share in dashboard.CategoryShares)
+                        {
+                            <span class="home-bar-part @GetCategoryClass(share.Label)" style="width: @FormatPercentWidth(share.Share)"></span>
+                        }
+                    </div>
+                    <ul class="home-share-list">
+                        @foreach (var share in dashboard.CategoryShares)
+                        {
+                            <li>
+                                <i class="home-swatch @GetCategoryClass(share.Label)" aria-hidden="true"></i>
+                                @share.Label <strong>@FormatPercent(share.Share)</strong> <span>(@share.Count)</span>
+                            </li>
+                        }
+                    </ul>
+                }
+            </article>
         </div>
     </section>
 
@@ -272,11 +263,11 @@ else
         </text>;
 
     private static RenderFragment RenderFavorite(string label, HomeFavorite? favorite) =>
-        @<article class="home-tile">
-            <h3 class="summary-label">@label</h3>
+        @<div class="home-favorite-item">
+            <p class="summary-label">@label</p>
             @if (favorite is null)
             {
-                <p class="home-value">—</p>
+                <p class="home-favorite">—</p>
             }
             else
             {
@@ -291,7 +282,7 @@ else
                     · @favorite.Podiums @(favorite.Podiums > 1 ? "podiums" : "podium")
                 </p>
             }
-        </article>;
+        </div>;
 
     private static RenderFragment RenderSigned(double? value, string format) =>
         @<span class="@(value > 0 ? "delta-gain" : value < 0 ? "delta-loss" : string.Empty)">@FormatSigned(value, format)</span>;

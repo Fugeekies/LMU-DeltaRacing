@@ -19,12 +19,19 @@ Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barr
   * `None` : **non classé**, compté dans le total de courses avec son propre compteur, mais jamais dans victoires, podiums, tops, abandons ni positions moyennes.
 * **Position officielle :** victoire, podium, top 5 et top 10 utilisent la `ClassPosition` écrite par LMU, quel que soit le statut (un abandon classé P3 compte comme un podium). Seules les courses non classées (`None`) en sont exclues.
 * **Ventilation par catégorie :** sous chaque compteur, une ligne par catégorie ayant au moins une course, avec son badge, dans l'ordre Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues. Le total est la somme des lignes.
-* **Ordre des sections :** sous le titre « Accueil », une première ligne avec la tuile **Pilote** à gauche et la section **Préférences** à droite (l'une sous l'autre en dessous de 1 120 px), puis, chacune sur toute la largeur : Forme récente, Palmarès, Roulage, Qualification & départ, Abandons.
+* **Ordre des sections :** sous le titre « Accueil », un bandeau avec la tuile **Pilote** à gauche et la tuile **Forme récente** à droite (l'une sous l'autre en dessous de 1 120 px), puis, chacune sur toute la largeur : Palmarès, Roulage, Qualification & départ, Abandons.
 
-#### Section « Pilote »
-* Nom du pilote sélectionné.
-* **Première course** et **dernière course** du pilote (date locale `dd/MM/yyyy`), masquées s'il n'a disputé aucune course.
-* La tuile prend la hauteur des tuiles Préférences.
+#### Tuile « Pilote »
+* Nom du pilote sélectionné, souligné en haut par l'accent rouge.
+* « En piste du `dd/MM/yyyy` au `dd/MM/yyyy` » : dates locales de la première et de la dernière course, masquées s'il n'a disputé aucune course.
+* Sous un séparateur, côte à côte :
+
+| Favori | Valeur | Détail |
+|---|---|---|
+| CIRCUIT FAVORI | circuit (lieu + tracé) avec le plus de courses ; tracé affiché s'il diffère du lieu | nombre de courses, victoires et podiums sur ce circuit |
+| VOITURE FAVORITE | `CarType` avec le plus de courses | nombre de courses, victoires et podiums avec cette voiture |
+
+En cas d'égalité, le plus récemment roulé l'emporte.
 
 #### Section « Palmarès »
 | Tuile | Valeur | Détail |
@@ -35,6 +42,7 @@ Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barr
 | TOP 5 | courses en P1 à P5 de classe | ventilation + taux |
 | TOP 10 | courses en P1 à P10 de classe | ventilation + taux |
 | POSITION MOYENNE | moyenne des `ClassPosition` des courses classées | ventilation, une décimale |
+| RÉPARTITION PAR CATÉGORIE (tuile double largeur) | part des courses par catégorie, de la plus roulée à la moins roulée | barre horizontale empilée + liste « catégorie % (nombre) » |
 
 #### Section « Qualification & départ »
 | Tuile | Valeur | Détail |
@@ -62,21 +70,13 @@ Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension
 | DISTANCE | somme de `Laps × TrackLength` | en km, sans décimale, séparateur de milliers ; ventilation |
 | TEMPS EN PISTE | somme des temps de tours chronométrés | format `h:mm`, ventilation. Les tours sans temps (invalidés) ne sont pas comptés |
 
-#### Section « Forme récente »
+#### Tuile « Forme récente »
 * Les **10 dernières courses**, de la plus récente à la plus ancienne, en pastilles : `P1`…`Pn` (position en classe), `DNF`, `DQ` ou `NC`.
 * Couleur des pastilles : violet `#b066ff` pour une victoire, vert `#22c55e` pour un podium, neutre sinon, rouge `#ef4444` pour DNF / DQ, gris `#8b949e` pour NC.
 * Au survol : date, circuit, catégorie et voiture.
 * Sous les pastilles, la **dernière course** : date, circuit, voiture, position en classe, statut, meilleur tour, et un lien vers son événement dans « Détail des courses ».
 
-#### Section « Préférences »
-| Tuile | Valeur | Détail |
-|---|---|---|
-| CIRCUIT FAVORI | circuit (lieu + tracé) avec le plus de courses | nombre de courses, victoires et podiums sur ce circuit |
-| VOITURE FAVORITE | `CarType` avec le plus de courses | nombre de courses, victoires et podiums avec cette voiture |
-| RÉPARTITION PAR CATÉGORIE | part des courses par catégorie | barre horizontale empilée, couleurs des badges de catégorie |
-
-En cas d'égalité, le plus récemment roulé l'emporte.
-
+#### Couleurs
 Couleurs de la répartition (voir `UI_DESIGN_SPEC.md`) : Hypercar `#881337`, LMP2 `#1d4ed8`, LMP3 `#7c3aed`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
 
 #### États de la page
@@ -101,19 +101,15 @@ Les valeurs sont des exemples.
 │  TABLEAU DE BORD                                                                                                                 │
 │  Accueil                                                                                                                         │
 │                                                                                                                                  │
-│  PILOTE                   PRÉFÉRENCES                                                                                            │
-│  ┌──────────────────────┐ ┌──────────────────────────┐ ┌──────────────────────────┐ ┌────────────────────────────────────────┐   │
-│  │ Driver Tom           │ │ CIRCUIT FAVORI           │ │ VOITURE FAVORITE         │ │ RÉPARTITION PAR CATÉGORIE              │   │
-│  │ Première : 06/08/2025│ │ Circuit de la Sarthe     │ │ McLaren 720S LMGT3 Evo   │ │ ████████████████▓▓▓▓▓▓▓░░░░░           │   │
-│  │ Dernière : 16/10/2026│ │ 18 courses · 2 V · 4 pod.│ │ 31 courses · 2 V · 6 pod.│ │ LMGT3 60 % · LMGTE 23 % · LMP2 17 %    │   │
-│  └──────────────────────┘ └──────────────────────────┘ └──────────────────────────┘ └────────────────────────────────────────┘   │
-│                                                                                                                                  │
-│  FORME RÉCENTE                                                                                                                   │
-│  ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
-│  │ (P2) (P7) (DNF) (P1) (P11) (P4) (NC) (P3) (P9) (P6)                                                                        │  │
-│  │ DERNIÈRE COURSE  16/10/2026 21:00 · Spa · BMW M4 LMGT3                                                                     │  │
-│  │ P2 en classe · Arrivé · 2:18.104   Voir l'événement →                                                                      │  │
-│  └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
+│  ┌──────────────────────────────────────────────────┐ ┌───────────────────────────────────────────────────────────────────────┐  │
+│  │ PILOTE                                           │ │ FORME RÉCENTE                                                         │  │
+│  │ Driver Tom                                       │ │ (P2) (P7) (DNF) (P1) (P11) (P4) (NC) (P3) (P9) (P6)                   │  │
+│  │ En piste du 06/08/2025 au 16/10/2026             │ │ ───────────────────────────────────────────────────────────────────── │  │
+│  │ ──────────────────────────────────────────────── │ │ DERNIÈRE COURSE                                                       │  │
+│  │ CIRCUIT FAVORI           VOITURE FAVORITE        │ │ 16/10/2026 21:00 · Spa · BMW M4 LMGT3                                 │  │
+│  │ Circuit de la Sarthe     McLaren 720S LMGT3 Evo  │ │ P2 en classe · Arrivé · 2:18.104   Voir l'événement →                 │  │
+│  │ 18 courses · 2 V · 4 pod. 31 courses · 2 V · 6 p.│ │                                                                       │  │
+│  └──────────────────────────────────────────────────┘ └───────────────────────────────────────────────────────────────────────┘  │
 │                                                                                                                                  │
 │  PALMARÈS                                                                                                                        │
 │  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐   │
@@ -123,6 +119,11 @@ Les valeurs sont des exemples.
 │  │ [LMGTE]  20      │ │ [LMGTE]  1       │ │ [LMGTE]  3       │ │ [LMGTE]  7       │ │ [LMGTE] 12       │ │ [LMGTE]  7.0     │   │
 │  │ [LMP2]   15      │ │ [LMP2]   1       │ │ [LMP2]   2       │ │ [LMP2]   4       │ │ [LMP2]   7       │ │ [LMP2]   7.9     │   │
 │  └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘   │
+│  ┌──────────────────────────────────────┐                                                                                        │
+│  │ RÉPARTITION PAR CATÉGORIE            │                                                                                        │
+│  │ ████████████████▓▓▓▓▓▓▓░░░░░         │                                                                                        │
+│  │ LMGT3 60 % · LMGTE 23 % · LMP2 17 %  │                                                                                        │
+│  └──────────────────────────────────────┘                                                                                        │
 │                                                                                                                                  │
 │  ROULAGE                                                                                                                         │
 │  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐                                                                  │

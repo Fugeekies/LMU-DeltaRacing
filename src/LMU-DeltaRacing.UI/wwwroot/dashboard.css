@@ -1453,27 +1453,31 @@ h3 {
     margin-bottom: 0.7rem;
 }
 
-.home-top {
+.home-hero {
     display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(0, 4fr);
-    gap: 0 1rem;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-.home-top > .home-section {
-    display: flex;
-    flex-direction: column;
-}
-
-/* The driver tile stretches to the height of the preference tiles beside it. */
 .home-driver {
-    flex: 1;
+    border-top: 2px solid var(--accent);
 }
 
 .home-driver-name {
-    margin: 0 0 0.6rem;
-    font-size: 1.5rem;
+    margin: 0 0 0.3rem;
+    font-size: 1.6rem;
     font-weight: 750;
     overflow-wrap: anywhere;
+}
+
+.home-favorites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
 }
 
 .home-tiles {
@@ -1540,9 +1544,12 @@ p.home-rate {
     gap: 0.5rem;
 }
 
-.home-favorite {
+.home-favorite-item p {
     margin: 0;
-    font-size: 1.05rem;
+}
+
+.home-favorite {
+    font-size: 0.95rem;
     font-weight: 700;
     overflow-wrap: anywhere;
 }
@@ -1658,7 +1665,7 @@ p.home-rate {
 }
 
 @media (max-width: 1120px) {
-    .home-top {
+    .home-hero {
         grid-template-columns: minmax(0, 1fr);
     }
 }
