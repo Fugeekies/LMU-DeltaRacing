@@ -54,7 +54,20 @@ Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouve
 
 ## Les pages
 
-Le menu en haut de l'écran donne accès à quatre pages.
+Le menu en haut de l'écran donne accès à cinq pages.
+
+### Accueil
+
+Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile donne un total, puis le détail par catégorie.
+
+- **Pilote**, en haut à gauche : votre nom, les dates de votre première et de votre dernière course, votre circuit et votre voiture les plus roulés.
+- **Forme récente**, en haut à droite : vos 10 dernières courses en pastilles, et votre dernière course avec un lien vers son détail.
+- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage) et position moyenne.
+- **Roulage** : tours bouclés, kilomètres parcourus et temps en piste.
+- **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
+- **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
+
+> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Une course que le jeu n'a pas classée (ni arrivée, ni abandon) compte dans le total mais pas dans les résultats.
 
 ### Mes courses
 

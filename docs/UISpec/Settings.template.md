@@ -55,7 +55,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 
 * Les messages de retour de la page s'affichent sous les panneaux. Il n'y a plus de bouton « Enregistrer » : chaque réglage est enregistré par son action.
 
-#### État des imports (sous les options, également accessible via `/dashboard`)
+#### État des imports (sous les options)
 * Pendant l'import initial : barre de progression « N / M fichiers traités ».
 * Encadré d'erreur si les résultats n'ont pas pu être chargés, avec un lien vers Options.
 * Trois cartes :

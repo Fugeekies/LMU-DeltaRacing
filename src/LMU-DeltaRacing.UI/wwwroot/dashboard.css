@@ -1442,3 +1442,245 @@ h3 {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* Home dashboard */
+.home-section {
+    min-width: 0;
+    margin-bottom: 1.5rem;
+}
+
+.home-section > .eyebrow {
+    margin-bottom: 0.7rem;
+}
+
+.home-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-driver {
+    border-top: 2px solid var(--accent);
+}
+
+.home-driver-name {
+    margin: 0 0 0.3rem;
+    font-size: 1.6rem;
+    font-weight: 750;
+    overflow-wrap: anywhere;
+}
+
+.home-favorites {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.home-tile {
+    min-width: 0;
+    padding: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    backdrop-filter: blur(6px);
+}
+
+.home-tile-wide {
+    grid-column: span 2;
+}
+
+.home-tile .summary-label {
+    margin-bottom: 0.5rem;
+    font-size: 0.64rem;
+}
+
+.home-value {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    font-size: 1.7rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 750;
+    line-height: 1.2;
+}
+
+.home-unit,
+.home-rate {
+    color: var(--muted);
+    font-size: 0.76rem;
+    font-weight: 600;
+}
+
+p.home-rate {
+    margin: 0.3rem 0 0;
+}
+
+.home-favorite-item p {
+    margin: 0;
+}
+
+.home-favorite {
+    font-size: 0.95rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.home-bar {
+    display: flex;
+    height: 12px;
+    margin: 0.35rem 0 0.75rem;
+    overflow: hidden;
+    border-radius: 3px;
+    background: var(--surface-raised);
+}
+
+.home-bar-part {
+    height: 100%;
+}
+
+.home-bar-thin {
+    height: 6px;
+    margin: 0.75rem 0 0.5rem;
+}
+
+.home-share-list.home-breakdown-legend {
+    gap: 0.15rem 0.4rem;
+    margin-top: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.6rem;
+}
+
+.home-bar-thin + .home-share-list.home-breakdown-legend {
+    margin-top: 0;
+}
+
+.home-breakdown-legend .home-swatch {
+    width: 0.5rem;
+    height: 0.5rem;
+    margin-right: 0.15rem;
+}
+
+.home-share-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0.76rem;
+}
+
+.home-share-list span {
+    color: var(--muted);
+}
+
+.home-swatch {
+    display: inline-block;
+    width: 0.65rem;
+    height: 0.65rem;
+    margin-right: 0.3rem;
+    border-radius: 2px;
+}
+
+.category-hypercar { background: #881337; }
+.category-lmp2 { background: #1d4ed8; }
+.category-lmp3 { background: #7c3aed; }
+.category-lmgte { background: #15803d; }
+.category-lmgt3 { background: #d97706; }
+.category-other { background: var(--muted); }
+
+.cause-0 { background: #f97316; }
+.cause-1 { background: #38bdf8; }
+.cause-2 { background: #facc15; }
+.cause-3 { background: #f472b6; }
+.cause-4 { background: #94a3b8; }
+
+.form-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.form-pill {
+    min-width: 2.8rem;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-raised);
+    font-size: 0.74rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    text-align: center;
+}
+
+.form-win {
+    border-color: var(--purple);
+    color: var(--purple);
+}
+
+.form-podium {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.form-retired,
+.form-disqualified {
+    border-color: var(--red);
+    color: var(--red);
+}
+
+.form-unclassified {
+    color: var(--muted);
+}
+
+.last-race {
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.8rem;
+}
+
+.last-race p {
+    margin: 0 0 0.3rem;
+}
+
+.last-race-result {
+    color: var(--muted);
+}
+
+.last-race-link {
+    margin-left: 0.5rem;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+@media (max-width: 1120px) {
+    .home-hero {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 520px) {
+    .home-tiles {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-tile-wide {
+        grid-column: auto;
+    }
+}

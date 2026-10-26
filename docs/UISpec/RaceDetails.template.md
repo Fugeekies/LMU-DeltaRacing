@@ -16,6 +16,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * Liste les événements du plus récent au plus ancien.
   * Libellé : `dd/MM/yyyy HH:mm - <Lieu> (<Sessions présentes>) - <Catégorie du pilote>`, par exemple `02/10/2026 21:00 - Circuit de Spa-Francorchamps (Essais · Qualif · Course) - LMGT3` (heure locale du début de la première session ; la catégorie est omise si la classe est vide).
   * Par défaut, l'événement le plus récent est sélectionné. S'il disparaît (rechargement), le plus récent est resélectionné.
+  * Le paramètre d'URL `?event=<identifiant>` (lien « Voir l'événement » de l'Accueil) sélectionne cet événement sur l'onglet Course. Un identifiant inconnu est ignoré. L'identifiant est celui de la première session de l'événement : il change à chaque rechargement des résultats.
 * **Métadonnées** à côté du sélecteur : lieu, tracé s'il diffère du lieu.
 * **Sous-onglets** sous le sélecteur, dans cet ordre : **COURSE**, **QUALIFICATION**, **ESSAIS** (« ESSAIS (N séances) » si plusieurs séances ont été fusionnées). Seuls les onglets des sessions présentes dans l'événement sont affichés ; l'onglet Essais n'existe que si l'option « Charger les sessions d'essais » est cochée dans Options (décochée par défaut). Par défaut, l'onglet Course (le résultat qui compte) ; l'onglet choisi est conservé en changeant d'événement s'il existe dans le nouvel événement, sinon le premier onglet disponible est affiché.
 * **Ordre du classement :** position générale croissante, pilotes sans position en fin de liste, égalité départagée par nom.

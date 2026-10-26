@@ -146,6 +146,12 @@ else
     private SessionTab selectedTab = SessionTab.Race;
 
     /// <summary>
+    /// Gets or sets the event to open, as linked from the home dashboard (<c>?event=</c>).
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "event")]
+    public string? EventId { get; set; }
+
+    /// <summary>
     /// The session tabs, in display order: the race first because it is the result that counts.
     /// </summary>
     private enum SessionTab
@@ -159,6 +165,16 @@ else
     {
         DashboardData.StateChanged += OnDashboardStateChanged;
         UpdateState();
+    }
+
+    protected override void OnParametersSet()
+    {
+        // A linked event opens on its race tab, the result the link refers to.
+        if (!string.IsNullOrEmpty(EventId) && events.Any(raceEvent => raceEvent.Id == EventId))
+        {
+            selectedEventId = EventId;
+            selectedTab = SessionTab.Race;
+        }
     }
 
     public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
