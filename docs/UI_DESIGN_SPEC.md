@@ -51,28 +51,38 @@ Les maquettes visuelles ASCII détaillées ainsi que les règles métiers spéci
 
 ```text
 UISpec/
+├── Home.template.md           --> Spécification de la vue "Accueil" (à implémenter)
 ├── MyRaces.template.md        --> Spécification de la vue "Mes Courses"
+├── Progression.template.md    --> Spécification de la vue "Progression" (à implémenter)
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
 └── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 ```
 
-### Récapitulatif des 4 Menus Principaux :
+### Récapitulatif des Menus Principaux :
 
-1. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
+1. **🏠 Accueil (`/`)** *(à implémenter, voir template [`UISpec/Home.template.md`](UISpec/Home.template.md))*
+   * Tableau de bord de la carrière du pilote en tuiles par sections : palmarès, qualification & départ, abandons, roulage, forme récente, préférences.
+   * Chaque compteur affiche son total et sa ventilation par catégorie ; filtres par catégorie et par période.
+
+2. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
    * Historique et progression personnelle groupés par circuit, une ligne par paire qualification + course.
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
    * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 
-2. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
+3. **📈 Progression (`/progression`)** *(à implémenter, voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
+   * Évolution des meilleurs tours du pilote sur un circuit et une catégorie, agrégés par jour, semaine, mois ou année (min, max, moyenne).
+   * Courbes Qualification et Course toutes voitures confondues, ou une courbe par voiture ; accessible depuis l'icône 📈 des blocs circuit de « Mes courses ».
+
+4. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
    * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
    * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
-3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
+5. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
    * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total et écart au leader de la classe.
 
-4. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
+6. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
    * Sélecteur de dossier, indicateur d'état du `FileSystemWatcher` et options de démarrage.
 
