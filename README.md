@@ -95,7 +95,7 @@ Un **graphique** de l'évolution de vos meilleurs tours sur un circuit, dans une
 - **Affichage** : une courbe Course et une courbe Qualification toutes voitures confondues, ou **une courbe par voiture** (en choisissant Course ou Qualification).
 - Au-dessus du graphique, le **résumé** donne pour chaque courbe votre record, la valeur de départ, la valeur actuelle et l'écart (🟢 plus rapide, 🔴 plus lent). Une ligne en tirets marque le record sur le graphique.
 - Survolez ou cliquez un point pour voir son détail. Cliquez une entrée de la légende pour masquer ou réafficher une courbe.
-- Une période sans course est comblée par un palier en pointillé : la courbe garde sa dernière valeur jusqu'à la course suivante.
+- Une période sans course est sautée : la courbe relie directement les périodes où vous avez roulé, et une petite barre grise sur l'axe des dates signale les périodes vides.
 - Le bouton **Afficher le détail des périodes** donne les valeurs exactes dans un tableau.
 
 Vos réglages (période, valeur tracée, affichage) sont retenus pour la prochaine fois.

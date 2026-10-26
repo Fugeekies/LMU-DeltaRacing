@@ -14,12 +14,6 @@ public static class ProgressionPeriods
         "juillet", "août", "septembre", "octobre", "novembre", "décembre"
     ];
 
-    private static readonly string[] ShortMonthNames =
-    [
-        "janv.", "févr.", "mars", "avr.", "mai", "juin",
-        "juil.", "août", "sept.", "oct.", "nov.", "déc."
-    ];
-
     /// <summary>
     /// Returns the start of the period that contains a local date and time.
     /// </summary>
@@ -49,7 +43,7 @@ public static class ProgressionPeriods
         };
 
     /// <summary>
-    /// Returns the full French label of a period, for the detail panel and the period table.
+    /// Returns the full French label of a period, for the summary, the detail panel and the period table.
     /// </summary>
     public static string Label(DateTime periodStart, ProgressionGranularity granularity) =>
         granularity switch
@@ -61,15 +55,8 @@ public static class ProgressionPeriods
         };
 
     /// <summary>
-    /// Returns the short French label of a period, for the date axis.
+    /// Returns the label of a period on the date axis: the start date as <c>dd/MM/yyyy</c>.
     /// </summary>
-    public static string AxisLabel(DateTime periodStart, ProgressionGranularity granularity) =>
-        granularity switch
-        {
-            ProgressionGranularity.Day or ProgressionGranularity.Week =>
-                periodStart.ToString("dd/MM", CultureInfo.InvariantCulture),
-            ProgressionGranularity.Month =>
-                $"{ShortMonthNames[periodStart.Month - 1]} {periodStart.ToString("yy", CultureInfo.InvariantCulture)}",
-            _ => periodStart.Year.ToString(CultureInfo.InvariantCulture)
-        };
+    public static string AxisLabel(DateTime periodStart) =>
+        periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
 }

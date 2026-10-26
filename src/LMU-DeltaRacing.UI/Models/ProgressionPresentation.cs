@@ -169,8 +169,7 @@ public static class ProgressionPresentation
             color,
             points,
             new ProgressionRecord(record.BestLap, record.StartedAt),
-            values.Length,
-            settings.Granularity);
+            values.Length);
     }
 
     private static IEnumerable<SessionResult> GetResults(IEnumerable<Session> sessions, string? userName)

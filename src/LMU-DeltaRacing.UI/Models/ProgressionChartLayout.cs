@@ -14,6 +14,7 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="Series">The visible series.</param>
 /// <param name="XTicks">The date axis ticks.</param>
 /// <param name="YTicks">The lap-time axis ticks.</param>
+/// <param name="EmptyPeriods">The runs of periods without any visible measure, marked on the date axis.</param>
 public sealed record ProgressionChartLayout(
     double Width,
     double Height,
@@ -23,12 +24,13 @@ public sealed record ProgressionChartLayout(
     double PlotBottom,
     IReadOnlyList<ProgressionSeriesLayout> Series,
     IReadOnlyList<ProgressionAxisTick> XTicks,
-    IReadOnlyList<ProgressionTimeTick> YTicks)
+    IReadOnlyList<ProgressionTimeTick> YTicks,
+    IReadOnlyList<ProgressionEmptyPeriod> EmptyPeriods)
 {
     private const double DefaultWidth = 1000;
     private const double DefaultHeight = 360;
     private const double MarginLeft = 72;
-    private const double MarginRight = 24;
+    private const double MarginRight = 44;
     private const double MarginTop = 16;
     private const double MarginBottom = 34;
     private const int MaximumXTicks = 10;
@@ -54,7 +56,7 @@ public sealed record ProgressionChartLayout(
         var visible = chart.Series.Where(series => !hiddenSeries.Contains(series.Key)).ToArray();
         if (visible.Length == 0)
         {
-            return new ProgressionChartLayout(DefaultWidth, DefaultHeight, plotLeft, plotRight, plotTop, plotBottom, [], [], []);
+            return new ProgressionChartLayout(DefaultWidth, DefaultHeight, plotLeft, plotRight, plotTop, plotBottom, [], [], [], []);
         }
 
         // With several cars, overlapping min-max bands would hide the lines: bands need a single car.
@@ -97,8 +99,27 @@ public sealed record ProgressionChartLayout(
         var tickStep = (int)Math.Ceiling(periods.Count / (double)MaximumXTicks);
         var xTicks = periods
             .Where((_, index) => index % tickStep == 0)
-            .Select(period => new ProgressionAxisTick(X(period), ProgressionPeriods.AxisLabel(period, granularity)))
+            .Select(period => new ProgressionAxisTick(X(period), ProgressionPeriods.AxisLabel(period)))
             .ToArray();
+
+        var measured = visible.SelectMany(series => series.Points).Select(point => point.PeriodStart).ToHashSet();
+        var emptyPeriods = new List<ProgressionEmptyPeriod>();
+        DateTime? runStart = null;
+        DateTime? runEnd = null;
+        foreach (var period in periods.Append(DateTime.MaxValue))
+        {
+            if (period != DateTime.MaxValue && !measured.Contains(period))
+            {
+                runStart ??= period;
+                runEnd = period;
+            }
+            else if (runStart is { } start && runEnd is { } end)
+            {
+                emptyPeriods.Add(new ProgressionEmptyPeriod(start, end, X(start), X(end)));
+                runStart = null;
+                runEnd = null;
+            }
+        }
 
         return new ProgressionChartLayout(
             DefaultWidth,
@@ -109,7 +130,8 @@ public sealed record ProgressionChartLayout(
             plotBottom,
             seriesLayouts,
             xTicks,
-            yTicks);
+            yTicks,
+            emptyPeriods);
     }
 
     /// <summary>
@@ -127,42 +149,14 @@ public sealed record ProgressionChartLayout(
         var points = series.Points
             .Select(point => new ProgressionPointLayout(point, x(point.PeriodStart), y(point.Value)))
             .ToArray();
-        var byPeriod = points.ToDictionary(point => point.Point.PeriodStart);
-        var segments = series.Segments;
 
-        var linePath = string.Join(
-            " ",
-            segments
-                .Where(segment => !segment.IsGap)
-                .Select(segment => $"M{Format(byPeriod[segment.From.PeriodStart].X)} {Format(byPeriod[segment.From.PeriodStart].Y)} L{Format(byPeriod[segment.To.PeriodStart].X)} {Format(byPeriod[segment.To.PeriodStart].Y)}"));
+        // Periods without session do not break the line or the band: they are marked on the date axis instead.
+        var linePath = points.Length < 2
+            ? string.Empty
+            : $"M{string.Join(" L", points.Select(point => $"{Format(point.X)} {Format(point.Y)}"))}";
+        IReadOnlyList<string> bands = showsBand ? [CreateBandPath(points, y)] : [];
 
-        // A period without session keeps the last known value: a horizontal step, then a vertical jump.
-        var gapPath = string.Join(
-            " ",
-            segments
-                .Where(segment => segment.IsGap)
-                .Select(segment => $"M{Format(byPeriod[segment.From.PeriodStart].X)} {Format(byPeriod[segment.From.PeriodStart].Y)} H{Format(byPeriod[segment.To.PeriodStart].X)} V{Format(byPeriod[segment.To.PeriodStart].Y)}"));
-
-        var bands = new List<string>();
-        if (showsBand)
-        {
-            // Bands are drawn over runs of consecutive periods only; a gap carries no measure.
-            var run = new List<ProgressionPointLayout> { points[0] };
-            foreach (var segment in segments)
-            {
-                if (segment.IsGap)
-                {
-                    bands.Add(CreateBandPath(run, y));
-                    run = [];
-                }
-
-                run.Add(byPeriod[segment.To.PeriodStart]);
-            }
-
-            bands.Add(CreateBandPath(run, y));
-        }
-
-        return new ProgressionSeriesLayout(series, points, linePath, gapPath, bands, y(series.Record.Time), showsBand);
+        return new ProgressionSeriesLayout(series, points, linePath, bands, y(series.Record.Time), showsBand);
     }
 
     private static string CreateBandPath(IReadOnlyList<ProgressionPointLayout> run, Func<TimeSpan, double> y)
@@ -195,19 +189,26 @@ public sealed record ProgressionChartLayout(
 /// </summary>
 /// <param name="Series">The series.</param>
 /// <param name="Points">The position of each period.</param>
-/// <param name="LinePath">The solid links between consecutive periods.</param>
-/// <param name="GapPath">The dotted steps over periods without session.</param>
-/// <param name="BandPaths">The min-max bands, one per run of consecutive periods; a single period is a vertical line.</param>
+/// <param name="LinePath">The solid line through every period, empty with a single period.</param>
+/// <param name="BandPaths">The min-max band of the whole series, when drawn; a single period is a vertical line.</param>
 /// <param name="RecordY">The height of the record line.</param>
 /// <param name="ShowsBand">Whether the min-max band is drawn.</param>
 public sealed record ProgressionSeriesLayout(
     ProgressionSeries Series,
     IReadOnlyList<ProgressionPointLayout> Points,
     string LinePath,
-    string GapPath,
     IReadOnlyList<string> BandPaths,
     double RecordY,
     bool ShowsBand);
+
+/// <summary>
+/// Consecutive periods without any visible measure, between the first and the last measured period.
+/// </summary>
+/// <param name="Start">The first empty period.</param>
+/// <param name="End">The last empty period, equal to <paramref name="Start"/> for a single period.</param>
+/// <param name="X1">The horizontal position of the first empty period.</param>
+/// <param name="X2">The horizontal position of the last empty period.</param>
+public sealed record ProgressionEmptyPeriod(DateTime Start, DateTime End, double X1, double X2);
 
 /// <summary>
 /// The position of one period on the chart.

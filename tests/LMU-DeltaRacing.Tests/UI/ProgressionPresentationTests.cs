@@ -35,7 +35,9 @@ public sealed class ProgressionPresentationTests
         ProgressionPeriods.Label(new DateTime(2026, 10, 5), ProgressionGranularity.Week).Should().Be("semaine du 05/10/2026");
         ProgressionPeriods.Label(new DateTime(2026, 10, 7), ProgressionGranularity.Day).Should().Be("07/10/2026");
         ProgressionPeriods.Label(new DateTime(2026, 1, 1), ProgressionGranularity.Year).Should().Be("2026");
-        ProgressionPeriods.AxisLabel(new DateTime(2026, 2, 1), ProgressionGranularity.Month).Should().Be("févr. 26");
+        ProgressionPeriods.AxisLabel(new DateTime(2026, 2, 1)).Should().Be("01/02/2026");
+        ProgressionPeriods.AxisLabel(new DateTime(2026, 10, 5)).Should().Be("05/10/2026");
+        ProgressionPeriods.AxisLabel(new DateTime(2026, 1, 1)).Should().Be("01/01/2026");
     }
 
     [TestMethod]
@@ -132,20 +134,26 @@ public sealed class ProgressionPresentationTests
     }
 
     [TestMethod]
-    public void Segments_mark_periods_without_session_as_gaps()
+    public void Layout_links_every_period_with_a_solid_line_and_marks_periods_without_session()
     {
         var sessions = new[]
         {
             Session("Race", "2026-01-10T20:30:00Z", 103),
             Session("Race", "2026-02-10T20:30:00Z", 102),
-            Session("Race", "2026-04-10T20:30:00Z", 101)
+            Session("Race", "2026-05-10T20:30:00Z", 101),
+            Session("Race", "2026-07-10T20:30:00Z", 100)
         };
+        var chart = Create(sessions, ProgressionSettings.Default);
 
-        var series = Create(sessions, ProgressionSettings.Default).Series[0];
+        var layout = ProgressionChartLayout.Create(chart, []);
 
-        series.Segments.Select(segment => segment.IsGap).Should().Equal(false, true);
-        series.Segments[1].From.PeriodStart.Should().Be(new DateTime(2026, 2, 1));
-        series.Segments[1].To.PeriodStart.Should().Be(new DateTime(2026, 4, 1));
+        var race = layout.Series.Should().ContainSingle().Which;
+        race.LinePath.Split('L').Should().HaveCount(4, "the line goes through the four periods without a break");
+        race.BandPaths.Should().ContainSingle("the band follows the whole series");
+        layout.EmptyPeriods.Select(period => (period.Start, period.End)).Should().Equal(
+            (new DateTime(2026, 3, 1), new DateTime(2026, 4, 1)),
+            (new DateTime(2026, 6, 1), new DateTime(2026, 6, 1)));
+        layout.EmptyPeriods[0].X1.Should().BeLessThan(layout.EmptyPeriods[0].X2);
     }
 
     [TestMethod]
@@ -173,7 +181,6 @@ public sealed class ProgressionPresentationTests
         var series = Create([Session("Race", "2026-01-10T20:30:00Z", 103)], ProgressionSettings.Default).Series[0];
 
         series.Gain.Should().BeNull();
-        series.Segments.Should().BeEmpty();
     }
 
     [TestMethod]
@@ -236,7 +243,7 @@ public sealed class ProgressionPresentationTests
     }
 
     [TestMethod]
-    public void Layout_scales_visible_series_and_draws_gaps_as_dotted_steps()
+    public void Layout_scales_the_visible_series()
     {
         var sessions = new[]
         {
@@ -255,7 +262,6 @@ public sealed class ProgressionPresentationTests
         race.Points.Last().X.Should().Be(layout.PlotRight);
         race.Points.Last().Y.Should().BeGreaterThan(race.Points.First().Y, "a faster lap is drawn lower");
         race.LinePath.Should().StartWith("M");
-        race.GapPath.Should().Contain("H").And.Contain("V");
         layout.YTicks.Should().NotBeEmpty();
         layout.YTicks.Min(tick => tick.Time).Should().BeGreaterThan(Seconds(90), "the hidden qualifying series does not stretch the scale");
         layout.XTicks.Should().NotBeEmpty();

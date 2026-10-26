@@ -155,6 +155,12 @@ else
                         <line class="chart-grid" x1="@Format(layout.PlotLeft)" x2="@Format(layout.PlotRight)" y1="@Format(tick.Y)" y2="@Format(tick.Y)" />
                         @AxisLabel(layout.PlotLeft - 8, tick.Y + 4, "end", tick.Label)
                     }
+                    @foreach (var empty in layout.EmptyPeriods)
+                    {
+                        <rect class="chart-empty" x="@Format(Math.Min(empty.X1, empty.X2) - 3)" y="@Format(layout.PlotBottom - 4)" width="@Format(Math.Abs(empty.X2 - empty.X1) + 6)" height="4">
+                            <title>@($"Sans session : {ProgressionPeriods.Label(empty.Start, settings.Granularity)}{(empty.End == empty.Start ? string.Empty : $" → {ProgressionPeriods.Label(empty.End, settings.Granularity)}")}")</title>
+                        </rect>
+                    }
                     @foreach (var tick in layout.XTicks)
                     {
                         <line class="chart-grid chart-grid-x" x1="@Format(tick.X)" x2="@Format(tick.X)" y1="@Format(layout.PlotTop)" y2="@Format(layout.PlotBottom)" />
@@ -170,10 +176,6 @@ else
                             <line class="chart-record" x1="@Format(layout.PlotLeft)" x2="@Format(layout.PlotRight)" y1="@Format(series.RecordY)" y2="@Format(series.RecordY)" stroke="@series.Series.Color">
                                 <title>Record @series.Series.Label : @ProgressionChartLayout.FormatTime(series.Series.Record.Time)</title>
                             </line>
-                            @if (series.GapPath.Length > 0)
-                            {
-                                <path class="chart-gap" d="@series.GapPath" stroke="@series.Series.Color" />
-                            }
                             @if (series.LinePath.Length > 0)
                             {
                                 <path class="chart-line" d="@series.LinePath" stroke="@series.Series.Color" />
@@ -218,7 +220,7 @@ else
                         @series.Label <span>(@series.SessionCount @(series.SessionCount > 1 ? "sessions" : "session"))</span>
                     </button>
                 }
-                <span class="legend-note">━ mesure · ┄ période sans session · ╌ record · ▒ min-max</span>
+                <span class="legend-note">━ mesure · ╌ record · ▒ min-max · <i class="legend-empty" aria-hidden="true"></i> période sans session</span>
             </div>
 
             <div class="progression-table">

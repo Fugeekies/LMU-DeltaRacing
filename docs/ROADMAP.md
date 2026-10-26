@@ -155,7 +155,7 @@ Spécification : [`UISpec/Progression.template.md`](UISpec/Progression.template.
 - [x] **Agrégat de la ligne** réglable : min, max, moyenne (par défaut). Une bande semi-transparente va du min au max de la période.
 - [x] **Mode voitures mélangées** (par défaut) : une courbe Qualification et une courbe Course.
 - [x] **Mode une courbe par voiture** (`CarType` exact, une variante Evo compte comme une voiture distincte) : on choisit Course (par défaut) ou Qualification, et chaque voiture a sa couleur.
-- [x] Axe des dates à l'échelle réelle. Une période sans session prolonge la dernière valeur connue par un palier horizontal en pointillé, qui ne compte pas comme une mesure.
+- [x] Axe des dates à l'échelle réelle. La ligne et la bande min-max traversent les périodes sans session en trait plein ; ces périodes sont marquées par un repère grisé sur l'axe des dates.
 - [x] Graphique en SVG généré en C# (composant Razor, aucune dépendance). Survoler ou cliquer un point affiche ses valeurs (min, moyenne, max, sessions) dans un panneau à droite du graphique ; par défaut, le panneau montre la dernière période de chaque courbe.
 - [x] Réglages (granularité, agrégat, mode, type de session) enregistrés dans `appsettings.json` (section `LMU:Progression`).
 - [x] Icône 📈 dans l'en-tête de chaque circuit de « Mes courses » : elle ouvre Progression sur ce circuit, avec la dernière catégorie roulée sur ce circuit.

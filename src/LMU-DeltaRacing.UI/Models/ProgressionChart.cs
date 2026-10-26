@@ -16,15 +16,13 @@ public sealed record ProgressionChart(IReadOnlyList<ProgressionSeries> Series, P
 /// <param name="Points">One point per period with at least one measure, in chronological order.</param>
 /// <param name="Record">The fastest best lap of the series.</param>
 /// <param name="SessionCount">The number of sessions measured.</param>
-/// <param name="Granularity">The period length.</param>
 public sealed record ProgressionSeries(
     string Key,
     string Label,
     string Color,
     IReadOnlyList<ProgressionPoint> Points,
     ProgressionRecord Record,
-    int SessionCount,
-    ProgressionGranularity Granularity)
+    int SessionCount)
 {
     /// <summary>
     /// Gets the first period of the series.
@@ -41,17 +39,6 @@ public sealed record ProgressionSeries(
     /// Unknown with a single period.
     /// </summary>
     public TimeSpan? Gain => Points.Count < 2 ? null : Last.Value - First.Value;
-
-    /// <summary>
-    /// Gets the links between consecutive points. A link spanning periods without session is a gap.
-    /// </summary>
-    public IReadOnlyList<ProgressionSegment> Segments =>
-        Points
-            .Zip(Points.Skip(1), (from, to) => new ProgressionSegment(
-                from,
-                to,
-                ProgressionPeriods.Next(from.PeriodStart, Granularity) != to.PeriodStart))
-            .ToArray();
 }
 
 /// <summary>
@@ -70,14 +57,6 @@ public sealed record ProgressionPoint(
     TimeSpan Max,
     TimeSpan Value,
     int SessionCount);
-
-/// <summary>
-/// A link between two consecutive points of a series.
-/// </summary>
-/// <param name="From">The earlier point.</param>
-/// <param name="To">The later point.</param>
-/// <param name="IsGap">Whether periods without session separate the two points.</param>
-public sealed record ProgressionSegment(ProgressionPoint From, ProgressionPoint To, bool IsGap);
 
 /// <summary>
 /// The fastest best lap of a series.

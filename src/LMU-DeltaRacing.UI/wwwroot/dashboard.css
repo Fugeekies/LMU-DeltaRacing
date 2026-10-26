@@ -1858,11 +1858,11 @@ p.home-rate {
     stroke-width: 1.5;
 }
 
-.chart-gap {
-    fill: none;
-    stroke-dasharray: 5 5;
-    stroke-width: 2;
+.chart-empty {
+    fill: var(--muted);
+    opacity: 0.45;
 }
+
 
 .chart-line {
     fill: none;
@@ -1991,4 +1991,15 @@ p.home-rate {
     content: " · tracée";
     color: var(--accent);
     font-size: 0.68rem;
+}
+
+.legend-empty {
+    display: inline-block;
+    width: 1rem;
+    height: 4px;
+    margin: 0 0.15rem;
+    border-radius: 1px;
+    background: var(--muted);
+    opacity: 0.6;
+    vertical-align: middle;
 }
