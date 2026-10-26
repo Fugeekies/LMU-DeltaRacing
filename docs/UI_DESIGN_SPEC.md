@@ -44,6 +44,13 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 
 ---
 
+### 5. Courbes du graphique de Progression
+* **Voitures mélangées :** Course en rouge LMU (`#e11d48`), Qualification en cyan (`#38bdf8`).
+* **Une courbe par voiture :** `#38bdf8`, `#f97316`, `#a3e635`, `#f472b6`, `#facc15`, `#2dd4bf`, `#c084fc`, `#94a3b8`, attribuées par ordre alphabétique de voiture puis réutilisées en boucle.
+* Le violet, le vert et le rouge WEC ci-dessus gardent leur sens (meilleur de la classe, gain, perte) et ne servent pas aux courbes. Seul l'écart du résumé chiffré utilise le vert (plus rapide) ou le rouge (plus lent).
+
+---
+
 ## 📂 Navigation & Templates des Vues (`UISpec/`)
 
 La structure de navigation est désormais **horizontale** et positionnée en haut de page. 
@@ -54,7 +61,7 @@ Les maquettes visuelles ASCII détaillées ainsi que les règles métiers spéci
 UISpec/
 ├── Home.template.md           --> Spécification de la vue "Accueil"
 ├── MyRaces.template.md        --> Spécification de la vue "Mes Courses"
-├── Progression.template.md    --> Spécification de la vue "Progression" (à implémenter)
+├── Progression.template.md    --> Spécification de la vue "Progression"
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
 └── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
@@ -71,7 +78,7 @@ UISpec/
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
    * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 
-3. **📈 Progression (`/progression`)** *(à implémenter, voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
+3. **📈 Progression (`/progression`)** *(Voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
    * Évolution des meilleurs tours du pilote sur un circuit et une catégorie, agrégés par jour, semaine, mois ou année (min, max, moyenne).
    * Courbes Qualification et Course toutes voitures confondues, ou une courbe par voiture ; accessible depuis l'icône 📈 des blocs circuit de « Mes courses ».
 

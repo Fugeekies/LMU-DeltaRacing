@@ -47,6 +47,11 @@ public sealed class DashboardSettingsStoreTests
             store.SaveLoadPracticeSessions(true);
             store.SaveDriverMerges([new DriverMerge("Old Name", "New Name")]);
             store.SaveUserName("Driver One");
+            store.SaveProgressionSettings(new ProgressionSettings(
+                ProgressionGranularity.Week,
+                ProgressionAggregate.Max,
+                ProgressionMode.PerCar,
+                ProgressionSession.Qualifying));
 
             configuration["LMU:ResultsDirectory"].Should().Be(@"C:\LMU\Results");
             configuration["LMU:UserName"].Should().Be("Driver One");
@@ -54,6 +59,12 @@ public sealed class DashboardSettingsStoreTests
             configuration.GetValue<bool>("LMU:LoadPracticeSessions").Should().BeTrue();
             configuration["LMU:DriverMerges:0:From"].Should().Be("Old Name");
             configuration["LMU:DriverMerges:0:To"].Should().Be("New Name");
+            ProgressionSettings.Load(configuration).Should().Be(new ProgressionSettings(
+                ProgressionGranularity.Week,
+                ProgressionAggregate.Max,
+                ProgressionMode.PerCar,
+                ProgressionSession.Qualifying));
+            configuration["LMU:Progression:Granularity"].Should().Be("Week");
             configuration["LMU:LogFilePath"].Should().Be("existing.log");
             configuration.GetValue<bool>("LMU:OpenBrowser").Should().BeFalse();
             configuration["Logging:LogLevel:Default"].Should().Be("Warning");
