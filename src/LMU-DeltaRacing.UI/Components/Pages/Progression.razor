@@ -1,0 +1,485 @@
+@page "/progression"
+@implements IDisposable
+@inject IConfiguration Configuration
+@inject DashboardDataService DashboardData
+@inject DashboardSettingsStore SettingsStore
+
+<PageTitle>Progression | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">HISTORIQUE &amp; PROGRESSION</p>
+        <h1>Progression</h1>
+        <p class="page-subtitle">Évolution de vos meilleurs tours sur un circuit et dans une catégorie.</p>
+    </div>
+</section>
+
+@if (state.IsLoading && state.Sessions.Count == 0)
+{
+    <section class="panel empty-state" aria-live="polite">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Chargement de l’historique des courses…</p>
+    </section>
+}
+else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <p>@state.ErrorMessage</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
+        </div>
+    </section>
+}
+else if (circuits.Count == 0)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucune course disponible</h3>
+        <p>Les sessions de qualification et de course du pilote sélectionné apparaîtront ici après leur import.</p>
+    </section>
+}
+else
+{
+    var circuit = GetSelectedCircuit();
+    var chart = ProgressionPresentation.Create(
+        state.Sessions,
+        state.UserName,
+        circuit.TrackVenue,
+        circuit.TrackCourse,
+        selectedCategory,
+        settings,
+        TimeZoneInfo.Local);
+    var layout = ProgressionChartLayout.Create(chart, hiddenSeries);
+
+    <section class="panel progression-panel">
+        <div class="race-filters progression-filters" aria-label="Circuit et catégorie">
+            <label class="race-filter">
+                <span>CIRCUIT</span>
+                <select value="@circuit.Key" @onchange="OnCircuitChanged" aria-label="Choisir un circuit">
+                    @foreach (var option in circuits)
+                    {
+                        <option value="@option.Key">@option.Label</option>
+                    }
+                </select>
+            </label>
+            <label class="race-filter">
+                <span>CATÉGORIE</span>
+                <select value="@selectedCategory" @onchange="OnCategoryChanged" aria-label="Choisir une catégorie">
+                    @foreach (var category in circuit.Categories)
+                    {
+                        <option value="@category">@category</option>
+                    }
+                </select>
+            </label>
+        </div>
+
+        <div class="progression-settings" aria-label="Réglages du graphique">
+            <div class="segmented-group">
+                <span>PÉRIODE</span>
+                <div class="segmented" role="group" aria-label="Période">
+                    @foreach (var (value, text) in Granularities)
+                    {
+                        <button type="button" class="@(settings.Granularity == value ? "is-active" : null)" aria-pressed="@(settings.Granularity == value ? "true" : "false")"
+                                @onclick="() => UpdateSettings(settings with { Granularity = value })">@text</button>
+                    }
+                </div>
+            </div>
+            <div class="segmented-group">
+                <span>VALEUR TRACÉE</span>
+                <div class="segmented" role="group" aria-label="Valeur tracée">
+                    @foreach (var (value, text) in Aggregates)
+                    {
+                        <button type="button" class="@(settings.Aggregate == value ? "is-active" : null)" aria-pressed="@(settings.Aggregate == value ? "true" : "false")"
+                                @onclick="() => UpdateSettings(settings with { Aggregate = value })">@text</button>
+                    }
+                </div>
+            </div>
+            <div class="segmented-group">
+                <span>AFFICHAGE</span>
+                <div class="segmented" role="group" aria-label="Affichage">
+                    @foreach (var (value, text) in Modes)
+                    {
+                        <button type="button" class="@(settings.Mode == value ? "is-active" : null)" aria-pressed="@(settings.Mode == value ? "true" : "false")"
+                                @onclick="() => UpdateSettings(settings with { Mode = value })">@text</button>
+                    }
+                </div>
+            </div>
+            @if (settings.Mode == ProgressionMode.PerCar)
+            {
+                <div class="segmented-group">
+                    <span>SESSION</span>
+                    <div class="segmented" role="group" aria-label="Session">
+                        @foreach (var (value, text) in SessionTypes)
+                        {
+                            <button type="button" class="@(settings.Session == value ? "is-active" : null)" aria-pressed="@(settings.Session == value ? "true" : "false")"
+                                    @onclick="() => UpdateSettings(settings with { Session = value })">@text</button>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        @if (chart.Series.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Aucun tour chronométré pour ce circuit et cette catégorie.</p>
+            </div>
+        }
+        else
+        {
+            @if (layout.Series.Count > 0)
+            {
+                <div class="progression-summary">
+                    @foreach (var series in layout.Series.Select(series => series.Series))
+                    {
+                        <div class="progression-summary-row">
+                            <span class="progression-series-name">
+                                <i class="home-swatch" style="background: @series.Color" aria-hidden="true"></i>@series.Label
+                            </span>
+                            <span><small>RECORD</small> <strong>@ProgressionChartLayout.FormatTime(series.Record.Time)</strong> <em>(@series.Record.At.ToLocalTime().ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture))</em></span>
+                            <span><small>DÉBUT</small> <strong>@ProgressionChartLayout.FormatTime(series.First.Value)</strong> <em>(@ProgressionPeriods.Label(series.First.PeriodStart, settings.Granularity))</em></span>
+                            <span><small>AUJOURD’HUI</small> <strong>@ProgressionChartLayout.FormatTime(series.Last.Value)</strong> <em>(@ProgressionPeriods.Label(series.Last.PeriodStart, settings.Granularity))</em></span>
+                            <span>@RenderGain(series.Gain)</span>
+                        </div>
+                    }
+                </div>
+            }
+
+            <div class="progression-chart-area">
+                <svg class="progression-chart" viewBox="0 0 @Format(layout.Width) @Format(layout.Height)" role="img"
+                     aria-label="@($"Évolution des meilleurs tours par {GetGranularityLabel(settings.Granularity)}")">
+                    @foreach (var tick in layout.YTicks)
+                    {
+                        <line class="chart-grid" x1="@Format(layout.PlotLeft)" x2="@Format(layout.PlotRight)" y1="@Format(tick.Y)" y2="@Format(tick.Y)" />
+                        @AxisLabel(layout.PlotLeft - 8, tick.Y + 4, "end", tick.Label)
+                    }
+                    @foreach (var empty in layout.EmptyPeriods)
+                    {
+                        <rect class="chart-empty" x="@Format(Math.Min(empty.X1, empty.X2) - 3)" y="@Format(layout.PlotBottom - 4)" width="@Format(Math.Abs(empty.X2 - empty.X1) + 6)" height="4">
+                            <title>@($"Sans session : {ProgressionPeriods.Label(empty.Start, settings.Granularity)}{(empty.End == empty.Start ? string.Empty : $" → {ProgressionPeriods.Label(empty.End, settings.Granularity)}")}")</title>
+                        </rect>
+                    }
+                    @foreach (var tick in layout.XTicks)
+                    {
+                        <line class="chart-grid chart-grid-x" x1="@Format(tick.X)" x2="@Format(tick.X)" y1="@Format(layout.PlotTop)" y2="@Format(layout.PlotBottom)" />
+                        @AxisLabel(tick.X, layout.PlotBottom + 22, "middle", tick.Label)
+                    }
+                    @foreach (var series in layout.Series)
+                    {
+                        <g class="chart-series">
+                            @foreach (var band in series.BandPaths)
+                            {
+                                <path class="chart-band" d="@band" fill="@series.Series.Color" stroke="@series.Series.Color" />
+                            }
+                            <line class="chart-record" x1="@Format(layout.PlotLeft)" x2="@Format(layout.PlotRight)" y1="@Format(series.RecordY)" y2="@Format(series.RecordY)" stroke="@series.Series.Color">
+                                <title>Record @series.Series.Label : @ProgressionChartLayout.FormatTime(series.Series.Record.Time)</title>
+                            </line>
+                            @if (series.LinePath.Length > 0)
+                            {
+                                <path class="chart-line" d="@series.LinePath" stroke="@series.Series.Color" />
+                            }
+                            @foreach (var point in series.Points)
+                            {
+                                var isSelected = IsSelected(series.Series, point.Point);
+                                <circle class="chart-point @(isSelected ? "is-selected" : null)" cx="@Format(point.X)" cy="@Format(point.Y)" r="@(isSelected ? 6 : 4)"
+                                        fill="@series.Series.Color" tabindex="0"
+                                        aria-label="@($"{series.Series.Label}, {ProgressionPeriods.Label(point.Point.PeriodStart, settings.Granularity)} : {ProgressionChartLayout.FormatTime(point.Point.Value)}")"
+                                        @onmouseenter="() => SelectPoint(series.Series, point.Point)"
+                                        @onfocus="() => SelectPoint(series.Series, point.Point)"
+                                        @onclick="() => SelectPoint(series.Series, point.Point)" />
+                            }
+                        </g>
+                    }
+                </svg>
+
+                <aside class="progression-detail" aria-live="polite">
+                    @if (GetSelectedPoint(layout) is { } selected)
+                    {
+                        <p class="summary-label">@ProgressionPeriods.Label(selected.Point.PeriodStart, settings.Granularity).ToUpperInvariant()</p>
+                        @RenderDetail(selected.Series, selected.Point)
+                    }
+                    else
+                    {
+                        <p class="summary-label">DERNIÈRE PÉRIODE</p>
+                        @foreach (var series in layout.Series.Select(series => series.Series))
+                        {
+                            @RenderDetail(series, series.Last, showPeriod: true)
+                        }
+                    }
+                </aside>
+            </div>
+
+            <div class="progression-legend" aria-label="Légende du graphique">
+                @foreach (var series in chart.Series)
+                {
+                    var isHidden = hiddenSeries.Contains(series.Key);
+                    <button type="button" class="legend-item @(isHidden ? "is-hidden" : null)" aria-pressed="@(isHidden ? "false" : "true")" @onclick="() => ToggleSeries(series.Key)">
+                        <i class="home-swatch" style="background: @series.Color" aria-hidden="true"></i>
+                        @series.Label <span>(@series.SessionCount @(series.SessionCount > 1 ? "sessions" : "session"))</span>
+                    </button>
+                }
+                <span class="legend-note">━ mesure · ╌ record · ▒ min-max · <i class="legend-empty" aria-hidden="true"></i> période sans session</span>
+            </div>
+
+            <div class="progression-table">
+                <button type="button" class="button button-secondary" aria-expanded="@(showsTable ? "true" : "false")" @onclick="() => showsTable = !showsTable">
+                    @(showsTable ? "Masquer le détail des périodes" : "Afficher le détail des périodes")
+                </button>
+                @if (showsTable)
+                {
+                    <div class="table-scroll">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">PÉRIODE</th>
+                                    <th scope="col">COURBE</th>
+                                    <th scope="col" class="numeric-cell">MIN</th>
+                                    <th scope="col" class="numeric-cell">MOYENNE</th>
+                                    <th scope="col" class="numeric-cell">MAX</th>
+                                    <th scope="col" class="numeric-cell">SESSIONS</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var row in layout.Series
+                                    .SelectMany(series => series.Series.Points.Select(point => (series.Series, Point: point)))
+                                    .OrderByDescending(row => row.Point.PeriodStart)
+                                    .ThenBy(row => row.Series.Label, StringComparer.OrdinalIgnoreCase))
+                                {
+                                    <tr>
+                                        <td>@ProgressionPeriods.Label(row.Point.PeriodStart, settings.Granularity)</td>
+                                        <td><i class="home-swatch" style="background: @row.Series.Color" aria-hidden="true"></i>@row.Series.Label</td>
+                                        <td class="numeric-cell">@ProgressionChartLayout.FormatTime(row.Point.Min)</td>
+                                        <td class="numeric-cell">@ProgressionChartLayout.FormatTime(row.Point.Average)</td>
+                                        <td class="numeric-cell">@ProgressionChartLayout.FormatTime(row.Point.Max)</td>
+                                        <td class="numeric-cell">@row.Point.SessionCount</td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                }
+            </div>
+        }
+    </section>
+}
+
+@code {
+    private static readonly (ProgressionGranularity Value, string Text)[] Granularities =
+        [(ProgressionGranularity.Day, "Jour"), (ProgressionGranularity.Week, "Semaine"), (ProgressionGranularity.Month, "Mois"), (ProgressionGranularity.Year, "Année")];
+
+    private static readonly (ProgressionAggregate Value, string Text)[] Aggregates =
+        [(ProgressionAggregate.Min, "Min"), (ProgressionAggregate.Average, "Moyenne"), (ProgressionAggregate.Max, "Max")];
+
+    private static readonly (ProgressionMode Value, string Text)[] Modes =
+        [(ProgressionMode.MixedCars, "Voitures mélangées"), (ProgressionMode.PerCar, "Une courbe par voiture")];
+
+    private static readonly (ProgressionSession Value, string Text)[] SessionTypes =
+        [(ProgressionSession.Race, "Course"), (ProgressionSession.Qualifying, "Qualification")];
+
+    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyList<ProgressionCircuit> circuits = [];
+    private ProgressionSettings settings = ProgressionSettings.Default;
+    private string selectedCircuitKey = string.Empty;
+    private string selectedCategory = string.Empty;
+    private readonly HashSet<string> hiddenSeries = new(StringComparer.Ordinal);
+    private (string SeriesKey, DateTime PeriodStart)? selectedPoint;
+    private bool showsTable;
+
+    /// <summary>
+    /// Gets or sets the venue to open, as linked from « Mes courses ».
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "venue")]
+    public string? Venue { get; set; }
+
+    /// <summary>
+    /// Gets or sets the layout to open, as linked from « Mes courses ».
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "course")]
+    public string? Course { get; set; }
+
+    /// <summary>
+    /// Gets or sets the category to open, as linked from « Mes courses ».
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "category")]
+    public string? Category { get; set; }
+
+    protected override void OnInitialized()
+    {
+        settings = ProgressionSettings.Load(Configuration);
+        DashboardData.StateChanged += OnDashboardStateChanged;
+        UpdateState();
+    }
+
+    protected override void OnParametersSet()
+    {
+        if (circuits.FirstOrDefault(circuit =>
+                string.Equals(circuit.TrackVenue, Venue, StringComparison.OrdinalIgnoreCase)
+                && string.Equals(circuit.TrackCourse, Course, StringComparison.OrdinalIgnoreCase)) is { } linked)
+        {
+            SelectCircuit(linked, Category);
+        }
+    }
+
+    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+
+    private void OnDashboardStateChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            UpdateState();
+            StateHasChanged();
+        });
+
+    private void UpdateState()
+    {
+        state = DashboardData.Snapshot;
+        circuits = ProgressionPresentation.GetCircuits(state.Sessions, state.UserName);
+
+        // Live imports keep the current selection; it is replaced only when it no longer exists.
+        if (circuits.FirstOrDefault(circuit => circuit.Key == selectedCircuitKey) is { } current)
+        {
+            SelectCircuit(current, selectedCategory);
+        }
+        else if (ProgressionPresentation.GetDefaultSelection(state.Sessions, state.UserName) is { } selection
+                 && circuits.FirstOrDefault(circuit =>
+                     string.Equals(circuit.TrackVenue, selection.TrackVenue, StringComparison.OrdinalIgnoreCase)
+                     && string.Equals(circuit.TrackCourse, selection.TrackCourse, StringComparison.OrdinalIgnoreCase)) is { } latest)
+        {
+            SelectCircuit(latest, selection.Category);
+        }
+    }
+
+    private ProgressionCircuit GetSelectedCircuit() =>
+        circuits.FirstOrDefault(circuit => circuit.Key == selectedCircuitKey) ?? circuits[0];
+
+    private void SelectCircuit(ProgressionCircuit circuit, string? category)
+    {
+        if (circuit.Key != selectedCircuitKey)
+        {
+            ResetChartState();
+        }
+
+        selectedCircuitKey = circuit.Key;
+        var nextCategory = category is not null && circuit.Categories.Contains(category) ? category : circuit.LatestCategory;
+        if (nextCategory != selectedCategory)
+        {
+            ResetChartState();
+        }
+
+        selectedCategory = nextCategory;
+    }
+
+    private void OnCircuitChanged(ChangeEventArgs args)
+    {
+        if (circuits.FirstOrDefault(circuit => circuit.Key == args.Value?.ToString()) is { } circuit)
+        {
+            SelectCircuit(circuit, selectedCategory);
+        }
+    }
+
+    private void OnCategoryChanged(ChangeEventArgs args) =>
+        SelectCircuit(GetSelectedCircuit(), args.Value?.ToString());
+
+    private void UpdateSettings(ProgressionSettings next)
+    {
+        if (next == settings)
+        {
+            return;
+        }
+
+        if (next.Mode != settings.Mode || next.Session != settings.Session)
+        {
+            hiddenSeries.Clear();
+        }
+
+        settings = next;
+        selectedPoint = null;
+        SettingsStore.SaveProgressionSettings(settings);
+    }
+
+    private void ResetChartState()
+    {
+        hiddenSeries.Clear();
+        selectedPoint = null;
+    }
+
+    private void ToggleSeries(string key)
+    {
+        if (!hiddenSeries.Remove(key))
+        {
+            hiddenSeries.Add(key);
+        }
+
+        selectedPoint = null;
+    }
+
+    private void SelectPoint(ProgressionSeries series, ProgressionPoint point) =>
+        selectedPoint = (series.Key, point.PeriodStart);
+
+    private bool IsSelected(ProgressionSeries series, ProgressionPoint point) =>
+        selectedPoint is { } selected && selected.SeriesKey == series.Key && selected.PeriodStart == point.PeriodStart;
+
+    private (ProgressionSeries Series, ProgressionPoint Point)? GetSelectedPoint(ProgressionChartLayout layout)
+    {
+        if (selectedPoint is not { } selected)
+        {
+            return null;
+        }
+
+        var series = layout.Series.Select(series => series.Series).FirstOrDefault(series => series.Key == selected.SeriesKey);
+        var point = series?.Points.FirstOrDefault(point => point.PeriodStart == selected.PeriodStart);
+        return series is not null && point is not null ? (series, point) : null;
+    }
+
+    private RenderFragment RenderDetail(ProgressionSeries series, ProgressionPoint point, bool showPeriod = false) =>
+        @<div class="progression-detail-series">
+            <p class="progression-series-name">
+                <i class="home-swatch" style="background: @series.Color" aria-hidden="true"></i>@series.Label
+                @if (showPeriod)
+                {
+                    <em>@ProgressionPeriods.Label(point.PeriodStart, settings.Granularity)</em>
+                }
+            </p>
+            @* The row of the plotted value is highlighted: it is the point drawn on the line. *@
+            <dl>
+                <div class="@(settings.Aggregate == ProgressionAggregate.Min ? "is-plotted" : null)"><dt>Min</dt><dd>@ProgressionChartLayout.FormatTime(point.Min)</dd></div>
+                <div class="@(settings.Aggregate == ProgressionAggregate.Average ? "is-plotted" : null)"><dt>Moyenne</dt><dd>@ProgressionChartLayout.FormatTime(point.Average)</dd></div>
+                <div class="@(settings.Aggregate == ProgressionAggregate.Max ? "is-plotted" : null)"><dt>Max</dt><dd>@ProgressionChartLayout.FormatTime(point.Max)</dd></div>
+                <div><dt>Sessions</dt><dd>@point.SessionCount</dd></div>
+            </dl>
+        </div>;
+
+    private static RenderFragment RenderGain(TimeSpan? gain) =>
+        @<text>
+            @if (gain is { } value)
+            {
+                var text = string.Create(
+                    System.Globalization.CultureInfo.InvariantCulture,
+                    $"{(value > TimeSpan.Zero ? "+" : value < TimeSpan.Zero ? "−" : string.Empty)}{Math.Abs(value.TotalSeconds):0.000} s");
+                <strong class="@(value < TimeSpan.Zero ? "delta-gain" : value > TimeSpan.Zero ? "delta-loss" : null)">@text</strong>
+            }
+            else
+            {
+                <span class="progression-muted">une seule période</span>
+            }
+        </text>;
+
+    private static string GetGranularityLabel(ProgressionGranularity granularity) =>
+        granularity switch
+        {
+            ProgressionGranularity.Day => "jour",
+            ProgressionGranularity.Week => "semaine",
+            ProgressionGranularity.Year => "année",
+            _ => "mois"
+        };
+
+    /// <summary>
+    /// Writes an SVG axis label. Razor reserves the <c>text</c> tag, so the element is built as encoded markup.
+    /// </summary>
+    private static MarkupString AxisLabel(double x, double y, string anchor, string label) =>
+        new($"<text class=\"chart-axis-label\" x=\"{Format(x)}\" y=\"{Format(y)}\" text-anchor=\"{anchor}\">{System.Net.WebUtility.HtmlEncode(label)}</text>");
+
+    private static string Format(double value) =>
+        value.ToString("0.##", System.Globalization.CultureInfo.InvariantCulture);
+}

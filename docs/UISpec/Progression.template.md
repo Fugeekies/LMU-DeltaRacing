@@ -1,6 +1,6 @@
 ## 5. 📈 Menu : Progression (`Progression.razor`)
 
-> Spécification du jalon « UI : Menu "Progression" », arrêtée le 26/10/2026. La page n'est pas encore implémentée.
+> Spécification alignée sur le code au 26/10/2026 (`Progression.razor`, `ProgressionPresentation.cs`, `ProgressionChartLayout.cs`).
 
 ### Description
 Onglet `/progression`, placé juste après « Mes courses » dans la barre de navigation. Il trace l'évolution dans le temps des meilleurs tours du pilote sélectionné (voir Options), pour un circuit et une catégorie donnés. Les temps sont regroupés par période (jour, semaine, mois ou année) ; chaque période affiche le min, le max et la moyenne de ses meilleurs tours.
@@ -16,14 +16,18 @@ Onglet `/progression`, placé juste après « Mes courses » dans la barre de na
 * **Agrégats d'une période :** min, max et moyenne des mesures de la période. Le sélecteur « Valeur tracée » choisit celle que porte la ligne (moyenne par défaut) ; la bande semi-transparente va toujours du min au max.
 * **Modes d'affichage :**
   * **Voitures mélangées** (par défaut) : deux courbes, **Qualification** et **Course**, toutes voitures confondues. Chaque courbe a sa bande min-max.
-  * **Une courbe par voiture** : le sélecteur « Session » choisit Qualification **ou** Course (pas les deux). Une courbe par voiture, chacune de sa couleur. La bande min-max n'est dessinée que lorsqu'une seule courbe est visible, pour garder le graphique lisible.
+  * **Une courbe par voiture** : le sélecteur « Session » choisit Course (par défaut) **ou** Qualification (pas les deux). Une courbe par voiture, chacune de sa couleur. La bande min-max n'est dessinée que lorsqu'une seule courbe est visible, pour garder le graphique lisible.
 * **Légende :** sous le graphique, une entrée par courbe (couleur, nom, nombre de sessions). Un clic sur une entrée masque ou réaffiche la courbe.
-* **Axe des dates (X) :** à l'échelle réelle du temps, de la première à la dernière période ayant une mesure. Graduations adaptées à la granularité (jours, semaines, mois ou années).
+* **Axe des dates (X) :** à l'échelle réelle du temps, de la première à la dernière période ayant une mesure. Graduations sur les débuts de période (au plus une dizaine), libellées au format `dd/MM/yyyy`.
 * **Axe des temps (Y) :** temps au tour au format `m:ss.fff`, bornes calculées sur les données visibles avec une marge. Plus bas = plus rapide.
-* **Périodes sans session :** la courbe garde la dernière valeur connue par un **palier horizontal en pointillé** jusqu'à la période suivante qui a une mesure, puis un trait vertical en pointillé la ramène à cette valeur. Ce palier ne compte pas comme une mesure : pas de point, pas d'info-bulle, pas de bande. Deux périodes consécutives avec mesures sont reliées par un trait plein.
-* **Info-bulle d'un point :** période, type de session, voiture (en mode par voiture), valeur tracée, min, max, moyenne et nombre de sessions.
-* **Rendu :** SVG généré en C# par un composant Razor, sans bibliothèque JavaScript ni dépendance. Les calculs (périodes, agrégats, paliers, échelles) se font dans `Models/ProgressionPresentation.cs`, testé en MSTest.
-* **Couleurs des courbes :** palette proposée, à valider et à reporter dans `UI_DESIGN_SPEC.md` :
+* **Périodes sans session :** la ligne relie directement les deux périodes mesurées qui les encadrent, en trait plein, et la bande min-max suit toute la courbe sans interruption. Les périodes sans aucune mesure visible sont marquées par un fin repère grisé sur l'axe des dates (une barre par plage de périodes consécutives, avec la plage en info-bulle). Elles ne comptent pas comme des mesures : pas de point ni de ligne dans le tableau des périodes.
+* **Réglages :** boutons segmentés PÉRIODE, VALEUR TRACÉE, AFFICHAGE, et SESSION en mode par voiture ; circuit et catégorie en listes déroulantes.
+* **Résumé chiffré** (au-dessus du graphique) : une ligne par courbe visible, à sa couleur : **RECORD** (meilleur tour et date de la session), **DÉBUT** (valeur tracée de la première période), **AUJOURD'HUI** (valeur tracée de la dernière période) et l'**écart** Aujourd'hui − Début (vert si plus rapide, rouge sinon, « une seule période » sinon).
+* **Ligne du record :** un trait fin en tirets par courbe visible, à sa couleur, à la hauteur de son record.
+* **Panneau de détail** (à droite du graphique, en dessous sur écran étroit) : survoler, focaliser ou cliquer un point affiche sa période, sa courbe, son min, sa moyenne, son max (la valeur tracée est mise en évidence) et son nombre de sessions. Sans point choisi, le panneau montre la dernière période de chaque courbe visible.
+* **Tableau des périodes** (replié par défaut, bouton « Afficher le détail des périodes ») : une ligne par période et par courbe visible, de la plus récente à la plus ancienne : période, courbe, min, moyenne, max, sessions.
+* **Rendu :** SVG généré en C# par un composant Razor, sans bibliothèque JavaScript ni dépendance. Les calculs (périodes, agrégats) se font dans `Models/ProgressionPresentation.cs`, la géométrie (échelles, graduations, tracés, repères des périodes sans session) dans `Models/ProgressionChartLayout.cs`, tous deux testés en MSTest.
+* **Couleurs des courbes** (reportées dans `UI_DESIGN_SPEC.md`) :
   * mode voitures mélangées : Qualification cyan `#38bdf8`, Course rouge LMU `#e11d48` ;
   * mode par voiture : `#38bdf8`, `#f97316`, `#a3e635`, `#f472b6`, `#facc15`, `#2dd4bf`, `#c084fc`, `#94a3b8`, attribuées par ordre alphabétique de voiture puis réutilisées en boucle.
   * Le violet `#b066ff`, le vert `#22c55e` et le rouge `#ef4444` gardent leur sens WEC (meilleur de la classe, gain, perte) et ne servent pas aux courbes.
@@ -40,13 +44,13 @@ Onglet `/progression`, placé juste après « Mes courses » dans la barre de na
   * La page se met à jour automatiquement à chaque nouvel import, en conservant les sélections.
 
 ### Accès depuis « Mes courses »
-* Une icône 📈 (bouton avec `aria-label` « Voir la progression sur ce circuit ») est ajoutée dans l'en-tête de chaque bloc circuit, à côté du badge « N résultats ».
+* Une icône 📈 (lien avec `aria-label` « Voir la progression sur ce circuit ») est ajoutée dans l'en-tête de chaque bloc circuit, à côté du badge « N résultats ».
 * Elle ouvre `/progression` avec le lieu, le tracé et la dernière catégorie roulée sur ce circuit passés dans l'URL (`?venue=…&course=…&category=…`).
 
 ### Wireframe ASCII
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   PROGRESSION   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 ACTIVE  │
+│ [LMU] DELTARACING   ACCUEIL   MES COURSES   PROGRESSION   CLASSEMENT   DÉTAIL DES COURSES   OPTIONS     Driver Tom   🟢 ACTIVE  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  HISTORIQUE & PROGRESSION                                                                                                        │
 │  Progression                                                                                                                     │
@@ -54,7 +58,10 @@ Onglet `/progression`, placé juste après « Mes courses » dans la barre de na
 │                                                                                                                                  │
 │  CIRCUIT [ Circuit de Spa-Francorchamps ▼ ]   CATÉGORIE [ LMGT3 ▼ ]                                                              │
 │  PÉRIODE [ Jour | Semaine | ■Mois | Année ]   VALEUR TRACÉE [ Min | ■Moyenne | Max ]                                             │
-│  AFFICHAGE [ ■Voitures mélangées | Une courbe par voiture ]   SESSION [ Qualification ▼ ] (mode par voiture uniquement)          │
+│  AFFICHAGE [ ■Voitures mélangées | Une courbe par voiture ]   SESSION [ ■Course | Qualification ] (mode par voiture)          │
+│                                                                                                                                  │
+│  ■ Course         RECORD 2:17.104 (14/03/2026)   DÉBUT 2:19.820 (novembre 2025)   AUJOURD'HUI 2:17.902 (avril 2026)   −1.918 s   │
+│  ■ Qualification  RECORD 2:16.511 (02/04/2026)   DÉBUT 2:18.402 (novembre 2025)   AUJOURD'HUI 2:16.890 (avril 2026)   −1.512 s   │
 │                                                                                                                                  │
 │  ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐  │
 │  │ 2:20.000 ┤                                                                                                                 │  │
@@ -69,7 +76,7 @@ Onglet `/progression`, placé juste après « Mes courses » dans la barre de na
 │  │          └────────┬──────────┬──────────┬──────────┬──────────┬──────────┬───────                                          │  │
 │  │                 nov.       déc.       janv.      févr.      mars       avr.                                                │  │
 │  └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘  │
-│  ● Course (12 sessions)   ○ Qualification (9 sessions)   ━ mesure   ┄ période sans session   ░ min-max                         │
+│  ● Course (12 sessions)   ○ Qualification (9 sessions)   ━ mesure   ▁ période sans session   ░ min-max                         │
 │                                                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  LE MANS ULTIMATE                                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │

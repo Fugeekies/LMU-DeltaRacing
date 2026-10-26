@@ -146,20 +146,24 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Fusion appliquée en mémoire à toutes les vues, enregistrée dans `LMU:DriverMerges`, annulable.
 - [x] Avertissement quand les deux pilotes ont participé à une même session (probablement deux personnes différentes), avant la fusion et dans la liste des fusions.
 
-## Jalon — UI : Menu "Progression" (`Progression.razor`)
+## Jalon — UI : Menu "Progression" (`Progression.razor`) [Terminé]
 Spécification : [`UISpec/Progression.template.md`](UISpec/Progression.template.md).
-- [ ] Nouvel onglet **Progression** (`/progression`), placé juste après « Mes courses » dans la barre de navigation.
-- [ ] Sélecteurs **Circuit** (lieu + tracé, comme le delta n-1) et **Catégorie**. À l'ouverture directe de l'onglet, ils prennent le circuit et la catégorie de la course la plus récente.
-- [ ] Ne tracer que les temps du pilote principal. Un point source = le meilleur tour valide d'une session.
-- [ ] **Granularité** réglable : jour, semaine (ISO, du lundi au dimanche), mois (par défaut), année. Les périodes sont calculées en heure locale.
-- [ ] **Agrégat de la ligne** réglable : min, max, moyenne (par défaut). Une bande semi-transparente va du min au max de la période.
-- [ ] **Mode voitures mélangées** (par défaut) : une courbe Qualification et une courbe Course.
-- [ ] **Mode une courbe par voiture** (`CarType` exact, une variante Evo compte comme une voiture distincte) : on choisit Qualification ou Course, et chaque voiture a sa couleur.
-- [ ] Axe des dates à l'échelle réelle. Une période sans session prolonge la dernière valeur connue par un palier horizontal en pointillé, qui ne compte pas comme une mesure.
-- [ ] Graphique en SVG généré en C# (composant Razor, aucune dépendance), avec la valeur exacte et le nombre de sessions au survol d'un point.
-- [ ] Réglages (granularité, agrégat, mode, type de session) enregistrés dans `appsettings.json` (section `LMU:Progression`).
-- [ ] Icône 📈 dans l'en-tête de chaque circuit de « Mes courses » : elle ouvre Progression sur ce circuit, avec la dernière catégorie roulée sur ce circuit.
-- [ ] Gérer les états vides : aucune session pour le couple circuit + catégorie, ou une seule période.
+- [x] Nouvel onglet **Progression** (`/progression`), placé juste après « Mes courses » dans la barre de navigation.
+- [x] Sélecteurs **Circuit** (lieu + tracé, comme le delta n-1) et **Catégorie**. À l'ouverture directe de l'onglet, ils prennent le circuit et la catégorie de la course la plus récente.
+- [x] Ne tracer que les temps du pilote principal. Un point source = le meilleur tour valide d'une session.
+- [x] **Granularité** réglable : jour, semaine (ISO, du lundi au dimanche), mois (par défaut), année. Les périodes sont calculées en heure locale.
+- [x] **Agrégat de la ligne** réglable : min, max, moyenne (par défaut). Une bande semi-transparente va du min au max de la période.
+- [x] **Mode voitures mélangées** (par défaut) : une courbe Qualification et une courbe Course.
+- [x] **Mode une courbe par voiture** (`CarType` exact, une variante Evo compte comme une voiture distincte) : on choisit Course (par défaut) ou Qualification, et chaque voiture a sa couleur.
+- [x] Axe des dates à l'échelle réelle. La ligne et la bande min-max traversent les périodes sans session en trait plein ; ces périodes sont marquées par un repère grisé sur l'axe des dates.
+- [x] Graphique en SVG généré en C# (composant Razor, aucune dépendance). Survoler ou cliquer un point affiche ses valeurs (min, moyenne, max, sessions) dans un panneau à droite du graphique ; par défaut, le panneau montre la dernière période de chaque courbe.
+- [x] Réglages (granularité, agrégat, mode, type de session) enregistrés dans `appsettings.json` (section `LMU:Progression`).
+- [x] Icône 📈 dans l'en-tête de chaque circuit de « Mes courses » : elle ouvre Progression sur ce circuit, avec la dernière catégorie roulée sur ce circuit.
+- [x] Gérer les états vides : aucune session pour le couple circuit + catégorie, ou une seule période.
+- [x] **Résumé chiffré** au-dessus du graphique, une ligne par courbe : record (avec sa date), valeur de la première et de la dernière période, écart (vert si plus rapide).
+- [x] **Ligne du record** en tirets, à la couleur de chaque courbe.
+- [x] **Tableau des périodes**, replié par défaut : min, moyenne, max et sessions de chaque période et de chaque courbe.
+- [x] Légende cliquable pour masquer ou réafficher une courbe ; réglages en boutons segmentés.
 
 ## Jalon — UI : Menu "Accueil" (`Home.razor`) [Terminé]
 Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).

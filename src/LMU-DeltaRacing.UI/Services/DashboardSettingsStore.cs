@@ -98,6 +98,24 @@ public sealed class DashboardSettingsStore
         Save(root);
     }
 
+    /// <summary>
+    /// Saves the chart settings of the progression page; enum values are written by name.
+    /// </summary>
+    public void SaveProgressionSettings(ProgressionSettings settings)
+    {
+        ArgumentNullException.ThrowIfNull(settings);
+        var root = LoadSettings();
+        GetLmuSettings(root)["Progression"] = new JsonObject
+        {
+            ["Granularity"] = settings.Granularity.ToString(),
+            ["Aggregate"] = settings.Aggregate.ToString(),
+            ["Mode"] = settings.Mode.ToString(),
+            ["Session"] = settings.Session.ToString()
+        };
+
+        Save(root);
+    }
+
     private JsonObject LoadSettings() =>
         File.Exists(configurationFilePath)
             ? JsonNode.Parse(File.ReadAllText(configurationFilePath)) as JsonObject

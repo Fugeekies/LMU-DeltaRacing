@@ -54,7 +54,7 @@ Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouve
 
 ## Les pages
 
-Le menu en haut de l'écran donne accès à cinq pages.
+Le menu en haut de l'écran donne accès à six pages.
 
 ### Accueil
 
@@ -81,8 +81,24 @@ Votre historique, **circuit par circuit**, pour voir si vous progressez.
 
   La comparaison se fait même si vous avez changé de voiture, tant que la catégorie est la même.
 - Filtrez par **circuit** et par **catégorie** : Hypercar, LMP2, LMP3, LMGTE, LMGT3.
+- L'icône 📈 de chaque circuit ouvre sa **Progression**.
 
 > Les tours invalidés par le jeu (sortie des limites de piste) ne comptent pas : *Le Mans Ultimate* efface leur temps.
+
+### Progression
+
+Un **graphique** de l'évolution de vos meilleurs tours sur un circuit, dans une catégorie.
+
+- Choisissez le **circuit** et la **catégorie**. À l'ouverture, la page montre ceux de votre dernière course.
+- **Période** : vos meilleurs tours sont regroupés par jour, semaine, mois ou année.
+- **Valeur tracée** : la ligne passe par le meilleur (min), la moyenne ou le moins bon (max) de chaque période. La bande colorée va du min au max.
+- **Affichage** : une courbe Course et une courbe Qualification toutes voitures confondues, ou **une courbe par voiture** (en choisissant Course ou Qualification).
+- Au-dessus du graphique, le **résumé** donne pour chaque courbe votre record, la valeur de départ, la valeur actuelle et l'écart (🟢 plus rapide, 🔴 plus lent). Une ligne en tirets marque le record sur le graphique.
+- Survolez ou cliquez un point pour voir son détail. Cliquez une entrée de la légende pour masquer ou réafficher une courbe.
+- Une période sans course est sautée : la courbe relie directement les périodes où vous avez roulé, et une petite barre grise sur l'axe des dates signale les périodes vides.
+- Le bouton **Afficher le détail des périodes** donne les valeurs exactes dans un tableau.
+
+Vos réglages (période, valeur tracée, affichage) sont retenus pour la prochaine fois.
 
 ### Classement des coureurs
 

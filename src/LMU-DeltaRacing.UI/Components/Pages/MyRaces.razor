@@ -95,7 +95,13 @@ else
                                 <span class="circuit-course">@circuit.Key.TrackCourse</span>
                             }
                         </div>
-                        <span class="count-badge">@circuit.Count() résultats</span>
+                        <div class="circuit-actions">
+                            <a class="progression-link"
+                               href="@GetProgressionLink(circuit.Key.TrackVenue, circuit.Key.TrackCourse)"
+                               aria-label="Voir la progression sur ce circuit"
+                               title="Voir la progression sur ce circuit">📈</a>
+                            <span class="count-badge">@circuit.Count() résultats</span>
+                        </div>
                     </div>
                     <div class="table-scroll">
                         <table class="data-table races-table">
@@ -190,6 +196,22 @@ else
             .Where(record => string.IsNullOrEmpty(selectedCategory)
                 || string.Equals(record.Category, selectedCategory, StringComparison.Ordinal))
             .ToArray();
+
+    /// <summary>
+    /// Links to the progression page on a circuit, with the category of the latest record there
+    /// (taken from every record, so that the category filter of this page does not change it).
+    /// </summary>
+    private string GetProgressionLink(string trackVenue, string trackCourse)
+    {
+        var category = records
+            .Where(record => string.Equals(record.TrackVenue, trackVenue, StringComparison.OrdinalIgnoreCase)
+                && string.Equals(record.TrackCourse, trackCourse, StringComparison.OrdinalIgnoreCase))
+            .MaxBy(record => record.StartedAt)
+            ?.Category;
+
+        return $"/progression?venue={Uri.EscapeDataString(trackVenue)}&course={Uri.EscapeDataString(trackCourse)}"
+            + (category is null ? string.Empty : $"&category={Uri.EscapeDataString(category)}");
+    }
 
     private static string FormatLap(TimeSpan? time) =>
         time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
