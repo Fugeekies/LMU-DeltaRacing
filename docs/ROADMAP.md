@@ -146,6 +146,21 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Fusion appliquée en mémoire à toutes les vues, enregistrée dans `LMU:DriverMerges`, annulable.
 - [x] Avertissement quand les deux pilotes ont participé à une même session (probablement deux personnes différentes), avant la fusion et dans la liste des fusions.
 
+## Jalon — UI : Menu "Progression" (`Progression.razor`)
+Spécification : [`UISpec/Progression.template.md`](UISpec/Progression.template.md).
+- [ ] Nouvel onglet **Progression** (`/progression`), placé juste après « Mes courses » dans la barre de navigation.
+- [ ] Sélecteurs **Circuit** (lieu + tracé, comme le delta n-1) et **Catégorie**. À l'ouverture directe de l'onglet, ils prennent le circuit et la catégorie de la course la plus récente.
+- [ ] Ne tracer que les temps du pilote principal. Un point source = le meilleur tour valide d'une session.
+- [ ] **Granularité** réglable : jour, semaine (ISO, du lundi au dimanche), mois (par défaut), année. Les périodes sont calculées en heure locale.
+- [ ] **Agrégat de la ligne** réglable : min, max, moyenne (par défaut). Une bande semi-transparente va du min au max de la période.
+- [ ] **Mode voitures mélangées** (par défaut) : une courbe Qualification et une courbe Course.
+- [ ] **Mode une courbe par voiture** (`CarType` exact, une variante Evo compte comme une voiture distincte) : on choisit Qualification ou Course, et chaque voiture a sa couleur.
+- [ ] Axe des dates à l'échelle réelle. Une période sans session prolonge la dernière valeur connue par un palier horizontal en pointillé, qui ne compte pas comme une mesure.
+- [ ] Graphique en SVG généré en C# (composant Razor, aucune dépendance), avec la valeur exacte et le nombre de sessions au survol d'un point.
+- [ ] Réglages (granularité, agrégat, mode, type de session) enregistrés dans `appsettings.json` (section `LMU:Progression`).
+- [ ] Icône 📈 dans l'en-tête de chaque circuit de « Mes courses » : elle ouvre Progression sur ce circuit, avec la dernière catégorie roulée sur ce circuit.
+- [ ] Gérer les états vides : aucune session pour le couple circuit + catégorie, ou une seule période.
+
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.
