@@ -50,15 +50,14 @@ public static class HomePresentation
             Count(races, result => result.Kind == HomeResultKind.Retired, races.Length),
             Count(races, result => result.Kind == HomeResultKind.Disqualified, races.Length),
             Count(races, result => result.Kind == HomeResultKind.Unclassified, races.Length),
-            CreateShares(retirements.Select(result => GetRetirementCause(result.Driver.DnfReason)), label => label),
+            CreateShares(retirements.Select(result => GetRetirementCause(result.Driver.DnfReason))),
             Sum(results, result => result.LapsCompleted),
             Sum(results, result => result.Session.TrackLength is { } meters ? result.LapsCompleted * meters / 1000 : 0),
             Sum(results, result => result.Driver.Laps.Where(lap => lap.Time.HasValue).Sum(lap => lap.Time!.Value.TotalSeconds)),
             recentRaces.Select(result => CreateFormEntry(result, null)).ToArray(),
             recentRaces.Length == 0 ? null : CreateFormEntry(recentRaces[0], FindEventId(allSessions, userName, recentRaces[0].Session)),
             FindFavorite(races, result => result.Session.TrackVenue, result => result.Session.TrackCourse),
-            FindFavorite(races.Where(result => result.Car != "—"), result => result.Car, _ => null),
-            CreateShares(races.Select(result => result.Category), category => category))
+            FindFavorite(races.Where(result => result.Car != "—"), result => result.Car, _ => null))
         {
             IsEmpty = results.Length == 0,
             FirstRaceAt = races.Length == 0 ? null : races.Min(result => result.Session.StartedAt),
@@ -118,15 +117,14 @@ public static class HomePresentation
                 .ToArray());
     }
 
-    private static IReadOnlyList<HomeShare> CreateShares(IEnumerable<string> labels, Func<string, string> display)
+    private static IReadOnlyList<HomeShare> CreateShares(IEnumerable<string> labels)
     {
         var values = labels.ToArray();
         return values
             .GroupBy(label => label, StringComparer.Ordinal)
             .OrderByDescending(group => group.Count())
-            .ThenBy(group => GetCategoryOrder(group.Key))
-            .ThenBy(group => display(group.Key), StringComparer.OrdinalIgnoreCase)
-            .Select(group => new HomeShare(display(group.Key), group.Count(), (double)group.Count() / values.Length))
+            .ThenBy(group => group.Key, StringComparer.OrdinalIgnoreCase)
+            .Select(group => new HomeShare(group.Key, group.Count(), (double)group.Count() / values.Length))
             .ToArray();
     }
 

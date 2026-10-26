@@ -101,32 +101,7 @@ else
             @RenderStat("PODIUMS", dashboard.Podiums, FormatCount)
             @RenderStat("TOP 5", dashboard.Top5, FormatCount)
             @RenderStat("TOP 10", dashboard.Top10, FormatCount)
-            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage)
-            <article class="home-tile home-tile-wide">
-                <h3 class="summary-label">RÉPARTITION PAR CATÉGORIE</h3>
-                @if (dashboard.CategoryShares.Count == 0)
-                {
-                    <p class="home-value">—</p>
-                }
-                else
-                {
-                    <div class="home-bar" aria-hidden="true">
-                        @foreach (var share in dashboard.CategoryShares)
-                        {
-                            <span class="home-bar-part @GetCategoryClass(share.Label)" style="width: @FormatPercentWidth(share.Share)"></span>
-                        }
-                    </div>
-                    <ul class="home-share-list">
-                        @foreach (var share in dashboard.CategoryShares)
-                        {
-                            <li>
-                                <i class="home-swatch @GetCategoryClass(share.Label)" aria-hidden="true"></i>
-                                @share.Label <strong>@FormatPercent(share.Share)</strong> <span>(@share.Count)</span>
-                            </li>
-                        }
-                    </ul>
-                }
-            </article>
+            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage, stacked: false)
         </div>
     </section>
 
@@ -143,7 +118,7 @@ else
         <h2 id="home-start" class="eyebrow">QUALIFICATION &amp; DÉPART</h2>
         <div class="home-tiles">
             @RenderStat("POLES", dashboard.Poles, FormatCount)
-            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, FormatAverage)
+            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, FormatAverage, stacked: false)
             <article class="home-tile">
                 <h3 class="summary-label">PLACES GAGNÉES</h3>
                 <p class="home-value">
@@ -154,7 +129,7 @@ else
                 {
                     <p class="home-rate">@RenderSigned(total, "0") au total</p>
                 }
-                @RenderBreakdown(dashboard.AveragePositionsGained, value => FormatSigned(value, "0.0"))
+                @RenderBreakdown(dashboard.AveragePositionsGained, value => FormatSigned(value, "0.0"), stacked: false)
             </article>
         </div>
     </section>
@@ -233,7 +208,7 @@ else
     private static bool ShowsBreakdown(HomeStat stat) =>
         stat.Value is > 0 or < 0 && stat.Categories.Count > 0;
 
-    private RenderFragment RenderStat(string label, HomeStat stat, Func<double?, string> format) =>
+    private static RenderFragment RenderStat(string label, HomeStat stat, Func<double?, string> format, bool stacked = true) =>
         @<article class="home-tile">
             <h3 class="summary-label">@label</h3>
             <p class="home-value">
@@ -243,19 +218,35 @@ else
                     <span class="home-rate">@FormatPercent(rate)</span>
                 }
             </p>
-            @RenderBreakdown(stat, format)
+            @RenderBreakdown(stat, format, stacked)
         </article>;
 
-    private RenderFragment RenderBreakdown(HomeStat stat, Func<double?, string> format) =>
+    /// <summary>
+    /// Renders the breakdown by category: a stacked bar and its legend for a total, the legend alone
+    /// for an average, whose parts do not add up to the total.
+    /// </summary>
+    private static RenderFragment RenderBreakdown(HomeStat stat, Func<double?, string> format, bool stacked) =>
         @<text>
             @if (ShowsBreakdown(stat))
             {
-                <ul class="home-breakdown">
-                    @foreach (var category in stat.Categories)
+                var parts = stacked
+                    ? stat.Categories.Where(part => part.Value > 0).ToArray()
+                    : stat.Categories.Where(part => part.Value.HasValue).ToArray();
+                @if (stacked)
+                {
+                    <div class="home-bar home-bar-thin" aria-hidden="true">
+                        @foreach (var part in parts)
+                        {
+                            <span class="home-bar-part @GetCategoryClass(part.Category)" style="width: @FormatPercentWidth(part.Value!.Value / stat.Value!.Value)"></span>
+                        }
+                    </div>
+                }
+                <ul class="home-share-list home-breakdown-legend">
+                    @foreach (var part in parts)
                     {
                         <li>
-                            <span class="category-badge">@category.Category</span>
-                            <span>@format(category.Value)</span>
+                            <i class="home-swatch @GetCategoryClass(part.Category)" aria-hidden="true"></i>
+                            @part.Category <strong>@format(part.Value)</strong>
                         </li>
                     }
                 </ul>

@@ -24,7 +24,6 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="LastRace">The most recent race.</param>
 /// <param name="FavoriteCircuit">The circuit with the most races.</param>
 /// <param name="FavoriteCar">The car with the most races.</param>
-/// <param name="CategoryShares">The share of races per category, most driven first.</param>
 public sealed record HomeDashboard(
     HomeStat Races,
     HomeStat Wins,
@@ -46,8 +45,7 @@ public sealed record HomeDashboard(
     IReadOnlyList<HomeFormEntry> RecentForm,
     HomeFormEntry? LastRace,
     HomeFavorite? FavoriteCircuit,
-    HomeFavorite? FavoriteCar,
-    IReadOnlyList<HomeShare> CategoryShares)
+    HomeFavorite? FavoriteCar)
 {
     /// <summary>
     /// Gets whether the driver has neither a race nor a qualifying session.
@@ -81,7 +79,7 @@ public sealed record HomeStat(double? Value, double? Rate, IReadOnlyList<HomeCat
 public sealed record HomeCategoryValue(string Category, double? Value);
 
 /// <summary>
-/// One part of a distribution (a retirement cause, a category).
+/// One part of a distribution, such as a retirement cause.
 /// </summary>
 /// <param name="Label">The displayed label.</param>
 /// <param name="Count">The number of races.</param>

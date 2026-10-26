@@ -62,7 +62,7 @@ Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile don
 
 - **Pilote**, en haut à gauche : votre nom, les dates de votre première et de votre dernière course, votre circuit et votre voiture les plus roulés.
 - **Forme récente**, en haut à droite : vos 10 dernières courses en pastilles, et votre dernière course avec un lien vers son détail.
-- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage), position moyenne et répartition de vos courses par catégorie.
+- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage) et position moyenne.
 - **Roulage** : tours bouclés, kilomètres parcourus et temps en piste.
 - **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
 - **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).

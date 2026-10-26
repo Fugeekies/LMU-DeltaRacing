@@ -160,7 +160,6 @@ public sealed class HomePresentationTests
         dashboard.FavoriteCar!.Name.Should().Be("Oreca 07");
         dashboard.FirstRaceAt.Should().Be(Date("2026-10-01T20:00:00Z"));
         dashboard.LastRaceAt.Should().Be(Date("2026-10-04T20:00:00Z"));
-        dashboard.CategoryShares.Select(share => (share.Label, share.Count)).Should().Equal(("LMP2", 2), ("LMGT3", 2));
     }
 
     [TestMethod]

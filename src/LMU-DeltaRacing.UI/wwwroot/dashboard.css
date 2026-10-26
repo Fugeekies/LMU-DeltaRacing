@@ -1482,7 +1482,7 @@ h3 {
 
 .home-tiles {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
 }
 
@@ -1527,23 +1527,6 @@ p.home-rate {
     margin: 0.3rem 0 0;
 }
 
-.home-breakdown {
-    display: grid;
-    gap: 0.3rem;
-    margin: 0.75rem 0 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0.76rem;
-    font-variant-numeric: tabular-nums;
-}
-
-.home-breakdown li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.5rem;
-}
-
 .home-favorite-item p {
     margin: 0;
 }
@@ -1565,6 +1548,22 @@ p.home-rate {
 
 .home-bar-part {
     height: 100%;
+}
+
+.home-bar-thin {
+    height: 6px;
+    margin: 0.75rem 0 0.5rem;
+}
+
+.home-share-list.home-breakdown-legend {
+    gap: 0.25rem 0.75rem;
+    margin-top: 0.75rem;
+    font-variant-numeric: tabular-nums;
+    font-size: 0.68rem;
+}
+
+.home-bar-thin + .home-share-list.home-breakdown-legend {
+    margin-top: 0;
 }
 
 .home-share-list {

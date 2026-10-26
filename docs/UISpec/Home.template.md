@@ -18,7 +18,7 @@ Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barr
   * `DQ` : disqualifié, compté à part des abandons ;
   * `None` : **non classé**, compté dans le total de courses avec son propre compteur, mais jamais dans victoires, podiums, tops, abandons ni positions moyennes.
 * **Position officielle :** victoire, podium, top 5 et top 10 utilisent la `ClassPosition` écrite par LMU, quel que soit le statut (un abandon classé P3 compte comme un podium). Seules les courses non classées (`None`) en sont exclues.
-* **Ventilation par catégorie :** sous chaque compteur, une ligne par catégorie ayant au moins une course, avec son badge, dans l'ordre Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues. Le total est la somme des lignes.
+* **Ventilation par catégorie :** sous chaque total, une fine barre empilée aux couleurs des catégories, suivie d'une légende en ligne « ■ catégorie valeur » (catégories à valeur non nulle). Sous chaque moyenne (position moyenne, position moyenne en qualif, places gagnées), la légende seule, sans barre : ses parts ne s'additionnent pas. Ordre : Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues. Rien n'est affiché quand le total vaut 0.
 * **Ordre des sections :** sous le titre « Accueil », un bandeau avec la tuile **Pilote** à gauche et la tuile **Forme récente** à droite (l'une sous l'autre en dessous de 1 120 px), puis, chacune sur toute la largeur : Palmarès, Roulage, Qualification & départ, Abandons.
 
 #### Tuile « Pilote »
@@ -42,7 +42,6 @@ En cas d'égalité, le plus récemment roulé l'emporte.
 | TOP 5 | courses en P1 à P5 de classe | ventilation + taux |
 | TOP 10 | courses en P1 à P10 de classe | ventilation + taux |
 | POSITION MOYENNE | moyenne des `ClassPosition` des courses classées | ventilation, une décimale |
-| RÉPARTITION PAR CATÉGORIE (tuile double largeur) | part des courses par catégorie, de la plus roulée à la moins roulée | barre horizontale empilée + liste « catégorie % (nombre) » |
 
 #### Section « Qualification & départ »
 | Tuile | Valeur | Détail |
@@ -77,7 +76,7 @@ Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension
 * Sous les pastilles, la **dernière course** : date, circuit, voiture, position en classe, statut, meilleur tour, et un lien vers son événement dans « Détail des courses ».
 
 #### Couleurs
-Couleurs de la répartition (voir `UI_DESIGN_SPEC.md`) : Hypercar `#881337`, LMP2 `#1d4ed8`, LMP3 `#7c3aed`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
+Couleurs des catégories dans les barres et légendes (voir `UI_DESIGN_SPEC.md`) : Hypercar `#881337`, LMP2 `#1d4ed8`, LMP3 `#7c3aed`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
 
 #### États de la page
 * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».
@@ -93,7 +92,7 @@ Le parser doit lire, en plus des champs actuels :
 * `TrackLength` de la session, en mètres (distance).
 
 ### Wireframe ASCII
-Les valeurs sont des exemples.
+Les valeurs sont des exemples. Les lignes `[catégorie] valeur` schématisent la ventilation, rendue en barre empilée suivie d'une légende en ligne (voir « Ventilation par catégorie »).
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ [LMU] DELTARACING   ACCUEIL   MES COURSES   PROGRESSION   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom  🟢 │
@@ -119,11 +118,6 @@ Les valeurs sont des exemples.
 │  │ [LMGTE]  20      │ │ [LMGTE]  1       │ │ [LMGTE]  3       │ │ [LMGTE]  7       │ │ [LMGTE] 12       │ │ [LMGTE]  7.0     │   │
 │  │ [LMP2]   15      │ │ [LMP2]   1       │ │ [LMP2]   2       │ │ [LMP2]   4       │ │ [LMP2]   7       │ │ [LMP2]   7.9     │   │
 │  └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘ └──────────────────┘   │
-│  ┌──────────────────────────────────────┐                                                                                        │
-│  │ RÉPARTITION PAR CATÉGORIE            │                                                                                        │
-│  │ ████████████████▓▓▓▓▓▓▓░░░░░         │                                                                                        │
-│  │ LMGT3 60 % · LMGTE 23 % · LMP2 17 %  │                                                                                        │
-│  └──────────────────────────────────────┘                                                                                        │
 │                                                                                                                                  │
 │  ROULAGE                                                                                                                         │
 │  ┌──────────────────┐ ┌──────────────────┐ ┌──────────────────┐                                                                  │

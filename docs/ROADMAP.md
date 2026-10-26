@@ -171,7 +171,7 @@ Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).
 - [x] **Abandons :** DNF, DQ et non classés (`None`) comptés séparément, avec leurs taux ; répartition des abandons par cause (`DNFReason`).
 - [x] **Roulage :** tours bouclés, distance (km), temps en piste (tours chronométrés).
 - [x] **Forme récente :** pastilles des 10 dernières courses (position en classe, DNF, DQ, NC) et résumé de la dernière course, avec un lien vers son événement dans « Détail des courses » (sélection de l'événement par l'URL à ajouter).
-- [x] **Préférences :** circuit et voiture les plus roulés avec leur palmarès, répartition des courses par catégorie.
+- [x] **Préférences :** circuit et voiture les plus roulés avec leur palmarès, dans la tuile Pilote.
 - [x] Gérer les états vides : aucune course, valeur non calculable (`—`).
 
 ## Liste d'idées à prioriser

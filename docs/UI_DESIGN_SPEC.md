@@ -40,7 +40,7 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * **LMP3 :** Fond violet (`#7c3aed`), texte blanc.
 * **LMGTE :** Fond vert (`#15803d`), texte blanc.
 
-> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`). Les couleurs ci-dessus ne sont appliquées qu'à la barre « Répartition par catégorie » de l'Accueil.
+> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`). Les couleurs ci-dessus ne sont appliquées qu'aux barres et légendes de ventilation par catégorie de l'Accueil.
 
 ---
 

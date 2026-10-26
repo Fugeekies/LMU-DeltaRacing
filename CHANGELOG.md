@@ -10,7 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
-- Nouvelle page **Accueil** (`/`), premier onglet : tableau de bord de la carrière du pilote en tuiles (pilote avec ses dates de première et dernière course et ses favoris, forme récente, palmarès, qualification & départ, abandons et leurs causes, roulage, répartition par catégorie), chaque total étant détaillé par catégorie. Les résultats comptent la position en classe officielle ; une course non classée (`None`) compte dans le total mais pas dans les résultats.
+- Nouvelle page **Accueil** (`/`), premier onglet : tableau de bord de la carrière du pilote en tuiles (pilote avec ses dates de première et dernière course et ses favoris, forme récente, palmarès, qualification & départ, abandons et leurs causes, roulage), chaque total étant détaillé par catégorie (barre colorée et légende). Les résultats comptent la position en classe officielle ; une course non classée (`None`) compte dans le total mais pas dans les résultats.
 - Parser : lecture de la position de départ en classe (`ClassGridPos`), de la cause d'abandon (`DNFReason`) et de la longueur du circuit (`TrackLength`).
 - Détail des courses : le paramètre `?event=` ouvre directement un événement (lien « Voir l'événement » de l'Accueil).
 - README réécrit pour les utilisateurs : installation, premier lancement, pages, options et questions fréquentes. La documentation technique de l'ancien README est déplacée dans `docs/DEVELOPMENT.md`.
