@@ -16,6 +16,7 @@ public sealed class Session
     /// <param name="sessionType">The session type from the result file.</param>
     /// <param name="drivers">The drivers and their results.</param>
     /// <param name="mostLapsCompleted">The highest number of laps completed in the session.</param>
+    /// <param name="trackLength">The length of one lap, in meters, when available.</param>
     public Session(
         Guid id,
         DateTimeOffset startedAt,
@@ -24,7 +25,8 @@ public sealed class Session
         string trackEvent,
         string sessionType,
         IEnumerable<Driver> drivers,
-        int? mostLapsCompleted = null)
+        int? mostLapsCompleted = null,
+        double? trackLength = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(trackVenue);
         ArgumentException.ThrowIfNullOrWhiteSpace(trackCourse);
@@ -40,6 +42,7 @@ public sealed class Session
         SessionType = sessionType;
         Drivers = Array.AsReadOnly(drivers.ToArray());
         MostLapsCompleted = mostLapsCompleted;
+        TrackLength = trackLength;
     }
 
     /// <summary>
@@ -81,4 +84,9 @@ public sealed class Session
     /// Gets the highest number of laps completed in this session, when available.
     /// </summary>
     public int? MostLapsCompleted { get; }
+
+    /// <summary>
+    /// Gets the length of one lap, in meters, when available.
+    /// </summary>
+    public double? TrackLength { get; }
 }

@@ -22,6 +22,9 @@ public sealed class DriverMergesTests
         sessions[0].Drivers.Select(driver => driver.Name).Should().Equal("New Name", "Rival");
         sessions[0].Id.Should().Be(renamed.Id);
         sessions[0].Drivers[0].Laps.Should().Equal(renamed.Drivers[0].Laps);
+        sessions[0].Drivers[0].ClassGridPosition.Should().Be(1);
+        sessions[0].Drivers[0].DnfReason.Should().Be("Engine");
+        sessions[0].TrackLength.Should().Be(7004);
         sessions[1].Should().BeSameAs(untouched);
         renamed.Drivers[0].Name.Should().Be("Old Name");
     }
@@ -125,5 +128,8 @@ public sealed class DriverMergesTests
                 "Car",
                 classPosition: index + 1,
                 lapsCompleted: 1,
-                finishStatus: "Finished Normally")));
+                finishStatus: "DNF",
+                classGridPosition: index + 1,
+                dnfReason: "Engine")),
+            trackLength: 7004);
 }

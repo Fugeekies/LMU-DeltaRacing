@@ -47,6 +47,27 @@ public sealed class XmlResultParserTests
         ]);
     }
 
+    /// <summary>
+    /// Verifies the class grid position, the retirement cause and the track length used by the home dashboard.
+    /// </summary>
+    [TestMethod]
+    public void Parse_reads_class_grid_position_dnf_reason_and_track_length_from_a_real_race()
+    {
+        var parser = new XmlResultParser();
+        using var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, "assets/Results/2025_02_24_19_37_55-00R1.xml"));
+
+        var session = parser.Parse(stream);
+
+        session.TrackLength.Should().Be(4635.3);
+        var retired = session.Drivers.Should().ContainSingle(driver => driver.Name == "Driver Chloé").Which;
+        retired.ClassGridPosition.Should().Be(2);
+        retired.FinishStatus.Should().Be("DNF");
+        retired.DnfReason.Should().Be("Suspension");
+        var winner = session.Drivers.Should().ContainSingle(driver => driver.Name == "Driver Inès").Which;
+        winner.ClassGridPosition.Should().Be(1);
+        winner.DnfReason.Should().BeEmpty();
+    }
+
     [TestMethod]
     public void Parse_reads_grid_position_from_driver_result()
     {

@@ -43,7 +43,8 @@ public static class DriverMerges
                     session.Drivers.Select(driver => keptNames.TryGetValue(driver.Name.Trim(), out var keptName)
                         ? Rename(driver, keptName)
                         : driver),
-                    session.MostLapsCompleted)
+                    session.MostLapsCompleted,
+                    session.TrackLength)
                 : session)
             .ToArray();
     }
@@ -194,5 +195,7 @@ public static class DriverMerges
             driver.FinishTime,
             driver.ClassPosition,
             driver.LapsCompleted,
-            driver.FinishStatus);
+            driver.FinishStatus,
+            driver.ClassGridPosition,
+            driver.DnfReason);
 }

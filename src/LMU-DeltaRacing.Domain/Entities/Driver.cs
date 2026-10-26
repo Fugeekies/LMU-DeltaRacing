@@ -20,6 +20,8 @@ public sealed class Driver
     /// <param name="classPosition">The finishing position within the vehicle class, when available.</param>
     /// <param name="lapsCompleted">The number of laps completed by the driver, when available.</param>
     /// <param name="finishStatus">The finish status reported by LMU (for example "DNF"), when available.</param>
+    /// <param name="classGridPosition">The starting grid position within the vehicle class, when available.</param>
+    /// <param name="dnfReason">The retirement cause reported by LMU (for example "Suspension"), when available.</param>
     public Driver(
         string name,
         string carNumber,
@@ -32,7 +34,9 @@ public sealed class Driver
         TimeSpan? finishTime = null,
         int? classPosition = null,
         int? lapsCompleted = null,
-        string finishStatus = "")
+        string finishStatus = "",
+        int? classGridPosition = null,
+        string dnfReason = "")
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
@@ -41,6 +45,7 @@ public sealed class Driver
         ArgumentNullException.ThrowIfNull(laps);
         ArgumentNullException.ThrowIfNull(carType);
         ArgumentNullException.ThrowIfNull(finishStatus);
+        ArgumentNullException.ThrowIfNull(dnfReason);
 
         Name = name;
         CarNumber = carNumber;
@@ -54,6 +59,8 @@ public sealed class Driver
         ClassPosition = classPosition;
         LapsCompleted = lapsCompleted;
         FinishStatus = finishStatus;
+        ClassGridPosition = classGridPosition;
+        DnfReason = dnfReason;
     }
 
     /// <summary>
@@ -111,6 +118,16 @@ public sealed class Driver
     /// Gets the finish status reported by LMU ("Finished Normally", "DNF", "DQ", "None"...), or an empty string.
     /// </summary>
     public string FinishStatus { get; }
+
+    /// <summary>
+    /// Gets the starting grid position within the vehicle class, when available.
+    /// </summary>
+    public int? ClassGridPosition { get; }
+
+    /// <summary>
+    /// Gets the retirement cause reported by LMU ("Accident", "Engine", "Suspension", "Fuel", "DNF"...), or an empty string.
+    /// </summary>
+    public string DnfReason { get; }
 
     /// <summary>
     /// Gets the laps recorded for the driver.

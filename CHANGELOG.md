@@ -10,6 +10,9 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Nouvelle page **Accueil** (`/`), premier onglet : tableau de bord de la carrière du pilote en tuiles (palmarès, qualification & départ, abandons et leurs causes, roulage, forme récente, préférences), chaque total étant détaillé par catégorie. Filtres par catégorie et par période. Les résultats comptent la position en classe officielle ; une course non classée (`None`) compte dans le total mais pas dans les résultats.
+- Parser : lecture de la position de départ en classe (`ClassGridPos`), de la cause d'abandon (`DNFReason`) et de la longueur du circuit (`TrackLength`).
+- Détail des courses : le paramètre `?event=` ouvre directement un événement (lien « Voir l'événement » de l'Accueil).
 - README réécrit pour les utilisateurs : installation, premier lancement, pages, options et questions fréquentes. La documentation technique de l'ancien README est déplacée dans `docs/DEVELOPMENT.md`.
 - Options : bloc **Fusion de pilotes** pour regrouper deux noms d'un même pilote (changement de pseudo) sous le nom conservé, en mémoire et sans modifier les fichiers de résultats (`LMU:DriverMerges`). Un avertissement signale les pilotes qui ont participé à une même session ; chaque fusion peut être annulée.
 - Ajout d'une page Options pour choisir, valider, enregistrer et recharger le dossier des résultats, avec sélecteur de dossiers Windows natif et préférence de démarrage du watcher.
@@ -35,6 +38,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dates de l'état des imports affichées en heure locale au lieu de l'heure UTC.
 
 ### Changed
+- L'application s'ouvre sur l'Accueil : « Mes courses » ne répond plus que sur `/my-races` et le logo renvoie vers `/`. L'ancienne page `/dashboard` est retirée, l'état des imports restant affiché dans Options.
 - Détail des courses : tableau compacté de 14 à 8 colonnes, sans défilement horizontal à partir de 1 280 px — chaque temps porte son écart en dessous, la voiture passe sous le nom du pilote et la catégorie sous la position ; la ligne du pilote sélectionné est surlignée. Le tour idéal affiche aussi son écart au meilleur tour idéal de la catégorie, et la colonne DIFF 1ER devient TEMPS TOTAL (temps de course complet, écart au premier en dessous).
 - Détail des courses : le sélecteur propose des **événements** (essais, qualification et course disputés à la suite sur un circuit) et des sous-onglets **Course**, **Qualification** et **Essais** affichent le classement de chaque session ; plusieurs séances d'essais d'un même événement sont fusionnées en un seul classement.
 - Options : nouvelle case « Charger les sessions d'essais » (`LMU:LoadPracticeSessions`, décochée par défaut) ; la cocher ou la décocher enregistre le choix et recharge les résultats. Les essais chargés ne s'affichent que dans l'onglet Essais du détail des courses ; la console continue de les ignorer.

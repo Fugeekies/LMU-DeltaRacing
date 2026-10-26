@@ -1,6 +1,6 @@
 ## 6. 🏠 Menu : Accueil (`Home.razor`)
 
-> Spécification du jalon « UI : Menu "Accueil" », arrêtée le 26/10/2026. La page n'est pas encore implémentée.
+> Spécification alignée sur le code au 26/10/2026 (`Home.razor`, `HomePresentation.cs`).
 
 ### Description
 Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barre de navigation, devant « Mes courses ». C'est un tableau de bord de la carrière du pilote sélectionné (voir Options) : une grille de tuiles regroupées en sections, chaque compteur affichant son total puis sa ventilation par catégorie.
@@ -76,6 +76,8 @@ Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension
 | RÉPARTITION PAR CATÉGORIE | part des courses par catégorie | barre horizontale empilée, couleurs des badges de catégorie |
 
 En cas d'égalité, le plus récemment roulé l'emporte.
+
+Couleurs de la répartition (voir `UI_DESIGN_SPEC.md`) : Hypercar `#881337`, LMP2 `#1d4ed8`, LMP3 `#7c3aed`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
 
 #### États de la page
 * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».

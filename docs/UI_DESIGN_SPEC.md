@@ -37,9 +37,10 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * **Hypercar :** Fond bordeaux / rouge foncé (`#881337`), texte blanc.
 * **LMP2 :** Fond bleu vif (`#1d4ed8`), texte blanc.
 * **LMGT3 :** Fond orange / ambre (`#d97706`), texte blanc ou noir.
-* **LMP3** et **LMGTE** : couleurs à définir.
+* **LMP3 :** Fond violet (`#7c3aed`), texte blanc.
+* **LMGTE :** Fond vert (`#15803d`), texte blanc.
 
-> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`) ; les couleurs ci-dessus ne sont pas encore appliquées.
+> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`). Les couleurs ci-dessus ne sont appliquées qu'à la barre « Répartition par catégorie » de l'Accueil.
 
 ---
 
@@ -51,7 +52,7 @@ Les maquettes visuelles ASCII détaillées ainsi que les règles métiers spéci
 
 ```text
 UISpec/
-├── Home.template.md           --> Spécification de la vue "Accueil" (à implémenter)
+├── Home.template.md           --> Spécification de la vue "Accueil"
 ├── MyRaces.template.md        --> Spécification de la vue "Mes Courses"
 ├── Progression.template.md    --> Spécification de la vue "Progression" (à implémenter)
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
@@ -61,7 +62,7 @@ UISpec/
 
 ### Récapitulatif des Menus Principaux :
 
-1. **🏠 Accueil (`/`)** *(à implémenter, voir template [`UISpec/Home.template.md`](UISpec/Home.template.md))*
+1. **🏠 Accueil (`/`)** *(Voir template [`UISpec/Home.template.md`](UISpec/Home.template.md))*
    * Tableau de bord de la carrière du pilote en tuiles par sections : palmarès, qualification & départ, abandons, roulage, forme récente, préférences.
    * Chaque compteur affiche son total et sa ventilation par catégorie ; filtres par catégorie et par période.
 

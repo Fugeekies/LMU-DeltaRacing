@@ -49,7 +49,8 @@ public sealed class XmlResultParser : IResultXmlParser
             Value(results, "TrackEvent") ?? RequiredValue(results, "TrackCourse"),
             phase.Name.LocalName,
             drivers,
-            ParseOptionalInt(Value(phase, "MostLapsCompleted")));
+            ParseOptionalInt(Value(phase, "MostLapsCompleted")),
+            ParseOptionalMeters(Value(results, "TrackLength")));
     }
 
     private static bool IsDriverResult(XElement element) =>
@@ -72,7 +73,9 @@ public sealed class XmlResultParser : IResultXmlParser
             ParseOptionalSeconds(Value(element, "FinishTime")),
             ParseOptionalInt(Value(element, "ClassPosition")),
             ParseOptionalInt(Value(element, "Laps")),
-            Value(element, "FinishStatus") ?? string.Empty);
+            Value(element, "FinishStatus") ?? string.Empty,
+            ParseOptionalInt(Value(element, "ClassGridPos")),
+            Value(element, "DNFReason") ?? string.Empty);
     }
 
     private static Lap ParseLap(XElement element)
@@ -112,6 +115,13 @@ public sealed class XmlResultParser : IResultXmlParser
 
     private static int? ParseOptionalInt(string? value) =>
         int.TryParse(value, NumberStyles.Integer, CultureInfo.InvariantCulture, out var result) ? result : null;
+
+    private static double? ParseOptionalMeters(string? value) =>
+        double.TryParse(value, NumberStyles.Float, CultureInfo.InvariantCulture, out var meters)
+        && double.IsFinite(meters)
+        && meters > 0
+            ? meters
+            : null;
 
     private static TimeSpan? ParseOptionalSeconds(string? value) =>
         TryParseSeconds(value, out var time) ? time : null;
