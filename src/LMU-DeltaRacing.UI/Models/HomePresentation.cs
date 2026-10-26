@@ -20,24 +20,12 @@ public static class HomePresentation
     /// </summary>
     /// <param name="sessions">The imported sessions, with driver merges applied.</param>
     /// <param name="userName">The selected driver.</param>
-    /// <param name="category">The category filter, or <see langword="null"/> for all categories.</param>
-    /// <param name="period">The period filter.</param>
-    /// <param name="now">The current time, which ends the rolling periods.</param>
-    public static HomeDashboard Create(
-        IEnumerable<Session> sessions,
-        string? userName,
-        string? category,
-        HomePeriod period,
-        DateTimeOffset now)
+    public static HomeDashboard Create(IEnumerable<Session> sessions, string? userName)
     {
         ArgumentNullException.ThrowIfNull(sessions);
-        ArgumentNullException.ThrowIfNull(period);
 
         var allSessions = sessions.ToArray();
-        var results = GetResults(allSessions, userName)
-            .Where(result => string.IsNullOrEmpty(category) || string.Equals(result.Category, category, StringComparison.Ordinal))
-            .Where(result => period.Contains(result.Session.StartedAt, now))
-            .ToArray();
+        var results = GetResults(allSessions, userName).ToArray();
         var races = results.Where(result => !result.IsQualifying).ToArray();
         var qualifyings = results.Where(result => result.IsQualifying).ToArray();
         var classified = races.Where(result => result.Kind != HomeResultKind.Unclassified).ToArray();
@@ -57,7 +45,6 @@ public static class HomePresentation
             Average(classified, result => result.Rank),
             Count(qualifyings, result => result.Rank == 1, qualifyings.Length),
             Average(qualifyings, result => result.Rank),
-            Average(classified, result => result.Driver.ClassGridPosition),
             Average(classified, result => result.Driver.ClassGridPosition - result.Rank),
             positionsGained.Length == 0 ? null : positionsGained.Sum(),
             Count(races, result => result.Kind == HomeResultKind.Retired, races.Length),
@@ -67,47 +54,16 @@ public static class HomePresentation
             Sum(results, result => result.LapsCompleted),
             Sum(results, result => result.Session.TrackLength is { } meters ? result.LapsCompleted * meters / 1000 : 0),
             Sum(results, result => result.Driver.Laps.Where(lap => lap.Time.HasValue).Sum(lap => lap.Time!.Value.TotalSeconds)),
-            results
-                .Select(result => (Name: result.Session.TrackVenue.Trim(), Detail: (string?)result.Session.TrackCourse.Trim()))
-                .Distinct(VenueAndCourseComparer.Instance)
-                .Count(),
             recentRaces.Select(result => CreateFormEntry(result, null)).ToArray(),
             recentRaces.Length == 0 ? null : CreateFormEntry(recentRaces[0], FindEventId(allSessions, userName, recentRaces[0].Session)),
             FindFavorite(races, result => result.Session.TrackVenue, result => result.Session.TrackCourse),
             FindFavorite(races.Where(result => result.Car != "—"), result => result.Car, _ => null),
             CreateShares(races.Select(result => result.Category), category => category))
         {
-            IsEmpty = results.Length == 0
+            IsEmpty = results.Length == 0,
+            FirstRaceAt = races.Length == 0 ? null : races.Min(result => result.Session.StartedAt),
+            LastRaceAt = races.Length == 0 ? null : races.Max(result => result.Session.StartedAt)
         };
-    }
-
-    /// <summary>
-    /// Returns the categories of the selected driver's races and qualifying sessions, in display order.
-    /// </summary>
-    public static IReadOnlyList<string> GetCategories(IEnumerable<Session> sessions, string? userName)
-    {
-        ArgumentNullException.ThrowIfNull(sessions);
-
-        return GetResults(sessions, userName)
-            .Select(result => result.Category)
-            .Distinct(StringComparer.Ordinal)
-            .OrderBy(GetCategoryOrder)
-            .ThenBy(category => category, StringComparer.OrdinalIgnoreCase)
-            .ToArray();
-    }
-
-    /// <summary>
-    /// Returns the local calendar years of the selected driver's races and qualifying sessions, most recent first.
-    /// </summary>
-    public static IReadOnlyList<int> GetYears(IEnumerable<Session> sessions, string? userName)
-    {
-        ArgumentNullException.ThrowIfNull(sessions);
-
-        return GetResults(sessions, userName)
-            .Select(result => result.Session.StartedAt.ToLocalTime().Year)
-            .Distinct()
-            .OrderDescending()
-            .ToArray();
     }
 
     private static IEnumerable<SessionResult> GetResults(IEnumerable<Session> sessions, string? userName)

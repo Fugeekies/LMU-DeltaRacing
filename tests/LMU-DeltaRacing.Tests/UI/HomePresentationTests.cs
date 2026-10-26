@@ -10,8 +10,6 @@ namespace LMU_DeltaRacing.Tests.UI;
 [TestClass]
 public sealed class HomePresentationTests
 {
-    private static readonly DateTimeOffset Now = Date("2026-10-26T12:00:00Z");
-
     [TestMethod]
     public void Create_counts_results_on_the_official_class_position_and_excludes_unclassified_races()
     {
@@ -24,7 +22,7 @@ public sealed class HomePresentationTests
             Race("2026-10-05T20:00:00Z", "GT3", classPosition: 12, classGrid: 10)
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.Races.Value.Should().Be(5);
         dashboard.Races.Categories.Should().Equal(new HomeCategoryValue("LMP2", 2), new HomeCategoryValue("LMGT3", 3));
@@ -38,7 +36,6 @@ public sealed class HomePresentationTests
         dashboard.Disqualifications.Value.Should().Be(1);
         dashboard.Unclassified.Value.Should().Be(1);
         dashboard.Unclassified.Rate.Should().Be(0.2);
-        dashboard.AverageGridPosition.Value.Should().Be(24 / 4.0);
         dashboard.AveragePositionsGained.Value.Should().Be(1 / 4.0);
         dashboard.TotalPositionsGained.Should().Be(1);
     }
@@ -54,7 +51,7 @@ public sealed class HomePresentationTests
             Session("Practice1", "2026-10-02T19:00:00Z", Driver("GT3", classPosition: 1))
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.Poles.Value.Should().Be(1);
         dashboard.Poles.Rate.Should().Be(0.5);
@@ -75,7 +72,7 @@ public sealed class HomePresentationTests
             Race("2026-10-06T20:00:00Z", "GT3", 10, 1, "DNF", "Gearbox")
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.RetirementCauses.Select(cause => (cause.Label, cause.Count)).Should().Equal(
             ("Non précisée", 2),
@@ -96,13 +93,12 @@ public sealed class HomePresentationTests
             Session("Practice1", "2026-10-02T19:00:00Z", Driver("LMP2", lapsCompleted: 40, lapTimes: [90]), trackLength: 5000)
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.Laps.Value.Should().Be(15);
         dashboard.Laps.Categories.Should().Equal(new HomeCategoryValue("LMP2", 2), new HomeCategoryValue("LMGT3", 13));
         dashboard.DistanceKm.Value.Should().Be(65, "a session without track length adds no distance");
         dashboard.TimeOnTrack.Value.Should().Be(496, "laps without a time are not counted");
-        dashboard.Circuits.Should().Be(2);
     }
 
     [TestMethod]
@@ -114,7 +110,7 @@ public sealed class HomePresentationTests
             .Append(Race("2026-10-21T20:00:00Z", "GT3", 2, 1, "None"))
             .ToArray();
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.RecentForm.Should().HaveCount(10);
         dashboard.RecentForm.Select(entry => entry.Label).Should().Equal("NC", "DNF", "P12", "P11", "P10", "P9", "P8", "P7", "P6", "P5");
@@ -134,7 +130,7 @@ public sealed class HomePresentationTests
             Race("2026-10-04T20:00:00Z", "GT3", 2, 1, "DQ")
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.RecentForm.Select(entry => entry.Kind).Should().Equal(
             HomeResultKind.Disqualified,
@@ -155,65 +151,27 @@ public sealed class HomePresentationTests
             Race("2026-10-04T20:00:00Z", "LMP2", 1, 1, track: "Monza", car: "Oreca 07")
         };
 
-        var dashboard = HomePresentation.Create(sessions, "Driver", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver");
 
         dashboard.FavoriteCircuit!.Name.Should().Be("Monza");
         dashboard.FavoriteCircuit.Races.Should().Be(2);
         dashboard.FavoriteCircuit.Wins.Should().Be(1);
         dashboard.FavoriteCircuit.Podiums.Should().Be(1);
         dashboard.FavoriteCar!.Name.Should().Be("Oreca 07");
+        dashboard.FirstRaceAt.Should().Be(Date("2026-10-01T20:00:00Z"));
+        dashboard.LastRaceAt.Should().Be(Date("2026-10-04T20:00:00Z"));
         dashboard.CategoryShares.Select(share => (share.Label, share.Count)).Should().Equal(("LMP2", 2), ("LMGT3", 2));
-    }
-
-    [TestMethod]
-    public void Create_applies_the_category_and_period_filters()
-    {
-        var sessions = new[]
-        {
-            Race("2025-06-01T20:00:00Z", "GT3", 1, 1),
-            Race("2026-01-10T20:00:00Z", "GT3", 2, 1),
-            Race("2026-10-20T20:00:00Z", "GT3", 3, 1),
-            Race("2026-10-21T20:00:00Z", "LMP2", 4, 1)
-        };
-
-        HomePresentation.Create(sessions, "Driver", "LMGT3", HomePeriod.All, Now).Races.Value.Should().Be(3);
-        HomePresentation.Create(sessions, "Driver", null, HomePeriod.Last30Days, Now).Races.Value.Should().Be(2);
-        HomePresentation.Create(sessions, "Driver", null, HomePeriod.Last12Months, Now).Races.Value.Should().Be(3);
-        HomePresentation.Create(sessions, "Driver", "LMGT3", HomePeriod.ForYear(2025), Now).Races.Value.Should().Be(1);
-        HomePresentation.Create(sessions, "Driver", "LMP3", HomePeriod.All, Now).IsEmpty.Should().BeTrue();
-    }
-
-    [TestMethod]
-    public void Filters_offer_the_categories_and_years_driven_by_the_selected_driver()
-    {
-        var sessions = new[]
-        {
-            Race("2025-06-01T20:00:00Z", "GT3", 1, 1),
-            Qualifying("2026-01-10T20:00:00Z", "Hyper", 1),
-            Race("2026-10-21T20:00:00Z", "Custom", 4, 1),
-            Session("Race", "2024-10-21T20:00:00Z", Driver("LMP3", classPosition: 1, name: "Someone else"))
-        };
-
-        HomePresentation.GetCategories(sessions, "Driver").Should().Equal("Hypercar", "LMGT3", "Custom");
-        HomePresentation.GetYears(sessions, "Driver").Should().Equal(2026, 2025);
-    }
-
-    [TestMethod]
-    public void HomePeriod_round_trips_through_its_key()
-    {
-        HomePeriod.Parse(HomePeriod.ForYear(2025).Key).Should().Be(HomePeriod.ForYear(2025));
-        HomePeriod.Parse(HomePeriod.Last30Days.Key).Should().Be(HomePeriod.Last30Days);
-        HomePeriod.Parse("unknown").Should().Be(HomePeriod.All);
     }
 
     [TestMethod]
     public void Create_returns_an_empty_dashboard_without_a_selected_driver()
     {
-        var dashboard = HomePresentation.Create([Race("2026-10-01T20:00:00Z", "GT3", 1, 1)], null, null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create([Race("2026-10-01T20:00:00Z", "GT3", 1, 1)], null);
 
         dashboard.IsEmpty.Should().BeTrue();
         dashboard.AveragePosition.Value.Should().BeNull();
         dashboard.LastRace.Should().BeNull();
+        dashboard.FirstRaceAt.Should().BeNull();
     }
 
     /// <summary>
@@ -232,7 +190,7 @@ public sealed class HomePresentationTests
             })
             .ToArray();
 
-        var dashboard = HomePresentation.Create(sessions, "Driver Tom", null, HomePeriod.All, Now);
+        var dashboard = HomePresentation.Create(sessions, "Driver Tom");
 
         dashboard.Races.Value.Should().Be(87);
         dashboard.Races.Categories.Should().Equal(

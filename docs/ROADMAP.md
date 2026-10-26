@@ -166,14 +166,13 @@ Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).
 - [x] **Parser :** lire `ClassGridPos` et `DNFReason` du pilote, et `TrackLength` de la session.
 - [x] Nouvel onglet **Accueil** sur `/`, devant « Mes courses » (qui ne garde que `/my-races`). L'ancienne page `/dashboard` est retirée, l'aperçu des imports restant dans Options ; le logo renvoie vers `/`. Mettre à jour `MyRaces.template.md`.
 - [x] Tableau de bord du pilote sélectionné en tuiles groupées par sections. Chaque compteur affiche son total puis sa ventilation par catégorie (badges).
-- [x] Filtres **Catégorie** et **Période** (toute la carrière, 12 derniers mois, 30 derniers jours, année civile) appliqués à toutes les tuiles.
 - [x] **Palmarès** (courses uniquement, position en classe officielle, statut `None` exclu) : courses, victoires, podiums, top 5, top 10 avec leurs taux, position moyenne.
-- [x] **Qualification & départ :** poles (P1 de classe en qualif) et leur taux, position moyenne en qualif, grille moyenne, places gagnées (moyenne par course et total).
+- [x] **Qualification & départ :** poles (P1 de classe en qualif) et leur taux, position moyenne en qualif, places gagnées (moyenne par course et total).
 - [x] **Abandons :** DNF, DQ et non classés (`None`) comptés séparément, avec leurs taux ; répartition des abandons par cause (`DNFReason`).
-- [x] **Roulage :** tours bouclés, distance (km), temps en piste (tours chronométrés), nombre de circuits.
+- [x] **Roulage :** tours bouclés, distance (km), temps en piste (tours chronométrés).
 - [x] **Forme récente :** pastilles des 10 dernières courses (position en classe, DNF, DQ, NC) et résumé de la dernière course, avec un lien vers son événement dans « Détail des courses » (sélection de l'événement par l'URL à ajouter).
 - [x] **Préférences :** circuit et voiture les plus roulés avec leur palmarès, répartition des courses par catégorie.
-- [x] Gérer les états vides : aucune course, filtres sans résultat, valeur non calculable (`—`).
+- [x] Gérer les états vides : aucune course, valeur non calculable (`—`).
 
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).

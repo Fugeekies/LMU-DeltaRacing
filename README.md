@@ -60,13 +60,12 @@ Le menu en haut de l'écran donne accès à cinq pages.
 
 Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile donne un total, puis le détail par catégorie.
 
-- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage) et position moyenne.
-- **Qualification & départ** : poles, position moyenne en qualification et sur la grille, places gagnées entre le départ et l'arrivée.
-- **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
-- **Roulage** : tours bouclés, kilomètres parcourus, temps en piste et nombre de circuits.
+- **Pilote** et **Préférences**, en haut : votre nom avec les dates de votre première et de votre dernière course, puis votre circuit et votre voiture les plus roulés et la répartition de vos courses par catégorie.
 - **Forme récente** : vos 10 dernières courses en pastilles, et votre dernière course avec un lien vers son détail.
-- **Préférences** : circuit et voiture les plus roulés, répartition de vos courses par catégorie.
-- Filtrez par **catégorie** et par **période** (toute la carrière, 12 derniers mois, 30 derniers jours ou une année).
+- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage) et position moyenne.
+- **Roulage** : tours bouclés, kilomètres parcourus et temps en piste.
+- **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
+- **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
 
 > Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Une course que le jeu n'a pas classée (ni arrivée, ni abandon) compte dans le total mais pas dans les résultats.
 

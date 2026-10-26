@@ -11,7 +11,6 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="AveragePosition">The average class position of classified races.</param>
 /// <param name="Poles">Qualifying sessions finished first in class.</param>
 /// <param name="AverageQualifyingPosition">The average class position in qualifying.</param>
-/// <param name="AverageGridPosition">The average class starting position of classified races.</param>
 /// <param name="AveragePositionsGained">The average class positions gained between the grid and the finish.</param>
 /// <param name="TotalPositionsGained">The class positions gained over all races, when at least one race has a class grid position.</param>
 /// <param name="Retirements">Races ended with a DNF status.</param>
@@ -21,7 +20,6 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="Laps">Laps completed in races and qualifying sessions.</param>
 /// <param name="DistanceKm">The distance driven in races and qualifying sessions, in kilometers.</param>
 /// <param name="TimeOnTrack">The sum of timed laps in races and qualifying sessions, in seconds.</param>
-/// <param name="Circuits">The number of distinct circuits (venue and layout).</param>
 /// <param name="RecentForm">The last ten races, most recent first.</param>
 /// <param name="LastRace">The most recent race.</param>
 /// <param name="FavoriteCircuit">The circuit with the most races.</param>
@@ -36,7 +34,6 @@ public sealed record HomeDashboard(
     HomeStat AveragePosition,
     HomeStat Poles,
     HomeStat AverageQualifyingPosition,
-    HomeStat AverageGridPosition,
     HomeStat AveragePositionsGained,
     int? TotalPositionsGained,
     HomeStat Retirements,
@@ -46,7 +43,6 @@ public sealed record HomeDashboard(
     HomeStat Laps,
     HomeStat DistanceKm,
     HomeStat TimeOnTrack,
-    int Circuits,
     IReadOnlyList<HomeFormEntry> RecentForm,
     HomeFormEntry? LastRace,
     HomeFavorite? FavoriteCircuit,
@@ -54,9 +50,19 @@ public sealed record HomeDashboard(
     IReadOnlyList<HomeShare> CategoryShares)
 {
     /// <summary>
-    /// Gets whether the selection contains neither a race nor a qualifying session.
+    /// Gets whether the driver has neither a race nor a qualifying session.
     /// </summary>
     public bool IsEmpty { get; init; }
+
+    /// <summary>
+    /// Gets the start time of the driver's first race.
+    /// </summary>
+    public DateTimeOffset? FirstRaceAt { get; init; }
+
+    /// <summary>
+    /// Gets the start time of the driver's last race.
+    /// </summary>
+    public DateTimeOffset? LastRaceAt { get; init; }
 }
 
 /// <summary>

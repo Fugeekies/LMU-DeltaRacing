@@ -7,7 +7,7 @@
 <section class="page-heading">
     <div>
         <p class="eyebrow">TABLEAU DE BORD</p>
-        <h1>@(string.IsNullOrWhiteSpace(state.UserName) ? "Accueil" : state.UserName)</h1>
+        <h1>Accueil</h1>
         <p class="page-subtitle">Votre carrière en un coup d’œil, résultats comptés sur la position en classe.</p>
     </div>
 </section>
@@ -30,7 +30,7 @@ else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count 
         </div>
     </section>
 }
-else if (categories.Count == 0)
+else if (dashboard.IsEmpty)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -40,166 +40,18 @@ else if (categories.Count == 0)
 }
 else
 {
-    var dashboard = HomePresentation.Create(
-        state.Sessions,
-        state.UserName,
-        string.IsNullOrEmpty(selectedCategory) ? null : selectedCategory,
-        HomePeriod.Parse(selectedPeriod),
-        DateTimeOffset.Now);
-
-    <div class="race-filters home-filters" aria-label="Filtres du tableau de bord">
-        <label class="race-filter">
-            <span>CATÉGORIE</span>
-            <select @bind="selectedCategory" aria-label="Filtrer par catégorie">
-                <option value="">Toutes les catégories</option>
-                @foreach (var category in categories)
+    <div class="home-top">
+        <section class="home-section" aria-labelledby="home-driver">
+            <h2 id="home-driver" class="eyebrow">PILOTE</h2>
+            <article class="home-tile home-driver">
+                <p class="home-driver-name">@state.UserName</p>
+                @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
                 {
-                    <option value="@category">@category</option>
+                    <p class="home-rate">Première course : @FormatDay(firstRaceAt)</p>
+                    <p class="home-rate">Dernière course : @FormatDay(lastRaceAt)</p>
                 }
-            </select>
-        </label>
-        <label class="race-filter">
-            <span>PÉRIODE</span>
-            <select @bind="selectedPeriod" aria-label="Filtrer par période">
-                @foreach (var period in periods)
-                {
-                    <option value="@period.Key">@period.Label</option>
-                }
-            </select>
-        </label>
-    </div>
-
-    @if (dashboard.IsEmpty)
-    {
-        <section class="panel empty-state">
-            <p>Aucune course ne correspond à ces filtres.</p>
+            </article>
         </section>
-    }
-    else
-    {
-        <section class="home-section" aria-labelledby="home-results">
-            <h2 id="home-results" class="eyebrow">PALMARÈS</h2>
-            <div class="home-tiles">
-                @RenderStat("COURSES", dashboard.Races, FormatCount)
-                @RenderStat("VICTOIRES", dashboard.Wins, FormatCount)
-                @RenderStat("PODIUMS", dashboard.Podiums, FormatCount)
-                @RenderStat("TOP 5", dashboard.Top5, FormatCount)
-                @RenderStat("TOP 10", dashboard.Top10, FormatCount)
-                @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage)
-            </div>
-        </section>
-
-        <div class="home-columns">
-            <section class="home-section" aria-labelledby="home-start">
-                <h2 id="home-start" class="eyebrow">QUALIFICATION &amp; DÉPART</h2>
-                <div class="home-tiles">
-                    @RenderStat("POLES", dashboard.Poles, FormatCount)
-                    @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, FormatAverage)
-                    @RenderStat("GRILLE MOYENNE", dashboard.AverageGridPosition, FormatAverage)
-                    <article class="home-tile">
-                        <h3 class="summary-label">PLACES GAGNÉES</h3>
-                        <p class="home-value">
-                            @RenderSigned(dashboard.AveragePositionsGained.Value, "0.0")
-                            <span class="home-unit">/ course</span>
-                        </p>
-                        @if (dashboard.TotalPositionsGained is { } total)
-                        {
-                            <p class="home-rate">@RenderSigned(total, "0") au total</p>
-                        }
-                        @RenderBreakdown(dashboard.AveragePositionsGained, value => FormatSigned(value, "0.0"))
-                    </article>
-                </div>
-            </section>
-
-            <section class="home-section" aria-labelledby="home-retirements">
-                <h2 id="home-retirements" class="eyebrow">ABANDONS</h2>
-                <div class="home-tiles">
-                    @RenderStat("ABANDONS", dashboard.Retirements, FormatCount)
-                    @RenderStat("DISQUALIFICATIONS", dashboard.Disqualifications, FormatCount)
-                    @RenderStat("NON CLASSÉ", dashboard.Unclassified, FormatCount)
-                    <article class="home-tile home-tile-wide">
-                        <h3 class="summary-label">CAUSES D’ABANDON</h3>
-                        @if (dashboard.RetirementCauses.Count == 0)
-                        {
-                            <p class="home-value">—</p>
-                        }
-                        else
-                        {
-                            <div class="home-bar" aria-hidden="true">
-                                @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
-                                {
-                                    <span class="home-bar-part cause-@(index % CauseColorCount)" style="width: @FormatPercentWidth(cause.Share)"></span>
-                                }
-                            </div>
-                            <ul class="home-share-list">
-                                @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
-                                {
-                                    <li>
-                                        <i class="home-swatch cause-@(index % CauseColorCount)" aria-hidden="true"></i>
-                                        @cause.Label <strong>@cause.Count</strong> <span>(@FormatPercent(cause.Share))</span>
-                                    </li>
-                                }
-                            </ul>
-                        }
-                    </article>
-                </div>
-            </section>
-        </div>
-
-        <div class="home-columns">
-            <section class="home-section" aria-labelledby="home-driving">
-                <h2 id="home-driving" class="eyebrow">ROULAGE</h2>
-                <div class="home-tiles">
-                    @RenderStat("TOURS BOUCLÉS", dashboard.Laps, FormatCount)
-                    @RenderStat("DISTANCE", dashboard.DistanceKm, FormatDistance)
-                    @RenderStat("TEMPS EN PISTE", dashboard.TimeOnTrack, FormatDuration)
-                    <article class="home-tile">
-                        <h3 class="summary-label">CIRCUITS</h3>
-                        <p class="home-value">@dashboard.Circuits</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="home-section" aria-labelledby="home-form">
-                <h2 id="home-form" class="eyebrow">FORME RÉCENTE</h2>
-                <article class="home-tile home-form">
-                    @if (dashboard.RecentForm.Count == 0)
-                    {
-                        <p class="home-value">—</p>
-                    }
-                    else
-                    {
-                        <ol class="form-pills" aria-label="Dernières courses, de la plus récente à la plus ancienne">
-                            @foreach (var entry in dashboard.RecentForm)
-                            {
-                                <li class="form-pill form-@entry.Kind.ToString().ToLowerInvariant()"
-                                    title="@($"{FormatDate(entry.StartedAt)} · {entry.TrackVenue} · {entry.Category} · {entry.Car}")">
-                                    @entry.Label
-                                </li>
-                            }
-                        </ol>
-                    }
-                    @if (dashboard.LastRace is { } lastRace)
-                    {
-                        <div class="last-race">
-                            <p class="summary-label">DERNIÈRE COURSE</p>
-                            <p>
-                                <strong>@FormatDate(lastRace.StartedAt)</strong> · @lastRace.TrackVenue · @lastRace.Car
-                            </p>
-                            <p class="last-race-result">
-                                @(lastRace.ClassPosition is { } position ? $"P{position} en classe" : "Position inconnue")
-                                · @lastRace.StatusLabel
-                                · @FormatLap(lastRace.BestLap)
-                                @if (lastRace.EventId is { } eventId)
-                                {
-                                    <a class="last-race-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">Voir l’événement →</a>
-                                }
-                            </p>
-                        </div>
-                    }
-                </article>
-            </section>
-        </div>
 
         <section class="home-section" aria-labelledby="home-preferences">
             <h2 id="home-preferences" class="eyebrow">PRÉFÉRENCES</h2>
@@ -233,7 +85,122 @@ else
                 </article>
             </div>
         </section>
-    }
+    </div>
+
+    <section class="home-section" aria-labelledby="home-form">
+        <h2 id="home-form" class="eyebrow">FORME RÉCENTE</h2>
+        <article class="home-tile home-form">
+            @if (dashboard.RecentForm.Count == 0)
+            {
+                <p class="home-value">—</p>
+            }
+            else
+            {
+                <ol class="form-pills" aria-label="Dernières courses, de la plus récente à la plus ancienne">
+                    @foreach (var entry in dashboard.RecentForm)
+                    {
+                        <li class="form-pill form-@entry.Kind.ToString().ToLowerInvariant()"
+                            title="@($"{FormatDate(entry.StartedAt)} · {entry.TrackVenue} · {entry.Category} · {entry.Car}")">
+                            @entry.Label
+                        </li>
+                    }
+                </ol>
+            }
+            @if (dashboard.LastRace is { } lastRace)
+            {
+                <div class="last-race">
+                    <p class="summary-label">DERNIÈRE COURSE</p>
+                    <p>
+                        <strong>@FormatDate(lastRace.StartedAt)</strong> · @lastRace.TrackVenue · @lastRace.Car
+                    </p>
+                    <p class="last-race-result">
+                        @(lastRace.ClassPosition is { } position ? $"P{position} en classe" : "Position inconnue")
+                        · @lastRace.StatusLabel
+                        · @FormatLap(lastRace.BestLap)
+                        @if (lastRace.EventId is { } eventId)
+                        {
+                            <a class="last-race-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">Voir l’événement →</a>
+                        }
+                    </p>
+                </div>
+            }
+        </article>
+    </section>
+
+    <section class="home-section" aria-labelledby="home-results">
+        <h2 id="home-results" class="eyebrow">PALMARÈS</h2>
+        <div class="home-tiles">
+            @RenderStat("COURSES", dashboard.Races, FormatCount)
+            @RenderStat("VICTOIRES", dashboard.Wins, FormatCount)
+            @RenderStat("PODIUMS", dashboard.Podiums, FormatCount)
+            @RenderStat("TOP 5", dashboard.Top5, FormatCount)
+            @RenderStat("TOP 10", dashboard.Top10, FormatCount)
+            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage)
+        </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="home-driving">
+        <h2 id="home-driving" class="eyebrow">ROULAGE</h2>
+        <div class="home-tiles">
+            @RenderStat("TOURS BOUCLÉS", dashboard.Laps, FormatCount)
+            @RenderStat("DISTANCE", dashboard.DistanceKm, FormatDistance)
+            @RenderStat("TEMPS EN PISTE", dashboard.TimeOnTrack, FormatDuration)
+        </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="home-start">
+        <h2 id="home-start" class="eyebrow">QUALIFICATION &amp; DÉPART</h2>
+        <div class="home-tiles">
+            @RenderStat("POLES", dashboard.Poles, FormatCount)
+            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, FormatAverage)
+            <article class="home-tile">
+                <h3 class="summary-label">PLACES GAGNÉES</h3>
+                <p class="home-value">
+                    @RenderSigned(dashboard.AveragePositionsGained.Value, "0.0")
+                    <span class="home-unit">/ course</span>
+                </p>
+                @if (dashboard.TotalPositionsGained is { } total)
+                {
+                    <p class="home-rate">@RenderSigned(total, "0") au total</p>
+                }
+                @RenderBreakdown(dashboard.AveragePositionsGained, value => FormatSigned(value, "0.0"))
+            </article>
+        </div>
+    </section>
+
+    <section class="home-section" aria-labelledby="home-retirements">
+        <h2 id="home-retirements" class="eyebrow">ABANDONS</h2>
+        <div class="home-tiles">
+            @RenderStat("ABANDONS", dashboard.Retirements, FormatCount)
+            @RenderStat("DISQUALIFICATIONS", dashboard.Disqualifications, FormatCount)
+            @RenderStat("NON CLASSÉ", dashboard.Unclassified, FormatCount)
+            <article class="home-tile home-tile-wide">
+                <h3 class="summary-label">CAUSES D’ABANDON</h3>
+                @if (dashboard.RetirementCauses.Count == 0)
+                {
+                    <p class="home-value">—</p>
+                }
+                else
+                {
+                    <div class="home-bar" aria-hidden="true">
+                        @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
+                        {
+                            <span class="home-bar-part cause-@(index % CauseColorCount)" style="width: @FormatPercentWidth(cause.Share)"></span>
+                        }
+                    </div>
+                    <ul class="home-share-list">
+                        @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
+                        {
+                            <li>
+                                <i class="home-swatch cause-@(index % CauseColorCount)" aria-hidden="true"></i>
+                                @cause.Label <strong>@cause.Count</strong> <span>(@FormatPercent(cause.Share))</span>
+                            </li>
+                        }
+                    </ul>
+                }
+            </article>
+        </div>
+    </section>
 }
 
 @code {
@@ -249,10 +216,7 @@ else
     };
 
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
-    private IReadOnlyList<string> categories = [];
-    private IReadOnlyList<HomePeriod> periods = [HomePeriod.All];
-    private string selectedCategory = string.Empty;
-    private string selectedPeriod = HomePeriod.All.Key;
+    private HomeDashboard dashboard = HomePresentation.Create([], null);
 
     protected override void OnInitialized()
     {
@@ -272,18 +236,11 @@ else
     private void UpdateState()
     {
         state = DashboardData.Snapshot;
-        categories = HomePresentation.GetCategories(state.Sessions, state.UserName);
-        periods =
-        [
-            HomePeriod.All,
-            HomePeriod.Last12Months,
-            HomePeriod.Last30Days,
-            .. HomePresentation.GetYears(state.Sessions, state.UserName).Select(HomePeriod.ForYear)
-        ];
+        dashboard = HomePresentation.Create(state.Sessions, state.UserName);
     }
 
-    private bool ShowsBreakdown(HomeStat stat) =>
-        string.IsNullOrEmpty(selectedCategory) && stat.Value is > 0 or < 0 && stat.Categories.Count > 0;
+    private static bool ShowsBreakdown(HomeStat stat) =>
+        stat.Value is > 0 or < 0 && stat.Categories.Count > 0;
 
     private RenderFragment RenderStat(string label, HomeStat stat, Func<double?, string> format) =>
         @<article class="home-tile">
@@ -372,6 +329,9 @@ else
 
     private static string FormatDate(DateTimeOffset date) =>
         date.ToLocalTime().ToString("dd/MM/yyyy HH:mm", System.Globalization.CultureInfo.InvariantCulture);
+
+    private static string FormatDay(DateTimeOffset date) =>
+        date.ToLocalTime().ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
 
     private static string FormatLap(TimeSpan? time) =>
         time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";

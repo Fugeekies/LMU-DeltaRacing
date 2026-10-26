@@ -64,7 +64,7 @@ UISpec/
 
 1. **🏠 Accueil (`/`)** *(Voir template [`UISpec/Home.template.md`](UISpec/Home.template.md))*
    * Tableau de bord de la carrière du pilote en tuiles par sections : palmarès, qualification & départ, abandons, roulage, forme récente, préférences.
-   * Chaque compteur affiche son total et sa ventilation par catégorie ; filtres par catégorie et par période.
+   * Chaque compteur affiche son total et sa ventilation par catégorie.
 
 2. **🏎️ Mes Courses (`/my-races`)** *(Voir template [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md))*
    * Historique et progression personnelle groupés par circuit, une ligne par paire qualification + course.

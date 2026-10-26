@@ -1444,10 +1444,6 @@ h3 {
 }
 
 /* Home dashboard */
-.home-filters {
-    padding: 0 0 1.25rem;
-}
-
 .home-section {
     min-width: 0;
     margin-bottom: 1.5rem;
@@ -1457,10 +1453,27 @@ h3 {
     margin-bottom: 0.7rem;
 }
 
-.home-columns {
+.home-top {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0 1.25rem;
+    grid-template-columns: minmax(200px, 1fr) minmax(0, 4fr);
+    gap: 0 1rem;
+}
+
+.home-top > .home-section {
+    display: flex;
+    flex-direction: column;
+}
+
+/* The driver tile stretches to the height of the preference tiles beside it. */
+.home-driver {
+    flex: 1;
+}
+
+.home-driver-name {
+    margin: 0 0 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 750;
+    overflow-wrap: anywhere;
 }
 
 .home-tiles {
@@ -1645,7 +1658,7 @@ p.home-rate {
 }
 
 @media (max-width: 1120px) {
-    .home-columns {
+    .home-top {
         grid-template-columns: minmax(0, 1fr);
     }
 }
