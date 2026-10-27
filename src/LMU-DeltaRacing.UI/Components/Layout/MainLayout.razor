@@ -2,40 +2,48 @@
 @implements IDisposable
 @inject DashboardDataService DashboardData
 
-<div class="app-shell">
-    <header class="topbar">
-        <div class="topbar-inner">
-            <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
-                <span class="brand-mark" aria-hidden="true">LMU</span>
-                <span>DELTA<span class="brand-accent">RACING</span></span>
-            </a>
-            <nav class="primary-nav" aria-label="Navigation principale">
-                <NavLink href="/" Match="NavLinkMatch.All">Accueil</NavLink>
-                <NavLink href="/my-races">Mes courses</NavLink>
-                <NavLink href="/progression">Progression</NavLink>
-                <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
-                <NavLink href="/race-details">Détail des courses</NavLink>
-                <NavLink href="/settings">Options</NavLink>
-            </nav>
-            <div class="system-status" role="status" aria-live="polite">
-                <span class="active-driver" title="@state.UserName">
-                    @(string.IsNullOrWhiteSpace(state.UserName) ? "Pilote non défini" : state.UserName)
-                </span>
-                <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
-                <span>@GetStatusLabel()</span>
+@if (StartupLoadingPresentation.IsVisible(state))
+{
+    <StartupLoadingScreen Progress="@StartupLoadingPresentation.ProgressPercent(state)"
+                          Caption="@StartupLoadingPresentation.Caption(state)" />
+}
+else
+{
+    <div class="app-shell">
+        <header class="topbar">
+            <div class="topbar-inner">
+                <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
+                    <span class="brand-mark" aria-hidden="true">LMU</span>
+                    <span>DELTA<span class="brand-accent">RACING</span></span>
+                </a>
+                <nav class="primary-nav" aria-label="Navigation principale">
+                    <NavLink href="/" Match="NavLinkMatch.All">Accueil</NavLink>
+                    <NavLink href="/my-races">Mes courses</NavLink>
+                    <NavLink href="/progression">Progression</NavLink>
+                    <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
+                    <NavLink href="/race-details">Détail des courses</NavLink>
+                    <NavLink href="/settings">Options</NavLink>
+                </nav>
+                <div class="system-status" role="status" aria-live="polite">
+                    <span class="active-driver" title="@state.UserName">
+                        @(string.IsNullOrWhiteSpace(state.UserName) ? "Pilote non défini" : state.UserName)
+                    </span>
+                    <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
+                    <span>@GetStatusLabel()</span>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
 
-    <main class="main-content">
-        @Body
-    </main>
+        <main class="main-content">
+            @Body
+        </main>
 
-    <footer class="app-footer">
-        <span>LE MANS ULTIMATE</span>
-        <span>RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES</span>
-    </footer>
-</div>
+        <footer class="app-footer">
+            <span>LE MANS ULTIMATE</span>
+            <span>RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES</span>
+        </footer>
+    </div>
+}
 
 <div id="blazor-error-ui" data-nosnippet>
     Une erreur est survenue.

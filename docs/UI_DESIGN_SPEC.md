@@ -49,6 +49,12 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * **Une courbe par voiture :** `#38bdf8`, `#f97316`, `#a3e635`, `#f472b6`, `#facc15`, `#2dd4bf`, `#c084fc`, `#94a3b8`, attribuées par ordre alphabétique de voiture puis réutilisées en boucle.
 * Le violet, le vert et le rouge WEC ci-dessus gardent leur sens (meilleur de la classe, gain, perte) et ne servent pas aux courbes. Seul l'écart du résumé chiffré utilise le vert (plus rapide) ou le rouge (plus lent).
 
+### 6. Écran de chargement au démarrage
+* Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».
+* La barre de progression est une route : une roue (pneu sombre, jante rouge `#e11d48`) tourne en continu et avance de gauche à droite selon les fichiers traités / total ; la portion parcourue est rouge. Sous la route : « N / M fichiers traités » (ou « Recherche des fichiers de résultats… » tant que le total est inconnu) et le pourcentage.
+* L'écran disparaît quand l'import au démarrage est terminé, y compris en erreur (l'erreur s'affiche alors dans les pages). Un rechargement depuis Options et les imports du watcher ne l'affichent pas.
+* Avec `prefers-reduced-motion`, la roue avance sans tourner.
+
 ---
 
 ## 📂 Navigation & Templates des Vues (`UISpec/`)

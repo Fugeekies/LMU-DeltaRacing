@@ -293,6 +293,102 @@ public sealed class DashboardDataServiceTests
         }
     }
 
+    /// <summary>
+    /// Verifies that the startup import flag covers the whole startup import only, not later reloads.
+    /// </summary>
+    [TestMethod]
+    public async Task Startup_import_flag_ends_with_the_startup_import_and_is_not_raised_by_reloads()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+        var reloadStates = new List<DashboardState>();
+
+        try
+        {
+            service.Snapshot.IsStartupImportRunning.Should().BeTrue();
+
+            await service.StartAsync(CancellationToken.None);
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsStartupImportRunning);
+
+            state.IsLoading.Should().BeFalse();
+            state.Sessions.Should().ContainSingle();
+
+            service.StateChanged += () => reloadStates.Add(service.Snapshot);
+            await service.ReloadResultsAsync(resultsDirectory);
+
+            reloadStates.Should().Contain(snapshot => snapshot.IsLoading);
+            reloadStates.Should().OnlyContain(snapshot => !snapshot.IsStartupImportRunning);
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that an unavailable results directory ends the startup import with an error.
+    /// </summary>
+    [TestMethod]
+    public async Task Startup_import_flag_ends_when_the_results_directory_is_unavailable()
+    {
+        var resultsDirectory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(resultsDirectory);
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = Path.Combine(resultsDirectory, "missing")
+            })
+            .Build();
+        var service = new DashboardDataService(
+            configuration,
+            importer,
+            repository,
+            NullLogger<DashboardDataService>.Instance,
+            NullLogger<ResultsDirectoryWatcher>.Instance,
+            new DashboardSettingsStore(
+                (IConfigurationRoot)configuration,
+                Path.Combine(resultsDirectory, "appsettings.json")));
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsStartupImportRunning);
+
+            state.IsLoading.Should().BeFalse();
+            state.ErrorMessage.Should().NotBeNullOrWhiteSpace();
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
     private static DashboardDataService CreateService(
         IConfiguration configuration,
         SessionImportService importer,

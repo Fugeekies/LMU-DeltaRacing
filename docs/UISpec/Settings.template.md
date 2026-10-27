@@ -56,7 +56,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Les messages de retour de la page s'affichent sous les panneaux. Il n'y a plus de bouton « Enregistrer » : chaque réglage est enregistré par son action.
 
 #### État des imports (sous les options)
-* Pendant l'import initial : barre de progression « N / M fichiers traités ».
+* Pendant un rechargement : barre de progression « N / M fichiers traités ». L'import au démarrage, lui, est couvert par l'écran de chargement (`docs/UI_DESIGN_SPEC.md`).
 * Encadré d'erreur si les résultats n'ont pas pu être chargés, avec un lien vers Options.
 * Trois cartes :
   * **SESSIONS IMPORTÉES** : nombre de sessions du pilote (essais compris s'ils sont chargés) ;
