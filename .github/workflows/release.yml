@@ -3,30 +3,68 @@ name: Build and release Windows installer (Manual)
 on:
   workflow_dispatch:
     inputs:
-      version_tag:
-        description: 'Tag et version de l’installeur (ex: v1.0.0)'
+      bump:
+        description: 'Type de version à publier (incrémente le dernier tag vX.Y.Z)'
         required: true
-        type: string
+        type: choice
+        default: Patch
+        options:
+          - Majeur
+          - Mineur
+          - Patch
 
 permissions:
   contents: write # Requis pour créer le tag Git et publier la release automatiquement
 
+# Two releases started in a row would compute the same next version from the same latest tag.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
 jobs:
   build-installer:
     runs-on: windows-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+      previous_tag: ${{ steps.version.outputs.previous_tag }}
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Tags and history are needed to find the latest version
 
-      - name: Validate release inputs
+      - name: Compute next version
+        id: version
         shell: pwsh
         env:
-          RELEASE_TAG: ${{ inputs.version_tag }}
+          BUMP: ${{ inputs.bump }}
+          REF: ${{ github.ref }}
         run: |
-          if ($env:RELEASE_TAG -notmatch '^v?[0-9]+\.[0-9]+\.[0-9]+$') {
-            throw "The release tag must be a semantic version such as v1.0.0."
+          if ($env:REF -ne 'refs/heads/main') {
+            throw "Releases are published from main only (selected ref: $env:REF)."
           }
+
+          $latest = git tag --list 'v*' --sort=-v:refname |
+            Where-Object { $_ -match '^v[0-9]+\.[0-9]+\.[0-9]+$' } |
+            Select-Object -First 1
+          if ($latest) {
+            $parts = $latest.TrimStart('v').Split('.') | ForEach-Object { [int]$_ }
+          } else {
+            $parts = 0, 0, 0
+          }
+
+          switch ($env:BUMP) {
+            'Majeur' { $parts = ($parts[0] + 1), 0, 0 }
+            'Mineur' { $parts = $parts[0], ($parts[1] + 1), 0 }
+            'Patch'  { $parts = $parts[0], $parts[1], ($parts[2] + 1) }
+            default  { throw "Unknown bump type: $env:BUMP" }
+          }
+
+          $version = $parts -join '.'
+          Write-Host "Latest tag: $(if ($latest) { $latest } else { 'none' }) -> v$version ($env:BUMP)"
+          "version=$version" >> $env:GITHUB_OUTPUT
+          "previous_tag=$latest" >> $env:GITHUB_OUTPUT
 
       - name: Setup .NET 10
         uses: actions/setup-dotnet@v4
@@ -54,10 +92,8 @@ jobs:
       - name: Build installer
         shell: pwsh
         env:
-          RELEASE_TAG: ${{ inputs.version_tag }}
-        run: |
-          $version = $env:RELEASE_TAG -replace '^v', ''
-          iscc "/DAppVersion=$version" "scripts/installer.iss"
+          APP_VERSION: ${{ steps.version.outputs.version }}
+        run: iscc "/DAppVersion=$env:APP_VERSION" "scripts/installer.iss"
 
       - name: Upload installer artifact
         uses: actions/upload-artifact@v4
@@ -71,10 +107,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+      pull-requests: read
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+          fetch-depth: 0
 
       - name: Download installer artifact
         uses: actions/download-artifact@v4
@@ -82,14 +122,45 @@ jobs:
           name: LMU-DeltaRacing-Setup
           path: output
 
-      - name: Create Git Tag Automatically
+      - name: Build release notes from merged pull requests
+        shell: bash
         env:
-          RELEASE_TAG: ${{ inputs.version_tag }}
+          GH_TOKEN: ${{ github.token }}
+          PREVIOUS_TAG: ${{ needs.build-installer.outputs.previous_tag }}
+          RELEASE_TAG: v${{ needs.build-installer.outputs.version }}
         run: |
-          if [[ ! "$RELEASE_TAG" =~ ^v?[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
-            echo "The release tag must be a semantic version such as v1.0.0." >&2
-            exit 1
+          range="HEAD"
+          if [[ -n "$PREVIOUS_TAG" ]]; then
+            range="$PREVIOUS_TAG..HEAD"
           fi
+
+          # Squash merges end with "(#N)", merge commits start with "Merge pull request #N".
+          # The PR title is read from GitHub so both merge styles give the same line.
+          numbers=$(git log --first-parent --format=%s "$range" |
+            sed -nE 's/.*\(#([0-9]+)\)$/\1/p; s/^Merge pull request #([0-9]+).*/\1/p')
+
+          {
+            echo "## Changements"
+            echo
+            if [[ -z "$numbers" ]]; then
+              echo "Aucune PR fusionnée depuis la version précédente."
+            else
+              for number in $numbers; do
+                gh pr view "$number" --json number,title --template '- {{.title}} (#{{.number}}){{"\n"}}'
+              done
+            fi
+            if [[ -n "$PREVIOUS_TAG" ]]; then
+              echo
+              echo "**Tous les changements :** https://github.com/${{ github.repository }}/compare/$PREVIOUS_TAG...$RELEASE_TAG"
+            fi
+          } > release-notes.md
+
+          cat release-notes.md
+
+      - name: Create Git tag
+        env:
+          RELEASE_TAG: v${{ needs.build-installer.outputs.version }}
+        run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git tag "$RELEASE_TAG"
@@ -99,8 +170,9 @@ jobs:
       - name: Create GitHub release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ inputs.version_tag }}
-          name: LMU-DeltaRacing ${{ inputs.version_tag }}
+          tag_name: v${{ needs.build-installer.outputs.version }}
+          name: LMU-DeltaRacing v${{ needs.build-installer.outputs.version }}
+          body_path: release-notes.md
           files: output/LMU-DeltaRacing-Setup.exe
           draft: false
           prerelease: false
