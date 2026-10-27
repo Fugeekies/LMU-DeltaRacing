@@ -21,6 +21,16 @@ public static class DisplayFormat
     };
 
     /// <summary>
+    /// Formats a position as a French ordinal: <c>1er</c>, then <c>2e</c>, <c>3e</c>…
+    /// </summary>
+    public static string Position(int? position) => position switch
+    {
+        null => Missing,
+        1 => "1er",
+        { } value => value.ToString(CultureInfo.InvariantCulture) + "e"
+    };
+
+    /// <summary>
     /// Formats a lap time as <c>m:ss.fff</c>.
     /// </summary>
     public static string Lap(TimeSpan? time) =>

@@ -47,7 +47,9 @@ public static class MyRacesPresentation
                 driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min(),
                 driver.GridPosition,
                 driver.FinishTime,
-                driver.LapsCompleted));
+                driver.LapsCompleted,
+                driver.ClassPosition,
+                isQualifying ? null : RaceResults.GetKind(driver.FinishStatus, driver.ClassPosition)));
         }
 
         var records = new List<RecordBuilder>();
@@ -129,7 +131,9 @@ public static class MyRacesPresentation
                 record.RaceTime,
                 record.RaceDelta,
                 record.LapsCompleted,
-                record.FinishTime))
+                record.FinishTime,
+                record.ClassPosition,
+                record.RaceResult))
             .ToArray();
     }
 
@@ -157,7 +161,9 @@ public static class MyRacesPresentation
         TimeSpan? BestLap,
         int? GridPosition,
         TimeSpan? FinishTime,
-        int? LapsCompleted);
+        int? LapsCompleted,
+        int? ClassPosition,
+        HomeResultKind? RaceResult);
 
     private sealed class RecordBuilder
     {
@@ -174,6 +180,8 @@ public static class MyRacesPresentation
         public TimeSpan? RaceDelta { get; set; }
         public int? LapsCompleted { get; init; }
         public TimeSpan? FinishTime { get; init; }
+        public int? ClassPosition { get; init; }
+        public HomeResultKind? RaceResult { get; init; }
 
         /// <summary>
         /// Creates a record from a qualifying session, a race, or both.
@@ -196,7 +204,9 @@ public static class MyRacesPresentation
                 GridPosition = race?.GridPosition,
                 RaceTime = race?.BestLap,
                 LapsCompleted = race?.LapsCompleted,
-                FinishTime = race?.FinishTime
+                FinishTime = race?.FinishTime,
+                ClassPosition = race?.ClassPosition,
+                RaceResult = race?.RaceResult
             };
         }
     }

@@ -82,8 +82,11 @@ public static class HomePresentation
         }
     }
 
+    // A retirement or a disqualification keeps a class position in LMU (a lone car in its class
+    // that retires after 0 laps is classified P1), but it is not a result: only finishes count.
     private static bool IsClassifiedIn(SessionResult result, int lastPosition) =>
-        result.Kind != HomeResultKind.Unclassified && result.Rank <= lastPosition;
+        result.Kind is HomeResultKind.Win or HomeResultKind.Podium or HomeResultKind.Classified
+        && result.Rank <= lastPosition;
 
     private static HomeStat Count(IReadOnlyList<SessionResult> source, Func<SessionResult, bool> predicate, int? reference) =>
         Aggregate(
@@ -203,18 +206,7 @@ public static class HomePresentation
 
         public double LapsCompleted { get; } = Driver.LapsCompleted ?? Driver.Laps.Count;
 
-        public HomeResultKind Kind => Driver.FinishStatus.Trim() switch
-        {
-            var status when status.Equals("DNF", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Retired,
-            var status when status.Equals("DQ", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Disqualified,
-            var status when status.Equals("None", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Unclassified,
-            _ => Rank switch
-            {
-                1 => HomeResultKind.Win,
-                2 or 3 => HomeResultKind.Podium,
-                _ => HomeResultKind.Classified
-            }
-        };
+        public HomeResultKind Kind => RaceResults.GetKind(Driver.FinishStatus, Rank);
     }
 
     private sealed class VenueAndCourseComparer : IEqualityComparer<(string Name, string? Detail)>

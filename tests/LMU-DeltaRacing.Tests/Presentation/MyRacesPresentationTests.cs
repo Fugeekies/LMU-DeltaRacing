@@ -193,6 +193,110 @@ public sealed class MyRacesPresentationTests
         records.Select(record => record.Category).Should().Contain(["LMGTE", "LMP3", "LMGT3", "LMP2", "Hypercar"]);
     }
 
+    [TestMethod]
+    public void CreateRecords_reports_the_class_position_of_the_race_and_not_of_the_qualifying()
+    {
+        var sessions = new[]
+        {
+            CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T11:00:00Z", [122], classPosition: 5),
+            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [125], classPosition: 2, finishStatus: "Finished Normally"),
+            CreateSession("Qualify", "Spa", "Hyper", "Toyota", "2025-02-22T12:00:00Z", [121], classPosition: 1)
+        };
+
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver");
+
+        records.Should().HaveCount(2);
+        records[0].RaceResult.Should().BeNull("a qualifying session without race has no race result");
+        records[0].ClassPosition.Should().BeNull();
+        records[0].ResultLabel.Should().Be("—");
+        records[0].PositionTier.Should().Be(MyRacePositionTier.None);
+        records[1].ClassPosition.Should().Be(2);
+        records[1].RaceResult.Should().Be(HomeResultKind.Podium);
+        records[1].ResultLabel.Should().Be("2e");
+        records[1].PositionTier.Should().Be(MyRacePositionTier.Silver);
+    }
+
+    [TestMethod]
+    public void CreateRecords_highlights_the_podium_the_top_five_and_the_top_ten_only()
+    {
+        int[] positions = [1, 2, 3, 4, 5, 6, 10, 11];
+        var sessions = positions
+            .Select(position => CreateSession(
+                "Race",
+                $"Track {position:D2}",
+                "Hyper",
+                "Toyota",
+                "2025-02-22T11:30:00Z",
+                [125],
+                classPosition: position,
+                finishStatus: "Finished Normally"))
+            .ToArray();
+
+        var tiers = MyRacesPresentation.CreateRecords(sessions, "Driver")
+            .OrderBy(record => record.ClassPosition)
+            .Select(record => record.PositionTier);
+
+        tiers.Should().Equal(
+            MyRacePositionTier.Gold,
+            MyRacePositionTier.Silver,
+            MyRacePositionTier.Bronze,
+            MyRacePositionTier.TopFive,
+            MyRacePositionTier.TopFive,
+            MyRacePositionTier.TopTen,
+            MyRacePositionTier.TopTen,
+            MyRacePositionTier.None);
+    }
+
+    [TestMethod]
+    public void CreateRecords_labels_retirements_disqualifications_and_unclassified_races_without_highlight()
+    {
+        var sessions = new[]
+        {
+            CreateSession("Race", "Spa", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [125], classPosition: 1, finishStatus: "DNF"),
+            CreateSession("Race", "Monza", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [125], classPosition: 2, finishStatus: "DQ"),
+            CreateSession("Race", "Imola", "Hyper", "Toyota", "2025-02-22T11:30:00Z", [125], classPosition: 3, finishStatus: "None")
+        };
+
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver").ToDictionary(record => record.TrackVenue);
+
+        records["Spa"].ResultLabel.Should().Be("DNF");
+        records["Monza"].ResultLabel.Should().Be("DQ");
+        records["Imola"].ResultLabel.Should().Be("NC");
+        records.Values.Select(record => record.PositionTier).Should().AllBeEquivalentTo(MyRacePositionTier.None);
+    }
+
+    [TestMethod]
+    public void CreateRecords_on_real_fixtures_shows_the_class_position_of_each_race()
+    {
+        var parser = new LMU_DeltaRacing.Infrastructure.Parsing.XmlResultParser();
+        var races = Directory
+            .EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*.xml")
+            .Select(path =>
+            {
+                using var stream = File.OpenRead(path);
+                return parser.Parse(stream);
+            })
+            .Where(session => session.SessionType == "Race")
+            .Select(session => (Session: session, Driver: DriverProfile.FindDriver(session, "Driver Tom")))
+            .Where(race => race.Driver is not null)
+            .ToArray();
+
+        var records = MyRacesPresentation.CreateRecords(races.Select(race => race.Session), "Driver Tom");
+
+        records.Should().HaveCount(races.Length);
+        records.Select(record => record.ClassPosition)
+            .Should()
+            .BeEquivalentTo(races.Select(race => race.Driver!.ClassPosition));
+        records.Select(record => record.PositionTier).Should().Contain(
+            [MyRacePositionTier.Gold, MyRacePositionTier.Bronze, MyRacePositionTier.TopFive, MyRacePositionTier.TopTen]);
+
+        // The fixtures hold three class wins, a class P1 with a DNF and another one not classified:
+        // only the three wins are highlighted in gold.
+        records.Where(record => record.ClassPosition == 1).Select(record => record.ResultLabel)
+            .Should().BeEquivalentTo(["1er", "1er", "1er", "DNF", "NC"]);
+        records.Count(record => record.PositionTier == MyRacePositionTier.Gold).Should().Be(3);
+    }
+
     private static Session CreateSession(
         string type,
         string track,
@@ -203,7 +307,9 @@ public sealed class MyRacesPresentationTests
         int? gridPosition = null,
         TimeSpan? finishTime = null,
         int? lapsCompleted = null,
-        string driverName = "Driver")
+        string driverName = "Driver",
+        int? classPosition = null,
+        string finishStatus = "")
     {
         return new Session(
             Guid.NewGuid(),
@@ -223,7 +329,9 @@ public sealed class MyRacesPresentationTests
                     carType,
                     gridPosition,
                     finishTime,
-                    lapsCompleted: lapsCompleted)
+                    classPosition,
+                    lapsCompleted,
+                    finishStatus)
             ]);
     }
 }

@@ -11,6 +11,10 @@
     --yellow: #eab308;
     --red: #ef4444;
     --purple: #b066ff;
+    --gold: #d4af37;
+    --silver: #c0c7d1;
+    --bronze: #cd7f32;
+    --top5: #60a5fa;
 }
 
 * {
@@ -960,7 +964,62 @@ h3 {
 }
 
 .races-table {
-    min-width: 940px;
+    min-width: 1020px;
+}
+
+/* Class position highlight: a frame around the whole row and the position in the same color.
+   Inset shadows draw the frame inside each cell, so that it does not fight with the collapsed
+   table borders and two highlighted rows in a row keep their own frame. */
+.races-table tr[class^="position-"] td {
+    background: color-mix(in srgb, var(--position-color) 5%, transparent);
+    box-shadow:
+        inset 0 1px 0 var(--position-color),
+        inset 0 -1px 0 var(--position-color);
+}
+
+.races-table tr[class^="position-"] td:first-child {
+    box-shadow:
+        inset 0 1px 0 var(--position-color),
+        inset 0 -1px 0 var(--position-color),
+        inset 1px 0 0 var(--position-color);
+}
+
+.races-table tr[class^="position-"] td:last-child {
+    box-shadow:
+        inset 0 1px 0 var(--position-color),
+        inset 0 -1px 0 var(--position-color),
+        inset -1px 0 0 var(--position-color);
+}
+
+.races-table .position-gold {
+    --position-color: var(--gold);
+}
+
+.races-table .position-silver {
+    --position-color: var(--silver);
+}
+
+.races-table .position-bronze {
+    --position-color: var(--bronze);
+}
+
+.races-table .position-top5 {
+    --position-color: var(--top5);
+}
+
+/* Same blue as the top 5, lighter, so that the two groups read as one scale. */
+.races-table .position-top10 {
+    --position-color: color-mix(in srgb, var(--top5) 45%, transparent);
+    --position-text: color-mix(in srgb, var(--top5) 50%, var(--text));
+}
+
+.position-cell {
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.races-table tr[class^="position-"] .position-cell {
+    color: var(--position-text, var(--position-color));
 }
 
 .car-cell {

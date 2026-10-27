@@ -131,17 +131,39 @@ public sealed class ConsoleViewsTests
         var output = Render(MyRacesView.Create(records, venue, null));
 
         output.Should().Contain($"Circuit : {venue}").And.Contain("Catégorie : Toutes les catégories");
-        output.Should().Contain("Δ QUALIF").And.Contain("Δ COURSE").And.Contain("TEMPS TOTAL");
+        output.Should().Contain("CLASS.").And.Contain("Δ QUALIF").And.Contain("Δ COURSE").And.Contain("TEMPS TOTAL");
         output.Should().Contain($"{expected.Count} résultat");
         foreach (var record in expected)
         {
-            output.Should().Contain(DisplayFormat.DateTime(record.StartedAt));
+            output.Should().Contain($"{DisplayFormat.DateTime(record.StartedAt)} ");
+            output.Should().Contain(record.ResultLabel);
         }
 
         var delta = expected.Select(record => record.RaceDelta ?? record.QualifyingDelta).FirstOrDefault(value => value is not null);
         if (delta is not null)
         {
             output.Should().Contain(DisplayFormat.Delta(delta));
+        }
+    }
+
+    /// <summary>
+    /// Verifies that in a 120-column terminal only the car name wraps: dates, positions and times
+    /// stay on one line.
+    /// </summary>
+    [TestMethod]
+    public void MyRacesView_keeps_dates_positions_and_times_on_one_line_in_120_columns()
+    {
+        var records = MyRacesPresentation.CreateRecords(FixtureSessions.Value, MainDriver);
+        var venue = records[0].TrackVenue;
+
+        var console = new TestConsole().Width(120);
+        console.Write(MyRacesView.Create(records, venue, null));
+
+        foreach (var record in MyRacesFilters.Apply(records, venue, null))
+        {
+            console.Output.Should().Contain(DisplayFormat.DateTime(record.StartedAt))
+                .And.Contain(record.ResultLabel)
+                .And.Contain(DisplayFormat.TotalTime(record.FinishTime));
         }
     }
 

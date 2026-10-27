@@ -27,6 +27,19 @@ public sealed class DisplayFormatTests
     }
 
     /// <summary>
+    /// Verifies the French ordinal of a position: "1er", then "2e", "3e"…
+    /// </summary>
+    [TestMethod]
+    public void Positions_use_french_ordinals()
+    {
+        DisplayFormat.Position(1).Should().Be("1er");
+        DisplayFormat.Position(2).Should().Be("2e");
+        DisplayFormat.Position(11).Should().Be("11e");
+        DisplayFormat.Position(21).Should().Be("21e");
+        DisplayFormat.Position(null).Should().Be("—");
+    }
+
+    /// <summary>
     /// Verifies the number formats of the home dashboard: narrow no-break space between thousands,
     /// point decimals.
     /// </summary>

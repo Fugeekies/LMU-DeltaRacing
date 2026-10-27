@@ -74,6 +74,29 @@ public static class ConsoleTheme
     }
 
     /// <summary>
+    /// Returns the class position of a "my races" row, highlighted as on the dashboard: a gold,
+    /// silver or bronze badge for the podium, blue for the top 5 and bold for the top 10.
+    /// </summary>
+    /// <remarks>
+    /// Spectre.Console cannot fill a whole table row, so the highlight is carried by the position cell.
+    /// </remarks>
+    public static string PositionMarkup(MyRaceRecord record)
+    {
+        ArgumentNullException.ThrowIfNull(record);
+
+        var label = Markup.Escape(record.ResultLabel);
+        return record.PositionTier switch
+        {
+            MyRacePositionTier.Gold => $"[bold black on #d4af37] {label} [/]",
+            MyRacePositionTier.Silver => $"[bold black on #c0c7d1] {label} [/]",
+            MyRacePositionTier.Bronze => $"[bold black on #cd7f32] {label} [/]",
+            MyRacePositionTier.TopFive => $"[bold #60a5fa]{label}[/]",
+            MyRacePositionTier.TopTen => $"[bold]{label}[/]",
+            _ => label
+        };
+    }
+
+    /// <summary>
     /// Returns escaped text in the given color.
     /// </summary>
     public static string Colored(string text, Color color) =>

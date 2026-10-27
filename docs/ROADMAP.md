@@ -209,6 +209,14 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
+## Jalon — Mise en avant du classement dans « Mes courses » [Terminé]
+Spécification : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md).
+- [x] Colonne **CLASSEMENT** : position en classe de la course (`ClassPosition`) au format `1er`, `2e`…, `DNF`, `DQ` ou `NC` selon le statut d'arrivée, `—` sans course.
+- [x] Ligne encadrée et position colorée : or pour la 1re place, argent pour la 2e, bronze pour la 3e (bordure sur toute la ligne plutôt qu'un fond coloré).
+- [x] Bleu pour les 4e et 5e places, et le même bleu plus léger pour les 6e à 10e, pour différencier les lignes (couleurs ajoutées à `UI_DESIGN_SPEC.md`).
+- [x] Cas particuliers : un abandon, une disqualification, une course non classée ou une ligne sans course gardent la ligne actuelle, sans bordure.
+- [x] Console : colonne CLASS., la mise en avant porte sur la cellule de la position (Spectre.Console ne colore pas une ligne entière).
+
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.

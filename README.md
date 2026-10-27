@@ -67,14 +67,15 @@ Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile don
 - **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
 - **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
 
-> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Une course que le jeu n'a pas classée (ni arrivée, ni abandon) compte dans le total mais pas dans les résultats.
+> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Seules les courses terminées comptent dans les victoires, podiums et tops : un abandon, une disqualification ou une course que le jeu n'a pas classée comptent dans le total, mais pas dans les résultats.
 
 ### Mes courses
 
 Votre historique, **circuit par circuit**, pour voir si vous progressez.
 
 - Chaque ligne associe une **course** à la **qualification** qui la précède.
-- Pour chacune, vous voyez votre meilleur tour, votre place sur la grille, le nombre de tours et votre temps total de course.
+- Pour chacune, vous voyez votre **classement** dans votre catégorie (`1er`, `2e`…, ou `DNF`, `DQ`, `NC`), votre meilleur tour, votre place sur la grille, le nombre de tours et votre temps total de course.
+- Les meilleurs résultats ressortent : la ligne est encadrée et la position colorée en **or** pour une victoire, **argent** pour une 2e place, **bronze** pour une 3e, puis en bleu pour les 4e et 5e places et en bleu plus léger pour les 6e à 10e. Un abandon, une disqualification ou une course non classée garde une ligne normale.
 - La colonne **DELTA (n-1)** compare votre meilleur tour à celui de votre session précédente sur le même circuit, dans la même catégorie :
   - 🟢 **en vert, négatif** : vous avez été plus rapide ;
   - 🔴 **en rouge, positif** : vous avez été plus lent.
