@@ -288,12 +288,13 @@ public sealed class MyRacesPresentationTests
             .Should()
             .BeEquivalentTo(races.Select(race => race.Driver!.ClassPosition));
         records.Select(record => record.PositionTier).Should().Contain(
-            [MyRacePositionTier.Silver, MyRacePositionTier.Bronze, MyRacePositionTier.TopFive, MyRacePositionTier.TopTen]);
+            [MyRacePositionTier.Gold, MyRacePositionTier.Bronze, MyRacePositionTier.TopFive, MyRacePositionTier.TopTen]);
 
-        // The fixtures hold a class P1 with a DNF and another one not classified: neither is a win.
+        // The fixtures hold three class wins, a class P1 with a DNF and another one not classified:
+        // only the three wins are highlighted in gold.
         records.Where(record => record.ClassPosition == 1).Select(record => record.ResultLabel)
-            .Should().BeEquivalentTo(["DNF", "NC"]);
-        records.Should().NotContain(record => record.PositionTier == MyRacePositionTier.Gold);
+            .Should().BeEquivalentTo(["1er", "1er", "1er", "DNF", "NC"]);
+        records.Count(record => record.PositionTier == MyRacePositionTier.Gold).Should().Be(3);
     }
 
     private static Session CreateSession(

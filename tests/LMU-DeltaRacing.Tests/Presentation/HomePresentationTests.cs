@@ -198,15 +198,16 @@ public sealed class HomePresentationTests
             new HomeCategoryValue("LMP3", 13),
             new HomeCategoryValue("LMGTE", 23),
             new HomeCategoryValue("LMGT3", 42));
-        // The only class P1 of the fixtures is a retirement after 0 laps (Spa, 14/03/2026): not a win.
-        dashboard.Wins.Value.Should().Be(0);
+        // Three class wins; the class P1 retirement after 0 laps (Spa, 14/03/2026) is not one.
+        dashboard.Wins.Value.Should().Be(3);
+        dashboard.Poles.Value.Should().Be(3, "two poles were added to the one already in the fixtures");
         dashboard.Podiums.Value.Should().Be(5);
         dashboard.Top5.Value.Should().Be(13);
         dashboard.Top10.Value.Should().Be(45);
         dashboard.Retirements.Value.Should().Be(13);
         dashboard.Disqualifications.Value.Should().Be(0);
         dashboard.Unclassified.Value.Should().Be(3);
-        dashboard.TotalPositionsGained.Should().Be(116);
+        dashboard.TotalPositionsGained.Should().Be(119);
         dashboard.RetirementCauses.Select(cause => (cause.Label, cause.Count)).Should().Equal(
             ("Non précisée", 7),
             ("Suspension", 5),
