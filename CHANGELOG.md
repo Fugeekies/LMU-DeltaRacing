@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Dashboard : écran de chargement au démarrage. Pendant l'import initial, le logo Delta Racing et une roue qui roule sur une route (barre de progression « N / M fichiers traités ») remplacent toute l'application ; le dashboard s'affiche une fois toutes les données chargées, au lieu de se remplir au fil de l'eau. Un rechargement depuis Options garde l'affichage habituel.
 - Console Spectre refondue sur les données du dashboard : bandeau d'état (pilote, surveillance, sessions, échecs) et menu **Accueil**, **Mes courses**, **Options**, **Quitter**. L'Accueil et Mes courses reprennent les calculs du dashboard (ventilation par catégorie en colonnes, filtres Circuit et Catégorie) ; les Options permettent de changer le dossier des résultats (rechargement immédiat), le pilote principal, les fusions de pilotes, le démarrage automatique de la surveillance et les réglages du log. Les nouveaux imports sont signalés au retour au menu, sans casser l'affichage des menus.
 
 ### Changed

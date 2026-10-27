@@ -1,0 +1,42 @@
+@* Replaces the whole application while the startup import runs, so pages never fill in progressively. *@
+
+<div class="startup-loading" role="status" aria-live="polite">
+    <img class="startup-logo" src="@Assets["favicon.ico"]" alt="Delta Racing" width="160" height="160" />
+    <p class="startup-eyebrow">IMPORT INITIAL</p>
+    <h1 class="startup-title">Chargement de vos résultats</h1>
+
+    <div class="startup-road"
+         role="progressbar"
+         aria-label="Progression de l’import initial"
+         aria-valuemin="0"
+         aria-valuemax="100"
+         aria-valuenow="@Progress"
+         style="--progress: @Progress">
+        <div class="startup-road-travelled"></div>
+        <svg class="startup-wheel" viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="21" class="wheel-tyre" />
+            <circle cx="24" cy="24" r="14" class="wheel-rim" />
+            <path class="wheel-spokes" d="M24 10v28M10 24h28M14.1 14.1l19.8 19.8M33.9 14.1L14.1 33.9" />
+            <circle cx="24" cy="24" r="4" class="wheel-hub" />
+        </svg>
+    </div>
+
+    <p class="startup-caption">
+        <span>@Caption</span>
+        <strong>@Progress %</strong>
+    </p>
+</div>
+
+@code {
+    /// <summary>
+    /// Gets or sets the processed share of the startup files, from 0 to 100.
+    /// </summary>
+    [Parameter]
+    public int Progress { get; set; }
+
+    /// <summary>
+    /// Gets or sets the caption displayed under the road.
+    /// </summary>
+    [Parameter]
+    public string Caption { get; set; } = string.Empty;
+}

@@ -38,4 +38,10 @@ public sealed record DashboardState(
     /// Gets the driver names merged in memory (after a name change).
     /// </summary>
     public IReadOnlyList<DriverMerge> DriverMerges { get; init; } = [];
+
+    /// <summary>
+    /// Gets whether the import run at application startup is still in progress. Unlike
+    /// <see cref="IsLoading"/>, it stays false while a reload re-imports the results directory.
+    /// </summary>
+    public bool IsStartupImportRunning { get; init; }
 }

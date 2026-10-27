@@ -45,7 +45,7 @@ Lancez **LMU-DeltaRacing** depuis le menu Démarrer ou l'icône du bureau.
 
 - Le tableau de bord s'ouvre **dans votre navigateur web**.
 - Une **fenêtre noire** s'ouvre aussi : c'est l'application elle-même. Laissez-la ouverte tant que vous utilisez le tableau de bord ; **la fermer arrête l'application**. Fermer seulement l'onglet du navigateur ne suffit pas.
-- Au démarrage, l'application lit tous vos fichiers de résultats. Une barre de progression s'affiche dans **Options** ; l'indicateur en haut à droite passe de **IMPORT INITIAL** à **SURVEILLANCE ACTIVE**.
+- Au démarrage, l'application lit tous vos fichiers de résultats. Un **écran de chargement** s'affiche pendant ce temps : une roue roule sur une route sous le logo, jusqu'au bout quand tous les fichiers sont lus (« N / M fichiers traités »). Le tableau de bord apparaît ensuite avec toutes vos données, et l'indicateur en haut à droite affiche **SURVEILLANCE ACTIVE**.
 - **Votre pilote est détecté automatiquement :** c'est le nom qui apparaît dans le plus grand nombre de vos fichiers de résultats. Il s'affiche en haut à droite. S'il est incorrect, changez-le dans **Options › Pilote principal**.
 
 Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouvelle session terminée dans *Le Mans Ultimate* apparaît automatiquement dans le tableau de bord, sans rien recharger.

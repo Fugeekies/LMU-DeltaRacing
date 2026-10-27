@@ -30,6 +30,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private ResultsDirectoryWatcher? watcher;
     private Task? initializationTask;
     private bool isLoading = true;
+    private bool isStartupImportRunning = true;
     private bool isWatching;
     private int filesToLoad;
     private int filesLoaded;
@@ -98,7 +99,8 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 {
                     UserName = DriverMerges.Resolve(userName, driverMerges),
                     DriverMerges = driverMerges,
-                    DriverFrequencies = driverFrequencies
+                    DriverFrequencies = driverFrequencies,
+                    IsStartupImportRunning = isStartupImportRunning
                 };
             }
         }
@@ -280,27 +282,41 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
     private async Task InitializeAsync(CancellationToken cancellationToken)
     {
-        var status = CheckResultsDirectory(configuration["LMU:ResultsDirectory"]);
-        if (!status.IsValid)
-        {
-            SetInitializationError(status.ErrorMessage ?? "The results directory is unavailable.");
-            return;
-        }
-
-        await reloadLock.WaitAsync(cancellationToken).ConfigureAwait(false);
         try
         {
-            var watchOnStartup = configuration.GetValue("LMU:WatchResultsOnStartup", true);
-            await ReloadResolvedResultsAsync(status, watchOnStartup, cancellationToken)
-                .ConfigureAwait(false);
-        }
-        catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
-        {
-            logger.LogDebug("Dashboard initialization cancelled during shutdown");
+            var status = CheckResultsDirectory(configuration["LMU:ResultsDirectory"]);
+            if (!status.IsValid)
+            {
+                SetInitializationError(status.ErrorMessage ?? "The results directory is unavailable.");
+                return;
+            }
+
+            await reloadLock.WaitAsync(cancellationToken).ConfigureAwait(false);
+            try
+            {
+                var watchOnStartup = configuration.GetValue("LMU:WatchResultsOnStartup", true);
+                await ReloadResolvedResultsAsync(status, watchOnStartup, cancellationToken)
+                    .ConfigureAwait(false);
+            }
+            catch (OperationCanceledException) when (cancellationToken.IsCancellationRequested)
+            {
+                logger.LogDebug("Dashboard initialization cancelled during shutdown");
+            }
+            finally
+            {
+                reloadLock.Release();
+            }
         }
         finally
         {
-            reloadLock.Release();
+            // Cleared only once every startup outcome (data, error, shutdown) is in the state,
+            // so the UI never reveals a half-loaded dashboard.
+            lock (stateLock)
+            {
+                isStartupImportRunning = false;
+            }
+
+            NotifyStateChanged();
         }
     }
 

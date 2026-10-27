@@ -193,6 +193,13 @@ Reprendre dans la console les vues Accueil, Mes courses et Options du dashboard,
 - [x] **Imports pendant la surveillance :** ne plus écrire dans le terminal pendant qu'un menu est affiché ; signaler les nouveaux imports entre deux menus.
 - [x] Tester le rendu des vues avec `Spectre.Console.Testing`.
 
+## Jalon — UI : Écran de chargement au démarrage [Terminé]
+Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6). Ne plus voir le dashboard se remplir au fil de l'eau (compteurs à 0) pendant l'import initial.
+- [x] **État partagé :** indicateur `DashboardState.IsStartupImportRunning`, levé uniquement pendant l'import au démarrage et baissé une fois toutes les données en place (succès, erreur ou arrêt).
+- [x] **Écran plein page :** logo de l'installeur (le `favicon.ico` existant, identique à `assets/icons`, sans nouvelle copie) et roue qui roule sur une route en guise de barre de progression (« N / M fichiers traités », pourcentage), masquant toute l'application, header compris.
+- [x] Un rechargement depuis Options et les imports du watcher n'affichent pas l'écran.
+- [x] Tester la visibilité, le pourcentage et le libellé (`StartupLoadingPresentation`) ainsi que le cycle de vie de l'indicateur dans `DashboardDataService`.
+
 ## Jalon — Signature de l'installeur (SignPath Foundation)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande.
 - [ ] **Licence :** remettre le texte GPL-3.0 intact dans `LICENSE` (GitHub le détecte aujourd'hui comme « Other » à cause de la ligne de copyright ajoutée en tête) et déplacer le copyright dans le README.
