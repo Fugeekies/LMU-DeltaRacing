@@ -11,7 +11,7 @@ namespace LMU_DeltaRacing.Tests.Presentation;
 public sealed class HomePresentationTests
 {
     [TestMethod]
-    public void Create_counts_results_on_the_official_class_position_and_excludes_unclassified_races()
+    public void Create_counts_results_on_the_official_class_position_of_classified_finishes_only()
     {
         var sessions = new[]
         {
@@ -28,9 +28,9 @@ public sealed class HomePresentationTests
         dashboard.Races.Categories.Should().Equal(new HomeCategoryValue("LMP2", 2), new HomeCategoryValue("LMGT3", 3));
         dashboard.Wins.Value.Should().Be(1);
         dashboard.Wins.Rate.Should().Be(0.2);
-        dashboard.Podiums.Value.Should().Be(2, "a retirement keeps its official class position");
-        dashboard.Top5.Value.Should().Be(2);
-        dashboard.Top10.Value.Should().Be(3);
+        dashboard.Podiums.Value.Should().Be(1, "a retirement classified P3 is not a podium");
+        dashboard.Top5.Value.Should().Be(1);
+        dashboard.Top10.Value.Should().Be(1, "the P7 is disqualified");
         dashboard.AveragePosition.Value.Should().Be(23 / 4.0);
         dashboard.Retirements.Value.Should().Be(1);
         dashboard.Disqualifications.Value.Should().Be(1);
@@ -198,10 +198,11 @@ public sealed class HomePresentationTests
             new HomeCategoryValue("LMP3", 13),
             new HomeCategoryValue("LMGTE", 23),
             new HomeCategoryValue("LMGT3", 42));
-        dashboard.Wins.Value.Should().Be(1);
-        dashboard.Podiums.Value.Should().Be(6);
-        dashboard.Top5.Value.Should().Be(14);
-        dashboard.Top10.Value.Should().Be(46);
+        // The only class P1 of the fixtures is a retirement after 0 laps (Spa, 14/03/2026): not a win.
+        dashboard.Wins.Value.Should().Be(0);
+        dashboard.Podiums.Value.Should().Be(5);
+        dashboard.Top5.Value.Should().Be(13);
+        dashboard.Top10.Value.Should().Be(45);
         dashboard.Retirements.Value.Should().Be(13);
         dashboard.Disqualifications.Value.Should().Be(0);
         dashboard.Unclassified.Value.Should().Be(3);

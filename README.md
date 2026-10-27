@@ -67,7 +67,7 @@ Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile don
 - **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
 - **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
 
-> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Une course que le jeu n'a pas classée (ni arrivée, ni abandon) compte dans le total mais pas dans les résultats.
+> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Seules les courses terminées comptent dans les victoires, podiums et tops : un abandon, une disqualification ou une course que le jeu n'a pas classée comptent dans le total, mais pas dans les résultats.
 
 ### Mes courses
 

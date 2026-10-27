@@ -82,8 +82,11 @@ public static class HomePresentation
         }
     }
 
+    // A retirement or a disqualification keeps a class position in LMU (a lone car in its class
+    // that retires after 0 laps is classified P1), but it is not a result: only finishes count.
     private static bool IsClassifiedIn(SessionResult result, int lastPosition) =>
-        result.Kind != HomeResultKind.Unclassified && result.Rank <= lastPosition;
+        result.Kind is HomeResultKind.Win or HomeResultKind.Podium or HomeResultKind.Classified
+        && result.Rank <= lastPosition;
 
     private static HomeStat Count(IReadOnlyList<SessionResult> source, Func<SessionResult, bool> predicate, int? reference) =>
         Aggregate(
