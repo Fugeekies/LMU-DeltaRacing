@@ -386,6 +386,9 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     filesLoaded++;
                 }
 
+#if DEBUG
+                await Task.Delay(15, cancellationToken).ConfigureAwait(false);
+#endif
                 NotifyStateChanged();
             }
 
