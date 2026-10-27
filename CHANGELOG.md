@@ -40,6 +40,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dates de l'état des imports affichées en heure locale au lieu de l'heure UTC.
 
 ### Changed
+- Nouveau projet `LMU-DeltaRacing.Presentation` : les calculs des vues (`*Presentation`), le service de données (`DashboardDataService`), l'écriture des réglages (`DashboardSettingsStore`) et la détection du dossier de résultats (`ResultsDirectoryResolver`) quittent le projet UI pour être partagés avec la console. Aucun changement de comportement du dashboard.
 - L'application s'ouvre sur l'Accueil : « Mes courses » ne répond plus que sur `/my-races` et le logo renvoie vers `/`. L'ancienne page `/dashboard` est retirée, l'état des imports restant affiché dans Options.
 - Détail des courses : tableau compacté de 14 à 8 colonnes, sans défilement horizontal à partir de 1 280 px — chaque temps porte son écart en dessous, la voiture passe sous le nom du pilote et la catégorie sous la position ; la ligne du pilote sélectionné est surlignée. Le tour idéal affiche aussi son écart au meilleur tour idéal de la catégorie, et la colonne DIFF 1ER devient TEMPS TOTAL (temps de course complet, écart au premier en dessous).
 - Détail des courses : le sélecteur propose des **événements** (essais, qualification et course disputés à la suite sur un circuit) et des sous-onglets **Course**, **Qualification** et **Essais** affichent le classement de chaque session ; plusieurs séances d'essais d'un même événement sont fusionnées en un seul classement.

@@ -25,9 +25,10 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | `src/LMU-DeltaRacing.Domain` | Entités immuables `Session`, `Driver`, `Lap`, `Sector`, sans dépendance. |
 | `src/LMU-DeltaRacing.Application` | Contrats (`IResultXmlParser`, `ISessionRepository`, `ISessionImportService`), `SessionImportService` (retries sur fichier verrouillé), télémétrie (`ApplicationTelemetry`). |
 | `src/LMU-DeltaRacing.Infrastructure` | `XmlResultParser`, `InMemorySessionRepository`, `ResultsDirectoryWatcher` (`FileSystemWatcher` + `Channel`, déduplication par chemin). |
-| `src/LMU-DeltaRacing.UI` | Blazor Server. `DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`). Calculs des vues dans `Models/*Presentation.cs`. Réglages écrits par `DashboardSettingsStore`. |
+| `src/LMU-DeltaRacing.Presentation` | Code partagé par l'UI et la console. `Services/DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`), `DashboardSettingsStore` (écriture des réglages), `ResultsDirectoryResolver`. Calculs des vues dans `Models/*Presentation.cs`. |
+| `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`). |
 | `src/LMU-DeltaRacing.Console` | Spectre.Console, OpenTelemetry, `IOptionsMonitor<LmuApplicationOptions>`, statistiques `SessionStatistics`. |
-| `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Console/`, `UI/`). |
+| `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Presentation/`, `Console/`, `UI/`). |
 | `benchmarks/LMU-DeltaRacing.Benchmarks` | Charge du parser et lots de fichiers ; rapport dans `artifacts/performance-report.md`. |
 | `scripts/` | `installer.iss` (Inno Setup), `Prepare-PackageAssets.ps1` (anonymisation des fixtures), `Test-PublishedApp.ps1`. |
 | `docs/` | `ARCHITECTURE.md`, `ROADMAP.md`, `UI_DESIGN_SPEC.md`, maquettes `UISpec/*.template.md`, `benchmarks/`. |
@@ -35,7 +36,7 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 Points d'attention :
 - UI et console ont chacune leur composition, leur logging (UI : `JsonFileLoggerProvider` ; console : OpenTelemetry + `FileLogExporter`) et leur logique de delta (`MyRacesPresentation` vs `SessionStatistics`). Vérifier les deux côtés avant de modifier une règle commune.
 - `appsettings.json` est lu et écrit **à côté de l'exécutable** (`AppContext.BaseDirectory`), section `LMU`.
-- Les fusions de pilotes (`LMU:DriverMerges`, `Models/DriverMerges.cs`) sont appliquées **en mémoire** par `DashboardDataService` : le dépôt garde les noms d'origine, ce qui permet d'annuler une fusion et de détecter les pilotes qui se sont croisés.
+- Les fusions de pilotes (`LMU:DriverMerges`, `Presentation/Models/DriverMerges.cs`) sont appliquées **en mémoire** par `DashboardDataService` : le dépôt garde les noms d'origine, ce qui permet d'annuler une fusion et de détecter les pilotes qui se sont croisés.
 
 ## Faits vérifiés sur le format XML LMU
 

@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\LMU-DeltaRacing.Infrastructure\LMU-DeltaRacing.Infrastructure.csproj" />
-    <ProjectReference Include="..\..\src\LMU-DeltaRacing.UI\LMU-DeltaRacing.UI.csproj" />
+    <ProjectReference Include="..\..\src\LMU-DeltaRacing.Presentation\LMU-DeltaRacing.Presentation.csproj" />
   </ItemGroup>
 
 </Project>

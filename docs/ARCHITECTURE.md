@@ -5,7 +5,8 @@
 - `Application` : Contrats du parser XML, du dépôt de sessions, des services d'import, contrats de métriques et traces.
 - `Infrastructure` : parser XML LMU, dépôt en mémoire et watcher du dossier de résultats avec traitement séquentiel, retries sur les fichiers verrouillés et déduplication par chemin.
 - `Console` : application console Spectre.Console, composition des dépendances, configuration rechargée à chaud, export OpenTelemetry, progression des imports et statistiques de meilleurs tours groupées par circuit puis par classe/équipe.
-- `UI` : Dashboard Blazor interactif local, lecture du dépôt en mémoire, chargement initial des résultats et actualisation via le watcher partagé avec la console.
+- `Presentation` : code partagé par l'UI et la console : calculs des vues (`*Presentation`), service de données (`DashboardDataService` : import initial, rechargement, watcher, fusions de pilotes, détection du pilote principal), écriture des réglages (`DashboardSettingsStore`) et détection du dossier de résultats (`ResultsDirectoryResolver`).
+- `UI` : Dashboard Blazor interactif local : composants Razor alimentés par `Presentation`, sélecteur de dossier Windows et géométrie du graphique SVG de Progression.
 - `Tests` : tests unitaires et d'intégration MSTest + FluentAssertions ; les benchmarks de charge sont prévus au jalon Quality Gates.
 
 ## Flux de données

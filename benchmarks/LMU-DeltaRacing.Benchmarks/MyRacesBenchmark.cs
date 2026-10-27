@@ -1,7 +1,7 @@
 using System.Diagnostics;
 using System.Globalization;
 using System.Text;
-using LMU_DeltaRacing.UI.Models;
+using LMU_DeltaRacing.Presentation.Models;
 
 namespace LMU_DeltaRacing.Benchmarks;
 

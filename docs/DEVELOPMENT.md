@@ -14,6 +14,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML, dépôt en mémoire et surveillance dynamique du dossier de résultats.
 - `src/LMU-DeltaRacing.Console` : import initial et surveillance dynamique des XML, tableaux et graphiques Spectre.Console des statistiques par circuit/voiture, et diagnostic OpenTelemetry.
+- `src/LMU-DeltaRacing.Presentation` : calculs des vues, service de données, réglages et détection du dossier de résultats, partagés par l'UI et la console.
 - `src/LMU-DeltaRacing.UI` : dashboard Blazor local avec historique des sessions, classements et surveillance dynamique des nouveaux résultats.
 - `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
 - `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.

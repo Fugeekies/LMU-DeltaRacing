@@ -181,7 +181,7 @@ Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).
 ## Jalon — Refonte de la console Spectre
 Spécification : [`UISpec/Console.template.md`](UISpec/Console.template.md).
 Reprendre dans la console les vues Accueil, Mes courses et Options du dashboard, avec une interface simplifiée : un menu principal court, une vue affichée à la fois.
-- [ ] **Calculs partagés :** déplacer les calculs des vues (`HomePresentation`, `MyRacesPresentation`, fusions de pilotes, détection du pilote principal) du projet UI vers un projet commun référencé par l'UI et la console, sans changer le comportement du dashboard.
+- [x] **Calculs partagés :** calculs des vues, service de données, réglages et détection du dossier déplacés du projet UI vers le projet commun `LMU-DeltaRacing.Presentation`, sans changer le comportement du dashboard.
 - [ ] **Suppression des anciennes vues :** retirer « Par circuit », « Par circuit et voiture », leurs graphiques et `SessionStatistics`, pour ne garder qu'une seule logique de delta.
 - [ ] **Sans argument :** supprimer le mode « fichiers en argument » ; la console charge toujours le dossier configuré dans `appsettings.json` (ou détecté automatiquement), comme le dashboard.
 - [ ] **Menu principal :** Accueil, Mes courses, Options, Quitter. L'import initial affiche une barre de progression puis un résumé sur une ligne (réussites, échecs avec leur détail).
