@@ -107,8 +107,8 @@ else
                         <table class="data-table races-table">
                             <thead>
                                 <tr>
-                                    <th scope="col">DATE / HEURE</th>
                                     <th scope="col">CATÉGORIE</th>
+                                    <th scope="col">DATE / HEURE</th>
                                     <th scope="col">VOITURE</th>
                                     <th scope="col" class="numeric-cell">CLASSEMENT</th>
                                     <th scope="col" class="numeric-cell">GRILLE</th>
@@ -121,11 +121,11 @@ else
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var record in circuit.OrderByDescending(record => record.StartedAt))
+                                @foreach (var record in MyRacesFilters.OrderRows(circuit))
                                 {
                                     <tr class="@GetPositionClass(record.PositionTier)">
-                                        <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
                                         <td><span class="category-badge">@record.Category</span></td>
+                                        <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
                                         <td class="car-cell"><strong>@record.Car</strong></td>
                                         <td class="numeric-cell position-cell">@record.ResultLabel</td>
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>

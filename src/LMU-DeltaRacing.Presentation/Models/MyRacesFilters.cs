@@ -37,6 +37,21 @@ public static class MyRacesFilters
     }
 
     /// <summary>
+    /// Orders the rows of a circuit by category, in the order of the category filter, then from the
+    /// most recent to the oldest, so that the categories are not mixed in the table.
+    /// </summary>
+    public static IReadOnlyList<MyRaceRecord> OrderRows(IEnumerable<MyRaceRecord> records)
+    {
+        ArgumentNullException.ThrowIfNull(records);
+        var materialized = records as IReadOnlyCollection<MyRaceRecord> ?? records.ToArray();
+        var categories = GetCategories(materialized);
+        return materialized
+            .OrderBy(record => IndexOf(categories, record.Category))
+            .ThenByDescending(record => record.StartedAt)
+            .ToArray();
+    }
+
+    /// <summary>
     /// Keeps the records of the selected venue and category; an empty selection keeps them all.
     /// </summary>
     public static IReadOnlyList<MyRaceRecord> Apply(
@@ -51,5 +66,18 @@ public static class MyRacesFilters
             .Where(record => string.IsNullOrEmpty(category)
                 || string.Equals(record.Category, category, StringComparison.Ordinal))
             .ToArray();
+    }
+
+    private static int IndexOf(IReadOnlyList<string> categories, string category)
+    {
+        for (var index = 0; index < categories.Count; index++)
+        {
+            if (string.Equals(categories[index], category, StringComparison.Ordinal))
+            {
+                return index;
+            }
+        }
+
+        return categories.Count;
     }
 }

@@ -64,7 +64,7 @@ public static class MyRacesView
             lines.Add(new Rule(
                     $"[bold]{Markup.Escape(name)}[/] ─ {count} {(count > 1 ? "résultats" : "résultat")}")
                 .LeftJustified());
-            lines.Add(CreateTable(circuit.OrderByDescending(record => record.StartedAt)));
+            lines.Add(CreateTable(MyRacesFilters.OrderRows(circuit)));
         }
 
         return new Rows(lines);
@@ -74,8 +74,8 @@ public static class MyRacesView
     {
         // In 120 columns, only the car name may wrap: dates and times stay on one line.
         var table = new Table().Border(TableBorder.Square);
-        table.AddColumn(new TableColumn("DATE").NoWrap());
         table.AddColumn(new TableColumn("CAT.").NoWrap());
+        table.AddColumn(new TableColumn("DATE").NoWrap());
         table.AddColumn("VOITURE");
         table.AddColumn(new TableColumn("CLASS.").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("GRILLE").RightAligned().NoWrap());
@@ -89,8 +89,8 @@ public static class MyRacesView
         foreach (var record in records)
         {
             table.AddRow(
-                DisplayFormat.DateTime(record.StartedAt),
                 ConsoleTheme.CategoryMarkup(record.Category),
+                DisplayFormat.DateTime(record.StartedAt),
                 $"[bold]{Markup.Escape(record.Car)}[/]",
                 ConsoleTheme.PositionMarkup(record),
                 record.GridPosition?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing,

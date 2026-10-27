@@ -28,13 +28,13 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   * Circuit : « Tous les circuits » ou un lieu parmi ceux présents dans les lignes (tri alphabétique). Le filtre porte sur `TrackVenue`.
   * Catégorie : « Toutes les catégories », Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les éventuelles classes inconnues présentes dans les lignes.
   * Les filtres s'appliquent sans rechargement et sont conservés lors des mises à jour en direct.
-* **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N résultats ». Les lignes d'un bloc sont triées de la plus récente à la plus ancienne.
+* **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N résultats ». Les lignes d'un bloc sont groupées par catégorie, dans l'ordre du filtre (Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues par ordre alphabétique), puis triées de la plus récente à la plus ancienne : les catégories ne sont pas mélangées.
 * **Structure du tableau :**
 
   | Colonne | Contenu | Format |
   |---|---|---|
-  | DATE / HEURE | Début de la qualif, à défaut de la course (heure locale) | `dd/MM/yyyy HH:mm` |
   | CATÉGORIE | Badge de catégorie | — |
+  | DATE / HEURE | Début de la qualif, à défaut de la course (heure locale) | `dd/MM/yyyy HH:mm` |
   | VOITURE | Modèle du véhicule | texte gras |
   | CLASSEMENT | Position en classe de la course (`ClassPosition`) ; `DNF`, `DQ` ou `NC` selon `FinishStatus` ; `—` sans course | `1er`, `2e`, `3e`… |
   | GRILLE | Position de départ en course (`GridPos`) | entier |
@@ -82,12 +82,12 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
 │  CIRCUIT                                                                                                                         │
 │  Circuit de Spa-Francorchamps                                                                                      [ 3 résultats ] │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  DATE / HEURE      CATÉGORIE  VOITURE       CLASS.  GRILLE MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL MT QUALIF  DELTA QUALIF   │
+│  CATÉGORIE  DATE / HEURE      VOITURE       CLASS.  GRILLE MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL MT QUALIF  DELTA QUALIF   │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  16/10/2026 21:00  Hypercar   Ferrari 499P  2e      3      2:03.110   🟢 -0.120s    12     25:01.432   2:02.451   🟢 -0.245s     │
-│  16/10/2026 20:20  Hypercar   Ferrari 499P  5e      5      2:03.230   🔴 +0.450s    12     25:03.876   2:02.696   🔴 +0.102s     │
-│  16/10/2026 19:40  Hypercar   Ferrari 499P  —       —      —          —             —      —           2:02.594   —              │
-│  12/10/2026 14:00  LMGTE      Porsche 911   7e      8      2:18.780   —             11     25:40.120   2:17.594   —              │
+│  Hypercar   16/10/2026 21:00  Ferrari 499P  2e      3      2:03.110   🟢 -0.120s    12     25:01.432   2:02.451   🟢 -0.245s     │
+│  Hypercar   16/10/2026 20:20  Ferrari 499P  5e      5      2:03.230   🔴 +0.450s    12     25:03.876   2:02.696   🔴 +0.102s     │
+│  Hypercar   16/10/2026 19:40  Ferrari 499P  —       —      —          —             —      —           2:02.594   —              │
+│  LMGTE      12/10/2026 14:00  Porsche 911   7e      8      2:18.780   —             11     25:40.120   2:17.594   —              │
 │                                                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  LE MANS ULTIMATE                                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │
