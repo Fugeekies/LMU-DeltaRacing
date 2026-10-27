@@ -123,16 +123,16 @@ else
                                 @foreach (var record in circuit.OrderByDescending(record => record.StartedAt))
                                 {
                                     <tr>
-                                        <td class="date-cell">@record.StartedAt.ToLocalTime().ToString("dd/MM/yyyy HH:mm")</td>
+                                        <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
                                         <td><span class="category-badge">@record.Category</span></td>
                                         <td class="car-cell"><strong>@record.Car</strong></td>
-                                        <td class="numeric-cell">@FormatLap(record.QualifyingTime)</td>
+                                        <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
-                                        <td class="numeric-cell">@FormatLap(record.RaceTime)</td>
+                                        <td class="numeric-cell">@DisplayFormat.Lap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
                                         <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
-                                        <td class="numeric-cell">@FormatTotalTime(record.FinishTime)</td>
+                                        <td class="numeric-cell">@DisplayFormat.TotalTime(record.FinishTime)</td>
                                     </tr>
                                 }
                             </tbody>
@@ -171,31 +171,12 @@ else
     {
         state = DashboardData.Snapshot;
         records = MyRacesPresentation.CreateRecords(state.Sessions, state.UserName);
-        tracks = records
-            .Select(record => record.TrackVenue)
-            .Distinct(StringComparer.OrdinalIgnoreCase)
-            .Order(StringComparer.OrdinalIgnoreCase)
-            .ToArray();
-
-        // Known WEC categories are always offered; unknown classes found in the results are appended.
-        categories =
-        [
-            .. CarCategory.Known,
-            .. records
-                .Select(record => record.Category)
-                .Where(category => !CarCategory.Known.Contains(category))
-                .Distinct(StringComparer.Ordinal)
-                .Order(StringComparer.OrdinalIgnoreCase)
-        ];
+        tracks = [.. MyRacesFilters.GetTracks(records)];
+        categories = [.. MyRacesFilters.GetCategories(records)];
     }
 
     private IReadOnlyList<MyRaceRecord> GetFilteredRecords() =>
-        records
-            .Where(record => string.IsNullOrEmpty(selectedTrack)
-                || string.Equals(record.TrackVenue, selectedTrack, StringComparison.OrdinalIgnoreCase))
-            .Where(record => string.IsNullOrEmpty(selectedCategory)
-                || string.Equals(record.Category, selectedCategory, StringComparison.Ordinal))
-            .ToArray();
+        MyRacesFilters.Apply(records, selectedTrack, selectedCategory);
 
     /// <summary>
     /// Links to the progression page on a circuit, with the category of the latest record there
@@ -213,21 +194,6 @@ else
             + (category is null ? string.Empty : $"&category={Uri.EscapeDataString(category)}");
     }
 
-    private static string FormatLap(TimeSpan? time) =>
-        time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
-
-    private static string FormatTotalTime(TimeSpan? time)
-    {
-        if (time is not { } finishTime)
-        {
-            return "—";
-        }
-
-        return finishTime.TotalHours >= 1
-            ? finishTime.ToString(@"h\:mm\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture)
-            : finishTime.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture);
-    }
-
     private static RenderFragment FormatDelta(TimeSpan? delta) => builder =>
     {
         if (delta is not { } value)
@@ -242,9 +208,7 @@ else
                 ? "delta-value delta-loss"
                 : "delta-value";
         var indicator = value < TimeSpan.Zero ? "🟢 " : value > TimeSpan.Zero ? "🔴 " : string.Empty;
-        var text = string.Create(
-            System.Globalization.CultureInfo.InvariantCulture,
-            $"{indicator}{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds:0.000}s");
+        var text = indicator + DisplayFormat.Delta(value);
         builder.OpenElement(1, "span");
         builder.AddAttribute(2, "class", cssClass);
         builder.AddContent(3, text);

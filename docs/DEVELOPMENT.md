@@ -6,14 +6,14 @@ La [feuille de route](ROADMAP.md) présente les jalons envisagés et une liste d
 
 ## État actuel
 
-Le socle métier, le monitoring et les statistiques de la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre affiche une progression pendant l'import ainsi que deux vues de statistiques par circuit et par voiture. Les vues comparent les meilleurs tours valides dans l'ordre chronologique et affichent leur delta avec la session précédente du même circuit; des graphiques présentent les mesures les plus récentes. Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
+Le socle métier, le monitoring et la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre reprend l'Accueil, Mes courses et les Options du dashboard avec les mêmes calculs (projet `Presentation`). Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
 
 ## Projets
 
 - `src/LMU-DeltaRacing.Domain` : entités métier sans dépendance externe.
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML, dépôt en mémoire et surveillance dynamique du dossier de résultats.
-- `src/LMU-DeltaRacing.Console` : import initial et surveillance dynamique des XML, tableaux et graphiques Spectre.Console des statistiques par circuit/voiture, et diagnostic OpenTelemetry.
+- `src/LMU-DeltaRacing.Console` : console Spectre.Console (Accueil, Mes courses, Options) sur les services partagés du projet `Presentation`, avec surveillance dynamique des XML et diagnostic OpenTelemetry.
 - `src/LMU-DeltaRacing.Presentation` : calculs des vues, service de données, réglages et détection du dossier de résultats, partagés par l'UI et la console.
 - `src/LMU-DeltaRacing.UI` : dashboard Blazor local avec historique des sessions, classements et surveillance dynamique des nouveaux résultats.
 - `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
@@ -25,7 +25,7 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 
 - `dotnet build`
 - `dotnet test`
-- `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj -- "chemin\vers\resultat.xml"`
+- `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
 - `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results -MergeSingleRaceDrivers`
@@ -35,9 +35,9 @@ Le socle métier, le monitoring et les statistiques de la console sont en place 
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 
-Sans argument, la console charge le dossier configuré et reste en surveillance jusqu'au choix `Quitter`. Les chemins de fichiers XML passés en arguments sont importés en mode ponctuel, sans démarrer le watcher.
+La console ne prend aucun argument : elle charge le dossier configuré dans son `appsettings.json` (ou détecté automatiquement) et reste ouverte jusqu'au choix `Quitter`.
 
-Au démarrage, la console affiche son titre puis importe automatiquement les XML du dossier configuré avec une barre de progression et un résumé du chargement (les échecs sont détaillés). Elle surveille ensuite ce dossier jusqu'au choix `Quitter` dans le menu. Les nouveaux XML sont importés automatiquement; les fichiers verrouillés sont réessayés, les doublons ignorés, et les erreurs affichées sans interrompre la surveillance. Le registre des chemins traités est en mémoire et repart de zéro au prochain démarrage, où les fichiers du dossier sont chargés à nouveau. Les vues statistiques peuvent être réaffichées depuis le menu et incluent les sessions importées depuis le démarrage. La modification du dossier de résultats depuis le menu s'applique au prochain démarrage. Les sessions Practice restent importées mais sont exclues des statistiques. Un delta négatif indique une amélioration par rapport à la session mesurée précédente sur le même lieu et tracé; un delta positif indique un temps plus lent. Les sessions sans tour valide restent visibles mais ne remplacent pas la dernière mesure exploitable.
+Au démarrage, la console importe les XML du dossier configuré avec une barre de progression, affiche un résumé du chargement (les échecs sont détaillés), puis le menu principal : Accueil, Mes courses, Options, Quitter. Les nouveaux XML sont importés automatiquement si la surveillance est active; les fichiers verrouillés sont réessayés, les doublons ignorés, et les imports sont signalés au retour au menu principal. Les vues sont recalculées à chaque ouverture depuis les sessions en mémoire. Changer le dossier des résultats dans Options recharge immédiatement les résultats et la surveillance. Les sessions d'essais ne sont jamais importées. Les tests de rendu utilisent `Spectre.Console.Testing` (`TestConsole`).
 
 Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
 

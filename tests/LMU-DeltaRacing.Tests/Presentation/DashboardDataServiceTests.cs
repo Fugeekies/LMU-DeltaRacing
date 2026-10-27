@@ -247,6 +247,52 @@ public sealed class DashboardDataServiceTests
         }
     }
 
+    /// <summary>
+    /// Verifies that files imported by the watcher are reported one by one, unlike startup files.
+    /// </summary>
+    [TestMethod]
+    public async Task LiveImportCompleted_reports_files_imported_by_the_watcher_only()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+        var liveImports = new System.Collections.Concurrent.ConcurrentQueue<string>();
+        service.LiveImportCompleted += result => liveImports.Enqueue(result.SourceFile);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            await WaitForStateAsync(service, state => !state.IsLoading && state.IsWatching);
+            liveImports.Should().BeEmpty();
+
+            File.Copy(sourceFile, Path.Combine(resultsDirectory, "live.xml"));
+            await WaitForStateAsync(service, state => state.Sessions.Count == 2);
+
+            liveImports.Should().ContainSingle().Which.Should().Be("live.xml");
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
     private static DashboardDataService CreateService(
         IConfiguration configuration,
         SessionImportService importer,

@@ -46,7 +46,7 @@ else
             <p class="home-driver-name">@state.UserName</p>
             @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
             {
-                <p class="home-rate">En piste du @FormatDay(firstRaceAt) au @FormatDay(lastRaceAt)</p>
+                <p class="home-rate">En piste du @DisplayFormat.Day(firstRaceAt) au @DisplayFormat.Day(lastRaceAt)</p>
             }
             <div class="home-favorites">
                 @RenderFavorite("CIRCUIT FAVORI", dashboard.FavoriteCircuit)
@@ -66,7 +66,7 @@ else
                     @foreach (var entry in dashboard.RecentForm)
                     {
                         <li class="form-pill form-@entry.Kind.ToString().ToLowerInvariant()"
-                            title="@($"{FormatDate(entry.StartedAt)} · {entry.TrackVenue} · {entry.Category} · {entry.Car}")">
+                            title="@($"{DisplayFormat.DateTime(entry.StartedAt)} · {entry.TrackVenue} · {entry.Category} · {entry.Car}")">
                             @entry.Label
                         </li>
                     }
@@ -77,12 +77,12 @@ else
                 <div class="last-race">
                     <p class="summary-label">DERNIÈRE COURSE</p>
                     <p>
-                        <strong>@FormatDate(lastRace.StartedAt)</strong> · @lastRace.TrackVenue · @lastRace.Car
+                        <strong>@DisplayFormat.DateTime(lastRace.StartedAt)</strong> · @lastRace.TrackVenue · @lastRace.Car
                     </p>
                     <p class="last-race-result">
                         @(lastRace.ClassPosition is { } position ? $"P{position} en classe" : "Position inconnue")
                         · @lastRace.StatusLabel
-                        · @FormatLap(lastRace.BestLap)
+                        · @DisplayFormat.Lap(lastRace.BestLap)
                         @if (lastRace.EventId is { } eventId)
                         {
                             <a class="last-race-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">Voir l’événement →</a>
@@ -96,29 +96,29 @@ else
     <section class="home-section" aria-labelledby="home-results">
         <h2 id="home-results" class="eyebrow">PALMARÈS</h2>
         <div class="home-tiles">
-            @RenderStat("COURSES", dashboard.Races, FormatCount)
-            @RenderStat("VICTOIRES", dashboard.Wins, FormatCount)
-            @RenderStat("PODIUMS", dashboard.Podiums, FormatCount)
-            @RenderStat("TOP 5", dashboard.Top5, FormatCount)
-            @RenderStat("TOP 10", dashboard.Top10, FormatCount)
-            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, FormatAverage, stacked: false)
+            @RenderStat("COURSES", dashboard.Races, DisplayFormat.Count)
+            @RenderStat("VICTOIRES", dashboard.Wins, DisplayFormat.Count)
+            @RenderStat("PODIUMS", dashboard.Podiums, DisplayFormat.Count)
+            @RenderStat("TOP 5", dashboard.Top5, DisplayFormat.Count)
+            @RenderStat("TOP 10", dashboard.Top10, DisplayFormat.Count)
+            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, DisplayFormat.Average, stacked: false)
         </div>
     </section>
 
     <section class="home-section" aria-labelledby="home-driving">
         <h2 id="home-driving" class="eyebrow">ROULAGE</h2>
         <div class="home-tiles">
-            @RenderStat("TOURS BOUCLÉS", dashboard.Laps, FormatCount)
-            @RenderStat("DISTANCE", dashboard.DistanceKm, FormatDistance)
-            @RenderStat("TEMPS EN PISTE", dashboard.TimeOnTrack, FormatDuration)
+            @RenderStat("TOURS BOUCLÉS", dashboard.Laps, DisplayFormat.Count)
+            @RenderStat("DISTANCE", dashboard.DistanceKm, DisplayFormat.Distance)
+            @RenderStat("TEMPS EN PISTE", dashboard.TimeOnTrack, DisplayFormat.Duration)
         </div>
     </section>
 
     <section class="home-section" aria-labelledby="home-start">
         <h2 id="home-start" class="eyebrow">QUALIFICATION &amp; DÉPART</h2>
         <div class="home-tiles">
-            @RenderStat("POLES", dashboard.Poles, FormatCount)
-            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, FormatAverage, stacked: false)
+            @RenderStat("POLES", dashboard.Poles, DisplayFormat.Count)
+            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, DisplayFormat.Average, stacked: false)
             <article class="home-tile">
                 <h3 class="summary-label">PLACES GAGNÉES</h3>
                 <p class="home-value">
@@ -129,7 +129,7 @@ else
                 {
                     <p class="home-rate">@RenderSigned(total, "0") au total</p>
                 }
-                @RenderBreakdown(dashboard.AveragePositionsGained, value => FormatSigned(value, "0.0"), stacked: false)
+                @RenderBreakdown(dashboard.AveragePositionsGained, value => DisplayFormat.Signed(value, "0.0"), stacked: false)
             </article>
         </div>
     </section>
@@ -137,9 +137,9 @@ else
     <section class="home-section" aria-labelledby="home-retirements">
         <h2 id="home-retirements" class="eyebrow">ABANDONS</h2>
         <div class="home-tiles">
-            @RenderStat("ABANDONS", dashboard.Retirements, FormatCount)
-            @RenderStat("DISQUALIFICATIONS", dashboard.Disqualifications, FormatCount)
-            @RenderStat("NON CLASSÉ", dashboard.Unclassified, FormatCount)
+            @RenderStat("ABANDONS", dashboard.Retirements, DisplayFormat.Count)
+            @RenderStat("DISQUALIFICATIONS", dashboard.Disqualifications, DisplayFormat.Count)
+            @RenderStat("NON CLASSÉ", dashboard.Unclassified, DisplayFormat.Count)
             <article class="home-tile home-tile-wide">
                 <h3 class="summary-label">CAUSES D’ABANDON</h3>
                 @if (dashboard.RetirementCauses.Count == 0)
@@ -159,7 +159,7 @@ else
                         {
                             <li>
                                 <i class="home-swatch cause-@(index % CauseColorCount)" aria-hidden="true"></i>
-                                @cause.Label <strong>@cause.Count</strong> <span>(@FormatPercent(cause.Share))</span>
+                                @cause.Label <strong>@cause.Count</strong> <span>(@DisplayFormat.Percent(cause.Share))</span>
                             </li>
                         }
                     </ul>
@@ -174,12 +174,6 @@ else
     /// The number of distinct colors used for retirement causes before they repeat.
     /// </summary>
     private const int CauseColorCount = 5;
-
-    private static readonly System.Globalization.NumberFormatInfo NumberFormat = new()
-    {
-        NumberDecimalSeparator = ".",
-        NumberGroupSeparator = " "
-    };
 
     private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private HomeDashboard dashboard = HomePresentation.Create([], null);
@@ -215,7 +209,7 @@ else
                 @format(stat.Value)
                 @if (stat.Rate is { } rate)
                 {
-                    <span class="home-rate">@FormatPercent(rate)</span>
+                    <span class="home-rate">@DisplayFormat.Percent(rate)</span>
                 }
             </p>
             @RenderBreakdown(stat, format, stacked)
@@ -276,47 +270,10 @@ else
         </div>;
 
     private static RenderFragment RenderSigned(double? value, string format) =>
-        @<span class="@(value > 0 ? "delta-gain" : value < 0 ? "delta-loss" : string.Empty)">@FormatSigned(value, format)</span>;
-
-    private static string FormatCount(double? value) =>
-        value?.ToString("#,0", NumberFormat) ?? "—";
-
-    private static string FormatAverage(double? value) =>
-        value?.ToString("0.0", NumberFormat) ?? "—";
-
-    private static string FormatSigned(double? value, string format) =>
-        value is { } number
-            ? (number > 0 ? "+" : string.Empty) + number.ToString(format, NumberFormat).Replace("-", "−", StringComparison.Ordinal)
-            : "—";
-
-    private static string FormatDistance(double? kilometers) =>
-        kilometers is { } value ? $"{value.ToString("#,0", NumberFormat)} km" : "—";
-
-    private static string FormatDuration(double? seconds)
-    {
-        if (seconds is not { } value)
-        {
-            return "—";
-        }
-
-        var duration = TimeSpan.FromSeconds(value);
-        return $"{(int)duration.TotalHours}:{duration.Minutes:00}";
-    }
-
-    private static string FormatPercent(double share) =>
-        $"{(share * 100).ToString("0.0", NumberFormat)} %";
+        @<span class="@(value > 0 ? "delta-gain" : value < 0 ? "delta-loss" : string.Empty)">@DisplayFormat.Signed(value, format)</span>;
 
     private static string FormatPercentWidth(double share) =>
         $"{(share * 100).ToString("0.###", System.Globalization.CultureInfo.InvariantCulture)}%";
-
-    private static string FormatDate(DateTimeOffset date) =>
-        date.ToLocalTime().ToString("dd/MM/yyyy HH:mm", System.Globalization.CultureInfo.InvariantCulture);
-
-    private static string FormatDay(DateTimeOffset date) =>
-        date.ToLocalTime().ToString("dd/MM/yyyy", System.Globalization.CultureInfo.InvariantCulture);
-
-    private static string FormatLap(TimeSpan? time) =>
-        time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
 
     private static string GetCategoryClass(string category) =>
         CarCategory.Known.Contains(category) ? $"category-{category.ToLowerInvariant()}" : "category-other";

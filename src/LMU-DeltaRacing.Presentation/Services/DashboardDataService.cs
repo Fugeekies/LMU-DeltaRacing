@@ -72,6 +72,12 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     public event Action? StateChanged;
 
     /// <summary>
+    /// Raised after the watcher imports a new result file, once the state has been updated.
+    /// Startup and reload imports are not reported: their outcome is in <see cref="Snapshot"/>.
+    /// </summary>
+    public event Action<SessionImportResult>? LiveImportCompleted;
+
+    /// <summary>
     /// Gets an immutable snapshot of the current dashboard state.
     /// </summary>
     public DashboardState Snapshot
@@ -441,6 +447,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         ApplyImportResult(result);
         EnsureUserNameSelected();
         NotifyStateChanged();
+        LiveImportCompleted?.Invoke(result);
     }
 
     private void ApplyImportResult(SessionImportResult result)

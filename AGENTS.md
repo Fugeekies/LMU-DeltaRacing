@@ -1,6 +1,6 @@
 # AGENTS.md — LMU-DeltaRacing
 
-Application locale .NET 10 d'analyse des fichiers XML de résultats de *Le Mans Ultimate* (LMU) : dashboard Blazor Server (application principale, distribuée via installeur) et console Spectre.Console (outil de debug/statistiques). Persistance **en mémoire uniquement**. La documentation et l'UI sont en **français**, le code et les commentaires XML en **anglais**.
+Application locale .NET 10 d'analyse des fichiers XML de résultats de *Le Mans Ultimate* (LMU) : dashboard Blazor Server (application principale, distribuée via installeur) et console Spectre.Console (version simplifiée : Accueil, Mes courses, Options). Persistance **en mémoire uniquement**. La documentation et l'UI sont en **français**, le code et les commentaires XML en **anglais**.
 
 Ce fichier est la **source unique** des instructions pour les agents IA : GitHub Copilot le lit directement, Claude Code via l'import `@AGENTS.md` de `CLAUDE.md`. Ne pas recréer de `.github/copilot-instructions.md`, qui dupliquerait ces règles dans Copilot.
 
@@ -27,14 +27,14 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | `src/LMU-DeltaRacing.Infrastructure` | `XmlResultParser`, `InMemorySessionRepository`, `ResultsDirectoryWatcher` (`FileSystemWatcher` + `Channel`, déduplication par chemin). |
 | `src/LMU-DeltaRacing.Presentation` | Code partagé par l'UI et la console. `Services/DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`), `DashboardSettingsStore` (écriture des réglages), `ResultsDirectoryResolver`. Calculs des vues dans `Models/*Presentation.cs`. |
 | `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`). |
-| `src/LMU-DeltaRacing.Console` | Spectre.Console, OpenTelemetry, `IOptionsMonitor<LmuApplicationOptions>`, statistiques `SessionStatistics`. |
+| `src/LMU-DeltaRacing.Console` | Spectre.Console : `ConsoleApplication` (menu, imports en file d'attente) et `Views/` (Accueil, Mes courses, Options) sur `DashboardDataService`. OpenTelemetry, réglages du log via `IOptionsMonitor<LmuApplicationOptions>`. Aucun argument en ligne de commande. |
 | `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Presentation/`, `Console/`, `UI/`). |
 | `benchmarks/LMU-DeltaRacing.Benchmarks` | Charge du parser et lots de fichiers ; rapport dans `artifacts/performance-report.md`. |
 | `scripts/` | `installer.iss` (Inno Setup), `Prepare-PackageAssets.ps1` (anonymisation des fixtures), `Test-PublishedApp.ps1`. |
 | `docs/` | `ARCHITECTURE.md`, `ROADMAP.md`, `UI_DESIGN_SPEC.md`, maquettes `UISpec/*.template.md`, `benchmarks/`. |
 
 Points d'attention :
-- UI et console ont chacune leur composition, leur logging (UI : `JsonFileLoggerProvider` ; console : OpenTelemetry + `FileLogExporter`) et leur logique de delta (`MyRacesPresentation` vs `SessionStatistics`). Vérifier les deux côtés avant de modifier une règle commune.
+- UI et console partagent les calculs, les formats (`DisplayFormat`) et le service de données du projet `Presentation` : une règle métier se modifie à un seul endroit, mais son rendu existe deux fois (pages Razor et `Console/Views`). Chacune garde sa composition et son logging (UI : `JsonFileLoggerProvider` ; console : OpenTelemetry + `FileLogExporter`).
 - `appsettings.json` est lu et écrit **à côté de l'exécutable** (`AppContext.BaseDirectory`), section `LMU`.
 - Les fusions de pilotes (`LMU:DriverMerges`, `Presentation/Models/DriverMerges.cs`) sont appliquées **en mémoire** par `DashboardDataService` : le dépôt garde les noms d'origine, ce qui permet d'annuler une fusion et de détecter les pilotes qui se sont croisés.
 

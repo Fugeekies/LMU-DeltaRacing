@@ -1,6 +1,6 @@
 ## 7. 🖥️ Console Spectre (`LMU-DeltaRacing.Console`)
 
-> Maquette du jalon « Refonte de la console Spectre » (27/10/2026). Non implémentée.
+> Spécification alignée sur le code au 27/10/2026 (`ConsoleApplication.cs`, `Views/*.cs`).
 
 ### Description
 Outil en ligne de commande (Spectre.Console) qui reprend trois vues du dashboard : **Accueil**, **Mes courses** et **Options**. L'interface est volontairement simple : un bandeau d'état, un menu principal, une vue affichée à la fois. Les anciennes vues « Par circuit » et « Par circuit et voiture » et leurs graphiques sont supprimées.
@@ -28,7 +28,7 @@ Seul le rendu change : pas de tuiles ni de barres empilées, des tableaux et des
 4. Démarrage de la surveillance si `WatchResultsOnStartup` est vrai.
 5. Bandeau d'état puis menu principal.
 
-Dossier illisible ou configuration invalide : message d'erreur en rouge, puis **menu principal quand même**, pour pouvoir corriger le dossier dans Options. Aujourd'hui, l'application s'arrête dans ce cas.
+Dossier illisible : message d'erreur en rouge, puis **menu principal quand même**, pour pouvoir corriger le dossier dans Options. Seuls des réglages de log invalides arrêtent la console.
 
 ### Bandeau d'état
 Affiché au-dessus du menu principal et en tête de chaque vue :
@@ -47,7 +47,7 @@ Affiché au-dessus du menu principal et en tête de chaque vue :
 
   ```text
    + 2 nouveaux résultats : Spa — Race · Spa — Qualify
-   ✖ 1 échec : 2026_10_27_21_04_11-55R1.xml — XML illisible
+   ✖ Échec : 2026_10_27_21_04_11-55R1.xml — XML illisible
   ```
 * Une vue affichée après un import utilise les sessions alors présentes en mémoire. Il n'y a pas de rafraîchissement automatique d'une vue déjà affichée.
 
@@ -77,7 +77,7 @@ Mêmes données et mêmes règles que `Home.razor`. Différences de rendu :
 
 ### Vue « Mes courses »
 Mêmes lignes, deltas et tri que `MyRaces.razor`.
-* **Filtres :** à l'ouverture de la vue, deux `SelectionPrompt` successifs, Circuit (« Tous les circuits » puis lieux triés) et Catégorie (« Toutes les catégories » puis les catégories). Ils sont conservés jusqu'à la fermeture de l'application.
+* **Filtres :** à la première ouverture de la vue, deux `SelectionPrompt` successifs, Circuit (« Tous les circuits » puis lieux triés, avec recherche) et Catégorie (« Toutes les catégories » puis les catégories). Ils sont conservés jusqu'à la fermeture de l'application ; le choix « Changer les filtres » les redemande.
 * **Groupement :** une règle Spectre par couple lieu + tracé (`Circuit de Spa-Francorchamps ─ 3 résultats`), puis le tableau du circuit.
 * **Colonnes abrégées** pour tenir en 120 colonnes :
 
