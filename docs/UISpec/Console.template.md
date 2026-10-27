@@ -87,13 +87,13 @@ Mêmes lignes, deltas et tri que `MyRaces.razor`.
   | CAT. | CATÉGORIE (texte coloré à la couleur de la catégorie) |
   | VOITURE | VOITURE |
   | CLASS. | CLASSEMENT |
-  | QUALIF | MEILLEUR TOUR QUALIF |
-  | Δ QUALIF | DELTA QUALIF (n-1) |
   | GRILLE | GRILLE |
   | COURSE | MEILLEUR TOUR COURSE |
   | Δ COURSE | DELTA COURSE (n-1) |
   | TOURS | TOURS |
   | TEMPS TOTAL | TEMPS TOTAL COURSE |
+  | QUALIF | MEILLEUR TOUR QUALIF |
+  | Δ QUALIF | DELTA QUALIF (n-1) |
 
 * **Deltas :** `-0.245s` vert, `+0.102s` rouge, `0.000s` sans couleur, sans les pastilles 🟢 🔴 dont la largeur varie selon les terminaux.
 * **Classement :** Spectre.Console ne colore pas le fond d'une ligne entière, la mise en avant porte donc sur la cellule CLASS. : pastille à fond or (`#d4af37`), argent (`#c0c7d1`) ou bronze (`#cd7f32`) avec texte noir pour le podium, texte bleu (`#60a5fa`) pour P4-P5, texte gras pour P6-P10. `DNF`, `DQ`, `NC` et `—` sans mise en forme.
@@ -231,13 +231,13 @@ Rendu dans un terminal de 120 colonnes. Les valeurs sont des exemples.
  Circuit : Tous les circuits · Catégorie : Toutes les catégories
 
 ── Circuit de Spa-Francorchamps ─ 3 résultats ─────────────────────────────────────────────────────────────────────────
-┌──────────────────┬──────────┬──────────────┬────────┬──────────┬──────────┬────────┬──────────┬──────────┬───────┬─────────────┐
-│ DATE             │ CAT.     │ VOITURE      │ CLASS. │ QUALIF   │ Δ QUALIF │ GRILLE │ COURSE   │ Δ COURSE │ TOURS │ TEMPS TOTAL │
-├──────────────────┼──────────┼──────────────┼────────┼──────────┼──────────┼────────┼──────────┼──────────┼───────┼─────────────┤
-│ 16/10/2026 21:00 │ Hypercar │ Ferrari 499P │     2e │ 2:02.451 │ -0.245s  │      3 │ 2:03.110 │ -0.120s  │    12 │ 25:01.432   │
-│ 16/10/2026 20:20 │ Hypercar │ Ferrari 499P │     5e │ 2:02.696 │ +0.102s  │      5 │ 2:03.230 │ +0.450s  │    12 │ 25:03.876   │
-│ 16/10/2026 19:40 │ Hypercar │ Ferrari 499P │      — │ 2:02.594 │ —        │      — │ —        │ —        │     — │ —           │
-└──────────────────┴──────────┴──────────────┴────────┴──────────┴──────────┴────────┴──────────┴──────────┴───────┴─────────────┘
+┌──────────────────┬──────────┬──────────────┬────────┬────────┬──────────┬──────────┬───────┬─────────────┬──────────┬──────────┐
+│ DATE             │ CAT.     │ VOITURE      │ CLASS. │ GRILLE │ COURSE   │ Δ COURSE │ TOURS │ TEMPS TOTAL │ QUALIF   │ Δ QUALIF │
+├──────────────────┼──────────┼──────────────┼────────┼────────┼──────────┼──────────┼───────┼─────────────┼──────────┼──────────┤
+│ 16/10/2026 21:00 │ Hypercar │ Ferrari 499P │     2e │      3 │ 2:03.110 │ -0.120s  │    12 │ 25:01.432   │ 2:02.451 │ -0.245s  │
+│ 16/10/2026 20:20 │ Hypercar │ Ferrari 499P │     5e │      5 │ 2:03.230 │ +0.450s  │    12 │ 25:03.876   │ 2:02.696 │ +0.102s  │
+│ 16/10/2026 19:40 │ Hypercar │ Ferrari 499P │      — │      — │ —        │ —        │     — │ —           │ 2:02.594 │ —        │
+└──────────────────┴──────────┴──────────────┴────────┴────────┴──────────┴──────────┴───────┴─────────────┴──────────┴──────────┘
 
 ── Circuit de la Sarthe ─ 18 résultats ────────────────────────────────────────────────────────────────────────────────
 …

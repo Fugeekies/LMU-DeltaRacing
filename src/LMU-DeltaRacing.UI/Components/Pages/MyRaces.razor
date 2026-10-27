@@ -111,13 +111,13 @@ else
                                     <th scope="col">CATÉGORIE</th>
                                     <th scope="col">VOITURE</th>
                                     <th scope="col" class="numeric-cell">CLASSEMENT</th>
-                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR QUALIF</th>
-                                    <th scope="col" class="numeric-cell">DELTA QUALIF (n-1)</th>
                                     <th scope="col" class="numeric-cell">GRILLE</th>
                                     <th scope="col" class="numeric-cell">MEILLEUR TOUR COURSE</th>
                                     <th scope="col" class="numeric-cell">DELTA COURSE (n-1)</th>
                                     <th scope="col" class="numeric-cell">TOURS</th>
                                     <th scope="col" class="numeric-cell">TEMPS TOTAL COURSE</th>
+                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR QUALIF</th>
+                                    <th scope="col" class="numeric-cell">DELTA QUALIF (n-1)</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -128,13 +128,13 @@ else
                                         <td><span class="category-badge">@record.Category</span></td>
                                         <td class="car-cell"><strong>@record.Car</strong></td>
                                         <td class="numeric-cell position-cell">@record.ResultLabel</td>
-                                        <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
-                                        <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@DisplayFormat.Lap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
                                         <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@DisplayFormat.TotalTime(record.FinishTime)</td>
+                                        <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
+                                        <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
                                     </tr>
                                 }
                             </tbody>

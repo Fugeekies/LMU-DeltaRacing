@@ -78,13 +78,13 @@ public static class MyRacesView
         table.AddColumn(new TableColumn("CAT.").NoWrap());
         table.AddColumn("VOITURE");
         table.AddColumn(new TableColumn("CLASS.").RightAligned().NoWrap());
-        table.AddColumn(new TableColumn("QUALIF").RightAligned().NoWrap());
-        table.AddColumn(new TableColumn("Δ QUALIF").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("GRILLE").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("COURSE").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("Δ COURSE").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("TOURS").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("TEMPS TOTAL").RightAligned().NoWrap());
+        table.AddColumn(new TableColumn("QUALIF").RightAligned().NoWrap());
+        table.AddColumn(new TableColumn("Δ QUALIF").RightAligned().NoWrap());
 
         foreach (var record in records)
         {
@@ -93,13 +93,13 @@ public static class MyRacesView
                 ConsoleTheme.CategoryMarkup(record.Category),
                 $"[bold]{Markup.Escape(record.Car)}[/]",
                 ConsoleTheme.PositionMarkup(record),
-                DisplayFormat.Lap(record.QualifyingTime),
-                ConsoleTheme.DeltaMarkup(record.QualifyingDelta),
                 record.GridPosition?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing,
                 DisplayFormat.Lap(record.RaceTime),
                 ConsoleTheme.DeltaMarkup(record.RaceDelta),
                 record.LapsCompleted?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing,
-                DisplayFormat.TotalTime(record.FinishTime));
+                DisplayFormat.TotalTime(record.FinishTime),
+                DisplayFormat.Lap(record.QualifyingTime),
+                ConsoleTheme.DeltaMarkup(record.QualifyingDelta));
         }
 
         return table;

@@ -37,15 +37,15 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   | CATÉGORIE | Badge de catégorie | — |
   | VOITURE | Modèle du véhicule | texte gras |
   | CLASSEMENT | Position en classe de la course (`ClassPosition`) ; `DNF`, `DQ` ou `NC` selon `FinishStatus` ; `—` sans course | `1er`, `2e`, `3e`… |
-  | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
-  | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
   | GRILLE | Position de départ en course (`GridPos`) | entier |
   | MEILLEUR TOUR COURSE | Meilleur tour en course | `m:ss.fff` |
   | DELTA COURSE (n-1) | Écart avec la course précédente | voir règle delta |
   | TOURS | Tours effectués par le pilote en course (`Laps`) | entier |
   | TEMPS TOTAL COURSE | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
+  | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
+  | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
 
-  Toute valeur absente s'affiche `—`.
+  Toute valeur absente s'affiche `—`. Le classement ouvrant le tableau, les colonnes de la course précèdent celles de la qualification.
 * **Mise en avant du classement :** la ligne d'une course classée reçoit un fond teinté et une barre à gauche selon sa position en classe (couleurs de `UI_DESIGN_SPEC.md`, section 7) :
   * P1 : or ; P2 : argent ; P3 : bronze (la position est aussi écrite dans cette couleur) ;
   * P4-P5 : bleu (position en bleu) ;
@@ -82,12 +82,12 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
 │  CIRCUIT                                                                                                                         │
 │  Circuit de Spa-Francorchamps                                                                                      [ 3 résultats ] │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  DATE / HEURE      CATÉGORIE  VOITURE       MT QUALIF  DELTA QUALIF  GRILLE  MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL         │
+│  DATE / HEURE      CATÉGORIE  VOITURE       CLASS.  GRILLE MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL MT QUALIF  DELTA QUALIF   │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
-│  16/10/2026 21:00  Hypercar   Ferrari 499P  2:02.451   🟢 -0.245s    3       2:03.110   🟢 -0.120s    12     25:01.432           │
-│  16/10/2026 20:20  Hypercar   Ferrari 499P  2:02.696   🔴 +0.102s    5       2:03.230   🔴 +0.450s    12     25:03.876           │
-│  16/10/2026 19:40  Hypercar   Ferrari 499P  2:02.594   —             —       —          —             —      —                   │
-│  12/10/2026 14:00  LMGTE      Porsche 911   2:17.594   —             8       2:18.780   —             11     25:40.120           │
+│  16/10/2026 21:00  Hypercar   Ferrari 499P  2e      3      2:03.110   🟢 -0.120s    12     25:01.432   2:02.451   🟢 -0.245s     │
+│  16/10/2026 20:20  Hypercar   Ferrari 499P  5e      5      2:03.230   🔴 +0.450s    12     25:03.876   2:02.696   🔴 +0.102s     │
+│  16/10/2026 19:40  Hypercar   Ferrari 499P  —       —      —          —             —      —           2:02.594   —              │
+│  12/10/2026 14:00  LMGTE      Porsche 911   7e      8      2:18.780   —             11     25:40.120   2:17.594   —              │
 │                                                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  LE MANS ULTIMATE                                                                         RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES │
