@@ -22,6 +22,9 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Formats d'affichage (`DisplayFormat`) et filtres de « Mes courses » (`MyRacesFilters`) partagés entre le dashboard et la console.
 - Release : le workflow manuel demande le type de version (Majeur, Mineur, Patch) au lieu du numéro, incrémente le dernier tag `vX.Y.Z` et liste dans les notes de la release une ligne par PR fusionnée depuis la release précédente.
 
+### Fixed
+- Release : le test de l'application publiée (`Test-PublishedApp.ps1`) attend la fin de l'écran de chargement au démarrage avant de vérifier la page d'accueil ; il échouait depuis l'ajout de cet écran, qui masque la navigation pendant l'import initial.
+
 ---
 
 ## [0.0.8] - 2026-10-26

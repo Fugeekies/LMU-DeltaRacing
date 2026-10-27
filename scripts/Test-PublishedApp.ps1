@@ -62,13 +62,27 @@ try {
         throw "The published dashboard did not open a loopback listener within $StartupTimeoutSeconds seconds."
     }
 
-    $response = Invoke-WebRequest `
-        -Uri "http://127.0.0.1:$($listener.LocalPort)/" `
-        -UseBasicParsing `
-        -SkipHttpErrorCheck `
-        -TimeoutSec 10
-    if ($response.StatusCode -ne 200) {
-        throw "The published dashboard returned HTTP $($response.StatusCode) instead of 200."
+    # The startup loading screen replaces the whole layout until the initial import is over, so the
+    # home page is requested again until the navigation (and its "Mes courses" link) is rendered.
+    $loadingScreen = 'class="startup-loading"'
+    do {
+        $response = Invoke-WebRequest `
+            -Uri "http://127.0.0.1:$($listener.LocalPort)/" `
+            -UseBasicParsing `
+            -SkipHttpErrorCheck `
+            -TimeoutSec 10
+        if ($response.StatusCode -ne 200) {
+            throw "The published dashboard returned HTTP $($response.StatusCode) instead of 200."
+        }
+
+        $isLoading = $response.Content -match [regex]::Escape($loadingScreen)
+        if ($isLoading) {
+            Start-Sleep -Milliseconds 500
+        }
+    } while ($isLoading -and [DateTime]::UtcNow -lt $deadline)
+
+    if ($isLoading) {
+        throw "The published dashboard still showed its startup loading screen after $StartupTimeoutSeconds seconds."
     }
     if ($response.Content -notmatch 'Mes courses') {
         throw "The published dashboard did not render its expected home page."
