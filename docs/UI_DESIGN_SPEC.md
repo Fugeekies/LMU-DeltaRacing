@@ -64,7 +64,8 @@ UISpec/
 ├── Progression.template.md    --> Spécification de la vue "Progression"
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
-└── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
+├── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
+└── Console.template.md        --> Spécification de la console Spectre (Accueil, Mes courses, Options)
 ```
 
 ### Récapitulatif des Menus Principaux :
