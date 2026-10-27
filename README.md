@@ -75,7 +75,7 @@ Votre historique, **circuit par circuit**, pour voir si vous progressez.
 
 - Chaque ligne associe une **course** à la **qualification** qui la précède.
 - Pour chacune, vous voyez votre **classement** dans votre catégorie (`1er`, `2e`…, ou `DNF`, `DQ`, `NC`), votre meilleur tour, votre place sur la grille, le nombre de tours et votre temps total de course.
-- Les meilleurs résultats ressortent : fond **doré** pour une victoire, **argenté** pour une 2e place, **bronze** pour une 3e, puis un fond bleu pour les 4e et 5e places et un bleu plus léger pour les 6e à 10e. Un abandon, une disqualification ou une course non classée garde une ligne normale.
+- Les meilleurs résultats ressortent : la ligne est encadrée et la position colorée en **or** pour une victoire, **argent** pour une 2e place, **bronze** pour une 3e, puis en bleu pour les 4e et 5e places et en bleu plus léger pour les 6e à 10e. Un abandon, une disqualification ou une course non classée garde une ligne normale.
 - La colonne **DELTA (n-1)** compare votre meilleur tour à celui de votre session précédente sur le même circuit, dans la même catégorie :
   - 🟢 **en vert, négatif** : vous avez été plus rapide ;
   - 🔴 **en rouge, positif** : vous avez été plus lent.

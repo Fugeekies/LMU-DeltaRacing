@@ -46,10 +46,10 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
 
   Toute valeur absente s'affiche `—`. Le classement ouvrant le tableau, les colonnes de la course précèdent celles de la qualification.
-* **Mise en avant du classement :** la ligne d'une course classée reçoit un fond teinté et une barre à gauche selon sa position en classe (couleurs de `UI_DESIGN_SPEC.md`, section 7) :
-  * P1 : or ; P2 : argent ; P3 : bronze (la position est aussi écrite dans cette couleur) ;
-  * P4-P5 : bleu (position en bleu) ;
-  * P6-P10 : même bleu, plus léger (position en blanc).
+* **Mise en avant du classement :** la ligne d'une course classée est encadrée (bordure de 1 px sur toute la ligne) et sa position est écrite dans la couleur de son rang (couleurs de `UI_DESIGN_SPEC.md`, section 7), avec un fond à peine teinté (5 %) :
+  * P1 : or ; P2 : argent ; P3 : bronze ;
+  * P4-P5 : bleu ;
+  * P6-P10 : même bleu, plus léger.
   * Au-delà de P10, en `DNF`, `DQ`, `NC` (même avec une position en classe) et sur une ligne sans course : ligne normale.
 * **Règle métier delta ($n-1$) :**
   * Historique = lignes de même lieu + même tracé + même catégorie, triées chronologiquement. Le véhicule n'est pas pris en compte.
