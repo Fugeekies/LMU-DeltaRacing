@@ -3,7 +3,7 @@ using Microsoft.Extensions.Options;
 namespace LMU_DeltaRacing.ConsoleApp.Configuration;
 
 /// <summary>
-/// Validates application paths and the configured file logging severity.
+/// Validates the log file path and the configured file logging severity.
 /// </summary>
 public sealed class LmuApplicationOptionsValidator : IValidateOptions<LmuApplicationOptions>
 {
@@ -24,20 +24,6 @@ public sealed class LmuApplicationOptionsValidator : IValidateOptions<LmuApplica
     {
         ArgumentNullException.ThrowIfNull(options);
         var failures = new List<string>();
-
-        try
-        {
-            var resultsDirectory = ResolveResultsDirectory(options);
-            if (!Directory.Exists(resultsDirectory))
-            {
-                failures.Add($"ResultsDirectory does not exist: '{resultsDirectory}'.");
-            }
-        }
-        catch (Exception exception) when (
-            exception is ArgumentException or IOException or UnauthorizedAccessException or NotSupportedException)
-        {
-            failures.Add($"ResultsDirectory is invalid: {exception.Message}");
-        }
 
         try
         {
@@ -78,16 +64,6 @@ public sealed class LmuApplicationOptionsValidator : IValidateOptions<LmuApplica
             ? ValidateOptionsResult.Success
             : ValidateOptionsResult.Fail(failures);
     }
-
-    /// <summary>
-    /// Resolves the configured result directory or the repository assets default.
-    /// </summary>
-    /// <param name="options">The application options.</param>
-    /// <returns>An absolute results directory path.</returns>
-    public string ResolveResultsDirectory(LmuApplicationOptions options) =>
-        string.IsNullOrWhiteSpace(options.ResultsDirectory)
-            ? XmlFileDiscovery.FindAssetsResultsDirectory(baseDirectory)
-            : ResolvePath(options.ResultsDirectory);
 
     /// <summary>
     /// Resolves the configured log file path relative to the executable directory.

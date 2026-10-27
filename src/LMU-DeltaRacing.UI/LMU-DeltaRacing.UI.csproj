@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\LMU-DeltaRacing.Application\LMU-DeltaRacing.Application.csproj" />
     <ProjectReference Include="..\LMU-DeltaRacing.Infrastructure\LMU-DeltaRacing.Infrastructure.csproj" />
+    <ProjectReference Include="..\LMU-DeltaRacing.Presentation\LMU-DeltaRacing.Presentation.csproj" />
   </ItemGroup>
 
   <PropertyGroup>

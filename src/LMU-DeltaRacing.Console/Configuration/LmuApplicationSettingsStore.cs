@@ -10,7 +10,7 @@ namespace LMU_DeltaRacing.ConsoleApp.Configuration;
 /// </summary>
 public sealed class LmuApplicationSettingsStore
 {
-    private static readonly JsonSerializerOptions JsonOptions = new(JsonSerializerDefaults.Web)
+    private static readonly JsonSerializerOptions JsonOptions = new()
     {
         WriteIndented = true
     };
@@ -40,7 +40,8 @@ public sealed class LmuApplicationSettingsStore
     }
 
     /// <summary>
-    /// Saves validated settings atomically and reloads the active configuration.
+    /// Saves validated log settings atomically and reloads the active configuration. Only the log
+    /// keys are written: the rest of the LMU section belongs to the shared dashboard settings.
     /// </summary>
     /// <param name="options">The settings to persist.</param>
     public void Save(LmuApplicationOptions options)
@@ -58,7 +59,14 @@ public sealed class LmuApplicationSettingsStore
         var root = File.Exists(configurationFilePath)
             ? JsonNode.Parse(File.ReadAllText(configurationFilePath)) as JsonObject ?? new JsonObject()
             : new JsonObject();
-        root[LmuApplicationOptions.SectionName] = JsonSerializer.SerializeToNode(options, JsonOptions);
+        if (root[LmuApplicationOptions.SectionName] is not JsonObject lmuSettings)
+        {
+            lmuSettings = new JsonObject();
+            root[LmuApplicationOptions.SectionName] = lmuSettings;
+        }
+
+        lmuSettings[nameof(LmuApplicationOptions.LogFilePath)] = options.LogFilePath;
+        lmuSettings[nameof(LmuApplicationOptions.FileMinimumLogLevel)] = options.FileMinimumLogLevel;
 
         var temporaryPath = $"{configurationFilePath}.{Guid.NewGuid():N}.tmp";
         try

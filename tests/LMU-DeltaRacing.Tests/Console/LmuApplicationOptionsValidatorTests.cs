@@ -1,5 +1,4 @@
 using FluentAssertions;
-using LMU_DeltaRacing.ConsoleApp;
 using LMU_DeltaRacing.ConsoleApp.Configuration;
 
 namespace LMU_DeltaRacing.Tests.Console;
@@ -11,10 +10,10 @@ namespace LMU_DeltaRacing.Tests.Console;
 public sealed class LmuApplicationOptionsValidatorTests
 {
     /// <summary>
-    /// Verifies that default settings resolve to the repository XML fixtures and executable directory.
+    /// Verifies that default settings are valid and write the log beside the executable.
     /// </summary>
     [TestMethod]
-    public void Validate_accepts_defaults_and_resolves_the_repository_assets_directory()
+    public void Validate_accepts_defaults_and_resolves_the_log_beside_the_executable()
     {
         var validator = new LmuApplicationOptionsValidator(AppContext.BaseDirectory);
 
@@ -23,30 +22,27 @@ public sealed class LmuApplicationOptionsValidatorTests
             new LmuApplicationOptions());
 
         result.Succeeded.Should().BeTrue();
-        validator.ResolveResultsDirectory(new LmuApplicationOptions())
-            .Should()
-            .Be(XmlFileDiscovery.FindAssetsResultsDirectory(AppContext.BaseDirectory));
         validator.ResolveLogFilePath(new LmuApplicationOptions())
             .Should()
             .Be(Path.Combine(AppContext.BaseDirectory, "lmu-deltaracing.log"));
     }
 
     /// <summary>
-    /// Verifies that a configured missing results directory is rejected.
+    /// Verifies that a log file in a missing directory is rejected.
     /// </summary>
     [TestMethod]
-    public void Validate_rejects_a_missing_results_directory()
+    public void Validate_rejects_a_log_file_in_a_missing_directory()
     {
         var validator = new LmuApplicationOptionsValidator(AppContext.BaseDirectory);
         var options = new LmuApplicationOptions
         {
-            ResultsDirectory = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"))
+            LogFilePath = Path.Combine(Path.GetTempPath(), Guid.NewGuid().ToString("N"), "app.log")
         };
 
         var result = validator.Validate(Microsoft.Extensions.Options.Options.DefaultName, options);
 
         result.Failed.Should().BeTrue();
-        result.Failures.Should().ContainSingle(message => message.Contains("ResultsDirectory", StringComparison.Ordinal));
+        result.Failures.Should().ContainSingle(message => message.Contains("LogFilePath", StringComparison.Ordinal));
     }
 
     /// <summary>

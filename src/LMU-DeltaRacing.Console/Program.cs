@@ -1,12 +1,11 @@
 using LMU_DeltaRacing.Application.Abstractions;
-using LMU_DeltaRacing.Application.Models;
 using LMU_DeltaRacing.Application.Services;
 using LMU_DeltaRacing.Application.Telemetry;
 using LMU_DeltaRacing.ConsoleApp;
 using LMU_DeltaRacing.ConsoleApp.Configuration;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using LMU_DeltaRacing.Infrastructure.Persistence;
-using LMU_DeltaRacing.Infrastructure.Watching;
+using LMU_DeltaRacing.Presentation.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -20,8 +19,8 @@ using OpenTelemetry.Resources;
 using OpenTelemetry.Trace;
 using Spectre.Console;
 
-ConsoleDashboard.RenderStartupTitle();
-
+// The console takes no argument: like the dashboard, it loads the results directory configured in
+// appsettings.json beside the executable, or the one detected automatically.
 var executableDirectory = AppContext.BaseDirectory;
 var configurationFilePath = Path.Combine(executableDirectory, "appsettings.json");
 var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings
@@ -30,6 +29,8 @@ var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings
     ContentRootPath = executableDirectory
 });
 
+// Only the log settings stop the console: an unreadable results directory is reported in the
+// menu so that it can be fixed from the options view.
 var optionsValidator = new LmuApplicationOptionsValidator(executableDirectory);
 var initialOptions = builder.Configuration
     .GetSection(LmuApplicationOptions.SectionName)
@@ -37,7 +38,7 @@ var initialOptions = builder.Configuration
 var initialValidation = optionsValidator.Validate(Options.DefaultName, initialOptions);
 if (initialValidation.Failed)
 {
-    AnsiConsole.MarkupLine("[red]La configuration est invalide :[/]");
+    AnsiConsole.MarkupLine("[red]La configuration du fichier de log est invalide :[/]");
     foreach (var failure in initialValidation.Failures)
     {
         AnsiConsole.MarkupLine($"[red]- {Markup.Escape(failure)}[/]");
@@ -83,191 +84,29 @@ builder.Services.AddSingleton(serviceProvider => new LmuApplicationSettingsStore
     serviceProvider.GetRequiredService<LmuApplicationOptionsValidator>()));
 builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
 builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
+// The console never imports practice sessions (the default of the import service).
 builder.Services.AddSingleton<ISessionImportService, SessionImportService>();
+builder.Services.AddSingleton(new DashboardSettingsStore(
+    (IConfigurationRoot)builder.Configuration,
+    configurationFilePath));
+builder.Services.AddSingleton<DashboardDataService>();
+builder.Services.AddHostedService(serviceProvider =>
+    serviceProvider.GetRequiredService<DashboardDataService>());
 
 using var host = builder.Build();
 await host.StartAsync();
 
-var logger = host.Services.GetRequiredService<ILoggerFactory>()
-    .CreateLogger("LMU-DeltaRacing.Configuration");
-var optionsMonitor = host.Services.GetRequiredService<IOptionsMonitor<LmuApplicationOptions>>();
-var settingsStore = host.Services.GetRequiredService<LmuApplicationSettingsStore>();
-var importer = host.Services.GetRequiredService<ISessionImportService>();
-var sessionRepository = host.Services.GetRequiredService<ISessionRepository>();
-var imports = new List<SessionImportResult>();
-IReadOnlyList<string> filesToImport = args;
-var interactiveLaunch = args.Length == 0;
-
-if (interactiveLaunch)
-{
-    var activeOptions = optionsMonitor.CurrentValue;
-    var resolvedImportDirectory = optionsValidator.ResolveResultsDirectory(activeOptions);
-    try
-    {
-        filesToImport = XmlFileDiscovery.GetXmlFiles(resolvedImportDirectory);
-    }
-    catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
-    {
-        logger.LogError(exception, "Could not read results directory {ResultsDirectory}", resolvedImportDirectory);
-        AnsiConsole.MarkupLine($"[red]Impossible de lire le dossier : {Markup.Escape(exception.Message)}[/]");
-        await host.StopAsync();
-        statisticsCollector.Complete();
-        return 1;
-    }
-}
-
-if (filesToImport.Count > 0)
-{
-    AnsiConsole.Progress()
-        .AutoClear(false)
-        .Start(context =>
-        {
-            var task = context.AddTask(
-                "[deepskyblue1]Chargement des résultats[/]",
-                maxValue: filesToImport.Count);
-
-            foreach (var filePath in filesToImport)
-            {
-                task.Description = $"Chargement [grey]{Markup.Escape(Path.GetFileName(filePath))}[/]";
-                statisticsCollector.SampleMemory();
-                imports.Add(importer.ImportFile(filePath));
-                statisticsCollector.SampleMemory();
-                task.Increment(1);
-            }
-        });
-}
-
-ConsoleDashboard.RenderImportSummary(imports, filesToImport.Count);
-var statisticsTableSelection = StatisticsTableSelection.Both;
-await using var resultsDirectoryWatcher = interactiveLaunch
-    ? new ResultsDirectoryWatcher(
-        optionsValidator.ResolveResultsDirectory(optionsMonitor.CurrentValue),
-        importer,
-        host.Services.GetRequiredService<ILogger<ResultsDirectoryWatcher>>())
-    : null;
-
-if (resultsDirectoryWatcher is not null)
-{
-    resultsDirectoryWatcher.ImportCompleted += ConsoleDashboard.RenderDynamicImportResult;
-    try
-    {
-        await resultsDirectoryWatcher.StartAsync(filesToImport);
-    }
-    catch (Exception exception) when (
-        exception is IOException
-            or UnauthorizedAccessException
-            or ArgumentException
-            or PlatformNotSupportedException)
-    {
-        logger.LogCritical(exception, "Could not start watching results directory");
-        AnsiConsole.MarkupLine($"[red]Impossible de surveiller le dossier des résultats : {Markup.Escape(exception.Message)}[/]");
-        await resultsDirectoryWatcher.DisposeAsync();
-        await host.StopAsync();
-        statisticsCollector.Complete();
-        return 1;
-    }
-
-    AnsiConsole.MarkupLine("[green]Surveillance active[/] — les nouveaux fichiers XML seront importés automatiquement.");
-}
-
-if (interactiveLaunch)
-{
-    while (true)
-    {
-        var action = AnsiConsole.Prompt(
-            new SelectionPrompt<string>()
-                .Title("Surveillance active — quelles statistiques souhaitez-vous afficher ?")
-                .AddChoices(
-                    "Par circuit",
-                    "Par circuit et voiture",
-                    "Les deux tableaux",
-                    "Modifier la configuration",
-                    "Quitter"));
-
-        if (action == "Quitter")
-        {
-            if (resultsDirectoryWatcher is not null)
-            {
-                await resultsDirectoryWatcher.DisposeAsync();
-            }
-
-            await host.StopAsync();
-            statisticsCollector.Complete();
-            return imports.Any(result => result.Status == SessionImportStatus.Failed) ? 1 : 0;
-        }
-
-        if (action == "Modifier la configuration")
-        {
-            var current = optionsMonitor.CurrentValue;
-            var resolvedResultsDirectory = optionsValidator.ResolveResultsDirectory(current);
-            AnsiConsole.MarkupLine(
-                $"[dim]Le chemin des résultats utilisé à ce démarrage est : {Markup.Escape(resolvedResultsDirectory)}[/]");
-
-            var resultsDirectory = AnsiConsole.Prompt(
-                new TextPrompt<string>("Dossier des résultats XML (utilisé au prochain démarrage) :")
-                    .DefaultValue(current.ResultsDirectory)
-                    .AllowEmpty());
-            var logFilePath = AnsiConsole.Prompt(
-                new TextPrompt<string>("Chemin du fichier de log JSON (relatif à l'exécutable ou absolu) :")
-                    .DefaultValue(current.LogFilePath));
-            var logLevels = Enum.GetNames<LogLevel>();
-            var currentLogLevel = Enum.TryParse<LogLevel>(
-                current.FileMinimumLogLevel,
-                ignoreCase: true,
-                out var parsedLogLevel)
-                ? parsedLogLevel.ToString()
-                : nameof(LogLevel.Debug);
-            var orderedLevels = logLevels
-                .OrderByDescending(level => level == currentLogLevel)
-                .ThenBy(level => Array.IndexOf(logLevels, level));
-            var fileMinimumLogLevel = AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                    .Title("Niveau minimal écrit dans le fichier de log :")
-                    .AddChoices(orderedLevels));
-
-            try
-            {
-                settingsStore.Save(new LmuApplicationOptions
-                {
-                    ResultsDirectory = resultsDirectory,
-                    LogFilePath = logFilePath,
-                    FileMinimumLogLevel = fileMinimumLogLevel
-                });
-                AnsiConsole.MarkupLine("[green]Configuration enregistrée dans appsettings.json.[/]");
-            }
-            catch (OptionsValidationException exception)
-            {
-                logger.LogWarning(exception, "Rejected invalid application configuration");
-                AnsiConsole.MarkupLine($"[red]{Markup.Escape(exception.Message)}[/]");
-            }
-            catch (Exception exception) when (exception is IOException or UnauthorizedAccessException)
-            {
-                logger.LogError(exception, "Could not save application configuration");
-                AnsiConsole.MarkupLine($"[red]Impossible d'enregistrer la configuration : {Markup.Escape(exception.Message)}[/]");
-            }
-
-            continue;
-        }
-
-        statisticsTableSelection = action switch
-        {
-            "Par circuit" => StatisticsTableSelection.Circuit,
-            "Par circuit et voiture" => StatisticsTableSelection.CircuitAndCar,
-            _ => StatisticsTableSelection.Both
-        };
-        ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
-    }
-}
-else
-{
-    ConsoleDashboard.RenderStatistics(sessionRepository.GetAll(), statisticsTableSelection);
-}
-if (resultsDirectoryWatcher is not null)
-{
-    await resultsDirectoryWatcher.DisposeAsync();
-}
+var application = new ConsoleApplication(
+    AnsiConsole.Console,
+    host.Services.GetRequiredService<DashboardDataService>(),
+    host.Services.GetRequiredService<DashboardSettingsStore>(),
+    host.Services.GetRequiredService<LmuApplicationSettingsStore>(),
+    host.Services.GetRequiredService<IConfiguration>(),
+    host.Services.GetRequiredService<IOptionsMonitor<LmuApplicationOptions>>(),
+    host.Services.GetRequiredService<ILogger<ConsoleApplication>>(),
+    statisticsCollector.SampleMemory);
+var exitCode = await application.RunAsync();
 
 await host.StopAsync();
 statisticsCollector.Complete();
-
-return imports.Any(result => result.Status == SessionImportStatus.Failed) ? 1 : 0;
+return exitCode;

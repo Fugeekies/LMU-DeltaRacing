@@ -178,6 +178,21 @@ Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).
 - [x] **Préférences :** circuit et voiture les plus roulés avec leur palmarès, dans la tuile Pilote.
 - [x] Gérer les états vides : aucune course, valeur non calculable (`—`).
 
+## Jalon — Refonte de la console Spectre [Terminé]
+Spécification : [`UISpec/Console.template.md`](UISpec/Console.template.md).
+Reprendre dans la console les vues Accueil, Mes courses et Options du dashboard, avec une interface simplifiée : un menu principal court, une vue affichée à la fois.
+- [x] **Calculs partagés :** calculs des vues, service de données, réglages et détection du dossier déplacés du projet UI vers le projet commun `LMU-DeltaRacing.Presentation`, sans changer le comportement du dashboard.
+- [x] **Suppression des anciennes vues :** retirer « Par circuit », « Par circuit et voiture », leurs graphiques et `SessionStatistics`, pour ne garder qu'une seule logique de delta.
+- [x] **Sans argument :** supprimer le mode « fichiers en argument » ; la console charge toujours le dossier configuré dans `appsettings.json` (ou détecté automatiquement), comme le dashboard.
+- [x] **Menu principal :** Accueil, Mes courses, Options, Quitter. L'import initial affiche une barre de progression puis un résumé sur une ligne (réussites, échecs avec leur détail).
+- [x] **Accueil :** mêmes sections et mêmes règles que `Home.razor` (palmarès, qualification & départ, abandons, roulage, forme récente, préférences), ventilées par catégorie.
+- [x] **Mes courses :** mêmes lignes qualif + course, delta n-1 et coloration (vert/rouge) que `MyRaces.razor`, groupées par circuit, avec les filtres Circuit et Catégorie.
+- [x] **Options :** mêmes réglages que `Settings.razor`, enregistrés dans la section `LMU` du `appsettings.json` de la console (à côté de son exécutable, distinct de celui de l'UI) : dossier des résultats (validation, enregistrement, puis rechargement des résultats et du watcher), pilote principal (trié par pourcentage d'apparition), fusion de pilotes (avec l'avertissement des pilotes qui se sont croisés), démarrage automatique de la surveillance. Les réglages du fichier de log (chemin, niveau minimal) restent propres à la console.
+- [x] Pas de liens vers « Détail des courses » ni « Progression », absents de la console.
+- [x] **Essais :** la console ignore toujours les sessions d'essais ; pas d'option « Charger les sessions d'essais ».
+- [x] **Imports pendant la surveillance :** ne plus écrire dans le terminal pendant qu'un menu est affiché ; signaler les nouveaux imports entre deux menus.
+- [x] Tester le rendu des vues avec `Spectre.Console.Testing`.
+
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.
