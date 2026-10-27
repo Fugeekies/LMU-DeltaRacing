@@ -11,6 +11,10 @@
     --yellow: #eab308;
     --red: #ef4444;
     --purple: #b066ff;
+    --gold: #d4af37;
+    --silver: #c0c7d1;
+    --bronze: #cd7f32;
+    --top5: #60a5fa;
 }
 
 * {
@@ -960,7 +964,58 @@ h3 {
 }
 
 .races-table {
-    min-width: 940px;
+    min-width: 1020px;
+}
+
+/* Class position highlight: a translucent tint keeps the dark surface readable, and a bar on the
+   first cell marks the row even where the tint is faint (top 5, top 10). */
+.races-table tr[class^="position-"] td:first-child {
+    box-shadow: inset 3px 0 0 var(--position-bar, var(--position-color));
+}
+
+.races-table tr[class^="position-"] td {
+    background: color-mix(in srgb, var(--position-color) var(--position-tint), transparent);
+}
+
+.races-table .position-gold {
+    --position-color: var(--gold);
+    --position-tint: 18%;
+}
+
+.races-table .position-silver {
+    --position-color: var(--silver);
+    --position-tint: 22%;
+}
+
+.races-table .position-bronze {
+    --position-color: var(--bronze);
+    --position-tint: 16%;
+}
+
+.races-table .position-top5 {
+    --position-color: var(--top5);
+    --position-tint: 9%;
+}
+
+/* Same blue as the top 5, lighter, so that the two groups read as one scale. */
+.races-table .position-top10 {
+    --position-color: var(--top5);
+    --position-tint: 4%;
+    --position-bar: color-mix(in srgb, var(--top5) 45%, transparent);
+}
+
+.position-cell {
+    font-weight: 750;
+    white-space: nowrap;
+}
+
+.races-table tr[class^="position-"] .position-cell {
+    color: var(--position-color);
+}
+
+/* A blue top 10 position would look like a top 5 one: the bar and the tint are enough. */
+.races-table tr.position-top10 .position-cell {
+    color: var(--text);
 }
 
 .car-cell {

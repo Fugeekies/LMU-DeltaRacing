@@ -110,6 +110,7 @@ else
                                     <th scope="col">DATE / HEURE</th>
                                     <th scope="col">CATÉGORIE</th>
                                     <th scope="col">VOITURE</th>
+                                    <th scope="col" class="numeric-cell">CLASSEMENT</th>
                                     <th scope="col" class="numeric-cell">MEILLEUR TOUR QUALIF</th>
                                     <th scope="col" class="numeric-cell">DELTA QUALIF (n-1)</th>
                                     <th scope="col" class="numeric-cell">GRILLE</th>
@@ -122,10 +123,11 @@ else
                             <tbody>
                                 @foreach (var record in circuit.OrderByDescending(record => record.StartedAt))
                                 {
-                                    <tr>
+                                    <tr class="@GetPositionClass(record.PositionTier)">
                                         <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
                                         <td><span class="category-badge">@record.Category</span></td>
                                         <td class="car-cell"><strong>@record.Car</strong></td>
+                                        <td class="numeric-cell position-cell">@record.ResultLabel</td>
                                         <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
@@ -193,6 +195,19 @@ else
         return $"/progression?venue={Uri.EscapeDataString(trackVenue)}&course={Uri.EscapeDataString(trackCourse)}"
             + (category is null ? string.Empty : $"&category={Uri.EscapeDataString(category)}");
     }
+
+    /// <summary>
+    /// Returns the row class of a highlighted class position (podium, top 5, top 10).
+    /// </summary>
+    private static string? GetPositionClass(MyRacePositionTier tier) => tier switch
+    {
+        MyRacePositionTier.Gold => "position-gold",
+        MyRacePositionTier.Silver => "position-silver",
+        MyRacePositionTier.Bronze => "position-bronze",
+        MyRacePositionTier.TopFive => "position-top5",
+        MyRacePositionTier.TopTen => "position-top10",
+        _ => null
+    };
 
     private static RenderFragment FormatDelta(TimeSpan? delta) => builder =>
     {

@@ -146,13 +146,7 @@ public sealed record HomeFormEntry(
     /// <summary>
     /// Gets the short label of the result: "P3", "DNF", "DQ" or "NC".
     /// </summary>
-    public string Label => Kind switch
-    {
-        HomeResultKind.Retired => "DNF",
-        HomeResultKind.Disqualified => "DQ",
-        HomeResultKind.Unclassified => "NC",
-        _ => ClassPosition is { } position ? $"P{position}" : "—"
-    };
+    public string Label => RaceResults.GetLabel(Kind, ClassPosition);
 
     /// <summary>
     /// Gets the French label of the finish status.

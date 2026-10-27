@@ -55,6 +55,14 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * L'écran disparaît quand l'import au démarrage est terminé, y compris en erreur (l'erreur s'affiche alors dans les pages). Un rechargement depuis Options et les imports du watcher ne l'affichent pas.
 * Avec `prefers-reduced-motion`, la roue avance sans tourner.
 
+### 7. Classement dans « Mes courses »
+Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le violet, le vert, le jaune et le rouge WEC. Chaque ligne reçoit un fond translucide de sa couleur et une barre de 3 px à gauche.
+* **P1 :** or `#d4af37` (fond à 18 %).
+* **P2 :** argent `#c0c7d1` (fond à 22 %).
+* **P3 :** bronze `#cd7f32` (fond à 16 %).
+* **P4-P5 :** bleu `#60a5fa` (fond à 9 %).
+* **P6-P10 :** même bleu `#60a5fa`, plus léger (fond à 4 %, barre à 45 %, position en texte blanc).
+
 ---
 
 ## 📂 Navigation & Templates des Vues (`UISpec/`)

@@ -36,6 +36,7 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   | DATE / HEURE | Début de la qualif, à défaut de la course (heure locale) | `dd/MM/yyyy HH:mm` |
   | CATÉGORIE | Badge de catégorie | — |
   | VOITURE | Modèle du véhicule | texte gras |
+  | CLASSEMENT | Position en classe de la course (`ClassPosition`) ; `DNF`, `DQ` ou `NC` selon `FinishStatus` ; `—` sans course | `1er`, `2e`, `3e`… |
   | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
   | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
   | GRILLE | Position de départ en course (`GridPos`) | entier |
@@ -45,6 +46,11 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   | TEMPS TOTAL COURSE | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
 
   Toute valeur absente s'affiche `—`.
+* **Mise en avant du classement :** la ligne d'une course classée reçoit un fond teinté et une barre à gauche selon sa position en classe (couleurs de `UI_DESIGN_SPEC.md`, section 7) :
+  * P1 : or ; P2 : argent ; P3 : bronze (la position est aussi écrite dans cette couleur) ;
+  * P4-P5 : bleu (position en bleu) ;
+  * P6-P10 : même bleu, plus léger (position en blanc).
+  * Au-delà de P10, en `DNF`, `DQ`, `NC` (même avec une position en classe) et sur une ligne sans course : ligne normale.
 * **Règle métier delta ($n-1$) :**
   * Historique = lignes de même lieu + même tracé + même catégorie, triées chronologiquement. Le véhicule n'est pas pris en compte.
   * Qualif et course sont calculées séparément : delta = temps courant − dernier temps non vide précédent du même type.

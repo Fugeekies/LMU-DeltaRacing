@@ -203,18 +203,7 @@ public static class HomePresentation
 
         public double LapsCompleted { get; } = Driver.LapsCompleted ?? Driver.Laps.Count;
 
-        public HomeResultKind Kind => Driver.FinishStatus.Trim() switch
-        {
-            var status when status.Equals("DNF", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Retired,
-            var status when status.Equals("DQ", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Disqualified,
-            var status when status.Equals("None", StringComparison.OrdinalIgnoreCase) => HomeResultKind.Unclassified,
-            _ => Rank switch
-            {
-                1 => HomeResultKind.Win,
-                2 or 3 => HomeResultKind.Podium,
-                _ => HomeResultKind.Classified
-            }
-        };
+        public HomeResultKind Kind => RaceResults.GetKind(Driver.FinishStatus, Rank);
     }
 
     private sealed class VenueAndCourseComparer : IEqualityComparer<(string Name, string? Detail)>

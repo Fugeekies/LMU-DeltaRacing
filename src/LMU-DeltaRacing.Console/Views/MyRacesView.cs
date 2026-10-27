@@ -77,6 +77,7 @@ public static class MyRacesView
         table.AddColumn(new TableColumn("DATE").NoWrap());
         table.AddColumn(new TableColumn("CAT.").NoWrap());
         table.AddColumn("VOITURE");
+        table.AddColumn(new TableColumn("CLASS.").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("QUALIF").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("Δ QUALIF").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("GRILLE").RightAligned().NoWrap());
@@ -91,6 +92,7 @@ public static class MyRacesView
                 DisplayFormat.DateTime(record.StartedAt),
                 ConsoleTheme.CategoryMarkup(record.Category),
                 $"[bold]{Markup.Escape(record.Car)}[/]",
+                ConsoleTheme.PositionMarkup(record),
                 DisplayFormat.Lap(record.QualifyingTime),
                 ConsoleTheme.DeltaMarkup(record.QualifyingDelta),
                 record.GridPosition?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing,
