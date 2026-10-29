@@ -168,6 +168,33 @@ public sealed class ConsoleViewsTests
     }
 
     /// <summary>
+    /// Verifies that the class position of a podium is preceded by a trophy, as on the dashboard,
+    /// and that no other row gets one.
+    /// </summary>
+    [TestMethod]
+    public void MyRacesView_puts_a_trophy_before_podium_positions_only()
+    {
+        var records = MyRacesPresentation.CreateRecords(FixtureSessions.Value, MainDriver);
+
+        records.Should().Contain(record => record.IsPodium, "the fixtures hold podiums of the main driver");
+        foreach (var record in records)
+        {
+            var markup = ConsoleTheme.PositionMarkup(record);
+            if (record.IsPodium)
+            {
+                markup.Should().Contain($"🏆 {record.ResultLabel}");
+            }
+            else
+            {
+                markup.Should().NotContain("🏆");
+            }
+        }
+
+        var podium = records.First(record => record.IsPodium);
+        Render(MyRacesView.Create(records, podium.TrackVenue, podium.Category)).Should().Contain($"🏆 {podium.ResultLabel}");
+    }
+
+    /// <summary>
     /// Verifies the empty states of the "my races" view.
     /// </summary>
     [TestMethod]

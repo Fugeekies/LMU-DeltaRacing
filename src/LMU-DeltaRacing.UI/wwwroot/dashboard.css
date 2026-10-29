@@ -1022,6 +1022,12 @@ h3 {
     color: var(--position-text, var(--position-color));
 }
 
+/* Podium trophy, before the position so that the positions stay aligned on the right. */
+.podium-trophy {
+    margin-right: 6px;
+    vertical-align: -2px;
+}
+
 .car-cell {
     min-width: 150px;
 }

@@ -109,7 +109,18 @@ else
                                         <td><span class="category-badge">@record.Category</span></td>
                                         <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
                                         <td class="car-cell"><strong>@record.Car</strong></td>
-                                        <td class="numeric-cell position-cell">@record.ResultLabel</td>
+                                        <td class="numeric-cell position-cell">
+                                            @if (record.IsPodium)
+                                            {
+                                                @* Drawn in the colour of the position text: gold, silver or bronze. *@
+                                                <svg class="podium-trophy" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+                                                    <path d="M7 3h10v4a5 5 0 0 1-10 0z" fill="currentColor" />
+                                                    <path d="M7 5H4.5v1.5a3 3 0 0 0 3 3M17 5h2.5v1.5a3 3 0 0 1-3 3M12 12v4M8.5 20h7M9.5 16h5v4h-5z"
+                                                          fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                </svg>
+                                            }
+                                            @record.ResultLabel
+                                        </td>
                                         <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
                                         <td class="numeric-cell">@DisplayFormat.Lap(record.RaceTime)</td>
                                         <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>

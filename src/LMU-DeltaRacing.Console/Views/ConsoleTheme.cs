@@ -75,7 +75,7 @@ public static class ConsoleTheme
 
     /// <summary>
     /// Returns the class position of a "my races" row, highlighted as on the dashboard: a gold,
-    /// silver or bronze badge for the podium, blue for the top 5 and bold for the top 10.
+    /// silver or bronze badge preceded by a trophy for the podium, blue for the top 5 and bold for the top 10.
     /// </summary>
     /// <remarks>
     /// Spectre.Console cannot fill a whole table row, so the highlight is carried by the position cell.
@@ -84,7 +84,8 @@ public static class ConsoleTheme
     {
         ArgumentNullException.ThrowIfNull(record);
 
-        var label = Markup.Escape(record.ResultLabel);
+        // The trophy of the dashboard; a terminal cannot colour an emoji, the badge gives the colour.
+        var label = (record.IsPodium ? "🏆 " : string.Empty) + Markup.Escape(record.ResultLabel);
         return record.PositionTier switch
         {
             MyRacePositionTier.Gold => $"[bold black on #d4af37] {label} [/]",

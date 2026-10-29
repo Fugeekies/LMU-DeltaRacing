@@ -60,6 +60,7 @@ Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le v
 * **P1 :** or `#d4af37`.
 * **P2 :** argent `#c0c7d1`.
 * **P3 :** bronze `#cd7f32`.
+* **Coupe du podium :** de P1 à P3, une petite coupe (SVG de 14 px, dessinée avec `currentColor`) précède la position, dans la couleur du rang : or, argent ou bronze. Elle n'apparaît pas sur un `DNF`, un `DQ` ou un `NC`, même avec une position en classe.
 * **P4-P5 :** bleu `#60a5fa`.
 * **P6-P10 :** même bleu, plus léger : bordure `#60a5fa` à 45 %, position mélangée à 50 % avec le blanc du texte.
 
