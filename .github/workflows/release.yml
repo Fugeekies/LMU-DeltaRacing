@@ -74,6 +74,10 @@ jobs:
       - name: Restore dependencies
         run: dotnet restore
 
+      # A release never ships with a red test. The test project only: the solution also holds the long benchmarks.
+      - name: Run unit tests
+        run: dotnet test tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj -c Release --no-restore
+
       - name: Publish self-contained dashboard
         run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 -o publish_output
 

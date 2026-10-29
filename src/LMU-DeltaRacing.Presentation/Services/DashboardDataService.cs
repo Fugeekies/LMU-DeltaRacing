@@ -466,6 +466,8 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     filesLoaded++;
                 }
 
+                // Intended, Debug builds only: slows the load down so that the startup loading
+                // screen can be checked by eye. Release builds are not affected.
 #if DEBUG
                 await Task.Delay(15, cancellationToken).ConfigureAwait(false);
 #endif

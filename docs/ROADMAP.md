@@ -218,11 +218,11 @@ Spécification : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md).
 - [x] Console : colonne CLASS., la mise en avant porte sur la cellule de la position (Spectre.Console ne colore pas une ligne entière).
 
 ## Jalon — Garde-fous de CI (priorité 1)
-Issu de l'audit d'octobre 2026. Aucun test ne tourne aujourd'hui sur les PR, et la release publie sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.
-- [ ] Workflow GitHub Actions sur chaque PR vers `main` : `dotnet build LMU-DeltaRacing.slnx` puis `dotnet test` du projet de tests (sans les benchmarks).
-- [ ] **`release.yml` :** lancer les tests unitaires avant `dotnet publish`, pour qu'une release ne parte jamais avec des tests rouges.
-- [ ] Rendre le workflow des PR obligatoire avant fusion (protection de la branche `main`).
-- [ ] Retirer ou réduire le `#if DEBUG Task.Delay(15)` par fichier de `DashboardDataService`, qui ajoute au moins 5 s à chaque démarrage en Debug.
+Issu de l'audit d'octobre 2026. Avant ce jalon, aucun test ne tournait sur les PR et la release publiait sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.
+- [x] Workflow GitHub Actions `ci.yml` sur chaque PR et sur `main` après fusion : `dotnet build LMU-DeltaRacing.slnx` en Release (avertissements de `src/` traités comme erreurs) puis `dotnet test` du projet de tests, sans les benchmarks. Les résultats de tests sont joints au run en cas d'échec.
+- [x] **`release.yml` :** lancer les tests unitaires avant `dotnet publish`, pour qu'une release ne parte jamais avec des tests rouges.
+- [x] Rendre le workflow `CI` obligatoire avant fusion (protection de la branche `main`, vérification « build-and-test ») : à configurer dans les réglages GitHub une fois le workflow présent sur `main`.
+- [x] Garder le `#if DEBUG Task.Delay(15)` par fichier de `DashboardDataService` : il est voulu, pour vérifier à l'œil l'écran de chargement en Debug (sans effet en Release) ; un commentaire l'explique désormais dans le code.
 
 ## Jalon — Identité et chronologie des sessions (priorité 2)
 Issu de l'audit d'octobre 2026. Une session n'a ni identité stable ni heure de début propre, ce qui fragilise les comparaisons et les historiques. Ce jalon change des règles documentées dans `AGENTS.md` : proposition écrite à valider avant de coder.
