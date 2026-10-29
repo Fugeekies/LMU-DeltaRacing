@@ -90,7 +90,7 @@ public static class ConsoleTheme
         {
             MyRacePositionTier.Gold => $"[bold black on #d4af37] {label} [/]",
             MyRacePositionTier.Silver => $"[bold black on #c0c7d1] {label} [/]",
-            MyRacePositionTier.Bronze => $"[bold black on #cd7f32] {label} [/]",
+            MyRacePositionTier.Bronze => $"[bold black on #d2733f] {label} [/]",
             MyRacePositionTier.TopFive => $"[bold #60a5fa]{label}[/]",
             MyRacePositionTier.TopTen => $"[bold]{label}[/]",
             _ => label

@@ -56,10 +56,10 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * Avec `prefers-reduced-motion`, la roue avance sans tourner.
 
 ### 7. Classement dans « Mes courses »
-Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le violet, le vert, le jaune et le rouge WEC. Chaque ligne est encadrée d'une bordure de 1 px de sa couleur et la position (colonne CLASSEMENT) est écrite dans cette couleur ; le fond de la ligne n'en garde qu'une trace à peine visible (5 %).
+Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le violet, le vert, le jaune et le rouge WEC. Chaque ligne est encadrée d'une bordure de 1 px de sa couleur et la position (colonne CLASSEMENT) est écrite dans cette couleur ; le fond de la ligne n'en garde qu'une trace : 10 % pour le podium, pour que sa couleur se reconnaisse d'un coup d'œil, 5 % pour le top 10.
 * **P1 :** or `#d4af37`.
 * **P2 :** argent `#c0c7d1`.
-* **P3 :** bronze `#cd7f32`.
+* **P3 :** bronze cuivré `#d2733f` : plus rouge que l'or, pour ne pas confondre P1 et P3. L'or garde son ton mat, un or plus vif se confondrait avec le jaune WEC des secteurs.
 * **Coupe du podium :** de P1 à P3, une petite coupe (SVG de 14 px, dessinée avec `currentColor`) précède la position, dans la couleur du rang : or, argent ou bronze. Elle n'apparaît pas sur un `DNF`, un `DQ` ou un `NC`, même avec une position en classe.
 * **P4-P5 :** bleu `#60a5fa`.
 * **P6-P10 :** même bleu, plus léger : bordure `#60a5fa` à 45 %, position mélangée à 50 % avec le blanc du texte.
