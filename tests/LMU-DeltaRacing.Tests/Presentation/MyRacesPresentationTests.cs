@@ -232,9 +232,8 @@ public sealed class MyRacesPresentationTests
                 finishStatus: "Finished Normally"))
             .ToArray();
 
-        var tiers = MyRacesPresentation.CreateRecords(sessions, "Driver")
-            .OrderBy(record => record.ClassPosition)
-            .Select(record => record.PositionTier);
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver").OrderBy(record => record.ClassPosition).ToArray();
+        var tiers = records.Select(record => record.PositionTier);
 
         tiers.Should().Equal(
             MyRacePositionTier.Gold,
@@ -245,6 +244,7 @@ public sealed class MyRacesPresentationTests
             MyRacePositionTier.TopTen,
             MyRacePositionTier.TopTen,
             MyRacePositionTier.None);
+        records.Select(record => record.IsPodium).Should().Equal(true, true, true, false, false, false, false, false);
     }
 
     [TestMethod]
@@ -263,6 +263,7 @@ public sealed class MyRacesPresentationTests
         records["Monza"].ResultLabel.Should().Be("DQ");
         records["Imola"].ResultLabel.Should().Be("NC");
         records.Values.Select(record => record.PositionTier).Should().AllBeEquivalentTo(MyRacePositionTier.None);
+        records.Values.Should().OnlyContain(record => !record.IsPodium, "a retired, disqualified or unclassified race earns no trophy");
     }
 
     [TestMethod]

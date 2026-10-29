@@ -50,6 +50,12 @@ public sealed record MyRaceRecord(
         },
         _ => MyRacePositionTier.None
     };
+
+    /// <summary>
+    /// Gets whether the race ended on the class podium (classified first, second or third), which
+    /// earns a trophy in the colour of the place.
+    /// </summary>
+    public bool IsPodium => PositionTier is MyRacePositionTier.Gold or MyRacePositionTier.Silver or MyRacePositionTier.Bronze;
 }
 
 /// <summary>

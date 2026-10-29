@@ -96,7 +96,7 @@ Mêmes lignes, deltas et tri que `MyRaces.razor`.
   | Δ QUALIF | DELTA QUALIF (n-1) |
 
 * **Deltas :** `-0.245s` vert, `+0.102s` rouge, `0.000s` sans couleur, sans les pastilles 🟢 🔴 dont la largeur varie selon les terminaux.
-* **Classement :** Spectre.Console ne colore pas le fond d'une ligne entière, la mise en avant porte donc sur la cellule CLASS. : pastille à fond or (`#d4af37`), argent (`#c0c7d1`) ou bronze (`#cd7f32`) avec texte noir pour le podium, texte bleu (`#60a5fa`) pour P4-P5, texte gras pour P6-P10. `DNF`, `DQ`, `NC` et `—` sans mise en forme.
+* **Classement :** Spectre.Console ne colore pas le fond d'une ligne entière, la mise en avant porte donc sur la cellule CLASS. : pastille à fond or (`#d4af37`), argent (`#c0c7d1`) ou bronze (`#d2733f`) avec texte noir et la coupe 🏆 devant la position pour le podium (comme la coupe du dashboard, l'emoji ne prend pas la couleur du rang), texte bleu (`#60a5fa`) pour P4-P5, texte gras pour P6-P10. `DNF`, `DQ`, `NC` et `—` sans mise en forme.
 * Aucune ligne : « Aucune course disponible ». Filtres sans résultat : « Aucune course ne correspond à ces filtres ».
 * Menu de fin : « Changer les filtres », « Retour ».
 

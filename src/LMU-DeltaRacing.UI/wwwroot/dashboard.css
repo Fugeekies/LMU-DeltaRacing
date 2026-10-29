@@ -11,9 +11,11 @@
     --yellow: #eab308;
     --red: #ef4444;
     --purple: #b066ff;
+    /* Bronze is a copper, redder than the gold, so that P1 and P3 do not look alike. The gold
+       keeps its muted tone: a brighter one would read as the WEC yellow of the sectors. */
     --gold: #d4af37;
     --silver: #c0c7d1;
-    --bronze: #cd7f32;
+    --bronze: #d2733f;
     --top5: #60a5fa;
 }
 
@@ -971,7 +973,7 @@ h3 {
    Inset shadows draw the frame inside each cell, so that it does not fight with the collapsed
    table borders and two highlighted rows in a row keep their own frame. */
 .races-table tr[class^="position-"] td {
-    background: color-mix(in srgb, var(--position-color) 5%, transparent);
+    background: color-mix(in srgb, var(--position-color) var(--position-tint, 5%), transparent);
     box-shadow:
         inset 0 1px 0 var(--position-color),
         inset 0 -1px 0 var(--position-color);
@@ -991,16 +993,20 @@ h3 {
         inset -1px 0 0 var(--position-color);
 }
 
+/* The podium background is tinted twice as much as the top 10, so that its colour is recognized at a glance. */
 .races-table .position-gold {
     --position-color: var(--gold);
+    --position-tint: 10%;
 }
 
 .races-table .position-silver {
     --position-color: var(--silver);
+    --position-tint: 10%;
 }
 
 .races-table .position-bronze {
     --position-color: var(--bronze);
+    --position-tint: 10%;
 }
 
 .races-table .position-top5 {
@@ -1020,6 +1026,12 @@ h3 {
 
 .races-table tr[class^="position-"] .position-cell {
     color: var(--position-text, var(--position-color));
+}
+
+/* Podium trophy, before the position so that the positions stay aligned on the right. */
+.podium-trophy {
+    margin-right: 6px;
+    vertical-align: -2px;
 }
 
 .car-cell {
