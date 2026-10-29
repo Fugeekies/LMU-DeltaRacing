@@ -58,6 +58,7 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 
 - **Jamais de commit direct sur `main`** : branche dédiée (`feature/…`, `fix/…`), puis PR.
 - Commit ou push uniquement sur demande explicite.
+- **PR créées en brouillon** (`gh pr create --draft`) : la CI (`ci.yml`) ignore les brouillons, ce qui évite un run à chaque commit pendant le travail. Passer la PR en « Ready for review » (`gh pr ready`) quand elle est terminée, ce qui lance la CI, puis attendre qu'elle soit verte avant d'annoncer la PR prête.
 - Toute PR touchant `src/`, `tests/`, la configuration ou les fonctionnalités met à jour `CHANGELOG.md` sous `## [Unreleased]`, catégories Keep a Changelog : `Added`, `Changed`, `Fixed`, `Performance`, `Security`. Entrées en français, concises, orientées utilisateur/développeur.
 - Toute PR modifiant le parser ou le moteur d'import committe un rapport de benchmark Markdown à jour.
 
