@@ -61,14 +61,13 @@ public static class ProgressionPresentation
         var measures = GetResults(sessions, userName)
             .Where(result => IsSameCircuit(result.Session, trackVenue, trackCourse)
                 && string.Equals(result.Category, category, StringComparison.Ordinal))
-            .Select(result => (Result: result, BestLap: result.Driver.Laps.Where(lap => lap.Time.HasValue).Min(lap => lap.Time)))
-            .Where(measure => measure.BestLap.HasValue)
-            .Select(measure => new Measure(
-                measure.Result.Session.StartedAt,
-                TimeZoneInfo.ConvertTime(measure.Result.Session.StartedAt, timeZone).DateTime,
-                measure.Result.IsQualifying,
-                measure.Result.Car,
-                measure.BestLap!.Value))
+            .Where(result => result.Driver.BestLap.HasValue)
+            .Select(result => new Measure(
+                result.Session.StartedAt,
+                TimeZoneInfo.ConvertTime(result.Session.StartedAt, timeZone).DateTime,
+                result.IsQualifying,
+                result.Car,
+                result.Driver.BestLap!.Value))
             .ToArray();
 
         IReadOnlyList<ProgressionSeries> series = settings.Mode == ProgressionMode.MixedCars
@@ -104,7 +103,7 @@ public static class ProgressionPresentation
                 circuit
                     .Select(result => result.Category)
                     .Distinct(StringComparer.Ordinal)
-                    .OrderBy(GetCategoryOrder)
+                    .OrderBy(CarCategory.Order)
                     .ThenBy(category => category, StringComparer.OrdinalIgnoreCase)
                     .ToArray(),
                 circuit.MaxBy(result => result.Session.StartedAt)!.Category))
@@ -176,15 +175,10 @@ public static class ProgressionPresentation
     {
         foreach (var session in sessions)
         {
-            var isQualifying = session.SessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase);
-            if (!isQualifying && !session.SessionType.Contains("Race", StringComparison.OrdinalIgnoreCase))
+            if (session.Kind is (SessionKind.Qualifying or SessionKind.Race)
+                && DriverProfile.FindDriver(session, userName) is { } driver)
             {
-                continue;
-            }
-
-            if (DriverProfile.FindDriver(session, userName) is { } driver)
-            {
-                yield return new SessionResult(session, driver, isQualifying);
+                yield return new SessionResult(session, driver, session.Kind == SessionKind.Qualifying);
             }
         }
     }
@@ -193,21 +187,13 @@ public static class ProgressionPresentation
         string.Equals(session.TrackVenue.Trim(), trackVenue.Trim(), StringComparison.OrdinalIgnoreCase)
         && string.Equals(session.TrackCourse.Trim(), trackCourse.Trim(), StringComparison.OrdinalIgnoreCase);
 
-    private static int GetCategoryOrder(string category)
-    {
-        var index = CarCategory.Known.ToList().IndexOf(category);
-        return index < 0 ? CarCategory.Known.Count : index;
-    }
-
     private sealed record Measure(DateTimeOffset StartedAt, DateTime LocalTime, bool IsQualifying, string Car, TimeSpan BestLap);
 
     private sealed record SessionResult(Session Session, Driver Driver, bool IsQualifying)
     {
-        public string Category { get; } = CarCategory.FromCarClass(Driver.CarClass);
+        public string Category { get; } = Driver.Category();
 
-        public string Car { get; } = !string.IsNullOrWhiteSpace(Driver.CarType)
-            ? Driver.CarType.Trim()
-            : string.IsNullOrWhiteSpace(Driver.CarNumber) ? "—" : $"#{Driver.CarNumber}";
+        public string Car { get; } = Driver.CarName();
     }
 
     private sealed class CircuitComparer : IEqualityComparer<(string Venue, string Course)>

@@ -40,6 +40,20 @@ public sealed class LoadBenchmarkTests
         TestContext.WriteLine(report);
     }
 
+    /// <summary>
+    /// Measures the import chain on the real result files only, without writing the report.
+    /// </summary>
+    [TestMethod]
+    [TestCategory("Import")]
+    public void Measure_import_pipeline() => TestContext.WriteLine(ImportPipelineBenchmark.Run());
+
+    /// <summary>
+    /// Measures the calculations of the dashboard pages only, without writing the report.
+    /// </summary>
+    [TestMethod]
+    [TestCategory("Views")]
+    public void Measure_view_calculations() => TestContext.WriteLine(PresentationBenchmark.Run());
+
     private static int GetBenchmarkYears()
     {
         var value = BuildMetadata["BenchmarkYears"];

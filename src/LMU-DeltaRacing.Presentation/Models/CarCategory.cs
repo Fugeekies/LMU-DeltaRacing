@@ -11,6 +11,22 @@ public static class CarCategory
     public static IReadOnlyList<string> Known { get; } = ["Hypercar", "LMP2", "LMP3", "LMGTE", "LMGT3"];
 
     /// <summary>
+    /// Returns the display rank of a category: its index in <see cref="Known"/>, unknown classes last.
+    /// </summary>
+    public static int Order(string category)
+    {
+        for (var index = 0; index < Known.Count; index++)
+        {
+            if (string.Equals(Known[index], category, StringComparison.Ordinal))
+            {
+                return index;
+            }
+        }
+
+        return Known.Count;
+    }
+
+    /// <summary>
     /// Returns the category of an LMU vehicle class.
     /// Unknown classes keep their raw name so that their results stay visible instead of being dropped.
     /// </summary>

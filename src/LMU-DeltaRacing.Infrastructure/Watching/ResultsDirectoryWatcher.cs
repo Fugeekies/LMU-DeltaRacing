@@ -200,7 +200,7 @@ public sealed class ResultsDirectoryWatcher : IAsyncDisposable
         await foreach (var filePath in pendingFiles.Reader.ReadAllAsync(cancellationToken).ConfigureAwait(false))
         {
             cancellationToken.ThrowIfCancellationRequested();
-            var result = importer.ImportFile(filePath);
+            var result = ImportFile(filePath);
 
             if (result.Status == SessionImportStatus.Imported)
             {
@@ -208,6 +208,24 @@ public sealed class ResultsDirectoryWatcher : IAsyncDisposable
             }
 
             NotifyImportCompleted(result);
+        }
+    }
+
+    /// <summary>
+    /// Imports one file. The importer reports expected failures itself; any other error is reported
+    /// as a failure of this file, because an exception would end the loop and stop the watcher.
+    /// </summary>
+    private SessionImportResult ImportFile(string filePath)
+    {
+        try
+        {
+            return importer.ImportFile(filePath);
+        }
+        catch (Exception exception) when (exception is not OperationCanceledException)
+        {
+            var sourceFile = Path.GetFileName(filePath);
+            logger.LogError(exception, "Unexpected error while importing {SourceFile}", sourceFile);
+            return new SessionImportResult(sourceFile, SessionImportStatus.Failed, null, exception.Message);
         }
     }
 

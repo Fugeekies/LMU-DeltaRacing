@@ -25,6 +25,11 @@ public sealed record DashboardState(
     string? ResultsDirectory)
 {
     /// <summary>
+    /// Gets the state shown before the service has reported anything: loading, without results.
+    /// </summary>
+    public static DashboardState Initial { get; } = new(true, 0, 0, false, null, [], [], null);
+
+    /// <summary>
     /// Gets the selected driver name from application settings.
     /// </summary>
     public string? UserName { get; init; }

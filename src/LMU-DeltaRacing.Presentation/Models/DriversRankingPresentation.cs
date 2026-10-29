@@ -25,11 +25,10 @@ public static class DriversRankingPresentation
         }
 
         var totals = new Dictionary<string, RivalryTotals>(StringComparer.OrdinalIgnoreCase);
-        foreach (var session in sessions.Where(session =>
-            session.SessionType.Contains("Race", StringComparison.OrdinalIgnoreCase)))
+        foreach (var session in sessions.Where(session => session.Kind == SessionKind.Race))
         {
             var player = DriverProfile.FindDriver(session, userName);
-            if (player is null || GetRank(player) is not { } playerRank)
+            if (player is null || player.ClassRank() is not { } playerRank)
             {
                 continue;
             }
@@ -43,7 +42,7 @@ public static class DriversRankingPresentation
                         driver.CarClass.Trim(),
                         player.CarClass.Trim(),
                         StringComparison.OrdinalIgnoreCase)
-                    && GetRank(driver).HasValue)
+                    && driver.ClassRank().HasValue)
                 .GroupBy(driver => driver.Name, StringComparer.OrdinalIgnoreCase)
                 .Select(group => group.First()))
             {
@@ -54,11 +53,12 @@ public static class DriversRankingPresentation
                 }
 
                 rival.SessionsFaced++;
-                if (playerRank < GetRank(opponent))
+                var opponentRank = opponent.ClassRank()!.Value;
+                if (playerRank < opponentRank)
                 {
                     rival.Wins++;
                 }
-                else if (playerRank > GetRank(opponent))
+                else if (playerRank > opponentRank)
                 {
                     rival.Losses++;
                 }
@@ -73,12 +73,6 @@ public static class DriversRankingPresentation
                 rival.Losses))
             .ToArray();
     }
-
-    /// <summary>
-    /// Ranks a driver within their class. The overall position keeps the same order between
-    /// drivers of one class, so it is a valid fallback when the class position is missing.
-    /// </summary>
-    private static int? GetRank(Driver driver) => driver.ClassPosition ?? driver.Position;
 
     private sealed class RivalryTotals(string name)
     {

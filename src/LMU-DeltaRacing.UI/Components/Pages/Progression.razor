@@ -1,7 +1,6 @@
 @page "/progression"
-@implements IDisposable
 @inject IConfiguration Configuration
-@inject DashboardDataService DashboardData
+@inherits DashboardPage
 @inject DashboardSettingsStore SettingsStore
 
 <PageTitle>Progression | LMU DeltaRacing</PageTitle>
@@ -14,25 +13,8 @@
     </div>
 </section>
 
-@if (state.IsLoading && state.Sessions.Count == 0)
-{
-    <section class="panel empty-state" aria-live="polite">
-        <span class="loading-spinner" aria-hidden="true"></span>
-        <p>Chargement de l’historique des courses…</p>
-    </section>
-}
-else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
-{
-    <section class="notice notice-error" role="alert">
-        <span class="notice-symbol" aria-hidden="true">!</span>
-        <div>
-            <h2>Les résultats n’ont pas pu être chargés</h2>
-            <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
-        </div>
-    </section>
-}
-else if (circuits.Count == 0)
+<ResultsGate State="State">
+@if (circuits.Count == 0)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -43,15 +25,7 @@ else if (circuits.Count == 0)
 else
 {
     var circuit = GetSelectedCircuit();
-    var chart = ProgressionPresentation.Create(
-        state.Sessions,
-        state.UserName,
-        circuit.TrackVenue,
-        circuit.TrackCourse,
-        selectedCategory,
-        settings,
-        TimeZoneInfo.Local);
-    var layout = ProgressionChartLayout.Create(chart, hiddenSeries);
+    var (chart, layout) = GetChart(circuit);
 
     <section class="panel progression-panel">
         <div class="race-filters progression-filters" aria-label="Circuit et catégorie">
@@ -265,6 +239,8 @@ else
     </section>
 }
 
+</ResultsGate>
+
 @code {
     private static readonly (ProgressionGranularity Value, string Text)[] Granularities =
         [(ProgressionGranularity.Day, "Jour"), (ProgressionGranularity.Week, "Semaine"), (ProgressionGranularity.Month, "Mois"), (ProgressionGranularity.Year, "Année")];
@@ -278,7 +254,6 @@ else
     private static readonly (ProgressionSession Value, string Text)[] SessionTypes =
         [(ProgressionSession.Race, "Course"), (ProgressionSession.Qualifying, "Qualification")];
 
-    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<ProgressionCircuit> circuits = [];
     private ProgressionSettings settings = ProgressionSettings.Default;
     private string selectedCircuitKey = string.Empty;
@@ -286,6 +261,8 @@ else
     private readonly HashSet<string> hiddenSeries = new(StringComparer.Ordinal);
     private (string SeriesKey, DateTime PeriodStart)? selectedPoint;
     private bool showsTable;
+    private object? chartInputs;
+    private (ProgressionChart Chart, ProgressionChartLayout Layout) chartCache;
 
     /// <summary>
     /// Gets or sets the venue to open, as linked from « Mes courses ».
@@ -308,8 +285,7 @@ else
     protected override void OnInitialized()
     {
         settings = ProgressionSettings.Load(Configuration);
-        DashboardData.StateChanged += OnDashboardStateChanged;
-        UpdateState();
+        base.OnInitialized();
     }
 
     protected override void OnParametersSet()
@@ -322,26 +298,16 @@ else
         }
     }
 
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
-
-    private void OnDashboardStateChanged() =>
-        _ = InvokeAsync(() =>
-        {
-            UpdateState();
-            StateHasChanged();
-        });
-
-    private void UpdateState()
+    protected override void OnStateChanged()
     {
-        state = DashboardData.Snapshot;
-        circuits = ProgressionPresentation.GetCircuits(state.Sessions, state.UserName);
+        circuits = ProgressionPresentation.GetCircuits(State.Sessions, State.UserName);
 
         // Live imports keep the current selection; it is replaced only when it no longer exists.
         if (circuits.FirstOrDefault(circuit => circuit.Key == selectedCircuitKey) is { } current)
         {
             SelectCircuit(current, selectedCategory);
         }
-        else if (ProgressionPresentation.GetDefaultSelection(state.Sessions, state.UserName) is { } selection
+        else if (ProgressionPresentation.GetDefaultSelection(State.Sessions, State.UserName) is { } selection
                  && circuits.FirstOrDefault(circuit =>
                      string.Equals(circuit.TrackVenue, selection.TrackVenue, StringComparison.OrdinalIgnoreCase)
                      && string.Equals(circuit.TrackCourse, selection.TrackCourse, StringComparison.OrdinalIgnoreCase)) is { } latest)
@@ -352,6 +318,30 @@ else
 
     private ProgressionCircuit GetSelectedCircuit() =>
         circuits.FirstOrDefault(circuit => circuit.Key == selectedCircuitKey) ?? circuits[0];
+
+    /// <summary>
+    /// Returns the chart of a circuit. Hovering a point renders the page again: the chart is
+    /// recalculated only when the sessions, the selection, the settings or the hidden series change.
+    /// </summary>
+    private (ProgressionChart Chart, ProgressionChartLayout Layout) GetChart(ProgressionCircuit circuit)
+    {
+        var inputs = (State.Sessions, State.UserName, circuit.Key, selectedCategory, settings, string.Join('|', hiddenSeries.Order()));
+        if (!inputs.Equals(chartInputs))
+        {
+            var chart = ProgressionPresentation.Create(
+                State.Sessions,
+                State.UserName,
+                circuit.TrackVenue,
+                circuit.TrackCourse,
+                selectedCategory,
+                settings,
+                TimeZoneInfo.Local);
+            chartCache = (chart, ProgressionChartLayout.Create(chart, hiddenSeries));
+            chartInputs = inputs;
+        }
+
+        return chartCache;
+    }
 
     private void SelectCircuit(ProgressionCircuit circuit, string? category)
     {

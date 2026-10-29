@@ -40,6 +40,7 @@ public sealed class Session
         TrackCourse = trackCourse;
         TrackEvent = trackEvent;
         SessionType = sessionType;
+        Kind = GetKind(sessionType);
         Drivers = Array.AsReadOnly(drivers.ToArray());
         MostLapsCompleted = mostLapsCompleted;
         TrackLength = trackLength;
@@ -76,6 +77,11 @@ public sealed class Session
     public string SessionType { get; }
 
     /// <summary>
+    /// Gets the kind of session, read from <see cref="SessionType"/>.
+    /// </summary>
+    public SessionKind Kind { get; }
+
+    /// <summary>
     /// Gets the drivers and their results.
     /// </summary>
     public IReadOnlyList<Driver> Drivers { get; }
@@ -89,4 +95,11 @@ public sealed class Session
     /// Gets the length of one lap, in meters, when available.
     /// </summary>
     public double? TrackLength { get; }
+
+    // LMU writes "Practice1"..., "Qualify" and "Race"; numbered or longer names are accepted too.
+    private static SessionKind GetKind(string sessionType) =>
+        sessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase) ? SessionKind.Practice
+        : sessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase) ? SessionKind.Qualifying
+        : sessionType.Contains("Race", StringComparison.OrdinalIgnoreCase) ? SessionKind.Race
+        : SessionKind.Other;
 }

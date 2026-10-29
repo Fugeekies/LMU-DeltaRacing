@@ -1,6 +1,5 @@
 @page "/race-details"
-@implements IDisposable
-@inject DashboardDataService DashboardData
+@inherits DashboardPage
 
 <PageTitle>Détail des courses | LMU DeltaRacing</PageTitle>
 
@@ -12,25 +11,8 @@
     </div>
 </section>
 
-@if (state.IsLoading && state.Sessions.Count == 0)
-{
-    <section class="panel empty-state" aria-live="polite">
-        <span class="loading-spinner" aria-hidden="true"></span>
-        <p>Chargement de l’historique des courses…</p>
-    </section>
-}
-else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
-{
-    <section class="notice notice-error" role="alert">
-        <span class="notice-symbol" aria-hidden="true">!</span>
-        <div>
-            <h2>Les résultats n’ont pas pu être chargés</h2>
-            <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
-        </div>
-    </section>
-}
-else if (events.Count == 0)
+<ResultsGate State="State">
+@if (events.Count == 0)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -46,7 +28,7 @@ else
     var selectedSession = selectedEvent is null ? null : GetSession(selectedEvent, activeTab);
     RaceDetailsDriverResult[] results = selectedSession is null
         ? []
-        : [.. RaceDetailsPresentation.CreateResults(selectedSession, state.UserName)];
+        : [.. RaceDetailsPresentation.CreateResults(selectedSession, State.UserName)];
 
     <section class="panel race-details-panel">
         <div class="race-details-toolbar">
@@ -133,6 +115,8 @@ else
     </section>
 }
 
+</ResultsGate>
+
 @code {
     /// <summary>
     /// Grids larger than this are virtualized, as required by UI_DESIGN_SPEC.md. Smaller grids are
@@ -140,7 +124,6 @@ else
     /// </summary>
     private const int VirtualizationThreshold = 40;
 
-    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<RaceEvent> events = [];
     private string selectedEventId = string.Empty;
     private SessionTab selectedTab = SessionTab.Race;
@@ -161,12 +144,6 @@ else
         Practice
     }
 
-    protected override void OnInitialized()
-    {
-        DashboardData.StateChanged += OnDashboardStateChanged;
-        UpdateState();
-    }
-
     protected override void OnParametersSet()
     {
         // A linked event opens on its race tab, the result the link refers to.
@@ -177,19 +154,9 @@ else
         }
     }
 
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
-
-    private void OnDashboardStateChanged() =>
-        _ = InvokeAsync(() =>
-        {
-            UpdateState();
-            StateHasChanged();
-        });
-
-    private void UpdateState()
+    protected override void OnStateChanged()
     {
-        state = DashboardData.Snapshot;
-        events = RaceEventPresentation.CreateEvents(state.Sessions, state.UserName);
+        events = RaceEventPresentation.CreateEvents(State.Sessions, State.UserName);
 
         if (events.All(raceEvent => raceEvent.Id != selectedEventId))
         {
@@ -226,7 +193,7 @@ else
     private string FormatEventLabel(RaceEvent raceEvent)
     {
         var carClass = raceEvent.Sessions
-            .Select(session => DriverProfile.FindDriver(session, state.UserName)?.CarClass)
+            .Select(session => DriverProfile.FindDriver(session, State.UserName)?.CarClass)
             .FirstOrDefault(value => !string.IsNullOrWhiteSpace(value));
         var sessionsLabel = string.Join(
             " · ",
@@ -236,9 +203,7 @@ else
                 raceEvent.Qualifying is null ? null : "Qualif",
                 raceEvent.Race is null ? null : "Course"
             }.OfType<string>());
-        var label = string.Create(
-            System.Globalization.CultureInfo.CurrentCulture,
-            $"{raceEvent.StartedAt.ToLocalTime():dd/MM/yyyy HH:mm} - {raceEvent.TrackVenue} ({sessionsLabel})");
+        var label = $"{DisplayFormat.DateTime(raceEvent.StartedAt)} - {raceEvent.TrackVenue} ({sessionsLabel})";
         return string.IsNullOrWhiteSpace(carClass) ? label : $"{label} - {CarCategory.FromCarClass(carClass)}";
     }
 
@@ -265,19 +230,19 @@ else
             {
                 <td class="numeric-cell stacked-cell">
                     <span class="sector-time @GetSectorClass(sector)">@FormatSector(sector.Time)</span>
-                    <span class="cell-sub delta-time @GetDeltaClass(sector.Delta)">@FormatGap(sector.Delta)</span>
+                    <span class="cell-sub delta-time @GetDeltaClass(sector.Delta)">@DisplayFormat.Delta(sector.Delta)</span>
                 </td>
             }
             <td class="numeric-cell stacked-cell">
-                <span class="lap-time">@FormatLap(result.IdealLap)</span>
-                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestIdealLap)">@FormatGap(result.DeltaToBestIdealLap)</span>
+                <span class="lap-time">@DisplayFormat.Lap(result.IdealLap)</span>
+                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestIdealLap)">@DisplayFormat.Delta(result.DeltaToBestIdealLap)</span>
             </td>
             <td class="numeric-cell stacked-cell">
-                <span class="lap-time">@FormatLap(result.FastestLap)</span>
-                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestLap)">@FormatGap(result.DeltaToBestLap)</span>
+                <span class="lap-time">@DisplayFormat.Lap(result.FastestLap)</span>
+                <span class="cell-sub delta-time @GetDeltaClass(result.DeltaToBestLap)">@DisplayFormat.Delta(result.DeltaToBestLap)</span>
             </td>
             <td class="numeric-cell stacked-cell">
-                <span class="lap-time">@FormatTotalTime(result.TotalTime)</span>
+                <span class="lap-time">@DisplayFormat.TotalTime(result.TotalTime)</span>
                 <span class="cell-sub leader-gap @GetLeaderGapClass(result.GapToLeader)">@FormatLeaderGap(result.GapToLeader)</span>
             </td>
         </tr>;
@@ -298,21 +263,6 @@ else
             ? $"{sectorTime.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
             : "—";
 
-    private static string FormatLap(TimeSpan? time) =>
-        time?.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
-
-    private static string FormatGap(TimeSpan? gap) =>
-        gap is { } value
-            ? $"{(value > TimeSpan.Zero ? "+" : string.Empty)}{value.TotalSeconds.ToString("0.000", System.Globalization.CultureInfo.InvariantCulture)}s"
-            : "—";
-
-    private static string FormatTotalTime(TimeSpan? time) =>
-        time is not { } totalTime
-            ? "—"
-            : totalTime.TotalHours >= 1
-                ? totalTime.ToString(@"h\:mm\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture)
-                : totalTime.ToString(@"m\:ss\.fff", System.Globalization.CultureInfo.InvariantCulture);
-
     /// <summary>
     /// Colours the gap like the other gaps: green for the leader, red when behind, muted when unknown.
     /// </summary>
@@ -328,7 +278,7 @@ else
         gap.Kind switch
         {
             LeaderGapKind.Leader => "LEADER",
-            LeaderGapKind.Time => FormatGap(gap.Time),
+            LeaderGapKind.Time => DisplayFormat.Delta(gap.Time),
             LeaderGapKind.Laps => gap.Laps == 1 ? "+1 tour" : $"+{gap.Laps} tours",
             LeaderGapKind.Status => gap.Status ?? "—",
             _ => "—"

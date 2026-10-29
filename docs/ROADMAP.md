@@ -139,7 +139,7 @@ Les jalons ci-dessous décrivent une progression possible du projet. Les idées 
 - [x] Regrouper les sessions en événements (essais → qualification → course sur un même circuit, à moins de 2 heures d'écart), séances d'essais fusionnées en un seul classement.
 - [x] Sélecteur d'événement et sous-onglets **Course**, **Qualification**, **Essais** sous le sélecteur (Course par défaut).
 - [x] Option « Charger les sessions d'essais » dans Options (`LMU:LoadPracticeSessions`, décochée par défaut, rechargement immédiat) ; la console ignore toujours les essais. Ils n'apparaissent que dans l'onglet Essais.
-- [ ] Optimisation : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt.
+- [ ] Optimisation : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt. Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
 
 ## Jalon — Fusion de pilotes [Terminé]
 - [x] Bloc « Fusion de pilotes » dans Options : déclarer qu'un ancien nom et un nom conservé désignent le même pilote (changement de pseudo), sans modifier les fichiers de résultats.

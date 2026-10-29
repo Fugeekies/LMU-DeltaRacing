@@ -3,6 +3,7 @@ using System.Xml;
 using LMU_DeltaRacing.Application.Abstractions;
 using LMU_DeltaRacing.Application.Models;
 using LMU_DeltaRacing.Application.Telemetry;
+using LMU_DeltaRacing.Domain.Entities;
 using Microsoft.Extensions.Logging;
 
 namespace LMU_DeltaRacing.Application.Services;
@@ -17,6 +18,7 @@ public sealed class SessionImportService : ISessionImportService
     private readonly ISessionRepository repository;
     private readonly ILogger<SessionImportService> logger;
     private readonly Func<bool> importPracticeSessions;
+    private readonly Func<int, TimeSpan> retryDelay;
 
     /// <summary>
     /// Creates an importer using the specified parser and session repository.
@@ -45,11 +47,15 @@ public sealed class SessionImportService : ISessionImportService
     /// <param name="repository">The destination session repository.</param>
     /// <param name="logger">The logger used to report import progress and failures.</param>
     /// <param name="importPracticeSessions">Returns whether practice sessions are stored.</param>
+    /// <param name="retryDelay">
+    /// Returns the wait before the given retry of a locked file; by default 200 ms per attempt, capped at 1 s.
+    /// </param>
     public SessionImportService(
         IResultXmlParser parser,
         ISessionRepository repository,
         ILogger<SessionImportService> logger,
-        Func<bool> importPracticeSessions)
+        Func<bool> importPracticeSessions,
+        Func<int, TimeSpan>? retryDelay = null)
     {
         ArgumentNullException.ThrowIfNull(parser);
         ArgumentNullException.ThrowIfNull(repository);
@@ -60,6 +66,7 @@ public sealed class SessionImportService : ISessionImportService
         this.repository = repository;
         this.logger = logger;
         this.importPracticeSessions = importPracticeSessions;
+        this.retryDelay = retryDelay ?? (attempt => TimeSpan.FromMilliseconds(Math.Min(attempt * 200, 1000)));
     }
 
     /// <inheritdoc />
@@ -80,8 +87,7 @@ public sealed class SessionImportService : ISessionImportService
             logger.LogDebug("Parsing result file {SourceFile}", sourceFile);
             var session = parser.Parse(stream);
 
-            if (!importPracticeSessions()
-                && session.SessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase))
+            if (session.Kind == SessionKind.Practice && !importPracticeSessions())
             {
                 logger.LogInformation(
                     "Skipped practice session in {SourceFile}; practice data is not loaded",
@@ -114,8 +120,11 @@ public sealed class SessionImportService : ISessionImportService
 
             return new SessionImportResult(sourceFile, SessionImportStatus.Imported, session, null);
         }
+        // InvalidDataException is not an IOException: it is listed for well-formed XML that is not an
+        // LMU result, so one foreign file never stops the startup load or the watcher.
         catch (Exception exception) when (
-            exception is IOException or UnauthorizedAccessException or XmlException or ArgumentException)
+            exception is IOException or UnauthorizedAccessException or XmlException or InvalidDataException
+                or ArgumentException)
         {
             logger.LogError(exception, "Import failed for {SourceFile}", sourceFile);
             activity?.SetStatus(ActivityStatusCode.Error, "Result-file import failed.");
@@ -156,7 +165,7 @@ public sealed class SessionImportService : ISessionImportService
                     throw;
                 }
 
-                var delay = TimeSpan.FromMilliseconds(Math.Min(attempt * 200, 1000));
+                var delay = retryDelay(attempt);
                 logger.LogWarning(
                     exception,
                     "Result file {SourceFile} is locked or not yet available; retry {Attempt}/{MaxAttempts} in {DelayMilliseconds} ms",

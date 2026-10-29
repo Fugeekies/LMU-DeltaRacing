@@ -1,6 +1,5 @@
 @page "/"
-@implements IDisposable
-@inject DashboardDataService DashboardData
+@inherits DashboardPage
 
 <PageTitle>Accueil | LMU DeltaRacing</PageTitle>
 
@@ -12,25 +11,8 @@
     </div>
 </section>
 
-@if (state.IsLoading && state.Sessions.Count == 0)
-{
-    <section class="panel empty-state" aria-live="polite">
-        <span class="loading-spinner" aria-hidden="true"></span>
-        <p>Chargement de l’historique des courses…</p>
-    </section>
-}
-else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
-{
-    <section class="notice notice-error" role="alert">
-        <span class="notice-symbol" aria-hidden="true">!</span>
-        <div>
-            <h2>Les résultats n’ont pas pu être chargés</h2>
-            <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
-        </div>
-    </section>
-}
-else if (dashboard.IsEmpty)
+<ResultsGate State="State">
+@if (dashboard.IsEmpty)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -43,7 +25,7 @@ else
     <div class="home-hero">
         <article class="home-tile home-driver" aria-labelledby="home-driver">
             <p id="home-driver" class="summary-label">PILOTE</p>
-            <p class="home-driver-name">@state.UserName</p>
+            <p class="home-driver-name">@State.UserName</p>
             @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
             {
                 <p class="home-rate">En piste du @DisplayFormat.Day(firstRaceAt) au @DisplayFormat.Day(lastRaceAt)</p>
@@ -169,34 +151,19 @@ else
     </section>
 }
 
+</ResultsGate>
+
 @code {
     /// <summary>
     /// The number of distinct colors used for retirement causes before they repeat.
     /// </summary>
     private const int CauseColorCount = 5;
 
-    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private HomeDashboard dashboard = HomePresentation.Create([], null);
 
-    protected override void OnInitialized()
+    protected override void OnStateChanged()
     {
-        DashboardData.StateChanged += OnDashboardStateChanged;
-        UpdateState();
-    }
-
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
-
-    private void OnDashboardStateChanged() =>
-        _ = InvokeAsync(() =>
-        {
-            UpdateState();
-            StateHasChanged();
-        });
-
-    private void UpdateState()
-    {
-        state = DashboardData.Snapshot;
-        dashboard = HomePresentation.Create(state.Sessions, state.UserName);
+        dashboard = HomePresentation.Create(State.Sessions, State.UserName);
     }
 
     private static bool ShowsBreakdown(HomeStat stat) =>

@@ -1,4 +1,6 @@
 using FluentAssertions;
+using LMU_DeltaRacing.Application.Abstractions;
+using LMU_DeltaRacing.Application.Models;
 using LMU_DeltaRacing.Application.Services;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using LMU_DeltaRacing.Infrastructure.Persistence;
@@ -387,6 +389,155 @@ public sealed class DashboardDataServiceTests
             await service.DisposeAsync();
             Directory.Delete(resultsDirectory, recursive: true);
         }
+    }
+
+    /// <summary>
+    /// Verifies that a well-formed XML file that is not an LMU result is listed as a failure while
+    /// the other files load, at startup and when the watcher sees it.
+    /// </summary>
+    [TestMethod]
+    public async Task A_foreign_xml_file_is_a_failure_and_does_not_stop_the_load_or_the_watcher()
+    {
+        var sourceFile = Path.Combine(AppContext.BaseDirectory, "assets", "Results", "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "a-race.xml");
+        File.WriteAllText(Path.Combine(resultsDirectory, "b-foreign.xml"), "<settings><volume>3</volume></settings>");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(new XmlResultParser(), repository, NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?> { ["LMU:ResultsDirectory"] = resultsDirectory })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var loaded = await WaitForStateAsync(service, state => !state.IsLoading && state.IsWatching);
+
+            loaded.ErrorMessage.Should().BeNull();
+            loaded.Sessions.Should().ContainSingle();
+            loaded.ImportFailures.Should().ContainSingle(failure => failure.SourceFile == "b-foreign.xml");
+
+            File.WriteAllText(Path.Combine(resultsDirectory, "c-foreign.xml"), "<other />");
+            File.Copy(sourceFile, Path.Combine(resultsDirectory, "d-race.xml"));
+            var updated = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
+
+            updated.ImportFailures.Select(failure => failure.SourceFile)
+                .Should().BeEquivalentTo(["b-foreign.xml", "c-foreign.xml"]);
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that the files, imported on several threads, are reported as by a sequential
+    /// import: progress never goes back, failures follow the file order and every session is loaded.
+    /// </summary>
+    [TestMethod]
+    public async Task Startup_load_reports_progress_and_failures_in_file_order()
+    {
+        var fixtures = Directory.EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*R1.xml")
+            .Order(StringComparer.Ordinal)
+            .Take(24)
+            .ToArray();
+        var resultsDirectory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(resultsDirectory);
+        foreach (var (fixture, index) in fixtures.Select((fixture, index) => (fixture, index)))
+        {
+            File.Copy(fixture, Path.Combine(resultsDirectory, $"{index:D2}-race.xml"));
+        }
+
+        string[] foreignFiles = ["05-foreign.xml", "17-foreign.xml", "23-foreign.xml"];
+        foreach (var foreignFile in foreignFiles)
+        {
+            File.WriteAllText(Path.Combine(resultsDirectory, foreignFile), "<other />");
+        }
+
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(new XmlResultParser(), repository, NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+        var progress = new List<int>();
+        service.StateChanged += () => progress.Add(service.Snapshot.FilesLoaded);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsStartupImportRunning);
+
+            state.Sessions.Should().HaveCount(fixtures.Length);
+            state.FilesLoaded.Should().Be(fixtures.Length + foreignFiles.Length);
+            state.ImportFailures.Select(failure => failure.SourceFile).Should().Equal(foreignFiles);
+            progress.Should().BeInAscendingOrder();
+            progress.Should().Contain(Enumerable.Range(1, fixtures.Length + foreignFiles.Length));
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that an unexpected importer error fails one file and the startup load still ends.
+    /// </summary>
+    [TestMethod]
+    public async Task An_unexpected_importer_error_fails_one_file_and_the_load_ends()
+    {
+        var sourceFile = Path.Combine(AppContext.BaseDirectory, "assets", "Results", "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "a-race.xml");
+        File.Copy(sourceFile, Path.Combine(resultsDirectory, "b-broken.xml"));
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(new XmlResultParser(), repository, NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false"
+            })
+            .Build();
+        var service = new DashboardDataService(
+            configuration,
+            new FailingImporter(importer, "b-broken.xml"),
+            repository,
+            NullLogger<DashboardDataService>.Instance,
+            NullLogger<ResultsDirectoryWatcher>.Instance,
+            new DashboardSettingsStore(configuration, Path.Combine(resultsDirectory, "appsettings.json")));
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsStartupImportRunning);
+
+            state.IsLoading.Should().BeFalse();
+            state.ErrorMessage.Should().BeNull();
+            state.Sessions.Should().ContainSingle();
+            state.ImportFailures.Should().ContainSingle(failure => failure.SourceFile == "b-broken.xml");
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    private sealed class FailingImporter(SessionImportService inner, string brokenFile) : ISessionImportService
+    {
+        public SessionImportResult ImportFile(string filePath) =>
+            Path.GetFileName(filePath) == brokenFile
+                ? throw new NullReferenceException("Unexpected importer failure.")
+                : inner.ImportFile(filePath);
     }
 
     private static DashboardDataService CreateService(

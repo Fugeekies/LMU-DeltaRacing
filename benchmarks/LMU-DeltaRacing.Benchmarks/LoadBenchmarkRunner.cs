@@ -18,14 +18,14 @@ internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
             .ToArray();
         var output = new StringBuilder();
 
-        output.AppendLine("# Rapport de performance — parsing XML");
+        output.AppendLine("# Rapport de performance");
         output.AppendLine();
         output.AppendLine($"- Date UTC : {DateTimeOffset.UtcNow:O}");
         output.AppendLine($"- Runtime : {Environment.Version}");
         output.AppendLine($"- Système : {Environment.OSVersion}");
         output.AppendLine($"- Processeurs logiques : {Environment.ProcessorCount}");
         output.AppendLine();
-        output.AppendLine("## Charge en mémoire");
+        output.AppendLine("## Parsing de XML synthétiques en mémoire");
         output.AppendLine();
         output.AppendLine(
             $"Simulation : 10 courses/jour × 3 phases × 365 jours × {years} ans = " +
@@ -63,6 +63,9 @@ internal sealed class LoadBenchmarkRunner(XmlResultParser parser)
 
         output.AppendLine();
         output.Append(MyRacesBenchmark.Run());
+        output.AppendLine();
+        output.Append(ImportPipelineBenchmark.Run());
+        output.Append(PresentationBenchmark.Run());
         return output.ToString();
     }
 

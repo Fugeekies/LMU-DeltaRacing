@@ -24,8 +24,7 @@ public static class MyRacesPresentation
         var results = new List<SessionResult>();
         foreach (var session in sessions)
         {
-            var isQualifying = IsQualifying(session.SessionType);
-            if (!isQualifying && !IsRace(session.SessionType))
+            if (session.Kind is not (SessionKind.Qualifying or SessionKind.Race))
             {
                 continue;
             }
@@ -36,15 +35,16 @@ public static class MyRacesPresentation
                 continue;
             }
 
+            var isQualifying = session.Kind == SessionKind.Qualifying;
             results.Add(new SessionResult(
                 session.TrackVenue,
                 session.TrackCourse,
                 session.TrackEvent,
                 session.StartedAt,
                 isQualifying,
-                CarCategory.FromCarClass(driver.CarClass),
-                GetCarName(driver),
-                driver.Laps.Where(lap => lap.Time.HasValue).Select(lap => lap.Time).Min(),
+                driver.Category(),
+                driver.CarName(),
+                driver.BestLap,
                 driver.GridPosition,
                 driver.FinishTime,
                 driver.LapsCompleted,
@@ -136,19 +136,6 @@ public static class MyRacesPresentation
                 record.RaceResult))
             .ToArray();
     }
-
-    private static string GetCarName(Driver driver) =>
-        !string.IsNullOrWhiteSpace(driver.CarType)
-            ? driver.CarType
-            : string.IsNullOrWhiteSpace(driver.CarNumber)
-                ? "—"
-                : $"#{driver.CarNumber}";
-
-    private static bool IsQualifying(string sessionType) =>
-        sessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase);
-
-    private static bool IsRace(string sessionType) =>
-        sessionType.Contains("Race", StringComparison.OrdinalIgnoreCase);
 
     private sealed record SessionResult(
         string TrackVenue,

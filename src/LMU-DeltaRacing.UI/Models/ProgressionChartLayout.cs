@@ -138,8 +138,7 @@ public sealed record ProgressionChartLayout(
     /// <summary>
     /// Formats a lap time as <c>m:ss.fff</c>.
     /// </summary>
-    public static string FormatTime(TimeSpan time) =>
-        time.ToString(@"m\:ss\.fff", CultureInfo.InvariantCulture);
+    public static string FormatTime(TimeSpan time) => DisplayFormat.Lap(time);
 
     private static ProgressionSeriesLayout CreateSeriesLayout(
         ProgressionSeries series,

@@ -68,6 +68,59 @@ public sealed class SessionImportServiceTests
     }
 
     /// <summary>
+    /// Verifies that well-formed XML which is not an LMU result (the parser reports it with
+    /// <see cref="InvalidDataException"/>) is a failed import, not an exception that would stop
+    /// the startup load or the watcher.
+    /// </summary>
+    [TestMethod]
+    [DataRow("<rFactorXML><Other /></rFactorXML>")]
+    [DataRow("<rFactorXML><RaceResults><TrackVenue>Spa</TrackVenue><TrackCourse>Spa</TrackCourse><Race><Driver><Name>A</Name><Position>1</Position></Driver></Race></RaceResults></rFactorXML>")]
+    [DataRow("<rFactorXML><RaceResults><DateTime>1760000000</DateTime><TrackVenue>Spa</TrackVenue><TrackCourse>Spa</TrackCourse><Race><Driver><Name>A</Name><Position>1</Position><Lap num=\"0\">90.1</Lap></Driver></Race></RaceResults></rFactorXML>")]
+    public void ImportFile_returns_failed_status_for_xml_that_is_not_an_lmu_result(string content)
+    {
+        var repository = new InMemorySessionRepository();
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var path = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.xml");
+
+        try
+        {
+            File.WriteAllText(path, content);
+
+            var result = service.ImportFile(path);
+
+            result.Status.Should().Be(SessionImportStatus.Failed);
+            result.ErrorMessage.Should().NotBeNullOrWhiteSpace();
+            repository.GetAll().Should().BeEmpty();
+        }
+        finally
+        {
+            File.Delete(path);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that a missing file is reported as a failed import once the retries are exhausted.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_returns_failed_status_for_a_missing_file()
+    {
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            new InMemorySessionRepository(),
+            NullLogger<SessionImportService>.Instance,
+            () => false,
+            retryDelay: _ => TimeSpan.Zero);
+
+        var result = service.ImportFile(Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}.xml"));
+
+        result.Status.Should().Be(SessionImportStatus.Failed);
+        result.ErrorMessage.Should().NotBeNullOrWhiteSpace();
+    }
+
+    /// <summary>
     /// Verifies that practice data is not stored or returned to consuming menus.
     /// </summary>
     [TestMethod]

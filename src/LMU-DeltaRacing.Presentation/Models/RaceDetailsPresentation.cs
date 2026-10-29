@@ -19,12 +19,12 @@ public static class RaceDetailsPresentation
     {
         ArgumentNullException.ThrowIfNull(session);
 
-        var isRace = session.SessionType.Contains("Race", StringComparison.OrdinalIgnoreCase);
+        var isRace = session.Kind == SessionKind.Race;
         var drivers = session.Drivers
             .Select(driver =>
             {
-                var timedLaps = driver.Laps.Where(lap => lap.Time.HasValue).ToArray();
-                var bestSectors = timedLaps
+                var bestSectors = driver.Laps
+                    .Where(lap => lap.Time.HasValue)
                     .SelectMany(lap => lap.Sectors)
                     .GroupBy(sector => sector.Number)
                     .ToDictionary(group => group.Key, group => group.Min(sector => sector.Time));
@@ -34,7 +34,7 @@ public static class RaceDetailsPresentation
                 return new DriverTiming(
                     driver,
                     driver.CarClass.Trim(),
-                    timedLaps.Min(lap => lap.Time),
+                    driver.BestLap,
                     bestSectors,
                     idealLap);
             })
@@ -52,8 +52,8 @@ public static class RaceDetailsPresentation
                     group.Min(driver => driver.FastestLap),
                     group.Min(driver => driver.IdealLap),
                     group
-                        .Where(driver => GetRank(driver.Driver).HasValue)
-                        .OrderBy(driver => GetRank(driver.Driver))
+                        .Where(driver => driver.Driver.ClassRank().HasValue)
+                        .OrderBy(driver => driver.Driver.ClassRank())
                         .FirstOrDefault()),
                 StringComparer.OrdinalIgnoreCase);
 
@@ -71,8 +71,8 @@ public static class RaceDetailsPresentation
 
                 return new RaceDetailsDriverResult(
                     driver.Driver.Name,
-                    GetCarName(driver.Driver),
-                    CarCategory.FromCarClass(driver.Driver.CarClass),
+                    driver.Driver.CarName(),
+                    driver.Driver.Category(),
                     driver.Driver.Position,
                     driver.Driver.ClassPosition,
                     string.Equals(
@@ -146,23 +146,11 @@ public static class RaceDetailsPresentation
     }
 
     /// <summary>
-    /// Ranks a driver within their class; the overall position keeps the same order inside one class.
-    /// </summary>
-    private static int? GetRank(Driver driver) => driver.ClassPosition ?? driver.Position;
-
-    /// <summary>
     /// Whether the driver retired or was disqualified: their total time is not a race time.
     /// </summary>
     private static bool IsRetired(Driver driver) =>
         driver.FinishStatus.Equals("DNF", StringComparison.OrdinalIgnoreCase)
         || driver.FinishStatus.Equals("DQ", StringComparison.OrdinalIgnoreCase);
-
-    private static string GetCarName(Driver driver) =>
-        !string.IsNullOrWhiteSpace(driver.CarType)
-            ? driver.CarType
-            : !string.IsNullOrWhiteSpace(driver.CarNumber)
-                ? $"#{driver.CarNumber}"
-                : "—";
 
     private sealed record DriverTiming(
         Driver Driver,
