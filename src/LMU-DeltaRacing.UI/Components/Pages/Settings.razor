@@ -1,7 +1,6 @@
 @page "/settings"
-@implements IDisposable
 @inject IConfiguration Configuration
-@inject DashboardDataService DashboardData
+@inherits DashboardPage
 @inject DashboardSettingsStore SettingsStore
 @inject WindowsFolderPicker FolderPicker
 
@@ -99,17 +98,17 @@
                 class="settings-input"
                 value="@selectedUserName"
                 @onchange="SaveSelectedUserName"
-                disabled="@(state.IsLoading || state.DriverFrequencies.Count == 0)">
+                disabled="@(State.IsLoading || State.DriverFrequencies.Count == 0)">
             @if (string.IsNullOrWhiteSpace(selectedUserName))
             {
                 <option value="">Détection après le chargement…</option>
             }
-            else if (!state.DriverFrequencies.Any(driver =>
+            else if (!State.DriverFrequencies.Any(driver =>
                 string.Equals(driver.Name, selectedUserName, StringComparison.OrdinalIgnoreCase)))
             {
                 <option value="@selectedUserName">@selectedUserName (absent des résultats chargés)</option>
             }
-            @foreach (var driver in state.DriverFrequencies)
+            @foreach (var driver in State.DriverFrequencies)
             {
                 <option value="@driver.Name">
                     @driver.Name — @driver.Percentage.ToString("P1") (@driver.AppearanceCount/@driver.TotalResults fichiers)
@@ -132,9 +131,9 @@
         <div class="merge-picker">
             <label class="settings-label">
                 Ancien nom
-                <select class="settings-input" @bind="mergeFrom" @bind:after="UpdateMergeWarning" disabled="@(isBusy || state.DriverFrequencies.Count == 0)">
+                <select class="settings-input" @bind="mergeFrom" @bind:after="UpdateMergeWarning" disabled="@(isBusy || State.DriverFrequencies.Count == 0)">
                     <option value="">Choisir un pilote…</option>
-                    @foreach (var driver in state.DriverFrequencies)
+                    @foreach (var driver in State.DriverFrequencies)
                     {
                         <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
                     }
@@ -142,9 +141,9 @@
             </label>
             <label class="settings-label">
                 Nom conservé
-                <select class="settings-input" @bind="mergeTo" @bind:after="UpdateMergeWarning" disabled="@(isBusy || state.DriverFrequencies.Count == 0)">
+                <select class="settings-input" @bind="mergeTo" @bind:after="UpdateMergeWarning" disabled="@(isBusy || State.DriverFrequencies.Count == 0)">
                     <option value="">Choisir un pilote…</option>
-                    @foreach (var driver in state.DriverFrequencies)
+                    @foreach (var driver in State.DriverFrequencies)
                     {
                         <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
                     }
@@ -166,12 +165,12 @@
             </div>
         }
 
-        @if (state.DriverMerges.Count > 0)
+        @if (State.DriverMerges.Count > 0)
         {
             <ul class="merge-list" aria-label="Fusions enregistrées">
-                @foreach (var merge in state.DriverMerges)
+                @foreach (var merge in State.DriverMerges)
                 {
-                    var sharedSessions = DashboardData.CountSharedSessions(merge.From, merge.To);
+                    var sharedSessions = sharedSessionsByMerge.GetValueOrDefault(merge);
                     <li>
                         <span><strong>@merge.From</strong> → <strong>@merge.To</strong></span>
                         @if (sharedSessions > 0)
@@ -238,28 +237,26 @@
     private bool isReloading;
     private ResultsDirectoryStatus? directoryStatus;
     private string? feedbackMessage;
-    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
+    private IReadOnlyDictionary<DriverMerge, int> sharedSessionsByMerge = new Dictionary<DriverMerge, int>();
 
     protected override void OnInitialized()
     {
-        DashboardData.StateChanged += OnDashboardStateChanged;
-        state = DashboardData.Snapshot;
-        selectedUserName = state.UserName ?? string.Empty;
+        base.OnInitialized();
         resultsDirectory = Configuration["LMU:ResultsDirectory"] ?? string.Empty;
         watchOnStartup = Configuration.GetValue("LMU:WatchResultsOnStartup", true);
         loadPracticeSessions = Configuration.GetValue("LMU:LoadPracticeSessions", false);
         directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
     }
 
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+    protected override void OnStateChanged()
+    {
+        selectedUserName = State.UserName ?? string.Empty;
 
-    private void OnDashboardStateChanged() =>
-        _ = InvokeAsync(() =>
-        {
-            state = DashboardData.Snapshot;
-            selectedUserName = state.UserName ?? string.Empty;
-            StateHasChanged();
-        });
+        // Counted once per change rather than at each render of the merge list.
+        sharedSessionsByMerge = State.DriverMerges.Distinct().ToDictionary(
+            merge => merge,
+            merge => DashboardData.CountSharedSessions(merge.From, merge.To));
+    }
 
     private string GetDefaultDirectoryPlaceholder() =>
         DashboardData.Snapshot.ResultsDirectory

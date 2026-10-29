@@ -19,7 +19,8 @@ Le socle métier, le monitoring et la console sont en place : le parser transfor
 - `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
 - `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.
 - `docs/benchmarks/dynamic-import-load-report.md` : résultats du test de charge de la surveillance sur 50 fichiers XML simultanés.
-- `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks du parsing en mémoire et de lots XML temporaires.
+- `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks : parsing de XML synthétiques et de lots temporaires, chaîne d'import sur les fichiers réels et calculs de chaque page.
+- `Directory.Build.props` (racine) : framework cible, usings implicites et types nullables communs. `src/Directory.Build.props` : documentation XML obligatoire et avertissements traités comme des erreurs pour les projets de l'application.
 
 ## Commandes
 
@@ -34,6 +35,8 @@ Le socle métier, le monitoring et la console sont en place : le parser transfor
 - `iscc /DAppVersion=1.0.0 scripts/installer.iss`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
+- `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --filter "TestCategory=Import" --logger "console;verbosity=detailed"`
+- `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --filter "TestCategory=Views" --logger "console;verbosity=detailed"`
 
 La console ne prend aucun argument : elle charge le dossier configuré dans son `appsettings.json` (ou détecté automatiquement) et reste ouverte jusqu'au choix `Quitter`.
 
@@ -51,8 +54,12 @@ Le profil `win-x64` produit une publication autonome et à fichier unique. L'él
 
 Le workflow manuel `.github/workflows/release.yml` construit et vérifie l'application puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub. Depuis l'onglet Actions, choisissez « Build and release Windows installer (Manual) », la branche `main` (seule autorisée), puis le type de version : **Majeur**, **Mineur** ou **Patch** (par défaut). Le workflow incrémente le dernier tag `vX.Y.Z` (par exemple `v0.0.8` donne `v1.0.0`, `v0.1.0` ou `v0.0.9`), crée le tag sur la révision construite et nomme la release « LMU-DeltaRacing vX.Y.Z ». Les notes de la release listent une ligne par PR fusionnée depuis le tag précédent (titre et numéro de la PR), suivies du lien de comparaison entre les deux tags : un titre de PR clair sert donc directement de changelog. `CHANGELOG.md` n'est pas modifié par le workflow.
 
-Le projet de test génère les entrées XML et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10, 100 et 500 fichiers sur disque puis les supprime. Le rapport Markdown contient la durée, le débit, les allocations et la mémoire observée ; il est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` et son contenu est affiché dans la sortie détaillée du test.
+Le projet de benchmarks génère des entrées XML synthétiques et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10 à 5 000 fichiers sur disque puis les supprime. Il mesure ensuite la chaîne d'import sur les fichiers réels de `assets/Results` (parsing par type de session, import disque, chargement complet de `DashboardDataService` avec ou sans essais, fusions et journal JSON) et les calculs de chaque page sur l'historique réel répété ×1, ×10 et ×50. Chaque mesure est préchauffée et le rapport donne la médiane, le meilleur temps et les allocations. Le rapport Markdown est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` par le test de catégorie `Load` ; les catégories `Import` et `Views` affichent une partie seule dans la sortie détaillée, sans écrire le rapport.
 
 Le [dernier rapport de benchmark](../benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md) est disponible dans le dépôt. Ses mesures reflètent l'environnement et la charge de cette exécution.
 
 Le [rapport de charge de l'import dynamique](benchmarks/dynamic-import-load-report.md) décrit le test d'injection simultanée de 50 fichiers XML.
+
+L'[audit de performance d'octobre 2026](benchmarks/audit-performance-2026-10.md) compare les mesures avant et après le parser en flux et l'import parallèle.
+
+Le parser est verrouillé par un test qui compare l'empreinte SHA-256 de toutes les valeurs lues dans les 342 fixtures à une valeur de référence (`XmlResultParserTests.Parse_reads_every_fixture_as_the_reference_snapshot`). Si une évolution voulue du parser change ces valeurs (nouveau champ lu, par exemple), le message d'échec donne la nouvelle empreinte à reporter dans le test, après avoir vérifié la différence.

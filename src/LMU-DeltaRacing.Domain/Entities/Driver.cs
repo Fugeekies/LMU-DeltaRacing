@@ -53,6 +53,7 @@ public sealed class Driver
         TeamName = teamName;
         Position = position;
         Laps = Array.AsReadOnly(laps.ToArray());
+        BestLap = Laps.Where(lap => lap.Time.HasValue).Min(lap => lap.Time);
         CarType = carType;
         GridPosition = gridPosition;
         FinishTime = finishTime;
@@ -133,4 +134,10 @@ public sealed class Driver
     /// Gets the laps recorded for the driver.
     /// </summary>
     public IReadOnlyList<Lap> Laps { get; }
+
+    /// <summary>
+    /// Gets the fastest timed lap, or <see langword="null"/> without timed lap. LMU blanks the time
+    /// of laps invalidated for track limits, and incomplete laps have no time.
+    /// </summary>
+    public TimeSpan? BestLap { get; }
 }

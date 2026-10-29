@@ -230,7 +230,41 @@ public sealed class ResultsDirectoryWatcherTests
             repository,
             NullLogger<SessionImportService>.Instance);
 
+    /// <summary>
+    /// Verifies that an unexpected importer error is reported as a failed import of that file and
+    /// that the watcher keeps importing the next files.
+    /// </summary>
+    [TestMethod]
+    public async Task An_unexpected_importer_error_fails_one_file_and_the_watcher_goes_on()
+    {
+        using var directory = new TemporaryDirectory();
+        var results = new ConcurrentQueue<SessionImportResult>();
+        await using var watcher = new ResultsDirectoryWatcher(
+            directory.Path,
+            new ThrowingImporter("broken.xml"),
+            NullLogger<ResultsDirectoryWatcher>.Instance);
+        watcher.ImportCompleted += results.Enqueue;
+        await watcher.StartAsync();
+
+        await File.WriteAllTextAsync(Path.Combine(directory.Path, "broken.xml"), "<x />");
+        await results.WaitForCountAsync(1, TimeSpan.FromSeconds(10));
+        await File.WriteAllTextAsync(Path.Combine(directory.Path, "next.xml"), "<x />");
+        await results.WaitForCountAsync(2, TimeSpan.FromSeconds(10));
+
+        results.Select(result => (result.SourceFile, result.Status)).Should().Equal(
+            ("broken.xml", SessionImportStatus.Failed),
+            ("next.xml", SessionImportStatus.SkippedPractice));
+    }
+
     private static string GetFixturePath() => Path.Combine(AppContext.BaseDirectory, FixturePath);
+
+    private sealed class ThrowingImporter(string brokenFile) : ISessionImportService
+    {
+        public SessionImportResult ImportFile(string filePath) =>
+            Path.GetFileName(filePath) == brokenFile
+                ? throw new InvalidOperationException("Unexpected importer failure.")
+                : new SessionImportResult(Path.GetFileName(filePath), SessionImportStatus.SkippedPractice, null, null);
+    }
 
     private sealed class TemporaryDirectory : IDisposable
     {

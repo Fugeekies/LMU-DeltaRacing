@@ -14,6 +14,9 @@ namespace LMU_DeltaRacing.Presentation.Services;
 /// </summary>
 public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 {
+    // One core is left to the dashboard rendering while results load.
+    private static readonly int ImportParallelism = Math.Clamp(Environment.ProcessorCount - 1, 1, 8);
+
     private readonly object stateLock = new();
     private readonly object userNameLock = new();
     private readonly SemaphoreSlim reloadLock = new(1, 1);
@@ -373,25 +376,10 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 NotifyStateChanged();
             }
 
-            foreach (var file in files)
-            {
-                cancellationToken.ThrowIfCancellationRequested();
-                ApplyImportResult(await Task.Run(
-                        () => importer.ImportFile(file),
-                        cancellationToken)
-                    .ConfigureAwait(false));
+            await ImportFilesAsync(files, cancellationToken).ConfigureAwait(false);
 
-                lock (stateLock)
-                {
-                    filesLoaded++;
-                }
-
-#if DEBUG
-                await Task.Delay(15, cancellationToken).ConfigureAwait(false);
-#endif
-                NotifyStateChanged();
-            }
-
+            // Merges and frequencies are calculated once, after the last file: recalculating them
+            // after each file made the load quadratic in the number of files.
             lock (stateLock)
             {
                 sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
@@ -446,6 +434,67 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
 
             NotifyStateChanged();
             return status with { IsValid = false, ErrorMessage = exception.Message };
+        }
+    }
+
+    /// <summary>
+    /// Parses the files on several threads but takes their results in file order, one at a time,
+    /// so that progress, failures and <see cref="StateChanged"/> are reported as by a sequential import.
+    /// </summary>
+    private async Task ImportFilesAsync(IReadOnlyList<string> files, CancellationToken cancellationToken)
+    {
+        var pending = new Queue<Task<SessionImportResult>>();
+        var next = 0;
+        try
+        {
+            while (next < files.Count || pending.Count > 0)
+            {
+                while (pending.Count < ImportParallelism && next < files.Count)
+                {
+                    var file = files[next++];
+                    pending.Enqueue(Task.Run(() => ImportFile(file), cancellationToken));
+                }
+
+                var result = await pending.Dequeue().ConfigureAwait(false);
+                lock (stateLock)
+                {
+                    if (result.Status == SessionImportStatus.Failed)
+                    {
+                        failures = [.. failures, result];
+                    }
+
+                    filesLoaded++;
+                }
+
+#if DEBUG
+                await Task.Delay(15, cancellationToken).ConfigureAwait(false);
+#endif
+                NotifyStateChanged();
+            }
+        }
+        finally
+        {
+            // Imports still running write to the repository: they must end before a later reload clears it.
+            // SuppressThrowing is only accepted on a non-generic task.
+            await ((Task)Task.WhenAll(pending)).ConfigureAwait(ConfigureAwaitOptions.SuppressThrowing);
+        }
+    }
+
+    /// <summary>
+    /// Imports one file. The importer reports expected failures itself; any other error is reported
+    /// as a failure of this file, so that the load always ends.
+    /// </summary>
+    private SessionImportResult ImportFile(string file)
+    {
+        try
+        {
+            return importer.ImportFile(file);
+        }
+        catch (Exception exception) when (exception is not OperationCanceledException)
+        {
+            var sourceFile = Path.GetFileName(file);
+            logger.LogError(exception, "Unexpected error while importing {SourceFile}", sourceFile);
+            return new SessionImportResult(sourceFile, SessionImportStatus.Failed, null, exception.Message);
         }
     }
 

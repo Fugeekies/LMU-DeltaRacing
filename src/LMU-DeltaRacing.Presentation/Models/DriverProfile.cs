@@ -1,3 +1,4 @@
+using System.Runtime.InteropServices;
 using LMU_DeltaRacing.Domain.Entities;
 
 namespace LMU_DeltaRacing.Presentation.Models;
@@ -21,27 +22,25 @@ public static class DriverProfile
             return [];
         }
 
-        var counts = new Dictionary<string, (string Name, int Count)>(StringComparer.OrdinalIgnoreCase);
+        // The key keeps the first spelling met; names differing only by case are one driver.
+        var counts = new Dictionary<string, int>(StringComparer.OrdinalIgnoreCase);
+        var namesInSession = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
         foreach (var session in results)
         {
-            foreach (var name in session.Drivers
-                .Select(driver => driver.Name.Trim())
-                .Where(name => name.Length > 0)
-                .Distinct(StringComparer.OrdinalIgnoreCase))
+            namesInSession.Clear();
+            foreach (var driver in session.Drivers)
             {
-                if (counts.TryGetValue(name, out var current))
+                var name = driver.Name.Trim();
+                if (name.Length > 0 && namesInSession.Add(name))
                 {
-                    counts[name] = (current.Name, current.Count + 1);
-                }
-                else
-                {
-                    counts.Add(name, (name, 1));
+                    ref var count = ref CollectionsMarshal.GetValueRefOrAddDefault(counts, name, out _);
+                    count++;
                 }
             }
         }
 
         return counts
-            .Select(entry => new DriverFrequency(entry.Value.Name, entry.Value.Count, results.Length))
+            .Select(entry => new DriverFrequency(entry.Key, entry.Value, results.Length))
             .OrderByDescending(driver => driver.AppearanceCount)
             .ThenBy(driver => driver.Name, StringComparer.OrdinalIgnoreCase)
             .ThenBy(driver => driver.Name, StringComparer.Ordinal)

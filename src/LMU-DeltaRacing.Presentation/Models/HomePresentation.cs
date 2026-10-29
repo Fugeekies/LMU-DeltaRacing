@@ -53,11 +53,11 @@ public static class HomePresentation
             CreateShares(retirements.Select(result => GetRetirementCause(result.Driver.DnfReason))),
             Sum(results, result => result.LapsCompleted),
             Sum(results, result => result.Session.TrackLength is { } meters ? result.LapsCompleted * meters / 1000 : 0),
-            Sum(results, result => result.Driver.Laps.Where(lap => lap.Time.HasValue).Sum(lap => lap.Time!.Value.TotalSeconds)),
+            Sum(results, result => result.Driver.Laps.Sum(lap => lap.Time?.TotalSeconds ?? 0)),
             recentRaces.Select(result => CreateFormEntry(result, null)).ToArray(),
             recentRaces.Length == 0 ? null : CreateFormEntry(recentRaces[0], FindEventId(allSessions, userName, recentRaces[0].Session)),
             FindFavorite(races, result => result.Session.TrackVenue, result => result.Session.TrackCourse),
-            FindFavorite(races.Where(result => result.Car != "—"), result => result.Car, _ => null))
+            FindFavorite(races.Where(result => result.Car != DisplayFormat.Missing), result => result.Car, _ => null))
         {
             IsEmpty = results.Length == 0,
             FirstRaceAt = races.Length == 0 ? null : races.Min(result => result.Session.StartedAt),
@@ -69,15 +69,10 @@ public static class HomePresentation
     {
         foreach (var session in sessions)
         {
-            var isQualifying = session.SessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase);
-            if (!isQualifying && !session.SessionType.Contains("Race", StringComparison.OrdinalIgnoreCase))
+            if (session.Kind is (SessionKind.Qualifying or SessionKind.Race)
+                && DriverProfile.FindDriver(session, userName) is { } driver)
             {
-                continue;
-            }
-
-            if (DriverProfile.FindDriver(session, userName) is { } driver)
-            {
-                yield return new SessionResult(session, driver, isQualifying);
+                yield return new SessionResult(session, driver, session.Kind == SessionKind.Qualifying);
             }
         }
     }
@@ -114,7 +109,7 @@ public static class HomePresentation
             value is { } total && rate is not null ? rate(total) : null,
             source
                 .GroupBy(result => result.Category, StringComparer.Ordinal)
-                .OrderBy(group => GetCategoryOrder(group.Key))
+                .OrderBy(group => CarCategory.Order(group.Key))
                 .ThenBy(group => group.Key, StringComparer.OrdinalIgnoreCase)
                 .Select(group => new HomeCategoryValue(group.Key, aggregate(group)))
                 .ToArray());
@@ -166,7 +161,7 @@ public static class HomePresentation
             result.Car,
             result.Rank,
             result.Kind,
-            result.Driver.Laps.Where(lap => lap.Time.HasValue).Min(lap => lap.Time));
+            result.Driver.BestLap);
 
     private static string? FindEventId(IEnumerable<Session> sessions, string? userName, Session race) =>
         RaceEventPresentation.CreateEvents(sessions, userName)
@@ -185,24 +180,13 @@ public static class HomePresentation
             var reason => reason
         };
 
-    private static int GetCategoryOrder(string category)
-    {
-        var index = CarCategory.Known.ToList().IndexOf(category);
-        return index < 0 ? CarCategory.Known.Count : index;
-    }
-
     private sealed record SessionResult(Session Session, Driver Driver, bool IsQualifying)
     {
-        public string Category { get; } = CarCategory.FromCarClass(Driver.CarClass);
+        public string Category { get; } = Driver.Category();
 
-        public string Car { get; } = !string.IsNullOrWhiteSpace(Driver.CarType)
-            ? Driver.CarType.Trim()
-            : string.IsNullOrWhiteSpace(Driver.CarNumber) ? "—" : $"#{Driver.CarNumber}";
+        public string Car { get; } = Driver.CarName();
 
-        /// <summary>
-        /// The class position; the overall position keeps the same order within a class, so it is a valid fallback.
-        /// </summary>
-        public int? Rank { get; } = Driver.ClassPosition ?? Driver.Position;
+        public int? Rank { get; } = Driver.ClassRank();
 
         public double LapsCompleted { get; } = Driver.LapsCompleted ?? Driver.Laps.Count;
 

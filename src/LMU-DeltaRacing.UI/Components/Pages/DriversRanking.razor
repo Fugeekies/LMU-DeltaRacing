@@ -1,6 +1,5 @@
 @page "/drivers-ranking"
-@implements IDisposable
-@inject DashboardDataService DashboardData
+@inherits DashboardPage
 
 <PageTitle>Classement des coureurs | LMU DeltaRacing</PageTitle>
 
@@ -12,25 +11,8 @@
     </div>
 </section>
 
-@if (state.IsLoading && state.Sessions.Count == 0)
-{
-    <section class="panel empty-state" aria-live="polite">
-        <span class="loading-spinner" aria-hidden="true"></span>
-        <p>Chargement de l’historique des courses…</p>
-    </section>
-}
-else if (!string.IsNullOrWhiteSpace(state.ErrorMessage) && state.Sessions.Count == 0)
-{
-    <section class="notice notice-error" role="alert">
-        <span class="notice-symbol" aria-hidden="true">!</span>
-        <div>
-            <h2>Les résultats n’ont pas pu être chargés</h2>
-            <p>@state.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
-        </div>
-    </section>
-}
-else if (rivalries.Count == 0)
+<ResultsGate State="State">
+@if (rivalries.Count == 0)
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
@@ -115,31 +97,16 @@ else
     </section>
 }
 
+</ResultsGate>
+
 @code {
-    private DashboardState state = new(true, 0, 0, false, null, [], [], null);
     private IReadOnlyList<DriverRivalry> rivalries = [];
     private string searchText = string.Empty;
     private string sortOrder = "sessions";
 
-    protected override void OnInitialized()
+    protected override void OnStateChanged()
     {
-        DashboardData.StateChanged += OnDashboardStateChanged;
-        UpdateState();
-    }
-
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
-
-    private void OnDashboardStateChanged() =>
-        _ = InvokeAsync(() =>
-        {
-            UpdateState();
-            StateHasChanged();
-        });
-
-    private void UpdateState()
-    {
-        state = DashboardData.Snapshot;
-        rivalries = DriversRankingPresentation.CreateRivalries(state.Sessions, state.UserName);
+        rivalries = DriversRankingPresentation.CreateRivalries(State.Sessions, State.UserName);
     }
 
     /// <summary>

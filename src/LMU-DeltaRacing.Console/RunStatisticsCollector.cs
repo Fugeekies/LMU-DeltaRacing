@@ -18,6 +18,8 @@ public sealed class RunStatisticsCollector : IDisposable
 
     private readonly string statisticsFilePath;
     private readonly MeterListener meterListener = new();
+    // Imports run on several threads: the measurement callbacks may run concurrently.
+    private readonly object measurementLock = new();
     private readonly Stopwatch runDuration = Stopwatch.StartNew();
     private double totalImportDurationMilliseconds;
     private long importDurationMeasurementCount;
@@ -90,17 +92,21 @@ public sealed class RunStatisticsCollector : IDisposable
         runDuration.Stop();
 
         var elapsedSeconds = runDuration.Elapsed.TotalSeconds;
-        var statistics = new RunStatistics(
-            DateTimeOffset.UtcNow,
-            elapsedSeconds,
-            totalImports,
-            successfulImports,
-            failedImports,
-            Average(totalImportDurationMilliseconds, importDurationMeasurementCount),
-            elapsedSeconds > 0 ? totalImports / elapsedSeconds : null,
-            Average(totalWorkingSetBytes, workingSetMeasurementCount),
-            Average(totalManagedHeapBytes, managedHeapMeasurementCount),
-            Math.Max(workingSetMeasurementCount, managedHeapMeasurementCount));
+        RunStatistics statistics;
+        lock (measurementLock)
+        {
+            statistics = new RunStatistics(
+                DateTimeOffset.UtcNow,
+                elapsedSeconds,
+                totalImports,
+                successfulImports,
+                failedImports,
+                Average(totalImportDurationMilliseconds, importDurationMeasurementCount),
+                elapsedSeconds > 0 ? totalImports / elapsedSeconds : null,
+                Average(totalWorkingSetBytes, workingSetMeasurementCount),
+                Average(totalManagedHeapBytes, managedHeapMeasurementCount),
+                Math.Max(workingSetMeasurementCount, managedHeapMeasurementCount));
+        }
 
         WriteStatistics(statistics);
         completed = true;
@@ -132,8 +138,11 @@ public sealed class RunStatisticsCollector : IDisposable
     {
         if (instrument.Name == "lmu.result.import.duration")
         {
-            totalImportDurationMilliseconds += measurement;
-            importDurationMeasurementCount++;
+            lock (measurementLock)
+            {
+                totalImportDurationMilliseconds += measurement;
+                importDurationMeasurementCount++;
+            }
         }
     }
 
@@ -143,7 +152,15 @@ public sealed class RunStatisticsCollector : IDisposable
         ReadOnlySpan<KeyValuePair<string, object?>> tags,
         object? state)
     {
-        switch (instrument.Name)
+        lock (measurementLock)
+        {
+            AddLongMeasurement(instrument.Name, measurement, tags);
+        }
+    }
+
+    private void AddLongMeasurement(string instrumentName, long measurement, ReadOnlySpan<KeyValuePair<string, object?>> tags)
+    {
+        switch (instrumentName)
         {
             case "lmu.result.imports":
                 totalImports += measurement;

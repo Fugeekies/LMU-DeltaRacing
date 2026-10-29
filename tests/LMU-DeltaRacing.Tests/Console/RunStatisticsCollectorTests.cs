@@ -50,4 +50,33 @@ public sealed class RunStatisticsCollectorTests
             Directory.Delete(directory, recursive: true);
         }
     }
+
+    /// <summary>
+    /// Verifies that measurements recorded by parallel imports are all counted.
+    /// </summary>
+    [TestMethod]
+    public void Measurements_recorded_from_several_threads_are_all_counted()
+    {
+        var statisticsPath = Path.Combine(Path.GetTempPath(), $"{Guid.NewGuid():N}-stats.json");
+
+        try
+        {
+            using var collector = new RunStatisticsCollector(statisticsPath);
+            Parallel.For(0, 20_000, new ParallelOptions { MaxDegreeOfParallelism = 8 }, _ =>
+            {
+                ApplicationTelemetry.ImportDuration.Record(2);
+                ApplicationTelemetry.Imports.Add(1, new KeyValuePair<string, object?>("import.status", "imported"));
+            });
+
+            var statistics = collector.Complete();
+
+            statistics.TotalImports.Should().Be(20_000);
+            statistics.SuccessfulImports.Should().Be(20_000);
+            statistics.AverageImportDurationMilliseconds.Should().Be(2);
+        }
+        finally
+        {
+            File.Delete(statisticsPath);
+        }
+    }
 }

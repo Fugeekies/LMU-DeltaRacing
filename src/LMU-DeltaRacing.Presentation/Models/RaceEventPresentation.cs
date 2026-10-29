@@ -26,13 +26,13 @@ public static class RaceEventPresentation
 
         var events = new List<RaceEvent>();
         foreach (var circuit in sessions
-            .Where(session => GetOrder(session.SessionType) is not null)
+            .Where(session => session.Kind != SessionKind.Other)
             .GroupBy(session => new { session.TrackVenue, session.TrackCourse, session.TrackEvent }))
         {
             var current = new List<Session>();
             foreach (var session in circuit
                 .OrderBy(session => session.StartedAt)
-                .ThenBy(session => GetOrder(session.SessionType)))
+                .ThenBy(session => session.Kind))
             {
                 if (current.Count > 0 && StartsNewEvent(current[^1], session))
                 {
@@ -57,25 +57,15 @@ public static class RaceEventPresentation
 
     private static bool StartsNewEvent(Session previous, Session next)
     {
-        var previousOrder = GetOrder(previous.SessionType)!.Value;
-        var nextOrder = GetOrder(next.SessionType)!.Value;
-
-        // Only practice sessions can follow one another inside an event.
-        var keepsOrder = nextOrder > previousOrder || (nextOrder == previousOrder && nextOrder == PracticeOrder);
+        // SessionKind is declared in the order of an event; only practice sessions can follow one another.
+        var keepsOrder = next.Kind > previous.Kind
+            || (next.Kind == previous.Kind && next.Kind == SessionKind.Practice);
         return !keepsOrder || next.StartedAt - previous.StartedAt > MaximumGapInsideEvent;
     }
 
-    private const int PracticeOrder = 0;
-
-    private static int? GetOrder(string sessionType) =>
-        sessionType.StartsWith("Practice", StringComparison.OrdinalIgnoreCase) ? PracticeOrder
-        : sessionType.Contains("Qual", StringComparison.OrdinalIgnoreCase) ? 1
-        : sessionType.Contains("Race", StringComparison.OrdinalIgnoreCase) ? 2
-        : null;
-
     private static RaceEvent CreateEvent(IReadOnlyList<Session> sessions)
     {
-        var practices = sessions.Where(session => GetOrder(session.SessionType) == PracticeOrder).ToArray();
+        var practices = sessions.Where(session => session.Kind == SessionKind.Practice).ToArray();
         var first = sessions[0];
 
         return new RaceEvent(
@@ -84,8 +74,8 @@ public static class RaceEventPresentation
             first.TrackCourse,
             first.TrackEvent,
             first.StartedAt,
-            sessions.FirstOrDefault(session => GetOrder(session.SessionType) == 2),
-            sessions.FirstOrDefault(session => GetOrder(session.SessionType) == 1),
+            sessions.FirstOrDefault(session => session.Kind == SessionKind.Race),
+            sessions.FirstOrDefault(session => session.Kind == SessionKind.Qualifying),
             practices.Length switch
             {
                 0 => null,

@@ -1,0 +1,38 @@
+@* Shows the loading or error message of the results while nothing can be displayed, else the page content. *@
+
+@if (State.IsLoading && State.Sessions.Count == 0)
+{
+    <section class="panel empty-state" aria-live="polite">
+        <span class="loading-spinner" aria-hidden="true"></span>
+        <p>Chargement de l’historique des courses…</p>
+    </section>
+}
+else if (!string.IsNullOrWhiteSpace(State.ErrorMessage) && State.Sessions.Count == 0)
+{
+    <section class="notice notice-error" role="alert">
+        <span class="notice-symbol" aria-hidden="true">!</span>
+        <div>
+            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <p>@State.ErrorMessage</p>
+            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
+        </div>
+    </section>
+}
+else
+{
+    @ChildContent
+}
+
+@code {
+    /// <summary>
+    /// Gets or sets the dashboard state of the page.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public DashboardState State { get; set; } = DashboardState.Initial;
+
+    /// <summary>
+    /// Gets or sets the page content, shown once results are available.
+    /// </summary>
+    [Parameter]
+    public RenderFragment? ChildContent { get; set; }
+}
