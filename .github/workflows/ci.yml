@@ -1,9 +1,12 @@
 name: CI
 
-# Builds and tests every pull request, and main after each merge, so that a red test or a build
-# warning (treated as an error in src/) is seen before the change is merged.
+# Builds and tests every pull request ready for review, and main after each merge, so that a red
+# test or a build warning (treated as an error in src/) is seen before the change is merged.
+# Draft pull requests are skipped: pushes to a draft do not use runner minutes, and the CI runs
+# when the draft is marked "Ready for review" (a draft cannot be merged anyway).
 on:
   pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
   push:
     branches: [main]
 
@@ -17,6 +20,7 @@ concurrency:
 
 jobs:
   build-and-test:
+    if: github.event_name == 'push' || !github.event.pull_request.draft
     # Same runner as the release: the dashboard and its folder picker target Windows.
     runs-on: windows-latest
 
