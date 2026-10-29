@@ -221,7 +221,7 @@ Spécification : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md).
 Issu de l'audit d'octobre 2026. Avant ce jalon, aucun test ne tournait sur les PR et la release publiait sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.
 - [x] Workflow GitHub Actions `ci.yml` sur chaque PR et sur `main` après fusion : `dotnet build LMU-DeltaRacing.slnx` en Release (avertissements de `src/` traités comme erreurs) puis `dotnet test` du projet de tests, sans les benchmarks. Les résultats de tests sont joints au run en cas d'échec.
 - [x] **`release.yml` :** lancer les tests unitaires avant `dotnet publish`, pour qu'une release ne parte jamais avec des tests rouges.
-- [ ] Rendre le workflow `CI` obligatoire avant fusion (protection de la branche `main`, vérification « build-and-test ») : à configurer dans les réglages GitHub une fois le workflow présent sur `main`.
+- [x] Rendre le workflow `CI` obligatoire avant fusion (protection de la branche `main`, vérification « build-and-test ») : à configurer dans les réglages GitHub une fois le workflow présent sur `main`.
 - [x] Garder le `#if DEBUG Task.Delay(15)` par fichier de `DashboardDataService` : il est voulu, pour vérifier à l'œil l'écran de chargement en Debug (sans effet en Release) ; un commentaire l'explique désormais dans le code.
 
 ## Jalon — Identité et chronologie des sessions (priorité 2)
