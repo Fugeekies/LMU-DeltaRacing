@@ -201,7 +201,7 @@ Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6). Ne plus voir l
 - [x] Tester la visibilité, le pourcentage et le libellé (`StartupLoadingPresentation`) ainsi que le cycle de vie de l'indicateur dans `DashboardDataService`.
 
 ## Jalon — Signature de l'installeur (SignPath Foundation)
-Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande.
+Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
 - [ ] **Licence :** remettre le texte GPL-3.0 intact dans `LICENSE` (GitHub le détecte aujourd'hui comme « Other » à cause de la ligne de copyright ajoutée en tête) et déplacer le copyright dans le README.
 - [ ] **README :** ajouter une section « Code signing policy » : mention « Free code signing provided by SignPath.io, certificate by SignPath Foundation », rôles (auteurs, relecteurs, approbateurs) et déclaration de confidentialité (aucune donnée envoyée sur le réseau, serveur local limité à `127.0.0.1`).
 - [ ] Activer la double authentification sur le compte GitHub.
@@ -217,13 +217,40 @@ Spécification : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md).
 - [x] Cas particuliers : un abandon, une disqualification, une course non classée ou une ligne sans course gardent la ligne actuelle, sans bordure.
 - [x] Console : colonne CLASS., la mise en avant porte sur la cellule de la position (Spectre.Console ne colore pas une ligne entière).
 
+## Jalon — Garde-fous de CI (priorité 1)
+Issu de l'audit d'octobre 2026. Aucun test ne tourne aujourd'hui sur les PR, et la release publie sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.
+- [ ] Workflow GitHub Actions sur chaque PR vers `main` : `dotnet build LMU-DeltaRacing.slnx` puis `dotnet test` du projet de tests (sans les benchmarks).
+- [ ] **`release.yml` :** lancer les tests unitaires avant `dotnet publish`, pour qu'une release ne parte jamais avec des tests rouges.
+- [ ] Rendre le workflow des PR obligatoire avant fusion (protection de la branche `main`).
+- [ ] Retirer ou réduire le `#if DEBUG Task.Delay(15)` par fichier de `DashboardDataService`, qui ajoute au moins 5 s à chaque démarrage en Debug.
+
+## Jalon — Identité et chronologie des sessions (priorité 2)
+Issu de l'audit d'octobre 2026. Une session n'a ni identité stable ni heure de début propre, ce qui fragilise les comparaisons et les historiques. Ce jalon change des règles documentées dans `AGENTS.md` : proposition écrite à valider avant de coder.
+- [ ] **Constat — identité :** chaque session reçoit un `Guid` aléatoire à chaque chargement. Les liens `?event=` de Détail des courses ne survivent pas à un redémarrage, et un même fichier copié sous deux noms est importé deux fois.
+- [ ] **Constat — chronologie :** `StartedAt` vient de `RaceResults/DateTime`, commun à toutes les sessions d'un événement. Deux courses d'un même événement (redémarrage du 16/09/2026 dans les fixtures) ont la même date : leur ordre dans « Mes courses » est aléatoire et le delta n-1 entre elles peut s'inverser. Chaque phase porte pourtant sa propre date (`<Race><DateTime>`, `<Qualify><DateTime>`).
+- [ ] Rédiger la proposition : identité stable (nom de fichier ou empreinte du contenu), heure de session retenue (vérifier la présence et le sens de la date de phase dans toutes les fixtures, essais compris) et règles impactées (appariement qualif/course, deltas n-1, regroupement en événements, ordre des sessions récentes).
+- [ ] Après validation : lire l'heure de phase dans le parser, donner un identifiant stable aux sessions et aux événements, ignorer les doublons de contenu, mettre à jour `AGENTS.md` (faits vérifiés) et l'empreinte de référence du parser.
+- [ ] Tests sur les fixtures : les deux courses du 16/09/2026 sont ordonnées et comparées de la même façon à chaque lancement, et un lien `?event=` reste valide après un rechargement.
+
+## Jalon — Exploiter les événements du `Stream` (priorité 3)
+La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Prérequis : le jalon « Identité et chronologie des sessions », pour pouvoir identifier et comparer des sessions de façon fiable.
+- [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
+- [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
+- [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course).
+- [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
+
+## Jalon — Avenir de la console Spectre
+Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux fois : pages Razor et `Console/Views`. Chaque nouvelle vue double donc le coût de développement et de test.
+- [ ] Décider du rôle de la console : outil de diagnostic gelé (aucune nouvelle vue) ou application à part entière qui suit le dashboard.
+- [ ] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, pour que les prochaines évolutions sachent si elles doivent toucher la console.
+
 ## Liste d'idées à prioriser
 - [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
 - [ ] Multi langue.
 - [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
-- [ ] Ajouter une fiche pilote avec ses statistiques cumulées.
-- [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
-- [ ] Afficher les incidents et avertissements de limites de piste lorsqu'ils sont présents dans le XML.
+- La fiche pilote, la comparaison de sessions et l'affichage des incidents sont dans le jalon « Exploiter les événements du `Stream` ».
+- Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 - [x] Permettre de choisir le dossier de résultats depuis l'interface (page Options).
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
