@@ -52,8 +52,10 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 ### 6. Écran de chargement au démarrage
 * Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».
 * La barre de progression est une route : une roue (pneu sombre, jante rouge `#e11d48`) tourne en continu et avance de gauche à droite selon les fichiers traités / total ; la portion parcourue est rouge. Sous la route : « N / M fichiers traités » (ou « Recherche des fichiers de résultats… » tant que le total est inconnu) et le pourcentage.
+* Sous le pourcentage : numéro de version de l'application (`v0.1.2`) en gris discret. L'import étant très court en Release, la version reste consultable dans Options.
 * L'écran disparaît quand l'import au démarrage est terminé, y compris en erreur (l'erreur s'affiche alors dans les pages). Un rechargement depuis Options et les imports du watcher ne l'affichent pas.
 * Avec `prefers-reduced-motion`, la roue avance sans tourner.
+* **Fenêtre de nouvelle version :** quand une version plus récente est publiée, un encart fixe en bas à droite (fond `--surface-raised`, liseré rouge LMU) affiche « Nouvelle version disponible : vX.Y.Z » et « Voir dans Options », lien vers `/settings`. Il apparaît une fois l'écran de chargement passé, reste 3 secondes et ne revient pas avant le prochain lancement, même si la page est rechargée.
 
 ### 7. Classement dans « Mes courses »
 Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le violet, le vert, le jaune et le rouge WEC. Chaque ligne est encadrée d'une bordure de 1 px de sa couleur et la position (colonne CLASSEMENT) est écrite dans cette couleur ; le fond de la ligne n'en garde qu'une trace : 10 % pour le podium, pour que sa couleur se reconnaisse d'un coup d'œil, 5 % pour le top 10.

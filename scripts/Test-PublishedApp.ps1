@@ -3,7 +3,9 @@ param(
     [string]$PublishDirectory,
 
     [ValidateRange(5, 120)]
-    [int]$StartupTimeoutSeconds = 30
+    [int]$StartupTimeoutSeconds = 30,
+
+    [string]$ExpectedVersion
 )
 
 $ErrorActionPreference = 'Stop'
@@ -28,6 +30,7 @@ if ($fixtureFiles.Count -eq 0) {
 
 $arguments = @(
     '--LMU:OpenBrowser=false',
+    '--LMU:CheckForUpdates=false',
     "--LMU:ResultsDirectory=$fixtureDirectory"
 )
 $server = Start-Process `
@@ -89,6 +92,17 @@ try {
     }
     if ($response.Content -match '<h1[^>]*>\s*(Une erreur est survenue|The dashboard encountered an error)\s*</h1>') {
         throw "The published dashboard rendered its error page instead of the home page."
+    }
+
+    # A release built without its version would never detect the next one.
+    if ($ExpectedVersion) {
+        $settings = Invoke-WebRequest `
+            -Uri "http://127.0.0.1:$($listener.LocalPort)/settings" `
+            -UseBasicParsing `
+            -TimeoutSec 10
+        if ($settings.Content -notmatch [regex]::Escape("v$ExpectedVersion")) {
+            throw "The published dashboard does not display version v$ExpectedVersion."
+        }
     }
 
     Write-Output "Published dashboard launched without external DLLs and returned HTTP 200."

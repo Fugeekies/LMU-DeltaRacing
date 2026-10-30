@@ -7,6 +7,7 @@ using LMU_DeltaRacing.Infrastructure.Persistence;
 using LMU_DeltaRacing.Presentation.Services;
 using LMU_DeltaRacing.UI.Components;
 using LMU_DeltaRacing.UI.Logging;
+using LMU_DeltaRacing.UI.Models;
 using LMU_DeltaRacing.UI.Services;
 using Microsoft.AspNetCore.Hosting.Server;
 using Microsoft.AspNetCore.Hosting.Server.Features;
@@ -62,6 +63,18 @@ builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
 builder.Services.AddSingleton<WindowsFolderPicker>();
 builder.Services.AddHostedService(serviceProvider =>
     serviceProvider.GetRequiredService<DashboardDataService>());
+builder.Services.AddHttpClient();
+builder.Services.AddSingleton(serviceProvider =>
+{
+    var configuration = serviceProvider.GetRequiredService<IConfiguration>();
+    return new UpdateCheckService(
+        serviceProvider.GetRequiredService<IHttpClientFactory>().CreateClient(),
+        ApplicationVersion.Current,
+        () => configuration.GetValue("LMU:CheckForUpdates", defaultValue: true),
+        serviceProvider.GetRequiredService<ILogger<UpdateCheckService>>());
+});
+builder.Services.AddHostedService(serviceProvider =>
+    serviceProvider.GetRequiredService<UpdateCheckService>());
 
 var app = builder.Build();
 

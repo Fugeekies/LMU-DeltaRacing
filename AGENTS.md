@@ -27,7 +27,7 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | `src/LMU-DeltaRacing.Application` | Contrats (`IResultXmlParser`, `ISessionRepository`, `ISessionImportService`), `SessionImportService` (retries sur fichier verrouillé), télémétrie (`ApplicationTelemetry`). |
 | `src/LMU-DeltaRacing.Infrastructure` | `XmlResultParser` (en flux, `XmlReader`), `InMemorySessionRepository`, `ResultsDirectoryWatcher` (`FileSystemWatcher` + `Channel`, déduplication par chemin). |
 | `src/LMU-DeltaRacing.Presentation` | Code partagé par l'UI et la console. `Services/DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`), `DashboardSettingsStore` (écriture des réglages), `ResultsDirectoryResolver`. Calculs des vues dans `Models/*Presentation.cs`. |
-| `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`). |
+| `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`), vérification de la dernière release (`UpdateCheckService`, version dans `ApplicationVersion`). |
 | `src/LMU-DeltaRacing.Console` | Spectre.Console : `ConsoleApplication` (menu, imports en file d'attente) et `Views/` (Accueil, Mes courses, Options) sur `DashboardDataService`. OpenTelemetry, réglages du log via `IOptionsMonitor<LmuApplicationOptions>`. Aucun argument en ligne de commande. |
 | `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Presentation/`, `Console/`, `UI/`). |
 | `benchmarks/LMU-DeltaRacing.Benchmarks` | Parser (synthétique et fichiers réels), chargement complet, calculs de chaque page ×1/×10/×50 ; rapport dans `artifacts/performance-report.md`. |
@@ -39,6 +39,7 @@ Points d'attention :
 - `appsettings.json` est lu et écrit **à côté de l'exécutable** (`AppContext.BaseDirectory`), section `LMU`.
 - Les fusions de pilotes (`LMU:DriverMerges`, `Presentation/Models/DriverMerges.cs`) sont appliquées **en mémoire** par `DashboardDataService` : le dépôt garde les noms d'origine, ce qui permet d'annuler une fusion et de détecter les pilotes qui se sont croisés.
 - Nature d'une session : lire `Session.Kind`, jamais `SessionType.Contains(...)`. Rang en classe, nom de voiture et catégorie d'un pilote : `DriverResults` (`ClassRank()`, `CarName()`, `Category()`). Pages Razor de résultats : dériver de `DashboardPage` et envelopper le contenu dans `ResultsGate`.
+- `UpdateCheckService` envoie la **seule requête sortante** de l'application (dernier tag GitHub, désactivable par `LMU:CheckForUpdates`). Aucune autre donnée ne quitte le PC : aucune donnée n'est collectée. La console n'a pas cette vérification. La version vient de `-p:Version` à la publication ; un build local reste en `0.0.0-dev`.
 - Le parser est verrouillé par l'empreinte SHA-256 des 342 fixtures (`XmlResultParserTests`) : ne mettre à jour la référence qu'après avoir vérifié et justifié la différence.
 - `src/Directory.Build.props` traite les avertissements comme des erreurs et exige la documentation `///` des membres publics.
 

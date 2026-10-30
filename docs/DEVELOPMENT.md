@@ -31,12 +31,14 @@ Le socle métier, le monitoring et la console sont en place : le parser transfor
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
 - `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results -MergeSingleRaceDrivers`
 - `Copy-Item assets/Results -Destination publish_output/TestAssets -Recurse`
-- `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output`
+- `pwsh -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output` (ajouter `-ExpectedVersion 1.0.0` pour contrôler la version affichée, après un `dotnet publish` avec `-p:Version=1.0.0`)
 - `iscc /DAppVersion=1.0.0 scripts/installer.iss`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release -p:BenchmarkYears=5 --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --filter "TestCategory=Import" --logger "console;verbosity=detailed"`
 - `dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj --configuration Release --filter "TestCategory=Views" --logger "console;verbosity=detailed"`
+
+Un build local de l'UI est en version `0.0.0-dev` et ne vérifie pas les mises à jour. Pour tester la fenêtre de nouvelle version, publier avec un numéro inférieur à la dernière release (`-p:Version=0.0.1`) et lancer l'exécutable publié.
 
 La console ne prend aucun argument : elle charge le dossier configuré dans son `appsettings.json` (ou détecté automatiquement) et reste ouverte jusqu'au choix `Quitter`.
 

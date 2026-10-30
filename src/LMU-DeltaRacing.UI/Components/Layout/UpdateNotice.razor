@@ -1,0 +1,63 @@
+@* Announces a new release for a few seconds, once per launch. Mounted with the dashboard, so its time
+   is not spent behind the loading screen. *@
+@implements IDisposable
+@inject UpdateCheckService UpdateCheck
+
+@if (isVisible)
+{
+    <a class="update-notice" href="/settings" role="status">
+        <span class="update-notice-title">@UpdateCheckPresentation.Label(UpdateCheck.Result)</span>
+        <span class="update-notice-action">Voir dans Options</span>
+    </a>
+}
+
+@code {
+    private static readonly TimeSpan DisplayDuration = TimeSpan.FromSeconds(3);
+
+    private readonly CancellationTokenSource disposal = new();
+    private bool isVisible;
+
+    // After the first render, because the prerendering pass cannot run the timer of the popup.
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            UpdateCheck.Changed += OnUpdateCheckChanged;
+            OnUpdateCheckChanged();
+        }
+    }
+
+    public void Dispose()
+    {
+        UpdateCheck.Changed -= OnUpdateCheckChanged;
+        disposal.Cancel();
+        disposal.Dispose();
+    }
+
+    // The service raises its event on a background thread, and the check can finish after this
+    // component is displayed.
+    private void OnUpdateCheckChanged() => _ = InvokeAsync(ShowOnceAsync);
+
+    private async Task ShowOnceAsync()
+    {
+        if (!UpdateCheck.TryConsumeStartupNotice())
+        {
+            return;
+        }
+
+        isVisible = true;
+        StateHasChanged();
+
+        try
+        {
+            await Task.Delay(DisplayDuration, disposal.Token);
+        }
+        catch (OperationCanceledException)
+        {
+            return;
+        }
+
+        isVisible = false;
+        StateHasChanged();
+    }
+}

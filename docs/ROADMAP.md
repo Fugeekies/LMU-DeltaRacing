@@ -23,7 +23,7 @@ La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, conta
 ### Jalon — Signature de l'installeur (SignPath Foundation) (en parallèle)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
 - [ ] **Licence :** remettre le texte GPL-3.0 intact dans `LICENSE` (GitHub le détecte aujourd'hui comme « Other » à cause de la ligne de copyright ajoutée en tête) et déplacer le copyright dans le README.
-- [ ] **README :** ajouter une section « Code signing policy » : mention « Free code signing provided by SignPath.io, certificate by SignPath Foundation », rôles (auteurs, relecteurs, approbateurs) et déclaration de confidentialité (aucune donnée envoyée sur le réseau, serveur local limité à `127.0.0.1`).
+- [ ] **README :** ajouter une section « Code signing policy » : mention « Free code signing provided by SignPath.io, certificate by SignPath Foundation », rôles (auteurs, relecteurs, approbateurs) et déclaration de confidentialité (aucune donnée collectée, seule requête sortante : le numéro de la dernière version sur GitHub, désactivable ; serveur local limité à `127.0.0.1`).
 - [ ] Activer la double authentification sur le compte GitHub.
 - [ ] Déposer la demande sur https://signpath.org/apply, puis configurer le projet sur app.signpath.io (connexion GitHub, signing policy `release-signing`, artifact configuration, secret `SIGNPATH_API_TOKEN`).
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
@@ -46,6 +46,15 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Version et mises à jour — 30/10/2026 · PR [#48](https://github.com/Fugeekies/LMU-DeltaRacing/pull/48)
+Spécifications : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6) et [`UISpec/Settings.template.md`](UISpec/Settings.template.md). Dashboard uniquement : la console attend la décision du jalon « Avenir de la console Spectre ».
+- [x] **Numéro de version :** inscrit dans l'application par la release (`-p:Version`, absent jusqu'ici), affiché sur l'écran de chargement et dans Options, car l'écran de chargement est très bref en Release.
+- [x] **Vérification au démarrage :** une requête vers l'API GitHub, sans résultat ni nom de pilote, sans ralentir le démarrage. Option de désactivation dans Options (`LMU:CheckForUpdates`, activée par défaut).
+- [x] **Fenêtre de nouvelle version :** 3 secondes, une fois par lancement, après l'écran de chargement.
+- [x] **Options :** bouton de téléchargement direct de l'installeur de la dernière release ; lien vers la page des versions si la vérification échoue.
+- [x] Remplacer dans le README la promesse « ne se connecte à aucun service en ligne » par « aucune donnée n'est collectée ».
+- [x] `Test-PublishedApp.ps1 -ExpectedVersion` : la release échoue si la version affichée n'est pas celle du tag.
 
 ### Jalon — Garde-fous de CI — 29/10/2026 · PR [#45](https://github.com/Fugeekies/LMU-DeltaRacing/pull/45)
 Issu de l'audit d'octobre 2026. Avant ce jalon, aucun test ne tournait sur les PR et la release publiait sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.

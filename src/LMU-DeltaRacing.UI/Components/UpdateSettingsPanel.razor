@@ -1,0 +1,84 @@
+@* The version panel of the Options page: follows the check started by the service at startup. *@
+@implements IDisposable
+@inject IConfiguration Configuration
+@inject DashboardSettingsStore SettingsStore
+@inject UpdateCheckService UpdateCheck
+
+<section class="panel settings-panel" aria-labelledby="update-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">VERSION &amp; MISES À JOUR</p>
+            <h2 id="update-settings-heading">Mises à jour</h2>
+        </div>
+    </div>
+    <div class="settings-content">
+        <div class="directory-status" role="status" aria-live="polite">
+            <span class="status-dot @UpdateCheckPresentation.DotClass(UpdateCheck.Result)" aria-hidden="true"></span>
+            <span>Version installée : @ApplicationVersion.Display(ApplicationVersion.Current)</span>
+            <span>@UpdateCheckPresentation.Label(UpdateCheck.Result)</span>
+        </div>
+
+        @if (UpdateCheckPresentation.OffersDownload(UpdateCheck.Result))
+        {
+            <div class="settings-actions">
+                <a class="button button-primary"
+                   href="@UpdateCheckPresentation.DownloadUrl"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Télécharger @ApplicationVersion.Display(UpdateCheck.Result.LatestVersion ?? string.Empty)
+                </a>
+                <span class="settings-help">Lancez ensuite l’installeur : la nouvelle version s’installe par-dessus l’ancienne et vos réglages sont conservés.</span>
+            </div>
+        }
+        else if (UpdateCheckPresentation.OffersReleasesPage(UpdateCheck.Result))
+        {
+            <div class="settings-actions">
+                <a class="button button-secondary"
+                   href="@UpdateCheckPresentation.ReleasesUrl"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Voir les versions sur GitHub
+                </a>
+            </div>
+        }
+
+        <label class="settings-checkbox">
+            <input type="checkbox" @bind="checkForUpdates" @bind:after="SaveCheckForUpdates" />
+            <span>Vérifier au démarrage si une nouvelle version est disponible</span>
+        </label>
+        <p class="settings-help">L’application demande à GitHub le numéro de la dernière version. Aucune donnée n’est collectée. Ce choix s’applique au prochain démarrage.</p>
+        @if (feedbackMessage is not null)
+        {
+            <p class="settings-help" role="status">@feedbackMessage</p>
+        }
+    </div>
+</section>
+
+@code {
+    private bool checkForUpdates = true;
+    private string? feedbackMessage;
+
+    protected override void OnInitialized()
+    {
+        checkForUpdates = Configuration.GetValue("LMU:CheckForUpdates", true);
+        UpdateCheck.Changed += OnUpdateCheckChanged;
+    }
+
+    public void Dispose() => UpdateCheck.Changed -= OnUpdateCheckChanged;
+
+    private void OnUpdateCheckChanged() => _ = InvokeAsync(StateHasChanged);
+
+    private void SaveCheckForUpdates()
+    {
+        try
+        {
+            SettingsStore.SaveCheckForUpdates(checkForUpdates);
+            feedbackMessage = "Préférence de mise à jour enregistrée.";
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = $"Impossible d’enregistrer la préférence de mise à jour : {exception.Message}";
+        }
+    }
+}

@@ -12,6 +12,33 @@ namespace LMU_DeltaRacing.Tests.Presentation;
 public sealed class DashboardSettingsStoreTests
 {
     /// <summary>
+    /// Verifies that the update check preference is saved and visible through the configuration.
+    /// </summary>
+    [TestMethod]
+    public void Update_check_preference_is_saved()
+    {
+        var directory = Path.Combine(Path.GetTempPath(), $"lmu-settings-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(directory);
+        var settingsPath = Path.Combine(directory, "appsettings.json");
+        File.WriteAllText(settingsPath, """{ "LMU": { "OpenBrowser": false } }""");
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile(settingsPath, optional: false, reloadOnChange: false)
+            .Build();
+
+        try
+        {
+            new DashboardSettingsStore(configuration, settingsPath).SaveCheckForUpdates(false);
+
+            configuration["LMU:CheckForUpdates"].Should().Be("False");
+            configuration["LMU:OpenBrowser"].Should().Be("False");
+        }
+        finally
+        {
+            Directory.Delete(directory, recursive: true);
+        }
+    }
+
+    /// <summary>
     /// Verifies that results settings are saved while unrelated application settings are preserved.
     /// </summary>
     [TestMethod]
