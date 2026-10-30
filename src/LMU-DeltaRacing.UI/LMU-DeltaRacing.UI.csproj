@@ -11,6 +11,10 @@
     <AssemblyName>$(AssemblyName.Replace(' ', '_'))</AssemblyName>
     <ApplicationIcon>..\..\assets\icons\Logo-Delta-Racing-rouge-et-blanc-1.ico</ApplicationIcon>
     <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    <!-- The release workflow replaces it with the tag (-p:Version=X.Y.Z). No commit hash in the
+         version: it is displayed in the application and compared with the release tags. -->
+    <Version>0.0.0-dev</Version>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
   </PropertyGroup>
 
 </Project>

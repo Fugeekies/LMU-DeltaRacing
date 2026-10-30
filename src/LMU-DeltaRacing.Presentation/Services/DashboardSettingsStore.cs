@@ -87,6 +87,17 @@ public sealed class DashboardSettingsStore
     }
 
     /// <summary>
+    /// Saves whether the application asks GitHub for the latest release at startup.
+    /// </summary>
+    public void SaveCheckForUpdates(bool checkForUpdates)
+    {
+        var root = LoadSettings();
+        GetLmuSettings(root)["CheckForUpdates"] = checkForUpdates;
+
+        Save(root);
+    }
+
+    /// <summary>
     /// Saves the selected driver name to application settings.
     /// </summary>
     public void SaveUserName(string userName)

@@ -78,8 +78,12 @@ jobs:
       - name: Run unit tests
         run: dotnet test tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj -c Release --no-restore
 
+      # The version is displayed by the application and compared with the latest release at startup.
       - name: Publish self-contained dashboard
-        run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 -o publish_output
+        shell: pwsh
+        env:
+          APP_VERSION: ${{ steps.version.outputs.version }}
+        run: dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64 "-p:Version=$env:APP_VERSION" -o publish_output
 
       - name: Copy committed fallback result assets
         shell: pwsh
@@ -88,7 +92,10 @@ jobs:
           Copy-Item -LiteralPath assets/Results -Destination publish_output/TestAssets -Recurse
 
       - name: Verify the published executable
-        run: pwsh -NoProfile -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output
+        env:
+          APP_VERSION: ${{ steps.version.outputs.version }}
+        shell: pwsh
+        run: pwsh -NoProfile -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output -ExpectedVersion $env:APP_VERSION
 
       - name: Install Inno Setup
         run: choco install innosetup --no-progress --yes

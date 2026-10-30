@@ -111,6 +111,13 @@
     color: var(--text);
 }
 
+.startup-version {
+    margin: 1.5rem 0 0;
+    color: var(--muted);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+}
+
 @keyframes startup-wheel-roll {
     to {
         transform: rotate(360deg);

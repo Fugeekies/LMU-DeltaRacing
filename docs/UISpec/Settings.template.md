@@ -1,9 +1,9 @@
 ## 4. ⚙️ Menu : Options (`Settings.razor`)
 
-> Spécification alignée sur le code au 25/10/2026 (`Settings.razor`, `DashboardOverview.razor`, `DashboardDataService.cs`, `ResultsDirectoryResolver.cs`).
+> Spécification alignée sur le code au 30/10/2026 (`Settings.razor`, `UpdateSettingsPanel.razor`, `DashboardOverview.razor`, `DashboardDataService.cs`, `ResultsDirectoryResolver.cs`, `UpdateCheckService.cs`).
 
 ### Description
-Panneau de configuration (route `/settings`) qui permet de choisir le dossier des résultats XML, de recharger les imports, de choisir le pilote principal et de régler la surveillance au démarrage. Sous les options, il affiche l'état des imports et les sessions récentes du pilote.
+Panneau de configuration (route `/settings`) qui permet de choisir le dossier des résultats XML, de recharger les imports, de choisir le pilote principal, de régler la surveillance au démarrage et de suivre les mises à jour. Sous les options, il affiche l'état des imports et les sessions récentes du pilote.
 
 ### Spécifications fonctionnelles
 
@@ -52,6 +52,15 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Case à cocher « Charger les sessions d'essais (onglet Essais du détail des courses) » (`LMU:LoadPracticeSessions`, **décochée par défaut** : les essais sont souvent vides et ralentissent le chargement).
 * Le choix est **enregistré immédiatement**, puis les résultats du dossier configuré sont **rechargés** (messages « Sessions d'essais chargées. » / « Sessions d'essais retirées. »).
 * Décochée : les fichiers d'essais sont lus mais pas conservés ; l'onglet Essais du détail des courses n'apparaît plus.
+
+#### Panneau « Mises à jour »
+* Ligne d'état : « Version installée : vX.Y.Z » puis l'état de la vérification lancée au démarrage, mis à jour dès qu'elle se termine :
+  * 🟢 « Vous utilisez la dernière version. » ;
+  * 🟡 « Nouvelle version disponible : vX.Y.Z », « Vérification en cours… », « Impossible de vérifier les mises à jour. », « Vérification désactivée. » ou « Version de développement : pas de vérification. » (build local en `0.0.0-dev`, sans requête).
+* Nouvelle version : bouton **« Télécharger vX.Y.Z »**, lien direct vers `releases/latest/download/LMU-DeltaRacing-Setup.exe`. Le navigateur télécharge l'installeur et l'utilisateur le lance lui-même.
+* Vérification en échec (hors ligne, GitHub indisponible, réponse inutilisable) : bouton secondaire **« Voir les versions sur GitHub »**.
+* Case à cocher « Vérifier au démarrage si une nouvelle version est disponible » (`LMU:CheckForUpdates`, **cochée par défaut**) : **enregistrée immédiatement**, elle s'applique au prochain démarrage.
+* La vérification est une seule requête `GET` vers l'API GitHub, avec un délai de 5 secondes : elle ne transmet ni résultat ni nom de pilote et ne retarde pas le démarrage.
 
 * Les messages de retour de la page s'affichent sous les panneaux. Il n'y a plus de bouton « Enregistrer » : chaque réglage est enregistré par son action.
 

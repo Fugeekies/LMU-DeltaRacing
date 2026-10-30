@@ -8,7 +8,7 @@ LMU DeltaRacing lit les fichiers de résultats que *Le Mans Ultimate* enregistre
 - votre bilan face à chaque adversaire rencontré ;
 - le classement détaillé de chaque course, secteur par secteur, comme sur les écrans de chronométrage du WEC.
 
-Tout se passe sur votre PC : l'application ne se connecte à aucun service en ligne et **aucune donnée n'est envoyée**.
+Tout se passe sur votre PC : **aucune donnée n'est collectée**.
 
 ---
 
@@ -33,7 +33,7 @@ Tout se passe sur votre PC : l'application ne se connecte à aucun service en li
 
 L'installeur cherche automatiquement le dossier où *Le Mans Ultimate* enregistre vos résultats, dans vos Documents et dans le dossier d'installation Steam du jeu. S'il ne trouve aucun résultat, il configure des **données de démonstration** pour que vous puissiez découvrir l'application. Vous pourrez choisir le bon dossier ensuite (voir [Options](#les-options)).
 
-**Mise à jour :** installez simplement la nouvelle version par-dessus l'ancienne. Vos réglages sont conservés.
+**Mise à jour :** quand une nouvelle version est disponible, une fenêtre vous prévient quelques secondes au démarrage. Téléchargez-la depuis **Options › Mises à jour**, puis installez-la par-dessus l'ancienne. Vos réglages sont conservés.
 
 **Désinstallation :** depuis *Paramètres Windows › Applications*, comme n'importe quel programme.
 
@@ -148,6 +148,7 @@ Les réglages, détaillés ci-dessous. Sous les réglages, un **état des import
 | **Fusion de pilotes** | Vous avez changé de pseudo ? Choisissez l'**ancien nom** et le **nom conservé**, puis **Fusionner** : les deux historiques sont regroupés. Vos fichiers de résultats ne sont pas modifiés, et chaque fusion peut être annulée. Si les deux noms ont couru ensemble dans une même session, un **avertissement** s'affiche : il s'agit sans doute de deux personnes différentes. |
 | **Démarrage automatique** | Surveiller les nouveaux résultats dès le lancement de l'application (activé par défaut). |
 | **Sessions d'essais** | Charger aussi les essais pour l'onglet **ESSAIS** du détail des courses. Désactivé par défaut, car les essais sont souvent vides et allongent le chargement. |
+| **Mises à jour** | Affiche la version installée et, si une nouvelle version existe, un bouton pour télécharger son installeur. L'application demande à GitHub le numéro de la dernière version à chaque démarrage (activé par défaut) ; décochez la case pour ne plus le faire. |
 
 Les réglages sont enregistrés dans le fichier `appsettings.json` du dossier d'installation (`%LOCALAPPDATA%\Programs\LMU-DeltaRacing`).
 
