@@ -1665,12 +1665,59 @@ p.home-rate {
     border-radius: 2px;
 }
 
-.category-hypercar { background: #881337; }
-.category-lmp2 { background: #1d4ed8; }
-.category-lmp3 { background: #7c3aed; }
-.category-lmgte { background: #15803d; }
-.category-lmgt3 { background: #d97706; }
-.category-other { background: var(--muted); }
+/* Official colors of the categories (see UI_DESIGN_SPEC.md). The orange of LMGT3 and the grey of
+   unknown classes carry dark text: white is hard to read on them. */
+.category-hypercar { --category-color: #c8102e; --category-ink: #fff; }
+.category-lmp2 { --category-color: #144a94; --category-ink: #fff; }
+.category-lmp3 { --category-color: #623078; --category-ink: #fff; }
+.category-lmgte { --category-color: #15803d; --category-ink: #fff; }
+.category-lmgt3 { --category-color: #d97706; --category-ink: #1a0e02; }
+.category-other { --category-color: var(--muted); --category-ink: #0e1116; }
+
+.category-hypercar,
+.category-lmp2,
+.category-lmp3,
+.category-lmgte,
+.category-lmgt3,
+.category-other {
+    border-color: transparent;
+    background: var(--category-color);
+    color: var(--category-ink);
+}
+
+/* The separator row only passes its color on: its cell draws a line and a light tint. */
+.races-table .category-separator {
+    background: none;
+    color: inherit;
+}
+
+.races-table .category-separator td {
+    padding: 0.4rem 0.75rem;
+    border-top: 2px solid var(--category-color);
+    background: color-mix(in srgb, var(--category-color) 14%, transparent);
+}
+
+/* Stays in view when the wide table scrolls sideways. */
+.category-separator-content {
+    position: sticky;
+    left: 0.75rem;
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    gap: 0.9rem;
+}
+
+.category-separator-link {
+    color: var(--text);
+    font-size: 0.7rem;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.category-separator-link:hover,
+.category-separator-link:focus-visible {
+    text-decoration: underline;
+}
 
 .cause-0 { background: #f97316; }
 .cause-1 { background: #38bdf8; }

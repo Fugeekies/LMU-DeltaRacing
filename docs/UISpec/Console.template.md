@@ -78,12 +78,12 @@ Mêmes données et mêmes règles que `Home.razor`. Différences de rendu :
 ### Vue « Mes courses »
 Mêmes lignes, deltas et tri que `MyRaces.razor`.
 * **Filtres :** à la première ouverture de la vue, deux `SelectionPrompt` successifs, Circuit (« Tous les circuits » puis lieux triés, avec recherche) et Catégorie (« Toutes les catégories » puis les catégories). Ils sont conservés jusqu'à la fermeture de l'application ; le choix « Changer les filtres » les redemande.
-* **Groupement :** une règle Spectre par couple lieu + tracé (`Circuit de Spa-Francorchamps ─ 3 résultats`), puis le tableau du circuit.
+* **Groupement :** une règle Spectre par couple lieu + tracé (`Circuit de Spa-Francorchamps ─ 3 résultats`), puis le tableau du circuit, avec une ligne vide entre deux catégories (pas de lien : la console n'a pas de vue Progression).
 * **Colonnes abrégées** pour tenir en 120 colonnes :
 
   | Colonne console | Colonne dashboard |
   |---|---|
-  | CAT. | CATÉGORIE (texte coloré à la couleur de la catégorie) |
+  | CAT. | CATÉGORIE (badge sur la couleur de la catégorie) |
   | DATE | DATE / HEURE (`dd/MM/yyyy HH:mm`) |
   | VOITURE | VOITURE |
   | CLASS. | CLASSEMENT |

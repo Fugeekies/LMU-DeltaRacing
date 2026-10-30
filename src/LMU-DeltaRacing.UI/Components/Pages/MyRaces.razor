@@ -103,32 +103,46 @@ else
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach (var record in MyRacesFilters.OrderRows(circuit))
+                                @* OrderRows keeps each category together: grouping only adds its separator. *@
+                                @foreach (var category in MyRacesFilters.OrderRows(circuit).GroupBy(record => record.Category))
                                 {
-                                    <tr class="@GetPositionClass(record.PositionTier)">
-                                        <td><span class="category-badge">@record.Category</span></td>
-                                        <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
-                                        <td class="car-cell"><strong>@record.Car</strong></td>
-                                        <td class="numeric-cell position-cell">
-                                            @if (record.IsPodium)
-                                            {
-                                                @* Drawn in the colour of the position text: gold, silver or bronze. *@
-                                                <svg class="podium-trophy" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
-                                                    <path d="M7 3h10v4a5 5 0 0 1-10 0z" fill="currentColor" />
-                                                    <path d="M7 5H4.5v1.5a3 3 0 0 0 3 3M17 5h2.5v1.5a3 3 0 0 1-3 3M12 12v4M8.5 20h7M9.5 16h5v4h-5z"
-                                                          fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
-                                                </svg>
-                                            }
-                                            @record.ResultLabel
+                                    <tr class="category-separator @CategoryStyle.CssClass(category.Key)">
+                                        <td colspan="11">
+                                            <div class="category-separator-content">
+                                                <span class="category-badge @CategoryStyle.CssClass(category.Key)">@category.Key</span>
+                                                <a class="category-separator-link"
+                                                   href="@ProgressionLink.For(circuit.Key.TrackVenue, circuit.Key.TrackCourse, category.Key)"
+                                                   title="@($"Voir la progression en {category.Key} sur ce circuit")">📈 Voir la progression</a>
+                                            </div>
                                         </td>
-                                        <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
-                                        <td class="numeric-cell">@DisplayFormat.Lap(record.RaceTime)</td>
-                                        <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
-                                        <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
-                                        <td class="numeric-cell">@DisplayFormat.TotalTime(record.FinishTime)</td>
-                                        <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
-                                        <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
                                     </tr>
+                                    @foreach (var record in category)
+                                    {
+                                        <tr class="@GetPositionClass(record.PositionTier)">
+                                            <td><span class="category-badge @CategoryStyle.CssClass(record.Category)">@record.Category</span></td>
+                                            <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
+                                            <td class="car-cell"><strong>@record.Car</strong></td>
+                                            <td class="numeric-cell position-cell">
+                                                @if (record.IsPodium)
+                                                {
+                                                    @* Drawn in the colour of the position text: gold, silver or bronze. *@
+                                                    <svg class="podium-trophy" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false">
+                                                        <path d="M7 3h10v4a5 5 0 0 1-10 0z" fill="currentColor" />
+                                                        <path d="M7 5H4.5v1.5a3 3 0 0 0 3 3M17 5h2.5v1.5a3 3 0 0 1-3 3M12 12v4M8.5 20h7M9.5 16h5v4h-5z"
+                                                              fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                }
+                                                @record.ResultLabel
+                                            </td>
+                                            <td class="numeric-cell">@(record.GridPosition?.ToString() ?? "—")</td>
+                                            <td class="numeric-cell">@DisplayFormat.Lap(record.RaceTime)</td>
+                                            <td class="numeric-cell">@FormatDelta(record.RaceDelta)</td>
+                                            <td class="numeric-cell">@(record.LapsCompleted?.ToString() ?? "—")</td>
+                                            <td class="numeric-cell">@DisplayFormat.TotalTime(record.FinishTime)</td>
+                                            <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
+                                            <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
+                                        </tr>
+                                    }
                                 }
                             </tbody>
                         </table>
@@ -164,14 +178,12 @@ else
     /// </summary>
     private string GetProgressionLink(string trackVenue, string trackCourse)
     {
-        var category = records
+        var latest = records
             .Where(record => string.Equals(record.TrackVenue, trackVenue, StringComparison.OrdinalIgnoreCase)
                 && string.Equals(record.TrackCourse, trackCourse, StringComparison.OrdinalIgnoreCase))
-            .MaxBy(record => record.StartedAt)
-            ?.Category;
+            .MaxBy(record => record.StartedAt);
 
-        return $"/progression?venue={Uri.EscapeDataString(trackVenue)}&course={Uri.EscapeDataString(trackCourse)}"
-            + (category is null ? string.Empty : $"&category={Uri.EscapeDataString(category)}");
+        return ProgressionLink.For(trackVenue, trackCourse, latest?.Category ?? string.Empty);
     }
 
     /// <summary>

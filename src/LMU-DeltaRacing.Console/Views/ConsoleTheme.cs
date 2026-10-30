@@ -41,23 +41,30 @@ public static class ConsoleTheme
     ];
 
     /// <summary>
-    /// Returns the color of a category; unknown classes are grey.
+    /// Returns the official color of a category; unknown classes are grey.
     /// </summary>
     public static Color Category(string category) => category switch
     {
-        "Hypercar" => new Color(0x88, 0x13, 0x37),
-        "LMP2" => new Color(0x1d, 0x4e, 0xd8),
-        "LMP3" => new Color(0x7c, 0x3a, 0xed),
+        "Hypercar" => new Color(0xc8, 0x10, 0x2e),
+        "LMP2" => new Color(0x14, 0x4a, 0x94),
+        "LMP3" => new Color(0x62, 0x30, 0x78),
         "LMGTE" => new Color(0x15, 0x80, 0x3d),
         "LMGT3" => new Color(0xd9, 0x77, 0x06),
         _ => Muted
     };
 
     /// <summary>
-    /// Returns the escaped markup of a category name in its color.
+    /// Returns a category name as a badge on its color: the official blue and purple are too dark
+    /// to be read as text on a black terminal.
     /// </summary>
-    public static string CategoryMarkup(string category) =>
-        Colored(category, Category(category));
+    public static string CategoryMarkup(string category)
+    {
+        ArgumentNullException.ThrowIfNull(category);
+
+        // White text is hard to read on the orange of LMGT3 and the grey of unknown classes.
+        var ink = category is "Hypercar" or "LMP2" or "LMP3" or "LMGTE" ? "white" : "black";
+        return $"[{ink} on {Category(category).ToMarkup()}] {Markup.Escape(category)} [/]";
+    }
 
     /// <summary>
     /// Returns a lap-time delta colored as a gain (green) or a loss (red).

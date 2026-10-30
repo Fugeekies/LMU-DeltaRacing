@@ -35,7 +35,7 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [ ] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, pour que les prochaines évolutions sachent si elles doivent toucher la console.
 
 ### Liste d'idées à prioriser
-- [ ] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (badges neutres aujourd'hui ; couleurs LMP3 et LMGTE à définir).
+- [x] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (couleurs officielles des fonds de numéro de course, avec les séparateurs de catégorie de « Mes courses »).
 - [ ] Multi langue.
 - [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
