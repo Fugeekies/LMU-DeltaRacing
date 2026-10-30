@@ -61,8 +61,8 @@ public static class ConsoleTheme
     {
         ArgumentNullException.ThrowIfNull(category);
 
-        // White text is hard to read on the orange of LMGT3 and the grey of unknown classes.
-        var ink = category is "Hypercar" or "LMP2" or "LMP3" or "LMGTE" ? "white" : "black";
+        // White text is hard to read on the grey of unknown classes.
+        var ink = CarCategory.Known.Contains(category) ? "white" : "black";
         return $"[{ink} on {Category(category).ToMarkup()}] {Markup.Escape(category)} [/]";
     }
 

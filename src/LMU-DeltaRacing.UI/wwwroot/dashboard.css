@@ -1708,13 +1708,13 @@ p.home-rate {
     border-radius: 2px;
 }
 
-/* Official colors of the categories (see UI_DESIGN_SPEC.md). The orange of LMGT3 and the grey of
-   unknown classes carry dark text: white is hard to read on them. */
+/* Official colors of the categories (see UI_DESIGN_SPEC.md). The grey of unknown classes carries
+   dark text: white is hard to read on it. */
 .category-hypercar { --category-color: #c8102e; --category-ink: #fff; }
 .category-lmp2 { --category-color: #144a94; --category-ink: #fff; }
 .category-lmp3 { --category-color: #623078; --category-ink: #fff; }
 .category-lmgte { --category-color: #15803d; --category-ink: #fff; }
-.category-lmgt3 { --category-color: #d97706; --category-ink: #1a0e02; }
+.category-lmgt3 { --category-color: #d97706; --category-ink: #fff; }
 .category-other { --category-color: var(--muted); --category-ink: #0e1116; }
 
 .category-hypercar,
