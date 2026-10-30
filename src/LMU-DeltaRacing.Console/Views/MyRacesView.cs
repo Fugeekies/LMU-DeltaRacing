@@ -86,8 +86,17 @@ public static class MyRacesView
         table.AddColumn(new TableColumn("QUALIF").RightAligned().NoWrap());
         table.AddColumn(new TableColumn("Δ QUALIF").RightAligned().NoWrap());
 
+        // The empty row stands for the separators of the dashboard, which carry the link to its
+        // progression page: the console has no such page.
+        string? previousCategory = null;
         foreach (var record in records)
         {
+            if (previousCategory is not null && previousCategory != record.Category)
+            {
+                table.AddEmptyRow();
+            }
+
+            previousCategory = record.Category;
             table.AddRow(
                 ConsoleTheme.CategoryMarkup(record.Category),
                 DisplayFormat.DateTime(record.StartedAt),

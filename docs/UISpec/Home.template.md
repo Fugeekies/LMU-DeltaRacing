@@ -76,7 +76,7 @@ Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension
 * Sous les pastilles, la **dernière course** : date, circuit, voiture, position en classe, statut, meilleur tour, et un lien vers son événement dans « Détail des courses ».
 
 #### Couleurs
-Couleurs des catégories dans les barres et légendes (voir `UI_DESIGN_SPEC.md`) : Hypercar `#881337`, LMP2 `#1d4ed8`, LMP3 `#7c3aed`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
+Couleurs des catégories dans les barres et légendes (voir `UI_DESIGN_SPEC.md`, section 4) : Hypercar `#c8102e`, LMP2 `#144a94`, LMP3 `#623078`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
 
 #### États de la page
 * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».

@@ -1,6 +1,6 @@
 ## 1. 🏎️ Menu : Mes Courses (`MyRaces.razor`)
 
-> Spécification alignée sur le code au 25/10/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
+> Spécification alignée sur le code au 30/10/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
 
 ### Description
 Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
@@ -29,6 +29,7 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   * Catégorie : « Toutes les catégories », Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les éventuelles classes inconnues présentes dans les lignes.
   * Les filtres s'appliquent sans rechargement et sont conservés lors des mises à jour en direct.
 * **Groupement à l'affichage :** un bloc par couple lieu + tracé, triés par nom de lieu. L'en-tête affiche « CIRCUIT », le lieu, le tracé s'il diffère du lieu et un badge « N résultats ». Les lignes d'un bloc sont groupées par catégorie, dans l'ordre du filtre (Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues par ordre alphabétique), puis triées de la plus récente à la plus ancienne : les catégories ne sont pas mélangées.
+* **Séparateurs de catégorie :** chaque catégorie d'un bloc s'ouvre sur une ligne de séparation, y compris la première : filet et léger fond à la couleur de la catégorie (`UI_DESIGN_SPEC.md`, section 4), badge de la catégorie et lien **« 📈 Voir la progression »**, qui ouvre Progression sur ce circuit (lieu + tracé) et cette catégorie. Le badge et le lien restent visibles quand le tableau défile horizontalement. L'icône 📈 de l'en-tête du circuit reste : elle ouvre la dernière catégorie roulée.
 * **Structure du tableau :**
 
   | Colonne | Contenu | Format |
@@ -84,9 +85,11 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
 │  CATÉGORIE  DATE / HEURE      VOITURE       CLASS.  GRILLE MT COURSE  DELTA COURSE  TOURS  TEMPS TOTAL MT QUALIF  DELTA QUALIF   │
 │  ──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────  │
+│  ━━ [Hypercar]  📈 Voir la progression ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
 │  Hypercar   16/10/2026 21:00  Ferrari 499P  2e      3      2:03.110   🟢 -0.120s    12     25:01.432   2:02.451   🟢 -0.245s     │
 │  Hypercar   16/10/2026 20:20  Ferrari 499P  5e      5      2:03.230   🔴 +0.450s    12     25:03.876   2:02.696   🔴 +0.102s     │
 │  Hypercar   16/10/2026 19:40  Ferrari 499P  —       —      —          —             —      —           2:02.594   —              │
+│  ━━ [LMGTE]  📈 Voir la progression ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━  │
 │  LMGTE      12/10/2026 14:00  Porsche 911   7e      8      2:18.780   —             11     25:40.120   2:17.594   —              │
 │                                                                                                                                  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤

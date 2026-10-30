@@ -168,6 +168,43 @@ public sealed class ConsoleViewsTests
     }
 
     /// <summary>
+    /// Verifies that the categories of a circuit are set apart by an empty row, as they are by the
+    /// separators of the dashboard.
+    /// </summary>
+    [TestMethod]
+    public void MyRacesView_separates_the_categories_of_a_circuit()
+    {
+        var records = MyRacesPresentation.CreateRecords(FixtureSessions.Value, MainDriver);
+        var circuit = records
+            .GroupBy(record => (record.TrackVenue, record.TrackCourse))
+            .First(group => group.Select(record => record.Category).Distinct().Count() > 1);
+        var circuitRecords = circuit.ToArray();
+        var expectedSeparators = circuitRecords.Select(record => record.Category).Distinct().Count() - 1;
+
+        var output = Render(MyRacesView.Create(circuitRecords, circuit.Key.TrackVenue, null));
+
+        output.Split('\n')
+            .Count(line => line.Contains('│') && line.All(character => character is '│' or ' ' or '\r'))
+            .Should().Be(expectedSeparators);
+    }
+
+    /// <summary>
+    /// Verifies that a category is a colored badge, because the dark official colors cannot be read
+    /// as text on a black terminal, and that the orange of LMGT3 carries dark text.
+    /// </summary>
+    [TestMethod]
+    [DataRow("Hypercar", "[white on #C8102E] Hypercar [/]")]
+    [DataRow("LMP2", "[white on #144A94] LMP2 [/]")]
+    [DataRow("LMP3", "[white on #623078] LMP3 [/]")]
+    [DataRow("LMGTE", "[white on #15803D] LMGTE [/]")]
+    [DataRow("LMGT3", "[black on #D97706] LMGT3 [/]")]
+    [DataRow("GT4", "[black on #8B949E] GT4 [/]")]
+    public void CategoryMarkup_uses_the_official_colors_as_a_badge(string category, string expected)
+    {
+        ConsoleTheme.CategoryMarkup(category).Should().BeEquivalentTo(expected);
+    }
+
+    /// <summary>
     /// Verifies that the class position of a podium is preceded by a trophy, as on the dashboard,
     /// and that no other row gets one.
     /// </summary>

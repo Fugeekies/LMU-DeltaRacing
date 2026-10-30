@@ -33,14 +33,16 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 
 ---
 
-### 4. Badges de Catégories WEC
-* **Hypercar :** Fond bordeaux / rouge foncé (`#881337`), texte blanc.
-* **LMP2 :** Fond bleu vif (`#1d4ed8`), texte blanc.
-* **LMGT3 :** Fond orange / ambre (`#d97706`), texte blanc ou noir.
-* **LMP3 :** Fond violet (`#7c3aed`), texte blanc.
-* **LMGTE :** Fond vert (`#15803d`), texte blanc.
+### 4. Couleurs officielles des catégories
+Chaque catégorie prend la couleur de fond de son numéro de course, en aplat, sans dégradé, sauf LMGT3 (voir ci-dessous). LMP2 et LMP3 sont mesurées sur les visuels de la [page Catégories de l'ELMS](https://www.europeanlemansseries.com/fr/page/categories).
+* **Hypercar :** Rouge (`#c8102e`), texte blanc. Teinte choisie : la catégorie n'existe pas en ELMS.
+* **LMP2 :** Bleu (`#144a94`), texte blanc.
+* **LMP3 :** Violet (`#623078`), texte blanc.
+* **LMGTE :** Vert (`#15803d`), texte blanc.
+* **LMGT3 :** Orange (`#d97706`), texte sombre (`#1a0e02`), plus lisible que le blanc. Son numéro officiel est vert, comme celui de LMGTE : l'orange évite de confondre les deux catégories.
+* **Classe inconnue :** Gris (`#8b949e`), texte sombre.
 
-> État actuel : toutes les catégories utilisent le même badge neutre (bordure `#30363d`). Les couleurs ci-dessus ne sont appliquées qu'aux barres et légendes de ventilation par catégorie de l'Accueil.
+Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux barres et légendes de l'Accueil, et aux séparateurs de catégorie de Mes courses. Dans la console, la catégorie est un badge sur la même couleur : le bleu et le violet sont illisibles en texte sur un terminal noir.
 
 ---
 

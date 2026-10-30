@@ -172,6 +172,28 @@ public sealed class MyRacesPresentationTests
     /// driver into 37 rows and hid every GTE and LMP3 session.
     /// </summary>
     [TestMethod]
+    public void Every_category_of_a_circuit_can_be_opened_in_the_progression_page()
+    {
+        var parser = new LMU_DeltaRacing.Infrastructure.Parsing.XmlResultParser();
+        var sessions = Directory
+            .EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*.xml")
+            .Select(path =>
+            {
+                using var stream = File.OpenRead(path);
+                return parser.Parse(stream);
+            })
+            .ToArray();
+
+        var circuits = ProgressionPresentation.GetCircuits(sessions, "Driver Tom");
+
+        foreach (var record in MyRacesPresentation.CreateRecords(sessions, "Driver Tom"))
+        {
+            circuits.Single(circuit => circuit.TrackVenue == record.TrackVenue && circuit.TrackCourse == record.TrackCourse)
+                .Categories.Should().Contain(record.Category);
+        }
+    }
+
+    [TestMethod]
     public void CreateRecords_on_real_fixtures_keeps_every_race_and_every_class()
     {
         var parser = new LMU_DeltaRacing.Infrastructure.Parsing.XmlResultParser();
