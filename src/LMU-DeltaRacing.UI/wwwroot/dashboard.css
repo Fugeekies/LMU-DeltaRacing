@@ -1608,11 +1608,12 @@ p.home-rate {
     overflow-wrap: anywhere;
 }
 
+/* No overflow: hidden here, it would cut the popups: the end segments are rounded instead. */
 .home-bar {
+    position: relative;
     display: flex;
     height: 12px;
     margin: 0.35rem 0 0.75rem;
-    overflow: hidden;
     border-radius: 3px;
     background: var(--surface-raised);
 }
@@ -1621,9 +1622,46 @@ p.home-rate {
     height: 100%;
 }
 
+.home-bar-part:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.home-bar-part:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.home-bar-part:only-child {
+    border-radius: 3px;
+}
+
 .home-bar-thin {
-    height: 6px;
     margin: 0.75rem 0 0.5rem;
+}
+
+/* Placed against the bar or the legend, not its segment: at 0 % its left edge meets the start and
+   at 100 % its right edge meets the end, so a popup never leaves its tile. */
+.home-tooltip {
+    position: absolute;
+    z-index: 5;
+    bottom: calc(100% + 0.35rem);
+    left: var(--tooltip-position);
+    display: none;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-raised);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 45%);
+    color: var(--text);
+    font-size: 0.7rem;
+    font-weight: 600;
+    pointer-events: none;
+    transform: translateX(calc(var(--tooltip-position) * -1));
+    white-space: nowrap;
+}
+
+.home-bar-part:hover > .home-tooltip,
+.home-share-list li:hover > .home-tooltip {
+    display: block;
 }
 
 .home-share-list.home-breakdown-legend {
@@ -1644,6 +1682,7 @@ p.home-rate {
 }
 
 .home-share-list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem 1rem;
@@ -1655,6 +1694,10 @@ p.home-rate {
 
 .home-share-list span {
     color: var(--muted);
+}
+
+.home-share-list .home-tooltip {
+    color: var(--text);
 }
 
 .home-swatch {
