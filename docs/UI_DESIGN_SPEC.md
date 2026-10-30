@@ -39,7 +39,7 @@ Chaque catégorie prend la couleur de fond de son numéro de course, en aplat, s
 * **LMP2 :** Bleu (`#144a94`), texte blanc.
 * **LMP3 :** Violet (`#623078`), texte blanc.
 * **LMGTE :** Vert (`#15803d`), texte blanc.
-* **LMGT3 :** Orange (`#d97706`), texte sombre (`#1a0e02`), plus lisible que le blanc. Son numéro officiel est vert, comme celui de LMGTE : l'orange évite de confondre les deux catégories.
+* **LMGT3 :** Orange (`#d97706`), texte blanc. Son numéro officiel est vert, comme celui de LMGTE : l'orange évite de confondre les deux catégories.
 * **Classe inconnue :** Gris (`#8b949e`), texte sombre.
 
 Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux barres et légendes de l'Accueil, et aux séparateurs de catégorie de Mes courses. Dans la console, la catégorie est un badge sur la même couleur : le bleu et le violet sont illisibles en texte sur un terminal noir.

@@ -130,10 +130,12 @@ else
                 }
                 else
                 {
+                    var causeSegments = HomeBarLayout.Create(dashboard.RetirementCauses.Select(cause =>
+                        new HomeBarPart(cause.Label, cause.Share, cause.Count.ToString(System.Globalization.CultureInfo.InvariantCulture))));
                     <div class="home-bar" aria-hidden="true">
-                        @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
+                        @foreach (var (segment, index) in causeSegments.Select((segment, index) => (segment, index)))
                         {
-                            <span class="home-bar-part cause-@(index % CauseColorCount)" style="width: @FormatPercentWidth(cause.Share)"></span>
+                            <span class="home-bar-part cause-@(index % CauseColorCount)" style="width: @segment.Width">@RenderTooltip(segment)</span>
                         }
                     </div>
                     <ul class="home-share-list">
@@ -141,7 +143,8 @@ else
                         {
                             <li>
                                 <i class="home-swatch cause-@(index % CauseColorCount)" aria-hidden="true"></i>
-                                @cause.Label <strong>@cause.Count</strong> <span>(@DisplayFormat.Percent(cause.Share))</span>
+                                @cause.Label <span>(@cause.Count · @DisplayFormat.Percent(cause.Share))</span>
+                                @RenderTooltip(causeSegments[index])
                             </li>
                         }
                     </ul>
@@ -184,7 +187,7 @@ else
 
     /// <summary>
     /// Renders the breakdown by category: a stacked bar and its legend for a total, the legend alone
-    /// for an average, whose parts do not add up to the total.
+    /// for an average, whose parts do not add up to the total and so have no share to show on hover.
     /// </summary>
     private static RenderFragment RenderBreakdown(HomeStat stat, Func<double?, string> format, bool stacked) =>
         @<text>
@@ -193,21 +196,29 @@ else
                 var parts = stacked
                     ? stat.Categories.Where(part => part.Value > 0).ToArray()
                     : stat.Categories.Where(part => part.Value.HasValue).ToArray();
+                IReadOnlyList<HomeBarSegment> segments = stacked
+                    ? HomeBarLayout.Create(parts.Select(part =>
+                        new HomeBarPart(part.Category, part.Value!.Value / stat.Value!.Value, format(part.Value))))
+                    : [];
                 @if (stacked)
                 {
                     <div class="home-bar home-bar-thin" aria-hidden="true">
-                        @foreach (var part in parts)
+                        @foreach (var segment in segments)
                         {
-                            <span class="home-bar-part @CategoryStyle.CssClass(part.Category)" style="width: @FormatPercentWidth(part.Value!.Value / stat.Value!.Value)"></span>
+                            <span class="home-bar-part @CategoryStyle.CssClass(segment.Label)" style="width: @segment.Width">@RenderTooltip(segment)</span>
                         }
                     </div>
                 }
                 <ul class="home-share-list home-breakdown-legend">
-                    @foreach (var part in parts)
+                    @foreach (var (part, index) in parts.Select((part, index) => (part, index)))
                     {
                         <li>
                             <i class="home-swatch @CategoryStyle.CssClass(part.Category)" aria-hidden="true"></i>
-                            @part.Category <strong>@format(part.Value)</strong>
+                            @part.Category (@format(part.Value))
+                            @if (stacked)
+                            {
+                                @RenderTooltip(segments[index])
+                            }
                         </li>
                     }
                 </ul>
@@ -239,6 +250,6 @@ else
     private static RenderFragment RenderSigned(double? value, string format) =>
         @<span class="@(value > 0 ? "delta-gain" : value < 0 ? "delta-loss" : string.Empty)">@DisplayFormat.Signed(value, format)</span>;
 
-    private static string FormatPercentWidth(double share) =>
-        $"{(share * 100).ToString("0.###", System.Globalization.CultureInfo.InvariantCulture)}%";
+    private static RenderFragment RenderTooltip(HomeBarSegment segment) =>
+        @<span class="home-tooltip" style="--tooltip-position: @segment.Center">@segment.Tooltip</span>;
 }

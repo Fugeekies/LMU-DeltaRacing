@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Accueil : les barres des tuiles sont plus hautes (12 px), les valeurs de la légende passent entre parenthèses et sans gras, et survoler une barre ou sa légende affiche une pop-up avec la valeur et son pourcentage du total.
 - Mes courses : chaque catégorie d'un circuit s'ouvre sur un séparateur à sa couleur, avec un lien « Voir la progression » qui ouvre Progression sur ce circuit et cette catégorie. Dans la console, une ligne vide sépare les catégories.
 - Catégories : couleurs officielles, celles du fond de numéro de course (Hypercar rouge, LMP2 bleu, LMP3 violet, LMGTE vert), LMGT3 restant en orange pour ne pas être confondu avec LMGTE, sur les badges de Mes courses et de Détail des courses, jusque-là neutres, et sur les barres de l'Accueil. Dans la console, la catégorie devient un badge coloré.
 - Dashboard : numéro de version sur l'écran de chargement et dans **Options › Mises à jour**. Au démarrage, l'application demande à GitHub le numéro de la dernière version (une requête, sans résultat ni nom de pilote, délai de 5 s) ; si une version plus récente existe, une fenêtre le signale 3 secondes, une fois par lancement, et Options propose un bouton de téléchargement direct de l'installeur. La case de la même section désactive la vérification (`LMU:CheckForUpdates`, activée par défaut). Une version plus ancienne que celle-ci ne peut pas signaler de mise à jour : la première installation se fait à la main.

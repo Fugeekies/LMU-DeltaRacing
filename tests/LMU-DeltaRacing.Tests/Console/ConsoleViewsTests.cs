@@ -190,14 +190,14 @@ public sealed class ConsoleViewsTests
 
     /// <summary>
     /// Verifies that a category is a colored badge, because the dark official colors cannot be read
-    /// as text on a black terminal, and that the orange of LMGT3 carries dark text.
+    /// as text on a black terminal, and that only unknown classes carry dark text.
     /// </summary>
     [TestMethod]
     [DataRow("Hypercar", "[white on #C8102E] Hypercar [/]")]
     [DataRow("LMP2", "[white on #144A94] LMP2 [/]")]
     [DataRow("LMP3", "[white on #623078] LMP3 [/]")]
     [DataRow("LMGTE", "[white on #15803D] LMGTE [/]")]
-    [DataRow("LMGT3", "[black on #D97706] LMGT3 [/]")]
+    [DataRow("LMGT3", "[white on #D97706] LMGT3 [/]")]
     [DataRow("GT4", "[black on #8B949E] GT4 [/]")]
     public void CategoryMarkup_uses_the_official_colors_as_a_badge(string category, string expected)
     {

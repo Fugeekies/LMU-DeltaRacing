@@ -1608,11 +1608,12 @@ p.home-rate {
     overflow-wrap: anywhere;
 }
 
+/* No overflow: hidden here, it would cut the popups: the end segments are rounded instead. */
 .home-bar {
+    position: relative;
     display: flex;
     height: 12px;
     margin: 0.35rem 0 0.75rem;
-    overflow: hidden;
     border-radius: 3px;
     background: var(--surface-raised);
 }
@@ -1621,9 +1622,46 @@ p.home-rate {
     height: 100%;
 }
 
+.home-bar-part:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+.home-bar-part:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+.home-bar-part:only-child {
+    border-radius: 3px;
+}
+
 .home-bar-thin {
-    height: 6px;
     margin: 0.75rem 0 0.5rem;
+}
+
+/* Placed against the bar or the legend, not its segment: at 0 % its left edge meets the start and
+   at 100 % its right edge meets the end, so a popup never leaves its tile. */
+.home-tooltip {
+    position: absolute;
+    z-index: 5;
+    bottom: calc(100% + 0.35rem);
+    left: var(--tooltip-position);
+    display: none;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-raised);
+    box-shadow: 0 8px 20px rgb(0 0 0 / 45%);
+    color: var(--text);
+    font-size: 0.7rem;
+    font-weight: 600;
+    pointer-events: none;
+    transform: translateX(calc(var(--tooltip-position) * -1));
+    white-space: nowrap;
+}
+
+.home-bar-part:hover > .home-tooltip,
+.home-share-list li:hover > .home-tooltip {
+    display: block;
 }
 
 .home-share-list.home-breakdown-legend {
@@ -1644,6 +1682,7 @@ p.home-rate {
 }
 
 .home-share-list {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     gap: 0.35rem 1rem;
@@ -1657,6 +1696,10 @@ p.home-rate {
     color: var(--muted);
 }
 
+.home-share-list .home-tooltip {
+    color: var(--text);
+}
+
 .home-swatch {
     display: inline-block;
     width: 0.65rem;
@@ -1665,13 +1708,13 @@ p.home-rate {
     border-radius: 2px;
 }
 
-/* Official colors of the categories (see UI_DESIGN_SPEC.md). The orange of LMGT3 and the grey of
-   unknown classes carry dark text: white is hard to read on them. */
+/* Official colors of the categories (see UI_DESIGN_SPEC.md). The grey of unknown classes carries
+   dark text: white is hard to read on it. */
 .category-hypercar { --category-color: #c8102e; --category-ink: #fff; }
 .category-lmp2 { --category-color: #144a94; --category-ink: #fff; }
 .category-lmp3 { --category-color: #623078; --category-ink: #fff; }
 .category-lmgte { --category-color: #15803d; --category-ink: #fff; }
-.category-lmgt3 { --category-color: #d97706; --category-ink: #1a0e02; }
+.category-lmgt3 { --category-color: #d97706; --category-ink: #fff; }
 .category-other { --category-color: var(--muted); --category-ink: #0e1116; }
 
 .category-hypercar,
