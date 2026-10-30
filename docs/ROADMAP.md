@@ -55,7 +55,6 @@ Spécifications : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6) et [`UISpec/Se
 - [x] **Options :** bouton de téléchargement direct de l'installeur de la dernière release ; lien vers la page des versions si la vérification échoue.
 - [x] Remplacer dans le README la promesse « ne se connecte à aucun service en ligne » par « aucune donnée n'est collectée ».
 - [x] `Test-PublishedApp.ps1 -ExpectedVersion` : la release échoue si la version affichée n'est pas celle du tag.
-- Écarté pour l'instant : téléchargement et lancement de l'installeur par l'application elle-même, à reconsidérer une fois l'installeur signé (jalon SignPath).
 
 ### Jalon — Garde-fous de CI — 29/10/2026 · PR [#45](https://github.com/Fugeekies/LMU-DeltaRacing/pull/45)
 Issu de l'audit d'octobre 2026. Avant ce jalon, aucun test ne tournait sur les PR et la release publiait sans lancer les tests unitaires ; les garde-fous ajoutés par l'audit (avertissements traités comme erreurs, empreinte SHA-256 du parser) ne protègent le projet que s'ils sont exécutés à chaque modification.
