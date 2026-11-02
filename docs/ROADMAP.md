@@ -5,9 +5,10 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 ## À faire
 
 ### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase).
-- [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
-- [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
+La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions à valider : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
+- [ ] **Fixtures :** faire correspondre les noms des événements du `Stream` aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom. Les résultats d'origine n'étant pas disponibles, la proposition retrouve les pilotes par les temps des événements `Score`.
+- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
+- [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités), sans extrapoler les balises.
 - [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
 - [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise du jalon « Profils de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
