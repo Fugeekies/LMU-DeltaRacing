@@ -60,7 +60,7 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
   - `TrackLimits` : attributs `Driver`, `ID`, `Lap` (base 0), `WarningPoints`, `CurrentPoints`, `Resolution` ; texte `No Further Action`, `Warning`, `Invalid Lap Cut Track` (jamais en course), `Drive Through Penalty`, `Stop Go Penalty` ou `Disqualify`.
   - `Penalty` : attributs `Driver`, `ID`, `Time`, `Penalty`, `Reason`, `Laps` ; texte libre (`received Drive Thru penalty…`, `served…`, `finished before serving penalty…`).
   - `Score` : `Nom(id) lap=N point=P t=.. et=..`, avec `lap` en base 0 : `point=1` donne `s1`, `point=2` donne `s2`, et `point=0` clôt le tour (dernier secteur ou temps du tour, non distingué). Comparer ces temps aux `<Lap>` est le seul moyen fiable de relier un nom du `Stream` à un pilote des fixtures.
-  - `Sector` : texte libre sur les dégâts (`reports new suspension damage`) malgré son nom. `Sent` : messages du serveur (`"Nom" has taken the wheel.`). `ChatMessage` : contenu retiré des fixtures.
+  - `Sector` : texte libre sur les dégâts (`reports new suspension damage`) malgré son nom. `Sent` : messages (`"Nom" has taken the wheel.`). `ChatMessage` : contenu retiré des fixtures.
 
 ## Règles Git & PR
 
