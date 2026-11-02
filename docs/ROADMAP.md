@@ -5,12 +5,12 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 ## À faire
 
 ### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase).
-- [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
-- [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
-- [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
-- [ ] **Page « Profils de conduite » :** nouvel onglet avec les contacts et les tours invalides de chaque pilote. Contacts : événements `Incident` (`Driver X(0) reported contact (85.95) with another vehicle Driver Y(1)`, 11 506 en course dans les fixtures). Tours invalides : en course, « Invalid Lap Cut Track » n'apparaît pas (voir le jalon « Écarts UI à traiter ») : décider si les événements `TrackLimits` ou les tours sans temps en tiennent lieu. Spécification `docs/UISpec/` à écrire avant de coder.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profils de conduite ».
+La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
+- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
+- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
+- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
+- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profil de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
 
 ### Jalon — Tableaux : colonnes et données
@@ -22,10 +22,10 @@ Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui vi
 ### Jalon — Analyse de course tour par tour 
 Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
 - [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
-- [ ] **Parser :** lire ces données, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
+- [ ] **Parser :** lire les données restantes (`p`, `et` et `pit` sont déjà lus), justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
 - [ ] **Régularité :** écart entre les tours d'une course, comparé au meilleur tour du pilote et à ses adversaires. Ne demande aucune nouvelle lecture XML.
 - [ ] **Records personnels :** meilleur tour par couple circuit + voiture et vitesse de pointe (`topspeed`), avec un repère quand un record tombe.
-- [ ] **Graphique tour par tour** dans Détail des courses : courbe des temps et de la position à chaque tour.
+- [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le déroulé de la course.
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
 
@@ -70,6 +70,14 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Profil de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
+Spécification : [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md). Dashboard uniquement.
+- [x] **Coût des incidents :** temps perdu mesuré contre le tour médian de chaque course, contacts au premier tour, places perdues, dégâts, abandons après contact, zone à risque par circuit.
+- [x] **Déroulé de la course** dans Détail des courses : position tour par tour avec les incidents et les arrêts au stand.
+- [x] Nouvel onglet **Profil de conduite**, centré sur le pilote sélectionné : bilan pour 100 tours comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, 10 dernières courses, pilotes les plus touchés, obstacles et motifs de pénalité.
+- [x] **Contacts :** les signalements d'un même accrochage comptent une fois, pour chaque pilote impliqué (regroupement à 5 s, mesuré sur les fixtures).
+- [x] **Tours invalides :** LMU n'en signale pas en course. Ils sont rapportés aux tours de qualification, sans déduire de tours invalides en course.
 
 ### Jalon — Identité et chronologie des sessions — 02/11/2026 · PR [#52](https://github.com/Fugeekies/LMU-DeltaRacing/pull/52)
 Issu de l'audit d'octobre 2026. Décisions et simulation sur les fixtures : [`propositions/identite-chronologie-sessions.md`](propositions/identite-chronologie-sessions.md).

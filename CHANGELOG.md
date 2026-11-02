@@ -10,6 +10,11 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Dashboard : nouvel onglet **Profil de conduite**, le bilan du pilote sélectionné sur ses qualifications et ses courses : contacts, obstacles, avertissements, tours invalidés et pénalités pour 100 tours, comparés aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses, les pilotes qu'il touche le plus, les obstacles et ses motifs de pénalité.
+- Profil de conduite : bloc **Ce que vos incidents vous coûtent** : temps perdu sur les tours avec contact, mesuré contre le tour médian de chaque course, part des contacts au premier tour, places perdues, contacts avec dégâts, abandons après un contact, circuit et course les plus coûteux, et zone à risque de chaque circuit.
+- Détail des courses : **déroulé de la course**, la position tour par tour avec les contacts, dégâts, pénalités, limites de piste et arrêts au stand ; colonnes **CONTACTS** et **LIMITES** ; fil chronologique des incidents d'un pilote en cliquant sur ses chiffres.
+- Parser : lecture de la position, du début et de l'arrêt au stand de chaque tour, et des contacts, limites de piste, pénalités et dégâts du journal `Stream` (`Session.Events`) ; un événement de forme inattendue est ignoré sans rendre le fichier illisible.
+- Fixtures : les noms des événements du `Stream` correspondent de nouveau aux pilotes listés (`scripts/Repair-StreamNames.ps1`), sans changer les alias ni les retouches de Driver Tom.
 - Import : un fichier dont la session est déjà importée (copie sous un autre nom) est ignoré et signalé comme doublon (`SessionImportStatus.SkippedDuplicate`), sans compter deux fois ses résultats ni apparaître en échec. Le dashboard l'indique sous « Fichiers en échec », la console dans son résumé d'import et dans les nouveaux imports.
 - Accueil : les barres des tuiles sont plus hautes (12 px), les valeurs de la légende passent entre parenthèses et sans gras, et survoler une barre ou sa légende affiche une pop-up avec la valeur et son pourcentage du total.
 - Mes courses : chaque catégorie d'un circuit s'ouvre sur un séparateur à sa couleur, avec un lien « Voir la progression » qui ouvre Progression sur ce circuit et cette catégorie. Dans la console, une ligne vide sépare les catégories.
@@ -25,6 +30,8 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Console Spectre refondue sur les données du dashboard : bandeau d'état (pilote, surveillance, sessions, échecs) et menu **Accueil**, **Mes courses**, **Options**, **Quitter**. L'Accueil et Mes courses reprennent les calculs du dashboard (ventilation par catégorie en colonnes, filtres Circuit et Catégorie) ; les Options permettent de changer le dossier des résultats (rechargement immédiat), le pilote principal, les fusions de pilotes, le démarrage automatique de la surveillance et les réglages du log. Les nouveaux imports sont signalés au retour au menu, sans casser l'affichage des menus.
 
 ### Changed
+- Dashboard : le navigateur s'ouvre sur `deltaracing.localhost:<port>` au lieu de `127.0.0.1:<port>`. Le serveur reste limité à `127.0.0.1`.
+- Dashboard : nouvel ordre des onglets : Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Classement des coureurs, Options.
 - Sessions : l'heure d'une session est celle de sa phase (`<Race><DateTime>`, `<Qualify><DateTime>`…), à défaut `RaceResults/DateTime`, commun à toute une série de sessions. Les heures affichées avancent donc d'un maximum de 16 min en course et de 3 min en qualification ; les événements et les paires qualif/course ne changent pas sur les fixtures.
 - Sessions : l'identifiant est calculé à partir du circuit, de la phase et de sa date, au lieu d'être aléatoire à chaque chargement. Un événement est identifié par sa première session hors essais : les liens `?event=` survivent à un redémarrage et au changement de l'option « Charger les sessions d'essais ».
 - Code : la nature d'une session (essais, qualification, course) est lue une fois dans le domaine (`Session.Kind`) et le meilleur tour calculé une fois (`Driver.BestLap`) ; le rang en classe, le nom de la voiture et la catégorie (`DriverResults`) sont partagés par toutes les vues, au lieu de 4 à 7 copies légèrement différentes.
@@ -38,6 +45,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Release : le workflow manuel demande le type de version (Majeur, Mineur, Patch) au lieu du numéro, incrémente le dernier tag `vX.Y.Z` et liste dans les notes de la release une ligne par PR fusionnée depuis la release précédente.
 
 ### Fixed
+- Dashboard : l'onglet du navigateur affichait l'adresse au lieu du titre de la page après l'écran de chargement. Il affiche désormais « LMU DeltaRacing » pendant le chargement, puis le titre de chaque page.
 - Import : un fichier XML bien formé qui n'est pas un résultat LMU (sans `RaceResults`, sans `DateTime`, numéro de tour invalide…) bloquait le dashboard sur « Chargement… » au démarrage et arrêtait la surveillance du dossier. Il est désormais listé dans les échecs d'import et les autres fichiers sont chargés.
 - Import : une erreur inattendue pendant l'import d'un fichier n'arrête plus la surveillance ni le chargement initial ; le fichier est compté en échec.
 - Console : les statistiques d'exécution (`lmu-deltaracing-stats.json`) ne perdent plus d'imports quand plusieurs fichiers sont importés en même temps.

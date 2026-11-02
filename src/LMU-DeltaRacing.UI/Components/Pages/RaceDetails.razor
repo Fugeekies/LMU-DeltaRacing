@@ -88,6 +88,8 @@ else
                             <th scope="col" class="numeric-cell">TOUR IDÉAL <span class="th-sub">ÉCART</span></th>
                             <th scope="col" class="numeric-cell">MEILLEUR TOUR <span class="th-sub">ÉCART</span></th>
                             <th scope="col" class="numeric-cell">TEMPS TOTAL <span class="th-sub">ÉCART</span></th>
+                            <th scope="col" class="numeric-cell">CONTACTS <span class="th-sub">OBSTACLES</span></th>
+                            <th scope="col" class="numeric-cell">LIMITES <span class="th-sub">TOURS INVALIDÉS</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -105,6 +107,45 @@ else
                     </tbody>
                 </table>
             </div>
+
+            @* The story opens on the selected driver: it is the race they came to read. *@
+            @if ((results.FirstOrDefault(result => result.Name == selectedDriver) ?? results.FirstOrDefault(result => result.IsPlayer)) is { } incidentsDriver)
+            {
+                var story = RaceStoryPresentation.Create(selectedSession!, incidentsDriver.Name);
+                <section class="incident-panel" aria-label="Récit de la session du pilote">
+                    <div class="incident-panel-heading">
+                        <h3>@(story is null ? "Incidents" : "Déroulé de la course") de @incidentsDriver.Name</h3>
+                        @if (selectedDriver is not null)
+                        {
+                            <button type="button" class="incident-close" @onclick="() => selectedDriver = null">Fermer</button>
+                        }
+                    </div>
+                    @if (story is not null)
+                    {
+                        <RaceStoryChart Story="story" />
+                    }
+                    @if (incidentsDriver.Incidents.Count == 0)
+                    {
+                        <p class="incident-empty">Aucun incident dans cette session.</p>
+                    }
+                    else
+                    {
+                        <ol class="incident-list">
+                            @* In a race, the story knows the lap of every incident; LMU only gives it for track limits. *@
+                            @foreach (var (incident, lap) in story is null
+                                ? incidentsDriver.Incidents.Select(incident => (incident, incident.Lap))
+                                : story.Laps.SelectMany(lap => lap.Incidents.Select(incident => (incident, (int?)lap.Number))))
+                            {
+                                <li>
+                                    <span class="incident-time">@DisplayFormat.TotalTime(incident.Elapsed)</span>
+                                    <span class="incident-lap">@(lap is { } number ? $"Tour {number}" : string.Empty)</span>
+                                    <span>@DrivingConductPresentation.Describe(incident)</span>
+                                </li>
+                            }
+                        </ol>
+                    }
+                </section>
+            }
         }
 
         <div class="sector-legend" aria-label="Légende des secteurs">
@@ -127,6 +168,7 @@ else
     private IReadOnlyList<RaceEvent> events = [];
     private string selectedEventId = string.Empty;
     private SessionTab selectedTab = SessionTab.Race;
+    private string? selectedDriver;
 
     /// <summary>
     /// Gets or sets the event to open, as linked from the home dashboard (<c>?event=</c>).
@@ -245,7 +287,36 @@ else
                 <span class="lap-time">@DisplayFormat.TotalTime(result.TotalTime)</span>
                 <span class="cell-sub leader-gap @GetLeaderGapClass(result.GapToLeader)">@FormatLeaderGap(result.GapToLeader)</span>
             </td>
+            @if (result.Conduct is { } conduct)
+            {
+                <td class="numeric-cell stacked-cell">
+                    @* A button in the row, not the row itself, so that the keyboard reaches it. *@
+                    <button type="button"
+                            class="conduct-button"
+                            aria-label="Voir les incidents de @result.Name"
+                            aria-expanded="@(IsFocused(result) ? "true" : "false")"
+                            @onclick="() => ToggleIncidents(result.Name)">
+                        <span>@conduct.VehicleContacts</span>
+                        <span class="cell-sub">@conduct.ObstacleContacts</span>
+                    </button>
+                </td>
+                <td class="numeric-cell stacked-cell">
+                    <span>@conduct.Warnings</span>
+                    <span class="cell-sub">@conduct.InvalidLaps</span>
+                </td>
+            }
+            else
+            {
+                <td class="numeric-cell">—</td>
+                <td class="numeric-cell">—</td>
+            }
         </tr>;
+
+    private bool IsFocused(RaceDetailsDriverResult result) =>
+        selectedDriver == result.Name || (selectedDriver is null && result.IsPlayer);
+
+    private void ToggleIncidents(string driverName) =>
+        selectedDriver = selectedDriver == driverName ? null : driverName;
 
     private static string GetSectorClass(RaceDetailsSectorResult sector) =>
         sector.Performance == SectorPerformance.ClassBest ? "sector-class-best" : "sector-standard";

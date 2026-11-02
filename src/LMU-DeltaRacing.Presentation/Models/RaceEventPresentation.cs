@@ -143,7 +143,8 @@ public static class RaceEventPresentation
             "Practice",
             mergedDrivers,
             drivers.Length == 0 ? null : drivers.Max(driver => driver.LapsCompleted),
-            first.TrackLength);
+            first.TrackLength,
+            practices.SelectMany(session => session.Events));
     }
 }
 

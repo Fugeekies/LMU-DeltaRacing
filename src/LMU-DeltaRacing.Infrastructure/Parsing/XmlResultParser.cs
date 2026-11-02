@@ -1,6 +1,7 @@
 using System.Globalization;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Xml;
 using LMU_DeltaRacing.Application.Abstractions;
 using LMU_DeltaRacing.Domain.Entities;
@@ -12,11 +13,11 @@ namespace LMU_DeltaRacing.Infrastructure.Parsing;
 /// </summary>
 /// <remarks>
 /// The document is read as a stream: only the values used by the application are kept, and the
-/// event log of the session (<c>Stream</c>: incidents, scores, track limits), which makes most of a
-/// race file, is skipped without being loaded. The whole document is still read, so malformed XML
+/// event log of the session (<c>Stream</c>), which makes most of a race file, only keeps its
+/// contacts, track-limit events and penalties. The whole document is still read, so malformed XML
 /// is rejected wherever it is. Values are converted once the document has been read.
 /// </remarks>
-public sealed class XmlResultParser : IResultXmlParser
+public sealed partial class XmlResultParser : IResultXmlParser
 {
     // Indentation, comments and processing instructions are never read. Values are trimmed, so
     // dropping whitespace-only text changes none of them.
@@ -107,6 +108,12 @@ public sealed class XmlResultParser : IResultXmlParser
         var phase = new RawPhase(reader.LocalName);
         ReadChildren(reader, () =>
         {
+            if (reader.LocalName == "Stream")
+            {
+                ReadEventLog(reader, phase);
+                return;
+            }
+
             if (reader.LocalName == "DateTime")
             {
                 if (phase.DateTime is null)
@@ -145,6 +152,27 @@ public sealed class XmlResultParser : IResultXmlParser
         return phase;
     }
 
+    private static void ReadEventLog(XmlReader reader, RawPhase phase)
+    {
+        ReadChildren(reader, () =>
+        {
+            var name = reader.LocalName;
+            if (name is "Incident" or "TrackLimits" or "Penalty" or "Sector")
+            {
+                phase.Events.Add(new RawEvent(
+                    name,
+                    reader.GetAttribute("et"),
+                    reader.GetAttribute("Driver"),
+                    reader.GetAttribute("Lap"),
+                    ReadText(reader)));
+            }
+            else
+            {
+                reader.Skip();
+            }
+        });
+    }
+
     private static RawDriver ReadDriver(XmlReader reader)
     {
         var driver = new RawDriver();
@@ -159,6 +187,9 @@ public sealed class XmlResultParser : IResultXmlParser
                     reader.GetAttribute("s1"),
                     reader.GetAttribute("s2"),
                     reader.GetAttribute("s3"),
+                    reader.GetAttribute("p"),
+                    reader.GetAttribute("et"),
+                    reader.GetAttribute("pit"),
                     ReadText(reader)));
                 return;
             }
@@ -282,8 +313,101 @@ public sealed class XmlResultParser : IResultXmlParser
             phase.Name,
             drivers,
             ParseOptionalInt(phase.MostLapsCompleted?.Trim()),
-            ParseOptionalMeters(Value(results.Values, ResultsFields, "TrackLength")));
+            ParseOptionalMeters(Value(results.Values, ResultsFields, "TrackLength")),
+            phase.Events.Select(CreateEvent).OfType<SessionEvent>());
     }
+
+    /// <summary>
+    /// Converts an event, or returns <see langword="null"/> for an event that has no consequence
+    /// or that does not have the expected form: the event log is free text and must not make a
+    /// result file unreadable.
+    /// </summary>
+    private static SessionEvent? CreateEvent(RawEvent rawEvent)
+    {
+        if (!TryParseSeconds(rawEvent.Elapsed, out var elapsed))
+        {
+            return null;
+        }
+
+        var text = rawEvent.Text.Trim();
+        return rawEvent.Name switch
+        {
+            "Incident" => CreateContact(elapsed, text),
+            "TrackLimits" => CreateTrackLimitEvent(elapsed, text, rawEvent),
+            "Sector" => CreateDamage(elapsed, text),
+            _ => CreatePenalty(elapsed, text, rawEvent)
+        };
+    }
+
+    private static SessionEvent? CreateContact(TimeSpan elapsed, string text)
+    {
+        var match = ContactPattern().Match(text);
+        if (!match.Success)
+        {
+            return null;
+        }
+
+        var driver = match.Groups["driver"].Value;
+        if (match.Groups["other"].Success)
+        {
+            return new SessionEvent(elapsed, SessionEventKind.VehicleContact, driver, match.Groups["other"].Value);
+        }
+
+        var target = match.Groups["target"].Value;
+        var kind = target is "Immovable" or "Post" or "Sign" or "Cone"
+            ? SessionEventKind.ObstacleContact
+            : SessionEventKind.OtherContact;
+        return new SessionEvent(elapsed, kind, driver, target);
+    }
+
+    private static SessionEvent? CreateDamage(TimeSpan elapsed, string text)
+    {
+        // Despite its name, this log also reports damage; its other lines are sector records.
+        var match = DamagePattern().Match(text);
+        return match.Success
+            ? new SessionEvent(elapsed, SessionEventKind.Damage, match.Groups["driver"].Value, match.Groups["part"].Value)
+            : null;
+    }
+
+    private static SessionEvent? CreateTrackLimitEvent(TimeSpan elapsed, string text, RawEvent rawEvent)
+    {
+        // Penalties of this log are repeated by the Penalty events, which also give their reason.
+        SessionEventKind? kind = text switch
+        {
+            "Warning" => SessionEventKind.TrackLimitWarning,
+            "Invalid Lap Cut Track" => SessionEventKind.InvalidLap,
+            _ => null
+        };
+
+        return kind is { } eventKind && rawEvent.Driver?.Trim() is { Length: > 0 } driver
+            ? new SessionEvent(elapsed, eventKind, driver, Lap: ParseOptionalInt(rawEvent.Lap) + 1)
+            : null;
+    }
+
+    private static SessionEvent? CreatePenalty(TimeSpan elapsed, string text, RawEvent rawEvent)
+    {
+        if (text == "Disqualify")
+        {
+            return rawEvent.Driver?.Trim() is { Length: > 0 } disqualified
+                ? new SessionEvent(elapsed, SessionEventKind.Penalty, disqualified, text)
+                : null;
+        }
+
+        var match = PenaltyPattern().Match(text);
+        return match.Success
+            ? new SessionEvent(elapsed, SessionEventKind.Penalty, match.Groups["driver"].Value, match.Groups["reason"].Value)
+            : null;
+    }
+
+    // A driver name may hold anything: the name ends at the last "(number)" before the known words.
+    [GeneratedRegex("""^(?<driver>.+)\(\d+\) reported contact \([^)]*\) with (?:another vehicle (?<other>.+)\(\d+\)|(?<target>.+))$""", RegexOptions.CultureInvariant)]
+    private static partial Regex ContactPattern();
+
+    [GeneratedRegex("""^(?<driver>.+)\(\d+\) reports new (?<part>.+) damage$""", RegexOptions.CultureInvariant)]
+    private static partial Regex DamagePattern();
+
+    [GeneratedRegex("""^(?<driver>.+?) received .+? penalty, .+? for "?(?<reason>.+?)"?\. Result:""", RegexOptions.CultureInvariant)]
+    private static partial Regex PenaltyPattern();
 
     /// <summary>
     /// Derives the identifier from values that identify the session itself, so that it survives a
@@ -338,7 +462,10 @@ public sealed class XmlResultParser : IResultXmlParser
         return new Lap(
             ParseRequiredInt(lap.Number, "lap number"),
             TryParseSeconds(lap.Time, out var lapTime) ? lapTime : null,
-            sectors);
+            sectors,
+            ParseOptionalInt(lap.Position) is > 0 and var position ? position : null,
+            ParseOptionalSeconds(lap.StartedAt),
+            lap.PitStop == "1");
     }
 
     private static DateTimeOffset ParseUnixTimestamp(string value)
@@ -419,6 +546,8 @@ public sealed class XmlResultParser : IResultXmlParser
         public string? MostLapsCompleted { get; set; }
 
         public List<RawDriver> Drivers { get; } = [];
+
+        public List<RawEvent> Events { get; } = [];
     }
 
     private sealed class RawDriver
@@ -432,5 +561,15 @@ public sealed class XmlResultParser : IResultXmlParser
         public bool HasPosition { get; set; }
     }
 
-    private sealed record RawLap(string? Number, string? Sector1, string? Sector2, string? Sector3, string Time);
+    private sealed record RawLap(
+        string? Number,
+        string? Sector1,
+        string? Sector2,
+        string? Sector3,
+        string? Position,
+        string? StartedAt,
+        string? PitStop,
+        string Time);
+
+    private sealed record RawEvent(string Name, string? Elapsed, string? Driver, string? Lap, string Text);
 }

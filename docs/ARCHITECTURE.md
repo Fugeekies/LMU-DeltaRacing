@@ -3,7 +3,7 @@
 ## Couches du projet
 - `Domain` : Entités métier immuables (`Session`, `Driver`, `Lap`, `Sector`) sans dépendance externe. `Session.Kind` (essais, qualification, course) et `Driver.BestLap` (meilleur tour chronométré) sont calculés une fois à la création : les vues les lisent au lieu de comparer le nom de la phase ou de parcourir les tours.
 - `Application` : Contrats du parser XML, du dépôt de sessions, des services d'import, contrats de métriques et traces.
-- `Infrastructure` : parser XML LMU en flux (`XmlReader` : le journal d'événements `Stream` est sauté sans être chargé), dépôt en mémoire et watcher du dossier de résultats avec traitement séquentiel, retries sur les fichiers verrouillés et déduplication par chemin.
+- `Infrastructure` : parser XML LMU en flux (`XmlReader` : du journal d'événements `Stream`, seuls les contacts, limites de piste et pénalités sont gardés), dépôt en mémoire et watcher du dossier de résultats avec traitement séquentiel, retries sur les fichiers verrouillés et déduplication par chemin.
 - `Console` : application console Spectre.Console (Accueil, Mes courses, Options) sur les services partagés de `Presentation`, export OpenTelemetry et statistiques d'exécution.
 - `Presentation` : code partagé par l'UI et la console : calculs des vues (`*Presentation`), service de données (`DashboardDataService` : import initial, rechargement, watcher, fusions de pilotes, détection du pilote principal), écriture des réglages (`DashboardSettingsStore`) et détection du dossier de résultats (`ResultsDirectoryResolver`).
 - `UI` : Dashboard Blazor interactif local : composants Razor alimentés par `Presentation` (les pages dérivent de `DashboardPage`, qui suit l'état du service, et affichent chargement et erreur via `ResultsGate`), sélecteur de dossier Windows et géométrie du graphique SVG de Progression.
@@ -33,6 +33,7 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 - Un test verrouille le parsing des 342 fixtures par une empreinte SHA-256 de toutes les valeurs lues : une optimisation du parser ne peut pas changer silencieusement les données.
 - [Audit d'octobre 2026](benchmarks/audit-performance-2026-10.md) : comparaison avant/après du parser en flux et de l'import parallèle.
 - [Identité et chronologie des sessions](benchmarks/identite-sessions-2026-11.md) : effet de la date de phase, de l'identifiant calculé et du refus des doublons sur la chaîne d'import.
+- [Lecture du `Stream` et Profil de conduite](benchmarks/exploiter-stream-2026-11.md) : coût de la lecture du journal d'événements et de la nouvelle page.
 
 ## Build
 

@@ -101,6 +101,7 @@ if (dashboardUrl is null)
 
 if (app.Configuration.GetValue("LMU:OpenBrowser", defaultValue: true))
 {
+    dashboardUrl = DashboardAddress.ForBrowser(dashboardUrl);
     try
     {
         using var browser = Process.Start(new ProcessStartInfo(dashboardUrl)

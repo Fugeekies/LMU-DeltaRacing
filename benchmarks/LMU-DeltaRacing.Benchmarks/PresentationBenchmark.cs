@@ -43,6 +43,10 @@ internal static class PresentationBenchmark
             .MaxBy(session => session.Drivers.Sum(driver => driver.Laps.Count))!;
         table.Measure(
             $"1 ({largestRace.Drivers.Count} pilotes)",
+            "Détail des courses : déroulé de la plus grosse course",
+            () => RaceStoryPresentation.Create(largestRace, largestRace.Drivers[0].Name)!.Laps.Count);
+        table.Measure(
+            $"1 ({largestRace.Drivers.Count} pilotes)",
             "Détail des courses : classement de la plus grosse course",
             () => RaceDetailsPresentation.CreateResults(largestRace, FixtureSessions.UserName).Count,
             20,
@@ -77,6 +81,7 @@ internal static class PresentationBenchmark
             .GroupBy(record => (record.TrackVenue, record.TrackCourse))
             .Sum(circuit => MyRacesFilters.OrderRows(circuit).Count) + MyRacesFilters.GetTracks(records).Count);
         table.Measure(scale, "Classement des coureurs", () => DriversRankingPresentation.CreateRivalries(sessions, user).Count);
+        table.Measure(scale, "Profil de conduite", () => DrivingProfilePresentation.Create(sessions, user)!.Sessions);
         table.Measure(scale, "Détail des courses : événements", () => RaceEventPresentation.CreateEvents(sessions, user).Count);
         table.Measure(scale, "Progression : circuits", () => ProgressionPresentation.GetCircuits(sessions, user).Count);
         table.Measure(scale, "Progression : courbes du circuit par défaut", () => ProgressionPresentation.Create(

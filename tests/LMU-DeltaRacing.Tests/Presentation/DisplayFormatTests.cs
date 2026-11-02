@@ -30,6 +30,14 @@ public sealed class DisplayFormatTests
     /// Verifies the French ordinal of a position: "1er", then "2e", "3e"…
     /// </summary>
     [TestMethod]
+    public void Minutes_give_minutes_and_seconds()
+    {
+        DisplayFormat.Minutes(TimeSpan.FromSeconds(532)).Should().Be("8 min 52 s");
+        DisplayFormat.Minutes(TimeSpan.FromSeconds(62)).Should().Be("1 min 02 s");
+        DisplayFormat.Minutes(TimeSpan.FromSeconds(42)).Should().Be("42 s");
+    }
+
+    [TestMethod]
     public void Positions_use_french_ordinals()
     {
         DisplayFormat.Position(1).Should().Be("1er");
