@@ -43,7 +43,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Console : suppression des vues « Par circuit » et « Par circuit et voiture », de leurs graphiques et de `SessionStatistics` (meilleur tour calculé sur tous les pilotes, sans pilote principal). La console ne prend plus de fichiers en argument : elle charge toujours le dossier de son `appsettings.json`, détecté automatiquement comme pour le dashboard (dossiers LMU usuels) s'il est vide. Un dossier illisible ne l'arrête plus. Les réglages du log enregistrés depuis la console ne réécrivent plus toute la section `LMU`.
 - Formats d'affichage (`DisplayFormat`) et filtres de « Mes courses » (`MyRacesFilters`) partagés entre le dashboard et la console.
 - Release : le workflow manuel demande le type de version (Majeur, Mineur, Patch) au lieu du numéro, incrémente le dernier tag `vX.Y.Z` et liste dans les notes de la release une ligne par PR fusionnée depuis la release précédente.
-- Logo Delta Racing : le fond noir de l'icône (application, installeur, favicon, écran de chargement) est retiré, l'icône est désormais transparente.
+- Logo Delta Racing : le fond noir de l'icône (application, installeur, favicon, écran de chargement) est retiré, l'icône est désormais transparente, et le logo affiche « LMU » au-dessus du « DR ».
 
 ### Fixed
 - Dashboard : l'onglet du navigateur affichait l'adresse au lieu du titre de la page après l'écran de chargement. Il affiche désormais « LMU DeltaRacing » pendant le chargement, puis le titre de chaque page.
