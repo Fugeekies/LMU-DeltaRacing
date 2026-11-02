@@ -1,0 +1,195 @@
+@page "/driving-profile"
+@inherits DashboardPage
+
+<PageTitle>Profil de conduite | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">PROPRETÉ &amp; DISCIPLINE EN PISTE</p>
+        <h1>Profil de conduite</h1>
+        <p class="page-subtitle">
+            @(profile is null
+                ? "Vos contacts, limites de piste et pénalités, sur vos qualifications et vos courses."
+                : $"{profile.Name} · {profile.Sessions} sessions · {profile.Player.Laps} tours, comparés aux autres pilotes des mêmes sessions.")
+        </p>
+    </div>
+</section>
+
+<ResultsGate State="State">
+@if (profile is null)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucun profil disponible</h3>
+        <p>Votre profil apparaîtra lorsqu'une qualification ou une course contenant le pilote sélectionné aura été importée.</p>
+    </section>
+}
+else
+{
+    <section class="driving-tiles" aria-label="Votre bilan pour 100 tours">
+        @RenderTile("CONTACTS", profile.Player.ContactsPer100Laps, profile.Others.ContactsPer100Laps, profile.Player.Conduct.VehicleContacts)
+        @RenderTile("OBSTACLES", profile.Player.ObstaclesPer100Laps, profile.Others.ObstaclesPer100Laps, profile.Player.Conduct.ObstacleContacts)
+        @RenderTile("AVERTISSEMENTS", profile.Player.WarningsPer100Laps, profile.Others.WarningsPer100Laps, profile.Player.Conduct.Warnings)
+        @RenderTile("TOURS INVALIDÉS", profile.Qualifying.Rates.InvalidLapsPer100Laps, profile.OthersQualifying.InvalidLapsPer100Laps, profile.Player.Conduct.InvalidLaps)
+        @RenderTile("PÉNALITÉS", profile.Player.PenaltiesPer100Laps, profile.Others.PenaltiesPer100Laps, profile.Player.Conduct.Penalties)
+    </section>
+    <p class="driving-note">Valeurs pour 100 tours, plus basses que les autres en vert. Les tours invalidés sont rapportés aux tours de qualification : LMU n'en signale pas en course.</p>
+
+    <section class="panel driving-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">OÙ PROGRESSER</p>
+                <h2>Par type de session, catégorie et circuit</h2>
+            </div>
+        </div>
+        <div class="table-scroll">
+            <table class="data-table driving-table">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col" class="numeric-cell">SESSIONS</th>
+                        <th scope="col" class="numeric-cell">TOURS</th>
+                        <th scope="col" class="numeric-cell">CONTACTS / 100 T.</th>
+                        <th scope="col" class="numeric-cell">OBSTACLES / 100 T.</th>
+                        <th scope="col" class="numeric-cell">AVERTISSEMENTS / 100 T.</th>
+                        <th scope="col" class="numeric-cell">PÉNALITÉS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @RenderRows("Session", [profile.Race, profile.Qualifying])
+                    @RenderRows("Catégorie", profile.ByCategory)
+                    @RenderRows("Circuit", profile.ByCircuit)
+                </tbody>
+            </table>
+        </div>
+        <div class="sector-legend">
+            <span>Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours : l'échantillon est trop petit.</span>
+        </div>
+    </section>
+
+    <section class="panel driving-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">FORME RÉCENTE</p>
+                <h2>Vos @profile.RecentRaces.Count dernières courses</h2>
+            </div>
+        </div>
+        @if (profile.RecentRaces.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Aucune course importée pour le moment.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-scroll">
+                <table class="data-table driving-table">
+                    <thead>
+                        <tr>
+                            <th scope="col">DATE</th>
+                            <th scope="col">CIRCUIT</th>
+                            <th scope="col">CATÉGORIE</th>
+                            <th scope="col" class="numeric-cell">CONTACTS</th>
+                            <th scope="col" class="numeric-cell">OBSTACLES</th>
+                            <th scope="col" class="numeric-cell">AVERTISSEMENTS</th>
+                            <th scope="col" class="numeric-cell">PÉNALITÉS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var race in profile.RecentRaces)
+                        {
+                            <tr>
+                                <td class="date-cell">
+                                    @if (race.EventId is { } eventId)
+                                    {
+                                        <a href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">@DisplayFormat.DateTime(race.StartedAt)</a>
+                                    }
+                                    else
+                                    {
+                                        @DisplayFormat.DateTime(race.StartedAt)
+                                    }
+                                </td>
+                                <td>@race.TrackVenue</td>
+                                <td><span class="category-badge @CategoryStyle.CssClass(race.Category)">@race.Category</span></td>
+                                <td class="numeric-cell">@race.Conduct.VehicleContacts</td>
+                                <td class="numeric-cell">@race.Conduct.ObstacleContacts</td>
+                                <td class="numeric-cell">@race.Conduct.Warnings</td>
+                                <td class="numeric-cell">@race.Conduct.Penalties</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </section>
+
+    <section class="driving-lists">
+        @RenderCounts("Pilotes que vous touchez le plus", profile.Opponents, "Aucun contact avec une voiture.")
+        @RenderCounts("Obstacles", profile.Obstacles, "Aucun contact avec un obstacle.")
+        @RenderCounts("Motifs de pénalité", profile.PenaltyReasons, "Aucune pénalité.")
+    </section>
+}
+
+</ResultsGate>
+
+@code {
+    private DriverDrivingProfile? profile;
+
+    protected override void OnStateChanged()
+    {
+        profile = DrivingProfilePresentation.Create(State.Sessions, State.UserName);
+    }
+
+    private static string FormatRate(double? rate) =>
+        rate?.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
+
+    /// <summary>
+    /// Fewer incidents than the others is good news: lower is green, higher is red.
+    /// </summary>
+    private static string GetComparisonClass(double? rate, double? others) =>
+        rate is { } value && others is { } reference
+            ? value <= reference ? "delta-best" : "delta-loss"
+            : "delta-unavailable";
+
+    private static RenderFragment RenderTile(string label, double? rate, double? others, int total) =>
+        @<article class="summary-card">
+            <span class="summary-label">@label</span>
+            <strong class="summary-value @GetComparisonClass(rate, others)">@FormatRate(rate)</strong>
+            <span class="summary-detail">Autres pilotes : @FormatRate(others) · @total au total</span>
+        </article>;
+
+    private static RenderFragment RenderRows(string title, IEnumerable<DrivingRow> rows) =>
+        @<text>
+            <tr class="driving-group"><th scope="rowgroup" colspan="7">@title</th></tr>
+            @foreach (var row in rows.Where(row => row.Sessions > 0))
+            {
+                <tr>
+                    <td>@row.Label</td>
+                    <td class="numeric-cell">@row.Sessions</td>
+                    <td class="numeric-cell">@row.Rates.Laps</td>
+                    <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.ContactsPer100Laps : null)</td>
+                    <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.ObstaclesPer100Laps : null)</td>
+                    <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.WarningsPer100Laps : null)</td>
+                    <td class="numeric-cell">@row.Rates.Conduct.Penalties</td>
+                </tr>
+            }
+        </text>;
+
+    private static RenderFragment RenderCounts(string title, IReadOnlyList<DrivingCount> counts, string empty) =>
+        @<article class="panel driving-list">
+            <h3 class="summary-label">@title</h3>
+            @if (counts.Count == 0)
+            {
+                <p class="incident-empty">@empty</p>
+            }
+            else
+            {
+                <ol>
+                    @foreach (var count in counts)
+                    {
+                        <li><span>@count.Label</span><strong>@count.Count</strong></li>
+                    }
+                </ol>
+            }
+        </article>;
+}

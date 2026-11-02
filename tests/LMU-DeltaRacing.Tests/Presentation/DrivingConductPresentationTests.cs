@@ -6,7 +6,7 @@ using LMU_DeltaRacing.Presentation.Models;
 namespace LMU_DeltaRacing.Tests.Presentation;
 
 /// <summary>
-/// Verifies how the events of a session become contacts and driving profiles.
+/// Verifies how the events of a session become the incidents of each driver.
 /// </summary>
 [TestClass]
 public sealed class DrivingConductPresentationTests
@@ -112,42 +112,6 @@ public sealed class DrivingConductPresentationTests
     }
 
     /// <summary>
-    /// Verifies that a profile adds up qualifying and race sessions, without practice sessions, and
-    /// gives a rate per hundred laps.
-    /// </summary>
-    [TestMethod]
-    public void CreateProfiles_adds_up_qualifying_and_race_sessions()
-    {
-        var sessions = new[]
-        {
-            CreateSession("Race", [Contact(100, Player, Rival)], laps: 40),
-            CreateSession("Qualify", [new SessionEvent(TimeSpan.FromSeconds(5), SessionEventKind.InvalidLap, Player, Lap: 1)], laps: 10),
-            CreateSession("Practice1", [Contact(5, Player, Rival)], laps: 50)
-        };
-
-        var profiles = DrivingConductPresentation.CreateProfiles(sessions, Player);
-
-        var player = profiles.Single(profile => profile.Name == Player);
-        player.IsPlayer.Should().BeTrue();
-        player.Sessions.Should().Be(2);
-        player.Laps.Should().Be(50);
-        player.Conduct.Should().Be(new DrivingConduct(1, 0, 0, 1, 0));
-        player.ContactsPer100Laps.Should().Be(2);
-        profiles.Single(profile => profile.Name == Rival).IsPlayer.Should().BeFalse();
-    }
-
-    /// <summary>
-    /// Verifies that a driver without any lap has no rate, rather than a rate of zero.
-    /// </summary>
-    [TestMethod]
-    public void CreateProfiles_gives_no_rate_without_laps()
-    {
-        var profiles = DrivingConductPresentation.CreateProfiles([CreateSession("Race", [], laps: 0)], Player);
-
-        profiles.Should().OnlyContain(profile => profile.ContactsPer100Laps == null);
-    }
-
-    /// <summary>
     /// Verifies that merging a driver also renames them in the events, as the driver and as the
     /// opponent, so that the merged name keeps its contacts.
     /// </summary>
@@ -176,23 +140,6 @@ public sealed class DrivingConductPresentationTests
         var raceEvent = RaceEventPresentation.CreateEvents(sessions, Player).Single();
 
         raceEvent.Practice!.Events.Should().HaveCount(2);
-    }
-
-    /// <summary>
-    /// Verifies on the real fixtures the profile of the main driver, and that every qualifying or
-    /// race driver with events has them: this fails if the Stream names stop matching the drivers.
-    /// </summary>
-    [TestMethod]
-    public void CreateProfiles_gives_the_main_driver_a_real_profile_on_the_fixtures()
-    {
-        var profiles = DrivingConductPresentation.CreateProfiles(Fixtures.Value, "Driver Tom");
-
-        var tom = profiles.Single(profile => profile.IsPlayer);
-        tom.Sessions.Should().Be(170);
-        tom.Conduct.VehicleContacts.Should().BePositive();
-        tom.Conduct.ObstacleContacts.Should().BePositive();
-        tom.Conduct.Warnings.Should().BePositive();
-        tom.Conduct.InvalidLaps.Should().BePositive();
     }
 
     /// <summary>

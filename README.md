@@ -113,16 +113,16 @@ Seules les **courses** comptent (pas les qualifications), et seulement contre le
 
 Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
 
-### Profils de conduite
+### Profil de conduite
 
-Comment chaque pilote roule, sur toutes vos qualifications et courses importées.
+Comment **vous** roulez, sur toutes vos qualifications et courses importées, comparé aux autres pilotes de ces mêmes sessions.
 
-- **Contacts :** accrochages avec une autre voiture. Un accrochage compte une fois pour chaque pilote impliqué.
-- **Obstacles :** contacts avec un mur, un poteau, un panneau ou un cône.
-- **Pour 100 tours :** contacts et obstacles rapportés au nombre de tours, pour comparer des pilotes qui n'ont pas roulé autant.
-- **Avertissements**, **tours invalidés** (LMU n'en signale qu'en essais et en qualification) et **pénalités**.
+- **Votre bilan :** contacts avec une voiture, obstacles (mur, poteau, panneau, cône), avertissements de limites de piste, tours invalidés et pénalités, pour 100 tours. La valeur est verte quand vous faites au moins aussi bien que les autres.
+- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
+- **Forme récente :** vos 10 dernières courses, avec un lien vers leur détail.
+- **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
 
-Recherchez un pilote par son nom et triez par la colonne de votre choix.
+Un accrochage compte une fois, même si les deux voitures l'ont signalé plusieurs fois. LMU ne signale de tours invalidés qu'en essais et en qualification.
 
 ### Détail des courses
 

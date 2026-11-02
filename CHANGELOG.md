@@ -10,7 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
-- Dashboard : nouvel onglet **Profils de conduite**, avec pour chaque pilote ses contacts, obstacles, contacts pour 100 tours, avertissements, tours invalidés et pénalités, sur les qualifications et les courses.
+- Dashboard : nouvel onglet **Profil de conduite**, le bilan du pilote sélectionné sur ses qualifications et ses courses : contacts, obstacles, avertissements, tours invalidés et pénalités pour 100 tours, comparés aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses, les pilotes qu'il touche le plus, les obstacles et ses motifs de pénalité.
 - Détail des courses : colonnes **CONTACTS** et **LIMITES**, et fil chronologique des incidents d'un pilote en cliquant sur ses chiffres.
 - Parser : lecture des contacts, des limites de piste et des pénalités du journal `Stream` (`Session.Events`) ; un événement de forme inattendue est ignoré sans rendre le fichier illisible.
 - Fixtures : les noms des événements du `Stream` correspondent de nouveau aux pilotes listés (`scripts/Repair-StreamNames.ps1`), sans changer les alias ni les retouches de Driver Tom.

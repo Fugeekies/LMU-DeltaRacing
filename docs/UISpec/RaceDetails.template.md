@@ -55,7 +55,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | CONTACTS / OBSTACLES | Contacts avec une voiture | Contacts avec un obstacle. Les deux lignes forment un bouton qui ouvre les incidents du pilote |
   | LIMITES / TOURS INVALIDÉS | Avertissements de limites de piste | Tours invalidés |
 
-* **Incidents :** règles de comptage dans [`DrivingProfiles.template.md`](DrivingProfiles.template.md). Une session sans aucun événement n'a pas de journal : ses deux colonnes affichent `—`, pas `0`. Le bouton ouvre, sous le tableau, le fil chronologique du pilote (temps écoulé, tour s'il est connu, description) ; il se referme par le même bouton ou par « Fermer ».
+* **Incidents :** règles de comptage dans [`DrivingProfile.template.md`](DrivingProfile.template.md). Une session sans aucun événement n'a pas de journal : ses deux colonnes affichent `—`, pas `0`. Le bouton ouvre, sous le tableau, le fil chronologique du pilote (temps écoulé, tour s'il est connu, description) ; il se referme par le même bouton ou par « Fermer ».
 * **Ligne du pilote sélectionné :** légèrement surlignée (fond rouge LMU translucide), en plus du tag **VOUS**.
 * Le tableau garde sa zone de défilement **vertical** (hauteur maximale 680 px, en-tête fixe).
 

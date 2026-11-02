@@ -85,47 +85,6 @@ public static class DrivingConductPresentation
     }
 
     /// <summary>
-    /// Creates the driving profile of each driver over their qualifying and race sessions.
-    /// </summary>
-    /// <remarks>
-    /// Practice sessions are left out, like in the other result views: they are optional and a
-    /// driver tries things there, so they would make profiles depend on the practice option.
-    /// </remarks>
-    public static IReadOnlyList<DrivingProfile> CreateProfiles(IEnumerable<Session> sessions, string? userName)
-    {
-        ArgumentNullException.ThrowIfNull(sessions);
-
-        var totals = new Dictionary<string, ProfileTotals>(StringComparer.OrdinalIgnoreCase);
-        foreach (var session in sessions.Where(session => session.Kind is SessionKind.Qualifying or SessionKind.Race))
-        {
-            var incidents = CreateIncidents(session);
-            foreach (var driver in session.Drivers.GroupBy(driver => driver.Name.Trim(), StringComparer.OrdinalIgnoreCase))
-            {
-                if (!totals.TryGetValue(driver.Key, out var total))
-                {
-                    totals[driver.Key] = total = new ProfileTotals(driver.Key);
-                }
-
-                total.Sessions++;
-                total.Laps += driver.Sum(result => result.LapsCompleted ?? result.Laps.Count);
-                if (incidents.TryGetValue(driver.Key, out var driverIncidents))
-                {
-                    total.Conduct += Summarize(driverIncidents);
-                }
-            }
-        }
-
-        return totals.Values
-            .Select(total => new DrivingProfile(
-                total.Name,
-                string.Equals(total.Name, userName?.Trim(), StringComparison.OrdinalIgnoreCase),
-                total.Sessions,
-                total.Laps,
-                total.Conduct))
-            .ToArray();
-    }
-
-    /// <summary>
     /// Words an incident for the timeline of a driver. LMU reasons stay in English, as written.
     /// </summary>
     public static string Describe(DrivingIncident incident)
@@ -150,13 +109,6 @@ public static class DrivingConductPresentation
         };
     }
 
-    private sealed class ProfileTotals(string name)
-    {
-        public string Name { get; } = name;
-        public int Sessions { get; set; }
-        public int Laps { get; set; }
-        public DrivingConduct Conduct { get; set; } = new(0, 0, 0, 0, 0);
-    }
 }
 
 /// <summary>
@@ -198,22 +150,4 @@ public sealed record DrivingConduct(
             left.InvalidLaps + right.InvalidLaps,
             left.Penalties + right.Penalties);
     }
-}
-
-/// <summary>
-/// How a driver drives, over their qualifying and race sessions.
-/// </summary>
-/// <param name="Name">The driver name.</param>
-/// <param name="IsPlayer">Whether the driver is the selected driver.</param>
-/// <param name="Sessions">The number of qualifying and race sessions.</param>
-/// <param name="Laps">The number of laps driven in these sessions.</param>
-/// <param name="Conduct">The incidents of these sessions.</param>
-public sealed record DrivingProfile(string Name, bool IsPlayer, int Sessions, int Laps, DrivingConduct Conduct)
-{
-    /// <summary>
-    /// Gets the contacts per hundred laps, to compare drivers with different histories, or
-    /// <see langword="null"/> for a driver without any lap.
-    /// </summary>
-    public double? ContactsPer100Laps =>
-        Laps == 0 ? null : (Conduct.VehicleContacts + Conduct.ObstacleContacts) * 100d / Laps;
 }

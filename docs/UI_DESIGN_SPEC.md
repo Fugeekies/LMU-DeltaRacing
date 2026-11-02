@@ -82,7 +82,7 @@ UISpec/
 ├── MyRaces.template.md        --> Spécification de la vue "Mes Courses"
 ├── Progression.template.md    --> Spécification de la vue "Progression"
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
-├── DrivingProfiles.template.md --> Spécification de la vue "Profils de conduite"
+├── DrivingProfile.template.md --> Spécification de la vue "Profil de conduite"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
 ├── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 └── Console.template.md        --> Spécification de la console Spectre (Accueil, Mes courses, Options)
@@ -107,8 +107,8 @@ UISpec/
    * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
    * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
-5. **🛡️ Profils de conduite (`/driving-profiles`)** *(Voir template [`UISpec/DrivingProfiles.template.md`](UISpec/DrivingProfiles.template.md))*
-   * Contacts, obstacles, contacts pour 100 tours, avertissements, tours invalidés et pénalités de chaque pilote, sur les qualifications et les courses.
+5. **🛡️ Profil de conduite (`/driving-profile`)** *(Voir template [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md))*
+   * Bilan du pilote sélectionné (contacts, obstacles, avertissements, tours invalidés, pénalités pour 100 tours), comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses.
 
 6. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.

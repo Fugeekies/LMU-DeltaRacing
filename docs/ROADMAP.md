@@ -10,7 +10,7 @@ La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, conta
 - [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
 - [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
 - [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profils de conduite ».
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profil de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
 
 ### Jalon — Tableaux : colonnes et données
@@ -71,11 +71,11 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ## Terminés
 
-### Jalon — Profils de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
-Spécification : [`UISpec/DrivingProfiles.template.md`](UISpec/DrivingProfiles.template.md). Dashboard uniquement.
-- [x] Nouvel onglet **Profils de conduite** : contacts, obstacles, contacts pour 100 tours, avertissements, tours invalidés et pénalités de chaque pilote, sur les qualifications et les courses.
+### Jalon — Profil de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
+Spécification : [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md). Dashboard uniquement.
+- [x] Nouvel onglet **Profil de conduite**, centré sur le pilote sélectionné : bilan pour 100 tours comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, 10 dernières courses, pilotes les plus touchés, obstacles et motifs de pénalité.
 - [x] **Contacts :** les signalements d'un même accrochage comptent une fois, pour chaque pilote impliqué (regroupement à 5 s, mesuré sur les fixtures).
-- [x] **Tours invalides :** LMU n'en signale pas en course. La page montre les tours invalidés à côté des avertissements de limites de piste, sans déduire de tours invalides en course.
+- [x] **Tours invalides :** LMU n'en signale pas en course. Ils sont rapportés aux tours de qualification, sans déduire de tours invalides en course.
 
 ### Jalon — Identité et chronologie des sessions — 02/11/2026 · PR [#52](https://github.com/Fugeekies/LMU-DeltaRacing/pull/52)
 Issu de l'audit d'octobre 2026. Décisions et simulation sur les fixtures : [`propositions/identite-chronologie-sessions.md`](propositions/identite-chronologie-sessions.md).

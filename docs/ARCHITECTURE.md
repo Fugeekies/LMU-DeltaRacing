@@ -33,7 +33,7 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 - Un test verrouille le parsing des 342 fixtures par une empreinte SHA-256 de toutes les valeurs lues : une optimisation du parser ne peut pas changer silencieusement les données.
 - [Audit d'octobre 2026](benchmarks/audit-performance-2026-10.md) : comparaison avant/après du parser en flux et de l'import parallèle.
 - [Identité et chronologie des sessions](benchmarks/identite-sessions-2026-11.md) : effet de la date de phase, de l'identifiant calculé et du refus des doublons sur la chaîne d'import.
-- [Lecture du `Stream` et Profils de conduite](benchmarks/exploiter-stream-2026-11.md) : coût de la lecture du journal d'événements et de la nouvelle page.
+- [Lecture du `Stream` et Profil de conduite](benchmarks/exploiter-stream-2026-11.md) : coût de la lecture du journal d'événements et de la nouvelle page.
 
 ## Build
 
