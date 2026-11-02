@@ -14,6 +14,8 @@ public static class DrivingProfilePresentation
 {
     private const int RecentRaceCount = 10;
     private const int MaximumOpponents = 5;
+    private const int MinimumContactsForTakeaway = 5;
+    private const int MinimumContactsForRiskSector = 3;
 
     /// <summary>
     /// Creates the profile of a driver, or returns <see langword="null"/> without a selected driver
@@ -52,6 +54,7 @@ public static class DrivingProfilePresentation
             SumOthers(qualifyings),
             CreateRows(results, result => result.Driver.Category()),
             CreateRows(results, result => CircuitLabel(result.Session)),
+            CreateCost(races, eventIds),
             races
                 .OrderByDescending(result => result.Session.StartedAt)
                 .Take(RecentRaceCount)
@@ -60,7 +63,8 @@ public static class DrivingProfilePresentation
                     result.Session.StartedAt,
                     result.Session.TrackVenue,
                     result.Driver.Category(),
-                    result.Conduct))
+                    result.Conduct,
+                    result.Story?.TimeLost ?? TimeSpan.Zero))
                 .ToArray(),
             Count(incidents.Where(incident => incident.Kind == SessionEventKind.VehicleContact), incident => incident.Detail!)
                 .Take(MaximumOpponents)
@@ -93,7 +97,112 @@ public static class DrivingProfilePresentation
             driverIncidents,
             DrivingConductPresentation.Summarize(driverIncidents),
             others.Sum(other => other.Sum(result => Laps(result))),
-            othersConduct);
+            othersConduct,
+            RaceStoryPresentation.Create(session, driver, driverIncidents));
+    }
+
+    private static DrivingCost CreateCost(
+        IReadOnlyCollection<SessionResult> races,
+        IReadOnlyDictionary<Guid, string> eventIds)
+    {
+        var told = races.Where(race => race.Story is not null).ToArray();
+        var stories = told.Select(race => race.Story!).ToArray();
+        var contacts = stories.SelectMany(story => story.Contacts).ToArray();
+        var losses = stories
+            .SelectMany(story => story.Laps)
+            .Where(lap => lap.Loss.HasValue)
+            .Select(lap => lap.Loss!.Value)
+            .Order()
+            .ToArray();
+        var circuits = told
+            .GroupBy(race => CircuitLabel(race.Session), StringComparer.OrdinalIgnoreCase)
+            .Select(circuit => (Label: circuit.Key, Lost: circuit.Aggregate(TimeSpan.Zero, (total, race) => total + race.Story!.TimeLost)))
+            .Where(circuit => circuit.Lost > TimeSpan.Zero)
+            .OrderByDescending(circuit => circuit.Lost)
+            .ToArray();
+        var costliestRace = told
+            .Where(race => race.Story!.TimeLost > TimeSpan.Zero)
+            .MaxBy(race => race.Story!.TimeLost);
+        var retirements = told.Where(race => race.Driver.FinishStatus.Equals("DNF", StringComparison.OrdinalIgnoreCase)).ToArray();
+        var cost = new DrivingCost(
+            stories.Aggregate(TimeSpan.Zero, (total, story) => total + story.TimeLost),
+            stories.Length,
+            contacts.Length,
+            contacts.Count(contact => contact.Lap == 1),
+            contacts.Count(contact => contact.CausedDamage),
+            stories.Sum(story => story.PositionsLost),
+            retirements.Length,
+            retirements.Count(race => race.Story!.Contacts.Any(contact => contact.Lap == race.Story.Laps[^1].Number)),
+            losses.Length == 0 ? null : losses[losses.Length / 2],
+            circuits.Length == 0 ? null : circuits[0].Label,
+            circuits.Length == 0 ? TimeSpan.Zero : circuits[0].Lost,
+            costliestRace is null
+                ? null
+                : new DrivingRaceEntry(
+                    eventIds.GetValueOrDefault(costliestRace.Session.Id),
+                    costliestRace.Session.StartedAt,
+                    costliestRace.Session.TrackVenue,
+                    costliestRace.Driver.Category(),
+                    costliestRace.Conduct,
+                    costliestRace.Story!.TimeLost));
+        return cost with { Takeaways = CreateTakeaways(cost) };
+    }
+
+    private static IReadOnlyList<string> CreateTakeaways(DrivingCost cost)
+    {
+        var takeaways = new List<string>();
+        if (cost.Contacts >= MinimumContactsForTakeaway && cost.FirstLapContacts > 0)
+        {
+            takeaways.Add($"{Math.Round(cost.FirstLapContacts * 100d / cost.Contacts)} % de vos contacts arrivent au départ ou au premier tour.");
+        }
+
+        if (cost.MedianLossPerContactLap is { } medianLoss)
+        {
+            takeaways.Add($"Un tour avec contact vous coûte {FormatSeconds(medianLoss)} s en médiane.");
+        }
+
+        if (cost.CostliestCircuit is { } circuit)
+        {
+            takeaways.Add($"{circuit} est le circuit qui vous coûte le plus : {FormatSeconds(cost.CostliestCircuitLost)} s perdues sur les tours avec contact.");
+        }
+
+        if (cost.ContactsWithDamage > 0)
+        {
+            takeaways.Add(cost.ContactsWithDamage > 1
+                ? $"{cost.ContactsWithDamage} contacts ont endommagé votre voiture."
+                : "1 contact a endommagé votre voiture.");
+        }
+
+        if (cost.Retirements > 0)
+        {
+            takeaways.Add($"{cost.RetirementsAfterContact} de vos {cost.Retirements} abandons ont eu un contact dans leur dernier tour.");
+        }
+
+        return takeaways;
+    }
+
+    private static string FormatSeconds(TimeSpan time) =>
+        time.TotalSeconds.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture);
+
+    /// <summary>
+    /// Returns the sector holding most contacts away from the start, when there are enough of them
+    /// and that sector holds at least half: otherwise it would point at chance.
+    /// </summary>
+    private static int? FindRiskSector(IReadOnlyCollection<SessionResult> results)
+    {
+        var sectors = results
+            .Where(result => result.Story is not null)
+            .SelectMany(result => result.Story!.Contacts)
+            .Where(contact => contact.Sector.HasValue)
+            .Select(contact => contact.Sector!.Value)
+            .ToArray();
+        if (sectors.Length < MinimumContactsForRiskSector)
+        {
+            return null;
+        }
+
+        var top = sectors.GroupBy(sector => sector).MaxBy(sector => sector.Count())!;
+        return top.Count() * 2 >= sectors.Length ? top.Key : null;
     }
 
     private static int Laps(Driver driver) => driver.LapsCompleted ?? driver.Laps.Count;
@@ -109,7 +218,12 @@ public static class DrivingProfilePresentation
             results.Aggregate(new DrivingConduct(0, 0, 0, 0, 0), (total, result) => total + result.OthersConduct));
 
     private static DrivingRow CreateRow(string label, IReadOnlyCollection<SessionResult> results) =>
-        new(label, results.Count, CreateRates(results));
+        new(
+            label,
+            results.Count,
+            CreateRates(results),
+            results.Aggregate(TimeSpan.Zero, (total, result) => total + (result.Story?.TimeLost ?? TimeSpan.Zero)),
+            FindRiskSector(results));
 
     private static IReadOnlyList<DrivingRow> CreateRows(
         IEnumerable<SessionResult> results,
@@ -142,7 +256,8 @@ public static class DrivingProfilePresentation
         IReadOnlyList<DrivingIncident> Incidents,
         DrivingConduct Conduct,
         int OthersLaps,
-        DrivingConduct OthersConduct);
+        DrivingConduct OthersConduct,
+        RaceStory? Story);
 }
 
 /// <summary>
@@ -157,6 +272,7 @@ public static class DrivingProfilePresentation
 /// <param name="OthersQualifying">The other drivers of these qualifying sessions.</param>
 /// <param name="ByCategory">The driver's sessions by category, most driven first.</param>
 /// <param name="ByCircuit">The driver's sessions by circuit, most driven first.</param>
+/// <param name="Cost">What the incidents of the driver's races cost them.</param>
 /// <param name="RecentRaces">The latest races, most recent first.</param>
 /// <param name="Opponents">The opponents most often touched, most frequent first.</param>
 /// <param name="Obstacles">The obstacles touched, most frequent first.</param>
@@ -171,6 +287,7 @@ public sealed record DriverDrivingProfile(
     DrivingRates OthersQualifying,
     IReadOnlyList<DrivingRow> ByCategory,
     IReadOnlyList<DrivingRow> ByCircuit,
+    DrivingCost Cost,
     IReadOnlyList<DrivingRaceEntry> RecentRaces,
     IReadOnlyList<DrivingCount> Opponents,
     IReadOnlyList<DrivingCount> Obstacles,
@@ -207,7 +324,14 @@ public sealed record DrivingRates(int Laps, DrivingConduct Conduct)
 /// <param name="Label">The session kind, category or circuit.</param>
 /// <param name="Sessions">The number of sessions.</param>
 /// <param name="Rates">The incidents and laps of these sessions.</param>
-public sealed record DrivingRow(string Label, int Sessions, DrivingRates Rates)
+/// <param name="TimeLost">The time lost on laps with a contact, in the races of these sessions.</param>
+/// <param name="RiskSector">The sector holding most contacts, when one stands out.</param>
+public sealed record DrivingRow(
+    string Label,
+    int Sessions,
+    DrivingRates Rates,
+    TimeSpan TimeLost = default,
+    int? RiskSector = null)
 {
     private const int MinimumLapsForRates = 20;
 
@@ -226,12 +350,54 @@ public sealed record DrivingRow(string Label, int Sessions, DrivingRates Rates)
 /// <param name="TrackVenue">The track venue.</param>
 /// <param name="Category">The category of the driver.</param>
 /// <param name="Conduct">The incidents of the race.</param>
+/// <param name="TimeLost">The time lost on laps with a contact.</param>
 public sealed record DrivingRaceEntry(
     string? EventId,
     DateTimeOffset StartedAt,
     string TrackVenue,
     string Category,
-    DrivingConduct Conduct);
+    DrivingConduct Conduct,
+    TimeSpan TimeLost);
+
+/// <summary>
+/// What the incidents of the driver's races cost them.
+/// </summary>
+/// <param name="TimeLost">The time lost on laps with a contact, first and pit laps excluded.</param>
+/// <param name="Races">The number of races with lap data.</param>
+/// <param name="Contacts">The contacts with a car or an obstacle.</param>
+/// <param name="FirstLapContacts">The contacts at the start or on the first lap.</param>
+/// <param name="ContactsWithDamage">The contacts followed by damage to the car.</param>
+/// <param name="PositionsLost">The positions lost on laps with a contact.</param>
+/// <param name="Retirements">The races not finished.</param>
+/// <param name="RetirementsAfterContact">The retirements with a contact on the last lap driven.</param>
+/// <param name="MedianLossPerContactLap">The median time lost on a lap with a contact.</param>
+/// <param name="CostliestCircuit">The circuit where contacts cost the most time.</param>
+/// <param name="CostliestCircuitLost">The time lost on that circuit.</param>
+/// <param name="CostliestRace">The race where contacts cost the most time.</param>
+public sealed record DrivingCost(
+    TimeSpan TimeLost,
+    int Races,
+    int Contacts,
+    int FirstLapContacts,
+    int ContactsWithDamage,
+    int PositionsLost,
+    int Retirements,
+    int RetirementsAfterContact,
+    TimeSpan? MedianLossPerContactLap,
+    string? CostliestCircuit,
+    TimeSpan CostliestCircuitLost,
+    DrivingRaceEntry? CostliestRace)
+{
+    /// <summary>
+    /// Gets what stands out, in plain sentences.
+    /// </summary>
+    public IReadOnlyList<string> Takeaways { get; init; } = [];
+
+    /// <summary>
+    /// Gets the time lost per race, when there are races.
+    /// </summary>
+    public TimeSpan? TimeLostPerRace => Races == 0 ? null : TimeLost / Races;
+}
 
 /// <summary>
 /// A number of occurrences.

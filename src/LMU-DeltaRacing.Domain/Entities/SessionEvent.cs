@@ -7,8 +7,8 @@ namespace LMU_DeltaRacing.Domain.Entities;
 /// <param name="Kind">The kind of event.</param>
 /// <param name="DriverName">The driver the event is about.</param>
 /// <param name="Detail">
-/// The other driver of a vehicle contact, the object of any other contact or the reason of a
-/// penalty, as written by LMU.
+/// The other driver of a vehicle contact, the object of any other contact, the reason of a penalty
+/// or the damaged part, as written by LMU.
 /// </param>
 /// <param name="Lap">The lap of the event (from 1), for track-limit events.</param>
 public sealed record SessionEvent(
@@ -39,5 +39,8 @@ public enum SessionEventKind
     InvalidLap,
 
     /// <summary>A penalty received, or a disqualification.</summary>
-    Penalty
+    Penalty,
+
+    /// <summary>New damage reported by the car.</summary>
+    Damage
 }

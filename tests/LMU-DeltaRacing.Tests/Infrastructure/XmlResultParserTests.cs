@@ -207,7 +207,7 @@ public sealed class XmlResultParserTests
                     driver.DnfReason));
                 foreach (var lap in driver.Laps)
                 {
-                    snapshot.AppendLine($"{lap.Number}:{lap.Time?.Ticks}:{string.Join(',', lap.Sectors.Select(sector => $"{sector.Number}={sector.Time.Ticks}"))}");
+                    snapshot.AppendLine($"{lap.Number}:{lap.Time?.Ticks}:{string.Join(',', lap.Sectors.Select(sector => $"{sector.Number}={sector.Time.Ticks}"))}:{lap.Position}:{lap.StartedAt?.Ticks}:{lap.IsPitLap}");
                 }
             }
 
@@ -226,8 +226,9 @@ public sealed class XmlResultParserTests
 
     // Computed with the XDocument parser of version 0.1 on the fixtures of assets/Results, then on the
     // date of each phase (with RaceResults/DateTime instead, the fingerprint of version 0.1 is unchanged),
-    // then with the session events added: without them, the previous fingerprint is unchanged.
-    private const string ReferenceSnapshotHash = "CC70957682B49F1815CE760E4F214E5CA1C26470EDA5F3219F9E9321632B2E87";
+    // then with the session events added, then with the lap positions, lap starts, pit stops and damage
+    // reports: without each of these additions, the previous fingerprint is unchanged.
+    private const string ReferenceSnapshotHash = "8A7AA5FD86234BEF92EB8B00D9519D22A24754F3C4990057BDE337749EF53CA5";
 
     /// <summary>
     /// Verifies that a session starts at the date of its phase: the two races of the restart of
@@ -303,7 +304,7 @@ public sealed class XmlResultParserTests
 
     /// <summary>
     /// Verifies the events kept from the event log, and that the others are left out: scores,
-    /// damage reports, track-limit events without consequence and served penalties.
+    /// sector records, track-limit events without consequence and served penalties.
     /// </summary>
     [TestMethod]
     public void Parse_reads_contacts_track_limits_and_penalties_of_the_event_log()
@@ -334,6 +335,7 @@ public sealed class XmlResultParserTests
             """);
 
         session.Events.Should().Equal(
+            new SessionEvent(TimeSpan.FromSeconds(2), SessionEventKind.Damage, "Driver A", "suspension"),
             new SessionEvent(TimeSpan.FromSeconds(10.5), SessionEventKind.VehicleContact, "Driver A", "Driver (B)"),
             new SessionEvent(TimeSpan.FromSeconds(11.5), SessionEventKind.ObstacleContact, "Driver A", "Post"),
             new SessionEvent(TimeSpan.FromSeconds(12.5), SessionEventKind.OtherContact, "Driver A", "Wing"),
@@ -342,6 +344,43 @@ public sealed class XmlResultParserTests
             new SessionEvent(TimeSpan.FromSeconds(30), SessionEventKind.Penalty, "Driver A", "Speeding In Pitlane"),
             new SessionEvent(TimeSpan.FromSeconds(31), SessionEventKind.Penalty, "Driver A", "Track Limits"),
             new SessionEvent(TimeSpan.FromSeconds(32), SessionEventKind.Penalty, "Driver A", "Disqualify"));
+    }
+
+    /// <summary>
+    /// Verifies the lap values used by the race story, and the damage reports of the event log.
+    /// </summary>
+    [TestMethod]
+    public void Parse_reads_the_position_start_and_pit_stop_of_laps_and_damage_reports()
+    {
+        var session = ParseResults("""
+            <DateTime>1760000000</DateTime>
+            <TrackVenue>Spa</TrackVenue>
+            <TrackCourse>Spa GP</TrackCourse>
+            <Race>
+              <Stream>
+                <Sector et="2.0">Driver A(0) reports new suspension damage</Sector>
+                <Sector et="3.0">Driver A(0) reports new engine damage</Sector>
+                <Sector et="4.0">Driver A(0) set new best for sector 2</Sector>
+              </Stream>
+              <Driver>
+                <Name>Driver A</Name>
+                <Position>1</Position>
+                <Lap num="1" p="3" et="144.2225" s1="44.2">150.7752</Lap>
+                <Lap num="2" p="0" et="--.----" pit="1">--.----</Lap>
+              </Driver>
+            </Race>
+            """);
+
+        var laps = session.Drivers[0].Laps;
+        laps[0].Position.Should().Be(3);
+        laps[0].StartedAt.Should().Be(TimeSpan.FromSeconds(144.2225));
+        laps[0].IsPitLap.Should().BeFalse();
+        laps[1].Position.Should().BeNull();
+        laps[1].StartedAt.Should().BeNull();
+        laps[1].IsPitLap.Should().BeTrue();
+        session.Events.Should().Equal(
+            new SessionEvent(TimeSpan.FromSeconds(2), SessionEventKind.Damage, "Driver A", "suspension"),
+            new SessionEvent(TimeSpan.FromSeconds(3), SessionEventKind.Damage, "Driver A", "engine"));
     }
 
     private static Session ParseFixture(string fileName)

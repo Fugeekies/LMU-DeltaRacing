@@ -105,6 +105,12 @@ public static class DrivingConductPresentation
             SessionEventKind.OtherContact => $"Contact signalé : {incident.Detail}",
             SessionEventKind.TrackLimitWarning => "Avertissement de limites de piste",
             SessionEventKind.InvalidLap => "Tour invalidé",
+            SessionEventKind.Damage => incident.Detail switch
+            {
+                "suspension" => "Dégâts : suspension",
+                "engine" => "Dégâts : moteur",
+                _ => $"Dégâts : {incident.Detail}"
+            },
             _ => $"Pénalité : {incident.Detail}"
         };
     }

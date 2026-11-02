@@ -108,13 +108,22 @@ else
                 </table>
             </div>
 
-            @if (results.FirstOrDefault(result => result.Name == selectedDriver) is { } incidentsDriver)
+            @* The story opens on the selected driver: it is the race they came to read. *@
+            @if ((results.FirstOrDefault(result => result.Name == selectedDriver) ?? results.FirstOrDefault(result => result.IsPlayer)) is { } incidentsDriver)
             {
-                <section class="incident-panel" aria-label="Incidents du pilote">
+                var story = RaceStoryPresentation.Create(selectedSession!, incidentsDriver.Name);
+                <section class="incident-panel" aria-label="Récit de la session du pilote">
                     <div class="incident-panel-heading">
-                        <h3>Incidents de @incidentsDriver.Name</h3>
-                        <button type="button" class="incident-close" @onclick="() => selectedDriver = null">Fermer</button>
+                        <h3>@(story is null ? "Incidents" : "Film de la course") de @incidentsDriver.Name</h3>
+                        @if (selectedDriver is not null)
+                        {
+                            <button type="button" class="incident-close" @onclick="() => selectedDriver = null">Fermer</button>
+                        }
                     </div>
+                    @if (story is not null)
+                    {
+                        <RaceStoryChart Story="story" />
+                    }
                     @if (incidentsDriver.Incidents.Count == 0)
                     {
                         <p class="incident-empty">Aucun incident dans cette session.</p>
@@ -122,14 +131,14 @@ else
                     else
                     {
                         <ol class="incident-list">
-                            @foreach (var incident in incidentsDriver.Incidents)
+                            @* In a race, the story knows the lap of every incident; LMU only gives it for track limits. *@
+                            @foreach (var (incident, lap) in story is null
+                                ? incidentsDriver.Incidents.Select(incident => (incident, incident.Lap))
+                                : story.Laps.SelectMany(lap => lap.Incidents.Select(incident => (incident, (int?)lap.Number))))
                             {
                                 <li>
                                     <span class="incident-time">@DisplayFormat.TotalTime(incident.Elapsed)</span>
-                                    @if (incident.Lap is { } lap)
-                                    {
-                                        <span class="incident-lap">Tour @lap</span>
-                                    }
+                                    <span class="incident-lap">@(lap is { } number ? $"Tour {number}" : string.Empty)</span>
                                     <span>@DrivingConductPresentation.Describe(incident)</span>
                                 </li>
                             }
@@ -285,7 +294,7 @@ else
                     <button type="button"
                             class="conduct-button"
                             aria-label="Voir les incidents de @result.Name"
-                            aria-expanded="@(selectedDriver == result.Name ? "true" : "false")"
+                            aria-expanded="@(IsFocused(result) ? "true" : "false")"
                             @onclick="() => ToggleIncidents(result.Name)">
                         <span>@conduct.VehicleContacts</span>
                         <span class="cell-sub">@conduct.ObstacleContacts</span>
@@ -302,6 +311,9 @@ else
                 <td class="numeric-cell">—</td>
             }
         </tr>;
+
+    private bool IsFocused(RaceDetailsDriverResult result) =>
+        selectedDriver == result.Name || (selectedDriver is null && result.IsPlayer);
 
     private void ToggleIncidents(string driverName) =>
         selectedDriver = selectedDriver == driverName ? null : driverName;

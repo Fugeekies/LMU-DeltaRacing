@@ -117,8 +117,9 @@ Recherchez un pilote par son nom et triez par nombre de courses, victoires, pour
 
 Comment **vous** roulez, sur toutes vos qualifications et courses importées, comparé aux autres pilotes de ces mêmes sessions.
 
+- **Ce que vos incidents vous coûtent :** le temps perdu sur les tours avec contact, comparé à votre tour médian de chaque course, et ce qui ressort de vos courses : part des contacts au premier tour, circuit le plus coûteux, contacts avec dégâts, abandons après un contact.
 - **Votre bilan :** contacts avec une voiture, obstacles (mur, poteau, panneau, cône), avertissements de limites de piste, tours invalidés et pénalités, pour 100 tours. La valeur est verte quand vous faites au moins aussi bien que les autres.
-- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
+- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit, avec le temps perdu et la zone à risque, le secteur où vous concentrez vos contacts. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
 - **Forme récente :** vos 10 dernières courses, avec un lien vers leur détail.
 - **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
 
@@ -143,6 +144,8 @@ Pour chaque pilote :
 | **TEMPS TOTAL** | Temps de course complet (en course seulement) et, dessous, l'écart avec le premier de la catégorie : **LEADER**, un temps, **+1 tour** ou **DNF** |
 | **CONTACTS** | Contacts avec une voiture et, dessous, avec un obstacle. Cliquez sur ces chiffres pour voir tous les incidents du pilote dans l'ordre de la session |
 | **LIMITES** | Avertissements de limites de piste et, dessous, tours invalidés |
+
+Sous le tableau, le **film de la course** montre votre position tour par tour, avec chaque contact, dégât, pénalité et arrêt au stand. Cliquez sur les chiffres d'un autre pilote pour voir le sien.
 
 Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
 

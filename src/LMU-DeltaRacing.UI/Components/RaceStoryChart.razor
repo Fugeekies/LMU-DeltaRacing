@@ -1,0 +1,64 @@
+@using LMU_DeltaRacing.UI.Models
+
+@{
+    var chart = RaceStoryChartLayout.Create(Story);
+}
+
+<div class="story-summary">
+    <span><strong>@Story.Contacts.Count</strong> @(Story.Contacts.Count > 1 ? "contacts" : "contact")</span>
+    <span><strong>@FormatSeconds(Story.TimeLost)</strong> perdues sur les tours avec contact</span>
+    <span><strong>@Story.PositionsLost</strong> @(Story.PositionsLost > 1 ? "places perdues" : "place perdue") sur ces tours</span>
+    @if (Story.ReferenceLap is { } reference)
+    {
+        <span>Tour de référence : <strong>@DisplayFormat.Lap(reference)</strong></span>
+    }
+</div>
+
+<svg class="story-chart" viewBox="0 0 @chart.Width @chart.Height" role="img" aria-label="Position de @Story.DriverName tour par tour">
+    @foreach (var tick in chart.PositionTicks)
+    {
+        <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
+        <g><text class="story-axis" x="@Number(chart.PlotLeft - 8)" y="@Number(tick.Position + 4)" text-anchor="end">@tick.Label</text></g>
+    }
+    @foreach (var tick in chart.LapTicks)
+    {
+        <g><text class="story-axis" x="@Number(tick.Position)" y="@Number(chart.PlotBottom + 20)" text-anchor="middle">@tick.Label</text></g>
+    }
+    @foreach (var pit in chart.PitStops)
+    {
+        <line class="story-pit" x1="@Number(pit)" x2="@Number(pit)" y1="@Number(chart.PlotTop)" y2="@Number(chart.PlotBottom)">
+            <title>Arrêt au stand</title>
+        </line>
+    }
+    <polyline class="story-line" points="@chart.Line" />
+    @foreach (var marker in chart.Markers)
+    {
+        <circle class="story-marker @marker.CssClass" cx="@Number(marker.X)" cy="@Number(marker.Y)" r="7">
+            <title>@marker.Title</title>
+        </circle>
+    }
+</svg>
+
+<div class="story-legend" aria-label="Légende du graphique">
+    <span><i class="story-swatch story-damage" aria-hidden="true"></i>Dégâts</span>
+    <span><i class="story-swatch story-contact" aria-hidden="true"></i>Contact avec une voiture</span>
+    <span><i class="story-swatch story-obstacle" aria-hidden="true"></i>Obstacle</span>
+    <span><i class="story-swatch story-penalty" aria-hidden="true"></i>Pénalité</span>
+    <span><i class="story-swatch story-limit" aria-hidden="true"></i>Limites de piste</span>
+    <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>Arrêt au stand</span>
+    <span>Survolez un point pour le détail · Position au général</span>
+</div>
+
+@code {
+    /// <summary>
+    /// Gets or sets the race to draw.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public RaceStory Story { get; set; } = null!;
+
+    private static string Number(double value) =>
+        value.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
+
+    private static string FormatSeconds(TimeSpan time) =>
+        $"{time.TotalSeconds.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)} s";
+}

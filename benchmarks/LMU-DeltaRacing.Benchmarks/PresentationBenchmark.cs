@@ -43,6 +43,10 @@ internal static class PresentationBenchmark
             .MaxBy(session => session.Drivers.Sum(driver => driver.Laps.Count))!;
         table.Measure(
             $"1 ({largestRace.Drivers.Count} pilotes)",
+            "Détail des courses : film de la plus grosse course",
+            () => RaceStoryPresentation.Create(largestRace, largestRace.Drivers[0].Name)!.Laps.Count);
+        table.Measure(
+            $"1 ({largestRace.Drivers.Count} pilotes)",
             "Détail des courses : classement de la plus grosse course",
             () => RaceDetailsPresentation.CreateResults(largestRace, FixtureSessions.UserName).Count,
             20,

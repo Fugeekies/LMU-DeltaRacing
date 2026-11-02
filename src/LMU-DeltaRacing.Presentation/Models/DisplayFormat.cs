@@ -89,6 +89,15 @@ public static class DisplayFormat
         kilometers is { } value ? $"{value.ToString("#,0", NumberFormat)} km" : Missing;
 
     /// <summary>
+    /// Formats a time as minutes and seconds: <c>8 min 52 s</c>, or <c>42 s</c> under a minute.
+    /// </summary>
+    public static string Minutes(TimeSpan time)
+    {
+        var minutes = (int)time.TotalMinutes;
+        return minutes == 0 ? $"{time.Seconds} s" : $"{minutes} min {time.Seconds:00} s";
+    }
+
+    /// <summary>
     /// Formats a duration in seconds as <c>h:mm</c>, hours not wrapping at 24.
     /// </summary>
     public static string Duration(double? seconds)

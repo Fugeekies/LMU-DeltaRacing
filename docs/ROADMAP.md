@@ -22,10 +22,10 @@ Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui vi
 ### Jalon — Analyse de course tour par tour 
 Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
 - [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
-- [ ] **Parser :** lire ces données, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
+- [ ] **Parser :** lire les données restantes (`p`, `et` et `pit` sont déjà lus), justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
 - [ ] **Régularité :** écart entre les tours d'une course, comparé au meilleur tour du pilote et à ses adversaires. Ne demande aucune nouvelle lecture XML.
 - [ ] **Records personnels :** meilleur tour par couple circuit + voiture et vitesse de pointe (`topspeed`), avec un repère quand un record tombe.
-- [ ] **Graphique tour par tour** dans Détail des courses : courbe des temps et de la position à chaque tour.
+- [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le film de la course.
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
 
@@ -73,6 +73,8 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ### Jalon — Profil de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
 Spécification : [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md). Dashboard uniquement.
+- [x] **Coût des incidents :** temps perdu mesuré contre le tour médian de chaque course, contacts au premier tour, places perdues, dégâts, abandons après contact, zone à risque par circuit.
+- [x] **Film de la course** dans Détail des courses : position tour par tour avec les incidents et les arrêts au stand.
 - [x] Nouvel onglet **Profil de conduite**, centré sur le pilote sélectionné : bilan pour 100 tours comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, 10 dernières courses, pilotes les plus touchés, obstacles et motifs de pénalité.
 - [x] **Contacts :** les signalements d'un même accrochage comptent une fois, pour chaque pilote impliqué (regroupement à 5 s, mesuré sur les fixtures).
 - [x] **Tours invalides :** LMU n'en signale pas en course. Ils sont rapportés aux tours de qualification, sans déduire de tours invalides en course.

@@ -26,6 +26,48 @@
 }
 else
 {
+    var cost = profile.Cost;
+    @if (cost.Contacts > 0)
+    {
+        <section class="panel driving-cost" aria-label="Ce que vos incidents vous coûtent">
+            <div class="driving-cost-main">
+                <p class="eyebrow">CE QUE VOS INCIDENTS VOUS COÛTENT</p>
+                <strong class="driving-cost-value">@DisplayFormat.Minutes(cost.TimeLost)</strong>
+                <span class="summary-detail">
+                    perdues sur les tours avec contact@(cost.TimeLostPerRace is { } perRace ? $", soit {FormatSeconds(perRace)} par course" : string.Empty)
+                </span>
+                <span class="summary-detail">Comparé à votre tour médian de chaque course, hors premier tour et arrêts : c'est un minimum.</span>
+            </div>
+            <ul class="driving-takeaways">
+                @foreach (var takeaway in cost.Takeaways)
+                {
+                    <li>@takeaway</li>
+                }
+            </ul>
+            <div class="driving-cost-figures">
+                <div><strong>@cost.Contacts</strong><span>contacts en course</span></div>
+                <div><strong>@cost.FirstLapContacts</strong><span>au départ ou au 1er tour</span></div>
+                <div><strong>@cost.PositionsLost</strong><span>places perdues sur ces tours</span></div>
+                <div><strong>@cost.ContactsWithDamage</strong><span>avec dégâts</span></div>
+            </div>
+            @if (cost.CostliestRace is { } worst)
+            {
+                <p class="driving-worst">
+                    Course la plus coûteuse :
+                    @if (worst.EventId is { } worstEvent)
+                    {
+                        <a href="@($"/race-details?event={Uri.EscapeDataString(worstEvent)}")">@worst.TrackVenue, @DisplayFormat.DateTime(worst.StartedAt)</a>
+                    }
+                    else
+                    {
+                        <span>@worst.TrackVenue, @DisplayFormat.DateTime(worst.StartedAt)</span>
+                    }
+                    (@FormatSeconds(worst.TimeLost) perdues)
+                </p>
+            }
+        </section>
+    }
+
     <section class="driving-tiles" aria-label="Votre bilan pour 100 tours">
         @RenderTile("CONTACTS", profile.Player.ContactsPer100Laps, profile.Others.ContactsPer100Laps, profile.Player.Conduct.VehicleContacts)
         @RenderTile("OBSTACLES", profile.Player.ObstaclesPer100Laps, profile.Others.ObstaclesPer100Laps, profile.Player.Conduct.ObstacleContacts)
@@ -53,6 +95,8 @@ else
                         <th scope="col" class="numeric-cell">OBSTACLES / 100 T.</th>
                         <th scope="col" class="numeric-cell">AVERTISSEMENTS / 100 T.</th>
                         <th scope="col" class="numeric-cell">PÉNALITÉS</th>
+                        <th scope="col" class="numeric-cell">TEMPS PERDU</th>
+                        <th scope="col" class="numeric-cell">ZONE À RISQUE</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -64,6 +108,7 @@ else
         </div>
         <div class="sector-legend">
             <span>Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours : l'échantillon est trop petit.</span>
+            <span>Zone à risque : le secteur qui concentre au moins la moitié des contacts hors premier tour, dès 3 contacts.</span>
         </div>
     </section>
 
@@ -93,6 +138,7 @@ else
                             <th scope="col" class="numeric-cell">OBSTACLES</th>
                             <th scope="col" class="numeric-cell">AVERTISSEMENTS</th>
                             <th scope="col" class="numeric-cell">PÉNALITÉS</th>
+                            <th scope="col" class="numeric-cell">TEMPS PERDU</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -115,6 +161,7 @@ else
                                 <td class="numeric-cell">@race.Conduct.ObstacleContacts</td>
                                 <td class="numeric-cell">@race.Conduct.Warnings</td>
                                 <td class="numeric-cell">@race.Conduct.Penalties</td>
+                                <td class="numeric-cell">@(race.TimeLost > TimeSpan.Zero ? FormatSeconds(race.TimeLost) : "—")</td>
                             </tr>
                         }
                     </tbody>
@@ -140,6 +187,9 @@ else
         profile = DrivingProfilePresentation.Create(State.Sessions, State.UserName);
     }
 
+    private static string FormatSeconds(TimeSpan time) =>
+        $"{time.TotalSeconds.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)} s";
+
     private static string FormatRate(double? rate) =>
         rate?.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture) ?? "—";
 
@@ -160,7 +210,7 @@ else
 
     private static RenderFragment RenderRows(string title, IEnumerable<DrivingRow> rows) =>
         @<text>
-            <tr class="driving-group"><th scope="rowgroup" colspan="7">@title</th></tr>
+            <tr class="driving-group"><th scope="rowgroup" colspan="9">@title</th></tr>
             @foreach (var row in rows.Where(row => row.Sessions > 0))
             {
                 <tr>
@@ -171,6 +221,8 @@ else
                     <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.ObstaclesPer100Laps : null)</td>
                     <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.WarningsPer100Laps : null)</td>
                     <td class="numeric-cell">@row.Rates.Conduct.Penalties</td>
+                    <td class="numeric-cell">@(row.TimeLost > TimeSpan.Zero ? FormatSeconds(row.TimeLost) : "—")</td>
+                    <td class="numeric-cell">@(row.RiskSector is { } sector ? $"Secteur {sector}" : "—")</td>
                 </tr>
             }
         </text>;
