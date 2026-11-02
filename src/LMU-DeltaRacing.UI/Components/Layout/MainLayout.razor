@@ -1,6 +1,9 @@
-﻿@inherits LayoutComponentBase
+@inherits LayoutComponentBase
 @implements IDisposable
 @inject DashboardDataService DashboardData
+
+@* No page is rendered behind the startup screen: without this title, the tab would show the address. Pages replace it. *@
+<PageTitle>LMU DeltaRacing</PageTitle>
 
 @if (StartupLoadingPresentation.IsVisible(state))
 {
@@ -19,10 +22,10 @@ else
                 <nav class="primary-nav" aria-label="Navigation principale">
                     <NavLink href="/" Match="NavLinkMatch.All">Accueil</NavLink>
                     <NavLink href="/my-races">Mes courses</NavLink>
-                    <NavLink href="/progression">Progression</NavLink>
-                    <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
-                    <NavLink href="/driving-profile">Profil de conduite</NavLink>
                     <NavLink href="/race-details">Détail des courses</NavLink>
+                    <NavLink href="/progression">Progression</NavLink>
+                    <NavLink href="/driving-profile">Profil de conduite</NavLink>
+                    <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
                     <NavLink href="/settings">Options</NavLink>
                 </nav>
                 <div class="system-status" role="status" aria-live="polite">

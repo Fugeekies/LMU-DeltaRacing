@@ -86,45 +86,6 @@ Votre historique, **circuit par circuit**, pour voir si vous progressez.
 
 > Les tours invalidés par le jeu (sortie des limites de piste) ne comptent pas : *Le Mans Ultimate* efface leur temps.
 
-### Progression
-
-Un **graphique** de l'évolution de vos meilleurs tours sur un circuit, dans une catégorie.
-
-- Choisissez le **circuit** et la **catégorie**. À l'ouverture, la page montre ceux de votre dernière course.
-- **Période** : vos meilleurs tours sont regroupés par jour, semaine, mois ou année.
-- **Valeur tracée** : la ligne passe par le meilleur (min), la moyenne ou le moins bon (max) de chaque période. La bande colorée va du min au max.
-- **Affichage** : une courbe Course et une courbe Qualification toutes voitures confondues, ou **une courbe par voiture** (en choisissant Course ou Qualification).
-- Au-dessus du graphique, le **résumé** donne pour chaque courbe votre record, la valeur de départ, la valeur actuelle et l'écart (🟢 plus rapide, 🔴 plus lent). Une ligne en tirets marque le record sur le graphique.
-- Survolez ou cliquez un point pour voir son détail. Cliquez une entrée de la légende pour masquer ou réafficher une courbe.
-- Une période sans course est sautée : la courbe relie directement les périodes où vous avez roulé, et une petite barre grise sur l'axe des dates signale les périodes vides.
-- Le bouton **Afficher le détail des périodes** donne les valeurs exactes dans un tableau.
-
-Vos réglages (période, valeur tracée, affichage) sont retenus pour la prochaine fois.
-
-### Classement des coureurs
-
-Votre bilan **face à face** contre chaque pilote croisé en course.
-
-- **Courses affrontées :** nombre de courses disputées contre ce pilote.
-- **Victoires / Défaites :** nombre de fois où vous avez terminé devant / derrière lui.
-- **% de victoire**, avec une barre verte (victoires) et rouge (défaites).
-
-Seules les **courses** comptent (pas les qualifications), et seulement contre les pilotes de **votre catégorie** : battre une GT3 au volant d'une Hypercar ne compte pas.
-
-Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
-
-### Profil de conduite
-
-Comment **vous** roulez, sur toutes vos qualifications et courses importées, comparé aux autres pilotes de ces mêmes sessions.
-
-- **Ce que vos incidents vous coûtent :** le temps perdu sur les tours avec contact, comparé à votre tour médian de chaque course, et ce qui ressort de vos courses : part des contacts au premier tour, circuit le plus coûteux, contacts avec dégâts, abandons après un contact.
-- **Votre bilan :** contacts avec une voiture, obstacles (mur, poteau, panneau, cône), avertissements de limites de piste, tours invalidés et pénalités, pour 100 tours. La valeur est verte quand vous faites au moins aussi bien que les autres.
-- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit, avec le temps perdu et la zone à risque, le secteur où vous concentrez vos contacts. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
-- **Forme récente :** vos 10 dernières courses, avec un lien vers leur détail.
-- **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
-
-Un accrochage compte une fois, même si les deux voitures l'ont signalé plusieurs fois. LMU ne signale de tours invalidés qu'en essais et en qualification.
-
 ### Détail des courses
 
 Le classement complet d'un événement.
@@ -145,9 +106,48 @@ Pour chaque pilote :
 | **CONTACTS** | Contacts avec une voiture et, dessous, avec un obstacle. Cliquez sur ces chiffres pour voir tous les incidents du pilote dans l'ordre de la session |
 | **LIMITES** | Avertissements de limites de piste et, dessous, tours invalidés |
 
-Sous le tableau, le **film de la course** montre votre position tour par tour, avec chaque contact, dégât, pénalité et arrêt au stand. Cliquez sur les chiffres d'un autre pilote pour voir le sien.
+Sous le tableau, le **déroulé de la course** montre votre position tour par tour, avec chaque contact, dégât, pénalité et arrêt au stand. Cliquez sur les chiffres d'un autre pilote pour voir le sien.
 
 Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
+
+### Progression
+
+Un **graphique** de l'évolution de vos meilleurs tours sur un circuit, dans une catégorie.
+
+- Choisissez le **circuit** et la **catégorie**. À l'ouverture, la page montre ceux de votre dernière course.
+- **Période** : vos meilleurs tours sont regroupés par jour, semaine, mois ou année.
+- **Valeur tracée** : la ligne passe par le meilleur (min), la moyenne ou le moins bon (max) de chaque période. La bande colorée va du min au max.
+- **Affichage** : une courbe Course et une courbe Qualification toutes voitures confondues, ou **une courbe par voiture** (en choisissant Course ou Qualification).
+- Au-dessus du graphique, le **résumé** donne pour chaque courbe votre record, la valeur de départ, la valeur actuelle et l'écart (🟢 plus rapide, 🔴 plus lent). Une ligne en tirets marque le record sur le graphique.
+- Survolez ou cliquez un point pour voir son détail. Cliquez une entrée de la légende pour masquer ou réafficher une courbe.
+- Une période sans course est sautée : la courbe relie directement les périodes où vous avez roulé, et une petite barre grise sur l'axe des dates signale les périodes vides.
+- Le bouton **Afficher le détail des périodes** donne les valeurs exactes dans un tableau.
+
+Vos réglages (période, valeur tracée, affichage) sont retenus pour la prochaine fois.
+
+### Profil de conduite
+
+Comment **vous** roulez, sur toutes vos qualifications et courses importées, comparé aux autres pilotes de ces mêmes sessions.
+
+- **Ce que vos incidents vous coûtent :** le temps perdu sur les tours avec contact, comparé à votre tour médian de chaque course, et ce qui ressort de vos courses : part des contacts au premier tour, circuit le plus coûteux, contacts avec dégâts, abandons après un contact.
+- **Votre bilan :** contacts avec une voiture, obstacles (mur, poteau, panneau, cône), avertissements de limites de piste, tours invalidés et pénalités, pour 100 tours. La valeur est verte quand vous faites au moins aussi bien que les autres.
+- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit, avec le temps perdu et la zone à risque, le secteur où vous concentrez vos contacts. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
+- **Forme récente :** vos 10 dernières courses, avec un lien vers leur détail.
+- **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
+
+Un accrochage compte une fois, même si les deux voitures l'ont signalé plusieurs fois. LMU ne signale de tours invalidés qu'en essais et en qualification.
+
+### Classement des coureurs
+
+Votre bilan **face à face** contre chaque pilote croisé en course.
+
+- **Courses affrontées :** nombre de courses disputées contre ce pilote.
+- **Victoires / Défaites :** nombre de fois où vous avez terminé devant / derrière lui.
+- **% de victoire**, avec une barre verte (victoires) et rouge (défaites).
+
+Seules les **courses** comptent (pas les qualifications), et seulement contre les pilotes de **votre catégorie** : battre une GT3 au volant d'une Hypercar ne compte pas.
+
+Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
 
 ### Options
 

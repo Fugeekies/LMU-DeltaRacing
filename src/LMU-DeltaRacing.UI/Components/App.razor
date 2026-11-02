@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="@Assets["dashboard.css"]" />
     <link rel="stylesheet" href="@Assets["LMU-DeltaRacing.UI.styles.css"]" />
     <ImportMap />
-    <HeadOutlet />
+    @* Interactive like the pages: a static outlet would miss the titles rendered after the startup screen. *@
+    <HeadOutlet @rendermode="InteractiveServer" />
 </head>
 
 <body>

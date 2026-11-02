@@ -114,7 +114,7 @@ else
                 var story = RaceStoryPresentation.Create(selectedSession!, incidentsDriver.Name);
                 <section class="incident-panel" aria-label="Récit de la session du pilote">
                     <div class="incident-panel-heading">
-                        <h3>@(story is null ? "Incidents" : "Film de la course") de @incidentsDriver.Name</h3>
+                        <h3>@(story is null ? "Incidents" : "Déroulé de la course") de @incidentsDriver.Name</h3>
                         @if (selectedDriver is not null)
                         {
                             <button type="button" class="incident-close" @onclick="() => selectedDriver = null">Fermer</button>

@@ -10,7 +10,7 @@ Ce fichier est la **source unique** des instructions pour les agents IA : GitHub
 dotnet build LMU-DeltaRacing.slnx
 dotnet test tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj
 dotnet test tests/LMU-DeltaRacing.Tests/LMU-DeltaRacing.Tests.csproj --filter "FullyQualifiedName~MyRacesPresentationTests"
-dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj        # ouvre le navigateur sur 127.0.0.1:<port aléatoire>
+dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj        # ouvre le navigateur sur deltaracing.localhost:<port aléatoire> (serveur limité à 127.0.0.1)
 dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj
 dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj -c Release -p:BenchmarkYears=2   # benchmarks (long, éviter sauf demande)
 dotnet test benchmarks/LMU-DeltaRacing.Benchmarks/LMU-DeltaRacing.Benchmarks.csproj -c Release --filter "TestCategory=Views" --logger "console;verbosity=detailed"   # calculs des vues seuls (TestCategory=Import : chaîne d'import)

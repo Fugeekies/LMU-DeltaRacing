@@ -99,20 +99,20 @@ UISpec/
    * Filtres par circuit et par catégorie (`Hypercar`, `LMP2`, `LMP3`, `LMGTE`, `LMGT3`).
    * Calcul automatique du delta par rapport à la ligne précédente (n-1) à circuit et catégorie identiques, quelle que soit la voiture.
 
-3. **📈 Progression (`/progression`)** *(Voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
+3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
+   * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
+   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
+
+4. **📈 Progression (`/progression`)** *(Voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
    * Évolution des meilleurs tours du pilote sur un circuit et une catégorie, agrégés par jour, semaine, mois ou année (min, max, moyenne).
    * Courbes Qualification et Course toutes voitures confondues, ou une courbe par voiture ; accessible depuis l'icône 📈 des blocs circuit de « Mes courses ».
-
-4. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
-   * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
-   * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
 5. **🛡️ Profil de conduite (`/driving-profile`)** *(Voir template [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md))*
    * Bilan du pilote sélectionné (contacts, obstacles, avertissements, tours invalidés, pénalités pour 100 tours), comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses.
 
-6. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
-   * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
-   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
+6. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
+   * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
+   * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
 7. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
