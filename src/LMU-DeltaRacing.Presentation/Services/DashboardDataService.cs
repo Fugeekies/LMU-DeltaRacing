@@ -30,6 +30,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private IReadOnlyList<Session> sessions = [];
     private IReadOnlyList<DriverFrequency> driverFrequencies = [];
     private IReadOnlyList<SessionImportResult> failures = [];
+    private IReadOnlyList<SessionImportResult> duplicates = [];
     private ResultsDirectoryWatcher? watcher;
     private Task? initializationTask;
     private bool isLoading = true;
@@ -100,6 +101,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                     failures,
                     resultsDirectory)
                 {
+                    ImportDuplicates = duplicates,
                     UserName = DriverMerges.Resolve(userName, driverMerges),
                     DriverMerges = driverMerges,
                     DriverFrequencies = driverFrequencies,
@@ -357,6 +359,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 sessions = [];
                 driverFrequencies = [];
                 failures = [];
+                duplicates = [];
             }
 
             NotifyStateChanged();
@@ -458,11 +461,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 var result = await pending.Dequeue().ConfigureAwait(false);
                 lock (stateLock)
                 {
-                    if (result.Status == SessionImportStatus.Failed)
-                    {
-                        failures = [.. failures, result];
-                    }
-
+                    RecordIgnoredFile(result);
                     filesLoaded++;
                 }
 
@@ -524,16 +523,27 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     {
         lock (stateLock)
         {
-            if (result.Status == SessionImportStatus.Failed)
-            {
-                failures = [.. failures, result];
-            }
-
+            RecordIgnoredFile(result);
             sessions = DriverMerges.Apply(repository.GetAll(), driverMerges);
             if (!isLoading)
             {
                 driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
             }
+        }
+    }
+
+    /// <summary>
+    /// Keeps the files that gave no session and must be reported. To be called under the state lock.
+    /// </summary>
+    private void RecordIgnoredFile(SessionImportResult result)
+    {
+        if (result.Status == SessionImportStatus.Failed)
+        {
+            failures = [.. failures, result];
+        }
+        else if (result.Status == SessionImportStatus.SkippedDuplicate)
+        {
+            duplicates = [.. duplicates, result];
         }
     }
 

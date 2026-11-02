@@ -11,10 +11,10 @@ namespace LMU_DeltaRacing.Tests.Infrastructure;
 public sealed class InMemorySessionRepositoryTests
 {
     /// <summary>
-    /// Verifies that a saved session is available by identifier and in the full list.
+    /// Verifies that a stored session is available by identifier and in the full list.
     /// </summary>
     [TestMethod]
-    public void Save_makes_a_session_available_by_id_and_in_the_session_list()
+    public void TryAdd_makes_a_session_available_by_id_and_in_the_session_list()
     {
         var repository = new InMemorySessionRepository();
         var session = new Session(
@@ -26,10 +26,26 @@ public sealed class InMemorySessionRepositoryTests
             "Race",
             []);
 
-        repository.Save(session);
+        repository.TryAdd(session).Should().BeTrue();
 
         repository.GetById(session.Id).Should().BeSameAs(session);
         repository.GetAll().Should().ContainSingle().Which.Should().BeSameAs(session);
+    }
+
+    /// <summary>
+    /// Verifies that a second session with the same identifier does not replace the first one.
+    /// </summary>
+    [TestMethod]
+    public void TryAdd_keeps_the_first_session_of_an_identifier()
+    {
+        var repository = new InMemorySessionRepository();
+        var first = new Session(Guid.NewGuid(), DateTimeOffset.UnixEpoch, "Circuit", "Layout", "Event", "Race", []);
+        var duplicate = new Session(first.Id, DateTimeOffset.UnixEpoch, "Circuit", "Layout", "Event", "Race", []);
+        repository.TryAdd(first);
+
+        repository.TryAdd(duplicate).Should().BeFalse();
+
+        repository.GetAll().Should().ContainSingle().Which.Should().BeSameAs(first);
     }
 
     /// <summary>
@@ -47,7 +63,7 @@ public sealed class InMemorySessionRepositoryTests
             "Event",
             "Race",
             []);
-        repository.Save(session);
+        repository.TryAdd(session);
 
         repository.Clear();
 

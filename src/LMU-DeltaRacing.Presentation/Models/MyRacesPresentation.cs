@@ -37,6 +37,7 @@ public static class MyRacesPresentation
 
             var isQualifying = session.Kind == SessionKind.Qualifying;
             results.Add(new SessionResult(
+                session.Id,
                 session.TrackVenue,
                 session.TrackCourse,
                 session.TrackEvent,
@@ -56,6 +57,7 @@ public static class MyRacesPresentation
         foreach (var circuit in results
             .OrderBy(result => result.StartedAt)
             .ThenBy(result => result.IsQualifying ? 0 : 1)
+            .ThenBy(result => result.SessionId)
             .GroupBy(result => new { result.TrackVenue, result.TrackCourse, result.TrackEvent }))
         {
             SessionResult? pendingQualifying = null;
@@ -138,6 +140,7 @@ public static class MyRacesPresentation
     }
 
     private sealed record SessionResult(
+        Guid SessionId,
         string TrackVenue,
         string TrackCourse,
         string TrackEvent,

@@ -18,6 +18,9 @@ namespace LMU_DeltaRacing.Tests.Presentation;
 [TestClass]
 public sealed class DashboardDataServiceTests
 {
+    // A second session: a copy of the first fixture would be recognized as a duplicate.
+    private static readonly string OtherRaceFile = Path.Combine(AppContext.BaseDirectory, "assets", "Results", "2025_02_24_19_37_55-00R1.xml");
+
     /// <summary>
     /// Verifies that existing results load on startup and new results appear through the watcher.
     /// </summary>
@@ -72,7 +75,7 @@ public sealed class DashboardDataServiceTests
             System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(settingsPath))?["LMU"]?["UserName"]
                 ?.GetValue<string>().Should().Be(selectedDriver);
 
-            File.Copy(sourceFile, Path.Combine(resultsDirectory, "new-results.xml"));
+            File.Copy(OtherRaceFile, Path.Combine(resultsDirectory, "new-results.xml"));
             var updatedState = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
 
             updatedState.Sessions.Should().HaveCount(2);
@@ -134,11 +137,11 @@ public sealed class DashboardDataServiceTests
             secondState.IsWatching.Should().BeTrue();
             secondState.Sessions.Should().ContainSingle();
 
-            File.Copy(sourceFile, Path.Combine(firstDirectory, "old-watcher-results.xml"));
+            File.Copy(OtherRaceFile, Path.Combine(firstDirectory, "old-watcher-results.xml"));
             await Task.Delay(300);
             service.Snapshot.Sessions.Should().ContainSingle();
 
-            File.Copy(sourceFile, Path.Combine(secondDirectory, "new-results.xml"));
+            File.Copy(OtherRaceFile, Path.Combine(secondDirectory, "new-results.xml"));
             var updatedState = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
             updatedState.Sessions.Should().HaveCount(2);
         }
@@ -282,7 +285,7 @@ public sealed class DashboardDataServiceTests
             await WaitForStateAsync(service, state => !state.IsLoading && state.IsWatching);
             liveImports.Should().BeEmpty();
 
-            File.Copy(sourceFile, Path.Combine(resultsDirectory, "live.xml"));
+            File.Copy(OtherRaceFile, Path.Combine(resultsDirectory, "live.xml"));
             await WaitForStateAsync(service, state => state.Sessions.Count == 2);
 
             liveImports.Should().ContainSingle().Which.Should().Be("live.xml");
@@ -418,7 +421,7 @@ public sealed class DashboardDataServiceTests
             loaded.ImportFailures.Should().ContainSingle(failure => failure.SourceFile == "b-foreign.xml");
 
             File.WriteAllText(Path.Combine(resultsDirectory, "c-foreign.xml"), "<other />");
-            File.Copy(sourceFile, Path.Combine(resultsDirectory, "d-race.xml"));
+            File.Copy(OtherRaceFile, Path.Combine(resultsDirectory, "d-race.xml"));
             var updated = await WaitForStateAsync(service, state => state.Sessions.Count == 2);
 
             updated.ImportFailures.Select(failure => failure.SourceFile)
@@ -479,6 +482,50 @@ public sealed class DashboardDataServiceTests
             state.ImportFailures.Select(failure => failure.SourceFile).Should().Equal(foreignFiles);
             progress.Should().BeInAscendingOrder();
             progress.Should().Contain(Enumerable.Range(1, fixtures.Length + foreignFiles.Length));
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
+    /// Verifies that a copy of a file is reported apart from the failures, and forgotten on reload.
+    /// </summary>
+    [TestMethod]
+    public async Task Startup_load_reports_a_copy_as_a_duplicate()
+    {
+        var sourceFile = Path.Combine(AppContext.BaseDirectory, "assets", "Results", "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "a-race.xml");
+        var copy = Path.Combine(resultsDirectory, "b-copy.xml");
+        File.Copy(sourceFile, copy);
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(new XmlResultParser(), repository, NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsStartupImportRunning);
+
+            state.Sessions.Should().ContainSingle();
+            state.ImportFailures.Should().BeEmpty();
+            state.ImportDuplicates.Should().ContainSingle();
+
+            File.Delete(copy);
+            await service.ReloadResultsAsync(resultsDirectory, CancellationToken.None);
+
+            service.Snapshot.ImportDuplicates.Should().BeEmpty();
+            service.Snapshot.Sessions.Should().ContainSingle();
         }
         finally
         {

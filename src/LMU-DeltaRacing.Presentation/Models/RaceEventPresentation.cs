@@ -32,7 +32,8 @@ public static class RaceEventPresentation
             var current = new List<Session>();
             foreach (var session in circuit
                 .OrderBy(session => session.StartedAt)
-                .ThenBy(session => session.Kind))
+                .ThenBy(session => session.Kind)
+                .ThenBy(session => session.Id))
             {
                 if (current.Count > 0 && StartsNewEvent(current[^1], session))
                 {
@@ -52,6 +53,7 @@ public static class RaceEventPresentation
         return events
             .Where(raceEvent => raceEvent.Sessions.Any(session => DriverProfile.FindDriver(session, userName) is not null))
             .OrderByDescending(raceEvent => raceEvent.StartedAt)
+            .ThenBy(raceEvent => raceEvent.Id, StringComparer.Ordinal)
             .ToArray();
     }
 
@@ -68,8 +70,12 @@ public static class RaceEventPresentation
         var practices = sessions.Where(session => session.Kind == SessionKind.Practice).ToArray();
         var first = sessions[0];
 
+        // Practice sessions are optional: identifying the event by them would change its links
+        // whenever the option loading them is toggled.
+        var reference = sessions.FirstOrDefault(session => session.Kind != SessionKind.Practice) ?? first;
+
         return new RaceEvent(
-            first.Id.ToString(),
+            reference.Id.ToString(),
             first.TrackVenue,
             first.TrackCourse,
             first.TrackEvent,

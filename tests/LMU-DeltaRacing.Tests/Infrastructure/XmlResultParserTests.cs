@@ -219,8 +219,94 @@ public sealed class XmlResultParserTests
         hash.Should().Be(ReferenceSnapshotHash, "the fingerprint of the parsed fixtures is now {0}", hash);
     }
 
-    // Computed with the XDocument parser of version 0.1 on the fixtures of assets/Results.
-    private const string ReferenceSnapshotHash = "A5DFEC510FDE9B435BA5ECD6BC013F3EEF8F4102B55E16AFCDEA6033C136F471";
+    // Computed with the XDocument parser of version 0.1 on the fixtures of assets/Results, then on the
+    // date of each phase: with RaceResults/DateTime instead, the fingerprint of version 0.1 is unchanged.
+    private const string ReferenceSnapshotHash = "FA9958D11D6B630206448DCF50FD1B4265167A801E0987F7D624023D5193D7B3";
+
+    /// <summary>
+    /// Verifies that a session starts at the date of its phase: the two races of the restart of
+    /// 16/09/2026 share <c>RaceResults/DateTime</c> but not their own date.
+    /// </summary>
+    [TestMethod]
+    public void Parse_starts_a_session_at_the_date_of_its_phase()
+    {
+        ParseFixture("2026_09_16_15_09_20-06R1.xml").StartedAt.ToUnixTimeSeconds().Should().Be(1789563779);
+        ParseFixture("2026_09_16_15_17_11-40R1.xml").StartedAt.ToUnixTimeSeconds().Should().Be(1789564165);
+    }
+
+    /// <summary>
+    /// Verifies that the first date of the phase wins, and that dates of the event log are not read.
+    /// </summary>
+    [TestMethod]
+    public void Parse_reads_the_first_date_of_the_phase()
+    {
+        var session = ParseResults("""
+            <DateTime>1760000000</DateTime>
+            <TrackVenue>Spa</TrackVenue>
+            <TrackCourse>Spa GP</TrackCourse>
+            <Race>
+              <Stream><DateTime>5</DateTime></Stream>
+              <DateTime>1760000600</DateTime>
+              <DateTime>7</DateTime>
+              <Driver><Name>Driver A</Name><Position>1</Position></Driver>
+            </Race>
+            """);
+
+        session.StartedAt.ToUnixTimeSeconds().Should().Be(1760000600);
+    }
+
+    /// <summary>
+    /// Verifies that the identifier of a session does not change from one read to the next and
+    /// differs between the sessions of the fixtures, including sessions sharing their event date.
+    /// </summary>
+    [TestMethod]
+    public void Parse_gives_every_fixture_a_stable_and_unique_identifier()
+    {
+        var files = Directory.EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*.xml").ToArray();
+
+        var first = files.Select(file => ParseFixture(Path.GetFileName(file)).Id).ToArray();
+        var second = files.Select(file => ParseFixture(Path.GetFileName(file)).Id).ToArray();
+
+        second.Should().Equal(first);
+        first.Should().OnlyHaveUniqueItems();
+    }
+
+    /// <summary>
+    /// Verifies that the identifier ignores what can differ between two copies of a session (here
+    /// the drivers), but separates two phases of the same circuit and two dates.
+    /// </summary>
+    [TestMethod]
+    public void Parse_derives_the_identifier_from_the_circuit_the_phase_and_its_date()
+    {
+        static Session Results(string phase, long date, string driver) => ParseResults($"""
+            <DateTime>1760000000</DateTime>
+            <TrackVenue>Spa</TrackVenue>
+            <TrackCourse>Spa GP</TrackCourse>
+            <{phase}>
+              <DateTime>{date}</DateTime>
+              <Driver><Name>{driver}</Name><Position>1</Position></Driver>
+            </{phase}>
+            """);
+
+        var session = Results("Race", 1760000600, "Driver A");
+
+        Results("Race", 1760000600, "Driver B").Id.Should().Be(session.Id);
+        Results("Qualify", 1760000600, "Driver A").Id.Should().NotBe(session.Id);
+        Results("Race", 1760000601, "Driver A").Id.Should().NotBe(session.Id);
+    }
+
+    private static Session ParseFixture(string fileName)
+    {
+        using var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, "assets", "Results", fileName));
+        return new XmlResultParser().Parse(stream);
+    }
+
+    private static Session ParseResults(string results)
+    {
+        var xml = $"<rFactorXML><RaceResults>{results}</RaceResults></rFactorXML>";
+        using var stream = new MemoryStream(System.Text.Encoding.UTF8.GetBytes(xml));
+        return new XmlResultParser().Parse(stream);
+    }
 
     /// <summary>
     /// Verifies the reading rules on a small document: the first of repeated elements wins, the

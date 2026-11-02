@@ -78,6 +78,21 @@ public sealed class ConsoleViewsTests
     }
 
     /// <summary>
+    /// Verifies that the notice names the files ignored as duplicates.
+    /// </summary>
+    [TestMethod]
+    public void ImportNotice_lists_ignored_duplicates()
+    {
+        var imports = new[]
+        {
+            new SessionImportResult("copie-1.xml", SessionImportStatus.SkippedDuplicate, null, null),
+            new SessionImportResult("copie-2.xml", SessionImportStatus.SkippedDuplicate, null, null)
+        };
+
+        Render(ImportNotice.Create(imports)!).Should().Contain("2 doublons ignorés : copie-1.xml · copie-2.xml");
+    }
+
+    /// <summary>
     /// Verifies the home view: every section, the totals and the breakdown by category.
     /// </summary>
     [TestMethod]

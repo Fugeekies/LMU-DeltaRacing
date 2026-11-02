@@ -503,11 +503,13 @@ public sealed class ConsoleApplication
         }
         else
         {
-            // Every file is either imported, ignored (practice) or failed.
+            // Every file is either imported, ignored (practice or duplicate) or failed.
             var failures = state.ImportFailures.Count;
-            var skippedPractice = Math.Max(0, state.FilesLoaded - state.Sessions.Count - failures);
+            var duplicates = state.ImportDuplicates.Count;
+            var skippedPractice = Math.Max(0, state.FilesLoaded - state.Sessions.Count - failures - duplicates);
             console.MarkupLine(
                 $"{state.Sessions.Count} session(s) importée(s) · {skippedPractice} essai(s) ignoré(s) · "
+                + (duplicates > 0 ? $"{Markup.Escape(DashboardPresentation.DuplicateLabel(duplicates))} · " : string.Empty)
                 + (failures > 0 ? ConsoleTheme.Colored($"{failures} échec(s)", ConsoleTheme.Loss) : "0 échec(s)"));
             foreach (var failure in state.ImportFailures)
             {

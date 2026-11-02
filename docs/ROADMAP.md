@@ -4,16 +4,8 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ## À faire
 
-### Jalon — Identité et chronologie des sessions
-Issu de l'audit d'octobre 2026. Une session n'a ni identité stable ni heure de début propre, ce qui fragilise les comparaisons et les historiques. Ce jalon change des règles documentées dans `AGENTS.md` : proposition écrite à valider avant de coder.
-- [ ] **Constat — identité :** chaque session reçoit un `Guid` aléatoire à chaque chargement. Les liens `?event=` de Détail des courses ne survivent pas à un redémarrage, et un même fichier copié sous deux noms est importé deux fois.
-- [ ] **Constat — chronologie :** `StartedAt` vient de `RaceResults/DateTime`, commun à toutes les sessions d'un événement. Deux courses d'un même événement (redémarrage du 16/09/2026 dans les fixtures) ont la même date : leur ordre dans « Mes courses » est aléatoire et le delta n-1 entre elles peut s'inverser. Chaque phase porte pourtant sa propre date (`<Race><DateTime>`, `<Qualify><DateTime>`).
-- [ ] Rédiger la proposition : identité stable (nom de fichier ou empreinte du contenu), heure de session retenue (vérifier la présence et le sens de la date de phase dans toutes les fixtures, essais compris) et règles impactées (appariement qualif/course, deltas n-1, regroupement en événements, ordre des sessions récentes).
-- [ ] Après validation : lire l'heure de phase dans le parser, donner un identifiant stable aux sessions et aux événements, ignorer les doublons de contenu, mettre à jour `AGENTS.md` (faits vérifiés) et l'empreinte de référence du parser.
-- [ ] Tests sur les fixtures : les deux courses du 16/09/2026 sont ordonnées et comparées de la même façon à chaque lancement, et un lien `?event=` reste valide après un rechargement.
-
 ### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Prérequis : le jalon « Identité et chronologie des sessions », pour pouvoir identifier et comparer des sessions de façon fiable.
+La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase).
 - [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
 - [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
 - [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
@@ -78,6 +70,14 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Identité et chronologie des sessions — 02/11/2026 · PR [#52](https://github.com/Fugeekies/LMU-DeltaRacing/pull/52)
+Issu de l'audit d'octobre 2026. Décisions et simulation sur les fixtures : [`propositions/identite-chronologie-sessions.md`](propositions/identite-chronologie-sessions.md).
+- [x] **Heure :** `StartedAt` lit la date de la phase, à défaut `RaceResults/DateTime`, commun à une série de sessions. Les deux courses du 16/09/2026 ont toujours le même ordre et le même delta n-1.
+- [x] **Identité :** `Session.Id` est calculé à partir du circuit, de la phase et de sa date, au lieu d'être aléatoire à chaque chargement.
+- [x] **Événements :** identifiés par leur première session hors essais. Les liens `?event=` survivent à un redémarrage et au changement de l'option d'essais.
+- [x] **Doublons :** le premier fichier importé est gardé, le second est signalé comme ignoré (`SkippedDuplicate`), dans le dashboard et dans la console.
+- [x] `AGENTS.md` (faits vérifiés) et empreinte de référence du parser mis à jour : avec l'ancienne date, l'empreinte d'origine ressort à l'identique, donc seule la date change.
 
 ### Jalon — Version et mises à jour — 30/10/2026 · PR [#48](https://github.com/Fugeekies/LMU-DeltaRacing/pull/48)
 Spécifications : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6) et [`UISpec/Settings.template.md`](UISpec/Settings.template.md). Dashboard uniquement : la console attend la décision du jalon « Avenir de la console Spectre ».

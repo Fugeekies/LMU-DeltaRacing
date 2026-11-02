@@ -195,6 +195,38 @@ public sealed class SessionImportServiceTests
     }
 
     /// <summary>
+    /// Verifies that a copy of a file under another name is ignored, the first import being kept.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_ignores_a_copy_of_an_imported_session()
+    {
+        var repository = new InMemorySessionRepository();
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var path = Path.Combine(AppContext.BaseDirectory, FixturePath);
+        var copyPath = Path.Combine(Path.GetTempPath(), $"lmu-copy-{Guid.NewGuid():N}.xml");
+        File.Copy(path, copyPath);
+
+        try
+        {
+            var first = service.ImportFile(path);
+
+            var copy = service.ImportFile(copyPath);
+
+            copy.Status.Should().Be(SessionImportStatus.SkippedDuplicate);
+            copy.Session.Should().BeNull();
+            copy.ErrorMessage.Should().BeNull();
+            repository.GetAll().Should().ContainSingle().Which.Should().BeSameAs(first.Session);
+        }
+        finally
+        {
+            File.Delete(copyPath);
+        }
+    }
+
+    /// <summary>
     /// Verifies that a blank file path is rejected as invalid input.
     /// </summary>
     [TestMethod]

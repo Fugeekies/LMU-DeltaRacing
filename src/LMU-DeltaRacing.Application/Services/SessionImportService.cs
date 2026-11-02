@@ -105,7 +105,24 @@ public sealed class SessionImportService : ISessionImportService
             }
 
             logger.LogDebug("Parsed result file {SourceFile}; saving session {SessionId}", sourceFile, session.Id);
-            repository.Save(session);
+            if (!repository.TryAdd(session))
+            {
+                logger.LogInformation(
+                    "Skipped {SourceFile}: session {SessionId} is already imported",
+                    sourceFile,
+                    session.Id);
+                activity?.SetTag("import.status", "skipped_duplicate");
+                ApplicationTelemetry.Imports.Add(
+                    1,
+                    new KeyValuePair<string, object?>("import.status", "skipped_duplicate"));
+
+                return new SessionImportResult(
+                    sourceFile,
+                    SessionImportStatus.SkippedDuplicate,
+                    null,
+                    null);
+            }
+
             logger.LogInformation(
                 "Imported {SourceFile}: {TrackVenue}, session {SessionType}, {DriverCount} drivers",
                 sourceFile,

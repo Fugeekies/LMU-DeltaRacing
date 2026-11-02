@@ -24,7 +24,7 @@ Seul le rendu change : pas de tuiles ni de barres empilées, des tableaux et des
 ### Démarrage
 1. Titre `LMU DeltaRacing` (règle Spectre, alignée à gauche).
 2. Barre de progression « Chargement des résultats » (nom du fichier en cours en gris), effacée à la fin.
-3. Résumé sur une ligne : `N session(s) importée(s) · N essai(s) ignoré(s) · N échec(s)`, puis une ligne par fichier en échec (nom du fichier + message).
+3. Résumé sur une ligne : `N session(s) importée(s) · N essai(s) ignoré(s) · N échec(s)`, avec `N doublon(s) ignoré(s)` avant les échecs s'il y en a (copie d'une session déjà importée), puis une ligne par fichier en échec (nom du fichier + message).
 4. Démarrage de la surveillance si `WatchResultsOnStartup` est vrai.
 5. Bandeau d'état puis menu principal.
 
@@ -104,7 +104,7 @@ Mêmes lignes, deltas et tri que `MyRaces.razor`.
 En tête, un tableau des réglages actuels, puis l'état des imports :
 
 * **Réglages :** dossier des résultats (valeur configurée, ou « Détection automatique », et chemin résolu), état du dossier (🟢 « Dossier valide · N fichier(s) XML » / 🔴 message), pilote principal, nombre de fusions, démarrage automatique (Oui / Non), fichier de log et niveau minimal.
-* **État des imports :** une ligne `Sessions importées N · Dernière session <lieu> <date> · Fichiers en échec N`, la liste des fichiers en échec, puis le tableau **« Sessions récentes de <pilote> »** limité aux **10 plus récentes** (DATE / HEURE, CIRCUIT, ÉVÉNEMENT, SESSION, VOITURE).
+* **État des imports :** une ligne `Sessions importées N · Dernière session <lieu> <date> · Fichiers en échec N` (suivie de `N doublon(s) ignoré(s)` s'il y en a), la liste des fichiers en échec, puis le tableau **« Sessions récentes de <pilote> »** limité aux **10 plus récentes** (DATE / HEURE, CIRCUIT, ÉVÉNEMENT, SESSION, VOITURE).
 
 Puis un menu d'actions :
 

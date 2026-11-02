@@ -47,8 +47,9 @@ Points d'attention :
 
 Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 - Racine `rFactorXML/RaceResults` avec un DOCTYPE interne (garder `DtdProcessing.Ignore`, sans `XmlResolver`).
-- Une phase par fichier : `Practice1`, `Qualify` ou `Race`. La console **ignore les sessions Practice à l'import** (`SessionImportStatus.SkippedPractice`) ; le dashboard les importe si l'option `LMU:LoadPracticeSessions` est active (décochée par défaut, lue à chaque import) et ne les affiche que dans l'onglet Essais de « Détail des courses » (séances d'un même événement fusionnées). Dans un même événement, essais, qualif et course partagent le même `RaceResults/DateTime`.
-- `RaceResults/DateTime` est un timestamp Unix (UTC). `TimeString` est l'heure locale. Afficher avec `ToLocalTime()`.
+- Une phase par fichier : `Practice1`, `Qualify` ou `Race`. La console **ignore les sessions Practice à l'import** (`SessionImportStatus.SkippedPractice`) ; le dashboard les importe si l'option `LMU:LoadPracticeSessions` est active (décochée par défaut, lue à chaque import) et ne les affiche que dans l'onglet Essais de « Détail des courses » (séances d'un même événement fusionnées).
+- `RaceResults/DateTime` est un timestamp Unix (UTC), commun à une série de sessions (essais, qualif et course d'un même événement, voire deux courses après un redémarrage) : il ne date pas une session. Chaque phase porte sa propre date (`<Race><DateTime>`, `<Qualify><DateTime>`), présente et unique dans les 342 fixtures : c'est `Session.StartedAt`, à défaut `RaceResults/DateTime`. `TimeString` est l'heure locale. Afficher avec `ToLocalTime()`.
+- `Session.Id` est calculé à partir du lieu, du tracé, de la phase et de sa date (stable entre deux lancements). Deux fichiers de même identifiant sont une même session : le premier importé est gardé (`ISessionRepository.TryAdd`), le second est ignoré (`SessionImportStatus.SkippedDuplicate`). Dans un test, ne pas copier une même fixture pour simuler deux sessions.
 - `<Lap num=".." s1 s2 s3>` : secteurs **partiels** (s1+s2+s3 = temps du tour). Un tour invalide vaut `--.----` et un secteur peut manquer.
 - Valeurs de `CarClass` présentes : `Hyper`, `LMP2`, `LMP3`, `GTE`, `GT3`. Des sessions sont **multiclasses**.
 - Plusieurs courses peuvent avoir lieu le même jour sur le même circuit.

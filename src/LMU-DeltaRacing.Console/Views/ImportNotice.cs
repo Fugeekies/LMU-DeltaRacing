@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Application.Models;
+using LMU_DeltaRacing.Presentation.Models;
 using Spectre.Console;
 using Spectre.Console.Rendering;
 
@@ -33,6 +34,16 @@ public static class ImportNotice
                 sessions.Select(session => $"{session.TrackVenue} — {session.SessionType}"));
             lines.Add(new Markup(
                 $" {ConsoleTheme.Colored("+", ConsoleTheme.Gain)} {Markup.Escape(label)} : {Markup.Escape(details)}"));
+        }
+
+        var duplicates = imports
+            .Where(result => result.Status == SessionImportStatus.SkippedDuplicate)
+            .Select(result => result.SourceFile)
+            .ToArray();
+        if (duplicates.Length > 0)
+        {
+            lines.Add(new Markup(
+                $" {Markup.Escape($"{DashboardPresentation.DuplicateLabel(duplicates.Length)} : {string.Join(" · ", duplicates)}")}"));
         }
 
         foreach (var failure in imports.Where(result => result.Status == SessionImportStatus.Failed))

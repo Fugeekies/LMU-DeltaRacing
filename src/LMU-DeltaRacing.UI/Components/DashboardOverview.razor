@@ -56,7 +56,11 @@
         <strong class="summary-value @(State.ImportFailures.Count > 0 ? "text-warning" : string.Empty)">
             @State.ImportFailures.Count
         </strong>
-        <span class="summary-detail">Les autres imports continuent</span>
+        <span class="summary-detail">
+            @(State.ImportDuplicates.Count > 0
+                ? DashboardPresentation.DuplicateLabel(State.ImportDuplicates.Count)
+                : "Les autres imports continuent")
+        </span>
     </article>
 </section>
 

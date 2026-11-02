@@ -45,6 +45,11 @@ public sealed record DashboardState(
     public IReadOnlyList<DriverMerge> DriverMerges { get; init; } = [];
 
     /// <summary>
+    /// Gets the files ignored during this run because their session was already imported.
+    /// </summary>
+    public IReadOnlyList<SessionImportResult> ImportDuplicates { get; init; } = [];
+
+    /// <summary>
     /// Gets whether the import run at application startup is still in progress. Unlike
     /// <see cref="IsLoading"/>, it stays false while a reload re-imports the results directory.
     /// </summary>

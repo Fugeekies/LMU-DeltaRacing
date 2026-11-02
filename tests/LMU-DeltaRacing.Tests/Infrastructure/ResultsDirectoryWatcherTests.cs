@@ -154,7 +154,7 @@ public sealed class ResultsDirectoryWatcherTests
         var repository = new InMemorySessionRepository();
         using (var fixture = File.OpenRead(GetFixturePath()))
         {
-            repository.Save(new XmlResultParser().Parse(fixture));
+            repository.TryAdd(new XmlResultParser().Parse(fixture));
         }
 
         await using var watcher = CreateWatcher(directory.Path, results.Enqueue, repository);
@@ -165,6 +165,36 @@ public sealed class ResultsDirectoryWatcherTests
         results.Should().BeEmpty();
         repository.GetAll().Should().ContainSingle();
         watcher.ImportedSessionCount.Should().Be(0);
+    }
+
+    /// <summary>
+    /// Verifies that a copy of a result file under another name is reported and not counted twice.
+    /// </summary>
+    [TestMethod]
+    public async Task StartAsync_ignores_a_copy_of_an_imported_file()
+    {
+        using var directory = new TemporaryDirectory();
+        var results = new ConcurrentQueue<SessionImportResult>();
+        var bothImports = new TaskCompletionSource(TaskCreationOptions.RunContinuationsAsynchronously);
+        var repository = new InMemorySessionRepository();
+        await using var watcher = CreateWatcher(directory.Path, result =>
+        {
+            results.Enqueue(result);
+            if (results.Count == 2)
+            {
+                bothImports.TrySetResult();
+            }
+        }, repository);
+        await watcher.StartAsync();
+
+        File.Copy(GetFixturePath(), Path.Combine(directory.Path, "result.xml"));
+        File.Copy(GetFixturePath(), Path.Combine(directory.Path, "result - Copie.xml"));
+        await bothImports.Task.WaitAsync(TimeSpan.FromSeconds(10));
+
+        results.Select(result => result.Status).Should().BeEquivalentTo(
+            [SessionImportStatus.Imported, SessionImportStatus.SkippedDuplicate]);
+        repository.GetAll().Should().ContainSingle();
+        watcher.ImportedSessionCount.Should().Be(1);
     }
 
     /// <summary>
@@ -188,14 +218,20 @@ public sealed class ResultsDirectoryWatcherTests
             }
         }, repository);
         await watcher.StartAsync();
-        var fixturePath = GetFixturePath();
+
+        // Distinct sessions: copies of one file would be recognized as duplicates.
+        var fixturePaths = Directory
+            .EnumerateFiles(Path.GetDirectoryName(GetFixturePath())!, "*R1.xml")
+            .Order(StringComparer.Ordinal)
+            .Take(fileCount)
+            .ToArray();
         var stopwatch = System.Diagnostics.Stopwatch.StartNew();
 
         await Task.Run(() => Parallel.For(
             0,
             fileCount,
             index => File.Copy(
-                fixturePath,
+                fixturePaths[index],
                 Path.Combine(directory.Path, $"result-{index:D2}.xml"))));
 
         await allImportsCompleted.Task.WaitAsync(TimeSpan.FromSeconds(30));
