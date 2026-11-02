@@ -20,6 +20,7 @@ public static class RaceDetailsPresentation
         ArgumentNullException.ThrowIfNull(session);
 
         var isRace = session.Kind == SessionKind.Race;
+        var incidents = DrivingConductPresentation.CreateIncidents(session);
         var drivers = session.Drivers
             .Select(driver =>
             {
@@ -68,6 +69,7 @@ public static class RaceDetailsPresentation
                         driver.BestSectors.TryGetValue(number, out var time) ? time : null,
                         reference.BestSectors.TryGetValue(number, out var classBest) ? classBest : null))
                     .ToArray();
+                var driverIncidents = incidents.TryGetValue(driver.Driver.Name.Trim(), out var known) ? known : [];
 
                 return new RaceDetailsDriverResult(
                     driver.Driver.Name,
@@ -87,7 +89,11 @@ public static class RaceDetailsPresentation
                     isRace && !IsRetired(driver.Driver) ? driver.Driver.FinishTime : null,
                     isRace
                         ? GetRaceGap(driver.Driver, reference.Leader?.Driver)
-                        : GetLapGap(driver, reference));
+                        : GetLapGap(driver, reference),
+
+                    // Without any event, the log is missing: that is not a clean session.
+                    session.Events.Count == 0 ? null : DrivingConductPresentation.Summarize(driverIncidents),
+                    driverIncidents);
             })
             .ToArray();
     }
@@ -182,6 +188,8 @@ public static class RaceDetailsPresentation
 /// <param name="DeltaToBestLap">The gap between the fastest lap and the best lap of the class.</param>
 /// <param name="TotalTime">The total race time, for classified race finishers.</param>
 /// <param name="GapToLeader">The gap to the class leader.</param>
+/// <param name="Conduct">The incidents by family, or <see langword="null"/> when the session has no event log.</param>
+/// <param name="Incidents">The chronological incidents of the driver.</param>
 public sealed record RaceDetailsDriverResult(
     string Name,
     string Car,
@@ -195,7 +203,9 @@ public sealed record RaceDetailsDriverResult(
     TimeSpan? DeltaToBestIdealLap,
     TimeSpan? DeltaToBestLap,
     TimeSpan? TotalTime,
-    LeaderGap GapToLeader);
+    LeaderGap GapToLeader,
+    DrivingConduct? Conduct,
+    IReadOnlyList<DrivingIncident> Incidents);
 
 /// <summary>
 /// A sector time and its WEC-style classification.

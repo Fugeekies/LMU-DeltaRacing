@@ -10,6 +10,10 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Dashboard : nouvel onglet **Profils de conduite**, avec pour chaque pilote ses contacts, obstacles, contacts pour 100 tours, avertissements, tours invalidés et pénalités, sur les qualifications et les courses.
+- Détail des courses : colonnes **CONTACTS** et **LIMITES**, et fil chronologique des incidents d'un pilote en cliquant sur ses chiffres.
+- Parser : lecture des contacts, des limites de piste et des pénalités du journal `Stream` (`Session.Events`) ; un événement de forme inattendue est ignoré sans rendre le fichier illisible.
+- Fixtures : les noms des événements du `Stream` correspondent de nouveau aux pilotes listés (`scripts/Repair-StreamNames.ps1`), sans changer les alias ni les retouches de Driver Tom.
 - Import : un fichier dont la session est déjà importée (copie sous un autre nom) est ignoré et signalé comme doublon (`SessionImportStatus.SkippedDuplicate`), sans compter deux fois ses résultats ni apparaître en échec. Le dashboard l'indique sous « Fichiers en échec », la console dans son résumé d'import et dans les nouveaux imports.
 - Accueil : les barres des tuiles sont plus hautes (12 px), les valeurs de la légende passent entre parenthèses et sans gras, et survoler une barre ou sa légende affiche une pop-up avec la valeur et son pourcentage du total.
 - Mes courses : chaque catégorie d'un circuit s'ouvre sur un séparateur à sa couleur, avec un lien « Voir la progression » qui ouvre Progression sur ce circuit et cette catégorie. Dans la console, une ligne vide sépare les catégories.

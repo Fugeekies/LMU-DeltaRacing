@@ -42,7 +42,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * Sinon : texte jaune `#eab308`.
   * Secteur absent : `—`.
 * **Couleurs des deltas :** delta ≤ 0 en vert, delta > 0 en rouge, valeur absente en gris (`—`).
-* **Structure du tableau** (8 colonnes, sans défilement horizontal à partir de 1 280 px de large) : chaque cellule **empile** une valeur principale et, en petit dessous, son complément ou son écart. L'en-tête de chaque colonne indique les deux lignes (par exemple « SECTEUR 1 / ÉCART »).
+* **Structure du tableau** (10 colonnes) : chaque cellule **empile** une valeur principale et, en petit dessous, son complément ou son écart. L'en-tête de chaque colonne indique les deux lignes (par exemple « SECTEUR 1 / ÉCART »).
 
   | Colonne | Ligne principale | Ligne secondaire |
   |---|---|---|
@@ -52,7 +52,10 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | TOUR IDÉAL / ÉCART | Somme des meilleurs secteurs (`m:ss.fff`) | Écart au meilleur tour idéal de la classe (`+2.309s`) |
   | MEILLEUR TOUR / ÉCART | Meilleur tour du pilote (`m:ss.fff`) | Écart au meilleur tour de la classe (`+0.469s`) |
   | TEMPS TOTAL / ÉCART AU 1ER | En course : temps total du pilote (`FinishTime`, `h:mm:ss.fff` si ≥ 1 h sinon `m:ss.fff`) ; `—` en qualification, pour un pilote DNF/DQ ou sans temps | Écart au leader de la classe : `LEADER` (vert), `+12.500s`, `+1 tour`, `DNF` (rouge) |
+  | CONTACTS / OBSTACLES | Contacts avec une voiture | Contacts avec un obstacle. Les deux lignes forment un bouton qui ouvre les incidents du pilote |
+  | LIMITES / TOURS INVALIDÉS | Avertissements de limites de piste | Tours invalidés |
 
+* **Incidents :** règles de comptage dans [`DrivingProfiles.template.md`](DrivingProfiles.template.md). Une session sans aucun événement n'a pas de journal : ses deux colonnes affichent `—`, pas `0`. Le bouton ouvre, sous le tableau, le fil chronologique du pilote (temps écoulé, tour s'il est connu, description) ; il se referme par le même bouton ou par « Fermer ».
 * **Ligne du pilote sélectionné :** légèrement surlignée (fond rouge LMU translucide), en plus du tag **VOUS**.
 * Le tableau garde sa zone de défilement **vertical** (hauteur maximale 680 px, en-tête fixe).
 

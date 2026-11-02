@@ -113,6 +113,17 @@ Seules les **courses** comptent (pas les qualifications), et seulement contre le
 
 Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
 
+### Profils de conduite
+
+Comment chaque pilote roule, sur toutes vos qualifications et courses importées.
+
+- **Contacts :** accrochages avec une autre voiture. Un accrochage compte une fois pour chaque pilote impliqué.
+- **Obstacles :** contacts avec un mur, un poteau, un panneau ou un cône.
+- **Pour 100 tours :** contacts et obstacles rapportés au nombre de tours, pour comparer des pilotes qui n'ont pas roulé autant.
+- **Avertissements**, **tours invalidés** (LMU n'en signale qu'en essais et en qualification) et **pénalités**.
+
+Recherchez un pilote par son nom et triez par la colonne de votre choix.
+
 ### Détail des courses
 
 Le classement complet d'un événement.
@@ -130,6 +141,8 @@ Pour chaque pilote :
 | **TOUR IDÉAL** | Somme des trois meilleurs secteurs : le tour que le pilote aurait pu faire. Dessous : l'écart avec le meilleur tour idéal de la catégorie |
 | **MEILLEUR TOUR** | Meilleur tour réel et, dessous, écart avec le meilleur tour de la catégorie |
 | **TEMPS TOTAL** | Temps de course complet (en course seulement) et, dessous, l'écart avec le premier de la catégorie : **LEADER**, un temps, **+1 tour** ou **DNF** |
+| **CONTACTS** | Contacts avec une voiture et, dessous, avec un obstacle. Cliquez sur ces chiffres pour voir tous les incidents du pilote dans l'ordre de la session |
+| **LIMITES** | Avertissements de limites de piste et, dessous, tours invalidés |
 
 Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
 

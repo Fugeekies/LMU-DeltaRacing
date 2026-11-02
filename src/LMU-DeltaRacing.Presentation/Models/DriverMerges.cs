@@ -44,10 +44,20 @@ public static class DriverMerges
                         ? Rename(driver, keptName)
                         : driver),
                     session.MostLapsCompleted,
-                    session.TrackLength)
+                    session.TrackLength,
+                    session.Events.Select(sessionEvent => Rename(sessionEvent, keptNames)))
                 : session)
             .ToArray();
     }
+
+    private static SessionEvent Rename(SessionEvent sessionEvent, IReadOnlyDictionary<string, string> keptNames) =>
+        sessionEvent with
+        {
+            DriverName = keptNames.GetValueOrDefault(sessionEvent.DriverName.Trim(), sessionEvent.DriverName),
+            Detail = sessionEvent.Kind == SessionEventKind.VehicleContact && sessionEvent.Detail is { } opponent
+                ? keptNames.GetValueOrDefault(opponent.Trim(), opponent)
+                : sessionEvent.Detail
+        };
 
     /// <summary>
     /// Returns the name kept for a driver, or the name itself when it is not merged.

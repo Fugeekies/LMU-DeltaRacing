@@ -5,20 +5,13 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 ## À faire
 
 ### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions à valider : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
-- [ ] **Fixtures :** faire correspondre les noms des événements du `Stream` aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom. Les résultats d'origine n'étant pas disponibles, la proposition retrouve les pilotes par les temps des événements `Score`.
+La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
+- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
 - [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
-- [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités), sans extrapoler les balises.
-- [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise du jalon « Profils de conduite ».
+- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
+- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profils de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
-
-### Jalon — Profils de conduite
-Nouvelle page qui montre comment chaque pilote roule : contacts et tours invalides. Prérequis : les étapes **Fixtures** et **Parser** du jalon « Exploiter les événements du `Stream` ».
-- [ ] **Spécification :** écrire `docs/UISpec/DrivingProfiles.template.md` avant de coder.
-- [ ] **Tours invalides :** en course, « Invalid Lap Cut Track » n'apparaît pas (voir le jalon « Écarts UI à traiter ») : décider si les événements `TrackLimits` ou les tours sans temps en tiennent lieu.
-- [ ] **Contacts :** les compter par pilote à partir des événements `Incident` (`Driver X(0) reported contact (85.95) with another vehicle Driver Y(1)`, 11 506 événements `Incident` en course dans les fixtures).
-- [ ] Nouvel onglet **Profils de conduite** avec les contacts et les tours invalides de chaque pilote.
 
 ### Jalon — Tableaux : colonnes et données
 Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui viendraient du `Stream`. Mettre à jour les specs `docs/UISpec/` concernées.
@@ -77,6 +70,12 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Profils de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
+Spécification : [`UISpec/DrivingProfiles.template.md`](UISpec/DrivingProfiles.template.md). Dashboard uniquement.
+- [x] Nouvel onglet **Profils de conduite** : contacts, obstacles, contacts pour 100 tours, avertissements, tours invalidés et pénalités de chaque pilote, sur les qualifications et les courses.
+- [x] **Contacts :** les signalements d'un même accrochage comptent une fois, pour chaque pilote impliqué (regroupement à 5 s, mesuré sur les fixtures).
+- [x] **Tours invalides :** LMU n'en signale pas en course. La page montre les tours invalidés à côté des avertissements de limites de piste, sans déduire de tours invalides en course.
 
 ### Jalon — Identité et chronologie des sessions — 02/11/2026 · PR [#52](https://github.com/Fugeekies/LMU-DeltaRacing/pull/52)
 Issu de l'audit d'octobre 2026. Décisions et simulation sur les fixtures : [`propositions/identite-chronologie-sessions.md`](propositions/identite-chronologie-sessions.md).

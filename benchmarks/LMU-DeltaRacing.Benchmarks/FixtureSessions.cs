@@ -66,7 +66,8 @@ internal static class FixtureSessions
                     session.SessionType,
                     session.Drivers,
                     session.MostLapsCompleted,
-                    session.TrackLength)))
+                    session.TrackLength,
+                    session.Events)))
             .ToArray();
     }
 }

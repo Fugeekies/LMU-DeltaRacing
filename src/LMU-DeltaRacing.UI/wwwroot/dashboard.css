@@ -1319,6 +1319,94 @@ h3 {
     letter-spacing: 0.08em;
 }
 
+.conduct-button {
+    width: 100%;
+    padding: 0.15rem 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--text);
+    font: inherit;
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    cursor: pointer;
+}
+
+.conduct-button:hover,
+.conduct-button[aria-expanded="true"] {
+    border-color: var(--accent);
+}
+
+.conduct-button > span {
+    display: block;
+}
+
+.conduct-button .cell-sub {
+    color: var(--muted);
+}
+
+.incident-panel {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.incident-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.75rem;
+}
+
+.incident-panel-heading h3 {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.incident-close {
+    padding: 0.2rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    background: transparent;
+    color: var(--muted);
+    font: inherit;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.incident-empty {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+}
+
+.incident-list {
+    display: grid;
+    gap: 0.35rem;
+    max-height: 18rem;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    font-size: 0.8rem;
+    list-style: none;
+}
+
+.incident-list li {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.incident-time {
+    min-width: 5.5rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+}
+
+.incident-lap {
+    min-width: 3.5rem;
+    color: var(--muted);
+}
+
 .sector-legend {
     display: flex;
     flex-wrap: wrap;

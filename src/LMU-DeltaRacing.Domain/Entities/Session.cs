@@ -17,6 +17,7 @@ public sealed class Session
     /// <param name="drivers">The drivers and their results.</param>
     /// <param name="mostLapsCompleted">The highest number of laps completed in the session.</param>
     /// <param name="trackLength">The length of one lap, in meters, when available.</param>
+    /// <param name="events">The events of the session log, in chronological order.</param>
     public Session(
         Guid id,
         DateTimeOffset startedAt,
@@ -26,7 +27,8 @@ public sealed class Session
         string sessionType,
         IEnumerable<Driver> drivers,
         int? mostLapsCompleted = null,
-        double? trackLength = null)
+        double? trackLength = null,
+        IEnumerable<SessionEvent>? events = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(trackVenue);
         ArgumentException.ThrowIfNullOrWhiteSpace(trackCourse);
@@ -44,6 +46,7 @@ public sealed class Session
         Drivers = Array.AsReadOnly(drivers.ToArray());
         MostLapsCompleted = mostLapsCompleted;
         TrackLength = trackLength;
+        Events = Array.AsReadOnly(events?.ToArray() ?? []);
     }
 
     /// <summary>
@@ -95,6 +98,11 @@ public sealed class Session
     /// Gets the length of one lap, in meters, when available.
     /// </summary>
     public double? TrackLength { get; }
+
+    /// <summary>
+    /// Gets the events of the session log, in chronological order.
+    /// </summary>
+    public IReadOnlyList<SessionEvent> Events { get; }
 
     // LMU writes "Practice1"..., "Qualify" and "Race"; numbered or longer names are accepted too.
     private static SessionKind GetKind(string sessionType) =>
