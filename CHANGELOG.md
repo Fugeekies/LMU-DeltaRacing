@@ -44,6 +44,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Formats d'affichage (`DisplayFormat`) et filtres de « Mes courses » (`MyRacesFilters`) partagés entre le dashboard et la console.
 - Release : le workflow manuel demande le type de version (Majeur, Mineur, Patch) au lieu du numéro, incrémente le dernier tag `vX.Y.Z` et liste dans les notes de la release une ligne par PR fusionnée depuis la release précédente.
 - Logo Delta Racing : le fond noir de l'icône (application, installeur, favicon, écran de chargement) est retiré, l'icône est désormais transparente, et le logo affiche « LMU » au-dessus du « DR ».
+- Dashboard : le logo Delta Racing remplace la case « LMU » du bandeau de navigation, suivi du nom « LMU DELTARACING » (logo seul sous 1480 px de large).
 
 ### Fixed
 - Dashboard : l'onglet du navigateur affichait l'adresse au lieu du titre de la page après l'écran de chargement. Il affiche désormais « LMU DeltaRacing » pendant le chargement, puis le titre de chaque page.

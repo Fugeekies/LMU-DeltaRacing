@@ -80,29 +80,32 @@ a {
 .brand {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.6rem;
     font-family: Oswald, "Roboto Condensed", "Arial Narrow", Impact, sans-serif;
-    font-size: 0.92rem;
+    font-size: 0.82rem;
     font-weight: 800;
-    letter-spacing: 0.12em;
+    letter-spacing: 0.06em;
     white-space: nowrap;
 }
 
+/* The icon's drawing fills 152px of its 256px height: negative margins crop the transparent
+   surroundings so that the logo fills the bar without growing it. */
 .brand-mark {
-    display: grid;
-    width: 36px;
-    height: 30px;
-    place-items: center;
-    border: 1px solid var(--accent);
-    border-radius: 4px;
-    color: var(--accent);
-    font-size: 0.75rem;
-    letter-spacing: 0.04em;
-    transform: skew(-8deg);
+    display: block;
+    width: 88px;
+    height: 88px;
+    margin: -16px -7px -19px -5px;
 }
 
 .brand-accent {
     color: var(--accent);
+}
+
+/* Below this width the tabs would run into the name: the logo carries it alone. */
+@media (max-width: 1480px) {
+    .brand-name {
+        display: none;
+    }
 }
 
 .primary-nav {
@@ -1693,14 +1696,10 @@ h3 {
         padding-left: 1rem;
     }
 
-    .brand {
-        gap: 0.5rem;
-        font-size: 0.82rem;
-    }
-
     .brand-mark {
-        width: 32px;
-        height: 28px;
+        width: 76px;
+        height: 76px;
+        margin: -14px -6px -17px -4px;
     }
 
     .system-status {
@@ -1735,6 +1734,7 @@ h3 {
     .brand {
         grid-column: 1;
         grid-row: 1;
+        padding-top: 0.4rem;
     }
 
     .system-status {
