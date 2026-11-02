@@ -4,7 +4,7 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ## À faire
 
-### Jalon — Identité et chronologie des sessions (priorité 1)
+### Jalon — Identité et chronologie des sessions
 Issu de l'audit d'octobre 2026. Une session n'a ni identité stable ni heure de début propre, ce qui fragilise les comparaisons et les historiques. Ce jalon change des règles documentées dans `AGENTS.md` : proposition écrite à valider avant de coder.
 - [ ] **Constat — identité :** chaque session reçoit un `Guid` aléatoire à chaque chargement. Les liens `?event=` de Détail des courses ne survivent pas à un redémarrage, et un même fichier copié sous deux noms est importé deux fois.
 - [ ] **Constat — chronologie :** `StartedAt` vient de `RaceResults/DateTime`, commun à toutes les sessions d'un événement. Deux courses d'un même événement (redémarrage du 16/09/2026 dans les fixtures) ont la même date : leur ordre dans « Mes courses » est aléatoire et le delta n-1 entre elles peut s'inverser. Chaque phase porte pourtant sa propre date (`<Race><DateTime>`, `<Qualify><DateTime>`).
@@ -12,13 +12,45 @@ Issu de l'audit d'octobre 2026. Une session n'a ni identité stable ni heure de 
 - [ ] Après validation : lire l'heure de phase dans le parser, donner un identifiant stable aux sessions et aux événements, ignorer les doublons de contenu, mettre à jour `AGENTS.md` (faits vérifiés) et l'empreinte de référence du parser.
 - [ ] Tests sur les fixtures : les deux courses du 16/09/2026 sont ordonnées et comparées de la même façon à chaque lancement, et un lien `?event=` reste valide après un rechargement.
 
-### Jalon — Exploiter les événements du `Stream` (priorité 2)
+### Jalon — Exploiter les événements du `Stream` 
 La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Prérequis : le jalon « Identité et chronologie des sessions », pour pouvoir identifier et comparer des sessions de façon fiable.
 - [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
 - [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
 - [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course).
+- [ ] **Page « Profils de conduite » :** nouvel onglet avec les contacts et les tours invalides de chaque pilote. Contacts : événements `Incident` (`Driver X(0) reported contact (85.95) with another vehicle Driver Y(1)`, 11 506 en course dans les fixtures). Tours invalides : en course, « Invalid Lap Cut Track » n'apparaît pas (voir le jalon « Écarts UI à traiter ») : décider si les événements `TrackLimits` ou les tours sans temps en tiennent lieu. Spécification `docs/UISpec/` à écrire avant de coder.
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profils de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
+
+### Jalon — Tableaux : colonnes et données
+Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui viendraient du `Stream`. Mettre à jour les specs `docs/UISpec/` concernées.
+- [ ] **Colonnes ajustables :** rendre la largeur des colonnes réglable dans les tableaux des pages de résultats (Mes courses, Classement des coureurs, Détail des courses).
+- [ ] **Détail des courses, doublon de position :** la première colonne (POS / CLASSE) empile la position générale et la position en classe (`01` et `LMGT3 P1`), qui se répètent quand elles sont égales. Les séparer en deux colonnes, POS et CLASSE.
+- [ ] **Classement des coureurs, plus de données :** arrêter la liste des données à ajouter dans `DriversRanking.template.md`, puis les afficher.
+
+### Jalon — Analyse de course tour par tour 
+Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
+- [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
+- [ ] **Parser :** lire ces données, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
+- [ ] **Régularité :** écart entre les tours d'une course, comparé au meilleur tour du pilote et à ses adversaires. Ne demande aucune nouvelle lecture XML.
+- [ ] **Records personnels :** meilleur tour par couple circuit + voiture et vitesse de pointe (`topspeed`), avec un repère quand un record tombe.
+- [ ] **Graphique tour par tour** dans Détail des courses : courbe des temps et de la position à chaque tour.
+- [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
+- [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
+
+### Jalon — README multilingue 
+Rendre le guide utilisateur lisible hors de France. Aucun prérequis, à faire avant le jalon « Interface multilingue » car il est bien plus léger. Langues à confirmer : français et anglais proposés.
+- [ ] Traduire `README.md` dans un fichier par langue (par exemple `README.en.md`), avec un lien de changement de langue en tête de chaque version.
+- [ ] Décider de la langue affichée par défaut sur GitHub (celle de `README.md`).
+- [ ] Ajouter dans `AGENTS.md` la règle de synchronisation : toute modification du README se reporte dans chaque langue. Les autres documents de `docs/` restent en français.
+
+### Jalon — Interface multilingue 
+Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder.
+- [ ] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup.
+- [ ] Extraire les textes des pages Razor et ceux des calculs partagés de `Presentation`, sans changer le rendu français.
+- [ ] Option **Langue** dans Options, enregistrée dans `appsettings.json` (section `LMU`).
+- [ ] Adapter à la langue les formats qui en dépendent (`1er`, `2e`, dates), sans toucher à `CultureInfo.InvariantCulture` pour la lecture des temps.
+- [ ] Test vérifiant que chaque texte existe dans toutes les langues.
+- [ ] Mettre à jour `AGENTS.md`, `docs/UI_DESIGN_SPEC.md` et les specs `docs/UISpec/`.
 
 ### Jalon — Signature de l'installeur (SignPath Foundation) (en parallèle)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
@@ -36,7 +68,7 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ### Liste d'idées à prioriser
 - [x] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (couleurs officielles des fonds de numéro de course, avec les séparateurs de catégorie de « Mes courses »).
-- [ ] Multi langue.
+- Le multilingue est dans les jalons « README multilingue » et « Interface multilingue ».
 - [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
 - [ ] Optimisation des essais (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt. Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
