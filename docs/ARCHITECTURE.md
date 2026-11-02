@@ -12,7 +12,7 @@
 ## Flux de données
 1. Le parser consomme un `Stream` XML LMU via la couche `Application` pour garantir l'indépendance du système de fichiers.
 2. Le parser transforme le XML en entité `Domain.Session`.
-3. Le dépôt en mémoire enregistre et restitue les sessions de manière thread-safe.
+3. Le dépôt en mémoire enregistre et restitue les sessions de manière thread-safe. L'identifiant d'une session est calculé à partir du circuit, de la phase et de sa date : il est stable d'un lancement à l'autre, et un fichier dont la session est déjà présente est ignoré comme doublon, sans être compté en échec.
 4. Au chargement, `DashboardDataService` analyse les fichiers en parallèle (un cœur reste libre pour l'affichage) mais prend leurs résultats dans l'ordre des fichiers, un à la fois : progression, échecs et `StateChanged` sont rapportés comme par un import séquentiel. Les fusions de pilotes et les fréquences sont calculées une fois, en fin de chargement.
 5. Un fichier qui n'est pas un résultat LMU, ou toute erreur inattendue pendant l'import d'un fichier, est compté en échec : ni le chargement ni la surveillance ne s'arrêtent.
 
@@ -32,6 +32,7 @@ Pour garantir la fluidité sur de gros volumes d'historiques (par exemple des ce
 - Un rapport de performance (`benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md`) est joint aux Pull Requests qui modifient le moteur d'import ou le parser.
 - Un test verrouille le parsing des 342 fixtures par une empreinte SHA-256 de toutes les valeurs lues : une optimisation du parser ne peut pas changer silencieusement les données.
 - [Audit d'octobre 2026](benchmarks/audit-performance-2026-10.md) : comparaison avant/après du parser en flux et de l'import parallèle.
+- [Identité et chronologie des sessions](benchmarks/identite-sessions-2026-11.md) : effet de la date de phase, de l'identifiant calculé et du refus des doublons sur la chaîne d'import.
 
 ## Build
 

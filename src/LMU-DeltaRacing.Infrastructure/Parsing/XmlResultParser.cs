@@ -1,4 +1,6 @@
 using System.Globalization;
+using System.Security.Cryptography;
+using System.Text;
 using System.Xml;
 using LMU_DeltaRacing.Application.Abstractions;
 using LMU_DeltaRacing.Domain.Entities;
@@ -105,6 +107,20 @@ public sealed class XmlResultParser : IResultXmlParser
         var phase = new RawPhase(reader.LocalName);
         ReadChildren(reader, () =>
         {
+            if (reader.LocalName == "DateTime")
+            {
+                if (phase.DateTime is null)
+                {
+                    phase.DateTime = ReadText(reader);
+                }
+                else
+                {
+                    reader.Skip();
+                }
+
+                return;
+            }
+
             if (reader.LocalName == "MostLapsCompleted")
             {
                 if (phase.MostLapsCompleted is null)
@@ -249,19 +265,39 @@ public sealed class XmlResultParser : IResultXmlParser
 
         var phase = results.Phase
             ?? throw new InvalidDataException("The XML document does not contain a driver results session.");
-        var timestamp = ParseUnixTimestamp(RequiredValue(results.Values, ResultsFields, "DateTime"));
+        var eventStart = ParseUnixTimestamp(RequiredValue(results.Values, ResultsFields, "DateTime"));
+
+        // RaceResults/DateTime is shared by the sessions of an event: only the phase has its own date.
+        var startedAt = phase.DateTime?.Trim() is { Length: > 0 } phaseDate ? ParseUnixTimestamp(phaseDate) : eventStart;
+        var trackVenue = RequiredValue(results.Values, ResultsFields, "TrackVenue");
+        var trackCourse = RequiredValue(results.Values, ResultsFields, "TrackCourse");
         var drivers = phase.Drivers.Select(CreateDriver).ToArray();
 
         return new Session(
-            Guid.NewGuid(),
-            timestamp,
-            RequiredValue(results.Values, ResultsFields, "TrackVenue"),
-            RequiredValue(results.Values, ResultsFields, "TrackCourse"),
-            Value(results.Values, ResultsFields, "TrackEvent") ?? RequiredValue(results.Values, ResultsFields, "TrackCourse"),
+            CreateSessionId(trackVenue, trackCourse, phase.Name, startedAt),
+            startedAt,
+            trackVenue,
+            trackCourse,
+            Value(results.Values, ResultsFields, "TrackEvent") ?? trackCourse,
             phase.Name,
             drivers,
             ParseOptionalInt(phase.MostLapsCompleted?.Trim()),
             ParseOptionalMeters(Value(results.Values, ResultsFields, "TrackLength")));
+    }
+
+    /// <summary>
+    /// Derives the identifier from values that identify the session itself, so that it survives a
+    /// restart and that a copy of a file, even edited, is recognized without hashing its content.
+    /// </summary>
+    private static Guid CreateSessionId(string trackVenue, string trackCourse, string phase, DateTimeOffset startedAt)
+    {
+        var key = string.Join(
+            '|',
+            trackVenue,
+            trackCourse,
+            phase,
+            startedAt.ToUnixTimeSeconds().ToString(CultureInfo.InvariantCulture));
+        return new Guid(SHA256.HashData(Encoding.UTF8.GetBytes(key)).AsSpan(0, 16));
     }
 
     private static Driver CreateDriver(RawDriver driver)
@@ -377,6 +413,8 @@ public sealed class XmlResultParser : IResultXmlParser
     private sealed class RawPhase(string name)
     {
         public string Name { get; } = name;
+
+        public string? DateTime { get; set; }
 
         public string? MostLapsCompleted { get; set; }
 

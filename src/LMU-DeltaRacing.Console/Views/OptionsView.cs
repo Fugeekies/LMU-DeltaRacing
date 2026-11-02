@@ -50,7 +50,7 @@ public static class OptionsView
         {
             CreateSettingsTable(state, settings),
             Text.Empty,
-            CreateImportSummary(driverSessions, state.ImportFailures.Count)
+            CreateImportSummary(driverSessions, state.ImportFailures.Count, state.ImportDuplicates.Count)
         };
 
         foreach (var failure in state.ImportFailures)
@@ -128,7 +128,10 @@ public static class OptionsView
                 ? $"{merges} (dont {mergesWithSharedSessions} avec sessions en commun)"
                 : merges.ToString(CultureInfo.InvariantCulture);
 
-    private static Markup CreateImportSummary(IReadOnlyList<LMU_DeltaRacing.Domain.Entities.Session> sessions, int failures)
+    private static Markup CreateImportSummary(
+        IReadOnlyList<LMU_DeltaRacing.Domain.Entities.Session> sessions,
+        int failures,
+        int duplicates)
     {
         var last = sessions.FirstOrDefault();
         var lastSession = last is null
@@ -137,7 +140,8 @@ public static class OptionsView
         var failureText = failures.ToString(CultureInfo.InvariantCulture);
         return new Markup(
             Markup.Escape($" Sessions importées {sessions.Count} · Dernière session {lastSession} · Fichiers en échec ")
-            + (failures > 0 ? ConsoleTheme.Colored(failureText, ConsoleTheme.Loss) : failureText));
+            + (failures > 0 ? ConsoleTheme.Colored(failureText, ConsoleTheme.Loss) : failureText)
+            + (duplicates > 0 ? Markup.Escape($" · {DashboardPresentation.DuplicateLabel(duplicates)}") : string.Empty));
     }
 
     private static Table CreateRecentSessions(

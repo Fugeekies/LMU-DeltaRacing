@@ -1,10 +1,10 @@
 # Proposition — Identité et chronologie des sessions
 
-Proposition à valider avant de coder, demandée par le jalon du même nom dans [`ROADMAP.md`](../ROADMAP.md). Rien n'est implémenté. Les chiffres viennent des 342 fixtures de `assets/Results`.
+Proposition demandée par le jalon du même nom dans [`ROADMAP.md`](../ROADMAP.md), validée le 02/11/2026 et implémentée dans la PR #52. Les chiffres viennent des 342 fixtures de `assets/Results`.
 
 ## En bref
 
-| # | Décision à valider | Proposition |
+| # | Décision | Choix retenu |
 |---|---|---|
 | 1 | Heure d'une session | `StartedAt` lit la date de la phase (`<Race><DateTime>`), à défaut `RaceResults/DateTime` |
 | 2 | Identité d'une session | `Guid` calculé à partir du circuit, de la phase et de sa date |

@@ -16,6 +16,11 @@ public enum SessionImportStatus
     SkippedPractice,
 
     /// <summary>
+    /// The file contained a session that is already stored, such as a copy under another name.
+    /// </summary>
+    SkippedDuplicate,
+
+    /// <summary>
     /// The file could not be read or parsed.
     /// </summary>
     Failed

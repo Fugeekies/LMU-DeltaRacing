@@ -70,7 +70,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Trois cartes :
   * **SESSIONS IMPORTÉES** : nombre de sessions du pilote (essais compris s'ils sont chargés) ;
   * **DERNIÈRE SESSION** : lieu et date de la plus récente ;
-  * **FICHIERS EN ÉCHEC** : nombre d'échecs (en couleur d'alerte si > 0).
+  * **FICHIERS EN ÉCHEC** : nombre d'échecs (en couleur d'alerte si > 0), avec en dessous « N doublon(s) ignoré(s) » lorsqu'un fichier contient une session déjà importée, sinon « Les autres imports continuent ».
 * Liste des fichiers en échec (nom + message) lorsqu'il y en a.
 * Tableau **« Sessions récentes de <pilote> »** trié du plus récent au plus ancien : DATE / HEURE (heure locale), CIRCUIT (lieu + tracé), ÉVÉNEMENT, SESSION (badge du type), VOITURE.
 

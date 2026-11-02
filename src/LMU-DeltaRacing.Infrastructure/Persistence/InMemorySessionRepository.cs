@@ -12,10 +12,10 @@ public sealed class InMemorySessionRepository : ISessionRepository
     private readonly ConcurrentDictionary<Guid, Session> sessions = new();
 
     /// <inheritdoc />
-    public void Save(Session session)
+    public bool TryAdd(Session session)
     {
         ArgumentNullException.ThrowIfNull(session);
-        sessions[session.Id] = session;
+        return sessions.TryAdd(session.Id, session);
     }
 
     /// <inheritdoc />

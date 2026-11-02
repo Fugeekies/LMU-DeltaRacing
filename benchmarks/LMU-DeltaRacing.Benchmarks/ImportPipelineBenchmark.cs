@@ -95,7 +95,7 @@ internal static class ImportPipelineBenchmark
         output.AppendLine(
             "« Chargement complet » mesure `DashboardDataService` du démarrage jusqu'à la fin de l'import initial " +
             "(liste des fichiers, import, fusions, fréquences des pilotes), sans surveillance. " +
-            "Au-delà d'une copie, les fichiers réels sont dupliqués sous d'autres noms pour simuler un historique plus long.");
+            "Au-delà d'une copie, les fichiers réels sont dupliqués, avec un lieu propre à chaque copie, pour simuler un historique plus long.");
         output.AppendLine();
         table.AppendTo(output);
     }
@@ -191,7 +191,11 @@ internal static class ImportPipelineBenchmark
         {
             foreach (var file in files)
             {
-                File.Copy(file, Path.Combine(directory, $"{copy:D2}-{Path.GetFileName(file)}"));
+                // Each copy gets its own venue: an exact copy would be skipped as a duplicate session,
+                // and the benchmark would no longer measure a real history of this size.
+                File.WriteAllText(
+                    Path.Combine(directory, $"{copy:D2}-{Path.GetFileName(file)}"),
+                    File.ReadAllText(file).Replace("<TrackVenue>", $"<TrackVenue>{copy:D2} ", StringComparison.Ordinal));
             }
         }
 
