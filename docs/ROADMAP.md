@@ -9,9 +9,15 @@ La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, conta
 - [ ] **Fixtures :** régénérer un jeu de résultats anonymisés où les noms des événements du `Stream` correspondent aux pilotes listés (la correspondance est perdue dans les fixtures actuelles), en conservant les retouches de démonstration de Driver Tom.
 - [ ] **Parser :** lire les événements du `Stream` utiles (incidents, limites de piste, pénalités) en documentant d'abord leur format réel dans `AGENTS.md`, sans extrapoler les balises.
 - [ ] Afficher les incidents et avertissements de limites de piste dans Détail des courses.
-- [ ] **Page « Profils de conduite » :** nouvel onglet avec les contacts et les tours invalides de chaque pilote. Contacts : événements `Incident` (`Driver X(0) reported contact (85.95) with another vehicle Driver Y(1)`, 11 506 en course dans les fixtures). Tours invalides : en course, « Invalid Lap Cut Track » n'apparaît pas (voir le jalon « Écarts UI à traiter ») : décider si les événements `TrackLimits` ou les tours sans temps en tiennent lieu. Spécification `docs/UISpec/` à écrire avant de coder.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profils de conduite ».
+- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise du jalon « Profils de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
+
+### Jalon — Profils de conduite
+Nouvelle page qui montre comment chaque pilote roule : contacts et tours invalides. Prérequis : les étapes **Fixtures** et **Parser** du jalon « Exploiter les événements du `Stream` ».
+- [ ] **Spécification :** écrire `docs/UISpec/DrivingProfiles.template.md` avant de coder.
+- [ ] **Tours invalides :** en course, « Invalid Lap Cut Track » n'apparaît pas (voir le jalon « Écarts UI à traiter ») : décider si les événements `TrackLimits` ou les tours sans temps en tiennent lieu.
+- [ ] **Contacts :** les compter par pilote à partir des événements `Incident` (`Driver X(0) reported contact (85.95) with another vehicle Driver Y(1)`, 11 506 événements `Incident` en course dans les fixtures).
+- [ ] Nouvel onglet **Profils de conduite** avec les contacts et les tours invalides de chaque pilote.
 
 ### Jalon — Tableaux : colonnes et données
 Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui viendraient du `Stream`. Mettre à jour les specs `docs/UISpec/` concernées.
