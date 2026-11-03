@@ -71,7 +71,7 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ## Terminés
 
-### Jalon — Cote pilote — 03/11/2026 · PR à créer
+### Jalon — Cote pilote — 03/11/2026 · PR [#55](https://github.com/Fugeekies/LMU-DeltaRacing/pull/55)
 Spécification : [`UISpec/DriverRating.template.md`](UISpec/DriverRating.template.md). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](propositions/cote-pilote.md). Dashboard uniquement.
 - [x] **Moteur :** cote Elo multijoueur de chaque pilote croisé (`DriverRatings`), course par course et classe par classe, 1 500 au départ, K = 64 pendant 5 courses de calibration puis 32 ; place attendue et force du plateau de chaque course.
 - [x] **Statut `None` :** une classe sans aucun pilote arrivé n'est pas notée (19 courses sur 107 dans les fixtures, quand le pilote quitte au départ) ; les autres gardent leurs positions officielles.
