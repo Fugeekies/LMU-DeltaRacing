@@ -1,6 +1,6 @@
 ## Menu : Cote pilote (`DriverRating.razor`)
 
-> Spécification alignée sur le code au 03/11/2026 (`DriverRating.razor`, `RatingChart.razor`, `DriverRatings.cs`, `DriverRatingPresentation.cs`, `RatingChartLayout.cs`). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](../propositions/cote-pilote.md).
+> Spécification alignée sur le code au 03/11/2026 (`DriverRating.razor`, `RatingChart.razor`, `DriverRatings.cs`, `DriverRatingPresentation.cs`, `RatingChartLayout.cs`). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](../propositions/cote-pilote.md). Guide utilisateur des calculs : [`COTE_PILOTE.md`](../COTE_PILOTE.md), à garder synchronisé avec cette spécification.
 
 ### Description
 Page `/rating`, onglet placé après « Profil de conduite ». Elle donne au **pilote sélectionné** (voir Options) une cote Elo multijoueur, calculée sur ses fichiers de résultats pour **chaque pilote croisé en course** : sa cote, son rang et son palier parmi ces pilotes, le prochain pilote à dépasser, l'évolution course après course, ses exploits et ses revers. Le « Classement des coureurs » compte des face-à-face, sans tenir compte du niveau des adversaires ; la cote, elle, pèse chaque résultat selon la force du plateau. Dashboard uniquement : la console attend la décision du jalon « Avenir de la console Spectre ».
@@ -38,7 +38,7 @@ Page `/rating`, onglet placé après « Profil de conduite ». Elle donne au **p
   | COTE | Cote après la course | `1 525` |
 
 * **Classement :** les pilotes classés par cote. Par défaut, le top 10 puis le pilote sélectionné et ses 3 voisins de chaque côté, séparés par une ligne `⋯` ; bouton « Afficher les N pilotes ». Colonnes RANG, PILOTE (tag « VOUS » et ligne teintée pour le pilote sélectionné), PALIER (badge), COTE, COURSES (courses notées), DERNIÈRE COURSE (`dd/MM/yyyy`).
-* **« Comment la cote est-elle calculée ? » :** encadré repliable en bas de page, qui reprend ces règles en français courant et rappelle que la cote ne mesure que les grilles des fichiers de l'utilisateur, et non le classement officiel de LMU.
+* **« Comment la cote est-elle calculée ? » :** encadré repliable en bas de page, qui reprend ces règles en français courant, dont la forme simplifiée de la variation, `K × (place attendue − place obtenue) / adversaires` (égale à la somme des duels sans égalité de position), avec un exemple, et rappelle que la cote ne mesure que les grilles des fichiers de l'utilisateur, et non le classement officiel de LMU.
 * **Formats :** cotes en points entiers, séparateur de milliers fin insécable (`DisplayFormat.Rating`) ; variations arrondies avant le choix du signe (`DisplayFormat.RatingChange`) : jamais `+0`.
 * **États de la page :**
   * Chargement initial sans session : spinner. Erreur de chargement sans session : encadré d'erreur renvoyant vers Options.

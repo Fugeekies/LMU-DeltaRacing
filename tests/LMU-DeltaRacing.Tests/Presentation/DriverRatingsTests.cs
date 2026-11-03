@@ -52,6 +52,24 @@ public sealed class DriverRatingsTests
     }
 
     /// <summary>
+    /// Verifies the simple form given to the users (docs/COTE_PILOTE.md): without tied positions, the
+    /// sum of the duels equals the expected rank minus the rank, so the change is
+    /// K × (expected rank − rank) / opponents.
+    /// </summary>
+    [TestMethod]
+    public void The_change_is_the_gap_between_the_expected_and_the_real_rank()
+    {
+        var history = DriverRatings.Calculate(
+        [
+            Race(0, ("Alice", 1), ("Bob", 2), ("Chloé", 3), ("Dan", 4)),
+            Race(1, ("Chloé", 1), ("Alice", 2), ("Dan", 3), ("Bob", 4))
+        ]);
+
+        history.Races[1].Classes.Single().Drivers.Should().AllSatisfy(change =>
+            change.Delta.Should().BeApproximately(64 * (change.ExpectedRank - change.ClassRank) / (change.FieldSize - 1), 1e-9));
+    }
+
+    /// <summary>
     /// Verifies that drivers are only compared within their class, as in the head-to-head view.
     /// </summary>
     [TestMethod]

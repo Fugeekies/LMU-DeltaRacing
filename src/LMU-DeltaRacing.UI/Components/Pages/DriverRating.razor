@@ -228,7 +228,8 @@ else
         <ul>
             <li>Chaque course est une série de duels avec les pilotes de votre classe : finir devant un pilote est une victoire contre lui. Battre un pilote mieux coté rapporte plus, perdre contre un pilote moins bien coté coûte plus.</li>
             <li>Tous les pilotes partent de @DisplayFormat.Rating(DriverRatings.InitialRating). Pendant leurs @DriverRatings.CalibrationRaces premières courses notées, la cote bouge deux fois plus vite pour trouver leur niveau, et ils ne sont pas encore classés.</li>
-            <li>Une course fait varier la cote de moins de 32 points (64 en calibration), quelle que soit la taille de la grille.</li>
+            <li>Avant la course, les cotes prévoient une place pour chacun (« attendu ») : 1, plus la chance de chaque adversaire de finir devant vous. Après la course : variation = K × (place attendue − place obtenue) ÷ nombre d’adversaires, avec K = 32 (64 en calibration). Exemple : 4e sur 20 pour une place attendue de 8,8 donne 32 × 4,8 ÷ 19 = +8.</li>
+            <li>Une course fait donc varier la cote de moins de 32 points (64 en calibration), quelle que soit la taille de la grille. Le vainqueur gagne toujours des points, le dernier en perd toujours.</li>
             <li>Seules les courses comptent, classe par classe, sur la position officielle en classe : abandons, disqualifications et voitures encore en piste à l’enregistrement du fichier compris. Une classe sans aucun pilote arrivé n’est pas notée : quand vous quittez une course, LMU enregistre les autres pilotes encore en piste, sans résultat.</li>
             <li>Les fusions de pilotes d’Options sont prises en compte. La cote ne mesure que les grilles de vos fichiers de résultats : ce n’est pas le classement officiel de LMU.</li>
         </ul>

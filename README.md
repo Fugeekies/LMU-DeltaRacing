@@ -152,6 +152,8 @@ Tout le monde part de 1 500. Pendant vos 5 premières courses, la cote bouge deu
 
 La cote est calculée sur vos seuls fichiers de résultats : ce n'est pas le classement officiel de LMU, et rien n'est envoyé en ligne.
 
+👉 Toutes les règles de calcul, avec des exemples chiffrés : **[La Cote pilote, expliquée](docs/COTE_PILOTE.md)**.
+
 ### Classement des coureurs
 
 Votre bilan **face à face** contre chaque pilote croisé en course.
