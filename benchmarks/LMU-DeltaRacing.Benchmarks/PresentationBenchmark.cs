@@ -82,6 +82,8 @@ internal static class PresentationBenchmark
             .Sum(circuit => MyRacesFilters.OrderRows(circuit).Count) + MyRacesFilters.GetTracks(records).Count);
         table.Measure(scale, "Classement des coureurs", () => DriversRankingPresentation.CreateRivalries(sessions, user).Count);
         table.Measure(scale, "Profil de conduite", () => DrivingProfilePresentation.Create(sessions, user)!.Sessions);
+        table.Measure(scale, "Cote pilote : cotes de tous les pilotes", () => DriverRatings.Calculate(sessions).Races.Count);
+        table.Measure(scale, "Cote pilote : page du pilote", () => DriverRatingPresentation.Create(sessions, user)!.Timeline.Count);
         table.Measure(scale, "Détail des courses : événements", () => RaceEventPresentation.CreateEvents(sessions, user).Count);
         table.Measure(scale, "Progression : circuits", () => ProgressionPresentation.GetCircuits(sessions, user).Count);
         table.Measure(scale, "Progression : courbes du circuit par défaut", () => ProgressionPresentation.Create(

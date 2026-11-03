@@ -66,6 +66,21 @@ public sealed class DisplayFormatTests
     }
 
     /// <summary>
+    /// Verifies the rating formats: whole points, and a change rounded before its sign is chosen,
+    /// so that a change below half a point never reads "+0".
+    /// </summary>
+    [TestMethod]
+    public void Ratings_are_shown_in_whole_points()
+    {
+        DisplayFormat.Rating(1567.6).Should().Be("1 568");
+        DisplayFormat.Rating(null).Should().Be("—");
+        DisplayFormat.RatingChange(12.5).Should().Be("+13");
+        DisplayFormat.RatingChange(-4.4).Should().Be("−4");
+        DisplayFormat.RatingChange(0.3).Should().Be("0");
+        DisplayFormat.RatingChange(-0.3).Should().Be("0");
+    }
+
+    /// <summary>
     /// Verifies that dates are shown in local time.
     /// </summary>
     [TestMethod]

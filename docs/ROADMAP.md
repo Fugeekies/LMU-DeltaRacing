@@ -71,6 +71,14 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ## Terminés
 
+### Jalon — Cote pilote — 03/11/2026 · PR à créer
+Spécification : [`UISpec/DriverRating.template.md`](UISpec/DriverRating.template.md). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](propositions/cote-pilote.md). Dashboard uniquement.
+- [x] **Moteur :** cote Elo multijoueur de chaque pilote croisé (`DriverRatings`), course par course et classe par classe, 1 500 au départ, K = 64 pendant 5 courses de calibration puis 32 ; place attendue et force du plateau de chaque course.
+- [x] **Statut `None` :** une classe sans aucun pilote arrivé n'est pas notée (19 courses sur 107 dans les fixtures, quand le pilote quitte au départ) ; les autres gardent leurs positions officielles.
+- [x] Nouvel onglet **Cote pilote** : cote, rang, palier (Platine, Or, Argent, Bronze), prochains objectifs (pilote à dépasser, palier suivant), évolution en SVG avec les seuils des paliers, exploits et revers, historique, classement des pilotes.
+- [x] **Détail des courses :** force du plateau, cote avant → après du pilote et cote d'avant-course de chaque pilote. **Accueil :** cote dans la tuile Pilote.
+- [x] Benchmarks des calculs (catégorie `Views`) : 7 ms sur les fixtures, 187 ms à ×50.
+
 ### Jalon — Profil de conduite — 02/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53)
 Spécification : [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md). Dashboard uniquement.
 - [x] **Coût des incidents :** temps perdu mesuré contre le tour médian de chaque course, contacts au premier tour, places perdues, dégâts, abandons après contact, zone à risque par circuit.

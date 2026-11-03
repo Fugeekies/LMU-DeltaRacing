@@ -25,6 +25,7 @@ Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barr
 #### Tuile « Pilote »
 * Nom du pilote sélectionné, souligné en haut par l'accent rouge.
 * « En piste du `dd/MM/yyyy` au `dd/MM/yyyy` » : dates locales de la première et de la dernière course, masquées s'il n'a disputé aucune course.
+* **Cote pilote** (sous un séparateur, masquée sans course notée) : « COTE PILOTE » ou « COTE PILOTE PROVISOIRE », la cote, le badge du palier, « `9e` sur `228` pilotes classés · `+55` sur 10 courses ». Le bloc est un lien vers `/rating` ; règles dans [`DriverRating.template.md`](DriverRating.template.md).
 * Sous un séparateur, côte à côte :
 
 | Favori | Valeur | Détail |

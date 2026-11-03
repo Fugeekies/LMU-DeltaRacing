@@ -30,6 +30,20 @@ else
             {
                 <p class="home-rate">En piste du @DisplayFormat.Day(firstRaceAt) au @DisplayFormat.Day(lastRaceAt)</p>
             }
+            @if (rating is not null)
+            {
+                <a class="home-rating" href="/rating" aria-label="Voir votre cote pilote">
+                    <span class="summary-label">@(rating.IsProvisional ? "COTE PILOTE PROVISOIRE" : "COTE PILOTE")</span>
+                    <strong>@DisplayFormat.Rating(rating.Rating)</strong>
+                    @if (rating.Tier is { } tier)
+                    {
+                        <span class="tier-badge @TierStyle.CssClass(tier)">@DriverRatingPresentation.Label(tier).ToUpperInvariant()</span>
+                    }
+                    <span class="home-rate">
+                        @(rating.Rank is { } rank ? $"{DisplayFormat.Position(rank)} sur {rating.RankedDrivers} pilotes classés · " : string.Empty)@DisplayFormat.RatingChange(rating.RecentChange) sur @(rating.RecentRaces > 1 ? $"{rating.RecentRaces} courses" : "1 course")
+                    </span>
+                </a>
+            }
             <div class="home-favorites">
                 @RenderFavorite("CIRCUIT FAVORI", dashboard.FavoriteCircuit)
                 @RenderFavorite("VOITURE FAVORITE", dashboard.FavoriteCar)
@@ -163,10 +177,12 @@ else
     private const int CauseColorCount = 5;
 
     private HomeDashboard dashboard = HomePresentation.Create([], null);
+    private DriverRatingView? rating;
 
     protected override void OnStateChanged()
     {
         dashboard = HomePresentation.Create(State.Sessions, State.UserName);
+        rating = DriverRatingPresentation.Create(State.Sessions, State.UserName);
     }
 
     private static bool ShowsBreakdown(HomeStat stat) =>
