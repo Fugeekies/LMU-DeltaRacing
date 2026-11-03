@@ -67,7 +67,7 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 ## Règles Git & PR
 
 - **Jamais de commit direct sur `main`** : branche dédiée (`feature/…`, `fix/…`), puis PR.
-- Commit ou push uniquement sur demande explicite.
+- Une modification terminée (build sans avertissement, tests verts) est committée et poussée sur sa branche sans attendre de demande, sauf si l'utilisateur précise « sans commiter ». Une nouvelle évolution part sur sa propre branche, avec une PR en brouillon.
 - **PR créées en brouillon** (`gh pr create --draft`) : la CI (`ci.yml`) ignore les brouillons, ce qui évite un run à chaque commit pendant le travail. Passer la PR en « Ready for review » (`gh pr ready`) quand elle est terminée, ce qui lance la CI, puis attendre qu'elle soit verte avant d'annoncer la PR prête.
 - Toute PR touchant `src/`, `tests/`, la configuration ou les fonctionnalités met à jour `CHANGELOG.md` sous `## [Unreleased]`, catégories Keep a Changelog : `Added`, `Changed`, `Fixed`, `Performance`, `Security`. Entrées en français, concises, orientées utilisateur/développeur.
 - Toute PR modifiant le parser ou le moteur d'import committe un rapport de benchmark Markdown à jour.
