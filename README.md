@@ -54,7 +54,7 @@ Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouve
 
 ## Les pages
 
-Le menu en haut de l'écran donne accès à six pages.
+Le menu en haut de l'écran donne accès à huit pages.
 
 ### Accueil
 
@@ -136,6 +136,23 @@ Comment **vous** roulez, sur toutes vos qualifications et courses importées, co
 - **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
 
 Un accrochage compte une fois, même si les deux voitures l'ont signalé plusieurs fois. LMU ne signale de tours invalidés qu'en essais et en qualification.
+
+### Cote pilote
+
+Votre **niveau** face aux pilotes que vous croisez, mesuré par une cote Elo, comme aux échecs. Chaque course est une série de duels avec les pilotes de votre catégorie : finir devant un pilote mieux coté rapporte beaucoup de points, finir derrière un pilote moins bien coté en coûte beaucoup. Une 5e place dans un plateau très relevé vaut donc plus qu'une 5e place dans un plateau débutant.
+
+- **Votre cote :** votre rang parmi les pilotes classés, votre palier (**Platine** pour le top 10 %, **Or** jusqu'à 30 %, **Argent** jusqu'à 60 %, **Bronze** au-delà) et votre record.
+- **Prochains objectifs :** les points qui vous manquent pour dépasser le pilote juste devant vous et pour entrer dans le palier suivant.
+- **Évolution :** votre cote course après course, avec les seuils des paliers.
+- **Vos exploits et vos revers :** les courses qui vous ont rapporté et coûté le plus de points.
+- **Historique :** pour chaque course, la place que les cotes prévoyaient (« attendu »), la force du plateau (cote moyenne de votre catégorie) et les points gagnés ou perdus.
+- **Classement :** tous les pilotes croisés, par cote.
+
+Tout le monde part de 1 500. Pendant vos 5 premières courses, la cote bouge deux fois plus vite pour trouver votre niveau, et vous n'êtes pas encore classé. Seules les courses comptent. Une course que personne n'a terminée dans votre catégorie (quand vous quittez au départ, par exemple) n'est pas notée. La force du plateau et la cote de chaque pilote apparaissent aussi dans **Détail des courses**, et votre cote dans la tuile Pilote de l'**Accueil**.
+
+La cote est calculée sur vos seuls fichiers de résultats : ce n'est pas le classement officiel de LMU, et rien n'est envoyé en ligne.
+
+👉 Toutes les règles de calcul, avec des exemples chiffrés : **[La Cote pilote, expliquée](docs/COTE_PILOTE.md)**.
 
 ### Classement des coureurs
 

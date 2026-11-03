@@ -29,6 +29,7 @@ else
     RaceDetailsDriverResult[] results = selectedSession is null
         ? []
         : [.. RaceDetailsPresentation.CreateResults(selectedSession, State.UserName)];
+    selectedRatedRace = selectedSession is null ? null : ratings.FindRace(selectedSession.Id);
 
     <section class="panel race-details-panel">
         <div class="race-details-toolbar">
@@ -66,6 +67,36 @@ else
                 </button>
             }
         </div>
+
+        @if (selectedRatedRace is { } ratedRace)
+        {
+            var playerChange = ratedRace.Find(State.UserName);
+            <div class="rating-strip" aria-label="Cote pilote de la course">
+                <span class="summary-label">FORCE DU PLATEAU</span>
+                @foreach (var ratedClass in ratedRace.Classes)
+                {
+                    var category = CarCategory.FromCarClass(ratedClass.CarClass);
+                    <span>
+                        <span class="category-badge @CategoryStyle.CssClass(category)">@category</span>
+                        <strong>@DisplayFormat.Rating(ratedClass.FieldStrength)</strong> (@ratedClass.Drivers.Count pilotes)
+                    </span>
+                }
+                @if (playerChange is not null)
+                {
+                    <span>
+                        Votre cote : <strong>@DisplayFormat.Rating(playerChange.Before) → @DisplayFormat.Rating(playerChange.After)</strong>
+                        (@DisplayFormat.RatingChange(playerChange.Delta)), place attendue @DisplayFormat.Average(playerChange.ExpectedRank)
+                    </span>
+                }
+                <a href="/rating">Cote pilote →</a>
+            </div>
+        }
+        else if (selectedSession?.Kind == SessionKind.Race)
+        {
+            <div class="rating-strip">
+                <span>Course non notée par la cote pilote : aucune classe n’a de pilote arrivé au drapeau à damier.</span>
+            </div>
+        }
 
         @if (results.Length == 0)
         {
@@ -166,6 +197,10 @@ else
     private const int VirtualizationThreshold = 40;
 
     private IReadOnlyList<RaceEvent> events = [];
+    private DriverRatingHistory ratings = DriverRatings.Calculate([]);
+
+    // Set while rendering, so that the rows, rendered by a fragment, find the ratings of the race shown.
+    private RatedRace? selectedRatedRace;
     private string selectedEventId = string.Empty;
     private SessionTab selectedTab = SessionTab.Race;
     private string? selectedDriver;
@@ -199,6 +234,7 @@ else
     protected override void OnStateChanged()
     {
         events = RaceEventPresentation.CreateEvents(State.Sessions, State.UserName);
+        ratings = DriverRatings.Calculate(State.Sessions);
 
         if (events.All(raceEvent => raceEvent.Id != selectedEventId))
         {
@@ -264,6 +300,10 @@ else
                     @if (result.IsPlayer)
                     {
                         <span class="player-tag">VOUS</span>
+                    }
+                    @if (selectedRatedRace?.Find(result.Name) is { } change)
+                    {
+                        <span class="driver-rating" title="@($"Cote avant la course : {DisplayFormat.Rating(change.Before)} → {DisplayFormat.Rating(change.After)} ({DisplayFormat.RatingChange(change.Delta)})")">@DisplayFormat.Rating(change.Before)</span>
                     }
                 </span>
                 <span class="cell-sub car-name">@result.Car</span>

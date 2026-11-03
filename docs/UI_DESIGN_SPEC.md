@@ -68,6 +68,12 @@ Couleurs choisies pour rester lisibles sur le fond sombre, sans réutiliser le v
 * **P4-P5 :** bleu `#60a5fa`.
 * **P6-P10 :** même bleu, plus léger : bordure `#60a5fa` à 45 %, position mélangée à 50 % avec le blanc du texte.
 
+### 8. Paliers de la « Cote pilote »
+Les paliers reprennent les couleurs du podium, avec un platine au-dessus de l'or. Badge : texte et bordure de 1 px de la couleur, fond teinté à 12 %, majuscules. Mêmes couleurs pour les lignes en tirets des seuils du graphique.
+* **Platine :** bleu glacier `#67e8f9`. Un platine blanc se confondrait avec l'argent.
+* **Or :** `#d4af37`. **Argent :** `#c0c7d1`. **Bronze :** `#d2733f`.
+* Les points de la courbe utilisent le vert (points gagnés) et le rouge (points perdus) WEC, dans leur sens habituel de gain et de perte.
+
 ---
 
 ## 📂 Navigation & Templates des Vues (`UISpec/`)
@@ -83,6 +89,7 @@ UISpec/
 ├── Progression.template.md    --> Spécification de la vue "Progression"
 ├── DriversRanking.template.md --> Spécification de la vue "Classement des Coureurs"
 ├── DrivingProfile.template.md --> Spécification de la vue "Profil de conduite"
+├── DriverRating.template.md   --> Spécification de la vue "Cote pilote"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
 ├── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 └── Console.template.md        --> Spécification de la console Spectre (Accueil, Mes courses, Options)
@@ -110,11 +117,15 @@ UISpec/
 5. **🛡️ Profil de conduite (`/driving-profile`)** *(Voir template [`UISpec/DrivingProfile.template.md`](UISpec/DrivingProfile.template.md))*
    * Bilan du pilote sélectionné (contacts, obstacles, avertissements, tours invalidés, pénalités pour 100 tours), comparé aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses.
 
-6. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
+6. **🎖️ Cote pilote (`/rating`)** *(Voir template [`UISpec/DriverRating.template.md`](UISpec/DriverRating.template.md))*
+   * Cote Elo multijoueur du pilote sélectionné, calculée pour chaque pilote croisé en course : rang, palier (Platine, Or, Argent, Bronze), prochain pilote à dépasser, évolution course après course, exploits et revers, classement des pilotes.
+   * Force du plateau et cote d'avant-course de chaque pilote reprises dans « Détail des courses », cote dans la tuile Pilote de l'Accueil.
+
+7. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
    * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
    * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
 
-7. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
+8. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).
    * Sélecteur de dossier, indicateur d'état du `FileSystemWatcher` et options de démarrage.
 

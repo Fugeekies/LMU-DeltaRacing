@@ -1,0 +1,49 @@
+@using LMU_DeltaRacing.UI.Models
+
+@{
+    var chart = RatingChartLayout.Create(View);
+}
+
+<svg class="rating-chart" viewBox="0 0 @chart.Width @chart.Height" role="img" aria-label="Cote de @View.Name course après course">
+    @foreach (var tick in chart.RatingTicks)
+    {
+        <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
+        <g><text class="story-axis" x="@Number(chart.PlotLeft - 8)" y="@Number(tick.Position + 4)" text-anchor="end">@tick.Label</text></g>
+    }
+    @foreach (var tick in chart.DateTicks)
+    {
+        <g><text class="story-axis" x="@Number(tick.Position)" y="@Number(chart.PlotBottom + 20)" text-anchor="middle">@tick.Label</text></g>
+    }
+    @foreach (var tier in chart.TierLines)
+    {
+        <g class="rating-tier-line @tier.CssClass">
+            <line x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tier.Y)" y2="@Number(tier.Y)" />
+            <text x="@Number(chart.PlotRight + 8)" y="@Number(tier.Y + 4)">@tier.Label</text>
+        </g>
+    }
+    <polyline class="rating-line" points="@chart.Line" />
+    @foreach (var marker in chart.Markers)
+    {
+        <circle class="rating-marker @marker.CssClass" cx="@Number(marker.X)" cy="@Number(marker.Y)" r="4">
+            <title>@marker.Title</title>
+        </circle>
+    }
+</svg>
+
+<div class="story-legend" aria-label="Légende du graphique">
+    <span><i class="story-swatch rating-gain" aria-hidden="true"></i>Points gagnés</span>
+    <span><i class="story-swatch rating-loss" aria-hidden="true"></i>Points perdus</span>
+    <span><i class="rating-tier-swatch" aria-hidden="true"></i>Cote à atteindre pour entrer dans un palier aujourd’hui</span>
+    <span>Une course notée par point, dans l’ordre chronologique · Survolez un point pour le détail</span>
+</div>
+
+@code {
+    /// <summary>
+    /// Gets or sets the rating page of the driver to draw.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public DriverRatingView View { get; set; } = null!;
+
+    private static string Number(double value) =>
+        value.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
+}

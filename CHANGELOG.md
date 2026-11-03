@@ -10,6 +10,10 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Dashboard : nouvel onglet **Cote pilote**, une cote Elo multijoueur calculée sur les fichiers de résultats pour chaque pilote croisé en course (par classe, 1 500 au départ, 5 courses de calibration). Le pilote sélectionné y voit sa cote, son rang et son palier (Platine, Or, Argent, Bronze selon sa part du classement), les points qui lui manquent pour dépasser le pilote suivant et entrer dans le palier supérieur, l'évolution de sa cote course après course avec les seuils des paliers, ses 3 exploits et ses 3 revers, l'historique de ses courses (place attendue, force du plateau, variation) et le classement des pilotes par cote. Les courses sans aucun pilote arrivé dans une classe (abandon au départ, autres pilotes encore en piste) ne sont pas notées. Guide utilisateur des règles de calcul, avec des exemples chiffrés : `docs/COTE_PILOTE.md`, lié depuis le README.
+- Détail des courses : force du plateau de chaque classe et cote du pilote sélectionné avant et après la course, sur l'onglet Course ; cote d'avant-course de chaque pilote à côté de son nom.
+- Accueil : cote, palier et rang du pilote dans la tuile Pilote, avec un lien vers la Cote pilote.
+- Benchmarks : calculs de la Cote pilote (toutes les cotes, page du pilote) dans la catégorie `Views`.
 - Dashboard : nouvel onglet **Profil de conduite**, le bilan du pilote sélectionné sur ses qualifications et ses courses : contacts, obstacles, avertissements, tours invalidés et pénalités pour 100 tours, comparés aux autres pilotes de ses sessions, par session, catégorie et circuit, avec ses 10 dernières courses, les pilotes qu'il touche le plus, les obstacles et ses motifs de pénalité.
 - Profil de conduite : bloc **Ce que vos incidents vous coûtent** : temps perdu sur les tours avec contact, mesuré contre le tour médian de chaque course, part des contacts au premier tour, places perdues, contacts avec dégâts, abandons après un contact, circuit et course les plus coûteux, et zone à risque de chaque circuit.
 - Détail des courses : **déroulé de la course**, la position tour par tour avec les contacts, dégâts, pénalités, limites de piste et arrêts au stand ; colonnes **CONTACTS** et **LIMITES** ; fil chronologique des incidents d'un pilote en cliquant sur ses chiffres.
@@ -31,7 +35,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 
 ### Changed
 - Dashboard : le navigateur s'ouvre sur `deltaracing.localhost:<port>` au lieu de `127.0.0.1:<port>`. Le serveur reste limité à `127.0.0.1`.
-- Dashboard : nouvel ordre des onglets : Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Classement des coureurs, Options.
+- Dashboard : nouvel ordre des onglets : Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options.
 - Sessions : l'heure d'une session est celle de sa phase (`<Race><DateTime>`, `<Qualify><DateTime>`…), à défaut `RaceResults/DateTime`, commun à toute une série de sessions. Les heures affichées avancent donc d'un maximum de 16 min en course et de 3 min en qualification ; les événements et les paires qualif/course ne changent pas sur les fixtures.
 - Sessions : l'identifiant est calculé à partir du circuit, de la phase et de sa date, au lieu d'être aléatoire à chaque chargement. Un événement est identifié par sa première session hors essais : les liens `?event=` survivent à un redémarrage et au changement de l'option « Charger les sessions d'essais ».
 - Code : la nature d'une session (essais, qualification, course) est lue une fois dans le domaine (`Session.Kind`) et le meilleur tour calculé une fois (`Driver.BestLap`) ; le rang en classe, le nom de la voiture et la catégorie (`DriverResults`) sont partagés par toutes les vues, au lieu de 4 à 7 copies légèrement différentes.

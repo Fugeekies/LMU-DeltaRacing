@@ -83,6 +83,19 @@ public static class DisplayFormat
             : Missing;
 
     /// <summary>
+    /// Formats a driver rating in whole points: <c>1 568</c>.
+    /// </summary>
+    public static string Rating(double? rating) =>
+        Count(rating is { } value ? Math.Round(value, MidpointRounding.AwayFromZero) : null);
+
+    /// <summary>
+    /// Formats a rating change in whole points: <c>+13</c>, <c>−4</c>, or <c>0</c> under half a point.
+    /// </summary>
+    public static string RatingChange(double change) =>
+        // Adding 0.0 turns the -0 of a small loss into 0, which .NET would otherwise print "-0".
+        Signed(Math.Round(change, MidpointRounding.AwayFromZero) + 0.0, "0");
+
+    /// <summary>
     /// Formats a distance in kilometers, without decimals.
     /// </summary>
     public static string Distance(double? kilometers) =>

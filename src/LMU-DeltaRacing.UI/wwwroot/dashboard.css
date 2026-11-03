@@ -17,6 +17,8 @@
     --silver: #c0c7d1;
     --bronze: #d2733f;
     --top5: #60a5fa;
+    /* Platinum is an ice blue: a white platinum would read as the silver of P2. */
+    --platinum: #67e8f9;
 }
 
 * {
@@ -1541,6 +1543,231 @@ h3 {
     gap: 1rem;
 }
 
+/* Rating tiers: the podium colours, plus an ice-blue platinum above the gold. */
+.tier-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border: 1px solid currentColor;
+    border-radius: 3px;
+    background: color-mix(in srgb, currentColor 12%, transparent);
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    white-space: nowrap;
+}
+
+.tier-platinum {
+    color: var(--platinum);
+}
+
+.tier-gold {
+    color: var(--gold);
+}
+
+.tier-silver {
+    color: var(--silver);
+}
+
+.tier-bronze {
+    color: var(--bronze);
+}
+
+.rating-hero {
+    display: grid;
+    grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 1.2fr);
+    gap: 1.25rem 2rem;
+    margin-bottom: 1.25rem;
+    padding: 1.5rem;
+    border-left: 3px solid var(--accent);
+}
+
+.rating-hero-main {
+    display: grid;
+    align-content: start;
+    gap: 0.35rem;
+}
+
+.rating-hero-value {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem;
+}
+
+.rating-hero-value strong {
+    font-size: 2.8rem;
+    font-weight: 800;
+    font-variant-numeric: tabular-nums;
+    line-height: 1.1;
+}
+
+.rating-hero-value .tier-badge {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.75rem;
+}
+
+.rating-goals ul {
+    display: grid;
+    gap: 0.5rem;
+    margin: 0;
+    padding-left: 1.1rem;
+    font-size: 0.9rem;
+}
+
+.rating-goals strong {
+    color: var(--green);
+    font-variant-numeric: tabular-nums;
+}
+
+@media (max-width: 800px) {
+    .rating-hero {
+        grid-template-columns: 1fr;
+    }
+}
+
+.rating-chart-body {
+    padding: 1rem 1.25rem 0;
+}
+
+.rating-chart {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.rating-line {
+    fill: none;
+    stroke: var(--text);
+    stroke-width: 2;
+    stroke-linejoin: round;
+}
+
+.rating-marker {
+    stroke: var(--background);
+    stroke-width: 1;
+    cursor: help;
+}
+
+.rating-gain {
+    fill: var(--green);
+    background: var(--green);
+}
+
+.rating-loss {
+    fill: var(--red);
+    background: var(--red);
+}
+
+.rating-even {
+    fill: var(--muted);
+    background: var(--muted);
+}
+
+.rating-tier-line line {
+    stroke: currentColor;
+    stroke-width: 1.5;
+    stroke-dasharray: 6 5;
+    opacity: 0.75;
+}
+
+.rating-tier-line text {
+    fill: currentColor;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.rating-tier-swatch {
+    width: 18px;
+    border-top: 2px dashed var(--muted);
+}
+
+.rating-highlights {
+    margin-bottom: 1.25rem;
+}
+
+.rating-highlight-subtitle {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.rating-highlight li {
+    align-items: center;
+}
+
+.rating-highlight-race {
+    display: grid;
+    min-width: 0;
+    gap: 0.1rem;
+}
+
+.rating-highlight-detail {
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.rating-highlight strong {
+    font-size: 1.1rem;
+    font-variant-numeric: tabular-nums;
+}
+
+.rating-gap td {
+    padding: 0.2rem;
+    color: var(--muted);
+    text-align: center;
+}
+
+.rating-method {
+    margin-bottom: 1.25rem;
+    padding: 1rem 1.25rem;
+    font-size: 0.82rem;
+}
+
+.rating-method summary {
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.rating-method ul {
+    display: grid;
+    gap: 0.4rem;
+    margin: 0.75rem 0 0;
+    padding-left: 1.1rem;
+    color: var(--muted);
+}
+
+/* The rating of each driver in "race details", next to their name. */
+.rating-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1.5rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.78rem;
+}
+
+.rating-strip strong {
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+}
+
+.rating-strip a {
+    margin-left: auto;
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.driver-rating {
+    margin-left: 0.4rem;
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-variant-numeric: tabular-nums;
+    cursor: help;
+}
+
 .conduct-button {
     width: 100%;
     padding: 0.15rem 0.4rem;
@@ -1847,6 +2074,32 @@ h3 {
     font-size: 1.6rem;
     font-weight: 750;
     overflow-wrap: anywhere;
+}
+
+.home-rating {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.75rem;
+    margin-top: 1rem;
+    padding-top: 0.85rem;
+    border-top: 1px solid var(--border);
+}
+
+.home-rating .summary-label {
+    flex-basis: 100%;
+    margin: 0;
+}
+
+.home-rating strong {
+    font-size: 1.35rem;
+    font-variant-numeric: tabular-nums;
+    transition: color 120ms ease;
+}
+
+.home-rating:hover strong,
+.home-rating:focus-visible strong {
+    color: var(--accent);
 }
 
 .home-favorites {

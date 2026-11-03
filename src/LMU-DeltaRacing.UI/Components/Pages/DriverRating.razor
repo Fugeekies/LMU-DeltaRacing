@@ -1,0 +1,305 @@
+@page "/rating"
+@inherits DashboardPage
+
+<PageTitle>Cote pilote | LMU DeltaRacing</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">VOTRE NIVEAU FACE AUX GRILLES CROISÉES</p>
+        <h1>Cote pilote</h1>
+        <p class="page-subtitle">
+            @(view is null
+                ? "Une cote Elo calculée pour chaque pilote de vos fichiers de résultats, course après course."
+                : $"{view.Name} · {view.Races} courses notées · une cote Elo calculée pour chaque pilote de vos fichiers de résultats.")
+        </p>
+    </div>
+</section>
+
+<ResultsGate State="State">
+@if (view is null)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>Aucune cote disponible</h3>
+        <p>Votre cote apparaîtra après une course du pilote sélectionné arrivée au drapeau à damier, face à au moins un pilote de sa classe.</p>
+    </section>
+}
+else
+{
+    <section class="panel rating-hero" aria-label="Votre cote">
+        <div class="rating-hero-main">
+            <p class="eyebrow">@(view.IsProvisional ? "COTE PROVISOIRE" : "VOTRE COTE")</p>
+            <div class="rating-hero-value">
+                <strong>@DisplayFormat.Rating(view.Rating)</strong>
+                @if (view.Tier is { } tier)
+                {
+                    <span class="tier-badge @TierStyle.CssClass(tier)">@DriverRatingPresentation.Label(tier).ToUpperInvariant()</span>
+                }
+            </div>
+            @if (view.Rank is { } rank)
+            {
+                <span class="summary-detail">
+                    @DisplayFormat.Position(rank) sur @view.RankedDrivers pilotes classés · top @TopPercent(rank, view.RankedDrivers) %
+                </span>
+            }
+            else
+            {
+                <span class="summary-detail">
+                    Encore @view.RacesToCalibrate @(view.RacesToCalibrate > 1 ? "courses" : "course") de calibration avant d’être classé.
+                </span>
+            }
+            <span class="summary-detail">Record : @DisplayFormat.Rating(view.Peak), le @DisplayFormat.Day(view.PeakAt)</span>
+        </div>
+
+        @if (!view.IsProvisional)
+        {
+            <div class="rating-goals">
+                <p class="eyebrow">PROCHAINS OBJECTIFS</p>
+                <ul>
+                    @if (view.NextRival is { } rival)
+                    {
+                        <li><strong>+@rival.Points</strong> pour dépasser @rival.Label, @DisplayFormat.Position(view.Rank - 1)</li>
+                    }
+                    else
+                    {
+                        <li>Vous êtes en tête du classement : à vous de garder la place.</li>
+                    }
+                    @if (view.NextTier is { } nextTier)
+                    {
+                        <li><strong>+@nextTier.Points</strong> pour entrer en @nextTier.Label</li>
+                    }
+                    else if (view.Tier == RatingTier.Platinum)
+                    {
+                        <li>Palier Platine : vous êtes dans le top 10 % des pilotes classés.</li>
+                    }
+                </ul>
+            </div>
+        }
+
+        <div class="driving-cost-figures">
+            <div>
+                <strong class="@GetChangeClass(view.RecentChange)">@DisplayFormat.RatingChange(view.RecentChange)</strong>
+                <span>sur @(view.RecentRaces > 1 ? $"vos {view.RecentRaces} dernières courses" : "votre dernière course")</span>
+            </div>
+            <div><strong>@DisplayFormat.Rating(view.AverageFieldStrength)</strong><span>force moyenne de vos plateaux</span></div>
+            <div><strong>@view.RacesAboveExpectation / @view.Races</strong><span>courses finies devant la place attendue</span></div>
+            <div><strong>@view.Races</strong><span>courses notées</span></div>
+        </div>
+    </section>
+
+    <section class="panel driving-panel rating-chart-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">ÉVOLUTION</p>
+                <h2>Votre cote course après course</h2>
+            </div>
+        </div>
+        <div class="rating-chart-body">
+            <RatingChart View="view" />
+        </div>
+    </section>
+
+    <section class="driving-lists rating-highlights">
+        @RenderHighlights("VOS EXPLOITS", "Les courses qui vous ont rapporté le plus de points.", view.Exploits, "Aucune course ne vous a encore rapporté de points.")
+        @RenderHighlights("VOS REVERS", "Les courses qui vous ont coûté le plus de points.", view.Setbacks, "Aucune course ne vous a encore coûté de points.")
+    </section>
+
+    <section class="panel driving-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">HISTORIQUE</p>
+                <h2>Vos courses notées, de la plus récente à la plus ancienne</h2>
+            </div>
+            @if (view.Timeline.Count > ShortHistory)
+            {
+                <button type="button" class="button button-secondary" aria-expanded="@(showsAllRaces ? "true" : "false")" @onclick="() => showsAllRaces = !showsAllRaces">
+                    @(showsAllRaces ? $"Afficher les {ShortHistory} dernières" : $"Afficher les {view.Timeline.Count} courses")
+                </button>
+            }
+        </div>
+        <div class="table-scroll">
+            <table class="data-table driving-table rating-table">
+                <thead>
+                    <tr>
+                        <th scope="col">DATE</th>
+                        <th scope="col">CIRCUIT</th>
+                        <th scope="col">CATÉGORIE</th>
+                        <th scope="col" class="numeric-cell">RÉSULTAT</th>
+                        <th scope="col" class="numeric-cell">ATTENDU</th>
+                        <th scope="col" class="numeric-cell">PILOTES</th>
+                        <th scope="col" class="numeric-cell">FORCE DU PLATEAU</th>
+                        <th scope="col" class="numeric-cell">VARIATION</th>
+                        <th scope="col" class="numeric-cell">COTE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var race in view.Timeline.Reverse().Take(showsAllRaces ? int.MaxValue : ShortHistory))
+                    {
+                        <tr>
+                            <td class="date-cell">@RenderRaceLink(race)</td>
+                            <td>@race.TrackVenue</td>
+                            <td><span class="category-badge @CategoryStyle.CssClass(race.Category)">@race.Category</span></td>
+                            <td class="numeric-cell"><span class="form-pill form-@race.Kind.ToString().ToLowerInvariant()">@race.Result</span></td>
+                            <td class="numeric-cell @(race.ClassRank < race.ExpectedRank ? "delta-best" : "delta-unavailable")">@DisplayFormat.Average(race.ExpectedRank)</td>
+                            <td class="numeric-cell">@race.FieldSize</td>
+                            <td class="numeric-cell">@DisplayFormat.Rating(race.FieldStrength)</td>
+                            <td class="numeric-cell"><span class="delta-value @GetChangeClass(race.Delta)">@DisplayFormat.RatingChange(race.Delta)</span></td>
+                            <td class="numeric-cell">@DisplayFormat.Rating(race.After)</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="sector-legend">
+            <span>Attendu : la position prévue par les cotes avant la course, en vert quand vous avez fini devant.</span>
+            <span>Force du plateau : la cote moyenne de votre classe avant la course.</span>
+        </div>
+    </section>
+
+    <section class="panel driving-panel">
+        <div class="panel-heading">
+            <div>
+                <p class="eyebrow">CLASSEMENT</p>
+                <h2>Les pilotes croisés en course, par cote</h2>
+            </div>
+            @if (view.Leaderboard.Count > shortlist.Count)
+            {
+                <button type="button" class="button button-secondary" aria-expanded="@(showsAllDrivers ? "true" : "false")" @onclick="() => showsAllDrivers = !showsAllDrivers">
+                    @(showsAllDrivers ? "Afficher le top 10 et vos voisins" : $"Afficher les {view.Leaderboard.Count} pilotes")
+                </button>
+            }
+        </div>
+        @if (view.Leaderboard.Count == 0)
+        {
+            <div class="empty-state race-empty-state">
+                <p>Aucun pilote n’a encore terminé ses @DriverRatings.CalibrationRaces courses de calibration.</p>
+            </div>
+        }
+        else
+        {
+            <div class="table-scroll">
+                <table class="data-table driving-table rating-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="numeric-cell">RANG</th>
+                            <th scope="col">PILOTE</th>
+                            <th scope="col">PALIER</th>
+                            <th scope="col" class="numeric-cell">COTE</th>
+                            <th scope="col" class="numeric-cell">COURSES</th>
+                            <th scope="col" class="numeric-cell">DERNIÈRE COURSE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{ var previousRank = 0; }
+                        @foreach (var row in showsAllDrivers ? view.Leaderboard : shortlist)
+                        {
+                            @if (row.Rank > previousRank + 1)
+                            {
+                                <tr class="rating-gap" aria-hidden="true"><td colspan="6">⋯</td></tr>
+                            }
+                            previousRank = row.Rank;
+                            <tr class="@(row.IsPlayer ? "player-row" : null)">
+                                <td class="numeric-cell position-value">@row.Rank</td>
+                                <td>
+                                    @row.Name
+                                    @if (row.IsPlayer)
+                                    {
+                                        <span class="player-tag">VOUS</span>
+                                    }
+                                </td>
+                                <td><span class="tier-badge @TierStyle.CssClass(row.Tier)">@DriverRatingPresentation.Label(row.Tier).ToUpperInvariant()</span></td>
+                                <td class="numeric-cell">@DisplayFormat.Rating(row.Rating)</td>
+                                <td class="numeric-cell">@row.Races</td>
+                                <td class="numeric-cell date-cell">@DisplayFormat.Day(row.LastRaceAt)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+        <div class="sector-legend">
+            <span>Paliers : Platine pour le top 10 % des pilotes classés, Or jusqu’à 30 %, Argent jusqu’à 60 %, Bronze au-delà.</span>
+            <span>Un pilote est classé après @DriverRatings.CalibrationRaces courses notées.</span>
+        </div>
+    </section>
+
+    <details class="panel rating-method">
+        <summary>Comment la cote est-elle calculée ?</summary>
+        <ul>
+            <li>Chaque course est une série de duels avec les pilotes de votre classe : finir devant un pilote est une victoire contre lui. Battre un pilote mieux coté rapporte plus, perdre contre un pilote moins bien coté coûte plus.</li>
+            <li>Tous les pilotes partent de @DisplayFormat.Rating(DriverRatings.InitialRating). Pendant leurs @DriverRatings.CalibrationRaces premières courses notées, la cote bouge deux fois plus vite pour trouver leur niveau, et ils ne sont pas encore classés.</li>
+            <li>Avant la course, les cotes prévoient une place pour chacun (« attendu ») : 1, plus la chance de chaque adversaire de finir devant vous. Après la course : variation = K × (place attendue − place obtenue) ÷ nombre d’adversaires, avec K = 32 (64 en calibration). Exemple : 4e sur 20 pour une place attendue de 8,8 donne 32 × 4,8 ÷ 19 = +8.</li>
+            <li>Une course fait donc varier la cote de moins de 32 points (64 en calibration), quelle que soit la taille de la grille. Le vainqueur gagne toujours des points, le dernier en perd toujours.</li>
+            <li>Seules les courses comptent, classe par classe, sur la position officielle en classe : abandons, disqualifications et voitures encore en piste à l’enregistrement du fichier compris. Une classe sans aucun pilote arrivé n’est pas notée : quand vous quittez une course, LMU enregistre les autres pilotes encore en piste, sans résultat.</li>
+            <li>Les fusions de pilotes d’Options sont prises en compte. La cote ne mesure que les grilles de vos fichiers de résultats : ce n’est pas le classement officiel de LMU.</li>
+        </ul>
+    </details>
+}
+
+</ResultsGate>
+
+@code {
+    private const int ShortHistory = 15;
+
+    private DriverRatingView? view;
+    private IReadOnlyList<RatingLeaderboardRow> shortlist = [];
+    private bool showsAllRaces;
+    private bool showsAllDrivers;
+
+    protected override void OnStateChanged()
+    {
+        view = DriverRatingPresentation.Create(State.Sessions, State.UserName);
+        shortlist = view is null ? [] : DriverRatingPresentation.Shortlist(view.Leaderboard);
+    }
+
+    // Rounded up: the 9th of 228 drivers is in the top 4 %, not in the top 3 %.
+    private static int TopPercent(int rank, int rankedDrivers) =>
+        (int)Math.Ceiling(rank * 100.0 / rankedDrivers);
+
+    private static string GetChangeClass(double change) =>
+        Math.Round(change, MidpointRounding.AwayFromZero) switch
+        {
+            > 0 => "delta-best",
+            < 0 => "delta-loss",
+            _ => "delta-unavailable"
+        };
+
+    private static RenderFragment RenderRaceLink(RatingRaceEntry race) =>
+        @<text>
+            @if (race.EventId is { } eventId)
+            {
+                <a href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">@DisplayFormat.DateTime(race.StartedAt)</a>
+            }
+            else
+            {
+                @DisplayFormat.DateTime(race.StartedAt)
+            }
+        </text>;
+
+    private static RenderFragment RenderHighlights(string title, string subtitle, IReadOnlyList<RatingRaceEntry> races, string empty) =>
+        @<article class="panel driving-list rating-highlight">
+            <h3 class="summary-label">@title</h3>
+            <p class="rating-highlight-subtitle">@subtitle</p>
+            @if (races.Count == 0)
+            {
+                <p class="incident-empty">@empty</p>
+            }
+            else
+            {
+                <ol>
+                    @foreach (var race in races)
+                    {
+                        <li>
+                            <span class="rating-highlight-race">
+                                <span>@RenderRaceLink(race) · @race.TrackVenue</span>
+                                <span class="rating-highlight-detail">
+                                    @race.Result sur @race.FieldSize, attendu @DisplayFormat.Average(race.ExpectedRank) · plateau à @DisplayFormat.Rating(race.FieldStrength)
+                                </span>
+                            </span>
+                            <strong class="@GetChangeClass(race.Delta)">@DisplayFormat.RatingChange(race.Delta)</strong>
+                        </li>
+                    }
+                </ol>
+            }
+        </article>;
+}
