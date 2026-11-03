@@ -110,7 +110,7 @@ Sous le tableau, le **déroulé de la course** trace la position de **chaque voi
 
 - votre ligne est en blanc, avec vos contacts, dégâts, pénalités et arrêts au stand ; les autres voitures sont en gris, et une croix marque un abandon ;
 - survolez une ligne pour voir le pilote et sa position finale, cliquez dessus pour suivre sa course (cliquer sur ses chiffres de contacts fait de même) ;
-- **Tout le plateau** affiche toutes les voitures ; **Autour de vous** ne garde que celles qui ont été à quelques places de vous au moins une fois. Les boutons **−** et **+** règlent cet écart (± 3 places par défaut) : pratique pour lire une bagarre sur une grande grille ;
+- **Tout le plateau** affiche toutes les voitures ; **Autour de vous** ne garde que celles qui ont fini juste devant et juste derrière vous. Les boutons **−** et **+** règlent cet écart à l'arrivée : ± 1 place montre la voiture devant vous et celle derrière, ± 3 places (par défaut) les trois de chaque côté. Pratique pour lire une bagarre sur une grande grille ;
 - en course multiclasse, choisissez les positions **en classe** (par défaut) ou **au général**.
 
 Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.

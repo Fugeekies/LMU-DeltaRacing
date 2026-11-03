@@ -44,8 +44,8 @@
             </div>
         </div>
         <div class="segmented-group">
-            <span>ÉCART MAXIMUM</span>
-            <div class="segmented race-chart-stepper" role="group" aria-label="Écart maximum avec @Story.DriverName">
+            <span>ÉCART À L’ARRIVÉE</span>
+            <div class="segmented race-chart-stepper" role="group" aria-label="Voitures gardées devant et derrière @Story.DriverName à l’arrivée">
                 <button type="button" aria-label="Moins de voitures" disabled="@(!showsAll && gap <= 1)" @onclick="() => ChangePlaces(gap, -1, maximumPlaces)">−</button>
                 <span class="@(showsAll ? null : "is-active")">± @gap @(gap > 1 ? "places" : "place")</span>
                 <button type="button" aria-label="Plus de voitures" disabled="@(!showsAll && gap >= maximumPlaces)" @onclick="() => ChangePlaces(gap, 1, maximumPlaces)">+</button>

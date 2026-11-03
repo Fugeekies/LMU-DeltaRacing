@@ -68,16 +68,18 @@ public sealed class RacePositionsPresentationTests
 
         var bob = positions.Lines.Single(line => line.Name == "Bob");
         bob.Retired.Should().BeTrue();
+        bob.FinalRank.Should().Be(2);
         bob.Points.Should().HaveCount(2);
         positions.Lines.Single(line => line.Name == "Alice").Retired.Should().BeFalse();
     }
 
     /// <summary>
-    /// Verifies the cars kept around the driver: those that ran within the chosen number of places
-    /// of them at the end of a lap (or on the grid), the driver included.
+    /// Verifies the cars kept around the driver: the N cars just ahead and the N just behind them in
+    /// the final classification, whatever happened during the race, so that ±N never shows more
+    /// than 2N + 1 lines.
     /// </summary>
     [TestMethod]
-    public void Around_keeps_the_cars_that_ran_close_to_the_driver()
+    public void Around_keeps_the_cars_just_ahead_and_just_behind_at_the_finish()
     {
         var session = Race(
             ("A", "GT3", 1, [1, 1, 1]),
@@ -89,8 +91,11 @@ public sealed class RacePositionsPresentationTests
 
         var positions = RacePositionsPresentation.Create(session, "C", "C", PositionScope.Overall)!;
 
-        positions.Around(1).Select(line => line.Name).Should().BeEquivalentTo("B", "C", "D", "E", "F");
+        // C finishes 5th: D (4th) and F (6th) are kept, E is not, although it ran next to C all race.
+        positions.Around(1).Select(line => line.Name).Should().BeEquivalentTo("C", "D", "F");
+        positions.Around(2).Should().HaveCount(4, "only one car finished behind C");
         positions.Around(null).Should().HaveCount(6);
+        positions.Lines.Select(line => line.FinalRank).Should().Equal(1, 2, 3, 4, 5, 6);
         RacePositionsPresentation.Create(session, "A", "A", PositionScope.Overall)!
             .Around(1).Select(line => line.Name).Should().BeEquivalentTo("A", "B");
     }
@@ -125,7 +130,8 @@ public sealed class RacePositionsPresentationTests
         inClass.Lines.Should().HaveCountLessThan(overall.Lines.Count);
         inClass.Lines.Should().OnlyContain(line => line.Category == "LMGTE");
         inClass.Lines.SelectMany(line => line.Points).Max(point => point.Position).Should().BeLessThanOrEqualTo(inClass.FieldSize);
-        overall.Around(2).Should().Contain(line => line.IsFocus).And.HaveCountLessThan(overall.Lines.Count);
+        overall.Around(2).Should().Contain(line => line.IsFocus).And.HaveCountLessThanOrEqualTo(5);
+        inClass.Around(1).Should().Contain(line => line.IsFocus).And.HaveCountLessThanOrEqualTo(3);
     }
 
     private static Session Race(params (string Name, string CarClass, int Grid, int[] Positions)[] drivers) =>

@@ -77,7 +77,7 @@ public sealed class RaceStoryChartLayoutTests
     }
 
     private static RacePositionLine Line(string name, int[] positions, bool focus = false, bool player = false, bool retired = false) =>
-        new(name, "LMGT3", focus, player, retired, positions.Select((position, lap) => new RacePositionPoint(lap, position)).ToArray());
+        new(name, "LMGT3", focus, player, retired, positions[^1], positions.Select((position, lap) => new RacePositionPoint(lap, position)).ToArray());
 
     private static RaceStory Story(params RaceStoryLap[] laps) =>
         new("Focus", 1, laps.Length == 0 ? [new RaceStoryLap(1, 1, null, null, false, [])] : laps, null, TimeSpan.Zero, 0, []);

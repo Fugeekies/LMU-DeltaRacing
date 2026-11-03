@@ -40,15 +40,19 @@ public static class RacePositionsPresentation
             .ToArray();
         var positions = scope == PositionScope.Overall ? OverallPositions(drivers) : ClassPositions(drivers);
 
+        // The official classification, retirements included at the place LMU gives them; within a
+        // class, the class rank. A car without a position comes last, in its order on the track.
         var lines = drivers
-            .Select(driver => new RacePositionLine(
+            .OrderBy(driver => (scope == PositionScope.Overall ? driver.Position : driver.ClassRank()) ?? int.MaxValue)
+            .ThenBy(driver => positions[driver][^1].Position)
+            .Select((driver, index) => new RacePositionLine(
                 driver.Name.Trim(),
                 driver.Category(),
                 IsSameDriver(driver, focus.Name),
                 IsSameDriver(driver, playerName),
                 RaceResults.GetKind(driver.FinishStatus, driver.ClassPosition) is HomeResultKind.Retired or HomeResultKind.Disqualified,
+                index + 1,
                 positions[driver]))
-            .OrderBy(line => line.Points[^1].Position)
             .ToArray();
 
         return new RacePositions(
@@ -127,7 +131,7 @@ public enum PositionScope
 /// <param name="Scope">Overall or class positions.</param>
 /// <param name="LastLap">The last lap completed by a car.</param>
 /// <param name="FieldSize">The number of cars with a line.</param>
-/// <param name="Lines">The line of each car, by final position.</param>
+/// <param name="Lines">The line of each car, in the final classification.</param>
 public sealed record RacePositions(
     string FocusName,
     PositionScope Scope,
@@ -136,9 +140,14 @@ public sealed record RacePositions(
     IReadOnlyList<RacePositionLine> Lines)
 {
     /// <summary>
-    /// Keeps the focused driver and the cars that were at most <paramref name="places"/> places
-    /// from them on the grid or at the end of a lap; every car without a number of places.
+    /// Keeps the focused driver, the <paramref name="places"/> cars just ahead of them and the
+    /// <paramref name="places"/> cars just behind them in the final classification; every car
+    /// without a number of places.
     /// </summary>
+    /// <remarks>
+    /// The final classification, rather than any lap of the race, keeps the number of lines
+    /// predictable: the start and the pit stops bring half the grid close to a driver at least once.
+    /// </remarks>
     public IReadOnlyList<RacePositionLine> Around(int? places)
     {
         if (places is not { } range || Lines.FirstOrDefault(line => line.IsFocus) is not { } focus)
@@ -146,11 +155,7 @@ public sealed record RacePositions(
             return Lines;
         }
 
-        var focusPositions = focus.Points.ToDictionary(point => point.Lap, point => point.Position);
-        return Lines
-            .Where(line => line.IsFocus || line.Points.Any(point =>
-                focusPositions.TryGetValue(point.Lap, out var position) && Math.Abs(point.Position - position) <= range))
-            .ToArray();
+        return Lines.Where(line => Math.Abs(line.FinalRank - focus.FinalRank) <= range).ToArray();
     }
 }
 
@@ -162,6 +167,7 @@ public sealed record RacePositions(
 /// <param name="IsFocus">Whether this is the highlighted driver.</param>
 /// <param name="IsPlayer">Whether this is the selected driver of the dashboard.</param>
 /// <param name="Retired">Whether the car retired or was disqualified: its line stops at its last lap.</param>
+/// <param name="FinalRank">The rank in the final classification of the cars drawn, from 1.</param>
 /// <param name="Points">The grid position (lap 0), then the position at the end of each lap.</param>
 public sealed record RacePositionLine(
     string Name,
@@ -169,6 +175,7 @@ public sealed record RacePositionLine(
     bool IsFocus,
     bool IsPlayer,
     bool Retired,
+    int FinalRank,
     IReadOnlyList<RacePositionPoint> Points);
 
 /// <summary>
