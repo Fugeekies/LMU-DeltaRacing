@@ -153,7 +153,7 @@ else
                     </div>
                     @if (story is not null)
                     {
-                        <RaceStoryChart Story="story" />
+                        <RaceStoryChart Session="selectedSession!" Story="story" PlayerName="@State.UserName" OnSelectDriver="name => selectedDriver = results.FirstOrDefault(result => string.Equals(result.Name.Trim(), name, StringComparison.OrdinalIgnoreCase))?.Name ?? name" />
                     }
                     @if (incidentsDriver.Incidents.Count == 0)
                     {
