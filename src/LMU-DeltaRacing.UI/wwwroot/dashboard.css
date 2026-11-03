@@ -1424,11 +1424,122 @@ h3 {
     font-size: 12px;
 }
 
-.story-line {
+.race-chart-controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0.75rem 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.race-chart-count {
+    margin-left: auto;
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.race-chart-stepper span {
+    padding: 0.45rem 0.8rem;
+    border-right: 1px solid var(--border);
+    background: var(--surface-raised);
+    color: var(--muted);
+    font-size: 0.74rem;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: normal;
+    white-space: nowrap;
+}
+
+.race-chart-stepper span.is-active {
+    color: var(--text);
+}
+
+.segmented button:disabled {
+    cursor: default;
+    opacity: 0.4;
+}
+
+/* One line per car: the followed driver in white on top, the selected driver in red, the others
+   grey until hovered. A wide transparent copy of each line makes it easy to hover and click. */
+.race-line {
+    cursor: pointer;
+}
+
+.race-line.race-line-focus {
+    cursor: default;
+}
+
+.race-line-hit {
     fill: none;
-    stroke: var(--text);
-    stroke-width: 2.5;
+    stroke: transparent;
+    stroke-width: 10;
+    pointer-events: stroke;
+}
+
+.race-line-path {
+    fill: none;
+    stroke-linecap: round;
     stroke-linejoin: round;
+    transition: stroke 120ms ease, stroke-width 120ms ease, opacity 120ms ease;
+}
+
+.race-line-other .race-line-path {
+    stroke: var(--muted);
+    stroke-width: 1.4;
+    opacity: 0.55;
+}
+
+.race-line-other:hover .race-line-path {
+    stroke: var(--top5);
+    stroke-width: 2.5;
+    opacity: 1;
+}
+
+.race-line-player .race-line-path {
+    stroke: var(--accent);
+    stroke-width: 2.2;
+}
+
+.race-line-focus .race-line-path {
+    stroke: var(--text);
+    stroke-width: 3;
+}
+
+.race-line-label {
+    fill: var(--muted);
+    font-size: 11px;
+}
+
+.race-line-focus .race-line-label {
+    fill: var(--text);
+    font-weight: 700;
+}
+
+.race-line-player .race-line-label {
+    fill: var(--accent);
+    font-weight: 700;
+}
+
+.race-line-other:hover .race-line-label {
+    fill: var(--top5);
+}
+
+.race-line-retired {
+    fill: var(--red);
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.race-line-swatch {
+    width: 18px;
+    border-top: 3px solid var(--muted);
+}
+
+.race-line-swatch.race-line-focus {
+    border-color: var(--text);
+}
+
+.race-line-swatch.race-line-player {
+    border-color: var(--accent);
 }
 
 .story-pit {

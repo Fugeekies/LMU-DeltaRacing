@@ -106,7 +106,12 @@ Pour chaque pilote :
 | **CONTACTS** | Contacts avec une voiture et, dessous, avec un obstacle. Cliquez sur ces chiffres pour voir tous les incidents du pilote dans l'ordre de la session |
 | **LIMITES** | Avertissements de limites de piste et, dessous, tours invalidés |
 
-Sous le tableau, le **déroulé de la course** montre votre position tour par tour, avec chaque contact, dégât, pénalité et arrêt au stand. Cliquez sur les chiffres d'un autre pilote pour voir le sien.
+Sous le tableau, le **déroulé de la course** trace la position de **chaque voiture** tour par tour, depuis la grille :
+
+- votre ligne est en blanc, avec vos contacts, dégâts, pénalités et arrêts au stand ; les autres voitures sont en gris, et une croix marque un abandon ;
+- survolez une ligne pour voir le pilote et sa position finale, cliquez dessus pour suivre sa course (cliquer sur ses chiffres de contacts fait de même) ;
+- **Tout le plateau** affiche toutes les voitures ; **Autour de vous** ne garde que celles qui ont fini juste devant et juste derrière vous. Les boutons **−** et **+** règlent cet écart à l'arrivée : ± 1 place montre la voiture devant vous et celle derrière, ± 3 places (par défaut) les trois de chaque côté. Pratique pour lire une bagarre sur une grande grille ;
+- en course multiclasse, choisissez les positions **en classe** (par défaut) ou **au général**.
 
 Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
 

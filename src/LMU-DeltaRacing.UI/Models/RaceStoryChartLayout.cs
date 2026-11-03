@@ -5,7 +5,8 @@ using LMU_DeltaRacing.Presentation.Models;
 namespace LMU_DeltaRacing.UI.Models;
 
 /// <summary>
-/// The geometry of the position chart of a race story, drawn in SVG.
+/// The geometry of the race chart, drawn in SVG: the position of each car lap by lap, the line of
+/// the focused driver on top with their incidents and pit stops.
 /// </summary>
 /// <param name="Width">The width of the SVG view box.</param>
 /// <param name="Height">The height of the SVG view box.</param>
@@ -13,9 +14,9 @@ namespace LMU_DeltaRacing.UI.Models;
 /// <param name="PlotRight">The right edge of the plot.</param>
 /// <param name="PlotTop">The top edge of the plot.</param>
 /// <param name="PlotBottom">The bottom edge of the plot.</param>
-/// <param name="Line">The points of the position line, as an SVG list.</param>
-/// <param name="Markers">The incidents of the race.</param>
-/// <param name="PitStops">The horizontal positions of the pit stops.</param>
+/// <param name="Lines">The line of each car, the focused driver last so that it is drawn on top.</param>
+/// <param name="Markers">The incidents of the focused driver.</param>
+/// <param name="PitStops">The horizontal positions of the pit stops of the focused driver.</param>
 /// <param name="PositionTicks">The labels of the position axis.</param>
 /// <param name="LapTicks">The labels of the lap axis.</param>
 public sealed record RaceStoryChartLayout(
@@ -25,77 +26,129 @@ public sealed record RaceStoryChartLayout(
     double PlotRight,
     double PlotTop,
     double PlotBottom,
-    string Line,
+    IReadOnlyList<RaceChartLine> Lines,
     IReadOnlyList<RaceStoryMarker> Markers,
     IReadOnlyList<double> PitStops,
     IReadOnlyList<RaceStoryTick> PositionTicks,
     IReadOnlyList<RaceStoryTick> LapTicks)
 {
+    /// <summary>
+    /// Up to this number of cars, every line is named on the right; beyond, only the focused and the
+    /// selected drivers are, so that the names stay readable.
+    /// </summary>
+    public const int MaximumLabels = 12;
+
     private const double DefaultWidth = 1000;
-    private const double DefaultHeight = 280;
     private const double MarginLeft = 44;
-    private const double MarginRight = 16;
+    private const double MarginRight = 170;
     private const double MarginTop = 16;
     private const double MarginBottom = 34;
+    private const double MinimumPlotHeight = 230;
+    private const double MaximumPlotHeight = 620;
+    private const double RowHeight = 16;
+    private const double LabelSpacing = 13;
     private const int MaximumTicks = 8;
 
     /// <summary>
-    /// Lays out a race story: the grid position on the left, then the position at the end of each
-    /// lap, the first place at the top.
+    /// Lays out the race: the grid on the left, then the position at the end of each lap, the first
+    /// place at the top. The scale follows the cars shown, so that a close fight fills the chart.
     /// </summary>
-    public static RaceStoryChartLayout Create(RaceStory story)
+    /// <param name="story">The story of the focused driver: incidents and pit stops.</param>
+    /// <param name="shown">The lines to draw, the focused driver included.</param>
+    public static RaceStoryChartLayout Create(RaceStory story, IReadOnlyList<RacePositionLine> shown)
     {
         ArgumentNullException.ThrowIfNull(story);
+        ArgumentNullException.ThrowIfNull(shown);
 
+        var points = shown.SelectMany(line => line.Points).ToArray();
+        var best = points.Min(point => point.Position);
+        var worst = Math.Max(points.Max(point => point.Position), best + 1);
+        var lastLap = Math.Max(points.Max(point => point.Lap), 1);
+        var plotHeight = Math.Clamp((worst - best + 1) * RowHeight, MinimumPlotHeight, MaximumPlotHeight);
+        var height = MarginTop + plotHeight + MarginBottom;
         var plotRight = DefaultWidth - MarginRight;
-        var plotBottom = DefaultHeight - MarginBottom;
-        var laps = story.Laps.Where(lap => lap.Position.HasValue).ToArray();
-        var positions = laps.Select(lap => lap.Position!.Value)
-            .Concat(story.GridPosition is { } grid ? [grid] : Array.Empty<int>())
-            .ToArray();
-        var best = positions.Min();
-        var worst = Math.Max(positions.Max(), best + 1);
-        var lastLap = Math.Max(story.Laps[^1].Number, 1);
+        var plotBottom = MarginTop + plotHeight;
 
         double X(double lap) => MarginLeft + ((plotRight - MarginLeft) * lap / lastLap);
         double Y(double position) => MarginTop + ((plotBottom - MarginTop) * (position - best) / (worst - best));
-        string Point(double x, double y) => string.Create(CultureInfo.InvariantCulture, $"{x:0.#},{y:0.#}");
+        string Point(RacePositionPoint point) => string.Create(CultureInfo.InvariantCulture, $"{X(point.Lap):0.#},{Y(point.Position):0.#}");
 
-        var points = new List<string>(laps.Length + 1);
-        if (story.GridPosition is { } start)
-        {
-            points.Add(Point(X(0), Y(start)));
-        }
+        var labelled = shown.Count <= MaximumLabels
+            ? shown.ToHashSet()
+            : shown.Where(line => line.IsFocus || line.IsPlayer).ToHashSet();
+        var labelPositions = SpreadLabels(labelled.ToDictionary(line => line, line => Y(line.Points[^1].Position)), MarginTop, plotBottom);
+        var lines = shown
+            .OrderBy(line => line.IsFocus ? 2 : line.IsPlayer ? 1 : 0)
+            .Select(line => new RaceChartLine(
+                line.Name,
+                string.Join(' ', line.Points.Select(Point)),
+                line.IsFocus ? "race-line-focus" : line.IsPlayer ? "race-line-player" : "race-line-other",
+                Describe(line),
+                labelPositions.TryGetValue(line, out var labelY) ? labelY : null,
+                X(line.Points[^1].Lap),
+                Y(line.Points[^1].Position),
+                line.Retired))
+            .ToArray();
 
-        points.AddRange(laps.Select(lap => Point(X(lap.Number), Y(lap.Position!.Value))));
-
+        var focus = shown.FirstOrDefault(line => line.IsFocus);
         var markers = new List<RaceStoryMarker>();
-        var lastPosition = story.GridPosition ?? best;
-        foreach (var lap in story.Laps)
+        foreach (var lap in story.Laps.Where(lap => lap.Incidents.Count > 0))
         {
-            lastPosition = lap.Position ?? lastPosition;
-            if (lap.Incidents.Count > 0)
+            if (focus?.Points.LastOrDefault(point => point.Lap <= lap.Number) is { } position)
             {
-                markers.Add(new RaceStoryMarker(
-                    X(lap.Number),
-                    Y(lastPosition),
-                    GetMarkerClass(lap.Incidents),
-                    Describe(lap)));
+                markers.Add(new RaceStoryMarker(X(lap.Number), Y(position.Position), GetMarkerClass(lap.Incidents), Describe(lap)));
             }
         }
 
         return new RaceStoryChartLayout(
             DefaultWidth,
-            DefaultHeight,
+            height,
             MarginLeft,
             plotRight,
             MarginTop,
             plotBottom,
-            string.Join(' ', points),
+            lines,
             markers,
             story.Laps.Where(lap => lap.IsPit).Select(lap => X(lap.Number)).ToArray(),
             CreateTicks(best, worst).Select(position => new RaceStoryTick(Y(position), $"P{position}")).ToArray(),
             CreateTicks(1, lastLap).Select(lap => new RaceStoryTick(X(lap), lap.ToString(CultureInfo.InvariantCulture))).ToArray());
+    }
+
+    /// <summary>
+    /// Places the names next to the end of their line, pushed apart so that they never overlap.
+    /// </summary>
+    private static Dictionary<RacePositionLine, double> SpreadLabels(
+        IReadOnlyDictionary<RacePositionLine, double> ends,
+        double top,
+        double bottom)
+    {
+        var placed = new Dictionary<RacePositionLine, double>();
+        var previous = double.NegativeInfinity;
+        foreach (var (line, y) in ends.OrderBy(end => end.Value))
+        {
+            previous = Math.Max(y + 4, previous + LabelSpacing);
+            placed[line] = previous;
+        }
+
+        // Labels pushed below the plot are moved back up together, keeping their spacing.
+        var overflow = previous - (bottom + 4);
+        if (overflow > 0)
+        {
+            foreach (var line in placed.Keys.ToArray())
+            {
+                placed[line] = Math.Max(top, placed[line] - overflow);
+            }
+        }
+
+        return placed;
+    }
+
+    private static string Describe(RacePositionLine line)
+    {
+        var end = line.Points[^1];
+        return line.Retired
+            ? $"P{end.Position} {line.Name} (abandon au tour {end.Lap})"
+            : $"P{end.Position} {line.Name}";
     }
 
     /// <summary>
@@ -132,6 +185,27 @@ public sealed record RaceStoryChartLayout(
         }
     }
 }
+
+/// <summary>
+/// The line of one car on the chart.
+/// </summary>
+/// <param name="Name">The driver name.</param>
+/// <param name="Points">The points of the line, as an SVG list.</param>
+/// <param name="CssClass">The class giving its style: focused driver, selected driver or other car.</param>
+/// <param name="Title">The text shown on hover and next to the line: final position and name.</param>
+/// <param name="LabelY">The vertical position of the name on the right, or <see langword="null"/> when the line is not named.</param>
+/// <param name="EndX">The horizontal position of the last point.</param>
+/// <param name="EndY">The vertical position of the last point.</param>
+/// <param name="Retired">Whether the car retired: its last point is a cross.</param>
+public sealed record RaceChartLine(
+    string Name,
+    string Points,
+    string CssClass,
+    string Title,
+    double? LabelY,
+    double EndX,
+    double EndY,
+    bool Retired);
 
 /// <summary>
 /// An incident on the chart.

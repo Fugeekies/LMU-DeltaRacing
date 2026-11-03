@@ -1,7 +1,7 @@
 @using LMU_DeltaRacing.UI.Models
 
 @{
-    var chart = RaceStoryChartLayout.Create(Story);
+    var positions = RacePositionsPresentation.Create(Session, Story.DriverName, PlayerName, scope);
 }
 
 <div class="story-summary">
@@ -14,47 +14,156 @@
     }
 </div>
 
-<svg class="story-chart" viewBox="0 0 @chart.Width @chart.Height" role="img" aria-label="Position de @Story.DriverName tour par tour">
-    @foreach (var tick in chart.PositionTicks)
-    {
-        <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
-        <g><text class="story-axis" x="@Number(chart.PlotLeft - 8)" y="@Number(tick.Position + 4)" text-anchor="end">@tick.Label</text></g>
-    }
-    @foreach (var tick in chart.LapTicks)
-    {
-        <g><text class="story-axis" x="@Number(tick.Position)" y="@Number(chart.PlotBottom + 20)" text-anchor="middle">@tick.Label</text></g>
-    }
-    @foreach (var pit in chart.PitStops)
-    {
-        <line class="story-pit" x1="@Number(pit)" x2="@Number(pit)" y1="@Number(chart.PlotTop)" y2="@Number(chart.PlotBottom)">
-            <title>Arrêt au stand</title>
-        </line>
-    }
-    <polyline class="story-line" points="@chart.Line" />
-    @foreach (var marker in chart.Markers)
-    {
-        <circle class="story-marker @marker.CssClass" cx="@Number(marker.X)" cy="@Number(marker.Y)" r="7">
-            <title>@marker.Title</title>
-        </circle>
-    }
-</svg>
+@if (positions is not null)
+{
+    var maximumPlaces = Math.Max(1, positions.FieldSize - 1);
+    var gap = Math.Min(places, maximumPlaces);
+    var shown = positions.Around(showsAll ? null : gap);
+    var chart = RaceStoryChartLayout.Create(Story, shown);
 
-<div class="story-legend" aria-label="Légende du graphique">
-    <span><i class="story-swatch story-damage" aria-hidden="true"></i>Dégâts</span>
-    <span><i class="story-swatch story-contact" aria-hidden="true"></i>Contact avec une voiture</span>
-    <span><i class="story-swatch story-obstacle" aria-hidden="true"></i>Obstacle</span>
-    <span><i class="story-swatch story-penalty" aria-hidden="true"></i>Pénalité</span>
-    <span><i class="story-swatch story-limit" aria-hidden="true"></i>Limites de piste</span>
-    <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>Arrêt au stand</span>
-    <span>Survolez un point pour le détail · Position au général</span>
-</div>
+    <div class="race-chart-controls" aria-label="Réglages du graphique">
+        @if (IsMulticlass)
+        {
+            <div class="segmented-group">
+                <span>POSITIONS</span>
+                <div class="segmented" role="group" aria-label="Positions">
+                    <button type="button" class="@(scope == PositionScope.Class ? "is-active" : null)" aria-pressed="@(scope == PositionScope.Class ? "true" : "false")"
+                            @onclick="() => scope = PositionScope.Class">En classe</button>
+                    <button type="button" class="@(scope == PositionScope.Overall ? "is-active" : null)" aria-pressed="@(scope == PositionScope.Overall ? "true" : "false")"
+                            @onclick="() => scope = PositionScope.Overall">Au général</button>
+                </div>
+            </div>
+        }
+        <div class="segmented-group">
+            <span>VOITURES</span>
+            <div class="segmented" role="group" aria-label="Voitures affichées">
+                <button type="button" class="@(showsAll ? "is-active" : null)" aria-pressed="@(showsAll ? "true" : "false")"
+                        @onclick="() => showsAll = true">@(scope == PositionScope.Class && IsMulticlass ? "Toute la classe" : "Tout le plateau")</button>
+                <button type="button" class="@(showsAll ? null : "is-active")" aria-pressed="@(showsAll ? "false" : "true")"
+                        @onclick="() => showsAll = false">Autour de @Story.DriverName</button>
+            </div>
+        </div>
+        <div class="segmented-group">
+            <span>ÉCART À L’ARRIVÉE</span>
+            <div class="segmented race-chart-stepper" role="group" aria-label="Voitures gardées devant et derrière @Story.DriverName à l’arrivée">
+                <button type="button" aria-label="Moins de voitures" disabled="@(!showsAll && gap <= 1)" @onclick="() => ChangePlaces(gap, -1, maximumPlaces)">−</button>
+                <span class="@(showsAll ? null : "is-active")">± @gap @(gap > 1 ? "places" : "place")</span>
+                <button type="button" aria-label="Plus de voitures" disabled="@(!showsAll && gap >= maximumPlaces)" @onclick="() => ChangePlaces(gap, 1, maximumPlaces)">+</button>
+            </div>
+        </div>
+        <span class="race-chart-count">@shown.Count @(shown.Count > 1 ? "voitures affichées" : "voiture affichée") sur @positions.FieldSize</span>
+    </div>
+
+    <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="Position de chaque voiture tour par tour, @Story.DriverName en évidence">
+        @foreach (var tick in chart.PositionTicks)
+        {
+            <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
+            <g><text class="story-axis" x="@Number(chart.PlotLeft - 8)" y="@Number(tick.Position + 4)" text-anchor="end">@tick.Label</text></g>
+        }
+        @foreach (var tick in chart.LapTicks)
+        {
+            <g><text class="story-axis" x="@Number(tick.Position)" y="@Number(chart.PlotBottom + 20)" text-anchor="middle">@tick.Label</text></g>
+        }
+        @foreach (var pit in chart.PitStops)
+        {
+            <line class="story-pit" x1="@Number(pit)" x2="@Number(pit)" y1="@Number(chart.PlotTop)" y2="@Number(chart.PlotBottom)">
+                <title>Arrêt au stand</title>
+            </line>
+        }
+        @foreach (var line in chart.Lines)
+        {
+            <g class="race-line @line.CssClass" @onclick="() => SelectDriver(line.Name)">
+                <title>@line.Title</title>
+                <polyline class="race-line-hit" points="@line.Points" />
+                <polyline class="race-line-path" points="@line.Points" />
+                @if (line.Retired)
+                {
+                    <g><text class="race-line-retired" x="@Number(line.EndX)" y="@Number(line.EndY + 4)" text-anchor="middle">×</text></g>
+                }
+                @if (line.LabelY is { } labelY)
+                {
+                    <g><text class="race-line-label" x="@Number(chart.PlotRight + 10)" y="@Number(labelY)">@line.Title</text></g>
+                }
+            </g>
+        }
+        @foreach (var marker in chart.Markers)
+        {
+            <circle class="story-marker @marker.CssClass" cx="@Number(marker.X)" cy="@Number(marker.Y)" r="7">
+                <title>@marker.Title</title>
+            </circle>
+        }
+    </svg>
+
+    <div class="story-legend" aria-label="Légende du graphique">
+        <span><i class="race-line-swatch race-line-focus" aria-hidden="true"></i>@Story.DriverName</span>
+        @if (!string.Equals(Story.DriverName, PlayerName, StringComparison.OrdinalIgnoreCase) && shown.Any(line => line.IsPlayer))
+        {
+            <span><i class="race-line-swatch race-line-player" aria-hidden="true"></i>Vous</span>
+        }
+        <span><i class="race-line-swatch race-line-other" aria-hidden="true"></i>Autres voitures : cliquez sur une ligne pour suivre son pilote</span>
+        <span>× Abandon</span>
+        <span><i class="story-swatch story-damage" aria-hidden="true"></i>Dégâts</span>
+        <span><i class="story-swatch story-contact" aria-hidden="true"></i>Contact avec une voiture</span>
+        <span><i class="story-swatch story-obstacle" aria-hidden="true"></i>Obstacle</span>
+        <span><i class="story-swatch story-penalty" aria-hidden="true"></i>Pénalité</span>
+        <span><i class="story-swatch story-limit" aria-hidden="true"></i>Limites de piste</span>
+        <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>Arrêt au stand</span>
+        <span>Survolez un point ou une ligne pour le détail · @(scope == PositionScope.Class && IsMulticlass ? "Position en classe" : "Position au général")</span>
+    </div>
+}
 
 @code {
+    private const int DefaultPlaces = 3;
+
+    private PositionScope scope = PositionScope.Class;
+    private bool showsAll = true;
+    private int places = DefaultPlaces;
+
     /// <summary>
     /// Gets or sets the race to draw.
     /// </summary>
     [Parameter, EditorRequired]
+    public Session Session { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the story of the followed driver: their line, incidents and pit stops.
+    /// </summary>
+    [Parameter, EditorRequired]
     public RaceStory Story { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the selected driver of the dashboard, whose line stays visible in red.
+    /// </summary>
+    [Parameter]
+    public string? PlayerName { get; set; }
+
+    /// <summary>
+    /// Gets or sets what to do when a line is clicked: follow its driver.
+    /// </summary>
+    [Parameter]
+    public EventCallback<string> OnSelectDriver { get; set; }
+
+    private bool IsMulticlass =>
+        Session.Drivers.Select(driver => driver.CarClass.Trim()).Distinct(StringComparer.OrdinalIgnoreCase).Count() > 1;
+
+    /// <summary>
+    /// The first click on − or + from the whole field shows the cars around the driver at the
+    /// current gap; the next ones change the gap.
+    /// </summary>
+    private void ChangePlaces(int current, int change, int maximum)
+    {
+        if (!showsAll)
+        {
+            places = Math.Clamp(current + change, 1, maximum);
+        }
+
+        showsAll = false;
+    }
+
+    private Task SelectDriver(string name) =>
+        string.Equals(name, Story.DriverName, StringComparison.OrdinalIgnoreCase)
+            ? Task.CompletedTask
+            : OnSelectDriver.InvokeAsync(name);
 
     private static string Number(double value) =>
         value.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
