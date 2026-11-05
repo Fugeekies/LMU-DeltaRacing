@@ -16,10 +16,10 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
 
 ### Jalon — Interface multilingue 
-Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder.
-- [ ] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup.
-- [ ] Extraire les textes des pages Razor et ceux des calculs partagés de `Presentation`, sans changer le rendu français.
-- [ ] Option **Langue** dans Options, enregistrée dans `appsettings.json` (section `LMU`).
+Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder. Langues : les mêmes que le guide d'utilisation (anglais, français, allemand, italien, espagnol).
+- [x] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup. → [`propositions/interface-multilingue.md`](propositions/interface-multilingue.md), validée le 05/11/2026.
+- [x] Extraire les textes des pages Razor et ceux des calculs partagés de `Presentation`, sans changer le rendu français (`Presentation/Resources/Texts.resx`, PR 1). Restent pour la PR 2 : la fenêtre de reconnexion (aujourd’hui en anglais), les ordinaux, les noms de mois et les formats de date.
+- [ ] Section **Langue et date** dans Options (langue et format de date), enregistrée dans `appsettings.json` (section `LMU`).
 - [ ] Adapter à la langue les formats qui en dépendent (`1er`, `2e`, dates), sans toucher à `CultureInfo.InvariantCulture` pour la lecture des temps.
 - [ ] Test vérifiant que chaque texte existe dans toutes les langues.
 - [ ] Mettre à jour `AGENTS.md`, `docs/UI_DESIGN_SPEC.md` et les specs `docs/UISpec/`.

@@ -1,13 +1,13 @@
 @page "/drivers-ranking"
 @inherits DashboardPage
 
-<PageTitle>Classement des coureurs | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.DriversRanking"]]</PageTitle>
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">RIVALITÉ &amp; HISTORIQUE DES ADVERSAIRES</p>
-        <h1>Classement des coureurs</h1>
-        <p class="page-subtitle">Vos résultats face aux pilotes rencontrés dans les sessions importées.</p>
+        <p class="eyebrow">@T["DriversRanking.Eyebrow"]</p>
+        <h1>@T["Nav.DriversRanking"]</h1>
+        <p class="page-subtitle">@T["DriversRanking.Subtitle"]</p>
     </div>
 </section>
 
@@ -16,8 +16,8 @@
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
-        <h3>Aucun affrontement disponible</h3>
-        <p>Les confrontations apparaîtront lorsque des sessions importées contiendront un résultat classé pour vous et vos adversaires.</p>
+        <h3>@T["DriversRanking.EmptyTitle"]</h3>
+        <p>@T["DriversRanking.EmptyText"]</p>
     </section>
 }
 else
@@ -26,28 +26,28 @@ else
     <section class="panel ranking-panel">
         <div class="panel-heading">
             <div>
-                <p class="eyebrow">HISTORIQUE HEAD-TO-HEAD</p>
-                <h2>Adversaires rencontrés</h2>
+                <p class="eyebrow">@T["DriversRanking.PanelEyebrow"]</p>
+                <h2>@T["DriversRanking.PanelTitle"]</h2>
             </div>
             <span class="count-badge">@filteredRivalries.Count</span>
         </div>
 
         <div class="ranking-filters">
             <label class="ranking-filter ranking-search">
-                <span>RECHERCHER UN PILOTE</span>
+                <span>@T["DriversRanking.Search"]</span>
                 <input @bind="searchText"
                        @bind:event="oninput"
                        type="search"
-                       placeholder="Nom du pilote…"
-                       aria-label="Rechercher un pilote par nom" />
+                       placeholder="@T["DriversRanking.SearchPlaceholder"]"
+                       aria-label="@T["DriversRanking.SearchLabel"]" />
             </label>
             <label class="ranking-filter">
-                <span>TRIER PAR</span>
-                <select @bind="sortOrder" aria-label="Trier le classement">
-                    <option value="sessions">Courses affrontées (décroissant)</option>
-                    <option value="wins">Victoires (décroissant)</option>
-                    <option value="percentage">% de victoire (décroissant)</option>
-                    <option value="name">Nom (A à Z)</option>
+                <span>@T["DriversRanking.SortBy"]</span>
+                <select @bind="sortOrder" aria-label="@T["DriversRanking.SortLabel"]">
+                    <option value="sessions">@T["DriversRanking.SortSessions"]</option>
+                    <option value="wins">@T["DriversRanking.SortWins"]</option>
+                    <option value="percentage">@T["DriversRanking.SortPercentage"]</option>
+                    <option value="name">@T["DriversRanking.SortName"]</option>
                 </select>
             </label>
         </div>
@@ -55,7 +55,7 @@ else
         @if (filteredRivalries.Count == 0)
         {
             <div class="empty-state race-empty-state">
-                <p>Aucun pilote ne correspond à cette recherche.</p>
+                <p>@T["DriversRanking.NoMatch"]</p>
             </div>
         }
         else
@@ -64,15 +64,15 @@ else
                 <table class="data-table ranking-table" data-resizable-columns>
                     <thead>
                         <tr>
-                            <th scope="col">NOM DU PILOTE</th>
-                            <th scope="col" class="numeric-cell">COTE</th>
-                            <th scope="col" class="numeric-cell">COURSES AFFRONTÉES</th>
-                            <th scope="col" class="numeric-cell">VICTOIRES</th>
-                            <th scope="col" class="numeric-cell">DÉFAITES</th>
-                            <th scope="col" class="numeric-cell">% DE VICTOIRE</th>
-                            <th scope="col" class="numeric-cell" title="Places d’avance moyennes en classe : positif quand vous finissez devant">ÉCART MOYEN</th>
-                            <th scope="col" class="numeric-cell" title="Contacts entre vos deux voitures">CONTACTS</th>
-                            <th scope="col">DERNIÈRE COURSE <span class="th-sub">CIRCUIT</span></th>
+                            <th scope="col">@T["DriversRanking.DriverName"]</th>
+                            <th scope="col" class="numeric-cell">@T["DriverRating.Rating"]</th>
+                            <th scope="col" class="numeric-cell">@T["DriversRanking.Faced"]</th>
+                            <th scope="col" class="numeric-cell">@T["Home.Wins"]</th>
+                            <th scope="col" class="numeric-cell">@T["DriversRanking.Losses"]</th>
+                            <th scope="col" class="numeric-cell">@T["DriversRanking.WinRate"]</th>
+                            <th scope="col" class="numeric-cell" title="@T["DriversRanking.AverageGapHint"]">@T["DriversRanking.AverageGap"]</th>
+                            <th scope="col" class="numeric-cell" title="@T["DriversRanking.ContactsHint"]">@T["RaceDetails.Contacts"]</th>
+                            <th scope="col">@T["Home.LastRace"] <span class="th-sub">@T["Common.Circuit"]</span></th>
                         </tr>
                     </thead>
                     <tbody>

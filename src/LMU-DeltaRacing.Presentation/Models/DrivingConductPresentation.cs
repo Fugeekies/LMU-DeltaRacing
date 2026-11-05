@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -93,25 +94,25 @@ public static class DrivingConductPresentation
 
         return incident.Kind switch
         {
-            SessionEventKind.VehicleContact => $"Contact avec {incident.Detail}",
+            SessionEventKind.VehicleContact => Texts.Format("Incident.VehicleContact", incident.Detail),
             SessionEventKind.ObstacleContact => incident.Detail switch
             {
-                "Immovable" => "Contact avec un obstacle fixe",
-                "Post" => "Contact avec un poteau",
-                "Sign" => "Contact avec un panneau",
-                "Cone" => "Contact avec un cône",
-                _ => $"Contact avec {incident.Detail}"
+                "Immovable" => Texts.Get("Incident.Immovable"),
+                "Post" => Texts.Get("Incident.Post"),
+                "Sign" => Texts.Get("Incident.Sign"),
+                "Cone" => Texts.Get("Incident.Cone"),
+                _ => Texts.Format("Incident.VehicleContact", incident.Detail)
             },
-            SessionEventKind.OtherContact => $"Contact signalé : {incident.Detail}",
-            SessionEventKind.TrackLimitWarning => "Avertissement de limites de piste",
-            SessionEventKind.InvalidLap => "Tour invalidé",
+            SessionEventKind.OtherContact => Texts.Format("Incident.OtherContact", incident.Detail),
+            SessionEventKind.TrackLimitWarning => Texts.Get("Incident.TrackLimitWarning"),
+            SessionEventKind.InvalidLap => Texts.Get("Incident.InvalidLap"),
             SessionEventKind.Damage => incident.Detail switch
             {
-                "suspension" => "Dégâts : suspension",
-                "engine" => "Dégâts : moteur",
-                _ => $"Dégâts : {incident.Detail}"
+                "suspension" => Texts.Get("Incident.DamageSuspension"),
+                "engine" => Texts.Get("Incident.DamageEngine"),
+                _ => Texts.Format("Incident.Damage", incident.Detail)
             },
-            _ => $"Pénalité : {incident.Detail}"
+            _ => Texts.Format("Incident.Penalty", incident.Detail)
         };
     }
 

@@ -1,4 +1,5 @@
 using System.Globalization;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -49,7 +50,7 @@ public static class ProgressionPeriods
         granularity switch
         {
             ProgressionGranularity.Day => periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-            ProgressionGranularity.Week => $"semaine du {periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)}",
+            ProgressionGranularity.Week => Texts.Format("Progression.WeekOf", periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)),
             ProgressionGranularity.Month => $"{MonthNames[periodStart.Month - 1]} {periodStart.Year.ToString(CultureInfo.InvariantCulture)}",
             _ => periodStart.Year.ToString(CultureInfo.InvariantCulture)
         };

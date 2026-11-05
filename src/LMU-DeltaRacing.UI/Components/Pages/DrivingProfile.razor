@@ -1,16 +1,16 @@
 @page "/driving-profile"
 @inherits DashboardPage
 
-<PageTitle>Profil de conduite | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.DrivingProfile"]]</PageTitle>
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">PROPRETÉ &amp; DISCIPLINE EN PISTE</p>
-        <h1>Profil de conduite</h1>
+        <p class="eyebrow">@T["DrivingProfile.Eyebrow"]</p>
+        <h1>@T["Nav.DrivingProfile"]</h1>
         <p class="page-subtitle">
             @(profile is null
-                ? "Vos contacts, limites de piste et pénalités, sur vos qualifications et vos courses."
-                : $"{profile.Name} · {profile.Sessions} sessions · {profile.Player.Laps} tours, comparés aux autres pilotes des mêmes sessions.")
+                ? T["DrivingProfile.Subtitle"]
+                : T["DrivingProfile.SubtitleOf", profile.Name, Texts.Plural("Common.Sessions", profile.Sessions), Texts.Plural("Common.Laps", profile.Player.Laps)])
         </p>
     </div>
 </section>
@@ -20,8 +20,8 @@
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
-        <h3>Aucun profil disponible</h3>
-        <p>Votre profil apparaîtra lorsqu'une qualification ou une course contenant le pilote sélectionné aura été importée.</p>
+        <h3>@T["DrivingProfile.EmptyTitle"]</h3>
+        <p>@T["DrivingProfile.EmptyText"]</p>
     </section>
 }
 else
@@ -29,14 +29,14 @@ else
     var cost = profile.Cost;
     @if (cost.Contacts > 0)
     {
-        <section class="panel driving-cost" aria-label="Ce que vos incidents vous coûtent">
+        <section class="panel driving-cost" aria-label="@T["DrivingProfile.CostLabel"]">
             <div class="driving-cost-main">
-                <p class="eyebrow">CE QUE VOS INCIDENTS VOUS COÛTENT</p>
+                <p class="eyebrow">@T["DrivingProfile.CostEyebrow"]</p>
                 <strong class="driving-cost-value">@DisplayFormat.Minutes(cost.TimeLost)</strong>
                 <span class="summary-detail">
-                    perdues sur les tours avec contact@(cost.TimeLostPerRace is { } perRace ? $", soit {FormatSeconds(perRace)} par course" : string.Empty)
+                    @T["DrivingProfile.LostOnContactLaps"]@(cost.TimeLostPerRace is { } perRace ? T["DrivingProfile.PerRace", FormatSeconds(perRace)].Value : string.Empty)
                 </span>
-                <span class="summary-detail">Comparé à votre tour médian de chaque course, hors premier tour et arrêts : c'est un minimum.</span>
+                <span class="summary-detail">@T["DrivingProfile.CostNote"]</span>
             </div>
             <ul class="driving-takeaways">
                 @foreach (var takeaway in cost.Takeaways)
@@ -45,15 +45,15 @@ else
                 }
             </ul>
             <div class="driving-cost-figures">
-                <div><strong>@cost.Contacts</strong><span>contacts en course</span></div>
-                <div><strong>@cost.FirstLapContacts</strong><span>au départ ou au 1er tour</span></div>
-                <div><strong>@cost.PositionsLost</strong><span>places perdues sur ces tours</span></div>
-                <div><strong>@cost.ContactsWithDamage</strong><span>avec dégâts</span></div>
+                <div><strong>@cost.Contacts</strong><span>@T["DrivingProfile.RaceContacts"]</span></div>
+                <div><strong>@cost.FirstLapContacts</strong><span>@T["DrivingProfile.FirstLapContacts"]</span></div>
+                <div><strong>@cost.PositionsLost</strong><span>@T["DrivingProfile.PositionsLost"]</span></div>
+                <div><strong>@cost.ContactsWithDamage</strong><span>@T["DrivingProfile.WithDamage"]</span></div>
             </div>
             @if (cost.CostliestRace is { } worst)
             {
                 <p class="driving-worst">
-                    Course la plus coûteuse :
+                    @T["DrivingProfile.CostliestRace"]
                     @if (worst.EventId is { } worstEvent)
                     {
                         <a href="@($"/race-details?event={Uri.EscapeDataString(worstEvent)}")">@worst.TrackVenue, @DisplayFormat.DateTime(worst.StartedAt)</a>
@@ -62,26 +62,26 @@ else
                     {
                         <span>@worst.TrackVenue, @DisplayFormat.DateTime(worst.StartedAt)</span>
                     }
-                    (@FormatSeconds(worst.TimeLost) perdues)
+                    (@T["DrivingProfile.Lost", FormatSeconds(worst.TimeLost)])
                 </p>
             }
         </section>
     }
 
-    <section class="driving-tiles" aria-label="Votre bilan pour 100 tours">
-        @RenderTile("CONTACTS", profile.Player.ContactsPer100Laps, profile.Others.ContactsPer100Laps, profile.Player.Conduct.VehicleContacts)
-        @RenderTile("OBSTACLES", profile.Player.ObstaclesPer100Laps, profile.Others.ObstaclesPer100Laps, profile.Player.Conduct.ObstacleContacts)
-        @RenderTile("AVERTISSEMENTS", profile.Player.WarningsPer100Laps, profile.Others.WarningsPer100Laps, profile.Player.Conduct.Warnings)
-        @RenderTile("TOURS INVALIDÉS", profile.Qualifying.Rates.InvalidLapsPer100Laps, profile.OthersQualifying.InvalidLapsPer100Laps, profile.Player.Conduct.InvalidLaps)
-        @RenderTile("PÉNALITÉS", profile.Player.PenaltiesPer100Laps, profile.Others.PenaltiesPer100Laps, profile.Player.Conduct.Penalties)
+    <section class="driving-tiles" aria-label="@T["DrivingProfile.TilesLabel"]">
+        @RenderTile(T["RaceDetails.Contacts"], profile.Player.ContactsPer100Laps, profile.Others.ContactsPer100Laps, profile.Player.Conduct.VehicleContacts)
+        @RenderTile(T["RaceDetails.Obstacles"], profile.Player.ObstaclesPer100Laps, profile.Others.ObstaclesPer100Laps, profile.Player.Conduct.ObstacleContacts)
+        @RenderTile(T["DrivingProfile.Warnings"], profile.Player.WarningsPer100Laps, profile.Others.WarningsPer100Laps, profile.Player.Conduct.Warnings)
+        @RenderTile(T["RaceDetails.InvalidLaps"], profile.Qualifying.Rates.InvalidLapsPer100Laps, profile.OthersQualifying.InvalidLapsPer100Laps, profile.Player.Conduct.InvalidLaps)
+        @RenderTile(T["DrivingProfile.Penalties"], profile.Player.PenaltiesPer100Laps, profile.Others.PenaltiesPer100Laps, profile.Player.Conduct.Penalties)
     </section>
-    <p class="driving-note">Valeurs pour 100 tours, plus basses que les autres en vert. Les tours invalidés sont rapportés aux tours de qualification : LMU n'en signale pas en course.</p>
+    <p class="driving-note">@T["DrivingProfile.TilesNote"]</p>
 
     <section class="panel driving-panel">
         <div class="panel-heading">
             <div>
-                <p class="eyebrow">OÙ PROGRESSER</p>
-                <h2>Par type de session, catégorie et circuit</h2>
+                <p class="eyebrow">@T["DrivingProfile.WhereEyebrow"]</p>
+                <h2>@T["DrivingProfile.WhereTitle"]</h2>
             </div>
         </div>
         <div class="table-scroll">
@@ -89,40 +89,40 @@ else
                 <thead>
                     <tr>
                         <th scope="col"></th>
-                        <th scope="col" class="numeric-cell">SESSIONS</th>
-                        <th scope="col" class="numeric-cell">TOURS</th>
-                        <th scope="col" class="numeric-cell">CONTACTS / 100 T.</th>
-                        <th scope="col" class="numeric-cell">OBSTACLES / 100 T.</th>
-                        <th scope="col" class="numeric-cell">AVERTISSEMENTS / 100 T.</th>
-                        <th scope="col" class="numeric-cell">PÉNALITÉS</th>
-                        <th scope="col" class="numeric-cell">TEMPS PERDU</th>
-                        <th scope="col" class="numeric-cell">ZONE À RISQUE</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.Sessions"]</th>
+                        <th scope="col" class="numeric-cell">@T["MyRaces.Laps"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.ContactsPer100"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.ObstaclesPer100"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.WarningsPer100"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.Penalties"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.TimeLost"]</th>
+                        <th scope="col" class="numeric-cell">@T["DrivingProfile.RiskZone"]</th>
                     </tr>
                 </thead>
                 <tbody>
-                    @RenderRows("Session", [profile.Race, profile.Qualifying])
-                    @RenderRows("Catégorie", profile.ByCategory)
-                    @RenderRows("Circuit", profile.ByCircuit)
+                    @RenderRows(T["DrivingProfile.GroupSession"], [profile.Race, profile.Qualifying])
+                    @RenderRows(T["DrivingProfile.GroupCategory"], profile.ByCategory)
+                    @RenderRows(T["DrivingProfile.GroupCircuit"], profile.ByCircuit)
                 </tbody>
             </table>
         </div>
         <div class="sector-legend">
-            <span>Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours : l'échantillon est trop petit.</span>
-            <span>Zone à risque : le secteur qui concentre au moins la moitié des contacts hors premier tour, dès 3 contacts.</span>
+            <span>@T["DrivingProfile.SmallSampleNote"]</span>
+            <span>@T["DrivingProfile.RiskZoneNote"]</span>
         </div>
     </section>
 
     <section class="panel driving-panel">
         <div class="panel-heading">
             <div>
-                <p class="eyebrow">FORME RÉCENTE</p>
-                <h2>Vos @profile.RecentRaces.Count dernières courses</h2>
+                <p class="eyebrow">@T["Home.RecentForm"]</p>
+                <h2>@T["DrivingProfile.LastRaces", profile.RecentRaces.Count]</h2>
             </div>
         </div>
         @if (profile.RecentRaces.Count == 0)
         {
             <div class="empty-state race-empty-state">
-                <p>Aucune course importée pour le moment.</p>
+                <p>@T["DrivingProfile.NoRace"]</p>
             </div>
         }
         else
@@ -131,14 +131,14 @@ else
                 <table class="data-table driving-table" data-resizable-columns>
                     <thead>
                         <tr>
-                            <th scope="col">DATE</th>
-                            <th scope="col">CIRCUIT</th>
-                            <th scope="col">CATÉGORIE</th>
-                            <th scope="col" class="numeric-cell">CONTACTS</th>
-                            <th scope="col" class="numeric-cell">OBSTACLES</th>
-                            <th scope="col" class="numeric-cell">AVERTISSEMENTS</th>
-                            <th scope="col" class="numeric-cell">PÉNALITÉS</th>
-                            <th scope="col" class="numeric-cell">TEMPS PERDU</th>
+                            <th scope="col">@T["DrivingProfile.Date"]</th>
+                            <th scope="col">@T["Common.Circuit"]</th>
+                            <th scope="col">@T["Common.Category"]</th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Contacts"]</th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Obstacles"]</th>
+                            <th scope="col" class="numeric-cell">@T["DrivingProfile.Warnings"]</th>
+                            <th scope="col" class="numeric-cell">@T["DrivingProfile.Penalties"]</th>
+                            <th scope="col" class="numeric-cell">@T["DrivingProfile.TimeLost"]</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -171,9 +171,9 @@ else
     </section>
 
     <section class="driving-lists">
-        @RenderCounts("Pilotes que vous touchez le plus", profile.Opponents, "Aucun contact avec une voiture.")
-        @RenderCounts("Obstacles", profile.Obstacles, "Aucun contact avec un obstacle.")
-        @RenderCounts("Motifs de pénalité", profile.PenaltyReasons, "Aucune pénalité.")
+        @RenderCounts(T["DrivingProfile.MostHitDrivers"], profile.Opponents, T["DrivingProfile.NoVehicleContact"])
+        @RenderCounts(T["DrivingProfile.ObstaclesTitle"], profile.Obstacles, T["DrivingProfile.NoObstacleContact"])
+        @RenderCounts(T["DrivingProfile.PenaltyReasons"], profile.PenaltyReasons, T["DrivingProfile.NoPenalty"])
     </section>
 }
 
@@ -205,7 +205,7 @@ else
         @<article class="summary-card">
             <span class="summary-label">@label</span>
             <strong class="summary-value @GetComparisonClass(rate, others)">@FormatRate(rate)</strong>
-            <span class="summary-detail">Autres pilotes : @FormatRate(others) · @total au total</span>
+            <span class="summary-detail">@Texts.Format("DrivingProfile.Others", FormatRate(others), total)</span>
         </article>;
 
     private static RenderFragment RenderRows(string title, IEnumerable<DrivingRow> rows) =>
@@ -222,7 +222,7 @@ else
                     <td class="numeric-cell">@FormatRate(row.HasEnoughLaps ? row.Rates.WarningsPer100Laps : null)</td>
                     <td class="numeric-cell">@row.Rates.Conduct.Penalties</td>
                     <td class="numeric-cell">@(row.TimeLost > TimeSpan.Zero ? FormatSeconds(row.TimeLost) : "—")</td>
-                    <td class="numeric-cell">@(row.RiskSector is { } sector ? $"Secteur {sector}" : "—")</td>
+                    <td class="numeric-cell">@(row.RiskSector is { } sector ? Texts.Format("DrivingProfile.Sector", sector) : "—")</td>
                 </tr>
             }
         </text>;

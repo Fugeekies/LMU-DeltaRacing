@@ -4,27 +4,27 @@
 @inject DashboardSettingsStore SettingsStore
 @inject WindowsFolderPicker FolderPicker
 
-<PageTitle>Options | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.Settings"]]</PageTitle>
 
 <section class="page-heading settings-heading">
     <div>
-        <p class="eyebrow">CONFIGURATION &amp; PARAMÈTRES</p>
-        <h1>Options</h1>
-        <p class="page-subtitle">Configurez la source des résultats et la surveillance des fichiers LMU.</p>
+        <p class="eyebrow">@T["Settings.Eyebrow"]</p>
+        <h1>@T["Nav.Settings"]</h1>
+        <p class="page-subtitle">@T["Settings.Subtitle"]</p>
     </div>
 </section>
 
 <section class="panel settings-panel" aria-labelledby="results-settings-heading">
     <div class="panel-heading">
         <div>
-            <p class="eyebrow">EMPLACEMENT DES FICHIERS DU JEU</p>
-            <h2 id="results-settings-heading">Dossier des résultats XML</h2>
+            <p class="eyebrow">@T["Settings.FilesEyebrow"]</p>
+            <h2 id="results-settings-heading">@T["Settings.ResultsFolder"]</h2>
         </div>
     </div>
 
     <div class="settings-content">
         <label class="settings-label" for="results-directory">
-            Chemin du dossier <span>(UserData/Log/Results)</span>
+            @T["Settings.FolderPath"] <span>(UserData/Log/Results)</span>
         </label>
         <div class="directory-picker">
             <input id="results-directory"
@@ -39,7 +39,7 @@
                     type="button"
                     @onclick="BrowseForDirectoryAsync"
                     disabled="@(!OperatingSystem.IsWindows() || isBusy)">
-                Parcourir…
+                @T["Settings.Browse"]
             </button>
         </div>
 
@@ -51,12 +51,12 @@
                 <span class="status-dot @(directoryStatus.IsValid ? "is-live" : "is-error")" aria-hidden="true"></span>
                 @if (directoryStatus.IsValid)
                 {
-                    <span>Dossier valide · @directoryStatus.XmlFileCount fichier(s) XML</span>
+                    <span>@T["Settings.ValidFolder", directoryStatus.XmlFileCount]</span>
                     <code>@directoryStatus.DirectoryPath</code>
                 }
                 else
                 {
-                    <span>Dossier introuvable ou illisible</span>
+                    <span>@T["Settings.InvalidFolder"]</span>
                     <span>@directoryStatus.ErrorMessage</span>
                 }
             </div>
@@ -65,7 +65,7 @@
         {
             <div class="directory-status">
                 <span class="status-dot is-idle" aria-hidden="true"></span>
-                <span>Vérifiez ou choisissez un dossier de résultats.</span>
+                <span>@T["Settings.CheckFolder"]</span>
             </div>
         }
 
@@ -74,12 +74,12 @@
                     type="button"
                     @onclick="ApplyResultsDirectoryAsync"
                     disabled="@(isBusy || directoryStatus is { IsValid: false })">
-                @(isReloading ? "Chargement…" : "Appliquer")
+                @(isReloading ? T["Settings.Loading"] : T["Settings.Apply"])
             </button>
-            <span class="settings-help">Enregistre le dossier, puis recharge les résultats et la surveillance.</span>
+            <span class="settings-help">@T["Settings.ApplyHelp"]</span>
             @if (!OperatingSystem.IsWindows())
             {
-                <span class="settings-help">Le sélecteur de dossiers natif est disponible sous Windows.</span>
+                <span class="settings-help">@T["Settings.PickerWindowsOnly"]</span>
             }
         </div>
     </div>
@@ -88,12 +88,12 @@
 <section class="panel settings-panel" aria-labelledby="driver-settings-heading">
     <div class="panel-heading">
         <div>
-            <p class="eyebrow">PROFIL DE PILOTE</p>
-            <h2 id="driver-settings-heading">Pilote principal</h2>
+            <p class="eyebrow">@T["Settings.DriverEyebrow"]</p>
+            <h2 id="driver-settings-heading">@T["Settings.MainDriver"]</h2>
         </div>
     </div>
     <div class="settings-content">
-        <label class="settings-label" for="user-name">Pilote utilisé dans les vues de résultats</label>
+        <label class="settings-label" for="user-name">@T["Settings.MainDriverLabel"]</label>
         <select id="user-name"
                 class="settings-input"
                 value="@selectedUserName"
@@ -101,51 +101,51 @@
                 disabled="@(State.IsLoading || State.DriverFrequencies.Count == 0)">
             @if (string.IsNullOrWhiteSpace(selectedUserName))
             {
-                <option value="">Détection après le chargement…</option>
+                <option value="">@T["Settings.DetectionPending"]</option>
             }
             else if (!State.DriverFrequencies.Any(driver =>
                 string.Equals(driver.Name, selectedUserName, StringComparison.OrdinalIgnoreCase)))
             {
-                <option value="@selectedUserName">@selectedUserName (absent des résultats chargés)</option>
+                <option value="@selectedUserName">@T["Settings.AbsentDriver", selectedUserName]</option>
             }
             @foreach (var driver in State.DriverFrequencies)
             {
                 <option value="@driver.Name">
-                    @driver.Name — @driver.Percentage.ToString("P1") (@driver.AppearanceCount/@driver.TotalResults fichiers)
+                    @T["Settings.DriverFrequency", driver.Name, driver.Percentage.ToString("P1"), driver.AppearanceCount, driver.TotalResults]
                 </option>
             }
         </select>
-        <p class="settings-help">Les pilotes sont triés par pourcentage de fichiers importés dans lesquels ils apparaissent. Le choix est enregistré automatiquement.</p>
+        <p class="settings-help">@T["Settings.MainDriverHelp"]</p>
     </div>
 </section>
 
 <section class="panel settings-panel" aria-labelledby="merge-settings-heading">
     <div class="panel-heading">
         <div>
-            <p class="eyebrow">CHANGEMENT DE NOM</p>
-            <h2 id="merge-settings-heading">Fusion de pilotes</h2>
+            <p class="eyebrow">@T["Settings.MergeEyebrow"]</p>
+            <h2 id="merge-settings-heading">@T["Settings.Merge"]</h2>
         </div>
     </div>
     <div class="settings-content">
-        <p class="settings-help">Déclarez que deux noms désignent le même pilote, par exemple après un changement de pseudo. Les deux historiques sont regroupés sous le nom conservé ; les fichiers de résultats ne sont pas modifiés et une fusion peut être annulée.</p>
+        <p class="settings-help">@T["Settings.MergeHelp"]</p>
         <div class="merge-picker">
             <label class="settings-label">
-                Ancien nom
+                @T["Settings.MergeFrom"]
                 <select class="settings-input" @bind="mergeFrom" @bind:after="UpdateMergeWarning" disabled="@(isBusy || State.DriverFrequencies.Count == 0)">
-                    <option value="">Choisir un pilote…</option>
+                    <option value="">@T["Settings.ChooseDriver"]</option>
                     @foreach (var driver in State.DriverFrequencies)
                     {
-                        <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
+                        <option value="@driver.Name">@T["Settings.DriverFiles", driver.Name, driver.AppearanceCount]</option>
                     }
                 </select>
             </label>
             <label class="settings-label">
-                Nom conservé
+                @T["Settings.MergeTo"]
                 <select class="settings-input" @bind="mergeTo" @bind:after="UpdateMergeWarning" disabled="@(isBusy || State.DriverFrequencies.Count == 0)">
-                    <option value="">Choisir un pilote…</option>
+                    <option value="">@T["Settings.ChooseDriver"]</option>
                     @foreach (var driver in State.DriverFrequencies)
                     {
-                        <option value="@driver.Name">@driver.Name (@driver.AppearanceCount fichiers)</option>
+                        <option value="@driver.Name">@T["Settings.DriverFiles", driver.Name, driver.AppearanceCount]</option>
                     }
                 </select>
             </label>
@@ -153,7 +153,7 @@
                     type="button"
                     @onclick="MergeDrivers"
                     disabled="@(isBusy || !CanMerge())">
-                Fusionner
+                @T["Settings.MergeButton"]
             </button>
         </div>
 
@@ -161,13 +161,13 @@
         {
             <div class="notice notice-warning merge-warning" role="alert">
                 <span class="notice-symbol" aria-hidden="true">!</span>
-                <p>Ces deux pilotes ont participé ensemble à @mergeWarningCount session(s) : ce sont probablement deux personnes différentes. La fusion reste possible, mais vérifiez avant de la confirmer.</p>
+                <p>@T["Settings.MergeWarning", mergeWarningCount]</p>
             </div>
         }
 
         @if (State.DriverMerges.Count > 0)
         {
-            <ul class="merge-list" aria-label="Fusions enregistrées">
+            <ul class="merge-list" aria-label="@T["Settings.MergesLabel"]">
                 @foreach (var merge in State.DriverMerges)
                 {
                     var sharedSessions = sharedSessionsByMerge.GetValueOrDefault(merge);
@@ -175,9 +175,9 @@
                         <span><strong>@merge.From</strong> → <strong>@merge.To</strong></span>
                         @if (sharedSessions > 0)
                         {
-                            <span class="merge-list-warning" title="Les deux noms apparaissent dans les mêmes sessions">⚠ @sharedSessions session(s) en commun</span>
+                            <span class="merge-list-warning" title="@T["Settings.SharedSessionsHint"]">⚠ @T["Settings.SharedSessions", sharedSessions]</span>
                         }
-                        <button class="button button-secondary" type="button" @onclick="() => CancelMerge(merge.From)" disabled="@isBusy">Annuler</button>
+                        <button class="button button-secondary" type="button" @onclick="() => CancelMerge(merge.From)" disabled="@isBusy">@T["Settings.CancelMerge"]</button>
                     </li>
                 }
             </ul>
@@ -188,32 +188,32 @@
 <section class="panel settings-panel watcher-settings" aria-labelledby="watcher-settings-heading">
     <div class="panel-heading">
         <div>
-            <p class="eyebrow">SURVEILLANCE &amp; DÉMARRAGE</p>
-            <h2 id="watcher-settings-heading">Démarrage automatique</h2>
+            <p class="eyebrow">@T["Settings.WatcherEyebrow"]</p>
+            <h2 id="watcher-settings-heading">@T["Settings.AutoStart"]</h2>
         </div>
     </div>
     <div class="settings-content watcher-preference">
         <label class="settings-checkbox">
             <input type="checkbox" @bind="watchOnStartup" @bind:after="SaveWatchOnStartup" disabled="@isBusy" />
-            <span>Lancer la surveillance des fichiers XML automatiquement au démarrage de l’application</span>
+            <span>@T["Settings.AutoStartLabel"]</span>
         </label>
-        <p class="settings-help">Ce choix est enregistré immédiatement et s’applique au prochain démarrage. Le bouton « Appliquer » active la surveillance tout de suite.</p>
+        <p class="settings-help">@T["Settings.AutoStartHelp"]</p>
     </div>
 </section>
 
 <section class="panel settings-panel" aria-labelledby="practice-settings-heading">
     <div class="panel-heading">
         <div>
-            <p class="eyebrow">DONNÉES CHARGÉES</p>
-            <h2 id="practice-settings-heading">Sessions d’essais</h2>
+            <p class="eyebrow">@T["Settings.DataEyebrow"]</p>
+            <h2 id="practice-settings-heading">@T["Settings.Practice"]</h2>
         </div>
     </div>
     <div class="settings-content">
         <label class="settings-checkbox">
             <input type="checkbox" @bind="loadPracticeSessions" @bind:after="SaveLoadPracticeSessionsAsync" disabled="@isBusy" />
-            <span>Charger les sessions d’essais (onglet Essais du détail des courses)</span>
+            <span>@T["Settings.PracticeLabel"]</span>
         </label>
-        <p class="settings-help">Les essais sont souvent vides ; les ignorer accélère le chargement. Le choix est enregistré et les résultats sont rechargés immédiatement.</p>
+        <p class="settings-help">@T["Settings.PracticeHelp"]</p>
     </div>
 </section>
 
@@ -223,7 +223,7 @@
     <div class="settings-feedback" role="status" aria-live="polite">@feedbackMessage</div>
 </div>
 
-<section class="dashboard-below-settings" aria-label="État des imports et sessions récentes">
+<section class="dashboard-below-settings" aria-label="@T["Settings.BelowLabel"]">
     <DashboardOverview />
 </section>
 
@@ -262,7 +262,7 @@
 
     private string GetDefaultDirectoryPlaceholder() =>
         DashboardData.Snapshot.ResultsDirectory
-        ?? "Détection automatique du dossier LMU";
+        ?? T["Settings.AutoDetect"];
 
     private void ValidateSelectedDirectory()
     {
@@ -286,7 +286,7 @@
             exception is IOException or UnauthorizedAccessException or PlatformNotSupportedException
                 or System.Runtime.InteropServices.COMException)
         {
-            feedbackMessage = $"Impossible d’ouvrir le sélecteur de dossiers : {exception.Message}";
+            feedbackMessage = T["Settings.PickerFailed", exception.Message];
         }
     }
 
@@ -311,13 +311,13 @@
             SettingsStore.SaveResultsDirectory(resultsDirectory.Trim());
             directoryStatus = await DashboardData.ReloadResultsAsync(resultsDirectory);
             feedbackMessage = directoryStatus.IsValid
-                ? $"Dossier enregistré et chargé : {directoryStatus.XmlFileCount} fichier(s) traité(s). La surveillance est active."
+                ? T["Settings.FolderSaved", directoryStatus.XmlFileCount]
                 : directoryStatus.ErrorMessage;
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’enregistrer le dossier : {exception.Message}";
+            feedbackMessage = T["Settings.FolderSaveFailed", exception.Message];
         }
         finally
         {
@@ -342,7 +342,7 @@
         try
         {
             DashboardData.SetDriverMerges(DriverMerges.Add(DashboardData.Snapshot.DriverMerges, mergeFrom, mergeTo));
-            feedbackMessage = $"{mergeFrom} est fusionné avec {mergeTo}.";
+            feedbackMessage = T["Settings.Merged", mergeFrom, mergeTo];
             mergeFrom = string.Empty;
             mergeTo = string.Empty;
             mergeWarningCount = 0;
@@ -351,7 +351,7 @@
             exception is IOException or UnauthorizedAccessException or ArgumentException
                 or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible de fusionner les pilotes : {exception.Message}";
+            feedbackMessage = T["Settings.MergeFailed", exception.Message];
         }
     }
 
@@ -360,12 +360,12 @@
         try
         {
             DashboardData.SetDriverMerges(DriverMerges.Remove(DashboardData.Snapshot.DriverMerges, from));
-            feedbackMessage = $"Fusion de {from} annulée.";
+            feedbackMessage = T["Settings.MergeCancelled", from];
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’annuler la fusion : {exception.Message}";
+            feedbackMessage = T["Settings.CancelMergeFailed", exception.Message];
         }
     }
 
@@ -379,14 +379,14 @@
         try
         {
             DashboardData.SelectUserName(name);
-            feedbackMessage = $"Profil pilote enregistré : {name}.";
+            feedbackMessage = T["Settings.DriverSaved", name];
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or ArgumentException
                 or System.Text.Json.JsonException or InvalidOperationException)
         {
             selectedUserName = DashboardData.Snapshot.UserName ?? string.Empty;
-            feedbackMessage = $"Impossible d’enregistrer le pilote sélectionné : {exception.Message}";
+            feedbackMessage = T["Settings.DriverSaveFailed", exception.Message];
         }
     }
 
@@ -404,14 +404,14 @@
             var status = await DashboardData.ReloadResultsAsync(Configuration["LMU:ResultsDirectory"]);
             feedbackMessage = status.IsValid
                 ? loadPracticeSessions
-                    ? "Sessions d’essais chargées."
-                    : "Sessions d’essais retirées."
+                    ? T["Settings.PracticeLoaded"]
+                    : T["Settings.PracticeRemoved"]
                 : status.ErrorMessage;
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’enregistrer la préférence des essais : {exception.Message}";
+            feedbackMessage = T["Settings.PracticeSaveFailed", exception.Message];
         }
         finally
         {
@@ -424,7 +424,7 @@
         try
         {
             SettingsStore.SaveWatchOnStartup(watchOnStartup);
-            feedbackMessage = "Préférence de démarrage enregistrée.";
+            feedbackMessage = T["Settings.StartupSaved"];
         }
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)

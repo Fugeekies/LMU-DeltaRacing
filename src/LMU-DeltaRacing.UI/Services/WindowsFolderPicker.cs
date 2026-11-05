@@ -1,5 +1,6 @@
 using System.Runtime.InteropServices;
 using System.Text;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.UI.Services;
 
@@ -66,7 +67,7 @@ public sealed class WindowsFolderPicker
             var info = new BrowseInfo
             {
                 DisplayName = displayName,
-                Title = "Sélectionnez le dossier des résultats LMU",
+                Title = Texts.Get("Settings.PickerTitle"),
                 Flags = BrowseForFolderFlags,
                 Callback = callback
             };
@@ -81,7 +82,7 @@ public sealed class WindowsFolderPicker
                 var path = new StringBuilder(displayNameCapacity);
                 if (!SHGetPathFromIDListEx(item, path, (uint)path.Capacity, 0))
                 {
-                    throw new IOException("Le dossier sélectionné ne possède pas de chemin de fichiers valide.");
+                    throw new IOException(Texts.Get("Settings.PickerInvalidPath"));
                 }
 
                 return path.ToString();

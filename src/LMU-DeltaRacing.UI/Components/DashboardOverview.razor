@@ -2,9 +2,9 @@
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">ESPACE INGÉNIEUR DE PISTE</p>
-        <h1>Tableau de bord</h1>
-        <p class="page-subtitle">Historique des sessions importées depuis Le Mans Ultimate.</p>
+        <p class="eyebrow">@T["Overview.Eyebrow"]</p>
+        <h1>@T["Overview.Title"]</h1>
+        <p class="page-subtitle">@T["Overview.Subtitle"]</p>
     </div>
 </section>
 
@@ -15,10 +15,10 @@
         : (int)Math.Round(State.FilesLoaded * 100d / State.FilesToLoad);
     <section class="load-panel" aria-live="polite">
         <div class="load-copy">
-            <span class="eyebrow">IMPORT INITIAL</span>
+            <span class="eyebrow">@T["Status.InitialImport"]</span>
             <span>@State.FilesLoaded / @State.FilesToLoad fichiers traités</span>
         </div>
-        <progress class="load-progress" max="100" value="@progress" aria-label="Progression de l'import initial">
+        <progress class="load-progress" max="100" value="@progress" aria-label="@T["Startup.ProgressLabel"]">
             @progress%
         </progress>
     </section>
@@ -29,37 +29,37 @@
     <section class="notice notice-error" role="alert">
         <span class="notice-symbol" aria-hidden="true">!</span>
         <div>
-            <h2>Les résultats n'ont pas pu être chargés</h2>
+            <h2>@T["Results.LoadFailed"]</h2>
             <p>@State.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
+            <p>@T["Results.CheckFolder"] <a href="/settings">@T["Nav.Settings"]</a>.</p>
         </div>
     </section>
 }
 
-<section class="summary-grid" aria-label="Résumé des résultats">
+<section class="summary-grid" aria-label="@T["Overview.SummaryLabel"]">
     <article class="summary-card">
-        <span class="summary-label">SESSIONS IMPORTÉES</span>
+        <span class="summary-label">@T["Overview.ImportedSessions"]</span>
         <strong class="summary-value">@playerSessions.Count</strong>
-        <span class="summary-detail">Sessions de @GetDriverLabel()</span>
+        <span class="summary-detail">@T["Overview.SessionsOf", GetDriverLabel()]</span>
     </article>
     <article class="summary-card summary-card-accent">
-        <span class="summary-label">DERNIÈRE SESSION</span>
+        <span class="summary-label">@T["Overview.LastSession"]</span>
         <strong class="summary-value summary-value-text">
             @(playerSessions.FirstOrDefault()?.TrackVenue ?? "—")
         </strong>
         <span class="summary-detail">
-            @(playerSessions.FirstOrDefault() is { } latest ? DisplayFormat.DateTime(latest.StartedAt) : "Aucune session")
+            @(playerSessions.FirstOrDefault() is { } latest ? DisplayFormat.DateTime(latest.StartedAt) : T["Overview.NoSession"])
         </span>
     </article>
     <article class="summary-card">
-        <span class="summary-label">FICHIERS EN ÉCHEC</span>
+        <span class="summary-label">@T["Overview.FailedFiles"]</span>
         <strong class="summary-value @(State.ImportFailures.Count > 0 ? "text-warning" : string.Empty)">
             @State.ImportFailures.Count
         </strong>
         <span class="summary-detail">
             @(State.ImportDuplicates.Count > 0
                 ? DashboardPresentation.DuplicateLabel(State.ImportDuplicates.Count)
-                : "Les autres imports continuent")
+                : T["Overview.OthersContinue"])
         </span>
     </article>
 </section>
@@ -68,7 +68,7 @@
 {
     <section class="notice notice-warning" aria-live="polite">
         <div>
-            <h2>Certains fichiers n'ont pas pu être importés</h2>
+            <h2>@T["Overview.SomeFilesFailed"]</h2>
             <ul class="failure-list">
                 @foreach (var failure in State.ImportFailures)
                 {
@@ -83,8 +83,8 @@
     <article class="panel sessions-panel">
         <div class="panel-heading">
             <div>
-                <p class="eyebrow">ARCHIVES DE COURSE</p>
-                <h2>Sessions récentes de @GetDriverLabel()</h2>
+                <p class="eyebrow">@T["Overview.ArchivesEyebrow"]</p>
+                <h2>@T["Overview.RecentSessionsOf", GetDriverLabel()]</h2>
             </div>
             <span class="count-badge">@playerSessions.Count</span>
         </div>
@@ -93,15 +93,15 @@
         {
             <div class="empty-state">
                 <span class="loading-spinner" aria-hidden="true"></span>
-                <p>Lecture des fichiers de résultats…</p>
+                <p>@T["Overview.Reading"]</p>
             </div>
         }
         else if (playerSessions.Count == 0)
         {
             <div class="empty-state">
                 <span class="empty-icon" aria-hidden="true">○</span>
-                <h3>Aucune session pour ce pilote</h3>
-                <p>Les sessions contenant le pilote sélectionné apparaîtront ici.</p>
+                <h3>@T["Overview.NoDriverSession"]</h3>
+                <p>@T["Overview.NoDriverSessionText"]</p>
             </div>
         }
         else
@@ -110,11 +110,11 @@
                 <table class="data-table sessions-table" data-resizable-columns>
                     <thead>
                         <tr>
-                            <th scope="col">DATE / HEURE</th>
-                            <th scope="col">CIRCUIT</th>
-                            <th scope="col">ÉVÉNEMENT</th>
-                            <th scope="col">SESSION</th>
-                            <th scope="col">VOITURE</th>
+                            <th scope="col">@T["MyRaces.DateTime"]</th>
+                            <th scope="col">@T["Common.Circuit"]</th>
+                            <th scope="col">@T["Overview.Event"]</th>
+                            <th scope="col">@T["Progression.Session"]</th>
+                            <th scope="col">@T["MyRaces.Car"]</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -143,7 +143,7 @@
     private IReadOnlyList<Session> playerSessions = [];
 
     private string GetDriverLabel() =>
-        string.IsNullOrWhiteSpace(State.UserName) ? "le pilote sélectionné" : State.UserName;
+        string.IsNullOrWhiteSpace(State.UserName) ? T["Overview.SelectedDriver"] : State.UserName;
 
     protected override void OnStateChanged() =>
         playerSessions = DashboardPresentation.OrderSessions(DriverProfile.FilterSessions(State.Sessions, State.UserName));

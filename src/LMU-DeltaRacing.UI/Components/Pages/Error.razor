@@ -1,19 +1,19 @@
 @page "/Error"
 @using System.Diagnostics
 
-<PageTitle>Erreur | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Error.PageTitle"]]</PageTitle>
 
 <section class="notice notice-error" role="alert">
     <div>
-        <h1>Une erreur est survenue</h1>
-        <p>Le tableau de bord n'a pas pu traiter cette demande.</p>
+        <h1>@T["Error.Title"]</h1>
+        <p>@T["Error.Text"]</p>
     </div>
 </section>
 
 @if (ShowRequestId)
 {
     <p>
-        <strong>Identifiant de requête :</strong> <code>@RequestId</code>
+        <strong>@T["Error.RequestId"]</strong> <code>@RequestId</code>
     </p>
 }
 

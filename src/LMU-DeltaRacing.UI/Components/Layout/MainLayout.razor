@@ -15,23 +15,23 @@ else
     <div class="app-shell">
         <header class="topbar">
             <div class="topbar-inner">
-                <a class="brand" href="/" aria-label="LMU DeltaRacing - accueil">
+                <a class="brand" href="/" aria-label="@T["Nav.HomeLink"]">
                     <img class="brand-mark" src="@Assets["favicon.ico"]" alt="" />
                     <span class="brand-name">LMU DELTA<span class="brand-accent">RACING</span></span>
                 </a>
-                <nav class="primary-nav" aria-label="Navigation principale">
-                    <NavLink href="/" Match="NavLinkMatch.All">Accueil</NavLink>
-                    <NavLink href="/my-races">Mes courses</NavLink>
-                    <NavLink href="/race-details">Détail des courses</NavLink>
-                    <NavLink href="/progression">Progression</NavLink>
-                    <NavLink href="/driving-profile">Profil de conduite</NavLink>
-                    <NavLink href="/rating">Cote pilote</NavLink>
-                    <NavLink href="/drivers-ranking">Classement des coureurs</NavLink>
-                    <NavLink href="/settings">Options</NavLink>
+                <nav class="primary-nav" aria-label="@T["Nav.Label"]">
+                    <NavLink href="/" Match="NavLinkMatch.All">@T["Nav.Home"]</NavLink>
+                    <NavLink href="/my-races">@T["Nav.MyRaces"]</NavLink>
+                    <NavLink href="/race-details">@T["Nav.RaceDetails"]</NavLink>
+                    <NavLink href="/progression">@T["Nav.Progression"]</NavLink>
+                    <NavLink href="/driving-profile">@T["Nav.DrivingProfile"]</NavLink>
+                    <NavLink href="/rating">@T["Nav.DriverRating"]</NavLink>
+                    <NavLink href="/drivers-ranking">@T["Nav.DriversRanking"]</NavLink>
+                    <NavLink href="/settings">@T["Nav.Settings"]</NavLink>
                 </nav>
                 <div class="system-status" role="status" aria-live="polite">
                     <span class="active-driver" title="@state.UserName">
-                        @(string.IsNullOrWhiteSpace(state.UserName) ? "Pilote non défini" : state.UserName)
+                        @(string.IsNullOrWhiteSpace(state.UserName) ? T["Layout.NoDriver"] : state.UserName)
                     </span>
                     <span class="status-dot @GetStatusClass()" aria-hidden="true"></span>
                     <span>@GetStatusLabel()</span>
@@ -44,8 +44,8 @@ else
         </main>
 
         <footer class="app-footer">
-            <span>LE MANS ULTIMATE</span>
-            <span>RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES</span>
+            <span>@T["Layout.FooterGame"]</span>
+            <span>@T["Layout.FooterPrivacy"]</span>
         </footer>
 
         <UpdateNotice />
@@ -53,9 +53,9 @@ else
 }
 
 <div id="blazor-error-ui" data-nosnippet>
-    Une erreur est survenue.
-    <a href="." class="reload">Recharger</a>
-    <span class="dismiss">Fermer</span>
+    @T["Layout.Error"]
+    <a href="." class="reload">@T["Layout.Reload"]</a>
+    <span class="dismiss">@T["Layout.Dismiss"]</span>
 </div>
 
 @code {
@@ -85,10 +85,10 @@ else
 
     private string GetStatusLabel() =>
         !string.IsNullOrWhiteSpace(state.ErrorMessage)
-            ? "RÉSULTATS INDISPONIBLES"
+            ? T["Status.Unavailable"]
             : state.IsLoading
-                ? "IMPORT INITIAL"
+                ? T["Status.InitialImport"]
                 : state.IsWatching
-                    ? "SURVEILLANCE ACTIVE"
-                    : "SURVEILLANCE INACTIVE";
+                    ? T["Status.Watching"]
+                    : T["Status.NotWatching"];
 }

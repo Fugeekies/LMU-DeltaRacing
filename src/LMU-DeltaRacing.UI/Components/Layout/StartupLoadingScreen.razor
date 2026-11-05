@@ -1,13 +1,13 @@
 @* Replaces the whole application while the startup import runs, so pages never fill in progressively. *@
 
 <div class="startup-loading" role="status" aria-live="polite">
-    <img class="startup-logo" src="@Assets["favicon.ico"]" alt="Delta Racing" width="160" height="160" />
-    <p class="startup-eyebrow">IMPORT INITIAL</p>
-    <h1 class="startup-title">Chargement de vos résultats</h1>
+    <img class="startup-logo" src="@Assets["favicon.ico"]" alt="@T["Startup.LogoAlt"]" width="160" height="160" />
+    <p class="startup-eyebrow">@T["Status.InitialImport"]</p>
+    <h1 class="startup-title">@T["Startup.Title"]</h1>
 
     <div class="startup-road"
          role="progressbar"
-         aria-label="Progression de l’import initial"
+         aria-label="@T["Startup.ProgressLabel"]"
          aria-valuemin="0"
          aria-valuemax="100"
          aria-valuenow="@Progress"

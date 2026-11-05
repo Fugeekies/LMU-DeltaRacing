@@ -1,13 +1,13 @@
 @page "/my-races"
 @inherits DashboardPage
 
-<PageTitle>Mes courses | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.MyRaces"]]</PageTitle>
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">HISTORIQUE &amp; PROGRESSION</p>
-        <h1>Mes courses</h1>
-        <p class="page-subtitle">Vos meilleurs temps, comparés à la session précédente sur le même circuit et dans la même catégorie.</p>
+        <p class="eyebrow">@T["MyRaces.Eyebrow"]</p>
+        <h1>@T["Nav.MyRaces"]</h1>
+        <p class="page-subtitle">@T["MyRaces.Subtitle"]</p>
     </div>
 </section>
 
@@ -16,8 +16,8 @@
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
-        <h3>Aucune course disponible</h3>
-        <p>Les sessions de qualification et de course du pilote sélectionné apparaîtront ici après leur import.</p>
+        <h3>@T["Home.EmptyTitle"]</h3>
+        <p>@T["Home.EmptyText"]</p>
     </section>
 }
 else
@@ -26,17 +26,17 @@ else
     <section class="panel race-history">
         <div class="panel-heading race-history-heading">
             <div>
-                <p class="eyebrow">PERFORMANCES ENREGISTRÉES</p>
-                <h2>Progression par circuit</h2>
+                <p class="eyebrow">@T["MyRaces.PanelEyebrow"]</p>
+                <h2>@T["MyRaces.PanelTitle"]</h2>
             </div>
             <span class="count-badge">@filteredRecords.Count</span>
         </div>
 
-        <div class="race-filters" aria-label="Filtres des courses">
+        <div class="race-filters" aria-label="@T["MyRaces.FiltersLabel"]">
             <label class="race-filter">
-                <span>CIRCUIT</span>
-                <select @bind="selectedTrack" aria-label="Filtrer par circuit">
-                    <option value="">Tous les circuits</option>
+                <span>@T["Common.Circuit"]</span>
+                <select @bind="selectedTrack" aria-label="@T["MyRaces.FilterTrack"]">
+                    <option value="">@T["MyRaces.AllTracks"]</option>
                     @foreach (var track in tracks)
                     {
                         <option value="@track">@track</option>
@@ -44,9 +44,9 @@ else
                 </select>
             </label>
             <label class="race-filter">
-                <span>CATÉGORIE</span>
-                <select @bind="selectedCategory" aria-label="Filtrer par catégorie">
-                    <option value="">Toutes les catégories</option>
+                <span>@T["Common.Category"]</span>
+                <select @bind="selectedCategory" aria-label="@T["MyRaces.FilterCategory"]">
+                    <option value="">@T["MyRaces.AllCategories"]</option>
                     @foreach (var category in categories)
                     {
                         <option value="@category">@category</option>
@@ -58,7 +58,7 @@ else
         @if (filteredRecords.Count == 0)
         {
             <div class="empty-state race-empty-state">
-                <p>Aucune course ne correspond à ces filtres.</p>
+                <p>@T["MyRaces.NoMatch"]</p>
             </div>
         }
         else
@@ -67,10 +67,10 @@ else
                 .GroupBy(record => new { record.TrackVenue, record.TrackCourse })
                 .OrderBy(group => group.Key.TrackVenue))
             {
-                <section class="circuit-history" aria-label="@($"Historique de {circuit.Key.TrackVenue}")">
+                <section class="circuit-history" aria-label="@T["MyRaces.TrackHistory", circuit.Key.TrackVenue]">
                     <div class="circuit-heading">
                         <div>
-                            <span class="eyebrow">CIRCUIT</span>
+                            <span class="eyebrow">@T["Common.Circuit"]</span>
                             <h3>@circuit.Key.TrackVenue</h3>
                             @if (!string.Equals(circuit.Key.TrackVenue, circuit.Key.TrackCourse, StringComparison.OrdinalIgnoreCase))
                             {
@@ -80,26 +80,26 @@ else
                         <div class="circuit-actions">
                             <a class="progression-link"
                                href="@GetProgressionLink(circuit.Key.TrackVenue, circuit.Key.TrackCourse)"
-                               aria-label="Voir la progression sur ce circuit"
-                               title="Voir la progression sur ce circuit">📈</a>
-                            <span class="count-badge">@circuit.Count() résultats</span>
+                               aria-label="@T["MyRaces.SeeTrackProgression"]"
+                               title="@T["MyRaces.SeeTrackProgression"]">📈</a>
+                            <span class="count-badge">@Texts.Plural("MyRaces.Results", circuit.Count())</span>
                         </div>
                     </div>
                     <div class="table-scroll">
                         <table class="data-table races-table" data-resizable-columns>
                             <thead>
                                 <tr>
-                                    <th scope="col">CATÉGORIE</th>
-                                    <th scope="col">DATE / HEURE</th>
-                                    <th scope="col">VOITURE</th>
-                                    <th scope="col" class="numeric-cell">CLASSEMENT</th>
-                                    <th scope="col" class="numeric-cell">GRILLE</th>
-                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR COURSE</th>
-                                    <th scope="col" class="numeric-cell">DELTA COURSE (n-1)</th>
-                                    <th scope="col" class="numeric-cell">TOURS</th>
-                                    <th scope="col" class="numeric-cell">TEMPS TOTAL COURSE</th>
-                                    <th scope="col" class="numeric-cell">MEILLEUR TOUR QUALIF</th>
-                                    <th scope="col" class="numeric-cell">DELTA QUALIF (n-1)</th>
+                                    <th scope="col">@T["Common.Category"]</th>
+                                    <th scope="col">@T["MyRaces.DateTime"]</th>
+                                    <th scope="col">@T["MyRaces.Car"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.Result"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.Grid"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.RaceBestLap"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.RaceDelta"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.Laps"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.RaceTotalTime"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.QualifyingBestLap"]</th>
+                                    <th scope="col" class="numeric-cell">@T["MyRaces.QualifyingDelta"]</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -112,7 +112,7 @@ else
                                                 <span class="category-badge @CategoryStyle.CssClass(category.Key)">@category.Key</span>
                                                 <a class="category-separator-link"
                                                    href="@ProgressionLink.For(circuit.Key.TrackVenue, circuit.Key.TrackCourse, category.Key)"
-                                                   title="@($"Voir la progression en {category.Key} sur ce circuit")">📈 Voir la progression</a>
+                                                   title="@T["MyRaces.SeeCategoryProgression", category.Key]">📈 @T["MyRaces.SeeProgression"]</a>
                                             </div>
                                         </td>
                                     </tr>

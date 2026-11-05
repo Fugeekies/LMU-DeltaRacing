@@ -61,6 +61,8 @@ builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
         (IConfigurationRoot)serviceProvider.GetRequiredService<IConfiguration>(),
         Path.Combine(AppContext.BaseDirectory, "appsettings.json")));
 builder.Services.AddSingleton<WindowsFolderPicker>();
+// Texts shown on screen (Presentation/Resources/Texts.resx), French until the language option exists.
+builder.Services.AddSingleton<Microsoft.Extensions.Localization.IStringLocalizer<LMU_DeltaRacing.Presentation.Localization.Texts>, TextsLocalizer>();
 builder.Services.AddHostedService(serviceProvider =>
     serviceProvider.GetRequiredService<DashboardDataService>());
 builder.Services.AddHttpClient();

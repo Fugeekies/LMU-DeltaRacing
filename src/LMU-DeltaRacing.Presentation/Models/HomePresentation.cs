@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -171,12 +172,12 @@ public static class HomePresentation
     private static string GetRetirementCause(string dnfReason) =>
         dnfReason.Trim() switch
         {
-            "" => "Non précisée",
-            var reason when reason.Equals("DNF", StringComparison.OrdinalIgnoreCase) => "Non précisée",
-            var reason when reason.Equals("Accident", StringComparison.OrdinalIgnoreCase) => "Accident",
-            var reason when reason.Equals("Engine", StringComparison.OrdinalIgnoreCase) => "Moteur",
-            var reason when reason.Equals("Suspension", StringComparison.OrdinalIgnoreCase) => "Suspension",
-            var reason when reason.Equals("Fuel", StringComparison.OrdinalIgnoreCase) => "Carburant",
+            "" => Texts.Get("Home.CauseUnknown"),
+            var reason when reason.Equals("DNF", StringComparison.OrdinalIgnoreCase) => Texts.Get("Home.CauseUnknown"),
+            var reason when reason.Equals("Accident", StringComparison.OrdinalIgnoreCase) => Texts.Get("Home.CauseAccident"),
+            var reason when reason.Equals("Engine", StringComparison.OrdinalIgnoreCase) => Texts.Get("Home.CauseEngine"),
+            var reason when reason.Equals("Suspension", StringComparison.OrdinalIgnoreCase) => Texts.Get("Home.CauseSuspension"),
+            var reason when reason.Equals("Fuel", StringComparison.OrdinalIgnoreCase) => Texts.Get("Home.CauseFuel"),
             var reason => reason
         };
 

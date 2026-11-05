@@ -84,6 +84,7 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 
 - Commentaires XML `///` sur chaque type et membre public. Commentaires inline pour expliquer le **pourquoi** (raison métier ou technique), pas le comment.
 - Style existant : constructeurs qui valident (`ArgumentNullException.ThrowIfNull`, …), entités immuables, `CultureInfo.InvariantCulture` pour parser et formater les temps, `StringComparison.OrdinalIgnoreCase` pour les noms de pilotes.
+- Textes affichés : jamais en dur. Le dashboard et le code partagé de `Presentation` lisent `Presentation/Resources/Texts.resx` (français, langue de référence ; clés en anglais par page et rôle, `MyRaces.Title`) : `@T["Clé"]` et `@T["Clé", valeur]` dans les pages Razor, `Texts.Get`, `Texts.Format` et `Texts.Plural` (clés `.One` / `.Other`) en C#. Pas de texte dans un champ `static readonly` : il ne suivrait pas la langue. `TextsTests` vérifie que chaque clé utilisée existe, que chaque texte sert et que chaque format est valide. La console garde ses propres textes en français. Proposition : `docs/propositions/interface-multilingue.md`.
 - Logs via `Microsoft.Extensions.Logging` uniquement, messages structurés (`{SourceFile}`, jamais d'interpolation). Niveaux :
   - `Trace`/`Debug` : détails internes, boucles, valeurs brutes lues dans le XML.
   - `Information` : événements métier normaux (session importée, watcher démarré).

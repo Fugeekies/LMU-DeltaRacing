@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -49,8 +50,8 @@ public static class DrivingProfilePresentation
             results.Length,
             CreateRates(results),
             SumOthers(results),
-            CreateRow("Course", races),
-            CreateRow("Qualification", qualifyings),
+            CreateRow(Texts.Get("Progression.Race"), races),
+            CreateRow(Texts.Get("Progression.Qualifying"), qualifyings),
             SumOthers(qualifyings),
             CreateRows(results, result => result.Driver.Category()),
             CreateRows(results, result => CircuitLabel(result.Session)),
@@ -153,29 +154,27 @@ public static class DrivingProfilePresentation
         var takeaways = new List<string>();
         if (cost.Contacts >= MinimumContactsForTakeaway && cost.FirstLapContacts > 0)
         {
-            takeaways.Add($"{Math.Round(cost.FirstLapContacts * 100d / cost.Contacts)} % de vos contacts arrivent au départ ou au premier tour.");
+            takeaways.Add(Texts.Format("DrivingProfile.TakeawayFirstLap", Math.Round(cost.FirstLapContacts * 100d / cost.Contacts)));
         }
 
         if (cost.MedianLossPerContactLap is { } medianLoss)
         {
-            takeaways.Add($"Un tour avec contact vous coûte {FormatSeconds(medianLoss)} s en médiane.");
+            takeaways.Add(Texts.Format("DrivingProfile.TakeawayMedianLoss", FormatSeconds(medianLoss)));
         }
 
         if (cost.CostliestCircuit is { } circuit)
         {
-            takeaways.Add($"{circuit} est le circuit qui vous coûte le plus : {FormatSeconds(cost.CostliestCircuitLost)} s perdues sur les tours avec contact.");
+            takeaways.Add(Texts.Format("DrivingProfile.TakeawayCircuit", circuit, FormatSeconds(cost.CostliestCircuitLost)));
         }
 
         if (cost.ContactsWithDamage > 0)
         {
-            takeaways.Add(cost.ContactsWithDamage > 1
-                ? $"{cost.ContactsWithDamage} contacts ont endommagé votre voiture."
-                : "1 contact a endommagé votre voiture.");
+            takeaways.Add(Texts.Plural("DrivingProfile.TakeawayDamage", cost.ContactsWithDamage));
         }
 
         if (cost.Retirements > 0)
         {
-            takeaways.Add($"{cost.RetirementsAfterContact} de vos {cost.Retirements} abandons ont eu un contact dans leur dernier tour.");
+            takeaways.Add(Texts.Format("DrivingProfile.TakeawayRetirements", cost.RetirementsAfterContact, cost.Retirements));
         }
 
         return takeaways;
