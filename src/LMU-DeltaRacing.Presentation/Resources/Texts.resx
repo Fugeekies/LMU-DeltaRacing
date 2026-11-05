@@ -473,4 +473,259 @@
   <data name="RaceDetails.LapsBehind.Other" xml:space="preserve">
     <value>+{0} tours</value>
   </data>
+  <data name="Progression.FiltersLabel" xml:space="preserve">
+    <value>Circuit et catégorie</value>
+  </data>
+  <data name="Progression.ChooseTrack" xml:space="preserve">
+    <value>Choisir un circuit</value>
+  </data>
+  <data name="Progression.ChooseCategory" xml:space="preserve">
+    <value>Choisir une catégorie</value>
+  </data>
+  <data name="Progression.SettingsLabel" xml:space="preserve">
+    <value>Réglages du graphique</value>
+  </data>
+  <data name="Progression.Period" xml:space="preserve">
+    <value>PÉRIODE</value>
+  </data>
+  <data name="Progression.PeriodLabel" xml:space="preserve">
+    <value>Période</value>
+  </data>
+  <data name="Progression.PlottedValue" xml:space="preserve">
+    <value>VALEUR TRACÉE</value>
+  </data>
+  <data name="Progression.PlottedValueLabel" xml:space="preserve">
+    <value>Valeur tracée</value>
+  </data>
+  <data name="Progression.Display" xml:space="preserve">
+    <value>AFFICHAGE</value>
+  </data>
+  <data name="Progression.DisplayLabel" xml:space="preserve">
+    <value>Affichage</value>
+  </data>
+  <data name="Progression.Session" xml:space="preserve">
+    <value>SESSION</value>
+  </data>
+  <data name="Progression.SessionLabel" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="Progression.NoLap" xml:space="preserve">
+    <value>Aucun tour chronométré pour ce circuit et cette catégorie.</value>
+  </data>
+  <data name="Progression.Record" xml:space="preserve">
+    <value>RECORD</value>
+  </data>
+  <data name="Progression.Start" xml:space="preserve">
+    <value>DÉBUT</value>
+  </data>
+  <data name="Progression.Today" xml:space="preserve">
+    <value>AUJOURD’HUI</value>
+  </data>
+  <data name="Progression.HideDetails" xml:space="preserve">
+    <value>Masquer le détail des périodes</value>
+  </data>
+  <data name="Progression.ShowDetails" xml:space="preserve">
+    <value>Afficher le détail des périodes</value>
+  </data>
+  <data name="Progression.Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="Progression.Average" xml:space="preserve">
+    <value>Moyenne</value>
+  </data>
+  <data name="Progression.Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="Progression.Sessions" xml:space="preserve">
+    <value>Sessions</value>
+  </data>
+  <data name="Progression.SinglePeriod" xml:space="preserve">
+    <value>une seule période</value>
+  </data>
+  <data name="Progression.RecordOf" xml:space="preserve">
+    <value>Record {0} : {1}</value>
+  </data>
+  <data name="Common.Sessions.One" xml:space="preserve">
+    <value>{0} session</value>
+  </data>
+  <data name="Common.Sessions.Other" xml:space="preserve">
+    <value>{0} sessions</value>
+  </data>
+  <data name="Progression.Day" xml:space="preserve">
+    <value>Jour</value>
+  </data>
+  <data name="Progression.Week" xml:space="preserve">
+    <value>Semaine</value>
+  </data>
+  <data name="Progression.Month" xml:space="preserve">
+    <value>Mois</value>
+  </data>
+  <data name="Progression.Year" xml:space="preserve">
+    <value>Année</value>
+  </data>
+  <data name="Progression.MixedCars" xml:space="preserve">
+    <value>Voitures mélangées</value>
+  </data>
+  <data name="Progression.PerCar" xml:space="preserve">
+    <value>Une courbe par voiture</value>
+  </data>
+  <data name="Progression.Race" xml:space="preserve">
+    <value>Course</value>
+  </data>
+  <data name="Progression.Qualifying" xml:space="preserve">
+    <value>Qualification</value>
+  </data>
+  <data name="Progression.DayLower" xml:space="preserve">
+    <value>jour</value>
+  </data>
+  <data name="Progression.WeekLower" xml:space="preserve">
+    <value>semaine</value>
+  </data>
+  <data name="Progression.YearLower" xml:space="preserve">
+    <value>année</value>
+  </data>
+  <data name="Progression.MonthLower" xml:space="preserve">
+    <value>mois</value>
+  </data>
+  <data name="Progression.ChartLabel" xml:space="preserve">
+    <value>Évolution des meilleurs tours par {0}</value>
+  </data>
+  <data name="DrivingProfile.Eyebrow" xml:space="preserve">
+    <value>PROPRETÉ &amp; DISCIPLINE EN PISTE</value>
+  </data>
+  <data name="DrivingProfile.Subtitle" xml:space="preserve">
+    <value>Vos contacts, limites de piste et pénalités, sur vos qualifications et vos courses.</value>
+  </data>
+  <data name="DrivingProfile.EmptyTitle" xml:space="preserve">
+    <value>Aucun profil disponible</value>
+  </data>
+  <data name="DrivingProfile.EmptyText" xml:space="preserve">
+    <value>Votre profil apparaîtra lorsqu'une qualification ou une course contenant le pilote sélectionné aura été importée.</value>
+  </data>
+  <data name="DrivingProfile.CostLabel" xml:space="preserve">
+    <value>Ce que vos incidents vous coûtent</value>
+  </data>
+  <data name="DrivingProfile.CostEyebrow" xml:space="preserve">
+    <value>CE QUE VOS INCIDENTS VOUS COÛTENT</value>
+  </data>
+  <data name="DrivingProfile.CostNote" xml:space="preserve">
+    <value>Comparé à votre tour médian de chaque course, hors premier tour et arrêts : c'est un minimum.</value>
+  </data>
+  <data name="DrivingProfile.RaceContacts" xml:space="preserve">
+    <value>contacts en course</value>
+  </data>
+  <data name="DrivingProfile.FirstLapContacts" xml:space="preserve">
+    <value>au départ ou au 1er tour</value>
+  </data>
+  <data name="DrivingProfile.PositionsLost" xml:space="preserve">
+    <value>places perdues sur ces tours</value>
+  </data>
+  <data name="DrivingProfile.WithDamage" xml:space="preserve">
+    <value>avec dégâts</value>
+  </data>
+  <data name="DrivingProfile.CostliestRace" xml:space="preserve">
+    <value>Course la plus coûteuse :</value>
+  </data>
+  <data name="DrivingProfile.TilesLabel" xml:space="preserve">
+    <value>Votre bilan pour 100 tours</value>
+  </data>
+  <data name="DrivingProfile.Warnings" xml:space="preserve">
+    <value>AVERTISSEMENTS</value>
+  </data>
+  <data name="DrivingProfile.Penalties" xml:space="preserve">
+    <value>PÉNALITÉS</value>
+  </data>
+  <data name="DrivingProfile.TilesNote" xml:space="preserve">
+    <value>Valeurs pour 100 tours, plus basses que les autres en vert. Les tours invalidés sont rapportés aux tours de qualification : LMU n'en signale pas en course.</value>
+  </data>
+  <data name="DrivingProfile.WhereEyebrow" xml:space="preserve">
+    <value>OÙ PROGRESSER</value>
+  </data>
+  <data name="DrivingProfile.WhereTitle" xml:space="preserve">
+    <value>Par type de session, catégorie et circuit</value>
+  </data>
+  <data name="DrivingProfile.Sessions" xml:space="preserve">
+    <value>SESSIONS</value>
+  </data>
+  <data name="DrivingProfile.ContactsPer100" xml:space="preserve">
+    <value>CONTACTS / 100 T.</value>
+  </data>
+  <data name="DrivingProfile.ObstaclesPer100" xml:space="preserve">
+    <value>OBSTACLES / 100 T.</value>
+  </data>
+  <data name="DrivingProfile.WarningsPer100" xml:space="preserve">
+    <value>AVERTISSEMENTS / 100 T.</value>
+  </data>
+  <data name="DrivingProfile.TimeLost" xml:space="preserve">
+    <value>TEMPS PERDU</value>
+  </data>
+  <data name="DrivingProfile.RiskZone" xml:space="preserve">
+    <value>ZONE À RISQUE</value>
+  </data>
+  <data name="DrivingProfile.GroupSession" xml:space="preserve">
+    <value>Session</value>
+  </data>
+  <data name="DrivingProfile.GroupCategory" xml:space="preserve">
+    <value>Catégorie</value>
+  </data>
+  <data name="DrivingProfile.GroupCircuit" xml:space="preserve">
+    <value>Circuit</value>
+  </data>
+  <data name="DrivingProfile.SmallSampleNote" xml:space="preserve">
+    <value>Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours : l'échantillon est trop petit.</value>
+  </data>
+  <data name="DrivingProfile.RiskZoneNote" xml:space="preserve">
+    <value>Zone à risque : le secteur qui concentre au moins la moitié des contacts hors premier tour, dès 3 contacts.</value>
+  </data>
+  <data name="DrivingProfile.NoRace" xml:space="preserve">
+    <value>Aucune course importée pour le moment.</value>
+  </data>
+  <data name="DrivingProfile.Date" xml:space="preserve">
+    <value>DATE</value>
+  </data>
+  <data name="DrivingProfile.MostHitDrivers" xml:space="preserve">
+    <value>Pilotes que vous touchez le plus</value>
+  </data>
+  <data name="DrivingProfile.NoVehicleContact" xml:space="preserve">
+    <value>Aucun contact avec une voiture.</value>
+  </data>
+  <data name="DrivingProfile.ObstaclesTitle" xml:space="preserve">
+    <value>Obstacles</value>
+  </data>
+  <data name="DrivingProfile.NoObstacleContact" xml:space="preserve">
+    <value>Aucun contact avec un obstacle.</value>
+  </data>
+  <data name="DrivingProfile.PenaltyReasons" xml:space="preserve">
+    <value>Motifs de pénalité</value>
+  </data>
+  <data name="DrivingProfile.NoPenalty" xml:space="preserve">
+    <value>Aucune pénalité.</value>
+  </data>
+  <data name="DrivingProfile.SubtitleOf" xml:space="preserve">
+    <value>{0} · {1} · {2}, comparés aux autres pilotes des mêmes sessions.</value>
+  </data>
+  <data name="Common.Laps.One" xml:space="preserve">
+    <value>{0} tour</value>
+  </data>
+  <data name="Common.Laps.Other" xml:space="preserve">
+    <value>{0} tours</value>
+  </data>
+  <data name="DrivingProfile.LostOnContactLaps" xml:space="preserve">
+    <value>perdues sur les tours avec contact</value>
+  </data>
+  <data name="DrivingProfile.PerRace" xml:space="preserve">
+    <value>, soit {0} par course</value>
+  </data>
+  <data name="DrivingProfile.Lost" xml:space="preserve">
+    <value>{0} perdues</value>
+  </data>
+  <data name="DrivingProfile.LastRaces" xml:space="preserve">
+    <value>Vos {0} dernières courses</value>
+  </data>
+  <data name="DrivingProfile.Others" xml:space="preserve">
+    <value>Autres pilotes : {0} · {1} au total</value>
+  </data>
+  <data name="DrivingProfile.Sector" xml:space="preserve">
+    <value>Secteur {0}</value>
+  </data>
 </root>
