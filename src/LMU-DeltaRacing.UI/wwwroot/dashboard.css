@@ -2875,6 +2875,12 @@ table.columns-resized td {
     text-overflow: ellipsis;
 }
 
+/* A cell spanning several columns (category separators of My races) owns no column to clip, and
+   clipping it would make it the scroll box of its sticky content, which would then leave the view. */
+table.columns-resized td[colspan] {
+    overflow: visible;
+}
+
 .column-resizing,
 .column-resizing * {
     cursor: col-resize !important;
