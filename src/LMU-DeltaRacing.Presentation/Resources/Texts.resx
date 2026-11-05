@@ -935,4 +935,241 @@
   <data name="DriverRating.HighlightDetail" xml:space="preserve">
     <value>{0} sur {1}, attendu {2} · plateau à {3}</value>
   </data>
+  <data name="DriversRanking.Eyebrow" xml:space="preserve">
+    <value>RIVALITÉ &amp; HISTORIQUE DES ADVERSAIRES</value>
+  </data>
+  <data name="DriversRanking.Subtitle" xml:space="preserve">
+    <value>Vos résultats face aux pilotes rencontrés dans les sessions importées.</value>
+  </data>
+  <data name="DriversRanking.EmptyTitle" xml:space="preserve">
+    <value>Aucun affrontement disponible</value>
+  </data>
+  <data name="DriversRanking.EmptyText" xml:space="preserve">
+    <value>Les confrontations apparaîtront lorsque des sessions importées contiendront un résultat classé pour vous et vos adversaires.</value>
+  </data>
+  <data name="DriversRanking.PanelEyebrow" xml:space="preserve">
+    <value>HISTORIQUE HEAD-TO-HEAD</value>
+  </data>
+  <data name="DriversRanking.PanelTitle" xml:space="preserve">
+    <value>Adversaires rencontrés</value>
+  </data>
+  <data name="DriversRanking.Search" xml:space="preserve">
+    <value>RECHERCHER UN PILOTE</value>
+  </data>
+  <data name="DriversRanking.SearchPlaceholder" xml:space="preserve">
+    <value>Nom du pilote…</value>
+  </data>
+  <data name="DriversRanking.SearchLabel" xml:space="preserve">
+    <value>Rechercher un pilote par nom</value>
+  </data>
+  <data name="DriversRanking.SortBy" xml:space="preserve">
+    <value>TRIER PAR</value>
+  </data>
+  <data name="DriversRanking.SortLabel" xml:space="preserve">
+    <value>Trier le classement</value>
+  </data>
+  <data name="DriversRanking.SortSessions" xml:space="preserve">
+    <value>Courses affrontées (décroissant)</value>
+  </data>
+  <data name="DriversRanking.SortWins" xml:space="preserve">
+    <value>Victoires (décroissant)</value>
+  </data>
+  <data name="DriversRanking.SortPercentage" xml:space="preserve">
+    <value>% de victoire (décroissant)</value>
+  </data>
+  <data name="DriversRanking.SortName" xml:space="preserve">
+    <value>Nom (A à Z)</value>
+  </data>
+  <data name="DriversRanking.NoMatch" xml:space="preserve">
+    <value>Aucun pilote ne correspond à cette recherche.</value>
+  </data>
+  <data name="DriversRanking.DriverName" xml:space="preserve">
+    <value>NOM DU PILOTE</value>
+  </data>
+  <data name="DriversRanking.Faced" xml:space="preserve">
+    <value>COURSES AFFRONTÉES</value>
+  </data>
+  <data name="DriversRanking.Losses" xml:space="preserve">
+    <value>DÉFAITES</value>
+  </data>
+  <data name="DriversRanking.WinRate" xml:space="preserve">
+    <value>% DE VICTOIRE</value>
+  </data>
+  <data name="DriversRanking.AverageGapHint" xml:space="preserve">
+    <value>Places d’avance moyennes en classe : positif quand vous finissez devant</value>
+  </data>
+  <data name="DriversRanking.AverageGap" xml:space="preserve">
+    <value>ÉCART MOYEN</value>
+  </data>
+  <data name="DriversRanking.ContactsHint" xml:space="preserve">
+    <value>Contacts entre vos deux voitures</value>
+  </data>
+  <data name="Settings.Eyebrow" xml:space="preserve">
+    <value>CONFIGURATION &amp; PARAMÈTRES</value>
+  </data>
+  <data name="Settings.Subtitle" xml:space="preserve">
+    <value>Configurez la source des résultats et la surveillance des fichiers LMU.</value>
+  </data>
+  <data name="Settings.FilesEyebrow" xml:space="preserve">
+    <value>EMPLACEMENT DES FICHIERS DU JEU</value>
+  </data>
+  <data name="Settings.ResultsFolder" xml:space="preserve">
+    <value>Dossier des résultats XML</value>
+  </data>
+  <data name="Settings.Browse" xml:space="preserve">
+    <value>Parcourir…</value>
+  </data>
+  <data name="Settings.InvalidFolder" xml:space="preserve">
+    <value>Dossier introuvable ou illisible</value>
+  </data>
+  <data name="Settings.CheckFolder" xml:space="preserve">
+    <value>Vérifiez ou choisissez un dossier de résultats.</value>
+  </data>
+  <data name="Settings.Loading" xml:space="preserve">
+    <value>Chargement…</value>
+  </data>
+  <data name="Settings.Apply" xml:space="preserve">
+    <value>Appliquer</value>
+  </data>
+  <data name="Settings.ApplyHelp" xml:space="preserve">
+    <value>Enregistre le dossier, puis recharge les résultats et la surveillance.</value>
+  </data>
+  <data name="Settings.PickerWindowsOnly" xml:space="preserve">
+    <value>Le sélecteur de dossiers natif est disponible sous Windows.</value>
+  </data>
+  <data name="Settings.DriverEyebrow" xml:space="preserve">
+    <value>PROFIL DE PILOTE</value>
+  </data>
+  <data name="Settings.MainDriver" xml:space="preserve">
+    <value>Pilote principal</value>
+  </data>
+  <data name="Settings.MainDriverLabel" xml:space="preserve">
+    <value>Pilote utilisé dans les vues de résultats</value>
+  </data>
+  <data name="Settings.DetectionPending" xml:space="preserve">
+    <value>Détection après le chargement…</value>
+  </data>
+  <data name="Settings.MainDriverHelp" xml:space="preserve">
+    <value>Les pilotes sont triés par pourcentage de fichiers importés dans lesquels ils apparaissent. Le choix est enregistré automatiquement.</value>
+  </data>
+  <data name="Settings.MergeEyebrow" xml:space="preserve">
+    <value>CHANGEMENT DE NOM</value>
+  </data>
+  <data name="Settings.Merge" xml:space="preserve">
+    <value>Fusion de pilotes</value>
+  </data>
+  <data name="Settings.MergeHelp" xml:space="preserve">
+    <value>Déclarez que deux noms désignent le même pilote, par exemple après un changement de pseudo. Les deux historiques sont regroupés sous le nom conservé ; les fichiers de résultats ne sont pas modifiés et une fusion peut être annulée.</value>
+  </data>
+  <data name="Settings.MergeFrom" xml:space="preserve">
+    <value>Ancien nom</value>
+  </data>
+  <data name="Settings.ChooseDriver" xml:space="preserve">
+    <value>Choisir un pilote…</value>
+  </data>
+  <data name="Settings.MergeTo" xml:space="preserve">
+    <value>Nom conservé</value>
+  </data>
+  <data name="Settings.MergeButton" xml:space="preserve">
+    <value>Fusionner</value>
+  </data>
+  <data name="Settings.MergesLabel" xml:space="preserve">
+    <value>Fusions enregistrées</value>
+  </data>
+  <data name="Settings.SharedSessionsHint" xml:space="preserve">
+    <value>Les deux noms apparaissent dans les mêmes sessions</value>
+  </data>
+  <data name="Settings.CancelMerge" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="Settings.WatcherEyebrow" xml:space="preserve">
+    <value>SURVEILLANCE &amp; DÉMARRAGE</value>
+  </data>
+  <data name="Settings.AutoStart" xml:space="preserve">
+    <value>Démarrage automatique</value>
+  </data>
+  <data name="Settings.AutoStartLabel" xml:space="preserve">
+    <value>Lancer la surveillance des fichiers XML automatiquement au démarrage de l’application</value>
+  </data>
+  <data name="Settings.AutoStartHelp" xml:space="preserve">
+    <value>Ce choix est enregistré immédiatement et s’applique au prochain démarrage. Le bouton « Appliquer » active la surveillance tout de suite.</value>
+  </data>
+  <data name="Settings.DataEyebrow" xml:space="preserve">
+    <value>DONNÉES CHARGÉES</value>
+  </data>
+  <data name="Settings.Practice" xml:space="preserve">
+    <value>Sessions d’essais</value>
+  </data>
+  <data name="Settings.PracticeLabel" xml:space="preserve">
+    <value>Charger les sessions d’essais (onglet Essais du détail des courses)</value>
+  </data>
+  <data name="Settings.PracticeHelp" xml:space="preserve">
+    <value>Les essais sont souvent vides ; les ignorer accélère le chargement. Le choix est enregistré et les résultats sont rechargés immédiatement.</value>
+  </data>
+  <data name="Settings.BelowLabel" xml:space="preserve">
+    <value>État des imports et sessions récentes</value>
+  </data>
+  <data name="Settings.AutoDetect" xml:space="preserve">
+    <value>Détection automatique du dossier LMU</value>
+  </data>
+  <data name="Settings.PracticeLoaded" xml:space="preserve">
+    <value>Sessions d’essais chargées.</value>
+  </data>
+  <data name="Settings.PracticeRemoved" xml:space="preserve">
+    <value>Sessions d’essais retirées.</value>
+  </data>
+  <data name="Settings.StartupSaved" xml:space="preserve">
+    <value>Préférence de démarrage enregistrée.</value>
+  </data>
+  <data name="Settings.FolderPath" xml:space="preserve">
+    <value>Chemin du dossier</value>
+  </data>
+  <data name="Settings.ValidFolder" xml:space="preserve">
+    <value>Dossier valide · {0} fichier(s) XML</value>
+  </data>
+  <data name="Settings.AbsentDriver" xml:space="preserve">
+    <value>{0} (absent des résultats chargés)</value>
+  </data>
+  <data name="Settings.DriverFrequency" xml:space="preserve">
+    <value>{0} — {1} ({2}/{3} fichiers)</value>
+  </data>
+  <data name="Settings.DriverFiles" xml:space="preserve">
+    <value>{0} ({1} fichiers)</value>
+  </data>
+  <data name="Settings.MergeWarning" xml:space="preserve">
+    <value>Ces deux pilotes ont participé ensemble à {0} session(s) : ce sont probablement deux personnes différentes. La fusion reste possible, mais vérifiez avant de la confirmer.</value>
+  </data>
+  <data name="Settings.SharedSessions" xml:space="preserve">
+    <value>{0} session(s) en commun</value>
+  </data>
+  <data name="Settings.PickerFailed" xml:space="preserve">
+    <value>Impossible d’ouvrir le sélecteur de dossiers : {0}</value>
+  </data>
+  <data name="Settings.FolderSaved" xml:space="preserve">
+    <value>Dossier enregistré et chargé : {0} fichier(s) traité(s). La surveillance est active.</value>
+  </data>
+  <data name="Settings.FolderSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer le dossier : {0}</value>
+  </data>
+  <data name="Settings.Merged" xml:space="preserve">
+    <value>{0} est fusionné avec {1}.</value>
+  </data>
+  <data name="Settings.MergeFailed" xml:space="preserve">
+    <value>Impossible de fusionner les pilotes : {0}</value>
+  </data>
+  <data name="Settings.MergeCancelled" xml:space="preserve">
+    <value>Fusion de {0} annulée.</value>
+  </data>
+  <data name="Settings.CancelMergeFailed" xml:space="preserve">
+    <value>Impossible d’annuler la fusion : {0}</value>
+  </data>
+  <data name="Settings.DriverSaved" xml:space="preserve">
+    <value>Profil pilote enregistré : {0}.</value>
+  </data>
+  <data name="Settings.DriverSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer le pilote sélectionné : {0}</value>
+  </data>
+  <data name="Settings.PracticeSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la préférence des essais : {0}</value>
+  </data>
 </root>
