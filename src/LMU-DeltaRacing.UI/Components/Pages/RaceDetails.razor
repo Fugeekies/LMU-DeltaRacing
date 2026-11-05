@@ -1,13 +1,13 @@
 @page "/race-details"
 @inherits DashboardPage
 
-<PageTitle>Détail des courses | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.RaceDetails"]]</PageTitle>
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">ANALYSE DE SESSION</p>
-        <h1>Détail des courses</h1>
-        <p class="page-subtitle">Classement, meilleurs secteurs et écarts de la session sélectionnée, comparés au sein de chaque classe.</p>
+        <p class="eyebrow">@T["RaceDetails.Eyebrow"]</p>
+        <h1>@T["Nav.RaceDetails"]</h1>
+        <p class="page-subtitle">@T["RaceDetails.Subtitle"]</p>
     </div>
 </section>
 
@@ -16,8 +16,8 @@
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
-        <h3>Aucune session disponible</h3>
-        <p>Les résultats détaillés apparaîtront ici lorsqu’une session aura été importée.</p>
+        <h3>@T["RaceDetails.EmptyTitle"]</h3>
+        <p>@T["RaceDetails.EmptyText"]</p>
     </section>
 }
 else
@@ -34,8 +34,8 @@ else
     <section class="panel race-details-panel">
         <div class="race-details-toolbar">
             <label class="race-filter race-session-filter">
-                <span>SÉLECTIONNER UNE COURSE</span>
-                <select @bind="selectedEventId" aria-label="Sélectionner un événement">
+                <span>@T["RaceDetails.SelectRace"]</span>
+                <select @bind="selectedEventId" aria-label="@T["RaceDetails.SelectEvent"]">
                     @foreach (var raceEvent in events)
                     {
                         <option value="@raceEvent.Id">@FormatEventLabel(raceEvent)</option>
@@ -55,7 +55,7 @@ else
         </div>
 
         @* The race tab comes first: it is the result that counts. *@
-        <div class="session-tabs" role="tablist" aria-label="Sessions de l'événement">
+        <div class="session-tabs" role="tablist" aria-label="@T["RaceDetails.SessionTabs"]">
             @foreach (var tab in tabs)
             {
                 <button type="button"
@@ -71,37 +71,37 @@ else
         @if (selectedRatedRace is { } ratedRace)
         {
             var playerChange = ratedRace.Find(State.UserName);
-            <div class="rating-strip" aria-label="Cote pilote de la course">
-                <span class="summary-label">FORCE DU PLATEAU</span>
+            <div class="rating-strip" aria-label="@T["RaceDetails.RatingStrip"]">
+                <span class="summary-label">@T["RaceDetails.FieldStrength"]</span>
                 @foreach (var ratedClass in ratedRace.Classes)
                 {
                     var category = CarCategory.FromCarClass(ratedClass.CarClass);
                     <span>
                         <span class="category-badge @CategoryStyle.CssClass(category)">@category</span>
-                        <strong>@DisplayFormat.Rating(ratedClass.FieldStrength)</strong> (@ratedClass.Drivers.Count pilotes)
+                        <strong>@DisplayFormat.Rating(ratedClass.FieldStrength)</strong> (@Texts.Plural("Common.Drivers", ratedClass.Drivers.Count))
                     </span>
                 }
                 @if (playerChange is not null)
                 {
                     <span>
-                        Votre cote : <strong>@DisplayFormat.Rating(playerChange.Before) → @DisplayFormat.Rating(playerChange.After)</strong>
-                        (@DisplayFormat.RatingChange(playerChange.Delta)), place attendue @DisplayFormat.Average(playerChange.ExpectedRank)
+                        @T["RaceDetails.YourRating"] <strong>@DisplayFormat.Rating(playerChange.Before) → @DisplayFormat.Rating(playerChange.After)</strong>
+                        (@DisplayFormat.RatingChange(playerChange.Delta)), @T["RaceDetails.ExpectedPlace", DisplayFormat.Average(playerChange.ExpectedRank)]
                     </span>
                 }
-                <a href="/rating">Cote pilote →</a>
+                <a href="/rating">@T["RaceDetails.RatingLink"]</a>
             </div>
         }
         else if (selectedSession?.Kind == SessionKind.Race)
         {
             <div class="rating-strip">
-                <span>Course non notée par la cote pilote : aucune classe n’a de pilote arrivé au drapeau à damier.</span>
+                <span>@T["RaceDetails.NotRated"]</span>
             </div>
         }
 
         @if (results.Length == 0)
         {
             <div class="empty-state race-empty-state">
-                <p>Cette session ne contient aucun résultat de pilote.</p>
+                <p>@T["RaceDetails.NoResult"]</p>
             </div>
         }
         else
@@ -111,17 +111,17 @@ else
                     <thead>
                         <tr>
                             @* Each cell stacks a value and its gap, so the grid fits without horizontal scrolling. *@
-                            <th scope="col">POS</th>
-                            <th scope="col">CLASSE</th>
-                            <th scope="col">PILOTE <span class="th-sub">VOITURE</span></th>
-                            <th scope="col" class="numeric-cell">SECTEUR 1 <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">SECTEUR 2 <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">SECTEUR 3 <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">TOUR IDÉAL <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">MEILLEUR TOUR <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">TEMPS TOTAL <span class="th-sub">ÉCART</span></th>
-                            <th scope="col" class="numeric-cell">CONTACTS <span class="th-sub">OBSTACLES</span></th>
-                            <th scope="col" class="numeric-cell">LIMITES <span class="th-sub">TOURS INVALIDÉS</span></th>
+                            <th scope="col">@T["RaceDetails.Pos"]</th>
+                            <th scope="col">@T["RaceDetails.Class"]</th>
+                            <th scope="col">@T["RaceDetails.Driver"] <span class="th-sub">@T["RaceDetails.Car"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Sector1"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Sector2"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Sector3"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.IdealLap"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.BestLap"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.TotalTime"] <span class="th-sub">@T["RaceDetails.Gap"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Contacts"] <span class="th-sub">@T["RaceDetails.Obstacles"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["RaceDetails.Limits"] <span class="th-sub">@T["RaceDetails.InvalidLaps"]</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -144,12 +144,12 @@ else
             @if ((results.FirstOrDefault(result => result.Name == selectedDriver) ?? results.FirstOrDefault(result => result.IsPlayer)) is { } incidentsDriver)
             {
                 var story = RaceStoryPresentation.Create(selectedSession!, incidentsDriver.Name);
-                <section class="incident-panel" aria-label="Récit de la session du pilote">
+                <section class="incident-panel" aria-label="@T["RaceDetails.StoryLabel"]">
                     <div class="incident-panel-heading">
-                        <h3>@(story is null ? "Incidents" : "Déroulé de la course") de @incidentsDriver.Name</h3>
+                        <h3>@(story is null ? T["RaceDetails.IncidentsOf", incidentsDriver.Name] : T["RaceDetails.StoryOf", incidentsDriver.Name])</h3>
                         @if (selectedDriver is not null)
                         {
-                            <button type="button" class="incident-close" @onclick="() => selectedDriver = null">Fermer</button>
+                            <button type="button" class="incident-close" @onclick="() => selectedDriver = null">@T["Layout.Dismiss"]</button>
                         }
                     </div>
                     @if (story is not null)
@@ -158,7 +158,7 @@ else
                     }
                     @if (incidentsDriver.Incidents.Count == 0)
                     {
-                        <p class="incident-empty">Aucun incident dans cette session.</p>
+                        <p class="incident-empty">@T["RaceDetails.NoIncident"]</p>
                     }
                     else
                     {
@@ -170,7 +170,7 @@ else
                             {
                                 <li>
                                     <span class="incident-time">@DisplayFormat.TotalTime(incident.Elapsed)</span>
-                                    <span class="incident-lap">@(lap is { } number ? $"Tour {number}" : string.Empty)</span>
+                                    <span class="incident-lap">@(lap is { } number ? T["RaceDetails.LapNumber", number].Value : string.Empty)</span>
                                     <span>@DrivingConductPresentation.Describe(incident)</span>
                                 </li>
                             }
@@ -180,10 +180,10 @@ else
             }
         }
 
-        <div class="sector-legend" aria-label="Légende des secteurs">
-            <span><i class="sector-legend-swatch sector-class-best" aria-hidden="true"></i>Meilleur secteur de la classe</span>
-            <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>Temps standard</span>
-            <span>Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe</span>
+        <div class="sector-legend" aria-label="@T["RaceDetails.SectorLegend"]">
+            <span><i class="sector-legend-swatch sector-class-best" aria-hidden="true"></i>@T["RaceDetails.ClassBestSector"]</span>
+            <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>@T["RaceDetails.StandardTime"]</span>
+            <span>@T["RaceDetails.SectorNote"]</span>
         </div>
     </section>
 }
@@ -264,9 +264,9 @@ else
     private static string GetTabLabel(SessionTab tab, RaceEvent raceEvent) =>
         tab switch
         {
-            SessionTab.Race => "COURSE",
-            SessionTab.Qualifying => "QUALIFICATION",
-            _ => raceEvent.PracticeSessionCount > 1 ? $"ESSAIS ({raceEvent.PracticeSessionCount} séances)" : "ESSAIS"
+            SessionTab.Race => Texts.Get("RaceDetails.TabRace"),
+            SessionTab.Qualifying => Texts.Get("RaceDetails.TabQualifying"),
+            _ => raceEvent.PracticeSessionCount > 1 ? Texts.Format("RaceDetails.TabPracticeSessions", raceEvent.PracticeSessionCount) : Texts.Get("RaceDetails.TabPractice")
         };
 
     private string FormatEventLabel(RaceEvent raceEvent)
@@ -278,9 +278,9 @@ else
             " · ",
             new[]
             {
-                raceEvent.Practice is null ? null : "Essais",
-                raceEvent.Qualifying is null ? null : "Qualif",
-                raceEvent.Race is null ? null : "Course"
+                raceEvent.Practice is null ? null : T["RaceDetails.EventPractice"],
+                raceEvent.Qualifying is null ? null : T["RaceDetails.EventQualifying"],
+                raceEvent.Race is null ? null : T["RaceDetails.EventRace"]
             }.OfType<string>());
         var label = $"{DisplayFormat.DateTime(raceEvent.StartedAt)} - {raceEvent.TrackVenue} ({sessionsLabel})";
         return string.IsNullOrWhiteSpace(carClass) ? label : $"{label} - {CarCategory.FromCarClass(carClass)}";
@@ -297,11 +297,11 @@ else
                     @result.Name
                     @if (result.IsPlayer)
                     {
-                        <span class="player-tag">VOUS</span>
+                        <span class="player-tag">@T["RaceDetails.You"]</span>
                     }
                     @if (selectedRatedRace?.Find(result.Name) is { } change)
                     {
-                        <span class="driver-rating" title="@($"Cote avant la course : {DisplayFormat.Rating(change.Before)} → {DisplayFormat.Rating(change.After)} ({DisplayFormat.RatingChange(change.Delta)})")">@DisplayFormat.Rating(change.Before)</span>
+                        <span class="driver-rating" title="@T["RaceDetails.RatingBefore", DisplayFormat.Rating(change.Before), DisplayFormat.Rating(change.After), DisplayFormat.RatingChange(change.Delta)]">@DisplayFormat.Rating(change.Before)</span>
                     }
                 </span>
                 <span class="cell-sub car-name">@result.Car</span>
@@ -331,7 +331,7 @@ else
                     @* A button in the row, not the row itself, so that the keyboard reaches it. *@
                     <button type="button"
                             class="conduct-button"
-                            aria-label="Voir les incidents de @result.Name"
+                            aria-label="@T["RaceDetails.SeeIncidents", result.Name]"
                             aria-expanded="@(IsFocused(result) ? "true" : "false")"
                             @onclick="() => ToggleIncidents(result.Name)">
                         <span>@conduct.VehicleContacts</span>
@@ -386,9 +386,9 @@ else
     private static string FormatLeaderGap(LeaderGap gap) =>
         gap.Kind switch
         {
-            LeaderGapKind.Leader => "LEADER",
+            LeaderGapKind.Leader => Texts.Get("RaceDetails.Leader"),
             LeaderGapKind.Time => DisplayFormat.Delta(gap.Time),
-            LeaderGapKind.Laps => gap.Laps == 1 ? "+1 tour" : $"+{gap.Laps} tours",
+            LeaderGapKind.Laps => Texts.Plural("RaceDetails.LapsBehind", gap.Laps ?? 0),
             LeaderGapKind.Status => gap.Status ?? "—",
             _ => "—"
         };
