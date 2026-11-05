@@ -44,7 +44,7 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
 - [ ] Optimisation des essais (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt. Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
-- La fiche pilote, la comparaison de sessions et l'affichage des incidents sont dans le jalon « Exploiter les événements du `Stream` ».
+- Les incidents sont affichés depuis le jalon « Exploiter les événements du `Stream` » ; la fiche pilote est abandonnée (couverte par Profil de conduite) et la comparaison de sessions est dans le jalon « Analyse de course tour par tour ».
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 - [x] Permettre de choisir le dossier de résultats depuis l'interface (page Options).
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
