@@ -3,16 +3,16 @@
 # Häufige Fragen
 
 **Ich sehe kein Rennen.**
-Prüfen Sie unter **Options**, ob beim Ergebnisordner « Dossier valide » (*gültiger Ordner*) steht und ob **Pilote principal** (*Hauptfahrer*) Ihr Name im Spiel ist.
+Prüfen Sie unter **Einstellungen**, ob beim Ergebnisordner « Gültiger Ordner » steht und ob **Hauptfahrer** Ihr Name im Spiel ist.
 
 **Ich sehe Fahrer namens „Driver Tom“, „Driver Lucas“…**
-Das sind die Demodaten. Wählen Sie Ihren Ergebnisordner unter **Options** und dann **Appliquer** (*Übernehmen*).
+Das sind die Demodaten. Wählen Sie Ihren Ergebnisordner unter **Einstellungen** und dann **Übernehmen**.
 
 **Eine gerade beendete Session erscheint nicht.**
-Das Spiel schreibt die Datei am **Ende** der Session. Prüfen Sie, ob die Anzeige **SURVEILLANCE ACTIVE** zeigt; sonst klicken Sie in den Options auf **Appliquer**.
+Das Spiel schreibt die Datei am **Ende** der Session. Prüfen Sie, ob die Anzeige **ÜBERWACHUNG AKTIV** zeigt; sonst klicken Sie in den Einstellungen auf **Übernehmen**.
 
 **Meine Historie ist zweigeteilt, seit ich meinen Spitznamen geändert habe.**
-Nutzen Sie **Options › Fusion de pilotes** (*Fahrer zusammenführen*).
+Nutzen Sie **Einstellungen › Fahrer zusammenführen**.
 
 **Warum wird mein Auto nicht mit allen anderen verglichen?**
 Verglichen wird **nach Klasse**, wie im Langstreckensport: Ein GT3 wird mit GT3 verglichen.

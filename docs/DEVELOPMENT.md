@@ -22,6 +22,17 @@ Le socle métier, le monitoring et la console sont en place : le parser transfor
 - `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks : parsing de XML synthétiques et de lots temporaires, chaîne d'import sur les fichiers réels et calculs de chaque page.
 - `Directory.Build.props` (racine) : framework cible, usings implicites et types nullables communs. `src/Directory.Build.props` : documentation XML obligatoire et avertissements traités comme des erreurs pour les projets de l'application.
 
+## Traductions
+
+Le dashboard est en cinq langues (proposition : [`propositions/interface-multilingue.md`](propositions/interface-multilingue.md)) :
+
+- **Ajouter ou modifier un texte :** l'écrire en français dans `src/LMU-DeltaRacing.Presentation/Resources/Texts.resx` (clé en anglais par page et rôle, `MyRaces.Title`), puis sa traduction dans `Texts.en.resx`, `Texts.de.resx`, `Texts.it.resx` et `Texts.es.resx`, avec les mêmes paramètres `{0}`. Un pluriel a deux clés, `.One` et `.Other`, lues par `Texts.Plural`.
+- **L'afficher :** `@T["Clé"]` ou `@T["Clé", valeur]` dans une page Razor, `Texts.Get`, `Texts.Format` ou `Texts.Plural` en C#. Jamais dans un champ `static readonly`, figé à la première lecture.
+- **Vérifier :** `TextsTests` échoue sur une clé utilisée absente, un texte inutilisé, une traduction manquante ou des paramètres différents, et un format invalide. Pour voir une page dans une langue : `LMU__Language=de dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`.
+- **Langue et dates :** `UiLanguage` (langue de l'interface, appliquée par `CultureInfo.DefaultThreadCurrentUICulture`) et `DisplayFormat` (`Position`, `Date`, réglage `DateFormat`). Les nombres gardent la culture de Windows. La console et les tests forcent le français.
+- **Installeur :** `scripts/installer.iss` est en cinq langues (fichiers de messages d'Inno Setup) et écrit la langue choisie dans `LMU:Language` à la première installation.
+- **Guide d'utilisation :** une page par sujet et par langue dans `docs/guide/<langue>/`, qui cite les libellés de l'écran dans sa langue ; `UserGuideTests` vérifie que les cinq langues ont les mêmes pages et des liens valides.
+
 ## Commandes
 
 - `dotnet build`

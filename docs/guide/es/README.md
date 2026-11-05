@@ -4,7 +4,7 @@
 
 LMU DeltaRacing lee los archivos de resultados que *Le Mans Ultimate* guarda después de cada sesión y los convierte en un panel personal. Todo se queda en tu PC: **no se recopila ningún dato**.
 
-> La aplicación está en francés. Esta guía cita las etiquetas de la pantalla tal como aparecen, seguidas de su traducción: **Mes courses** (*Mis carreras*).
+> La aplicación habla inglés, francés, alemán, italiano y español: elige el idioma en **Ajustes › Idioma y fecha**.
 
 ## Para empezar
 
@@ -16,12 +16,12 @@ LMU DeltaRacing lee los archivos de resultados que *Le Mans Ultimate* guarda des
 
 | Página | En resumen |
 |---|---|
-| [Accueil](home.md) (*Inicio*) | Tu carrera de un vistazo |
-| [Mes courses](my-races.md) (*Mis carreras*) | Tu historial, circuito por circuito |
-| [Détail des courses](race-details.md) (*Detalle de carreras*) | La clasificación completa de un evento, sector por sector |
-| [Progression](progression.md) (*Progresión*) | La evolución de tus mejores vueltas en un circuito |
-| [Profil de conduite](driving-profile.md) (*Perfil de conducción*) | Tus contactos, límites de pista y penalizaciones |
-| [Cote pilote](driver-rating.md) (*Rating de piloto*) | Tu nivel, medido con un rating Elo |
-| [Classement des coureurs](drivers-ranking.md) (*Cara a cara*) | Tu balance contra cada rival |
+| [Inicio](home.md) | Tu carrera de un vistazo |
+| [Mis carreras](my-races.md) | Tu historial, circuito por circuito |
+| [Detalle de carreras](race-details.md) | La clasificación completa de un evento, sector por sector |
+| [Progresión](progression.md) | La evolución de tus mejores vueltas en un circuito |
+| [Perfil de conducción](driving-profile.md) | Tus contactos, límites de pista y penalizaciones |
+| [Rating de piloto](driver-rating.md) | Tu nivel, medido con un rating Elo |
+| [Cara a cara](drivers-ranking.md) | Tu balance contra cada rival |
 
 **En todas las tablas**, arrastra el tirador del borde derecho de un encabezado para ensanchar o estrechar una columna; un doble clic en ese borde restablece los anchos originales.

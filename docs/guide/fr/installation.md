@@ -7,9 +7,9 @@
 **Configuration requise :** Windows 64 bits, rien d'autre.
 
 1. Téléchargez `LMU-DeltaRacing-Setup.exe` depuis la page [Releases](https://github.com/Fugeekies/LMU-DeltaRacing/releases).
-2. Lancez-le. L'installation se fait dans votre profil Windows, sans droits administrateur.
+2. Lancez-le. Choisissez sa langue : l’application démarrera dans la même. L'installation se fait dans votre profil Windows, sans droits administrateur.
    > Windows peut afficher un avertissement SmartScreen, car l'installeur n'est pas signé : cliquez sur **Informations complémentaires**, puis **Exécuter quand même**.
-3. Cochez si vous voulez **Créer une icône sur le bureau**, puis terminez.
+3. Cochez si vous voulez **Créer une icône sur le Bureau**, puis terminez.
 
 L'installeur cherche le dossier où le jeu enregistre vos résultats (Documents et dossier Steam du jeu). S'il n'en trouve aucun, il installe des **données de démonstration** ; vous choisirez le bon dossier dans les [Options](settings.md).
 

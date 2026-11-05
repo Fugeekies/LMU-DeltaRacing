@@ -1,6 +1,6 @@
 # Proposition — Interface multilingue
 
-> Statut : **validée** le 05/11/2026 (décisions en fin de document). Jalon « Interface multilingue » de la [feuille de route](../ROADMAP.md).
+> Statut : **réalisée** (PR #60, #61, #62), validée le 05/11/2026 (décisions en fin de document). Jalon « Interface multilingue » de la [feuille de route](../ROADMAP.md).
 
 ## 1. Constat
 

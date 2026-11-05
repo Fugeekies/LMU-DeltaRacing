@@ -20,9 +20,32 @@ Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
 CloseApplications=yes
+; The setup speaks the five languages of the application, proposed from the language of Windows.
+ShowLanguageDialog=auto
+LanguageDetectionMethod=uilanguage
+
+[Languages]
+Name: "en"; MessagesFile: "compiler:Default.isl"
+Name: "fr"; MessagesFile: "compiler:Languages\French.isl"
+Name: "de"; MessagesFile: "compiler:Languages\German.isl"
+Name: "it"; MessagesFile: "compiler:Languages\Italian.isl"
+Name: "es"; MessagesFile: "compiler:Languages\Spanish.isl"
+
+[CustomMessages]
+en.ConfigReadFailed=Cannot read the installed settings: %1
+fr.ConfigReadFailed=Impossible de lire la configuration installée : %1
+de.ConfigReadFailed=Die installierten Einstellungen können nicht gelesen werden: %1
+it.ConfigReadFailed=Impossibile leggere le impostazioni installate: %1
+es.ConfigReadFailed=No se puede leer la configuración instalada: %1
+en.ConfigSaveFailed=Cannot save the settings in %1
+fr.ConfigSaveFailed=Impossible d'enregistrer la configuration dans %1
+de.ConfigSaveFailed=Die Einstellungen können nicht in %1 gespeichert werden
+it.ConfigSaveFailed=Impossibile salvare le impostazioni in %1
+es.ConfigSaveFailed=No se puede guardar la configuración en %1
 
 [Tasks]
-Name: "desktopicon"; Description: "Créer une icône sur le bureau"; GroupDescription: "Raccourcis supplémentaires :"
+; Messages of the Inno Setup language files: "Create a desktop shortcut", "Additional shortcuts:".
+Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{cm:AdditionalIcons}"
 
 [Files]
 Source: "..\publish_output\appsettings.json"; DestDir: "{app}"; Flags: onlyifdoesntexist
@@ -34,7 +57,7 @@ Name: "{group}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; Worki
 Name: "{autodesktop}\LMU-DeltaRacing"; Filename: "{app}\LMU-DeltaRacing.UI.exe"; WorkingDir: "{app}"; IconFilename: "{app}\LMU-DeltaRacing.ico"; Tasks: desktopicon
 
 [Run]
-Filename: "{app}\LMU-DeltaRacing.UI.exe"; Description: "Lancer LMU-DeltaRacing"; Flags: postinstall nowait skipifsilent
+Filename: "{app}\LMU-DeltaRacing.UI.exe"; Description: "{cm:LaunchProgram,LMU-DeltaRacing}"; Flags: postinstall nowait skipifsilent
 
 [Code]
 function HasXmlResults(Directory: String): Boolean;
@@ -88,47 +111,61 @@ begin
   Result := '';
 end;
 
+var
+  IsFirstInstall: Boolean;
+
+// Replaces a setting left empty by the packaged appsettings.json; returns whether a line changed.
+function ReplaceSetting(var ConfigLines: TArrayOfString; SearchText: String; ReplaceText: String): Boolean;
+var
+  ConfigLine: String;
+  ConfigLineIndex: Integer;
+begin
+  Result := False;
+  for ConfigLineIndex := 0 to GetArrayLength(ConfigLines) - 1 do
+  begin
+    ConfigLine := ConfigLines[ConfigLineIndex];
+    if Pos(SearchText, ConfigLine) > 0 then
+    begin
+      StringChangeEx(ConfigLine, SearchText, ReplaceText, True);
+      ConfigLines[ConfigLineIndex] := ConfigLine;
+      Result := True;
+    end;
+  end;
+end;
+
 procedure CurStepChanged(CurStep: TSetupStep);
 var
   ResultsDirectory: String;
   ConfigPath: String;
   ConfigLines: TArrayOfString;
-  ConfigLine: String;
   JsonPath: String;
-  SearchText: String;
-  ReplaceText: String;
-  ConfigLineIndex: Integer;
   ConfigUpdated: Boolean;
 begin
+  ConfigPath := ExpandConstant('{app}\appsettings.json');
+
+  // Before the files are copied: an update keeps the settings file, and so its language.
+  if CurStep = ssInstall then
+    IsFirstInstall := not FileExists(ConfigPath);
+
   if CurStep = ssPostInstall then
   begin
     ResultsDirectory := FindResultsDirectory();
     if ResultsDirectory = '' then
       ResultsDirectory := ExpandConstant('{app}\TestAssets\Results');
 
-    ConfigPath := ExpandConstant('{app}\appsettings.json');
     if not LoadStringsFromFile(ConfigPath, ConfigLines) then
-      RaiseException('Impossible de lire la configuration installée : ' + ConfigPath);
+      RaiseException(FmtMessage(CustomMessage('ConfigReadFailed'), [ConfigPath]));
 
-    SearchText := '"ResultsDirectory": ""';
     JsonPath := ResultsDirectory;
     StringChangeEx(JsonPath, '\', '\\', True);
-    ReplaceText := '"ResultsDirectory": "' + JsonPath + '"';
-    ConfigUpdated := False;
-    for ConfigLineIndex := 0 to GetArrayLength(ConfigLines) - 1 do
-    begin
-      ConfigLine := ConfigLines[ConfigLineIndex];
-      if Pos(SearchText, ConfigLine) > 0 then
-      begin
-        StringChangeEx(ConfigLine, SearchText, ReplaceText, True);
-        ConfigLines[ConfigLineIndex] := ConfigLine;
-        ConfigUpdated := True;
-      end;
-    end;
+    ConfigUpdated := ReplaceSetting(ConfigLines, '"ResultsDirectory": ""', '"ResultsDirectory": "' + JsonPath + '"');
+
+    // The application starts in the language chosen for the setup (en, fr, de, it or es). Its
+    // date format is already "Language" in the packaged file: dates follow that language.
+    if IsFirstInstall then
+      ConfigUpdated := ReplaceSetting(ConfigLines, '"Language": ""', '"Language": "' + ActiveLanguage() + '"') or ConfigUpdated;
 
     if ConfigUpdated and not SaveStringsToUTF8FileWithoutBOM(ConfigPath, ConfigLines, False) then
-    begin
-      RaiseException('Impossible d''enregistrer le dossier de résultats dans ' + ConfigPath);
-    end;
+      RaiseException(FmtMessage(CustomMessage('ConfigSaveFailed'), [ConfigPath]));
   end;
 end;

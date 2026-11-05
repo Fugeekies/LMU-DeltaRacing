@@ -4,7 +4,7 @@
 
 LMU DeltaRacing legge i file dei risultati che *Le Mans Ultimate* salva dopo ogni sessione e ne ricava una dashboard personale. Tutto resta sul tuo PC: **nessun dato viene raccolto**.
 
-> L'applicazione è in francese. Questa guida cita le etichette dello schermo così come appaiono, seguite dalla traduzione: **Mes courses** (*Le mie gare*).
+> L’applicazione parla inglese, francese, tedesco, italiano e spagnolo: scegli la lingua in **Impostazioni › Lingua e data**.
 
 ## Per iniziare
 
@@ -16,12 +16,12 @@ LMU DeltaRacing legge i file dei risultati che *Le Mans Ultimate* salva dopo ogn
 
 | Pagina | In breve |
 |---|---|
-| [Accueil](home.md) (*Home*) | La tua carriera a colpo d'occhio |
-| [Mes courses](my-races.md) (*Le mie gare*) | La tua cronologia, circuito per circuito |
-| [Détail des courses](race-details.md) (*Dettaglio gare*) | La classifica completa di un evento, settore per settore |
-| [Progression](progression.md) (*Progressi*) | L'andamento dei tuoi giri migliori su un circuito |
-| [Profil de conduite](driving-profile.md) (*Profilo di guida*) | I tuoi contatti, limiti della pista e penalità |
-| [Cote pilote](driver-rating.md) (*Rating pilota*) | Il tuo livello, misurato con un rating Elo |
-| [Classement des coureurs](drivers-ranking.md) (*Testa a testa*) | Il tuo bilancio contro ogni avversario |
+| [Home](home.md) | La tua carriera a colpo d'occhio |
+| [Le mie gare](my-races.md) | La tua cronologia, circuito per circuito |
+| [Dettaglio gare](race-details.md) | La classifica completa di un evento, settore per settore |
+| [Progressi](progression.md) | L'andamento dei tuoi giri migliori su un circuito |
+| [Profilo di guida](driving-profile.md) | I tuoi contatti, limiti della pista e penalità |
+| [Rating pilota](driver-rating.md) | Il tuo livello, misurato con un rating Elo |
+| [Testa a testa](drivers-ranking.md) | Il tuo bilancio contro ogni avversario |
 
 **In tutte le tabelle**, trascina la maniglia sul bordo destro di un'intestazione per allargare o restringere una colonna; un doppio clic su quel bordo ripristina le larghezze originali.

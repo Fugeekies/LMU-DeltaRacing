@@ -5,6 +5,7 @@
 | Réglage | À quoi ça sert |
 |---|---|
 | **Dossier des résultats XML** | Où le jeu enregistre vos résultats, en général `Documents\Le Mans Ultimate\UserData\Log\Results`. Choisissez-le avec **Parcourir…**, puis **Appliquer**. Vide : détection automatique. |
+| **Langue et date** | **Langue de l’interface** : English, Français, Deutsch, Italiano ou Español (par défaut celle de Windows, l’anglais sinon). **Format de date** : selon la langue, ou jour/mois, mois/jour, ISO, jour.mois. La page se recharge ; les temps au tour et les nombres ne changent pas. |
 | **Pilote principal** | Le pilote suivi (vous). La liste est triée par nombre d'apparitions. |
 | **Fusion de pilotes** | Vous avez changé de pseudo ? Choisissez l'ancien nom et le nom conservé, puis **Fusionner**. Vos fichiers ne sont pas modifiés et la fusion s'annule. Un avertissement s'affiche si les deux noms ont couru ensemble. |
 | **Démarrage automatique** | Surveiller les nouveaux résultats dès le lancement (activé par défaut). |

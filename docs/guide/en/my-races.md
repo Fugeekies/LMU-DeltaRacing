@@ -1,6 +1,6 @@
 ← [Contents](README.md) · **English** · [Français](../fr/my-races.md) · [Deutsch](../de/my-races.md) · [Italiano](../it/my-races.md) · [Español](../es/my-races.md)
 
-# Mes courses (*My races*)
+# My races
 
 Your history, **track by track**, to see whether you are improving.
 
@@ -8,6 +8,6 @@ Your history, **track by track**, to see whether you are improving.
 - The best results stand out: **gold**, **silver** and **bronze** for the podium, blue for places 4 to 10.
 - **DELTA (n-1)** compares your best lap with your previous session on the same track and in the same class: 🟢 negative, faster; 🔴 positive, slower.
 - Filter by **track** and **class** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
-- **📈 Voir la progression** (*See progress*) opens the track's [Progression](progression.md).
+- **📈 See the progress** opens the track's [Progress](progression.md).
 
 > Laps invalidated by the game (track limits) have no time: they do not count.

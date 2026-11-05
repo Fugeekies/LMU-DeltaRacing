@@ -3,16 +3,16 @@
 # Domande frequenti
 
 **Non vedo nessuna gara.**
-In **Options**, controlla che la cartella dei risultati indichi « Dossier valide » (*cartella valida*) e che **Pilote principal** (*pilota principale*) sia il tuo nome nel gioco.
+In **Impostazioni**, controlla che la cartella dei risultati indichi « Cartella valida » e che **Pilota principale** sia il tuo nome nel gioco.
 
 **Vedo piloti chiamati "Driver Tom", "Driver Lucas"…**
-Sono i dati dimostrativi. Scegli la tua cartella dei risultati in **Options**, poi **Appliquer** (*Applica*).
+Sono i dati dimostrativi. Scegli la tua cartella dei risultati in **Impostazioni**, poi **Applica**.
 
 **Una sessione appena conclusa non compare.**
-Il gioco scrive il file alla **fine** della sessione. Controlla che l'indicatore mostri **SURVEILLANCE ACTIVE**; altrimenti fai clic su **Appliquer** in Options.
+Il gioco scrive il file alla **fine** della sessione. Controlla che l'indicatore mostri **MONITORAGGIO ATTIVO**; altrimenti fai clic su **Applica** nelle Impostazioni.
 
 **La mia cronologia è divisa in due da quando ho cambiato nickname.**
-Usa **Options › Fusion de pilotes** (*Unione di piloti*).
+Usa **Impostazioni › Unione di piloti**.
 
 **Perché la mia auto non è confrontata con tutte le altre?**
 I confronti avvengono **per categoria**, come nell'endurance: una GT3 è confrontata con le GT3.

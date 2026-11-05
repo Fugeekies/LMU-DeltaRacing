@@ -1,6 +1,6 @@
 ← [Índice](README.md) · [English](../en/my-races.md) · [Français](../fr/my-races.md) · [Deutsch](../de/my-races.md) · [Italiano](../it/my-races.md) · **Español**
 
-# Mes courses (*Mis carreras*)
+# Mis carreras
 
 Tu historial, **circuito por circuito**, para ver si mejoras.
 
@@ -8,6 +8,6 @@ Tu historial, **circuito por circuito**, para ver si mejoras.
 - Los mejores resultados destacan: **oro**, **plata** y **bronce** para el podio, azul para los puestos 4 a 10.
 - **DELTA (n-1)** compara tu mejor vuelta con tu sesión anterior en el mismo circuito y la misma categoría: 🟢 negativo, más rápido; 🔴 positivo, más lento.
 - Filtra por **circuito** y **categoría** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
-- **📈 Voir la progression** (*Ver la progresión*) abre la [Progresión](progression.md) del circuito.
+- **📈 Ver la progresión** abre la [Progresión](progression.md) del circuito.
 
 > Las vueltas invalidadas por el juego (límites de pista) no tienen tiempo: no cuentan.

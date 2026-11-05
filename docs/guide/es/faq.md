@@ -3,16 +3,16 @@
 # Preguntas frecuentes
 
 **No veo ninguna carrera.**
-En **Options**, comprueba que la carpeta de resultados indica « Dossier valide » (*carpeta válida*) y que **Pilote principal** (*piloto principal*) es tu nombre en el juego.
+En **Ajustes**, comprueba que la carpeta de resultados indica « Carpeta válida » y que **Piloto principal** es tu nombre en el juego.
 
 **Veo pilotos llamados «Driver Tom», «Driver Lucas»…**
-Son los datos de demostración. Elige tu carpeta de resultados en **Options** y luego **Appliquer** (*Aplicar*).
+Son los datos de demostración. Elige tu carpeta de resultados en **Ajustes** y luego **Aplicar**.
 
 **Una sesión que acabo de terminar no aparece.**
-El juego escribe el archivo al **final** de la sesión. Comprueba que el indicador muestra **SURVEILLANCE ACTIVE**; si no, haz clic en **Appliquer** en Options.
+El juego escribe el archivo al **final** de la sesión. Comprueba que el indicador muestra **VIGILANCIA ACTIVA**; si no, haz clic en **Aplicar** en Ajustes.
 
 **Mi historial está partido en dos desde que cambié de apodo.**
-Usa **Options › Fusion de pilotes** (*Fusión de pilotos*).
+Usa **Ajustes › Fusión de pilotos**.
 
 **¿Por qué mi coche no se compara con todos los demás?**
 Las comparaciones se hacen **por categoría**, como en resistencia: un GT3 se compara con los GT3.
