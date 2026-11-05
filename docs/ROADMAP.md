@@ -51,6 +51,15 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ## Terminés
 
+### Jalon — Exploiter les événements du `Stream` — 05/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53), clôture [#59](https://github.com/Fugeekies/LMU-DeltaRacing/pull/59)
+La donnée la plus riche des fichiers LMU n'était pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
+- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
+- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
+- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
+- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
+- Abandonné : fiche pilote avec ses statistiques cumulées et sa « propreté » de pilotage, couverte par la page Profil de conduite.
+- Reporté au jalon « Analyse de course tour par tour » : comparer plusieurs sessions sur un même circuit et une même catégorie.
+
 ### Jalon — README multilingue — 05/11/2026 · PR [#58](https://github.com/Fugeekies/LMU-DeltaRacing/pull/58)
 Rendre le guide utilisateur lisible hors de France. Langues retenues : anglais, français, allemand, italien, espagnol. Un wiki GitHub a été écarté : ses pages échappent aux PR et ne suivent pas les versions.
 - [x] Guide découpé en une page courte par sujet, dans `docs/guide/<langue>/` (mêmes noms de fichiers dans chaque langue), avec en tête le sélecteur vers la même page dans les autres langues.
