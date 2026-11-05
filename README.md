@@ -176,7 +176,7 @@ Seules les **courses** comptent (pas les qualifications), et seulement contre le
 
 Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
 
-> Dans **Mes courses**, **Classement des coureurs** et **Détail des courses**, faites glisser la poignée (deux petits traits) au bord droit d’un en-tête de colonne pour l'élargir ou la rétrécir ; un double-clic sur ce bord rétablit les largeurs d'origine, comme un rechargement de la page.
+> **Dans tous les tableaux**, faites glisser la poignée (deux petits traits) au bord droit d’un en-tête de colonne pour l'élargir ou la rétrécir ; un double-clic sur ce bord rétablit les largeurs d'origine, comme un rechargement de la page.
 
 ### Options
 

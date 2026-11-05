@@ -67,7 +67,7 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 
 ### Jalon — Tableaux : colonnes et données — 05/11/2026 · PR [#57](https://github.com/Fugeekies/LMU-DeltaRacing/pull/57)
 Améliorer les tableaux du dashboard. Specs mises à jour : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md), [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md), [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md).
-- [x] **Colonnes ajustables :** largeur des colonnes réglable dans les tableaux des pages de résultats (Mes courses, Classement des coureurs, Détail des courses). Bord droit des en-têtes à faire glisser, double-clic pour revenir aux largeurs automatiques, largeurs non mémorisées.
+- [x] **Colonnes ajustables :** largeur des colonnes réglable dans tous les tableaux du dashboard (demandé d’abord pour Mes courses, Classement des coureurs et Détail des courses). Bord droit des en-têtes à faire glisser, double-clic pour revenir aux largeurs automatiques, largeurs non mémorisées.
 - [x] **Détail des courses, doublon de position :** la première colonne (POS / CLASSE) empilait la position générale et la position en classe (`01` et `LMGT3 P1`), qui se répétaient quand elles étaient égales. Séparées en deux colonnes, POS et CLASSE.
 - [x] **Classement des coureurs, plus de données :** liste arrêtée dans `DriversRanking.template.md` (cote de l'adversaire, écart moyen en classe, contacts entre les deux voitures, dernière course affrontée), puis affichée.
 

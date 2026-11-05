@@ -11,7 +11,7 @@
 
     const headerAt = (event) => {
         const header = event.target instanceof Element ? event.target.closest("th") : null;
-        if (!header || !header.closest("table[data-resizable-columns]")) {
+        if (!header || !header.closest("table[data-resizable-columns] > thead")) {
             return null;
         }
 
@@ -52,7 +52,7 @@
             return;
         }
 
-        const target = event.target instanceof Element ? event.target.closest("table[data-resizable-columns] th") : null;
+        const target = event.target instanceof Element ? event.target.closest("table[data-resizable-columns] > thead th") : null;
         if (target) {
             target.classList.toggle("column-resize-edge", headerAt(event) === target);
         }

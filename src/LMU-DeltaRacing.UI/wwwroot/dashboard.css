@@ -2837,12 +2837,12 @@ p.home-rate {
 }
 
 /* Resizable columns (resizable-columns.js): the right edge of each header drags its column. */
-table[data-resizable-columns] th {
+table[data-resizable-columns] > thead th {
     position: relative;
 }
 
 /* A grip of two thin bars, always drawn, tells that the edge can be dragged. */
-table[data-resizable-columns] th::after {
+table[data-resizable-columns] > thead th::after {
     position: absolute;
     top: 20%;
     right: 1px;
@@ -2855,11 +2855,11 @@ table[data-resizable-columns] th::after {
     transition: opacity 0.12s, border-color 0.12s;
 }
 
-table[data-resizable-columns] th.column-resize-edge {
+table[data-resizable-columns] > thead th.column-resize-edge {
     cursor: col-resize;
 }
 
-table[data-resizable-columns] th.column-resize-edge::after {
+table[data-resizable-columns] > thead th.column-resize-edge::after {
     border-color: var(--accent);
     opacity: 1;
 }
