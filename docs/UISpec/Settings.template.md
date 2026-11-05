@@ -1,6 +1,6 @@
 ## 4. ⚙️ Menu : Options (`Settings.razor`)
 
-> Spécification alignée sur le code au 30/10/2026 (`Settings.razor`, `UpdateSettingsPanel.razor`, `DashboardOverview.razor`, `DashboardDataService.cs`, `ResultsDirectoryResolver.cs`, `UpdateCheckService.cs`).
+> Spécification alignée sur le code au 05/11/2026 (`Settings.razor`, `UpdateSettingsPanel.razor`, `DashboardOverview.razor`, `DashboardDataService.cs`, `ResultsDirectoryResolver.cs`, `UpdateCheckService.cs`).
 
 ### Description
 Panneau de configuration (route `/settings`) qui permet de choisir le dossier des résultats XML, de recharger les imports, de choisir le pilote principal, de régler la surveillance au démarrage et de suivre les mises à jour. Sous les options, il affiche l'état des imports et les sessions récentes du pilote.
@@ -34,6 +34,11 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Liste désactivée pendant le chargement initial ou si aucun pilote n'est disponible.
 * Pilote non défini : option « Détection après le chargement… ». Au premier démarrage, le pilote le plus fréquent est sélectionné et enregistré automatiquement à la fin de l'import initial.
 * Pilote configuré absent des résultats : option « <nom> (absent des résultats chargés) ».
+
+#### Panneau « Langue et date » (eyebrow « AFFICHAGE »)
+* **Langue de l’interface :** liste des cinq langues, chacune écrite dans sa langue (English, Français, Deutsch, Italiano, Español). Enregistrée dans `LMU:Language` ; sans réglage, la langue de Windows si elle fait partie des cinq, l’anglais sinon (`UiLanguage.Resolve`).
+* **Format de date :** « Selon la langue » (par défaut : `jj/mm/aaaa`, `jj.mm.aaaa` en allemand), `jj/mm/aaaa`, `mm/jj/aaaa`, `aaaa-mm-jj` (ISO) ou `jj.mm.aaaa`, chacun avec un exemple au 25 novembre pour que le jour ne se confonde pas avec le mois. Enregistré dans `LMU:DateFormat` (`Language`, `DayMonthYear`, `MonthDayYear`, `Iso`, `DotDayMonthYear`). L’heure reste sur 24 h.
+* Changer l’un ou l’autre enregistre le choix, l’applique et recharge la page. Les nombres, les temps au tour et les écarts gardent le même format dans toutes les langues ; ordinaux (`1er`, `1st`, `1.`, `1º`, `1.º`), dates et noms de mois suivent la langue.
 
 #### Panneau « Fusion de pilotes »
 * But : après un changement de nom (pseudo), déclarer que deux noms désignent le même pilote, pour ne pas couper son historique.
