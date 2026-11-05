@@ -1541,4 +1541,64 @@
   <data name="Progression.WeekOf" xml:space="preserve">
     <value>semaine du {0}</value>
   </data>
+  <data name="Settings.LanguageEyebrow" xml:space="preserve">
+    <value>AFFICHAGE</value>
+  </data>
+  <data name="Settings.LanguageTitle" xml:space="preserve">
+    <value>Langue et date</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Langue de l’interface</value>
+  </data>
+  <data name="Settings.DateFormat" xml:space="preserve">
+    <value>Format de date</value>
+  </data>
+  <data name="Settings.DateFormat.Language" xml:space="preserve">
+    <value>Selon la langue ({0})</value>
+  </data>
+  <data name="Settings.DateFormat.DayMonthYear" xml:space="preserve">
+    <value>{0} (jour/mois)</value>
+  </data>
+  <data name="Settings.DateFormat.MonthDayYear" xml:space="preserve">
+    <value>{0} (mois/jour)</value>
+  </data>
+  <data name="Settings.DateFormat.Iso" xml:space="preserve">
+    <value>{0} (ISO)</value>
+  </data>
+  <data name="Settings.DateFormat.DotDayMonthYear" xml:space="preserve">
+    <value>{0} (jour.mois)</value>
+  </data>
+  <data name="Settings.LanguageHelp" xml:space="preserve">
+    <value>Le choix est enregistré et la page se recharge. Les heures restent sur 24 h ; les temps au tour et les nombres ne changent pas.</value>
+  </data>
+  <data name="Settings.LanguageSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la langue ou le format de date : {0}</value>
+  </data>
+  <data name="Reconnect.Rejoining" xml:space="preserve">
+    <value>Reconnexion au serveur…</value>
+  </data>
+  <data name="Reconnect.RetryIn" xml:space="preserve">
+    <value>La reconnexion a échoué… nouvel essai dans</value>
+  </data>
+  <data name="Reconnect.Seconds" xml:space="preserve">
+    <value>secondes.</value>
+  </data>
+  <data name="Reconnect.Failed" xml:space="preserve">
+    <value>La reconnexion a échoué.</value>
+  </data>
+  <data name="Reconnect.RetryOrReload" xml:space="preserve">
+    <value>Réessayez ou rechargez la page.</value>
+  </data>
+  <data name="Reconnect.Retry" xml:space="preserve">
+    <value>Réessayer</value>
+  </data>
+  <data name="Reconnect.Paused" xml:space="preserve">
+    <value>La session a été mise en pause par le serveur.</value>
+  </data>
+  <data name="Reconnect.ResumeFailed" xml:space="preserve">
+    <value>Impossible de reprendre la session.</value>
+  </data>
+  <data name="Reconnect.Resume" xml:space="preserve">
+    <value>Reprendre</value>
+  </data>
 </root>

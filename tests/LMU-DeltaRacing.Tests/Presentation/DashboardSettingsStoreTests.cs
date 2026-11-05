@@ -39,6 +39,37 @@ public sealed class DashboardSettingsStoreTests
     }
 
     /// <summary>
+    /// Verifies that the language and the date format are saved, and that an unknown language is refused.
+    /// </summary>
+    [TestMethod]
+    public void Language_and_date_format_are_saved()
+    {
+        var directory = Path.Combine(Path.GetTempPath(), $"lmu-settings-{Guid.NewGuid():N}");
+        Directory.CreateDirectory(directory);
+        var settingsPath = Path.Combine(directory, "appsettings.json");
+        File.WriteAllText(settingsPath, """{ "LMU": { "OpenBrowser": false } }""");
+        var configuration = new ConfigurationBuilder()
+            .AddJsonFile(settingsPath, optional: false, reloadOnChange: false)
+            .Build();
+
+        try
+        {
+            var store = new DashboardSettingsStore(configuration, settingsPath);
+            store.SaveLanguage("de");
+            store.SaveDateFormat(LMU_DeltaRacing.Presentation.Models.DateFormatOption.Iso);
+
+            configuration["LMU:Language"].Should().Be("de");
+            configuration["LMU:DateFormat"].Should().Be("Iso");
+            configuration["LMU:OpenBrowser"].Should().Be("False");
+            store.Invoking(value => value.SaveLanguage("pt")).Should().Throw<ArgumentOutOfRangeException>();
+        }
+        finally
+        {
+            Directory.Delete(directory, recursive: true);
+        }
+    }
+
+    /// <summary>
     /// Verifies that results settings are saved while unrelated application settings are preserved.
     /// </summary>
     [TestMethod]

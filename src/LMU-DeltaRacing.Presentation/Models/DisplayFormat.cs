@@ -21,14 +21,44 @@ public static class DisplayFormat
     };
 
     /// <summary>
-    /// Formats a position as a French ordinal: <c>1er</c>, then <c>2e</c>, <c>3e</c>…
+    /// Gets or sets how dates are written (<c>LMU:DateFormat</c>), for the whole application: the
+    /// dashboard has a single user. The console keeps the default, which follows the language.
     /// </summary>
-    public static string Position(int? position) => position switch
+    public static DateFormatOption DateFormat { get; set; } = DateFormatOption.Language;
+
+    /// <summary>
+    /// Formats a position as an ordinal of the interface language: <c>1er</c> / <c>2e</c> in French,
+    /// <c>1st</c> / <c>2nd</c> in English, <c>1.</c> in German, <c>1º</c> in Italian, <c>1.º</c> in Spanish.
+    /// </summary>
+    public static string Position(int? position)
     {
-        null => Missing,
-        1 => "1er",
-        { } value => value.ToString(CultureInfo.InvariantCulture) + "e"
-    };
+        if (position is not { } value)
+        {
+            return Missing;
+        }
+
+        var number = value.ToString(CultureInfo.InvariantCulture);
+        return Localization.UiLanguage.Current switch
+        {
+            "en" => number + EnglishSuffix(value),
+            "de" => number + ".",
+            "it" => number + "º",
+            "es" => number + ".º",
+            _ => value == 1 ? "1er" : number + "e"
+        };
+    }
+
+    // 11th, 12th and 13th, but 1st, 2nd, 3rd, 21st, 22nd, 23rd...
+    private static string EnglishSuffix(int value) =>
+        (value % 100) is 11 or 12 or 13
+            ? "th"
+            : (value % 10) switch
+            {
+                1 => "st",
+                2 => "nd",
+                3 => "rd",
+                _ => "th"
+            };
 
     /// <summary>
     /// Formats a lap time as <c>m:ss.fff</c>.
@@ -131,14 +161,29 @@ public static class DisplayFormat
         $"{(share * 100).ToString("0.0", NumberFormat)} %";
 
     /// <summary>
-    /// Formats a date and time in local time as <c>dd/MM/yyyy HH:mm</c>.
+    /// Formats a date and time in local time with the date format (<c>05/11/2026 21:00</c>).
     /// </summary>
-    public static string DateTime(DateTimeOffset date) =>
-        date.ToLocalTime().ToString("dd/MM/yyyy HH:mm", CultureInfo.InvariantCulture);
+    public static string DateTime(DateTimeOffset date) => Date(date.LocalDateTime, withTime: true);
 
     /// <summary>
-    /// Formats a day in local time as <c>dd/MM/yyyy</c>.
+    /// Formats a day in local time with the date format (<c>05/11/2026</c>).
     /// </summary>
-    public static string Day(DateTimeOffset date) =>
-        date.ToLocalTime().ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+    public static string Day(DateTimeOffset date) => Date(date.LocalDateTime);
+
+    /// <summary>
+    /// Formats a date already in local time with the date format, and its time on 24 hours when asked.
+    /// </summary>
+    /// <param name="date">The local date.</param>
+    /// <param name="withTime">Whether to add the time (<c>21:00</c>).</param>
+    /// <param name="shortYear">Whether to write the year on two digits, for the chart axes.</param>
+    public static string Date(System.DateTime date, bool withTime = false, bool shortYear = false)
+    {
+        var pattern = DateFormatOptions.Pattern(DateFormat, Localization.UiLanguage.Current);
+        if (shortYear)
+        {
+            pattern = pattern.Replace("yyyy", "yy", StringComparison.Ordinal);
+        }
+
+        return date.ToString(withTime ? $"{pattern} HH:mm" : pattern, CultureInfo.InvariantCulture);
+    }
 }
