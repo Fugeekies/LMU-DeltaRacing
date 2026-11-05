@@ -4,15 +4,6 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ## À faire
 
-### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
-- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
-- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
-- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
-- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profil de conduite ».
-- [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
-
 ### Jalon — Analyse de course tour par tour 
 Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
 - [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
@@ -22,6 +13,7 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le déroulé de la course.
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
+- [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
 
 ### Jalon — Interface multilingue 
 Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder.
