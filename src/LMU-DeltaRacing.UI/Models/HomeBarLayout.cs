@@ -1,4 +1,5 @@
 using System.Globalization;
+using LMU_DeltaRacing.Presentation.Localization;
 using LMU_DeltaRacing.Presentation.Models;
 
 namespace LMU_DeltaRacing.UI.Models;
@@ -40,7 +41,7 @@ public static class HomeBarLayout
                 part.Label,
                 FormatPercent(part.Share),
                 FormatPercent(start + (part.Share / 2)),
-                $"{part.Label} : {part.Value} ({DisplayFormat.Percent(part.Share)})"));
+                Texts.Format("Home.BarTooltip", part.Label, part.Value, DisplayFormat.Percent(part.Share))));
             start += part.Share;
         }
 

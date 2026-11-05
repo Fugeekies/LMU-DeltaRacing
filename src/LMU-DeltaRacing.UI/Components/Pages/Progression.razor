@@ -132,7 +132,7 @@ else
                     @foreach (var empty in layout.EmptyPeriods)
                     {
                         <rect class="chart-empty" x="@Format(Math.Min(empty.X1, empty.X2) - 3)" y="@Format(layout.PlotBottom - 4)" width="@Format(Math.Abs(empty.X2 - empty.X1) + 6)" height="4">
-                            <title>@($"Sans session : {ProgressionPeriods.Label(empty.Start, settings.Granularity)}{(empty.End == empty.Start ? string.Empty : $" → {ProgressionPeriods.Label(empty.End, settings.Granularity)}")}")</title>
+                            <title>@T["Progression.NoSessionPeriod", empty.End == empty.Start ? ProgressionPeriods.Label(empty.Start, settings.Granularity) : $"{ProgressionPeriods.Label(empty.Start, settings.Granularity)} → {ProgressionPeriods.Label(empty.End, settings.Granularity)}"]</title>
                         </rect>
                     }
                     @foreach (var tick in layout.XTicks)
@@ -159,7 +159,7 @@ else
                                 var isSelected = IsSelected(series.Series, point.Point);
                                 <circle class="chart-point @(isSelected ? "is-selected" : null)" cx="@Format(point.X)" cy="@Format(point.Y)" r="@(isSelected ? 6 : 4)"
                                         fill="@series.Series.Color" tabindex="0"
-                                        aria-label="@($"{series.Series.Label}, {ProgressionPeriods.Label(point.Point.PeriodStart, settings.Granularity)} : {ProgressionChartLayout.FormatTime(point.Point.Value)}")"
+                                        aria-label="@T["Progression.PointLabel", series.Series.Label, ProgressionPeriods.Label(point.Point.PeriodStart, settings.Granularity), ProgressionChartLayout.FormatTime(point.Point.Value)]"
                                         @onmouseenter="() => SelectPoint(series.Series, point.Point)"
                                         @onfocus="() => SelectPoint(series.Series, point.Point)"
                                         @onclick="() => SelectPoint(series.Series, point.Point)" />

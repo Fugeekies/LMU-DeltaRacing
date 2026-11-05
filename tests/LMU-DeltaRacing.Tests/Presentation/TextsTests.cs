@@ -82,7 +82,8 @@ public sealed partial class TextsTests
     {
         var arguments = Enumerable.Range(0, 10).Select(index => (object)index).ToArray();
         var invalid = new List<string>();
-        foreach (var data in XDocument.Load(ResourcePath()).Root!.Elements("data"))
+        var files = Directory.EnumerateFiles(Path.GetDirectoryName(ResourcePath())!, "Texts*.resx");
+        foreach (var data in files.SelectMany(file => XDocument.Load(file).Root!.Elements("data")))
         {
             try
             {
@@ -96,6 +97,57 @@ public sealed partial class TextsTests
 
         invalid.Should().BeEmpty("a text with a stray brace fails when it is shown");
     }
+
+    [TestMethod]
+    [DataRow("en", "Settings")]
+    [DataRow("de", "Einstellungen")]
+    [DataRow("it", "Impostazioni")]
+    [DataRow("es", "Ajustes")]
+    [DataRow("fr", "Options")]
+    public void Get_reads_the_text_of_the_interface_language(string language, string expected)
+    {
+        var culture = System.Globalization.CultureInfo.CurrentUICulture;
+        try
+        {
+            System.Globalization.CultureInfo.CurrentUICulture = UiLanguage.Culture(language);
+
+            Texts.Get("Nav.Settings").Should().Be(expected);
+        }
+        finally
+        {
+            System.Globalization.CultureInfo.CurrentUICulture = culture;
+        }
+    }
+
+    [TestMethod]
+    public void Every_translation_has_the_keys_and_placeholders_of_the_french_texts()
+    {
+        var french = Values(ResourcePath());
+
+        foreach (var language in UiLanguage.Supported.Where(language => language != UiLanguage.French))
+        {
+            var translation = Values(ResourcePath().Replace("Texts.resx", $"Texts.{language}.resx", StringComparison.Ordinal));
+
+            translation.Keys.Should().BeEquivalentTo(french.Keys, "Texts.{0}.resx translates every text", language);
+            translation
+                .Where(text => !Placeholders(text.Value).SetEquals(Placeholders(french[text.Key])))
+                .Select(text => $"{language}: {text.Key}")
+                .Should().BeEmpty("a translation keeps the values of its French text");
+            translation.Where(text => string.IsNullOrWhiteSpace(text.Value)).Should().BeEmpty();
+        }
+    }
+
+    private static Dictionary<string, string> Values(string path) =>
+        XDocument.Load(path).Root!.Elements("data").ToDictionary(
+            data => (string)data.Attribute("name")!,
+            data => (string?)data.Element("value") ?? string.Empty,
+            StringComparer.Ordinal);
+
+    private static HashSet<string> Placeholders(string text) =>
+        Placeholder().Matches(text).Select(match => match.Value).ToHashSet(StringComparer.Ordinal);
+
+    [GeneratedRegex(@"\{\d+\}")]
+    private static partial Regex Placeholder();
 
     private static HashSet<string> ResourceKeys() =>
         XDocument.Load(ResourcePath()).Root!.Elements("data")

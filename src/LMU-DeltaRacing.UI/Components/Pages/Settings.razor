@@ -515,7 +515,7 @@
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’enregistrer la préférence de démarrage : {exception.Message}";
+            feedbackMessage = T["Settings.StartupSaveFailed", exception.Message];
         }
     }
 }

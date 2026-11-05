@@ -1,0 +1,1615 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Texts shown to the user, in the "it" language. Translation of Texts.resx (French, reference): same keys, same placeholders. -->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+    <data name="Nav.HomeLink" xml:space="preserve">
+    <value>LMU DeltaRacing - home</value>
+  </data>
+  <data name="Nav.Label" xml:space="preserve">
+    <value>Navigazione principale</value>
+  </data>
+  <data name="Nav.Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Nav.MyRaces" xml:space="preserve">
+    <value>Le mie gare</value>
+  </data>
+  <data name="Nav.RaceDetails" xml:space="preserve">
+    <value>Dettaglio gare</value>
+  </data>
+  <data name="Nav.Progression" xml:space="preserve">
+    <value>Progressi</value>
+  </data>
+  <data name="Nav.DrivingProfile" xml:space="preserve">
+    <value>Profilo di guida</value>
+  </data>
+  <data name="Nav.DriverRating" xml:space="preserve">
+    <value>Rating pilota</value>
+  </data>
+  <data name="Nav.DriversRanking" xml:space="preserve">
+    <value>Testa a testa</value>
+  </data>
+  <data name="Nav.Settings" xml:space="preserve">
+    <value>Impostazioni</value>
+  </data>
+  <data name="Layout.NoDriver" xml:space="preserve">
+    <value>Nessun pilota impostato</value>
+  </data>
+  <data name="Layout.FooterGame" xml:space="preserve">
+    <value>LE MANS ULTIMATE</value>
+  </data>
+  <data name="Layout.FooterPrivacy" xml:space="preserve">
+    <value>RISULTATI LOCALI · NESSUN DATO INVIATO</value>
+  </data>
+  <data name="Layout.Error" xml:space="preserve">
+    <value>Si è verificato un errore.</value>
+  </data>
+  <data name="Layout.Reload" xml:space="preserve">
+    <value>Ricarica</value>
+  </data>
+  <data name="Layout.Dismiss" xml:space="preserve">
+    <value>Chiudi</value>
+  </data>
+  <data name="Status.Unavailable" xml:space="preserve">
+    <value>RISULTATI NON DISPONIBILI</value>
+  </data>
+  <data name="Status.InitialImport" xml:space="preserve">
+    <value>IMPORTAZIONE INIZIALE</value>
+  </data>
+  <data name="Status.Watching" xml:space="preserve">
+    <value>MONITORAGGIO ATTIVO</value>
+  </data>
+  <data name="Status.NotWatching" xml:space="preserve">
+    <value>MONITORAGGIO INATTIVO</value>
+  </data>
+  <data name="Startup.LogoAlt" xml:space="preserve">
+    <value>Delta Racing</value>
+  </data>
+  <data name="Startup.Title" xml:space="preserve">
+    <value>Caricamento dei risultati</value>
+  </data>
+  <data name="Startup.ProgressLabel" xml:space="preserve">
+    <value>Avanzamento dell’importazione iniziale</value>
+  </data>
+  <data name="Update.SeeInSettings" xml:space="preserve">
+    <value>Vedi nelle impostazioni</value>
+  </data>
+  <data name="Home.Eyebrow" xml:space="preserve">
+    <value>DASHBOARD</value>
+  </data>
+  <data name="Home.Subtitle" xml:space="preserve">
+    <value>La tua carriera a colpo d’occhio, risultati contati sulla posizione di categoria.</value>
+  </data>
+  <data name="Home.EmptyTitle" xml:space="preserve">
+    <value>Nessuna gara disponibile</value>
+  </data>
+  <data name="Home.EmptyText" xml:space="preserve">
+    <value>Le sessioni di qualifica e di gara del pilota selezionato compariranno qui dopo l’importazione.</value>
+  </data>
+  <data name="Home.Driver" xml:space="preserve">
+    <value>PILOTA</value>
+  </data>
+  <data name="Home.RatingLink" xml:space="preserve">
+    <value>Vedi il tuo rating pilota</value>
+  </data>
+  <data name="Home.RatingProvisional" xml:space="preserve">
+    <value>RATING PILOTA PROVVISORIO</value>
+  </data>
+  <data name="Home.Rating" xml:space="preserve">
+    <value>RATING PILOTA</value>
+  </data>
+  <data name="Home.FavoriteCircuit" xml:space="preserve">
+    <value>CIRCUITO PREFERITO</value>
+  </data>
+  <data name="Home.FavoriteCar" xml:space="preserve">
+    <value>AUTO PREFERITA</value>
+  </data>
+  <data name="Home.RecentForm" xml:space="preserve">
+    <value>FORMA RECENTE</value>
+  </data>
+  <data name="Home.RecentFormLabel" xml:space="preserve">
+    <value>Ultime gare, dalla più recente alla più vecchia</value>
+  </data>
+  <data name="Home.LastRace" xml:space="preserve">
+    <value>ULTIMA GARA</value>
+  </data>
+  <data name="Home.UnknownPosition" xml:space="preserve">
+    <value>Posizione sconosciuta</value>
+  </data>
+  <data name="Home.SeeEvent" xml:space="preserve">
+    <value>Vedi l’evento →</value>
+  </data>
+  <data name="Home.Record" xml:space="preserve">
+    <value>PALMARÈS</value>
+  </data>
+  <data name="Home.Races" xml:space="preserve">
+    <value>GARE</value>
+  </data>
+  <data name="Home.Wins" xml:space="preserve">
+    <value>VITTORIE</value>
+  </data>
+  <data name="Home.Podiums" xml:space="preserve">
+    <value>PODI</value>
+  </data>
+  <data name="Home.Top5" xml:space="preserve">
+    <value>TOP 5</value>
+  </data>
+  <data name="Home.Top10" xml:space="preserve">
+    <value>TOP 10</value>
+  </data>
+  <data name="Home.AveragePosition" xml:space="preserve">
+    <value>POSIZIONE MEDIA</value>
+  </data>
+  <data name="Home.Mileage" xml:space="preserve">
+    <value>CHILOMETRAGGIO</value>
+  </data>
+  <data name="Home.Laps" xml:space="preserve">
+    <value>GIRI COMPLETATI</value>
+  </data>
+  <data name="Home.Distance" xml:space="preserve">
+    <value>DISTANZA</value>
+  </data>
+  <data name="Home.TimeOnTrack" xml:space="preserve">
+    <value>TEMPO IN PISTA</value>
+  </data>
+  <data name="Home.QualifyingStart" xml:space="preserve">
+    <value>QUALIFICA E PARTENZA</value>
+  </data>
+  <data name="Home.Poles" xml:space="preserve">
+    <value>POLE</value>
+  </data>
+  <data name="Home.AverageQualifyingPosition" xml:space="preserve">
+    <value>POSIZIONE MEDIA IN QUALIFICA</value>
+  </data>
+  <data name="Home.PositionsGained" xml:space="preserve">
+    <value>POSIZIONI GUADAGNATE</value>
+  </data>
+  <data name="Home.PerRace" xml:space="preserve">
+    <value>/ gara</value>
+  </data>
+  <data name="Home.Retirements" xml:space="preserve">
+    <value>RITIRI</value>
+  </data>
+  <data name="Home.Disqualifications" xml:space="preserve">
+    <value>SQUALIFICHE</value>
+  </data>
+  <data name="Home.Unclassified" xml:space="preserve">
+    <value>NON CLASSIFICATO</value>
+  </data>
+  <data name="Home.RetirementCauses" xml:space="preserve">
+    <value>CAUSE DI RITIRO</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>{0} | LMU DeltaRacing</value>
+  </data>
+  <data name="Home.OnTrackFromTo" xml:space="preserve">
+    <value>In pista dal {0} al {1}</value>
+  </data>
+  <data name="Home.RatingRank" xml:space="preserve">
+    <value>{0} su {1} piloti in classifica</value>
+  </data>
+  <data name="Home.RatingRecentChange" xml:space="preserve">
+    <value>{0} in {1}</value>
+  </data>
+  <data name="Common.Races.One" xml:space="preserve">
+    <value>{0} gara</value>
+  </data>
+  <data name="Common.Races.Other" xml:space="preserve">
+    <value>{0} gare</value>
+  </data>
+  <data name="Common.Wins.One" xml:space="preserve">
+    <value>{0} vittoria</value>
+  </data>
+  <data name="Common.Wins.Other" xml:space="preserve">
+    <value>{0} vittorie</value>
+  </data>
+  <data name="Common.Podiums.One" xml:space="preserve">
+    <value>{0} podio</value>
+  </data>
+  <data name="Common.Podiums.Other" xml:space="preserve">
+    <value>{0} podi</value>
+  </data>
+  <data name="Home.ClassPosition" xml:space="preserve">
+    <value>P{0} di categoria</value>
+  </data>
+  <data name="Home.InTotal" xml:space="preserve">
+    <value>in totale</value>
+  </data>
+  <data name="MyRaces.Eyebrow" xml:space="preserve">
+    <value>CRONOLOGIA E PROGRESSI</value>
+  </data>
+  <data name="MyRaces.Subtitle" xml:space="preserve">
+    <value>I tuoi tempi migliori, confrontati con la sessione precedente sullo stesso circuito e nella stessa categoria.</value>
+  </data>
+  <data name="MyRaces.PanelEyebrow" xml:space="preserve">
+    <value>PRESTAZIONI REGISTRATE</value>
+  </data>
+  <data name="MyRaces.PanelTitle" xml:space="preserve">
+    <value>Progressi per circuito</value>
+  </data>
+  <data name="MyRaces.FiltersLabel" xml:space="preserve">
+    <value>Filtri delle gare</value>
+  </data>
+  <data name="Common.Circuit" xml:space="preserve">
+    <value>CIRCUITO</value>
+  </data>
+  <data name="MyRaces.FilterTrack" xml:space="preserve">
+    <value>Filtra per circuito</value>
+  </data>
+  <data name="MyRaces.AllTracks" xml:space="preserve">
+    <value>Tutti i circuiti</value>
+  </data>
+  <data name="Common.Category" xml:space="preserve">
+    <value>CATEGORIA</value>
+  </data>
+  <data name="MyRaces.FilterCategory" xml:space="preserve">
+    <value>Filtra per categoria</value>
+  </data>
+  <data name="MyRaces.AllCategories" xml:space="preserve">
+    <value>Tutte le categorie</value>
+  </data>
+  <data name="MyRaces.NoMatch" xml:space="preserve">
+    <value>Nessuna gara corrisponde a questi filtri.</value>
+  </data>
+  <data name="MyRaces.SeeTrackProgression" xml:space="preserve">
+    <value>Vedi i progressi su questo circuito</value>
+  </data>
+  <data name="MyRaces.DateTime" xml:space="preserve">
+    <value>DATA / ORA</value>
+  </data>
+  <data name="MyRaces.Car" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="MyRaces.Result" xml:space="preserve">
+    <value>RISULTATO</value>
+  </data>
+  <data name="MyRaces.Grid" xml:space="preserve">
+    <value>GRIGLIA</value>
+  </data>
+  <data name="MyRaces.RaceBestLap" xml:space="preserve">
+    <value>GIRO MIGLIORE IN GARA</value>
+  </data>
+  <data name="MyRaces.RaceDelta" xml:space="preserve">
+    <value>DELTA GARA (n-1)</value>
+  </data>
+  <data name="MyRaces.Laps" xml:space="preserve">
+    <value>GIRI</value>
+  </data>
+  <data name="MyRaces.RaceTotalTime" xml:space="preserve">
+    <value>TEMPO TOTALE GARA</value>
+  </data>
+  <data name="MyRaces.QualifyingBestLap" xml:space="preserve">
+    <value>GIRO MIGLIORE IN QUALIFICA</value>
+  </data>
+  <data name="MyRaces.QualifyingDelta" xml:space="preserve">
+    <value>DELTA QUALIFICA (n-1)</value>
+  </data>
+  <data name="MyRaces.TrackHistory" xml:space="preserve">
+    <value>Cronologia di {0}</value>
+  </data>
+  <data name="MyRaces.Results.One" xml:space="preserve">
+    <value>{0} risultato</value>
+  </data>
+  <data name="MyRaces.Results.Other" xml:space="preserve">
+    <value>{0} risultati</value>
+  </data>
+  <data name="MyRaces.SeeCategoryProgression" xml:space="preserve">
+    <value>Vedi i progressi in {0} su questo circuito</value>
+  </data>
+  <data name="MyRaces.SeeProgression" xml:space="preserve">
+    <value>Vedi i progressi</value>
+  </data>
+  <data name="RaceDetails.Eyebrow" xml:space="preserve">
+    <value>ANALISI DELLA SESSIONE</value>
+  </data>
+  <data name="RaceDetails.Subtitle" xml:space="preserve">
+    <value>Classifica, settori migliori e distacchi della sessione selezionata, confrontati all’interno di ogni categoria.</value>
+  </data>
+  <data name="RaceDetails.EmptyTitle" xml:space="preserve">
+    <value>Nessuna sessione disponibile</value>
+  </data>
+  <data name="RaceDetails.EmptyText" xml:space="preserve">
+    <value>I risultati dettagliati compariranno qui quando una sessione sarà stata importata.</value>
+  </data>
+  <data name="RaceDetails.SelectRace" xml:space="preserve">
+    <value>SELEZIONA UNA GARA</value>
+  </data>
+  <data name="RaceDetails.SelectEvent" xml:space="preserve">
+    <value>Seleziona un evento</value>
+  </data>
+  <data name="RaceDetails.SessionTabs" xml:space="preserve">
+    <value>Sessioni dell’evento</value>
+  </data>
+  <data name="RaceDetails.RatingStrip" xml:space="preserve">
+    <value>Rating pilota della gara</value>
+  </data>
+  <data name="RaceDetails.FieldStrength" xml:space="preserve">
+    <value>FORZA DELLO SCHIERAMENTO</value>
+  </data>
+  <data name="RaceDetails.RatingLink" xml:space="preserve">
+    <value>Rating pilota →</value>
+  </data>
+  <data name="RaceDetails.NotRated" xml:space="preserve">
+    <value>Gara non valutata dal rating pilota: nessuna categoria ha un pilota arrivato alla bandiera a scacchi.</value>
+  </data>
+  <data name="RaceDetails.NoResult" xml:space="preserve">
+    <value>Questa sessione non contiene risultati dei piloti.</value>
+  </data>
+  <data name="RaceDetails.Pos" xml:space="preserve">
+    <value>POS</value>
+  </data>
+  <data name="RaceDetails.Class" xml:space="preserve">
+    <value>CATEGORIA</value>
+  </data>
+  <data name="RaceDetails.Driver" xml:space="preserve">
+    <value>PILOTA</value>
+  </data>
+  <data name="RaceDetails.Car" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="RaceDetails.Sector1" xml:space="preserve">
+    <value>SETTORE 1</value>
+  </data>
+  <data name="RaceDetails.Sector2" xml:space="preserve">
+    <value>SETTORE 2</value>
+  </data>
+  <data name="RaceDetails.Sector3" xml:space="preserve">
+    <value>SETTORE 3</value>
+  </data>
+  <data name="RaceDetails.Gap" xml:space="preserve">
+    <value>DISTACCO</value>
+  </data>
+  <data name="RaceDetails.IdealLap" xml:space="preserve">
+    <value>GIRO IDEALE</value>
+  </data>
+  <data name="RaceDetails.BestLap" xml:space="preserve">
+    <value>GIRO MIGLIORE</value>
+  </data>
+  <data name="RaceDetails.TotalTime" xml:space="preserve">
+    <value>TEMPO TOTALE</value>
+  </data>
+  <data name="RaceDetails.Contacts" xml:space="preserve">
+    <value>CONTATTI</value>
+  </data>
+  <data name="RaceDetails.Obstacles" xml:space="preserve">
+    <value>OSTACOLI</value>
+  </data>
+  <data name="RaceDetails.Limits" xml:space="preserve">
+    <value>LIMITI</value>
+  </data>
+  <data name="RaceDetails.InvalidLaps" xml:space="preserve">
+    <value>GIRI INVALIDATI</value>
+  </data>
+  <data name="RaceDetails.StoryLabel" xml:space="preserve">
+    <value>Racconto della sessione del pilota</value>
+  </data>
+  <data name="RaceDetails.NoIncident" xml:space="preserve">
+    <value>Nessun incidente in questa sessione.</value>
+  </data>
+  <data name="RaceDetails.SectorLegend" xml:space="preserve">
+    <value>Legenda dei settori</value>
+  </data>
+  <data name="RaceDetails.ClassBestSector" xml:space="preserve">
+    <value>Settore migliore della categoria</value>
+  </data>
+  <data name="RaceDetails.StandardTime" xml:space="preserve">
+    <value>Tempo normale</value>
+  </data>
+  <data name="RaceDetails.SectorNote" xml:space="preserve">
+    <value>Settori: miglior tempo personale sui giri cronometrati · Distacchi calcolati per categoria</value>
+  </data>
+  <data name="RaceDetails.TabRace" xml:space="preserve">
+    <value>GARA</value>
+  </data>
+  <data name="RaceDetails.TabQualifying" xml:space="preserve">
+    <value>QUALIFICA</value>
+  </data>
+  <data name="RaceDetails.TabPractice" xml:space="preserve">
+    <value>PROVE LIBERE</value>
+  </data>
+  <data name="RaceDetails.EventPractice" xml:space="preserve">
+    <value>Prove</value>
+  </data>
+  <data name="RaceDetails.EventQualifying" xml:space="preserve">
+    <value>Qualifica</value>
+  </data>
+  <data name="RaceDetails.EventRace" xml:space="preserve">
+    <value>Gara</value>
+  </data>
+  <data name="RaceDetails.You" xml:space="preserve">
+    <value>TU</value>
+  </data>
+  <data name="RaceDetails.Leader" xml:space="preserve">
+    <value>LEADER</value>
+  </data>
+  <data name="Common.Drivers.One" xml:space="preserve">
+    <value>{0} pilota</value>
+  </data>
+  <data name="Common.Drivers.Other" xml:space="preserve">
+    <value>{0} piloti</value>
+  </data>
+  <data name="RaceDetails.YourRating" xml:space="preserve">
+    <value>Il tuo rating:</value>
+  </data>
+  <data name="RaceDetails.ExpectedPlace" xml:space="preserve">
+    <value>posizione attesa {0}</value>
+  </data>
+  <data name="RaceDetails.IncidentsOf" xml:space="preserve">
+    <value>Incidenti di {0}</value>
+  </data>
+  <data name="RaceDetails.StoryOf" xml:space="preserve">
+    <value>Andamento della gara di {0}</value>
+  </data>
+  <data name="RaceDetails.LapNumber" xml:space="preserve">
+    <value>Giro {0}</value>
+  </data>
+  <data name="RaceDetails.TabPracticeSessions" xml:space="preserve">
+    <value>PROVE LIBERE ({0} sessioni)</value>
+  </data>
+  <data name="RaceDetails.RatingBefore" xml:space="preserve">
+    <value>Rating prima della gara: {0} → {1} ({2})</value>
+  </data>
+  <data name="RaceDetails.SeeIncidents" xml:space="preserve">
+    <value>Vedi gli incidenti di {0}</value>
+  </data>
+  <data name="RaceDetails.LapsBehind.One" xml:space="preserve">
+    <value>+{0} giro</value>
+  </data>
+  <data name="RaceDetails.LapsBehind.Other" xml:space="preserve">
+    <value>+{0} giri</value>
+  </data>
+  <data name="Progression.FiltersLabel" xml:space="preserve">
+    <value>Circuito e categoria</value>
+  </data>
+  <data name="Progression.ChooseTrack" xml:space="preserve">
+    <value>Scegli un circuito</value>
+  </data>
+  <data name="Progression.ChooseCategory" xml:space="preserve">
+    <value>Scegli una categoria</value>
+  </data>
+  <data name="Progression.SettingsLabel" xml:space="preserve">
+    <value>Impostazioni del grafico</value>
+  </data>
+  <data name="Progression.Period" xml:space="preserve">
+    <value>PERIODO</value>
+  </data>
+  <data name="Progression.PeriodLabel" xml:space="preserve">
+    <value>Periodo</value>
+  </data>
+  <data name="Progression.PlottedValue" xml:space="preserve">
+    <value>VALORE TRACCIATO</value>
+  </data>
+  <data name="Progression.PlottedValueLabel" xml:space="preserve">
+    <value>Valore tracciato</value>
+  </data>
+  <data name="Progression.Display" xml:space="preserve">
+    <value>VISUALIZZAZIONE</value>
+  </data>
+  <data name="Progression.DisplayLabel" xml:space="preserve">
+    <value>Visualizzazione</value>
+  </data>
+  <data name="Progression.Session" xml:space="preserve">
+    <value>SESSIONE</value>
+  </data>
+  <data name="Progression.SessionLabel" xml:space="preserve">
+    <value>Sessione</value>
+  </data>
+  <data name="Progression.NoLap" xml:space="preserve">
+    <value>Nessun giro cronometrato per questo circuito e questa categoria.</value>
+  </data>
+  <data name="Progression.Record" xml:space="preserve">
+    <value>RECORD</value>
+  </data>
+  <data name="Progression.Start" xml:space="preserve">
+    <value>INIZIO</value>
+  </data>
+  <data name="Progression.Today" xml:space="preserve">
+    <value>OGGI</value>
+  </data>
+  <data name="Progression.HideDetails" xml:space="preserve">
+    <value>Nascondi il dettaglio dei periodi</value>
+  </data>
+  <data name="Progression.ShowDetails" xml:space="preserve">
+    <value>Mostra il dettaglio dei periodi</value>
+  </data>
+  <data name="Progression.Min" xml:space="preserve">
+    <value>Min</value>
+  </data>
+  <data name="Progression.Average" xml:space="preserve">
+    <value>Media</value>
+  </data>
+  <data name="Progression.Max" xml:space="preserve">
+    <value>Max</value>
+  </data>
+  <data name="Progression.Sessions" xml:space="preserve">
+    <value>Sessioni</value>
+  </data>
+  <data name="Progression.SinglePeriod" xml:space="preserve">
+    <value>un solo periodo</value>
+  </data>
+  <data name="Progression.RecordOf" xml:space="preserve">
+    <value>Record {0}: {1}</value>
+  </data>
+  <data name="Common.Sessions.One" xml:space="preserve">
+    <value>{0} sessione</value>
+  </data>
+  <data name="Common.Sessions.Other" xml:space="preserve">
+    <value>{0} sessioni</value>
+  </data>
+  <data name="Progression.Day" xml:space="preserve">
+    <value>Giorno</value>
+  </data>
+  <data name="Progression.Week" xml:space="preserve">
+    <value>Settimana</value>
+  </data>
+  <data name="Progression.Month" xml:space="preserve">
+    <value>Mese</value>
+  </data>
+  <data name="Progression.Year" xml:space="preserve">
+    <value>Anno</value>
+  </data>
+  <data name="Progression.MixedCars" xml:space="preserve">
+    <value>Auto insieme</value>
+  </data>
+  <data name="Progression.PerCar" xml:space="preserve">
+    <value>Una curva per auto</value>
+  </data>
+  <data name="Progression.Race" xml:space="preserve">
+    <value>Gara</value>
+  </data>
+  <data name="Progression.Qualifying" xml:space="preserve">
+    <value>Qualifica</value>
+  </data>
+  <data name="Progression.DayLower" xml:space="preserve">
+    <value>giorno</value>
+  </data>
+  <data name="Progression.WeekLower" xml:space="preserve">
+    <value>settimana</value>
+  </data>
+  <data name="Progression.YearLower" xml:space="preserve">
+    <value>anno</value>
+  </data>
+  <data name="Progression.MonthLower" xml:space="preserve">
+    <value>mese</value>
+  </data>
+  <data name="Progression.ChartLabel" xml:space="preserve">
+    <value>Andamento dei giri migliori per {0}</value>
+  </data>
+  <data name="DrivingProfile.Eyebrow" xml:space="preserve">
+    <value>PULIZIA E DISCIPLINA IN PISTA</value>
+  </data>
+  <data name="DrivingProfile.Subtitle" xml:space="preserve">
+    <value>I tuoi contatti, limiti della pista e penalità, su qualifiche e gare.</value>
+  </data>
+  <data name="DrivingProfile.EmptyTitle" xml:space="preserve">
+    <value>Nessun profilo disponibile</value>
+  </data>
+  <data name="DrivingProfile.EmptyText" xml:space="preserve">
+    <value>Il tuo profilo comparirà quando sarà stata importata una qualifica o una gara con il pilota selezionato.</value>
+  </data>
+  <data name="DrivingProfile.CostLabel" xml:space="preserve">
+    <value>Quanto ti costano gli incidenti</value>
+  </data>
+  <data name="DrivingProfile.CostEyebrow" xml:space="preserve">
+    <value>QUANTO TI COSTANO GLI INCIDENTI</value>
+  </data>
+  <data name="DrivingProfile.CostNote" xml:space="preserve">
+    <value>Confrontato con il tuo giro mediano di ogni gara, escluso il primo giro e le soste: è un minimo.</value>
+  </data>
+  <data name="DrivingProfile.RaceContacts" xml:space="preserve">
+    <value>contatti in gara</value>
+  </data>
+  <data name="DrivingProfile.FirstLapContacts" xml:space="preserve">
+    <value>alla partenza o al 1° giro</value>
+  </data>
+  <data name="DrivingProfile.PositionsLost" xml:space="preserve">
+    <value>posizioni perse in questi giri</value>
+  </data>
+  <data name="DrivingProfile.WithDamage" xml:space="preserve">
+    <value>con danni</value>
+  </data>
+  <data name="DrivingProfile.CostliestRace" xml:space="preserve">
+    <value>Gara più costosa:</value>
+  </data>
+  <data name="DrivingProfile.TilesLabel" xml:space="preserve">
+    <value>Il tuo bilancio ogni 100 giri</value>
+  </data>
+  <data name="DrivingProfile.Warnings" xml:space="preserve">
+    <value>AVVISI</value>
+  </data>
+  <data name="DrivingProfile.Penalties" xml:space="preserve">
+    <value>PENALITÀ</value>
+  </data>
+  <data name="DrivingProfile.TilesNote" xml:space="preserve">
+    <value>Valori ogni 100 giri, in verde se più bassi degli altri. I giri invalidati sono rapportati ai giri di qualifica: LMU non ne segnala in gara.</value>
+  </data>
+  <data name="DrivingProfile.WhereEyebrow" xml:space="preserve">
+    <value>DOVE MIGLIORARE</value>
+  </data>
+  <data name="DrivingProfile.WhereTitle" xml:space="preserve">
+    <value>Per tipo di sessione, categoria e circuito</value>
+  </data>
+  <data name="DrivingProfile.Sessions" xml:space="preserve">
+    <value>SESSIONI</value>
+  </data>
+  <data name="DrivingProfile.ContactsPer100" xml:space="preserve">
+    <value>CONTATTI / 100 G.</value>
+  </data>
+  <data name="DrivingProfile.ObstaclesPer100" xml:space="preserve">
+    <value>OSTACOLI / 100 G.</value>
+  </data>
+  <data name="DrivingProfile.WarningsPer100" xml:space="preserve">
+    <value>AVVISI / 100 G.</value>
+  </data>
+  <data name="DrivingProfile.TimeLost" xml:space="preserve">
+    <value>TEMPO PERSO</value>
+  </data>
+  <data name="DrivingProfile.RiskZone" xml:space="preserve">
+    <value>ZONA A RISCHIO</value>
+  </data>
+  <data name="DrivingProfile.GroupSession" xml:space="preserve">
+    <value>Sessione</value>
+  </data>
+  <data name="DrivingProfile.GroupCategory" xml:space="preserve">
+    <value>Categoria</value>
+  </data>
+  <data name="DrivingProfile.GroupCircuit" xml:space="preserve">
+    <value>Circuito</value>
+  </data>
+  <data name="DrivingProfile.SmallSampleNote" xml:space="preserve">
+    <value>Sotto i 20 giri, una riga non mostra valori ogni 100 giri: il campione è troppo piccolo.</value>
+  </data>
+  <data name="DrivingProfile.RiskZoneNote" xml:space="preserve">
+    <value>Zona a rischio: il settore che concentra almeno la metà dei contatti fuori dal primo giro, da 3 contatti.</value>
+  </data>
+  <data name="DrivingProfile.NoRace" xml:space="preserve">
+    <value>Nessuna gara importata per ora.</value>
+  </data>
+  <data name="DrivingProfile.Date" xml:space="preserve">
+    <value>DATA</value>
+  </data>
+  <data name="DrivingProfile.MostHitDrivers" xml:space="preserve">
+    <value>Piloti che tocchi di più</value>
+  </data>
+  <data name="DrivingProfile.NoVehicleContact" xml:space="preserve">
+    <value>Nessun contatto con un’auto.</value>
+  </data>
+  <data name="DrivingProfile.ObstaclesTitle" xml:space="preserve">
+    <value>Ostacoli</value>
+  </data>
+  <data name="DrivingProfile.NoObstacleContact" xml:space="preserve">
+    <value>Nessun contatto con un ostacolo.</value>
+  </data>
+  <data name="DrivingProfile.PenaltyReasons" xml:space="preserve">
+    <value>Motivi delle penalità</value>
+  </data>
+  <data name="DrivingProfile.NoPenalty" xml:space="preserve">
+    <value>Nessuna penalità.</value>
+  </data>
+  <data name="DrivingProfile.SubtitleOf" xml:space="preserve">
+    <value>{0} · {1} · {2}, confrontati con gli altri piloti delle stesse sessioni.</value>
+  </data>
+  <data name="Common.Laps.One" xml:space="preserve">
+    <value>{0} giro</value>
+  </data>
+  <data name="Common.Laps.Other" xml:space="preserve">
+    <value>{0} giri</value>
+  </data>
+  <data name="DrivingProfile.LostOnContactLaps" xml:space="preserve">
+    <value>persi nei giri con contatto</value>
+  </data>
+  <data name="DrivingProfile.PerRace" xml:space="preserve">
+    <value>, cioè {0} per gara</value>
+  </data>
+  <data name="DrivingProfile.Lost" xml:space="preserve">
+    <value>{0} persi</value>
+  </data>
+  <data name="DrivingProfile.LastRaces" xml:space="preserve">
+    <value>Le tue ultime {0} gare</value>
+  </data>
+  <data name="DrivingProfile.Others" xml:space="preserve">
+    <value>Altri piloti: {0} · {1} in totale</value>
+  </data>
+  <data name="DrivingProfile.Sector" xml:space="preserve">
+    <value>Settore {0}</value>
+  </data>
+  <data name="Progression.Subtitle" xml:space="preserve">
+    <value>L’andamento dei tuoi giri migliori su un circuito e in una categoria.</value>
+  </data>
+  <data name="Progression.LastPeriod" xml:space="preserve">
+    <value>ULTIMO PERIODO</value>
+  </data>
+  <data name="Progression.LegendLabel" xml:space="preserve">
+    <value>Legenda del grafico</value>
+  </data>
+  <data name="Progression.Curve" xml:space="preserve">
+    <value>CURVA</value>
+  </data>
+  <data name="Progression.MinUpper" xml:space="preserve">
+    <value>MIN</value>
+  </data>
+  <data name="Progression.AverageUpper" xml:space="preserve">
+    <value>MEDIA</value>
+  </data>
+  <data name="Progression.MaxUpper" xml:space="preserve">
+    <value>MAX</value>
+  </data>
+  <data name="Progression.LegendLines" xml:space="preserve">
+    <value>━ misura · ╌ record · ▒ min-max ·</value>
+  </data>
+  <data name="Progression.LegendEmpty" xml:space="preserve">
+    <value>periodo senza sessioni</value>
+  </data>
+  <data name="DriverRating.Eyebrow" xml:space="preserve">
+    <value>IL TUO LIVELLO CONTRO GLI SCHIERAMENTI AFFRONTATI</value>
+  </data>
+  <data name="DriverRating.Subtitle" xml:space="preserve">
+    <value>Un rating Elo calcolato per ogni pilota dei tuoi file dei risultati, gara dopo gara.</value>
+  </data>
+  <data name="DriverRating.EmptyTitle" xml:space="preserve">
+    <value>Nessun rating disponibile</value>
+  </data>
+  <data name="DriverRating.EmptyText" xml:space="preserve">
+    <value>Il tuo rating comparirà dopo una gara del pilota selezionato arrivata alla bandiera a scacchi, contro almeno un pilota della sua categoria.</value>
+  </data>
+  <data name="DriverRating.YourRatingLabel" xml:space="preserve">
+    <value>Il tuo rating</value>
+  </data>
+  <data name="DriverRating.Provisional" xml:space="preserve">
+    <value>RATING PROVVISORIO</value>
+  </data>
+  <data name="DriverRating.YourRating" xml:space="preserve">
+    <value>IL TUO RATING</value>
+  </data>
+  <data name="DriverRating.NextGoals" xml:space="preserve">
+    <value>PROSSIMI OBIETTIVI</value>
+  </data>
+  <data name="DriverRating.Leading" xml:space="preserve">
+    <value>Sei in testa alla classifica: tocca a te mantenere il posto.</value>
+  </data>
+  <data name="DriverRating.Platinum" xml:space="preserve">
+    <value>Fascia Platino: sei nel top 10 % dei piloti in classifica.</value>
+  </data>
+  <data name="DriverRating.AverageFieldStrength" xml:space="preserve">
+    <value>forza media dei tuoi schieramenti</value>
+  </data>
+  <data name="DriverRating.AboveExpectation" xml:space="preserve">
+    <value>gare concluse davanti alla posizione attesa</value>
+  </data>
+  <data name="DriverRating.RatedRaces" xml:space="preserve">
+    <value>gare valutate</value>
+  </data>
+  <data name="DriverRating.Evolution" xml:space="preserve">
+    <value>ANDAMENTO</value>
+  </data>
+  <data name="DriverRating.EvolutionTitle" xml:space="preserve">
+    <value>Il tuo rating gara dopo gara</value>
+  </data>
+  <data name="DriverRating.Exploits" xml:space="preserve">
+    <value>LE TUE IMPRESE</value>
+  </data>
+  <data name="DriverRating.ExploitsSubtitle" xml:space="preserve">
+    <value>Le gare che ti hanno fatto guadagnare più punti.</value>
+  </data>
+  <data name="DriverRating.NoExploit" xml:space="preserve">
+    <value>Nessuna gara ti ha ancora fatto guadagnare punti.</value>
+  </data>
+  <data name="DriverRating.Setbacks" xml:space="preserve">
+    <value>LE TUE BATTUTE D’ARRESTO</value>
+  </data>
+  <data name="DriverRating.SetbacksSubtitle" xml:space="preserve">
+    <value>Le gare che ti sono costate più punti.</value>
+  </data>
+  <data name="DriverRating.NoSetback" xml:space="preserve">
+    <value>Nessuna gara ti è ancora costata punti.</value>
+  </data>
+  <data name="DriverRating.History" xml:space="preserve">
+    <value>CRONOLOGIA</value>
+  </data>
+  <data name="DriverRating.HistoryTitle" xml:space="preserve">
+    <value>Le tue gare valutate, dalla più recente alla più vecchia</value>
+  </data>
+  <data name="DriverRating.Result" xml:space="preserve">
+    <value>RISULTATO</value>
+  </data>
+  <data name="DriverRating.Expected" xml:space="preserve">
+    <value>ATTESA</value>
+  </data>
+  <data name="DriverRating.Drivers" xml:space="preserve">
+    <value>PILOTI</value>
+  </data>
+  <data name="DriverRating.Change" xml:space="preserve">
+    <value>VARIAZIONE</value>
+  </data>
+  <data name="DriverRating.Rating" xml:space="preserve">
+    <value>RATING</value>
+  </data>
+  <data name="DriverRating.ExpectedNote" xml:space="preserve">
+    <value>Attesa: la posizione prevista dai rating prima della gara, in verde quando sei arrivato davanti.</value>
+  </data>
+  <data name="DriverRating.FieldStrengthNote" xml:space="preserve">
+    <value>Forza dello schieramento: il rating medio della tua categoria prima della gara.</value>
+  </data>
+  <data name="DriverRating.Ranking" xml:space="preserve">
+    <value>CLASSIFICA</value>
+  </data>
+  <data name="DriverRating.RankingTitle" xml:space="preserve">
+    <value>I piloti incontrati in gara, per rating</value>
+  </data>
+  <data name="DriverRating.ShowTop10" xml:space="preserve">
+    <value>Mostra la top 10 e i tuoi vicini</value>
+  </data>
+  <data name="DriverRating.Rank" xml:space="preserve">
+    <value>POS.</value>
+  </data>
+  <data name="DriverRating.Tier" xml:space="preserve">
+    <value>FASCIA</value>
+  </data>
+  <data name="DriverRating.TiersNote" xml:space="preserve">
+    <value>Fasce: Platino per il top 10 % dei piloti in classifica, Oro fino al 30 %, Argento fino al 60 %, Bronzo oltre.</value>
+  </data>
+  <data name="DriverRating.HowTitle" xml:space="preserve">
+    <value>Come viene calcolato il rating?</value>
+  </data>
+  <data name="DriverRating.HowDuels" xml:space="preserve">
+    <value>Ogni gara è una serie di duelli con i piloti della tua categoria: arrivare davanti a un pilota è una vittoria contro di lui. Battere un pilota con un rating più alto rende di più, perdere contro uno con un rating più basso costa di più.</value>
+  </data>
+  <data name="DriverRating.HowFormula" xml:space="preserve">
+    <value>Prima della gara, i rating prevedono una posizione per ciascuno («attesa»): 1, più la probabilità di ogni avversario di arrivare davanti a te. Dopo la gara: variazione = K × (posizione attesa − posizione ottenuta) ÷ numero di avversari, con K = 32 (64 in calibrazione). Esempio: 4º su 20 per una posizione attesa di 8,8 dà 32 × 4,8 ÷ 19 = +8.</value>
+  </data>
+  <data name="DriverRating.HowBounds" xml:space="preserve">
+    <value>Una gara fa quindi variare il rating di meno di 32 punti (64 in calibrazione), qualunque sia la dimensione della griglia. Il vincitore guadagna sempre punti, l’ultimo ne perde sempre.</value>
+  </data>
+  <data name="DriverRating.HowRacesOnly" xml:space="preserve">
+    <value>Contano solo le gare, categoria per categoria, sulla posizione ufficiale di categoria: ritiri, squalifiche e auto ancora in pista al salvataggio del file compresi. Una categoria senza alcun pilota arrivato non viene valutata: quando lasci una gara, LMU registra gli altri piloti ancora in pista, senza risultato.</value>
+  </data>
+  <data name="DriverRating.HowMerges" xml:space="preserve">
+    <value>Le unioni di piloti delle impostazioni sono prese in considerazione. Il rating misura solo le griglie dei tuoi file dei risultati: non è la classifica ufficiale di LMU.</value>
+  </data>
+  <data name="DriverRating.SubtitleOf" xml:space="preserve">
+    <value>{0} · {1} · un rating Elo calcolato per ogni pilota dei tuoi file dei risultati.</value>
+  </data>
+  <data name="DriverRating.RatedRacesCount.One" xml:space="preserve">
+    <value>{0} gara valutata</value>
+  </data>
+  <data name="DriverRating.RatedRacesCount.Other" xml:space="preserve">
+    <value>{0} gare valutate</value>
+  </data>
+  <data name="DriverRating.RankOf" xml:space="preserve">
+    <value>{0} su {1} piloti in classifica · top {2} %</value>
+  </data>
+  <data name="DriverRating.RacesToCalibrate.One" xml:space="preserve">
+    <value>Ancora {0} gara di calibrazione prima di entrare in classifica.</value>
+  </data>
+  <data name="DriverRating.RacesToCalibrate.Other" xml:space="preserve">
+    <value>Ancora {0} gare di calibrazione prima di entrare in classifica.</value>
+  </data>
+  <data name="DriverRating.Peak" xml:space="preserve">
+    <value>Record: {0}, il {1}</value>
+  </data>
+  <data name="DriverRating.ToPass" xml:space="preserve">
+    <value>per superare {0}, {1}</value>
+  </data>
+  <data name="DriverRating.ToEnter" xml:space="preserve">
+    <value>per entrare in {0}</value>
+  </data>
+  <data name="DriverRating.OverLastRaces.One" xml:space="preserve">
+    <value>nell’ultima gara</value>
+  </data>
+  <data name="DriverRating.OverLastRaces.Other" xml:space="preserve">
+    <value>nelle ultime {0} gare</value>
+  </data>
+  <data name="DriverRating.ShowLast" xml:space="preserve">
+    <value>Mostra le ultime {0}</value>
+  </data>
+  <data name="DriverRating.ShowAllRaces" xml:space="preserve">
+    <value>Mostra le {0} gare</value>
+  </data>
+  <data name="DriverRating.ShowAllDrivers" xml:space="preserve">
+    <value>Mostra i {0} piloti</value>
+  </data>
+  <data name="DriverRating.NoRankedDriver" xml:space="preserve">
+    <value>Nessun pilota ha ancora concluso le sue {0} gare di calibrazione.</value>
+  </data>
+  <data name="DriverRating.RankedAfter" xml:space="preserve">
+    <value>Un pilota entra in classifica dopo {0} gare valutate.</value>
+  </data>
+  <data name="DriverRating.HowStart" xml:space="preserve">
+    <value>Tutti i piloti partono da {0}. Nelle prime {1} gare valutate il rating si muove due volte più in fretta per trovare il loro livello, e non sono ancora in classifica.</value>
+  </data>
+  <data name="DriverRating.HighlightDetail" xml:space="preserve">
+    <value>{0} su {1}, attesa {2} · schieramento a {3}</value>
+  </data>
+  <data name="DriversRanking.Eyebrow" xml:space="preserve">
+    <value>RIVALITÀ E CRONOLOGIA DEGLI AVVERSARI</value>
+  </data>
+  <data name="DriversRanking.Subtitle" xml:space="preserve">
+    <value>I tuoi risultati contro i piloti incontrati nelle sessioni importate.</value>
+  </data>
+  <data name="DriversRanking.EmptyTitle" xml:space="preserve">
+    <value>Nessun testa a testa disponibile</value>
+  </data>
+  <data name="DriversRanking.EmptyText" xml:space="preserve">
+    <value>I testa a testa compariranno quando le sessioni importate conterranno un risultato classificato per te e i tuoi avversari.</value>
+  </data>
+  <data name="DriversRanking.PanelEyebrow" xml:space="preserve">
+    <value>CRONOLOGIA TESTA A TESTA</value>
+  </data>
+  <data name="DriversRanking.PanelTitle" xml:space="preserve">
+    <value>Avversari incontrati</value>
+  </data>
+  <data name="DriversRanking.Search" xml:space="preserve">
+    <value>CERCA UN PILOTA</value>
+  </data>
+  <data name="DriversRanking.SearchPlaceholder" xml:space="preserve">
+    <value>Nome del pilota…</value>
+  </data>
+  <data name="DriversRanking.SearchLabel" xml:space="preserve">
+    <value>Cerca un pilota per nome</value>
+  </data>
+  <data name="DriversRanking.SortBy" xml:space="preserve">
+    <value>ORDINA PER</value>
+  </data>
+  <data name="DriversRanking.SortLabel" xml:space="preserve">
+    <value>Ordina la classifica</value>
+  </data>
+  <data name="DriversRanking.SortSessions" xml:space="preserve">
+    <value>Gare affrontate (decrescente)</value>
+  </data>
+  <data name="DriversRanking.SortWins" xml:space="preserve">
+    <value>Vittorie (decrescente)</value>
+  </data>
+  <data name="DriversRanking.SortPercentage" xml:space="preserve">
+    <value>Percentuale di vittorie (decrescente)</value>
+  </data>
+  <data name="DriversRanking.SortName" xml:space="preserve">
+    <value>Nome (dalla A alla Z)</value>
+  </data>
+  <data name="DriversRanking.NoMatch" xml:space="preserve">
+    <value>Nessun pilota corrisponde a questa ricerca.</value>
+  </data>
+  <data name="DriversRanking.DriverName" xml:space="preserve">
+    <value>NOME DEL PILOTA</value>
+  </data>
+  <data name="DriversRanking.Faced" xml:space="preserve">
+    <value>GARE AFFRONTATE</value>
+  </data>
+  <data name="DriversRanking.Losses" xml:space="preserve">
+    <value>SCONFITTE</value>
+  </data>
+  <data name="DriversRanking.WinRate" xml:space="preserve">
+    <value>% DI VITTORIE</value>
+  </data>
+  <data name="DriversRanking.AverageGapHint" xml:space="preserve">
+    <value>Posizioni medie di vantaggio in categoria: positivo quando arrivi davanti</value>
+  </data>
+  <data name="DriversRanking.AverageGap" xml:space="preserve">
+    <value>DISTACCO MEDIO</value>
+  </data>
+  <data name="DriversRanking.ContactsHint" xml:space="preserve">
+    <value>Contatti tra le vostre due auto</value>
+  </data>
+  <data name="Settings.Eyebrow" xml:space="preserve">
+    <value>CONFIGURAZIONE E IMPOSTAZIONI</value>
+  </data>
+  <data name="Settings.Subtitle" xml:space="preserve">
+    <value>Configura la fonte dei risultati e il monitoraggio dei file LMU.</value>
+  </data>
+  <data name="Settings.FilesEyebrow" xml:space="preserve">
+    <value>POSIZIONE DEI FILE DEL GIOCO</value>
+  </data>
+  <data name="Settings.ResultsFolder" xml:space="preserve">
+    <value>Cartella dei risultati XML</value>
+  </data>
+  <data name="Settings.Browse" xml:space="preserve">
+    <value>Sfoglia…</value>
+  </data>
+  <data name="Settings.InvalidFolder" xml:space="preserve">
+    <value>Cartella non trovata o illeggibile</value>
+  </data>
+  <data name="Settings.CheckFolder" xml:space="preserve">
+    <value>Controlla o scegli una cartella dei risultati.</value>
+  </data>
+  <data name="Settings.Loading" xml:space="preserve">
+    <value>Caricamento…</value>
+  </data>
+  <data name="Settings.Apply" xml:space="preserve">
+    <value>Applica</value>
+  </data>
+  <data name="Settings.ApplyHelp" xml:space="preserve">
+    <value>Salva la cartella, poi ricarica i risultati e il monitoraggio.</value>
+  </data>
+  <data name="Settings.PickerWindowsOnly" xml:space="preserve">
+    <value>Il selettore di cartelle nativo è disponibile su Windows.</value>
+  </data>
+  <data name="Settings.DriverEyebrow" xml:space="preserve">
+    <value>PROFILO PILOTA</value>
+  </data>
+  <data name="Settings.MainDriver" xml:space="preserve">
+    <value>Pilota principale</value>
+  </data>
+  <data name="Settings.MainDriverLabel" xml:space="preserve">
+    <value>Pilota usato nelle viste dei risultati</value>
+  </data>
+  <data name="Settings.DetectionPending" xml:space="preserve">
+    <value>Rilevamento dopo il caricamento…</value>
+  </data>
+  <data name="Settings.MainDriverHelp" xml:space="preserve">
+    <value>I piloti sono ordinati per percentuale di file importati in cui compaiono. La scelta viene salvata automaticamente.</value>
+  </data>
+  <data name="Settings.MergeEyebrow" xml:space="preserve">
+    <value>CAMBIO DI NOME</value>
+  </data>
+  <data name="Settings.Merge" xml:space="preserve">
+    <value>Unione di piloti</value>
+  </data>
+  <data name="Settings.MergeHelp" xml:space="preserve">
+    <value>Dichiara che due nomi indicano lo stesso pilota, per esempio dopo un cambio di nickname. Le due cronologie vengono raggruppate sotto il nome tenuto; i file dei risultati non vengono modificati e un’unione si può annullare.</value>
+  </data>
+  <data name="Settings.MergeFrom" xml:space="preserve">
+    <value>Vecchio nome</value>
+  </data>
+  <data name="Settings.ChooseDriver" xml:space="preserve">
+    <value>Scegli un pilota…</value>
+  </data>
+  <data name="Settings.MergeTo" xml:space="preserve">
+    <value>Nome tenuto</value>
+  </data>
+  <data name="Settings.MergeButton" xml:space="preserve">
+    <value>Unisci</value>
+  </data>
+  <data name="Settings.MergesLabel" xml:space="preserve">
+    <value>Unioni salvate</value>
+  </data>
+  <data name="Settings.SharedSessionsHint" xml:space="preserve">
+    <value>I due nomi compaiono nelle stesse sessioni</value>
+  </data>
+  <data name="Settings.CancelMerge" xml:space="preserve">
+    <value>Annulla</value>
+  </data>
+  <data name="Settings.WatcherEyebrow" xml:space="preserve">
+    <value>MONITORAGGIO E AVVIO</value>
+  </data>
+  <data name="Settings.AutoStart" xml:space="preserve">
+    <value>Avvio automatico</value>
+  </data>
+  <data name="Settings.AutoStartLabel" xml:space="preserve">
+    <value>Avvia automaticamente il monitoraggio dei file XML all’avvio dell’applicazione</value>
+  </data>
+  <data name="Settings.AutoStartHelp" xml:space="preserve">
+    <value>La scelta viene salvata subito e si applica al prossimo avvio. Il pulsante «Applica» attiva subito il monitoraggio.</value>
+  </data>
+  <data name="Settings.DataEyebrow" xml:space="preserve">
+    <value>DATI CARICATI</value>
+  </data>
+  <data name="Settings.Practice" xml:space="preserve">
+    <value>Sessioni di prova</value>
+  </data>
+  <data name="Settings.PracticeLabel" xml:space="preserve">
+    <value>Carica le sessioni di prova (scheda Prove del dettaglio gare)</value>
+  </data>
+  <data name="Settings.PracticeHelp" xml:space="preserve">
+    <value>Le prove sono spesso vuote; ignorarle velocizza il caricamento. La scelta viene salvata e i risultati vengono ricaricati subito.</value>
+  </data>
+  <data name="Settings.BelowLabel" xml:space="preserve">
+    <value>Stato delle importazioni e sessioni recenti</value>
+  </data>
+  <data name="Settings.AutoDetect" xml:space="preserve">
+    <value>Rilevamento automatico della cartella LMU</value>
+  </data>
+  <data name="Settings.PracticeLoaded" xml:space="preserve">
+    <value>Sessioni di prova caricate.</value>
+  </data>
+  <data name="Settings.PracticeRemoved" xml:space="preserve">
+    <value>Sessioni di prova rimosse.</value>
+  </data>
+  <data name="Settings.StartupSaved" xml:space="preserve">
+    <value>Preferenza di avvio salvata.</value>
+  </data>
+  <data name="Settings.FolderPath" xml:space="preserve">
+    <value>Percorso della cartella</value>
+  </data>
+  <data name="Settings.ValidFolder" xml:space="preserve">
+    <value>Cartella valida · {0} file XML</value>
+  </data>
+  <data name="Settings.AbsentDriver" xml:space="preserve">
+    <value>{0} (assente dai risultati caricati)</value>
+  </data>
+  <data name="Settings.DriverFrequency" xml:space="preserve">
+    <value>{0} — {1} ({2}/{3} file)</value>
+  </data>
+  <data name="Settings.DriverFiles" xml:space="preserve">
+    <value>{0} ({1} file)</value>
+  </data>
+  <data name="Settings.MergeWarning" xml:space="preserve">
+    <value>Questi due piloti hanno partecipato insieme a {0} sessione/i: sono probabilmente due persone diverse. L’unione resta possibile, ma controlla prima di confermarla.</value>
+  </data>
+  <data name="Settings.SharedSessions" xml:space="preserve">
+    <value>{0} sessione/i in comune</value>
+  </data>
+  <data name="Settings.PickerFailed" xml:space="preserve">
+    <value>Impossibile aprire il selettore di cartelle: {0}</value>
+  </data>
+  <data name="Settings.FolderSaved" xml:space="preserve">
+    <value>Cartella salvata e caricata: {0} file elaborati. Il monitoraggio è attivo.</value>
+  </data>
+  <data name="Settings.FolderSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la cartella: {0}</value>
+  </data>
+  <data name="Settings.Merged" xml:space="preserve">
+    <value>{0} è unito a {1}.</value>
+  </data>
+  <data name="Settings.MergeFailed" xml:space="preserve">
+    <value>Impossibile unire i piloti: {0}</value>
+  </data>
+  <data name="Settings.MergeCancelled" xml:space="preserve">
+    <value>Unione di {0} annullata.</value>
+  </data>
+  <data name="Settings.CancelMergeFailed" xml:space="preserve">
+    <value>Impossibile annullare l’unione: {0}</value>
+  </data>
+  <data name="Settings.DriverSaved" xml:space="preserve">
+    <value>Profilo pilota salvato: {0}.</value>
+  </data>
+  <data name="Settings.DriverSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare il pilota selezionato: {0}</value>
+  </data>
+  <data name="Settings.PracticeSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la preferenza delle prove: {0}</value>
+  </data>
+  <data name="Update.Eyebrow" xml:space="preserve">
+    <value>VERSIONE E AGGIORNAMENTI</value>
+  </data>
+  <data name="Update.Title" xml:space="preserve">
+    <value>Aggiornamenti</value>
+  </data>
+  <data name="Update.InstallHelp" xml:space="preserve">
+    <value>Poi avvia il programma di installazione: la nuova versione si installa sopra la vecchia e le impostazioni vengono conservate.</value>
+  </data>
+  <data name="Update.SeeReleases" xml:space="preserve">
+    <value>Vedi le versioni su GitHub</value>
+  </data>
+  <data name="Update.CheckLabel" xml:space="preserve">
+    <value>Controlla all’avvio se è disponibile una nuova versione</value>
+  </data>
+  <data name="Update.CheckHelp" xml:space="preserve">
+    <value>L’applicazione chiede a GitHub il numero dell’ultima versione. Nessun dato viene raccolto. La scelta si applica al prossimo avvio.</value>
+  </data>
+  <data name="Update.Saved" xml:space="preserve">
+    <value>Preferenza di aggiornamento salvata.</value>
+  </data>
+  <data name="Results.Loading" xml:space="preserve">
+    <value>Caricamento della cronologia delle gare…</value>
+  </data>
+  <data name="Results.LoadFailedTitle" xml:space="preserve">
+    <value>Non è stato possibile caricare i risultati</value>
+  </data>
+  <data name="Results.CheckFolder" xml:space="preserve">
+    <value>Controlla la cartella impostata in</value>
+  </data>
+  <data name="Overview.SessionsOf" xml:space="preserve">
+    <value>Sessioni di {0}</value>
+  </data>
+  <data name="Overview.RecentSessionsOf" xml:space="preserve">
+    <value>Sessioni recenti di {0}</value>
+  </data>
+  <data name="Update.InstalledVersion" xml:space="preserve">
+    <value>Versione installata: {0}</value>
+  </data>
+  <data name="Overview.Eyebrow" xml:space="preserve">
+    <value>AREA INGEGNERE DI PISTA</value>
+  </data>
+  <data name="Overview.Title" xml:space="preserve">
+    <value>Dashboard</value>
+  </data>
+  <data name="Overview.Subtitle" xml:space="preserve">
+    <value>Cronologia delle sessioni importate da Le Mans Ultimate.</value>
+  </data>
+  <data name="Results.LoadFailed" xml:space="preserve">
+    <value>Non è stato possibile caricare i risultati</value>
+  </data>
+  <data name="Overview.SummaryLabel" xml:space="preserve">
+    <value>Riepilogo dei risultati</value>
+  </data>
+  <data name="Overview.ImportedSessions" xml:space="preserve">
+    <value>SESSIONI IMPORTATE</value>
+  </data>
+  <data name="Overview.LastSession" xml:space="preserve">
+    <value>ULTIMA SESSIONE</value>
+  </data>
+  <data name="Overview.NoSession" xml:space="preserve">
+    <value>Nessuna sessione</value>
+  </data>
+  <data name="Overview.FailedFiles" xml:space="preserve">
+    <value>FILE NON IMPORTATI</value>
+  </data>
+  <data name="Overview.OthersContinue" xml:space="preserve">
+    <value>Le altre importazioni continuano</value>
+  </data>
+  <data name="Overview.SomeFilesFailed" xml:space="preserve">
+    <value>Alcuni file non sono stati importati</value>
+  </data>
+  <data name="Overview.ArchivesEyebrow" xml:space="preserve">
+    <value>ARCHIVIO GARE</value>
+  </data>
+  <data name="Overview.Reading" xml:space="preserve">
+    <value>Lettura dei file dei risultati…</value>
+  </data>
+  <data name="Overview.NoDriverSession" xml:space="preserve">
+    <value>Nessuna sessione per questo pilota</value>
+  </data>
+  <data name="Overview.NoDriverSessionText" xml:space="preserve">
+    <value>Le sessioni con il pilota selezionato compariranno qui.</value>
+  </data>
+  <data name="Overview.Event" xml:space="preserve">
+    <value>EVENTO</value>
+  </data>
+  <data name="Overview.SelectedDriver" xml:space="preserve">
+    <value>il pilota selezionato</value>
+  </data>
+  <data name="RaceStory.ReferenceLap" xml:space="preserve">
+    <value>Giro di riferimento:</value>
+  </data>
+  <data name="RaceStory.Positions" xml:space="preserve">
+    <value>POSIZIONI</value>
+  </data>
+  <data name="RaceStory.PositionsLabel" xml:space="preserve">
+    <value>Posizioni</value>
+  </data>
+  <data name="RaceStory.InClass" xml:space="preserve">
+    <value>Di categoria</value>
+  </data>
+  <data name="RaceStory.Overall" xml:space="preserve">
+    <value>Assoluta</value>
+  </data>
+  <data name="RaceStory.Cars" xml:space="preserve">
+    <value>AUTO</value>
+  </data>
+  <data name="RaceStory.CarsLabel" xml:space="preserve">
+    <value>Auto mostrate</value>
+  </data>
+  <data name="RaceStory.WholeClass" xml:space="preserve">
+    <value>Tutta la categoria</value>
+  </data>
+  <data name="RaceStory.WholeField" xml:space="preserve">
+    <value>Tutto lo schieramento</value>
+  </data>
+  <data name="RaceStory.FinishGap" xml:space="preserve">
+    <value>DISTACCO ALL’ARRIVO</value>
+  </data>
+  <data name="RaceStory.FewerCars" xml:space="preserve">
+    <value>Meno auto</value>
+  </data>
+  <data name="RaceStory.MoreCars" xml:space="preserve">
+    <value>Più auto</value>
+  </data>
+  <data name="RaceStory.PitStop" xml:space="preserve">
+    <value>Pit stop</value>
+  </data>
+  <data name="RaceStory.You" xml:space="preserve">
+    <value>Tu</value>
+  </data>
+  <data name="RaceStory.Others" xml:space="preserve">
+    <value>Altre auto: clicca una linea per seguire il suo pilota</value>
+  </data>
+  <data name="RaceStory.Retirement" xml:space="preserve">
+    <value>× Ritiro</value>
+  </data>
+  <data name="RaceStory.Damage" xml:space="preserve">
+    <value>Danni</value>
+  </data>
+  <data name="RaceStory.VehicleContact" xml:space="preserve">
+    <value>Contatto con un’auto</value>
+  </data>
+  <data name="RaceStory.Obstacle" xml:space="preserve">
+    <value>Ostacolo</value>
+  </data>
+  <data name="RaceStory.Penalty" xml:space="preserve">
+    <value>Penalità</value>
+  </data>
+  <data name="RaceStory.TrackLimits" xml:space="preserve">
+    <value>Limiti della pista</value>
+  </data>
+  <data name="RaceStory.ClassPosition" xml:space="preserve">
+    <value>Posizione di categoria</value>
+  </data>
+  <data name="RaceStory.OverallPosition" xml:space="preserve">
+    <value>Posizione assoluta</value>
+  </data>
+  <data name="RaceStory.ContactsWord.One" xml:space="preserve">
+    <value>contatto</value>
+  </data>
+  <data name="RaceStory.ContactsWord.Other" xml:space="preserve">
+    <value>contatti</value>
+  </data>
+  <data name="RaceStory.PositionsLostWord.One" xml:space="preserve">
+    <value>posizione persa in questi giri</value>
+  </data>
+  <data name="RaceStory.PositionsLostWord.Other" xml:space="preserve">
+    <value>posizioni perse in questi giri</value>
+  </data>
+  <data name="RaceStory.Around" xml:space="preserve">
+    <value>Intorno a {0}</value>
+  </data>
+  <data name="RaceStory.GapLabel" xml:space="preserve">
+    <value>Auto tenute davanti e dietro a {0} all’arrivo</value>
+  </data>
+  <data name="RaceStory.Places.One" xml:space="preserve">
+    <value>± {0} posizione</value>
+  </data>
+  <data name="RaceStory.Places.Other" xml:space="preserve">
+    <value>± {0} posizioni</value>
+  </data>
+  <data name="RaceStory.CarsShown.One" xml:space="preserve">
+    <value>{0} auto mostrata su {1}</value>
+  </data>
+  <data name="RaceStory.CarsShown.Other" xml:space="preserve">
+    <value>{0} auto mostrate su {1}</value>
+  </data>
+  <data name="RaceStory.ChartLabel" xml:space="preserve">
+    <value>Posizione di ogni auto giro per giro, {0} in evidenza</value>
+  </data>
+  <data name="RaceStory.Hover" xml:space="preserve">
+    <value>Passa sopra un punto o una linea per il dettaglio</value>
+  </data>
+  <data name="RatingChart.Gain" xml:space="preserve">
+    <value>Punti guadagnati</value>
+  </data>
+  <data name="RatingChart.Loss" xml:space="preserve">
+    <value>Punti persi</value>
+  </data>
+  <data name="RatingChart.TierLine" xml:space="preserve">
+    <value>Rating necessario per entrare in una fascia oggi</value>
+  </data>
+  <data name="RatingChart.Note" xml:space="preserve">
+    <value>Una gara valutata per punto, in ordine cronologico · Passa sopra un punto per il dettaglio</value>
+  </data>
+  <data name="Error.Title" xml:space="preserve">
+    <value>Si è verificato un errore</value>
+  </data>
+  <data name="Error.Text" xml:space="preserve">
+    <value>La dashboard non ha potuto elaborare questa richiesta.</value>
+  </data>
+  <data name="Error.RequestId" xml:space="preserve">
+    <value>ID della richiesta:</value>
+  </data>
+  <data name="NotFound.Title" xml:space="preserve">
+    <value>Pagina non trovata</value>
+  </data>
+  <data name="NotFound.Text" xml:space="preserve">
+    <value>Questo indirizzo non corrisponde a nessuna pagina della dashboard.</value>
+  </data>
+  <data name="RatingChart.Label" xml:space="preserve">
+    <value>Rating di {0} gara dopo gara</value>
+  </data>
+  <data name="Error.PageTitle" xml:space="preserve">
+    <value>Errore</value>
+  </data>
+  <data name="RaceStory.RetiredLine" xml:space="preserve">
+    <value>P{0} {1} (ritiro al giro {2})</value>
+  </data>
+  <data name="RaceStory.TimeLost" xml:space="preserve">
+    <value>Tempo perso: {0} s</value>
+  </data>
+  <data name="RatingChart.RaceResult" xml:space="preserve">
+    <value>{0} su {1} (attesa: {2})</value>
+  </data>
+  <data name="Startup.Searching" xml:space="preserve">
+    <value>Ricerca dei file dei risultati…</value>
+  </data>
+  <data name="Startup.FilesProcessed" xml:space="preserve">
+    <value>{0} / {1} file elaborati</value>
+  </data>
+  <data name="Update.Pending" xml:space="preserve">
+    <value>Verifica in corso…</value>
+  </data>
+  <data name="Update.UpToDate" xml:space="preserve">
+    <value>Stai usando l’ultima versione.</value>
+  </data>
+  <data name="Update.Available" xml:space="preserve">
+    <value>Nuova versione disponibile: {0}</value>
+  </data>
+  <data name="Update.Failed" xml:space="preserve">
+    <value>Impossibile verificare gli aggiornamenti.</value>
+  </data>
+  <data name="Update.Disabled" xml:space="preserve">
+    <value>Verifica disattivata.</value>
+  </data>
+  <data name="Update.DevelopmentBuild" xml:space="preserve">
+    <value>Versione di sviluppo: nessuna verifica.</value>
+  </data>
+  <data name="Settings.PickerTitle" xml:space="preserve">
+    <value>Seleziona la cartella dei risultati di LMU</value>
+  </data>
+  <data name="Settings.PickerInvalidPath" xml:space="preserve">
+    <value>La cartella selezionata non ha un percorso di file valido.</value>
+  </data>
+  <data name="Rating.Platinum" xml:space="preserve">
+    <value>Platino</value>
+  </data>
+  <data name="Rating.Gold" xml:space="preserve">
+    <value>Oro</value>
+  </data>
+  <data name="Rating.Silver" xml:space="preserve">
+    <value>Argento</value>
+  </data>
+  <data name="Rating.Bronze" xml:space="preserve">
+    <value>Bronzo</value>
+  </data>
+  <data name="Incident.Immovable" xml:space="preserve">
+    <value>Contatto con un ostacolo fisso</value>
+  </data>
+  <data name="Incident.Post" xml:space="preserve">
+    <value>Contatto con un palo</value>
+  </data>
+  <data name="Incident.Sign" xml:space="preserve">
+    <value>Contatto con un cartello</value>
+  </data>
+  <data name="Incident.Cone" xml:space="preserve">
+    <value>Contatto con un cono</value>
+  </data>
+  <data name="Incident.TrackLimitWarning" xml:space="preserve">
+    <value>Avviso per limiti della pista</value>
+  </data>
+  <data name="Incident.InvalidLap" xml:space="preserve">
+    <value>Giro invalidato</value>
+  </data>
+  <data name="Incident.DamageSuspension" xml:space="preserve">
+    <value>Danni: sospensione</value>
+  </data>
+  <data name="Incident.DamageEngine" xml:space="preserve">
+    <value>Danni: motore</value>
+  </data>
+  <data name="Home.StatusRetired" xml:space="preserve">
+    <value>Ritirato</value>
+  </data>
+  <data name="Home.StatusDisqualified" xml:space="preserve">
+    <value>Squalificato</value>
+  </data>
+  <data name="Home.StatusUnclassified" xml:space="preserve">
+    <value>Non classificato</value>
+  </data>
+  <data name="Home.StatusFinished" xml:space="preserve">
+    <value>Arrivato</value>
+  </data>
+  <data name="Home.CauseUnknown" xml:space="preserve">
+    <value>Non specificata</value>
+  </data>
+  <data name="Home.CauseAccident" xml:space="preserve">
+    <value>Incidente</value>
+  </data>
+  <data name="Home.CauseEngine" xml:space="preserve">
+    <value>Motore</value>
+  </data>
+  <data name="Home.CauseSuspension" xml:space="preserve">
+    <value>Sospensione</value>
+  </data>
+  <data name="Home.CauseFuel" xml:space="preserve">
+    <value>Carburante</value>
+  </data>
+  <data name="Incident.VehicleContact" xml:space="preserve">
+    <value>Contatto con {0}</value>
+  </data>
+  <data name="Incident.OtherContact" xml:space="preserve">
+    <value>Contatto segnalato: {0}</value>
+  </data>
+  <data name="Incident.Damage" xml:space="preserve">
+    <value>Danni: {0}</value>
+  </data>
+  <data name="Incident.Penalty" xml:space="preserve">
+    <value>Penalità: {0}</value>
+  </data>
+  <data name="DrivingProfile.TakeawayFirstLap" xml:space="preserve">
+    <value>Il {0} % dei tuoi contatti avviene alla partenza o al primo giro.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayMedianLoss" xml:space="preserve">
+    <value>Un giro con contatto ti costa {0} s di mediana.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayCircuit" xml:space="preserve">
+    <value>{0} è il circuito che ti costa di più: {1} s persi nei giri con contatto.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayDamage.One" xml:space="preserve">
+    <value>{0} contatto ha danneggiato la tua auto.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayDamage.Other" xml:space="preserve">
+    <value>{0} contatti hanno danneggiato la tua auto.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayRetirements" xml:space="preserve">
+    <value>{0} dei tuoi {1} ritiri hanno avuto un contatto nell’ultimo giro.</value>
+  </data>
+  <data name="Overview.Duplicates.One" xml:space="preserve">
+    <value>{0} duplicato ignorato</value>
+  </data>
+  <data name="Overview.Duplicates.Other" xml:space="preserve">
+    <value>{0} duplicati ignorati</value>
+  </data>
+  <data name="Progression.WeekOf" xml:space="preserve">
+    <value>settimana del {0}</value>
+  </data>
+  <data name="Settings.LanguageEyebrow" xml:space="preserve">
+    <value>VISUALIZZAZIONE</value>
+  </data>
+  <data name="Settings.LanguageTitle" xml:space="preserve">
+    <value>Lingua e data</value>
+  </data>
+  <data name="Settings.Language" xml:space="preserve">
+    <value>Lingua dell’interfaccia</value>
+  </data>
+  <data name="Settings.DateFormat" xml:space="preserve">
+    <value>Formato della data</value>
+  </data>
+  <data name="Settings.DateFormat.Language" xml:space="preserve">
+    <value>Secondo la lingua ({0})</value>
+  </data>
+  <data name="Settings.DateFormat.DayMonthYear" xml:space="preserve">
+    <value>{0} (giorno/mese)</value>
+  </data>
+  <data name="Settings.DateFormat.MonthDayYear" xml:space="preserve">
+    <value>{0} (mese/giorno)</value>
+  </data>
+  <data name="Settings.DateFormat.Iso" xml:space="preserve">
+    <value>{0} (ISO)</value>
+  </data>
+  <data name="Settings.DateFormat.DotDayMonthYear" xml:space="preserve">
+    <value>{0} (giorno.mese)</value>
+  </data>
+  <data name="Settings.LanguageHelp" xml:space="preserve">
+    <value>La scelta viene salvata e la pagina si ricarica. Gli orari restano sulle 24 ore; i tempi sul giro e i numeri non cambiano.</value>
+  </data>
+  <data name="Settings.LanguageSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la lingua o il formato della data: {0}</value>
+  </data>
+  <data name="Reconnect.Rejoining" xml:space="preserve">
+    <value>Riconnessione al server…</value>
+  </data>
+  <data name="Reconnect.RetryIn" xml:space="preserve">
+    <value>Riconnessione non riuscita… nuovo tentativo tra</value>
+  </data>
+  <data name="Reconnect.Seconds" xml:space="preserve">
+    <value>secondi.</value>
+  </data>
+  <data name="Reconnect.Failed" xml:space="preserve">
+    <value>Riconnessione non riuscita.</value>
+  </data>
+  <data name="Reconnect.RetryOrReload" xml:space="preserve">
+    <value>Riprova o ricarica la pagina.</value>
+  </data>
+  <data name="Reconnect.Retry" xml:space="preserve">
+    <value>Riprova</value>
+  </data>
+  <data name="Reconnect.Paused" xml:space="preserve">
+    <value>La sessione è stata messa in pausa dal server.</value>
+  </data>
+  <data name="Reconnect.ResumeFailed" xml:space="preserve">
+    <value>Impossibile riprendere la sessione.</value>
+  </data>
+  <data name="Reconnect.Resume" xml:space="preserve">
+    <value>Riprendi</value>
+  </data>
+  <data name="Progression.NoSessionPeriod" xml:space="preserve">
+    <value>Nessuna sessione: {0}</value>
+  </data>
+  <data name="Progression.PointLabel" xml:space="preserve">
+    <value>{0}, {1}: {2}</value>
+  </data>
+  <data name="Home.BarTooltip" xml:space="preserve">
+    <value>{0}: {1} ({2})</value>
+  </data>
+  <data name="Settings.StartupSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la preferenza di avvio: {0}</value>
+  </data>
+  <data name="Update.SaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la preferenza di aggiornamento: {0}</value>
+  </data>
+</root>

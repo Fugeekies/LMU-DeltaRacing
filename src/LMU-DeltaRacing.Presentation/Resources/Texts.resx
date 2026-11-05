@@ -1601,4 +1601,19 @@
   <data name="Reconnect.Resume" xml:space="preserve">
     <value>Reprendre</value>
   </data>
+  <data name="Progression.NoSessionPeriod" xml:space="preserve">
+    <value>Sans session : {0}</value>
+  </data>
+  <data name="Progression.PointLabel" xml:space="preserve">
+    <value>{0}, {1} : {2}</value>
+  </data>
+  <data name="Home.BarTooltip" xml:space="preserve">
+    <value>{0} : {1} ({2})</value>
+  </data>
+  <data name="Settings.StartupSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la préférence de démarrage : {0}</value>
+  </data>
+  <data name="Update.SaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la préférence de mise à jour : {0}</value>
+  </data>
 </root>
