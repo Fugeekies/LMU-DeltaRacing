@@ -28,9 +28,13 @@ if ($fixtureFiles.Count -eq 0) {
     throw "No packaged fallback result fixtures were found in: $fixtureDirectory"
 }
 
+# The language is set, so that the result does not depend on the language of Windows (a CI runner
+# is in English). English rather than French: the texts then come from a satellite resource, which
+# checks that the translations are bundled in the single-file executable.
 $arguments = @(
     '--LMU:OpenBrowser=false',
     '--LMU:CheckForUpdates=false',
+    '--LMU:Language=en',
     "--LMU:ResultsDirectory=$fixtureDirectory"
 )
 $server = Start-Process `
@@ -66,7 +70,7 @@ try {
     }
 
     # The startup loading screen replaces the whole layout until the initial import is over, so the
-    # home page is requested again until the navigation (and its "Mes courses" link) is rendered.
+    # home page is requested again until the navigation (and its "My races" link) is rendered.
     $loadingScreen = 'class="startup-loading"'
     do {
         $response = Invoke-WebRequest `
@@ -87,10 +91,13 @@ try {
     if ($isLoading) {
         throw "The published dashboard still showed its startup loading screen after $StartupTimeoutSeconds seconds."
     }
-    if ($response.Content -notmatch 'Mes courses') {
+    if ($response.Content -notmatch 'My races') {
+        if ($response.Content -match 'Mes courses') {
+            throw "The published dashboard rendered its French texts: the English translation is not bundled."
+        }
         throw "The published dashboard did not render its expected home page."
     }
-    if ($response.Content -match '<h1[^>]*>\s*(Une erreur est survenue|The dashboard encountered an error)\s*</h1>') {
+    if ($response.Content -match '<h1[^>]*>\s*(An error occurred|Une erreur est survenue)\s*</h1>') {
         throw "The published dashboard rendered its error page instead of the home page."
     }
 
