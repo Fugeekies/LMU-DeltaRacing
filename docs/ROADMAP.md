@@ -15,14 +15,6 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
 - [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
 
-### Jalon — Interface multilingue 
-Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder. Langues : les mêmes que le guide d'utilisation (anglais, français, allemand, italien, espagnol).
-- [x] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup. → [`propositions/interface-multilingue.md`](propositions/interface-multilingue.md), validée le 05/11/2026.
-- [x] Extraire les textes des pages Razor et ceux des calculs partagés de `Presentation`, sans changer le rendu français (`Presentation/Resources/Texts.resx`, PR 1). La fenêtre de reconnexion, les ordinaux, les noms de mois et les formats de date ont suivi en PR 2.
-- [x] Section **Langue et date** dans Options (langue et format de date), enregistrée dans `appsettings.json` (section `LMU`). Traductions anglaise, allemande, italienne et espagnole (PR 2).
-- [x] Adapter à la langue les formats qui en dépendent (`1er`, `2e`, dates), sans toucher à `CultureInfo.InvariantCulture` pour la lecture des temps. Ordinaux, dates et noms de mois suivent la langue ; nombres, temps et écarts gardent le même format partout (décision du 05/11/2026).
-- [x] Test vérifiant que chaque texte existe dans toutes les langues. (`TextsTests` : mêmes clés et mêmes paramètres).
-- [ ] Mettre à jour `AGENTS.md`, `docs/UI_DESIGN_SPEC.md` et les specs `docs/UISpec/`.
 
 ### Jalon — Signature de l'installeur (SignPath Foundation) (en parallèle)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
@@ -50,6 +42,15 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Interface multilingue — 05/11/2026 · PR [#60](https://github.com/Fugeekies/LMU-DeltaRacing/pull/60), [#61](https://github.com/Fugeekies/LMU-DeltaRacing/pull/61), [#62](https://github.com/Fugeekies/LMU-DeltaRacing/pull/62)
+Avant ce jalon, l’application n’avait aucun mécanisme de traduction : tous les textes étaient écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder. Langues : les mêmes que le guide d'utilisation (anglais, français, allemand, italien, espagnol).
+- [x] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup. → [`propositions/interface-multilingue.md`](propositions/interface-multilingue.md), validée le 05/11/2026.
+- [x] Extraire les textes des pages Razor et ceux des calculs partagés de `Presentation`, sans changer le rendu français (`Presentation/Resources/Texts.resx`, PR 1). La fenêtre de reconnexion, les ordinaux, les noms de mois et les formats de date ont suivi en PR 2.
+- [x] Section **Langue et date** dans Options (langue et format de date), enregistrée dans `appsettings.json` (section `LMU`). Traductions anglaise, allemande, italienne et espagnole (PR 2).
+- [x] Adapter à la langue les formats qui en dépendent (`1er`, `2e`, dates), sans toucher à `CultureInfo.InvariantCulture` pour la lecture des temps. Ordinaux, dates et noms de mois suivent la langue ; nombres, temps et écarts gardent le même format partout (décision du 05/11/2026).
+- [x] Test vérifiant que chaque texte existe dans toutes les langues. (`TextsTests` : mêmes clés et mêmes paramètres).
+- [x] Mettre à jour `AGENTS.md`, `docs/UI_DESIGN_SPEC.md` et les specs `docs/UISpec/`. Installeur en cinq langues, guides cités dans la langue de l’écran (PR 3).
 
 ### Jalon — Exploiter les événements du `Stream` — 05/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53), clôture [#59](https://github.com/Fugeekies/LMU-DeltaRacing/pull/59)
 La donnée la plus riche des fichiers LMU n'était pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
