@@ -78,7 +78,7 @@
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’enregistrer la préférence de mise à jour : {exception.Message}";
+            feedbackMessage = T["Update.SaveFailed", exception.Message];
         }
     }
 }

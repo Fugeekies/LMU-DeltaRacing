@@ -87,6 +87,34 @@ public sealed class DashboardSettingsStore
     }
 
     /// <summary>
+    /// Saves the interface language (<c>LMU:Language</c>), a supported two-letter code.
+    /// </summary>
+    public void SaveLanguage(string language)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(language);
+        if (!Localization.UiLanguage.Supported.Contains(language))
+        {
+            throw new ArgumentOutOfRangeException(nameof(language), language, "The language is not supported.");
+        }
+
+        var root = LoadSettings();
+        GetLmuSettings(root)["Language"] = language;
+
+        Save(root);
+    }
+
+    /// <summary>
+    /// Saves how dates are written (<c>LMU:DateFormat</c>).
+    /// </summary>
+    public void SaveDateFormat(DateFormatOption dateFormat)
+    {
+        var root = LoadSettings();
+        GetLmuSettings(root)["DateFormat"] = dateFormat.ToString();
+
+        Save(root);
+    }
+
+    /// <summary>
     /// Saves whether the application asks GitHub for the latest release at startup.
     /// </summary>
     public void SaveCheckForUpdates(bool checkForUpdates)

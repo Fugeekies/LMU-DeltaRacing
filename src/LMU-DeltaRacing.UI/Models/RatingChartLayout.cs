@@ -84,7 +84,7 @@ public sealed record RatingChartLayout(
                 .ToArray(),
             CreateRatingTicks(low, high).Select(rating => new RaceStoryTick(Y(rating), DisplayFormat.Rating(rating))).ToArray(),
             CreateDateTicks(races.Count)
-                .Select(index => new RaceStoryTick(X(index + 1), races[index].StartedAt.ToLocalTime().ToString("dd/MM/yy", CultureInfo.InvariantCulture)))
+                .Select(index => new RaceStoryTick(X(index + 1), DisplayFormat.Date(races[index].StartedAt.LocalDateTime, shortYear: true)))
                 .ToArray());
     }
 

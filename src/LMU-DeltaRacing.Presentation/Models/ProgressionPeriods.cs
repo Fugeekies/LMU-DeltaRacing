@@ -8,13 +8,6 @@ namespace LMU_DeltaRacing.Presentation.Models;
 /// </summary>
 public static class ProgressionPeriods
 {
-    // French names are written here so that labels do not depend on the installed cultures.
-    private static readonly string[] MonthNames =
-    [
-        "janvier", "février", "mars", "avril", "mai", "juin",
-        "juillet", "août", "septembre", "octobre", "novembre", "décembre"
-    ];
-
     /// <summary>
     /// Returns the start of the period that contains a local date and time.
     /// </summary>
@@ -44,20 +37,19 @@ public static class ProgressionPeriods
         };
 
     /// <summary>
-    /// Returns the full French label of a period, for the summary, the detail panel and the period table.
+    /// Returns the label of a period in the interface language, for the summary, the detail panel and the period table.
     /// </summary>
     public static string Label(DateTime periodStart, ProgressionGranularity granularity) =>
         granularity switch
         {
-            ProgressionGranularity.Day => periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture),
-            ProgressionGranularity.Week => Texts.Format("Progression.WeekOf", periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture)),
-            ProgressionGranularity.Month => $"{MonthNames[periodStart.Month - 1]} {periodStart.Year.ToString(CultureInfo.InvariantCulture)}",
+            ProgressionGranularity.Day => DisplayFormat.Date(periodStart),
+            ProgressionGranularity.Week => Texts.Format("Progression.WeekOf", DisplayFormat.Date(periodStart)),
+            ProgressionGranularity.Month => $"{UiLanguage.Culture(UiLanguage.Current).DateTimeFormat.GetMonthName(periodStart.Month)} {periodStart.Year.ToString(CultureInfo.InvariantCulture)}",
             _ => periodStart.Year.ToString(CultureInfo.InvariantCulture)
         };
 
     /// <summary>
-    /// Returns the label of a period on the date axis: the start date as <c>dd/MM/yyyy</c>.
+    /// Returns the label of a period on the date axis: the start date, in the date format.
     /// </summary>
-    public static string AxisLabel(DateTime periodStart) =>
-        periodStart.ToString("dd/MM/yyyy", CultureInfo.InvariantCulture);
+    public static string AxisLabel(DateTime periodStart) => DisplayFormat.Date(periodStart);
 }

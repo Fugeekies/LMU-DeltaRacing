@@ -3,6 +3,7 @@
 @inherits DashboardPage
 @inject DashboardSettingsStore SettingsStore
 @inject WindowsFolderPicker FolderPicker
+@inject NavigationManager Navigation
 
 <PageTitle>@T["PageTitle", T["Nav.Settings"]]</PageTitle>
 
@@ -82,6 +83,32 @@
                 <span class="settings-help">@T["Settings.PickerWindowsOnly"]</span>
             }
         </div>
+    </div>
+</section>
+
+<section class="panel settings-panel" aria-labelledby="language-settings-heading">
+    <div class="panel-heading">
+        <div>
+            <p class="eyebrow">@T["Settings.LanguageEyebrow"]</p>
+            <h2 id="language-settings-heading">@T["Settings.LanguageTitle"]</h2>
+        </div>
+    </div>
+    <div class="settings-content">
+        <label class="settings-label" for="language">@T["Settings.Language"]</label>
+        <select id="language" class="settings-input" value="@UiLanguage.Current" @onchange="SaveLanguage" disabled="@isBusy">
+            @foreach (var language in UiLanguage.Supported)
+            {
+                <option value="@language">@UiLanguage.NativeName(language)</option>
+            }
+        </select>
+        <label class="settings-label" for="date-format">@T["Settings.DateFormat"]</label>
+        <select id="date-format" class="settings-input" value="@DisplayFormat.DateFormat" @onchange="SaveDateFormat" disabled="@isBusy">
+            @foreach (var option in DateFormatOptions.All)
+            {
+                <option value="@option">@DescribeDateFormat(option)</option>
+            }
+        </select>
+        <p class="settings-help">@T["Settings.LanguageHelp"]</p>
     </div>
 </section>
 
@@ -369,6 +396,65 @@
         }
     }
 
+    /// <summary>
+    /// Describes a date format with an example whose day is above 12, so that day and month
+    /// cannot be mistaken for each other.
+    /// </summary>
+    private string DescribeDateFormat(DateFormatOption option)
+    {
+        var example = new DateTime(DateTime.Today.Year, 11, 25).ToString(
+            DateFormatOptions.Pattern(option, UiLanguage.Current),
+            System.Globalization.CultureInfo.InvariantCulture);
+        return T[$"Settings.DateFormat.{option}", example];
+    }
+
+    /// <summary>
+    /// Saves the language, applies it and reloads the page: every text, already rendered, is read again.
+    /// </summary>
+    private void SaveLanguage(ChangeEventArgs args)
+    {
+        if (args.Value is not string language || !UiLanguage.Supported.Contains(language))
+        {
+            return;
+        }
+
+        try
+        {
+            SettingsStore.SaveLanguage(language);
+            UiLanguage.Apply(language);
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = T["Settings.LanguageSaveFailed", exception.Message];
+        }
+    }
+
+    /// <summary>
+    /// Saves the date format and reloads the page, so that every date is written again.
+    /// </summary>
+    private void SaveDateFormat(ChangeEventArgs args)
+    {
+        if (args.Value is not string value)
+        {
+            return;
+        }
+
+        try
+        {
+            var option = DateFormatOptions.Parse(value);
+            SettingsStore.SaveDateFormat(option);
+            DisplayFormat.DateFormat = option;
+            Navigation.NavigateTo(Navigation.Uri, forceLoad: true);
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = T["Settings.LanguageSaveFailed", exception.Message];
+        }
+    }
+
     private void SaveSelectedUserName(ChangeEventArgs args)
     {
         if (args.Value is not string name || string.IsNullOrWhiteSpace(name))
@@ -429,7 +515,7 @@
         catch (Exception exception) when (
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
-            feedbackMessage = $"Impossible d’enregistrer la préférence de démarrage : {exception.Message}";
+            feedbackMessage = T["Settings.StartupSaveFailed", exception.Message];
         }
     }
 }

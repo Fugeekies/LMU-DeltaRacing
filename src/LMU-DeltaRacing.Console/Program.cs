@@ -5,6 +5,7 @@ using LMU_DeltaRacing.ConsoleApp;
 using LMU_DeltaRacing.ConsoleApp.Configuration;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using LMU_DeltaRacing.Infrastructure.Persistence;
+using LMU_DeltaRacing.Presentation.Localization;
 using LMU_DeltaRacing.Presentation.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -21,6 +22,10 @@ using Spectre.Console;
 
 // The console takes no argument: like the dashboard, it loads the results directory configured in
 // appsettings.json beside the executable, or the one detected automatically.
+// The console stays in French until the "Avenir de la console Spectre" milestone decides its future:
+// the shared texts of Presentation follow it, whatever the language of Windows.
+UiLanguage.Apply(UiLanguage.French);
+
 var executableDirectory = AppContext.BaseDirectory;
 var configurationFilePath = Path.Combine(executableDirectory, "appsettings.json");
 var builder = Host.CreateApplicationBuilder(new HostApplicationBuilderSettings

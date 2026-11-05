@@ -88,3 +88,4 @@ Le jalon « Avenir de la console Spectre » n'est pas tranché. **Proposé :** l
 5. Console gardée en français en attendant le jalon console (§ 6). **Validé.**
 6. Installeur en cinq langues, qui écrit la langue choisie et le format « Selon la langue » à la première installation (§ 7). **Validé, avec le format de date.**
 7. Découpage en trois PR (§ 10). **Validé.**
+8. Nombres (moyennes, pourcentages, milliers, cotes) : **même format dans toutes les langues**, celui d’aujourd’hui (point décimal, espace fine pour les milliers), comme les temps. Seuls les textes, les ordinaux, les dates et les noms de mois suivent la langue. **Décidé le 05/11/2026** pendant la PR 2, à la place de « milliers et pourcentages selon la langue » (§ 5).

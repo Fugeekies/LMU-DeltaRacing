@@ -4,6 +4,8 @@ using LMU_DeltaRacing.Application.Abstractions;
 using LMU_DeltaRacing.Application.Services;
 using LMU_DeltaRacing.Infrastructure.Parsing;
 using LMU_DeltaRacing.Infrastructure.Persistence;
+using LMU_DeltaRacing.Presentation.Localization;
+using LMU_DeltaRacing.Presentation.Models;
 using LMU_DeltaRacing.Presentation.Services;
 using LMU_DeltaRacing.UI.Components;
 using LMU_DeltaRacing.UI.Logging;
@@ -20,6 +22,10 @@ var builder = WebApplication.CreateBuilder(new WebApplicationOptions
 
 builder.Logging.ClearProviders();
 builder.Logging.SetMinimumLevel(LogLevel.Trace);
+// The interface follows LMU:Language, else the language of Windows; numbers keep the culture of Windows.
+UiLanguage.Apply(UiLanguage.Resolve(builder.Configuration["LMU:Language"], System.Globalization.CultureInfo.CurrentUICulture));
+DisplayFormat.DateFormat = DateFormatOptions.Parse(builder.Configuration["LMU:DateFormat"]);
+
 var configuredLogLevel = builder.Configuration["LMU:FileMinimumLogLevel"] ?? "Debug";
 if (!Enum.TryParse<LogLevel>(configuredLogLevel, ignoreCase: true, out var minimumLogLevel)
     || !Enum.IsDefined(minimumLogLevel))
