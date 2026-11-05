@@ -2841,14 +2841,18 @@ table[data-resizable-columns] th {
     position: relative;
 }
 
+/* A grip of two thin bars, always drawn, tells that the edge can be dragged. */
 table[data-resizable-columns] th::after {
     position: absolute;
-    top: 25%;
-    right: 0;
-    bottom: 25%;
+    top: 20%;
+    right: 1px;
+    bottom: 20%;
     width: 2px;
+    border-right: 1px solid var(--muted);
+    border-left: 1px solid var(--muted);
     content: "";
-    background: transparent;
+    opacity: 0.45;
+    transition: opacity 0.12s, border-color 0.12s;
 }
 
 table[data-resizable-columns] th.column-resize-edge {
@@ -2856,7 +2860,8 @@ table[data-resizable-columns] th.column-resize-edge {
 }
 
 table[data-resizable-columns] th.column-resize-edge::after {
-    background: var(--border);
+    border-color: var(--accent);
+    opacity: 1;
 }
 
 table.columns-resized {
@@ -2874,9 +2879,4 @@ table.columns-resized td {
 .column-resizing * {
     cursor: col-resize !important;
     user-select: none;
-}
-
-.race-details-table .class-position {
-    color: var(--text);
-    font-weight: 650;
 }

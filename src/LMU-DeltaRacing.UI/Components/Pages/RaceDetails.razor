@@ -291,7 +291,6 @@ else
             <td><span class="position-value">@(result.Position?.ToString("00") ?? "—")</span></td>
             <td class="class-cell">
                 <span class="category-badge @CategoryStyle.CssClass(result.Category)">@result.Category</span>
-                <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
             </td>
             <td class="stacked-cell race-driver-name">
                 <span>

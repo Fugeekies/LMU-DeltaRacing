@@ -40,7 +40,7 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
   | CONTACTS | Contacts entre les deux voitures | entier, `—` sans journal |
   | DERNIÈRE COURSE / CIRCUIT | Date de la dernière course affrontée et, dessous, son lieu | `dd/MM/yyyy` |
 
-* **Colonnes ajustables :** faire glisser le bord droit d'un en-tête change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit (même règle dans Mes courses et Détail des courses, `wwwroot/resizable-columns.js`).
+* **Colonnes ajustables :** une poignée (deux traits fins) au bord droit de chaque en-tête, rouge LMU au survol avec un curseur de redimensionnement ; la faire glisser change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit (même règle dans Mes courses et Détail des courses, `wwwroot/resizable-columns.js`).
 
 * Un badge dans l'en-tête du panneau indique le nombre d'adversaires après filtrage.
 * **États de la page :**

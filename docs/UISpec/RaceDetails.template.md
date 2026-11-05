@@ -47,7 +47,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | Colonne | Ligne principale | Ligne secondaire |
   |---|---|---|
   | POS | Position générale (`01`, `02`… ou `—`) | — |
-  | CLASSE | Badge de catégorie (voir « Mes courses ») suivi de la position en classe (`LMGT3 P2`, `—` sans position) | — |
+  | CLASSE | Badge de catégorie (voir « Mes courses »), sans la position en classe, qui doublait POS | — |
   | PILOTE / VOITURE | Nom, suivi du tag **VOUS** pour le pilote sélectionné | `CarType`, à défaut `#<CarNumber>`, à défaut `—` (tronqué avec « … » si trop long) |
   | SECTEUR 1 / 2 / 3 / ÉCART | Meilleur secteur personnel, coloré selon les règles WEC (`38.120s`) | Écart au meilleur secteur de la classe (`+0.130s` / `0.000s`) |
   | TOUR IDÉAL / ÉCART | Somme des meilleurs secteurs (`m:ss.fff`) | Écart au meilleur tour idéal de la classe (`+2.309s`) |
@@ -68,7 +68,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * Les incidents du pilote suivi sont des points sur sa ligne, à la couleur du plus grave : dégâts (rouge), contact avec une voiture (orange), obstacle (jaune), pénalité (violet), limites de piste (gris). Ses arrêts au stand sont des traits pointillés. Survoler un point donne le détail du tour. Règles de calcul dans [`DrivingProfile.template.md`](DrivingProfile.template.md).
 * **Ligne du pilote sélectionné :** légèrement surlignée (fond rouge LMU translucide), en plus du tag **VOUS**.
 * Le tableau garde sa zone de défilement **vertical** (hauteur maximale 680 px, en-tête fixe).
-* **Colonnes ajustables :** faire glisser le bord droit d'un en-tête change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.
+* **Colonnes ajustables :** une poignée (deux traits fins) au bord droit de chaque en-tête, rouge LMU au survol avec un curseur de redimensionnement ; la faire glisser change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.
 
 * **Grandes grilles :** au-delà de 40 pilotes, les lignes sont virtualisées (seules les lignes visibles sont rendues). Jusqu'à 40 pilotes, toutes les lignes sont rendues, y compris dans le pré-rendu serveur.
 * **Légende** sous le tableau : Meilleur secteur de la classe (violet), Temps standard (jaune), et rappel que les secteurs sont des meilleurs personnels comparés par classe.
@@ -95,13 +95,13 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
 │  POS  CLASSE     PILOTE             SECTEUR 1    SECTEUR 2    SECTEUR 3    TOUR IDÉAL   MEILLEUR TOUR   TEMPS TOTAL                                  │
 │                  VOITURE            ÉCART        ÉCART        ÉCART        ÉCART        ÉCART           ÉCART AU 1ER                                 │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  01   LMGT3 P1   Driver Louis       🟣 41.859s   🟡 74.351s   🟣 44.395s   2:40.605     2:41.796        21:47.737                                    │
+│  01   LMGT3      Driver Louis       🟣 41.859s   🟡 74.351s   🟣 44.395s   2:40.605     2:41.796        21:47.737                                    │
 │                  BMW M4 LMGT3       0.000s       +0.370s      0.000s       0.000s       0.000s          LEADER                                       │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  04   LMGT3 P4   Driver Tom VOUS    🟡 42.478s   🟡 74.602s   🟡 45.835s   2:42.914     2:44.849        22:37.645      ← ligne surlignée             │
+│  04   LMGT3      Driver Tom VOUS    🟡 42.478s   🟡 74.602s   🟡 45.835s   2:42.914     2:44.849        22:37.645      ← ligne surlignée             │
 │                  Porsche 911 GT3 R  +0.619s      +0.621s      +1.439s      +2.309s      +3.054s         +49.908s                                     │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  11   LMGT3 P11  Driver Emma        🟡 42.411s   🟡 75.358s   🟡 45.068s   2:42.836     2:43.196        —                                            │
+│  11   LMGT3      Driver Emma        🟡 42.411s   🟡 75.358s   🟡 45.068s   2:42.836     2:43.196        —                                            │
 │                  McLaren 720S LMGT3 +0.551s      +1.378s      +0.672s      +2.231s      +1.400s         DNF                                          │
 │                                                                                                                                                    │
 │  🟣 Meilleur secteur de la classe   🟡 Temps standard   Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe │

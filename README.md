@@ -98,7 +98,7 @@ Pour chaque pilote :
 | Colonne | Signification |
 |---|---|
 | **POS** | Position au général |
-| **CLASSE** | Catégorie et position dans la catégorie |
+| **CLASSE** | Catégorie du pilote |
 | **PILOTE** | Nom du pilote et, dessous, sa voiture |
 | **SECTEUR 1, 2, 3** | Meilleur temps du pilote sur chaque secteur. 🟣 **Violet** : meilleur de la catégorie. 🟡 **Jaune** : temps standard. En petit dessous : l'écart avec le meilleur temps de la catégorie sur ce secteur |
 | **TOUR IDÉAL** | Somme des trois meilleurs secteurs : le tour que le pilote aurait pu faire. Dessous : l'écart avec le meilleur tour idéal de la catégorie |
@@ -176,7 +176,7 @@ Seules les **courses** comptent (pas les qualifications), et seulement contre le
 
 Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
 
-> Dans **Mes courses**, **Classement des coureurs** et **Détail des courses**, faites glisser le bord droit d'un en-tête de colonne pour l'élargir ou la rétrécir ; un double-clic sur ce bord rétablit les largeurs d'origine, comme un rechargement de la page.
+> Dans **Mes courses**, **Classement des coureurs** et **Détail des courses**, faites glisser la poignée (deux petits traits) au bord droit d’un en-tête de colonne pour l'élargir ou la rétrécir ; un double-clic sur ce bord rétablit les largeurs d'origine, comme un rechargement de la page.
 
 ### Options
 
