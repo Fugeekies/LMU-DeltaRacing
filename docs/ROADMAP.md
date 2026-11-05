@@ -4,15 +4,6 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ## À faire
 
-### Jalon — Exploiter les événements du `Stream` 
-La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
-- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
-- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
-- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
-- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
-- [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profil de conduite ».
-- [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
-
 ### Jalon — Analyse de course tour par tour 
 Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
 - [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
@@ -22,6 +13,7 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le déroulé de la course.
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
+- [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
 
 ### Jalon — Interface multilingue 
 Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder.
@@ -52,12 +44,21 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
 - [ ] Exporter les résultats et statistiques en CSV.
 - [ ] Optimisation des essais (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt. Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
-- La fiche pilote, la comparaison de sessions et l'affichage des incidents sont dans le jalon « Exploiter les événements du `Stream` ».
+- Les incidents sont affichés depuis le jalon « Exploiter les événements du `Stream` » ; la fiche pilote est abandonnée (couverte par Profil de conduite) et la comparaison de sessions est dans le jalon « Analyse de course tour par tour ».
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 - [x] Permettre de choisir le dossier de résultats depuis l'interface (page Options).
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Exploiter les événements du `Stream` — 05/11/2026 · PR [#53](https://github.com/Fugeekies/LMU-DeltaRacing/pull/53), clôture [#59](https://github.com/Fugeekies/LMU-DeltaRacing/pull/59)
+La donnée la plus riche des fichiers LMU n'était pas utilisée : incidents, contacts, limites de piste, pénalités et scores (`<Stream>` de chaque phase). Décisions : [`propositions/exploiter-stream.md`](propositions/exploiter-stream.md).
+- [x] **Fixtures :** noms des événements du `Stream` rétablis depuis les résultats d'origine de l'historique git, en conservant les retouches de démonstration de Driver Tom.
+- [x] Documenter le format réel des événements du `Stream` dans `AGENTS.md`.
+- [x] **Parser :** lire les contacts, les limites de piste et les pénalités du `Stream`, sans extrapoler les balises.
+- [x] Afficher les incidents et les avertissements de limites de piste dans Détail des courses.
+- Abandonné : fiche pilote avec ses statistiques cumulées et sa « propreté » de pilotage, couverte par la page Profil de conduite.
+- Reporté au jalon « Analyse de course tour par tour » : comparer plusieurs sessions sur un même circuit et une même catégorie.
 
 ### Jalon — README multilingue — 05/11/2026 · PR [#58](https://github.com/Fugeekies/LMU-DeltaRacing/pull/58)
 Rendre le guide utilisateur lisible hors de France. Langues retenues : anglais, français, allemand, italien, espagnol. Un wiki GitHub a été écarté : ses pages échappent aux PR et ne suivent pas les versions.
