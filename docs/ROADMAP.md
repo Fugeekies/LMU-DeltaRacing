@@ -23,12 +23,6 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
 
-### Jalon — README multilingue 
-Rendre le guide utilisateur lisible hors de France. Aucun prérequis, à faire avant le jalon « Interface multilingue » car il est bien plus léger. Langues à confirmer : français et anglais proposés.
-- [ ] Traduire `README.md` dans un fichier par langue (par exemple `README.en.md`), avec un lien de changement de langue en tête de chaque version.
-- [ ] Décider de la langue affichée par défaut sur GitHub (celle de `README.md`).
-- [ ] Ajouter dans `AGENTS.md` la règle de synchronisation : toute modification du README se reporte dans chaque langue. Les autres documents de `docs/` restent en français.
-
 ### Jalon — Interface multilingue 
 Aujourd'hui, l'application n'a aucun mécanisme de traduction : tous les textes sont écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder.
 - [ ] Rédiger la proposition : mécanisme de traduction, langues proposées, langue par défaut (français, ou langue de Windows au premier lancement), sort de la console selon le jalon « Avenir de la console Spectre » et de l'installeur Inno Setup.
@@ -64,6 +58,12 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — README multilingue — 05/11/2026 · PR [#58](https://github.com/Fugeekies/LMU-DeltaRacing/pull/58)
+Rendre le guide utilisateur lisible hors de France. Langues retenues : anglais, français, allemand, italien, espagnol. Un wiki GitHub a été écarté : ses pages échappent aux PR et ne suivent pas les versions.
+- [x] Guide découpé en une page courte par sujet, dans `docs/guide/<langue>/` (mêmes noms de fichiers dans chaque langue), avec en tête le sélecteur vers la même page dans les autres langues.
+- [x] `README.md` : page d'accueil courte, une section par langue, l'anglais en premier.
+- [x] Règle de synchronisation dans `AGENTS.md` (toute modification se reporte dans les cinq langues, le français sert de référence) et tests `UserGuideTests`. Les autres documents de `docs/` restent en français.
 
 ### Jalon — Tableaux : colonnes et données — 05/11/2026 · PR [#57](https://github.com/Fugeekies/LMU-DeltaRacing/pull/57)
 Améliorer les tableaux du dashboard. Specs mises à jour : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md), [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md), [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md).
