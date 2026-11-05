@@ -1135,7 +1135,7 @@ h3 {
 }
 
 .ranking-table {
-    min-width: 590px;
+    min-width: 960px;
 }
 
 .win-rate {
@@ -2834,4 +2834,49 @@ p.home-rate {
     background: var(--muted);
     opacity: 0.6;
     vertical-align: middle;
+}
+
+/* Resizable columns (resizable-columns.js): the right edge of each header drags its column. */
+table[data-resizable-columns] th {
+    position: relative;
+}
+
+table[data-resizable-columns] th::after {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    bottom: 25%;
+    width: 2px;
+    content: "";
+    background: transparent;
+}
+
+table[data-resizable-columns] th.column-resize-edge {
+    cursor: col-resize;
+}
+
+table[data-resizable-columns] th.column-resize-edge::after {
+    background: var(--border);
+}
+
+table.columns-resized {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+table.columns-resized th,
+table.columns-resized td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.column-resizing,
+.column-resizing * {
+    cursor: col-resize !important;
+    user-select: none;
+}
+
+.race-details-table .class-position {
+    color: var(--text);
+    font-weight: 650;
 }

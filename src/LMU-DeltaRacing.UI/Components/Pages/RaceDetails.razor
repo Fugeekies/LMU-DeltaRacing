@@ -107,11 +107,12 @@ else
         else
         {
             <div class="table-scroll race-details-scroll">
-                <table class="data-table race-details-table">
+                <table class="data-table race-details-table" data-resizable-columns>
                     <thead>
                         <tr>
                             @* Each cell stacks a value and its gap, so the grid fits without horizontal scrolling. *@
-                            <th scope="col">POS <span class="th-sub">CLASSE</span></th>
+                            <th scope="col">POS</th>
+                            <th scope="col">CLASSE</th>
                             <th scope="col">PILOTE <span class="th-sub">VOITURE</span></th>
                             <th scope="col" class="numeric-cell">SECTEUR 1 <span class="th-sub">ÉCART</span></th>
                             <th scope="col" class="numeric-cell">SECTEUR 2 <span class="th-sub">ÉCART</span></th>
@@ -287,12 +288,10 @@ else
 
     private RenderFragment<RaceDetailsDriverResult> RenderRow => result =>
         @<tr class="@(result.IsPlayer ? "player-row" : string.Empty)">
-            <td class="stacked-cell">
-                <span class="position-value">@(result.Position?.ToString("00") ?? "—")</span>
-                <span class="cell-sub">
-                    <span class="category-badge @CategoryStyle.CssClass(result.Category)">@result.Category</span>
-                    <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
-                </span>
+            <td><span class="position-value">@(result.Position?.ToString("00") ?? "—")</span></td>
+            <td class="class-cell">
+                <span class="category-badge @CategoryStyle.CssClass(result.Category)">@result.Category</span>
+                <span class="class-position">@(result.ClassPosition is { } classPosition ? $"P{classPosition}" : "—")</span>
             </td>
             <td class="stacked-cell race-driver-name">
                 <span>

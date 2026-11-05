@@ -123,7 +123,7 @@ UISpec/
 
 7. **🏆 Classement des Coureurs (`/drivers-ranking`)** *(Voir template [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md))*
    * Tableau récapitulatif de la rivalité Head-to-Head (H2H) avec les pilotes affrontés en course, dans la même classe.
-   * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle.
+   * Nombre de courses affrontées, victoires, défaites et pourcentage de victoire avec barre visuelle, cote de l'adversaire, écart moyen en classe, contacts entre les deux voitures et dernière course affrontée.
 
 8. **⚙️ Options (`/settings`)** *(Voir template [`UISpec/Settings.template.md`](UISpec/Settings.template.md))*
    * Configuration du dossier des résultats XML du jeu (`UserData/Log/Results`).

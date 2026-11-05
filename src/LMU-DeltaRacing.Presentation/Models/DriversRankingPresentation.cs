@@ -14,11 +14,16 @@ public static class DriversRankingPresentation
     /// Qualifying sessions are ignored because the view counts races. In multiclass races, only
     /// drivers of the player's class are real opponents: beating a slower-class car says nothing.
     /// </remarks>
+    /// <param name="sessions">The imported sessions.</param>
+    /// <param name="userName">The selected driver.</param>
+    /// <param name="ratings">The driver ratings, read for the current rating of each opponent.</param>
     public static IReadOnlyList<DriverRivalry> CreateRivalries(
         IEnumerable<Session> sessions,
-        string? userName)
+        string? userName,
+        DriverRatingHistory ratings)
     {
         ArgumentNullException.ThrowIfNull(sessions);
+        ArgumentNullException.ThrowIfNull(ratings);
         if (string.IsNullOrWhiteSpace(userName))
         {
             return [];
@@ -32,6 +37,15 @@ public static class DriversRankingPresentation
             {
                 continue;
             }
+
+            // Without a log, the race says nothing about contacts: it must not count as zero.
+            var playerContacts = session.Events.Count == 0
+                ? null
+                : DrivingConductPresentation.CreateIncidents(session)
+                    .GetValueOrDefault(player.Name.Trim(), [])
+                    .Where(incident => incident.Kind == SessionEventKind.VehicleContact && incident.Detail is not null)
+                    .Select(incident => incident.Detail!.Trim())
+                    .ToArray();
 
             foreach (var opponent in session.Drivers
                 .Where(driver => !string.Equals(
@@ -54,6 +68,7 @@ public static class DriversRankingPresentation
 
                 rival.SessionsFaced++;
                 var opponentRank = opponent.ClassRank()!.Value;
+                rival.GapSum += opponentRank - playerRank;
                 if (playerRank < opponentRank)
                 {
                     rival.Wins++;
@@ -61,6 +76,18 @@ public static class DriversRankingPresentation
                 else if (playerRank > opponentRank)
                 {
                     rival.Losses++;
+                }
+
+                if (rival.LastFacedTrack is null || session.StartedAt > rival.LastFacedAt)
+                {
+                    rival.LastFacedAt = session.StartedAt;
+                    rival.LastFacedTrack = session.TrackVenue;
+                }
+
+                if (playerContacts is not null)
+                {
+                    rival.Contacts = (rival.Contacts ?? 0) + playerContacts.Count(name =>
+                        string.Equals(name, opponent.Name.Trim(), StringComparison.OrdinalIgnoreCase));
                 }
             }
         }
@@ -70,7 +97,12 @@ public static class DriversRankingPresentation
                 rival.Name,
                 rival.SessionsFaced,
                 rival.Wins,
-                rival.Losses))
+                rival.Losses,
+                (double)rival.GapSum / rival.SessionsFaced,
+                rival.LastFacedAt,
+                rival.LastFacedTrack!,
+                ratings.FindDriver(rival.Name)?.Rating,
+                rival.Contacts))
             .ToArray();
     }
 
@@ -80,5 +112,9 @@ public static class DriversRankingPresentation
         public int SessionsFaced { get; set; }
         public int Wins { get; set; }
         public int Losses { get; set; }
+        public int GapSum { get; set; }
+        public DateTimeOffset LastFacedAt { get; set; }
+        public string? LastFacedTrack { get; set; }
+        public int? Contacts { get; set; }
     }
 }

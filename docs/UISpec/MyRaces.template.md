@@ -1,6 +1,6 @@
 ## 1. 🏎️ Menu : Mes Courses (`MyRaces.razor`)
 
-> Spécification alignée sur le code au 30/10/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
+> Spécification alignée sur le code au 05/11/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
 
 ### Description
 Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
@@ -47,6 +47,7 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
   | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
 
   Toute valeur absente s'affiche `—`. Le classement ouvrant le tableau, les colonnes de la course précèdent celles de la qualification.
+* **Colonnes ajustables :** faire glisser le bord droit d'un en-tête change la largeur de sa colonne, tableau par tableau (chaque circuit a le sien) ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.
 * **Mise en avant du classement :** la ligne d'une course classée est encadrée (bordure de 1 px sur toute la ligne) et sa position est écrite dans la couleur de son rang (couleurs de `UI_DESIGN_SPEC.md`, section 7), avec un fond légèrement teinté (10 % pour le podium, 5 % pour le top 10) :
   * P1 : or ; P2 : argent ; P3 : bronze ; sur le podium, une petite coupe de la même couleur précède la position (`🏆 1er`), seulement pour une course classée ;
   * P4-P5 : bleu ;
