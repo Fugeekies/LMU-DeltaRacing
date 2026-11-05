@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Texts shown to the user, in French: the neutral language of the application and the reference
+  of the translations (docs/propositions/interface-multilingue.md). Keys are in English, named by
+  page and role. Placeholders use the composite format: {0}, {1}…
+-->
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Nav.HomeLink" xml:space="preserve">
+    <value>LMU DeltaRacing - accueil</value>
+  </data>
+  <data name="Nav.Label" xml:space="preserve">
+    <value>Navigation principale</value>
+  </data>
+  <data name="Nav.Home" xml:space="preserve">
+    <value>Accueil</value>
+  </data>
+  <data name="Nav.MyRaces" xml:space="preserve">
+    <value>Mes courses</value>
+  </data>
+  <data name="Nav.RaceDetails" xml:space="preserve">
+    <value>Détail des courses</value>
+  </data>
+  <data name="Nav.Progression" xml:space="preserve">
+    <value>Progression</value>
+  </data>
+  <data name="Nav.DrivingProfile" xml:space="preserve">
+    <value>Profil de conduite</value>
+  </data>
+  <data name="Nav.DriverRating" xml:space="preserve">
+    <value>Cote pilote</value>
+  </data>
+  <data name="Nav.DriversRanking" xml:space="preserve">
+    <value>Classement des coureurs</value>
+  </data>
+  <data name="Nav.Settings" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Layout.NoDriver" xml:space="preserve">
+    <value>Pilote non défini</value>
+  </data>
+  <data name="Layout.FooterGame" xml:space="preserve">
+    <value>LE MANS ULTIMATE</value>
+  </data>
+  <data name="Layout.FooterPrivacy" xml:space="preserve">
+    <value>RÉSULTATS LOCAUX · DONNÉES NON TRANSMISES</value>
+  </data>
+  <data name="Layout.Error" xml:space="preserve">
+    <value>Une erreur est survenue.</value>
+  </data>
+  <data name="Layout.Reload" xml:space="preserve">
+    <value>Recharger</value>
+  </data>
+  <data name="Layout.Dismiss" xml:space="preserve">
+    <value>Fermer</value>
+  </data>
+  <data name="Status.Unavailable" xml:space="preserve">
+    <value>RÉSULTATS INDISPONIBLES</value>
+  </data>
+  <data name="Status.InitialImport" xml:space="preserve">
+    <value>IMPORT INITIAL</value>
+  </data>
+  <data name="Status.Watching" xml:space="preserve">
+    <value>SURVEILLANCE ACTIVE</value>
+  </data>
+  <data name="Status.NotWatching" xml:space="preserve">
+    <value>SURVEILLANCE INACTIVE</value>
+  </data>
+  <data name="Startup.LogoAlt" xml:space="preserve">
+    <value>Delta Racing</value>
+  </data>
+  <data name="Startup.Title" xml:space="preserve">
+    <value>Chargement de vos résultats</value>
+  </data>
+  <data name="Startup.ProgressLabel" xml:space="preserve">
+    <value>Progression de l’import initial</value>
+  </data>
+  <data name="Update.SeeInSettings" xml:space="preserve">
+    <value>Voir dans Options</value>
+  </data>
+  <data name="Home.Eyebrow" xml:space="preserve">
+    <value>TABLEAU DE BORD</value>
+  </data>
+  <data name="Home.Subtitle" xml:space="preserve">
+    <value>Votre carrière en un coup d’œil, résultats comptés sur la position en classe.</value>
+  </data>
+  <data name="Home.EmptyTitle" xml:space="preserve">
+    <value>Aucune course disponible</value>
+  </data>
+  <data name="Home.EmptyText" xml:space="preserve">
+    <value>Les sessions de qualification et de course du pilote sélectionné apparaîtront ici après leur import.</value>
+  </data>
+  <data name="Home.Driver" xml:space="preserve">
+    <value>PILOTE</value>
+  </data>
+  <data name="Home.RatingLink" xml:space="preserve">
+    <value>Voir votre cote pilote</value>
+  </data>
+  <data name="Home.RatingProvisional" xml:space="preserve">
+    <value>COTE PILOTE PROVISOIRE</value>
+  </data>
+  <data name="Home.Rating" xml:space="preserve">
+    <value>COTE PILOTE</value>
+  </data>
+  <data name="Home.FavoriteCircuit" xml:space="preserve">
+    <value>CIRCUIT FAVORI</value>
+  </data>
+  <data name="Home.FavoriteCar" xml:space="preserve">
+    <value>VOITURE FAVORITE</value>
+  </data>
+  <data name="Home.RecentForm" xml:space="preserve">
+    <value>FORME RÉCENTE</value>
+  </data>
+  <data name="Home.RecentFormLabel" xml:space="preserve">
+    <value>Dernières courses, de la plus récente à la plus ancienne</value>
+  </data>
+  <data name="Home.LastRace" xml:space="preserve">
+    <value>DERNIÈRE COURSE</value>
+  </data>
+  <data name="Home.UnknownPosition" xml:space="preserve">
+    <value>Position inconnue</value>
+  </data>
+  <data name="Home.SeeEvent" xml:space="preserve">
+    <value>Voir l’événement →</value>
+  </data>
+  <data name="Home.Record" xml:space="preserve">
+    <value>PALMARÈS</value>
+  </data>
+  <data name="Home.Races" xml:space="preserve">
+    <value>COURSES</value>
+  </data>
+  <data name="Home.Wins" xml:space="preserve">
+    <value>VICTOIRES</value>
+  </data>
+  <data name="Home.Podiums" xml:space="preserve">
+    <value>PODIUMS</value>
+  </data>
+  <data name="Home.Top5" xml:space="preserve">
+    <value>TOP 5</value>
+  </data>
+  <data name="Home.Top10" xml:space="preserve">
+    <value>TOP 10</value>
+  </data>
+  <data name="Home.AveragePosition" xml:space="preserve">
+    <value>POSITION MOYENNE</value>
+  </data>
+  <data name="Home.Mileage" xml:space="preserve">
+    <value>ROULAGE</value>
+  </data>
+  <data name="Home.Laps" xml:space="preserve">
+    <value>TOURS BOUCLÉS</value>
+  </data>
+  <data name="Home.Distance" xml:space="preserve">
+    <value>DISTANCE</value>
+  </data>
+  <data name="Home.TimeOnTrack" xml:space="preserve">
+    <value>TEMPS EN PISTE</value>
+  </data>
+  <data name="Home.QualifyingStart" xml:space="preserve">
+    <value>QUALIFICATION &amp; DÉPART</value>
+  </data>
+  <data name="Home.Poles" xml:space="preserve">
+    <value>POLES</value>
+  </data>
+  <data name="Home.AverageQualifyingPosition" xml:space="preserve">
+    <value>POSITION MOYENNE EN QUALIF</value>
+  </data>
+  <data name="Home.PositionsGained" xml:space="preserve">
+    <value>PLACES GAGNÉES</value>
+  </data>
+  <data name="Home.PerRace" xml:space="preserve">
+    <value>/ course</value>
+  </data>
+  <data name="Home.Retirements" xml:space="preserve">
+    <value>ABANDONS</value>
+  </data>
+  <data name="Home.Disqualifications" xml:space="preserve">
+    <value>DISQUALIFICATIONS</value>
+  </data>
+  <data name="Home.Unclassified" xml:space="preserve">
+    <value>NON CLASSÉ</value>
+  </data>
+  <data name="Home.RetirementCauses" xml:space="preserve">
+    <value>CAUSES D’ABANDON</value>
+  </data>
+  <data name="PageTitle" xml:space="preserve">
+    <value>{0} | LMU DeltaRacing</value>
+  </data>
+  <data name="Home.OnTrackFromTo" xml:space="preserve">
+    <value>En piste du {0} au {1}</value>
+  </data>
+  <data name="Home.RatingRank" xml:space="preserve">
+    <value>{0} sur {1} pilotes classés</value>
+  </data>
+  <data name="Home.RatingRecentChange" xml:space="preserve">
+    <value>{0} sur {1}</value>
+  </data>
+  <data name="Common.Races.One" xml:space="preserve">
+    <value>{0} course</value>
+  </data>
+  <data name="Common.Races.Other" xml:space="preserve">
+    <value>{0} courses</value>
+  </data>
+  <data name="Common.Wins.One" xml:space="preserve">
+    <value>{0} victoire</value>
+  </data>
+  <data name="Common.Wins.Other" xml:space="preserve">
+    <value>{0} victoires</value>
+  </data>
+  <data name="Common.Podiums.One" xml:space="preserve">
+    <value>{0} podium</value>
+  </data>
+  <data name="Common.Podiums.Other" xml:space="preserve">
+    <value>{0} podiums</value>
+  </data>
+  <data name="Home.ClassPosition" xml:space="preserve">
+    <value>P{0} en classe</value>
+  </data>
+  <data name="Home.InTotal" xml:space="preserve">
+    <value>au total</value>
+  </data>
+</root>

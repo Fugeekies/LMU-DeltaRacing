@@ -1,13 +1,13 @@
 @page "/"
 @inherits DashboardPage
 
-<PageTitle>Accueil | LMU DeltaRacing</PageTitle>
+<PageTitle>@T["PageTitle", T["Nav.Home"]]</PageTitle>
 
 <section class="page-heading">
     <div>
-        <p class="eyebrow">TABLEAU DE BORD</p>
-        <h1>Accueil</h1>
-        <p class="page-subtitle">Votre carrière en un coup d’œil, résultats comptés sur la position en classe.</p>
+        <p class="eyebrow">@T["Home.Eyebrow"]</p>
+        <h1>@T["Nav.Home"]</h1>
+        <p class="page-subtitle">@T["Home.Subtitle"]</p>
     </div>
 </section>
 
@@ -16,49 +16,49 @@
 {
     <section class="panel empty-state">
         <span class="empty-icon" aria-hidden="true">○</span>
-        <h3>Aucune course disponible</h3>
-        <p>Les sessions de qualification et de course du pilote sélectionné apparaîtront ici après leur import.</p>
+        <h3>@T["Home.EmptyTitle"]</h3>
+        <p>@T["Home.EmptyText"]</p>
     </section>
 }
 else
 {
     <div class="home-hero">
         <article class="home-tile home-driver" aria-labelledby="home-driver">
-            <p id="home-driver" class="summary-label">PILOTE</p>
+            <p id="home-driver" class="summary-label">@T["Home.Driver"]</p>
             <p class="home-driver-name">@State.UserName</p>
             @if (dashboard.FirstRaceAt is { } firstRaceAt && dashboard.LastRaceAt is { } lastRaceAt)
             {
-                <p class="home-rate">En piste du @DisplayFormat.Day(firstRaceAt) au @DisplayFormat.Day(lastRaceAt)</p>
+                <p class="home-rate">@T["Home.OnTrackFromTo", DisplayFormat.Day(firstRaceAt), DisplayFormat.Day(lastRaceAt)]</p>
             }
             @if (rating is not null)
             {
-                <a class="home-rating" href="/rating" aria-label="Voir votre cote pilote">
-                    <span class="summary-label">@(rating.IsProvisional ? "COTE PILOTE PROVISOIRE" : "COTE PILOTE")</span>
+                <a class="home-rating" href="/rating" aria-label="@T["Home.RatingLink"]">
+                    <span class="summary-label">@(rating.IsProvisional ? T["Home.RatingProvisional"] : T["Home.Rating"])</span>
                     <strong>@DisplayFormat.Rating(rating.Rating)</strong>
                     @if (rating.Tier is { } tier)
                     {
                         <span class="tier-badge @TierStyle.CssClass(tier)">@DriverRatingPresentation.Label(tier).ToUpperInvariant()</span>
                     }
                     <span class="home-rate">
-                        @(rating.Rank is { } rank ? $"{DisplayFormat.Position(rank)} sur {rating.RankedDrivers} pilotes classés · " : string.Empty)@DisplayFormat.RatingChange(rating.RecentChange) sur @(rating.RecentRaces > 1 ? $"{rating.RecentRaces} courses" : "1 course")
+                        @(rating.Rank is { } rank ? $"{T["Home.RatingRank", DisplayFormat.Position(rank), rating.RankedDrivers]} · " : string.Empty)@T["Home.RatingRecentChange", DisplayFormat.RatingChange(rating.RecentChange), Texts.Plural("Common.Races", rating.RecentRaces)]
                     </span>
                 </a>
             }
             <div class="home-favorites">
-                @RenderFavorite("CIRCUIT FAVORI", dashboard.FavoriteCircuit)
-                @RenderFavorite("VOITURE FAVORITE", dashboard.FavoriteCar)
+                @RenderFavorite(T["Home.FavoriteCircuit"], dashboard.FavoriteCircuit)
+                @RenderFavorite(T["Home.FavoriteCar"], dashboard.FavoriteCar)
             </div>
         </article>
 
         <article class="home-tile home-form" aria-labelledby="home-form">
-            <p id="home-form" class="summary-label">FORME RÉCENTE</p>
+            <p id="home-form" class="summary-label">@T["Home.RecentForm"]</p>
             @if (dashboard.RecentForm.Count == 0)
             {
                 <p class="home-value">—</p>
             }
             else
             {
-                <ol class="form-pills" aria-label="Dernières courses, de la plus récente à la plus ancienne">
+                <ol class="form-pills" aria-label="@T["Home.RecentFormLabel"]">
                     @foreach (var entry in dashboard.RecentForm)
                     {
                         <li class="form-pill form-@entry.Kind.ToString().ToLowerInvariant()"
@@ -71,17 +71,17 @@ else
             @if (dashboard.LastRace is { } lastRace)
             {
                 <div class="last-race">
-                    <p class="summary-label">DERNIÈRE COURSE</p>
+                    <p class="summary-label">@T["Home.LastRace"]</p>
                     <p>
                         <strong>@DisplayFormat.DateTime(lastRace.StartedAt)</strong> · @lastRace.TrackVenue · @lastRace.Car
                     </p>
                     <p class="last-race-result">
-                        @(lastRace.ClassPosition is { } position ? $"P{position} en classe" : "Position inconnue")
+                        @(lastRace.ClassPosition is { } position ? T["Home.ClassPosition", position].Value : T["Home.UnknownPosition"])
                         · @lastRace.StatusLabel
                         · @DisplayFormat.Lap(lastRace.BestLap)
                         @if (lastRace.EventId is { } eventId)
                         {
-                            <a class="last-race-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">Voir l’événement →</a>
+                            <a class="last-race-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")">@T["Home.SeeEvent"]</a>
                         }
                     </p>
                 </div>
@@ -90,40 +90,40 @@ else
     </div>
 
     <section class="home-section" aria-labelledby="home-results">
-        <h2 id="home-results" class="eyebrow">PALMARÈS</h2>
+        <h2 id="home-results" class="eyebrow">@T["Home.Record"]</h2>
         <div class="home-tiles">
-            @RenderStat("COURSES", dashboard.Races, DisplayFormat.Count)
-            @RenderStat("VICTOIRES", dashboard.Wins, DisplayFormat.Count)
-            @RenderStat("PODIUMS", dashboard.Podiums, DisplayFormat.Count)
-            @RenderStat("TOP 5", dashboard.Top5, DisplayFormat.Count)
-            @RenderStat("TOP 10", dashboard.Top10, DisplayFormat.Count)
-            @RenderStat("POSITION MOYENNE", dashboard.AveragePosition, DisplayFormat.Average, stacked: false)
+            @RenderStat(T["Home.Races"], dashboard.Races, DisplayFormat.Count)
+            @RenderStat(T["Home.Wins"], dashboard.Wins, DisplayFormat.Count)
+            @RenderStat(T["Home.Podiums"], dashboard.Podiums, DisplayFormat.Count)
+            @RenderStat(T["Home.Top5"], dashboard.Top5, DisplayFormat.Count)
+            @RenderStat(T["Home.Top10"], dashboard.Top10, DisplayFormat.Count)
+            @RenderStat(T["Home.AveragePosition"], dashboard.AveragePosition, DisplayFormat.Average, stacked: false)
         </div>
     </section>
 
     <section class="home-section" aria-labelledby="home-driving">
-        <h2 id="home-driving" class="eyebrow">ROULAGE</h2>
+        <h2 id="home-driving" class="eyebrow">@T["Home.Mileage"]</h2>
         <div class="home-tiles">
-            @RenderStat("TOURS BOUCLÉS", dashboard.Laps, DisplayFormat.Count)
-            @RenderStat("DISTANCE", dashboard.DistanceKm, DisplayFormat.Distance)
-            @RenderStat("TEMPS EN PISTE", dashboard.TimeOnTrack, DisplayFormat.Duration)
+            @RenderStat(T["Home.Laps"], dashboard.Laps, DisplayFormat.Count)
+            @RenderStat(T["Home.Distance"], dashboard.DistanceKm, DisplayFormat.Distance)
+            @RenderStat(T["Home.TimeOnTrack"], dashboard.TimeOnTrack, DisplayFormat.Duration)
         </div>
     </section>
 
     <section class="home-section" aria-labelledby="home-start">
-        <h2 id="home-start" class="eyebrow">QUALIFICATION &amp; DÉPART</h2>
+        <h2 id="home-start" class="eyebrow">@T["Home.QualifyingStart"]</h2>
         <div class="home-tiles">
-            @RenderStat("POLES", dashboard.Poles, DisplayFormat.Count)
-            @RenderStat("POSITION MOYENNE EN QUALIF", dashboard.AverageQualifyingPosition, DisplayFormat.Average, stacked: false)
+            @RenderStat(T["Home.Poles"], dashboard.Poles, DisplayFormat.Count)
+            @RenderStat(T["Home.AverageQualifyingPosition"], dashboard.AverageQualifyingPosition, DisplayFormat.Average, stacked: false)
             <article class="home-tile">
-                <h3 class="summary-label">PLACES GAGNÉES</h3>
+                <h3 class="summary-label">@T["Home.PositionsGained"]</h3>
                 <p class="home-value">
                     @RenderSigned(dashboard.AveragePositionsGained.Value, "0.0")
-                    <span class="home-unit">/ course</span>
+                    <span class="home-unit">@T["Home.PerRace"]</span>
                 </p>
                 @if (dashboard.TotalPositionsGained is { } total)
                 {
-                    <p class="home-rate">@RenderSigned(total, "0") au total</p>
+                    <p class="home-rate">@RenderSigned(total, "0") @T["Home.InTotal"]</p>
                 }
                 @RenderBreakdown(dashboard.AveragePositionsGained, value => DisplayFormat.Signed(value, "0.0"), stacked: false)
             </article>
@@ -131,13 +131,13 @@ else
     </section>
 
     <section class="home-section" aria-labelledby="home-retirements">
-        <h2 id="home-retirements" class="eyebrow">ABANDONS</h2>
+        <h2 id="home-retirements" class="eyebrow">@T["Home.Retirements"]</h2>
         <div class="home-tiles">
-            @RenderStat("ABANDONS", dashboard.Retirements, DisplayFormat.Count)
-            @RenderStat("DISQUALIFICATIONS", dashboard.Disqualifications, DisplayFormat.Count)
-            @RenderStat("NON CLASSÉ", dashboard.Unclassified, DisplayFormat.Count)
+            @RenderStat(T["Home.Retirements"], dashboard.Retirements, DisplayFormat.Count)
+            @RenderStat(T["Home.Disqualifications"], dashboard.Disqualifications, DisplayFormat.Count)
+            @RenderStat(T["Home.Unclassified"], dashboard.Unclassified, DisplayFormat.Count)
             <article class="home-tile home-tile-wide">
-                <h3 class="summary-label">CAUSES D’ABANDON</h3>
+                <h3 class="summary-label">@T["Home.RetirementCauses"]</h3>
                 @if (dashboard.RetirementCauses.Count == 0)
                 {
                     <p class="home-value">—</p>
@@ -256,9 +256,9 @@ else
                     <p class="circuit-course">@detail</p>
                 }
                 <p class="home-rate">
-                    @favorite.Races @(favorite.Races > 1 ? "courses" : "course")
-                    · @favorite.Wins @(favorite.Wins > 1 ? "victoires" : "victoire")
-                    · @favorite.Podiums @(favorite.Podiums > 1 ? "podiums" : "podium")
+                    @Texts.Plural("Common.Races", favorite.Races)
+                    · @Texts.Plural("Common.Wins", favorite.Wins)
+                    · @Texts.Plural("Common.Podiums", favorite.Podiums)
                 </p>
             }
         </div>;
