@@ -1,6 +1,6 @@
 # LMU-DeltaRacing — Guide développeur
 
-Documentation technique du projet (structure, commandes, packaging). Le guide d'utilisation est dans le [README](../README.md).
+Documentation technique du projet (structure, commandes, packaging). Le guide d’utilisation est dans [`docs/guide/`](guide/fr/README.md), une page par sujet en cinq langues (anglais, français, allemand, italien, espagnol), avec une page d’accueil multilingue dans le [README](../README.md).
 
 La [feuille de route](ROADMAP.md) présente les jalons envisagés et une liste d'idées à prioriser.
 

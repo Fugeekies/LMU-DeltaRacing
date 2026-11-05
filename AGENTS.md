@@ -29,10 +29,10 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | `src/LMU-DeltaRacing.Presentation` | Code partagé par l'UI et la console. `Services/DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`), `DashboardSettingsStore` (écriture des réglages), `ResultsDirectoryResolver`. Calculs des vues dans `Models/*Presentation.cs`. |
 | `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`), vérification de la dernière release (`UpdateCheckService`, version dans `ApplicationVersion`). |
 | `src/LMU-DeltaRacing.Console` | Spectre.Console : `ConsoleApplication` (menu, imports en file d'attente) et `Views/` (Accueil, Mes courses, Options) sur `DashboardDataService`. OpenTelemetry, réglages du log via `IOptionsMonitor<LmuApplicationOptions>`. Aucun argument en ligne de commande. |
-| `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Presentation/`, `Console/`, `UI/`). |
+| `tests/LMU-DeltaRacing.Tests` | MSTest + FluentAssertions, organisés par projet (`Application/`, `Infrastructure/`, `Presentation/`, `Console/`, `UI/`), plus `Documentation/` (cohérence du guide utilisateur). |
 | `benchmarks/LMU-DeltaRacing.Benchmarks` | Parser (synthétique et fichiers réels), chargement complet, calculs de chaque page ×1/×10/×50 ; rapport dans `artifacts/performance-report.md`. |
 | `scripts/` | `installer.iss` (Inno Setup), `Prepare-PackageAssets.ps1` (anonymisation des fixtures), `Repair-StreamNames.ps1` (noms du `Stream` des fixtures), `Test-PublishedApp.ps1`. |
-| `docs/` | `ARCHITECTURE.md`, `ROADMAP.md`, `UI_DESIGN_SPEC.md`, maquettes `UISpec/*.template.md`, `benchmarks/`. |
+| `docs/` | Guide utilisateur `guide/<langue>/` (en, fr, de, it, es), `COTE_PILOTE.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `UI_DESIGN_SPEC.md`, maquettes `UISpec/*.template.md`, `benchmarks/`. |
 
 Points d'attention :
 - UI et console partagent les calculs, les formats (`DisplayFormat`) et le service de données du projet `Presentation` : une règle métier se modifie à un seul endroit, mais son rendu existe deux fois (pages Razor et `Console/Views`). Chacune garde sa composition et son logging (UI : `JsonFileLoggerProvider` ; console : OpenTelemetry + `FileLogExporter`).
@@ -77,7 +77,8 @@ Vérifiés sur `assets/Results` ; s'appuyer dessus plutôt que les redéduire :
 1. **Zéro invention.** Ne jamais extrapoler une balise XML, une règle métier, un comportement UI ou un choix d'architecture non documenté. En cas d'ambiguïté (spec contradictoire, cas limite XML, gestion d'erreur), **s'arrêter et poser la question** avant de coder. Les specs de `docs/` se contredisent parfois : signaler la contradiction au lieu de choisir silencieusement.
 2. **TDD.** Écrire d'abord le test (MSTest + FluentAssertions), le voir échouer, puis implémenter. Préférer les vrais XML de `assets/Results/` (ne pas les copier dans `tests/`) aux données synthétiques pour les règles métier.
 3. **Après chaque modification de code :** `dotnet build` sans avertissement et tests verts avant d'annoncer que c'est terminé.
-4. **Garder la doc synchronisée** : `README.md` (guide utilisateur), `docs/DEVELOPMENT.md` (guide développeur), `docs/ARCHITECTURE.md` et `docs/ROADMAP.md` (cocher un jalon seulement quand il est réellement implémenté).
+4. **Garder la doc synchronisée** : guide utilisateur (`README.md` et `docs/guide/`), `docs/DEVELOPMENT.md` (guide développeur), `docs/ARCHITECTURE.md` et `docs/ROADMAP.md` (cocher un jalon seulement quand il est réellement implémenté).
+5. **Guide utilisateur multilingue** : `README.md` est une courte page d'accueil avec une section par langue ; le guide est dans `docs/guide/<langue>/` (`en`, `fr`, `de`, `it`, `es`), une page courte par sujet, avec les mêmes noms de fichiers dans chaque langue. Toute modification d'une page se reporte **dans les cinq langues** (le français sert de référence). Chaque page commence par le sélecteur de langue vers la même page ; l'interface étant en français, les guides étrangers citent les libellés tels qu'à l'écran, suivis de leur traduction : **Mes courses** (*My races*). `UserGuideTests` vérifie les pages, le sélecteur et les liens. Les autres documents de `docs/` restent en français.
 
 ## Conventions de code
 

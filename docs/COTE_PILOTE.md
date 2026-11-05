@@ -2,7 +2,7 @@
 
 Ce guide détaille, règle par règle, comment LMU DeltaRacing calcule la **Cote pilote** (onglet « Cote pilote » du tableau de bord). Aucune connaissance en mathématiques n'est nécessaire : chaque règle est illustrée par un exemple chiffré.
 
-← Retour au [guide d'utilisation](../README.md#cote-pilote)
+← Retour au [guide d’utilisation](guide/fr/driver-rating.md)
 
 ## Sommaire
 

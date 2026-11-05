@@ -1,230 +1,39 @@
 # LMU DeltaRacing
 
-**Suivez votre progression sur Le Mans Ultimate, course après course.**
-
-LMU DeltaRacing lit les fichiers de résultats que *Le Mans Ultimate* enregistre après chaque session et en tire un tableau de bord personnel :
-
-- vos meilleurs tours en qualification et en course, comparés à votre session précédente sur le même circuit ;
-- votre bilan face à chaque adversaire rencontré ;
-- le classement détaillé de chaque course, secteur par secteur, comme sur les écrans de chronométrage du WEC.
-
-Tout se passe sur votre PC : **aucune donnée n'est collectée**.
+[English](#english) · [Français](#français) · [Deutsch](#deutsch) · [Italiano](#italiano) · [Español](#español)
 
 ---
 
-## Sommaire
+## English
 
-1. [Installation](#installation)
-2. [Premier lancement](#premier-lancement)
-3. [Les pages](#les-pages)
-4. [Les options](#les-options)
-5. [Questions fréquentes](#questions-fréquentes)
+**Track your progress in Le Mans Ultimate, race after race.** LMU DeltaRacing reads the result files saved by the game and turns them into a personal dashboard: best laps compared with your previous session, sector-by-sector classification, head-to-head record against each opponent, driving profile and driver rating. Everything stays on your PC: **no data is collected**.
 
----
+[Download](https://github.com/Fugeekies/LMU-DeltaRacing/releases) (Windows 64-bit) · 📖 [User guide](docs/guide/en/README.md)
 
-## Installation
+## Français
 
-**Configuration requise :** Windows 64 bits. Rien d'autre à installer.
+**Suivez votre progression sur Le Mans Ultimate, course après course.** LMU DeltaRacing lit les fichiers de résultats du jeu et en fait un tableau de bord personnel : meilleurs tours comparés à votre session précédente, classement secteur par secteur, bilan face à chaque adversaire, profil de conduite et cote pilote. Tout se passe sur votre PC : **aucune donnée n'est collectée**.
 
-1. Téléchargez `LMU-DeltaRacing-Setup.exe` depuis la page [Releases](https://github.com/Fugeekies/LMU-DeltaRacing/releases) du projet.
-2. Lancez-le. L'installation se fait dans votre profil Windows, sans droits administrateur.
-   > Windows peut afficher un avertissement SmartScreen, car l'installeur n'est pas signé. Cliquez sur **Informations complémentaires**, puis **Exécuter quand même**.
-3. Cochez si vous le souhaitez **Créer une icône sur le bureau**, puis terminez l'installation.
+[Télécharger](https://github.com/Fugeekies/LMU-DeltaRacing/releases) (Windows 64 bits) · 📖 [Guide d'utilisation](docs/guide/fr/README.md)
 
-L'installeur cherche automatiquement le dossier où *Le Mans Ultimate* enregistre vos résultats, dans vos Documents et dans le dossier d'installation Steam du jeu. S'il ne trouve aucun résultat, il configure des **données de démonstration** pour que vous puissiez découvrir l'application. Vous pourrez choisir le bon dossier ensuite (voir [Options](#les-options)).
+## Deutsch
 
-**Mise à jour :** quand une nouvelle version est disponible, une fenêtre vous prévient quelques secondes au démarrage. Téléchargez-la depuis **Options › Mises à jour**, puis installez-la par-dessus l'ancienne. Vos réglages sont conservés.
+**Verfolgen Sie Ihren Fortschritt in Le Mans Ultimate, Rennen für Rennen.** LMU DeltaRacing liest die Ergebnisdateien des Spiels und macht daraus ein persönliches Dashboard: beste Runden im Vergleich zur vorherigen Session, Klassement Sektor für Sektor, Bilanz gegen jeden Gegner, Fahrprofil und Fahrerwertung. Alles bleibt auf Ihrem PC: **Es werden keine Daten gesammelt**.
 
-**Désinstallation :** depuis *Paramètres Windows › Applications*, comme n'importe quel programme.
+[Herunterladen](https://github.com/Fugeekies/LMU-DeltaRacing/releases) (Windows 64 Bit) · 📖 [Benutzerhandbuch](docs/guide/de/README.md)
 
----
+## Italiano
 
-## Premier lancement
+**Segui i tuoi progressi in Le Mans Ultimate, gara dopo gara.** LMU DeltaRacing legge i file dei risultati del gioco e ne ricava una dashboard personale: giri migliori confrontati con la sessione precedente, classifica settore per settore, bilancio contro ogni avversario, profilo di guida e rating pilota. Tutto resta sul tuo PC: **nessun dato viene raccolto**.
 
-Lancez **LMU-DeltaRacing** depuis le menu Démarrer ou l'icône du bureau.
+[Scarica](https://github.com/Fugeekies/LMU-DeltaRacing/releases) (Windows a 64 bit) · 📖 [Guida utente](docs/guide/it/README.md)
 
-- Le tableau de bord s'ouvre **dans votre navigateur web**.
-- Une **fenêtre noire** s'ouvre aussi : c'est l'application elle-même. Laissez-la ouverte tant que vous utilisez le tableau de bord ; **la fermer arrête l'application**. Fermer seulement l'onglet du navigateur ne suffit pas.
-- Au démarrage, l'application lit tous vos fichiers de résultats. Un **écran de chargement** s'affiche pendant ce temps : une roue roule sur une route sous le logo, jusqu'au bout quand tous les fichiers sont lus (« N / M fichiers traités »). Le tableau de bord apparaît ensuite avec toutes vos données, et l'indicateur en haut à droite affiche **SURVEILLANCE ACTIVE**.
-- **Votre pilote est détecté automatiquement :** c'est le nom qui apparaît dans le plus grand nombre de vos fichiers de résultats. Il s'affiche en haut à droite. S'il est incorrect, changez-le dans **Options › Pilote principal**.
+## Español
 
-Ensuite, **laissez l'application ouverte pendant que vous jouez** : chaque nouvelle session terminée dans *Le Mans Ultimate* apparaît automatiquement dans le tableau de bord, sans rien recharger.
+**Sigue tu progresión en Le Mans Ultimate, carrera tras carrera.** LMU DeltaRacing lee los archivos de resultados del juego y los convierte en un panel personal: mejores vueltas comparadas con tu sesión anterior, clasificación sector por sector, balance contra cada rival, perfil de conducción y rating de piloto. Todo se queda en tu PC: **no se recopila ningún dato**.
+
+[Descargar](https://github.com/Fugeekies/LMU-DeltaRacing/releases) (Windows de 64 bits) · 📖 [Guía de usuario](docs/guide/es/README.md)
 
 ---
 
-## Les pages
-
-Le menu en haut de l'écran donne accès à huit pages.
-
-### Accueil
-
-Le **tableau de bord** de votre carrière, ouvert au lancement. Chaque tuile donne un total, puis le détail par catégorie.
-
-- **Pilote**, en haut à gauche : votre nom, les dates de votre première et de votre dernière course, votre circuit et votre voiture les plus roulés.
-- **Forme récente**, en haut à droite : vos 10 dernières courses en pastilles, et votre dernière course avec un lien vers son détail.
-- **Palmarès** : nombre de courses, victoires, podiums, top 5, top 10 (avec leur pourcentage) et position moyenne.
-- **Roulage** : tours bouclés, kilomètres parcourus et temps en piste.
-- **Qualification & départ** : poles, position moyenne en qualification, places gagnées entre le départ et l'arrivée.
-- **Abandons** : abandons, disqualifications, courses non classées et causes d'abandon (accident, moteur, suspension…).
-
-> Les résultats comptent votre **position dans votre catégorie**, comme au classement officiel : une victoire en LMGT3 dans une course multiclasse est une victoire. Seules les courses terminées comptent dans les victoires, podiums et tops : un abandon, une disqualification ou une course que le jeu n'a pas classée comptent dans le total, mais pas dans les résultats.
-
-### Mes courses
-
-Votre historique, **circuit par circuit**, pour voir si vous progressez.
-
-- Chaque ligne associe une **course** à la **qualification** qui la précède.
-- Pour chacune, vous voyez votre **classement** dans votre catégorie (`1er`, `2e`…, ou `DNF`, `DQ`, `NC`), votre meilleur tour, votre place sur la grille, le nombre de tours et votre temps total de course.
-- Les meilleurs résultats ressortent : la ligne est encadrée et la position colorée en **or** pour une victoire, **argent** pour une 2e place, **bronze** pour une 3e, puis en bleu pour les 4e et 5e places et en bleu plus léger pour les 6e à 10e. Un abandon, une disqualification ou une course non classée garde une ligne normale.
-- La colonne **DELTA (n-1)** compare votre meilleur tour à celui de votre session précédente sur le même circuit, dans la même catégorie :
-  - 🟢 **en vert, négatif** : vous avez été plus rapide ;
-  - 🔴 **en rouge, positif** : vous avez été plus lent.
-
-  La comparaison se fait même si vous avez changé de voiture, tant que la catégorie est la même.
-- Filtrez par **circuit** et par **catégorie** : Hypercar, LMP2, LMP3, LMGTE, LMGT3.
-- L'icône 📈 de chaque circuit ouvre sa **Progression**.
-
-> Les tours invalidés par le jeu (sortie des limites de piste) ne comptent pas : *Le Mans Ultimate* efface leur temps.
-
-### Détail des courses
-
-Le classement complet d'un événement.
-
-1. Choisissez l'événement dans la liste. Chaque événement regroupe les essais, la qualification et la course disputés à la suite sur un circuit, par exemple « 02/10/2026 21:00 - Circuit de Spa-Francorchamps (Qualif · Course) ».
-2. Passez d'une session à l'autre avec les onglets **COURSE**, **QUALIFICATION** et **ESSAIS**.
-
-Pour chaque pilote :
-
-| Colonne | Signification |
-|---|---|
-| **POS** | Position au général |
-| **CLASSE** | Catégorie du pilote |
-| **PILOTE** | Nom du pilote et, dessous, sa voiture |
-| **SECTEUR 1, 2, 3** | Meilleur temps du pilote sur chaque secteur. 🟣 **Violet** : meilleur de la catégorie. 🟡 **Jaune** : temps standard. En petit dessous : l'écart avec le meilleur temps de la catégorie sur ce secteur |
-| **TOUR IDÉAL** | Somme des trois meilleurs secteurs : le tour que le pilote aurait pu faire. Dessous : l'écart avec le meilleur tour idéal de la catégorie |
-| **MEILLEUR TOUR** | Meilleur tour réel et, dessous, écart avec le meilleur tour de la catégorie |
-| **TEMPS TOTAL** | Temps de course complet (en course seulement) et, dessous, l'écart avec le premier de la catégorie : **LEADER**, un temps, **+1 tour** ou **DNF** |
-| **CONTACTS** | Contacts avec une voiture et, dessous, avec un obstacle. Cliquez sur ces chiffres pour voir tous les incidents du pilote dans l'ordre de la session |
-| **LIMITES** | Avertissements de limites de piste et, dessous, tours invalidés |
-
-Sous le tableau, le **déroulé de la course** trace la position de **chaque voiture** tour par tour, depuis la grille :
-
-- votre ligne est en blanc, avec vos contacts, dégâts, pénalités et arrêts au stand ; les autres voitures sont en gris, et une croix marque un abandon ;
-- survolez une ligne pour voir le pilote et sa position finale, cliquez dessus pour suivre sa course (cliquer sur ses chiffres de contacts fait de même) ;
-- **Tout le plateau** affiche toutes les voitures ; **Autour de vous** ne garde que celles qui ont fini juste devant et juste derrière vous. Les boutons **−** et **+** règlent cet écart à l'arrivée : ± 1 place montre la voiture devant vous et celle derrière, ± 3 places (par défaut) les trois de chaque côté. Pratique pour lire une bagarre sur une grande grille ;
-- en course multiclasse, choisissez les positions **en classe** (par défaut) ou **au général**.
-
-Votre ligne est surlignée et repérée par la mention **VOUS**. Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC.
-
-### Progression
-
-Un **graphique** de l'évolution de vos meilleurs tours sur un circuit, dans une catégorie.
-
-- Choisissez le **circuit** et la **catégorie**. À l'ouverture, la page montre ceux de votre dernière course.
-- **Période** : vos meilleurs tours sont regroupés par jour, semaine, mois ou année.
-- **Valeur tracée** : la ligne passe par le meilleur (min), la moyenne ou le moins bon (max) de chaque période. La bande colorée va du min au max.
-- **Affichage** : une courbe Course et une courbe Qualification toutes voitures confondues, ou **une courbe par voiture** (en choisissant Course ou Qualification).
-- Au-dessus du graphique, le **résumé** donne pour chaque courbe votre record, la valeur de départ, la valeur actuelle et l'écart (🟢 plus rapide, 🔴 plus lent). Une ligne en tirets marque le record sur le graphique.
-- Survolez ou cliquez un point pour voir son détail. Cliquez une entrée de la légende pour masquer ou réafficher une courbe.
-- Une période sans course est sautée : la courbe relie directement les périodes où vous avez roulé, et une petite barre grise sur l'axe des dates signale les périodes vides.
-- Le bouton **Afficher le détail des périodes** donne les valeurs exactes dans un tableau.
-
-Vos réglages (période, valeur tracée, affichage) sont retenus pour la prochaine fois.
-
-### Profil de conduite
-
-Comment **vous** roulez, sur toutes vos qualifications et courses importées, comparé aux autres pilotes de ces mêmes sessions.
-
-- **Ce que vos incidents vous coûtent :** le temps perdu sur les tours avec contact, comparé à votre tour médian de chaque course, et ce qui ressort de vos courses : part des contacts au premier tour, circuit le plus coûteux, contacts avec dégâts, abandons après un contact.
-- **Votre bilan :** contacts avec une voiture, obstacles (mur, poteau, panneau, cône), avertissements de limites de piste, tours invalidés et pénalités, pour 100 tours. La valeur est verte quand vous faites au moins aussi bien que les autres.
-- **Où progresser :** les mêmes chiffres par type de session, par catégorie et par circuit, avec le temps perdu et la zone à risque, le secteur où vous concentrez vos contacts. Sous 20 tours, une ligne n'affiche pas de valeur pour 100 tours, car l'échantillon est trop petit.
-- **Forme récente :** vos 10 dernières courses, avec un lien vers leur détail.
-- **Pilotes que vous touchez le plus**, obstacles touchés et motifs de vos pénalités.
-
-Un accrochage compte une fois, même si les deux voitures l'ont signalé plusieurs fois. LMU ne signale de tours invalidés qu'en essais et en qualification.
-
-### Cote pilote
-
-Votre **niveau** face aux pilotes que vous croisez, mesuré par une cote Elo, comme aux échecs. Chaque course est une série de duels avec les pilotes de votre catégorie : finir devant un pilote mieux coté rapporte beaucoup de points, finir derrière un pilote moins bien coté en coûte beaucoup. Une 5e place dans un plateau très relevé vaut donc plus qu'une 5e place dans un plateau débutant.
-
-- **Votre cote :** votre rang parmi les pilotes classés, votre palier (**Platine** pour le top 10 %, **Or** jusqu'à 30 %, **Argent** jusqu'à 60 %, **Bronze** au-delà) et votre record.
-- **Prochains objectifs :** les points qui vous manquent pour dépasser le pilote juste devant vous et pour entrer dans le palier suivant.
-- **Évolution :** votre cote course après course, avec les seuils des paliers.
-- **Vos exploits et vos revers :** les courses qui vous ont rapporté et coûté le plus de points.
-- **Historique :** pour chaque course, la place que les cotes prévoyaient (« attendu »), la force du plateau (cote moyenne de votre catégorie) et les points gagnés ou perdus.
-- **Classement :** tous les pilotes croisés, par cote.
-
-Tout le monde part de 1 500. Pendant vos 5 premières courses, la cote bouge deux fois plus vite pour trouver votre niveau, et vous n'êtes pas encore classé. Seules les courses comptent. Une course que personne n'a terminée dans votre catégorie (quand vous quittez au départ, par exemple) n'est pas notée. La force du plateau et la cote de chaque pilote apparaissent aussi dans **Détail des courses**, et votre cote dans la tuile Pilote de l'**Accueil**.
-
-La cote est calculée sur vos seuls fichiers de résultats : ce n'est pas le classement officiel de LMU, et rien n'est envoyé en ligne.
-
-👉 Toutes les règles de calcul, avec des exemples chiffrés : **[La Cote pilote, expliquée](docs/COTE_PILOTE.md)**.
-
-### Classement des coureurs
-
-Votre bilan **face à face** contre chaque pilote croisé en course.
-
-- **Courses affrontées :** nombre de courses disputées contre ce pilote.
-- **Victoires / Défaites :** nombre de fois où vous avez terminé devant / derrière lui.
-- **% de victoire**, avec une barre verte (victoires) et rouge (défaites).
-- **Cote :** la [Cote pilote](docs/COTE_PILOTE.md) actuelle de ce pilote.
-- **Écart moyen :** combien de places vous finissez devant lui en moyenne (en vert), ou derrière lui (en rouge, négatif).
-- **Contacts :** nombre de contacts entre vos deux voitures (`—` si le jeu n'a enregistré aucun journal d'incidents).
-- **Dernière course :** date et circuit de votre dernière course contre lui.
-
-Seules les **courses** comptent (pas les qualifications), et seulement contre les pilotes de **votre catégorie** : battre une GT3 au volant d'une Hypercar ne compte pas.
-
-Recherchez un pilote par son nom et triez par nombre de courses, victoires, pourcentage ou nom.
-
-> **Dans tous les tableaux**, faites glisser la poignée (deux petits traits) au bord droit d’un en-tête de colonne pour l'élargir ou la rétrécir ; un double-clic sur ce bord rétablit les largeurs d'origine, comme un rechargement de la page.
-
-### Options
-
-Les réglages, détaillés ci-dessous. Sous les réglages, un **état des imports** montre la progression du chargement, les fichiers qui n'ont pas pu être lus et vos sessions récentes.
-
----
-
-## Les options
-
-| Réglage | À quoi ça sert |
-|---|---|
-| **Dossier des résultats XML** | Où *Le Mans Ultimate* enregistre vos résultats, en général `Documents\Le Mans Ultimate\UserData\Log\Results` ou `…\steamapps\common\Le Mans Ultimate\UserData\Log\Results`. Choisissez-le avec **Parcourir…**, puis cliquez sur **Appliquer** : le dossier est enregistré et vos résultats sont rechargés. Laissez le champ vide pour une détection automatique. |
-| **Pilote principal** | Le pilote dont vous suivez les résultats (vous, en principe). La liste est triée par nombre d'apparitions. Le choix est enregistré tout de suite. |
-| **Fusion de pilotes** | Vous avez changé de pseudo ? Choisissez l'**ancien nom** et le **nom conservé**, puis **Fusionner** : les deux historiques sont regroupés. Vos fichiers de résultats ne sont pas modifiés, et chaque fusion peut être annulée. Si les deux noms ont couru ensemble dans une même session, un **avertissement** s'affiche : il s'agit sans doute de deux personnes différentes. |
-| **Démarrage automatique** | Surveiller les nouveaux résultats dès le lancement de l'application (activé par défaut). |
-| **Sessions d'essais** | Charger aussi les essais pour l'onglet **ESSAIS** du détail des courses. Désactivé par défaut, car les essais sont souvent vides et allongent le chargement. |
-| **Mises à jour** | Affiche la version installée et, si une nouvelle version existe, un bouton pour télécharger son installeur. L'application demande à GitHub le numéro de la dernière version à chaque démarrage (activé par défaut) ; décochez la case pour ne plus le faire. |
-
-Les réglages sont enregistrés dans le fichier `appsettings.json` du dossier d'installation (`%LOCALAPPDATA%\Programs\LMU-DeltaRacing`).
-
----
-
-## Questions fréquentes
-
-**Je ne vois aucune course.**
-Vérifiez dans **Options** que le dossier des résultats est le bon (l'indicateur doit afficher « Dossier valide » avec un nombre de fichiers), puis que le **pilote principal** est bien votre nom de pilote dans le jeu.
-
-**Je vois des pilotes « Driver Tom », « Driver Lucas »…**
-Ce sont les **données de démonstration** installées avec l'application, utilisées quand aucun résultat du jeu n'a été trouvé. Choisissez votre dossier de résultats dans **Options**, puis **Appliquer**.
-
-**Une session que je viens de terminer n'apparaît pas.**
-Le jeu écrit le fichier de résultats à la **fin** de la session. Vérifiez que l'indicateur en haut à droite affiche **SURVEILLANCE ACTIVE**. Sinon, cliquez sur **Appliquer** dans Options pour relancer la surveillance.
-
-**Mon historique est coupé en deux depuis que j'ai changé de pseudo.**
-Utilisez **Options › Fusion de pilotes**.
-
-**Pourquoi ma voiture n'est-elle pas comparée à toutes les autres ?**
-Les écarts, les secteurs violets et le classement face à face se calculent **par catégorie**, comme en championnat d'endurance : une GT3 est comparée aux GT3.
-
-**J'ai fermé le navigateur, comment rouvrir le tableau de bord ?**
-Si la fenêtre noire de l'application est encore ouverte, fermez-la, puis relancez **LMU-DeltaRacing** depuis le menu Démarrer : le navigateur se rouvrira.
-
-**Où trouver le journal en cas de problème ?**
-Dans le fichier `lmu-deltaracing.log` du dossier d'installation. Il est remplacé à chaque lancement.
-
-**Mes données sont-elles envoyées quelque part ?**
-Non. L'application fonctionne uniquement sur votre PC et le tableau de bord n'est accessible que depuis celui-ci.
-
----
-
-*Développeurs : la documentation technique est dans [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) et [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).*
+*Developers / Développeurs : [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)*
