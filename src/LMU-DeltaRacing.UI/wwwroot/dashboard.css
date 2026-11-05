@@ -1135,7 +1135,7 @@ h3 {
 }
 
 .ranking-table {
-    min-width: 590px;
+    min-width: 960px;
 }
 
 .win-rate {
@@ -2834,4 +2834,55 @@ p.home-rate {
     background: var(--muted);
     opacity: 0.6;
     vertical-align: middle;
+}
+
+/* Resizable columns (resizable-columns.js): the right edge of each header drags its column. */
+table[data-resizable-columns] > thead th {
+    position: relative;
+}
+
+/* A grip of two thin bars, always drawn, tells that the edge can be dragged. */
+table[data-resizable-columns] > thead th::after {
+    position: absolute;
+    top: 20%;
+    right: 1px;
+    bottom: 20%;
+    width: 2px;
+    border-right: 1px solid var(--muted);
+    border-left: 1px solid var(--muted);
+    content: "";
+    opacity: 0.45;
+    transition: opacity 0.12s, border-color 0.12s;
+}
+
+table[data-resizable-columns] > thead th.column-resize-edge {
+    cursor: col-resize;
+}
+
+table[data-resizable-columns] > thead th.column-resize-edge::after {
+    border-color: var(--accent);
+    opacity: 1;
+}
+
+table.columns-resized {
+    min-width: 0;
+    table-layout: fixed;
+}
+
+table.columns-resized th,
+table.columns-resized td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* A cell spanning several columns (category separators of My races) owns no column to clip, and
+   clipping it would make it the scroll box of its sticky content, which would then leave the view. */
+table.columns-resized td[colspan] {
+    overflow: visible;
+}
+
+.column-resizing,
+.column-resizing * {
+    cursor: col-resize !important;
+    user-select: none;
 }

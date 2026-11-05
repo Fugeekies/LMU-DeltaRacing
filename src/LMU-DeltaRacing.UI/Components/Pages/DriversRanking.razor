@@ -61,14 +61,18 @@ else
         else
         {
             <div class="table-scroll">
-                <table class="data-table ranking-table">
+                <table class="data-table ranking-table" data-resizable-columns>
                     <thead>
                         <tr>
                             <th scope="col">NOM DU PILOTE</th>
+                            <th scope="col" class="numeric-cell">COTE</th>
                             <th scope="col" class="numeric-cell">COURSES AFFRONTÉES</th>
                             <th scope="col" class="numeric-cell">VICTOIRES</th>
                             <th scope="col" class="numeric-cell">DÉFAITES</th>
                             <th scope="col" class="numeric-cell">% DE VICTOIRE</th>
+                            <th scope="col" class="numeric-cell" title="Places d’avance moyennes en classe : positif quand vous finissez devant">ÉCART MOYEN</th>
+                            <th scope="col" class="numeric-cell" title="Contacts entre vos deux voitures">CONTACTS</th>
+                            <th scope="col">DERNIÈRE COURSE <span class="th-sub">CIRCUIT</span></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,6 +80,7 @@ else
                         {
                             <tr>
                                 <td class="ranking-driver">@rivalry.Name</td>
+                                <td class="numeric-cell">@DisplayFormat.Rating(rivalry.Rating)</td>
                                 <td class="numeric-cell">@rivalry.SessionsFaced</td>
                                 <td class="numeric-cell">@rivalry.Wins</td>
                                 <td class="numeric-cell">@rivalry.Losses</td>
@@ -87,6 +92,12 @@ else
                                         </span>
                                         @rivalry.WinPercentage.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture)%
                                     </span>
+                                </td>
+                                <td class="numeric-cell delta-value @GapClass(rivalry.AverageClassGap)">@DisplayFormat.Signed(rivalry.AverageClassGap, "0.0")</td>
+                                <td class="numeric-cell">@(rivalry.Contacts?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? "—")</td>
+                                <td class="stacked-cell">
+                                    <span>@DisplayFormat.Day(rivalry.LastFacedAt)</span>
+                                    <span class="cell-sub">@rivalry.LastFacedTrack</span>
                                 </td>
                             </tr>
                         }
@@ -106,8 +117,14 @@ else
 
     protected override void OnStateChanged()
     {
-        rivalries = DriversRankingPresentation.CreateRivalries(State.Sessions, State.UserName);
+        rivalries = DriversRankingPresentation.CreateRivalries(State.Sessions, State.UserName, DriverRatings.Calculate(State.Sessions));
     }
+
+    /// <summary>
+    /// Colors an average gap: green when the player finishes ahead, red when behind.
+    /// </summary>
+    private static string GapClass(double gap) =>
+        gap > 0 ? "delta-gain" : gap < 0 ? "delta-loss" : string.Empty;
 
     /// <summary>
     /// Formats a share of the faced races as a CSS width, with an invariant decimal separator.

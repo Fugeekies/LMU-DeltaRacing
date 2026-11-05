@@ -61,7 +61,8 @@ internal static class PresentationBenchmark
         var user = FixtureSessions.UserName;
         var frequencies = DriverProfile.CalculateFrequencies(sessions);
         var opponents = frequencies.Where(driver => driver.Name != user).Take(4).ToArray();
-        var rival = DriversRankingPresentation.CreateRivalries(sessions, user).MaxBy(rivalry => rivalry.SessionsFaced)!.Name;
+        var ratings = DriverRatings.Calculate(sessions);
+        var rival = DriversRankingPresentation.CreateRivalries(sessions, user, ratings).MaxBy(rivalry => rivalry.SessionsFaced)!.Name;
         DriverMerge[] merges =
         [
             new(opponents[0].Name, opponents[1].Name),
@@ -80,7 +81,7 @@ internal static class PresentationBenchmark
         table.Measure(scale, "Mes courses : filtres et tri par circuit", () => records
             .GroupBy(record => (record.TrackVenue, record.TrackCourse))
             .Sum(circuit => MyRacesFilters.OrderRows(circuit).Count) + MyRacesFilters.GetTracks(records).Count);
-        table.Measure(scale, "Classement des coureurs", () => DriversRankingPresentation.CreateRivalries(sessions, user).Count);
+        table.Measure(scale, "Classement des coureurs (cotes calculées à part)", () => DriversRankingPresentation.CreateRivalries(sessions, user, ratings).Count);
         table.Measure(scale, "Profil de conduite", () => DrivingProfilePresentation.Create(sessions, user)!.Sessions);
         table.Measure(scale, "Cote pilote : cotes de tous les pilotes", () => DriverRatings.Calculate(sessions).Races.Count);
         table.Measure(scale, "Cote pilote : page du pilote", () => DriverRatingPresentation.Create(sessions, user)!.Timeline.Count);

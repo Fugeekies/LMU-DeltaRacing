@@ -13,12 +13,6 @@ La donnée la plus riche des fichiers LMU n'est pas utilisée : incidents, conta
 - [ ] Fiche pilote avec ses statistiques cumulées, dont la « propreté » de pilotage (incidents et limites de piste par course), reprise de la page « Profil de conduite ».
 - [ ] Comparer plusieurs sessions sur un même circuit et une même voiture.
 
-### Jalon — Tableaux : colonnes et données
-Améliorer les tableaux du dashboard. Aucun prérequis, sauf les données qui viendraient du `Stream`. Mettre à jour les specs `docs/UISpec/` concernées.
-- [ ] **Colonnes ajustables :** rendre la largeur des colonnes réglable dans les tableaux des pages de résultats (Mes courses, Classement des coureurs, Détail des courses).
-- [ ] **Détail des courses, doublon de position :** la première colonne (POS / CLASSE) empile la position générale et la position en classe (`01` et `LMGT3 P1`), qui se répètent quand elles sont égales. Les séparer en deux colonnes, POS et CLASSE.
-- [ ] **Classement des coureurs, plus de données :** arrêter la liste des données à ajouter dans `DriversRanking.template.md`, puis les afficher.
-
 ### Jalon — Analyse de course tour par tour 
 Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
 - [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
@@ -70,6 +64,12 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
+
+### Jalon — Tableaux : colonnes et données — 05/11/2026 · PR [#57](https://github.com/Fugeekies/LMU-DeltaRacing/pull/57)
+Améliorer les tableaux du dashboard. Specs mises à jour : [`UISpec/MyRaces.template.md`](UISpec/MyRaces.template.md), [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md), [`UISpec/DriversRanking.template.md`](UISpec/DriversRanking.template.md).
+- [x] **Colonnes ajustables :** largeur des colonnes réglable dans tous les tableaux du dashboard (demandé d’abord pour Mes courses, Classement des coureurs et Détail des courses). Bord droit des en-têtes à faire glisser, double-clic pour revenir aux largeurs automatiques, largeurs non mémorisées.
+- [x] **Détail des courses, doublon de position :** la première colonne (POS / CLASSE) empilait la position générale et la position en classe (`01` et `LMGT3 P1`), qui se répétaient quand elles étaient égales. Séparées en deux colonnes, POS et CLASSE.
+- [x] **Classement des coureurs, plus de données :** liste arrêtée dans `DriversRanking.template.md` (cote de l'adversaire, écart moyen en classe, contacts entre les deux voitures, dernière course affrontée), puis affichée.
 
 ### Jalon — Cote pilote — 03/11/2026 · PR [#55](https://github.com/Fugeekies/LMU-DeltaRacing/pull/55)
 Spécification : [`UISpec/DriverRating.template.md`](UISpec/DriverRating.template.md). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](propositions/cote-pilote.md). Dashboard uniquement.
