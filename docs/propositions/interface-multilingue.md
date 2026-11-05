@@ -1,6 +1,6 @@
 # Proposition — Interface multilingue
 
-> Statut : **à valider** avant de coder (jalon « Interface multilingue » de la [feuille de route](../ROADMAP.md)). Rédigée le 05/11/2026.
+> Statut : **validée** le 05/11/2026 (décisions en fin de document). Jalon « Interface multilingue » de la [feuille de route](../ROADMAP.md).
 
 ## 1. Constat
 
@@ -33,15 +33,17 @@ Alternatives écartées :
 
 ## 4. Choix de la langue
 
-- **Nouvelle option Langue** dans Options, enregistrée dans `appsettings.json` : `LMU:Language` (`en`, `fr`, `de`, `it`, `es`).
-- **Langue par défaut, proposée :** celle de Windows (`CultureInfo.CurrentUICulture`) si elle fait partie des cinq, **anglais** sinon. Un utilisateur actuel sur un Windows français garde donc l'interface française.
-  - Alternative : français par défaut, quelle que soit la langue de Windows.
+- **Nouvelle section « Langue et date »** dans Options, enregistrée dans `appsettings.json` :
+  - **Langue** : `LMU:Language` (`en`, `fr`, `de`, `it`, `es`) ;
+  - **Format de date** : `LMU:DateFormat`, « Selon la langue » (par défaut, `Language`) ou l'un de quatre formats fixes, chacun affiché avec un exemple : `05/11/2026` (jour/mois, `DayMonthYear`), `11/05/2026` (mois/jour, `MonthDayYear`), `2026-11-05` (ISO, `Iso`), `05.11.2026` (`DotDayMonthYear`). L'heure reste sur 24 h (`21:00`).
+- **Langue par défaut :** celle de Windows (`CultureInfo.CurrentUICulture`) si elle fait partie des cinq, **anglais** sinon. Un utilisateur actuel sur un Windows français garde donc l'interface française.
 - Le serveur n'écoute que `127.0.0.1` et sert un seul utilisateur : la langue est **globale à l'application** (pas de langue par navigateur). Changer d'option applique la langue et recharge la page.
 
 ## 5. Formats
 
-- **Selon la langue choisie :** ordinaux (`1st`, `1er`, `1.`, `1º`, `1.º`), dates (`05/11/2026` en anglais britannique et en français, `05.11.2026` en allemand…), séparateur de milliers, pourcentages.
-  - Anglais : culture `en-GB` (jour avant le mois), proposée plutôt que `en-US`.
+- **Selon la langue choisie :** ordinaux (`1st`, `1er`, `1.`, `1º`, `1.º`), séparateur de milliers, pourcentages, et dates quand le format est « Selon la langue » (`05/11/2026` en anglais britannique et en français, `05.11.2026` en allemand…).
+  - Anglais : culture `en-GB` (jour avant le mois) plutôt que `en-US` ; le format mois/jour reste disponible dans l'option Format de date.
+- **Selon l'option Format de date :** toutes les dates affichées (`DisplayFormat.DateTime`, `DisplayFormat.Day`), dans le dashboard comme dans les libellés partagés.
 - **Inchangés dans toutes les langues :**
   - la lecture des temps du XML (`CultureInfo.InvariantCulture`, règle d'`AGENTS.md`) ;
   - l'affichage des temps au tour et des écarts (`1:23.456`, `+0.130s`) : point décimal, comme sur les écrans de chronométrage ;
@@ -56,7 +58,7 @@ Le jalon « Avenir de la console Spectre » n'est pas tranché. **Proposé :** l
 
 - Ajouter les cinq langues à l'installeur (`[Languages]` : fichiers de messages fournis avec Inno Setup), avec choix de la langue au lancement, proposé par défaut selon Windows.
 - Traduire ses propres libellés (icône sur le bureau, lancement) dans `[CustomMessages]`.
-- **Proposé :** à la première installation, la langue choisie dans l'installeur est écrite dans `LMU:Language`, comme l'installeur le fait déjà pour le dossier des résultats. Une mise à jour ne change pas la langue enregistrée.
+- À la première installation, la langue choisie dans l'installeur est écrite dans `LMU:Language`, et le format de date dans `LMU:DateFormat` à « Selon la langue », comme l'installeur le fait déjà pour le dossier des résultats. Aucune page de plus dans l'installeur : le format se change ensuite dans Options. Une mise à jour ne change ni la langue ni le format enregistrés.
 
 ## 8. Tests
 
@@ -74,15 +76,15 @@ Le jalon « Avenir de la console Spectre » n'est pas tranché. **Proposé :** l
 ## 10. Découpage proposé
 
 1. **Mécanisme et extraction, français seul** : ressources, localiseur, extraction des textes des pages et de `Presentation`. Le rendu ne change pas, ce que vérifient les tests existants.
-2. **Traductions et option Langue** : les quatre autres fichiers, l'option dans Options, la langue par défaut, les formats.
-3. **Installeur et documentation** : langues de l'installeur, guide sans traductions entre parenthèses, `AGENTS.md` et specs.
+2. **Traductions et section Langue et date** : les quatre autres fichiers, la section dans Options (langue et format de date), la langue par défaut, les formats.
+3. **Installeur et documentation** : langues de l'installeur (langue et format de date écrits à la première installation), guide sans traductions entre parenthèses, `AGENTS.md` et specs.
 
-## Décisions à valider
+## Décisions (validées le 05/11/2026)
 
-1. Mécanisme : `.resx` + `IStringLocalizer` (§ 3).
-2. Langue par défaut : langue de Windows, anglais sinon (§ 4), ou français.
-3. Anglais britannique (`en-GB`) pour les dates (§ 5).
-4. Temps au tour et écarts gardés avec le point décimal dans toutes les langues (§ 5).
-5. Console gardée en français en attendant le jalon console (§ 6).
-6. Installeur en cinq langues, qui écrit la langue choisie à la première installation (§ 7).
-7. Découpage en trois PR (§ 10).
+1. Mécanisme : `.resx` + `IStringLocalizer` (§ 3). **Validé.**
+2. Langue par défaut : langue de Windows, anglais sinon (§ 4). **Validé.**
+3. Dates : section **Langue et date** dans Options, avec le choix de la langue et du format de date (« Selon la langue » ou 4 formats fixes, heure sur 24 h) ; anglais en `en-GB` quand le format suit la langue (§ 4, § 5). **Décidé** à la place du seul `en-GB`.
+4. Temps au tour et écarts gardés avec le point décimal dans toutes les langues (§ 5). **Validé.**
+5. Console gardée en français en attendant le jalon console (§ 6). **Validé.**
+6. Installeur en cinq langues, qui écrit la langue choisie et le format « Selon la langue » à la première installation (§ 7). **Validé, avec le format de date.**
+7. Découpage en trois PR (§ 10). **Validé.**
