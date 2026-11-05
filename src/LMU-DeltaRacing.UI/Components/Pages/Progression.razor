@@ -9,7 +9,7 @@
     <div>
         <p class="eyebrow">@T["MyRaces.Eyebrow"]</p>
         <h1>@T["Nav.Progression"]</h1>
-        <p class="page-subtitle">Évolution de vos meilleurs tours sur un circuit et dans une catégorie.</p>
+        <p class="page-subtitle">@T["Progression.Subtitle"]</p>
     </div>
 </section>
 
@@ -176,7 +176,7 @@ else
                     }
                     else
                     {
-                        <p class="summary-label">DERNIÈRE PÉRIODE</p>
+                        <p class="summary-label">@T["Progression.LastPeriod"]</p>
                         @foreach (var series in layout.Series.Select(series => series.Series))
                         {
                             @RenderDetail(series, series.Last, showPeriod: true)
@@ -185,7 +185,7 @@ else
                 </aside>
             </div>
 
-            <div class="progression-legend" aria-label="Légende du graphique">
+            <div class="progression-legend" aria-label="@T["Progression.LegendLabel"]">
                 @foreach (var series in chart.Series)
                 {
                     var isHidden = hiddenSeries.Contains(series.Key);
@@ -194,7 +194,7 @@ else
                         @series.Label <span>(@Texts.Plural("Common.Sessions", series.SessionCount))</span>
                     </button>
                 }
-                <span class="legend-note">━ mesure · ╌ record · ▒ min-max · <i class="legend-empty" aria-hidden="true"></i> période sans session</span>
+                <span class="legend-note">@T["Progression.LegendLines"] <i class="legend-empty" aria-hidden="true"></i> @T["Progression.LegendEmpty"]</span>
             </div>
 
             <div class="progression-table">
@@ -208,11 +208,11 @@ else
                             <thead>
                                 <tr>
                                     <th scope="col">@T["Progression.Period"]</th>
-                                    <th scope="col">COURBE</th>
-                                    <th scope="col" class="numeric-cell">MIN</th>
-                                    <th scope="col" class="numeric-cell">MOYENNE</th>
-                                    <th scope="col" class="numeric-cell">MAX</th>
-                                    <th scope="col" class="numeric-cell">SESSIONS</th>
+                                    <th scope="col">@T["Progression.Curve"]</th>
+                                    <th scope="col" class="numeric-cell">@T["Progression.MinUpper"]</th>
+                                    <th scope="col" class="numeric-cell">@T["Progression.AverageUpper"]</th>
+                                    <th scope="col" class="numeric-cell">@T["Progression.MaxUpper"]</th>
+                                    <th scope="col" class="numeric-cell">@T["DrivingProfile.Sessions"]</th>
                                 </tr>
                             </thead>
                             <tbody>

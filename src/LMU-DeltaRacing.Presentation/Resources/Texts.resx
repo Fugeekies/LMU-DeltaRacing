@@ -728,4 +728,211 @@
   <data name="DrivingProfile.Sector" xml:space="preserve">
     <value>Secteur {0}</value>
   </data>
+  <data name="Progression.Subtitle" xml:space="preserve">
+    <value>Évolution de vos meilleurs tours sur un circuit et dans une catégorie.</value>
+  </data>
+  <data name="Progression.LastPeriod" xml:space="preserve">
+    <value>DERNIÈRE PÉRIODE</value>
+  </data>
+  <data name="Progression.LegendLabel" xml:space="preserve">
+    <value>Légende du graphique</value>
+  </data>
+  <data name="Progression.Curve" xml:space="preserve">
+    <value>COURBE</value>
+  </data>
+  <data name="Progression.MinUpper" xml:space="preserve">
+    <value>MIN</value>
+  </data>
+  <data name="Progression.AverageUpper" xml:space="preserve">
+    <value>MOYENNE</value>
+  </data>
+  <data name="Progression.MaxUpper" xml:space="preserve">
+    <value>MAX</value>
+  </data>
+  <data name="Progression.LegendLines" xml:space="preserve">
+    <value>━ mesure · ╌ record · ▒ min-max ·</value>
+  </data>
+  <data name="Progression.LegendEmpty" xml:space="preserve">
+    <value>période sans session</value>
+  </data>
+  <data name="DriverRating.Eyebrow" xml:space="preserve">
+    <value>VOTRE NIVEAU FACE AUX GRILLES CROISÉES</value>
+  </data>
+  <data name="DriverRating.Subtitle" xml:space="preserve">
+    <value>Une cote Elo calculée pour chaque pilote de vos fichiers de résultats, course après course.</value>
+  </data>
+  <data name="DriverRating.EmptyTitle" xml:space="preserve">
+    <value>Aucune cote disponible</value>
+  </data>
+  <data name="DriverRating.EmptyText" xml:space="preserve">
+    <value>Votre cote apparaîtra après une course du pilote sélectionné arrivée au drapeau à damier, face à au moins un pilote de sa classe.</value>
+  </data>
+  <data name="DriverRating.YourRatingLabel" xml:space="preserve">
+    <value>Votre cote</value>
+  </data>
+  <data name="DriverRating.Provisional" xml:space="preserve">
+    <value>COTE PROVISOIRE</value>
+  </data>
+  <data name="DriverRating.YourRating" xml:space="preserve">
+    <value>VOTRE COTE</value>
+  </data>
+  <data name="DriverRating.NextGoals" xml:space="preserve">
+    <value>PROCHAINS OBJECTIFS</value>
+  </data>
+  <data name="DriverRating.Leading" xml:space="preserve">
+    <value>Vous êtes en tête du classement : à vous de garder la place.</value>
+  </data>
+  <data name="DriverRating.Platinum" xml:space="preserve">
+    <value>Palier Platine : vous êtes dans le top 10 % des pilotes classés.</value>
+  </data>
+  <data name="DriverRating.AverageFieldStrength" xml:space="preserve">
+    <value>force moyenne de vos plateaux</value>
+  </data>
+  <data name="DriverRating.AboveExpectation" xml:space="preserve">
+    <value>courses finies devant la place attendue</value>
+  </data>
+  <data name="DriverRating.RatedRaces" xml:space="preserve">
+    <value>courses notées</value>
+  </data>
+  <data name="DriverRating.Evolution" xml:space="preserve">
+    <value>ÉVOLUTION</value>
+  </data>
+  <data name="DriverRating.EvolutionTitle" xml:space="preserve">
+    <value>Votre cote course après course</value>
+  </data>
+  <data name="DriverRating.Exploits" xml:space="preserve">
+    <value>VOS EXPLOITS</value>
+  </data>
+  <data name="DriverRating.ExploitsSubtitle" xml:space="preserve">
+    <value>Les courses qui vous ont rapporté le plus de points.</value>
+  </data>
+  <data name="DriverRating.NoExploit" xml:space="preserve">
+    <value>Aucune course ne vous a encore rapporté de points.</value>
+  </data>
+  <data name="DriverRating.Setbacks" xml:space="preserve">
+    <value>VOS REVERS</value>
+  </data>
+  <data name="DriverRating.SetbacksSubtitle" xml:space="preserve">
+    <value>Les courses qui vous ont coûté le plus de points.</value>
+  </data>
+  <data name="DriverRating.NoSetback" xml:space="preserve">
+    <value>Aucune course ne vous a encore coûté de points.</value>
+  </data>
+  <data name="DriverRating.History" xml:space="preserve">
+    <value>HISTORIQUE</value>
+  </data>
+  <data name="DriverRating.HistoryTitle" xml:space="preserve">
+    <value>Vos courses notées, de la plus récente à la plus ancienne</value>
+  </data>
+  <data name="DriverRating.Result" xml:space="preserve">
+    <value>RÉSULTAT</value>
+  </data>
+  <data name="DriverRating.Expected" xml:space="preserve">
+    <value>ATTENDU</value>
+  </data>
+  <data name="DriverRating.Drivers" xml:space="preserve">
+    <value>PILOTES</value>
+  </data>
+  <data name="DriverRating.Change" xml:space="preserve">
+    <value>VARIATION</value>
+  </data>
+  <data name="DriverRating.Rating" xml:space="preserve">
+    <value>COTE</value>
+  </data>
+  <data name="DriverRating.ExpectedNote" xml:space="preserve">
+    <value>Attendu : la position prévue par les cotes avant la course, en vert quand vous avez fini devant.</value>
+  </data>
+  <data name="DriverRating.FieldStrengthNote" xml:space="preserve">
+    <value>Force du plateau : la cote moyenne de votre classe avant la course.</value>
+  </data>
+  <data name="DriverRating.Ranking" xml:space="preserve">
+    <value>CLASSEMENT</value>
+  </data>
+  <data name="DriverRating.RankingTitle" xml:space="preserve">
+    <value>Les pilotes croisés en course, par cote</value>
+  </data>
+  <data name="DriverRating.ShowTop10" xml:space="preserve">
+    <value>Afficher le top 10 et vos voisins</value>
+  </data>
+  <data name="DriverRating.Rank" xml:space="preserve">
+    <value>RANG</value>
+  </data>
+  <data name="DriverRating.Tier" xml:space="preserve">
+    <value>PALIER</value>
+  </data>
+  <data name="DriverRating.TiersNote" xml:space="preserve">
+    <value>Paliers : Platine pour le top 10 % des pilotes classés, Or jusqu’à 30 %, Argent jusqu’à 60 %, Bronze au-delà.</value>
+  </data>
+  <data name="DriverRating.HowTitle" xml:space="preserve">
+    <value>Comment la cote est-elle calculée ?</value>
+  </data>
+  <data name="DriverRating.HowDuels" xml:space="preserve">
+    <value>Chaque course est une série de duels avec les pilotes de votre classe : finir devant un pilote est une victoire contre lui. Battre un pilote mieux coté rapporte plus, perdre contre un pilote moins bien coté coûte plus.</value>
+  </data>
+  <data name="DriverRating.HowFormula" xml:space="preserve">
+    <value>Avant la course, les cotes prévoient une place pour chacun (« attendu ») : 1, plus la chance de chaque adversaire de finir devant vous. Après la course : variation = K × (place attendue − place obtenue) ÷ nombre d’adversaires, avec K = 32 (64 en calibration). Exemple : 4e sur 20 pour une place attendue de 8,8 donne 32 × 4,8 ÷ 19 = +8.</value>
+  </data>
+  <data name="DriverRating.HowBounds" xml:space="preserve">
+    <value>Une course fait donc varier la cote de moins de 32 points (64 en calibration), quelle que soit la taille de la grille. Le vainqueur gagne toujours des points, le dernier en perd toujours.</value>
+  </data>
+  <data name="DriverRating.HowRacesOnly" xml:space="preserve">
+    <value>Seules les courses comptent, classe par classe, sur la position officielle en classe : abandons, disqualifications et voitures encore en piste à l’enregistrement du fichier compris. Une classe sans aucun pilote arrivé n’est pas notée : quand vous quittez une course, LMU enregistre les autres pilotes encore en piste, sans résultat.</value>
+  </data>
+  <data name="DriverRating.HowMerges" xml:space="preserve">
+    <value>Les fusions de pilotes d’Options sont prises en compte. La cote ne mesure que les grilles de vos fichiers de résultats : ce n’est pas le classement officiel de LMU.</value>
+  </data>
+  <data name="DriverRating.SubtitleOf" xml:space="preserve">
+    <value>{0} · {1} · une cote Elo calculée pour chaque pilote de vos fichiers de résultats.</value>
+  </data>
+  <data name="DriverRating.RatedRacesCount.One" xml:space="preserve">
+    <value>{0} course notée</value>
+  </data>
+  <data name="DriverRating.RatedRacesCount.Other" xml:space="preserve">
+    <value>{0} courses notées</value>
+  </data>
+  <data name="DriverRating.RankOf" xml:space="preserve">
+    <value>{0} sur {1} pilotes classés · top {2} %</value>
+  </data>
+  <data name="DriverRating.RacesToCalibrate.One" xml:space="preserve">
+    <value>Encore {0} course de calibration avant d’être classé.</value>
+  </data>
+  <data name="DriverRating.RacesToCalibrate.Other" xml:space="preserve">
+    <value>Encore {0} courses de calibration avant d’être classé.</value>
+  </data>
+  <data name="DriverRating.Peak" xml:space="preserve">
+    <value>Record : {0}, le {1}</value>
+  </data>
+  <data name="DriverRating.ToPass" xml:space="preserve">
+    <value>pour dépasser {0}, {1}</value>
+  </data>
+  <data name="DriverRating.ToEnter" xml:space="preserve">
+    <value>pour entrer en {0}</value>
+  </data>
+  <data name="DriverRating.OverLastRaces.One" xml:space="preserve">
+    <value>sur votre dernière course</value>
+  </data>
+  <data name="DriverRating.OverLastRaces.Other" xml:space="preserve">
+    <value>sur vos {0} dernières courses</value>
+  </data>
+  <data name="DriverRating.ShowLast" xml:space="preserve">
+    <value>Afficher les {0} dernières</value>
+  </data>
+  <data name="DriverRating.ShowAllRaces" xml:space="preserve">
+    <value>Afficher les {0} courses</value>
+  </data>
+  <data name="DriverRating.ShowAllDrivers" xml:space="preserve">
+    <value>Afficher les {0} pilotes</value>
+  </data>
+  <data name="DriverRating.NoRankedDriver" xml:space="preserve">
+    <value>Aucun pilote n’a encore terminé ses {0} courses de calibration.</value>
+  </data>
+  <data name="DriverRating.RankedAfter" xml:space="preserve">
+    <value>Un pilote est classé après {0} courses notées.</value>
+  </data>
+  <data name="DriverRating.HowStart" xml:space="preserve">
+    <value>Tous les pilotes partent de {0}. Pendant leurs {1} premières courses notées, la cote bouge deux fois plus vite pour trouver leur niveau, et ils ne sont pas encore classés.</value>
+  </data>
+  <data name="DriverRating.HighlightDetail" xml:space="preserve">
+    <value>{0} sur {1}, attendu {2} · plateau à {3}</value>
+  </data>
 </root>
