@@ -1,4 +1,5 @@
 using System.Globalization;
+using LMU_DeltaRacing.Presentation.Localization;
 using LMU_DeltaRacing.Presentation.Models;
 
 namespace LMU_DeltaRacing.UI.Models;
@@ -99,7 +100,7 @@ public sealed record RatingChartLayout(
         string.Join(
             Environment.NewLine,
             $"{DisplayFormat.DateTime(race.StartedAt)} · {race.TrackVenue}",
-            $"{race.Result} sur {race.FieldSize} (attendu : {DisplayFormat.Average(race.ExpectedRank)})",
+            Texts.Format("RatingChart.RaceResult", race.Result, race.FieldSize, DisplayFormat.Average(race.ExpectedRank)),
             $"{DisplayFormat.RatingChange(race.Delta)} → {DisplayFormat.Rating(race.After)}");
 
     // A round step, so that the labels read 1 500, 1 520, 1 540 rather than 1 503, 1 521...

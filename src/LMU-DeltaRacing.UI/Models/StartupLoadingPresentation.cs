@@ -1,4 +1,5 @@
 using System.Globalization;
+using LMU_DeltaRacing.Presentation.Localization;
 using LMU_DeltaRacing.Presentation.Models;
 
 namespace LMU_DeltaRacing.UI.Models;
@@ -43,9 +44,7 @@ public static class StartupLoadingPresentation
         ArgumentNullException.ThrowIfNull(state);
 
         return state.FilesToLoad <= 0
-            ? "Recherche des fichiers de résultats…"
-            : string.Create(
-                CultureInfo.InvariantCulture,
-                $"{state.FilesLoaded} / {state.FilesToLoad} fichiers traités");
+            ? Texts.Get("Startup.Searching")
+            : Texts.Format("Startup.FilesProcessed", state.FilesLoaded, state.FilesToLoad);
     }
 }

@@ -4,7 +4,7 @@
     var chart = RatingChartLayout.Create(View);
 }
 
-<svg class="rating-chart" viewBox="0 0 @chart.Width @chart.Height" role="img" aria-label="Cote de @View.Name course après course">
+<svg class="rating-chart" viewBox="0 0 @chart.Width @chart.Height" role="img" aria-label="@T["RatingChart.Label", View.Name]">
     @foreach (var tick in chart.RatingTicks)
     {
         <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
@@ -30,11 +30,11 @@
     }
 </svg>
 
-<div class="story-legend" aria-label="Légende du graphique">
-    <span><i class="story-swatch rating-gain" aria-hidden="true"></i>Points gagnés</span>
-    <span><i class="story-swatch rating-loss" aria-hidden="true"></i>Points perdus</span>
-    <span><i class="rating-tier-swatch" aria-hidden="true"></i>Cote à atteindre pour entrer dans un palier aujourd’hui</span>
-    <span>Une course notée par point, dans l’ordre chronologique · Survolez un point pour le détail</span>
+<div class="story-legend" aria-label="@T["Progression.LegendLabel"]">
+    <span><i class="story-swatch rating-gain" aria-hidden="true"></i>@T["RatingChart.Gain"]</span>
+    <span><i class="story-swatch rating-loss" aria-hidden="true"></i>@T["RatingChart.Loss"]</span>
+    <span><i class="rating-tier-swatch" aria-hidden="true"></i>@T["RatingChart.TierLine"]</span>
+    <span>@T["RatingChart.Note"]</span>
 </div>
 
 @code {

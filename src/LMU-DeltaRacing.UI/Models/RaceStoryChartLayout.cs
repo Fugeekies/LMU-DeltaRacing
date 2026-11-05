@@ -1,5 +1,6 @@
 using System.Globalization;
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 using LMU_DeltaRacing.Presentation.Models;
 
 namespace LMU_DeltaRacing.UI.Models;
@@ -147,7 +148,7 @@ public sealed record RaceStoryChartLayout(
     {
         var end = line.Points[^1];
         return line.Retired
-            ? $"P{end.Position} {line.Name} (abandon au tour {end.Lap})"
+            ? Texts.Format("RaceStory.RetiredLine", end.Position, line.Name, end.Lap)
             : $"P{end.Position} {line.Name}";
     }
 
@@ -170,10 +171,10 @@ public sealed record RaceStoryChartLayout(
         var lines = lap.Incidents.Select(DrivingConductPresentation.Describe).Distinct().ToList();
         if (lap.Loss is { } loss && loss > TimeSpan.Zero)
         {
-            lines.Add($"Temps perdu : {loss.TotalSeconds.ToString("0.0", CultureInfo.InvariantCulture)} s");
+            lines.Add(Texts.Format("RaceStory.TimeLost", loss.TotalSeconds.ToString("0.0", CultureInfo.InvariantCulture)));
         }
 
-        return $"Tour {lap.Number}{Environment.NewLine}{string.Join(Environment.NewLine, lines)}";
+        return $"{Texts.Format("RaceDetails.LapNumber", lap.Number)}{Environment.NewLine}{string.Join(Environment.NewLine, lines)}";
     }
 
     private static IEnumerable<int> CreateTicks(int first, int last)

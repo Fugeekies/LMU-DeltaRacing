@@ -1172,4 +1172,271 @@
   <data name="Settings.PracticeSaveFailed" xml:space="preserve">
     <value>Impossible d’enregistrer la préférence des essais : {0}</value>
   </data>
+  <data name="Update.Eyebrow" xml:space="preserve">
+    <value>VERSION &amp; MISES À JOUR</value>
+  </data>
+  <data name="Update.Title" xml:space="preserve">
+    <value>Mises à jour</value>
+  </data>
+  <data name="Update.InstallHelp" xml:space="preserve">
+    <value>Lancez ensuite l’installeur : la nouvelle version s’installe par-dessus l’ancienne et vos réglages sont conservés.</value>
+  </data>
+  <data name="Update.SeeReleases" xml:space="preserve">
+    <value>Voir les versions sur GitHub</value>
+  </data>
+  <data name="Update.CheckLabel" xml:space="preserve">
+    <value>Vérifier au démarrage si une nouvelle version est disponible</value>
+  </data>
+  <data name="Update.CheckHelp" xml:space="preserve">
+    <value>L’application demande à GitHub le numéro de la dernière version. Aucune donnée n’est collectée. Ce choix s’applique au prochain démarrage.</value>
+  </data>
+  <data name="Update.Saved" xml:space="preserve">
+    <value>Préférence de mise à jour enregistrée.</value>
+  </data>
+  <data name="Results.Loading" xml:space="preserve">
+    <value>Chargement de l’historique des courses…</value>
+  </data>
+  <data name="Results.LoadFailedTitle" xml:space="preserve">
+    <value>Les résultats n’ont pas pu être chargés</value>
+  </data>
+  <data name="Results.CheckFolder" xml:space="preserve">
+    <value>Vérifiez le dossier configuré dans</value>
+  </data>
+  <data name="Overview.SessionsOf" xml:space="preserve">
+    <value>Sessions de {0}</value>
+  </data>
+  <data name="Overview.RecentSessionsOf" xml:space="preserve">
+    <value>Sessions récentes de {0}</value>
+  </data>
+  <data name="Update.InstalledVersion" xml:space="preserve">
+    <value>Version installée : {0}</value>
+  </data>
+  <data name="Overview.Eyebrow" xml:space="preserve">
+    <value>ESPACE INGÉNIEUR DE PISTE</value>
+  </data>
+  <data name="Overview.Title" xml:space="preserve">
+    <value>Tableau de bord</value>
+  </data>
+  <data name="Overview.Subtitle" xml:space="preserve">
+    <value>Historique des sessions importées depuis Le Mans Ultimate.</value>
+  </data>
+  <data name="Results.LoadFailed" xml:space="preserve">
+    <value>Les résultats n'ont pas pu être chargés</value>
+  </data>
+  <data name="Overview.SummaryLabel" xml:space="preserve">
+    <value>Résumé des résultats</value>
+  </data>
+  <data name="Overview.ImportedSessions" xml:space="preserve">
+    <value>SESSIONS IMPORTÉES</value>
+  </data>
+  <data name="Overview.LastSession" xml:space="preserve">
+    <value>DERNIÈRE SESSION</value>
+  </data>
+  <data name="Overview.NoSession" xml:space="preserve">
+    <value>Aucune session</value>
+  </data>
+  <data name="Overview.FailedFiles" xml:space="preserve">
+    <value>FICHIERS EN ÉCHEC</value>
+  </data>
+  <data name="Overview.OthersContinue" xml:space="preserve">
+    <value>Les autres imports continuent</value>
+  </data>
+  <data name="Overview.SomeFilesFailed" xml:space="preserve">
+    <value>Certains fichiers n'ont pas pu être importés</value>
+  </data>
+  <data name="Overview.ArchivesEyebrow" xml:space="preserve">
+    <value>ARCHIVES DE COURSE</value>
+  </data>
+  <data name="Overview.Reading" xml:space="preserve">
+    <value>Lecture des fichiers de résultats…</value>
+  </data>
+  <data name="Overview.NoDriverSession" xml:space="preserve">
+    <value>Aucune session pour ce pilote</value>
+  </data>
+  <data name="Overview.NoDriverSessionText" xml:space="preserve">
+    <value>Les sessions contenant le pilote sélectionné apparaîtront ici.</value>
+  </data>
+  <data name="Overview.Event" xml:space="preserve">
+    <value>ÉVÉNEMENT</value>
+  </data>
+  <data name="Overview.SelectedDriver" xml:space="preserve">
+    <value>le pilote sélectionné</value>
+  </data>
+  <data name="RaceStory.ReferenceLap" xml:space="preserve">
+    <value>Tour de référence :</value>
+  </data>
+  <data name="RaceStory.Positions" xml:space="preserve">
+    <value>POSITIONS</value>
+  </data>
+  <data name="RaceStory.PositionsLabel" xml:space="preserve">
+    <value>Positions</value>
+  </data>
+  <data name="RaceStory.InClass" xml:space="preserve">
+    <value>En classe</value>
+  </data>
+  <data name="RaceStory.Overall" xml:space="preserve">
+    <value>Au général</value>
+  </data>
+  <data name="RaceStory.Cars" xml:space="preserve">
+    <value>VOITURES</value>
+  </data>
+  <data name="RaceStory.CarsLabel" xml:space="preserve">
+    <value>Voitures affichées</value>
+  </data>
+  <data name="RaceStory.WholeClass" xml:space="preserve">
+    <value>Toute la classe</value>
+  </data>
+  <data name="RaceStory.WholeField" xml:space="preserve">
+    <value>Tout le plateau</value>
+  </data>
+  <data name="RaceStory.FinishGap" xml:space="preserve">
+    <value>ÉCART À L’ARRIVÉE</value>
+  </data>
+  <data name="RaceStory.FewerCars" xml:space="preserve">
+    <value>Moins de voitures</value>
+  </data>
+  <data name="RaceStory.MoreCars" xml:space="preserve">
+    <value>Plus de voitures</value>
+  </data>
+  <data name="RaceStory.PitStop" xml:space="preserve">
+    <value>Arrêt au stand</value>
+  </data>
+  <data name="RaceStory.You" xml:space="preserve">
+    <value>Vous</value>
+  </data>
+  <data name="RaceStory.Others" xml:space="preserve">
+    <value>Autres voitures : cliquez sur une ligne pour suivre son pilote</value>
+  </data>
+  <data name="RaceStory.Retirement" xml:space="preserve">
+    <value>× Abandon</value>
+  </data>
+  <data name="RaceStory.Damage" xml:space="preserve">
+    <value>Dégâts</value>
+  </data>
+  <data name="RaceStory.VehicleContact" xml:space="preserve">
+    <value>Contact avec une voiture</value>
+  </data>
+  <data name="RaceStory.Obstacle" xml:space="preserve">
+    <value>Obstacle</value>
+  </data>
+  <data name="RaceStory.Penalty" xml:space="preserve">
+    <value>Pénalité</value>
+  </data>
+  <data name="RaceStory.TrackLimits" xml:space="preserve">
+    <value>Limites de piste</value>
+  </data>
+  <data name="RaceStory.ClassPosition" xml:space="preserve">
+    <value>Position en classe</value>
+  </data>
+  <data name="RaceStory.OverallPosition" xml:space="preserve">
+    <value>Position au général</value>
+  </data>
+  <data name="RaceStory.ContactsWord.One" xml:space="preserve">
+    <value>contact</value>
+  </data>
+  <data name="RaceStory.ContactsWord.Other" xml:space="preserve">
+    <value>contacts</value>
+  </data>
+  <data name="RaceStory.PositionsLostWord.One" xml:space="preserve">
+    <value>place perdue sur ces tours</value>
+  </data>
+  <data name="RaceStory.PositionsLostWord.Other" xml:space="preserve">
+    <value>places perdues sur ces tours</value>
+  </data>
+  <data name="RaceStory.Around" xml:space="preserve">
+    <value>Autour de {0}</value>
+  </data>
+  <data name="RaceStory.GapLabel" xml:space="preserve">
+    <value>Voitures gardées devant et derrière {0} à l’arrivée</value>
+  </data>
+  <data name="RaceStory.Places.One" xml:space="preserve">
+    <value>± {0} place</value>
+  </data>
+  <data name="RaceStory.Places.Other" xml:space="preserve">
+    <value>± {0} places</value>
+  </data>
+  <data name="RaceStory.CarsShown.One" xml:space="preserve">
+    <value>{0} voiture affichée sur {1}</value>
+  </data>
+  <data name="RaceStory.CarsShown.Other" xml:space="preserve">
+    <value>{0} voitures affichées sur {1}</value>
+  </data>
+  <data name="RaceStory.ChartLabel" xml:space="preserve">
+    <value>Position de chaque voiture tour par tour, {0} en évidence</value>
+  </data>
+  <data name="RaceStory.Hover" xml:space="preserve">
+    <value>Survolez un point ou une ligne pour le détail</value>
+  </data>
+  <data name="RatingChart.Gain" xml:space="preserve">
+    <value>Points gagnés</value>
+  </data>
+  <data name="RatingChart.Loss" xml:space="preserve">
+    <value>Points perdus</value>
+  </data>
+  <data name="RatingChart.TierLine" xml:space="preserve">
+    <value>Cote à atteindre pour entrer dans un palier aujourd’hui</value>
+  </data>
+  <data name="RatingChart.Note" xml:space="preserve">
+    <value>Une course notée par point, dans l’ordre chronologique · Survolez un point pour le détail</value>
+  </data>
+  <data name="Error.Title" xml:space="preserve">
+    <value>Une erreur est survenue</value>
+  </data>
+  <data name="Error.Text" xml:space="preserve">
+    <value>Le tableau de bord n'a pas pu traiter cette demande.</value>
+  </data>
+  <data name="Error.RequestId" xml:space="preserve">
+    <value>Identifiant de requête :</value>
+  </data>
+  <data name="NotFound.Title" xml:space="preserve">
+    <value>Page introuvable</value>
+  </data>
+  <data name="NotFound.Text" xml:space="preserve">
+    <value>Cette adresse ne correspond à aucune page du tableau de bord.</value>
+  </data>
+  <data name="RatingChart.Label" xml:space="preserve">
+    <value>Cote de {0} course après course</value>
+  </data>
+  <data name="Error.PageTitle" xml:space="preserve">
+    <value>Erreur</value>
+  </data>
+  <data name="RaceStory.RetiredLine" xml:space="preserve">
+    <value>P{0} {1} (abandon au tour {2})</value>
+  </data>
+  <data name="RaceStory.TimeLost" xml:space="preserve">
+    <value>Temps perdu : {0} s</value>
+  </data>
+  <data name="RatingChart.RaceResult" xml:space="preserve">
+    <value>{0} sur {1} (attendu : {2})</value>
+  </data>
+  <data name="Startup.Searching" xml:space="preserve">
+    <value>Recherche des fichiers de résultats…</value>
+  </data>
+  <data name="Startup.FilesProcessed" xml:space="preserve">
+    <value>{0} / {1} fichiers traités</value>
+  </data>
+  <data name="Update.Pending" xml:space="preserve">
+    <value>Vérification en cours…</value>
+  </data>
+  <data name="Update.UpToDate" xml:space="preserve">
+    <value>Vous utilisez la dernière version.</value>
+  </data>
+  <data name="Update.Available" xml:space="preserve">
+    <value>Nouvelle version disponible : {0}</value>
+  </data>
+  <data name="Update.Failed" xml:space="preserve">
+    <value>Impossible de vérifier les mises à jour.</value>
+  </data>
+  <data name="Update.Disabled" xml:space="preserve">
+    <value>Vérification désactivée.</value>
+  </data>
+  <data name="Update.DevelopmentBuild" xml:space="preserve">
+    <value>Version de développement : pas de vérification.</value>
+  </data>
+  <data name="Settings.PickerTitle" xml:space="preserve">
+    <value>Sélectionnez le dossier des résultats LMU</value>
+  </data>
+  <data name="Settings.PickerInvalidPath" xml:space="preserve">
+    <value>Le dossier sélectionné ne possède pas de chemin de fichiers valide.</value>
+  </data>
 </root>

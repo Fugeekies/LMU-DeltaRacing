@@ -5,12 +5,12 @@
 }
 
 <div class="story-summary">
-    <span><strong>@Story.Contacts.Count</strong> @(Story.Contacts.Count > 1 ? "contacts" : "contact")</span>
-    <span><strong>@FormatSeconds(Story.TimeLost)</strong> perdues sur les tours avec contact</span>
-    <span><strong>@Story.PositionsLost</strong> @(Story.PositionsLost > 1 ? "places perdues" : "place perdue") sur ces tours</span>
+    <span><strong>@Story.Contacts.Count</strong> @Texts.Plural("RaceStory.ContactsWord", Story.Contacts.Count)</span>
+    <span><strong>@FormatSeconds(Story.TimeLost)</strong> @T["DrivingProfile.LostOnContactLaps"]</span>
+    <span><strong>@Story.PositionsLost</strong> @Texts.Plural("RaceStory.PositionsLostWord", Story.PositionsLost)</span>
     @if (Story.ReferenceLap is { } reference)
     {
-        <span>Tour de référence : <strong>@DisplayFormat.Lap(reference)</strong></span>
+        <span>@T["RaceStory.ReferenceLap"] <strong>@DisplayFormat.Lap(reference)</strong></span>
     }
 </div>
 
@@ -21,40 +21,40 @@
     var shown = positions.Around(showsAll ? null : gap);
     var chart = RaceStoryChartLayout.Create(Story, shown);
 
-    <div class="race-chart-controls" aria-label="Réglages du graphique">
+    <div class="race-chart-controls" aria-label="@T["Progression.SettingsLabel"]">
         @if (IsMulticlass)
         {
             <div class="segmented-group">
-                <span>POSITIONS</span>
-                <div class="segmented" role="group" aria-label="Positions">
+                <span>@T["RaceStory.Positions"]</span>
+                <div class="segmented" role="group" aria-label="@T["RaceStory.PositionsLabel"]">
                     <button type="button" class="@(scope == PositionScope.Class ? "is-active" : null)" aria-pressed="@(scope == PositionScope.Class ? "true" : "false")"
-                            @onclick="() => scope = PositionScope.Class">En classe</button>
+                            @onclick="() => scope = PositionScope.Class">@T["RaceStory.InClass"]</button>
                     <button type="button" class="@(scope == PositionScope.Overall ? "is-active" : null)" aria-pressed="@(scope == PositionScope.Overall ? "true" : "false")"
-                            @onclick="() => scope = PositionScope.Overall">Au général</button>
+                            @onclick="() => scope = PositionScope.Overall">@T["RaceStory.Overall"]</button>
                 </div>
             </div>
         }
         <div class="segmented-group">
-            <span>VOITURES</span>
-            <div class="segmented" role="group" aria-label="Voitures affichées">
+            <span>@T["RaceStory.Cars"]</span>
+            <div class="segmented" role="group" aria-label="@T["RaceStory.CarsLabel"]">
                 <button type="button" class="@(showsAll ? "is-active" : null)" aria-pressed="@(showsAll ? "true" : "false")"
-                        @onclick="() => showsAll = true">@(scope == PositionScope.Class && IsMulticlass ? "Toute la classe" : "Tout le plateau")</button>
+                        @onclick="() => showsAll = true">@(scope == PositionScope.Class && IsMulticlass ? T["RaceStory.WholeClass"] : T["RaceStory.WholeField"])</button>
                 <button type="button" class="@(showsAll ? null : "is-active")" aria-pressed="@(showsAll ? "false" : "true")"
-                        @onclick="() => showsAll = false">Autour de @Story.DriverName</button>
+                        @onclick="() => showsAll = false">@T["RaceStory.Around", Story.DriverName]</button>
             </div>
         </div>
         <div class="segmented-group">
-            <span>ÉCART À L’ARRIVÉE</span>
-            <div class="segmented race-chart-stepper" role="group" aria-label="Voitures gardées devant et derrière @Story.DriverName à l’arrivée">
-                <button type="button" aria-label="Moins de voitures" disabled="@(!showsAll && gap <= 1)" @onclick="() => ChangePlaces(gap, -1, maximumPlaces)">−</button>
-                <span class="@(showsAll ? null : "is-active")">± @gap @(gap > 1 ? "places" : "place")</span>
-                <button type="button" aria-label="Plus de voitures" disabled="@(!showsAll && gap >= maximumPlaces)" @onclick="() => ChangePlaces(gap, 1, maximumPlaces)">+</button>
+            <span>@T["RaceStory.FinishGap"]</span>
+            <div class="segmented race-chart-stepper" role="group" aria-label="@T["RaceStory.GapLabel", Story.DriverName]">
+                <button type="button" aria-label="@T["RaceStory.FewerCars"]" disabled="@(!showsAll && gap <= 1)" @onclick="() => ChangePlaces(gap, -1, maximumPlaces)">−</button>
+                <span class="@(showsAll ? null : "is-active")">@Texts.Plural("RaceStory.Places", gap)</span>
+                <button type="button" aria-label="@T["RaceStory.MoreCars"]" disabled="@(!showsAll && gap >= maximumPlaces)" @onclick="() => ChangePlaces(gap, 1, maximumPlaces)">+</button>
             </div>
         </div>
-        <span class="race-chart-count">@shown.Count @(shown.Count > 1 ? "voitures affichées" : "voiture affichée") sur @positions.FieldSize</span>
+        <span class="race-chart-count">@Texts.Plural("RaceStory.CarsShown", shown.Count, positions.FieldSize)</span>
     </div>
 
-    <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="Position de chaque voiture tour par tour, @Story.DriverName en évidence">
+    <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="@T["RaceStory.ChartLabel", Story.DriverName]">
         @foreach (var tick in chart.PositionTicks)
         {
             <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
@@ -67,7 +67,7 @@
         @foreach (var pit in chart.PitStops)
         {
             <line class="story-pit" x1="@Number(pit)" x2="@Number(pit)" y1="@Number(chart.PlotTop)" y2="@Number(chart.PlotBottom)">
-                <title>Arrêt au stand</title>
+                <title>@T["RaceStory.PitStop"]</title>
             </line>
         }
         @foreach (var line in chart.Lines)
@@ -94,21 +94,21 @@
         }
     </svg>
 
-    <div class="story-legend" aria-label="Légende du graphique">
+    <div class="story-legend" aria-label="@T["Progression.LegendLabel"]">
         <span><i class="race-line-swatch race-line-focus" aria-hidden="true"></i>@Story.DriverName</span>
         @if (!string.Equals(Story.DriverName, PlayerName, StringComparison.OrdinalIgnoreCase) && shown.Any(line => line.IsPlayer))
         {
-            <span><i class="race-line-swatch race-line-player" aria-hidden="true"></i>Vous</span>
+            <span><i class="race-line-swatch race-line-player" aria-hidden="true"></i>@T["RaceStory.You"]</span>
         }
-        <span><i class="race-line-swatch race-line-other" aria-hidden="true"></i>Autres voitures : cliquez sur une ligne pour suivre son pilote</span>
-        <span>× Abandon</span>
-        <span><i class="story-swatch story-damage" aria-hidden="true"></i>Dégâts</span>
-        <span><i class="story-swatch story-contact" aria-hidden="true"></i>Contact avec une voiture</span>
-        <span><i class="story-swatch story-obstacle" aria-hidden="true"></i>Obstacle</span>
-        <span><i class="story-swatch story-penalty" aria-hidden="true"></i>Pénalité</span>
-        <span><i class="story-swatch story-limit" aria-hidden="true"></i>Limites de piste</span>
-        <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>Arrêt au stand</span>
-        <span>Survolez un point ou une ligne pour le détail · @(scope == PositionScope.Class && IsMulticlass ? "Position en classe" : "Position au général")</span>
+        <span><i class="race-line-swatch race-line-other" aria-hidden="true"></i>@T["RaceStory.Others"]</span>
+        <span>@T["RaceStory.Retirement"]</span>
+        <span><i class="story-swatch story-damage" aria-hidden="true"></i>@T["RaceStory.Damage"]</span>
+        <span><i class="story-swatch story-contact" aria-hidden="true"></i>@T["RaceStory.VehicleContact"]</span>
+        <span><i class="story-swatch story-obstacle" aria-hidden="true"></i>@T["RaceStory.Obstacle"]</span>
+        <span><i class="story-swatch story-penalty" aria-hidden="true"></i>@T["RaceStory.Penalty"]</span>
+        <span><i class="story-swatch story-limit" aria-hidden="true"></i>@T["RaceStory.TrackLimits"]</span>
+        <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>@T["RaceStory.PitStop"]</span>
+        <span>@T["RaceStory.Hover"] · @(scope == PositionScope.Class && IsMulticlass ? T["RaceStory.ClassPosition"] : T["RaceStory.OverallPosition"])</span>
     </div>
 }
 

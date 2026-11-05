@@ -1,3 +1,5 @@
+using LMU_DeltaRacing.Presentation.Localization;
+
 namespace LMU_DeltaRacing.UI.Models;
 
 /// <summary>
@@ -26,13 +28,13 @@ public static class UpdateCheckPresentation
 
         return result.Status switch
         {
-            UpdateCheckStatus.Pending => "Vérification en cours…",
-            UpdateCheckStatus.UpToDate => "Vous utilisez la dernière version.",
+            UpdateCheckStatus.Pending => Texts.Get("Update.Pending"),
+            UpdateCheckStatus.UpToDate => Texts.Get("Update.UpToDate"),
             UpdateCheckStatus.UpdateAvailable =>
-                $"Nouvelle version disponible : {ApplicationVersion.Display(result.LatestVersion ?? string.Empty)}",
-            UpdateCheckStatus.Failed => "Impossible de vérifier les mises à jour.",
-            UpdateCheckStatus.Disabled => "Vérification désactivée.",
-            UpdateCheckStatus.DevelopmentBuild => "Version de développement : pas de vérification.",
+                Texts.Format("Update.Available", ApplicationVersion.Display(result.LatestVersion ?? string.Empty)),
+            UpdateCheckStatus.Failed => Texts.Get("Update.Failed"),
+            UpdateCheckStatus.Disabled => Texts.Get("Update.Disabled"),
+            UpdateCheckStatus.DevelopmentBuild => Texts.Get("Update.DevelopmentBuild"),
             _ => throw new ArgumentOutOfRangeException(nameof(result), result.Status, "Unknown update check status.")
         };
     }

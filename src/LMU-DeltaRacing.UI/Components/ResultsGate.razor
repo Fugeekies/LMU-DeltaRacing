@@ -4,7 +4,7 @@
 {
     <section class="panel empty-state" aria-live="polite">
         <span class="loading-spinner" aria-hidden="true"></span>
-        <p>Chargement de l’historique des courses…</p>
+        <p>@T["Results.Loading"]</p>
     </section>
 }
 else if (!string.IsNullOrWhiteSpace(State.ErrorMessage) && State.Sessions.Count == 0)
@@ -12,9 +12,9 @@ else if (!string.IsNullOrWhiteSpace(State.ErrorMessage) && State.Sessions.Count 
     <section class="notice notice-error" role="alert">
         <span class="notice-symbol" aria-hidden="true">!</span>
         <div>
-            <h2>Les résultats n’ont pas pu être chargés</h2>
+            <h2>@T["Results.LoadFailedTitle"]</h2>
             <p>@State.ErrorMessage</p>
-            <p>Vérifiez le dossier configuré dans <a href="/settings">Options</a>.</p>
+            <p>@T["Results.CheckFolder"] <a href="/settings">@T["Nav.Settings"]</a>.</p>
         </div>
     </section>
 }
