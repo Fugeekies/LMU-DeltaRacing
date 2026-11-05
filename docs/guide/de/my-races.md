@@ -1,6 +1,6 @@
 ← [Inhalt](README.md) · [English](../en/my-races.md) · [Français](../fr/my-races.md) · **Deutsch** · [Italiano](../it/my-races.md) · [Español](../es/my-races.md)
 
-# Mes courses (*Meine Rennen*)
+# Meine Rennen
 
 Ihre Historie, **Strecke für Strecke**, um zu sehen, ob Sie sich verbessern.
 
@@ -8,6 +8,6 @@ Ihre Historie, **Strecke für Strecke**, um zu sehen, ob Sie sich verbessern.
 - Die besten Ergebnisse fallen auf: **Gold**, **Silber** und **Bronze** für das Podium, Blau für die Plätze 4 bis 10.
 - **DELTA (n-1)** vergleicht Ihre beste Runde mit Ihrer vorherigen Session auf derselben Strecke und in derselben Klasse: 🟢 negativ, schneller; 🔴 positiv, langsamer.
 - Filtern Sie nach **Strecke** und **Klasse** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
-- **📈 Voir la progression** (*Fortschritt ansehen*) öffnet den [Fortschritt](progression.md) der Strecke.
+- **📈 Fortschritt ansehen** öffnet den [Fortschritt](progression.md) der Strecke.
 
 > Vom Spiel ungültig gemachte Runden (Track Limits) haben keine Zeit: Sie zählen nicht.

@@ -3,16 +3,16 @@
 # FAQ
 
 **I see no race.**
-In **Options**, check that the results folder shows « Dossier valide » (*valid folder*) and that **Pilote principal** (*main driver*) is your in-game name.
+In **Settings**, check that the results folder shows « Valid folder » and that **Main driver** is your in-game name.
 
 **I see drivers called "Driver Tom", "Driver Lucas"…**
-That is the demo data. Pick your results folder in **Options**, then **Appliquer** (*Apply*).
+That is the demo data. Pick your results folder in **Settings**, then **Apply**.
 
 **A session I just finished does not show up.**
-The game writes the file at the **end** of the session. Check that the indicator shows **SURVEILLANCE ACTIVE**; otherwise click **Appliquer** in Options.
+The game writes the file at the **end** of the session. Check that the indicator shows **WATCHING**; otherwise click **Apply** in Settings.
 
 **My history is split in two since I changed my nickname.**
-Use **Options › Fusion de pilotes** (*Driver merge*).
+Use **Settings › Driver merge**.
 
 **Why is my car not compared with all the others?**
 Comparisons are made **by class**, as in endurance racing: a GT3 is compared with GT3s.

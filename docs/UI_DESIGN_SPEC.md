@@ -74,6 +74,12 @@ Les paliers reprennent les couleurs du podium, avec un platine au-dessus de l'or
 * **Or :** `#d4af37`. **Argent :** `#c0c7d1`. **Bronze :** `#d2733f`.
 * Les points de la courbe utilisent le vert (points gagnés) et le rouge (points perdus) WEC, dans leur sens habituel de gain et de perte.
 
+### 9. Langues de l'interface
+* Cinq langues : anglais, français, allemand, italien, espagnol, choisies dans **Options › Langue et date** (par défaut la langue de Windows, l'anglais sinon). Proposition : [`propositions/interface-multilingue.md`](propositions/interface-multilingue.md).
+* Les specs `UISpec/` et les maquettes gardent les **libellés français**, langue de référence des textes (`Presentation/Resources/Texts.resx`) ; chaque libellé a sa traduction dans `Texts.en.resx`, `Texts.de.resx`, `Texts.it.resx` et `Texts.es.resx`.
+* Suivent la langue : textes, ordinaux (`1er`, `1st`, `1.`, `1º`, `1.º`), dates (ou le format choisi dans Options) et noms de mois. Ne changent pas : nombres (point décimal, espace fine pour les milliers), temps au tour, écarts, heures sur 24 h, et les données de LMU (circuits, voitures, pilotes, classes, motifs de pénalité).
+* Un libellé traduit peut être plus long que le français (allemand surtout) : les mises en page ne supposent pas une largeur de texte fixe.
+
 ---
 
 ## 📂 Navigation & Templates des Vues (`UISpec/`)
