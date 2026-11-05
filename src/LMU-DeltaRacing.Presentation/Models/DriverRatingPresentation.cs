@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -103,10 +104,10 @@ public static class DriverRatingPresentation
     /// </summary>
     public static string Label(RatingTier tier) => tier switch
     {
-        RatingTier.Platinum => "Platine",
-        RatingTier.Gold => "Or",
-        RatingTier.Silver => "Argent",
-        _ => "Bronze"
+        RatingTier.Platinum => Texts.Get("Rating.Platinum"),
+        RatingTier.Gold => Texts.Get("Rating.Gold"),
+        RatingTier.Silver => Texts.Get("Rating.Silver"),
+        _ => Texts.Get("Rating.Bronze")
     };
 
     /// <summary>

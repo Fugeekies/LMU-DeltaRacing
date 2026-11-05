@@ -1439,4 +1439,106 @@
   <data name="Settings.PickerInvalidPath" xml:space="preserve">
     <value>Le dossier sélectionné ne possède pas de chemin de fichiers valide.</value>
   </data>
+  <data name="Rating.Platinum" xml:space="preserve">
+    <value>Platine</value>
+  </data>
+  <data name="Rating.Gold" xml:space="preserve">
+    <value>Or</value>
+  </data>
+  <data name="Rating.Silver" xml:space="preserve">
+    <value>Argent</value>
+  </data>
+  <data name="Rating.Bronze" xml:space="preserve">
+    <value>Bronze</value>
+  </data>
+  <data name="Incident.Immovable" xml:space="preserve">
+    <value>Contact avec un obstacle fixe</value>
+  </data>
+  <data name="Incident.Post" xml:space="preserve">
+    <value>Contact avec un poteau</value>
+  </data>
+  <data name="Incident.Sign" xml:space="preserve">
+    <value>Contact avec un panneau</value>
+  </data>
+  <data name="Incident.Cone" xml:space="preserve">
+    <value>Contact avec un cône</value>
+  </data>
+  <data name="Incident.TrackLimitWarning" xml:space="preserve">
+    <value>Avertissement de limites de piste</value>
+  </data>
+  <data name="Incident.InvalidLap" xml:space="preserve">
+    <value>Tour invalidé</value>
+  </data>
+  <data name="Incident.DamageSuspension" xml:space="preserve">
+    <value>Dégâts : suspension</value>
+  </data>
+  <data name="Incident.DamageEngine" xml:space="preserve">
+    <value>Dégâts : moteur</value>
+  </data>
+  <data name="Home.StatusRetired" xml:space="preserve">
+    <value>Abandon</value>
+  </data>
+  <data name="Home.StatusDisqualified" xml:space="preserve">
+    <value>Disqualifié</value>
+  </data>
+  <data name="Home.StatusUnclassified" xml:space="preserve">
+    <value>Non classé</value>
+  </data>
+  <data name="Home.StatusFinished" xml:space="preserve">
+    <value>Arrivé</value>
+  </data>
+  <data name="Home.CauseUnknown" xml:space="preserve">
+    <value>Non précisée</value>
+  </data>
+  <data name="Home.CauseAccident" xml:space="preserve">
+    <value>Accident</value>
+  </data>
+  <data name="Home.CauseEngine" xml:space="preserve">
+    <value>Moteur</value>
+  </data>
+  <data name="Home.CauseSuspension" xml:space="preserve">
+    <value>Suspension</value>
+  </data>
+  <data name="Home.CauseFuel" xml:space="preserve">
+    <value>Carburant</value>
+  </data>
+  <data name="Incident.VehicleContact" xml:space="preserve">
+    <value>Contact avec {0}</value>
+  </data>
+  <data name="Incident.OtherContact" xml:space="preserve">
+    <value>Contact signalé : {0}</value>
+  </data>
+  <data name="Incident.Damage" xml:space="preserve">
+    <value>Dégâts : {0}</value>
+  </data>
+  <data name="Incident.Penalty" xml:space="preserve">
+    <value>Pénalité : {0}</value>
+  </data>
+  <data name="DrivingProfile.TakeawayFirstLap" xml:space="preserve">
+    <value>{0} % de vos contacts arrivent au départ ou au premier tour.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayMedianLoss" xml:space="preserve">
+    <value>Un tour avec contact vous coûte {0} s en médiane.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayCircuit" xml:space="preserve">
+    <value>{0} est le circuit qui vous coûte le plus : {1} s perdues sur les tours avec contact.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayDamage.One" xml:space="preserve">
+    <value>{0} contact a endommagé votre voiture.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayDamage.Other" xml:space="preserve">
+    <value>{0} contacts ont endommagé votre voiture.</value>
+  </data>
+  <data name="DrivingProfile.TakeawayRetirements" xml:space="preserve">
+    <value>{0} de vos {1} abandons ont eu un contact dans leur dernier tour.</value>
+  </data>
+  <data name="Overview.Duplicates.One" xml:space="preserve">
+    <value>{0} doublon ignoré</value>
+  </data>
+  <data name="Overview.Duplicates.Other" xml:space="preserve">
+    <value>{0} doublons ignorés</value>
+  </data>
+  <data name="Progression.WeekOf" xml:space="preserve">
+    <value>semaine du {0}</value>
+  </data>
 </root>

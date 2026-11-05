@@ -1,3 +1,5 @@
+using LMU_DeltaRacing.Presentation.Localization;
+
 namespace LMU_DeltaRacing.Presentation.Models;
 
 /// <summary>
@@ -153,9 +155,9 @@ public sealed record HomeFormEntry(
     /// </summary>
     public string StatusLabel => Kind switch
     {
-        HomeResultKind.Retired => "Abandon",
-        HomeResultKind.Disqualified => "Disqualifié",
-        HomeResultKind.Unclassified => "Non classé",
-        _ => "Arrivé"
+        HomeResultKind.Retired => Texts.Get("Home.StatusRetired"),
+        HomeResultKind.Disqualified => Texts.Get("Home.StatusDisqualified"),
+        HomeResultKind.Unclassified => Texts.Get("Home.StatusUnclassified"),
+        _ => Texts.Get("Home.StatusFinished")
     };
 }

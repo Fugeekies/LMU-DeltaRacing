@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -29,8 +30,8 @@ public static class ProgressionPresentation
     public static IReadOnlyList<string> CarColors { get; } =
         ["#38bdf8", "#f97316", "#a3e635", "#f472b6", "#facc15", "#2dd4bf", "#c084fc", "#94a3b8"];
 
-    private const string QualifyingLabel = "Qualification";
-    private const string RaceLabel = "Course";
+    private static string QualifyingLabel => Texts.Get("Progression.Qualifying");
+    private static string RaceLabel => Texts.Get("Progression.Race");
 
     /// <summary>
     /// Creates the chart series of a circuit and a category.

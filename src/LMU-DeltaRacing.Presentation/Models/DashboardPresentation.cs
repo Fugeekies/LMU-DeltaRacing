@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -32,5 +33,5 @@ public static class DashboardPresentation
     /// </summary>
     /// <param name="count">The number of ignored files.</param>
     public static string DuplicateLabel(int count) =>
-        count > 1 ? $"{count} doublons ignorés" : $"{count} doublon ignoré";
+        Texts.Plural("Overview.Duplicates", count);
 }

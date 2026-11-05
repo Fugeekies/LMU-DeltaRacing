@@ -77,6 +77,26 @@ public sealed partial class TextsTests
             .Should().BeEmpty();
     }
 
+    [TestMethod]
+    public void Every_text_is_a_valid_composite_format()
+    {
+        var arguments = Enumerable.Range(0, 10).Select(index => (object)index).ToArray();
+        var invalid = new List<string>();
+        foreach (var data in XDocument.Load(ResourcePath()).Root!.Elements("data"))
+        {
+            try
+            {
+                _ = string.Format(System.Globalization.CultureInfo.InvariantCulture, (string)data.Element("value")!, arguments);
+            }
+            catch (FormatException)
+            {
+                invalid.Add((string)data.Attribute("name")!);
+            }
+        }
+
+        invalid.Should().BeEmpty("a text with a stray brace fails when it is shown");
+    }
+
     private static HashSet<string> ResourceKeys() =>
         XDocument.Load(ResourcePath()).Root!.Elements("data")
             .Select(data => (string)data.Attribute("name")!)
