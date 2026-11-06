@@ -38,12 +38,6 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 - [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`. Comportement de la console à décider selon le jalon « Avenir de la console Spectre ».
 - [ ] **Optimisation des essais** (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt, et de même pour les sessions « Race Weekend ». Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
 
-### Jalon — Navigation en sous-menus
-La barre de navigation compte huit onglets (Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options) : trop pour rester lisible, surtout sur un écran étroit.
-- [ ] Proposer le regroupement en sous-menus dans `docs/UI_DESIGN_SPEC.md` et le faire valider avant de coder.
-- [ ] Mettre en place les sous-menus, sans changer les adresses des pages.
-- [ ] Mettre à jour les guides utilisateur dans les cinq langues.
-
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
@@ -51,6 +45,12 @@ La barre de navigation compte huit onglets (Accueil, Mes courses, Détail des co
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Navigation en sous-menus — 06/11/2026 · PR [#68](https://github.com/Fugeekies/LMU-DeltaRacing/pull/68)
+La barre de navigation comptait huit onglets (Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options) : trop pour rester lisible, surtout sur un écran étroit.
+- [x] Proposer le regroupement en sous-menus et le faire valider : Accueil, Courses (Mes courses, Détail des courses), Performance (Progression, Profil de conduite), Pilotes (Cote pilote, Classement des coureurs), Options. Validé sur pièce le 06/11/2026, décrit dans [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 2 ter).
+- [x] Mettre en place les sous-menus, sans changer les adresses des pages : menus au survol ou au clavier, onglets simples sur téléphone.
+- [x] Mettre à jour les guides utilisateur dans les cinq langues (sommaire du guide).
 
 ### Jalon — Pilote principal introuvable au lancement — 06/11/2026 · PR [#67](https://github.com/Fugeekies/LMU-DeltaRacing/pull/67)
 Le pilote principal n'était détecté que si aucun nom n'était configuré (jalon « Déterminer l'utilisateur principal »). Si le nom enregistré dans `LMU:UserName` n'apparaissait dans aucun fichier de résultats (dossier changé, pseudo modifié), les vues de résultats restaient vides.
