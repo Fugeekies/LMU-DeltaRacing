@@ -21,6 +21,7 @@ Starten Sie **LMU-DeltaRacing** über das Startmenü oder den Desktop.
 - Außerdem öffnet sich ein **schwarzes Fenster**: Das ist die Anwendung. **Wenn Sie es schließen, wird die Anwendung beendet**; den Browser-Tab zu schließen reicht nicht.
 - Während Ihre Dateien gelesen werden, erscheint ein Ladebildschirm; danach zeigt die Anzeige oben rechts **ÜBERWACHUNG AKTIV**.
 - **Ihr Fahrer wird automatisch erkannt**: der Name, der in den meisten Dateien vorkommt. Ist er falsch, ändern Sie ihn unter **Einstellungen › Hauptfahrer**.
+- Kommt der gewählte Fahrer in keiner Datei mehr vor (Ordner gewechselt, Name im Spiel geändert), ersetzt ihn beim nächsten Laden der häufigste Fahrer, und das Banner **Hauptfahrer ersetzt** weist darauf hin.
 
 Lassen Sie die Anwendung beim Spielen geöffnet: Jede beendete Session erscheint von selbst.
 

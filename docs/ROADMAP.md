@@ -44,11 +44,6 @@ La barre de navigation compte huit onglets (Accueil, Mes courses, Détail des co
 - [ ] Mettre en place les sous-menus, sans changer les adresses des pages.
 - [ ] Mettre à jour les guides utilisateur dans les cinq langues.
 
-### Jalon — Pilote principal introuvable au lancement
-Aujourd'hui, le pilote principal n'est détecté que si aucun nom n'est configuré (jalon « Déterminer l'utilisateur principal »). Si le nom enregistré dans `LMU:UserName` n'apparaît dans aucun fichier de résultats (dossier changé, pseudo modifié), les vues de résultats restent vides.
-- [ ] Après l'import initial, si le pilote configuré n'apparaît dans aucune session, relancer la détection du pilote le plus fréquent.
-- [ ] Informer le joueur du changement (texte traduit dans les cinq langues) ; comportement exact à valider : remplacement automatique ou simple proposition dans Options.
-
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
@@ -56,6 +51,11 @@ Aujourd'hui, le pilote principal n'est détecté que si aucun nom n'est configur
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Pilote principal introuvable au lancement — 06/11/2026 · PR [#67](https://github.com/Fugeekies/LMU-DeltaRacing/pull/67)
+Le pilote principal n'était détecté que si aucun nom n'était configuré (jalon « Déterminer l'utilisateur principal »). Si le nom enregistré dans `LMU:UserName` n'apparaissait dans aucun fichier de résultats (dossier changé, pseudo modifié), les vues de résultats restaient vides.
+- [x] Après chaque import complet (démarrage, rechargement depuis Options), si le pilote configuré n'apparaît dans aucune session, le pilote le plus fréquent le remplace et est enregistré. Les fichiers ajoutés par la surveillance ne déclenchent pas la vérification.
+- [x] Informer le joueur du changement : encadré « Pilote principal remplacé » traduit dans les cinq langues sur les pages de résultats, ligne en tête de l'Accueil de la console. Remplacement automatique plutôt que simple proposition (décision du 06/11/2026).
 
 ### Jalon — Fenêtre de nouvelle version : ajustements — 06/11/2026 · PR [#66](https://github.com/Fugeekies/LMU-DeltaRacing/pull/66)
 Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouvelle version était petite et disparaissait trop vite pour être lue. Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6).

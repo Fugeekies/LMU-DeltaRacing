@@ -24,6 +24,11 @@ public static class ConsoleTheme
     public static Color Win { get; } = new(0xb0, 0x66, 0xff);
 
     /// <summary>
+    /// Gets the color of a non-blocking warning (WEC yellow).
+    /// </summary>
+    public static Color Warning { get; } = new(0xea, 0xb3, 0x08);
+
+    /// <summary>
     /// Gets the color of secondary text and unknown categories.
     /// </summary>
     public static Color Muted { get; } = new(0x8b, 0x94, 0x9e);

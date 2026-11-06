@@ -1198,6 +1198,12 @@
   <data name="Results.CheckFolder" xml:space="preserve">
     <value>Comprueba la carpeta configurada en</value>
   </data>
+  <data name="Results.UserNameReplacedTitle" xml:space="preserve">
+    <value>Piloto principal sustituido</value>
+  </data>
+  <data name="Results.UserNameReplaced" xml:space="preserve">
+    <value>{0} no aparece en ningún archivo de resultados: {1}, el piloto más frecuente, es ahora el piloto principal. Para elegir otro, abre</value>
+  </data>
   <data name="Overview.SessionsOf" xml:space="preserve">
     <value>Sesiones de {0}</value>
   </data>

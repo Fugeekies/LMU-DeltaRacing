@@ -1198,6 +1198,12 @@
   <data name="Results.CheckFolder" xml:space="preserve">
     <value>Prüfen Sie den Ordner in</value>
   </data>
+  <data name="Results.UserNameReplacedTitle" xml:space="preserve">
+    <value>Hauptfahrer ersetzt</value>
+  </data>
+  <data name="Results.UserNameReplaced" xml:space="preserve">
+    <value>{0} kommt in keiner Ergebnisdatei vor: {1}, der häufigste Fahrer, ist jetzt der Hauptfahrer. Um einen anderen zu wählen, öffnen Sie</value>
+  </data>
   <data name="Overview.SessionsOf" xml:space="preserve">
     <value>Sessions von {0}</value>
   </data>

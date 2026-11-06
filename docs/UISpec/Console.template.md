@@ -73,6 +73,7 @@ Mêmes données et mêmes règles que `Home.razor`. Différences de rendu :
 * **Forme récente :** les 10 pastilles en texte coloré (`P1` violet, podium vert, `DNF`/`DQ` rouge, `NC` gris), puis la dernière course. Pas de survol ni de lien vers « Détail des courses ».
 * **Causes d'abandon :** `BreakdownChart` Spectre (couleurs de `Home.template.md`), suivi de la liste « cause : nombre (%) ».
 * Valeur non calculable : `—`. Aucune course : « Aucune course disponible ».
+* **Pilote introuvable** (voir `Settings.template.md`) : une ligne en jaune WEC précède la vue, « ! Pilote principal remplacé {ancien} n'apparaît dans aucun fichier de résultats : {nouveau}, le pilote le plus fréquent, devient le pilote principal. Pour en choisir un autre : Options. »
 * Menu de fin : « Retour ».
 
 ### Vue « Mes courses »

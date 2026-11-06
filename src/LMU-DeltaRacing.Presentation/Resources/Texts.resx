@@ -1202,6 +1202,12 @@
   <data name="Results.CheckFolder" xml:space="preserve">
     <value>Vérifiez le dossier configuré dans</value>
   </data>
+  <data name="Results.UserNameReplacedTitle" xml:space="preserve">
+    <value>Pilote principal remplacé</value>
+  </data>
+  <data name="Results.UserNameReplaced" xml:space="preserve">
+    <value>{0} n’apparaît dans aucun fichier de résultats : {1}, le pilote le plus fréquent, devient le pilote principal. Pour en choisir un autre, ouvrez</value>
+  </data>
   <data name="Overview.SessionsOf" xml:space="preserve">
     <value>Sessions de {0}</value>
   </data>

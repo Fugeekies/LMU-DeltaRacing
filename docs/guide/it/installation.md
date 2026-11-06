@@ -21,6 +21,7 @@ Avvia **LMU-DeltaRacing** dal menu Start o dal desktop.
 - Si apre anche una **finestra nera**: è l'applicazione. **Chiuderla arresta l'applicazione**; chiudere la scheda del browser non basta.
 - Mentre i file vengono letti appare una schermata di caricamento, poi l'indicatore in alto a destra passa a **MONITORAGGIO ATTIVO**.
 - **Il tuo pilota viene rilevato automaticamente**: il nome presente nel maggior numero di file. Se è sbagliato, cambialo in **Impostazioni › Pilota principale**.
+- Se il pilota scelto non compare più in nessun file (cartella cambiata, nome cambiato nel gioco), al caricamento successivo lo sostituisce il pilota più frequente e il banner **Pilota principale sostituito** lo segnala.
 
 Lascia l'applicazione aperta mentre giochi: ogni sessione conclusa compare da sola.
 

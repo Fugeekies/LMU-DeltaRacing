@@ -21,6 +21,7 @@ Start **LMU-DeltaRacing** from the Start menu or the desktop.
 - A **black window** opens too: it is the application. **Closing it stops the application**; closing the browser tab is not enough.
 - A loading screen shows while your files are read, then the indicator at the top right turns to **WATCHING**.
 - **Your driver is detected automatically**: the name found in the most files. If it is wrong, change it in **Settings › Main driver**.
+- If the chosen driver no longer appears in any file (folder changed, name changed in the game), the most frequent driver replaces them at the next load and the **Main driver replaced** banner says so.
 
 Keep the application open while you play: each finished session shows up on its own.
 
