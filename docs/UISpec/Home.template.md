@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 26/10/2026 (`Home.razor`, `HomePresentation.cs`).
 
 ### Description
-Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barre de navigation, devant « Mes courses ». C'est un tableau de bord de la carrière du pilote sélectionné (voir Options) : une grille de tuiles regroupées en sections, chaque compteur affichant son total puis sa ventilation par catégorie.
+Nouvelle page d'arrivée de l'application (route `/`), première entrée de la barre de navigation (voir `UI_DESIGN_SPEC.md`, § 2 ter). C'est un tableau de bord de la carrière du pilote sélectionné (voir Options) : une grille de tuiles regroupées en sections, chaque compteur affichant son total puis sa ventilation par catégorie.
 
 « Mes courses » ne répond plus que sur `/my-races`. L'ancienne page `/dashboard` (aperçu des imports, déjà affiché dans Options) est remplacée par cette page ; le logo de la barre de navigation renvoie vers `/`.
 
@@ -97,7 +97,7 @@ Le parser doit lire, en plus des champs actuels :
 Les valeurs sont des exemples. Les lignes `[catégorie] valeur` schématisent la ventilation, rendue en une ligne par catégorie avec sa jauge (voir « Ventilation par catégorie »).
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   ACCUEIL   MES COURSES   PROGRESSION   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom  🟢 │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS                                      Driver Tom  🟢 │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  TABLEAU DE BORD                                                                                                                 │
 │  Accueil                                                                                                                         │

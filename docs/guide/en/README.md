@@ -14,6 +14,8 @@ LMU DeltaRacing reads the result files that *Le Mans Ultimate* saves after each 
 
 ## Dashboard pages
 
+The top bar groups the pages into menus: **Races** (My races, Race details), **Performance** (Progress, Driving profile) and **Drivers** (Driver rating, Head-to-head). Hover over a menu to pick its page; clicking its name opens the first one.
+
 | Page | In short |
 |---|---|
 | [Home](home.md) | Your career at a glance |

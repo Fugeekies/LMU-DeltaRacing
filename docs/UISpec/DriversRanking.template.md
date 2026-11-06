@@ -53,7 +53,7 @@ Vue récapitulative de la rivalité Head-to-Head (H2H) entre le pilote sélectio
 ### Wireframe ASCII
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 SURVEILLANCE ACTIVE                 │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS              Driver Tom   🟢 SURVEILLANCE ACTIVE                 │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ RIVALITÉ & HISTORIQUE DES ADVERSAIRES                                                                                                          │
 │ Classement des coureurs                                                                                                                        │

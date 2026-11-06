@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 26/10/2026 (`Progression.razor`, `ProgressionPresentation.cs`, `ProgressionChartLayout.cs`).
 
 ### Description
-Onglet `/progression`, placé juste après « Détail des courses » dans la barre de navigation. Il trace l'évolution dans le temps des meilleurs tours du pilote sélectionné (voir Options), pour un circuit et une catégorie donnés. Les temps sont regroupés par période (jour, semaine, mois ou année) ; chaque période affiche le min, le max et la moyenne de ses meilleurs tours.
+Page `/progression`, première page du menu « Performance » de la barre de navigation (voir `UI_DESIGN_SPEC.md`, § 2 ter). Il trace l'évolution dans le temps des meilleurs tours du pilote sélectionné (voir Options), pour un circuit et une catégorie donnés. Les temps sont regroupés par période (jour, semaine, mois ou année) ; chaque période affiche le min, le max et la moyenne de ses meilleurs tours.
 
 ### Spécifications fonctionnelles
 * **Pilote :** uniquement le pilote sélectionné dans Options (fusions de pilotes appliquées, comme dans les autres vues). Les autres pilotes des sessions ne sont pas tracés.
@@ -50,7 +50,7 @@ Onglet `/progression`, placé juste après « Détail des courses » dans la bar
 ### Wireframe ASCII
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   ACCUEIL   MES COURSES   PROGRESSION   CLASSEMENT   DÉTAIL DES COURSES   OPTIONS     Driver Tom   🟢 ACTIVE  │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS                           Driver Tom   🟢 ACTIVE  │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  HISTORIQUE & PROGRESSION                                                                                                        │
 │  Progression                                                                                                                     │

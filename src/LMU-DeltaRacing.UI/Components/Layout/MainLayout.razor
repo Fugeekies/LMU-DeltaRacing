@@ -1,6 +1,7 @@
 @inherits LayoutComponentBase
 @implements IDisposable
 @inject DashboardDataService DashboardData
+@inject NavigationManager Navigation
 
 @* No page is rendered behind the startup screen: without this title, the tab would show the address. Pages replace it. *@
 <PageTitle>LMU DeltaRacing</PageTitle>
@@ -21,12 +22,9 @@ else
                 </a>
                 <nav class="primary-nav" aria-label="@T["Nav.Label"]">
                     <NavLink href="/" Match="NavLinkMatch.All">@T["Nav.Home"]</NavLink>
-                    <NavLink href="/my-races">@T["Nav.MyRaces"]</NavLink>
-                    <NavLink href="/race-details">@T["Nav.RaceDetails"]</NavLink>
-                    <NavLink href="/progression">@T["Nav.Progression"]</NavLink>
-                    <NavLink href="/driving-profile">@T["Nav.DrivingProfile"]</NavLink>
-                    <NavLink href="/rating">@T["Nav.DriverRating"]</NavLink>
-                    <NavLink href="/drivers-ranking">@T["Nav.DriversRanking"]</NavLink>
+                    @RenderGroup(T["Nav.GroupRaces"], ("my-races", T["Nav.MyRaces"]), ("race-details", T["Nav.RaceDetails"]))
+                    @RenderGroup(T["Nav.GroupPerformance"], ("progression", T["Nav.Progression"]), ("driving-profile", T["Nav.DrivingProfile"]))
+                    @RenderGroup(T["Nav.GroupDrivers"], ("rating", T["Nav.DriverRating"]), ("drivers-ranking", T["Nav.DriversRanking"]))
                     <NavLink href="/settings">@T["Nav.Settings"]</NavLink>
                 </nav>
                 <div class="system-status" role="status" aria-live="polite">
@@ -64,10 +62,47 @@ else
     protected override void OnInitialized()
     {
         DashboardData.StateChanged += OnDashboardStateChanged;
+        Navigation.LocationChanged += OnLocationChanged;
         state = DashboardData.Snapshot;
     }
 
-    public void Dispose() => DashboardData.StateChanged -= OnDashboardStateChanged;
+    public void Dispose()
+    {
+        DashboardData.StateChanged -= OnDashboardStateChanged;
+        Navigation.LocationChanged -= OnLocationChanged;
+    }
+
+    // NavLink only marks its own page: the group label is marked here when one of its pages is shown.
+    private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e) =>
+        _ = InvokeAsync(StateHasChanged);
+
+    private string CurrentPage()
+    {
+        var path = Navigation.ToBaseRelativePath(Navigation.Uri);
+        var end = path.IndexOfAny(['?', '#', '/']);
+        return end < 0 ? path : path[..end];
+    }
+
+    /// <summary>
+    /// Renders a group of the navigation bar: its label, which opens the first page and shows the
+    /// menu of its pages on hover or focus. On phones the pages are shown as plain tabs instead.
+    /// </summary>
+    private RenderFragment RenderGroup(string label, params (string Page, string Label)[] pages)
+    {
+        var current = CurrentPage();
+        var isActive = pages.Any(page => string.Equals(page.Page, current, StringComparison.OrdinalIgnoreCase));
+        return @<div class="nav-group">
+            <a class="nav-group-toggle @(isActive ? "active" : null)" href="@($"/{pages[0].Page}")">
+                @label<span class="nav-chevron" aria-hidden="true"></span>
+            </a>
+            <div class="nav-menu">
+                @foreach (var entry in pages)
+                {
+                    <NavLink href="@($"/{entry.Page}")">@entry.Label</NavLink>
+                }
+            </div>
+        </div>;
+    }
 
     private void OnDashboardStateChanged() =>
         _ = InvokeAsync(() =>
