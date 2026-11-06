@@ -18,8 +18,8 @@ Nouvelle page d'arrivée de l'application (route `/`), premier onglet de la barr
   * `DQ` : disqualifié, compté à part des abandons ;
   * `None` : **non classé**, compté dans le total de courses avec son propre compteur, mais jamais dans victoires, podiums, tops, abandons ni positions moyennes.
 * **Position officielle :** victoire, podium, top 5 et top 10 utilisent la `ClassPosition` écrite par LMU, mais seulement pour les courses terminées. Un abandon (`DNF`), une disqualification (`DQ`) ou une course non classée (`None`) n'y comptent pas, même avec une position en classe : LMU classe P1 une voiture seule dans sa catégorie qui abandonne après 0 tour. Ils restent comptés dans le total de courses et dans leur propre compteur. La même règle vaut pour la mise en avant du classement dans « Mes courses ».
-* **Ventilation par catégorie :** sous chaque total, une barre empilée de 12 px aux couleurs des catégories, suivie d'une légende en ligne « ■ catégorie (valeur) », valeur entre parenthèses et sans gras (catégories à valeur non nulle). Sous chaque moyenne (position moyenne, position moyenne en qualif, places gagnées), la légende seule, sans barre : ses parts ne s'additionnent pas. Ordre : Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues. Rien n'est affiché quand le total vaut 0.
-* **Pop-up au survol :** survoler un segment de barre ou une entrée de sa légende affiche « catégorie : valeur (pourcentage du total) », par exemple `LMGT3 : 42 (48.3 %)`. La légende permet d'atteindre les segments trop fins pour être survolés. Les moyennes n'ont pas de pop-up : leurs parts ne représentent pas un pourcentage du total.
+* **Ventilation par catégorie :** sous chaque total, une ligne par catégorie à valeur non nulle : point lumineux à la couleur de la catégorie, nom, valeur en gras et pourcentage du total en gris, puis une jauge de 4 px (dégradé de la couleur de la catégorie) remplie selon ce pourcentage. Les tuiles larges rangent les lignes en colonnes (150 px minimum chacune). Sous chaque moyenne (position moyenne, position moyenne en qualif, places gagnées), la ligne s'arrête à la valeur, sans pourcentage ni jauge : ses parts ne s'additionnent pas. Ordre : Hypercar, LMP2, LMP3, LMGTE, LMGT3, puis les classes inconnues. Rien n'est affiché quand le total vaut 0.
+* **Info-bulle au survol :** survoler une ligne d'un total affiche l'info-bulle du navigateur « catégorie : valeur (pourcentage du total) », par exemple `LMGT3 : 42 (48.3 %)`. Les moyennes n'en ont pas : leurs parts ne représentent pas un pourcentage du total.
 * **Ordre des sections :** sous le titre « Accueil », un bandeau avec la tuile **Pilote** à gauche et la tuile **Forme récente** à droite (l'une sous l'autre en dessous de 1 120 px), puis, chacune sur toute la largeur : Palmarès, Roulage, Qualification & départ, Abandons.
 
 #### Tuile « Pilote »
@@ -60,7 +60,7 @@ Les places gagnées ne comptent que les courses classées ayant une position de 
 | ABANDONS | courses en `DNF` | ventilation + taux (abandons ÷ courses) |
 | DISQUALIFICATIONS | courses en `DQ` | ventilation + taux |
 | NON CLASSÉ | courses en `None` | ventilation |
-| CAUSES D'ABANDON | répartition des abandons par `DNFReason` | barre horizontale empilée + liste « cause (nombre · %) », pop-up au survol « cause : nombre (%) » |
+| CAUSES D'ABANDON | répartition des abandons par `DNFReason` | une ligne par cause (nombre, pourcentage, jauge), info-bulle au survol « cause : nombre (%) » |
 
 Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension` → Suspension, `Fuel` → Carburant, `DNF` ou absent → Non précisée. Une autre valeur s'affiche sous son nom brut.
 
@@ -78,7 +78,7 @@ Libellés des causes : `Accident` → Accident, `Engine` → Moteur, `Suspension
 * Sous les pastilles, la **dernière course** : date, circuit, voiture, position en classe, statut, meilleur tour, et un lien vers son événement dans « Détail des courses ».
 
 #### Couleurs
-Couleurs des catégories dans les barres et légendes (voir `UI_DESIGN_SPEC.md`, section 4) : Hypercar `#c8102e`, LMP2 `#144a94`, LMP3 `#623078`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
+Couleurs des catégories dans les lignes de ventilation (voir `UI_DESIGN_SPEC.md`, section 4) : Hypercar `#c8102e`, LMP2 `#144a94`, LMP3 `#623078`, LMGTE `#15803d`, LMGT3 `#d97706`, classe inconnue en gris `#8b949e`. Les causes d'abandon utilisent, dans l'ordre de fréquence, `#f97316`, `#38bdf8`, `#facc15`, `#f472b6` et `#94a3b8`.
 
 #### États de la page
 * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».
@@ -94,7 +94,7 @@ Le parser doit lire, en plus des champs actuels :
 * `TrackLength` de la session, en mètres (distance).
 
 ### Wireframe ASCII
-Les valeurs sont des exemples. Les lignes `[catégorie] valeur` schématisent la ventilation, rendue en barre empilée suivie d'une légende en ligne « catégorie (valeur) » (voir « Ventilation par catégorie »).
+Les valeurs sont des exemples. Les lignes `[catégorie] valeur` schématisent la ventilation, rendue en une ligne par catégorie avec sa jauge (voir « Ventilation par catégorie »).
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │ [LMU] DELTARACING   ACCUEIL   MES COURSES   PROGRESSION   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom  🟢 │

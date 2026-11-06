@@ -146,20 +146,11 @@ else
                 {
                     var causeSegments = HomeBarLayout.Create(dashboard.RetirementCauses.Select(cause =>
                         new HomeBarPart(cause.Label, cause.Share, cause.Count.ToString(System.Globalization.CultureInfo.InvariantCulture))));
-                    <div class="home-bar" aria-hidden="true">
-                        @foreach (var (segment, index) in causeSegments.Select((segment, index) => (segment, index)))
-                        {
-                            <span class="home-bar-part cause-@(index % CauseColorCount)" style="width: @segment.Width">@RenderTooltip(segment)</span>
-                        }
-                    </div>
-                    <ul class="home-share-list">
+                    <ul class="home-breakdown">
                         @foreach (var (cause, index) in dashboard.RetirementCauses.Select((cause, index) => (cause, index)))
                         {
-                            <li>
-                                <i class="home-swatch cause-@(index % CauseColorCount)" aria-hidden="true"></i>
-                                @cause.Label <span>(@cause.Count · @DisplayFormat.Percent(cause.Share))</span>
-                                @RenderTooltip(causeSegments[index])
-                            </li>
+                            @RenderBreakdownRow($"cause-{index % CauseColorCount}", cause.Label,
+                                cause.Count.ToString(System.Globalization.CultureInfo.InvariantCulture), causeSegments[index], cause.Share)
                         }
                     </ul>
                 }
@@ -216,26 +207,18 @@ else
                     ? HomeBarLayout.Create(parts.Select(part =>
                         new HomeBarPart(part.Category, part.Value!.Value / stat.Value!.Value, format(part.Value))))
                     : [];
-                @if (stacked)
-                {
-                    <div class="home-bar home-bar-thin" aria-hidden="true">
-                        @foreach (var segment in segments)
-                        {
-                            <span class="home-bar-part @CategoryStyle.CssClass(segment.Label)" style="width: @segment.Width">@RenderTooltip(segment)</span>
-                        }
-                    </div>
-                }
-                <ul class="home-share-list home-breakdown-legend">
+                <ul class="home-breakdown">
                     @foreach (var (part, index) in parts.Select((part, index) => (part, index)))
                     {
-                        <li>
-                            <i class="home-swatch @CategoryStyle.CssClass(part.Category)" aria-hidden="true"></i>
-                            @part.Category (@format(part.Value))
-                            @if (stacked)
-                            {
-                                @RenderTooltip(segments[index])
-                            }
-                        </li>
+                        var colorClass = CategoryStyle.CssClass(part.Category);
+                        @if (stacked)
+                        {
+                            @RenderBreakdownRow(colorClass, part.Category, format(part.Value), segments[index], part.Value!.Value / stat.Value!.Value)
+                        }
+                        else
+                        {
+                            @RenderBreakdownRow(colorClass, part.Category, format(part.Value), null, null)
+                        }
                     }
                 </ul>
             }
@@ -266,6 +249,23 @@ else
     private static RenderFragment RenderSigned(double? value, string format) =>
         @<span class="@(value > 0 ? "delta-gain" : value < 0 ? "delta-loss" : string.Empty)">@DisplayFormat.Signed(value, format)</span>;
 
-    private static RenderFragment RenderTooltip(HomeBarSegment segment) =>
-        @<span class="home-tooltip" style="--tooltip-position: @segment.Center">@segment.Tooltip</span>;
+    /// <summary>
+    /// Renders one line of a breakdown: its color, label and value, then for a share of a total its
+    /// percentage and a gauge of that share. An average has no share: the line stops at its value.
+    /// </summary>
+    private static RenderFragment RenderBreakdownRow(string colorClass, string label, string value, HomeBarSegment? segment, double? share) =>
+        @<li class="home-breakdown-row" style="@(segment is null ? null : $"--share: {segment.Width}")" title="@segment?.Tooltip">
+            <span class="home-breakdown-label"><i class="home-breakdown-dot @colorClass" aria-hidden="true"></i>@label</span>
+            <span class="home-breakdown-value">
+                @value
+                @if (share is { } part)
+                {
+                    <span class="home-breakdown-share">@DisplayFormat.Percent(part)</span>
+                }
+            </span>
+            @if (segment is not null)
+            {
+                <span class="home-breakdown-track" aria-hidden="true"><span class="home-breakdown-fill @colorClass"></span></span>
+            }
+        </li>;
 }
