@@ -21,6 +21,7 @@ Lancez **LMU-DeltaRacing** depuis le menu Démarrer ou le bureau.
 - Une **fenêtre noire** s'ouvre aussi : c'est l'application. **La fermer arrête l'application** ; fermer l'onglet du navigateur ne suffit pas.
 - Un écran de chargement s'affiche le temps de lire vos fichiers, puis l'indicateur en haut à droite passe à **SURVEILLANCE ACTIVE**.
 - **Votre pilote est détecté automatiquement** : le nom présent dans le plus de fichiers. S'il est faux, changez-le dans **Options › Pilote principal**.
+- Si le pilote choisi n'apparaît plus dans aucun fichier (dossier changé, pseudo modifié), le pilote le plus fréquent le remplace au chargement suivant et le bandeau **Pilote principal remplacé** le signale.
 
 Laissez l'application ouverte pendant que vous jouez : chaque session terminée apparaît toute seule.
 

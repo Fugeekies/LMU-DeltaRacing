@@ -20,6 +20,17 @@ else if (!string.IsNullOrWhiteSpace(State.ErrorMessage) && State.Sessions.Count 
 }
 else
 {
+    @if (State.UserNameReplacement is { } replacement)
+    {
+        <section class="notice notice-warning" role="status">
+            <span class="notice-symbol" aria-hidden="true">!</span>
+            <div>
+                <h2>@T["Results.UserNameReplacedTitle"]</h2>
+                <p>@T["Results.UserNameReplaced", replacement.PreviousName, replacement.SelectedName] <a href="/settings">@T["Nav.Settings"]</a>.</p>
+            </div>
+        </section>
+    }
+
     @ChildContent
 }
 

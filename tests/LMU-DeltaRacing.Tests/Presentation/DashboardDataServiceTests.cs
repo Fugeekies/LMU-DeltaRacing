@@ -253,6 +253,61 @@ public sealed class DashboardDataServiceTests
     }
 
     /// <summary>
+    /// Verifies that a configured driver who appears in no imported session is replaced by the most
+    /// frequent driver after a full import, and that the replacement is reported until the player
+    /// picks a driver or a reload finds the selected driver.
+    /// </summary>
+    [TestMethod]
+    public async Task A_selected_driver_missing_from_every_session_is_replaced_by_the_most_frequent()
+    {
+        var sourceFile = Path.Combine(
+            AppContext.BaseDirectory,
+            "assets",
+            "Results",
+            "2025_02_24_20_26_56-18R1.xml");
+        var resultsDirectory = CreateResultsDirectory(sourceFile, "initial.xml");
+        var repository = new InMemorySessionRepository();
+        var importer = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var configuration = new ConfigurationBuilder()
+            .AddInMemoryCollection(new Dictionary<string, string?>
+            {
+                ["LMU:ResultsDirectory"] = resultsDirectory,
+                ["LMU:WatchResultsOnStartup"] = "false",
+                ["LMU:UserName"] = "Driver Nobody"
+            })
+            .Build();
+        var service = CreateService(configuration, importer, repository);
+
+        try
+        {
+            await service.StartAsync(CancellationToken.None);
+
+            var state = await WaitForStateAsync(service, snapshot => !snapshot.IsLoading);
+            var mostFrequent = state.DriverFrequencies[0].Name;
+            state.UserName.Should().Be(mostFrequent);
+            state.UserNameReplacement.Should().Be(new UserNameReplacement("Driver Nobody", mostFrequent));
+            System.Text.Json.Nodes.JsonNode.Parse(File.ReadAllText(Path.Combine(resultsDirectory, "appsettings.json")))
+                ?["LMU"]?["UserName"]?.GetValue<string>().Should().Be(mostFrequent);
+
+            await service.ReloadResultsAsync(resultsDirectory);
+            service.Snapshot.UserName.Should().Be(mostFrequent);
+            service.Snapshot.UserNameReplacement.Should().BeNull("the selected driver is now found");
+
+            service.SelectUserName(state.DriverFrequencies[1].Name);
+            service.Snapshot.UserNameReplacement.Should().BeNull();
+        }
+        finally
+        {
+            await service.StopAsync(CancellationToken.None);
+            await service.DisposeAsync();
+            Directory.Delete(resultsDirectory, recursive: true);
+        }
+    }
+
+    /// <summary>
     /// Verifies that files imported by the watcher are reported one by one, unlike startup files.
     /// </summary>
     [TestMethod]

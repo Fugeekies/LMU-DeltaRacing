@@ -21,6 +21,7 @@ Inicia **LMU-DeltaRacing** desde el menú Inicio o el escritorio.
 - También se abre una **ventana negra**: es la aplicación. **Cerrarla detiene la aplicación**; cerrar la pestaña del navegador no basta.
 - Mientras se leen tus archivos aparece una pantalla de carga; después, el indicador de arriba a la derecha pasa a **VIGILANCIA ACTIVA**.
 - **Tu piloto se detecta automáticamente**: el nombre que aparece en más archivos. Si no es correcto, cámbialo en **Ajustes › Piloto principal**.
+- Si el piloto elegido ya no aparece en ningún archivo (carpeta cambiada, nombre cambiado en el juego), el piloto más frecuente lo sustituye en la siguiente carga y el aviso **Piloto principal sustituido** lo indica.
 
 Deja la aplicación abierta mientras juegas: cada sesión terminada aparece sola.
 

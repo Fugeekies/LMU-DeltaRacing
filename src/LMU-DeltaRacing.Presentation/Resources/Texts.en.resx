@@ -1198,6 +1198,12 @@
   <data name="Results.CheckFolder" xml:space="preserve">
     <value>Check the folder set in</value>
   </data>
+  <data name="Results.UserNameReplacedTitle" xml:space="preserve">
+    <value>Main driver replaced</value>
+  </data>
+  <data name="Results.UserNameReplaced" xml:space="preserve">
+    <value>{0} appears in no results file: {1}, the most frequent driver, is now the main driver. To choose another one, open</value>
+  </data>
   <data name="Overview.SessionsOf" xml:space="preserve">
     <value>Sessions of {0}</value>
   </data>

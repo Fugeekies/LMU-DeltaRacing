@@ -33,6 +33,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Le choix est **enregistré immédiatement** dans `LMU:UserName` (`appsettings.json`) et toutes les vues basculent sur ce pilote.
 * Liste désactivée pendant le chargement initial ou si aucun pilote n'est disponible.
 * Pilote non défini : option « Détection après le chargement… ». Au premier démarrage, le pilote le plus fréquent est sélectionné et enregistré automatiquement à la fin de l'import initial.
+* **Pilote introuvable :** à la fin de chaque import complet (démarrage, rechargement depuis Options), si le pilote enregistré (après fusions) n'apparaît dans aucune session importée, le pilote le plus fréquent le remplace et est enregistré. Les pages de résultats affichent alors, au-dessus de leur contenu, l'encadré d'avertissement « Pilote principal remplacé » : « {ancien} n'apparaît dans aucun fichier de résultats : {nouveau}, le pilote le plus fréquent, devient le pilote principal. Pour en choisir un autre, ouvrez Options. » Il disparaît dès qu'un pilote est choisi ici ou qu'un rechargement trouve le pilote enregistré. Les fichiers ajoutés par la surveillance ne déclenchent pas cette vérification : ils ne retirent aucun pilote.
 * Pilote configuré absent des résultats : option « <nom> (absent des résultats chargés) ».
 
 #### Panneau « Langue et date » (eyebrow « AFFICHAGE »)

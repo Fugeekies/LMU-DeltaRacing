@@ -15,10 +15,27 @@ public static class HomeView
     /// </summary>
     /// <param name="dashboard">The career statistics of the driver.</param>
     /// <param name="userName">The selected driver.</param>
-    public static IRenderable Create(HomeDashboard dashboard, string? userName)
+    /// <param name="replacement">The replacement of a selected driver found in no results file, if any.</param>
+    public static IRenderable Create(HomeDashboard dashboard, string? userName, UserNameReplacement? replacement = null)
     {
         ArgumentNullException.ThrowIfNull(dashboard);
 
+        var view = CreateView(dashboard, userName);
+        return replacement is null
+            ? view
+            : new Rows(
+                new Markup(
+                    $"{ConsoleTheme.Colored("! Pilote principal remplacé", ConsoleTheme.Warning)} "
+                    + Markup.Escape(
+                        $"{replacement.PreviousName} n'apparaît dans aucun fichier de résultats : "
+                        + $"{replacement.SelectedName}, le pilote le plus fréquent, devient le pilote principal. "
+                        + "Pour en choisir un autre : Options.")),
+                Text.Empty,
+                view);
+    }
+
+    private static IRenderable CreateView(HomeDashboard dashboard, string? userName)
+    {
         if (dashboard.IsEmpty)
         {
             return new Rows(

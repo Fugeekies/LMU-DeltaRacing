@@ -124,6 +124,22 @@ public sealed class ConsoleViewsTests
     }
 
     /// <summary>
+    /// Verifies that the home view warns when the selected driver was replaced because they appear
+    /// in no results file, and stays silent otherwise.
+    /// </summary>
+    [TestMethod]
+    public void HomeView_warns_when_the_selected_driver_was_replaced()
+    {
+        var dashboard = HomePresentation.Create(FixtureSessions.Value, MainDriver);
+
+        var output = Render(HomeView.Create(dashboard, MainDriver, new UserNameReplacement("Driver Nobody", MainDriver)));
+
+        output.Should().Contain("Driver Nobody n'apparaît dans aucun fichier de résultats")
+            .And.Contain($"{MainDriver}, le pilote le plus fréquent, devient le pilote principal");
+        Render(HomeView.Create(dashboard, MainDriver)).Should().NotContain("n'apparaît dans aucun fichier");
+    }
+
+    /// <summary>
     /// Verifies the home view of a driver without any race.
     /// </summary>
     [TestMethod]

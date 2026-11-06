@@ -35,6 +35,12 @@ public sealed record DashboardState(
     public string? UserName { get; init; }
 
     /// <summary>
+    /// Gets the replacement of a selected driver found in no session by the last full import, until
+    /// the player picks a driver or a reload finds the selected driver; null otherwise.
+    /// </summary>
+    public UserNameReplacement? UserNameReplacement { get; init; }
+
+    /// <summary>
     /// Gets driver frequencies calculated from the imported result files.
     /// </summary>
     public IReadOnlyList<DriverFrequency> DriverFrequencies { get; init; } = [];

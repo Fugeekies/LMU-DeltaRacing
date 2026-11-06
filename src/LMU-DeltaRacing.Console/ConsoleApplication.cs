@@ -135,7 +135,7 @@ public sealed class ConsoleApplication
         var state = data.Snapshot;
         console.Clear();
         RenderHeader(withImports: false);
-        console.Write(HomeView.Create(HomePresentation.Create(state.Sessions, state.UserName), state.UserName));
+        console.Write(HomeView.Create(HomePresentation.Create(state.Sessions, state.UserName), state.UserName, state.UserNameReplacement));
         console.WriteLine();
         console.Prompt(new SelectionPrompt<string>().AddChoices(BackChoice));
     }

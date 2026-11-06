@@ -41,6 +41,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
     private string? errorMessage;
     private string? resultsDirectory;
     private string? userName;
+    private UserNameReplacement? userNameReplacement;
     private IReadOnlyList<DriverMerge> driverMerges;
 
     /// <summary>
@@ -103,6 +104,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 {
                     ImportDuplicates = duplicates,
                     UserName = DriverMerges.Resolve(userName, driverMerges),
+                    UserNameReplacement = userNameReplacement,
                     DriverMerges = driverMerges,
                     DriverFrequencies = driverFrequencies,
                     IsStartupImportRunning = isStartupImportRunning
@@ -139,6 +141,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
             lock (stateLock)
             {
                 userName = normalizedName;
+                userNameReplacement = null;
             }
         }
 
@@ -360,6 +363,7 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 driverFrequencies = [];
                 failures = [];
                 duplicates = [];
+                userNameReplacement = null;
             }
 
             NotifyStateChanged();
@@ -389,7 +393,9 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
                 driverFrequencies = DriverProfile.CalculateFrequencies(sessions);
             }
 
-            EnsureUserNameSelected();
+            // Only a full import can tell that the selected driver is in no file: the watcher adds
+            // files, it never removes one.
+            EnsureUserNameSelected(replaceMissingDriver: true);
             lock (stateLock)
             {
                 isLoading = false;
@@ -547,16 +553,32 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
         }
     }
 
-    private void EnsureUserNameSelected()
+    /// <summary>
+    /// Selects the most frequent driver when none is configured or, after a full import, when the
+    /// configured driver appears in no session (folder changed, name changed in the game): the result
+    /// views would otherwise stay empty.
+    /// </summary>
+    private void EnsureUserNameSelected(bool replaceMissingDriver = false)
     {
         lock (userNameLock)
         {
             string detectedName;
+            string? missingName = null;
             lock (stateLock)
             {
-                if (!string.IsNullOrWhiteSpace(userName) || driverFrequencies.Count == 0)
+                if (driverFrequencies.Count == 0)
                 {
                     return;
+                }
+
+                if (!string.IsNullOrWhiteSpace(userName))
+                {
+                    if (!replaceMissingDriver || IsKnownDriver(DriverMerges.Resolve(userName, driverMerges)))
+                    {
+                        return;
+                    }
+
+                    missingName = userName;
                 }
 
                 detectedName = driverFrequencies[0].Name;
@@ -565,13 +587,33 @@ public sealed class DashboardDataService : IHostedService, IAsyncDisposable
             settingsStore.SaveUserName(detectedName);
             lock (stateLock)
             {
+                // The player may have picked a driver in the meantime: keep that choice.
                 if (string.IsNullOrWhiteSpace(userName))
                 {
                     userName = detectedName;
                 }
+                else if (missingName is not null && string.Equals(userName, missingName, StringComparison.Ordinal))
+                {
+                    userNameReplacement = new UserNameReplacement(
+                        DriverMerges.Resolve(missingName, driverMerges) ?? missingName,
+                        detectedName);
+                    userName = detectedName;
+                }
+            }
+
+            if (missingName is not null)
+            {
+                logger.LogInformation(
+                    "The selected driver appears in no imported session: the most frequent driver was selected instead.");
             }
         }
     }
+
+    /// <summary>
+    /// Tells whether a driver appears in the imported sessions. To be called under the state lock.
+    /// </summary>
+    private bool IsKnownDriver(string? name) =>
+        driverFrequencies.Any(driver => string.Equals(driver.Name, name, StringComparison.OrdinalIgnoreCase));
 
     private void NotifyStateChanged() => StateChanged?.Invoke();
 }
