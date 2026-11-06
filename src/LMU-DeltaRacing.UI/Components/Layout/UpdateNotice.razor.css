@@ -6,8 +6,8 @@
     display: flex;
     max-width: calc(100vw - 2rem);
     flex-direction: column;
-    gap: 0.2rem;
-    padding: 0.8rem 1rem;
+    gap: 0.3rem;
+    padding: 1rem 1.25rem;
     border: 1px solid var(--border);
     border-left: 3px solid var(--accent);
     border-radius: 4px;
@@ -23,13 +23,13 @@
 
 .update-notice-title {
     color: var(--text);
-    font-size: 0.82rem;
+    font-size: 0.95rem;
     font-weight: 700;
 }
 
 .update-notice-action {
     color: var(--muted);
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
 @keyframes update-notice-in {

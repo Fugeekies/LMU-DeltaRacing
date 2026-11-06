@@ -49,11 +49,6 @@ Aujourd'hui, le pilote principal n'est détecté que si aucun nom n'est configur
 - [ ] Après l'import initial, si le pilote configuré n'apparaît dans aucune session, relancer la détection du pilote le plus fréquent.
 - [ ] Informer le joueur du changement (texte traduit dans les cinq langues) ; comportement exact à valider : remplacement automatique ou simple proposition dans Options.
 
-### Jalon — Fenêtre de nouvelle version : ajustements
-Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouvelle version est petite et disparaît trop vite pour être lue. Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6), à mettre à jour.
-- [ ] Agrandir un peu la fenêtre (marges et taille des textes).
-- [ ] Passer sa durée d'affichage de 3 à 5 secondes.
-
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
@@ -61,6 +56,11 @@ Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouv
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Fenêtre de nouvelle version : ajustements — 06/11/2026 · PR [#66](https://github.com/Fugeekies/LMU-DeltaRacing/pull/66)
+Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouvelle version était petite et disparaissait trop vite pour être lue. Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6).
+- [x] Agrandir un peu la fenêtre (marges et taille des textes).
+- [x] Passer sa durée d'affichage de 3 à 5 secondes.
 
 ### Jalon — Interface multilingue — 05/11/2026 · PR [#60](https://github.com/Fugeekies/LMU-DeltaRacing/pull/60), [#61](https://github.com/Fugeekies/LMU-DeltaRacing/pull/61), [#62](https://github.com/Fugeekies/LMU-DeltaRacing/pull/62)
 Avant ce jalon, l’application n’avait aucun mécanisme de traduction : tous les textes étaient écrits en dur en français. Ce jalon change une règle documentée dans `AGENTS.md` (« l'UI est en français ») : proposition écrite à valider avant de coder. Langues : les mêmes que le guide d'utilisation (anglais, français, allemand, italien, espagnol).
