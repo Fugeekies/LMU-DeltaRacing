@@ -14,6 +14,8 @@ LMU DeltaRacing legge i file dei risultati che *Le Mans Ultimate* salva dopo ogn
 
 ## Le pagine della dashboard
 
+La barra in alto raggruppa le pagine in menu: **Gare** (Le mie gare, Dettaglio gare), **Prestazioni** (Progressi, Profilo di guida) e **Piloti** (Rating pilota, Testa a testa). Passa il mouse su un menu per scegliere la pagina; un clic sul suo nome apre la prima.
+
 | Pagina | In breve |
 |---|---|
 | [Home](home.md) | La tua carriera a colpo d'occhio |

@@ -27,9 +27,25 @@ L'arrière-plan de l'application utilise un dégradé subtil passant d'un bleu n
 Couche chargée après `dashboard.css`, sans changer la palette ni les couleurs WEC :
 * Panneaux et tuiles : coins de 10 px, léger reflet en haut et ombre portée ; les tuiles de l'Accueil et les cartes de résumé se soulèvent de 1 px au survol.
 * Barre du haut : verre flou, filet rouge qui s'estompe vers les bords. Onglet survolé : fond gris arrondi ; onglet actif : texte blanc et soulignement rouge lumineux, sans fond.
-* Largeur de la barre : les huit onglets rétrécissent jusqu'à 1 180 px ; en dessous, ils passent sur une deuxième ligne, centrés.
+* Largeur de la barre : les cinq entrées rétrécissent sous 1 100 px (le nom « LMU DELTARACING » disparaît aussi, le logo reste) ; sous 900 px, elles passent sur une deuxième ligne, centrées.
 * Tableaux : la ligne survolée s'éclaire sans effacer les couleurs de classement ; les poignées de redimensionnement des colonnes sont un trait fin, la poignée complète apparaît au survol de l'en-tête.
 * Bouton principal en dégradé rouge avec lueur ; boutons segmentés en pilule ; barres de défilement fines. Animations coupées avec `prefers-reduced-motion`.
+
+### 2 ter. Navigation en sous-menus
+Cinq entrées au lieu de huit onglets (décision du 06/11/2026) :
+
+| Entrée | Pages |
+|---|---|
+| Accueil | `/` |
+| Courses ▾ | Mes courses, Détail des courses |
+| Performance ▾ | Progression, Profil de conduite |
+| Pilotes ▾ | Cote pilote, Classement des coureurs |
+| Options | `/settings` |
+
+* Le menu d'un groupe s'ouvre au survol ou au focus clavier, sous la barre, centré sur son entrée : panneau en verre (fond `rgb(14 17 22 / 96%)`, bordure `--border`, coins de 10 px, ombre), une ligne par page. Le chevron de l'entrée pivote à l'ouverture. Le menu se ferme dès qu'une page est choisie.
+* Cliquer sur le nom d'un groupe ouvre sa première page. Le groupe de la page affichée porte le soulignement rouge de la barre ; dans le menu, la page affichée a un fond teinté rouge et un liseré rouge à gauche.
+* Sous 700 px, la barre défile horizontalement : les groupes s'effacent et leurs pages redeviennent des onglets simples (un menu y serait coupé).
+* Les adresses des pages ne changent pas.
 
 ---
 

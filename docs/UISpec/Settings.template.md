@@ -81,6 +81,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Tableau **« Sessions récentes de <pilote> »** trié du plus récent au plus ancien : DATE / HEURE (heure locale), CIRCUIT (lieu + tracé), ÉVÉNEMENT, SESSION (badge du type), VOITURE.
 
 #### Barre de navigation (commune à toutes les pages)
+* Au centre : Accueil, Courses ▾, Performance ▾, Pilotes ▾ et Options ; les groupes ouvrent un menu de leurs pages (voir `UI_DESIGN_SPEC.md`, § 2 ter).
 * À droite : nom du pilote sélectionné (ou « Pilote non défini ») et état de l'application :
   * libellé : RÉSULTATS INDISPONIBLES (erreur), sinon IMPORT INITIAL (chargement en cours), sinon SURVEILLANCE ACTIVE ou SURVEILLANCE INACTIVE ;
   * point : 🔴 en cas d'erreur, 🟢 si le watcher tourne (y compris pendant l'import initial), 🟡 sinon.
@@ -88,7 +89,7 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 ### Wireframe ASCII
 ```text
 ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS   Driver Tom   🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS              Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├───────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  CONFIGURATION & PARAMÈTRES                                                                                   │
 │  Options                                                                                                      │

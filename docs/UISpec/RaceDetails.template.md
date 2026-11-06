@@ -82,7 +82,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
 ### Wireframe ASCII
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS                       Driver Tom   🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS                                  Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  ANALYSE DE SESSION                                                                                                                                │
 │  Détail des courses                                                                                                                                │

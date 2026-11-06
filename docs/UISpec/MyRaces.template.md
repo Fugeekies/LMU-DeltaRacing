@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 05/11/2026 (`MyRaces.razor`, `MyRacesPresentation.cs`).
 
 ### Description
-Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
+Page `/my-races`, première page du menu « Courses » de la barre de navigation (voir `UI_DESIGN_SPEC.md`, § 2 ter). Elle montre la progression personnelle du pilote sélectionné (voir Options), groupée par circuit et filtrable par circuit et par catégorie. Chaque ligne associe une course à la qualification qui la précède ; ses meilleurs tours sont comparés à ceux de la ligne précédente ($n-1$) sur le même circuit et dans la même catégorie, quel que soit le véhicule.
 
 ### Spécifications fonctionnelles
 * **Sessions prises en compte :** sessions de qualification (type contenant `Qual`) et de course (type contenant `Race`) dans lesquelles figure le pilote sélectionné. Les sessions d'essais sont importées mais ne s'affichent que dans l'onglet Essais de « Détail des courses ».
@@ -71,7 +71,7 @@ Page `/my-races`, deuxième onglet de la barre de navigation, après l'Accueil. 
 ### Wireframe ASCII
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
-│ [LMU] DELTARACING   MES COURSES   CLASSEMENT DES COUREURS   DÉTAIL DES COURSES   OPTIONS        Driver Tom   🟢 SURVEILLANCE ACTIVE │
+│ [LMU] DELTARACING   ACCUEIL   COURSES ▾   PERFORMANCE ▾   PILOTES ▾   OPTIONS                   Driver Tom   🟢 SURVEILLANCE ACTIVE │
 ├──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │  HISTORIQUE & PROGRESSION                                                                                                        │
 │  Mes courses                                                                                                                     │

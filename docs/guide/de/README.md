@@ -14,6 +14,8 @@ LMU DeltaRacing liest die Ergebnisdateien, die *Le Mans Ultimate* nach jeder Ses
 
 ## Die Seiten des Dashboards
 
+Die obere Leiste fasst die Seiten in Menüs zusammen: **Rennen** (Meine Rennen, Renndetails), **Leistung** (Fortschritt, Fahrprofil) und **Fahrer** (Fahrerwertung, Direktvergleich). Fahren Sie mit der Maus über ein Menü, um seine Seite zu wählen; ein Klick auf seinen Namen öffnet die erste.
+
 | Seite | Kurz gesagt |
 |---|---|
 | [Startseite](home.md) | Ihre Karriere auf einen Blick |
