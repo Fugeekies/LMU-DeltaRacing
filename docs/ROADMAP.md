@@ -11,6 +11,7 @@ Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisé
 - [ ] **Régularité :** écart entre les tours d'une course, comparé au meilleur tour du pilote et à ses adversaires. Ne demande aucune nouvelle lecture XML.
 - [ ] **Records personnels :** meilleur tour par couple circuit + voiture et vitesse de pointe (`topspeed`), avec un repère quand un record tombe.
 - [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le déroulé de la course.
+- [ ] **Nombre d'arrêts au stand** d'un pilote dans une course : compter ses tours `pit="1"` (déjà lus), en vérifiant la concordance avec `Pitstops` lors de l'étape Format. Pages où l'afficher à définir dans la spec.
 - [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
 - [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
 - [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
@@ -30,16 +31,34 @@ Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux
 - [ ] Décider du rôle de la console : outil de diagnostic gelé (aucune nouvelle vue) ou application à part entière qui suit le dashboard.
 - [ ] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, pour que les prochaines évolutions sachent si elles doivent toucher la console.
 
+### Jalon — Choix des sessions importées
+Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses) ; elle n'est pas lue par le parser.
+- [ ] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés).
+- [ ] **Parser :** lire `<Setting>`, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
+- [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`. Comportement de la console à décider selon le jalon « Avenir de la console Spectre ».
+- [ ] **Optimisation des essais** (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt, et de même pour les sessions « Race Weekend ». Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
+
+### Jalon — Navigation en sous-menus
+La barre de navigation compte huit onglets (Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options) : trop pour rester lisible, surtout sur un écran étroit.
+- [ ] Proposer le regroupement en sous-menus dans `docs/UI_DESIGN_SPEC.md` et le faire valider avant de coder.
+- [ ] Mettre en place les sous-menus, sans changer les adresses des pages.
+- [ ] Mettre à jour les guides utilisateur dans les cinq langues.
+
+### Jalon — Pilote principal introuvable au lancement
+Aujourd'hui, le pilote principal n'est détecté que si aucun nom n'est configuré (jalon « Déterminer l'utilisateur principal »). Si le nom enregistré dans `LMU:UserName` n'apparaît dans aucun fichier de résultats (dossier changé, pseudo modifié), les vues de résultats restent vides.
+- [ ] Après l'import initial, si le pilote configuré n'apparaît dans aucune session, relancer la détection du pilote le plus fréquent.
+- [ ] Informer le joueur du changement (texte traduit dans les cinq langues) ; comportement exact à valider : remplacement automatique ou simple proposition dans Options.
+
+### Jalon — Fenêtre de nouvelle version : ajustements
+Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouvelle version est petite et disparaît trop vite pour être lue. Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6), à mettre à jour.
+- [ ] Agrandir un peu la fenêtre (marges et taille des textes).
+- [ ] Passer sa durée d'affichage de 3 à 5 secondes.
+
+### Jalon — Export CSV
+- [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
+
 ### Liste d'idées à prioriser
-- [x] Colorer les badges de catégorie selon `UI_DESIGN_SPEC.md` (couleurs officielles des fonds de numéro de course, avec les séparateurs de catégorie de « Mes courses »).
-- Le multilingue est dans les jalons « README multilingue » et « Interface multilingue ».
-- [x] Reprise du readme pour la doc d'utilisation (README utilisateur, guide développeur déplacé dans `docs/DEVELOPMENT.md`).
-- [ ] Exporter les résultats et statistiques en CSV.
-- [ ] Optimisation des essais (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt. Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
-- Les incidents sont affichés depuis le jalon « Exploiter les événements du `Stream` » ; la fiche pilote est abandonnée (couverte par Profil de conduite) et la comparaison de sessions est dans le jalon « Analyse de course tour par tour ».
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
-- [x] Permettre de choisir le dossier de résultats depuis l'interface (page Options).
-- [x] Ajouter un indicateur de progression et un résumé des derniers imports (page Options).
 
 ## Terminés
 
@@ -252,6 +271,7 @@ Spécification : [`UISpec/Home.template.md`](UISpec/Home.template.md).
 - [x] Ajouter le bouton de parcours d'explorer et l'indicateur visuel de validité du dossier.
 - [x] Permettre de tester et recharger la surveillance `FileSystemWatcher` depuis l'interface.
 - [x] Déplacer le dashboard avec les imports réussi/échec ainsi que les session récente en dessous des options.
+- [x] Indicateur de progression des imports dans Options.
 
 ### Jalon — UI : Shell & Layout LMU — 17/10/2026 · PR [#16](https://github.com/Fugeekies/LMU-DeltaRacing/pull/16)
 - [x] Mettre en place le fond dégradé officiel LMU (`#0d1b2a` vers `#3a0d18`).
