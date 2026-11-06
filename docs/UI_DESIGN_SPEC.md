@@ -20,7 +20,16 @@ L'arrière-plan de l'application utilise un dégradé subtil passant d'un bleu n
 
 ### 2. Typographies
 * **Interface & Données :** `Inter`, `Roboto` ou police sans-serif système pour une lisibilité parfaite des chronos et données textuelles.
-* **Header & Onglets de Navigation :** `Oswald`, `Impact` ou police condensée en majuscules avec espacement des lettres (`letter-spacing: 0.05em`) pour reproduire le style officiel du site LMU.
+* **Header & Onglets de Navigation :** `Oswald`, `Impact` ou police condensée en majuscules avec espacement des lettres (`letter-spacing: 0.05em`) pour reproduire le style officiel du site LMU. Oswald sert aussi aux libellés de section, aux en-têtes de tableaux, aux libellés des filtres et aux boutons ; les valeurs, listes et champs de saisie restent en Inter.
+* **Polices embarquées :** Inter et Oswald (variables, latin et latin étendu, licence SIL OFL) sont servies par l'application depuis `wwwroot/fonts`, car Windows ne les fournit pas et un CDN de polices serait une requête sortante.
+
+### 2 bis. Finitions (`wwwroot/theme.css`)
+Couche chargée après `dashboard.css`, sans changer la palette ni les couleurs WEC :
+* Panneaux et tuiles : coins de 10 px, léger reflet en haut et ombre portée ; les tuiles de l'Accueil et les cartes de résumé se soulèvent de 1 px au survol.
+* Barre du haut : verre flou, filet rouge qui s'estompe vers les bords. Onglet survolé : fond gris arrondi ; onglet actif : texte blanc et soulignement rouge lumineux, sans fond.
+* Largeur de la barre : les huit onglets rétrécissent jusqu'à 1 180 px ; en dessous, ils passent sur une deuxième ligne, centrés.
+* Tableaux : la ligne survolée s'éclaire sans effacer les couleurs de classement ; les poignées de redimensionnement des colonnes sont un trait fin, la poignée complète apparaît au survol de l'en-tête.
+* Bouton principal en dégradé rouge avec lueur ; boutons segmentés en pilule ; barres de défilement fines. Animations coupées avec `prefers-reduced-motion`.
 
 ---
 
