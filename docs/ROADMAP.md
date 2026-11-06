@@ -49,6 +49,11 @@ Aujourd'hui, le pilote principal n'est détecté que si aucun nom n'est configur
 - [ ] Après l'import initial, si le pilote configuré n'apparaît dans aucune session, relancer la détection du pilote le plus fréquent.
 - [ ] Informer le joueur du changement (texte traduit dans les cinq langues) ; comportement exact à valider : remplacement automatique ou simple proposition dans Options.
 
+### Jalon — Fenêtre de nouvelle version : ajustements
+Suite du jalon « Version et mises à jour » : la fenêtre qui annonce une nouvelle version est petite et disparaît trop vite pour être lue. Spécification : [`UI_DESIGN_SPEC.md`](UI_DESIGN_SPEC.md) (§ 6), à mettre à jour.
+- [ ] Agrandir un peu la fenêtre (marges et taille des textes).
+- [ ] Passer sa durée d'affichage de 3 à 5 secondes.
+
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
