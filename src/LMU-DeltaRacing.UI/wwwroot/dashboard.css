@@ -2279,95 +2279,81 @@ p.home-rate {
     overflow-wrap: anywhere;
 }
 
-/* No overflow: hidden here, it would cut the popups: the end segments are rounded instead. */
-.home-bar {
-    position: relative;
-    display: flex;
-    height: 12px;
-    margin: 0.35rem 0 0.75rem;
-    border-radius: 3px;
-    background: var(--surface-raised);
+/* Breakdown of a home tile: one line per category or cause, its value, then for a share of a total
+   its percentage and a gauge. Wide tiles lay the lines out in columns. */
+.home-breakdown {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 0.55rem 1.5rem;
+    margin: 0.85rem 0 0;
+    padding: 0;
+    list-style: none;
 }
 
-.home-bar-part {
-    height: 100%;
+.home-breakdown-row {
+    display: grid;
+    min-width: 0;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: 0.3rem 0.6rem;
 }
 
-.home-bar-part:first-child {
-    border-radius: 3px 0 0 3px;
-}
-
-.home-bar-part:last-child {
-    border-radius: 0 3px 3px 0;
-}
-
-.home-bar-part:only-child {
-    border-radius: 3px;
-}
-
-.home-bar-thin {
-    margin: 0.75rem 0 0.5rem;
-}
-
-/* Placed against the bar or the legend, not its segment: at 0 % its left edge meets the start and
-   at 100 % its right edge meets the end, so a popup never leaves its tile. */
-.home-tooltip {
-    position: absolute;
-    z-index: 5;
-    bottom: calc(100% + 0.35rem);
-    left: var(--tooltip-position);
-    display: none;
-    padding: 0.3rem 0.5rem;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    background: var(--surface-raised);
-    box-shadow: 0 8px 20px rgb(0 0 0 / 45%);
-    color: var(--text);
-    font-size: 0.7rem;
-    font-weight: 600;
-    pointer-events: none;
-    transform: translateX(calc(var(--tooltip-position) * -1));
+.home-breakdown-label {
+    display: inline-flex;
+    min-width: 0;
+    align-items: center;
+    gap: 0.45rem;
+    overflow: hidden;
+    color: var(--muted);
+    font-size: 0.74rem;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-.home-bar-part:hover > .home-tooltip,
-.home-share-list li:hover > .home-tooltip {
-    display: block;
-}
-
-.home-share-list.home-breakdown-legend {
-    gap: 0.15rem 0.4rem;
-    margin-top: 0.75rem;
-    font-variant-numeric: tabular-nums;
-    font-size: 0.6rem;
-}
-
-.home-bar-thin + .home-share-list.home-breakdown-legend {
-    margin-top: 0;
-}
-
-.home-breakdown-legend .home-swatch {
+.home-breakdown-dot {
     width: 0.5rem;
     height: 0.5rem;
-    margin-right: 0.15rem;
+    flex: 0 0 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 8px color-mix(in srgb, var(--category-color) 70%, transparent);
 }
 
-.home-share-list {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.35rem 1rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 0.76rem;
+.home-breakdown-value {
+    color: var(--text);
+    font-size: 0.8rem;
+    font-variant-numeric: tabular-nums;
+    font-weight: 650;
+    white-space: nowrap;
 }
 
-.home-share-list span {
+.home-breakdown-share {
+    margin-left: 0.35rem;
     color: var(--muted);
+    font-size: 0.7rem;
+    font-weight: 500;
 }
 
-.home-share-list .home-tooltip {
+.home-breakdown-track {
+    position: relative;
+    height: 4px;
+    grid-column: 1 / -1;
+    overflow: hidden;
+    border-radius: 99px;
+    background: rgb(255 255 255 / 6%);
+}
+
+/* A share too small to see still shows a sliver of its color. Nested, so that the gradient wins
+   over the flat background of the category classes declared further down. */
+.home-breakdown-track .home-breakdown-fill {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: max(var(--share), 3px);
+    border-radius: 99px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--category-color) 70%, transparent), var(--category-color));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--category-color) 55%, transparent);
+}
+
+.home-breakdown-row:hover .home-breakdown-label {
     color: var(--text);
 }
 
@@ -2433,11 +2419,11 @@ p.home-rate {
     text-decoration: underline;
 }
 
-.cause-0 { background: #f97316; }
-.cause-1 { background: #38bdf8; }
-.cause-2 { background: #facc15; }
-.cause-3 { background: #f472b6; }
-.cause-4 { background: #94a3b8; }
+.cause-0 { --category-color: #f97316; background: var(--category-color); }
+.cause-1 { --category-color: #38bdf8; background: var(--category-color); }
+.cause-2 { --category-color: #facc15; background: var(--category-color); }
+.cause-3 { --category-color: #f472b6; background: var(--category-color); }
+.cause-4 { --category-color: #94a3b8; background: var(--category-color); }
 
 .form-pills {
     display: flex;

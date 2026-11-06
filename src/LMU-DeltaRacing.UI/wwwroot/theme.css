@@ -1,0 +1,520 @@
+/* Finishing layer over dashboard.css: typefaces, depth, rounded shapes, motion and hover feedback.
+   Colors, WEC meanings and layout stay those of UI_DESIGN_SPEC.md; removing this file restores
+   the previous look without changing any behaviour. */
+
+/* ---- Typefaces ------------------------------------------------------------------------- */
+
+/* The fonts named by UI_DESIGN_SPEC.md are served from wwwroot (SIL Open Font License, see
+   fonts/*-LICENSE.txt): Windows ships neither, and a font CDN would be an outgoing request. */
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("fonts/inter-latin.woff2") format("woff2-variations");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 100 900;
+    src: url("fonts/inter-latin-ext.woff2") format("woff2-variations");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 200 700;
+    src: url("fonts/oswald-latin.woff2") format("woff2-variations");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 200 700;
+    src: url("fonts/oswald-latin-ext.woff2") format("woff2-variations");
+    unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* ---- Tokens ---------------------------------------------------------------------------- */
+
+:root {
+    --font-display: Oswald, "Roboto Condensed", "Arial Narrow", Impact, sans-serif;
+    --radius-sm: 6px;
+    --radius: 10px;
+    --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+    --line: rgb(48 54 61 / 85%);
+    --line-soft: rgb(48 54 61 / 55%);
+    --shadow: 0 1px 0 rgb(255 255 255 / 4%) inset, 0 12px 32px -14px rgb(0 0 0 / 70%);
+    --shadow-hover: 0 1px 0 rgb(255 255 255 / 6%) inset, 0 18px 40px -16px rgb(0 0 0 / 80%);
+    /* A faint light from above gives the glass panels their volume. */
+    --surface-sheen: linear-gradient(180deg, rgb(255 255 255 / 3.5%), rgb(255 255 255 / 0%) 70%);
+    --row-hover: rgb(255 255 255 / 3.5%);
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scrollbar-color: #3a414b transparent;
+}
+
+::selection {
+    background: rgb(225 29 72 / 45%);
+    color: #fff;
+}
+
+/* Thin rounded scrollbars, so the long tables do not carry a thick grey Windows bar. */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid transparent;
+    border-radius: 99px;
+    background: #3a414b padding-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4b535e padding-box;
+}
+
+/* ---- Header ---------------------------------------------------------------------------- */
+
+.topbar {
+    border-bottom-color: rgb(48 54 61 / 70%);
+    background: rgb(10 12 16 / 80%);
+    backdrop-filter: blur(14px) saturate(160%);
+    -webkit-backdrop-filter: blur(14px) saturate(160%);
+    box-shadow: 0 10px 28px -18px rgb(0 0 0 / 90%);
+}
+
+/* A red thread that fades out at both ends, in the spirit of the LMU site. */
+.topbar::after {
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgb(225 29 72 / 55%) 50%, transparent);
+    content: "";
+    pointer-events: none;
+}
+
+.brand {
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+}
+
+.primary-nav {
+    gap: 0.15rem;
+}
+
+.primary-nav a {
+    margin: 0.9rem 0;
+    padding: 0.1rem 0.7rem 0;
+    border-radius: var(--radius-sm);
+    font-size: 0.82rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    transition: color 160ms var(--ease), background-color 160ms var(--ease);
+}
+
+.primary-nav a:hover {
+    background: rgb(255 255 255 / 5%);
+}
+
+.primary-nav a::after {
+    /* Back down to the bar's border, below the margin that rounds the hover background. */
+    bottom: calc(-0.9rem - 1px);
+    height: 2px;
+    border-radius: 2px 2px 0 0;
+    box-shadow: 0 0 12px rgb(225 29 72 / 85%);
+    transition: opacity 200ms var(--ease), transform 200ms var(--ease);
+}
+
+/* The tabs shrink with the window so that the eight of them stay on one line between the logo and
+   the status, as they did before this layer. */
+@media (max-width: 1480px) {
+    .primary-nav a {
+        padding: 0.1rem 0.5rem 0;
+        font-size: 0.76rem;
+    }
+}
+
+@media (max-width: 1320px) {
+    .primary-nav {
+        gap: 0;
+    }
+
+    .primary-nav a {
+        padding: 0.1rem 0.4rem 0;
+        font-size: 0.7rem;
+        letter-spacing: 0.05em;
+    }
+}
+
+.system-status {
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 500;
+}
+
+/* Below this width the eight tabs no longer fit between the logo and the status: they move to a
+   second row of the bar, centred, as on phones. */
+@media (min-width: 701px) and (max-width: 1180px) {
+    .topbar-inner {
+        grid-template-columns: minmax(0, 1fr) auto;
+        row-gap: 0;
+    }
+
+    .brand {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .system-status {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .primary-nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        justify-content: center;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .primary-nav a {
+        margin: 0.35rem 0;
+        min-height: 34px;
+        flex: 0 0 auto;
+    }
+
+    .primary-nav a::after {
+        bottom: calc(-0.35rem - 1px);
+    }
+}
+
+/* dashboard.css shrinks the status on phones: keep that, as this file is loaded after it. */
+@media (max-width: 700px) {
+    .system-status {
+        font-size: 0.6rem;
+    }
+
+    .primary-nav a {
+        margin: 0.35rem 0;
+    }
+
+    .primary-nav a::after {
+        bottom: calc(-0.35rem - 1px);
+    }
+}
+
+.active-driver {
+    padding: 0.2rem 0.65rem;
+    border: 1px solid var(--border);
+    border-radius: 99px;
+    background: rgb(255 255 255 / 3%);
+    font-family: Inter, "Segoe UI", sans-serif;
+    font-weight: 600;
+}
+
+.status-dot.is-live {
+    animation: theme-live-pulse 2.4s ease-in-out infinite;
+}
+
+@keyframes theme-live-pulse {
+    50% {
+        box-shadow: 0 0 3px rgb(34 197 94 / 35%);
+    }
+}
+
+/* ---- Page ------------------------------------------------------------------------------ */
+
+h1 {
+    background: linear-gradient(180deg, #fff 35%, #b8c0ca);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 700;
+    letter-spacing: -0.035em;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-weight: 650;
+    letter-spacing: -0.01em;
+}
+
+/* Section labels in the condensed racing face, like the timing screens. */
+.eyebrow,
+.summary-label {
+    font-family: var(--font-display);
+    font-size: 0.74rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.home-tile .summary-label {
+    font-size: 0.7rem;
+}
+
+/* ---- Panels and tiles ------------------------------------------------------------------ */
+
+.load-panel,
+.summary-card,
+.panel,
+.notice,
+.home-tile {
+    border-color: var(--line);
+    border-radius: var(--radius);
+    background: var(--surface-sheen), var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.summary-card,
+.home-tile {
+    transition: transform 200ms var(--ease), box-shadow 200ms var(--ease), border-color 200ms var(--ease);
+}
+
+.summary-card:hover,
+.home-tile:hover {
+    border-color: #3d444d;
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-1px);
+}
+
+/* The accent border becomes a light bar that fades to the right. */
+.summary-card-accent {
+    position: relative;
+    border-top-color: var(--line);
+}
+
+.summary-card-accent::before {
+    position: absolute;
+    top: -1px;
+    right: 18%;
+    left: 0;
+    height: 2px;
+    border-radius: var(--radius) 0 0 0;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    content: "";
+}
+
+.panel-heading,
+.circuit-history,
+.session-tabs {
+    border-color: rgb(48 54 61 / 70%);
+}
+
+/* ---- Tables ---------------------------------------------------------------------------- */
+
+.data-table thead {
+    background: rgb(26 30 37 / 94%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.data-table th {
+    border-bottom-color: #3a414b;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.data-table td {
+    border-bottom-color: var(--line-soft);
+}
+
+/* An image layer, so that the hover lightens the position and player tints instead of
+   replacing them. */
+.data-table tbody tr:hover td {
+    background-image: linear-gradient(var(--row-hover), var(--row-hover));
+}
+
+/* The grip stays visible so that resizing is discoverable, but as one hairline; the table
+   header shows the full grip once the pointer is over it. */
+table[data-resizable-columns] > thead th::after {
+    top: 32%;
+    bottom: 32%;
+    width: 1px;
+    border-right: 0;
+    opacity: 0.35;
+}
+
+table[data-resizable-columns] > thead:hover th::after {
+    top: 24%;
+    bottom: 24%;
+    width: 3px;
+    border-right: 1px solid var(--muted);
+    opacity: 0.6;
+}
+
+.count-badge {
+    border-radius: 99px;
+    background: rgb(255 255 255 / 3%);
+    font-variant-numeric: tabular-nums;
+}
+
+.category-badge {
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+/* The contact counts stay buttons, but read as data until hovered. */
+.conduct-button {
+    border-color: transparent;
+    border-radius: var(--radius-sm);
+    background: rgb(255 255 255 / 3%);
+    transition: border-color 160ms var(--ease), background-color 160ms var(--ease);
+}
+
+.conduct-button:hover,
+.conduct-button[aria-expanded="true"] {
+    background: rgb(225 29 72 / 8%);
+}
+
+/* ---- Controls -------------------------------------------------------------------------- */
+
+.button {
+    border-radius: var(--radius-sm);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    transition:
+        background-color 160ms var(--ease),
+        border-color 160ms var(--ease),
+        box-shadow 160ms var(--ease),
+        transform 120ms var(--ease),
+        opacity 160ms var(--ease);
+}
+
+.button:active:not(:disabled) {
+    transform: scale(0.97);
+}
+
+.button-primary {
+    background: linear-gradient(180deg, #f43f5e, var(--accent) 55%, #be123c);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 18%) inset, 0 6px 18px -8px rgb(225 29 72 / 80%);
+}
+
+.button-primary:hover:not(:disabled) {
+    background: linear-gradient(180deg, #fb5370, #ea2b55 55%, #c8164a);
+    box-shadow: 0 1px 0 rgb(255 255 255 / 22%) inset, 0 8px 24px -8px rgb(225 29 72 / 95%);
+}
+
+.button-secondary:hover:not(:disabled) {
+    background: #262c35;
+}
+
+.settings-input,
+.race-filter select,
+.race-session-filter select {
+    border-radius: var(--radius-sm);
+    transition: border-color 160ms var(--ease), box-shadow 160ms var(--ease);
+}
+
+.settings-input:hover,
+.race-filter select:hover,
+.race-session-filter select:hover {
+    border-color: #4b535e;
+}
+
+.settings-input:focus-visible {
+    box-shadow: 0 0 0 3px rgb(225 29 72 / 22%);
+}
+
+.race-filter,
+.ranking-filter,
+.segmented-group {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+}
+
+/* The labels are in the racing face; what the player types or picks stays in the text face. */
+.race-filter select,
+.ranking-filter input,
+.ranking-filter select {
+    font-family: Inter, "Segoe UI", sans-serif;
+    font-weight: 500;
+}
+
+.ranking-filter input,
+.ranking-filter select {
+    border-radius: var(--radius-sm);
+    transition: border-color 160ms var(--ease), box-shadow 160ms var(--ease);
+}
+
+.ranking-filter input:hover,
+.ranking-filter select:hover {
+    border-color: #4b535e;
+}
+
+.segmented {
+    gap: 2px;
+    padding: 2px;
+    border-radius: var(--radius-sm);
+    background: rgb(10 12 16 / 60%);
+}
+
+.segmented button {
+    border-right: 0;
+    border-radius: 4px;
+    background: transparent;
+    /* The group label is in the racing face; the choices stay in the text face. */
+    font-family: Inter, "Segoe UI", sans-serif;
+    letter-spacing: normal;
+    transition: background-color 160ms var(--ease), color 160ms var(--ease);
+}
+
+.segmented button:last-child {
+    border-right: 0;
+}
+
+.segmented button:hover:not(.is-active) {
+    background: rgb(255 255 255 / 5%);
+}
+
+.segmented button.is-active {
+    box-shadow: 0 4px 12px -6px rgb(225 29 72 / 90%);
+}
+
+.session-tab {
+    font-size: 0.82rem;
+    font-weight: 500;
+    transition: color 160ms var(--ease), border-color 160ms var(--ease);
+}
+
+.session-tab.is-active {
+    text-shadow: 0 0 14px rgb(225 29 72 / 55%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .status-dot.is-live {
+        animation: none;
+    }
+
+    .summary-card:hover,
+    .home-tile:hover,
+    .button:active:not(:disabled) {
+        transform: none;
+    }
+}

@@ -31,19 +31,6 @@ public sealed class HomeBarLayoutTests
     }
 
     [TestMethod]
-    public void The_popup_follows_the_center_of_its_segment()
-    {
-        var segments = HomeBarLayout.Create(
-        [
-            new HomeBarPart("LMP2", 0.2, "1"),
-            new HomeBarPart("LMP3", 0.5, "2"),
-            new HomeBarPart("LMGT3", 0.3, "3")
-        ]);
-
-        segments.Select(segment => segment.Center).Should().Equal("10%", "45%", "85%");
-    }
-
-    [TestMethod]
     public void Percentages_do_not_depend_on_the_language_of_Windows()
     {
         var culture = System.Globalization.CultureInfo.CurrentCulture;
