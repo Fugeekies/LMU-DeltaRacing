@@ -4,19 +4,6 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ## À faire
 
-### Jalon — Analyse de course tour par tour 
-Les balises `<Lap>` contiennent bien plus que les temps et les secteurs utilisés aujourd'hui : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Aucun prérequis. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Écrire ou compléter les specs `docs/UISpec/` avant chaque vue.
-- [ ] **Format :** vérifier sur les 342 fixtures la présence et le sens des attributs de `<Lap>` (`p`, `et`, `topspeed`, `fuel`, `fuelUsed`, `ve`, `veUsed`, `twfl/twfr/twrl/twrr`, `fcompound/rcompound`, `pit`) et de `Pitstops`, puis les documenter dans `AGENTS.md` (faits vérifiés). `fuel` et `ve` semblent être des fractions : à confirmer avant d'afficher des litres ou des pourcentages.
-- [ ] **Parser :** lire les données restantes (`p`, `et` et `pit` sont déjà lus), justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
-- [ ] **Régularité :** écart entre les tours d'une course, comparé au meilleur tour du pilote et à ses adversaires. Ne demande aucune nouvelle lecture XML.
-- [ ] **Records personnels :** meilleur tour par couple circuit + voiture et vitesse de pointe (`topspeed`), avec un repère quand un record tombe.
-- [ ] **Graphique tour par tour** dans Détail des courses : ajouter la courbe des temps. La position est déjà tracée par le déroulé de la course.
-- [ ] **Nombre d'arrêts au stand** d'un pilote dans une course : compter ses tours `pit="1"` (déjà lus), en vérifiant la concordance avec `Pitstops` lors de l'étape Format. Pages où l'afficher à définir dans la spec.
-- [ ] **Résumé des relais :** arrêts, tours par relais, composés de pneus et rythme de chaque relais.
-- [ ] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, et nombre de tours tenables avec un plein.
-- [ ] **Comparer plusieurs sessions** sur un même circuit et dans une même **catégorie** (repris du jalon « Exploiter les événements du `Stream` », regroupement par catégorie décidé le 05/11/2026). Forme à définir dans une spec `docs/UISpec/` avant de coder.
-
-
 ### Jalon — Signature de l'installeur (SignPath Foundation) (en parallèle)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
 - [ ] **Licence :** remettre le texte GPL-3.0 intact dans `LICENSE` (GitHub le détecte aujourd'hui comme « Other » à cause de la ligne de copyright ajoutée en tête) et déplacer le copyright dans le README.
@@ -45,6 +32,18 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Analyse de course tour par tour — 08/11/2026 · PR [#69](https://github.com/Fugeekies/LMU-DeltaRacing/pull/69)
+Les balises `<Lap>` contenaient bien plus que les temps et les secteurs utilisés : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Specs : [`RaceDetails.template.md`](UISpec/RaceDetails.template.md) (« Analyse tour par tour ») et [`Progression.template.md`](UISpec/Progression.template.md) (records et comparaison).
+- [x] **Format :** attributs de `<Lap>` et `<Pitstops>` vérifiés sur les 342 fixtures et documentés dans `AGENTS.md`. `fuel` et `ve` sont des fractions du réservoir (pas de capacité dans le XML : pourcentages seulement) ; carburant, énergie et usure n'existent que si le serveur les partage (`<ClientFuelVisible>`), jamais dans les sessions depuis juillet 2026. `pit="1"` diffère de `<Pitstops>` pour 164 pilotes sur 2 303 : le nombre d'arrêts se lit dans `<Pitstops>` (décision du 08/11/2026).
+- [x] **Parser :** vitesse de pointe, carburant, énergie, usure, composés (`Lap.Telemetry`) et `Driver.PitStops` ; empreinte SHA-256 mise à jour (seuls les champs ajoutés la changent) ; [rapport de benchmark](benchmarks/analyse-tour-par-tour-2026-11.md).
+- [x] **Régularité :** écart-type des tours représentatifs (hors premier tour, tours au stand et tours plus lents que 107 % de la médiane), rang dans la classe, rythme et écart moyen au meilleur tour.
+- [x] **Records personnels :** meilleur tour et vitesse de pointe par couple circuit + voiture (page Progression), badge « Record » sur les sessions qui battent le record précédent.
+- [x] **Graphique tour par tour** dans Détail des courses : courbe des temps du pilote suivi, et du pilote sélectionné pour comparer.
+- [x] **Nombre d'arrêts au stand** d'un pilote dans une course : `<Pitstops>`, affiché dans l'analyse tour par tour et dans la comparaison des sessions.
+- [x] **Résumé des relais :** relais découpés au premier tour de chaque passage par la voie des stands, avec composés, rythme, meilleur tour, consommation et usure.
+- [x] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, tours tenables avec un plein, quand le serveur partage ces données.
+- [x] **Comparer plusieurs sessions** sur un même circuit et dans une même catégorie : tableau « Comparer les sessions » de la page Progression.
 
 ### Jalon — Navigation en sous-menus — 06/11/2026 · PR [#68](https://github.com/Fugeekies/LMU-DeltaRacing/pull/68)
 La barre de navigation comptait huit onglets (Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options) : trop pour rester lisible, surtout sur un écran étroit.

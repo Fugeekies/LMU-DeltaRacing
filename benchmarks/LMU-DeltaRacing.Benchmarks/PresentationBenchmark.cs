@@ -47,6 +47,10 @@ internal static class PresentationBenchmark
             () => RaceStoryPresentation.Create(largestRace, largestRace.Drivers[0].Name)!.Laps.Count);
         table.Measure(
             $"1 ({largestRace.Drivers.Count} pilotes)",
+            "Détail des courses : analyse tour par tour de la plus grosse course",
+            () => LapAnalysisPresentation.Create(largestRace, largestRace.Drivers[0].Name)!.Laps.Count);
+        table.Measure(
+            $"1 ({largestRace.Drivers.Count} pilotes)",
             "Détail des courses : classement de la plus grosse course",
             () => RaceDetailsPresentation.CreateResults(largestRace, FixtureSessions.UserName).Count,
             20,
@@ -90,5 +94,7 @@ internal static class PresentationBenchmark
         table.Measure(scale, "Progression : courbes du circuit par défaut", () => ProgressionPresentation.Create(
             sessions, user, selection.TrackVenue, selection.TrackCourse, selection.Category, ProgressionSettings.Default, TimeZoneInfo.Local).Series.Count);
         table.Measure(scale, "Progression : géométrie SVG", () => ProgressionChartLayout.Create(chart, []).Series.Count);
+        table.Measure(scale, "Progression : records et comparaison des sessions", () => PersonalRecordsPresentation.Create(
+            sessions, user, selection.TrackVenue, selection.TrackCourse, selection.Category).Sessions.Count);
     }
 }

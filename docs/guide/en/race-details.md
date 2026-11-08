@@ -20,4 +20,6 @@ The full classification of an event.
 
 Below the table, the **race story** plots every car's position lap by lap: your line in white with your incidents and pit stops, a cross for a retirement. Click a line to follow that driver; **Around …** and the **−** / **+** buttons keep only the cars that finished near you.
 
+Further down, the **lap-by-lap analysis** of the same driver gives their **pit stops**, **consistency** (standard deviation of their representative laps, with their rank in the class), **pace** and **top speed**, then the chart of their lap times (lower is faster, yours in red to compare). The **stints** table splits the race at each pass through the pit lane: tyres, pace and best lap of each stint. **Consumption and wear** gives the fuel and energy used per lap, the laps a full tank lasts and the tyre wear, in percent, when the server shares these data. **Show lap details** gives every lap.
+
 Every comparison is made **within each class**, as in WEC. Your row is tagged **YOU**.
