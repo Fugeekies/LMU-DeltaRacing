@@ -92,6 +92,20 @@ public static class DisplayFormat
             : Missing;
 
     /// <summary>
+    /// Formats a spread of lap times in seconds with three decimals: <c>±0.412s</c>.
+    /// </summary>
+    public static string Deviation(TimeSpan? deviation) =>
+        deviation is { } value
+            ? string.Create(CultureInfo.InvariantCulture, $"±{value.TotalSeconds:0.000}s")
+            : Missing;
+
+    /// <summary>
+    /// Formats a speed in km/h with one decimal: <c>263.1 km/h</c>.
+    /// </summary>
+    public static string Speed(double? kilometersPerHour) =>
+        kilometersPerHour is { } value ? $"{value.ToString("0.0", NumberFormat)} km/h" : Missing;
+
+    /// <summary>
     /// Formats a count with a narrow no-break space as thousands separator.
     /// </summary>
     public static string Count(double? value) =>
