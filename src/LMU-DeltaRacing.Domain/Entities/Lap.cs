@@ -13,14 +13,16 @@ public sealed class Lap
     /// <param name="sectors">The sector times recorded for this lap.</param>
     /// <param name="position">The overall position at the end of the lap, when known.</param>
     /// <param name="startedAt">The time elapsed in the session when the lap started, when known.</param>
-    /// <param name="isPitLap">Whether the driver stopped in the pits during this lap.</param>
+    /// <param name="isPitLap">Whether the driver went through the pit lane during this lap.</param>
+    /// <param name="telemetry">What LMU measured on the car during the lap, when known.</param>
     public Lap(
         int number,
         TimeSpan? time,
         IEnumerable<Sector> sectors,
         int? position = null,
         TimeSpan? startedAt = null,
-        bool isPitLap = false)
+        bool isPitLap = false,
+        LapTelemetry? telemetry = null)
     {
         ArgumentOutOfRangeException.ThrowIfNegativeOrZero(number);
         ArgumentNullException.ThrowIfNull(sectors);
@@ -31,6 +33,7 @@ public sealed class Lap
         Position = position;
         StartedAt = startedAt;
         IsPitLap = isPitLap;
+        Telemetry = telemetry ?? LapTelemetry.Empty;
     }
 
     /// <summary>
@@ -59,7 +62,14 @@ public sealed class Lap
     public TimeSpan? StartedAt { get; }
 
     /// <summary>
-    /// Gets whether the driver stopped in the pits during this lap.
+    /// Gets whether the driver went through the pit lane during this lap (<c>pit="1"</c>). LMU marks
+    /// the lap entering and often the lap leaving the pits, drive-through penalties and starts from
+    /// the pit lane: the number of stops is <see cref="Driver.PitStops"/>.
     /// </summary>
     public bool IsPitLap { get; }
+
+    /// <summary>
+    /// Gets what LMU measured on the car during the lap: top speed, fuel, energy, tyres.
+    /// </summary>
+    public LapTelemetry Telemetry { get; }
 }

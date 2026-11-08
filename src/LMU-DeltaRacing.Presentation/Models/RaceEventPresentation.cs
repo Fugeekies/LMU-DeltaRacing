@@ -107,7 +107,7 @@ public static class RaceEventPresentation
                 return new
                 {
                     Template = entries[^1],
-                    Laps = laps.Select((lap, index) => new Lap(index + 1, lap.Time, lap.Sectors)).ToArray(),
+                    Laps = laps.Select((lap, index) => new Lap(index + 1, lap.Time, lap.Sectors, telemetry: lap.Telemetry)).ToArray(),
                     LapsCompleted = entries.Sum(driver => driver.LapsCompleted ?? driver.Laps.Count),
                     BestLap = laps.Where(lap => lap.Time.HasValue).Min(lap => lap.Time)
                 };

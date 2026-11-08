@@ -204,10 +204,11 @@ public sealed class XmlResultParserTests
                     driver.LapsCompleted,
                     driver.FinishTime?.Ticks,
                     driver.FinishStatus,
-                    driver.DnfReason));
+                    driver.DnfReason,
+                    driver.PitStops));
                 foreach (var lap in driver.Laps)
                 {
-                    snapshot.AppendLine($"{lap.Number}:{lap.Time?.Ticks}:{string.Join(',', lap.Sectors.Select(sector => $"{sector.Number}={sector.Time.Ticks}"))}:{lap.Position}:{lap.StartedAt?.Ticks}:{lap.IsPitLap}");
+                    snapshot.AppendLine($"{lap.Number}:{lap.Time?.Ticks}:{string.Join(',', lap.Sectors.Select(sector => $"{sector.Number}={sector.Time.Ticks}"))}:{lap.Position}:{lap.StartedAt?.Ticks}:{lap.IsPitLap}:{FormatTelemetry(lap.Telemetry)}");
                 }
             }
 
@@ -227,8 +228,27 @@ public sealed class XmlResultParserTests
     // Computed with the XDocument parser of version 0.1 on the fixtures of assets/Results, then on the
     // date of each phase (with RaceResults/DateTime instead, the fingerprint of version 0.1 is unchanged),
     // then with the session events added, then with the lap positions, lap starts, pit stops and damage
-    // reports: without each of these additions, the previous fingerprint is unchanged.
-    private const string ReferenceSnapshotHash = "8A7AA5FD86234BEF92EB8B00D9519D22A24754F3C4990057BDE337749EF53CA5";
+    // reports, then with the lap telemetry and the pit stop count: without each of these additions,
+    // the previous fingerprint is unchanged.
+    private const string ReferenceSnapshotHash = "D41B805AAE8FC12EE86A0A8E64EFA223D6D32CE0F1CAB3994F8227D711CBB9DF";
+
+    private static string FormatTelemetry(LapTelemetry telemetry)
+    {
+        static string Number(double? value) => value?.ToString("R", System.Globalization.CultureInfo.InvariantCulture) ?? string.Empty;
+        var wear = telemetry.TyreWear is { } tyres
+            ? string.Join('/', Number(tyres.FrontLeft), Number(tyres.FrontRight), Number(tyres.RearLeft), Number(tyres.RearRight))
+            : string.Empty;
+        return string.Join(
+            ';',
+            Number(telemetry.TopSpeed),
+            Number(telemetry.Fuel),
+            Number(telemetry.FuelUsed),
+            Number(telemetry.VirtualEnergy),
+            Number(telemetry.VirtualEnergyUsed),
+            wear,
+            telemetry.FrontCompound,
+            telemetry.RearCompound);
+    }
 
     /// <summary>
     /// Verifies that a session starts at the date of its phase: the two races of the restart of
@@ -381,6 +401,52 @@ public sealed class XmlResultParserTests
         session.Events.Should().Equal(
             new SessionEvent(TimeSpan.FromSeconds(2), SessionEventKind.Damage, "Driver A", "suspension"),
             new SessionEvent(TimeSpan.FromSeconds(3), SessionEventKind.Damage, "Driver A", "engine"));
+    }
+
+    /// <summary>
+    /// Verifies the lap telemetry (top speed, fuel, virtual energy, tyre wear and compounds) and the
+    /// pit stop count of a real race whose server shares fuel data.
+    /// </summary>
+    [TestMethod]
+    public void Parse_reads_lap_telemetry_and_pit_stops_from_a_real_race()
+    {
+        var driver = ParseFixture("2025_02_25_21_06_15-40R1.xml").Drivers.Single(item => item.Name == "Driver Ugo");
+
+        driver.PitStops.Should().Be(1);
+        var first = driver.Laps[0].Telemetry;
+        first.TopSpeed.Should().Be(241.89);
+        first.Fuel.Should().Be(0.345);
+        first.FuelUsed.Should().Be(0.155);
+        first.VirtualEnergy.Should().Be(0.463);
+        first.VirtualEnergyUsed.Should().Be(0.039);
+        first.TyreWear.Should().Be(new TyreWear(0.992, 0.992, 0.992, 0.992));
+        first.FrontCompound.Should().Be("Medium");
+        first.RearCompound.Should().Be("Medium");
+
+        // The lap of the stop is refuelled: the fuel used is negative.
+        driver.Laps[2].Telemetry.FuelUsed.Should().Be(-0.027);
+        driver.Laps[9].Telemetry.TyreWear.Should().Be(new TyreWear(0.902, 0.922, 0.875, 0.902));
+    }
+
+    /// <summary>
+    /// Verifies that a server hiding fuel data leaves fuel, energy and tyre wear unknown, and that
+    /// a top speed of zero and the <c>N/A</c> compound of a car that never ran are unknown too.
+    /// </summary>
+    [TestMethod]
+    public void Parse_leaves_missing_lap_telemetry_unknown()
+    {
+        var hidden = ParseFixture("2026_10_02_19_24_03-96R1.xml").Drivers.SelectMany(item => item.Laps).First().Telemetry;
+        hidden.TopSpeed.Should().Be(250.44);
+        hidden.Fuel.Should().BeNull();
+        hidden.FuelUsed.Should().BeNull();
+        hidden.VirtualEnergy.Should().BeNull();
+        hidden.TyreWear.Should().BeNull();
+        hidden.FrontCompound.Should().Be("Wet");
+
+        var idle = ParseFixture("2025_11_11_16_53_41-98R1.xml").Drivers.Single(item => item.Name == "Driver Albane").Laps[0].Telemetry;
+        idle.TopSpeed.Should().BeNull();
+        idle.FrontCompound.Should().BeEmpty();
+        idle.RearCompound.Should().BeEmpty();
     }
 
     private static Session ParseFixture(string fileName)
