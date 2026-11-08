@@ -20,6 +20,6 @@ Das vollständige Klassement eines Events.
 
 Unter der Tabelle zeigt der **Rennverlauf** die Position jedes Autos Runde für Runde: Ihre Linie in Weiß mit Ihren Vorfällen und Boxenstopps, ein Kreuz für einen Ausfall. Klicken Sie auf eine Linie, um diesem Fahrer zu folgen; **Um … herum** und die Tasten **−** / **+** zeigen nur die Autos, die in Ihrer Nähe ins Ziel kamen.
 
-Weiter unten zeigt die **Runde-für-Runde-Analyse** desselben Fahrers seine **Boxenstopps**, seine **Konstanz** (Standardabweichung seiner repräsentativen Runden, mit seinem Rang in der Klasse), seine **Pace** und seine **Höchstgeschwindigkeit**, dann das Diagramm seiner Rundenzeiten (tiefer = schneller, Ihre Linie in Rot zum Vergleich). Die Tabelle **Stints** teilt das Rennen bei jeder Fahrt durch die Boxengasse: Reifen, Pace und beste Runde jedes Stints. **Verbrauch und Verschleiß** zeigt den Kraftstoff- und Energieverbrauch pro Runde, die Runden mit einer Tankfüllung und den Reifenverschleiß in Prozent, wenn der Server diese Daten freigibt. **Rundendetails anzeigen** zeigt jede Runde.
+Der Link [**Runde-für-Runde-Analyse von … →**](lap-analysis.md) unter dem Rennverlauf öffnet die Analyse des verfolgten Fahrers: Konstanz, Stints, Verbrauch und Verschleiß.
 
 Alle Vergleiche erfolgen **innerhalb jeder Klasse**, wie in der WEC. Ihre Zeile ist mit **SIE** markiert.

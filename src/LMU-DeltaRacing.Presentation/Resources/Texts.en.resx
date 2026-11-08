@@ -1801,4 +1801,28 @@
   <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
     <value>Top speed record broken with this car</value>
   </data>
+  <data name="Nav.LapAnalysis" xml:space="preserve">
+    <value>Lap-by-lap analysis</value>
+  </data>
+  <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
+    <value>Consistency, stints, consumption and wear of a driver in a race, then your records and sessions on that circuit.</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
+    <value>No race to analyse</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyText" xml:space="preserve">
+    <value>The races of the driver selected in Settings will appear here once imported.</value>
+  </data>
+  <data name="LapAnalysisPage.SelectRace" xml:space="preserve">
+    <value>Choose the race to analyse</value>
+  </data>
+  <data name="LapAnalysisPage.Driver" xml:space="preserve">
+    <value>Driver</value>
+  </data>
+  <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
+    <value>Choose the driver to analyse</value>
+  </data>
+  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
+    <value>Lap-by-lap analysis of {0} →</value>
+  </data>
 </root>

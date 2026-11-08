@@ -1,0 +1,132 @@
+@page "/lap-analysis"
+@inherits DashboardPage
+
+<PageTitle>@T["PageTitle", T["Nav.LapAnalysis"]]</PageTitle>
+
+<section class="page-heading">
+    <div>
+        <p class="eyebrow">@T["RaceDetails.Eyebrow"]</p>
+        <h1>@T["Nav.LapAnalysis"]</h1>
+        <p class="page-subtitle">@T["LapAnalysisPage.Subtitle"]</p>
+    </div>
+</section>
+
+<ResultsGate State="State">
+@if (races.Count == 0)
+{
+    <section class="panel empty-state">
+        <span class="empty-icon" aria-hidden="true">○</span>
+        <h3>@T["LapAnalysisPage.EmptyTitle"]</h3>
+        <p>@T["LapAnalysisPage.EmptyText"]</p>
+    </section>
+}
+else
+{
+    var race = GetSelectedRace();
+    var drivers = LapAnalysisPresentation.GetDrivers(race);
+    var driverName = drivers.Any(driver => SameName(driver.Name, selectedDriver)) ? selectedDriver : State.UserName;
+    var analysis = LapAnalysisPresentation.Create(race, driverName);
+    var isPlayer = SameName(analysis?.DriverName, State.UserName);
+    var player = isPlayer ? null : LapAnalysisPresentation.Create(race, State.UserName);
+    var user = DriverProfile.FindDriver(race, State.UserName);
+
+    <section class="panel race-details-panel">
+        <div class="race-details-toolbar">
+            <label class="race-filter race-session-filter">
+                <span>@T["RaceDetails.SelectRace"]</span>
+                <select @bind="selectedRaceId" aria-label="@T["LapAnalysisPage.SelectRace"]">
+                    @foreach (var option in races)
+                    {
+                        <option value="@option.Id">@FormatRace(option)</option>
+                    }
+                </select>
+            </label>
+            <label class="race-filter">
+                <span>@T["LapAnalysisPage.Driver"]</span>
+                <select value="@analysis?.DriverName" @onchange="OnDriverChanged" aria-label="@T["LapAnalysisPage.SelectDriver"]">
+                    @foreach (var driver in drivers)
+                    {
+                        <option value="@driver.Name">@FormatDriver(driver)</option>
+                    }
+                </select>
+            </label>
+        </div>
+
+        @if (analysis is not null)
+        {
+            <div class="incident-panel">
+                <LapAnalysisPanel Analysis="analysis" Player="player" />
+            </div>
+        }
+    </section>
+
+    @* Records and sessions of the circuit of the race, in the category the selected driver drove. *@
+    @if (user is not null)
+    {
+        var records = PersonalRecordsPresentation.Create(State.Sessions, State.UserName, race.TrackVenue, race.TrackCourse, user.Category());
+        @if (records.Sessions.Count > 0)
+        {
+            <PersonalRecordsPanel Records="records" />
+        }
+    }
+}
+</ResultsGate>
+
+@code {
+    private IReadOnlyList<Session> races = [];
+    private string selectedRaceId = string.Empty;
+    private string? selectedDriver;
+
+    /// <summary>
+    /// Gets or sets the race to open, as linked from the race details (<c>?race=</c>).
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "race")]
+    public string? RaceId { get; set; }
+
+    /// <summary>
+    /// Gets or sets the driver to analyse, as linked from the race details (<c>?driver=</c>).
+    /// </summary>
+    [SupplyParameterFromQuery(Name = "driver")]
+    public string? DriverName { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // A linked race opens on the linked driver; an unknown race is ignored.
+        if (!string.IsNullOrEmpty(RaceId) && races.Any(race => race.Id.ToString() == RaceId))
+        {
+            selectedRaceId = RaceId;
+            selectedDriver = DriverName;
+        }
+    }
+
+    protected override void OnStateChanged()
+    {
+        races = LapAnalysisPresentation.GetRaces(State.Sessions, State.UserName);
+
+        if (races.All(race => race.Id.ToString() != selectedRaceId))
+        {
+            selectedRaceId = races.FirstOrDefault()?.Id.ToString() ?? string.Empty;
+        }
+    }
+
+    private Session GetSelectedRace() =>
+        races.FirstOrDefault(race => race.Id.ToString() == selectedRaceId) ?? races[0];
+
+    private void OnDriverChanged(ChangeEventArgs args) => selectedDriver = args.Value?.ToString();
+
+    private static bool SameName(string? first, string? second) =>
+        string.Equals(first?.Trim(), second?.Trim(), StringComparison.OrdinalIgnoreCase);
+
+    private string FormatRace(Session race)
+    {
+        var category = DriverProfile.FindDriver(race, State.UserName)?.Category();
+        var label = $"{DisplayFormat.DateTime(race.StartedAt)} - {race.TrackVenue}";
+        return string.IsNullOrWhiteSpace(category) ? label : $"{label} - {category}";
+    }
+
+    private string FormatDriver(Driver driver)
+    {
+        var label = $"P{driver.Position?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing} {driver.Name} ({driver.Category()})";
+        return SameName(driver.Name, State.UserName) ? $"{label} · {T["RaceDetails.You"]}" : label;
+    }
+}

@@ -116,6 +116,29 @@ public sealed class LapAnalysisPresentationTests
     }
 
     /// <summary>
+    /// Verifies the races offered by the page: races of the selected driver with laps, most recent
+    /// first; and their drivers with laps, in finishing order.
+    /// </summary>
+    [TestMethod]
+    public void GetRaces_offers_the_races_of_the_selected_driver_most_recent_first()
+    {
+        var older = CreateRace(Lap(1, 100));
+        var newer = new Session(
+            Guid.NewGuid(),
+            older.StartedAt.AddDays(1),
+            "Track",
+            "Track",
+            "Event",
+            "Race",
+            [new Driver("Second", "2", "GT3", "Team", 2, [Lap(1, 101)]), new Driver(Player, "1", "GT3", "Team", 1, [Lap(1, 100)]), new Driver("Idle", "3", "GT3", "Team", 3, [])]);
+        var qualifying = CreateRace("Qualify", [Lap(1, 100)]);
+        var withoutLaps = CreateRace();
+
+        LapAnalysisPresentation.GetRaces([older, qualifying, newer, withoutLaps], Player).Should().Equal(newer, older);
+        LapAnalysisPresentation.GetDrivers(newer).Select(driver => driver.Name).Should().Equal(Player, "Second");
+    }
+
+    /// <summary>
     /// Verifies the compounds label: one name when front and rear match.
     /// </summary>
     [TestMethod]

@@ -178,12 +178,11 @@ else
                     }
                 </section>
 
-                @* The analysis follows the same driver as the story, compared with the selected driver. *@
-                @if (LapAnalysisPresentation.Create(selectedSession!, incidentsDriver.Name) is { } analysis)
+                @* The analysis has its own page; the link opens it on this race and the followed driver. *@
+                @if (story is not null && DriverProfile.FindDriver(selectedSession!, State.UserName) is not null)
                 {
-                    var player = incidentsDriver.IsPlayer ? null : LapAnalysisPresentation.Create(selectedSession!, State.UserName);
                     <div class="incident-panel">
-                        <LapAnalysisPanel Analysis="analysis" Player="player" />
+                        <a href="@LapAnalysisLink(selectedSession!, incidentsDriver.Name)">@T["RaceDetails.LapAnalysisLink", incidentsDriver.Name]</a>
                     </div>
                 }
             }
@@ -358,6 +357,9 @@ else
                 <td class="numeric-cell">—</td>
             }
         </tr>;
+
+    private static string LapAnalysisLink(Session session, string driverName) =>
+        $"/lap-analysis?race={session.Id}&driver={Uri.EscapeDataString(driverName)}";
 
     private bool IsFocused(RaceDetailsDriverResult result) =>
         selectedDriver == result.Name || (selectedDriver is null && result.IsPlayer);

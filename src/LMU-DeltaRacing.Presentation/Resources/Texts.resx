@@ -1805,4 +1805,28 @@
   <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
     <value>Record de vitesse de pointe battu avec cette voiture</value>
   </data>
+  <data name="Nav.LapAnalysis" xml:space="preserve">
+    <value>Analyse tour par tour</value>
+  </data>
+  <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
+    <value>Régularité, relais, consommation et usure d’un pilote dans une course, puis vos records et vos sessions sur ce circuit.</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
+    <value>Aucune course à analyser</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyText" xml:space="preserve">
+    <value>Les courses du pilote sélectionné dans Options apparaîtront ici dès leur import.</value>
+  </data>
+  <data name="LapAnalysisPage.SelectRace" xml:space="preserve">
+    <value>Choisir la course à analyser</value>
+  </data>
+  <data name="LapAnalysisPage.Driver" xml:space="preserve">
+    <value>Pilote</value>
+  </data>
+  <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
+    <value>Choisir le pilote à analyser</value>
+  </data>
+  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
+    <value>Analyse tour par tour de {0} →</value>
+  </data>
 </root>

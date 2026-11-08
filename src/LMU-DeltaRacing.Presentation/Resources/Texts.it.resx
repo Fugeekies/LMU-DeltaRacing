@@ -1801,4 +1801,28 @@
   <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
     <value>Record di velocità massima battuto con questa vettura</value>
   </data>
+  <data name="Nav.LapAnalysis" xml:space="preserve">
+    <value>Analisi giro per giro</value>
+  </data>
+  <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
+    <value>Costanza, stint, consumi e usura di un pilota in una gara, poi i tuoi record e le tue sessioni su quel circuito.</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
+    <value>Nessuna gara da analizzare</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyText" xml:space="preserve">
+    <value>Le gare del pilota selezionato nelle Impostazioni appariranno qui appena importate.</value>
+  </data>
+  <data name="LapAnalysisPage.SelectRace" xml:space="preserve">
+    <value>Scegli la gara da analizzare</value>
+  </data>
+  <data name="LapAnalysisPage.Driver" xml:space="preserve">
+    <value>Pilota</value>
+  </data>
+  <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
+    <value>Scegli il pilota da analizzare</value>
+  </data>
+  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
+    <value>Analisi giro per giro di {0} →</value>
+  </data>
 </root>

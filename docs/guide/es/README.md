@@ -14,13 +14,14 @@ LMU DeltaRacing lee los archivos de resultados que *Le Mans Ultimate* guarda des
 
 ## Las páginas del panel
 
-La barra superior agrupa las páginas en menús: **Carreras** (Mis carreras, Detalle de carreras), **Rendimiento** (Progresión, Perfil de conducción) y **Pilotos** (Rating de piloto, Cara a cara). Pasa el ratón por un menú para elegir su página; un clic en su nombre abre la primera.
+La barra superior agrupa las páginas en menús: **Carreras** (Mis carreras, Detalle de carreras, Análisis vuelta a vuelta), **Rendimiento** (Progresión, Perfil de conducción) y **Pilotos** (Rating de piloto, Cara a cara). Pasa el ratón por un menú para elegir su página; un clic en su nombre abre la primera.
 
 | Página | En resumen |
 |---|---|
 | [Inicio](home.md) | Tu carrera de un vistazo |
 | [Mis carreras](my-races.md) | Tu historial, circuito por circuito |
 | [Detalle de carreras](race-details.md) | La clasificación completa de un evento, sector por sector |
+| [Análisis vuelta a vuelta](lap-analysis.md) | Regularidad, stints y consumo de un piloto en una carrera |
 | [Progresión](progression.md) | La evolución de tus mejores vueltas en un circuito |
 | [Perfil de conducción](driving-profile.md) | Tus contactos, límites de pista y penalizaciones |
 | [Rating de piloto](driver-rating.md) | Tu nivel, medido con un rating Elo |

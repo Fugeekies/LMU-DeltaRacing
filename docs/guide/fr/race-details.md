@@ -20,6 +20,6 @@ Le classement complet d'un événement.
 
 Sous le tableau, le **déroulé de la course** trace la position de chaque voiture tour par tour : votre ligne en blanc avec vos incidents et arrêts, une croix pour un abandon. Cliquez une ligne pour suivre ce pilote ; **Autour de vous** et les boutons **−** / **+** ne gardent que les voitures arrivées près de vous.
 
-Plus bas, l'**analyse tour par tour** du même pilote donne ses **arrêts au stand**, sa **régularité** (écart-type de ses tours représentatifs, avec son rang dans la catégorie), son **rythme** et sa **vitesse de pointe**, puis le graphique de ses temps au tour (plus bas = plus rapide, le vôtre en rouge pour comparer). Le tableau des **relais** découpe la course à chaque passage par la voie des stands : pneus, rythme et meilleur tour de chaque relais. **Consommation et usure** donne le carburant et l'énergie consommés par tour, le nombre de tours tenables avec un plein et l'usure des pneus, en pourcentage, quand le serveur partage ces données. **Afficher le détail des tours** donne chaque tour.
+Le lien [**Analyse tour par tour de … →**](lap-analysis.md) sous le déroulé ouvre l’analyse du pilote suivi : régularité, relais, consommation et usure.
 
 Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC. Votre ligne porte la mention **VOUS**.

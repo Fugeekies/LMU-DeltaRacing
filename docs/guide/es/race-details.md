@@ -20,6 +20,6 @@ La clasificación completa de un evento.
 
 Debajo de la tabla, el **desarrollo de la carrera** traza la posición de cada coche vuelta a vuelta: tu línea en blanco con tus incidentes y paradas, una cruz para un abandono. Haz clic en una línea para seguir a ese piloto; **Alrededor de …** y los botones **−** / **+** muestran solo los coches que terminaron cerca de ti.
 
-Más abajo, el **análisis vuelta a vuelta** del mismo piloto da sus **paradas en boxes**, su **regularidad** (desviación típica de sus vueltas representativas, con su puesto en la categoría), su **ritmo** y su **velocidad punta**, y luego el gráfico de sus tiempos por vuelta (más abajo = más rápido, el tuyo en rojo para comparar). La tabla de **stints** divide la carrera en cada paso por el pit lane: neumáticos, ritmo y mejor vuelta de cada stint. **Consumo y desgaste** da el combustible y la energía consumidos por vuelta, las vueltas posibles con el depósito lleno y el desgaste de los neumáticos, en porcentaje, cuando el servidor comparte esos datos. **Mostrar el detalle de las vueltas** da cada vuelta.
+El enlace [**Análisis vuelta a vuelta de … →**](lap-analysis.md) bajo el desarrollo de la carrera abre el análisis del piloto seguido: regularidad, stints, consumo y desgaste.
 
 Todas las comparaciones se hacen **dentro de cada categoría**, como en el WEC. Tu fila lleva la marca **TÚ**.

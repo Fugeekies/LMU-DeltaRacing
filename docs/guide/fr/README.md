@@ -12,13 +12,14 @@ LMU DeltaRacing lit les fichiers de résultats que *Le Mans Ultimate* enregistre
 
 ## Les pages du tableau de bord
 
-La barre du haut regroupe les pages en menus : **Courses** (Mes courses, Détail des courses), **Performance** (Progression, Profil de conduite) et **Pilotes** (Cote pilote, Classement des coureurs). Survolez un menu pour choisir sa page ; cliquer sur son nom ouvre la première.
+La barre du haut regroupe les pages en menus : **Courses** (Mes courses, Détail des courses, Analyse tour par tour), **Performance** (Progression, Profil de conduite) et **Pilotes** (Cote pilote, Classement des coureurs). Survolez un menu pour choisir sa page ; cliquer sur son nom ouvre la première.
 
 | Page | En bref |
 |---|---|
 | [Accueil](home.md) | Le bilan de votre carrière |
 | [Mes courses](my-races.md) | Votre historique, circuit par circuit |
 | [Détail des courses](race-details.md) | Le classement complet d'un événement, secteur par secteur |
+| [Analyse tour par tour](lap-analysis.md) | Régularité, relais et consommation d'un pilote dans une course |
 | [Progression](progression.md) | L'évolution de vos meilleurs tours sur un circuit |
 | [Profil de conduite](driving-profile.md) | Vos contacts, limites de piste et pénalités |
 | [Cote pilote](driver-rating.md) | Votre niveau, mesuré par une cote Elo |

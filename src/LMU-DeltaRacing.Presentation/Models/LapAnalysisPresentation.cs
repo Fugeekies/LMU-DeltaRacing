@@ -68,6 +68,37 @@ public static class LapAnalysisPresentation
     }
 
     /// <summary>
+    /// Returns the races of the selected driver that have laps to analyse, most recent first.
+    /// </summary>
+    /// <param name="sessions">The imported sessions, with driver merges applied.</param>
+    /// <param name="userName">The selected driver.</param>
+    public static IReadOnlyList<Session> GetRaces(IEnumerable<Session> sessions, string? userName)
+    {
+        ArgumentNullException.ThrowIfNull(sessions);
+
+        return sessions
+            .Where(session => session.Kind == SessionKind.Race
+                && DriverProfile.FindDriver(session, userName) is { Laps.Count: > 0 })
+            .OrderByDescending(session => session.StartedAt)
+            .ToArray();
+    }
+
+    /// <summary>
+    /// Returns the drivers of a race that have laps to analyse, in finishing order.
+    /// </summary>
+    /// <param name="session">The race.</param>
+    public static IReadOnlyList<Driver> GetDrivers(Session session)
+    {
+        ArgumentNullException.ThrowIfNull(session);
+
+        return session.Drivers
+            .Where(driver => driver.Laps.Count > 0)
+            .OrderBy(driver => driver.Position ?? int.MaxValue)
+            .ThenBy(driver => driver.Name, StringComparer.OrdinalIgnoreCase)
+            .ToArray();
+    }
+
+    /// <summary>
     /// Returns the standard deviation of the representative laps of a driver, or <see langword="null"/>
     /// with fewer than <see cref="MinimumRegularityLaps"/> of them.
     /// </summary>

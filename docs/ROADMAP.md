@@ -34,16 +34,16 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 ## Terminés
 
 ### Jalon — Analyse de course tour par tour — 08/11/2026 · PR [#69](https://github.com/Fugeekies/LMU-DeltaRacing/pull/69)
-Les balises `<Lap>` contenaient bien plus que les temps et les secteurs utilisés : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Specs : [`RaceDetails.template.md`](UISpec/RaceDetails.template.md) (« Analyse tour par tour ») et [`Progression.template.md`](UISpec/Progression.template.md) (records et comparaison).
+Les balises `<Lap>` contenaient bien plus que les temps et les secteurs utilisés : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Nouvelle page « Analyse tour par tour » du menu Courses (`/lap-analysis`), spec [`LapAnalysis.template.md`](UISpec/LapAnalysis.template.md).
 - [x] **Format :** attributs de `<Lap>` et `<Pitstops>` vérifiés sur les 342 fixtures et documentés dans `AGENTS.md`. `fuel` et `ve` sont des fractions du réservoir (pas de capacité dans le XML : pourcentages seulement) ; carburant, énergie et usure n'existent que si le serveur les partage (`<ClientFuelVisible>`), jamais dans les sessions depuis juillet 2026. `pit="1"` diffère de `<Pitstops>` pour 164 pilotes sur 2 303 : le nombre d'arrêts se lit dans `<Pitstops>` (décision du 08/11/2026).
 - [x] **Parser :** vitesse de pointe, carburant, énergie, usure, composés (`Lap.Telemetry`) et `Driver.PitStops` ; empreinte SHA-256 mise à jour (seuls les champs ajoutés la changent) ; [rapport de benchmark](benchmarks/analyse-tour-par-tour-2026-11.md).
 - [x] **Régularité :** écart-type des tours représentatifs (hors premier tour, tours au stand et tours plus lents que 107 % de la médiane), rang dans la classe, rythme et écart moyen au meilleur tour.
-- [x] **Records personnels :** meilleur tour et vitesse de pointe par couple circuit + voiture (page Progression), badge « Record » sur les sessions qui battent le record précédent.
-- [x] **Graphique tour par tour** dans Détail des courses : courbe des temps du pilote suivi, et du pilote sélectionné pour comparer.
+- [x] **Records personnels :** meilleur tour et vitesse de pointe par couple circuit + voiture (page Analyse tour par tour), badge « Record » sur les sessions qui battent le record précédent.
+- [x] **Graphique tour par tour** (page Analyse tour par tour, lien depuis Détail des courses) : courbe des temps du pilote suivi, et du pilote sélectionné pour comparer.
 - [x] **Nombre d'arrêts au stand** d'un pilote dans une course : `<Pitstops>`, affiché dans l'analyse tour par tour et dans la comparaison des sessions.
 - [x] **Résumé des relais :** relais découpés au premier tour de chaque passage par la voie des stands, avec composés, rythme, meilleur tour, consommation et usure.
 - [x] **Usure et consommation :** usure des 4 pneus, carburant et énergie par tour, tours tenables avec un plein, quand le serveur partage ces données.
-- [x] **Comparer plusieurs sessions** sur un même circuit et dans une même catégorie : tableau « Comparer les sessions » de la page Progression.
+- [x] **Comparer plusieurs sessions** sur un même circuit et dans une même catégorie : tableau « Comparer les sessions » de la page Analyse tour par tour.
 
 ### Jalon — Navigation en sous-menus — 06/11/2026 · PR [#68](https://github.com/Fugeekies/LMU-DeltaRacing/pull/68)
 La barre de navigation comptait huit onglets (Accueil, Mes courses, Détail des courses, Progression, Profil de conduite, Cote pilote, Classement des coureurs, Options) : trop pour rester lisible, surtout sur un écran étroit.

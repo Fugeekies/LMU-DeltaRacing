@@ -1801,4 +1801,28 @@
   <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
     <value>Höchstgeschwindigkeitsrekord mit diesem Auto gebrochen</value>
   </data>
+  <data name="Nav.LapAnalysis" xml:space="preserve">
+    <value>Runde-für-Runde-Analyse</value>
+  </data>
+  <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
+    <value>Konstanz, Stints, Verbrauch und Verschleiß eines Fahrers in einem Rennen, dann Ihre Rekorde und Sessions auf dieser Strecke.</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
+    <value>Kein Rennen zu analysieren</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyText" xml:space="preserve">
+    <value>Die Rennen des in den Einstellungen gewählten Fahrers erscheinen hier, sobald sie importiert sind.</value>
+  </data>
+  <data name="LapAnalysisPage.SelectRace" xml:space="preserve">
+    <value>Rennen zur Analyse wählen</value>
+  </data>
+  <data name="LapAnalysisPage.Driver" xml:space="preserve">
+    <value>Fahrer</value>
+  </data>
+  <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
+    <value>Fahrer zur Analyse wählen</value>
+  </data>
+  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
+    <value>Runde-für-Runde-Analyse von {0} →</value>
+  </data>
 </root>

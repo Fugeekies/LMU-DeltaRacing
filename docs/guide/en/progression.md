@@ -10,6 +10,5 @@ A chart of how your best laps evolve on a track, in a class.
 - **Display**: one Race curve and one Qualifying curve, or one curve per car.
 - The **summary** gives, for each curve, your record, the starting value, the current value and the gap.
 - Click a legend entry to hide a curve; **Show the period details** gives the exact values.
-- Below the chart, **Personal records** gives the best lap and top speed of each car on this circuit, and **Compare sessions** lists all your sessions with their gap to the record, their pace, their consistency and a **Record** badge when a session beats your record with that car.
 
 Your choices are remembered for next time.

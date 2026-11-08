@@ -1,6 +1,6 @@
 ## 5. 📈 Menu : Progression (`Progression.razor`)
 
-> Spécification alignée sur le code au 08/11/2026 (`Progression.razor`, `ProgressionPresentation.cs`, `ProgressionChartLayout.cs`, `PersonalRecordsPresentation.cs`).
+> Spécification alignée sur le code au 26/10/2026 (`Progression.razor`, `ProgressionPresentation.cs`, `ProgressionChartLayout.cs`).
 
 ### Description
 Page `/progression`, première page du menu « Performance » de la barre de navigation (voir `UI_DESIGN_SPEC.md`, § 2 ter). Il trace l'évolution dans le temps des meilleurs tours du pilote sélectionné (voir Options), pour un circuit et une catégorie donnés. Les temps sont regroupés par période (jour, semaine, mois ou année) ; chaque période affiche le min, le max et la moyenne de ses meilleurs tours.
@@ -35,9 +35,6 @@ Page `/progression`, première page du menu « Performance » de la barre de nav
   * Ouverture directe de l'onglet : circuit et catégorie de la **course la plus récente** du pilote sélectionné (à défaut, de sa session la plus récente).
   * Depuis l'icône 📈 de « Mes courses » : le circuit du bloc et la **dernière catégorie roulée** par le pilote sur ce circuit.
 * **Réglages enregistrés :** granularité, valeur tracée, mode d'affichage et session du mode par voiture sont enregistrés dans `appsettings.json` (section `LMU:Progression`) dès qu'ils changent, puis restaurés au lancement suivant. Le circuit et la catégorie ne sont pas enregistrés.
-* **Records personnels** (`PersonalRecordsPresentation`, panneau sous le graphique, masqué sans session) : pour le circuit et la catégorie choisis, qualifications et courses du pilote sélectionné, une ligne par voiture (`CarType` exact), du meilleur tour le plus rapide au plus lent : voiture, **meilleur tour** (avec la date et la session en dessous), **vitesse de pointe** (plus haute `topspeed`, avec la date et la session) et nombre de sessions. Les réglages du graphique (période, affichage, courbes masquées) ne filtrent pas ce panneau.
-* **Comparer les sessions** (même panneau) : une ligne par session du circuit et de la catégorie, de la plus récente à la plus ancienne : date et heure, session (Qualification ou Course), voiture, position en classe, meilleur tour avec, en dessous, l'**écart au record actuel de la voiture** (vert à `0.000s`, rouge sinon), puis, en course seulement : **rythme** et **régularité** (définis dans [`RaceDetails.template.md`](RaceDetails.template.md), « Analyse tour par tour »), vitesse de pointe et arrêts au stand (`<Pitstops>`) ; `—` en qualification ou sans donnée.
-  * **Repère « Record » :** badge violet à côté du meilleur tour (ou de la vitesse de pointe) quand la session bat le record des sessions **précédentes** de la même voiture sur ce circuit. La première session d'une voiture établit son record sans le battre : pas de badge.
 * **États de la page :**
   * Chargement initial sans session : spinner « Chargement de l'historique des courses… ».
   * Erreur de chargement sans session : encadré d'erreur avec le message et un lien vers Options.

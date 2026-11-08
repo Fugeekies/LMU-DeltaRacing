@@ -1801,4 +1801,28 @@
   <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
     <value>Récord de velocidad punta batido con este coche</value>
   </data>
+  <data name="Nav.LapAnalysis" xml:space="preserve">
+    <value>Análisis vuelta a vuelta</value>
+  </data>
+  <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
+    <value>Regularidad, stints, consumo y desgaste de un piloto en una carrera, y luego tus récords y sesiones en ese circuito.</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
+    <value>Ninguna carrera que analizar</value>
+  </data>
+  <data name="LapAnalysisPage.EmptyText" xml:space="preserve">
+    <value>Las carreras del piloto seleccionado en Ajustes aparecerán aquí en cuanto se importen.</value>
+  </data>
+  <data name="LapAnalysisPage.SelectRace" xml:space="preserve">
+    <value>Elegir la carrera que analizar</value>
+  </data>
+  <data name="LapAnalysisPage.Driver" xml:space="preserve">
+    <value>Piloto</value>
+  </data>
+  <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
+    <value>Elegir el piloto que analizar</value>
+  </data>
+  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
+    <value>Análisis vuelta a vuelta de {0} →</value>
+  </data>
 </root>
