@@ -1627,4 +1627,178 @@
   <data name="Update.SaveFailed" xml:space="preserve">
     <value>No se ha podido guardar la preferencia de actualización: {0}</value>
   </data>
+  <data name="LapAnalysis.Label" xml:space="preserve">
+    <value>Análisis vuelta a vuelta</value>
+  </data>
+  <data name="LapAnalysis.Title" xml:space="preserve">
+    <value>Análisis vuelta a vuelta de {0}</value>
+  </data>
+  <data name="LapAnalysis.PitStops" xml:space="preserve">
+    <value>Paradas en boxes</value>
+  </data>
+  <data name="LapAnalysis.Regularity" xml:space="preserve">
+    <value>Regularidad</value>
+  </data>
+  <data name="LapAnalysis.RegularityRank" xml:space="preserve">
+    <value>puesto {0} de {1} en la clase</value>
+  </data>
+  <data name="LapAnalysis.Pace" xml:space="preserve">
+    <value>Ritmo</value>
+  </data>
+  <data name="LapAnalysis.GapToBest" xml:space="preserve">
+    <value>Diferencia media con la mejor vuelta</value>
+  </data>
+  <data name="LapAnalysis.TopSpeed" xml:space="preserve">
+    <value>Velocidad punta</value>
+  </data>
+  <data name="LapAnalysis.ClassTopSpeed" xml:space="preserve">
+    <value>clase: {0}</value>
+  </data>
+  <data name="LapAnalysis.RegularityNote" xml:space="preserve">
+    <value>Vueltas representativas: {0} · descartadas por ser más lentas que el 107 % del ritmo: {1}. La primera vuelta y los pasos por el pit lane no cuentan.</value>
+  </data>
+  <data name="LapAnalysis.NoRegularity" xml:space="preserve">
+    <value>Regularidad no calculada: menos de 3 vueltas representativas.</value>
+  </data>
+  <data name="LapAnalysis.ChartLabel" xml:space="preserve">
+    <value>Tiempos por vuelta de {0}</value>
+  </data>
+  <data name="LapAnalysis.PaceLine" xml:space="preserve">
+    <value>Ritmo (mediana de las vueltas representativas)</value>
+  </data>
+  <data name="LapAnalysis.SlowLap" xml:space="preserve">
+    <value>vuelta no representativa</value>
+  </data>
+  <data name="LapAnalysis.PitLane" xml:space="preserve">
+    <value>pit lane</value>
+  </data>
+  <data name="LapAnalysis.SlowLegend" xml:space="preserve">
+    <value>Vuelta no representativa</value>
+  </data>
+  <data name="LapAnalysis.PitLegend" xml:space="preserve">
+    <value>Paso por el pit lane</value>
+  </data>
+  <data name="LapAnalysis.ScaleNote" xml:space="preserve">
+    <value>Las vueltas más lentas que el 112 % del ritmo se dibujan en la parte superior del gráfico.</value>
+  </data>
+  <data name="LapAnalysis.Stints" xml:space="preserve">
+    <value>Stints</value>
+  </data>
+  <data name="LapAnalysis.StintColumn" xml:space="preserve">
+    <value>Stint</value>
+  </data>
+  <data name="LapAnalysis.StintLaps" xml:space="preserve">
+    <value>Vueltas</value>
+  </data>
+  <data name="LapAnalysis.StintRange" xml:space="preserve">
+    <value>{0} a {1}</value>
+  </data>
+  <data name="LapAnalysis.LapCount.One" xml:space="preserve">
+    <value>{0} vuelta</value>
+  </data>
+  <data name="LapAnalysis.LapCount.Other" xml:space="preserve">
+    <value>{0} vueltas</value>
+  </data>
+  <data name="LapAnalysis.Tyres" xml:space="preserve">
+    <value>Neumáticos</value>
+  </data>
+  <data name="LapAnalysis.BestLap" xml:space="preserve">
+    <value>Mejor vuelta</value>
+  </data>
+  <data name="LapAnalysis.FuelPerLap" xml:space="preserve">
+    <value>Combustible / vuelta</value>
+  </data>
+  <data name="LapAnalysis.EnergyPerLap" xml:space="preserve">
+    <value>Energía / vuelta</value>
+  </data>
+  <data name="LapAnalysis.TyreWear" xml:space="preserve">
+    <value>Desgaste DI · DD · TI · TD</value>
+  </data>
+  <data name="LapAnalysis.StintNote" xml:space="preserve">
+    <value>Un stint termina en la primera vuelta de cada paso por el pit lane (parada o drive-through). Una salida desde el pit lane no termina ninguno.</value>
+  </data>
+  <data name="LapAnalysis.Consumption" xml:space="preserve">
+    <value>Consumo y desgaste</value>
+  </data>
+  <data name="LapAnalysis.Fuel" xml:space="preserve">
+    <value>Combustible: {0} del depósito por vuelta, es decir {1} vueltas con el depósito lleno.</value>
+  </data>
+  <data name="LapAnalysis.Energy" xml:space="preserve">
+    <value>Energía virtual: {0} por vuelta, es decir {1} vueltas con la carga completa.</value>
+  </data>
+  <data name="LapAnalysis.Wear" xml:space="preserve">
+    <value>Desgaste medio de neumáticos por vuelta: DI {0} · DD {1} · TI {2} · TD {3}.</value>
+  </data>
+  <data name="LapAnalysis.ConsumptionNote" xml:space="preserve">
+    <value>Medias sobre las vueltas representativas. El archivo de resultados no indica la capacidad del depósito: los valores están en porcentaje.</value>
+  </data>
+  <data name="LapAnalysis.NoConsumption" xml:space="preserve">
+    <value>Combustible, energía y desgaste de neumáticos no compartidos por el servidor de esta carrera.</value>
+  </data>
+  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
+    <value>Mostrar el detalle de las vueltas</value>
+  </data>
+  <data name="LapAnalysis.HideLaps" xml:space="preserve">
+    <value>Ocultar el detalle de las vueltas</value>
+  </data>
+  <data name="LapAnalysis.LapColumn" xml:space="preserve">
+    <value>Vuelta</value>
+  </data>
+  <data name="LapAnalysis.TimeColumn" xml:space="preserve">
+    <value>Tiempo</value>
+  </data>
+  <data name="LapAnalysis.PositionColumn" xml:space="preserve">
+    <value>Posición</value>
+  </data>
+  <data name="LapAnalysis.FuelColumn" xml:space="preserve">
+    <value>Combustible</value>
+  </data>
+  <data name="LapAnalysis.EnergyColumn" xml:space="preserve">
+    <value>Energía</value>
+  </data>
+  <data name="LapAnalysis.TreadColumn" xml:space="preserve">
+    <value>Banda restante DI · DD · TI · TD</value>
+  </data>
+  <data name="LapAnalysis.PitColumn" xml:space="preserve">
+    <value>Boxes</value>
+  </data>
+  <data name="Records.Title" xml:space="preserve">
+    <value>Récords personales</value>
+  </data>
+  <data name="Records.Subtitle" xml:space="preserve">
+    <value>Mejor vuelta y velocidad punta de cada coche en este circuito y en esta categoría, clasificaciones y carreras.</value>
+  </data>
+  <data name="Records.Car" xml:space="preserve">
+    <value>Coche</value>
+  </data>
+  <data name="Records.Sessions" xml:space="preserve">
+    <value>Sesiones</value>
+  </data>
+  <data name="Comparison.Title" xml:space="preserve">
+    <value>Comparar sesiones</value>
+  </data>
+  <data name="Comparison.Subtitle" xml:space="preserve">
+    <value>Tus sesiones en este circuito y en esta categoría, de la más reciente a la más antigua. Ritmo, regularidad y paradas solo se aplican a las carreras.</value>
+  </data>
+  <data name="Comparison.Date" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="Comparison.Session" xml:space="preserve">
+    <value>Sesión</value>
+  </data>
+  <data name="Comparison.ClassPosition" xml:space="preserve">
+    <value>Pos. clase</value>
+  </data>
+  <data name="Comparison.GapToRecord" xml:space="preserve">
+    <value>Diferencia con el récord</value>
+  </data>
+  <data name="Comparison.Record" xml:space="preserve">
+    <value>Récord</value>
+  </data>
+  <data name="Comparison.LapRecordTitle" xml:space="preserve">
+    <value>Récord de vuelta batido con este coche</value>
+  </data>
+  <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
+    <value>Récord de velocidad punta batido con este coche</value>
+  </data>
 </root>

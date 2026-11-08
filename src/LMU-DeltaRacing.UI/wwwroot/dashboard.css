@@ -2975,3 +2975,98 @@ table.columns-resized td[colspan] {
     cursor: col-resize !important;
     user-select: none;
 }
+
+/* Lap by lap analysis (Race details): lap times chart, stints, consumption and laps. */
+.lap-analysis-note {
+    margin: 0 0 1rem;
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.lap-analysis-heading {
+    margin: 1rem 0 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+
+.lap-analysis-list {
+    margin: 0 0 0.5rem;
+    padding-left: 1.1rem;
+    font-size: 0.8rem;
+}
+
+.lap-analysis-table td,
+.lap-analysis-table th {
+    white-space: nowrap;
+}
+
+.lap-analysis-laps {
+    max-height: 480px;
+}
+
+.cell-sub-inline {
+    color: var(--muted);
+    font-size: 0.72rem;
+}
+
+.lap-row-slow td {
+    color: var(--muted);
+}
+
+.lap-pace {
+    stroke: var(--platinum);
+    stroke-width: 1.5;
+    stroke-dasharray: 6 4;
+}
+
+.race-line-swatch.lap-pace-swatch {
+    border-top: 2px dashed var(--platinum);
+}
+
+.lap-point,
+.lap-point-slow,
+.lap-point-pit {
+    stroke-width: 1.5;
+    cursor: help;
+}
+
+.race-line-focus .lap-point {
+    fill: var(--text);
+    stroke: var(--text);
+}
+
+.race-line-player .lap-point {
+    fill: var(--accent);
+    stroke: var(--accent);
+}
+
+.lap-point-slow,
+.lap-swatch-slow {
+    fill: var(--background);
+    stroke: var(--muted);
+    border: 1.5px solid var(--muted);
+}
+
+.lap-point-pit {
+    fill: var(--background);
+    stroke: var(--yellow);
+}
+
+.record-badge {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.05rem 0.35rem;
+    border-radius: 3px;
+    background: var(--purple);
+    color: #fff;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    cursor: help;
+}
+
+.progression-records {
+    margin-top: 1rem;
+}

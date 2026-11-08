@@ -177,6 +177,15 @@ else
                         </ol>
                     }
                 </section>
+
+                @* The analysis follows the same driver as the story, compared with the selected driver. *@
+                @if (LapAnalysisPresentation.Create(selectedSession!, incidentsDriver.Name) is { } analysis)
+                {
+                    var player = incidentsDriver.IsPlayer ? null : LapAnalysisPresentation.Create(selectedSession!, State.UserName);
+                    <div class="incident-panel">
+                        <LapAnalysisPanel Analysis="analysis" Player="player" />
+                    </div>
+                }
             }
         }
 

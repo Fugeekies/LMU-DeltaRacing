@@ -237,6 +237,110 @@ else
             </div>
         }
     </section>
+
+    @* Records and sessions follow the circuit and category chosen above, every car included. *@
+    var records = PersonalRecordsPresentation.Create(State.Sessions, State.UserName, circuit.TrackVenue, circuit.TrackCourse, selectedCategory);
+    @if (records.Sessions.Count > 0)
+    {
+        <section class="panel progression-records" aria-label="@T["Records.Title"]">
+            <div class="panel-heading">
+                <div>
+                    <h2>@T["Records.Title"]</h2>
+                    <p class="page-subtitle">@T["Records.Subtitle"]</p>
+                </div>
+            </div>
+            <div class="table-scroll">
+                <table class="data-table lap-analysis-table" data-resizable-columns>
+                    <thead>
+                        <tr>
+                            <th scope="col">@T["Records.Car"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.BestLap"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
+                            <th scope="col" class="numeric-cell">@T["Records.Sessions"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var car in records.Cars)
+                        {
+                            <tr>
+                                <td>@car.Car</td>
+                                <td class="numeric-cell stacked-cell">
+                                    <span class="lap-time">@DisplayFormat.Lap(car.BestLap?.Time)</span>
+                                    @if (car.BestLap is { } lap)
+                                    {
+                                        <span class="cell-sub">@FormatSession(lap.StartedAt, lap.Kind)</span>
+                                    }
+                                </td>
+                                <td class="numeric-cell stacked-cell">
+                                    <span>@DisplayFormat.Speed(car.TopSpeed?.Speed)</span>
+                                    @if (car.TopSpeed is { } speed)
+                                    {
+                                        <span class="cell-sub">@FormatSession(speed.StartedAt, speed.Kind)</span>
+                                    }
+                                </td>
+                                <td class="numeric-cell">@car.Sessions</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="panel-heading">
+                <div>
+                    <h2>@T["Comparison.Title"]</h2>
+                    <p class="page-subtitle">@T["Comparison.Subtitle"]</p>
+                </div>
+            </div>
+            <div class="table-scroll lap-analysis-laps">
+                <table class="data-table lap-analysis-table" data-resizable-columns>
+                    <thead>
+                        <tr>
+                            <th scope="col">@T["Comparison.Date"]</th>
+                            <th scope="col">@T["Comparison.Session"]</th>
+                            <th scope="col">@T["Records.Car"]</th>
+                            <th scope="col" class="numeric-cell">@T["Comparison.ClassPosition"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.BestLap"] <span class="th-sub">@T["Comparison.GapToRecord"]</span></th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.Pace"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.Regularity"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.PitStops"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var row in records.Sessions)
+                        {
+                            <tr>
+                                <td>@DisplayFormat.DateTime(row.StartedAt)</td>
+                                <td>@SessionLabel(row.Kind)</td>
+                                <td>@row.Car</td>
+                                <td class="numeric-cell">@(row.ClassPosition is { } position ? $"P{position}" : DisplayFormat.Missing)</td>
+                                <td class="numeric-cell stacked-cell">
+                                    <span class="lap-time">
+                                        @DisplayFormat.Lap(row.BestLap)
+                                        @if (row.BrokeLapRecord)
+                                        {
+                                            <span class="record-badge" title="@T["Comparison.LapRecordTitle"]">@T["Comparison.Record"]</span>
+                                        }
+                                    </span>
+                                    <span class="cell-sub delta-time @(row.GapToRecord == TimeSpan.Zero ? "delta-best" : "delta-loss")">@DisplayFormat.Delta(row.GapToRecord)</span>
+                                </td>
+                                <td class="numeric-cell">@DisplayFormat.Lap(row.Pace)</td>
+                                <td class="numeric-cell">@DisplayFormat.Deviation(row.Deviation)</td>
+                                <td class="numeric-cell">
+                                    @DisplayFormat.Speed(row.TopSpeed)
+                                    @if (row.BrokeSpeedRecord)
+                                    {
+                                        <span class="record-badge" title="@T["Comparison.SpeedRecordTitle"]">@T["Comparison.Record"]</span>
+                                    }
+                                </td>
+                                <td class="numeric-cell">@(row.PitStops?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    }
 }
 
 </ResultsGate>
@@ -315,6 +419,12 @@ else
             SelectCircuit(latest, selection.Category);
         }
     }
+
+    private static string SessionLabel(SessionKind kind) =>
+        kind == SessionKind.Qualifying ? Texts.Get("Progression.Qualifying") : Texts.Get("Progression.Race");
+
+    private static string FormatSession(DateTimeOffset startedAt, SessionKind kind) =>
+        $"{DisplayFormat.Day(startedAt)} · {SessionLabel(kind)}";
 
     private ProgressionCircuit GetSelectedCircuit() =>
         circuits.FirstOrDefault(circuit => circuit.Key == selectedCircuitKey) ?? circuits[0];

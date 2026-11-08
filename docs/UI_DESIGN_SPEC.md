@@ -75,6 +75,11 @@ Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lig
 * **Voitures mélangées :** Course en rouge LMU (`#e11d48`), Qualification en cyan (`#38bdf8`).
 * **Une courbe par voiture :** `#38bdf8`, `#f97316`, `#a3e635`, `#f472b6`, `#facc15`, `#2dd4bf`, `#c084fc`, `#94a3b8`, attribuées par ordre alphabétique de voiture puis réutilisées en boucle.
 * Le violet, le vert et le rouge WEC ci-dessus gardent leur sens (meilleur de la classe, gain, perte) et ne servent pas aux courbes. Seul l'écart du résumé chiffré utilise le vert (plus rapide) ou le rouge (plus lent).
+* **Records personnels :** le badge « Record » d'un record battu est violet (`#b066ff`), le sens WEC du meilleur temps.
+
+### 5 bis. Graphique des temps au tour (Détail des courses)
+* Mêmes traits que le déroulé de la course : pilote suivi en blanc (`#f0f6fc`), pilote sélectionné en rouge LMU (`#e11d48`), passages par la voie des stands en pointillés gris.
+* Rythme du pilote suivi : tirets cyan clair (`#67e8f9`), pour ne pas reprendre le vert WEC du gain. Tours non représentatifs : points creux gris ; tours `pit="1"` : points creux jaunes (`#eab308`).
 
 ### 6. Écran de chargement au démarrage
 * Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».

@@ -1627,4 +1627,178 @@
   <data name="Update.SaveFailed" xml:space="preserve">
     <value>Impossibile salvare la preferenza di aggiornamento: {0}</value>
   </data>
+  <data name="LapAnalysis.Label" xml:space="preserve">
+    <value>Analisi giro per giro</value>
+  </data>
+  <data name="LapAnalysis.Title" xml:space="preserve">
+    <value>Analisi giro per giro di {0}</value>
+  </data>
+  <data name="LapAnalysis.PitStops" xml:space="preserve">
+    <value>Soste ai box</value>
+  </data>
+  <data name="LapAnalysis.Regularity" xml:space="preserve">
+    <value>Costanza</value>
+  </data>
+  <data name="LapAnalysis.RegularityRank" xml:space="preserve">
+    <value>posizione {0} su {1} nella classe</value>
+  </data>
+  <data name="LapAnalysis.Pace" xml:space="preserve">
+    <value>Passo</value>
+  </data>
+  <data name="LapAnalysis.GapToBest" xml:space="preserve">
+    <value>Distacco medio dal giro migliore</value>
+  </data>
+  <data name="LapAnalysis.TopSpeed" xml:space="preserve">
+    <value>Velocità massima</value>
+  </data>
+  <data name="LapAnalysis.ClassTopSpeed" xml:space="preserve">
+    <value>classe: {0}</value>
+  </data>
+  <data name="LapAnalysis.RegularityNote" xml:space="preserve">
+    <value>Giri rappresentativi: {0} · esclusi perché più lenti del 107 % del passo: {1}. Il primo giro e i passaggi in corsia box non contano.</value>
+  </data>
+  <data name="LapAnalysis.NoRegularity" xml:space="preserve">
+    <value>Costanza non calcolata: meno di 3 giri rappresentativi.</value>
+  </data>
+  <data name="LapAnalysis.ChartLabel" xml:space="preserve">
+    <value>Tempi sul giro di {0}</value>
+  </data>
+  <data name="LapAnalysis.PaceLine" xml:space="preserve">
+    <value>Passo (mediana dei giri rappresentativi)</value>
+  </data>
+  <data name="LapAnalysis.SlowLap" xml:space="preserve">
+    <value>giro non rappresentativo</value>
+  </data>
+  <data name="LapAnalysis.PitLane" xml:space="preserve">
+    <value>corsia box</value>
+  </data>
+  <data name="LapAnalysis.SlowLegend" xml:space="preserve">
+    <value>Giro non rappresentativo</value>
+  </data>
+  <data name="LapAnalysis.PitLegend" xml:space="preserve">
+    <value>Passaggio in corsia box</value>
+  </data>
+  <data name="LapAnalysis.ScaleNote" xml:space="preserve">
+    <value>I giri più lenti del 112 % del passo sono disegnati in alto nel grafico.</value>
+  </data>
+  <data name="LapAnalysis.Stints" xml:space="preserve">
+    <value>Stint</value>
+  </data>
+  <data name="LapAnalysis.StintColumn" xml:space="preserve">
+    <value>Stint</value>
+  </data>
+  <data name="LapAnalysis.StintLaps" xml:space="preserve">
+    <value>Giri</value>
+  </data>
+  <data name="LapAnalysis.StintRange" xml:space="preserve">
+    <value>da {0} a {1}</value>
+  </data>
+  <data name="LapAnalysis.LapCount.One" xml:space="preserve">
+    <value>{0} giro</value>
+  </data>
+  <data name="LapAnalysis.LapCount.Other" xml:space="preserve">
+    <value>{0} giri</value>
+  </data>
+  <data name="LapAnalysis.Tyres" xml:space="preserve">
+    <value>Gomme</value>
+  </data>
+  <data name="LapAnalysis.BestLap" xml:space="preserve">
+    <value>Giro migliore</value>
+  </data>
+  <data name="LapAnalysis.FuelPerLap" xml:space="preserve">
+    <value>Carburante / giro</value>
+  </data>
+  <data name="LapAnalysis.EnergyPerLap" xml:space="preserve">
+    <value>Energia / giro</value>
+  </data>
+  <data name="LapAnalysis.TyreWear" xml:space="preserve">
+    <value>Usura AS · AD · PS · PD</value>
+  </data>
+  <data name="LapAnalysis.StintNote" xml:space="preserve">
+    <value>Uno stint termina al primo giro di ogni passaggio in corsia box (sosta o drive-through). Una partenza dalla corsia box non ne termina uno.</value>
+  </data>
+  <data name="LapAnalysis.Consumption" xml:space="preserve">
+    <value>Consumi e usura</value>
+  </data>
+  <data name="LapAnalysis.Fuel" xml:space="preserve">
+    <value>Carburante: {0} del serbatoio per giro, cioè {1} giri con un pieno.</value>
+  </data>
+  <data name="LapAnalysis.Energy" xml:space="preserve">
+    <value>Energia virtuale: {0} per giro, cioè {1} giri con una carica completa.</value>
+  </data>
+  <data name="LapAnalysis.Wear" xml:space="preserve">
+    <value>Usura media delle gomme per giro: AS {0} · AD {1} · PS {2} · PD {3}.</value>
+  </data>
+  <data name="LapAnalysis.ConsumptionNote" xml:space="preserve">
+    <value>Medie sui giri rappresentativi. Il file dei risultati non indica la capacità del serbatoio: i valori sono in percentuale.</value>
+  </data>
+  <data name="LapAnalysis.NoConsumption" xml:space="preserve">
+    <value>Carburante, energia e usura delle gomme non condivisi dal server di questa gara.</value>
+  </data>
+  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
+    <value>Mostra il dettaglio dei giri</value>
+  </data>
+  <data name="LapAnalysis.HideLaps" xml:space="preserve">
+    <value>Nascondi il dettaglio dei giri</value>
+  </data>
+  <data name="LapAnalysis.LapColumn" xml:space="preserve">
+    <value>Giro</value>
+  </data>
+  <data name="LapAnalysis.TimeColumn" xml:space="preserve">
+    <value>Tempo</value>
+  </data>
+  <data name="LapAnalysis.PositionColumn" xml:space="preserve">
+    <value>Posizione</value>
+  </data>
+  <data name="LapAnalysis.FuelColumn" xml:space="preserve">
+    <value>Carburante</value>
+  </data>
+  <data name="LapAnalysis.EnergyColumn" xml:space="preserve">
+    <value>Energia</value>
+  </data>
+  <data name="LapAnalysis.TreadColumn" xml:space="preserve">
+    <value>Battistrada residuo AS · AD · PS · PD</value>
+  </data>
+  <data name="LapAnalysis.PitColumn" xml:space="preserve">
+    <value>Box</value>
+  </data>
+  <data name="Records.Title" xml:space="preserve">
+    <value>Record personali</value>
+  </data>
+  <data name="Records.Subtitle" xml:space="preserve">
+    <value>Giro migliore e velocità massima di ogni vettura su questo circuito e in questa categoria, qualifiche e gare.</value>
+  </data>
+  <data name="Records.Car" xml:space="preserve">
+    <value>Vettura</value>
+  </data>
+  <data name="Records.Sessions" xml:space="preserve">
+    <value>Sessioni</value>
+  </data>
+  <data name="Comparison.Title" xml:space="preserve">
+    <value>Confronta le sessioni</value>
+  </data>
+  <data name="Comparison.Subtitle" xml:space="preserve">
+    <value>Le tue sessioni su questo circuito e in questa categoria, dalla più recente. Passo, costanza e soste riguardano solo le gare.</value>
+  </data>
+  <data name="Comparison.Date" xml:space="preserve">
+    <value>Data</value>
+  </data>
+  <data name="Comparison.Session" xml:space="preserve">
+    <value>Sessione</value>
+  </data>
+  <data name="Comparison.ClassPosition" xml:space="preserve">
+    <value>Pos. classe</value>
+  </data>
+  <data name="Comparison.GapToRecord" xml:space="preserve">
+    <value>Distacco dal record</value>
+  </data>
+  <data name="Comparison.Record" xml:space="preserve">
+    <value>Record</value>
+  </data>
+  <data name="Comparison.LapRecordTitle" xml:space="preserve">
+    <value>Record sul giro battuto con questa vettura</value>
+  </data>
+  <data name="Comparison.SpeedRecordTitle" xml:space="preserve">
+    <value>Record di velocità massima battuto con questa vettura</value>
+  </data>
 </root>

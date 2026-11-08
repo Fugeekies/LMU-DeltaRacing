@@ -1,0 +1,251 @@
+@using LMU_DeltaRacing.UI.Models
+
+@{
+    var chart = LapTimesChartLayout.Create(Analysis, Player);
+    var hasFuel = Analysis.Laps.Any(lap => lap.Telemetry.Fuel.HasValue);
+    var hasEnergy = Analysis.Laps.Any(lap => lap.Telemetry.VirtualEnergy.HasValue);
+    var hasTyres = Analysis.Laps.Any(lap => lap.Telemetry.TyreWear is not null);
+}
+
+<section class="lap-analysis" aria-label="@T["LapAnalysis.Label"]">
+    <div class="incident-panel-heading">
+        <h3>@T["LapAnalysis.Title", Analysis.DriverName]</h3>
+    </div>
+
+    <div class="story-summary">
+        <span>@T["LapAnalysis.PitStops"] <strong>@(Analysis.PitStops?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing)</strong></span>
+        @if (Analysis.Regularity is { } regularity)
+        {
+            <span>@T["LapAnalysis.Regularity"] <strong>@DisplayFormat.Deviation(regularity.Deviation)</strong> (@T["LapAnalysis.RegularityRank", regularity.ClassRank, regularity.ClassDrivers])</span>
+            <span>@T["LapAnalysis.Pace"] <strong>@DisplayFormat.Lap(regularity.Pace)</strong></span>
+            <span>@T["LapAnalysis.GapToBest"] <strong>@DisplayFormat.Delta(regularity.AverageGapToBest)</strong></span>
+        }
+        @if (Analysis.TopSpeed is { } topSpeed)
+        {
+            <span>@T["LapAnalysis.TopSpeed"] <strong>@DisplayFormat.Speed(topSpeed.Speed)</strong> (@T["LapAnalysis.ClassTopSpeed", DisplayFormat.Speed(topSpeed.ClassBest)])</span>
+        }
+    </div>
+    <p class="lap-analysis-note">
+        @(Analysis.Regularity is { } counted
+            ? T["LapAnalysis.RegularityNote", counted.Laps, counted.ExcludedLaps]
+            : T["LapAnalysis.NoRegularity"])
+    </p>
+
+    @if (chart is not null)
+    {
+        <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="@T["LapAnalysis.ChartLabel", Analysis.DriverName]">
+            @foreach (var tick in chart.TimeTicks)
+            {
+                <line class="story-grid" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(tick.Position)" y2="@Number(tick.Position)" />
+                <g><text class="story-axis" x="@Number(chart.PlotLeft - 8)" y="@Number(tick.Position + 4)" text-anchor="end">@tick.Label</text></g>
+            }
+            @foreach (var tick in chart.LapTicks)
+            {
+                <g><text class="story-axis" x="@Number(tick.Position)" y="@Number(chart.PlotBottom + 20)" text-anchor="middle">@tick.Label</text></g>
+            }
+            @foreach (var pit in chart.PitLaps)
+            {
+                <line class="story-pit" x1="@Number(pit)" x2="@Number(pit)" y1="@Number(chart.PlotTop)" y2="@Number(chart.PlotBottom)">
+                    <title>@T["LapAnalysis.PitLegend"]</title>
+                </line>
+            }
+            @if (chart.PaceY is { } paceY)
+            {
+                <line class="lap-pace" x1="@Number(chart.PlotLeft)" x2="@Number(chart.PlotRight)" y1="@Number(paceY)" y2="@Number(paceY)">
+                    <title>@T["LapAnalysis.PaceLine"]</title>
+                </line>
+            }
+            @foreach (var series in chart.Series)
+            {
+                <g class="race-line @series.CssClass">
+                    @foreach (var segment in series.Segments)
+                    {
+                        <polyline class="race-line-path" points="@segment" />
+                    }
+                    @foreach (var point in series.Points)
+                    {
+                        <circle class="@point.CssClass" cx="@Number(point.X)" cy="@Number(point.Y)" r="4">
+                            <title>@point.Title</title>
+                        </circle>
+                    }
+                </g>
+            }
+        </svg>
+
+        <div class="story-legend" aria-label="@T["Progression.LegendLabel"]">
+            <span><i class="race-line-swatch race-line-focus" aria-hidden="true"></i>@Analysis.DriverName</span>
+            @if (Player is not null)
+            {
+                <span><i class="race-line-swatch race-line-player" aria-hidden="true"></i>@T["RaceStory.You"]</span>
+            }
+            <span><i class="race-line-swatch lap-pace-swatch" aria-hidden="true"></i>@T["LapAnalysis.PaceLine"]</span>
+            <span><i class="story-swatch lap-swatch-slow" aria-hidden="true"></i>@T["LapAnalysis.SlowLegend"]</span>
+            <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>@T["LapAnalysis.PitLegend"]</span>
+            <span>@T["LapAnalysis.ScaleNote"]</span>
+        </div>
+    }
+
+    <h4 class="lap-analysis-heading">@T["LapAnalysis.Stints"]</h4>
+    <div class="table-scroll">
+        <table class="data-table lap-analysis-table" data-resizable-columns>
+            <thead>
+                <tr>
+                    <th scope="col">@T["LapAnalysis.StintColumn"]</th>
+                    <th scope="col">@T["LapAnalysis.StintLaps"]</th>
+                    <th scope="col">@T["LapAnalysis.Tyres"]</th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.Pace"]</th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.BestLap"]</th>
+                    @if (hasFuel)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.FuelPerLap"]</th>
+                    }
+                    @if (hasEnergy)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.EnergyPerLap"]</th>
+                    }
+                    @if (hasTyres)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.TyreWear"]</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var stint in Analysis.Stints)
+                {
+                    <tr>
+                        <td>@stint.Number</td>
+                        <td>@T["LapAnalysis.StintRange", stint.FirstLap, stint.LastLap] <span class="cell-sub-inline">(@Texts.Plural("LapAnalysis.LapCount", stint.LapCount))</span></td>
+                        <td>@(stint.Compounds.Count == 0 ? DisplayFormat.Missing : string.Join(", ", stint.Compounds))</td>
+                        <td class="numeric-cell">@DisplayFormat.Lap(stint.Pace)</td>
+                        <td class="numeric-cell">@DisplayFormat.Lap(stint.BestLap)</td>
+                        @if (hasFuel)
+                        {
+                            <td class="numeric-cell">@Share(stint.FuelPerLap)</td>
+                        }
+                        @if (hasEnergy)
+                        {
+                            <td class="numeric-cell">@Share(stint.EnergyPerLap)</td>
+                        }
+                        @if (hasTyres)
+                        {
+                            <td class="numeric-cell">@Tyres(stint.TyreWear)</td>
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <p class="lap-analysis-note">@T["LapAnalysis.StintNote"]</p>
+
+    <h4 class="lap-analysis-heading">@T["LapAnalysis.Consumption"]</h4>
+    @if (Analysis.Consumption is { } consumption)
+    {
+        <ul class="lap-analysis-list">
+            @if (consumption.FuelPerLap is { } fuel)
+            {
+                <li>@T["LapAnalysis.Fuel", DisplayFormat.Percent(fuel), DisplayFormat.Average(consumption.LapsPerTank)]</li>
+            }
+            @if (consumption.EnergyPerLap is { } energy)
+            {
+                <li>@T["LapAnalysis.Energy", DisplayFormat.Percent(energy), DisplayFormat.Average(consumption.LapsPerEnergy)]</li>
+            }
+            @if (consumption.TyreWearPerLap is { } wear)
+            {
+                <li>@T["LapAnalysis.Wear", DisplayFormat.Percent(wear.FrontLeft), DisplayFormat.Percent(wear.FrontRight), DisplayFormat.Percent(wear.RearLeft), DisplayFormat.Percent(wear.RearRight)]</li>
+            }
+        </ul>
+        <p class="lap-analysis-note">@T["LapAnalysis.ConsumptionNote"]</p>
+    }
+    else
+    {
+        <p class="incident-empty">@T["LapAnalysis.NoConsumption"]</p>
+    }
+
+    <div class="progression-table">
+        <button type="button" class="button button-secondary" aria-expanded="@(showsLaps ? "true" : "false")" @onclick="() => showsLaps = !showsLaps">
+            @(showsLaps ? T["LapAnalysis.HideLaps"] : T["LapAnalysis.ShowLaps"])
+        </button>
+        @if (showsLaps)
+        {
+            <div class="table-scroll lap-analysis-laps">
+                <table class="data-table lap-analysis-table" data-resizable-columns>
+                    <thead>
+                        <tr>
+                            <th scope="col">@T["LapAnalysis.LapColumn"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TimeColumn"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.PositionColumn"]</th>
+                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
+                            @if (hasFuel)
+                            {
+                                <th scope="col" class="numeric-cell">@T["LapAnalysis.FuelColumn"]</th>
+                            }
+                            @if (hasEnergy)
+                            {
+                                <th scope="col" class="numeric-cell">@T["LapAnalysis.EnergyColumn"]</th>
+                            }
+                            @if (hasTyres)
+                            {
+                                <th scope="col" class="numeric-cell">@T["LapAnalysis.TreadColumn"]</th>
+                            }
+                            <th scope="col">@T["LapAnalysis.Tyres"]</th>
+                            <th scope="col">@T["LapAnalysis.PitColumn"]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var lap in Analysis.Laps)
+                        {
+                            <tr class="@(lap.IsRepresentative ? null : "lap-row-slow")">
+                                <td>@lap.Number</td>
+                                <td class="numeric-cell">@DisplayFormat.Lap(lap.Time)</td>
+                                <td class="numeric-cell">@(lap.Position is { } position ? $"P{position}" : DisplayFormat.Missing)</td>
+                                <td class="numeric-cell">@DisplayFormat.Speed(lap.Telemetry.TopSpeed)</td>
+                                @if (hasFuel)
+                                {
+                                    <td class="numeric-cell">@Share(lap.Telemetry.Fuel)</td>
+                                }
+                                @if (hasEnergy)
+                                {
+                                    <td class="numeric-cell">@Share(lap.Telemetry.VirtualEnergy)</td>
+                                }
+                                @if (hasTyres)
+                                {
+                                    <td class="numeric-cell">@Tyres(lap.Telemetry.TyreWear)</td>
+                                }
+                                <td>@(LapAnalysisPresentation.FormatCompounds(lap.Telemetry) is { Length: > 0 } compounds ? compounds : DisplayFormat.Missing)</td>
+                                <td>@(lap.IsPit ? "●" : string.Empty)</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    private bool showsLaps;
+
+    /// <summary>
+    /// Gets or sets the analysis of the followed driver.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public LapAnalysis Analysis { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the analysis of the selected driver of the dashboard, drawn in red on the chart
+    /// when they are not the followed driver.
+    /// </summary>
+    [Parameter]
+    public LapAnalysis? Player { get; set; }
+
+    private static string Share(double? value) =>
+        value is { } share ? DisplayFormat.Percent(share) : DisplayFormat.Missing;
+
+    private static string Tyres(TyreWear? wear) =>
+        wear is null
+            ? DisplayFormat.Missing
+            : string.Join(" · ", DisplayFormat.Percent(wear.FrontLeft), DisplayFormat.Percent(wear.FrontRight), DisplayFormat.Percent(wear.RearLeft), DisplayFormat.Percent(wear.RearRight));
+
+    private static string Number(double value) =>
+        value.ToString("0.#", System.Globalization.CultureInfo.InvariantCulture);
+}
