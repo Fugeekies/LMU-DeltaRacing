@@ -55,6 +55,7 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * 🟢 **Vert (`#22c55e`)** : Amélioration de delta (n-1) et écart nul ou négatif au meilleur temps de la classe. Le vert n'est pas utilisé pour colorer les secteurs.
 * 🟡 **Jaune (`#eab308`)** : Secteur standard (plus lent que le meilleur de la classe).
 * 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps ou régression de delta (n-1).
+* **Exception des tableaux de chronos** (décision du 09/11/2026) : les temps des secteurs de « Détail des courses » et les temps et écarts des tableaux d'« Analyse tour par tour » restent sans couleur, car le jaune et le violet des secteurs y étaient peu lisibles ; le meilleur temps est en **gras**. Les écarts de « Détail des courses » gardent le vert et le rouge. Le violet, le vert et le rouge gardent leur sens ailleurs (badges, graphiques, delta n-1 de « Mes courses »).
 
 ---
 
@@ -80,7 +81,7 @@ Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lig
 ### 5 bis. Graphique tour par tour (Analyse tour par tour)
 * Mêmes traits que le déroulé de la course : pilote suivi en blanc (`#f0f6fc`), pilote sélectionné en rouge LMU (`#e11d48`), passages par la voie des stands en pointillés gris.
 * Rythme du pilote suivi : tirets cyan clair (`#67e8f9`), pour ne pas reprendre le vert WEC du gain. Tours non représentatifs : points creux gris ; tours `pit="1"` : points creux jaunes (`#eab308`). Un temps hors échelle a un contour pointillé.
-* **Secteur par secteur :** barre du temps perdu en rouge WEC (`#ef4444`, perte), ligne du secteur qui coûte le plus teintée de rouge à 8 %. Secteurs du tableau des tours : violet pour le meilleur de la classe, gras pour le meilleur du pilote (le vert n'est pas utilisé pour les secteurs).
+* **Secteur par secteur :** barre du temps perdu en rouge WEC (`#ef4444`, perte), ligne du secteur qui coûte le plus teintée de rouge à 8 %. Les temps et les écarts des tableaux de la page Analyse tour par tour (secteurs, tours, comparaison des sessions) restent sans couleur, le meilleur temps en gras : le jaune et le violet des chronos y sont peu lisibles (décision du 09/11/2026).
 
 ### 6. Écran de chargement au démarrage
 * Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».
@@ -146,7 +147,7 @@ UISpec/
 
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
-   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
+   * Meilleurs secteurs personnels (en gras le meilleur de la classe, sans couleur), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
 
 3 bis. **🔬 Analyse tour par tour (`/lap-analysis`)** *(Voir template [`UISpec/LapAnalysis.template.md`](UISpec/LapAnalysis.template.md))*
    * Analyse d'une course pour un pilote : arrêts, régularité, rythme, vitesse de pointe, graphique des temps au tour, relais, consommation et usure, détail des tours.

@@ -11,7 +11,7 @@ La clasificación completa de un evento.
 |---|---|
 | **POS** / **CATEGORÍA** | Posición general / categoría |
 | **PILOTO** | Nombre del piloto y, debajo, el coche |
-| **SECTEUR 1, 2, 3** | Mejor sector: 🟣 mejor de la categoría, 🟡 tiempo normal; debajo, la diferencia con el mejor |
+| **SECTEUR 1, 2, 3** | Mejor sector, en negrita si es el mejor de la categoría; debajo, la diferencia con el mejor |
 | **VUELTA IDEAL** | Vuelta ideal: suma de los tres mejores sectores, con su diferencia |
 | **MEJOR VUELTA** | Mejor vuelta real, con su diferencia |
 | **TIEMPO TOTAL** | Tiempo de carrera y diferencia con el líder de la categoría: **LÍDER**, un tiempo, **+1 vuelta** o **DNF** |

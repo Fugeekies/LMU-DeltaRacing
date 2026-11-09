@@ -410,10 +410,7 @@
     <value>Legenda dei settori</value>
   </data>
   <data name="RaceDetails.ClassBestSector" xml:space="preserve">
-    <value>Settore migliore della categoria</value>
-  </data>
-  <data name="RaceDetails.StandardTime" xml:space="preserve">
-    <value>Tempo normale</value>
+    <value>In grassetto: miglior settore della classe</value>
   </data>
   <data name="RaceDetails.SectorNote" xml:space="preserve">
     <value>Settori: miglior tempo personale sui giri cronometrati · Distacchi calcolati per categoria</value>
@@ -1847,7 +1844,7 @@
     <value>S{0}</value>
   </data>
   <data name="LapAnalysis.SectorNote" xml:space="preserve">
-    <value>Migliore: sui giri cronometrati, in viola se è il migliore della classe. Passo e costanza: mediana e deviazione standard del settore sui giri rappresentativi. Riferimento: la migliore mediana della classe in questo settore; il distacco da essa è il tempo perso al giro.</value>
+    <value>Migliore: sui giri cronometrati, in grassetto se è il migliore della classe. Passo e costanza: mediana e deviazione standard del settore sui giri rappresentativi. Riferimento: la migliore mediana della classe in questo settore; il distacco da essa è il tempo perso al giro.</value>
   </data>
   <data name="LapAnalysis.LapTimes" xml:space="preserve">
     <value>Giro per giro</value>
@@ -1859,7 +1856,7 @@
     <value>Nessun tempo cronometrato per questa misura.</value>
   </data>
   <data name="LapAnalysis.LapsNote" xml:space="preserve">
-    <value>Settori in viola: migliori della classe; in grassetto: miglior tempo del pilota. I giri non rappresentativi sono in grigio.</value>
+    <value>In grassetto: miglior tempo del pilota. I giri non rappresentativi sono in grigio.</value>
   </data>
   <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
     <value>Stint e consumi</value>

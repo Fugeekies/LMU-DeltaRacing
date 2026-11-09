@@ -11,7 +11,7 @@ Das vollständige Klassement eines Events.
 |---|---|
 | **POS** / **KLASSE** | Gesamtposition / Klasse |
 | **FAHRER** | Fahrername und darunter das Auto |
-| **SECTEUR 1, 2, 3** | Bester Sektor: 🟣 Klassenbester, 🟡 normale Zeit; darunter der Abstand zum Besten |
+| **SECTEUR 1, 2, 3** | Bester Sektor, fett, wenn er der beste der Klasse ist; darunter der Abstand zum Besten |
 | **IDEALE RUNDE** | Ideale Runde: Summe der drei besten Sektoren, mit Abstand |
 | **BESTE RUNDE** | Tatsächlich beste Runde, mit Abstand |
 | **GESAMTZEIT** | Rennzeit und Abstand zum Klassenführenden: **LEADER**, eine Zeit, **+1 Runde** oder **DNF** |

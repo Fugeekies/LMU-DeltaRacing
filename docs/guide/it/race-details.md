@@ -11,7 +11,7 @@ La classifica completa di un evento.
 |---|---|
 | **POS** / **CATEGORIA** | Posizione assoluta / categoria |
 | **PILOTA** | Nome del pilota e, sotto, l'auto |
-| **SECTEUR 1, 2, 3** | Settore migliore: 🟣 migliore della categoria, 🟡 tempo normale; sotto, il distacco dal migliore |
+| **SECTEUR 1, 2, 3** | Settore migliore, in grassetto se è il migliore della categoria; sotto, il distacco dal migliore |
 | **GIRO IDEALE** | Giro ideale: somma dei tre settori migliori, con il distacco |
 | **GIRO MIGLIORE** | Giro migliore reale, con il distacco |
 | **TEMPO TOTALE** | Tempo di gara e distacco dal primo della categoria: **LEADER**, un tempo, **+1 giro** o **DNF** |

@@ -11,7 +11,7 @@ The full classification of an event.
 |---|---|
 | **POS** / **CLASS** | Overall position / class |
 | **DRIVER** | Driver name and, below, car |
-| **SECTEUR 1, 2, 3** | Best sector: 🟣 best in class, 🟡 standard time; below, the gap to the best |
+| **SECTEUR 1, 2, 3** | Best sector, in bold when it is the best in class; below, the gap to the best |
 | **IDEAL LAP** | Ideal lap: sum of the three best sectors, and its gap |
 | **BEST LAP** | Actual best lap, and its gap |
 | **TOTAL TIME** | Race time and gap to the class leader: **LEADER**, a time, **+1 lap** or **DNF** |

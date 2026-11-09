@@ -1,6 +1,6 @@
 ## 3. ⏱️ Menu : Détail des Courses (`RaceDetails.razor`)
 
-> Spécification alignée sur le code au 08/11/2026 (`RaceDetails.razor`, `RaceEventPresentation.cs`, `RaceDetailsPresentation.cs`).
+> Spécification alignée sur le code au 09/11/2026 (`RaceDetails.razor`, `RaceEventPresentation.cs`, `RaceDetailsPresentation.cs`).
 
 ### Description
 Classement détaillé d'un événement choisi par l'utilisateur (route `/race-details`). Un événement regroupe les essais, la qualification et la course disputés à la suite sur un circuit ; des sous-onglets sous le sélecteur affichent le classement de chaque session. Pour chaque pilote, la page affiche ses meilleurs secteurs, son tour idéal, son meilleur tour et son écart au leader. Toutes les comparaisons se font **au sein de la classe du pilote**, comme dans le chronométrage WEC.
@@ -37,10 +37,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
     3. sinon : temps total du pilote − temps total du leader (`FinishTime`), par exemple `+12.500s` ;
     4. donnée manquante : `—`.
   * En qualification : meilleur tour du pilote − meilleur tour de la classe.
-* **Règles de couleurs WEC (secteurs) :**
-  * Meilleur secteur de la classe : fond violet / texte `#b066ff`.
-  * Sinon : texte jaune `#eab308`.
-  * Secteur absent : `—`.
+* **Secteurs sans couleur** (décision du 09/11/2026 : le jaune et le violet des secteurs étaient peu lisibles) : les temps des secteurs restent en blanc, le meilleur secteur de la classe en **gras**. Secteur absent : `—`.
 * **Couleurs des deltas :** delta ≤ 0 en vert, delta > 0 en rouge, valeur absente en gris (`—`).
 * **Structure du tableau** (11 colonnes) : hormis POS et CLASSE, sur une ligne, chaque cellule **empile** une valeur principale et, en petit dessous, son complément ou son écart. L'en-tête de chaque colonne indique les deux lignes (par exemple « SECTEUR 1 / ÉCART »).
 
@@ -49,7 +46,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | POS | Position générale (`01`, `02`… ou `—`) | — |
   | CLASSE | Badge de catégorie (voir « Mes courses »), sans la position en classe, qui doublait POS | — |
   | PILOTE / VOITURE | Nom, suivi du tag **VOUS** pour le pilote sélectionné | `CarType`, à défaut `#<CarNumber>`, à défaut `—` (tronqué avec « … » si trop long) |
-  | SECTEUR 1 / 2 / 3 / ÉCART | Meilleur secteur personnel, coloré selon les règles WEC (`38.120s`) | Écart au meilleur secteur de la classe (`+0.130s` / `0.000s`) |
+  | SECTEUR 1 / 2 / 3 / ÉCART | Meilleur secteur personnel, en gras s'il est le meilleur de la classe (`38.120s`) | Écart au meilleur secteur de la classe (`+0.130s` / `0.000s`) |
   | TOUR IDÉAL / ÉCART | Somme des meilleurs secteurs (`m:ss.fff`) | Écart au meilleur tour idéal de la classe (`+2.309s`) |
   | MEILLEUR TOUR / ÉCART | Meilleur tour du pilote (`m:ss.fff`) | Écart au meilleur tour de la classe (`+0.469s`) |
   | TEMPS TOTAL / ÉCART AU 1ER | En course : temps total du pilote (`FinishTime`, `h:mm:ss.fff` si ≥ 1 h sinon `m:ss.fff`) ; `—` en qualification, pour un pilote DNF/DQ ou sans temps | Écart au leader de la classe : `LEADER` (vert), `+12.500s`, `+1 tour`, `DNF` (rouge) |
@@ -72,7 +69,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
 * **Colonnes ajustables :** une poignée (deux traits fins) au bord droit de chaque en-tête, rouge LMU au survol avec un curseur de redimensionnement ; la faire glisser change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.
 
 * **Grandes grilles :** au-delà de 40 pilotes, les lignes sont virtualisées (seules les lignes visibles sont rendues). Jusqu'à 40 pilotes, toutes les lignes sont rendues, y compris dans le pré-rendu serveur.
-* **Légende** sous le tableau : Meilleur secteur de la classe (violet), Temps standard (jaune), et rappel que les secteurs sont des meilleurs personnels comparés par classe.
+* **Légende** sous le tableau : « En gras : meilleur secteur de la classe », et rappel que les secteurs sont des meilleurs personnels comparés par classe.
 * **États de la page :**
   * Chargement initial sans session : spinner.
   * Erreur de chargement sans session : encadré d'erreur avec un lien vers Options.
@@ -96,15 +93,15 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
 │  POS  CLASSE     PILOTE             SECTEUR 1    SECTEUR 2    SECTEUR 3    TOUR IDÉAL   MEILLEUR TOUR   TEMPS TOTAL                                  │
 │                  VOITURE            ÉCART        ÉCART        ÉCART        ÉCART        ÉCART           ÉCART AU 1ER                                 │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  01   LMGT3      Driver Louis       🟣 41.859s   🟡 74.351s   🟣 44.395s   2:40.605     2:41.796        21:47.737                                    │
+│  01   LMGT3      Driver Louis       **41.859s**   74.351s   **44.395s**   2:40.605     2:41.796        21:47.737                                    │
 │                  BMW M4 LMGT3       0.000s       +0.370s      0.000s       0.000s       0.000s          LEADER                                       │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  04   LMGT3      Driver Tom VOUS    🟡 42.478s   🟡 74.602s   🟡 45.835s   2:42.914     2:44.849        22:37.645      ← ligne surlignée             │
+│  04   LMGT3      Driver Tom VOUS    42.478s     74.602s     45.835s     2:42.914     2:44.849        22:37.645      ← ligne surlignée             │
 │                  Porsche 911 GT3 R  +0.619s      +0.621s      +1.439s      +2.309s      +3.054s         +49.908s                                     │
 │  ─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────    │
-│  11   LMGT3      Driver Emma        🟡 42.411s   🟡 75.358s   🟡 45.068s   2:42.836     2:43.196        —                                            │
+│  11   LMGT3      Driver Emma        42.411s     75.358s     45.068s     2:42.836     2:43.196        —                                            │
 │                  McLaren 720S LMGT3 +0.551s      +1.378s      +0.672s      +2.231s      +1.400s         DNF                                          │
 │                                                                                                                                                    │
-│  🟣 Meilleur secteur de la classe   🟡 Temps standard   Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe │
+│  En gras : meilleur secteur de la classe   Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe │
 └────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```

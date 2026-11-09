@@ -414,10 +414,7 @@
     <value>Légende des secteurs</value>
   </data>
   <data name="RaceDetails.ClassBestSector" xml:space="preserve">
-    <value>Meilleur secteur de la classe</value>
-  </data>
-  <data name="RaceDetails.StandardTime" xml:space="preserve">
-    <value>Temps standard</value>
+    <value>En gras : meilleur secteur de la classe</value>
   </data>
   <data name="RaceDetails.SectorNote" xml:space="preserve">
     <value>Secteurs : meilleur temps personnel sur les tours chronométrés · Écarts calculés par classe</value>
@@ -1851,7 +1848,7 @@
     <value>S{0}</value>
   </data>
   <data name="LapAnalysis.SectorNote" xml:space="preserve">
-    <value>Meilleur : sur les tours chronométrés, en violet s’il est le meilleur de la classe. Rythme et régularité : médiane et écart-type du secteur sur les tours représentatifs. Référence : la meilleure médiane de la classe dans ce secteur ; l’écart à cette référence est le temps perdu par tour.</value>
+    <value>Meilleur : sur les tours chronométrés, en gras s’il est le meilleur de la classe. Rythme et régularité : médiane et écart-type du secteur sur les tours représentatifs. Référence : la meilleure médiane de la classe dans ce secteur ; l’écart à cette référence est le temps perdu par tour.</value>
   </data>
   <data name="LapAnalysis.LapTimes" xml:space="preserve">
     <value>Tour par tour</value>
@@ -1863,7 +1860,7 @@
     <value>Aucun temps chronométré pour cette mesure.</value>
   </data>
   <data name="LapAnalysis.LapsNote" xml:space="preserve">
-    <value>Secteurs en violet : meilleur de la classe ; en gras : meilleur temps du pilote. Les tours non représentatifs sont grisés.</value>
+    <value>En gras : meilleur temps du pilote. Les tours non représentatifs sont grisés.</value>
   </data>
   <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
     <value>Relais et consommation</value>

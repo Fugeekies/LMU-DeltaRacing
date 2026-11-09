@@ -189,8 +189,7 @@ else
         }
 
         <div class="sector-legend" aria-label="@T["RaceDetails.SectorLegend"]">
-            <span><i class="sector-legend-swatch sector-class-best" aria-hidden="true"></i>@T["RaceDetails.ClassBestSector"]</span>
-            <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>@T["RaceDetails.StandardTime"]</span>
+            <span>@T["RaceDetails.ClassBestSector"]</span>
             <span>@T["RaceDetails.SectorNote"]</span>
         </div>
     </section>
@@ -367,8 +366,12 @@ else
     private void ToggleIncidents(string driverName) =>
         selectedDriver = selectedDriver == driverName ? null : driverName;
 
-    private static string GetSectorClass(RaceDetailsSectorResult sector) =>
-        sector.Performance == SectorPerformance.ClassBest ? "sector-class-best" : "sector-standard";
+    /// <summary>
+    /// Marks the best sector of the class in bold, without colour: coloured times are hard to read in
+    /// the tables (decision of 09/11/2026).
+    /// </summary>
+    private static string? GetSectorClass(RaceDetailsSectorResult sector) =>
+        sector.Performance == SectorPerformance.ClassBest ? "lap-personal-best" : null;
 
     private static string GetDeltaClass(TimeSpan? delta) =>
         delta switch
