@@ -189,8 +189,7 @@ else
         }
 
         <div class="sector-legend" aria-label="@T["RaceDetails.SectorLegend"]">
-            <span><i class="sector-legend-swatch sector-class-best" aria-hidden="true"></i>@T["RaceDetails.ClassBestSector"]</span>
-            <span><i class="sector-legend-swatch sector-standard" aria-hidden="true"></i>@T["RaceDetails.StandardTime"]</span>
+            <span>@T["RaceDetails.ClassBestSector"]</span>
             <span>@T["RaceDetails.SectorNote"]</span>
         </div>
     </section>
@@ -367,16 +366,18 @@ else
     private void ToggleIncidents(string driverName) =>
         selectedDriver = selectedDriver == driverName ? null : driverName;
 
-    private static string GetSectorClass(RaceDetailsSectorResult sector) =>
-        sector.Performance == SectorPerformance.ClassBest ? "sector-class-best" : "sector-standard";
+    /// <summary>
+    /// Marks the best sector of the class in bold, without colour: coloured times are hard to read in
+    /// the tables (decision of 09/11/2026).
+    /// </summary>
+    private static string? GetSectorClass(RaceDetailsSectorResult sector) =>
+        sector.Performance == SectorPerformance.ClassBest ? "lap-personal-best" : null;
 
-    private static string GetDeltaClass(TimeSpan? delta) =>
-        delta switch
-        {
-            { } value when value > TimeSpan.Zero => "delta-loss",
-            { } => "delta-best",
-            _ => "delta-unavailable"
-        };
+    /// <summary>
+    /// Leaves gaps uncoloured, as the times they belong to; only a missing gap is muted.
+    /// </summary>
+    private static string? GetDeltaClass(TimeSpan? delta) =>
+        delta is null ? "delta-unavailable" : null;
 
     private static string FormatSector(TimeSpan? time) =>
         time is { } sectorTime
@@ -384,15 +385,10 @@ else
             : "—";
 
     /// <summary>
-    /// Colours the gap like the other gaps: green for the leader, red when behind, muted when unknown.
+    /// Leaves the gap uncoloured like the other gaps; only a missing gap is muted.
     /// </summary>
-    private static string GetLeaderGapClass(LeaderGap gap) =>
-        gap.Kind switch
-        {
-            LeaderGapKind.Leader => "delta-best",
-            LeaderGapKind.Time or LeaderGapKind.Laps or LeaderGapKind.Status => "delta-loss",
-            _ => "delta-unavailable"
-        };
+    private static string? GetLeaderGapClass(LeaderGap gap) =>
+        gap.Kind is LeaderGapKind.Leader or LeaderGapKind.Time or LeaderGapKind.Laps or LeaderGapKind.Status ? null : "delta-unavailable";
 
     private static string FormatLeaderGap(LeaderGap gap) =>
         gap.Kind switch

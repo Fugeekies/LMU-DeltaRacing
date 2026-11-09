@@ -11,7 +11,7 @@ Le classement complet d'un événement.
 |---|---|
 | **POS** / **CLASSE** | Position au général / catégorie |
 | **PILOTE** | Nom et, dessous, voiture |
-| **SECTEUR 1, 2, 3** | Meilleur secteur : 🟣 meilleur de la catégorie, 🟡 temps standard ; dessous, l'écart au meilleur |
+| **SECTEUR 1, 2, 3** | Meilleur secteur, en gras s’il est le meilleur de la catégorie ; dessous, l'écart au meilleur |
 | **TOUR IDÉAL** | Somme des trois meilleurs secteurs, et son écart |
 | **MEILLEUR TOUR** | Meilleur tour réel, et son écart |
 | **TEMPS TOTAL** | Temps de course et écart au premier : **LEADER**, un temps, **+1 tour** ou **DNF** |

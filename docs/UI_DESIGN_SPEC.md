@@ -55,6 +55,7 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * 🟢 **Vert (`#22c55e`)** : Amélioration de delta (n-1) et écart nul ou négatif au meilleur temps de la classe. Le vert n'est pas utilisé pour colorer les secteurs.
 * 🟡 **Jaune (`#eab308`)** : Secteur standard (plus lent que le meilleur de la classe).
 * 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps ou régression de delta (n-1).
+* **Exception des tableaux de chronos** (décision du 09/11/2026) : dans les tableaux de « Détail des courses » et d'« Analyse tour par tour », les temps et les écarts restent sans couleur, car le jaune et le violet des secteurs y étaient peu lisibles ; le meilleur temps est en **gras**. Le violet, le vert et le rouge gardent leur sens ailleurs (badges, graphiques, delta n-1 de « Mes courses »).
 
 ---
 
@@ -146,7 +147,7 @@ UISpec/
 
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
-   * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
+   * Meilleurs secteurs personnels (en gras le meilleur de la classe, sans couleur), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
 
 3 bis. **🔬 Analyse tour par tour (`/lap-analysis`)** *(Voir template [`UISpec/LapAnalysis.template.md`](UISpec/LapAnalysis.template.md))*
    * Analyse d'une course pour un pilote : arrêts, régularité, rythme, vitesse de pointe, graphique des temps au tour, relais, consommation et usure, détail des tours.
