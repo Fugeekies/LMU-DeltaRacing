@@ -373,11 +373,13 @@ else
     private static string? GetSectorClass(RaceDetailsSectorResult sector) =>
         sector.Performance == SectorPerformance.ClassBest ? "lap-personal-best" : null;
 
-    /// <summary>
-    /// Leaves gaps uncoloured, as the times they belong to; only a missing gap is muted.
-    /// </summary>
-    private static string? GetDeltaClass(TimeSpan? delta) =>
-        delta is null ? "delta-unavailable" : null;
+    private static string GetDeltaClass(TimeSpan? delta) =>
+        delta switch
+        {
+            { } value when value > TimeSpan.Zero => "delta-loss",
+            { } => "delta-best",
+            _ => "delta-unavailable"
+        };
 
     private static string FormatSector(TimeSpan? time) =>
         time is { } sectorTime
@@ -385,10 +387,15 @@ else
             : "—";
 
     /// <summary>
-    /// Leaves the gap uncoloured like the other gaps; only a missing gap is muted.
+    /// Colours the gap like the other gaps: green for the leader, red when behind, muted when unknown.
     /// </summary>
-    private static string? GetLeaderGapClass(LeaderGap gap) =>
-        gap.Kind is LeaderGapKind.Leader or LeaderGapKind.Time or LeaderGapKind.Laps or LeaderGapKind.Status ? null : "delta-unavailable";
+    private static string GetLeaderGapClass(LeaderGap gap) =>
+        gap.Kind switch
+        {
+            LeaderGapKind.Leader => "delta-best",
+            LeaderGapKind.Time or LeaderGapKind.Laps or LeaderGapKind.Status => "delta-loss",
+            _ => "delta-unavailable"
+        };
 
     private static string FormatLeaderGap(LeaderGap gap) =>
         gap.Kind switch

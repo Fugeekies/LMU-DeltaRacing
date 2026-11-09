@@ -55,7 +55,7 @@ Ces règles de coloration doivent obligatoirement s'appliquer aux chronos, aux s
 * 🟢 **Vert (`#22c55e`)** : Amélioration de delta (n-1) et écart nul ou négatif au meilleur temps de la classe. Le vert n'est pas utilisé pour colorer les secteurs.
 * 🟡 **Jaune (`#eab308`)** : Secteur standard (plus lent que le meilleur de la classe).
 * 🔴 **Rouge (`#ef4444`)** : Secteur en retard / perte de temps ou régression de delta (n-1).
-* **Exception des tableaux de chronos** (décision du 09/11/2026) : dans les tableaux de « Détail des courses » et d'« Analyse tour par tour », les temps et les écarts restent sans couleur, car le jaune et le violet des secteurs y étaient peu lisibles ; le meilleur temps est en **gras**. Le violet, le vert et le rouge gardent leur sens ailleurs (badges, graphiques, delta n-1 de « Mes courses »).
+* **Exception des tableaux de chronos** (décision du 09/11/2026) : les temps des secteurs de « Détail des courses » et les temps et écarts des tableaux d'« Analyse tour par tour » restent sans couleur, car le jaune et le violet des secteurs y étaient peu lisibles ; le meilleur temps est en **gras**. Les écarts de « Détail des courses » gardent le vert et le rouge. Le violet, le vert et le rouge gardent leur sens ailleurs (badges, graphiques, delta n-1 de « Mes courses »).
 
 ---
 

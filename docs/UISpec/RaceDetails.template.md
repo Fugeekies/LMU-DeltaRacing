@@ -37,7 +37,8 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
     3. sinon : temps total du pilote − temps total du leader (`FinishTime`), par exemple `+12.500s` ;
     4. donnée manquante : `—`.
   * En qualification : meilleur tour du pilote − meilleur tour de la classe.
-* **Chronos sans couleur** (décision du 09/11/2026 : le jaune et le violet des secteurs étaient peu lisibles) : temps et écarts du tableau restent en blanc. Le meilleur secteur de la classe est en **gras**. Secteur absent : `—` ; écart absent en gris (`—`).
+* **Secteurs sans couleur** (décision du 09/11/2026 : le jaune et le violet des secteurs étaient peu lisibles) : les temps des secteurs restent en blanc, le meilleur secteur de la classe en **gras**. Secteur absent : `—`.
+* **Couleurs des deltas :** delta ≤ 0 en vert, delta > 0 en rouge, valeur absente en gris (`—`).
 * **Structure du tableau** (11 colonnes) : hormis POS et CLASSE, sur une ligne, chaque cellule **empile** une valeur principale et, en petit dessous, son complément ou son écart. L'en-tête de chaque colonne indique les deux lignes (par exemple « SECTEUR 1 / ÉCART »).
 
   | Colonne | Ligne principale | Ligne secondaire |
@@ -48,7 +49,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   | SECTEUR 1 / 2 / 3 / ÉCART | Meilleur secteur personnel, en gras s'il est le meilleur de la classe (`38.120s`) | Écart au meilleur secteur de la classe (`+0.130s` / `0.000s`) |
   | TOUR IDÉAL / ÉCART | Somme des meilleurs secteurs (`m:ss.fff`) | Écart au meilleur tour idéal de la classe (`+2.309s`) |
   | MEILLEUR TOUR / ÉCART | Meilleur tour du pilote (`m:ss.fff`) | Écart au meilleur tour de la classe (`+0.469s`) |
-  | TEMPS TOTAL / ÉCART AU 1ER | En course : temps total du pilote (`FinishTime`, `h:mm:ss.fff` si ≥ 1 h sinon `m:ss.fff`) ; `—` en qualification, pour un pilote DNF/DQ ou sans temps | Écart au leader de la classe : `LEADER`, `+12.500s`, `+1 tour`, `DNF` (sans couleur) |
+  | TEMPS TOTAL / ÉCART AU 1ER | En course : temps total du pilote (`FinishTime`, `h:mm:ss.fff` si ≥ 1 h sinon `m:ss.fff`) ; `—` en qualification, pour un pilote DNF/DQ ou sans temps | Écart au leader de la classe : `LEADER` (vert), `+12.500s`, `+1 tour`, `DNF` (rouge) |
   | CONTACTS / OBSTACLES | Contacts avec une voiture | Contacts avec un obstacle. Les deux lignes forment un bouton qui ouvre les incidents du pilote |
   | LIMITES / TOURS INVALIDÉS | Avertissements de limites de piste | Tours invalidés |
 
