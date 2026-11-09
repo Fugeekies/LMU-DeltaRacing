@@ -6,6 +6,7 @@
     var hasEnergy = Analysis.Laps.Any(lap => lap.Telemetry.VirtualEnergy.HasValue);
     var hasTyres = Analysis.Laps.Any(lap => lap.Telemetry.TyreWear is not null);
     var personalBests = Analysis.Sectors.ToDictionary(sector => sector.Number, sector => sector.Best);
+    var classBests = Analysis.Sectors.ToDictionary(sector => sector.Number, sector => sector.ClassBest);
     var largestGap = Analysis.Sectors.Max(sector => sector.GapToClassPace is { } gap && gap > TimeSpan.Zero ? gap.TotalSeconds : 0);
 }
 
@@ -77,8 +78,8 @@
                     <tr class="@(sector.Number == Analysis.WeakestSector ? "sector-weakest" : null)">
                         <th scope="row">@T["LapAnalysis.SectorShort", sector.Number]</th>
                         <td class="numeric-cell stacked-cell">
-                            <span class="@(sector.IsClassBest ? "lap-personal-best" : null)">@FormatSeconds(sector.Best)</span>
-                            <span class="cell-sub">@DisplayFormat.Delta(sector.Best - sector.ClassBest)</span>
+                            <span class="sector-time @(sector.IsClassBest ? "sector-class-best" : "sector-standard")">@FormatSeconds(sector.Best)</span>
+                            <span class="cell-sub delta-time @DeltaClass(sector.Best - sector.ClassBest)">@DisplayFormat.Delta(sector.Best - sector.ClassBest)</span>
                         </td>
                         <td class="numeric-cell stacked-cell">
                             <span>@FormatSeconds(sector.Pace)</span>
@@ -90,7 +91,7 @@
                                 <span class="sector-loss-bar">
                                     <i class="@(gap > TimeSpan.Zero ? "is-loss" : "is-best")" style="width: @BarWidth(gap, largestGap)"></i>
                                 </span>
-                                <span>@DisplayFormat.Delta(gap)</span>
+                                <span class="delta-time @DeltaClass(gap)">@DisplayFormat.Delta(gap)</span>
                             </div>
                         </td>
                     </tr>
@@ -216,7 +217,7 @@
                         @for (var number = 1; number <= 3; number++)
                         {
                             var time = lap.SectorTime(number);
-                            <td class="numeric-cell"><span class="@SectorClass(time, lap.Time.HasValue, personalBests[number])">@FormatSeconds(time)</span></td>
+                            <td class="numeric-cell"><span class="@SectorClass(time, lap.Time.HasValue, personalBests[number], classBests[number])">@FormatSeconds(time)</span></td>
                         }
                         <td class="numeric-cell">@(lap.Position is { } position ? $"P{position}" : DisplayFormat.Missing)</td>
                         <td class="numeric-cell">@DisplayFormat.Speed(lap.Telemetry.TopSpeed)</td>
@@ -328,11 +329,22 @@
     public LapAnalysis? Player { get; set; }
 
     /// <summary>
-    /// Marks the best sector of the driver in bold, without colour: coloured times are hard to read
-    /// in the tables. Sectors of untimed laps are not compared, as in the race details.
+    /// Colours a sector of the lap table as in WEC timing: purple for the best of the class, bold
+    /// for the best of the driver. Sectors of untimed laps are not compared, as in the race details.
     /// </summary>
-    private static string? SectorClass(TimeSpan? time, bool isTimed, TimeSpan? personalBest) =>
-        time is not null && isTimed && time == personalBest ? "lap-personal-best" : null;
+    private static string? SectorClass(TimeSpan? time, bool isTimed, TimeSpan? personalBest, TimeSpan? classBest) =>
+        time is null || !isTimed ? null
+        : time == classBest ? "sector-time sector-class-best"
+        : time == personalBest ? "lap-personal-best"
+        : null;
+
+    private static string DeltaClass(TimeSpan? delta) =>
+        delta switch
+        {
+            { } value when value > TimeSpan.Zero => "delta-loss",
+            { } => "delta-best",
+            _ => "delta-unavailable"
+        };
 
     /// <summary>
     /// Gives the loss bar its share of the largest loss, so that the sector costing the most fills it.

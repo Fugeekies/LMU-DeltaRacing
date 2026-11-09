@@ -80,7 +80,7 @@ Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lig
 ### 5 bis. Graphique tour par tour (Analyse tour par tour)
 * Mêmes traits que le déroulé de la course : pilote suivi en blanc (`#f0f6fc`), pilote sélectionné en rouge LMU (`#e11d48`), passages par la voie des stands en pointillés gris.
 * Rythme du pilote suivi : tirets cyan clair (`#67e8f9`), pour ne pas reprendre le vert WEC du gain. Tours non représentatifs : points creux gris ; tours `pit="1"` : points creux jaunes (`#eab308`). Un temps hors échelle a un contour pointillé.
-* **Secteur par secteur :** barre du temps perdu en rouge WEC (`#ef4444`, perte), ligne du secteur qui coûte le plus teintée de rouge à 8 %. Les temps et les écarts des tableaux de la page Analyse tour par tour (secteurs, tours, comparaison des sessions) restent sans couleur, le meilleur temps en gras : le jaune et le violet des chronos y sont peu lisibles (décision du 09/11/2026).
+* **Secteur par secteur :** barre du temps perdu en rouge WEC (`#ef4444`, perte), ligne du secteur qui coûte le plus teintée de rouge à 8 %. Secteurs du tableau des tours : violet pour le meilleur de la classe, gras pour le meilleur du pilote (le vert n'est pas utilisé pour les secteurs).
 
 ### 6. Écran de chargement au démarrage
 * Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».

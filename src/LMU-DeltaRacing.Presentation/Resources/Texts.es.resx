@@ -1847,7 +1847,7 @@
     <value>S{0}</value>
   </data>
   <data name="LapAnalysis.SectorNote" xml:space="preserve">
-    <value>Mejor: en las vueltas cronometradas, en negrita si es el mejor de la clase. Ritmo y regularidad: mediana y desviación típica del sector en las vueltas representativas. Referencia: la mejor mediana de la clase en este sector; la diferencia con ella es el tiempo perdido por vuelta.</value>
+    <value>Mejor: en las vueltas cronometradas, en violeta si es el mejor de la clase. Ritmo y regularidad: mediana y desviación típica del sector en las vueltas representativas. Referencia: la mejor mediana de la clase en este sector; la diferencia con ella es el tiempo perdido por vuelta.</value>
   </data>
   <data name="LapAnalysis.LapTimes" xml:space="preserve">
     <value>Vuelta a vuelta</value>
@@ -1859,7 +1859,7 @@
     <value>Ningún tiempo cronometrado para esta medida.</value>
   </data>
   <data name="LapAnalysis.LapsNote" xml:space="preserve">
-    <value>En negrita: mejor tiempo del piloto. Las vueltas no representativas aparecen en gris.</value>
+    <value>Sectores en violeta: mejores de la clase; en negrita: mejor tiempo del piloto. Las vueltas no representativas aparecen en gris.</value>
   </data>
   <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
     <value>Stints y consumo</value>

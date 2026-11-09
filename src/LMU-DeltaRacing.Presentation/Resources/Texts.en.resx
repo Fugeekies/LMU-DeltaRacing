@@ -1847,7 +1847,7 @@
     <value>S{0}</value>
   </data>
   <data name="LapAnalysis.SectorNote" xml:space="preserve">
-    <value>Best: on timed laps, in bold when it is the best of the class. Pace and consistency: median and standard deviation of the sector on the representative laps. Reference: the best median of the class in this sector; the gap to it is the time lost per lap.</value>
+    <value>Best: on timed laps, in purple when it is the best of the class. Pace and consistency: median and standard deviation of the sector on the representative laps. Reference: the best median of the class in this sector; the gap to it is the time lost per lap.</value>
   </data>
   <data name="LapAnalysis.LapTimes" xml:space="preserve">
     <value>Lap by lap</value>
@@ -1859,7 +1859,7 @@
     <value>No timed value for this measure.</value>
   </data>
   <data name="LapAnalysis.LapsNote" xml:space="preserve">
-    <value>Bold: best time of the driver. Non-representative laps are greyed out.</value>
+    <value>Purple sectors: best of the class; bold: best time of the driver. Non-representative laps are greyed out.</value>
   </data>
   <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
     <value>Stints and consumption</value>

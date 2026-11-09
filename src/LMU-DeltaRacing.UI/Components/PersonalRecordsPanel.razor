@@ -79,7 +79,7 @@
                                     <span class="record-badge" title="@T["Comparison.LapRecordTitle"]">@T["Comparison.Record"]</span>
                                 }
                             </span>
-                            <span class="cell-sub">@DisplayFormat.Delta(row.GapToRecord)</span>
+                            <span class="cell-sub delta-time @(row.GapToRecord == TimeSpan.Zero ? "delta-best" : "delta-loss")">@DisplayFormat.Delta(row.GapToRecord)</span>
                         </td>
                         <td class="numeric-cell">@DisplayFormat.Lap(row.Pace)</td>
                         <td class="numeric-cell">@DisplayFormat.Deviation(row.Deviation)</td>
