@@ -50,12 +50,16 @@ public static class LapAnalysisPresentation
                 lap.IsPitLap,
                 representative.Contains(lap.Number),
                 stintNumbers[lap.Number],
-                lap.Telemetry))
+                lap.Telemetry,
+                lap.Sectors))
             .ToArray();
 
         var classDrivers = session.Drivers
             .Where(other => string.Equals(other.CarClass.Trim(), driver.CarClass.Trim(), StringComparison.OrdinalIgnoreCase))
             .ToArray();
+
+        var sectors = CreateSectors(laps, representative, classDrivers);
+        var weakest = sectors.Where(sector => sector.GapToClassPace > TimeSpan.Zero).MaxBy(sector => sector.GapToClassPace);
 
         return new LapAnalysis(
             driver.Name,
@@ -64,7 +68,11 @@ public static class LapAnalysisPresentation
             CreateTopSpeed(laps, classDrivers),
             CreateStints(analysisLaps),
             CreateConsumption(analysisLaps),
-            analysisLaps);
+            analysisLaps,
+            sectors,
+            sectors.Count == 3 && sectors.All(sector => sector.Best.HasValue) ? sectors.Aggregate(TimeSpan.Zero, (total, sector) => total + sector.Best!.Value) : null,
+            driver.BestLap,
+            weakest?.Number);
     }
 
     /// <summary>
@@ -172,6 +180,53 @@ public static class LapAnalysisPresentation
 
         return stints;
     }
+
+    /// <summary>
+    /// Analyses the three sectors. Bests come from every timed lap, as in the race details; paces and
+    /// deviations from the representative laps only. The class pace of a sector is the best median
+    /// of that sector among the drivers of the class: the gap to it shows where the time is lost.
+    /// </summary>
+    private static IReadOnlyList<LapSectorAnalysis> CreateSectors(
+        IReadOnlyList<Lap> laps,
+        HashSet<int> representative,
+        IReadOnlyList<Driver> classDrivers)
+    {
+        var classLaps = classDrivers
+            .Select(other =>
+            {
+                var ordered = other.Laps.OrderBy(lap => lap.Number).ToArray();
+                var kept = FindRepresentativeLaps(ordered);
+                return (Timed: ordered.Where(lap => lap.Time.HasValue).ToArray(), Representative: ordered.Where(lap => kept.Contains(lap.Number)).ToArray());
+            })
+            .ToArray();
+
+        return Enumerable.Range(1, 3)
+            .Select(number =>
+            {
+                var paceTimes = SectorTimes(laps.Where(lap => representative.Contains(lap.Number)), number);
+                var pace = Median(paceTimes);
+                var classPace = Minimum(classLaps.Select(other => Median(SectorTimes(other.Representative, number))).OfType<TimeSpan>());
+                var classBest = Minimum(classLaps.SelectMany(other => SectorTimes(other.Timed, number)));
+                return new LapSectorAnalysis(
+                    number,
+                    Minimum(SectorTimes(laps.Where(lap => lap.Time.HasValue), number)),
+                    classBest,
+                    pace,
+                    Deviation(paceTimes),
+                    classPace,
+                    pace - classPace);
+            })
+            .ToArray();
+    }
+
+    private static TimeSpan? Minimum(IEnumerable<TimeSpan> times)
+    {
+        var values = times.ToArray();
+        return values.Length == 0 ? null : values.Min();
+    }
+
+    private static TimeSpan[] SectorTimes(IEnumerable<Lap> laps, int number) =>
+        laps.SelectMany(lap => lap.Sectors.Where(sector => sector.Number == number).Select(sector => sector.Time)).ToArray();
 
     private static LapRegularity? CreateRegularity(
         Driver driver,
@@ -384,6 +439,10 @@ public static class LapAnalysisPresentation
 /// <param name="Stints">The stints, in order.</param>
 /// <param name="Consumption">The fuel, energy and tyre use per lap, when the server shares them.</param>
 /// <param name="Laps">The laps, in order.</param>
+/// <param name="Sectors">The analysis of the three sectors, in order.</param>
+/// <param name="IdealLap">The sum of the best sectors, when the three are known.</param>
+/// <param name="BestLap">The best timed lap of the driver.</param>
+/// <param name="WeakestSector">The sector with the largest gap to the class pace, when one is behind it.</param>
 public sealed record LapAnalysis(
     string DriverName,
     int? PitStops,
@@ -391,7 +450,36 @@ public sealed record LapAnalysis(
     LapTopSpeed? TopSpeed,
     IReadOnlyList<LapStint> Stints,
     LapConsumption? Consumption,
-    IReadOnlyList<LapAnalysisLap> Laps);
+    IReadOnlyList<LapAnalysisLap> Laps,
+    IReadOnlyList<LapSectorAnalysis> Sectors,
+    TimeSpan? IdealLap,
+    TimeSpan? BestLap,
+    int? WeakestSector);
+
+/// <summary>
+/// One sector of a driver in a race, compared with their class.
+/// </summary>
+/// <param name="Number">The sector number, from 1 to 3.</param>
+/// <param name="Best">The best time of the driver in this sector, on timed laps.</param>
+/// <param name="ClassBest">The best time of the class in this sector, on timed laps.</param>
+/// <param name="Pace">The median of the sector on the representative laps of the driver.</param>
+/// <param name="Deviation">The standard deviation of the sector on the representative laps, from three laps.</param>
+/// <param name="ClassPace">The best sector median among the drivers of the class.</param>
+/// <param name="GapToClassPace">The pace of the driver minus the class pace: the time lost per lap.</param>
+public sealed record LapSectorAnalysis(
+    int Number,
+    TimeSpan? Best,
+    TimeSpan? ClassBest,
+    TimeSpan? Pace,
+    TimeSpan? Deviation,
+    TimeSpan? ClassPace,
+    TimeSpan? GapToClassPace)
+{
+    /// <summary>
+    /// Gets whether the best time of the driver is the best of the class in this sector.
+    /// </summary>
+    public bool IsClassBest => Best.HasValue && Best == ClassBest;
+}
 
 /// <summary>
 /// One lap of a lap by lap analysis.
@@ -403,6 +491,7 @@ public sealed record LapAnalysis(
 /// <param name="IsRepresentative">Whether the lap counts for the pace and the regularity.</param>
 /// <param name="Stint">The number of the stint of the lap, from 1.</param>
 /// <param name="Telemetry">What LMU measured during the lap.</param>
+/// <param name="Sectors">The sector times of the lap; a sector may be missing.</param>
 public sealed record LapAnalysisLap(
     int Number,
     TimeSpan? Time,
@@ -410,7 +499,15 @@ public sealed record LapAnalysisLap(
     bool IsPit,
     bool IsRepresentative,
     int Stint,
-    LapTelemetry Telemetry);
+    LapTelemetry Telemetry,
+    IReadOnlyList<Sector> Sectors)
+{
+    /// <summary>
+    /// Returns the time of a sector of the lap, when known.
+    /// </summary>
+    /// <param name="number">The sector number, from 1 to 3.</param>
+    public TimeSpan? SectorTime(int number) => Sectors.FirstOrDefault(sector => sector.Number == number)?.Time;
+}
 
 /// <summary>
 /// How regular the laps of a driver are, compared with the drivers of their class.

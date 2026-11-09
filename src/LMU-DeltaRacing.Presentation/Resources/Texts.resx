@@ -1634,9 +1634,6 @@
   <data name="LapAnalysis.Label" xml:space="preserve">
     <value>Analyse tour par tour</value>
   </data>
-  <data name="LapAnalysis.Title" xml:space="preserve">
-    <value>Analyse tour par tour de {0}</value>
-  </data>
   <data name="LapAnalysis.PitStops" xml:space="preserve">
     <value>Arrêts au stand</value>
   </data>
@@ -1648,9 +1645,6 @@
   </data>
   <data name="LapAnalysis.Pace" xml:space="preserve">
     <value>Rythme</value>
-  </data>
-  <data name="LapAnalysis.GapToBest" xml:space="preserve">
-    <value>Écart moyen au meilleur tour</value>
   </data>
   <data name="LapAnalysis.TopSpeed" xml:space="preserve">
     <value>Vitesse de pointe</value>
@@ -1685,9 +1679,6 @@
   <data name="LapAnalysis.ScaleNote" xml:space="preserve">
     <value>Les tours plus lents que 112 % du rythme sont dessinés en haut du graphique.</value>
   </data>
-  <data name="LapAnalysis.Stints" xml:space="preserve">
-    <value>Relais</value>
-  </data>
   <data name="LapAnalysis.StintColumn" xml:space="preserve">
     <value>Relais</value>
   </data>
@@ -1721,12 +1712,6 @@
   <data name="LapAnalysis.StintNote" xml:space="preserve">
     <value>Un relais se termine au premier tour de chaque passage par la voie des stands (arrêt ou drive-through). Un départ depuis la voie des stands n’en termine pas.</value>
   </data>
-  <data name="LapAnalysis.Consumption" xml:space="preserve">
-    <value>Consommation et usure</value>
-  </data>
-  <data name="LapAnalysis.Fuel" xml:space="preserve">
-    <value>Carburant : {0} du réservoir par tour, soit {1} tours avec un plein.</value>
-  </data>
   <data name="LapAnalysis.Energy" xml:space="preserve">
     <value>Énergie virtuelle : {0} par tour, soit {1} tours avec une charge complète.</value>
   </data>
@@ -1738,12 +1723,6 @@
   </data>
   <data name="LapAnalysis.NoConsumption" xml:space="preserve">
     <value>Carburant, énergie et usure des pneus non partagés par le serveur de cette course.</value>
-  </data>
-  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
-    <value>Afficher le détail des tours</value>
-  </data>
-  <data name="LapAnalysis.HideLaps" xml:space="preserve">
-    <value>Masquer le détail des tours</value>
   </data>
   <data name="LapAnalysis.LapColumn" xml:space="preserve">
     <value>Tour</value>
@@ -1809,7 +1788,7 @@
     <value>Analyse tour par tour</value>
   </data>
   <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
-    <value>Régularité, relais, consommation et usure d’un pilote dans une course, puis vos records et vos sessions sur ce circuit.</value>
+    <value>Une course secteur par secteur et tour par tour : rythme, régularité, temps perdu par secteur, relais et consommation, puis vos records et vos sessions sur ce circuit.</value>
   </data>
   <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
     <value>Aucune course à analyser</value>
@@ -1828,5 +1807,68 @@
   </data>
   <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
     <value>Analyse tour par tour de {0} →</value>
+  </data>
+  <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
+    <value>meilleur tour {0}</value>
+  </data>
+  <data name="LapAnalysis.IdealLap" xml:space="preserve">
+    <value>Tour idéal</value>
+  </data>
+  <data name="LapAnalysis.IdealGap" xml:space="preserve">
+    <value>{0} de marge sur le meilleur tour</value>
+  </data>
+  <data name="LapAnalysis.StintCount.One" xml:space="preserve">
+    <value>{0} relais</value>
+  </data>
+  <data name="LapAnalysis.StintCount.Other" xml:space="preserve">
+    <value>{0} relais</value>
+  </data>
+  <data name="LapAnalysis.LapsPerTank" xml:space="preserve">
+    <value>{0} tours avec un plein</value>
+  </data>
+  <data name="LapAnalysis.Sectors" xml:space="preserve">
+    <value>Secteur par secteur</value>
+  </data>
+  <data name="LapAnalysis.WeakestSector" xml:space="preserve">
+    <value>Le secteur {0} coûte le plus de temps : {1} par tour sur le meilleur rythme de la classe.</value>
+  </data>
+  <data name="LapAnalysis.NoSectorLoss" xml:space="preserve">
+    <value>Meilleur rythme de la classe dans chaque secteur.</value>
+  </data>
+  <data name="LapAnalysis.SectorColumn" xml:space="preserve">
+    <value>Secteur</value>
+  </data>
+  <data name="LapAnalysis.ClassBestGap" xml:space="preserve">
+    <value>Écart au meilleur de la classe</value>
+  </data>
+  <data name="LapAnalysis.ClassPace" xml:space="preserve">
+    <value>Référence de la classe</value>
+  </data>
+  <data name="LapAnalysis.TimeLost" xml:space="preserve">
+    <value>Temps perdu par tour</value>
+  </data>
+  <data name="LapAnalysis.SectorShort" xml:space="preserve">
+    <value>S{0}</value>
+  </data>
+  <data name="LapAnalysis.SectorNote" xml:space="preserve">
+    <value>Meilleur : sur les tours chronométrés, en violet s’il est le meilleur de la classe. Rythme et régularité : médiane et écart-type du secteur sur les tours représentatifs. Référence : la meilleure médiane de la classe dans ce secteur ; l’écart à cette référence est le temps perdu par tour.</value>
+  </data>
+  <data name="LapAnalysis.LapTimes" xml:space="preserve">
+    <value>Tour par tour</value>
+  </data>
+  <data name="LapAnalysis.MeasureLabel" xml:space="preserve">
+    <value>Choisir le temps tracé : tour ou secteur</value>
+  </data>
+  <data name="LapAnalysis.NoChart" xml:space="preserve">
+    <value>Aucun temps chronométré pour cette mesure.</value>
+  </data>
+  <data name="LapAnalysis.LapsNote" xml:space="preserve">
+    <value>Secteurs en violet : meilleur de la classe ; en gras : meilleur temps du pilote. Les tours non représentatifs sont grisés.</value>
+  </data>
+  <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
+    <value>Relais et consommation</value>
+  </data>
+  <data name="LapAnalysis.Best" xml:space="preserve">
+    <value>Meilleur</value>
   </data>
 </root>

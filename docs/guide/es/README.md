@@ -21,7 +21,7 @@ La barra superior agrupa las páginas en menús: **Carreras** (Mis carreras, Det
 | [Inicio](home.md) | Tu carrera de un vistazo |
 | [Mis carreras](my-races.md) | Tu historial, circuito por circuito |
 | [Detalle de carreras](race-details.md) | La clasificación completa de un evento, sector por sector |
-| [Análisis vuelta a vuelta](lap-analysis.md) | Regularidad, stints y consumo de un piloto en una carrera |
+| [Análisis vuelta a vuelta](lap-analysis.md) | Una carrera sector a sector y vuelta a vuelta: regularidad, stints, consumo |
 | [Progresión](progression.md) | La evolución de tus mejores vueltas en un circuito |
 | [Perfil de conducción](driving-profile.md) | Tus contactos, límites de pista y penalizaciones |
 | [Rating de piloto](driver-rating.md) | Tu nivel, medido con un rating Elo |

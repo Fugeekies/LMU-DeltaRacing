@@ -1,37 +1,131 @@
 @using LMU_DeltaRacing.UI.Models
 
 @{
-    var chart = LapTimesChartLayout.Create(Analysis, Player);
+    var chart = LapTimesChartLayout.Create(Analysis, Player, measure);
     var hasFuel = Analysis.Laps.Any(lap => lap.Telemetry.Fuel.HasValue);
     var hasEnergy = Analysis.Laps.Any(lap => lap.Telemetry.VirtualEnergy.HasValue);
     var hasTyres = Analysis.Laps.Any(lap => lap.Telemetry.TyreWear is not null);
+    var personalBests = Analysis.Sectors.ToDictionary(sector => sector.Number, sector => sector.Best);
+    var classBests = Analysis.Sectors.ToDictionary(sector => sector.Number, sector => sector.ClassBest);
+    var largestGap = Analysis.Sectors.Max(sector => sector.GapToClassPace is { } gap && gap > TimeSpan.Zero ? gap.TotalSeconds : 0);
 }
 
 <section class="lap-analysis" aria-label="@T["LapAnalysis.Label"]">
-    <div class="incident-panel-heading">
-        <h3>@T["LapAnalysis.Title", Analysis.DriverName]</h3>
-    </div>
-
-    <div class="story-summary">
-        <span>@T["LapAnalysis.PitStops"] <strong>@(Analysis.PitStops?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing)</strong></span>
-        @if (Analysis.Regularity is { } regularity)
+    <div class="analysis-tiles">
+        <article class="summary-card">
+            <span class="summary-label">@T["LapAnalysis.Pace"]</span>
+            <strong class="summary-value">@DisplayFormat.Lap(Analysis.Regularity?.Pace)</strong>
+            <span class="summary-detail">@T["LapAnalysis.BestLapDetail", DisplayFormat.Lap(Analysis.BestLap)]</span>
+        </article>
+        <article class="summary-card">
+            <span class="summary-label">@T["LapAnalysis.Regularity"]</span>
+            <strong class="summary-value">@DisplayFormat.Deviation(Analysis.Regularity?.Deviation)</strong>
+            <span class="summary-detail">
+                @(Analysis.Regularity is { } regularity
+                    ? T["LapAnalysis.RegularityRank", regularity.ClassRank, regularity.ClassDrivers]
+                    : T["LapAnalysis.NoRegularity"])
+            </span>
+        </article>
+        <article class="summary-card">
+            <span class="summary-label">@T["LapAnalysis.IdealLap"]</span>
+            <strong class="summary-value">@DisplayFormat.Lap(Analysis.IdealLap)</strong>
+            <span class="summary-detail">@T["LapAnalysis.IdealGap", FormatSeconds(Analysis.BestLap - Analysis.IdealLap)]</span>
+        </article>
+        <article class="summary-card">
+            <span class="summary-label">@T["LapAnalysis.TopSpeed"]</span>
+            <strong class="summary-value">@DisplayFormat.Speed(Analysis.TopSpeed?.Speed)</strong>
+            <span class="summary-detail">@T["LapAnalysis.ClassTopSpeed", DisplayFormat.Speed(Analysis.TopSpeed?.ClassBest)]</span>
+        </article>
+        <article class="summary-card">
+            <span class="summary-label">@T["LapAnalysis.PitStops"]</span>
+            <strong class="summary-value">@(Analysis.PitStops?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing)</strong>
+            <span class="summary-detail">@Texts.Plural("LapAnalysis.StintCount", Analysis.Stints.Count)</span>
+        </article>
+        @if (Analysis.Consumption?.FuelPerLap is { } fuel)
         {
-            <span>@T["LapAnalysis.Regularity"] <strong>@DisplayFormat.Deviation(regularity.Deviation)</strong> (@T["LapAnalysis.RegularityRank", regularity.ClassRank, regularity.ClassDrivers])</span>
-            <span>@T["LapAnalysis.Pace"] <strong>@DisplayFormat.Lap(regularity.Pace)</strong></span>
-            <span>@T["LapAnalysis.GapToBest"] <strong>@DisplayFormat.Delta(regularity.AverageGapToBest)</strong></span>
-        }
-        @if (Analysis.TopSpeed is { } topSpeed)
-        {
-            <span>@T["LapAnalysis.TopSpeed"] <strong>@DisplayFormat.Speed(topSpeed.Speed)</strong> (@T["LapAnalysis.ClassTopSpeed", DisplayFormat.Speed(topSpeed.ClassBest)])</span>
+            <article class="summary-card">
+                <span class="summary-label">@T["LapAnalysis.FuelPerLap"]</span>
+                <strong class="summary-value">@DisplayFormat.Percent(fuel)</strong>
+                <span class="summary-detail">@T["LapAnalysis.LapsPerTank", DisplayFormat.Average(Analysis.Consumption.LapsPerTank)]</span>
+            </article>
         }
     </div>
     <p class="lap-analysis-note">
-        @(Analysis.Regularity is { } counted
-            ? T["LapAnalysis.RegularityNote", counted.Laps, counted.ExcludedLaps]
-            : T["LapAnalysis.NoRegularity"])
+        @(Analysis.Regularity is { } counted ? T["LapAnalysis.RegularityNote", counted.Laps, counted.ExcludedLaps] : string.Empty)
     </p>
 
-    @if (chart is not null)
+    <h3 class="lap-analysis-heading">@T["LapAnalysis.Sectors"]</h3>
+    <p class="lap-analysis-lead">
+        @(Analysis.WeakestSector is { } weakest
+            ? T["LapAnalysis.WeakestSector", weakest, FormatSeconds(Analysis.Sectors[weakest - 1].GapToClassPace)]
+            : T["LapAnalysis.NoSectorLoss"])
+    </p>
+    <div class="table-scroll">
+        <table class="data-table lap-analysis-table sector-analysis-table" data-resizable-columns>
+            <thead>
+                <tr>
+                    <th scope="col">@T["LapAnalysis.SectorColumn"]</th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.Best"] <span class="th-sub">@T["LapAnalysis.ClassBestGap"]</span></th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.Pace"] <span class="th-sub">@T["LapAnalysis.ClassPace"]</span></th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.Regularity"]</th>
+                    <th scope="col">@T["LapAnalysis.TimeLost"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var sector in Analysis.Sectors)
+                {
+                    var gap = sector.GapToClassPace;
+                    <tr class="@(sector.Number == Analysis.WeakestSector ? "sector-weakest" : null)">
+                        <th scope="row">@T["LapAnalysis.SectorShort", sector.Number]</th>
+                        <td class="numeric-cell stacked-cell">
+                            <span class="sector-time @(sector.IsClassBest ? "sector-class-best" : "sector-standard")">@FormatSeconds(sector.Best)</span>
+                            <span class="cell-sub delta-time @DeltaClass(sector.Best - sector.ClassBest)">@DisplayFormat.Delta(sector.Best - sector.ClassBest)</span>
+                        </td>
+                        <td class="numeric-cell stacked-cell">
+                            <span>@FormatSeconds(sector.Pace)</span>
+                            <span class="cell-sub">@FormatSeconds(sector.ClassPace)</span>
+                        </td>
+                        <td class="numeric-cell">@DisplayFormat.Deviation(sector.Deviation)</td>
+                        <td>
+                            <div class="sector-loss">
+                                <span class="sector-loss-bar">
+                                    <i class="@(gap > TimeSpan.Zero ? "is-loss" : "is-best")" style="width: @BarWidth(gap, largestGap)"></i>
+                                </span>
+                                <span class="delta-time @DeltaClass(gap)">@DisplayFormat.Delta(gap)</span>
+                            </div>
+                        </td>
+                    </tr>
+                }
+                <tr class="sector-total">
+                    <th scope="row">@T["LapAnalysis.LapColumn"]</th>
+                    <td class="numeric-cell stacked-cell">
+                        <span class="lap-time">@DisplayFormat.Lap(Analysis.BestLap)</span>
+                        <span class="cell-sub">@T["LapAnalysis.IdealLap"] @DisplayFormat.Lap(Analysis.IdealLap)</span>
+                    </td>
+                    <td class="numeric-cell">@DisplayFormat.Lap(Analysis.Regularity?.Pace)</td>
+                    <td class="numeric-cell">@DisplayFormat.Deviation(Analysis.Regularity?.Deviation)</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="lap-analysis-note">@T["LapAnalysis.SectorNote"]</p>
+
+    <div class="lap-analysis-chart-heading">
+        <h3 class="lap-analysis-heading">@T["LapAnalysis.LapTimes"]</h3>
+        <div class="segmented" role="group" aria-label="@T["LapAnalysis.MeasureLabel"]">
+            @foreach (var option in new int?[] { null, 1, 2, 3 })
+            {
+                <button type="button" class="@(measure == option ? "is-active" : null)" aria-pressed="@(measure == option ? "true" : "false")"
+                        @onclick="() => measure = option">@(option is { } number ? T["LapAnalysis.SectorShort", number] : T["LapAnalysis.LapColumn"])</button>
+            }
+        </div>
+    </div>
+    @if (chart is null)
+    {
+        <p class="incident-empty">@T["LapAnalysis.NoChart"]</p>
+    }
+    else
     {
         <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="@T["LapAnalysis.ChartLabel", Analysis.DriverName]">
             @foreach (var tick in chart.TimeTicks)
@@ -80,12 +174,75 @@
             }
             <span><i class="race-line-swatch lap-pace-swatch" aria-hidden="true"></i>@T["LapAnalysis.PaceLine"]</span>
             <span><i class="story-swatch lap-swatch-slow" aria-hidden="true"></i>@T["LapAnalysis.SlowLegend"]</span>
+            <span><i class="story-swatch lap-swatch-off" aria-hidden="true"></i>@T["LapAnalysis.ScaleNote"]</span>
             <span><i class="story-swatch story-pit-swatch" aria-hidden="true"></i>@T["LapAnalysis.PitLegend"]</span>
-            <span>@T["LapAnalysis.ScaleNote"]</span>
         </div>
     }
 
-    <h4 class="lap-analysis-heading">@T["LapAnalysis.Stints"]</h4>
+    <h3 class="lap-analysis-heading">@T["LapAnalysis.StintLaps"]</h3>
+    <div class="table-scroll lap-analysis-laps">
+        <table class="data-table lap-analysis-table" data-resizable-columns>
+            <thead>
+                <tr>
+                    <th scope="col">@T["LapAnalysis.LapColumn"]</th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.TimeColumn"]</th>
+                    @for (var number = 1; number <= 3; number++)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.SectorShort", number]</th>
+                    }
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.PositionColumn"]</th>
+                    <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
+                    @if (hasFuel)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.FuelColumn"]</th>
+                    }
+                    @if (hasEnergy)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.EnergyColumn"]</th>
+                    }
+                    @if (hasTyres)
+                    {
+                        <th scope="col" class="numeric-cell">@T["LapAnalysis.TreadColumn"]</th>
+                    }
+                    <th scope="col">@T["LapAnalysis.Tyres"]</th>
+                    <th scope="col">@T["LapAnalysis.PitColumn"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var lap in Analysis.Laps)
+                {
+                    <tr class="@(lap.IsRepresentative ? null : "lap-row-slow")">
+                        <td>@lap.Number</td>
+                        <td class="numeric-cell"><span class="@(lap.Time.HasValue && lap.Time == Analysis.BestLap ? "lap-personal-best" : null)">@DisplayFormat.Lap(lap.Time)</span></td>
+                        @for (var number = 1; number <= 3; number++)
+                        {
+                            var time = lap.SectorTime(number);
+                            <td class="numeric-cell"><span class="@SectorClass(time, lap.Time.HasValue, personalBests[number], classBests[number])">@FormatSeconds(time)</span></td>
+                        }
+                        <td class="numeric-cell">@(lap.Position is { } position ? $"P{position}" : DisplayFormat.Missing)</td>
+                        <td class="numeric-cell">@DisplayFormat.Speed(lap.Telemetry.TopSpeed)</td>
+                        @if (hasFuel)
+                        {
+                            <td class="numeric-cell">@Share(lap.Telemetry.Fuel)</td>
+                        }
+                        @if (hasEnergy)
+                        {
+                            <td class="numeric-cell">@Share(lap.Telemetry.VirtualEnergy)</td>
+                        }
+                        @if (hasTyres)
+                        {
+                            <td class="numeric-cell">@Tyres(lap.Telemetry.TyreWear)</td>
+                        }
+                        <td>@(LapAnalysisPresentation.FormatCompounds(lap.Telemetry) is { Length: > 0 } compounds ? compounds : DisplayFormat.Missing)</td>
+                        <td>@(lap.IsPit ? "●" : string.Empty)</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <p class="lap-analysis-note">@T["LapAnalysis.LapsNote"]</p>
+
+    <h3 class="lap-analysis-heading">@T["LapAnalysis.StintsAndConsumption"]</h3>
     <div class="table-scroll">
         <table class="data-table lap-analysis-table" data-resizable-columns>
             <thead>
@@ -135,16 +292,9 @@
             </tbody>
         </table>
     </div>
-    <p class="lap-analysis-note">@T["LapAnalysis.StintNote"]</p>
-
-    <h4 class="lap-analysis-heading">@T["LapAnalysis.Consumption"]</h4>
     @if (Analysis.Consumption is { } consumption)
     {
         <ul class="lap-analysis-list">
-            @if (consumption.FuelPerLap is { } fuel)
-            {
-                <li>@T["LapAnalysis.Fuel", DisplayFormat.Percent(fuel), DisplayFormat.Average(consumption.LapsPerTank)]</li>
-            }
             @if (consumption.EnergyPerLap is { } energy)
             {
                 <li>@T["LapAnalysis.Energy", DisplayFormat.Percent(energy), DisplayFormat.Average(consumption.LapsPerEnergy)]</li>
@@ -154,76 +304,16 @@
                 <li>@T["LapAnalysis.Wear", DisplayFormat.Percent(wear.FrontLeft), DisplayFormat.Percent(wear.FrontRight), DisplayFormat.Percent(wear.RearLeft), DisplayFormat.Percent(wear.RearRight)]</li>
             }
         </ul>
-        <p class="lap-analysis-note">@T["LapAnalysis.ConsumptionNote"]</p>
+        <p class="lap-analysis-note">@T["LapAnalysis.StintNote"] @T["LapAnalysis.ConsumptionNote"]</p>
     }
     else
     {
-        <p class="incident-empty">@T["LapAnalysis.NoConsumption"]</p>
+        <p class="lap-analysis-note">@T["LapAnalysis.StintNote"] @T["LapAnalysis.NoConsumption"]</p>
     }
-
-    <div class="progression-table">
-        <button type="button" class="button button-secondary" aria-expanded="@(showsLaps ? "true" : "false")" @onclick="() => showsLaps = !showsLaps">
-            @(showsLaps ? T["LapAnalysis.HideLaps"] : T["LapAnalysis.ShowLaps"])
-        </button>
-        @if (showsLaps)
-        {
-            <div class="table-scroll lap-analysis-laps">
-                <table class="data-table lap-analysis-table" data-resizable-columns>
-                    <thead>
-                        <tr>
-                            <th scope="col">@T["LapAnalysis.LapColumn"]</th>
-                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TimeColumn"]</th>
-                            <th scope="col" class="numeric-cell">@T["LapAnalysis.PositionColumn"]</th>
-                            <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
-                            @if (hasFuel)
-                            {
-                                <th scope="col" class="numeric-cell">@T["LapAnalysis.FuelColumn"]</th>
-                            }
-                            @if (hasEnergy)
-                            {
-                                <th scope="col" class="numeric-cell">@T["LapAnalysis.EnergyColumn"]</th>
-                            }
-                            @if (hasTyres)
-                            {
-                                <th scope="col" class="numeric-cell">@T["LapAnalysis.TreadColumn"]</th>
-                            }
-                            <th scope="col">@T["LapAnalysis.Tyres"]</th>
-                            <th scope="col">@T["LapAnalysis.PitColumn"]</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach (var lap in Analysis.Laps)
-                        {
-                            <tr class="@(lap.IsRepresentative ? null : "lap-row-slow")">
-                                <td>@lap.Number</td>
-                                <td class="numeric-cell">@DisplayFormat.Lap(lap.Time)</td>
-                                <td class="numeric-cell">@(lap.Position is { } position ? $"P{position}" : DisplayFormat.Missing)</td>
-                                <td class="numeric-cell">@DisplayFormat.Speed(lap.Telemetry.TopSpeed)</td>
-                                @if (hasFuel)
-                                {
-                                    <td class="numeric-cell">@Share(lap.Telemetry.Fuel)</td>
-                                }
-                                @if (hasEnergy)
-                                {
-                                    <td class="numeric-cell">@Share(lap.Telemetry.VirtualEnergy)</td>
-                                }
-                                @if (hasTyres)
-                                {
-                                    <td class="numeric-cell">@Tyres(lap.Telemetry.TyreWear)</td>
-                                }
-                                <td>@(LapAnalysisPresentation.FormatCompounds(lap.Telemetry) is { Length: > 0 } compounds ? compounds : DisplayFormat.Missing)</td>
-                                <td>@(lap.IsPit ? "●" : string.Empty)</td>
-                            </tr>
-                        }
-                    </tbody>
-                </table>
-            </div>
-        }
-    </div>
 </section>
 
 @code {
-    private bool showsLaps;
+    private int? measure;
 
     /// <summary>
     /// Gets or sets the analysis of the followed driver.
@@ -237,6 +327,37 @@
     /// </summary>
     [Parameter]
     public LapAnalysis? Player { get; set; }
+
+    /// <summary>
+    /// Colours a sector of the lap table as in WEC timing: purple for the best of the class, bold
+    /// for the best of the driver. Sectors of untimed laps are not compared, as in the race details.
+    /// </summary>
+    private static string? SectorClass(TimeSpan? time, bool isTimed, TimeSpan? personalBest, TimeSpan? classBest) =>
+        time is null || !isTimed ? null
+        : time == classBest ? "sector-time sector-class-best"
+        : time == personalBest ? "lap-personal-best"
+        : null;
+
+    private static string DeltaClass(TimeSpan? delta) =>
+        delta switch
+        {
+            { } value when value > TimeSpan.Zero => "delta-loss",
+            { } => "delta-best",
+            _ => "delta-unavailable"
+        };
+
+    /// <summary>
+    /// Gives the loss bar its share of the largest loss, so that the sector costing the most fills it.
+    /// </summary>
+    private static string BarWidth(TimeSpan? gap, double largest) =>
+        gap is { } value && value > TimeSpan.Zero && largest > 0
+            ? string.Create(System.Globalization.CultureInfo.InvariantCulture, $"{Math.Max(4, 100 * value.TotalSeconds / largest):0.#}%")
+            : "0%";
+
+    private static string FormatSeconds(TimeSpan? time) =>
+        time is { } value
+            ? string.Create(System.Globalization.CultureInfo.InvariantCulture, $"{value.TotalSeconds:0.000}s")
+            : DisplayFormat.Missing;
 
     private static string Share(double? value) =>
         value is { } share ? DisplayFormat.Percent(share) : DisplayFormat.Missing;

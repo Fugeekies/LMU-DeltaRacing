@@ -21,7 +21,7 @@ The top bar groups the pages into menus: **Races** (My races, Race details, Lap-
 | [Home](home.md) | Your career at a glance |
 | [My races](my-races.md) | Your history, track by track |
 | [Race details](race-details.md) | The full classification of an event, sector by sector |
-| [Lap-by-lap analysis](lap-analysis.md) | Consistency, stints and consumption of a driver in a race |
+| [Lap-by-lap analysis](lap-analysis.md) | A race sector by sector and lap by lap: consistency, stints, consumption |
 | [Progress](progression.md) | How your best laps evolve on a track |
 | [Driving profile](driving-profile.md) | Your contacts, track limits and penalties |
 | [Driver rating](driver-rating.md) | Your level, measured by an Elo rating |

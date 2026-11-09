@@ -1630,9 +1630,6 @@
   <data name="LapAnalysis.Label" xml:space="preserve">
     <value>Runde-für-Runde-Analyse</value>
   </data>
-  <data name="LapAnalysis.Title" xml:space="preserve">
-    <value>Runde-für-Runde-Analyse von {0}</value>
-  </data>
   <data name="LapAnalysis.PitStops" xml:space="preserve">
     <value>Boxenstopps</value>
   </data>
@@ -1644,9 +1641,6 @@
   </data>
   <data name="LapAnalysis.Pace" xml:space="preserve">
     <value>Pace</value>
-  </data>
-  <data name="LapAnalysis.GapToBest" xml:space="preserve">
-    <value>Mittlerer Abstand zur besten Runde</value>
   </data>
   <data name="LapAnalysis.TopSpeed" xml:space="preserve">
     <value>Höchstgeschwindigkeit</value>
@@ -1681,9 +1675,6 @@
   <data name="LapAnalysis.ScaleNote" xml:space="preserve">
     <value>Runden, die langsamer als 112 % der Pace sind, werden oben im Diagramm gezeichnet.</value>
   </data>
-  <data name="LapAnalysis.Stints" xml:space="preserve">
-    <value>Stints</value>
-  </data>
   <data name="LapAnalysis.StintColumn" xml:space="preserve">
     <value>Stint</value>
   </data>
@@ -1717,12 +1708,6 @@
   <data name="LapAnalysis.StintNote" xml:space="preserve">
     <value>Ein Stint endet in der ersten Runde jeder Fahrt durch die Boxengasse (Stopp oder Durchfahrt). Ein Start aus der Boxengasse beendet keinen.</value>
   </data>
-  <data name="LapAnalysis.Consumption" xml:space="preserve">
-    <value>Verbrauch und Verschleiß</value>
-  </data>
-  <data name="LapAnalysis.Fuel" xml:space="preserve">
-    <value>Kraftstoff: {0} des Tanks pro Runde, also {1} Runden mit einer Tankfüllung.</value>
-  </data>
   <data name="LapAnalysis.Energy" xml:space="preserve">
     <value>Virtuelle Energie: {0} pro Runde, also {1} Runden mit voller Ladung.</value>
   </data>
@@ -1734,12 +1719,6 @@
   </data>
   <data name="LapAnalysis.NoConsumption" xml:space="preserve">
     <value>Kraftstoff, Energie und Reifenverschleiß wurden vom Server dieses Rennens nicht freigegeben.</value>
-  </data>
-  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
-    <value>Rundendetails anzeigen</value>
-  </data>
-  <data name="LapAnalysis.HideLaps" xml:space="preserve">
-    <value>Rundendetails ausblenden</value>
   </data>
   <data name="LapAnalysis.LapColumn" xml:space="preserve">
     <value>Runde</value>
@@ -1805,7 +1784,7 @@
     <value>Runde-für-Runde-Analyse</value>
   </data>
   <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
-    <value>Konstanz, Stints, Verbrauch und Verschleiß eines Fahrers in einem Rennen, dann Ihre Rekorde und Sessions auf dieser Strecke.</value>
+    <value>Ein Rennen Sektor für Sektor und Runde für Runde: Pace, Konstanz, Zeitverlust pro Sektor, Stints und Verbrauch, dann Ihre Rekorde und Sessions auf dieser Strecke.</value>
   </data>
   <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
     <value>Kein Rennen zu analysieren</value>
@@ -1824,5 +1803,68 @@
   </data>
   <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
     <value>Runde-für-Runde-Analyse von {0} →</value>
+  </data>
+  <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
+    <value>beste Runde {0}</value>
+  </data>
+  <data name="LapAnalysis.IdealLap" xml:space="preserve">
+    <value>Ideale Runde</value>
+  </data>
+  <data name="LapAnalysis.IdealGap" xml:space="preserve">
+    <value>{0} Potenzial gegenüber der besten Runde</value>
+  </data>
+  <data name="LapAnalysis.StintCount.One" xml:space="preserve">
+    <value>{0} Stint</value>
+  </data>
+  <data name="LapAnalysis.StintCount.Other" xml:space="preserve">
+    <value>{0} Stints</value>
+  </data>
+  <data name="LapAnalysis.LapsPerTank" xml:space="preserve">
+    <value>{0} Runden pro Tankfüllung</value>
+  </data>
+  <data name="LapAnalysis.Sectors" xml:space="preserve">
+    <value>Sektor für Sektor</value>
+  </data>
+  <data name="LapAnalysis.WeakestSector" xml:space="preserve">
+    <value>Sektor {0} kostet die meiste Zeit: {1} pro Runde gegenüber der besten Pace der Klasse.</value>
+  </data>
+  <data name="LapAnalysis.NoSectorLoss" xml:space="preserve">
+    <value>Beste Pace der Klasse in jedem Sektor.</value>
+  </data>
+  <data name="LapAnalysis.SectorColumn" xml:space="preserve">
+    <value>Sektor</value>
+  </data>
+  <data name="LapAnalysis.ClassBestGap" xml:space="preserve">
+    <value>Abstand zur Klassenbestzeit</value>
+  </data>
+  <data name="LapAnalysis.ClassPace" xml:space="preserve">
+    <value>Referenz der Klasse</value>
+  </data>
+  <data name="LapAnalysis.TimeLost" xml:space="preserve">
+    <value>Zeitverlust pro Runde</value>
+  </data>
+  <data name="LapAnalysis.SectorShort" xml:space="preserve">
+    <value>S{0}</value>
+  </data>
+  <data name="LapAnalysis.SectorNote" xml:space="preserve">
+    <value>Beste: auf gezeiteten Runden, violett, wenn sie die beste der Klasse ist. Pace und Konstanz: Median und Standardabweichung des Sektors auf den repräsentativen Runden. Referenz: der beste Median der Klasse in diesem Sektor; der Abstand dazu ist der Zeitverlust pro Runde.</value>
+  </data>
+  <data name="LapAnalysis.LapTimes" xml:space="preserve">
+    <value>Runde für Runde</value>
+  </data>
+  <data name="LapAnalysis.MeasureLabel" xml:space="preserve">
+    <value>Gezeichnete Zeit wählen: Runde oder Sektor</value>
+  </data>
+  <data name="LapAnalysis.NoChart" xml:space="preserve">
+    <value>Keine gezeitete Zeit für diese Messgröße.</value>
+  </data>
+  <data name="LapAnalysis.LapsNote" xml:space="preserve">
+    <value>Violette Sektoren: Klassenbestzeit; fett: Bestzeit des Fahrers. Nicht repräsentative Runden sind ausgegraut.</value>
+  </data>
+  <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
+    <value>Stints und Verbrauch</value>
+  </data>
+  <data name="LapAnalysis.Best" xml:space="preserve">
+    <value>Beste</value>
   </data>
 </root>

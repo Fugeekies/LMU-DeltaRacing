@@ -1630,9 +1630,6 @@
   <data name="LapAnalysis.Label" xml:space="preserve">
     <value>Analisi giro per giro</value>
   </data>
-  <data name="LapAnalysis.Title" xml:space="preserve">
-    <value>Analisi giro per giro di {0}</value>
-  </data>
   <data name="LapAnalysis.PitStops" xml:space="preserve">
     <value>Soste ai box</value>
   </data>
@@ -1644,9 +1641,6 @@
   </data>
   <data name="LapAnalysis.Pace" xml:space="preserve">
     <value>Passo</value>
-  </data>
-  <data name="LapAnalysis.GapToBest" xml:space="preserve">
-    <value>Distacco medio dal giro migliore</value>
   </data>
   <data name="LapAnalysis.TopSpeed" xml:space="preserve">
     <value>Velocità massima</value>
@@ -1681,9 +1675,6 @@
   <data name="LapAnalysis.ScaleNote" xml:space="preserve">
     <value>I giri più lenti del 112 % del passo sono disegnati in alto nel grafico.</value>
   </data>
-  <data name="LapAnalysis.Stints" xml:space="preserve">
-    <value>Stint</value>
-  </data>
   <data name="LapAnalysis.StintColumn" xml:space="preserve">
     <value>Stint</value>
   </data>
@@ -1717,12 +1708,6 @@
   <data name="LapAnalysis.StintNote" xml:space="preserve">
     <value>Uno stint termina al primo giro di ogni passaggio in corsia box (sosta o drive-through). Una partenza dalla corsia box non ne termina uno.</value>
   </data>
-  <data name="LapAnalysis.Consumption" xml:space="preserve">
-    <value>Consumi e usura</value>
-  </data>
-  <data name="LapAnalysis.Fuel" xml:space="preserve">
-    <value>Carburante: {0} del serbatoio per giro, cioè {1} giri con un pieno.</value>
-  </data>
   <data name="LapAnalysis.Energy" xml:space="preserve">
     <value>Energia virtuale: {0} per giro, cioè {1} giri con una carica completa.</value>
   </data>
@@ -1734,12 +1719,6 @@
   </data>
   <data name="LapAnalysis.NoConsumption" xml:space="preserve">
     <value>Carburante, energia e usura delle gomme non condivisi dal server di questa gara.</value>
-  </data>
-  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
-    <value>Mostra il dettaglio dei giri</value>
-  </data>
-  <data name="LapAnalysis.HideLaps" xml:space="preserve">
-    <value>Nascondi il dettaglio dei giri</value>
   </data>
   <data name="LapAnalysis.LapColumn" xml:space="preserve">
     <value>Giro</value>
@@ -1805,7 +1784,7 @@
     <value>Analisi giro per giro</value>
   </data>
   <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
-    <value>Costanza, stint, consumi e usura di un pilota in una gara, poi i tuoi record e le tue sessioni su quel circuito.</value>
+    <value>Una gara settore per settore e giro per giro: passo, costanza, tempo perso per settore, stint e consumi, poi i tuoi record e le tue sessioni su quel circuito.</value>
   </data>
   <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
     <value>Nessuna gara da analizzare</value>
@@ -1824,5 +1803,68 @@
   </data>
   <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
     <value>Analisi giro per giro di {0} →</value>
+  </data>
+  <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
+    <value>giro migliore {0}</value>
+  </data>
+  <data name="LapAnalysis.IdealLap" xml:space="preserve">
+    <value>Giro ideale</value>
+  </data>
+  <data name="LapAnalysis.IdealGap" xml:space="preserve">
+    <value>{0} di margine sul giro migliore</value>
+  </data>
+  <data name="LapAnalysis.StintCount.One" xml:space="preserve">
+    <value>{0} stint</value>
+  </data>
+  <data name="LapAnalysis.StintCount.Other" xml:space="preserve">
+    <value>{0} stint</value>
+  </data>
+  <data name="LapAnalysis.LapsPerTank" xml:space="preserve">
+    <value>{0} giri con un pieno</value>
+  </data>
+  <data name="LapAnalysis.Sectors" xml:space="preserve">
+    <value>Settore per settore</value>
+  </data>
+  <data name="LapAnalysis.WeakestSector" xml:space="preserve">
+    <value>Il settore {0} costa più tempo: {1} al giro rispetto al miglior passo della classe.</value>
+  </data>
+  <data name="LapAnalysis.NoSectorLoss" xml:space="preserve">
+    <value>Miglior passo della classe in ogni settore.</value>
+  </data>
+  <data name="LapAnalysis.SectorColumn" xml:space="preserve">
+    <value>Settore</value>
+  </data>
+  <data name="LapAnalysis.ClassBestGap" xml:space="preserve">
+    <value>Distacco dal migliore della classe</value>
+  </data>
+  <data name="LapAnalysis.ClassPace" xml:space="preserve">
+    <value>Riferimento della classe</value>
+  </data>
+  <data name="LapAnalysis.TimeLost" xml:space="preserve">
+    <value>Tempo perso al giro</value>
+  </data>
+  <data name="LapAnalysis.SectorShort" xml:space="preserve">
+    <value>S{0}</value>
+  </data>
+  <data name="LapAnalysis.SectorNote" xml:space="preserve">
+    <value>Migliore: sui giri cronometrati, in viola se è il migliore della classe. Passo e costanza: mediana e deviazione standard del settore sui giri rappresentativi. Riferimento: la migliore mediana della classe in questo settore; il distacco da essa è il tempo perso al giro.</value>
+  </data>
+  <data name="LapAnalysis.LapTimes" xml:space="preserve">
+    <value>Giro per giro</value>
+  </data>
+  <data name="LapAnalysis.MeasureLabel" xml:space="preserve">
+    <value>Scegli il tempo tracciato: giro o settore</value>
+  </data>
+  <data name="LapAnalysis.NoChart" xml:space="preserve">
+    <value>Nessun tempo cronometrato per questa misura.</value>
+  </data>
+  <data name="LapAnalysis.LapsNote" xml:space="preserve">
+    <value>Settori in viola: migliori della classe; in grassetto: miglior tempo del pilota. I giri non rappresentativi sono in grigio.</value>
+  </data>
+  <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
+    <value>Stint e consumi</value>
+  </data>
+  <data name="LapAnalysis.Best" xml:space="preserve">
+    <value>Migliore</value>
   </data>
 </root>

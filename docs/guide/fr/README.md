@@ -19,7 +19,7 @@ La barre du haut regroupe les pages en menus : **Courses** (Mes courses, Détail
 | [Accueil](home.md) | Le bilan de votre carrière |
 | [Mes courses](my-races.md) | Votre historique, circuit par circuit |
 | [Détail des courses](race-details.md) | Le classement complet d'un événement, secteur par secteur |
-| [Analyse tour par tour](lap-analysis.md) | Régularité, relais et consommation d'un pilote dans une course |
+| [Analyse tour par tour](lap-analysis.md) | Une course secteur par secteur et tour par tour : régularité, relais, consommation |
 | [Progression](progression.md) | L'évolution de vos meilleurs tours sur un circuit |
 | [Profil de conduite](driving-profile.md) | Vos contacts, limites de piste et pénalités |
 | [Cote pilote](driver-rating.md) | Votre niveau, mesuré par une cote Elo |

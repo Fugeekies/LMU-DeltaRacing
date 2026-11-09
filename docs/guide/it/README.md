@@ -21,7 +21,7 @@ La barra in alto raggruppa le pagine in menu: **Gare** (Le mie gare, Dettaglio g
 | [Home](home.md) | La tua carriera a colpo d'occhio |
 | [Le mie gare](my-races.md) | La tua cronologia, circuito per circuito |
 | [Dettaglio gare](race-details.md) | La classifica completa di un evento, settore per settore |
-| [Analisi giro per giro](lap-analysis.md) | Costanza, stint e consumi di un pilota in una gara |
+| [Analisi giro per giro](lap-analysis.md) | Una gara settore per settore e giro per giro: costanza, stint, consumi |
 | [Progressi](progression.md) | L'andamento dei tuoi giri migliori su un circuito |
 | [Profilo di guida](driving-profile.md) | I tuoi contatti, limiti della pista e penalità |
 | [Rating pilota](driver-rating.md) | Il tuo livello, misurato con un rating Elo |

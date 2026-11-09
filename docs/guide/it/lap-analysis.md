@@ -7,7 +7,11 @@ L'analisi di una gara, giro per giro.
 1. Scegli la **gara**: sono proposte solo le tue, dalla più recente.
 2. Scegli il **pilota**: tu per impostazione predefinita, o un altro pilota della gara per confrontare.
 
-Per quel pilota, la pagina mostra le sue **soste ai box**, la sua **costanza** (deviazione standard dei suoi giri rappresentativi, con la sua posizione nella categoria), il suo **passo** e la sua **velocità massima**, poi il grafico dei suoi tempi sul giro (più in basso = più veloce, il tuo in rosso per confrontare). La tabella **Stint** divide la gara a ogni passaggio in corsia box: gomme, passo e giro migliore di ogni stint. **Consumi e usura** dà il carburante e l’energia consumati per giro, i giri possibili con un pieno e l’usura delle gomme, in percentuale, quando il server condivide questi dati. **Mostra il dettaglio dei giri** dà ogni giro.
+I riquadri in alto riassumono la sua gara: **Passo** (mediana dei suoi giri rappresentativi), **Costanza** (deviazione standard, con la sua posizione nella categoria), **Giro ideale** (somma dei suoi tre migliori settori), **Velocità massima**, **Soste ai box** e, quando il server lo condivide, **Carburante / giro**.
+
+**Settore per settore** mostra dove si perde tempo: per ogni settore, il miglior tempo (🟣 migliore della categoria), il passo confrontato con il riferimento della categoria (la migliore mediana in quel settore), la costanza e il **tempo perso al giro**, con una barra rossa. Una frase indica il settore che costa di più.
+
+**Giro per giro** traccia il tempo di ogni giro, o di un settore con i pulsanti **S1**, **S2** e **S3** (più in basso = più veloce, il tuo in rosso per confrontare). La tabella **Giri** dà ogni giro con i suoi tre settori (🟣 migliore della categoria, in grassetto il migliore del pilota), la posizione, la velocità massima e, se il server li condivide, carburante, energia e usura delle gomme. **Stint e consumi** divide la gara a ogni passaggio in corsia box: gomme, passo, consumi e usura di ogni stint.
 
 Più in basso, **Record personali** dà il tuo giro migliore e la tua velocità massima con ogni vettura sul circuito della gara, nella categoria guidata, e **Confronta le sessioni** elenca tutte le tue sessioni su quel circuito con il distacco dal record, il passo, la costanza e un badge **Record** quando una sessione batte il tuo record con quella vettura.
 

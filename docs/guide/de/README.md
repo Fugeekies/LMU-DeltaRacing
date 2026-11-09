@@ -21,7 +21,7 @@ Die obere Leiste fasst die Seiten in Menüs zusammen: **Rennen** (Meine Rennen, 
 | [Startseite](home.md) | Ihre Karriere auf einen Blick |
 | [Meine Rennen](my-races.md) | Ihre Historie, Strecke für Strecke |
 | [Renndetails](race-details.md) | Das vollständige Klassement eines Events, Sektor für Sektor |
-| [Runde-für-Runde-Analyse](lap-analysis.md) | Konstanz, Stints und Verbrauch eines Fahrers in einem Rennen |
+| [Runde-für-Runde-Analyse](lap-analysis.md) | Ein Rennen Sektor für Sektor und Runde für Runde: Konstanz, Stints, Verbrauch |
 | [Fortschritt](progression.md) | Die Entwicklung Ihrer besten Runden auf einer Strecke |
 | [Fahrprofil](driving-profile.md) | Ihre Kontakte, Track Limits und Strafen |
 | [Fahrerwertung](driver-rating.md) | Ihr Niveau, gemessen mit einer Elo-Wertung |

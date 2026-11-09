@@ -7,7 +7,11 @@ El análisis de una carrera, vuelta a vuelta.
 1. Elige la **carrera**: solo se proponen las tuyas, de la más reciente a la más antigua.
 2. Elige el **piloto**: tú por defecto, u otro piloto de la carrera para comparar.
 
-Para ese piloto, la página da sus **paradas en boxes**, su **regularidad** (desviación típica de sus vueltas representativas, con su puesto en la categoría), su **ritmo** y su **velocidad punta**, y luego el gráfico de sus tiempos por vuelta (más abajo = más rápido, el tuyo en rojo para comparar). La tabla de **stints** divide la carrera en cada paso por el pit lane: neumáticos, ritmo y mejor vuelta de cada stint. **Consumo y desgaste** da el combustible y la energía consumidos por vuelta, las vueltas posibles con el depósito lleno y el desgaste de los neumáticos, en porcentaje, cuando el servidor comparte esos datos. **Mostrar el detalle de las vueltas** da cada vuelta.
+Las tarjetas de arriba resumen su carrera: **Ritmo** (mediana de sus vueltas representativas), **Regularidad** (desviación típica, con su puesto en la categoría), **Vuelta ideal** (suma de sus tres mejores sectores), **Velocidad punta**, **Paradas en boxes** y, cuando el servidor lo comparte, **Combustible / vuelta**.
+
+**Sector a sector** muestra dónde se pierde el tiempo: para cada sector, el mejor tiempo (🟣 mejor de la categoría), el ritmo comparado con la referencia de la categoría (la mejor mediana en ese sector), la regularidad y el **tiempo perdido por vuelta**, con una barra roja. Una frase indica el sector que más cuesta.
+
+**Vuelta a vuelta** traza el tiempo de cada vuelta, o el de un sector con los botones **S1**, **S2** y **S3** (más abajo = más rápido, el tuyo en rojo para comparar). La tabla **Vueltas** da cada vuelta con sus tres sectores (🟣 mejor de la categoría, en negrita el mejor del piloto), su posición, su velocidad punta y, si el servidor los comparte, combustible, energía y desgaste de neumáticos. **Stints y consumo** divide la carrera en cada paso por el pit lane: neumáticos, ritmo, consumo y desgaste de cada stint.
 
 Más abajo, **Récords personales** da tu mejor vuelta y tu velocidad punta con cada coche en el circuito de la carrera, en la categoría que corriste, y **Comparar sesiones** enumera todas tus sesiones en ese circuito con su diferencia con el récord, su ritmo, su regularidad y una insignia **Récord** cuando una sesión bate tu récord con ese coche.
 

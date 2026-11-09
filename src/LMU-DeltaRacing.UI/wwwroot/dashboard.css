@@ -3070,3 +3070,95 @@ table.columns-resized td[colspan] {
 .progression-records {
     margin-top: 1rem;
 }
+
+.analysis-tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.lap-analysis > .lap-analysis-heading {
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.lap-analysis-lead {
+    margin: 0 0 0.75rem;
+    font-size: 0.85rem;
+}
+
+.lap-analysis-chart-heading {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--border);
+}
+
+.lap-analysis-chart-heading .lap-analysis-heading {
+    margin: 0;
+}
+
+.sector-analysis-table th[scope="row"] {
+    font-weight: 700;
+    text-align: left;
+}
+
+.sector-analysis-table .sector-weakest {
+    background: color-mix(in srgb, var(--red) 8%, transparent);
+}
+
+.sector-analysis-table .sector-total td,
+.sector-analysis-table .sector-total th {
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+}
+
+.sector-loss {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    min-width: 12rem;
+}
+
+.sector-loss-bar {
+    flex: 1;
+    height: 8px;
+    border-radius: 4px;
+    background: var(--surface-raised);
+    overflow: hidden;
+}
+
+.sector-loss-bar i {
+    display: block;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.sector-loss-bar i.is-loss {
+    background: var(--red);
+}
+
+.lap-personal-best {
+    font-weight: 800;
+    color: var(--text);
+}
+
+.lap-point-off {
+    stroke-dasharray: 2 2;
+}
+
+.lap-swatch-off {
+    border: 1.5px dashed var(--muted);
+    background: transparent;
+}
+
+.analysis-tiles .summary-value {
+    font-size: 1.55rem;
+    white-space: nowrap;
+}

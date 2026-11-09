@@ -1630,9 +1630,6 @@
   <data name="LapAnalysis.Label" xml:space="preserve">
     <value>Lap-by-lap analysis</value>
   </data>
-  <data name="LapAnalysis.Title" xml:space="preserve">
-    <value>Lap-by-lap analysis of {0}</value>
-  </data>
   <data name="LapAnalysis.PitStops" xml:space="preserve">
     <value>Pit stops</value>
   </data>
@@ -1644,9 +1641,6 @@
   </data>
   <data name="LapAnalysis.Pace" xml:space="preserve">
     <value>Pace</value>
-  </data>
-  <data name="LapAnalysis.GapToBest" xml:space="preserve">
-    <value>Average gap to best lap</value>
   </data>
   <data name="LapAnalysis.TopSpeed" xml:space="preserve">
     <value>Top speed</value>
@@ -1681,9 +1675,6 @@
   <data name="LapAnalysis.ScaleNote" xml:space="preserve">
     <value>Laps slower than 112% of the pace are drawn at the top of the chart.</value>
   </data>
-  <data name="LapAnalysis.Stints" xml:space="preserve">
-    <value>Stints</value>
-  </data>
   <data name="LapAnalysis.StintColumn" xml:space="preserve">
     <value>Stint</value>
   </data>
@@ -1717,12 +1708,6 @@
   <data name="LapAnalysis.StintNote" xml:space="preserve">
     <value>A stint ends on the first lap of each pass through the pit lane (stop or drive-through). A pit lane start does not end one.</value>
   </data>
-  <data name="LapAnalysis.Consumption" xml:space="preserve">
-    <value>Consumption and wear</value>
-  </data>
-  <data name="LapAnalysis.Fuel" xml:space="preserve">
-    <value>Fuel: {0} of the tank per lap, so {1} laps on a full tank.</value>
-  </data>
   <data name="LapAnalysis.Energy" xml:space="preserve">
     <value>Virtual energy: {0} per lap, so {1} laps on a full charge.</value>
   </data>
@@ -1734,12 +1719,6 @@
   </data>
   <data name="LapAnalysis.NoConsumption" xml:space="preserve">
     <value>Fuel, energy and tyre wear not shared by the server of this race.</value>
-  </data>
-  <data name="LapAnalysis.ShowLaps" xml:space="preserve">
-    <value>Show lap details</value>
-  </data>
-  <data name="LapAnalysis.HideLaps" xml:space="preserve">
-    <value>Hide lap details</value>
   </data>
   <data name="LapAnalysis.LapColumn" xml:space="preserve">
     <value>Lap</value>
@@ -1805,7 +1784,7 @@
     <value>Lap-by-lap analysis</value>
   </data>
   <data name="LapAnalysisPage.Subtitle" xml:space="preserve">
-    <value>Consistency, stints, consumption and wear of a driver in a race, then your records and sessions on that circuit.</value>
+    <value>A race sector by sector and lap by lap: pace, consistency, time lost per sector, stints and consumption, then your records and sessions on that circuit.</value>
   </data>
   <data name="LapAnalysisPage.EmptyTitle" xml:space="preserve">
     <value>No race to analyse</value>
@@ -1824,5 +1803,68 @@
   </data>
   <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
     <value>Lap-by-lap analysis of {0} →</value>
+  </data>
+  <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
+    <value>best lap {0}</value>
+  </data>
+  <data name="LapAnalysis.IdealLap" xml:space="preserve">
+    <value>Ideal lap</value>
+  </data>
+  <data name="LapAnalysis.IdealGap" xml:space="preserve">
+    <value>{0} to gain on the best lap</value>
+  </data>
+  <data name="LapAnalysis.StintCount.One" xml:space="preserve">
+    <value>{0} stint</value>
+  </data>
+  <data name="LapAnalysis.StintCount.Other" xml:space="preserve">
+    <value>{0} stints</value>
+  </data>
+  <data name="LapAnalysis.LapsPerTank" xml:space="preserve">
+    <value>{0} laps on a full tank</value>
+  </data>
+  <data name="LapAnalysis.Sectors" xml:space="preserve">
+    <value>Sector by sector</value>
+  </data>
+  <data name="LapAnalysis.WeakestSector" xml:space="preserve">
+    <value>Sector {0} costs the most time: {1} per lap against the best pace of the class.</value>
+  </data>
+  <data name="LapAnalysis.NoSectorLoss" xml:space="preserve">
+    <value>Best pace of the class in every sector.</value>
+  </data>
+  <data name="LapAnalysis.SectorColumn" xml:space="preserve">
+    <value>Sector</value>
+  </data>
+  <data name="LapAnalysis.ClassBestGap" xml:space="preserve">
+    <value>Gap to class best</value>
+  </data>
+  <data name="LapAnalysis.ClassPace" xml:space="preserve">
+    <value>Class reference</value>
+  </data>
+  <data name="LapAnalysis.TimeLost" xml:space="preserve">
+    <value>Time lost per lap</value>
+  </data>
+  <data name="LapAnalysis.SectorShort" xml:space="preserve">
+    <value>S{0}</value>
+  </data>
+  <data name="LapAnalysis.SectorNote" xml:space="preserve">
+    <value>Best: on timed laps, in purple when it is the best of the class. Pace and consistency: median and standard deviation of the sector on the representative laps. Reference: the best median of the class in this sector; the gap to it is the time lost per lap.</value>
+  </data>
+  <data name="LapAnalysis.LapTimes" xml:space="preserve">
+    <value>Lap by lap</value>
+  </data>
+  <data name="LapAnalysis.MeasureLabel" xml:space="preserve">
+    <value>Choose the time drawn: lap or sector</value>
+  </data>
+  <data name="LapAnalysis.NoChart" xml:space="preserve">
+    <value>No timed value for this measure.</value>
+  </data>
+  <data name="LapAnalysis.LapsNote" xml:space="preserve">
+    <value>Purple sectors: best of the class; bold: best time of the driver. Non-representative laps are greyed out.</value>
+  </data>
+  <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
+    <value>Stints and consumption</value>
+  </data>
+  <data name="LapAnalysis.Best" xml:space="preserve">
+    <value>Best</value>
   </data>
 </root>

@@ -46,29 +46,35 @@ public sealed record LapTimesChartLayout(
     private const double MarginBottom = 34;
     private const int TimeTickCount = 5;
     private const int MaximumLapTicks = 10;
+    private const double MinimumSectorRange = 0.3;
 
     /// <summary>
     /// Lays out the lap times, or returns <see langword="null"/> without any timed lap.
     /// </summary>
     /// <param name="focus">The analysis of the followed driver.</param>
     /// <param name="player">The analysis of the selected driver, when they are not the followed one.</param>
-    public static LapTimesChartLayout? Create(LapAnalysis focus, LapAnalysis? player)
+    /// <param name="sector">The sector to draw, from 1 to 3, or <see langword="null"/> for the lap times.</param>
+    public static LapTimesChartLayout? Create(LapAnalysis focus, LapAnalysis? player, int? sector = null)
     {
         ArgumentNullException.ThrowIfNull(focus);
 
         LapAnalysis[] analyses = player is null ? [focus] : [player, focus];
-        var times = analyses.SelectMany(analysis => analysis.Laps).Where(lap => lap.Time.HasValue).Select(lap => lap.Time!.Value).ToArray();
+        TimeSpan? Measure(LapAnalysisLap lap) => sector is { } number ? lap.SectorTime(number) : lap.Time;
+        var times = analyses.SelectMany(analysis => analysis.Laps).Select(Measure).OfType<TimeSpan>().ToArray();
         if (times.Length == 0)
         {
             return null;
         }
 
         var fastest = times.Min().TotalSeconds;
-        var pace = focus.Regularity?.Pace.TotalSeconds;
+        var pace = sector is { } paceSector
+            ? focus.Sectors.FirstOrDefault(item => item.Number == paceSector)?.Pace?.TotalSeconds
+            : focus.Regularity?.Pace.TotalSeconds;
+        var minimumRange = sector is null ? 1 : MinimumSectorRange;
         var slowest = Math.Min(times.Max().TotalSeconds, (pace ?? times.Max().TotalSeconds) * ScaleLimit);
-        if (slowest - fastest < 1)
+        if (slowest - fastest < minimumRange)
         {
-            slowest = fastest + 1;
+            slowest = fastest + minimumRange;
         }
 
         var lastLap = Math.Max(analyses.Max(analysis => analysis.Laps.Max(lap => lap.Number)), 2);
@@ -88,7 +94,7 @@ public sealed record LapTimesChartLayout(
                 var points = new List<LapTimesPoint>();
                 foreach (var lap in analysis.Laps)
                 {
-                    if (lap.Time is not { } time)
+                    if (Measure(lap) is not { } time)
                     {
                         Flush();
                         continue;
@@ -100,8 +106,8 @@ public sealed record LapTimesChartLayout(
                     points.Add(new LapTimesPoint(
                         x,
                         y,
-                        lap.IsPit ? "lap-point-pit" : lap.IsRepresentative ? "lap-point" : "lap-point-slow",
-                        Describe(analysis.DriverName, lap)));
+                        (lap.IsPit ? "lap-point-pit" : lap.IsRepresentative ? "lap-point" : "lap-point-slow") + (time.TotalSeconds > slowest ? " lap-point-off" : string.Empty),
+                        Describe(analysis.DriverName, lap, time, sector)));
                 }
 
                 Flush();
@@ -130,14 +136,24 @@ public sealed record LapTimesChartLayout(
             focus.Laps.Where(lap => lap.IsPit).Select(lap => X(lap.Number)).ToArray(),
             Enumerable.Range(0, TimeTickCount)
                 .Select(index => fastest + ((slowest - fastest) * index / (TimeTickCount - 1)))
-                .Select(seconds => new RaceStoryTick(Y(seconds), DisplayFormat.Lap(TimeSpan.FromSeconds(seconds))))
+                .Select(seconds => new RaceStoryTick(Y(seconds), FormatTime(TimeSpan.FromSeconds(seconds), sector)))
                 .ToArray(),
             CreateLapTicks(lastLap).Select(lap => new RaceStoryTick(X(lap), lap.ToString(CultureInfo.InvariantCulture))).ToArray());
     }
 
-    private static string Describe(string driverName, LapAnalysisLap lap)
+    /// <summary>
+    /// Formats a time of the chart: a lap as <c>m:ss.fff</c>, a sector in seconds (<c>38.120s</c>).
+    /// </summary>
+    /// <param name="time">The time.</param>
+    /// <param name="sector">The sector drawn, or <see langword="null"/> for lap times.</param>
+    public static string FormatTime(TimeSpan time, int? sector) =>
+        sector is null
+            ? DisplayFormat.Lap(time)
+            : string.Create(CultureInfo.InvariantCulture, $"{time.TotalSeconds:0.000}s");
+
+    private static string Describe(string driverName, LapAnalysisLap lap, TimeSpan time, int? sector)
     {
-        var description = $"{driverName} · {Texts.Format("RaceDetails.LapNumber", lap.Number)} · {DisplayFormat.Lap(lap.Time)}";
+        var description = $"{driverName} · {Texts.Format("RaceDetails.LapNumber", lap.Number)} · {FormatTime(time, sector)}";
         return lap.IsPit
             ? $"{description} · {Texts.Get("LapAnalysis.PitLane")}"
             : lap.IsRepresentative ? description : $"{description} · {Texts.Get("LapAnalysis.SlowLap")}";

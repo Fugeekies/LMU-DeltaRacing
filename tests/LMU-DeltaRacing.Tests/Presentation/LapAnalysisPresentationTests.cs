@@ -106,6 +106,44 @@ public sealed class LapAnalysisPresentationTests
     }
 
     /// <summary>
+    /// Verifies the sector by sector analysis: best and pace of each sector compared with the class,
+    /// ideal lap, and the sector where the most time is lost.
+    /// </summary>
+    [TestMethod]
+    public void Create_analyses_each_sector_against_the_class()
+    {
+        Lap[] playerLaps =
+        [
+            SectorLap(1, 40, 50, 30),
+            SectorLap(2, 30, 40, 30),
+            SectorLap(3, 31, 40, 30),
+            SectorLap(4, 30, 41, 30),
+            SectorLap(5, 32, 40, 31)
+        ];
+        var rival = new Driver(
+            "Rival",
+            "2",
+            "GT3",
+            "Team",
+            2,
+            [SectorLap(1, 40, 50, 30), SectorLap(2, 29, 41, 30.5), SectorLap(3, 29, 41, 30.5), SectorLap(4, 29, 41, 30.5)]);
+        var otherClass = new Driver("Other", "3", "LMP2", "Team", 3, [SectorLap(1, 40, 50, 30), SectorLap(2, 20, 30, 20), SectorLap(3, 20, 30, 20)]);
+
+        var analysis = LapAnalysisPresentation.Create(CreateRace(playerLaps, rival, otherClass), Player)!;
+
+        analysis.Sectors.Select(sector => sector.Best).Should().Equal(Seconds(30), Seconds(40), Seconds(30));
+        analysis.Sectors.Select(sector => sector.ClassBest).Should().Equal(Seconds(29), Seconds(40), Seconds(30));
+        analysis.Sectors.Select(sector => sector.Pace).Should().Equal(Seconds(30.5), Seconds(40), Seconds(30));
+        analysis.Sectors.Select(sector => sector.ClassPace).Should().Equal(Seconds(29), Seconds(40), Seconds(30));
+        analysis.Sectors.Select(sector => sector.GapToClassPace).Should().Equal(Seconds(1.5), TimeSpan.Zero, TimeSpan.Zero);
+        analysis.Sectors[0].Deviation!.Value.TotalSeconds.Should().BeApproximately(Math.Sqrt(0.6875), 0.0001);
+        analysis.IdealLap.Should().Be(Seconds(100));
+        analysis.BestLap.Should().Be(Seconds(100));
+        analysis.WeakestSector.Should().Be(1);
+        analysis.Laps[1].Sectors.Should().HaveCount(3);
+    }
+
+    /// <summary>
     /// Verifies that only races are analysed.
     /// </summary>
     [TestMethod]
@@ -151,6 +189,15 @@ public sealed class LapAnalysisPresentationTests
 
     private static Lap Lap(int number, double seconds, bool pit = false) =>
         new(number, TimeSpan.FromSeconds(seconds), [], position: 1, isPitLap: pit);
+
+    private static Lap SectorLap(int number, double first, double second, double third) =>
+        new(
+            number,
+            Seconds(first + second + third),
+            [new Sector(1, Seconds(first)), new Sector(2, Seconds(second)), new Sector(3, Seconds(third))],
+            position: 1);
+
+    private static TimeSpan Seconds(double seconds) => TimeSpan.FromSeconds(seconds);
 
     private static Session CreateRace(params Lap[] laps) => CreateRace("Race", laps);
 

@@ -26,7 +26,7 @@ public sealed class LapTimesChartLayoutTests
         points.Should().HaveCount(6);
         points.MinBy(point => point.Y)!.Y.Should().Be(chart.PlotTop);
         points[3].Y.Should().Be(chart.PlotBottom);
-        points[0].CssClass.Should().Be("lap-point-slow");
+        points[0].CssClass.Should().Be("lap-point-slow lap-point-off");
         chart.Series.Single().Segments.Should().HaveCount(2);
         chart.PaceY.Should().BeInRange(chart.PlotTop, chart.PlotBottom);
     }
@@ -50,6 +50,31 @@ public sealed class LapTimesChartLayoutTests
     }
 
     /// <summary>
+    /// Verifies that a sector is drawn from its own times, labelled in seconds, and that a lap slower
+    /// than the scale is marked off the scale.
+    /// </summary>
+    [TestMethod]
+    public void A_sector_is_drawn_from_its_own_times()
+    {
+        Lap[] laps =
+        [
+            new(1, TimeSpan.FromSeconds(140), [new Sector(1, TimeSpan.FromSeconds(60))], position: 1),
+            new(2, TimeSpan.FromSeconds(100), [new Sector(1, TimeSpan.FromSeconds(30))], position: 1),
+            new(3, TimeSpan.FromSeconds(101), [new Sector(1, TimeSpan.FromSeconds(30.5))], position: 1),
+            new(4, TimeSpan.FromSeconds(100), [new Sector(1, TimeSpan.FromSeconds(30.2))], position: 1)
+        ];
+        var analysis = Analyse("Focus", laps);
+
+        var chart = LapTimesChartLayout.Create(analysis, null, sector: 1)!;
+
+        chart.Series.Single().Points.Should().HaveCount(4);
+        chart.Series.Single().Points[0].CssClass.Should().Contain("lap-point-off");
+        chart.Series.Single().Points[1].Y.Should().Be(chart.PlotBottom);
+        chart.TimeTicks[0].Label.Should().Be("30.000s");
+        LapTimesChartLayout.Create(analysis, null, sector: 2).Should().BeNull();
+    }
+
+    /// <summary>
     /// Verifies that a driver without any timed lap gives no chart.
     /// </summary>
     [TestMethod]
@@ -63,16 +88,20 @@ public sealed class LapTimesChartLayoutTests
     private static LapAnalysis Analyse(string name, double? first, double? second, double? third, double? fourth, double? fifth, int pit) =>
         Analyse(name, [first, second, third, fourth, fifth], pit);
 
-    private static LapAnalysis Analyse(string name, double?[] times, int pit)
+    private static LapAnalysis Analyse(string name, double?[] times, int pit) =>
+        Analyse(
+            name,
+            times
+                .Select((time, index) => new Lap(
+                    index + 1,
+                    time is { } seconds ? TimeSpan.FromSeconds(seconds) : null,
+                    [],
+                    position: 1,
+                    isPitLap: index + 1 == pit))
+                .ToArray());
+
+    private static LapAnalysis Analyse(string name, Lap[] laps)
     {
-        var laps = times
-            .Select((time, index) => new Lap(
-                index + 1,
-                time is { } seconds ? TimeSpan.FromSeconds(seconds) : null,
-                [],
-                position: 1,
-                isPitLap: index + 1 == pit))
-            .ToArray();
         var session = new Session(
             Guid.NewGuid(),
             DateTimeOffset.FromUnixTimeSeconds(1760000000),

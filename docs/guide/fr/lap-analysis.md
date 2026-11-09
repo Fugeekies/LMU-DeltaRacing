@@ -7,7 +7,11 @@ L'analyse d'une course, tour par tour.
 1. Choisissez la **course** : seules les vôtres sont proposées, de la plus récente à la plus ancienne.
 2. Choisissez le **pilote** : vous par défaut, ou un autre pilote de la course pour comparer.
 
-Pour ce pilote, la page donne ses **arrêts au stand**, sa **régularité** (écart-type de ses tours représentatifs, avec son rang dans la catégorie), son **rythme** et sa **vitesse de pointe**, puis le graphique de ses temps au tour (plus bas = plus rapide, le vôtre en rouge pour comparer). Le tableau des **relais** découpe la course à chaque passage par la voie des stands : pneus, rythme et meilleur tour de chaque relais. **Consommation et usure** donne le carburant et l'énergie consommés par tour, le nombre de tours tenables avec un plein et l'usure des pneus, en pourcentage, quand le serveur partage ces données. **Afficher le détail des tours** donne chaque tour.
+Les tuiles du haut résument sa course : **Rythme** (médiane de ses tours représentatifs), **Régularité** (écart-type, avec son rang dans la catégorie), **Tour idéal** (somme de ses trois meilleurs secteurs), **Vitesse de pointe**, **Arrêts au stand** et, quand le serveur le partage, **Carburant / tour**.
+
+**Secteur par secteur** montre où se perd le temps : pour chaque secteur, le meilleur temps (🟣 meilleur de la catégorie), le rythme comparé à la référence de la catégorie (la meilleure médiane dans ce secteur), la régularité et le **temps perdu par tour**, avec une barre rouge. Une phrase désigne le secteur qui coûte le plus.
+
+**Tour par tour** trace les temps de chaque tour, ou ceux d'un secteur avec les boutons **S1**, **S2** et **S3** (plus bas = plus rapide, le vôtre en rouge pour comparer). Le tableau **Tours** donne chaque tour avec ses trois secteurs (🟣 meilleur de la catégorie, en gras le meilleur du pilote), sa position, sa vitesse de pointe et, si le serveur les partage, carburant, énergie et usure des pneus. **Relais et consommation** découpe la course à chaque passage par la voie des stands : pneus, rythme, consommation et usure de chaque relais.
 
 Plus bas, **Records personnels** donne votre meilleur tour et votre vitesse de pointe avec chaque voiture sur le circuit de la course, dans la catégorie roulée, et **Comparer les sessions** liste toutes vos sessions sur ce circuit avec leur écart au record, leur rythme, leur régularité et un badge **Record** quand une session bat votre record avec cette voiture.
 
