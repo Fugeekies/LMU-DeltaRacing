@@ -27,7 +27,19 @@ public sealed class DisplayFormatTests
     }
 
     /// <summary>
-    /// Verifies the French ordinal of a position: "1er", then "2e", "3e"…
+    /// Verifies that a top speed is shown in km/h and a spread of lap times with a ± sign.
+    /// </summary>
+    [TestMethod]
+    public void Speeds_and_deviations_use_point_decimals()
+    {
+        DisplayFormat.Speed(263.06).Should().Be("263.1 km/h");
+        DisplayFormat.Speed(null).Should().Be("—");
+        DisplayFormat.Deviation(TimeSpan.FromSeconds(0.4123)).Should().Be("±0.412s");
+        DisplayFormat.Deviation(null).Should().Be("—");
+    }
+
+    /// <summary>
+    /// Verifies that minutes and seconds are both shown from one minute.
     /// </summary>
     [TestMethod]
     public void Minutes_give_minutes_and_seconds()

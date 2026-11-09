@@ -37,7 +37,7 @@ Cinq entrées au lieu de huit onglets (décision du 06/11/2026) :
 | Entrée | Pages |
 |---|---|
 | Accueil | `/` |
-| Courses ▾ | Mes courses, Détail des courses |
+| Courses ▾ | Mes courses, Détail des courses, Analyse tour par tour |
 | Performance ▾ | Progression, Profil de conduite |
 | Pilotes ▾ | Cote pilote, Classement des coureurs |
 | Options | `/settings` |
@@ -75,6 +75,12 @@ Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lig
 * **Voitures mélangées :** Course en rouge LMU (`#e11d48`), Qualification en cyan (`#38bdf8`).
 * **Une courbe par voiture :** `#38bdf8`, `#f97316`, `#a3e635`, `#f472b6`, `#facc15`, `#2dd4bf`, `#c084fc`, `#94a3b8`, attribuées par ordre alphabétique de voiture puis réutilisées en boucle.
 * Le violet, le vert et le rouge WEC ci-dessus gardent leur sens (meilleur de la classe, gain, perte) et ne servent pas aux courbes. Seul l'écart du résumé chiffré utilise le vert (plus rapide) ou le rouge (plus lent).
+* **Records personnels :** le badge « Record » d'un record battu est violet (`#b066ff`), le sens WEC du meilleur temps.
+
+### 5 bis. Graphique tour par tour (Analyse tour par tour)
+* Mêmes traits que le déroulé de la course : pilote suivi en blanc (`#f0f6fc`), pilote sélectionné en rouge LMU (`#e11d48`), passages par la voie des stands en pointillés gris.
+* Rythme du pilote suivi : tirets cyan clair (`#67e8f9`), pour ne pas reprendre le vert WEC du gain. Tours non représentatifs : points creux gris ; tours `pit="1"` : points creux jaunes (`#eab308`). Un temps hors échelle a un contour pointillé.
+* **Secteur par secteur :** barre du temps perdu en rouge WEC (`#ef4444`, perte), ligne du secteur qui coûte le plus teintée de rouge à 8 %. Secteurs du tableau des tours : violet pour le meilleur de la classe, gras pour le meilleur du pilote (le vert n'est pas utilisé pour les secteurs).
 
 ### 6. Écran de chargement au démarrage
 * Pendant l'import au démarrage, un écran plein page remplace toute l'application (header compris) : logo Delta Racing (icône de l'installeur `assets/icons/Logo-Delta-Racing-rouge-et-blanc-1.ico`, déjà servie comme `wwwroot/favicon.ico`), « IMPORT INITIAL » en rouge LMU, titre « Chargement de vos résultats ».
@@ -122,6 +128,7 @@ UISpec/
 ├── DrivingProfile.template.md --> Spécification de la vue "Profil de conduite"
 ├── DriverRating.template.md   --> Spécification de la vue "Cote pilote"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
+├── LapAnalysis.template.md    --> Spécification de la vue "Analyse tour par tour"
 ├── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 └── Console.template.md        --> Spécification de la console Spectre (Accueil, Mes courses, Options)
 ```
@@ -140,6 +147,10 @@ UISpec/
 3. **⏱️ Détail des Courses (`/race-details`)** *(Voir template [`UISpec/RaceDetails.template.md`](UISpec/RaceDetails.template.md))*
    * Analyse d'un événement sélectionné via une liste déroulante, avec des sous-onglets Course, Qualification et Essais.
    * Meilleurs secteurs personnels colorés selon les règles WEC (🟣 meilleur de la classe, 🟡 standard), tour idéal, temps total, écart au leader de la classe, contacts et limites de piste de chaque pilote.
+
+3 bis. **🔬 Analyse tour par tour (`/lap-analysis`)** *(Voir template [`UISpec/LapAnalysis.template.md`](UISpec/LapAnalysis.template.md))*
+   * Analyse d'une course pour un pilote : arrêts, régularité, rythme, vitesse de pointe, graphique des temps au tour, relais, consommation et usure, détail des tours.
+   * Records personnels et comparaison des sessions du pilote sélectionné sur le circuit de la course ; ouverte depuis le lien sous le déroulé de « Détail des courses ».
 
 4. **📈 Progression (`/progression`)** *(Voir template [`UISpec/Progression.template.md`](UISpec/Progression.template.md))*
    * Évolution des meilleurs tours du pilote sur un circuit et une catégorie, agrégés par jour, semaine, mois ou année (min, max, moyenne).

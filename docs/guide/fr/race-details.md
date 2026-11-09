@@ -20,4 +20,6 @@ Le classement complet d'un événement.
 
 Sous le tableau, le **déroulé de la course** trace la position de chaque voiture tour par tour : votre ligne en blanc avec vos incidents et arrêts, une croix pour un abandon. Cliquez une ligne pour suivre ce pilote ; **Autour de vous** et les boutons **−** / **+** ne gardent que les voitures arrivées près de vous.
 
+Le lien [**Analyse tour par tour de … →**](lap-analysis.md) sous le déroulé ouvre l’analyse du pilote suivi : régularité, relais, consommation et usure.
+
 Toutes les comparaisons se font **au sein de chaque catégorie**, comme en WEC. Votre ligne porte la mention **VOUS**.

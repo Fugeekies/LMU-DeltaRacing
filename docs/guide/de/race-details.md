@@ -20,4 +20,6 @@ Das vollständige Klassement eines Events.
 
 Unter der Tabelle zeigt der **Rennverlauf** die Position jedes Autos Runde für Runde: Ihre Linie in Weiß mit Ihren Vorfällen und Boxenstopps, ein Kreuz für einen Ausfall. Klicken Sie auf eine Linie, um diesem Fahrer zu folgen; **Um … herum** und die Tasten **−** / **+** zeigen nur die Autos, die in Ihrer Nähe ins Ziel kamen.
 
+Der Link [**Runde-für-Runde-Analyse von … →**](lap-analysis.md) unter dem Rennverlauf öffnet die Analyse des verfolgten Fahrers: Konstanz, Stints, Verbrauch und Verschleiß.
+
 Alle Vergleiche erfolgen **innerhalb jeder Klasse**, wie in der WEC. Ihre Zeile ist mit **SIE** markiert.

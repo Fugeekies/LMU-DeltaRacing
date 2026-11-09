@@ -22,6 +22,7 @@ public sealed class Driver
     /// <param name="finishStatus">The finish status reported by LMU (for example "DNF"), when available.</param>
     /// <param name="classGridPosition">The starting grid position within the vehicle class, when available.</param>
     /// <param name="dnfReason">The retirement cause reported by LMU (for example "Suspension"), when available.</param>
+    /// <param name="pitStops">The number of pit stops counted by LMU (<c>Pitstops</c>), when available.</param>
     public Driver(
         string name,
         string carNumber,
@@ -36,7 +37,8 @@ public sealed class Driver
         int? lapsCompleted = null,
         string finishStatus = "",
         int? classGridPosition = null,
-        string dnfReason = "")
+        string dnfReason = "",
+        int? pitStops = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(name);
         ArgumentNullException.ThrowIfNull(carNumber);
@@ -62,6 +64,7 @@ public sealed class Driver
         FinishStatus = finishStatus;
         ClassGridPosition = classGridPosition;
         DnfReason = dnfReason;
+        PitStops = pitStops;
     }
 
     /// <summary>
@@ -129,6 +132,12 @@ public sealed class Driver
     /// Gets the retirement cause reported by LMU ("Accident", "Engine", "Suspension", "Fuel", "DNF"...), or an empty string.
     /// </summary>
     public string DnfReason { get; }
+
+    /// <summary>
+    /// Gets the number of pit stops counted by LMU (<c>Pitstops</c>), when available. It differs from
+    /// the number of laps marked as pit laps, which also counts drive-throughs and pit lane starts.
+    /// </summary>
+    public int? PitStops { get; }
 
     /// <summary>
     /// Gets the laps recorded for the driver.

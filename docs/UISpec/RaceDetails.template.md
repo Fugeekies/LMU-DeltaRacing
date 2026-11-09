@@ -1,6 +1,6 @@
 ## 3. ⏱️ Menu : Détail des Courses (`RaceDetails.razor`)
 
-> Spécification alignée sur le code au 05/11/2026 (`RaceDetails.razor`, `RaceEventPresentation.cs`, `RaceDetailsPresentation.cs`).
+> Spécification alignée sur le code au 08/11/2026 (`RaceDetails.razor`, `RaceEventPresentation.cs`, `RaceDetailsPresentation.cs`).
 
 ### Description
 Classement détaillé d'un événement choisi par l'utilisateur (route `/race-details`). Un événement regroupe les essais, la qualification et la course disputés à la suite sur un circuit ; des sous-onglets sous le sélecteur affichent le classement de chaque session. Pour chaque pilote, la page affiche ses meilleurs secteurs, son tour idéal, son meilleur tour et son écart au leader. Toutes les comparaisons se font **au sein de la classe du pilote**, comme dans le chronométrage WEC.
@@ -66,6 +66,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * **Voitures :** « Tout le plateau » (« Toute la classe » en multiclasse, en classe ; par défaut) ou « Autour de *pilote* » : le pilote suivi, les N voitures juste devant lui et les N juste derrière dans le **classement final** (position officielle au général, ou rang en classe ; abandons à la place que LMU leur donne), soit 2N + 1 lignes au plus. Le classement final plutôt qu'un tour quelconque : avec « proche à un moment », le départ et les arrêts gardaient la moitié de la grille dès ± 1. **Écart à l'arrivée :** boutons − et + autour de « ± N places » (3 par défaut, de 1 à la taille du plateau moins 1). Le premier clic sur − ou + depuis « Tout le plateau » passe en « Autour de » avec l'écart affiché ; les suivants le changent. À droite : « N voitures affichées sur M ».
   * L'échelle des positions suit les voitures affichées, et la hauteur du graphique le nombre de positions (16 px par position, entre 230 et 620 px).
   * Les incidents du pilote suivi sont des points sur sa ligne, à la couleur du plus grave : dégâts (rouge), contact avec une voiture (orange), obstacle (jaune), pénalité (violet), limites de piste (gris). Ses arrêts au stand sont des traits pointillés. Survoler un point donne le détail du tour. Règles de calcul dans [`DrivingProfile.template.md`](DrivingProfile.template.md).
+* **Analyse tour par tour :** en course, sous le déroulé, un lien « Analyse tour par tour de *pilote* → » ouvre la page dédiée sur cette course et le pilote suivi (voir [`LapAnalysis.template.md`](LapAnalysis.template.md)).
 * **Ligne du pilote sélectionné :** légèrement surlignée (fond rouge LMU translucide), en plus du tag **VOUS**.
 * Le tableau garde sa zone de défilement **vertical** (hauteur maximale 680 px, en-tête fixe).
 * **Colonnes ajustables :** une poignée (deux traits fins) au bord droit de chaque en-tête, rouge LMU au survol avec un curseur de redimensionnement ; la faire glisser change la largeur de sa colonne ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.

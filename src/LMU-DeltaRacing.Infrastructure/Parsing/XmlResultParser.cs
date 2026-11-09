@@ -35,7 +35,7 @@ public sealed partial class XmlResultParser : IResultXmlParser
     private static readonly string[] DriverFields =
     [
         "Name", "CarNumber", "CarClass", "TeamName", "Position", "CarType", "GridPos", "FinishTime",
-        "ClassPosition", "Laps", "FinishStatus", "ClassGridPos", "DNFReason"
+        "ClassPosition", "Laps", "FinishStatus", "ClassGridPos", "DNFReason", "Pitstops"
     ];
 
     /// <inheritdoc />
@@ -190,6 +190,17 @@ public sealed partial class XmlResultParser : IResultXmlParser
                     reader.GetAttribute("p"),
                     reader.GetAttribute("et"),
                     reader.GetAttribute("pit"),
+                    reader.GetAttribute("topspeed"),
+                    reader.GetAttribute("fuel"),
+                    reader.GetAttribute("fuelUsed"),
+                    reader.GetAttribute("ve"),
+                    reader.GetAttribute("veUsed"),
+                    reader.GetAttribute("twfl"),
+                    reader.GetAttribute("twfr"),
+                    reader.GetAttribute("twrl"),
+                    reader.GetAttribute("twrr"),
+                    reader.GetAttribute("fcompound"),
+                    reader.GetAttribute("rcompound"),
                     ReadText(reader)));
                 return;
             }
@@ -444,7 +455,8 @@ public sealed partial class XmlResultParser : IResultXmlParser
             ParseOptionalInt(Field("Laps")),
             Field("FinishStatus") ?? string.Empty,
             ParseOptionalInt(Field("ClassGridPos")),
-            Field("DNFReason") ?? string.Empty);
+            Field("DNFReason") ?? string.Empty,
+            ParseOptionalInt(Field("Pitstops")));
     }
 
     private static Lap CreateLap(RawLap lap)
@@ -465,8 +477,46 @@ public sealed partial class XmlResultParser : IResultXmlParser
             sectors,
             ParseOptionalInt(lap.Position) is > 0 and var position ? position : null,
             ParseOptionalSeconds(lap.StartedAt),
-            lap.PitStop == "1");
+            lap.PitStop == "1",
+            CreateTelemetry(lap));
     }
+
+    private static LapTelemetry CreateTelemetry(RawLap lap)
+    {
+        // The four tyres are written together, or not at all when the server hides fuel data.
+        var wear = ParseOptionalDouble(lap.WearFrontLeft) is { } frontLeft
+            && ParseOptionalDouble(lap.WearFrontRight) is { } frontRight
+            && ParseOptionalDouble(lap.WearRearLeft) is { } rearLeft
+            && ParseOptionalDouble(lap.WearRearRight) is { } rearRight
+                ? new TyreWear(frontLeft, frontRight, rearLeft, rearRight)
+                : null;
+
+        return new LapTelemetry(
+            // A car that never ran reports a top speed of zero: it is not a measure.
+            ParseOptionalDouble(lap.TopSpeed) is > 0 and var topSpeed ? topSpeed : null,
+            ParseOptionalDouble(lap.Fuel),
+            ParseOptionalDouble(lap.FuelUsed),
+            ParseOptionalDouble(lap.VirtualEnergy),
+            ParseOptionalDouble(lap.VirtualEnergyUsed),
+            wear,
+            ParseCompound(lap.FrontCompound),
+            ParseCompound(lap.RearCompound));
+    }
+
+    /// <summary>
+    /// Returns the compound name of a value such as <c>0,Medium</c>. The leading number is the index of
+    /// the compound for the car, which differs from one car to another; <c>N/A</c> means no compound.
+    /// </summary>
+    private static string ParseCompound(string? value)
+    {
+        var name = value?[(value.IndexOf(',', StringComparison.Ordinal) + 1)..].Trim() ?? string.Empty;
+        return name == "N/A" ? string.Empty : name;
+    }
+
+    private static double? ParseOptionalDouble(string? value) =>
+        double.TryParse(value, NumberStyles.Float, CultureInfo.InvariantCulture, out var result) && double.IsFinite(result)
+            ? result
+            : null;
 
     private static DateTimeOffset ParseUnixTimestamp(string value)
     {
@@ -569,6 +619,17 @@ public sealed partial class XmlResultParser : IResultXmlParser
         string? Position,
         string? StartedAt,
         string? PitStop,
+        string? TopSpeed,
+        string? Fuel,
+        string? FuelUsed,
+        string? VirtualEnergy,
+        string? VirtualEnergyUsed,
+        string? WearFrontLeft,
+        string? WearFrontRight,
+        string? WearRearLeft,
+        string? WearRearRight,
+        string? FrontCompound,
+        string? RearCompound,
         string Time);
 
     private sealed record RawEvent(string Name, string? Elapsed, string? Driver, string? Lap, string Text);

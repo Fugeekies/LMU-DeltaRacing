@@ -20,4 +20,6 @@ La clasificación completa de un evento.
 
 Debajo de la tabla, el **desarrollo de la carrera** traza la posición de cada coche vuelta a vuelta: tu línea en blanco con tus incidentes y paradas, una cruz para un abandono. Haz clic en una línea para seguir a ese piloto; **Alrededor de …** y los botones **−** / **+** muestran solo los coches que terminaron cerca de ti.
 
+El enlace [**Análisis vuelta a vuelta de … →**](lap-analysis.md) bajo el desarrollo de la carrera abre el análisis del piloto seguido: regularidad, stints, consumo y desgaste.
+
 Todas las comparaciones se hacen **dentro de cada categoría**, como en el WEC. Tu fila lleva la marca **TÚ**.
