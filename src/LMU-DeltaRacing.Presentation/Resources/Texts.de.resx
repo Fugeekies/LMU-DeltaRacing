@@ -1847,7 +1847,7 @@
     <value>S{0}</value>
   </data>
   <data name="LapAnalysis.SectorNote" xml:space="preserve">
-    <value>Beste: auf gezeiteten Runden, violett, wenn sie die beste der Klasse ist. Pace und Konstanz: Median und Standardabweichung des Sektors auf den repräsentativen Runden. Referenz: der beste Median der Klasse in diesem Sektor; der Abstand dazu ist der Zeitverlust pro Runde.</value>
+    <value>Beste: auf gezeiteten Runden, fett, wenn sie die beste der Klasse ist. Pace und Konstanz: Median und Standardabweichung des Sektors auf den repräsentativen Runden. Referenz: der beste Median der Klasse in diesem Sektor; der Abstand dazu ist der Zeitverlust pro Runde.</value>
   </data>
   <data name="LapAnalysis.LapTimes" xml:space="preserve">
     <value>Runde für Runde</value>
@@ -1859,7 +1859,7 @@
     <value>Keine gezeitete Zeit für diese Messgröße.</value>
   </data>
   <data name="LapAnalysis.LapsNote" xml:space="preserve">
-    <value>Violette Sektoren: Klassenbestzeit; fett: Bestzeit des Fahrers. Nicht repräsentative Runden sind ausgegraut.</value>
+    <value>Fett: Bestzeit des Fahrers. Nicht repräsentative Runden sind ausgegraut.</value>
   </data>
   <data name="LapAnalysis.StintsAndConsumption" xml:space="preserve">
     <value>Stints und Verbrauch</value>
