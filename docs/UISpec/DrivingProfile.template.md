@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 02/11/2026 (`DrivingProfile.razor`, `DrivingProfilePresentation.cs`, `DrivingConductPresentation.cs`).
 
 ### Description
-Page `/driving-profile`, onglet placé après « Progression ». Elle montre comment roule le **pilote sélectionné** (voir Options) : ses contacts, limites de piste et pénalités, comparés aux autres pilotes de ses sessions, et où il peut progresser. Dashboard uniquement : la console attend la décision du jalon « Avenir de la console Spectre ».
+Page `/driving-profile`, onglet placé après « Progression ». Elle montre comment roule le **pilote sélectionné** (voir Options) : ses contacts, limites de piste et pénalités, comparés aux autres pilotes de ses sessions, et où il peut progresser.
 
 ### Spécifications fonctionnelles
 * **Sessions prises en compte :** qualifications et courses du pilote sélectionné, après fusion de pilotes. Les essais sont ignorés, comme dans les autres vues de résultats : ils sont optionnels, et un pilote y essaie des choses.

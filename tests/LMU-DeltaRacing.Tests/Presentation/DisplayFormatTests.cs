@@ -4,7 +4,7 @@ using LMU_DeltaRacing.Presentation.Models;
 namespace LMU_DeltaRacing.Tests.Presentation;
 
 /// <summary>
-/// Verifies the value formats shared by the dashboard pages and the console views.
+/// Verifies the value formats shared by the dashboard pages.
 /// </summary>
 [TestClass]
 public sealed class DisplayFormatTests

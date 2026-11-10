@@ -27,8 +27,8 @@ public sealed class SessionImportService : ISessionImportService
     /// <param name="repository">The destination session repository.</param>
     /// <param name="logger">The logger used to report import progress and failures.</param>
     /// <param name="importPracticeSessions">
-    /// Whether practice sessions are stored. The console statistics ignore them, while the
-    /// dashboard keeps them for the practice tab of the race-details page.
+    /// Whether practice sessions are stored. The dashboard keeps them, when the
+    /// <c>LMU:LoadPracticeSessions</c> option is on, for the practice tab of the race-details page.
     /// </param>
     public SessionImportService(
         IResultXmlParser parser,

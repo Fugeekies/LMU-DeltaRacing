@@ -158,7 +158,7 @@ public sealed partial class TextsTests
         Path.Combine(FindRepositoryRoot(), "src", "LMU-DeltaRacing.Presentation", "Resources", "Texts.resx");
 
     private static IEnumerable<string> SourceFiles() =>
-        new[] { "LMU-DeltaRacing.Presentation", "LMU-DeltaRacing.UI", "LMU-DeltaRacing.Console" }
+        new[] { "LMU-DeltaRacing.Presentation", "LMU-DeltaRacing.UI" }
             .SelectMany(project => Directory.EnumerateFiles(Path.Combine(FindRepositoryRoot(), "src", project), "*.*", SearchOption.AllDirectories))
             .Where(file => file.EndsWith(".cs", StringComparison.Ordinal) || file.EndsWith(".razor", StringComparison.Ordinal))
             .Where(file => !file.Contains($"{Path.DirectorySeparatorChar}obj{Path.DirectorySeparatorChar}", StringComparison.Ordinal)

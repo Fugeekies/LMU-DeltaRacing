@@ -13,16 +13,11 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
-### Jalon — Avenir de la console Spectre (à décider)
-Chaque règle métier est partagée (`Presentation`), mais son rendu existe deux fois : pages Razor et `Console/Views`. Chaque nouvelle vue double donc le coût de développement et de test.
-- [ ] Décider du rôle de la console : outil de diagnostic gelé (aucune nouvelle vue) ou application à part entière qui suit le dashboard.
-- [ ] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, pour que les prochaines évolutions sachent si elles doivent toucher la console.
-
 ### Jalon — Choix des sessions importées
 Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses) ; elle n'est pas lue par le parser.
 - [ ] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés).
 - [ ] **Parser :** lire `<Setting>`, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
-- [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`. Comportement de la console à décider selon le jalon « Avenir de la console Spectre ».
+- [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`.
 - [ ] **Optimisation des essais** (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt, et de même pour les sessions « Race Weekend ». Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
 
 ### Jalon — Export CSV
@@ -32,6 +27,12 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Avenir de la console Spectre — 10/11/2026 · PR [#71](https://github.com/Fugeekies/LMU-DeltaRacing/pull/71)
+Chaque règle métier était partagée (`Presentation`), mais son rendu existait deux fois : pages Razor et `Console/Views`. Chaque nouvelle vue doublait donc le coût de développement et de test, et la console n'avait déjà plus que l'Accueil, Mes courses et les Options.
+- [x] Décider du rôle de la console : supprimée (décision du 10/11/2026). Un terminal rend mal les graphiques (Progression, Cote pilote, tour par tour), les tableaux larges (comparaison des sessions, relais, usure des pneus) et la navigation entre pages ; l'installeur ne distribuait que le dashboard.
+- [x] Supprimer le projet `LMU-DeltaRacing.Console`, ses tests, sa spécification (`UISpec/Console.template.md`) et ce qui ne servait qu'à lui (`DashboardDataService.LiveImportCompleted`, paquets Spectre.Console et OpenTelemetry).
+- [x] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, et retirer la console du guide développeur et des spécifications.
 
 ### Jalon — Analyse de course tour par tour — 08/11/2026 · PR [#69](https://github.com/Fugeekies/LMU-DeltaRacing/pull/69)
 Les balises `<Lap>` contenaient bien plus que les temps et les secteurs utilisés : position, vitesse de pointe, carburant, énergie, usure des pneus, composés et arrêts. Dashboard uniquement, tant que le jalon « Avenir de la console Spectre » n'est pas tranché. Nouvelle page « Analyse tour par tour » du menu Courses (`/lap-analysis`), spec [`LapAnalysis.template.md`](UISpec/LapAnalysis.template.md).

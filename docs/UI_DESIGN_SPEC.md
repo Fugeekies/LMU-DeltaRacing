@@ -68,7 +68,7 @@ Chaque catégorie prend la couleur de fond de son numéro de course, en aplat, s
 * **LMGT3 :** Orange (`#d97706`), texte blanc. Son numéro officiel est vert, comme celui de LMGTE : l'orange évite de confondre les deux catégories.
 * **Classe inconnue :** Gris (`#8b949e`), texte sombre.
 
-Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lignes de ventilation de l'Accueil (point et jauge), et aux séparateurs de catégorie de Mes courses. Dans la console, la catégorie est un badge sur la même couleur : le bleu et le violet sont illisibles en texte sur un terminal noir.
+Ces couleurs s'appliquent aux badges (Mes courses, Détail des courses), aux lignes de ventilation de l'Accueil (point et jauge), et aux séparateurs de catégorie de Mes courses.
 
 ---
 
@@ -130,8 +130,7 @@ UISpec/
 ├── DriverRating.template.md   --> Spécification de la vue "Cote pilote"
 ├── RaceDetails.template.md    --> Spécification de la vue "Détail des Courses"
 ├── LapAnalysis.template.md    --> Spécification de la vue "Analyse tour par tour"
-├── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
-└── Console.template.md        --> Spécification de la console Spectre (Accueil, Mes courses, Options)
+└── Settings.template.md       --> Spécification de la vue "Options / Paramètres"
 ```
 
 ### Récapitulatif des Menus Principaux :
