@@ -3,7 +3,7 @@ using System.Globalization;
 namespace LMU_DeltaRacing.Presentation.Models;
 
 /// <summary>
-/// Formats times, numbers and dates the same way in the dashboard pages and the console views.
+/// Formats times, numbers and dates the same way in every dashboard page.
 /// A missing value is always shown as "—".
 /// </summary>
 public static class DisplayFormat
@@ -22,7 +22,7 @@ public static class DisplayFormat
 
     /// <summary>
     /// Gets or sets how dates are written (<c>LMU:DateFormat</c>), for the whole application: the
-    /// dashboard has a single user. The console keeps the default, which follows the language.
+    /// dashboard has a single user. The default follows the language.
     /// </summary>
     public static DateFormatOption DateFormat { get; set; } = DateFormatOption.Language;
 

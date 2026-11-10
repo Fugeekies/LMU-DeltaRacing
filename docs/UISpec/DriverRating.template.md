@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 03/11/2026 (`DriverRating.razor`, `RatingChart.razor`, `DriverRatings.cs`, `DriverRatingPresentation.cs`, `RatingChartLayout.cs`). Décisions et simulation sur les fixtures : [`propositions/cote-pilote.md`](../propositions/cote-pilote.md). Guide utilisateur des calculs : [`COTE_PILOTE.md`](../COTE_PILOTE.md), à garder synchronisé avec cette spécification.
 
 ### Description
-Page `/rating`, onglet placé après « Profil de conduite ». Elle donne au **pilote sélectionné** (voir Options) une cote Elo multijoueur, calculée sur ses fichiers de résultats pour **chaque pilote croisé en course** : sa cote, son rang et son palier parmi ces pilotes, le prochain pilote à dépasser, l'évolution course après course, ses exploits et ses revers. Le « Classement des coureurs » compte des face-à-face, sans tenir compte du niveau des adversaires ; la cote, elle, pèse chaque résultat selon la force du plateau. Dashboard uniquement : la console attend la décision du jalon « Avenir de la console Spectre ».
+Page `/rating`, onglet placé après « Profil de conduite ». Elle donne au **pilote sélectionné** (voir Options) une cote Elo multijoueur, calculée sur ses fichiers de résultats pour **chaque pilote croisé en course** : sa cote, son rang et son palier parmi ces pilotes, le prochain pilote à dépasser, l'évolution course après course, ses exploits et ses revers. Le « Classement des coureurs » compte des face-à-face, sans tenir compte du niveau des adversaires ; la cote, elle, pèse chaque résultat selon la force du plateau.
 
 ### Spécifications fonctionnelles
 * **Courses notées :** sessions `Race` uniquement, dans l'ordre chronologique (`StartedAt`, puis `Id`), après fusion de pilotes. Qualifications et essais ne comptent pas.

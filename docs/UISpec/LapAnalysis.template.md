@@ -3,7 +3,7 @@
 > Spécification alignée sur le code au 08/11/2026 (`LapAnalysis.razor`, `LapAnalysisPanel.razor`, `PersonalRecordsPanel.razor`, `LapAnalysisPresentation.cs`, `PersonalRecordsPresentation.cs`, `LapTimesChartLayout.cs`).
 
 ### Description
-Page `/lap-analysis`, troisième page du menu « Courses » (voir `UI_DESIGN_SPEC.md`, § 2 ter). Elle analyse une course tour par tour pour un pilote (par défaut le pilote sélectionné dans Options), puis montre les records et les sessions du pilote sélectionné sur le circuit de cette course. Dashboard uniquement : la console n'a pas cette page.
+Page `/lap-analysis`, troisième page du menu « Courses » (voir `UI_DESIGN_SPEC.md`, § 2 ter). Elle analyse une course tour par tour pour un pilote (par défaut le pilote sélectionné dans Options), puis montre les records et les sessions du pilote sélectionné sur le circuit de cette course.
 
 ### Spécifications fonctionnelles
 * **Courses proposées** (`LapAnalysisPresentation.GetRaces`) : les courses (`Session.Kind`) où le pilote sélectionné a au moins un tour, de la plus récente à la plus ancienne. Libellé : `dd/MM/yyyy HH:mm - <Lieu> - <Catégorie du pilote>`. Par défaut, la plus récente ; si elle disparaît (rechargement), la plus récente est resélectionnée.

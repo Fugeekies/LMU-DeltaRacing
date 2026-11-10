@@ -6,18 +6,17 @@ La [feuille de route](ROADMAP.md) présente les jalons envisagés et une liste d
 
 ## État actuel
 
-Le socle métier, le monitoring et la console sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et la console Spectre reprend l'Accueil, Mes courses et les Options du dashboard avec les mêmes calculs (projet `Presentation`). Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
+Le socle métier, le monitoring et le dashboard sont en place : le parser transforme les fichiers XML LMU en entités métier (`Session`, `Driver`, `Lap`, `Sector`), le dépôt conserve les sessions en mémoire, et le dashboard Blazor, seule interface de l'application, affiche les calculs du projet `Presentation`. La console Spectre.Console a été supprimée le 10/11/2026 (voir la [feuille de route](ROADMAP.md)). Les tests MSTest et l'application utilisent le jeu de résultats anonymisés unique de `assets/Results`.
 
 ## Projets
 
 - `src/LMU-DeltaRacing.Domain` : entités métier sans dépendance externe.
 - `src/LMU-DeltaRacing.Application` : contrats du parser et du dépôt.
 - `src/LMU-DeltaRacing.Infrastructure` : parser XML, dépôt en mémoire et surveillance dynamique du dossier de résultats.
-- `src/LMU-DeltaRacing.Console` : console Spectre.Console (Accueil, Mes courses, Options) sur les services partagés du projet `Presentation`, avec surveillance dynamique des XML et diagnostic OpenTelemetry.
-- `src/LMU-DeltaRacing.Presentation` : calculs des vues, service de données, réglages et détection du dossier de résultats, partagés par l'UI et la console.
+- `src/LMU-DeltaRacing.Presentation` : calculs des vues, service de données, réglages et détection du dossier de résultats, utilisés par l'UI.
 - `src/LMU-DeltaRacing.UI` : dashboard Blazor local avec historique des sessions, classements et surveillance dynamique des nouveaux résultats.
-- `src/LMU-DeltaRacing.Console/appsettings.json` : valeurs initiales pour la configuration de l'application.
-- `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import et de la console.
+- `src/LMU-DeltaRacing.UI/appsettings.json` : valeurs initiales pour la configuration de l'application.
+- `tests/LMU-DeltaRacing.Tests` : tests unitaires MSTest et FluentAssertions du parsing, de l'import, des calculs des vues et de l'UI.
 - `docs/benchmarks/dynamic-import-load-report.md` : résultats du test de charge de la surveillance sur 50 fichiers XML simultanés.
 - `benchmarks/LMU-DeltaRacing.Benchmarks` : projet MSTest dédié aux benchmarks : parsing de XML synthétiques et de lots temporaires, chaîne d'import sur les fichiers réels et calculs de chaque page.
 - `Directory.Build.props` (racine) : framework cible, usings implicites et types nullables communs. `src/Directory.Build.props` : documentation XML obligatoire et avertissements traités comme des erreurs pour les projets de l'application.
@@ -29,7 +28,7 @@ Le dashboard est en cinq langues (proposition : [`propositions/interface-multili
 - **Ajouter ou modifier un texte :** l'écrire en français dans `src/LMU-DeltaRacing.Presentation/Resources/Texts.resx` (clé en anglais par page et rôle, `MyRaces.Title`), puis sa traduction dans `Texts.en.resx`, `Texts.de.resx`, `Texts.it.resx` et `Texts.es.resx`, avec les mêmes paramètres `{0}`. Un pluriel a deux clés, `.One` et `.Other`, lues par `Texts.Plural`.
 - **L'afficher :** `@T["Clé"]` ou `@T["Clé", valeur]` dans une page Razor, `Texts.Get`, `Texts.Format` ou `Texts.Plural` en C#. Jamais dans un champ `static readonly`, figé à la première lecture.
 - **Vérifier :** `TextsTests` échoue sur une clé utilisée absente, un texte inutilisé, une traduction manquante ou des paramètres différents, et un format invalide. Pour voir une page dans une langue : `LMU__Language=de dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`.
-- **Langue et dates :** `UiLanguage` (langue de l'interface, appliquée par `CultureInfo.DefaultThreadCurrentUICulture`) et `DisplayFormat` (`Position`, `Date`, réglage `DateFormat`). Les nombres gardent la culture de Windows. La console et les tests forcent le français.
+- **Langue et dates :** `UiLanguage` (langue de l'interface, appliquée par `CultureInfo.DefaultThreadCurrentUICulture`) et `DisplayFormat` (`Position`, `Date`, réglage `DateFormat`). Les nombres gardent la culture de Windows. Les tests forcent le français.
 - **Installeur :** `scripts/installer.iss` est en cinq langues (fichiers de messages d'Inno Setup) et écrit la langue choisie dans `LMU:Language` à la première installation.
 - **Guide d'utilisation :** une page par sujet et par langue dans `docs/guide/<langue>/`, qui cite les libellés de l'écran dans sa langue ; `UserGuideTests` vérifie que les cinq langues ont les mêmes pages et des liens valides.
 
@@ -37,7 +36,6 @@ Le dashboard est en cinq langues (proposition : [`propositions/interface-multili
 
 - `dotnet build`
 - `dotnet test`
-- `dotnet run --project src/LMU-DeltaRacing.Console/LMU-DeltaRacing.Console.csproj`
 - `dotnet run --project src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj`
 - `dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:PublishProfile=win-x64`
 - `pwsh -File scripts/Prepare-PackageAssets.ps1 -SourceDirectory "$env:USERPROFILE\Documents\Le Mans Ultimate\UserData\Log\Results" -OutputDirectory assets/Results -MergeSingleRaceDrivers`
@@ -51,15 +49,9 @@ Le dashboard est en cinq langues (proposition : [`propositions/interface-multili
 
 Un build local de l'UI est en version `0.0.0-dev` et ne vérifie pas les mises à jour. Pour tester la fenêtre de nouvelle version, publier avec un numéro inférieur à la dernière release (`-p:Version=0.0.1`) et lancer l'exécutable publié.
 
-La console ne prend aucun argument : elle charge le dossier configuré dans son `appsettings.json` (ou détecté automatiquement) et reste ouverte jusqu'au choix `Quitter`.
+Les logs sont écrits par `JsonFileLoggerProvider` dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
 
-Au démarrage, la console importe les XML du dossier configuré avec une barre de progression, affiche un résumé du chargement (les échecs sont détaillés), puis le menu principal : Accueil, Mes courses, Options, Quitter. Les nouveaux XML sont importés automatiquement si la surveillance est active; les fichiers verrouillés sont réessayés, les doublons ignorés, et les imports sont signalés au retour au menu principal. Les vues sont recalculées à chaque ouverture depuis les sessions en mémoire. Changer le dossier des résultats dans Options recharge immédiatement les résultats et la surveillance. Les sessions d'essais ne sont jamais importées. Les tests de rendu utilisent `Spectre.Console.Testing` (`TestConsole`).
-
-Les logs OpenTelemetry sont écrits dans `lmu-deltaracing.log`, à côté de l'exécutable, sous forme de JSON Lines : chaque ligne est un objet JSON structuré. Le fichier reste disponible après la fermeture de l'application et est écrasé au démarrage suivant.
-
-Les statistiques agrégées de la dernière exécution sont écrites dans `lmu-deltaracing-stats.json`, au même endroit. Le fichier indique les imports réussis/échoués, la durée moyenne par fichier, le débit moyen d'import, ainsi que les moyennes du working set et du heap .NET. Il est lui aussi conservé après l'arrêt et réinitialisé au prochain lancement. Les traces et métriques OpenTelemetry ne polluent pas le terminal.
-
-Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est découvert dans `assets/Results`, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal est `Debug`. Le terminal n'affiche pas les logs ; le niveau configuré ne concerne que le fichier.
+Les réglages sont enregistrés dans `appsettings.json` à côté de l'exécutable et rechargés à chaud. Par défaut, le dossier des XML est détecté automatiquement, le log se nomme `lmu-deltaracing.log` à côté de l'exécutable et son niveau minimal (`LMU:FileMinimumLogLevel`) est `Debug`.
 
 Le dashboard Blazor s'ouvre sur la page Accueil (`/`), tableau de bord de la carrière du pilote sélectionné. Au premier démarrage, il sélectionne automatiquement le pilote le plus fréquent dans les résultats importés et enregistre son nom dans `LMU:UserName`. À la fin de chaque import complet, si ce pilote n'apparaît dans aucune session (dossier changé, pseudo modifié), le plus fréquent le remplace et un encadré « Pilote principal remplacé » le signale (`DashboardState.UserNameReplacement`). Le pilote peut ensuite être changé dans Options, où les candidats sont triés par fréquence d'apparition. Les vues de résultats n'affichent que les sessions contenant le pilote sélectionné. La page Options permet aussi de saisir ou choisir le dossier de résultats avec le sélecteur Windows, de le valider, de le sauvegarder et de recharger son watcher. L'état des imports et les erreurs y sont affichés sous la configuration. La préférence `LMU:WatchResultsOnStartup` permet de désactiver la surveillance automatique au lancement. L'application s'ouvre dans le navigateur par défaut et n'écoute que sur l'interface locale (`127.0.0.1`) avec un port attribué automatiquement.
 
