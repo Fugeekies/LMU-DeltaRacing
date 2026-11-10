@@ -31,7 +31,7 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 ### Jalon — Avenir de la console Spectre — 10/11/2026 · PR [#71](https://github.com/Fugeekies/LMU-DeltaRacing/pull/71)
 Chaque règle métier était partagée (`Presentation`), mais son rendu existait deux fois : pages Razor et `Console/Views`. Chaque nouvelle vue doublait donc le coût de développement et de test, et la console n'avait déjà plus que l'Accueil, Mes courses et les Options.
 - [x] Décider du rôle de la console : supprimée (décision du 10/11/2026). Un terminal rend mal les graphiques (Progression, Cote pilote, tour par tour), les tableaux larges (comparaison des sessions, relais, usure des pneus) et la navigation entre pages ; l'installeur ne distribuait que le dashboard.
-- [x] Supprimer le projet `LMU-DeltaRacing.Console`, ses tests, sa spécification (`UISpec/Console.template.md`) et ce qui ne servait qu'à lui (`DashboardDataService.LiveImportCompleted`, paquets Spectre.Console et OpenTelemetry).
+- [x] Supprimer le projet `LMU-DeltaRacing.Console`, ses tests, sa spécification (`UISpec/Console.template.md`) et ce qui ne servait qu'à lui (`DashboardDataService.LiveImportCompleted`, `ApplicationTelemetry`, paquets Spectre.Console et OpenTelemetry).
 - [x] Documenter la décision dans `AGENTS.md` et `docs/ARCHITECTURE.md`, et retirer la console du guide développeur et des spécifications.
 
 ### Jalon — Analyse de course tour par tour — 08/11/2026 · PR [#69](https://github.com/Fugeekies/LMU-DeltaRacing/pull/69)

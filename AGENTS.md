@@ -23,7 +23,7 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | Projet | Rôle |
 |---|---|
 | `src/LMU-DeltaRacing.Domain` | Entités immuables `Session`, `Driver`, `Lap`, `Sector`, `SessionEvent` (contacts, limites de piste et pénalités du `Stream`), sans dépendance. `Session.Kind` (essais/qualif/course) et `Driver.BestLap` calculés à la création. |
-| `src/LMU-DeltaRacing.Application` | Contrats (`IResultXmlParser`, `ISessionRepository`, `ISessionImportService`), `SessionImportService` (retries sur fichier verrouillé), télémétrie (`ApplicationTelemetry`). |
+| `src/LMU-DeltaRacing.Application` | Contrats (`IResultXmlParser`, `ISessionRepository`, `ISessionImportService`), `SessionImportService` (retries sur fichier verrouillé). |
 | `src/LMU-DeltaRacing.Infrastructure` | `XmlResultParser` (en flux, `XmlReader`), `InMemorySessionRepository`, `ResultsDirectoryWatcher` (`FileSystemWatcher` + `Channel`, déduplication par chemin). |
 | `src/LMU-DeltaRacing.Presentation` | Code métier des vues, séparé des composants Razor pour être testé sans l'UI. `Services/DashboardDataService` (hosted service : import initial, watcher, état partagé via `StateChanged`), `DashboardSettingsStore` (écriture des réglages), `ResultsDirectoryResolver`. Calculs des vues dans `Models/*Presentation.cs`. |
 | `src/LMU-DeltaRacing.UI` | Blazor Server : composants Razor, `WindowsFolderPicker`, géométrie du graphique Progression (`ProgressionChartLayout`), vérification de la dernière release (`UpdateCheckService`, version dans `ApplicationVersion`). |

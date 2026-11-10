@@ -179,4 +179,4 @@ UISpec/
 2. **Performance des Grilles :** Utiliser la virtualisation Blazor (`<Virtualize>`) ou un défilement optimisé pour les grilles de temps comportant de nombreux pilotes (> 40 voitures).
 3. **Réactivité :** Les filtres et les sélecteurs doivent mettre à jour les tableaux sans rechargement complet de la page.
    * **Colonnes ajustables :** tout tableau `data-table` porte l’attribut `data-resizable-columns` (`wwwroot/resizable-columns.js`) : une poignée de deux traits fins au bord droit de chaque en-tête (`thead`), rouge LMU au survol, se fait glisser pour changer la largeur de la colonne ; un double-clic rend les largeurs automatiques. Largeurs non mémorisées. Un nouveau tableau doit porter l’attribut.
-4. **Traçabilité :** Chaque changement de vue ou de filtre doit émettre des logs structurés (OpenTelemetry/Serilog).
+4. **Traçabilité :** Chaque changement de vue ou de filtre doit émettre des logs structurés (`Microsoft.Extensions.Logging`).
