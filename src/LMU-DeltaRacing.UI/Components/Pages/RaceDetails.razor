@@ -287,15 +287,7 @@ else
         var carClass = raceEvent.Sessions
             .Select(session => DriverProfile.FindDriver(session, State.UserName)?.CarClass)
             .FirstOrDefault(value => !string.IsNullOrWhiteSpace(value));
-        var sessionsLabel = string.Join(
-            " · ",
-            new[]
-            {
-                raceEvent.Practice is null ? null : T["RaceDetails.EventPractice"],
-                raceEvent.Qualifying is null ? null : T["RaceDetails.EventQualifying"],
-                raceEvent.Race is null ? null : T["RaceDetails.EventRace"]
-            }.OfType<string>());
-        var label = $"{DisplayFormat.DateTime(raceEvent.StartedAt)} - {raceEvent.TrackVenue} ({sessionsLabel})";
+        var label = $"{DisplayFormat.DateTime(raceEvent.StartedAt)} - {raceEvent.TrackVenue} ({RaceEventPresentation.SessionsLabel(raceEvent)})";
         return string.IsNullOrWhiteSpace(carClass) ? label : $"{label} - {CarCategory.FromCarClass(carClass)}";
     }
 
