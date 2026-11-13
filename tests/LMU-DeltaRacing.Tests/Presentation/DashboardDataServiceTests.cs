@@ -451,8 +451,10 @@ public sealed class DashboardDataServiceTests
     [TestMethod]
     public async Task Startup_load_reports_progress_and_failures_in_file_order()
     {
+        // Offline races against the AI are skipped by default: only races that are imported are kept.
         var fixtures = Directory.EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*R1.xml")
             .Order(StringComparer.Ordinal)
+            .Where(path => !File.ReadAllText(path).Contains("<Setting>Race Weekend</Setting>", StringComparison.Ordinal))
             .Take(24)
             .ToArray();
         var resultsDirectory = Path.Combine(Path.GetTempPath(), $"lmu-dashboard-{Guid.NewGuid():N}");

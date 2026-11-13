@@ -54,10 +54,12 @@ Panneau de configuration (route `/settings`) qui permet de choisir le dossier de
 * Case à cocher « Lancer la surveillance des fichiers XML automatiquement au démarrage de l'application » (`LMU:WatchResultsOnStartup`, cochée par défaut).
 * Le choix est **enregistré immédiatement** dans `appsettings.json` (message « Préférence de démarrage enregistrée. ») et s'applique au prochain démarrage. Le bouton « Appliquer » active la surveillance immédiatement, quelle que soit la case.
 
-#### Panneau « Sessions d'essais »
+#### Panneau « Sessions chargées »
 * Case à cocher « Charger les sessions d'essais (onglet Essais du détail des courses) » (`LMU:LoadPracticeSessions`, **décochée par défaut** : les essais sont souvent vides et ralentissent le chargement).
 * Le choix est **enregistré immédiatement**, puis les résultats du dossier configuré sont **rechargés** (messages « Sessions d'essais chargées. » / « Sessions d'essais retirées. »).
 * Décochée : les fichiers d'essais sont lus mais pas conservés ; l'onglet Essais du détail des courses n'apparaît plus.
+* Case à cocher « Charger les courses hors ligne contre l'IA » (`LMU:LoadRaceWeekendSessions`, **décochée par défaut**, décision du 13/11/2026) : les fichiers dont `<Setting>` vaut `Race Weekend` sont des courses en solo contre l'IA, qui fausseraient la cote pilote et les statistiques entre joueurs.
+* Même comportement que la case des essais : enregistrement immédiat, puis rechargement (messages « Courses hors ligne contre l'IA chargées. » / « Courses hors ligne contre l'IA retirées. »). Décochée : ces fichiers sont lus mais pas conservés (`SessionImportStatus.SkippedRaceWeekend`).
 
 #### Panneau « Mises à jour »
 * Ligne d'état : « Version installée : vX.Y.Z » puis l'état de la vérification lancée au démarrage, mis à jour dès qu'elle se termine :

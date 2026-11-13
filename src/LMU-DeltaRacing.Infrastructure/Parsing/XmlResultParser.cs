@@ -30,7 +30,7 @@ public sealed partial class XmlResultParser : IResultXmlParser
         IgnoreProcessingInstructions = true
     };
 
-    private static readonly string[] ResultsFields = ["DateTime", "TrackVenue", "TrackCourse", "TrackEvent", "TrackLength"];
+    private static readonly string[] ResultsFields = ["DateTime", "TrackVenue", "TrackCourse", "TrackEvent", "TrackLength", "Setting"];
 
     private static readonly string[] DriverFields =
     [
@@ -325,7 +325,8 @@ public sealed partial class XmlResultParser : IResultXmlParser
             drivers,
             ParseOptionalInt(phase.MostLapsCompleted?.Trim()),
             ParseOptionalMeters(Value(results.Values, ResultsFields, "TrackLength")),
-            phase.Events.Select(CreateEvent).OfType<SessionEvent>());
+            phase.Events.Select(CreateEvent).OfType<SessionEvent>(),
+            Value(results.Values, ResultsFields, "Setting"));
     }
 
     /// <summary>

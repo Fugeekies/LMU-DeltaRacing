@@ -18,6 +18,9 @@ public sealed class Session
     /// <param name="mostLapsCompleted">The highest number of laps completed in the session.</param>
     /// <param name="trackLength">The length of one lap, in meters, when available.</param>
     /// <param name="events">The events of the session log, in chronological order.</param>
+    /// <param name="setting">
+    /// The game mode from the result file (<c>RaceResults/Setting</c>), or <see langword="null"/> when absent.
+    /// </param>
     public Session(
         Guid id,
         DateTimeOffset startedAt,
@@ -28,7 +31,8 @@ public sealed class Session
         IEnumerable<Driver> drivers,
         int? mostLapsCompleted = null,
         double? trackLength = null,
-        IEnumerable<SessionEvent>? events = null)
+        IEnumerable<SessionEvent>? events = null,
+        string? setting = null)
     {
         ArgumentException.ThrowIfNullOrWhiteSpace(trackVenue);
         ArgumentException.ThrowIfNullOrWhiteSpace(trackCourse);
@@ -47,6 +51,8 @@ public sealed class Session
         MostLapsCompleted = mostLapsCompleted;
         TrackLength = trackLength;
         Events = Array.AsReadOnly(events?.ToArray() ?? []);
+        Setting = setting?.Trim() ?? string.Empty;
+        IsRaceWeekend = string.Equals(Setting, RaceWeekendSetting, StringComparison.OrdinalIgnoreCase);
     }
 
     /// <summary>
@@ -103,6 +109,20 @@ public sealed class Session
     /// Gets the events of the session log, in chronological order.
     /// </summary>
     public IReadOnlyList<SessionEvent> Events { get; }
+
+    /// <summary>
+    /// Gets the game mode from the result file: <c>Multiplayer</c> or <c>Race Weekend</c> in the
+    /// known files, or an empty string when absent.
+    /// </summary>
+    public string Setting { get; }
+
+    /// <summary>
+    /// Gets whether <see cref="Setting"/> is <c>Race Weekend</c>: in the known files, an offline
+    /// race against the AI, with a single human player.
+    /// </summary>
+    public bool IsRaceWeekend { get; }
+
+    private const string RaceWeekendSetting = "Race Weekend";
 
     // LMU writes "Practice1"..., "Qualify" and "Race"; numbered or longer names are accepted too.
     private static SessionKind GetKind(string sessionType) =>

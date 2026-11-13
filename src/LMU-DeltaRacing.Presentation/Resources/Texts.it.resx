@@ -1099,8 +1099,8 @@
   <data name="Settings.DataEyebrow" xml:space="preserve">
     <value>DATI CARICATI</value>
   </data>
-  <data name="Settings.Practice" xml:space="preserve">
-    <value>Sessioni di prova</value>
+  <data name="Settings.LoadedSessions" xml:space="preserve">
+    <value>Sessioni caricate</value>
   </data>
   <data name="Settings.PracticeLabel" xml:space="preserve">
     <value>Carica le sessioni di prova (scheda Prove del dettaglio gare)</value>
@@ -1173,6 +1173,21 @@
   </data>
   <data name="Settings.PracticeSaveFailed" xml:space="preserve">
     <value>Impossibile salvare la preferenza delle prove: {0}</value>
+  </data>
+  <data name="Settings.RaceWeekendLabel" xml:space="preserve">
+    <value>Carica le gare offline contro l’IA</value>
+  </data>
+  <data name="Settings.RaceWeekendHelp" xml:space="preserve">
+    <value>Gare in solitaria (modalità «Race Weekend» del gioco): escluderle mantiene il rating pilota e le statistiche tra giocatori. La scelta viene salvata e i risultati vengono ricaricati subito.</value>
+  </data>
+  <data name="Settings.RaceWeekendLoaded" xml:space="preserve">
+    <value>Gare offline contro l’IA caricate.</value>
+  </data>
+  <data name="Settings.RaceWeekendRemoved" xml:space="preserve">
+    <value>Gare offline contro l’IA rimosse.</value>
+  </data>
+  <data name="Settings.RaceWeekendSaveFailed" xml:space="preserve">
+    <value>Impossibile salvare la preferenza delle gare offline: {0}</value>
   </data>
   <data name="Update.Eyebrow" xml:space="preserve">
     <value>VERSIONE E AGGIORNAMENTI</value>

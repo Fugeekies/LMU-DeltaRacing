@@ -1099,8 +1099,8 @@
   <data name="Settings.DataEyebrow" xml:space="preserve">
     <value>LOADED DATA</value>
   </data>
-  <data name="Settings.Practice" xml:space="preserve">
-    <value>Practice sessions</value>
+  <data name="Settings.LoadedSessions" xml:space="preserve">
+    <value>Loaded sessions</value>
   </data>
   <data name="Settings.PracticeLabel" xml:space="preserve">
     <value>Load the practice sessions (Practice tab of the race details)</value>
@@ -1173,6 +1173,21 @@
   </data>
   <data name="Settings.PracticeSaveFailed" xml:space="preserve">
     <value>Could not save the practice preference: {0}</value>
+  </data>
+  <data name="Settings.RaceWeekendLabel" xml:space="preserve">
+    <value>Load the offline races against the AI</value>
+  </data>
+  <data name="Settings.RaceWeekendHelp" xml:space="preserve">
+    <value>Solo races (the game’s “Race Weekend” mode): leaving them out keeps the driver rating and statistics between players. The choice is saved and the results are reloaded at once.</value>
+  </data>
+  <data name="Settings.RaceWeekendLoaded" xml:space="preserve">
+    <value>Offline races against the AI loaded.</value>
+  </data>
+  <data name="Settings.RaceWeekendRemoved" xml:space="preserve">
+    <value>Offline races against the AI removed.</value>
+  </data>
+  <data name="Settings.RaceWeekendSaveFailed" xml:space="preserve">
+    <value>Could not save the offline race preference: {0}</value>
   </data>
   <data name="Update.Eyebrow" xml:space="preserve">
     <value>VERSION &amp; UPDATES</value>

@@ -1099,8 +1099,8 @@
   <data name="Settings.DataEyebrow" xml:space="preserve">
     <value>DATOS CARGADOS</value>
   </data>
-  <data name="Settings.Practice" xml:space="preserve">
-    <value>Sesiones de libres</value>
+  <data name="Settings.LoadedSessions" xml:space="preserve">
+    <value>Sesiones cargadas</value>
   </data>
   <data name="Settings.PracticeLabel" xml:space="preserve">
     <value>Cargar las sesiones de libres (pestaña Libres del detalle de carreras)</value>
@@ -1173,6 +1173,21 @@
   </data>
   <data name="Settings.PracticeSaveFailed" xml:space="preserve">
     <value>No se ha podido guardar la preferencia de libres: {0}</value>
+  </data>
+  <data name="Settings.RaceWeekendLabel" xml:space="preserve">
+    <value>Cargar las carreras sin conexión contra la IA</value>
+  </data>
+  <data name="Settings.RaceWeekendHelp" xml:space="preserve">
+    <value>Carreras en solitario (modo «Race Weekend» del juego): excluirlas mantiene la valoración del piloto y las estadísticas entre jugadores. La elección se guarda y los resultados se recargan al momento.</value>
+  </data>
+  <data name="Settings.RaceWeekendLoaded" xml:space="preserve">
+    <value>Carreras sin conexión contra la IA cargadas.</value>
+  </data>
+  <data name="Settings.RaceWeekendRemoved" xml:space="preserve">
+    <value>Carreras sin conexión contra la IA retiradas.</value>
+  </data>
+  <data name="Settings.RaceWeekendSaveFailed" xml:space="preserve">
+    <value>No se ha podido guardar la preferencia de carreras sin conexión: {0}</value>
   </data>
   <data name="Update.Eyebrow" xml:space="preserve">
     <value>VERSIÓN Y ACTUALIZACIONES</value>

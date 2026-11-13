@@ -68,6 +68,24 @@ public sealed class XmlResultParserTests
         winner.DnfReason.Should().BeEmpty();
     }
 
+    /// <summary>
+    /// Verifies that the game mode of the result file is read: "Race Weekend" marks an offline
+    /// race against the AI, which the import can leave out.
+    /// </summary>
+    [TestMethod]
+    [DataRow("2026_09_16_15_17_11-40R1.xml", "Race Weekend", true)]
+    [DataRow("2025_02_24_19_37_55-00R1.xml", "Multiplayer", false)]
+    public void Parse_reads_the_setting_of_a_real_result_file(string fileName, string setting, bool isRaceWeekend)
+    {
+        var parser = new XmlResultParser();
+        using var stream = File.OpenRead(Path.Combine(AppContext.BaseDirectory, "assets", "Results", fileName));
+
+        var session = parser.Parse(stream);
+
+        session.Setting.Should().Be(setting);
+        session.IsRaceWeekend.Should().Be(isRaceWeekend);
+    }
+
     [TestMethod]
     public void Parse_reads_grid_position_from_driver_result()
     {
@@ -187,7 +205,8 @@ public sealed class XmlResultParserTests
                 session.TrackEvent,
                 session.SessionType,
                 session.MostLapsCompleted,
-                session.TrackLength?.ToString("R", System.Globalization.CultureInfo.InvariantCulture)));
+                session.TrackLength?.ToString("R", System.Globalization.CultureInfo.InvariantCulture),
+                session.Setting));
             foreach (var driver in session.Drivers)
             {
                 snapshot.AppendLine(string.Join(
@@ -228,9 +247,9 @@ public sealed class XmlResultParserTests
     // Computed with the XDocument parser of version 0.1 on the fixtures of assets/Results, then on the
     // date of each phase (with RaceResults/DateTime instead, the fingerprint of version 0.1 is unchanged),
     // then with the session events added, then with the lap positions, lap starts, pit stops and damage
-    // reports, then with the lap telemetry and the pit stop count: without each of these additions,
-    // the previous fingerprint is unchanged.
-    private const string ReferenceSnapshotHash = "D41B805AAE8FC12EE86A0A8E64EFA223D6D32CE0F1CAB3994F8227D711CBB9DF";
+    // reports, then with the lap telemetry and the pit stop count, then with the session setting:
+    // without each of these additions, the previous fingerprint is unchanged.
+    private const string ReferenceSnapshotHash = "CB819D4FE53EFC124499459A49490B36F42679D2F62149384A5FAF08B020DBF8";
 
     private static string FormatTelemetry(LapTelemetry telemetry)
     {

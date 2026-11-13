@@ -9,7 +9,7 @@
 | **Piloto principal** | El piloto que sigues (tú). La lista se ordena por número de apariciones. |
 | **Fusión de pilotos** | ¿Has cambiado de apodo? Elige el nombre antiguo y el que se conserva, y luego **Fusionar**. Tus archivos no se modifican y la fusión se puede deshacer. Aparece un aviso si los dos nombres han corrido juntos. |
 | **Inicio automático** | Vigilar los nuevos resultados desde el inicio (activado por defecto). |
-| **Sesiones de libres** | Cargar también los libres para la pestaña **LIBRES** del [Detalle de carreras](race-details.md) (desactivado por defecto). |
+| **Sesiones cargadas** | **Cargar las sesiones de libres**: también los libres, para la pestaña **LIBRES** del [Detalle de carreras](race-details.md). **Cargar las carreras sin conexión contra la IA**: también tus carreras en solitario (modo «Race Weekend» del juego), excluidas para no falsear la valoración del piloto ni las estadísticas entre jugadores. Ambas están desactivadas por defecto; los resultados se recargan en cuanto marcas o desmarcas. |
 | **Actualizaciones** | Versión instalada y descarga de la nueva. Al iniciar, la aplicación pregunta a GitHub el número de la última versión; desmarca la casilla para dejar de hacerlo. |
 
 Debajo de los ajustes, el **estado de las importaciones** muestra la carga, los archivos ilegibles y tus sesiones recientes.

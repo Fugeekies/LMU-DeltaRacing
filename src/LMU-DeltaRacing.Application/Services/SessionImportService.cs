@@ -16,6 +16,7 @@ public sealed class SessionImportService : ISessionImportService
     private readonly ISessionRepository repository;
     private readonly ILogger<SessionImportService> logger;
     private readonly Func<bool> importPracticeSessions;
+    private readonly Func<bool> importRaceWeekendSessions;
     private readonly Func<int, TimeSpan> retryDelay;
 
     /// <summary>
@@ -28,17 +29,22 @@ public sealed class SessionImportService : ISessionImportService
     /// Whether practice sessions are stored. The dashboard keeps them, when the
     /// <c>LMU:LoadPracticeSessions</c> option is on, for the practice tab of the race-details page.
     /// </param>
+    /// <param name="importRaceWeekendSessions">
+    /// Whether offline races against the AI (<c>Race Weekend</c>) are stored, when the
+    /// <c>LMU:LoadRaceWeekendSessions</c> option is on.
+    /// </param>
     public SessionImportService(
         IResultXmlParser parser,
         ISessionRepository repository,
         ILogger<SessionImportService> logger,
-        bool importPracticeSessions = false)
-        : this(parser, repository, logger, () => importPracticeSessions)
+        bool importPracticeSessions = false,
+        bool importRaceWeekendSessions = false)
+        : this(parser, repository, logger, () => importPracticeSessions, importRaceWeekendSessions: () => importRaceWeekendSessions)
     {
     }
 
     /// <summary>
-    /// Creates an importer whose practice preference is read at each import, so a setting
+    /// Creates an importer whose preferences are read at each import, so a setting
     /// changed while the application runs applies to the next reload.
     /// </summary>
     /// <param name="parser">The result XML parser.</param>
@@ -48,12 +54,16 @@ public sealed class SessionImportService : ISessionImportService
     /// <param name="retryDelay">
     /// Returns the wait before the given retry of a locked file; by default 200 ms per attempt, capped at 1 s.
     /// </param>
+    /// <param name="importRaceWeekendSessions">
+    /// Returns whether offline races against the AI (<c>Race Weekend</c>) are stored; by default they are not.
+    /// </param>
     public SessionImportService(
         IResultXmlParser parser,
         ISessionRepository repository,
         ILogger<SessionImportService> logger,
         Func<bool> importPracticeSessions,
-        Func<int, TimeSpan>? retryDelay = null)
+        Func<int, TimeSpan>? retryDelay = null,
+        Func<bool>? importRaceWeekendSessions = null)
     {
         ArgumentNullException.ThrowIfNull(parser);
         ArgumentNullException.ThrowIfNull(repository);
@@ -64,6 +74,7 @@ public sealed class SessionImportService : ISessionImportService
         this.repository = repository;
         this.logger = logger;
         this.importPracticeSessions = importPracticeSessions;
+        this.importRaceWeekendSessions = importRaceWeekendSessions ?? (() => false);
         this.retryDelay = retryDelay ?? (attempt => TimeSpan.FromMilliseconds(Math.Min(attempt * 200, 1000)));
     }
 
@@ -91,6 +102,20 @@ public sealed class SessionImportService : ISessionImportService
                 return new SessionImportResult(
                     sourceFile,
                     SessionImportStatus.SkippedPractice,
+                    null,
+                    null);
+            }
+
+            // A solo race against the AI would mix with races against other players (rating, statistics).
+            if (session.IsRaceWeekend && !importRaceWeekendSessions())
+            {
+                logger.LogInformation(
+                    "Skipped offline race against the AI in {SourceFile}; race weekend sessions are not loaded",
+                    sourceFile);
+
+                return new SessionImportResult(
+                    sourceFile,
+                    SessionImportStatus.SkippedRaceWeekend,
                     null,
                     null);
             }

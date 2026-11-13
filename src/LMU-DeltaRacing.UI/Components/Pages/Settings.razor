@@ -232,7 +232,7 @@
     <div class="panel-heading">
         <div>
             <p class="eyebrow">@T["Settings.DataEyebrow"]</p>
-            <h2 id="practice-settings-heading">@T["Settings.Practice"]</h2>
+            <h2 id="practice-settings-heading">@T["Settings.LoadedSessions"]</h2>
         </div>
     </div>
     <div class="settings-content">
@@ -241,6 +241,11 @@
             <span>@T["Settings.PracticeLabel"]</span>
         </label>
         <p class="settings-help">@T["Settings.PracticeHelp"]</p>
+        <label class="settings-checkbox">
+            <input type="checkbox" @bind="loadRaceWeekendSessions" @bind:after="SaveLoadRaceWeekendSessionsAsync" disabled="@isBusy" />
+            <span>@T["Settings.RaceWeekendLabel"]</span>
+        </label>
+        <p class="settings-help">@T["Settings.RaceWeekendHelp"]</p>
     </div>
 </section>
 
@@ -262,6 +267,7 @@
     private int mergeWarningCount;
     private bool watchOnStartup = true;
     private bool loadPracticeSessions;
+    private bool loadRaceWeekendSessions;
     private bool isBusy;
     private bool isReloading;
     private ResultsDirectoryStatus? directoryStatus;
@@ -274,6 +280,7 @@
         resultsDirectory = Configuration["LMU:ResultsDirectory"] ?? string.Empty;
         watchOnStartup = Configuration.GetValue("LMU:WatchResultsOnStartup", true);
         loadPracticeSessions = Configuration.GetValue("LMU:LoadPracticeSessions", false);
+        loadRaceWeekendSessions = Configuration.GetValue("LMU:LoadRaceWeekendSessions", false);
         directoryStatus = DashboardData.CheckResultsDirectory(resultsDirectory);
     }
 
@@ -498,6 +505,35 @@
             exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
         {
             feedbackMessage = T["Settings.PracticeSaveFailed", exception.Message];
+        }
+        finally
+        {
+            isBusy = false;
+        }
+    }
+
+    /// <summary>
+    /// Saves the preference for offline races against the AI ("Race Weekend"), then reloads the
+    /// configured folder so these races appear or disappear without restarting the application.
+    /// </summary>
+    private async Task SaveLoadRaceWeekendSessionsAsync()
+    {
+        isBusy = true;
+        feedbackMessage = null;
+        try
+        {
+            SettingsStore.SaveLoadRaceWeekendSessions(loadRaceWeekendSessions);
+            var status = await DashboardData.ReloadResultsAsync(Configuration["LMU:ResultsDirectory"]);
+            feedbackMessage = status.IsValid
+                ? loadRaceWeekendSessions
+                    ? T["Settings.RaceWeekendLoaded"]
+                    : T["Settings.RaceWeekendRemoved"]
+                : status.ErrorMessage;
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or System.Text.Json.JsonException)
+        {
+            feedbackMessage = T["Settings.RaceWeekendSaveFailed", exception.Message];
         }
         finally
         {

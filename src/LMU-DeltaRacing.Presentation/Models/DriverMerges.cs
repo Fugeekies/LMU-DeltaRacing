@@ -45,7 +45,8 @@ public static class DriverMerges
                         : driver),
                     session.MostLapsCompleted,
                     session.TrackLength,
-                    session.Events.Select(sessionEvent => Rename(sessionEvent, keptNames)))
+                    session.Events.Select(sessionEvent => Rename(sessionEvent, keptNames)),
+                    session.Setting)
                 : session)
             .ToArray();
     }
