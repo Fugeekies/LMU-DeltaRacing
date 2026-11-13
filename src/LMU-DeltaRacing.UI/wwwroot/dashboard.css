@@ -3373,3 +3373,9 @@ table.columns-resized td[colspan] {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+/* The button that opens the lap by lap analysis, at the end of the race story settings. */
+.race-chart-analysis.button {
+    min-height: 32px;
+    padding: 0.4rem 0.75rem;
+}

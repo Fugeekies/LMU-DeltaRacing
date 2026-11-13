@@ -22,6 +22,6 @@ Above the classification, the **📝 NOTES** strip keeps your notes on the sessi
 
 Below the table, the **race story** plots every car's position lap by lap: your line in white with your incidents and pit stops, a cross for a retirement. Click a line to follow that driver; **Around …** and the **−** / **+** buttons keep only the cars that finished near you.
 
-The [**Lap-by-lap analysis of … →**](lap-analysis.md) link below the race story opens the analysis of the followed driver: consistency, stints, consumption and wear.
+The [**🔬 Lap-by-lap analysis**](lap-analysis.md) button, to the right of the race story settings, opens the analysis of the followed driver: consistency, stints, consumption and wear.
 
 Every comparison is made **within each class**, as in WEC. Your row is tagged **YOU**.

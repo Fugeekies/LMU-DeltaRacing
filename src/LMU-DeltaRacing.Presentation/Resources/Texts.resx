@@ -1817,8 +1817,8 @@
   <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
     <value>Choisir le pilote à analyser</value>
   </data>
-  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
-    <value>Analyse tour par tour de {0} →</value>
+  <data name="RaceStory.LapAnalysisTitle" xml:space="preserve">
+    <value>Ouvrir l’analyse tour par tour de {0} : régularité, secteurs, relais et usure des pneus</value>
   </data>
   <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
     <value>meilleur tour {0}</value>

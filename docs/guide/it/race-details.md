@@ -22,6 +22,6 @@ Sopra la classifica, la fascia **📝 NOTE** conserva le tue note sulla sessione
 
 Sotto la tabella, l’**andamento della gara** traccia la posizione di ogni auto giro per giro: la tua linea in bianco con i tuoi incidenti e pit stop, una croce per un ritiro. Clicca una linea per seguire quel pilota; **Intorno a …** e i pulsanti **−** / **+** mostrano solo le auto arrivate vicino a te.
 
-Il link [**Analisi giro per giro di … →**](lap-analysis.md) sotto l’andamento della gara apre l’analisi del pilota seguito: costanza, stint, consumi e usura.
+Il pulsante [**🔬 Analisi giro per giro**](lap-analysis.md), a destra delle impostazioni dell’andamento della gara, apre l’analisi del pilota seguito: costanza, stint, consumi e usura.
 
 Tutti i confronti avvengono **all'interno di ogni categoria**, come nel WEC. La tua riga è contrassegnata da **TU**.
