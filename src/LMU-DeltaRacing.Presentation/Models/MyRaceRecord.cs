@@ -24,6 +24,16 @@ public sealed record MyRaceRecord(
     HomeResultKind? RaceResult = null)
 {
     /// <summary>
+    /// Gets the qualifying session of the row, when there is one.
+    /// </summary>
+    public Guid? QualifyingSessionId { get; init; }
+
+    /// <summary>
+    /// Gets the race of the row, when there is one.
+    /// </summary>
+    public Guid? RaceSessionId { get; init; }
+
+    /// <summary>
     /// Gets the short label of the race result: "3e", "DNF", "DQ", "NC", or "—" without race.
     /// </summary>
     public string ResultLabel => RaceResult switch

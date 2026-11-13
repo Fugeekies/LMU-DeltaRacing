@@ -7,6 +7,8 @@ Le classement complet d'un événement.
 1. Choisissez l'événement dans la liste : il regroupe les essais, la qualification et la course disputés à la suite sur un circuit.
 2. Passez d'une session à l'autre avec les onglets **COURSE**, **QUALIFICATION** et **ESSAIS**.
 
+Au-dessus du classement, le bandeau **📝 NOTES** garde vos notes sur la session de l'onglet : **+ Ajouter une note**, puis les **CONDITIONS** (☀️ Sec, 🌥️ Humide, 🌧️ Pluie, 🌦️ Variable), le **RESSENTI** en étoiles, la **VOITURE**, les **RÉGLAGES** et des **REMARQUES**, tous facultatifs. **Enregistrer** garde la note, **Modifier** la reprend, **Supprimer la note** l'efface. Si vous avez monté des pneus pluie, l'application propose **Choisir Pluie**. Les notes restent sur votre PC, dans le fichier `race-notes.json` à côté de l'application.
+
 | Colonne | Signification |
 |---|---|
 | **POS** / **CLASSE** | Position au général / catégorie |

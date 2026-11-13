@@ -1,0 +1,207 @@
+@* The note of the player on one session (docs/UISpec/RaceNotes.template.md, part A). *@
+@inject RaceNotesStore NotesStore
+
+<section class="race-notes" aria-label="@T["RaceNotes.Title"]">
+    @if (NotesStore.IsUnreadable)
+    {
+        <p class="race-notes-alert" role="alert">@T["RaceNotes.Unreadable"]</p>
+    }
+
+    @if (isEditing)
+    {
+        <h3 class="race-notes-title">📝 @EditTitle()</h3>
+
+        <div class="race-notes-marks">
+            <div class="segmented-group">
+                <span>@T["RaceNotes.Conditions"]</span>
+                <div class="segmented" role="group" aria-label="@T["RaceNotes.Conditions"]">
+                    @foreach (var conditions in RaceNotesPresentation.Conditions)
+                    {
+                        <button type="button"
+                                class="@(draftConditions == conditions ? "is-active" : null)"
+                                aria-pressed="@(draftConditions == conditions ? "true" : "false")"
+                                @onclick="() => ToggleConditions(conditions)">
+                            @RaceNotesPresentation.Icon(conditions) @RaceNotesPresentation.Label(conditions)
+                        </button>
+                    }
+                </div>
+            </div>
+            <div class="segmented-group">
+                <span>@T["RaceNotes.Feeling"]</span>
+                <div class="race-notes-stars" role="group" aria-label="@T["RaceNotes.Feeling"]">
+                    @for (var mark = RaceNote.MinimumFeeling; mark <= RaceNote.MaximumFeeling; mark++)
+                    {
+                        var value = mark;
+                        <button type="button"
+                                class="@(draftFeeling >= value ? "is-active" : null)"
+                                aria-label="@T["RaceNotes.FeelingMark", value]"
+                                aria-pressed="@(draftFeeling == value ? "true" : "false")"
+                                @onclick="() => ToggleFeeling(value)">@(draftFeeling >= value ? "★" : "☆")</button>
+                    }
+                </div>
+            </div>
+        </div>
+
+        @if (draftConditions is null && suggestsRain)
+        {
+            <p class="race-notes-suggestion">
+                @T["RaceNotes.WetTyres"]
+                <button type="button" class="button button-secondary" @onclick="() => draftConditions = RaceConditions.Wet">@T["RaceNotes.ChooseWet"]</button>
+            </p>
+        }
+
+        <div class="race-notes-texts">
+            <label>
+                <span>@T["RaceNotes.Car"]</span>
+                <textarea rows="3" @bind="draftCar"></textarea>
+            </label>
+            <label>
+                <span>@T["RaceNotes.Setup"]</span>
+                <textarea rows="3" @bind="draftSetup"></textarea>
+            </label>
+            <label>
+                <span>@T["RaceNotes.Remarks"]</span>
+                <textarea rows="3" @bind="draftRemarks"></textarea>
+            </label>
+        </div>
+
+        <div class="race-notes-actions">
+            <button type="button" class="button button-primary" @onclick="Save">@T["RaceNotes.Save"]</button>
+            <button type="button" class="button button-secondary" @onclick="Cancel">@T["RaceNotes.Cancel"]</button>
+            @if (note is not null)
+            {
+                <button type="button" class="button button-secondary race-notes-delete" @onclick="Delete">@T["RaceNotes.Delete"]</button>
+            }
+        </div>
+    }
+    else if (note is null)
+    {
+        <div class="race-notes-line">
+            <span class="summary-label">📝 @T["RaceNotes.Title"]</span>
+            <span class="race-notes-empty">@T["RaceNotes.Empty"]</span>
+            <button type="button" class="button button-secondary" disabled="@NotesStore.IsUnreadable" @onclick="StartEditing">@T["RaceNotes.Add"]</button>
+        </div>
+    }
+    else
+    {
+        <div class="race-notes-line">
+            <span class="summary-label">📝 @T["RaceNotes.Title"]</span>
+            <strong>@RaceNotesPresentation.Heading(note)</strong>
+            <button type="button" class="button button-secondary" @onclick="StartEditing">@T["RaceNotes.Edit"]</button>
+        </div>
+        <dl class="race-notes-fields">
+            @if (note.Car.Length > 0)
+            {
+                <dt>@T["RaceNotes.Car"]</dt>
+                <dd>@note.Car</dd>
+            }
+            @if (note.Setup.Length > 0)
+            {
+                <dt>@T["RaceNotes.Setup"]</dt>
+                <dd>@note.Setup</dd>
+            }
+            @if (note.Remarks.Length > 0)
+            {
+                <dt>@T["RaceNotes.Remarks"]</dt>
+                <dd>@note.Remarks</dd>
+            }
+        </dl>
+    }
+
+    <p class="race-notes-feedback" role="status" aria-live="polite">@feedback</p>
+</section>
+
+@code {
+    private Guid? shownSessionId;
+    private RaceNote? note;
+    private bool suggestsRain;
+    private bool isEditing;
+    private RaceConditions? draftConditions;
+    private int? draftFeeling;
+    private string? draftCar;
+    private string? draftSetup;
+    private string? draftRemarks;
+    private string? feedback;
+
+    /// <summary>
+    /// Gets or sets the session noted: for merged practice sessions, the first one of the event.
+    /// </summary>
+    [Parameter, EditorRequired]
+    public Session Session { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the selected driver, whose wet tyres suggest rain.
+    /// </summary>
+    [Parameter]
+    public string? UserName { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        // Another tab or event abandons the changes not saved, as the specification says.
+        if (shownSessionId != Session.Id)
+        {
+            shownSessionId = Session.Id;
+            isEditing = false;
+            feedback = null;
+        }
+
+        note = NotesStore.Find(Session.Id);
+        suggestsRain = RaceNotesPresentation.UsedWetTyres(Session, UserName);
+    }
+
+    private string EditTitle() =>
+        Session.Kind switch
+        {
+            SessionKind.Race => T["RaceNotes.EditTitleRace"],
+            SessionKind.Qualifying => T["RaceNotes.EditTitleQualifying"],
+            _ => T["RaceNotes.EditTitlePractice"]
+        };
+
+    private void StartEditing()
+    {
+        draftConditions = note?.Conditions;
+        draftFeeling = note?.Feeling;
+        draftCar = note?.Car;
+        draftSetup = note?.Setup;
+        draftRemarks = note?.Remarks;
+        feedback = null;
+        isEditing = true;
+    }
+
+    private void ToggleConditions(RaceConditions conditions) =>
+        draftConditions = draftConditions == conditions ? null : conditions;
+
+    private void ToggleFeeling(int mark) =>
+        draftFeeling = draftFeeling == mark ? null : mark;
+
+    private void Cancel()
+    {
+        isEditing = false;
+        feedback = null;
+    }
+
+    private void Save() =>
+        Store(new RaceNote(Session.Id, draftConditions, draftCar, draftSetup, draftFeeling, draftRemarks));
+
+    private void Delete() =>
+        Store(new RaceNote(Session.Id, null, null, null, null, null));
+
+    private void Store(RaceNote updated)
+    {
+        try
+        {
+            var hadNote = note is not null;
+            NotesStore.Save(updated);
+            note = NotesStore.Find(Session.Id);
+            isEditing = false;
+            feedback = !updated.IsEmpty ? T["RaceNotes.Saved"].Value
+                : hadNote ? T["RaceNotes.Deleted"].Value
+                : null;
+        }
+        catch (Exception exception) when (
+            exception is IOException or UnauthorizedAccessException or InvalidDataException)
+        {
+            feedback = T["RaceNotes.SaveFailed", exception.Message];
+        }
+    }
+}

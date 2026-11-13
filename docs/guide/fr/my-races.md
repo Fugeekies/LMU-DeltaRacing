@@ -9,5 +9,6 @@ Votre historique, **circuit par circuit**, pour voir si vous progressez.
 - **DELTA (n-1)** compare votre meilleur tour à celui de votre session précédente sur le même circuit et dans la même catégorie : 🟢 négatif, plus rapide ; 🔴 positif, plus lent.
 - Filtrez par **circuit** et par **catégorie** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
 - **📈 Voir la progression** ouvre la [Progression](progression.md) du circuit.
+- 📝 après la date signale une note sur la course ou la qualification : survolez-la pour la lire. Les notes se saisissent dans le [Détail des courses](race-details.md).
 
 > Les tours invalidés par le jeu (limites de piste) n'ont pas de temps : ils ne comptent pas.

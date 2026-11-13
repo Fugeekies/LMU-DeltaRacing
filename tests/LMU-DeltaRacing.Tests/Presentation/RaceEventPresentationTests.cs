@@ -32,6 +32,31 @@ public sealed class RaceEventPresentationTests
         events[0].Race!.StartedAt.Should().Be(Date("2025-02-22T19:40:00Z"));
     }
 
+    /// <summary>
+    /// Verifies the sessions named in the event list of race details, in the order they are driven:
+    /// a regression once left the list showing "()" for every event.
+    /// </summary>
+    [TestMethod]
+    public void SessionsLabel_names_the_sessions_of_the_event_in_driving_order()
+    {
+        var full = RaceEventPresentation.CreateEvents(
+            [
+                CreateSession("Practice1", "Spa", "2025-02-22T19:00:00Z"),
+                CreateSession("Qualify", "Spa", "2025-02-22T19:00:00Z"),
+                CreateSession("Race", "Spa", "2025-02-22T19:00:00Z")
+            ],
+            "Driver").Should().ContainSingle().Which;
+        var withoutPractice = RaceEventPresentation.CreateEvents(
+            [
+                CreateSession("Qualify", "Spa", "2025-02-22T19:00:00Z"),
+                CreateSession("Race", "Spa", "2025-02-22T19:00:00Z")
+            ],
+            "Driver").Should().ContainSingle().Which;
+
+        RaceEventPresentation.SessionsLabel(full).Should().Be("Essais · Qualif · Course");
+        RaceEventPresentation.SessionsLabel(withoutPractice).Should().Be("Qualif · Course");
+    }
+
     [TestMethod]
     public void CreateEvents_merges_consecutive_practices_and_splits_sessions_more_than_two_hours_apart()
     {

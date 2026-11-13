@@ -15,4 +15,6 @@ I riquadri in alto riassumono la sua gara: **Passo** (mediana dei suoi giri rapp
 
 Più in basso, **Record personali** dà il tuo giro migliore e la tua velocità massima con ogni vettura sul circuito della gara, nella categoria guidata, e **Confronta le sessioni** elenca tutte le tue sessioni su quel circuito con il distacco dal record, il passo, la costanza e un badge **Record** quando una sessione batte il tuo record con quella vettura.
 
+L'ultima colonna di **Confronta le sessioni**, **NOTE**, ricorda condizioni, sensazione e assetto annotati nel [Dettaglio gare](race-details.md); passaci sopra con il mouse per leggere la nota intera.
+
 In **Dettaglio gare**, il link **Analisi giro per giro di … →** sotto l'andamento della gara apre questa pagina su quella gara e quel pilota.

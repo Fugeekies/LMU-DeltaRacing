@@ -7,6 +7,8 @@ La clasificación completa de un evento.
 1. Elige el evento en la lista: agrupa los libres, la clasificación y la carrera disputados seguidos en un circuito.
 2. Cambia de sesión con las pestañas **CARRERA**, **CLASIFICACIÓN** y **LIBRES**.
 
+Encima de la clasificación, la franja **📝 NOTAS** guarda tus notas sobre la sesión de la pestaña: **+ Añadir una nota**, luego las **CONDICIONES** (☀️ Seco, 🌥️ Húmedo, 🌧️ Lluvia, 🌦️ Variable), tu **SENSACIÓN** en estrellas, el **COCHE**, los **REGLAJES** y las **OBSERVACIONES**, todos opcionales. **Guardar** conserva la nota, **Editar** la reabre, **Eliminar la nota** la borra. Si montaste neumáticos de lluvia, la aplicación propone **Elegir Lluvia**. Las notas se quedan en tu PC, en el archivo `race-notes.json` junto a la aplicación.
+
 | Columna | Significado |
 |---|---|
 | **POS** / **CATEGORÍA** | Posición general / categoría |

@@ -15,4 +15,6 @@ Las tarjetas de arriba resumen su carrera: **Ritmo** (mediana de sus vueltas rep
 
 Más abajo, **Récords personales** da tu mejor vuelta y tu velocidad punta con cada coche en el circuito de la carrera, en la categoría que corriste, y **Comparar sesiones** enumera todas tus sesiones en ese circuito con su diferencia con el récord, su ritmo, su regularidad y una insignia **Récord** cuando una sesión bate tu récord con ese coche.
 
+La última columna de **Comparar sesiones**, **NOTAS**, recuerda las condiciones, la sensación y los reglajes anotados en el [Detalle de carreras](race-details.md); pasa el ratón por encima para leer la nota entera.
+
 En **Detalle de carreras**, el enlace **Análisis vuelta a vuelta de … →** bajo el desarrollo de la carrera abre esta página con esa carrera y ese piloto.

@@ -1,4 +1,5 @@
 using LMU_DeltaRacing.Domain.Entities;
+using LMU_DeltaRacing.Presentation.Localization;
 
 namespace LMU_DeltaRacing.Presentation.Models;
 
@@ -16,6 +17,25 @@ namespace LMU_DeltaRacing.Presentation.Models;
 public static class RaceEventPresentation
 {
     private static readonly TimeSpan MaximumGapInsideEvent = TimeSpan.FromHours(2);
+
+    /// <summary>
+    /// Names the sessions of an event in the order they are driven, such as
+    /// <c>Essais · Qualif · Course</c>, for the event list of race details.
+    /// </summary>
+    /// <param name="raceEvent">The event.</param>
+    public static string SessionsLabel(RaceEvent raceEvent)
+    {
+        ArgumentNullException.ThrowIfNull(raceEvent);
+
+        return string.Join(
+            " · ",
+            new[]
+            {
+                raceEvent.Practice is null ? null : Texts.Get("RaceDetails.EventPractice"),
+                raceEvent.Qualifying is null ? null : Texts.Get("RaceDetails.EventQualifying"),
+                raceEvent.Race is null ? null : Texts.Get("RaceDetails.EventRace")
+            }.OfType<string>());
+    }
 
     /// <summary>
     /// Creates the events in which the selected driver took part, most recent first.

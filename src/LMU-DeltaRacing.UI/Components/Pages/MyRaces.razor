@@ -120,7 +120,13 @@ else
                                     {
                                         <tr class="@GetPositionClass(record.PositionTier)">
                                             <td><span class="category-badge @CategoryStyle.CssClass(record.Category)">@record.Category</span></td>
-                                            <td class="date-cell">@DisplayFormat.DateTime(record.StartedAt)</td>
+                                            <td class="date-cell">
+                                                @DisplayFormat.DateTime(record.StartedAt)
+                                                @if (RaceNotesPresentation.MyRaceTooltip(record, Notes) is { } noteTooltip)
+                                                {
+                                                    <span class="note-marker" title="@noteTooltip" aria-label="@T["RaceNotes.HasNote"]">📝</span>
+                                                }
+                                            </td>
                                             <td class="car-cell"><strong>@record.Car</strong></td>
                                             <td class="numeric-cell position-cell">
                                                 @if (record.IsPodium)

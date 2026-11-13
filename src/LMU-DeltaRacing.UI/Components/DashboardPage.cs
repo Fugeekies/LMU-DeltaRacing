@@ -17,14 +17,26 @@ public abstract class DashboardPage : ComponentBase, IDisposable
     protected DashboardDataService DashboardData { get; set; } = null!;
 
     /// <summary>
+    /// Gets or sets the store of the race notes of the player.
+    /// </summary>
+    [Inject]
+    protected RaceNotesStore NotesStore { get; set; } = null!;
+
+    /// <summary>
     /// Gets the dashboard state the page is rendered with.
     /// </summary>
     protected DashboardState State { get; private set; } = DashboardState.Initial;
+
+    /// <summary>
+    /// Gets the race notes of the player, by session, kept up to date when a note is saved.
+    /// </summary>
+    protected IReadOnlyDictionary<Guid, RaceNote> Notes { get; private set; } = new Dictionary<Guid, RaceNote>();
 
     /// <inheritdoc />
     public void Dispose()
     {
         DashboardData.StateChanged -= OnDashboardStateChanged;
+        NotesStore.Changed -= OnNotesChanged;
         GC.SuppressFinalize(this);
     }
 
@@ -32,6 +44,8 @@ public abstract class DashboardPage : ComponentBase, IDisposable
     protected override void OnInitialized()
     {
         DashboardData.StateChanged += OnDashboardStateChanged;
+        NotesStore.Changed += OnNotesChanged;
+        Notes = NotesStore.GetAll();
         RefreshState();
     }
 
@@ -51,6 +65,14 @@ public abstract class DashboardPage : ComponentBase, IDisposable
         _ = InvokeAsync(() =>
         {
             RefreshState();
+            StateHasChanged();
+        });
+
+    // A note does not change the results: the page is rendered again without recalculating them.
+    private void OnNotesChanged() =>
+        _ = InvokeAsync(() =>
+        {
+            Notes = NotesStore.GetAll();
             StateHasChanged();
         });
 }

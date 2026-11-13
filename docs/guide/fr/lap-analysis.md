@@ -15,4 +15,6 @@ Les tuiles du haut résument sa course : **Rythme** (médiane de ses tours repr�
 
 Plus bas, **Records personnels** donne votre meilleur tour et votre vitesse de pointe avec chaque voiture sur le circuit de la course, dans la catégorie roulée, et **Comparer les sessions** liste toutes vos sessions sur ce circuit avec leur écart au record, leur rythme, leur régularité et un badge **Record** quand une session bat votre record avec cette voiture.
 
+La dernière colonne de **Comparer les sessions**, **NOTES**, rappelle les conditions, le ressenti et les réglages notés dans le [Détail des courses](race-details.md) ; survolez-la pour lire la note entière.
+
 Dans **Détail des courses**, le lien **Analyse tour par tour de … →** sous le déroulé de la course ouvre cette page sur cette course et ce pilote.

@@ -7,6 +7,8 @@ Das vollständige Klassement eines Events.
 1. Wählen Sie das Event in der Liste: Es fasst Training, Qualifying und Rennen zusammen, die nacheinander auf einer Strecke gefahren wurden.
 2. Wechseln Sie die Session mit den Reitern **RENNEN**, **QUALIFYING** und **TRAINING**.
 
+Über der Wertung hält der Streifen **📝 NOTIZEN** Ihre Notizen zur Session des Reiters fest: **+ Notiz hinzufügen**, dann die **BEDINGUNGEN** (☀️ Trocken, 🌥️ Feucht, 🌧️ Regen, 🌦️ Wechselhaft), Ihr **GEFÜHL** in Sternen, das **AUTO**, das **SETUP** und **BEMERKUNGEN**, alles freiwillig. **Speichern** behält die Notiz, **Bearbeiten** öffnet sie wieder, **Notiz löschen** entfernt sie. Wenn Sie Regenreifen montiert haben, schlägt die Anwendung **Regen wählen** vor. Die Notizen bleiben auf Ihrem PC, in der Datei `race-notes.json` neben der Anwendung.
+
 | Spalte | Bedeutung |
 |---|---|
 | **POS** / **KLASSE** | Gesamtposition / Klasse |

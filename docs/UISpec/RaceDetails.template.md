@@ -19,6 +19,7 @@ Classement détaillé d'un événement choisi par l'utilisateur (route `/race-de
   * Le paramètre d'URL `?event=<identifiant>` (lien « Voir l'événement » de l'Accueil) sélectionne cet événement sur l'onglet Course. Un identifiant inconnu est ignoré. L'identifiant est celui de la première session de l'événement : il change à chaque rechargement des résultats.
 * **Métadonnées** à côté du sélecteur : lieu, tracé s'il diffère du lieu.
 * **Sous-onglets** sous le sélecteur, dans cet ordre : **COURSE**, **QUALIFICATION**, **ESSAIS** (« ESSAIS (N séances) » si plusieurs séances ont été fusionnées). Seuls les onglets des sessions présentes dans l'événement sont affichés ; l'onglet Essais n'existe que si l'option « Charger les sessions d'essais » est cochée dans Options (décochée par défaut). Par défaut, l'onglet Course (le résultat qui compte) ; l'onglet choisi est conservé en changeant d'événement s'il existe dans le nouvel événement, sinon le premier onglet disponible est affiché.
+* **Notes de course :** bandeau « Notes » de la session de l'onglet actif, entre les onglets et le classement (voir [`RaceNotes.template.md`](RaceNotes.template.md)).
 * **Ordre du classement :** position générale croissante, pilotes sans position en fin de liste, égalité départagée par nom.
 * **Tours pris en compte :** uniquement les tours chronométrés. LMU efface le temps des tours invalidés pour limites de piste et des tours incomplets ; leurs secteurs sont donc exclus.
 * **Calculs par pilote :**

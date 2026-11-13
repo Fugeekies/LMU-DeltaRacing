@@ -3162,3 +3162,192 @@ table.columns-resized td[colspan] {
     font-size: 1.55rem;
     white-space: nowrap;
 }
+
+/* Race notes of the player (docs/UISpec/RaceNotes.template.md): a strip above the classification
+   of race details, a marker in my races and a column of the session comparison. */
+.race-notes {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.78rem;
+}
+
+.race-notes-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+.race-notes-line .summary-label {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.race-notes-line .button {
+    min-height: 32px;
+    margin-left: auto;
+    padding: 0.4rem 0.75rem;
+}
+
+.race-notes-empty,
+.race-notes-feedback {
+    color: var(--muted);
+}
+
+.race-notes-feedback {
+    margin: 0;
+}
+
+.race-notes-feedback:empty {
+    display: none;
+}
+
+.race-notes-alert {
+    margin: 0;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--yellow);
+    border-radius: 4px;
+    color: var(--yellow);
+}
+
+.race-notes-title {
+    margin: 0;
+    font-size: 0.8rem;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.race-notes-fields {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.35rem 1rem;
+    margin: 0;
+}
+
+.race-notes-fields dt {
+    color: var(--muted);
+    font-size: 0.67rem;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.race-notes-fields dd {
+    margin: 0;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.race-notes-marks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+}
+
+.race-notes-marks .segmented-group > span {
+    text-transform: uppercase;
+}
+
+.race-notes-stars {
+    display: inline-flex;
+    gap: 0.15rem;
+}
+
+.race-notes-stars button {
+    padding: 0.1rem 0.2rem;
+    border: 0;
+    background: none;
+    color: var(--muted);
+    cursor: pointer;
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.race-notes-stars button.is-active {
+    color: var(--yellow);
+}
+
+.race-notes-stars button:focus-visible {
+    outline: 2px solid var(--accent);
+}
+
+.race-notes-suggestion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem 1rem;
+    margin: 0;
+    color: var(--muted);
+}
+
+.race-notes-suggestion .button,
+.race-notes-actions .button {
+    min-height: 32px;
+    padding: 0.4rem 0.75rem;
+}
+
+.race-notes-texts {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.75rem 1rem;
+}
+
+.race-notes-texts label {
+    display: grid;
+    gap: 0.35rem;
+    color: var(--muted);
+    font-size: 0.63rem;
+    font-weight: 750;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+}
+
+.race-notes-texts textarea {
+    min-height: 4.5rem;
+    padding: 0.5rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface-raised);
+    color: var(--text);
+    font: inherit;
+    font-size: 0.78rem;
+    letter-spacing: normal;
+    text-transform: none;
+    resize: vertical;
+}
+
+.race-notes-texts textarea:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: -2px;
+}
+
+.race-notes-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.race-notes-actions .race-notes-delete {
+    margin-left: auto;
+}
+
+.note-marker {
+    margin-left: 0.35rem;
+    cursor: help;
+}
+
+.note-cell {
+    max-width: 22rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: help;
+}
+
+@media (max-width: 700px) {
+    .race-notes-texts {
+        grid-template-columns: 1fr;
+    }
+}

@@ -13,6 +13,15 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
+### Jalon — Notes de course
+Noter, pour chaque session, les conditions, le comportement de la voiture, les réglages et son ressenti. Le XML ne contient ni météo ni réglages (seulement `<FixedSetups>`) ; le seul indice de pluie est le composé `Wet` des tours. Première donnée saisie par le joueur : elle doit survivre à un redémarrage, contrairement aux sessions relues à chaque lancement.
+- [x] **Stockage :** fichier `race-notes.json` à côté d'`appsettings.json` (décision du 13/11/2026), une note par session, rattachée à `Session.Id` (stable entre deux lancements, indépendant du nom du fichier), écrit d'un bloc comme les réglages. L'installeur ne le publie pas : une mise à jour ne l'écrase pas, une désinstallation le laisse en place. Mettre à jour la règle « persistance en mémoire uniquement » d'`AGENTS.md` et `docs/ARCHITECTURE.md`.
+- [x] **Contenu** (champs facultatifs, à revoir à l'usage) : conditions (Sec, Humide, Pluie, Variable ; « Pluie » proposée si des pneus `Wet` ont été montés), comportement de la voiture, réglages (texte libre), ressenti de 1 à 5 et remarques.
+- [x] **Détail des courses :** bloc « Notes » de chaque session, saisie et lecture. Bandeau entre les onglets et le classement, bouton Enregistrer, maquette [`RaceNotes.template.md`](UISpec/RaceNotes.template.md) validée le 13/11/2026.
+- [x] **Mes courses :** icône sur les sessions annotées.
+- [x] **Analyse tour par tour :** conditions et réglages dans le tableau « Comparer les sessions ».
+- [x] Textes en cinq langues et page du guide utilisateur dans les cinq langues.
+
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
