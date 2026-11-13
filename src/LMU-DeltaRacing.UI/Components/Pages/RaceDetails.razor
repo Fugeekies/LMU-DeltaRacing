@@ -68,6 +68,12 @@ else
             }
         </div>
 
+        @* Above the classification, so that the note stays in view without scrolling a full grid. *@
+        @if (selectedSession is not null)
+        {
+            <RaceNotesPanel Session="selectedSession" UserName="@State.UserName" />
+        }
+
         @if (selectedRatedRace is { } ratedRace)
         {
             var playerChange = ratedRace.Find(State.UserName);

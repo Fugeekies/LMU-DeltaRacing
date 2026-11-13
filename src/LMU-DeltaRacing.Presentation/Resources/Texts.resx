@@ -1883,4 +1883,91 @@
   <data name="LapAnalysis.Best" xml:space="preserve">
     <value>Meilleur</value>
   </data>
+  <data name="RaceNotes.Title" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="RaceNotes.EditTitleRace" xml:space="preserve">
+    <value>Notes de la course</value>
+  </data>
+  <data name="RaceNotes.EditTitleQualifying" xml:space="preserve">
+    <value>Notes de la qualification</value>
+  </data>
+  <data name="RaceNotes.EditTitlePractice" xml:space="preserve">
+    <value>Notes des essais</value>
+  </data>
+  <data name="RaceNotes.Empty" xml:space="preserve">
+    <value>Aucune note pour cette session.</value>
+  </data>
+  <data name="RaceNotes.Add" xml:space="preserve">
+    <value>+ Ajouter une note</value>
+  </data>
+  <data name="RaceNotes.Edit" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="RaceNotes.Conditions" xml:space="preserve">
+    <value>Conditions</value>
+  </data>
+  <data name="RaceNotes.Feeling" xml:space="preserve">
+    <value>Ressenti</value>
+  </data>
+  <data name="RaceNotes.FeelingMark" xml:space="preserve">
+    <value>{0} sur 5</value>
+  </data>
+  <data name="RaceNotes.Car" xml:space="preserve">
+    <value>Voiture</value>
+  </data>
+  <data name="RaceNotes.Setup" xml:space="preserve">
+    <value>Réglages</value>
+  </data>
+  <data name="RaceNotes.Remarks" xml:space="preserve">
+    <value>Remarques</value>
+  </data>
+  <data name="RaceNotes.Dry" xml:space="preserve">
+    <value>Sec</value>
+  </data>
+  <data name="RaceNotes.Damp" xml:space="preserve">
+    <value>Humide</value>
+  </data>
+  <data name="RaceNotes.Wet" xml:space="preserve">
+    <value>Pluie</value>
+  </data>
+  <data name="RaceNotes.Mixed" xml:space="preserve">
+    <value>Variable</value>
+  </data>
+  <data name="RaceNotes.WetTyres" xml:space="preserve">
+    <value>💧 Pneus pluie montés pendant la session.</value>
+  </data>
+  <data name="RaceNotes.ChooseWet" xml:space="preserve">
+    <value>Choisir Pluie</value>
+  </data>
+  <data name="RaceNotes.Save" xml:space="preserve">
+    <value>Enregistrer</value>
+  </data>
+  <data name="RaceNotes.Cancel" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="RaceNotes.Delete" xml:space="preserve">
+    <value>Supprimer la note</value>
+  </data>
+  <data name="RaceNotes.Saved" xml:space="preserve">
+    <value>Note enregistrée.</value>
+  </data>
+  <data name="RaceNotes.Deleted" xml:space="preserve">
+    <value>Note supprimée.</value>
+  </data>
+  <data name="RaceNotes.SaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la note : {0}</value>
+  </data>
+  <data name="RaceNotes.Unreadable" xml:space="preserve">
+    <value>Le fichier des notes est illisible : vos notes ne sont pas affichées et aucune modification n’est enregistrée, pour ne pas les perdre.</value>
+  </data>
+  <data name="RaceNotes.Labelled" xml:space="preserve">
+    <value>{0} : {1}</value>
+  </data>
+  <data name="RaceNotes.HasNote" xml:space="preserve">
+    <value>Session annotée</value>
+  </data>
+  <data name="Comparison.Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
 </root>

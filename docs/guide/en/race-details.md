@@ -7,6 +7,8 @@ The full classification of an event.
 1. Pick the event in the list: it groups the practice, qualifying and race run back to back on a track.
 2. Switch sessions with the **RACE**, **QUALIFYING** and **PRACTICE** tabs.
 
+Above the classification, the **📝 NOTES** strip keeps your notes on the session of the tab: **+ Add a note**, then the **CONDITIONS** (☀️ Dry, 🌥️ Damp, 🌧️ Rain, 🌦️ Mixed), your **FEELING** in stars, the **CAR**, the **SETUP** and **REMARKS**, all optional. **Save** keeps the note, **Edit** reopens it, **Delete the note** clears it. If you fitted wet tyres, the application offers **Choose Rain**. Notes stay on your PC, in the `race-notes.json` file next to the application.
+
 | Column | Meaning |
 |---|---|
 | **POS** / **CLASS** | Overall position / class |

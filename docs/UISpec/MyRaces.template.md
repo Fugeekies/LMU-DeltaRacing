@@ -68,6 +68,8 @@ Page `/my-races`, première page du menu « Courses » de la barre de navigation
   * Filtres sans résultat : « Aucune course ne correspond à ces filtres ».
   * La page se met à jour automatiquement à chaque nouvel import.
 
+* **Notes de course :** 📝 après la date si la course ou la qualification de la ligne a une note, résumé au survol (voir [`RaceNotes.template.md`](RaceNotes.template.md)).
+
 ### Wireframe ASCII
 ```text
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐

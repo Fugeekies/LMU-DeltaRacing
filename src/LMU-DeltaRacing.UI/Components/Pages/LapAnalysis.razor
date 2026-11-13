@@ -66,7 +66,7 @@ else
         var records = PersonalRecordsPresentation.Create(State.Sessions, State.UserName, race.TrackVenue, race.TrackCourse, user.Category());
         @if (records.Sessions.Count > 0)
         {
-            <PersonalRecordsPanel Records="records" />
+            <PersonalRecordsPanel Records="records" Notes="Notes" />
         }
     }
 }

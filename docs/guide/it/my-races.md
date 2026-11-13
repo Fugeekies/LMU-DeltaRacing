@@ -9,5 +9,6 @@ La tua cronologia, **circuito per circuito**, per vedere se migliori.
 - **DELTA (n-1)** confronta il tuo giro migliore con la sessione precedente sullo stesso circuito e nella stessa categoria: 🟢 negativo, più veloce; 🔴 positivo, più lento.
 - Filtra per **circuito** e **categoria** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
 - **📈 Vedi i progressi** apre i [Progressi](progression.md) del circuito.
+- 📝 dopo la data segnala una nota sulla gara o sulle qualifiche: passaci sopra con il mouse per leggerla. Le note si scrivono nel [Dettaglio gare](race-details.md).
 
 > I giri invalidati dal gioco (limiti della pista) non hanno tempo: non contano.

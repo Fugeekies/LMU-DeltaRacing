@@ -82,6 +82,22 @@ public sealed class RaceNotesStoreTests
     }
 
     /// <summary>
+    /// Verifies that saving a note tells the open pages, so that My races and the session
+    /// comparison show it without waiting for a reload.
+    /// </summary>
+    [TestMethod]
+    public void Saving_a_note_raises_changed()
+    {
+        var store = CreateStore();
+        var changes = 0;
+        store.Changed += () => changes++;
+
+        store.Save(new RaceNote(Guid.NewGuid(), RaceConditions.Dry, null, null, null, null));
+
+        changes.Should().Be(1);
+    }
+
+    /// <summary>
     /// Verifies that clearing every field deletes the note instead of keeping an empty one.
     /// </summary>
     [TestMethod]

@@ -135,7 +135,11 @@ public static class MyRacesPresentation
                 record.LapsCompleted,
                 record.FinishTime,
                 record.ClassPosition,
-                record.RaceResult))
+                record.RaceResult)
+            {
+                QualifyingSessionId = record.QualifyingSessionId,
+                RaceSessionId = record.RaceSessionId
+            })
             .ToArray();
     }
 
@@ -172,6 +176,8 @@ public static class MyRacesPresentation
         public TimeSpan? FinishTime { get; init; }
         public int? ClassPosition { get; init; }
         public HomeResultKind? RaceResult { get; init; }
+        public Guid? QualifyingSessionId { get; init; }
+        public Guid? RaceSessionId { get; init; }
 
         /// <summary>
         /// Creates a record from a qualifying session, a race, or both.
@@ -196,7 +202,9 @@ public static class MyRacesPresentation
                 LapsCompleted = race?.LapsCompleted,
                 FinishTime = race?.FinishTime,
                 ClassPosition = race?.ClassPosition,
-                RaceResult = race?.RaceResult
+                RaceResult = race?.RaceResult,
+                QualifyingSessionId = qualifying?.SessionId,
+                RaceSessionId = race?.SessionId
             };
         }
     }

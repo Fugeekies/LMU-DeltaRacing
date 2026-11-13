@@ -9,5 +9,6 @@ Ihre Historie, **Strecke für Strecke**, um zu sehen, ob Sie sich verbessern.
 - **DELTA (n-1)** vergleicht Ihre beste Runde mit Ihrer vorherigen Session auf derselben Strecke und in derselben Klasse: 🟢 negativ, schneller; 🔴 positiv, langsamer.
 - Filtern Sie nach **Strecke** und **Klasse** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
 - **📈 Fortschritt ansehen** öffnet den [Fortschritt](progression.md) der Strecke.
+- 📝 nach dem Datum zeigt eine Notiz zum Rennen oder zum Qualifying: Fahren Sie mit der Maus darüber, um sie zu lesen. Notizen werden in den [Renndetails](race-details.md) geschrieben.
 
 > Vom Spiel ungültig gemachte Runden (Track Limits) haben keine Zeit: Sie zählen nicht.

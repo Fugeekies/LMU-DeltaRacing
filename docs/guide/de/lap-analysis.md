@@ -15,4 +15,6 @@ Die Kacheln oben fassen sein Rennen zusammen: **Pace** (Median seiner repräsent
 
 Darunter zeigt **Persönliche Rekorde** Ihre beste Runde und Ihre Höchstgeschwindigkeit mit jedem Auto auf der Strecke des Rennens, in der gefahrenen Klasse, und **Sessions vergleichen** listet alle Ihre Sessions dort mit ihrem Abstand zum Rekord, ihrer Pace, ihrer Konstanz und einem Abzeichen **Rekord**, wenn eine Session Ihren Rekord mit diesem Auto bricht.
 
+Die letzte Spalte von **Sessions vergleichen**, **NOTIZEN**, zeigt die in den [Renndetails](race-details.md) notierten Bedingungen, das Gefühl und das Setup; fahren Sie mit der Maus darüber, um die ganze Notiz zu lesen.
+
 In **Renndetails** öffnet der Link **Runde-für-Runde-Analyse von … →** unter dem Rennverlauf diese Seite mit diesem Rennen und diesem Fahrer.

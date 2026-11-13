@@ -15,4 +15,6 @@ The tiles at the top sum up their race: **Pace** (median of their representative
 
 Below, **Personal records** gives your best lap and top speed with each car on the circuit of the race, in the class you drove, and **Compare sessions** lists all your sessions there with their gap to the record, their pace, their consistency and a **Record** badge when a session beats your record with that car.
 
+The last column of **Compare sessions**, **NOTES**, recalls the conditions, feeling and setup noted in [Race details](race-details.md); hover over it to read the whole note.
+
 In **Race details**, the **Lap-by-lap analysis of … →** link below the race story opens this page on that race and driver.

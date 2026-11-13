@@ -48,6 +48,11 @@ public sealed class RaceNotesStore
     }
 
     /// <summary>
+    /// Raised after a note is saved or deleted, outside the lock, on the thread that saved it.
+    /// </summary>
+    public event Action? Changed;
+
+    /// <summary>
     /// Gets whether the notes file exists but cannot be read. Its notes are then unavailable, and
     /// saving is refused so that the file is never overwritten.
     /// </summary>
@@ -116,6 +121,8 @@ public sealed class RaceNotesStore
             Write(updated.Values);
             notes = updated;
         }
+
+        Changed?.Invoke();
     }
 
     private Dictionary<Guid, RaceNote> EnsureLoaded()

@@ -1,6 +1,6 @@
 ## 3 ter. 📝 Notes de course (Détail des courses, Mes courses, Analyse tour par tour)
 
-> **Maquette à valider** (13/11/2026), jalon « Notes de course » de la [feuille de route](../ROADMAP.md). Stockage déjà en place : `RaceNotesStore`, fichier `race-notes.json`.
+> Maquette validée le 13/11/2026 (bandeau entre les onglets et le classement, bouton Enregistrer, note des essais fusionnés rattachée à la première séance, emojis), alignée sur le code (`RaceNotesPanel.razor`, `RaceNotesPresentation.cs`, `RaceNotesStore.cs`). Jalon « Notes de course » de la [feuille de route](../ROADMAP.md). Stockage déjà en place : `RaceNotesStore`, fichier `race-notes.json`.
 
 ### Description
 Le joueur note, pour chaque session, les conditions, le comportement de la voiture, les réglages et son ressenti. Le XML ne contient ni météo ni réglages : tout est saisi à la main. Une note appartient à une **session** (`Session.Id`), quel que soit le pilote affiché : ce sont les notes du joueur. Elle se saisit dans Détail des courses et se relit dans Mes courses et dans Comparer les sessions.
@@ -28,7 +28,7 @@ Le joueur note, pour chaque session, les conditions, le comportement de la voitu
 * Survol : résumé de chaque note, « Course : 🌧️ Pluie · ★★★★☆ · Réglages : aileron 6… » (réglages coupés à 60 caractères), une ligne par session.
 
 #### C. Analyse tour par tour : colonne « Notes » de Comparer les sessions
-* Dernière colonne **NOTES** : icône des conditions et étoiles, puis les réglages sur une ligne, coupés avec « … » ; le survol donne la note complète. `—` sans note.
+* Dernière colonne **NOTES** : le résumé de la note (icône et libellé des conditions, étoiles, « Réglages : » et le début des réglages), coupé avec « … » s'il dépasse la colonne ; le survol donne la note complète. Une note sans conditions, ressenti ni réglages est résumée par le début de son premier texte. `—` sans note.
 * C'est l'usage principal : comparer les réglages et les conditions des sessions d'une même voiture sur un même circuit.
 
 ### Wireframe ASCII
@@ -95,8 +95,3 @@ Sur téléphone, les trois zones de texte passent l'une sous l'autre.
 │  25/09/2026 20:40  Course         Porsche 911    7e      2:45.159        2:47.010   ±0.655s     266 km/h   1       —                          │
 ```
 
-### Points à valider
-1. **Place du bandeau** dans Détail des courses : entre les onglets et le classement (proposé) ou sous le classement.
-2. **Enregistrement** : bouton Enregistrer (proposé) ou enregistrement automatique à chaque modification.
-3. **Essais fusionnés** : note rattachée à la première séance (proposé), ou pas de note sur l'onglet Essais.
-4. **Icônes des conditions** : emojis (proposé, comme 📈 de Mes courses) ou badges texte aux couleurs de `UI_DESIGN_SPEC.md`.

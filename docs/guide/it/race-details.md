@@ -7,6 +7,8 @@ La classifica completa di un evento.
 1. Scegli l'evento nell'elenco: raggruppa le prove libere, la qualifica e la gara disputate di seguito su un circuito.
 2. Passa da una sessione all'altra con le schede **GARA**, **QUALIFICA** e **PROVE LIBERE**.
 
+Sopra la classifica, la fascia **📝 NOTE** conserva le tue note sulla sessione della scheda: **+ Aggiungi una nota**, poi le **CONDIZIONI** (☀️ Asciutto, 🌥️ Umido, 🌧️ Pioggia, 🌦️ Variabile), la **SENSAZIONE** in stelle, l'**AUTO**, l'**ASSETTO** e le **OSSERVAZIONI**, tutte facoltative. **Salva** conserva la nota, **Modifica** la riapre, **Elimina la nota** la cancella. Se hai montato gomme da pioggia, l'applicazione propone **Scegli Pioggia**. Le note restano sul tuo PC, nel file `race-notes.json` accanto all'applicazione.
+
 | Colonna | Significato |
 |---|---|
 | **POS** / **CATEGORIA** | Posizione assoluta / categoria |

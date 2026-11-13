@@ -61,6 +61,7 @@
                     <th scope="col" class="numeric-cell">@T["LapAnalysis.Regularity"]</th>
                     <th scope="col" class="numeric-cell">@T["LapAnalysis.TopSpeed"]</th>
                     <th scope="col" class="numeric-cell">@T["LapAnalysis.PitStops"]</th>
+                    <th scope="col">@T["Comparison.Notes"]</th>
                 </tr>
             </thead>
             <tbody>
@@ -91,6 +92,14 @@
                             }
                         </td>
                         <td class="numeric-cell">@(row.PitStops?.ToString(System.Globalization.CultureInfo.InvariantCulture) ?? DisplayFormat.Missing)</td>
+                        @if (Notes.TryGetValue(row.SessionId, out var note))
+                        {
+                            <td class="note-cell" title="@RaceNotesPresentation.FullText(note)">@RaceNotesPresentation.Summary(note)</td>
+                        }
+                        else
+                        {
+                            <td>@DisplayFormat.Missing</td>
+                        }
                     </tr>
                 }
             </tbody>
@@ -104,6 +113,12 @@
     /// </summary>
     [Parameter, EditorRequired]
     public PersonalRecords Records { get; set; } = null!;
+
+    /// <summary>
+    /// Gets or sets the race notes of the player, by session.
+    /// </summary>
+    [Parameter]
+    public IReadOnlyDictionary<Guid, RaceNote> Notes { get; set; } = new Dictionary<Guid, RaceNote>();
 
     private static string SessionLabel(SessionKind kind) =>
         kind == SessionKind.Qualifying ? Texts.Get("Progression.Qualifying") : Texts.Get("Progression.Race");
