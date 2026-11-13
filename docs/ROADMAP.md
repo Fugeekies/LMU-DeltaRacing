@@ -15,7 +15,7 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 
 ### Jalon — Choix des sessions importées
 Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses) ; elle n'est pas lue par le parser.
-- [ ] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés).
+- [x] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés). Constat : les 6 fichiers « Race Weekend » sont des courses hors ligne contre l'IA (un seul joueur, adversaires en `AIControl`), dont 3 sans aucun tour.
 - [ ] **Parser :** lire `<Setting>`, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
 - [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`.
 - [ ] **Optimisation des essais** (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt, et de même pour les sessions « Race Weekend ». Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
