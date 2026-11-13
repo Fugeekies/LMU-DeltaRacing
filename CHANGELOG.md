@@ -75,6 +75,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dashboard : le logo Delta Racing remplace la case « LMU » du bandeau de navigation, suivi du nom « LMU DELTARACING » (logo seul sous 1480 px de large).
 
 ### Fixed
+- Page de présentation : l’icône de l’onglet est le logo DeltaRacing (`favicon.ico` de l’application) au lieu de l’icône par défaut du modèle Blazor ; ce `favicon.png`, que l’application n’utilisait plus, est supprimé.
 - Licence : `LICENSE` contient de nouveau le texte officiel complet de la GPL-3.0 (il était tronqué et précédé d’une ligne de copyright, et GitHub l’affichait « Other ») ; le copyright est en bas du README.
 - Analyse tour par tour : après un changement de course, la liste **Pilote** pouvait afficher un autre pilote que celui analysé ; elle montre de nouveau le pilote conservé (ou vous, s’il n’a pas couru cette course).
 - Détail des courses : la liste des événements affichait « () » au lieu des sessions présentes (« Essais · Qualif · Course ») depuis l’interface multilingue. Le libellé est calculé par `RaceEventPresentation.SessionsLabel`, couvert par un test.
