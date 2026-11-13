@@ -31,6 +31,7 @@ dotnet publish src/LMU-DeltaRacing.UI/LMU-DeltaRacing.UI.csproj -c Release -p:Pu
 | `benchmarks/LMU-DeltaRacing.Benchmarks` | Parser (synthétique et fichiers réels), chargement complet, calculs de chaque page ×1/×10/×50 ; rapport dans `artifacts/performance-report.md`. |
 | `scripts/` | `installer.iss` (Inno Setup), `Prepare-PackageAssets.ps1` (anonymisation des fixtures), `Repair-StreamNames.ps1` (noms du `Stream` des fixtures), `Test-PublishedApp.ps1`. |
 | `docs/` | Guide utilisateur `guide/<langue>/` (en, fr, de, it, es), `COTE_PILOTE.md`, `ARCHITECTURE.md`, `ROADMAP.md`, `UI_DESIGN_SPEC.md`, maquettes `UISpec/*.template.md`, `benchmarks/`. |
+| `site/` | Page de présentation publiée sur GitHub Pages (`fugeekies.github.io/LMU-DeltaRacing`) par `.github/workflows/pages.yml`, en anglais : seul ce dossier est publié. Captures du tableau de bord sur les fixtures anonymisées, image d'aperçu `social-preview.png` (1280×640), `sitemap.xml`. |
 
 Points d'attention :
 - Les calculs, les formats (`DisplayFormat`) et le service de données sont dans `Presentation`, les pages Razor ne font que les afficher. Logging : `JsonFileLoggerProvider`.

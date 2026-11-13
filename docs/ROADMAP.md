@@ -6,7 +6,7 @@ Les jalons à faire sont en haut, par ordre de priorité. Les jalons terminés s
 
 ### Jalon — Signature de l'installeur (SignPath Foundation) (en parallèle)
 Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé votre ordinateur ») affiché au lancement de l'installeur non signé. La signature gratuite de SignPath Foundation est réservée aux projets open source ; vérifier leurs conditions à jour (https://signpath.org/terms) avant la demande. Surtout administratif : à mener en parallèle des jalons techniques.
-- [ ] **Licence :** remettre le texte GPL-3.0 intact dans `LICENSE` (GitHub le détecte aujourd'hui comme « Other » à cause de la ligne de copyright ajoutée en tête) et déplacer le copyright dans le README.
+- [x] **Licence :** texte officiel complet de la GPL-3.0 dans `LICENSE` (il était tronqué et précédé d'une ligne de copyright, d'où « Other » sur GitHub), copyright déplacé en bas du README.
 - [ ] **README :** ajouter une section « Code signing policy » : mention « Free code signing provided by SignPath.io, certificate by SignPath Foundation », rôles (auteurs, relecteurs, approbateurs) et déclaration de confidentialité (aucune donnée collectée, seule requête sortante : le numéro de la dernière version sur GitHub, désactivable ; serveur local limité à `127.0.0.1`).
 - [ ] Activer la double authentification sur le compte GitHub.
 - [ ] Déposer la demande sur https://signpath.org/apply, puis configurer le projet sur app.signpath.io (connexion GitHub, signing policy `release-signing`, artifact configuration, secret `SIGNPATH_API_TOKEN`).
