@@ -68,6 +68,12 @@ builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>
     new DashboardSettingsStore(
         (IConfigurationRoot)serviceProvider.GetRequiredService<IConfiguration>(),
         Path.Combine(AppContext.BaseDirectory, "appsettings.json")));
+// The race notes are typed by the player and kept next to appsettings.json, outside the published
+// files, so that an update by the installer never overwrites them.
+builder.Services.AddSingleton(serviceProvider =>
+    new RaceNotesStore(
+        Path.Combine(AppContext.BaseDirectory, RaceNotesStore.FileName),
+        serviceProvider.GetRequiredService<ILogger<RaceNotesStore>>()));
 builder.Services.AddSingleton<WindowsFolderPicker>();
 // Texts shown on screen (Presentation/Resources/Texts.resx), French until the language option exists.
 builder.Services.AddSingleton<Microsoft.Extensions.Localization.IStringLocalizer<LMU_DeltaRacing.Presentation.Localization.Texts>, TextsLocalizer>();

@@ -15,7 +15,7 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 
 ### Jalon — Notes de course
 Noter, pour chaque session, les conditions, le comportement de la voiture, les réglages et son ressenti. Le XML ne contient ni météo ni réglages (seulement `<FixedSetups>`) ; le seul indice de pluie est le composé `Wet` des tours. Première donnée saisie par le joueur : elle doit survivre à un redémarrage, contrairement aux sessions relues à chaque lancement.
-- [ ] **Stockage :** fichier `race-notes.json` à côté d'`appsettings.json` (décision du 13/11/2026), une note par session, rattachée à `Session.Id` (stable entre deux lancements, indépendant du nom du fichier), écrit d'un bloc comme les réglages. L'installeur ne le publie pas : une mise à jour ne l'écrase pas, une désinstallation le laisse en place. Mettre à jour la règle « persistance en mémoire uniquement » d'`AGENTS.md` et `docs/ARCHITECTURE.md`.
+- [x] **Stockage :** fichier `race-notes.json` à côté d'`appsettings.json` (décision du 13/11/2026), une note par session, rattachée à `Session.Id` (stable entre deux lancements, indépendant du nom du fichier), écrit d'un bloc comme les réglages. L'installeur ne le publie pas : une mise à jour ne l'écrase pas, une désinstallation le laisse en place. Mettre à jour la règle « persistance en mémoire uniquement » d'`AGENTS.md` et `docs/ARCHITECTURE.md`.
 - [ ] **Contenu** (champs facultatifs, à revoir à l'usage) : conditions (Sec, Humide, Pluie, Variable ; « Pluie » proposée si des pneus `Wet` ont été montés), comportement de la voiture, réglages (texte libre), ressenti de 1 à 5 et remarques.
 - [ ] **Détail des courses :** bloc « Notes » de chaque session, saisie et lecture.
 - [ ] **Mes courses :** icône sur les sessions annotées.
