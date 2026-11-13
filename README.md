@@ -37,3 +37,5 @@
 ---
 
 *Developers / Développeurs : [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)*
+
+*Copyright © 2026 LMU-DeltaRacing — [GNU General Public License v3.0](LICENSE)*

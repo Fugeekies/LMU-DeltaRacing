@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Page de présentation en anglais publiée sur GitHub Pages (`site/`, workflow `pages.yml`) : description, fonctions, captures et téléchargement, avec image d’aperçu pour les liens partagés et `sitemap.xml` pour Google Search Console.
 - Mes courses : un bouton **Détail →** au bout de chaque ligne ouvre Détail des courses sur l’événement de la course (onglet Course).
 - Dashboard : **notes de course**. Dans Détail des courses, un bandeau « Notes » au-dessus du classement permet de noter chaque session : conditions (☀️ Sec, 🌥️ Humide, 🌧️ Pluie, 🌦️ Variable, « Pluie » proposée si des pneus pluie ont été montés), ressenti de 1 à 5 étoiles, comportement de la voiture, réglages et remarques. Mes courses signale les sessions annotées (📝, résumé au survol) et Comparer les sessions (Analyse tour par tour) gagne une colonne Notes. Les notes sont rangées dans `race-notes.json` à côté d’`appsettings.json` (`RaceNotesStore`), une par session ; le fichier survit aux mises à jour et n’est jamais réécrit s’il est illisible.
 - Options : nouvelle case « Charger les courses hors ligne contre l’IA » (`LMU:LoadRaceWeekendSessions`, **décochée par défaut**) dans le panneau renommé **Sessions chargées**. Les courses en solo contre l’IA (mode « Race Weekend » du jeu) ne sont plus importées par défaut, pour ne pas fausser la cote pilote et les statistiques entre joueurs ; cocher la case les réintègre et recharge les résultats.
@@ -74,6 +75,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dashboard : le logo Delta Racing remplace la case « LMU » du bandeau de navigation, suivi du nom « LMU DELTARACING » (logo seul sous 1480 px de large).
 
 ### Fixed
+- Licence : `LICENSE` contient de nouveau le texte officiel complet de la GPL-3.0 (il était tronqué et précédé d’une ligne de copyright, et GitHub l’affichait « Other ») ; le copyright est en bas du README.
 - Analyse tour par tour : après un changement de course, la liste **Pilote** pouvait afficher un autre pilote que celui analysé ; elle montre de nouveau le pilote conservé (ou vous, s’il n’a pas couru cette course).
 - Détail des courses : la liste des événements affichait « () » au lieu des sessions présentes (« Essais · Qualif · Course ») depuis l’interface multilingue. Le libellé est calculé par `RaceEventPresentation.SessionsLabel`, couvert par un test.
 - Release : le test de l’exécutable publié (`Test-PublishedApp.ps1`) fixe la langue en anglais au lieu de supposer le français ; il échouait sur le runner Windows anglais de la CI depuis l’interface multilingue, et vérifie désormais que les traductions sont intégrées à l’exécutable.
