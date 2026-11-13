@@ -13,7 +13,7 @@ Effet sur la chaîne d'import de la lecture de `<Setting>` et de l'option `LMU:L
 | Chargement complet, 1 710 fichiers, sans essais | 876,4 · 875,4 ms | 867,3 · 841,2 ms | 406,1 → 406,4 Mio |
 | Chargement complet, 1 710 fichiers, avec essais | 969,9 · 928,1 ms | 953,8 · 929,0 ms | 406,8 → 405,8 Mio |
 
-**Lecture :** une seule valeur de plus par fichier (`<Setting>`) : les allocations ne bougent pas et les temps restent dans le bruit de mesure (le parsing des 342 fichiers est identique ; les écarts sur un fichier isolé, dans les deux sens, ne se retrouvent pas sur le lot). Six sessions de moins sont conservées (208 → 202 sans essais), mais leurs fichiers sont toujours lus en entier avant d'être écartés : aucun gain de temps. Écarter ces fichiers dès l'en-tête du XML est la tâche « Optimisation des essais » du jalon.
+**Lecture :** une seule valeur de plus par fichier (`<Setting>`) : les allocations ne bougent pas et les temps restent dans le bruit de mesure (le parsing des 342 fichiers est identique ; les écarts sur un fichier isolé, dans les deux sens, ne se retrouvent pas sur le lot). Six sessions de moins sont conservées (208 → 202 sans essais), mais leurs fichiers sont toujours lus en entier avant d'être écartés : aucun gain de temps. Les écarter dès l'en-tête du XML a été abandonné : le gain était estimé à 25 ms sur les 342 fixtures, au prix d'une phase devinée avant de lire ses pilotes et d'un fichier abîmé ignoré au lieu d'être signalé.
 
 ## Reproduction
 
