@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Mes courses : un bouton **Détail →** au bout de chaque ligne ouvre Détail des courses sur l’événement de la course (onglet Course).
 - Dashboard : **notes de course**. Dans Détail des courses, un bandeau « Notes » au-dessus du classement permet de noter chaque session : conditions (☀️ Sec, 🌥️ Humide, 🌧️ Pluie, 🌦️ Variable, « Pluie » proposée si des pneus pluie ont été montés), ressenti de 1 à 5 étoiles, comportement de la voiture, réglages et remarques. Mes courses signale les sessions annotées (📝, résumé au survol) et Comparer les sessions (Analyse tour par tour) gagne une colonne Notes. Les notes sont rangées dans `race-notes.json` à côté d’`appsettings.json` (`RaceNotesStore`), une par session ; le fichier survit aux mises à jour et n’est jamais réécrit s’il est illisible.
 - Options : nouvelle case « Charger les courses hors ligne contre l’IA » (`LMU:LoadRaceWeekendSessions`, **décochée par défaut**) dans le panneau renommé **Sessions chargées**. Les courses en solo contre l’IA (mode « Race Weekend » du jeu) ne sont plus importées par défaut, pour ne pas fausser la cote pilote et les statistiques entre joueurs ; cocher la case les réintègre et recharge les résultats.
 - Parser : lecture de la balise `<Setting>` (`Session.Setting`, `Session.IsRaceWeekend`) ; nouveau statut d’import `SkippedRaceWeekend` ; rapport de benchmark `docs/benchmarks/choix-sessions-importees-2026-11.md`.

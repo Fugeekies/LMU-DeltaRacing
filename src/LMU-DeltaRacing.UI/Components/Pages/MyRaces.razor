@@ -100,6 +100,7 @@ else
                                     <th scope="col" class="numeric-cell">@T["MyRaces.RaceTotalTime"]</th>
                                     <th scope="col" class="numeric-cell">@T["MyRaces.QualifyingBestLap"]</th>
                                     <th scope="col" class="numeric-cell">@T["MyRaces.QualifyingDelta"]</th>
+                                    <th scope="col"><span class="visually-hidden">@T["MyRaces.Details"]</span></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -107,7 +108,7 @@ else
                                 @foreach (var category in MyRacesFilters.OrderRows(circuit).GroupBy(record => record.Category))
                                 {
                                     <tr class="category-separator @CategoryStyle.CssClass(category.Key)">
-                                        <td colspan="11">
+                                        <td colspan="12">
                                             <div class="category-separator-content">
                                                 <span class="category-badge @CategoryStyle.CssClass(category.Key)">@category.Key</span>
                                                 <a class="category-separator-link"
@@ -147,6 +148,12 @@ else
                                             <td class="numeric-cell">@DisplayFormat.TotalTime(record.FinishTime)</td>
                                             <td class="numeric-cell">@DisplayFormat.Lap(record.QualifyingTime)</td>
                                             <td class="numeric-cell">@FormatDelta(record.QualifyingDelta)</td>
+                                            <td class="details-cell">
+                                                @if (RaceEventPresentation.FindEventId(record, eventIds) is { } eventId)
+                                                {
+                                                    <a class="button button-secondary details-link" href="@($"/race-details?event={Uri.EscapeDataString(eventId)}")" title="@T["MyRaces.DetailsTitle", DisplayFormat.DateTime(record.StartedAt)]">@T["MyRaces.Details"]</a>
+                                                }
+                                            </td>
                                         </tr>
                                     }
                                 }
@@ -163,6 +170,7 @@ else
 
 @code {
     private IReadOnlyList<MyRaceRecord> records = [];
+    private IReadOnlyDictionary<Guid, string> eventIds = new Dictionary<Guid, string>();
     private string[] tracks = [];
     private string[] categories = [.. CarCategory.Known];
     private string selectedTrack = string.Empty;
@@ -171,6 +179,8 @@ else
     protected override void OnStateChanged()
     {
         records = MyRacesPresentation.CreateRecords(State.Sessions, State.UserName);
+        // The rows open race details on their event, whose grouping is the one of that page.
+        eventIds = RaceEventPresentation.EventIdsBySession(RaceEventPresentation.CreateEvents(State.Sessions, State.UserName));
         tracks = [.. MyRacesFilters.GetTracks(records)];
         categories = [.. MyRacesFilters.GetCategories(records)];
     }

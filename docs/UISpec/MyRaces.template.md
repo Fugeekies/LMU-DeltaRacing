@@ -45,6 +45,7 @@ Page `/my-races`, première page du menu « Courses » de la barre de navigation
   | TEMPS TOTAL COURSE | `FinishTime` du pilote | `h:mm:ss.fff` si ≥ 1 h, sinon `m:ss.fff` |
   | MEILLEUR TOUR QUALIF | Meilleur tour en qualification | `m:ss.fff` |
   | DELTA QUALIF (n-1) | Écart avec la qualif précédente | voir règle delta |
+  | *(sans titre)* | Bouton **« Détail → »** : ouvre Détail des courses sur l'événement de la course (ou de la qualification sans course), onglet Course | `/race-details?event=<identifiant>` |
 
   Toute valeur absente s'affiche `—`. Le classement ouvrant le tableau, les colonnes de la course précèdent celles de la qualification.
 * **Colonnes ajustables :** une poignée (deux traits fins) au bord droit de chaque en-tête, rouge LMU au survol avec un curseur de redimensionnement ; la faire glisser change la largeur de sa colonne, tableau par tableau (chaque circuit a le sien) ; un double-clic sur ce bord rend au tableau ses largeurs automatiques. Les largeurs ne sont pas mémorisées : un rechargement de la page les rétablit.

@@ -19,6 +19,44 @@ public static class RaceEventPresentation
     private static readonly TimeSpan MaximumGapInsideEvent = TimeSpan.FromHours(2);
 
     /// <summary>
+    /// Maps each race and qualifying session to the identifier of its event, for the links that
+    /// open race details on the event of a session.
+    /// </summary>
+    /// <param name="events">The events, as created by <see cref="CreateEvents"/>.</param>
+    public static IReadOnlyDictionary<Guid, string> EventIdsBySession(IEnumerable<RaceEvent> events)
+    {
+        ArgumentNullException.ThrowIfNull(events);
+
+        var eventIds = new Dictionary<Guid, string>();
+        foreach (var raceEvent in events)
+        {
+            foreach (var session in new[] { raceEvent.Race, raceEvent.Qualifying }.OfType<Session>())
+            {
+                eventIds[session.Id] = raceEvent.Id;
+            }
+        }
+
+        return eventIds;
+    }
+
+    /// <summary>
+    /// Returns the event of a row of My races: the one of its race, or of its qualifying without
+    /// race; <see langword="null"/> when the row is in no event.
+    /// </summary>
+    /// <param name="record">The row of My races.</param>
+    /// <param name="eventIds">The events by session, from <see cref="EventIdsBySession"/>.</param>
+    public static string? FindEventId(MyRaceRecord record, IReadOnlyDictionary<Guid, string> eventIds)
+    {
+        ArgumentNullException.ThrowIfNull(record);
+        ArgumentNullException.ThrowIfNull(eventIds);
+
+        return (record.RaceSessionId ?? record.QualifyingSessionId) is { } sessionId
+            && eventIds.TryGetValue(sessionId, out var eventId)
+                ? eventId
+                : null;
+    }
+
+    /// <summary>
     /// Names the sessions of an event in the order they are driven, such as
     /// <c>Essais · Qualif · Course</c>, for the event list of race details.
     /// </summary>
