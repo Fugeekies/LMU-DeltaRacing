@@ -13,13 +13,6 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
-### Jalon — Choix des sessions importées
-Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses) ; elle n'est pas lue par le parser.
-- [ ] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés).
-- [ ] **Parser :** lire `<Setting>`, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour.
-- [ ] **Option** pour intégrer ou non les sessions « Race Weekend » (valeur par défaut à décider), lue à chaque import comme `LMU:LoadPracticeSessions`.
-- [ ] **Optimisation des essais** (issue du jalon « Détail des courses par événement ») : quand l'option est décochée, les fichiers d'essais sont encore lus et analysés avant d'être ignorés. Lire seulement l'en-tête du XML (type de session) permettrait de les écarter plus tôt, et de même pour les sessions « Race Weekend ». Depuis le parser en flux (audit d'octobre 2026), un fichier d'essais médian se lit en 0,6 ms : le gain restant est estimé à 25 ms sur les 342 fixtures.
-
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
@@ -27,6 +20,12 @@ Laisser le joueur choisir les types de session pris en compte, comme l'option «
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Choix des sessions importées — 13/11/2026 · PR [#72](https://github.com/Fugeekies/LMU-DeltaRacing/pull/72)
+Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses), que le parser ne lisait pas.
+- [x] **Format :** vérifier le sens de `<Setting>` (valeurs possibles, ce qui distingue une session « Race Weekend ») et le documenter dans `AGENTS.md` (faits vérifiés). Constat : les 6 fichiers « Race Weekend » sont des courses hors ligne contre l'IA (un seul joueur, adversaires en `AIControl`), dont 3 sans aucun tour.
+- [x] **Parser :** lire `<Setting>`, justifier la mise à jour de l'empreinte SHA-256 de référence et committer un rapport de benchmark à jour. `Session.Setting` et `Session.IsRaceWeekend` ; empreinte mise à jour (seul le champ ajouté la change) ; [rapport de benchmark](benchmarks/choix-sessions-importees-2026-11.md).
+- [x] **Option** pour intégrer ou non les sessions « Race Weekend », lue à chaque import comme `LMU:LoadPracticeSessions` : case « Charger les courses hors ligne contre l'IA » (`LMU:LoadRaceWeekendSessions`), décochée par défaut (décision du 13/11/2026).
 
 ### Jalon — Avenir de la console Spectre — 10/11/2026 · PR [#71](https://github.com/Fugeekies/LMU-DeltaRacing/pull/71)
 Chaque règle métier était partagée (`Presentation`), mais son rendu existait deux fois : pages Razor et `Console/Views`. Chaque nouvelle vue doublait donc le coût de développement et de test, et la console n'avait déjà plus que l'Accueil, Mes courses et les Options.

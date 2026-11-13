@@ -14,6 +14,7 @@ namespace LMU_DeltaRacing.Tests.Application;
 public sealed class SessionImportServiceTests
 {
     private const string FixturePath = "assets/Results/2025_02_24_20_26_56-18R1.xml";
+    private const string RaceWeekendFixture = "2026_09_16_15_17_11-40R1.xml";
 
     /// <summary>
     /// Verifies that a parsed session is stored and returned as a successful import.
@@ -192,6 +193,50 @@ public sealed class SessionImportServiceTests
         service.ImportFile(path).Status.Should().Be(SessionImportStatus.SkippedPractice);
         importPractice = true;
         service.ImportFile(path).Status.Should().Be(SessionImportStatus.Imported);
+    }
+
+    /// <summary>
+    /// Verifies that an offline race against the AI ("Race Weekend") is left out by default, so
+    /// solo races do not mix with races against other players.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_skips_race_weekend_sessions_by_default()
+    {
+        var repository = new InMemorySessionRepository();
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            repository,
+            NullLogger<SessionImportService>.Instance);
+        var path = Path.Combine(AppContext.BaseDirectory, "assets", "Results", RaceWeekendFixture);
+
+        var result = service.ImportFile(path);
+
+        result.Status.Should().Be(SessionImportStatus.SkippedRaceWeekend);
+        result.Session.Should().BeNull();
+        repository.GetAll().Should().BeEmpty();
+    }
+
+    /// <summary>
+    /// Verifies that the race-weekend preference is read at each import, so the dashboard option
+    /// applies to the next reload without restarting the application.
+    /// </summary>
+    [TestMethod]
+    public void ImportFile_reads_the_race_weekend_preference_at_each_import()
+    {
+        var importRaceWeekend = false;
+        var service = new SessionImportService(
+            new XmlResultParser(),
+            new InMemorySessionRepository(),
+            NullLogger<SessionImportService>.Instance,
+            () => false,
+            importRaceWeekendSessions: () => importRaceWeekend);
+        var path = Path.Combine(AppContext.BaseDirectory, "assets", "Results", RaceWeekendFixture);
+
+        service.ImportFile(path).Status.Should().Be(SessionImportStatus.SkippedRaceWeekend);
+        importRaceWeekend = true;
+        var result = service.ImportFile(path);
+        result.Status.Should().Be(SessionImportStatus.Imported);
+        result.Session!.IsRaceWeekend.Should().BeTrue();
     }
 
     /// <summary>

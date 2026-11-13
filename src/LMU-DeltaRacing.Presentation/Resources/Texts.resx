@@ -1103,8 +1103,8 @@
   <data name="Settings.DataEyebrow" xml:space="preserve">
     <value>DONNÉES CHARGÉES</value>
   </data>
-  <data name="Settings.Practice" xml:space="preserve">
-    <value>Sessions d’essais</value>
+  <data name="Settings.LoadedSessions" xml:space="preserve">
+    <value>Sessions chargées</value>
   </data>
   <data name="Settings.PracticeLabel" xml:space="preserve">
     <value>Charger les sessions d’essais (onglet Essais du détail des courses)</value>
@@ -1177,6 +1177,21 @@
   </data>
   <data name="Settings.PracticeSaveFailed" xml:space="preserve">
     <value>Impossible d’enregistrer la préférence des essais : {0}</value>
+  </data>
+  <data name="Settings.RaceWeekendLabel" xml:space="preserve">
+    <value>Charger les courses hors ligne contre l’IA</value>
+  </data>
+  <data name="Settings.RaceWeekendHelp" xml:space="preserve">
+    <value>Courses en solo (mode « Race Weekend » du jeu) : les écarter garde la cote pilote et les statistiques entre joueurs. Le choix est enregistré et les résultats sont rechargés immédiatement.</value>
+  </data>
+  <data name="Settings.RaceWeekendLoaded" xml:space="preserve">
+    <value>Courses hors ligne contre l’IA chargées.</value>
+  </data>
+  <data name="Settings.RaceWeekendRemoved" xml:space="preserve">
+    <value>Courses hors ligne contre l’IA retirées.</value>
+  </data>
+  <data name="Settings.RaceWeekendSaveFailed" xml:space="preserve">
+    <value>Impossible d’enregistrer la préférence des courses hors ligne : {0}</value>
   </data>
   <data name="Update.Eyebrow" xml:space="preserve">
     <value>VERSION &amp; MISES À JOUR</value>

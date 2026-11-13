@@ -219,10 +219,12 @@ public sealed class ResultsDirectoryWatcherTests
         }, repository);
         await watcher.StartAsync();
 
-        // Distinct sessions: copies of one file would be recognized as duplicates.
+        // Distinct sessions: copies of one file would be recognized as duplicates. Offline races
+        // against the AI are skipped by default, so they are left out.
         var fixturePaths = Directory
             .EnumerateFiles(Path.GetDirectoryName(GetFixturePath())!, "*R1.xml")
             .Order(StringComparer.Ordinal)
+            .Where(path => !File.ReadAllText(path).Contains("<Setting>Race Weekend</Setting>", StringComparison.Ordinal))
             .Take(fileCount)
             .ToArray();
         var stopwatch = System.Diagnostics.Stopwatch.StartNew();

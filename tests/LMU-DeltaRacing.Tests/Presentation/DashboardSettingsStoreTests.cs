@@ -103,6 +103,7 @@ public sealed class DashboardSettingsStoreTests
             store.SaveResultsDirectory(@"C:\LMU\Results");
             store.SaveWatchOnStartup(false);
             store.SaveLoadPracticeSessions(true);
+            store.SaveLoadRaceWeekendSessions(true);
             store.SaveDriverMerges([new DriverMerge("Old Name", "New Name")]);
             store.SaveUserName("Driver One");
             store.SaveProgressionSettings(new ProgressionSettings(
@@ -115,6 +116,7 @@ public sealed class DashboardSettingsStoreTests
             configuration["LMU:UserName"].Should().Be("Driver One");
             configuration.GetValue<bool>("LMU:WatchResultsOnStartup").Should().BeFalse();
             configuration.GetValue<bool>("LMU:LoadPracticeSessions").Should().BeTrue();
+            configuration.GetValue<bool>("LMU:LoadRaceWeekendSessions").Should().BeTrue();
             configuration["LMU:DriverMerges:0:From"].Should().Be("Old Name");
             configuration["LMU:DriverMerges:0:To"].Should().Be("New Name");
             ProgressionSettings.Load(configuration).Should().Be(new ProgressionSettings(

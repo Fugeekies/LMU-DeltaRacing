@@ -51,7 +51,8 @@ builder.Services.AddRazorComponents()
 builder.Services.AddSingleton<IResultXmlParser, XmlResultParser>();
 builder.Services.AddSingleton<ISessionRepository, InMemorySessionRepository>();
 // Practice sessions are mostly empty, so they are only loaded when enabled in the Options page
-// (race-details practice tab). The setting is read at each import so a reload applies it.
+// (race-details practice tab), and offline races against the AI ("Race Weekend") only when enabled
+// too. The settings are read at each import so a reload applies them.
 builder.Services.AddSingleton<ISessionImportService>(serviceProvider =>
 {
     var configuration = serviceProvider.GetRequiredService<IConfiguration>();
@@ -59,7 +60,8 @@ builder.Services.AddSingleton<ISessionImportService>(serviceProvider =>
         serviceProvider.GetRequiredService<IResultXmlParser>(),
         serviceProvider.GetRequiredService<ISessionRepository>(),
         serviceProvider.GetRequiredService<ILogger<SessionImportService>>(),
-        () => configuration.GetValue("LMU:LoadPracticeSessions", defaultValue: false));
+        () => configuration.GetValue("LMU:LoadPracticeSessions", defaultValue: false),
+        importRaceWeekendSessions: () => configuration.GetValue("LMU:LoadRaceWeekendSessions", defaultValue: false));
 });
 builder.Services.AddSingleton<DashboardDataService>();
 builder.Services.AddSingleton<DashboardSettingsStore>(serviceProvider =>

@@ -87,6 +87,17 @@ public sealed class DashboardSettingsStore
     }
 
     /// <summary>
+    /// Saves whether offline races against the AI (<c>Race Weekend</c>) are loaded.
+    /// </summary>
+    public void SaveLoadRaceWeekendSessions(bool loadRaceWeekendSessions)
+    {
+        var root = LoadSettings();
+        GetLmuSettings(root)["LoadRaceWeekendSessions"] = loadRaceWeekendSessions;
+
+        Save(root);
+    }
+
+    /// <summary>
     /// Saves the interface language (<c>LMU:Language</c>), a supported two-letter code.
     /// </summary>
     public void SaveLanguage(string language)

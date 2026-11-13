@@ -9,7 +9,7 @@
 | **Hauptfahrer** | Der Fahrer, dem Sie folgen (Sie selbst). Die Liste ist nach Anzahl der Auftritte sortiert. |
 | **Fahrer zusammenführen** | Spitznamen geändert? Wählen Sie den alten und den beibehaltenen Namen, dann **Zusammenführen**. Ihre Dateien werden nicht verändert und die Zusammenführung lässt sich rückgängig machen. Eine Warnung erscheint, wenn beide Namen zusammen gefahren sind. |
 | **Autostart** | Neue Ergebnisse ab dem Start überwachen (standardmäßig an). |
-| **Trainingssessions** | Auch das Training für den Reiter **TRAINING** der [Renndetails](race-details.md) laden (standardmäßig aus). |
+| **Geladene Sessions** | **Trainingssessions laden**: auch das Training, für den Reiter **TRAINING** der [Renndetails](race-details.md). **Offline-Rennen gegen die KI laden**: auch Ihre Solorennen (Spielmodus „Race Weekend“), die weggelassen werden, damit sie Fahrerwertung und Statistiken unter Spielern nicht verfälschen. Beide sind standardmäßig aus; die Ergebnisse werden beim An- oder Abhaken sofort neu geladen. |
 | **Updates** | Installierte Version und Download der neuen. Die Anwendung fragt beim Start bei GitHub die Nummer der neuesten Version ab; Häkchen entfernen, um das abzustellen. |
 
 Unter den Einstellungen zeigt der **Importstatus** den Ladefortschritt, unlesbare Dateien und Ihre letzten Sessions.

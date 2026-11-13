@@ -16,6 +16,12 @@ public enum SessionImportStatus
     SkippedPractice,
 
     /// <summary>
+    /// The file contained an offline race against the AI (<c>Race Weekend</c>), which is not stored
+    /// unless the <c>LMU:LoadRaceWeekendSessions</c> option is on.
+    /// </summary>
+    SkippedRaceWeekend,
+
+    /// <summary>
     /// The file contained a session that is already stored, such as a copy under another name.
     /// </summary>
     SkippedDuplicate,
