@@ -9,6 +9,7 @@ Tu historial, **circuito por circuito**, para ver si mejoras.
 - **DELTA (n-1)** compara tu mejor vuelta con tu sesión anterior en el mismo circuito y la misma categoría: 🟢 negativo, más rápido; 🔴 positivo, más lento.
 - Filtra por **circuito** y **categoría** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
 - **📈 Ver la progresión** abre la [Progresión](progression.md) del circuito.
+- **Detalle →**, al final de cada fila, abre el [Detalle de carreras](race-details.md) de esa carrera.
 - 📝 después de la fecha señala una nota sobre la carrera o la clasificación: pasa el ratón por encima para leerla. Las notas se escriben en el [Detalle de carreras](race-details.md).
 
 > Las vueltas invalidadas por el juego (límites de pista) no tienen tiempo: no cuentan.

@@ -17,4 +17,4 @@ Darunter zeigt **Persönliche Rekorde** Ihre beste Runde und Ihre Höchstgeschwi
 
 Die letzte Spalte von **Sessions vergleichen**, **NOTIZEN**, zeigt die in den [Renndetails](race-details.md) notierten Bedingungen, das Gefühl und das Setup; fahren Sie mit der Maus darüber, um die ganze Notiz zu lesen.
 
-In **Renndetails** öffnet der Link **Runde-für-Runde-Analyse von … →** unter dem Rennverlauf diese Seite mit diesem Rennen und diesem Fahrer.
+In **Renndetails** öffnet die Schaltfläche **🔬 Runde-für-Runde-Analyse** rechts neben den Einstellungen des Rennverlaufs diese Seite mit diesem Rennen und diesem Fahrer.

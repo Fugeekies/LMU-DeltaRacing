@@ -17,4 +17,4 @@ Below, **Personal records** gives your best lap and top speed with each car on t
 
 The last column of **Compare sessions**, **NOTES**, recalls the conditions, feeling and setup noted in [Race details](race-details.md); hover over it to read the whole note.
 
-In **Race details**, the **Lap-by-lap analysis of … →** link below the race story opens this page on that race and driver.
+In **Race details**, the **🔬 Lap-by-lap analysis** button, to the right of the race story settings, opens this page on that race and driver.

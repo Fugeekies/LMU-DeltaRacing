@@ -17,4 +17,4 @@ Más abajo, **Récords personales** da tu mejor vuelta y tu velocidad punta con 
 
 La última columna de **Comparar sesiones**, **NOTAS**, recuerda las condiciones, la sensación y los reglajes anotados en el [Detalle de carreras](race-details.md); pasa el ratón por encima para leer la nota entera.
 
-En **Detalle de carreras**, el enlace **Análisis vuelta a vuelta de … →** bajo el desarrollo de la carrera abre esta página con esa carrera y ese piloto.
+En **Detalle de carreras**, el botón **🔬 Análisis vuelta a vuelta**, a la derecha de los ajustes del desarrollo de la carrera, abre esta página con esa carrera y ese piloto.

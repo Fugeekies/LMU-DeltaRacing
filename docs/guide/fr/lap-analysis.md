@@ -17,4 +17,4 @@ Plus bas, **Records personnels** donne votre meilleur tour et votre vitesse de p
 
 La dernière colonne de **Comparer les sessions**, **NOTES**, rappelle les conditions, le ressenti et les réglages notés dans le [Détail des courses](race-details.md) ; survolez-la pour lire la note entière.
 
-Dans **Détail des courses**, le lien **Analyse tour par tour de … →** sous le déroulé de la course ouvre cette page sur cette course et ce pilote.
+Dans **Détail des courses**, le bouton **🔬 Analyse tour par tour**, à droite des réglages du déroulé de la course, ouvre cette page sur cette course et ce pilote.

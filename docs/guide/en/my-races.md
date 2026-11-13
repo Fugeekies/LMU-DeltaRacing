@@ -9,6 +9,7 @@ Your history, **track by track**, to see whether you are improving.
 - **DELTA (n-1)** compares your best lap with your previous session on the same track and in the same class: 🟢 negative, faster; 🔴 positive, slower.
 - Filter by **track** and **class** (Hypercar, LMP2, LMP3, LMGTE, LMGT3).
 - **📈 See the progress** opens the track's [Progress](progression.md).
+- **Details →**, at the end of each row, opens the [Race details](race-details.md) of that race.
 - 📝 after the date shows a note on the race or the qualifying: hover over it to read it. Notes are written in [Race details](race-details.md).
 
 > Laps invalidated by the game (track limits) have no time: they do not count.

@@ -1813,8 +1813,8 @@
   <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
     <value>Choose the driver to analyse</value>
   </data>
-  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
-    <value>Lap-by-lap analysis of {0} →</value>
+  <data name="RaceStory.LapAnalysisTitle" xml:space="preserve">
+    <value>Open the lap-by-lap analysis of {0}: consistency, sectors, stints and tyre wear</value>
   </data>
   <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
     <value>best lap {0}</value>
@@ -1965,5 +1965,11 @@
   </data>
   <data name="Comparison.Notes" xml:space="preserve">
     <value>Notes</value>
+  </data>
+  <data name="MyRaces.Details" xml:space="preserve">
+    <value>Details →</value>
+  </data>
+  <data name="MyRaces.DetailsTitle" xml:space="preserve">
+    <value>Open the race details of {0}</value>
   </data>
 </root>

@@ -13,15 +13,6 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
-### Jalon — Notes de course
-Noter, pour chaque session, les conditions, le comportement de la voiture, les réglages et son ressenti. Le XML ne contient ni météo ni réglages (seulement `<FixedSetups>`) ; le seul indice de pluie est le composé `Wet` des tours. Première donnée saisie par le joueur : elle doit survivre à un redémarrage, contrairement aux sessions relues à chaque lancement.
-- [x] **Stockage :** fichier `race-notes.json` à côté d'`appsettings.json` (décision du 13/11/2026), une note par session, rattachée à `Session.Id` (stable entre deux lancements, indépendant du nom du fichier), écrit d'un bloc comme les réglages. L'installeur ne le publie pas : une mise à jour ne l'écrase pas, une désinstallation le laisse en place. Mettre à jour la règle « persistance en mémoire uniquement » d'`AGENTS.md` et `docs/ARCHITECTURE.md`.
-- [x] **Contenu** (champs facultatifs, à revoir à l'usage) : conditions (Sec, Humide, Pluie, Variable ; « Pluie » proposée si des pneus `Wet` ont été montés), comportement de la voiture, réglages (texte libre), ressenti de 1 à 5 et remarques.
-- [x] **Détail des courses :** bloc « Notes » de chaque session, saisie et lecture. Bandeau entre les onglets et le classement, bouton Enregistrer, maquette [`RaceNotes.template.md`](UISpec/RaceNotes.template.md) validée le 13/11/2026.
-- [x] **Mes courses :** icône sur les sessions annotées.
-- [x] **Analyse tour par tour :** conditions et réglages dans le tableau « Comparer les sessions ».
-- [x] Textes en cinq langues et page du guide utilisateur dans les cinq langues.
-
 ### Jalon — Export CSV
 - [ ] Exporter les résultats et statistiques en CSV. Données et pages concernées à définir avant de coder.
 
@@ -29,6 +20,15 @@ Noter, pour chaque session, les conditions, le comportement de la voiture, les r
 - Écarté pour l'instant : une persistance en base de données ou un cache des sessions. Après l'audit d'octobre 2026, 342 fichiers se chargent en 100 ms environ (moins de 3 s estimées pour 10 000 fichiers) : relire les XML à chaque démarrage reste simple et suffisant.
 
 ## Terminés
+
+### Jalon — Notes de course — 13/11/2026 · PR [#73](https://github.com/Fugeekies/LMU-DeltaRacing/pull/73)
+Noter, pour chaque session, les conditions, le comportement de la voiture, les réglages et son ressenti. Le XML ne contient ni météo ni réglages (seulement `<FixedSetups>`) ; le seul indice de pluie est le composé `Wet` des tours. Première donnée saisie par le joueur : elle doit survivre à un redémarrage, contrairement aux sessions relues à chaque lancement.
+- [x] **Stockage :** fichier `race-notes.json` à côté d'`appsettings.json` (décision du 13/11/2026), une note par session, rattachée à `Session.Id` (stable entre deux lancements, indépendant du nom du fichier), écrit d'un bloc comme les réglages. L'installeur ne le publie pas : une mise à jour ne l'écrase pas, une désinstallation le laisse en place. Mettre à jour la règle « persistance en mémoire uniquement » d'`AGENTS.md` et `docs/ARCHITECTURE.md`.
+- [x] **Contenu** (champs facultatifs, à revoir à l'usage) : conditions (Sec, Humide, Pluie, Variable ; « Pluie » proposée si des pneus `Wet` ont été montés), comportement de la voiture, réglages (texte libre), ressenti de 1 à 5 et remarques.
+- [x] **Détail des courses :** bloc « Notes » de chaque session, saisie et lecture. Bandeau entre les onglets et le classement, bouton Enregistrer, maquette [`RaceNotes.template.md`](UISpec/RaceNotes.template.md) validée le 13/11/2026.
+- [x] **Mes courses :** icône sur les sessions annotées.
+- [x] **Analyse tour par tour :** conditions et réglages dans le tableau « Comparer les sessions ».
+- [x] Textes en cinq langues et page du guide utilisateur dans les cinq langues.
 
 ### Jalon — Choix des sessions importées — 13/11/2026 · PR [#72](https://github.com/Fugeekies/LMU-DeltaRacing/pull/72)
 Laisser le joueur choisir les types de session pris en compte, comme l'option « Charger les sessions d'essais » le fait déjà pour les essais. Constat sur les fixtures : la balise `<Setting>` vaut `Multiplayer` dans 336 fichiers et `Race Weekend` dans 6 (toutes des courses), que le parser ne lisait pas.

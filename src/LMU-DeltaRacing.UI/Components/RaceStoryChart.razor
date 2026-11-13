@@ -52,6 +52,10 @@
             </div>
         </div>
         <span class="race-chart-count">@Texts.Plural("RaceStory.CarsShown", shown.Count, positions.FieldSize)</span>
+        @if (LapAnalysisLink is not null)
+        {
+            <a class="button button-secondary race-chart-analysis" href="@LapAnalysisLink" title="@T["RaceStory.LapAnalysisTitle", Story.DriverName]">🔬 @T["Nav.LapAnalysis"]</a>
+        }
     </div>
 
     <svg class="story-chart" viewBox="0 0 @chart.Width @Number(chart.Height)" role="img" aria-label="@T["RaceStory.ChartLabel", Story.DriverName]">
@@ -142,6 +146,13 @@
     /// </summary>
     [Parameter]
     public EventCallback<string> OnSelectDriver { get; set; }
+
+    /// <summary>
+    /// Gets or sets the address of the lap by lap analysis of the followed driver in this race, or
+    /// <see langword="null"/> to hide its button.
+    /// </summary>
+    [Parameter]
+    public string? LapAnalysisLink { get; set; }
 
     private bool IsMulticlass =>
         Session.Drivers.Select(driver => driver.CarClass.Trim()).Distinct(StringComparer.OrdinalIgnoreCase).Count() > 1;

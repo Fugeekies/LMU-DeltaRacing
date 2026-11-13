@@ -57,6 +57,42 @@ public sealed class RaceEventPresentationTests
         RaceEventPresentation.SessionsLabel(withoutPractice).Should().Be("Qualif · Course");
     }
 
+    /// <summary>
+    /// Verifies that every row of My races finds the event of race details that holds its race, or
+    /// its qualifying without race, so that the row can open that event.
+    /// </summary>
+    [TestMethod]
+    public void FindEventId_finds_the_event_of_each_row_of_my_races_on_real_fixtures()
+    {
+        var sessions = Directory.EnumerateFiles(Path.Combine(AppContext.BaseDirectory, "assets", "Results"), "*.xml")
+            .Select(path =>
+            {
+                using var stream = File.OpenRead(path);
+                return new LMU_DeltaRacing.Infrastructure.Parsing.XmlResultParser().Parse(stream);
+            })
+            .Where(session => session.Kind != SessionKind.Practice)
+            .ToArray();
+        var events = RaceEventPresentation.CreateEvents(sessions, "Driver Tom");
+        var eventIds = RaceEventPresentation.EventIdsBySession(events);
+        var records = MyRacesPresentation.CreateRecords(sessions, "Driver Tom");
+
+        records.Should().NotBeEmpty();
+        foreach (var record in records)
+        {
+            var eventId = RaceEventPresentation.FindEventId(record, eventIds);
+
+            var raceEvent = events.Should().ContainSingle(item => item.Id == eventId).Which;
+            if (record.RaceSessionId is { } raceId)
+            {
+                raceEvent.Race!.Id.Should().Be(raceId);
+            }
+            else
+            {
+                raceEvent.Qualifying!.Id.Should().Be(record.QualifyingSessionId!.Value);
+            }
+        }
+    }
+
     [TestMethod]
     public void CreateEvents_merges_consecutive_practices_and_splits_sessions_more_than_two_hours_apart()
     {

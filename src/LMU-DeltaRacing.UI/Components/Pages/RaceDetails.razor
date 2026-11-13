@@ -160,7 +160,10 @@ else
                     </div>
                     @if (story is not null)
                     {
-                        <RaceStoryChart Session="selectedSession!" Story="story" PlayerName="@State.UserName" OnSelectDriver="name => selectedDriver = results.FirstOrDefault(result => string.Equals(result.Name.Trim(), name, StringComparison.OrdinalIgnoreCase))?.Name ?? name" />
+                        @* The analysis has its own page: the chart opens it on this race and the followed driver. *@
+                        <RaceStoryChart Session="selectedSession!" Story="story" PlayerName="@State.UserName"
+                                        LapAnalysisLink="@(DriverProfile.FindDriver(selectedSession!, State.UserName) is null ? null : LapAnalysisLink(selectedSession!, incidentsDriver.Name))"
+                                        OnSelectDriver="name => selectedDriver = results.FirstOrDefault(result => string.Equals(result.Name.Trim(), name, StringComparison.OrdinalIgnoreCase))?.Name ?? name" />
                     }
                     @if (incidentsDriver.Incidents.Count == 0)
                     {
@@ -183,14 +186,6 @@ else
                         </ol>
                     }
                 </section>
-
-                @* The analysis has its own page; the link opens it on this race and the followed driver. *@
-                @if (story is not null && DriverProfile.FindDriver(selectedSession!, State.UserName) is not null)
-                {
-                    <div class="incident-panel">
-                        <a href="@LapAnalysisLink(selectedSession!, incidentsDriver.Name)">@T["RaceDetails.LapAnalysisLink", incidentsDriver.Name]</a>
-                    </div>
-                }
             }
         }
 

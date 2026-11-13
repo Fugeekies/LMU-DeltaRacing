@@ -1813,8 +1813,8 @@
   <data name="LapAnalysisPage.SelectDriver" xml:space="preserve">
     <value>Scegli il pilota da analizzare</value>
   </data>
-  <data name="RaceDetails.LapAnalysisLink" xml:space="preserve">
-    <value>Analisi giro per giro di {0} →</value>
+  <data name="RaceStory.LapAnalysisTitle" xml:space="preserve">
+    <value>Apri l’analisi giro per giro di {0}: regolarità, settori, stint e usura delle gomme</value>
   </data>
   <data name="LapAnalysis.BestLapDetail" xml:space="preserve">
     <value>giro migliore {0}</value>
@@ -1965,5 +1965,11 @@
   </data>
   <data name="Comparison.Notes" xml:space="preserve">
     <value>Note</value>
+  </data>
+  <data name="MyRaces.Details" xml:space="preserve">
+    <value>Dettaglio →</value>
+  </data>
+  <data name="MyRaces.DetailsTitle" xml:space="preserve">
+    <value>Apri il dettaglio della gara del {0}</value>
   </data>
 </root>

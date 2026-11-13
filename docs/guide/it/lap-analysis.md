@@ -17,4 +17,4 @@ Più in basso, **Record personali** dà il tuo giro migliore e la tua velocità 
 
 L'ultima colonna di **Confronta le sessioni**, **NOTE**, ricorda condizioni, sensazione e assetto annotati nel [Dettaglio gare](race-details.md); passaci sopra con il mouse per leggere la nota intera.
 
-In **Dettaglio gare**, il link **Analisi giro per giro di … →** sotto l'andamento della gara apre questa pagina su quella gara e quel pilota.
+In **Dettaglio gare**, il pulsante **🔬 Analisi giro per giro**, a destra delle impostazioni dell'andamento della gara, apre questa pagina su quella gara e quel pilota.

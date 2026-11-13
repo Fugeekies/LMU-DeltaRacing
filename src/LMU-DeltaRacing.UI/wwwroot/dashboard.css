@@ -3351,3 +3351,31 @@ table.columns-resized td[colspan] {
         grid-template-columns: 1fr;
     }
 }
+
+/* The link of each row of my races to its event in race details. */
+.details-cell {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.details-link.button {
+    min-height: 28px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.64rem;
+}
+
+/* Read by screen readers only, such as the header of a column of links. */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+/* The button that opens the lap by lap analysis, at the end of the race story settings. */
+.race-chart-analysis.button {
+    min-height: 32px;
+    padding: 0.4rem 0.75rem;
+}
