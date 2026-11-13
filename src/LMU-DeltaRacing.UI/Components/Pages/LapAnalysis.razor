@@ -43,7 +43,9 @@ else
             </label>
             <label class="race-filter">
                 <span>@T["LapAnalysisPage.Driver"]</span>
-                <select value="@analysis?.DriverName" @onchange="OnDriverChanged" aria-label="@T["LapAnalysisPage.SelectDriver"]">
+                @* The options change with the race: a value left unchanged (the same driver) would not be
+                   applied again and the browser would show another driver. The key rebuilds the list. *@
+                <select @key="race.Id" value="@analysis?.DriverName" @onchange="OnDriverChanged" aria-label="@T["LapAnalysisPage.SelectDriver"]">
                     @foreach (var driver in drivers)
                     {
                         <option value="@driver.Name">@FormatDriver(driver)</option>

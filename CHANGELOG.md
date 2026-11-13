@@ -74,6 +74,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 - Dashboard : le logo Delta Racing remplace la case « LMU » du bandeau de navigation, suivi du nom « LMU DELTARACING » (logo seul sous 1480 px de large).
 
 ### Fixed
+- Analyse tour par tour : après un changement de course, la liste **Pilote** pouvait afficher un autre pilote que celui analysé ; elle montre de nouveau le pilote conservé (ou vous, s’il n’a pas couru cette course).
 - Détail des courses : la liste des événements affichait « () » au lieu des sessions présentes (« Essais · Qualif · Course ») depuis l’interface multilingue. Le libellé est calculé par `RaceEventPresentation.SessionsLabel`, couvert par un test.
 - Release : le test de l’exécutable publié (`Test-PublishedApp.ps1`) fixe la langue en anglais au lieu de supposer le français ; il échouait sur le runner Windows anglais de la CI depuis l’interface multilingue, et vérifie désormais que les traductions sont intégrées à l’exécutable.
 - Dashboard : l'onglet du navigateur affichait l'adresse au lieu du titre de la page après l'écran de chargement. Il affiche désormais « LMU DeltaRacing » pendant le chargement, puis le titre de chaque page.
