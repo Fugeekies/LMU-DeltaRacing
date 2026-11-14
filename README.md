@@ -36,6 +36,22 @@
 
 ---
 
+## Code signing policy
+
+Free code signing provided by [SignPath.io](https://about.signpath.io), certificate by [SignPath Foundation](https://signpath.org).
+
+Only the Windows installer (`LMU-DeltaRacing-Setup.exe`) and the application it installs (`LMU-DeltaRacing.UI.exe`) are signed. They are built from this repository by the [release workflow](.github/workflows/release.yml), on GitHub-hosted runners, and every signing request is approved by hand.
+
+Team roles:
+- Committers and reviewers: [Fugeekies](https://github.com/Fugeekies)
+- Approvers: [Fugeekies](https://github.com/Fugeekies)
+
+Every change from an outside contributor is reviewed in a pull request before it is merged.
+
+**Privacy policy:** this program will not transfer any information to other networked systems unless specifically requested by the user or the person installing or operating it. The only exception is the update check: at startup, the application asks GitHub for the number of the latest release, without sending any personal data (GitHub's [privacy statement](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement) applies to that request); it can be turned off in Options (`LMU:CheckForUpdates`). The dashboard is a local web server that only listens on `127.0.0.1`, so it cannot be reached from another computer. No data is collected.
+
+---
+
 *Developers / Développeurs : [docs/DEVELOPMENT.md](docs/DEVELOPMENT.md) · [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)*
 
 *Copyright © 2026 LMU-DeltaRacing — [GNU General Public License v3.0](LICENSE)*
