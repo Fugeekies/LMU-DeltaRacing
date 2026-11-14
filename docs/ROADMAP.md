@@ -9,7 +9,8 @@ Supprimer l'avertissement Microsoft Defender SmartScreen (« Windows a protégé
 - [x] **Licence :** texte officiel complet de la GPL-3.0 dans `LICENSE` (il était tronqué et précédé d'une ligne de copyright, d'où « Other » sur GitHub), copyright déplacé en bas du README.
 - [x] **README :** ajouter une section « Code signing policy » : mention « Free code signing provided by SignPath.io, certificate by SignPath Foundation », rôles (auteurs, relecteurs, approbateurs) et déclaration de confidentialité (aucune donnée collectée, seule requête sortante : le numéro de la dernière version sur GitHub, désactivable ; serveur local limité à `127.0.0.1`). Lien « Code signing policy » au pied de la page de présentation ; nom de produit `LMU-DeltaRacing` dans les métadonnées de l'exécutable.
 - [x] Activer la double authentification sur le compte GitHub.
-- [ ] Déposer la demande sur https://signpath.org/apply, puis configurer le projet sur app.signpath.io (connexion GitHub, signing policy `release-signing`, artifact configuration, secret `SIGNPATH_API_TOKEN`).
+- [x] Déposer la demande sur https://signpath.org/apply : déposée le 14/11/2026, réponse attendue.
+- [ ] Une fois la demande acceptée, configurer le projet sur app.signpath.io (connexion GitHub, signing policy `release-signing`, artifact configuration, secret `SIGNPATH_API_TOKEN`).
 - [ ] **`release.yml` :** signer l'artefact avec `signpath/github-action-submit-signing-request` avant de publier la release ; signer l'exécutable de l'application avant de générer le setup Inno, puis le setup lui-même. Étapes ajoutées, inactives tant que la variable `SIGNPATH_ORGANIZATION_ID` n'est pas définie (configuration décrite dans `docs/DEVELOPMENT.md`) : à cocher après une première release signée.
 - [x] **En attendant :** le README explique comment passer l'avertissement (« Informations complémentaires » → « Exécuter quand même »), dans la section Installation.
 
