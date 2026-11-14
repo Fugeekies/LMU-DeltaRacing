@@ -14,6 +14,8 @@
     <!-- The release workflow replaces it with the tag (-p:Version=X.Y.Z). No commit hash in the
          version: it is displayed in the application and compared with the release tags. -->
     <Version>0.0.0-dev</Version>
+    <!-- Product name in the executable metadata: SignPath Foundation requires the project name. -->
+    <Product>LMU-DeltaRacing</Product>
     <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
   </PropertyGroup>
 

@@ -15,6 +15,7 @@ on:
 
 permissions:
   contents: write # Requis pour créer le tag Git et publier la release automatiquement
+  actions: read # SignPath lit le job et télécharge les artefacts à signer avec ce jeton
 
 # Two releases started in a row would compute the same next version from the same latest tag.
 concurrency:
@@ -97,6 +98,33 @@ jobs:
         shell: pwsh
         run: pwsh -NoProfile -File scripts/Test-PublishedApp.ps1 -PublishDirectory publish_output -ExpectedVersion $env:APP_VERSION
 
+      # Code signing (SignPath Foundation), skipped until the repository variable SIGNPATH_ORGANIZATION_ID
+      # is set: releases keep working before the SignPath project is approved and configured.
+      # The executable is signed before Inno Setup packs it, then the setup itself is signed.
+      - name: Upload unsigned executable
+        id: upload-unsigned-exe
+        if: vars.SIGNPATH_ORGANIZATION_ID != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: LMU-DeltaRacing-unsigned-exe
+          path: publish_output/LMU-DeltaRacing.UI.exe
+          if-no-files-found: error
+
+      - name: Sign executable
+        if: vars.SIGNPATH_ORGANIZATION_ID != ''
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: LMU-DeltaRacing
+          signing-policy-slug: release-signing
+          artifact-configuration-slug: executable
+          github-artifact-id: ${{ steps.upload-unsigned-exe.outputs.artifact-id }}
+          wait-for-completion: true
+          # Each signing request is approved by hand on SignPath: leave time for it.
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: publish_output
+
       - name: Install Inno Setup
         run: choco install innosetup --no-progress --yes
 
@@ -105,6 +133,29 @@ jobs:
         env:
           APP_VERSION: ${{ steps.version.outputs.version }}
         run: iscc "/DAppVersion=$env:APP_VERSION" "scripts/installer.iss"
+
+      - name: Upload unsigned installer
+        id: upload-unsigned-setup
+        if: vars.SIGNPATH_ORGANIZATION_ID != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: LMU-DeltaRacing-unsigned-setup
+          path: output/LMU-DeltaRacing-Setup.exe
+          if-no-files-found: error
+
+      - name: Sign installer
+        if: vars.SIGNPATH_ORGANIZATION_ID != ''
+        uses: signpath/github-action-submit-signing-request@v3
+        with:
+          api-token: ${{ secrets.SIGNPATH_API_TOKEN }}
+          organization-id: ${{ vars.SIGNPATH_ORGANIZATION_ID }}
+          project-slug: LMU-DeltaRacing
+          signing-policy-slug: release-signing
+          artifact-configuration-slug: installer
+          github-artifact-id: ${{ steps.upload-unsigned-setup.outputs.artifact-id }}
+          wait-for-completion: true
+          wait-for-completion-timeout-in-seconds: 3600
+          output-artifact-directory: output
 
       - name: Upload installer artifact
         uses: actions/upload-artifact@v4

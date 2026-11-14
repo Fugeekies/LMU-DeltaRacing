@@ -63,6 +63,30 @@ Le workflow `.github/workflows/pages.yml` publie le dossier `site/` (page de pr�
 
 Le workflow manuel `.github/workflows/release.yml` construit et vérifie l'application, lance les tests unitaires, puis publie `LMU-DeltaRacing-Setup.exe` dans une release GitHub. Depuis l'onglet Actions, choisissez « Build and release Windows installer (Manual) », la branche `main` (seule autorisée), puis le type de version : **Majeur**, **Mineur** ou **Patch** (par défaut). Le workflow incrémente le dernier tag `vX.Y.Z` (par exemple `v0.0.8` donne `v1.0.0`, `v0.1.0` ou `v0.0.9`), crée le tag sur la révision construite et nomme la release « LMU-DeltaRacing vX.Y.Z ». Les notes de la release listent une ligne par PR fusionnée depuis le tag précédent (titre et numéro de la PR), suivies du lien de comparaison entre les deux tags : un titre de PR clair sert donc directement de changelog. `CHANGELOG.md` n'est pas modifié par le workflow.
 
+**Signature de code (SignPath Foundation).** Le workflow de release signe l'exécutable `LMU-DeltaRacing.UI.exe` avant de construire le setup Inno, puis le setup lui-même, avec l'action `signpath/github-action-submit-signing-request` : chaque fichier est envoyé comme artefact GitHub, attend l'approbation manuelle de la demande sur app.signpath.io (une heure au plus), puis remplace le fichier non signé. Ces étapes ne s'exécutent que si la variable de dépôt `SIGNPATH_ORGANIZATION_ID` est définie : avant l'acceptation du projet par SignPath, les releases restent publiées sans signature. Configuration attendue côté GitHub (Settings → Secrets and variables → Actions) : variable `SIGNPATH_ORGANIZATION_ID` et secret `SIGNPATH_API_TOKEN` (jeton d'un utilisateur CI SignPath ayant le rôle Submitter). Côté SignPath : projet `LMU-DeltaRacing` relié au dépôt GitHub (trusted build system GitHub.com), signing policy `release-signing` et deux artifact configurations, `executable` et `installer` :
+
+```xml
+<!-- executable -->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="LMU-DeltaRacing.UI.exe" product-name="LMU-DeltaRacing">
+      <authenticode-sign />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>
+
+<!-- installer -->
+<artifact-configuration xmlns="http://signpath.io/artifact-configuration/v1">
+  <zip-file>
+    <pe-file path="LMU-DeltaRacing-Setup.exe" product-name="LMU-DeltaRacing">
+      <authenticode-sign />
+    </pe-file>
+  </zip-file>
+</artifact-configuration>
+```
+
+La publication est en fichier unique : seul l'exécutable de l'application est signé, les bibliothèques tierces restent à l'intérieur. Le nom de produit des métadonnées (`<Product>` du projet UI, `AppName` de l'installeur) vaut `LMU-DeltaRacing`, comme l'exige SignPath Foundation. La politique de signature et la déclaration de confidentialité exigées sont dans la section « Code signing policy » du `README.md`, liée depuis le pied de la page de présentation.
+
 Le projet de benchmarks génère des entrées XML synthétiques et les analyse depuis des streams en mémoire, sans conserver les sessions analysées. Par défaut, il simule 10 courses par jour pendant 10 ans, avec Practice, Qualifying et Race (109 500 analyses). La charge peut être réduite à 5 ou 2 ans avec `-p:BenchmarkYears=5` ou `-p:BenchmarkYears=2`. Il génère aussi temporairement des lots de 10 à 5 000 fichiers sur disque puis les supprime. Il mesure ensuite la chaîne d'import sur les fichiers réels de `assets/Results` (parsing par type de session, import disque, chargement complet de `DashboardDataService` avec ou sans essais, fusions et journal JSON) et les calculs de chaque page sur l'historique réel répété ×1, ×10 et ×50. Chaque mesure est préchauffée et le rapport donne la médiane, le meilleur temps et les allocations. Le rapport Markdown est enregistré dans `benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md` par le test de catégorie `Load` ; les catégories `Import` et `Views` affichent une partie seule dans la sortie détaillée, sans écrire le rapport.
 
 Le [dernier rapport de benchmark](../benchmarks/LMU-DeltaRacing.Benchmarks/artifacts/performance-report.md) est disponible dans le dépôt. Ses mesures reflètent l'environnement et la charge de cette exécution.

@@ -10,6 +10,7 @@ et ce projet adhère au [Semantic Versioning](https://semver.org/lang/fr/).
 ## [Unreleased]
 
 ### Added
+- Signature de code (SignPath Foundation) préparée : section « Code signing policy » du README (rôles, déclaration de confidentialité), liée depuis la page de présentation ; le workflow de release signe l’exécutable puis l’installeur dès que la variable `SIGNPATH_ORGANIZATION_ID` est définie (sinon, release non signée comme avant) ; nom de produit `LMU-DeltaRacing` dans les métadonnées de l’exécutable.
 - Page de présentation en anglais publiée sur GitHub Pages (`site/`, workflow `pages.yml`) : description, fonctions, captures et téléchargement, avec image d’aperçu pour les liens partagés et `sitemap.xml` pour Google Search Console.
 - Mes courses : un bouton **Détail →** au bout de chaque ligne ouvre Détail des courses sur l’événement de la course (onglet Course).
 - Dashboard : **notes de course**. Dans Détail des courses, un bandeau « Notes » au-dessus du classement permet de noter chaque session : conditions (☀️ Sec, 🌥️ Humide, 🌧️ Pluie, 🌦️ Variable, « Pluie » proposée si des pneus pluie ont été montés), ressenti de 1 à 5 étoiles, comportement de la voiture, réglages et remarques. Mes courses signale les sessions annotées (📝, résumé au survol) et Comparer les sessions (Analyse tour par tour) gagne une colonne Notes. Les notes sont rangées dans `race-notes.json` à côté d’`appsettings.json` (`RaceNotesStore`), une par session ; le fichier survit aux mises à jour et n’est jamais réécrit s’il est illisible.
